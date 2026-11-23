@@ -1,0 +1,35 @@
+
+name: Verify translations against Russian Wiktionary
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check dictionary archive
+        run: |
+          test -f data/integraticum_sense_alignment_step2.zip || (echo 'Missing dictionary archive in data/' && exit 1)
+
+      - name: Compare Russian translations
+        run: |
+          python scripts/verify.py --input data/integraticum_sense_alignment_step2.zip --output verification_result
+
+      - name: Save verification results
+        uses: actions/upload-artifact@v4
+        with:
+          name: integraticum-independent-evidence
+          path: verification_result/
+          retention-days: 30

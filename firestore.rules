@@ -25,8 +25,8 @@ service cloud.firestore {
       return /databases/$(database)/documents/groups/$(groupId)/teachers/$(uid);
     }
     function teachesGroup(groupId) {
-      return teacher() && (ownsGroup(groupId)
-        || (exists(groupPath(groupId)) && exists(grantPath(groupId, request.auth.uid))));
+      return ownsGroup(groupId) || (teacher() && exists(groupPath(groupId))
+        && exists(grantPath(groupId, request.auth.uid)));
     }
     function managesTeachers(groupId) {
       return role() == 'super_admin' || (teacher() && ownsGroup(groupId));
@@ -47,7 +47,10 @@ service cloud.firestore {
     }
     match /groups/{groupId} {
       allow get, list: if signedIn();
-      allow create: if teacher() && request.resource.data.ownerUid == request.auth.uid;
+      allow create: if teacher() && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['name','level','code','ownerUid','ownerName','createdAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() <= 90
+        && request.resource.data.code is string && request.resource.data.code.size() <= 24;
       allow update, delete: if false;
 
       match /teachers/{uid} {
@@ -115,8 +118,11 @@ service cloud.firestore {
         && (resource.data.studentUid == request.auth.uid || teachesGroup(resource.data.groupId));
       allow create: if signedIn() && request.resource.data.studentUid == request.auth.uid
         && id == request.resource.data.groupId + '_' + request.auth.uid
-        && exists(groupPath(request.resource.data.groupId))
-        && request.resource.data.status == 'pending';
+        && request.resource.data.status == 'pending'
+        && request.resource.data.keys().hasOnly(['groupId','studentUid','studentEmail','studentName','status','createdAt'])
+        && request.resource.data.studentEmail == request.auth.token.email
+        && request.resource.data.studentName is string && request.resource.data.studentName.size() <= 150
+        && exists(groupPath(request.resource.data.groupId));
       allow update: if teachesGroup(resource.data.groupId) && resource.data.status == 'pending'
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
         && (request.resource.data.status == 'rejected'
@@ -142,13 +148,16 @@ service cloud.firestore {
     }
     match /courseSets/{id} {
       allow get, list: if signedIn() && (resource.data.visibility == 'public'
-        || (resource.data.visibility == 'group' && resource.data.groupId != '' &&
-          (teachesGroup(resource.data.groupId) || isMember(resource.data.groupId))));
+        || teachesGroup(resource.data.groupId) || isMember(resource.data.groupId));
       allow create: if teacher() && request.resource.data.ownerUid == request.auth.uid
-        && (request.resource.data.visibility == 'public'
+        && request.resource.data.keys().hasOnly(['name','level','ownerUid','ownerName','visibility','groupId','words','createdAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() <= 100
+        && request.resource.data.words is list && request.resource.data.words.size() <= 150
+        && ((request.resource.data.visibility == 'public' && request.resource.data.groupId == '')
           || (request.resource.data.visibility == 'group'
             && teachesGroup(request.resource.data.groupId)));
       allow delete: if signedIn() && resource.data.ownerUid == request.auth.uid;
     }
+    match /{document=**} { allow read, write: if false; }
   }
 }

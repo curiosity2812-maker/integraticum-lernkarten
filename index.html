@@ -61,17 +61,17 @@ const CATALOG=[
 ['die Voraussetzung','предпосылка; необходимое условие','передумова; необхідна умова','noun','B2','Работа','die Voraussetzungen','Deutschkenntnisse sind eine Voraussetzung.'],
 ['sich entscheiden','принимать решение','ухвалювати рішення','verb','A2','Повседневность','entscheidet sich · entschied sich · hat sich entschieden','Ich muss mich entscheiden.']
 ].map((a,i)=>({id:'c'+i,de:a[0],ru:a[1],uk:a[2],part:a[3],level:a[4],topic:a[5],forms:a[6],example:a[7],official:true}));
-const KEY='integraticum-v02';const defaults={version:2,sets:[],custom:[],records:{},history:[],selectedSets:[],lang:'ru',writing:'adaptive',newCount:5,reviewCount:10};let data=load(),page='home',filter={q:'',level:'all',topic:'all',part:'all'},selectedWord=null,selectedSet=null,editor=null,session=null,answer='',revealed=false,feedback=null,importPreview=[],bulkTarget=null;
+const KEY='integraticum-v02';const defaults={version:2,sets:[],custom:[],records:{},history:[],selectedSets:[],lang:'ru',writing:'adaptive',newCount:5,reviewCount:10};let data=load(),page='home',filter={q:'',level:'all',topic:'all',part:'all',ch:false},selectedWord=null,selectedSet=null,editor=null,session=null,answer='',revealed=false,feedback=null,importPreview=[],bulkTarget=null;
 function load(){try{let x=JSON.parse(localStorage.getItem(KEY));return x&&x.version===2?{...defaults,...x}:structuredClone(defaults)}catch{return structuredClone(defaults)}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){alert('Не удалось сохранить данные. Возможно, память браузера недоступна. Экспортируйте резервную копию.')}}
 function e(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function allWords(){return [...CATALOG,...data.custom]};function word(id){return (window.integraticumWordIndex&&window.integraticumWordIndex.get(id))||allWords().find(w=>w.id===id)};function translation(w){return w[data.lang]||w.ru||w.uk||'—'};function today(){return new Date().toISOString().slice(0,10)};function rec(id){return data.records[id]};function due(w){return rec(w.id)&&rec(w.id).due<=Date.now()};function uniqueIds(a){return [...new Set(a)]};function typeName(p){return ({"noun": "Существительное", "verb": "Глагол", "adj": "Прилагательное", "adv": "Наречие", "prep": "Предлог", "pron": "Местоимение", "conj": "Союз", "num": "Числительное", "particle": "Частица", "intj": "Междометие", "phrase": "Выражение", "name": "Имя собственное", "abbrev": "Сокращение", "postp": "Послелог", "other": "Другое"})[p]||p};function btn(text,fn,cls='secondary'){return `<button class="${cls}" onclick="${fn}">${text}</button>`};function countDue(){return allWords().filter(due).length};function activeIds(){let ids=data.selectedSets.flatMap(id=>(data.sets.find(s=>s.id===id)?.wordIds||[]));return uniqueIds(ids)};function selectedPool(){let ids=activeIds();if(ids.length)return ids.map(word).filter(Boolean);let a=CATALOG.filter(w=>w.level==='A1');return a.length?a.slice(0,200):CATALOG.slice(0,200)};
+function allWords(){return [...CATALOG,...data.custom]};function word(id){return (window.integraticumWordIndex&&window.integraticumWordIndex.get(id))||allWords().find(w=>w.id===id)};function translation(w){return w[data.lang]||w.ru||w.uk||'—'};function today(){return new Date().toISOString().slice(0,10)};function rec(id){return data.records[id]};function due(w){return rec(w.id)&&rec(w.id).due<=Date.now()};function uniqueIds(a){return [...new Set(a)]};function typeName(p){return ({"noun": "Существительное", "verb": "Глагол", "adj": "Прилагательное", "adv": "Наречие", "prep": "Предлог", "pron": "Местоимение", "conj": "Союз", "num": "Числительное", "particle": "Частица", "intj": "Междометие", "phrase": "Выражение", "article": "Артикль", "name": "Имя собственное", "abbrev": "Сокращение", "postp": "Послелог", "other": "Другое"})[p]||p};function btn(text,fn,cls='secondary'){return `<button class="${cls}" onclick="${fn}">${text}</button>`};function countDue(){return allWords().filter(due).length};function activeIds(){let ids=data.selectedSets.flatMap(id=>(data.sets.find(s=>s.id===id)?.wordIds||[]));return uniqueIds(ids)};function selectedPool(){let ids=activeIds();if(ids.length)return ids.map(word).filter(Boolean);let a=CATALOG.filter(w=>w.a1Reviewed);if(a.length)return a;let fallback=CATALOG.filter(w=>w.level==='A1');return fallback.length?fallback.slice(0,200):CATALOG.slice(0,200)};
 function go(p){page=p;render();window.scrollTo(0,0)}function render(){let views={home:homeView,library:libraryView,sets:setsView,review:reviewView,progress:progressView,settings:settingsView,account:accountView,courses:courseView,word:wordView,set:setView,editor:editorView,bulk:bulkView,plan:planView,calendar:calendarView,session:sessionView};document.getElementById('view').innerHTML=(views[page]||homeView)();document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.getAttribute('onclick')===`go('${page}')`));document.querySelector('.nav button:nth-child(4)').hidden=!window.integraticumCourse?.hasMembership?.();}
 function homeView(){let total=Object.keys(data.records).length;return `<section class="card hero"><div class="sub">INTEGRATICUM · DEIN LERNRAUM</div><h1>Guten Tag! ✨</h1><p>Твой уютный уголок немецкого языка. Учимся в собственном темпе.</p><button class="wide" onclick="go('plan')">Начать заучивание →</button></section><h2>Твоё пространство</h2><div class="feature-list"><button class="feature sage" onclick="go('library')"><span>📖</span><span><b>Словарь</b><small>Найти и сохранить слова</small></span><i>›</i></button><button class="feature lilac" onclick="go('sets')"><span>🗂️</span><span><b>Мои наборы</b><small>Личные подборки лексики</small></span><i>›</i></button><button class="feature peach" onclick="go('courses')"><span>👥</span><span><b>Учебные группы</b><small>Участники и наборы курса</small></span><i>›</i></button><button class="feature blue" onclick="go('progress')"><span>📈</span><span><b>Мой прогресс</b><small>${total} изученных слов · ${data.history.length} упражнений</small></span><i>›</i></button></div><section class="card home-progress"><h2>Сегодня к повторению</h2><p>${countDue()} слов ждут тебя</p><button onclick="go('review')">Повторить →</button></section>`}
-function libraryView(){let levels=['all','A1','A2','B1','B2','C1','unknown'],topics=['all',...new Set(allWords().map(w=>w.topic))],parts=['all','noun','verb','adj','adv','prep','pron','conj','num','particle','intj','phrase','name','abbrev','postp','other'];let result=allWords().filter(w=>(filter.level==='all'||(filter.level==='unknown'?!(w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))):(w.level_verified===true&&w.level===filter.level)))&&(filter.topic==='all'||w.topic===filter.topic)&&(filter.part==='all'||w.part===filter.part)&&`${w.de} ${w.ru} ${w.uk}`.toLocaleLowerCase().includes(filter.q.toLocaleLowerCase()));return `<h1>Bibliothek</h1><p class="muted">Готовые слова Integraticum и личные карточки.</p><div class="field"><label>Поиск по DE / RU / UK</label><input id="search" value="${e(filter.q)}" placeholder="Например: Wohnung" oninput="filter.q=this.value;refreshResults()"></div><div class="grid"><div class="field"><label>Уровень</label><select onchange="filter.level=this.value;window.integraticumResetPage?.();render()">${levels.map(x=>`<option ${filter.level===x?'selected':''} value="${x}">${x==='all'?'Все уровни':(x==='unknown'?'Неопределённый уровень':x)+' ('+allWords().filter(w=>x==='unknown'?!w.level_verified:w.level_verified===true&&w.level===x).length+')'}</option>`).join('')}</select></div><div class="field"><label>Часть речи</label><select onchange="filter.part=this.value;window.integraticumResetPage?.();render()">${parts.map(x=>`<option ${filter.part===x?'selected':''} value="${x}">${x==='all'?'Все части речи':typeName(x)}</option>`).join('')}</select></div></div><div class="field"><label>Тема</label><select onchange="filter.topic=this.value;window.integraticumResetPage?.();render()">${topics.map(x=>`<option ${filter.topic===x?'selected':''} value="${e(x)}">${x==='all'?'Все темы':e(x)}</option>`).join('')}</select></div><div class="row wrap">${btn('Сбросить фильтры',"resetFilter()")}${btn('＋ Создать слово',"openEditor(null)")}</div><div id="results">${resultsHtml(result)}</div>`}
-function resultsHtml(arr){return `<p class="muted tiny">Найдено: ${arr.length}</p>${arr.length?arr.map(w=>`<div class="item row"><div><b>${e(w.de)}</b> ${/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span>`:''}<p class="muted tiny">${e(translation(w))} · ${e(w.topic)} · ${typeName(w.part)}</p></div>${btn('Открыть',`openWord('${w.id}')`)}</div>`).join(''):'<p class="note">Ничего не найдено.</p>'}`}
-function refreshResults(){if(window.integraticumResetPage)window.integraticumResetPage();let arr=allWords().filter(w=>(filter.level==='all'||(filter.level==='unknown'?!(w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))):(w.level_verified===true&&w.level===filter.level)))&&(filter.topic==='all'||w.topic===filter.topic)&&(filter.part==='all'||w.part===filter.part)&&`${w.de} ${w.ru} ${w.uk}`.toLocaleLowerCase().includes(filter.q.toLocaleLowerCase()));document.getElementById('results').innerHTML=resultsHtml(arr)}function resetFilter(){window.integraticumResetPage?.();filter={q:'',level:'all',topic:'all',part:'all'};render()}
-function openWord(id){selectedWord=id;go('word')}function wordView(){let w=word(selectedWord);if(!w)return '<p>Карточка не найдена.</p>';return `<div class="row">${btn('← Библиотека',"go('library')")}<span class="tag">${w.official?'Integraticum':'Личная'}</span></div><section class="card hero"><p class="sub">${typeName(w.part).toUpperCase()} · ${/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?e(w.level)+' · ':''}${e(w.topic)}</p><div class="row"><div class="word">${e(w.de)}</div><button class="secondary speak" onclick="speakWord(${JSON.stringify(w.de).replace(/"/g,"&quot;")})" aria-label="Произнести слово">🔊</button></div><p><b>RU:</b> ${e(w.ru||'—')}</p><p><b>UK:</b> ${e(w.uk||'—')}</p>${w.forms?`<p><b>Формы:</b> ${e(w.forms)}</p>`:''}${w.example?`<p><b>Пример:</b> ${e(w.example)}</p>`:''}${w.note?`<p>${e(w.note)}</p>`:''}</section><section class="card"><h3>Добавить в набор</h3><div class="field"><select id="targetset"><option value="">Выбери набор</option>${data.sets.map(s=>`<option value="${s.id}">${e(s.name)}</option>`).join('')}</select></div><div class="actions">${btn('Добавить',"addToChosenSet()",'')}${btn('Создать набор',"newSet()")}</div></section><section class="card"><h3>Изменения</h3><p class="foot">Официальные карточки не изменяются: редактирование создаёт личную копию.</p><div class="actions">${btn(w.official?'Создать личную копию':'Редактировать',`openEditor('${w.id}')`)}${!w.official?btn('Удалить',`deleteWord('${w.id}')`):''}</div></section>`}
+function libraryView(){let levels=['all','A1','A2','B1','B2','C1','unknown'],topics=['all',...new Set(dictionaryCards().flatMap(w=>w.topics?.length?w.topics:[w.topic]))],parts=['all','noun','verb','adj','adv','prep','pron','conj','num','particle','intj','phrase','article','name','abbrev','postp','other'];let result=dictionaryResults();return `<h1>Bibliothek</h1><p class="muted">Готовые слова Integraticum и личные карточки.</p><div class="field"><label>Поиск по DE / RU / UK</label><input id="search" value="${e(filter.q)}" placeholder="Например: Wohnung" oninput="filter.q=this.value;refreshResults()"></div><div class="grid"><div class="field"><label>Уровень</label><select onchange="filter.level=this.value;window.integraticumResetPage?.();render()">${levels.map(x=>`<option ${filter.level===x?'selected':''} value="${x}">${x==='all'?'Все уровни':(x==='unknown'?'Неопределённый уровень':x)+' ('+dictionaryCards().filter(w=>x==='unknown'?!w.level_verified:w.level_verified===true&&w.level===x).length+')'}</option>`).join('')}</select></div><div class="field"><label>Часть речи</label><select onchange="filter.part=this.value;window.integraticumResetPage?.();render()">${parts.map(x=>`<option ${filter.part===x?'selected':''} value="${x}">${x==='all'?'Все части речи':typeName(x)}</option>`).join('')}</select></div></div><div class="field"><label>Тема</label><select onchange="filter.topic=this.value;window.integraticumResetPage?.();render()">${topics.map(x=>`<option ${filter.topic===x?'selected':''} value="${e(x)}">${x==='all'?'Все темы':e(x)}</option>`).join('')}</select></div><div class="row wrap"><label><input type="checkbox" ${filter.ch?'checked':''} onchange="filter.ch=this.checked;refreshResults()"> Schweizer Hochdeutsch (CH)</label>${btn('Сбросить фильтры',"resetFilter()")}${btn('＋ Создать слово',"openEditor(null)")}</div><div id="results">${resultsHtml(result)}</div>`}
+function resultsHtml(arr){return `<p class="muted tiny">Найдено: ${arr.length}</p>${arr.length?arr.map(w=>`<div class="item row"><div><b>${e(w.de)}</b> ${/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span>`:''}${w.ch?'<span class="tag">CH</span>':''}<p class="muted tiny">${e(translation(w))} · ${e(w.topic)} · ${typeName(w.part)}</p></div>${btn('Открыть',`openWord('${w.id}')`)}</div>`).join(''):'<p class="note">Ничего не найдено.</p>'}`}
+function refreshResults(){if(window.integraticumResetPage)window.integraticumResetPage();let arr=dictionaryResults();document.getElementById('results').innerHTML=resultsHtml(arr)}function resetFilter(){window.integraticumResetPage?.();filter={q:'',level:'all',topic:'all',part:'all',ch:false};render()}
+function openWord(id){selectedWord=id;go('word')}function wordView(){let w=word(selectedWord);if(!w)return '<p>Карточка не найдена.</p>';return `<div class="row">${btn('← Библиотека',"go('library')")}<span class="tag">${w.official?'Integraticum':'Личная'}</span></div><section class="card hero"><p class="sub">${typeName(w.part).toUpperCase()} · ${w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?e(w.level)+' · ':''}${e(w.topic)}</p><div class="row"><div class="word">${e(w.de)}</div><button class="secondary speak" onclick="speakWord(${JSON.stringify(w.de).replace(/"/g,"&quot;")})" aria-label="Произнести слово">🔊</button></div><p><b>RU:</b> ${e(w.ru||'—')}</p>${w.uk?`<p><b>UK:</b> ${e(w.uk)}</p>`:''}${w.forms?`<p><b>Формы:</b> ${e(w.forms)}</p>`:''}${w.example?`<p><b>Пример:</b> ${e(w.example)}</p>`:''}${w.note?`<p>${e(w.note)}</p>`:''}</section><section class="card"><h3>Добавить в набор</h3><div class="field"><select id="targetset"><option value="">Выбери набор</option>${data.sets.map(s=>`<option value="${s.id}">${e(s.name)}</option>`).join('')}</select></div><div class="actions">${btn('Добавить',"addToChosenSet()",'')}${btn('Создать набор',"newSet()")}</div></section><section class="card"><h3>Изменения</h3><p class="foot">Официальные карточки не изменяются: редактирование создаёт личную копию.</p><div class="actions">${btn(w.official?'Создать личную копию':'Редактировать',`openEditor('${w.id}')`)}${!w.official?btn('Удалить',`deleteWord('${w.id}')`):''}</div></section>`}
 function addToChosenSet(){let id=document.getElementById('targetset').value;if(!id)return alert('Сначала выбери набор.');let s=data.sets.find(s=>s.id===id);if(!s.wordIds.includes(selectedWord))s.wordIds.push(selectedWord);save();alert('Карточка добавлена в набор.');render()}
 function newSet(){let name=prompt('Название нового набора:');if(!name?.trim())return;let id='s'+Date.now()+Math.random().toString(36).slice(2,6);data.sets.push({id,name:name.trim(),description:'',level:'A1',topic:'Другое',wordIds:[]});data.selectedSets.push(id);save();selectedSet=id;go('set')}
 function setsView(){return `<div class="row"><h1>Meine Lernsets</h1>${btn('＋ Создать',"newSet()",'')}</div><p class="muted">Собственные наборы и выбранные для умной тренировки темы.</p>${data.sets.length?data.sets.map(s=>`<div class="item row"><div><b>${e(s.name)}</b><p class="tiny muted">${s.wordIds.length} слов · ${e(s.level)} · ${e(s.topic)}</p><label class="tiny"><input type="checkbox" style="width:auto" ${data.selectedSets.includes(s.id)?'checked':''} onchange="toggleSet('${s.id}',this.checked)"> Активен в умном плане</label></div>${btn('Открыть',`openSet('${s.id}')`)}</div>`).join(''):'<section class="card"><p>Пока нет личных наборов. Создай первый или выбери слова в библиотеке.</p></section>'}<p class="foot">Готовые слова можно добавлять в несколько наборов. Их прогресс учитывается один раз.</p>`}
@@ -94,9 +94,9 @@ function planView(){let pool=selectedPool(),dueWords=pool.filter(due),fresh=pool
 function startPlan(){data.reviewCount=+document.getElementById('reviewCount').value;data.newCount=+document.getElementById('newCount').value;data.writing=document.getElementById('writing').value;save();let pool=selectedPool(),rev=pool.filter(due).sort((a,b)=>rec(a.id).due-rec(b.id).due).slice(0,data.reviewCount),fresh=pool.filter(w=>!rec(w.id)).slice(0,data.newCount);startSession(uniqueIds([...rev,...fresh].map(w=>w.id)),'smart')}
 function startFree(mode){let ids=[...selectedPool()].sort(()=>Math.random()-.5).slice(0,12).map(w=>w.id);startSession(ids,'smart')}function startSet(id,mode){let s=data.sets.find(x=>x.id===id);startSession(s.wordIds,mode)}function startSession(ids,mode){let q=uniqueIds(ids).filter(id=>word(id)).map(id=>({id,tries:0}));if(!q.length)return alert('В наборе пока нет слов для занятия.');session={queue:q,index:0,mode,correct:0,results:[]};answer='';revealed=false;feedback=null;go('session')}
 function exerciseMode(item){if(session.mode!=='smart')return session.mode;if(!item.exercise) {let modes=['cards','choice','typing','recall'];if(data.writing==='no')modes=modes.filter(x=>x!=='typing');if(data.writing==='yes')modes=['typing','choice','recall','cards'];item.exercise=modes[Math.floor(Math.random()*modes.length)];}return item.exercise}
-function choices(w){let pool=allWords().filter(x=>x.id!==w.id&&translation(x)!==translation(w));let same=pool.filter(x=>x.part===w.part).slice(0,3);if(same.length<3)same.push(...pool.filter(x=>!same.includes(x)).slice(0,3-same.length));let arr=[w,...same];let seed=session.index*3+w.id.length;return arr.sort((a,b)=>hash(a.id+seed)-hash(b.id+seed))}function hash(s){return [...s].reduce((a,c)=>((a*31+c.charCodeAt(0))>>>0),7)}
+function choices(w){let pool=allWords().filter(x=>x.id!==w.id&&(!w.a1Reviewed||x.a1Reviewed)&&translation(x)!=='—'&&translation(x)!==translation(w));let same=pool.filter(x=>x.part===w.part).slice(0,3);if(same.length<3)same.push(...pool.filter(x=>!same.includes(x)).slice(0,3-same.length));let arr=[w,...same];let seed=session.index*3+w.id.length;return arr.sort((a,b)=>hash(a.id+seed)-hash(b.id+seed))}function hash(s){return [...s].reduce((a,c)=>((a*31+c.charCodeAt(0))>>>0),7)}
 function sessionView(){if(!session)return '<p>Нет активного занятия.</p>';if(session.index>=session.queue.length)return `<h1>Gut gemacht!</h1><section class="card center"><h2>Занятие завершено</h2><p>${session.results.length} проверок · ${session.correct} успешных</p><p class="foot">Ошибки учтены в следующем повторении.</p>${btn('На главную',"endSession()",'')}</section>`;let item=session.queue[session.index],w=word(item.id),mode=exerciseMode(item),pct=Math.round(100*session.index/session.queue.length),controls='';if(mode==='cards'||mode==='recall'){controls=`<div class="center"><p class="muted">${mode==='cards'?'Знакомство со словом':'Вспомни немецкое слово без подсказки'}</p><div class="word">${e(mode==='cards'?w.de:translation(w))}</div>${revealed?`<div class="note"><b>${e(w.de)}</b> — ${e(translation(w))}${w.forms?`<br><small>${e(w.forms)}</small>`:''}${w.example?`<br><small>${e(w.example)}</small>`:''}</div><div class="grid">${btn('Не вспомнил',"finishRecall(false)")}${btn('Вспомнил',"finishRecall(true)",'')}</div>`:btn('Показать ответ',"revealed=true;render()",'')}</div>`}else if(mode==='typing'){controls=`<p class="muted">Напиши немецкое слово${w.part==='noun'?' с артиклем':''}:</p><div class="word center">${e(translation(w))}</div><input id="typed" type="text" autocomplete="off" autocapitalize="off" placeholder="Введите ответ" value="${e(answer)}" oninput="answer=this.value" ${feedback?'disabled':''}>${feedback?`<div class="note">${feedback.ok?'✓ Правильно':`Правильный ответ: <b>${e(w.de)}</b>`}<br>${e(feedback.explanation||'')}</div>${btn('Далее',"nextQuestion()",'wide')}`:btn('Проверить',"checkTyped()",'wide')}`}else{controls=`<p class="muted">Выбери правильный перевод:</p><div class="word center">${e(w.de)}</div>${choices(w).map(o=>`<button class="choice ${feedback?(o.id===w.id?'right':o.id===answer?'wrong':''):o.id===answer?'picked':''}" onclick="pick('${o.id}')" ${feedback?'disabled':''}>${e(translation(o))}</button>`).join('')}${feedback?`<div class="note">${feedback.ok?'✓ Richtig!':`Правильно: ${e(translation(w))}`}<br>${e(feedback.explanation||'')}</div>${btn('Далее',"nextQuestion()",'wide')}`:btn('Проверить',"checkChoice()",'wide')}`};return `<div class="row">${btn('← Пауза',"pauseSession()")}<span class="tag">${({cards:'Lernkarten',recall:'Erinnern',typing:'Schreiben',choice:'Auswahl'})[mode]}</span></div><p class="tiny muted">Задание ${session.index+1} из ${session.queue.length}</p><button class="secondary speak" onclick="speakWord(word(session.queue[session.index].id).de)" aria-label="Слушать произношение">🔊 Слушать</button><div class="progress"><div style="width:${pct}%"></div></div><section class="card">${controls}</section><p class="foot">${mode==='cards'||mode==='recall'?'Самооценка не проверяется автоматически.':'Результат сохраняется после подтверждения ответа.'}</p>`}
-function speakWord(value){if(!('speechSynthesis' in window))return alert('Озвучивание недоступно в этом браузере.');let u=new SpeechSynthesisUtterance(value);u.lang='de-DE';u.rate=.85;speechSynthesis.cancel();speechSynthesis.speak(u)}
+function speakWord(value){window.integraticumSpeakText(value)}
 function pick(id){answer=id;render()}function checkChoice(){if(!answer)return;let w=word(session.queue[session.index].id);feedback={ok:answer===w.id,partial:false,errorType:answer===w.id?'correct':'meaning',explanation:answer===w.id?'Верно! Значение определено правильно.':'Это другое значение. Сравни варианты и повтори слово.'};render()}function norm(s){return String(s||'').normalize('NFC').trim().toLocaleLowerCase('de').replace(/\s+/g,' ')}
 function spellingDistance(a,b){let prev=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){let row=[i];for(let j=1;j<=b.length;j++)row[j]=Math.min(row[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));prev=row}return prev[b.length]}
 function classifyTyped(input,w){let actual=norm(input),expected=norm(w.de);if(actual===expected)return {ok:true,partial:false,errorType:'correct',explanation:'Правильно! Написание проверено.'};if(!actual)return {ok:false,partial:false,errorType:'empty',explanation:'Ответ не введён. Посмотри правильное написание.'};let noun=w.part==='noun'&&/^(der|die|das)\s+/i.test(expected);let strip=x=>x.replace(/^(der|die|das)\s+/,'');let core=strip(expected),given=strip(actual);if(noun&&core===given){let article=/^(der|die|das)\s+/.exec(actual);return {ok:false,partial:true,errorType:article?'article_wrong':'article_missing',explanation:article?'Слово написано правильно, но артикль неверный.':'Слово написано правильно, но артикль пропущен.'}}
@@ -123,15 +123,19 @@ window.integraticumBridge={get data(){return data},word,startSet,save};window.re
 /* Integraticum: load dictionary into existing prototype. Unverified translations remain marked. */
 (function () {
   'use strict';
-  const SOURCE = 'data/integraticum_dictionary_cards_unverified.json';
+  const LEGACY_SOURCE = 'data/integraticum_dictionary_cards_unverified.json';
+  const A1_SOURCE = 'data/integraticum_a1_reviewed.json';
+  const reviewedParts = {conjunction:'conj', expression:'phrase', interjection:'intj', pronoun:'pron'};
   const nativeWordView = wordView;
   const nativeResultsHtml = resultsHtml;
   const nativeLibraryView = libraryView;
-  const known = new Set(CATALOG.map(w => w.id));
+  const builtIn = [...CATALOG];
+  let reviewed = [];
+  let imported = [];
+  const status = {reviewed:'loading', legacy:'loading'};
   let dictionaryPage = 1;
   const dictionaryPageSize = 80;
-  let loading = true;
-  let error = '';
+
   function speech(text) {
     if (!('speechSynthesis' in window)) { alert('Произношение не поддерживается этим браузером.'); return; }
     window.speechSynthesis.cancel();
@@ -140,19 +144,35 @@ window.integraticumBridge={get data(){return data},word,startSet,save};window.re
     const voices = window.speechSynthesis.getVoices();
     const german = voices.find(v => v.lang.toLowerCase().startsWith('de'));
     if (german) utterance.voice = german;
+    utterance.onerror = ({error}) => {
+      if (!['canceled', 'interrupted'].includes(error)) alert('Не удалось воспроизвести немецкое произношение. Проверьте немецкий голос в настройках устройства.');
+    };
     window.speechSynthesis.speak(utterance);
   }
+  window.integraticumSpeakText = speech;
   window.integraticumSpeak = function(id, kind) {
     const w = word(id);
     if (w) speech(kind === 'example' ? w.example : w.de);
   };
   function jsarg(s) { return "'" + String(s).replace(/\\/g, '\\\\').replace(/'/g, '\\x27').replace(/</g, '\\x3c') + "'"; }
+  const fold = text => norm(text).replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue')
+    .replace(/ß/g,'ss').normalize('NFD').replace(/\u0301/g,'').normalize('NFC').replace(/ё/g,'е');
+  window.dictionaryCards = () => allWords().filter(w => !w.dictionary_duplicate);
+  window.dictionaryResults = () => {
+    const query = fold(filter.q);
+    return dictionaryCards().filter(w =>
+      (filter.level==='all'||(filter.level==='unknown'?!w.level_verified:w.level_verified===true&&w.level===filter.level)) &&
+      (filter.topic==='all'||w.topic===filter.topic||w.topics?.includes(filter.topic)) &&
+      (filter.part==='all'||w.part===filter.part) && (!filter.ch||w.ch) &&
+      (!query||fold(`${w.de} ${w.lemma||''} ${w.ru} ${w.uk} ${w.equivalent||''}`).includes(query))
+    );
+  };
   // Keep the prototype's filtering and controls, but never render tens of thousands of DOM nodes.
   window.integraticumResetPage = function(){ dictionaryPage=1; };
   window.integraticumPage = function(next) {
     dictionaryPage = Math.max(1, next);
     const results = document.getElementById('results');
-    if (results) { const arr=allWords().filter(w=>(filter.level==='all'||(filter.level==='unknown'?!(w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))):(w.level_verified===true&&w.level===filter.level)))&&(filter.topic==='all'||w.topic===filter.topic)&&(filter.part==='all'||w.part===filter.part)&&`${w.de} ${w.ru} ${w.uk}`.toLocaleLowerCase().includes(filter.q.toLocaleLowerCase()));results.innerHTML=resultsHtml(arr); }
+    if (results) { const arr=dictionaryResults();results.innerHTML=resultsHtml(arr); }
     results?.scrollIntoView({behavior:'smooth',block:'start'});
   };
   resultsHtml = function(arr) {
@@ -162,48 +182,99 @@ window.integraticumBridge={get data(){return data},word,startSet,save};window.re
     const current = arr.slice(start, start + dictionaryPageSize);
     const controls = totalPages > 1 ? `<div class="row wrap" style="margin:18px 0;gap:10px"><button class="secondary" ${dictionaryPage===1?'disabled':''} onclick="integraticumPage(${dictionaryPage-1})">← Назад</button><span class="tiny">Страница ${dictionaryPage} из ${totalPages}</span><button class="secondary" ${dictionaryPage===totalPages?'disabled':''} onclick="integraticumPage(${dictionaryPage+1})">Вперёд →</button></div>` : '';
     return `<p class="muted tiny">Найдено: ${arr.length} · показаны ${arr.length ? start+1 : 0}–${start+current.length}</p>` +
-      (current.length ? current.map(w => `<div class="item row"><div><b>${e(w.de)}</b> ${w.level_verified===true && /^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span>`:'<span class="tag">Уровень не подтверждён</span>'}<p class="muted tiny">${e(translation(w))} · ${e(w.topic)} · ${typeName(w.part)}</p></div>${btn('Открыть', `openWord(${jsarg(w.id)})`)}</div>`).join('') : '<p class="note">Ничего не найдено.</p>') + controls;
+      (current.length ? current.map(w => `<div class="item row"><div><b>${e(w.de)}</b> ${w.level_verified===true && /^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span>`:''}${w.ch?'<span class="tag">CH</span>':''}<p class="muted tiny">${e(translation(w))} · ${e(w.topic)} · ${typeName(w.part)}</p></div>${btn('Открыть', `openWord(${jsarg(w.id)})`)}</div>`).join('') : '<p class="note">Ничего не найдено.</p>') + controls;
   };
   libraryView = function() {
     const html = nativeLibraryView();
-    const notice = loading ? '<div class="dictionary-state">⏳ Загружается словарная база…</div>' : error ? `<div class="dictionary-state error">⚠ Словарь не загрузился: ${e(error)}. Проверьте файл data/integraticum_dictionary_cards_unverified.json в GitHub.</div>` : `<div class="dictionary-state">✓ Загружено ${window.integraticumDictionaryCount||0} словарных записей. Переводы пока не подтверждены.</div>`;
+    const checked = status.reviewed === 'loading' ? 'Загружаются карточки A1…'
+      : status.reviewed === 'failed' ? 'Карточки A1 не загрузились. Обновите страницу.'
+      : `A1 · ${reviewed.length} карточек с проверенным русским переводом`;
+    const legacy = status.legacy === 'loading' ? ' · Загружается общий словарь…'
+      : status.legacy === 'failed' ? ' · Общий словарь не загрузился. Обновите страницу.'
+      : ` · Готовых карточек в библиотеке: ${window.integraticumDictionaryCount.toLocaleString('ru-RU')}`;
+    const notice = `<div class="dictionary-state" role="status">${checked}${legacy}</div>`;
     return notice + html;
   };
   wordView = function() {
     const w = word(selectedWord);
     if (!w) return nativeWordView();
     let html = nativeWordView();
-    const audio = `<div class="actions"><button class="secondary" onclick="integraticumSpeak(${jsarg(w.id)},'word')">🔊 Произнести слово</button>${w.example ? `<button class="secondary" onclick="integraticumSpeak(${jsarg(w.id)},'example')">🔊 Произнести пример</button>` : ''}</div>`;
+    const audio = w.example ? `<div class="actions"><button class="secondary" onclick="integraticumSpeak(${jsarg(w.id)},'example')">🔊 Произнести пример</button></div>` : '';
     const translation = w.example_ru ? `<p><b>Перевод примера:</b> ${e(w.example_ru)}</p>` : '';
     const warning = w.dictionary_unverified ? '<p class="foot">⚠ Перевод и соответствие примера значению ещё не проверены.</p>' : '';
-    const injection = audio + translation + warning;
+    const definition = w.definition_de ? `<p lang="de"><b>Bedeutung:</b> ${e(w.definition_de)}</p>` : '';
+    const equivalent = w.equivalent ? `<p><b>Общенемецкий вариант:</b> ${e(w.equivalent)}</p>` : '';
+    const citation = w.a1Reviewed && w.source_evidence.length ? `<details><summary class="tiny">Учебный источник</summary>
+      <p class="tiny">Goethe-Institut · Start Deutsch 1 · стр. ${e([...new Set(w.source_evidence.map(item => item.page))].join(', '))}</p></details>` : '';
+    const injection = definition + equivalent + audio + translation + warning + citation;
     const close = '</section>';
     const at = html.indexOf(close);
     if (at >= 0) html = html.slice(0, at) + injection + html.slice(at);
     return html;
   };
-  fetch(SOURCE, {cache:'no-cache'}).then(r => {
-    if (!r.ok) throw new Error(`HTTP ${r.status}: ${SOURCE}`);
-    return r.json();
-  }).then(rows => {
-    if (!Array.isArray(rows)) throw new Error('Ожидался массив карточек JSON');
-    window.integraticumDictionaryCount = rows.length;
-    const imported = rows.map((r, i) => {
+  async function fetchCards(source) {
+    const response = await fetch(source, {cache:'no-cache'});
+    if (!response.ok) throw new Error(`HTTP ${response.status}: ${source}`);
+    const rows = await response.json();
+    if (!Array.isArray(rows)) throw new Error(`Ожидался массив карточек: ${source}`);
+    return rows;
+  }
+
+  function adaptLegacy(rows) {
+    return rows.map((r, i) => {
       const wordText = String(r.word || '').trim();
       const gender = {masculine:'der',feminine:'die',neuter:'das'}[r.gender];
       const pos = ({adjective:'adj',adverb:'adv',preposition:'prep',pronoun:'pron',conjunction:'conj',numeral:'num',interjection:'intj'}[r.part_of_speech] || r.part_of_speech || 'other');
       return {id:'dict_'+(r.id || i), de:wordText && gender && !/^(der|die|das)\s/i.test(wordText) ? gender+' '+wordText : wordText,
-        ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.cefr_source && r.cefr_source.name==='Goethe-Institut Wortliste' && r.cefr_source.match==='exact_headword'), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
+        ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.cefr_source && r.cefr_source.name==='Goethe-Institut Wortliste' && r.cefr_source.match==='exact_headword' && r.cefr_source.level!=='A1'), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
         example:r.example_de || '', example_ru:r.example_ru || '', official:true, dictionary_unverified:!r.translation_verified};
     }).filter(w=>w.de);
-    // Retain the prototype cards, avoid exact duplicate labels.
-    for (const w of imported) {
-      if (!known.has(w.id)) { CATALOG.push(w); known.add(w.id); }
+  }
+
+  function refreshCatalog() {
+    const ids = new Set(reviewed.map(w => w.id));
+    const key = w => `${fold(w.de)}|${w.part}`;
+    const current = new Map();
+    for (const card of reviewed) {
+      const matching = current.get(key(card)) || [];
+      matching.push(card);
+      current.set(key(card), matching);
     }
-    window.integraticumWordIndex = new Map([...CATALOG,...data.custom].map(w=>[w.id,w]));
-    loading = false;
+    const older = [...builtIn.filter(w => !ids.has(w.id)), ...imported].map(w => {
+      const matching = current.get(key(w));
+      if (matching?.length !== 1) return w;
+      const candidates = w.ru.split(';').map(fold).filter(Boolean);
+      const confirmed = new Set(matching[0].translations_ru.map(fold));
+      if (!candidates.length || !candidates.every(ru => confirmed.has(ru))) return w;
+      // Retain the original record and ID for existing sets and progress.
+      return {...w, dictionary_duplicate:true};
+    });
+    CATALOG.splice(0, CATALOG.length, ...reviewed, ...older);
+    window.integraticumWordIndex = new Map(CATALOG.map(w => [w.id,w]));
+    window.integraticumDictionaryCount = CATALOG.filter(w => !w.dictionary_duplicate).length;
     if (['library','home','plan','review'].includes(page)) render();
-  }).catch(err => {loading = false; error = err.message; if (['library','home','plan'].includes(page)) render(); console.error('Integraticum dictionary:', err);});
+  }
+
+  async function loadDictionary(source, kind, accept) {
+    try {
+      accept(await fetchCards(source));
+      status[kind] = 'ready';
+    } catch (error) {
+      status[kind] = 'failed';
+      console.error('Integraticum dictionary:', error);
+    }
+    refreshCatalog();
+  }
+
+  loadDictionary(A1_SOURCE, 'reviewed', rows => {
+    if (rows.length !== 776 || new Set(rows.map(w => w.id)).size !== rows.length ||
+        rows.some(w => !w.de || !w.ru || w.level!=='A1')) {
+      throw new Error('Не удалось проверить состав словаря A1.');
+    }
+    reviewed = rows.map(w => ({...w, part:reviewedParts[w.part]||w.part,
+      official:true, level_verified:true, a1Reviewed:true}));
+  });
+  loadDictionary(LEGACY_SOURCE, 'legacy', rows => { imported = adaptLegacy(rows); });
 })();
 
 

@@ -1,0 +1,163 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+    function userRole(uid) {
+      let profile = /databases/$(database)/documents/users/$(uid);
+      return exists(profile) ? get(profile).data.get('role', 'student') : 'student';
+    }
+    function role() {
+      return signedIn() ? userRole(request.auth.uid) : 'student';
+    }
+    function teacher() {
+      return role() in ['teacher', 'super_admin'];
+    }
+    function groupPath(groupId) {
+      return /databases/$(database)/documents/groups/$(groupId);
+    }
+    function ownsGroup(groupId) {
+      return signedIn() && exists(groupPath(groupId))
+        && get(groupPath(groupId)).data.ownerUid == request.auth.uid;
+    }
+    function grantPath(groupId, uid) {
+      return /databases/$(database)/documents/groups/$(groupId)/teachers/$(uid);
+    }
+    function teachesGroup(groupId) {
+      return ownsGroup(groupId) || (teacher() && exists(groupPath(groupId))
+        && exists(grantPath(groupId, request.auth.uid)));
+    }
+    function managesTeachers(groupId) {
+      return role() == 'super_admin' || (teacher() && ownsGroup(groupId));
+    }
+    function membershipPath(groupId, uid) {
+      return /databases/$(database)/documents/memberships/$(groupId + '_' + uid);
+    }
+    function isMember(groupId) {
+      return signedIn() && exists(membershipPath(groupId, request.auth.uid));
+    }
+    function invitationPath(code) {
+      return /databases/$(database)/documents/teacherInvitations/$(code);
+    }
+
+    match /users/{uid} {
+      allow get: if signedIn() && request.auth.uid == uid;
+      allow list, create, update, delete: if false;
+    }
+    match /groups/{groupId} {
+      allow get, list: if signedIn();
+      allow create: if teacher() && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['name','level','code','ownerUid','ownerName','createdAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() <= 90
+        && request.resource.data.code is string && request.resource.data.code.size() <= 24;
+      allow update, delete: if false;
+
+      match /teachers/{uid} {
+        allow get: if teacher() && (request.auth.uid == uid || managesTeachers(groupId));
+        allow list: if managesTeachers(groupId);
+        allow create: if managesTeachers(groupId) && approvesInvitation(groupId, uid);
+        allow delete: if managesTeachers(groupId);
+
+        function approvesInvitation(groupId, uid) {
+          let grant = request.resource.data;
+          let invite = invitationPath(grant.invitationCode);
+          return grant.keys().hasOnly(['invitationCode', 'teacherEmail', 'createdAt'])
+            && grant.createdAt == request.time && userRole(uid) == 'teacher'
+            && exists(invite) && existsAfter(invite)
+            && get(invite).data.status == 'pending'
+            && get(invite).data.groupId == groupId
+            && get(invite).data.teacherUid == uid
+            && grant.teacherEmail == get(invite).data.teacherEmail
+            && getAfter(invite).data.status == 'approved';
+        }
+      }
+    }
+
+    match /teacherInvitations/{code} {
+      allow get: if teacher() && (resource.data.status == 'open'
+        || resource.data.get('teacherUid', '') == request.auth.uid
+        || managesTeachers(resource.data.groupId));
+      allow list: if managesTeachers(resource.data.groupId);
+      allow create: if managesTeachers(request.resource.data.groupId)
+        && exists(groupPath(request.resource.data.groupId))
+        && code.matches('^PREP-[0-9A-F]{24}$')
+        && request.resource.data.keys().hasOnly(['groupId', 'status', 'createdAt'])
+        && request.resource.data.status == 'open' && request.resource.data.createdAt == request.time;
+      allow update: if claimsInvitation() || resolvesInvitation();
+
+      function claimsInvitation() {
+        let groupId = resource.data.groupId;
+        let updated = request.resource.data;
+        return role() == 'teacher' && resource.data.status == 'open'
+          && exists(groupPath(groupId)) && !ownsGroup(groupId)
+          && !exists(grantPath(groupId, request.auth.uid))
+          && updated.diff(resource.data).affectedKeys()
+            .hasOnly(['status', 'teacherUid', 'teacherEmail'])
+          && updated.status == 'pending' && updated.teacherUid == request.auth.uid
+          && updated.teacherEmail == request.auth.token.get('email', '');
+      }
+      function resolvesInvitation() {
+        let groupId = resource.data.groupId;
+        let updated = request.resource.data;
+        return managesTeachers(groupId)
+          && updated.diff(resource.data).affectedKeys().hasOnly(['status'])
+          && ((resource.data.status in ['open', 'pending'] && updated.status == 'revoked')
+            || (resource.data.status == 'pending' && updated.status == 'approved'
+              && createsGrant(groupId, resource.data.teacherUid)));
+      }
+      function createsGrant(groupId, uid) {
+        let grant = grantPath(groupId, uid);
+        return !exists(grant) && existsAfter(grant)
+          && getAfter(grant).data.invitationCode == code;
+      }
+    }
+
+    match /joinRequests/{id} {
+      allow get, list: if signedIn()
+        && (resource.data.studentUid == request.auth.uid || teachesGroup(resource.data.groupId));
+      allow create: if signedIn() && request.resource.data.studentUid == request.auth.uid
+        && id == request.resource.data.groupId + '_' + request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.keys().hasOnly(['groupId','studentUid','studentEmail','studentName','status','createdAt'])
+        && request.resource.data.studentEmail == request.auth.token.email
+        && request.resource.data.studentName is string && request.resource.data.studentName.size() <= 150
+        && exists(groupPath(request.resource.data.groupId));
+      allow update: if teachesGroup(resource.data.groupId) && resource.data.status == 'pending'
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+        && (request.resource.data.status == 'rejected'
+          || (request.resource.data.status == 'approved'
+            && existsAfter(membershipPath(resource.data.groupId, resource.data.studentUid))));
+    }
+    match /memberships/{id} {
+      allow get, list: if signedIn()
+        && (resource.data.uid == request.auth.uid || teachesGroup(resource.data.groupId));
+      allow create: if createsMembership();
+
+      function createsMembership() {
+        let member = request.resource.data;
+        let application = /databases/$(database)/documents/joinRequests/$(id);
+        return teachesGroup(member.groupId) && member.uid != request.auth.uid
+          && id == member.groupId + '_' + member.uid
+          && member.keys().hasOnly(['groupId', 'uid', 'joinedAt'])
+          && member.joinedAt == request.time && exists(application)
+          && get(application).data.groupId == member.groupId
+          && get(application).data.studentUid == member.uid
+          && get(application).data.status == 'pending';
+      }
+    }
+    match /courseSets/{id} {
+      allow get, list: if signedIn() && (resource.data.visibility == 'public'
+        || teachesGroup(resource.data.groupId) || isMember(resource.data.groupId));
+      allow create: if teacher() && request.resource.data.ownerUid == request.auth.uid
+        && request.resource.data.keys().hasOnly(['name','level','ownerUid','ownerName','visibility','groupId','words','createdAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() <= 100
+        && request.resource.data.words is list && request.resource.data.words.size() <= 150
+        && ((request.resource.data.visibility == 'public' && request.resource.data.groupId == '')
+          || (request.resource.data.visibility == 'group'
+            && teachesGroup(request.resource.data.groupId)));
+      allow delete: if signedIn() && resource.data.ownerUid == request.auth.uid;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

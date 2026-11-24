@@ -433,15 +433,17 @@ try{
  const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app);auth.languageCode='ru';
 
  const {data,word,startSet,save}=window.integraticumBridge;
- const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],message:''};
+ const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
  let courseLoad = 0;
+ let selectedCourseGroup = null;
  const esc=(v)=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const isTeacher=()=>['teacher','super_admin'].includes(course.role);
  const refreshCourse=()=>{updateNavigation();if(['courses','notifications'].includes(page)||(page==='account'&&window.integraticumUser))window.render?.()};
  const courseError=err=>{course.message='Ошибка: '+(err?.message||String(err));refreshCourse()};
  async function loadCourse(user) {
   const request = ++courseLoad;
-  Object.assign(course, {user,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],message:''});
+  if(course.user?.uid!==user?.uid) selectedCourseGroup=null;
+  Object.assign(course, {user,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''});
   refreshCourse();
   if (!user) return;
 
@@ -497,6 +499,13 @@ try{
       (await readRows(collection(db,'groups',group.id,'teachers'))).map(grant=>({...grant,groupId:group.id})))),
    ]);
    if (request !== courseLoad) return;
+   const rosters = await Promise.all(groups.filter(teaches).map(async group=>{
+    try { return {id:group.id, members:rows(await getDocs(query(collection(db,'memberships'),where('groupId','==',group.id))))}; }
+    catch(err){ collectionErrors.push(err?.message||String(err)); return {id:group.id,error:true,members:[]}; }
+   }));
+   if(request!==courseLoad)return;
+   course.groupMembers=rosters.flatMap(r=>r.members);
+   course.rosterErrors=rosters.filter(r=>r.error).map(r=>r.id);
    course.requests = requestDocs.flat();
    course.teacherInvites = teacherInvites.flat();
    course.groupTeachers = groupTeachers.flat();
@@ -512,6 +521,14 @@ try{
  const owned=g=>course.user&&g.ownerUid===course.user.uid;
  const teaches=g=>isTeacher()&&(owned(g)||course.assignments.includes(g.id));
  const teachingGroups=()=>course.groups.filter(teaches);
+ const visibleGroups=()=>course.groups.filter(g=>teaches(g)||memberOf(g.id));
+ function groupDetails(){
+  const g=visibleGroups().find(g=>g.id===selectedCourseGroup);
+  if(!g)return '';
+  const members=course.groupMembers.filter(m=>m.groupId===g.id);
+  const roster=course.rosterErrors.includes(g.id)?'<p>Не удалось загрузить список учеников.</p>':members.map(m=>{const r=course.requests.find(r=>r.groupId===g.id&&r.studentUid===m.uid&&r.status==='approved');return `<div class="item"><b>${esc(r?.studentName||r?.studentEmail||m.uid)}</b>${r?.studentName&&r?.studentEmail?`<p class="tiny">${esc(r.studentEmail)}</p>`:''}</div>`}).join('')||'<p>Нет записей об учениках.</p>';
+  return `<section class="card"><h2>${esc(g.name)}</h2><p>${esc(g.level||'')} · ${esc(g.ownerName||'')}</p>${teaches(g)?`<h3>Ученики</h3>${roster}`:''}<h3>Материалы группы</h3>${course.published.filter(x=>x.groupId===g.id&&canSeeSet(x)).map(x=>`<div class="item"><b>${esc(x.name)}</b> <button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button></div>`).join('')||'<p>Нет материалов.</p>'}<button class="secondary" onclick="window.integraticumCourse.openGroup(null)">Закрыть</button></section>`;
+ }
  const managesTeachers=g=>course.role==='super_admin'||(isTeacher()&&owned(g));
  const memberOf=id=>course.memberships.some(m=>m.groupId===id);
  const canSeeSet=x=>x.visibility==='public'||(x.visibility==='group'&&(memberOf(x.groupId)||teachingGroups().some(g=>g.id===x.groupId)));
@@ -537,7 +554,8 @@ try{
   html+=`<section class="card" id="coursePublish"><h2>Опубликовать учебный набор</h2><p class="tiny muted">Публикуется отдельная копия набора. Личный оригинал остаётся только твоим.</p><div class="field"><label>Личный набор</label><select id="publishSet">${data.sets.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('')}</select></div><div class="field"><label>Доступ</label><select id="publishGroup"><option value="public">Общая библиотека Integraticum</option>${teachingGroups().map(g=>`<option value="${esc(g.id)}">${esc(g.name)}</option>`).join('')}</select></div>${courseBtn('Опубликовать копию','publishSet()','')}</section>`;
  }
  html+=`<section class="card" id="courseJoin"><h2>Присоединиться к группе</h2><p class="tiny muted">Введите код преподавателя. Вступление подтверждается преподавателем.</p><div class="field"><label>Код приглашения</label><input id="joinCode" placeholder="Например, INT-ABC123"></div>${courseBtn('Отправить заявку','join()','')}</section>`;
- html+=`<section class="card"><h2>Мои учебные группы</h2>${course.memberships.map(m=>`<div class="item">${esc(course.groups.find(g=>g.id===m.groupId)?.name||m.groupId)}</div>`).join('')||'<p class="muted">Пока нет подтверждённых групп.</p>'}</section>`;
+ html+=`<section class="card"><h2>Мои учебные группы</h2>${visibleGroups().map(g=>`<div class="item"><button class="secondary" data-id="${esc(g.id)}" onclick="window.integraticumCourse.openGroup(this.dataset.id)">${esc(g.name)}</button><p class="tiny muted">${owned(g)?'Владелец':teaches(g)?'Преподаватель':'Ученик'}</p></div>`).join('')||'<p class="muted">Пока нет подтверждённых групп.</p>'}</section>`;
+ html+=groupDetails();
  html+=`<section class="card" id="courseMaterials"><h2>Наборы слов преподавателей</h2><p class="tiny muted">Общие наборы слов и наборы доступных тебе групп. Оригиналы других преподавателей редактировать нельзя.</p>${course.published.filter(canSeeSet).map(x=>`<div class="item"><b>${esc(x.name)}</b> <span class="tag">${esc(x.level||'')}</span><p class="tiny muted">${esc(x.ownerName||'Преподаватель')} · ${esc(x.visibility==='public'?'Общий материал':'Материал группы')} · ${(x.words||[]).length} слов</p><div class="actions"><button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button><button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.copySet(this.dataset.id)">Скопировать себе</button>${x.ownerUid===course.user.uid?`<button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.removeSet(this.dataset.id)">Удалить публикацию</button>`:''}</div></div>`).join('')||'<p class="muted">Опубликованных материалов пока нет.</p>'}</section></div>`;return html}
  function teacherSection(){
   const managed=course.groups.filter(managesTeachers);
@@ -578,7 +596,7 @@ try{
    if(auth.currentUser?.uid===user.uid)courseError(err);
   }
  }
- const actions={view:courseView,accountProfile:()=>({role:course.role,state:course.roleState}),
+ const actions={view:courseView,openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse()},accountProfile:()=>({role:course.role,state:course.roleState}),
   async createTeacherInvite(groupId){
    if(!course.groups.some(g=>g.id===groupId&&managesTeachers(g)))return;
    const bytes=crypto.getRandomValues(new Uint8Array(12));

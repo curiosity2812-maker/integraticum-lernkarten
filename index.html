@@ -464,7 +464,7 @@ try{
   stopRequestListeners();
   if(course.user?.uid!==user?.uid) selectedCourseGroup=null;
   Object.assign(course, {user,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''});
-  refreshCourse();
+  if (!user || !selectedCourseGroup) refreshCourse();
   if (!user) return;
 
   try {
@@ -478,7 +478,7 @@ try{
    course.roleState = 'error';
    course.message = 'Не удалось проверить роль: ' + (err?.message || err);
   }
-  refreshCourse();
+  if (!selectedCourseGroup) refreshCourse();
 
   const rows = snapshot => snapshot.docs.map(item=>({...item.data(),id:item.id}));
   const collectionErrors = [];
@@ -549,7 +549,7 @@ try{
   if(!g)return '';
   const members=course.groupMembers.filter(m=>m.groupId===g.id);
   const roster=course.rosterErrors.includes(g.id)?'<p>Не удалось загрузить список учеников.</p>':members.map(m=>{const r=course.requests.find(r=>r.groupId===g.id&&r.studentUid===m.uid&&r.status==='approved');return `<div class="item"><b>${esc(r?.studentName||r?.studentEmail||m.uid)}</b>${r?.studentName&&r?.studentEmail?`<p class="tiny">${esc(r.studentEmail)}</p>`:''}<button class="secondary" data-group="${esc(g.id)}" data-member="${esc(m.id)}" onclick="window.integraticumCourse.removeMember(this.dataset.group,this.dataset.member)">Удалить из группы</button></div>`}).join('')||'<p>Нет записей об учениках.</p>';
-  return `<section class="card"><h2>${esc(g.name)}</h2><p>${esc(g.level||'')} · ${esc(g.ownerName||'')}</p>${teaches(g)?`<h3>Ученики</h3>${roster}`:''}<h3>Материалы группы</h3>${course.published.filter(x=>x.groupId===g.id&&canSeeSet(x)).map(x=>`<div class="item"><b>${esc(x.name)}</b> <button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button></div>`).join('')||'<p>Нет материалов.</p>'}<button class="secondary" onclick="window.integraticumCourse.openGroup(null)">Закрыть</button></section>`;
+  return `<section class="card" id="selectedCourseDetails"><h2>${esc(g.name)}</h2><p>${esc(g.level||'')} · ${esc(g.ownerName||'')}</p>${teaches(g)?`<h3>Ученики</h3>${roster}`:''}<h3>Материалы группы</h3>${course.published.filter(x=>x.groupId===g.id&&canSeeSet(x)).map(x=>`<div class="item"><b>${esc(x.name)}</b> <button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button></div>`).join('')||'<p>Нет материалов.</p>'}<button class="secondary" onclick="window.integraticumCourse.openGroup(null)">Закрыть</button></section>`;
  }
  const managesTeachers=g=>course.role==='super_admin'||(isTeacher()&&owned(g));
  const memberOf=id=>course.memberships.some(m=>m.groupId===id);
@@ -619,7 +619,7 @@ try{
    if(auth.currentUser?.uid===user.uid)courseError(err);
   }
  }
- const actions={view:courseView,async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse()},accountProfile:()=>({role:course.role,state:course.roleState}),
+ const actions={view:courseView,async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse();if(id!==null)requestAnimationFrame(()=>document.getElementById('selectedCourseDetails')?.scrollIntoView({block:'start',behavior:'smooth'}))},accountProfile:()=>({role:course.role,state:course.roleState}),
   async createTeacherInvite(groupId){
    if(!course.groups.some(g=>g.id===groupId&&managesTeachers(g)))return;
    const bytes=crypto.getRandomValues(new Uint8Array(12));

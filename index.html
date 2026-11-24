@@ -439,7 +439,7 @@ try{
  const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app);auth.languageCode='ru';
  const persistenceReady=setPersistence(auth,browserLocalPersistence).then(()=>{window.integraticumPersistence='local'}).catch(()=>setPersistence(auth,browserSessionPersistence).then(()=>{window.integraticumPersistence='session'})).catch(()=>setPersistence(auth,inMemoryPersistence).then(()=>{window.integraticumPersistence='memory'}));
 
- const {data,word,startSet,save}=window.integraticumBridge;
+ const {word,startSet,save}=window.integraticumBridge;
  let progressUnsubscribe=null;
  const progressStatus=(value)=>{window.integraticumProgressStatus=value;if(page==='progress')window.render?.()};
  function syncProgress(user){
@@ -447,8 +447,8 @@ try{
   if(!user){progressStatus('Войдите для облачного сохранения.');return;}
   progressStatus('Загрузка облачного прогресса…');
   const ref=collection(db,'personalProgress',user.uid,'answers');
-  progressUnsubscribe=onSnapshot(ref,snapshot=>{
-   if(auth.currentUser?.uid!==user.uid)return;
+  progressUnsubscribe=onSnapshot(ref,{includeMetadataChanges:true},snapshot=>{
+   if(auth.currentUser?.uid!==user.uid||accountDataUid!==user.uid)return;
    const merged=new Map();
    for(const h of data.history)merged.set(h.eventId||JSON.stringify([h.id,h.at,h.mode,h.ok]),h);
    for(const d of snapshot.docs){const h={...d.data(),eventId:d.id};merged.set(d.id,h);}
@@ -456,12 +456,12 @@ try{
    const records={...data.records};
    const byWord=new Map();for(const h of data.history){if(!byWord.has(h.id))byWord.set(h.id,[]);byWord.get(h.id).push(h);}
    for(const [id,items] of byWord){let streak=0;for(const h of items)streak=h.ok?streak+1:0;const last=items[items.length-1],days=last.ok?[1,3,7,14,30,60][Math.min(streak-1,5)]:1;const old=records[id];if(!old||items.length>=old.seen)records[id]={seen:items.length,streak,due:last.at+days*86400000,lastMode:last.mode};}
-   data.records=records;save();progressStatus(snapshot.metadata.fromCache?'Локальная копия прогресса':'Облачный прогресс загружен');
-   for(const h of data.history)if(h.eventId&&!snapshot.docs.some(d=>d.id===h.eventId))window.integraticumCloud.record(h);
+   data.records=records;save();progressStatus(snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites?'Локальная копия прогресса':'Облачный прогресс загружен');
+   if(!snapshot.metadata.fromCache){const ids=new Set(snapshot.docs.map(d=>d.id));for(const h of data.history)if(h.eventId&&!ids.has(h.eventId))window.integraticumCloud.record(h);}
   },()=>progressStatus('Облачная синхронизация недоступна. Ответы сохранены локально.'));
  }
  const pendingProgress=new Set();
- window.integraticumCloud={async record(h){const uid=auth.currentUser?.uid;if(!uid||!h.eventId)return;const key=uid+'/'+h.eventId;if(pendingProgress.has(key))return;pendingProgress.add(key);try{const {eventId,...payload}=h;await setDoc(doc(db,'personalProgress',uid,'answers',eventId),payload);if(auth.currentUser?.uid===uid)progressStatus('Прогресс сохранён в облаке');}catch(e){if(auth.currentUser?.uid===uid)progressStatus('Ответ сохранён локально; облачная запись не подтверждена.');}finally{pendingProgress.delete(key);}}};
+ window.integraticumCloud={async record(h){const uid=auth.currentUser?.uid;if(!uid||uid!==accountDataUid||!h.eventId)return;const key=uid+'/'+h.eventId;if(pendingProgress.has(key))return;pendingProgress.add(key);try{const {eventId,...payload}=h;await setDoc(doc(db,'personalProgress',uid,'answers',eventId),payload);if(auth.currentUser?.uid===uid)progressStatus('Прогресс сохранён в облаке');}catch(e){if(auth.currentUser?.uid===uid)progressStatus('Ответ сохранён локально; облачная запись не подтверждена.');}finally{pendingProgress.delete(key);}}};
 
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
  let courseLoad = 0;

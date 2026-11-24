@@ -238,3 +238,16 @@ summary { cursor: pointer; }
 @media (prefers-reduced-motion: no-preference) {
   button { transition: filter 120ms ease; }
 }
+
+
+.site-sources {
+  margin-top: 2rem;
+  padding-top: .6rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .75rem;
+  line-height: 1.55;
+}
+.site-sources summary { cursor: pointer; width: fit-content; }
+.site-sources p { margin: .5rem 0; }
+.site-sources a { color: inherit; text-underline-offset: .15em; }

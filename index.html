@@ -415,7 +415,7 @@ function v6Plan() {
 </script>
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
-import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,setPersistence,browserLocalPersistence} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
+import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,setPersistence,browserLocalPersistence,browserSessionPersistence,inMemoryPersistence} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
 import {getFirestore,doc,getDoc,getDocFromServer,setDoc,collection,addDoc,getDocs,query,where,updateDoc,deleteDoc,serverTimestamp,runTransaction,writeBatch,onSnapshot} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
 const config={
  apiKey:'AIzaSyDzcol0E5U_LH2UzyEQ5aE5K6GjqbHzdPQ',
@@ -431,7 +431,7 @@ function error(message){const el=document.getElementById('authError');if(el)el.t
 function readable(err){let code=err?.code||'';return ({'auth/email-already-in-use':'Этот email уже зарегистрирован. Нажмите «Войти».','auth/invalid-email':'Проверьте адрес электронной почты.','auth/weak-password':'Пароль должен содержать не менее 6 символов.','auth/invalid-credential':'Неверный email или пароль.','auth/unauthorized-domain':'Нужно разрешить домен curiosity2812-maker.github.io в Firebase Authentication → Settings → Authorized domains.','auth/popup-blocked':'Браузер заблокировал окно Google. Попробуйте ещё раз или используйте email.','auth/operation-not-allowed':'Этот способ входа не включён в Firebase.'})[code]||'Ошибка Firebase: '+(code||err?.message||'неизвестная ошибка')}
 try{
  const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app);auth.languageCode='ru';
- const persistenceReady=setPersistence(auth,browserLocalPersistence).then(()=>true).catch(err=>{console.warn('Persistent auth unavailable',err);return false});
+ const persistenceReady=setPersistence(auth,browserLocalPersistence).catch(()=>setPersistence(auth,browserSessionPersistence)).catch(()=>setPersistence(auth,inMemoryPersistence)).catch(err=>{console.warn('Auth persistence unavailable',err)});
 
  const {data,word,startSet,save}=window.integraticumBridge;
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
@@ -706,8 +706,8 @@ try{
  window.integraticumCourse=actions;
 
  window.integraticumAuth={
- async email(mode){const email=document.getElementById('authEmail')?.value.trim(),password=document.getElementById('authPassword')?.value;if(!email||!password)return error('Введите email и пароль.');try{if(!await persistenceReady)return error('Браузер не разрешает постоянное сохранение входа. Проверьте настройки Safari.');if(mode==='register')await createUserWithEmailAndPassword(auth,email,password);else await signInWithEmailAndPassword(auth,email,password)}catch(err){error(readable(err))}},
- async google(){try{if(!await persistenceReady)return error('Браузер не разрешает постоянное сохранение входа.');await signInWithPopup(auth,new GoogleAuthProvider())}catch(err){if(err.code==='auth/popup-blocked')try{await signInWithRedirect(auth,new GoogleAuthProvider());return}catch(e){return error(readable(e))}error(readable(err))}},
+ async email(mode){const email=document.getElementById('authEmail')?.value.trim(),password=document.getElementById('authPassword')?.value;if(!email||!password)return error('Введите email и пароль.');try{await persistenceReady;if(mode==='register')await createUserWithEmailAndPassword(auth,email,password);else await signInWithEmailAndPassword(auth,email,password)}catch(err){error(readable(err))}},
+ async google(){try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(err){if(['auth/popup-blocked','auth/popup-closed-by-user','auth/cancelled-popup-request'].includes(err.code))return error('Окно Google закрылось или было заблокировано. Попробуйте ещё раз в Safari либо войдите по электронной почте, если для аккаунта установлен пароль.');error(readable(err))}},
  async signOut(){try{await signOut(auth)}catch(err){error(readable(err))}}
  };
  onAuthStateChanged(auth,u=>{window.integraticumUser=u?{uid:u.uid,email:u.email,displayName:u.displayName}:null;loadCourse(u);status.textContent=u?(u.displayName||u.email||'Вход выполнен'):'Войти';if(typeof window.render==='function')window.render();else if(document.getElementById('view')&&document.querySelector('h1')?.textContent?.includes('Аккаунт'))window.location.hash='';});

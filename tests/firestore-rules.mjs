@@ -1,0 +1,28 @@
+import {initializeTestEnvironment,assertSucceeds,assertFails} from '@firebase/rules-unit-testing';
+import {doc,setDoc,updateDoc,deleteDoc,getDoc,getDocs,collection,query,where,writeBatch,serverTimestamp} from 'firebase/firestore';
+import {readFileSync} from 'node:fs';
+const env=await initializeTestEnvironment({projectId:'demo-integraticum',firestore:{rules:readFileSync('firestore.rules','utf8')}});
+const db=u=>env.authenticatedContext(u,{email:u+'@example.com'}).firestore();
+const ref=(u,p)=>doc(db(u),p);
+const app='joinRequests/g_student',mem='memberships/g_student';
+try {
+await env.withSecurityRulesDisabled(async c=>{const d=c.firestore();for(const [p,v] of Object.entries({'users/owner':{role:'teacher'},'users/co':{role:'teacher'},'users/other':{role:'teacher'},'groups/g':{ownerUid:'owner'},'groups/g/teachers/co':{},'courseSets/private':{visibility:'group',groupId:'g'}}))await setDoc(doc(d,p),v);});
+await assertSucceeds(getDoc(ref('student',app)));
+await assertSucceeds(setDoc(ref('student',app),{groupId:'g',studentUid:'student',studentEmail:'student@example.com',studentName:'Student',status:'pending',createdAt:serverTimestamp()}));
+await assertFails(updateDoc(ref('student',app),{status:'approved'}));
+await assertFails(getDoc(ref('other',app)));
+await assertSucceeds(getDocs(query(collection(db('co'),'joinRequests'),where('groupId','==','g'))));
+await assertFails(getDocs(query(collection(db('other'),'joinRequests'),where('groupId','==','g'))));
+await assertSucceeds(updateDoc(ref('owner',app),{status:'rejected'}));
+await assertSucceeds(updateDoc(ref('student',app),{status:'pending'}));
+await assertFails(setDoc(ref('student',mem),{groupId:'g',uid:'student',joinedAt:serverTimestamp()}));
+const d=db('co'),b=writeBatch(d);b.set(doc(d,mem),{groupId:'g',uid:'student',joinedAt:serverTimestamp()});b.update(doc(d,app),{status:'approved'});await assertSucceeds(b.commit());
+await assertSucceeds(getDoc(ref('student','courseSets/private')));
+await assertFails(deleteDoc(ref('other',mem)));
+await assertFails(deleteDoc(ref('student',mem)));
+await assertSucceeds(deleteDoc(ref('owner',mem)));
+await assertFails(getDoc(ref('student','courseSets/private')));
+await assertSucceeds(updateDoc(ref('student',app),{status:'pending'}));
+await assertFails(setDoc(ref('student','users/student'),{role:'teacher'}));
+console.log('All 16 assertions passed');
+}finally{await env.cleanup();}

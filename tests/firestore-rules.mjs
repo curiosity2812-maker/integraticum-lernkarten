@@ -28,5 +28,16 @@ const verified=await assertSucceeds(getDocFromServer(sr));if(verified.data().sta
 await assertFails(setDoc(ref('student','users/student'),{role:'teacher'}));
 await env.withSecurityRulesDisabled(async c=>{const d=c.firestore();await setDoc(doc(d,'joinRequests/g_legacy'),{groupId:'g',studentUid:'legacy',studentEmail:'old@example.com',studentName:'Legacy',status:'approved',extra:'legacy field'});await setDoc(doc(d,'joinRequests/g_mismatch'),{groupId:'g',studentUid:'different',status:'approved'});await setDoc(doc(d,'joinRequests/g_member'),{groupId:'g',studentUid:'member',status:'approved'});await setDoc(doc(d,'memberships/g_member'),{groupId:'g',uid:'member'});});
 for(const [uid,allowed] of [['legacy',true],['mismatch',false],['member',false]]){const d=db(uid),r=doc(d,'joinRequests/g_'+uid);const op=runTransaction(d,async tx=>{await tx.get(r);tx.update(r,{status:'pending'});});await (allowed?assertSucceeds(op):assertFails(op));}
-const noEmail=env.authenticatedContext('noemail').firestore();const nr=doc(noEmail,'joinRequests/g_noemail');const payload={groupId:'g',studentUid:'noemail',studentName:'Student',status:'pending',createdAt:serverTimestamp()};await assertFails(setDoc(nr,{...payload,studentEmail:'fake@example.com'}));await assertSucceeds(setDoc(nr,{...payload,studentEmail:''}));console.log('All rule and transaction checks passed');
+const noEmail=env.authenticatedContext('noemail').firestore();const nr=doc(noEmail,'joinRequests/g_noemail');const payload={groupId:'g',studentUid:'noemail',studentName:'Student',status:'pending',createdAt:serverTimestamp()};await assertFails(setDoc(nr,{...payload,studentEmail:'fake@example.com'}));await assertSucceeds(setDoc(nr,{...payload,studentEmail:''}));const progress='personalProgress/student/answers/event1';
+const answer={id:'word1',ok:false,mode:'typing',partial:false,errorType:'spelling',at:Date.now()};
+await assertSucceeds(setDoc(ref('student',progress),answer));
+await assertSucceeds(getDoc(ref('student',progress)));
+await assertSucceeds(getDocs(collection(db('student'),'personalProgress/student/answers')));
+for(const uid of ['other','owner','co']){await assertFails(getDoc(ref(uid,progress)));await assertFails(getDocs(collection(db(uid),'personalProgress/student/answers')));await assertFails(setDoc(ref(uid,'personalProgress/student/answers/forged'),answer));}
+await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),progress)));
+await assertFails(updateDoc(ref('student',progress),{ok:true}));
+await assertFails(deleteDoc(ref('student',progress)));
+await assertFails(setDoc(ref('student','personalProgress/student/answers/bad'),{...answer,mode:'invalid'}));
+await assertSucceeds(setDoc(ref('other','personalProgress/other/answers/event1'),answer));
+console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

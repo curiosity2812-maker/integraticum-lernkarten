@@ -416,7 +416,7 @@ function v6Plan() {
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
 import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,setPersistence,browserLocalPersistence} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
-import {getFirestore,doc,getDoc,setDoc,collection,addDoc,getDocs,query,where,updateDoc,deleteDoc,serverTimestamp,runTransaction,writeBatch} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
+import {getFirestore,doc,getDoc,setDoc,collection,addDoc,getDocs,query,where,updateDoc,deleteDoc,serverTimestamp,runTransaction,writeBatch,onSnapshot} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
 const config={
  apiKey:'AIzaSyDzcol0E5U_LH2UzyEQ5aE5K6GjqbHzdPQ',
  authDomain:'integraticum.firebaseapp.com',
@@ -436,6 +436,24 @@ try{
  const {data,word,startSet,save}=window.integraticumBridge;
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
  let courseLoad = 0;
+ let requestListeners=[];
+ const stopRequestListeners=()=>{requestListeners.forEach(unsubscribe=>unsubscribe());requestListeners=[];};
+ function watchRequests(user,loadId){
+  const sources=[query(collection(db,'joinRequests'),where('studentUid','==',user.uid)),...teachingGroups().map(g=>query(collection(db,'joinRequests'),where('groupId','==',g.id)))];
+  const snapshots=new Map();
+  sources.forEach((source,i)=>{requestListeners.push(onSnapshot(source,snapshot=>{
+   if(loadId!==courseLoad||auth.currentUser?.uid!==user.uid)return;
+   snapshots.set(i,snapshot.docs.map(d=>({...d.data(),id:d.id})));
+   if(snapshots.size!==sources.length)return;
+   const next=[...new Map([...snapshots.values()].flat().map(r=>[r.id,r])).values()];
+   const signature=items=>JSON.stringify(items.map(r=>[r.id,r.status,r.studentName,r.studentEmail]).sort((a,b)=>a[0].localeCompare(b[0])));
+   if(signature(next)===signature(course.requests))return;
+   const ownChanged=signature(next.filter(r=>r.studentUid===user.uid))!==signature(course.requests.filter(r=>r.studentUid===user.uid));
+   course.requests=next;
+   if(ownChanged){loadCourse(user);return;}
+   refreshCourse();
+  },err=>{if(loadId===courseLoad){course.message='Автоматическое обновление заявок недоступно. Используйте кнопку обновления. '+(err?.message||'');refreshCourse();}}));});
+ }
  let selectedCourseGroup = null;
  const esc=(v)=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const isTeacher=()=>['teacher','super_admin'].includes(course.role);
@@ -443,6 +461,7 @@ try{
  const courseError=err=>{course.message='Ошибка: '+(err?.message||String(err));refreshCourse()};
  async function loadCourse(user) {
   const request = ++courseLoad;
+  stopRequestListeners();
   if(course.user?.uid!==user?.uid) selectedCourseGroup=null;
   Object.assign(course, {user,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''});
   refreshCourse();
@@ -518,7 +537,7 @@ try{
     course.message = course.message ? course.message+' '+message : message;
    }
   } finally {
-   if (request === courseLoad) refreshCourse();
+   if (request === courseLoad) {refreshCourse();if(course.roleState==='ready')watchRequests(user,request);}
   }
  }
  const owned=g=>course.user&&g.ownerUid===course.user.uid;

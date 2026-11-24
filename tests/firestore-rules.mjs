@@ -1,5 +1,5 @@
 import {initializeTestEnvironment,assertSucceeds,assertFails} from '@firebase/rules-unit-testing';
-import {doc,setDoc,updateDoc,deleteDoc,getDoc,getDocs,collection,query,where,writeBatch,serverTimestamp} from 'firebase/firestore';
+import {doc,setDoc,updateDoc,deleteDoc,getDoc,getDocs,collection,query,where,writeBatch,serverTimestamp,runTransaction,getDocFromServer} from 'firebase/firestore';
 import {readFileSync} from 'node:fs';
 const env=await initializeTestEnvironment({projectId:'demo-integraticum',firestore:{rules:readFileSync('firestore.rules','utf8')}});
 const db=u=>env.authenticatedContext(u,{email:u+'@example.com'}).firestore();
@@ -22,7 +22,9 @@ await assertFails(deleteDoc(ref('other',mem)));
 await assertFails(deleteDoc(ref('student',mem)));
 await assertSucceeds(deleteDoc(ref('owner',mem)));
 await assertFails(getDoc(ref('student','courseSets/private')));
-await assertSucceeds(updateDoc(ref('student',app),{status:'pending'}));
+const sd=db('student'), sr=doc(sd,app);
+await assertSucceeds(runTransaction(sd,async tx=>{const old=await tx.get(sr);if(old.data().status!=='approved')throw Error('Expected approved');tx.update(sr,{status:'pending'});}));
+const verified=await assertSucceeds(getDocFromServer(sr));if(verified.data().status!=='pending')throw Error('Expected pending');
 await assertFails(setDoc(ref('student','users/student'),{role:'teacher'}));
-console.log('All 16 assertions passed');
+console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

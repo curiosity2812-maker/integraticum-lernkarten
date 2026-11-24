@@ -159,6 +159,17 @@ service cloud.firestore {
             && teachesGroup(request.resource.data.groupId)));
       allow delete: if signedIn() && resource.data.ownerUid == request.auth.uid;
     }
+    match /personalProgress/{uid}/answers/{answerId} {
+      allow get, list: if signedIn() && request.auth.uid == uid;
+      allow create: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['id','ok','mode','partial','errorType','at'])
+        && request.resource.data.id is string && request.resource.data.id.size() <= 300
+        && request.resource.data.ok is bool
+        && request.resource.data.mode in ['choice','typing','cards','recall']
+        && request.resource.data.at is number
+        && request.resource.data.errorType is string && request.resource.data.errorType.size() <= 80
+        && request.resource.data.get('partial',false) is bool;
+    }
     match /{document=**} { allow read, write: if false; }
   }
 }

@@ -39,5 +39,16 @@ await assertFails(updateDoc(ref('student',progress),{ok:true}));
 await assertFails(deleteDoc(ref('student',progress)));
 await assertFails(setDoc(ref('student','personalProgress/student/answers/bad'),{...answer,mode:'invalid'}));
 await assertSucceeds(setDoc(ref('other','personalProgress/other/answers/event1'),answer));
+const workspace='personalProgress/student/workspace/sets%3As1';
+const item={kind:'sets',key:'s1',payload:JSON.stringify({id:'s1',name:'Test',wordIds:['word1']}),deleted:false};
+await assertSucceeds(setDoc(ref('student',workspace),item));
+await assertSucceeds(getDoc(ref('student',workspace)));
+await assertSucceeds(getDocs(collection(db('student'),'personalProgress/student/workspace')));
+await assertSucceeds(setDoc(ref('student',workspace),{...item,payload:'',deleted:true}));
+for(const uid of ['other','owner','co']){await assertFails(getDoc(ref(uid,workspace)));await assertFails(setDoc(ref(uid,workspace),item));await assertFails(getDocs(collection(db(uid),'personalProgress/student/workspace')));}
+await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),workspace)));
+await assertFails(setDoc(ref('student',workspace),{...item,kind:'role'}));
+await assertFails(setDoc(ref('student',workspace),{...item,payload:123}));
+await assertFails(deleteDoc(ref('student',workspace)));
 console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

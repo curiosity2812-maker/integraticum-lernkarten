@@ -159,6 +159,15 @@ service cloud.firestore {
             && teachesGroup(request.resource.data.groupId)));
       allow delete: if signedIn() && resource.data.ownerUid == request.auth.uid;
     }
+    match /personalProgress/{uid}/workspace/{itemId} {
+      allow get, list: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['kind','key','payload','deleted'])
+        && request.resource.data.kind in ['sets','custom','learningSessions','settings']
+        && request.resource.data.key is string && request.resource.data.key.size() <= 300
+        && request.resource.data.payload is string && request.resource.data.payload.size() <= 700000
+        && request.resource.data.deleted is bool;
+    }
     match /personalProgress/{uid}/answers/{answerId} {
       allow get, list: if signedIn() && request.auth.uid == uid;
       allow create: if signedIn() && request.auth.uid == uid

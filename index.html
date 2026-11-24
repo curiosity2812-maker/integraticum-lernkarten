@@ -415,7 +415,7 @@ function v6Plan() {
 </script>
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
-import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
+import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,setPersistence,browserLocalPersistence} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
 import {getFirestore,doc,getDoc,setDoc,collection,addDoc,getDocs,query,where,updateDoc,deleteDoc,serverTimestamp,runTransaction,writeBatch} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
 const config={
  apiKey:'AIzaSyDzcol0E5U_LH2UzyEQ5aE5K6GjqbHzdPQ',
@@ -431,6 +431,7 @@ function error(message){const el=document.getElementById('authError');if(el)el.t
 function readable(err){let code=err?.code||'';return ({'auth/email-already-in-use':'Этот email уже зарегистрирован. Нажмите «Войти».','auth/invalid-email':'Проверьте адрес электронной почты.','auth/weak-password':'Пароль должен содержать не менее 6 символов.','auth/invalid-credential':'Неверный email или пароль.','auth/unauthorized-domain':'Нужно разрешить домен curiosity2812-maker.github.io в Firebase Authentication → Settings → Authorized domains.','auth/popup-blocked':'Браузер заблокировал окно Google. Попробуйте ещё раз или используйте email.','auth/operation-not-allowed':'Этот способ входа не включён в Firebase.'})[code]||'Ошибка Firebase: '+(code||err?.message||'неизвестная ошибка')}
 try{
  const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app);auth.languageCode='ru';
+ const persistenceReady=setPersistence(auth,browserLocalPersistence).then(()=>true).catch(err=>{console.warn('Persistent auth unavailable',err);return false});
 
  const {data,word,startSet,save}=window.integraticumBridge;
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
@@ -506,7 +507,9 @@ try{
    if(request!==courseLoad)return;
    course.groupMembers=rosters.flatMap(r=>r.members);
    course.rosterErrors=rosters.filter(r=>r.error).map(r=>r.id);
-   course.requests = requestDocs.flat();
+   const ownRequests=await readRows(query(collection(db,'joinRequests'),where('studentUid','==',user.uid)));
+   if(request!==courseLoad)return;
+   course.requests=[...new Map([...requestDocs.flat(),...ownRequests].map(r=>[r.id,r])).values()];
    course.teacherInvites = teacherInvites.flat();
    course.groupTeachers = groupTeachers.flat();
    course.published = [...new Map([...published,...groupSetDocs.flat()].map(set=>[set.id,set])).values()];
@@ -526,7 +529,7 @@ try{
   const g=visibleGroups().find(g=>g.id===selectedCourseGroup);
   if(!g)return '';
   const members=course.groupMembers.filter(m=>m.groupId===g.id);
-  const roster=course.rosterErrors.includes(g.id)?'<p>Не удалось загрузить список учеников.</p>':members.map(m=>{const r=course.requests.find(r=>r.groupId===g.id&&r.studentUid===m.uid&&r.status==='approved');return `<div class="item"><b>${esc(r?.studentName||r?.studentEmail||m.uid)}</b>${r?.studentName&&r?.studentEmail?`<p class="tiny">${esc(r.studentEmail)}</p>`:''}</div>`}).join('')||'<p>Нет записей об учениках.</p>';
+  const roster=course.rosterErrors.includes(g.id)?'<p>Не удалось загрузить список учеников.</p>':members.map(m=>{const r=course.requests.find(r=>r.groupId===g.id&&r.studentUid===m.uid&&r.status==='approved');return `<div class="item"><b>${esc(r?.studentName||r?.studentEmail||m.uid)}</b>${r?.studentName&&r?.studentEmail?`<p class="tiny">${esc(r.studentEmail)}</p>`:''}<button class="secondary" data-group="${esc(g.id)}" data-member="${esc(m.id)}" onclick="window.integraticumCourse.removeMember(this.dataset.group,this.dataset.member)">Удалить из группы</button></div>`}).join('')||'<p>Нет записей об учениках.</p>';
   return `<section class="card"><h2>${esc(g.name)}</h2><p>${esc(g.level||'')} · ${esc(g.ownerName||'')}</p>${teaches(g)?`<h3>Ученики</h3>${roster}`:''}<h3>Материалы группы</h3>${course.published.filter(x=>x.groupId===g.id&&canSeeSet(x)).map(x=>`<div class="item"><b>${esc(x.name)}</b> <button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button></div>`).join('')||'<p>Нет материалов.</p>'}<button class="secondary" onclick="window.integraticumCourse.openGroup(null)">Закрыть</button></section>`;
  }
  const managesTeachers=g=>course.role==='super_admin'||(isTeacher()&&owned(g));
@@ -554,6 +557,7 @@ try{
   html+=`<section class="card" id="coursePublish"><h2>Опубликовать учебный набор</h2><p class="tiny muted">Публикуется отдельная копия набора. Личный оригинал остаётся только твоим.</p><div class="field"><label>Личный набор</label><select id="publishSet">${data.sets.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('')}</select></div><div class="field"><label>Доступ</label><select id="publishGroup"><option value="public">Общая библиотека Integraticum</option>${teachingGroups().map(g=>`<option value="${esc(g.id)}">${esc(g.name)}</option>`).join('')}</select></div>${courseBtn('Опубликовать копию','publishSet()','')}</section>`;
  }
  html+=`<section class="card" id="courseJoin"><h2>Присоединиться к группе</h2><p class="tiny muted">Введите код преподавателя. Вступление подтверждается преподавателем.</p><div class="field"><label>Код приглашения</label><input id="joinCode" placeholder="Например, INT-ABC123"></div>${courseBtn('Отправить заявку','join()','')}</section>`;
+ html+=`<section class="card"><h2>Мои заявки</h2>${course.requests.filter(r=>r.studentUid===course.user.uid).map(r=>`<p>${esc(course.groups.find(g=>g.id===r.groupId)?.name||r.groupId)}: ${esc(({pending:'Ожидает подтверждения',approved:memberOf(r.groupId)?'Принята':'Членство прекращено',rejected:'Отклонена'})[r.status]||r.status)}</p>`).join('')||'<p>Нет заявок.</p>'}<button class="secondary" onclick="window.integraticumCourse.reload()">Обновить заявки</button></section>`;
  html+=`<section class="card"><h2>Мои учебные группы</h2>${visibleGroups().map(g=>`<div class="item"><button class="secondary" data-id="${esc(g.id)}" onclick="window.integraticumCourse.openGroup(this.dataset.id)">${esc(g.name)}</button><p class="tiny muted">${owned(g)?'Владелец':teaches(g)?'Преподаватель':'Ученик'}</p></div>`).join('')||'<p class="muted">Пока нет подтверждённых групп.</p>'}</section>`;
  html+=groupDetails();
  html+=`<section class="card" id="courseMaterials"><h2>Наборы слов преподавателей</h2><p class="tiny muted">Общие наборы слов и наборы доступных тебе групп. Оригиналы других преподавателей редактировать нельзя.</p>${course.published.filter(canSeeSet).map(x=>`<div class="item"><b>${esc(x.name)}</b> <span class="tag">${esc(x.level||'')}</span><p class="tiny muted">${esc(x.ownerName||'Преподаватель')} · ${esc(x.visibility==='public'?'Общий материал':'Материал группы')} · ${(x.words||[]).length} слов</p><div class="actions"><button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button><button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.copySet(this.dataset.id)">Скопировать себе</button>${x.ownerUid===course.user.uid?`<button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.removeSet(this.dataset.id)">Удалить публикацию</button>`:''}</div></div>`).join('')||'<p class="muted">Опубликованных материалов пока нет.</p>'}</section></div>`;return html}
@@ -596,7 +600,7 @@ try{
    if(auth.currentUser?.uid===user.uid)courseError(err);
   }
  }
- const actions={view:courseView,openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse()},accountProfile:()=>({role:course.role,state:course.roleState}),
+ const actions={view:courseView,async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse()},accountProfile:()=>({role:course.role,state:course.roleState}),
   async createTeacherInvite(groupId){
    if(!course.groups.some(g=>g.id===groupId&&managesTeachers(g)))return;
    const bytes=crypto.getRandomValues(new Uint8Array(12));
@@ -656,7 +660,7 @@ try{
    }
   },
   pendingCount:()=>course.requests.filter(r=>r.status==='pending'&&r.studentUid!==course.user?.uid&&teachingGroups().some(g=>g.id===r.groupId)).length,hasMembership:()=>course.memberships.length>0||teachingGroups().length>0,async reload(){await loadCourse(auth.currentUser)},async createGroup(){if(!isTeacher())return;const name=document.getElementById('groupName')?.value.trim(),level=document.getElementById('groupLevel')?.value;if(!name||name.length>90)return setMsg('Введите название группы (до 90 символов).');try{await addDoc(collection(db,'groups'),{name,level,code:randomCode(),ownerUid:course.user.uid,ownerName:course.user.displayName||course.user.email||'Преподаватель',createdAt:serverTimestamp()});await loadCourse(auth.currentUser);setMsg('Группа создана. Передайте ученикам код приглашения.')}catch(e){courseError(e)}},
- async join(){const code=document.getElementById('joinCode')?.value.trim().toUpperCase();if(!code)return setMsg('Введите код группы.');const group=course.groups.find(g=>g.code===code);if(!group)return setMsg('Группа с таким кодом не найдена.');if(memberOf(group.id))return setMsg('Вы уже состоите в этой группе.');try{const id=group.id+'_'+course.user.uid;await setDoc(doc(db,'joinRequests',id),{groupId:group.id,studentUid:course.user.uid,studentEmail:course.user.email||'',studentName:course.user.displayName||course.user.email||'Ученик',status:'pending',createdAt:serverTimestamp()});setMsg('Заявка отправлена. Преподаватель должен её подтвердить.')}catch(e){courseError(e)}},
+ async join(){const code=document.getElementById('joinCode')?.value.trim().toUpperCase();if(!code)return setMsg('Введите код группы.');const group=course.groups.find(g=>g.code===code);if(!group)return setMsg('Группа с таким кодом не найдена.');if(memberOf(group.id))return setMsg('Вы уже состоите в этой группе.');try{const id=group.id+'_'+course.user.uid;const ref=doc(db,'joinRequests',id);await runTransaction(db,async tx=>{const old=await tx.get(ref);if(old.exists()){if(old.data().status==='pending')return;tx.update(ref,{status:'pending'});}else tx.set(ref,{groupId:group.id,studentUid:course.user.uid,studentEmail:course.user.email||'',studentName:course.user.displayName||course.user.email||'Ученик',status:'pending',createdAt:serverTimestamp()});});await loadCourse(auth.currentUser);setMsg('Заявка отправлена. Преподаватель должен её подтвердить.')}catch(e){courseError(e)}},
  async approve(id){
   const request=course.requests.find(r=>r.id===id);
   if(!request||request.studentUid===course.user.uid||!course.groups.some(g=>g.id===request.groupId&&teaches(g)))return;
@@ -683,11 +687,11 @@ try{
  window.integraticumCourse=actions;
 
  window.integraticumAuth={
- async email(mode){const email=document.getElementById('authEmail')?.value.trim(),password=document.getElementById('authPassword')?.value;if(!email||!password)return error('Введите email и пароль.');try{if(mode==='register')await createUserWithEmailAndPassword(auth,email,password);else await signInWithEmailAndPassword(auth,email,password)}catch(err){error(readable(err))}},
- async google(){try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(err){if(err.code==='auth/popup-blocked')try{await signInWithRedirect(auth,new GoogleAuthProvider());return}catch(e){return error(readable(e))}error(readable(err))}},
+ async email(mode){const email=document.getElementById('authEmail')?.value.trim(),password=document.getElementById('authPassword')?.value;if(!email||!password)return error('Введите email и пароль.');try{if(!await persistenceReady)return error('Браузер не разрешает постоянное сохранение входа. Проверьте настройки Safari.');if(mode==='register')await createUserWithEmailAndPassword(auth,email,password);else await signInWithEmailAndPassword(auth,email,password)}catch(err){error(readable(err))}},
+ async google(){try{if(!await persistenceReady)return error('Браузер не разрешает постоянное сохранение входа.');await signInWithPopup(auth,new GoogleAuthProvider())}catch(err){if(err.code==='auth/popup-blocked')try{await signInWithRedirect(auth,new GoogleAuthProvider());return}catch(e){return error(readable(e))}error(readable(err))}},
  async signOut(){try{await signOut(auth)}catch(err){error(readable(err))}}
  };
  onAuthStateChanged(auth,u=>{window.integraticumUser=u?{uid:u.uid,email:u.email,displayName:u.displayName}:null;loadCourse(u);status.textContent=u?(u.displayName||u.email||'Вход выполнен'):'Войти';if(typeof window.render==='function')window.render();else if(document.getElementById('view')&&document.querySelector('h1')?.textContent?.includes('Аккаунт'))window.location.hash='';});
- getRedirectResult(auth).catch(err=>error(readable(err)));
+ persistenceReady.then(()=>getRedirectResult(auth)).catch(err=>error(readable(err)));
 }catch(err){status.textContent='Ошибка подключения';window.integraticumAuth={email(){error('Firebase не загрузился. Проверьте интернет.')},google(){error('Firebase не загрузился. Проверьте интернет.')},signOut(){}};}
 </script></body></html>

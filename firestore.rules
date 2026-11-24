@@ -114,25 +114,26 @@ service cloud.firestore {
     }
 
     match /joinRequests/{id} {
-      allow get, list: if signedIn()
-        && (resource.data.studentUid == request.auth.uid || teachesGroup(resource.data.groupId));
+      allow get: if signedIn() && (id.matches('.*_' + request.auth.uid) || (resource != null && teachesGroup(resource.data.groupId)));
+      allow list: if signedIn() && (resource.data.studentUid == request.auth.uid || teachesGroup(resource.data.groupId));
       allow create: if signedIn() && request.resource.data.studentUid == request.auth.uid
         && id == request.resource.data.groupId + '_' + request.auth.uid
         && request.resource.data.status == 'pending'
         && request.resource.data.keys().hasOnly(['groupId','studentUid','studentEmail','studentName','status','createdAt'])
-        && request.resource.data.studentEmail == request.auth.token.email
+        && request.resource.data.studentEmail == request.auth.token.get('email', '')
         && request.resource.data.studentName is string && request.resource.data.studentName.size() <= 150
         && exists(groupPath(request.resource.data.groupId));
-      allow update: if teachesGroup(resource.data.groupId) && resource.data.status == 'pending'
+      allow update: if (signedIn() && resource.data.studentUid == request.auth.uid && resource.data.status in ['rejected','approved'] && !isMember(resource.data.groupId) && request.resource.data.status == 'pending' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])) || (teachesGroup(resource.data.groupId) && resource.data.status == 'pending'
         && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
         && (request.resource.data.status == 'rejected'
           || (request.resource.data.status == 'approved'
-            && existsAfter(membershipPath(resource.data.groupId, resource.data.studentUid))));
+            && existsAfter(membershipPath(resource.data.groupId, resource.data.studentUid)))));
     }
     match /memberships/{id} {
       allow get, list: if signedIn()
         && (resource.data.uid == request.auth.uid || teachesGroup(resource.data.groupId));
       allow create: if createsMembership();
+      allow delete: if teachesGroup(resource.data.groupId);
 
       function createsMembership() {
         let member = request.resource.data;

@@ -26,5 +26,7 @@ const sd=db('student'), sr=doc(sd,app);
 await assertSucceeds(runTransaction(sd,async tx=>{const old=await tx.get(sr);if(old.data().status!=='approved')throw Error('Expected approved');tx.update(sr,{status:'pending'});}));
 const verified=await assertSucceeds(getDocFromServer(sr));if(verified.data().status!=='pending')throw Error('Expected pending');
 await assertFails(setDoc(ref('student','users/student'),{role:'teacher'}));
+await env.withSecurityRulesDisabled(async c=>{const d=c.firestore();await setDoc(doc(d,'joinRequests/g_legacy'),{groupId:'g',studentUid:'legacy',studentEmail:'old@example.com',studentName:'Legacy',status:'approved',extra:'legacy field'});await setDoc(doc(d,'joinRequests/g_mismatch'),{groupId:'g',studentUid:'different',status:'approved'});await setDoc(doc(d,'joinRequests/g_member'),{groupId:'g',studentUid:'member',status:'approved'});await setDoc(doc(d,'memberships/g_member'),{groupId:'g',uid:'member'});});
+for(const [uid,allowed] of [['legacy',true],['mismatch',false],['member',false]]){const d=db(uid),r=doc(d,'joinRequests/g_'+uid);const op=runTransaction(d,async tx=>{await tx.get(r);tx.update(r,{status:'pending'});});await (allowed?assertSucceeds(op):assertFails(op));}
 console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

@@ -8,19 +8,7 @@ const {
 } = require('firebase/firestore');
 
 async function main() {
-  const extension = readFileSync(join(__dirname, 'co-teachers.rules.inc'), 'utf8');
-  const rules = process.env.INTEGRATICUM_RULES ? readFileSync(process.env.INTEGRATICUM_RULES, 'utf8') : `rules_version = '2';
-    service cloud.firestore {
-      match /databases/{database}/documents {
-        ${extension}
-        // Minimal legacy behavior for the test, not a production ruleset.
-        match /groups/{id} { allow read: if request.auth != null; }
-        match /joinRequests/{id} {
-          allow create: if request.auth.uid == request.resource.data.studentUid;
-        }
-        match /courseSets/{id} { allow read: if resource.data.visibility == 'public'; }
-      }
-    }`;
+  const rules = readFileSync(join(__dirname, 'firestore.rules'), 'utf8');
   const env = await initializeTestEnvironment({ projectId:'demo-integraticum', firestore:{rules} });
   try {
     await env.clearFirestore();
@@ -28,7 +16,8 @@ async function main() {
     const otherOwner = env.authenticatedContext('otherOwner').firestore();
     const teacher = env.authenticatedContext('teacher', {email:'teacher@example.com',email_verified:true}).firestore();
     const rival = env.authenticatedContext('rival', {email:'rival@example.com',email_verified:true}).firestore();
-    const student = env.authenticatedContext('student').firestore();
+    const student = env.authenticatedContext('student', {email:'student@example.com'}).firestore();
+    const legacyStudent = env.authenticatedContext('legacyStudent', {email:'legacy@example.com'}).firestore();
     const guest = env.unauthenticatedContext().firestore();
     const invite = (db, key) => doc(db, 'groupTeacherInvites', key);
     const grant = (db, id = 'group1_teacher') => doc(db, 'groupCoTeachers', id);
@@ -44,6 +33,8 @@ async function main() {
     await env.withSecurityRulesDisabled(async context => {
       const db = context.firestore();
       await Promise.all([
+        setDoc(doc(db,'users','owner'),{role:'super_admin'}),
+        setDoc(doc(db,'users','otherOwner'),{role:'teacher'}),
         setDoc(doc(db,'groups','group1'),{ownerUid:'owner',name:'Deutsch A1',code:'INT-STUDENT'}),
         setDoc(doc(db,'groups','group2'),{ownerUid:'otherOwner',name:'Deutsch A2'}),
         setDoc(doc(db,'groups','group1_extra'),{ownerUid:'otherOwner'}),
@@ -52,6 +43,34 @@ async function main() {
         setDoc(doc(db,'courseSets','public'),{visibility:'public',ownerUid:'owner'}),
       ]);
     });
+    // Original owner/student workflow with the rules supplied by the project owner.
+    assert.equal((await assertSucceeds(getDoc(doc(owner,'users','owner')))).data().role,'super_admin');
+    await assertFails(setDoc(doc(student,'users','student'),{role:'teacher'}));
+    const legacyGroup = {ownerUid:'owner',name:'Legacy A1',level:'A1',code:'INT-LEGACY',createdAt:serverTimestamp()};
+    await assertSucceeds(setDoc(doc(owner,'groups','legacy'),legacyGroup));
+    await assertFails(setDoc(doc(legacyStudent,'groups','legacy-student'),{...legacyGroup,ownerUid:'legacyStudent'}));
+    const legacyRequest = db=>doc(db,'joinRequests','legacy_legacyStudent');
+    const legacyMember = db=>doc(db,'memberships','legacy_legacyStudent');
+    assert.equal((await assertSucceeds(getDoc(doc(legacyStudent,'groups','legacy')))).data().code,'INT-LEGACY');
+    await assertSucceeds(setDoc(legacyRequest(legacyStudent),{
+      groupId:'legacy',studentUid:'legacyStudent',studentEmail:'legacy@example.com',
+      studentName:'Ученик',status:'pending',createdAt:serverTimestamp(),
+    }));
+    assert.equal((await assertSucceeds(getDocs(query(collection(owner,'joinRequests'),where('groupId','==','legacy'))))).size,1);
+    await assertSucceeds(setDoc(legacyMember(owner),{groupId:'legacy',uid:'legacyStudent',joinedAt:serverTimestamp()}));
+    await assertSucceeds(updateDoc(legacyRequest(owner),{status:'approved'}));
+    assert.equal((await assertSucceeds(getDoc(legacyRequest(legacyStudent)))).data().status,'approved');
+    assert.equal((await assertSucceeds(getDocs(query(collection(legacyStudent,'memberships'),where('uid','==','legacyStudent'))))).size,1);
+    const legacySet = doc(owner,'courseSets','legacy-private');
+    const legacyMaterial = {groupId:'legacy',visibility:'group',name:'Legacy',ownerUid:'owner',words:[],createdAt:serverTimestamp()};
+    await assertSucceeds(setDoc(legacySet,legacyMaterial));
+    assert.equal((await assertSucceeds(getDocs(query(collection(legacyStudent,'courseSets'),where('groupId','==','legacy'))))).size,1);
+    await assertSucceeds(deleteDoc(legacySet));
+    const sharedSet = doc(owner,'courseSets','legacy-public');
+    await assertSucceeds(setDoc(sharedSet,{...legacyMaterial,visibility:'public',groupId:''}));
+    await assertSucceeds(getDoc(doc(legacyStudent,'courseSets','legacy-public')));
+    await assertSucceeds(deleteDoc(sharedSet));
+
     const newInvite = {groupId:'group1',ownerUid:'owner',status:'open',createdAt:serverTimestamp()};
     const claim = {status:'pending',teacherUid:'teacher',teacherEmail:'teacher@example.com',emailVerified:true};
     const newGrant = {groupId:'group1',ownerUid:'owner',uid:'teacher',email:'teacher@example.com',inviteCode:key,createdAt:serverTimestamp()};
@@ -98,7 +117,7 @@ async function main() {
     await assertFails(getDoc(doc(env.authenticatedContext('extra_teacher').firestore(),'courseSets','private1')));
     await assertSucceeds(getDoc(doc(student,'courseSets','public')));
 
-    await assertSucceeds(setDoc(application(student),{groupId:'group1',studentUid:'student',studentEmail:'',studentName:'Ученик',status:'pending',createdAt:serverTimestamp()}));
+    await assertSucceeds(setDoc(application(student),{groupId:'group1',studentUid:'student',studentEmail:'student@example.com',studentName:'Ученик',status:'pending',createdAt:serverTimestamp()}));
     assert.equal((await assertSucceeds(getDocs(query(collection(teacher,'joinRequests'),where('groupId','==','group1'))))).size,1);
     await assertFails(getDocs(query(collection(teacher,'joinRequests'),where('groupId','==','group2'))));
     await assertFails(updateDoc(application(teacher),{status:'approved'}));
@@ -110,11 +129,16 @@ async function main() {
     await assertSucceeds(batch.commit());
 
     const material = doc(teacher,'courseSets','private-new');
-    const materialData = {groupId:'group1',visibility:'group',ownerUid:'teacher',name:'Neue Wörter',words:[],createdAt:serverTimestamp()};
+    const materialData = {groupId:'group1',visibility:'group',ownerUid:'teacher',coTeacherPublished:true,name:'Neue Wörter',words:[],createdAt:serverTimestamp()};
     await assertFails(setDoc(material,{...materialData,visibility:'public'}));
     await assertFails(setDoc(material,{...materialData,groupId:'group2'}));
     await assertFails(setDoc(material,{...materialData,ownerUid:'owner'}));
+    const {coTeacherPublished,...oldFormat}=materialData;
+    await assertFails(setDoc(material,oldFormat));
     await assertSucceeds(setDoc(material,materialData));
+    const disposable = doc(teacher,'courseSets','private-disposable');
+    await assertSucceeds(setDoc(disposable,materialData));
+    await assertSucceeds(deleteDoc(disposable));
     await assertFails(deleteDoc(doc(teacher,'courseSets','private1')));
 
     await assertSucceeds(deleteDoc(grant(owner)));
@@ -122,11 +146,13 @@ async function main() {
     await assertFails(getDoc(doc(teacher,'courseSets','private1')));
     await assertFails(getDocs(query(collection(teacher,'joinRequests'),where('groupId','==','group1'))));
     await assertFails(deleteDoc(material));
+    assert.equal((await assertSucceeds(getDoc(doc(owner,'courseSets','private-new')))).data().name,'Neue Wörter');
+    await assertSucceeds(getDoc(doc(student,'courseSets','private-new')));
     await assertFails(setDoc(doc(teacher,'courseSets','after-revocation'),materialData));
     await assertFails(updateDoc(invite(teacher,key),claim));
     await assertFails(setDoc(grant(owner),newGrant));
     await assertSucceeds(getDoc(doc(teacher,'courseSets','public')));
-    console.log('PASS: private one-time codes, owner approval and cancellation, atomic grants, scoped co-teaching, student approval, revocation.');
+    console.log('PASS: private one-time codes, owner approval and cancellation, atomic grants, scoped co-teaching, student approval, legacy student invitations, legacy publishing, revocation.');
   } finally {
     await env.cleanup();
   }

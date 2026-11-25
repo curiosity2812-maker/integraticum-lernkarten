@@ -1,0 +1,14 @@
+import {chromium,firefox,webkit} from 'playwright';
+import {readFileSync} from 'node:fs';
+import {createServer} from 'node:http';
+import assert from 'node:assert/strict';
+import {mkdtemp,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+const html=readFileSync('index.html','utf8').replace("projectId:'integraticum'","projectId:'demo-integraticum'").replace("import {getAuth,","import {connectAuthEmulator,getAuth,").replace("import {getFirestore,","import {connectFirestoreEmulator,getFirestore,").replace("auth.languageCode='ru';","connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});connectFirestoreEmulator(db,'127.0.0.1',8080);auth.languageCode='ru';");
+const server=createServer((req,res)=>{if(req.url==='/'){res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);}else if(req.url.endsWith('.json')){res.setHeader('Content-Type','application/json');res.end('[]');}else{res.statusCode=404;res.end();}});
+await new Promise(r=>server.listen(8765,'127.0.0.1',r));
+try{for(const [name,engine] of Object.entries({chromium,firefox,webkit})){
+const dir=await mkdtemp(join(tmpdir(),'integraticum-'));let context;
+try{context=await engine.launchPersistentContext(dir,{headless:true});let p=context.pages()[0];await p.goto('http://127.0.0.1:8765/');await p.waitForFunction(()=>window.integraticumAuthReady===true,{},{timeout:60000});await p.evaluate(()=>go('account'));await p.locator('#authEmail').fill(name+'@example.test');await p.locator('#authPassword').fill('Test-only-123');await p.getByRole('button',{name:'Зарегистрироваться',exact:true}).click();await p.waitForFunction(()=>!!window.integraticumUser,{},{timeout:60000});const uid=await p.evaluate(()=>window.integraticumUser.uid);await p.waitForTimeout(1500);await context.setOffline(true);await p.evaluate(()=>{const b=window.integraticumBridge;b.data.custom.push({id:'browser-test',de:'Haus',ru:'дом'});b.save();});await context.close();context=await engine.launchPersistentContext(dir,{headless:true});p=context.pages()[0];await p.goto('http://127.0.0.1:8765/');await p.waitForFunction(()=>!!window.integraticumUser,{},{timeout:60000});assert.equal(await p.evaluate(()=>window.integraticumUser.uid),uid);assert.equal(await p.evaluate(()=>window.integraticumBridge.data.custom.some(x=>x.id==='browser-test')),true);console.log(name+': registration, persistent login and offline local data after restart passed');}finally{await context?.close();await rm(dir,{recursive:true,force:true});}
+}}finally{server.close();}

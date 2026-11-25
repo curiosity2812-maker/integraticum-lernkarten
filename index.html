@@ -156,6 +156,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
   'use strict';
   const LEGACY_SOURCE = 'data/integraticum_dictionary_cards_unverified.json';
   const A1_SOURCE = 'data/integraticum_a1_reviewed.json';
+  const A2_SOURCE = 'data/integraticum_a2_reviewed.json';
   const reviewedParts = {conjunction:'conj', expression:'phrase', interjection:'intj', pronoun:'pron'};
   const nativeWordView = wordView;
   const nativeResultsHtml = resultsHtml;
@@ -163,7 +164,8 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
   const builtIn = [...CATALOG];
   let reviewed = [];
   let imported = [];
-  const status = {reviewed:'loading', legacy:'loading'};
+  let a2Reviewed = new Map();
+  const status = {reviewed:'loading', legacy:'loading', a2:'loading'};
   let dictionaryPage = 1;
   const dictionaryPageSize = 80;
 
@@ -239,7 +241,12 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       <p class="tiny">Goethe-Institut · Start Deutsch 1 · стр. ${e([...new Set(w.source_evidence.map(item => item.page))].join(', '))}</p></details>` : '';
     const exampleSource = w.example_source
       ? `<p class="tiny"><a href="${e(w.example_source)}">Исходное предложение и авторы на Tatoeba</a></p>` : '';
-    const injection = definition + equivalent + audio + translation + warning + citation + exampleSource;
+    const a2Citation = w.a2Reviewed ? `<details><summary class="tiny">Источники сверки</summary>
+      <p class="tiny"><a href="${e(w.source_evidence.level.url)}">Goethe-Zertifikat A2</a> · стр. ${e(w.source_evidence.level.page)}</p>
+      <p class="tiny">${w.source_evidence.meaning.map(url=>`<a href="${e(url)}">${e(new URL(url).hostname)}</a>`).join(' · ')}</p></details>` : '';
+    const grammar = w.grammar_hint ? `<aside class="note"><strong>Грамматика</strong><p>${e(w.grammar_hint)}</p></aside>` : '';
+    const usage = w.usage_note ? `<p class="foot">${e(w.usage_note)}</p>` : '';
+    const injection = definition + equivalent + audio + translation + grammar + usage + warning + citation + a2Citation + exampleSource;
     const close = '</section>';
     const at = html.indexOf(close);
     if (at >= 0) html = html.slice(0, at) + injection + html.slice(at);
@@ -259,7 +266,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       const gender = {masculine:'der',feminine:'die',neuter:'das'}[r.gender];
       const pos = ({adjective:'adj',adverb:'adv',preposition:'prep',pronoun:'pron',conjunction:'conj',numeral:'num',interjection:'intj'}[r.part_of_speech] || r.part_of_speech || 'other');
       return {id:'dict_'+(r.id || i), de:wordText && gender && !/^(der|die|das)\s/i.test(wordText) ? gender+' '+wordText : wordText,
-        ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.cefr_source && r.cefr_source.name==='Goethe-Institut Wortliste' && r.cefr_source.match==='exact_headword' && r.cefr_source.level!=='A1'), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
+        ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.cefr_source && r.cefr_source.name==='Goethe-Institut Wortliste' && r.cefr_source.match==='exact_headword' && !['A1','A2'].includes(r.cefr_source.level)), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
         example:r.example_de || '', example_ru:r.example_ru || '',
         example_source:/^https:\/\/tatoeba\.org\/en\/sentences\/show\/[0-9]+$/.test(r.example_source) ? r.example_source : '',
         official:true, dictionary_unverified:!r.translation_verified};
@@ -275,7 +282,13 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       matching.push(card);
       current.set(key(card), matching);
     }
-    const older = [...builtIn.filter(w => !ids.has(w.id)), ...imported].map(w => {
+    const checkedImports = imported.map(card => {
+      const entry = a2Reviewed.get(card.id);
+      if (!entry || entry.de !== card.de || entry.part !== card.part) return card;
+      return {...card, ...entry, ru:entry.translations_ru.join('; '), level_verified:true,
+        a2Reviewed:true, dictionary_unverified:false, example_source:''};
+    });
+    const older = [...builtIn.filter(w => !ids.has(w.id)), ...checkedImports].map(w => {
       const matching = current.get(key(w));
       if (matching?.length !== 1) return w;
       const candidates = w.ru.split(';').map(fold).filter(Boolean);
@@ -287,7 +300,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
     CATALOG.splice(0, CATALOG.length, ...reviewed, ...older);
     window.integraticumWordIndex = new Map(CATALOG.map(w => [w.id,w]));
     window.integraticumDictionaryCount = CATALOG.filter(w => !w.dictionary_duplicate).length;
-    if (['library','home','plan','review'].includes(page)) render();
+    if (['library','home','plan','review','word'].includes(page)) render();
   }
 
   async function loadDictionary(source, kind, accept) {
@@ -308,6 +321,18 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
     }
     reviewed = rows.map(w => ({...w, part:reviewedParts[w.part]||w.part,
       official:true, level_verified:true, a1Reviewed:true}));
+  });
+  loadDictionary(A2_SOURCE, 'a2', rows => {
+    const source = 'https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf';
+    if (new Set(rows.map(w=>w.id)).size !== rows.length || rows.some(w=>
+        !/^dict_[0-9a-f]+$/.test(w.id) || !w.de || !w.part || w.level!=='A2' ||
+        !w.translations_ru?.length || !w.definition_de || !w.example || !w.example_ru ||
+        w.source_evidence?.level?.scope!=='sense' || w.source_evidence.level.url!==source ||
+        !Number.isInteger(w.source_evidence.level.page) || !w.source_evidence.meaning?.length ||
+        w.source_evidence.meaning.some(url=>!/^https:\/\//.test(url)))) {
+      throw new Error('Не удалось проверить состав словаря A2.');
+    }
+    a2Reviewed = new Map(rows.map(w=>[w.id,w]));
   });
   loadDictionary(LEGACY_SOURCE, 'legacy', rows => { imported = adaptLegacy(rows); });
 })();

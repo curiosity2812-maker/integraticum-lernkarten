@@ -56,7 +56,7 @@ await p.evaluate(()=>{filter.ch=true;refreshResults();});
 await p.reload();await p.locator('#filterPart').waitFor();assert.equal(await p.locator('#filterPart').inputValue(),'intj');assert.equal(await p.locator('#filterLevel').inputValue(),'unknown');assert.equal(await p.locator('#search').inputValue(),'ach');await p.getByText(/Записей в библиотеке:/).waitFor({timeout:60000});assert.equal(await p.locator('#filterTopic').inputValue(),topic);assert.equal(await p.evaluate(()=>filter.ch),true);await p.locator('#partHint').waitFor({state:'visible'});
 for(const section of ['account','progress','sets','courses','calendar','settings','plan']){await p.evaluate(v=>go(v),section);await p.reload();await p.waitForFunction(v=>page===v,section);}
 await p.waitForFunction(()=>window.integraticumAuthReady&&window.integraticumUser&&word('c0'));
-const reloadCheckpoint=await p.evaluate(()=>{startSession(['c0'],'cards');return {id:session.learningId,index:session.index};});
+const reloadCheckpoint=await p.evaluate(()=>{startSession(['c0','cloud-test','cloud-test-2'],'recall');finishRecall(true);finishRecall(true);return {id:session.learningId,index:session.index};});
 await p.reload();await p.waitForFunction(()=>page==='home'&&window.integraticumAuthReady&&window.integraticumUser);
 await p.evaluate(()=>go('plan'));
 await p.waitForFunction(id=>data.learningSessions.some(x=>x.learningId===id),reloadCheckpoint.id);
@@ -64,6 +64,23 @@ await p.evaluate(id=>resumeLearning(data.learningSessions.findIndex(x=>x.learnin
 assert.deepEqual(await p.evaluate(()=>({id:session.learningId,index:session.index})),reloadCheckpoint);
 console.log(name+': interrupted training returns home and resumes saved reloadCheckpoint');
 console.log(name+': all grammar panels and navigation/filter restoration passed');
+assert.equal(reloadCheckpoint.index,2);
+const adminRole=await fetch(roleUrl,{method:'PATCH',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({fields:{role:{stringValue:'super_admin'}}})});assert.ok(adminRole.ok);
+await p.reload();await p.waitForFunction(()=>window.integraticumCourse?.accountProfile()?.role==='super_admin',{},{timeout:60000});
+await p.evaluate(()=>go('calendar'));
+const month=await p.locator('#view h2').first().textContent();
+await p.getByRole('button',{name:'›',exact:true}).click();assert.notEqual(await p.locator('#view h2').first().textContent(),month);
+await p.getByRole('button',{name:'‹',exact:true}).click();assert.equal(await p.locator('#view h2').first().textContent(),month);
+await p.locator('#calType').selectOption('holiday');await p.locator('#calNote').fill('Browser holiday '+name);
+await p.getByRole('button',{name:'Сохранить',exact:true}).click();
+await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor();
+await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Browser holiday '+name,{timeout:60000});
+await p.getByRole('button',{name:'Изменить',exact:true}).last().click();await p.locator('#calNote').fill('Updated holiday '+name);await p.getByRole('button',{name:'Сохранить',exact:true}).click();
+await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
+p.once('dialog',d=>d.accept());await p.getByRole('button',{name:'Удалить',exact:true}).last().click();
+await q.waitForFunction(note=>!window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
+console.log(name+': calendar month navigation, UI create edit delete and second profile synchronization passed');
+
 
 
 

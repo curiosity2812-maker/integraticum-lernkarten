@@ -78,11 +78,25 @@ console.log(name+': calendar form before save '+JSON.stringify(calendarBefore));
 await p.getByRole('button',{name:'Сохранить',exact:true}).click();
 try{await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor({timeout:15000});}catch(e){const remote=await fetch('http://127.0.0.1:8080/v1/projects/demo-integraticum/databases/(default)/documents/calendarEvents',{headers:{Authorization:'Bearer owner'}});console.log(name+': calendar diagnostic '+JSON.stringify({dialogs:calendarDialogs,remote:await remote.json(),client:await p.evaluate(()=>window.integraticumCourse.calendarEvents())}));throw e;}
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Browser holiday '+name,{timeout:60000});
+await p.evaluate(()=>go('notifications'));
+await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor();
+assert.ok(await p.evaluate(()=>unreadCalendar()>0&&!document.getElementById('notificationDot').hidden));
+await p.getByRole('button',{name:'Отметить прочитанными',exact:true}).click();
+assert.equal(await p.evaluate(()=>unreadCalendar()),0);
+await p.reload();await p.waitForFunction(()=>window.integraticumUser&&calendarNotices().length>0);
+assert.equal(await p.evaluate(()=>unreadCalendar()),0);
+await p.getByRole('button',{name:'Открыть календарь',exact:true}).click();
 await p.getByRole('button',{name:'Изменить',exact:true}).last().click();await p.locator('#calNote').fill('Updated holiday '+name);await p.getByRole('button',{name:'Сохранить',exact:true}).click();
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
+await p.waitForFunction(()=>unreadCalendar()>0);
+await p.evaluate(()=>go('notifications'));
+await p.getByText('Updated holiday '+name,{exact:false}).first().waitFor();
+await p.getByRole('button',{name:'Открыть календарь',exact:true}).click();
 await p.getByRole('button',{name:'Удалить',exact:true}).last().click();
 await q.waitForFunction(note=>!window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
 console.log(name+': calendar month navigation, UI create edit delete and second profile synchronization passed');
+assert.equal(await p.evaluate(()=>unreadCalendar()),0);
+console.log(name+': calendar notifications, read persistence, edited event unread and deletion passed');
 
 
 

@@ -68,5 +68,24 @@ for(let batch=0;batch<4;batch++){const writes=writeBatch(first);for(let i=0;i<25
 const loaded=(await getDocs(collection(second,root))).docs.filter(d=>d.id.startsWith('load-'));if(loaded.length!==1000)throw Error('Load count mismatch');
 console.log('Concurrent workspace edits and 1000-card load passed');
 
+const code='PREP-0123456789ABCDEF01234567',invite='teacherInvitations/'+code,grant='groups/g/teachers/other';
+await assertSucceeds(setDoc(ref('owner',invite),{groupId:'g',status:'open',createdAt:serverTimestamp()}));
+await assertFails(getDoc(ref('student',invite)));
+await assertSucceeds(updateDoc(ref('other',invite),{status:'pending',teacherUid:'other',teacherEmail:'other@example.com'}));
+await assertFails(updateDoc(ref('other',invite),{status:'approved'}));
+const od=db('owner'),approval=writeBatch(od);approval.set(doc(od,grant),{invitationCode:code,teacherEmail:'other@example.com',createdAt:serverTimestamp()});approval.update(doc(od,invite),{status:'approved'});await assertSucceeds(approval.commit());
+await assertSucceeds(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+const course={name:'Test course',level:'A1',ownerUid:'other',ownerName:'Teacher',visibility:'group',groupId:'g',words:[{de:'Haus',ru:'дом'}],createdAt:serverTimestamp()};
+await assertSucceeds(setDoc(ref('other','courseSets/newgroup'),course));
+await assertFails(getDoc(ref('student','courseSets/newgroup')));
+await assertSucceeds(setDoc(ref('other','courseSets/newpublic'),{...course,visibility:'public',groupId:''}));
+await assertSucceeds(getDoc(ref('student','courseSets/newpublic')));
+await assertFails(setDoc(ref('student','courseSets/forged'),{...course,ownerUid:'student'}));
+await assertSucceeds(deleteDoc(ref('owner',grant)));
+await assertFails(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+await assertFails(setDoc(ref('other','courseSets/afterrevocation'),course));
+await assertFails(deleteDoc(ref('co','courseSets/newpublic')));
+await assertSucceeds(deleteDoc(ref('other','courseSets/newpublic')));
+console.log('Teacher invitation, revocation, group and public publishing regression passed');
 console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

@@ -1,0 +1,46 @@
+name: Dictionary review queue
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/a2-dictionary-review]
+    paths: ['.github/workflows/dictionary-review-queue.yml']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Split source into small review batches
+        run: |
+          python - <<'PY'
+          import json, pathlib, collections
+          root = pathlib.Path('data')
+          raw = json.loads((root/'integraticum_dictionary_cards_unverified.json').read_text())
+          if isinstance(raw, dict):
+              raw = next((raw[k] for k in ('cards','entries','words','data') if isinstance(raw.get(k), list)), None)
+          assert isinstance(raw,list), 'Unknown source schema'
+          reviewed = json.loads((root/'integraticum_a2_reviewed.json').read_text())
+          ids = {x['id'] for x in reviewed}
+          groups = collections.defaultdict(list)
+          for x in raw:
+              assert isinstance(x,dict)
+              if x.get('id') in ids: continue
+              level = str(x.get('level') or x.get('cefr') or 'unknown').upper()
+              if level not in ('A1','A2','B1','B2','C1','C2'): level='unknown'
+              groups[level].append(x)
+          out = root/'review_queue'
+          out.mkdir(exist_ok=True)
+          for p in out.glob('*.json'): p.unlink()
+          for level, rows in sorted(groups.items()):
+              for i in range(0,len(rows),30):
+                  (out/f'{level}_{i//30+1:04}.json').write_text(json.dumps(rows[i:i+30],ensure_ascii=False,indent=2))
+          (out/'manifest.json').write_text(json.dumps({'reviewed_a2':len(ids),'candidate_counts':{k:len(v) for k,v in groups.items()},'status':'unverified'},indent=2))
+          PY
+      - name: Save queue only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/review_queue
+          git diff --cached --quiet || git commit -m 'Generate unverified dictionary review batches'
+          git push origin HEAD:feature/a2-dictionary-review

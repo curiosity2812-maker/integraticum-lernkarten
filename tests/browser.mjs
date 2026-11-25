@@ -47,6 +47,17 @@ await p.evaluate(()=>{window.testSpeech=[];Object.defineProperty(window,'speechS
 await p.getByRole('button',{name:'Произнести слово',exact:true}).click();await p.getByRole('button',{name:/Произнести пример/}).click();
 assert.deepEqual(await p.evaluate(()=>window.testSpeech),[{text:'die Wohnung',lang:'de-DE',rate:0.85},{text:'Ich wohne in einer kleinen Wohnung.',lang:'de-DE',rate:0.85}]);
 console.log(name+': part and topic filters, Ukrainian search, forms, definition and speech dispatch passed');
+await p.evaluate(()=>go('library'));
+const categories=await p.locator('#filterPart option').evaluateAll(xs=>xs.map(x=>x.value).filter(x=>x!=='all'));
+for(const part of categories){await p.locator('#filterPart').selectOption(part);await p.locator('#partHint').waitFor({state:'visible'});assert.equal(await p.locator('#partHint p').textContent(),await p.evaluate(v=>partHints[v],part));}
+await p.locator('#filterPart').selectOption('all');assert.equal(await p.locator('#partHint').count(),0);
+await p.locator('#filterPart').selectOption('intj');await p.locator('#filterLevel').selectOption('unknown');await p.locator('#filterTopic').selectOption(topic);await p.locator('#search').fill('ach');
+await p.evaluate(()=>{filter.ch=true;refreshResults();});
+await p.reload();await p.locator('#filterPart').waitFor();assert.equal(await p.locator('#filterPart').inputValue(),'intj');assert.equal(await p.locator('#filterLevel').inputValue(),'unknown');assert.equal(await p.locator('#search').inputValue(),'ach');await p.getByText(/Записей в библиотеке:/).waitFor({timeout:60000});assert.equal(await p.locator('#filterTopic').inputValue(),topic);assert.equal(await p.evaluate(()=>filter.ch),true);await p.locator('#partHint').waitFor({state:'visible'});
+for(const section of ['account','progress','sets','courses','calendar','settings','plan']){await p.evaluate(v=>go(v),section);await p.reload();await p.waitForFunction(v=>page===v,section);}
+await p.evaluate(()=>{startSession(['c0'],'cards');});await p.reload();await p.waitForFunction(()=>page==='plan');
+console.log(name+': all grammar panels and navigation/filter restoration passed');
+
 
 
 }finally{await second?.close();await rm(secondDir,{recursive:true,force:true});}}finally{await context?.close();await rm(dir,{recursive:true,force:true});}

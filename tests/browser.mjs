@@ -56,13 +56,13 @@ await p.evaluate(()=>{filter.ch=true;refreshResults();});
 await p.reload();await p.locator('#filterPart').waitFor();assert.equal(await p.locator('#filterPart').inputValue(),'intj');assert.equal(await p.locator('#filterLevel').inputValue(),'unknown');assert.equal(await p.locator('#search').inputValue(),'ach');await p.getByText(/Записей в библиотеке:/).waitFor({timeout:60000});assert.equal(await p.locator('#filterTopic').inputValue(),topic);assert.equal(await p.evaluate(()=>filter.ch),true);await p.locator('#partHint').waitFor({state:'visible'});
 for(const section of ['account','progress','sets','courses','calendar','settings','plan']){await p.evaluate(v=>go(v),section);await p.reload();await p.waitForFunction(v=>page===v,section);}
 await p.waitForFunction(()=>window.integraticumAuthReady&&window.integraticumUser&&word('c0'));
-const checkpoint=await p.evaluate(()=>{startSession(['c0'],'cards');return {id:session.learningId,index:session.index};});
+const reloadCheckpoint=await p.evaluate(()=>{startSession(['c0'],'cards');return {id:session.learningId,index:session.index};});
 await p.reload();await p.waitForFunction(()=>page==='home'&&window.integraticumAuthReady&&window.integraticumUser);
 await p.evaluate(()=>go('plan'));
-await p.waitForFunction(id=>data.learningSessions.some(x=>x.learningId===id),checkpoint.id);
-await p.evaluate(id=>resumeLearning(data.learningSessions.findIndex(x=>x.learningId===id)),checkpoint.id);
-assert.deepEqual(await p.evaluate(()=>({id:session.learningId,index:session.index})),checkpoint);
-console.log(name+': interrupted training returns home and resumes saved checkpoint');
+await p.waitForFunction(id=>data.learningSessions.some(x=>x.learningId===id),reloadCheckpoint.id);
+await p.evaluate(id=>resumeLearning(data.learningSessions.findIndex(x=>x.learningId===id)),reloadCheckpoint.id);
+assert.deepEqual(await p.evaluate(()=>({id:session.learningId,index:session.index})),reloadCheckpoint);
+console.log(name+': interrupted training returns home and resumes saved reloadCheckpoint');
 console.log(name+': all grammar panels and navigation/filter restoration passed');
 
 

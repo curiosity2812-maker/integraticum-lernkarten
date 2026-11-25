@@ -71,6 +71,20 @@ await p.evaluate(()=>go('calendar'));
 const month=await p.locator('#view h2').first().textContent();
 await p.getByRole('button',{name:'›',exact:true}).click();assert.notEqual(await p.locator('#view h2').first().textContent(),month);
 await p.getByRole('button',{name:'‹',exact:true}).click();assert.equal(await p.locator('#view h2').first().textContent(),month);
+const observers=[];
+try{
+for(const role of ['student','teacher']){
+ const ctx=await engine.launch();const v=await ctx.newPage();observers.push({ctx,v,role});
+ await v.goto('http://127.0.0.1:8765/');await v.waitForFunction(()=>window.integraticumAuthReady===true);await v.evaluate(()=>go('account'));
+ await v.locator('#authEmail').fill(name+'-'+role+'@example.test');await v.locator('#authPassword').fill('Test-only-123');await v.getByRole('button',{name:'Зарегистрироваться',exact:true}).click();
+ await v.waitForFunction(()=>!!window.integraticumUser);const observerUid=await v.evaluate(()=>window.integraticumUser.uid);assert.notEqual(observerUid,uid);
+ const base='http://127.0.0.1:8080/v1/projects/demo-integraticum/databases/(default)/documents/';
+ const seed=async(path,fields)=>{const res=await fetch(base+path,{method:'PATCH',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({fields:Object.fromEntries(Object.entries(fields).map(([k,value])=>[k,{stringValue:value}]))})});assert.ok(res.ok);};
+ const gid='calendar-'+name+'-'+role;
+ await seed('users/'+observerUid,{role});await seed('groups/'+gid,{ownerUid:role==='teacher'?observerUid:uid,name:'Calendar test',level:'A1',code:gid});
+ if(role==='student')await seed('memberships/'+gid+'_'+observerUid,{groupId:gid,uid:observerUid});
+ await v.reload();await v.waitForFunction(r=>window.integraticumCourse?.accountProfile()?.role===r&&window.integraticumCourse.hasMembership(),role,{timeout:60000});await v.evaluate(()=>go('notifications'));
+}
 await p.locator('#calType').selectOption('holiday');await p.locator('#calNote').fill('Browser holiday '+name);
 const calendarDialogs=[];p.on('dialog',async d=>{calendarDialogs.push(d.message());await d.accept();});
 const calendarBefore=await p.evaluate(()=>Object.fromEntries(['calType','calStart','calEnd','calGroup','calNote'].map(id=>[id,document.getElementById(id).value])));
@@ -78,6 +92,8 @@ console.log(name+': calendar form before save '+JSON.stringify(calendarBefore));
 await p.getByRole('button',{name:'Сохранить',exact:true}).click();
 try{await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor({timeout:15000});}catch(e){const remote=await fetch('http://127.0.0.1:8080/v1/projects/demo-integraticum/databases/(default)/documents/calendarEvents',{headers:{Authorization:'Bearer owner'}});console.log(name+': calendar diagnostic '+JSON.stringify({dialogs:calendarDialogs,remote:await remote.json(),client:await p.evaluate(()=>window.integraticumCourse.calendarEvents())}));throw e;}
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Browser holiday '+name,{timeout:60000});
+for(const {v} of observers){await v.getByText('Browser holiday '+name,{exact:false}).first().waitFor({timeout:60000});assert.ok(await v.evaluate(()=>unreadCalendar()>0));}
+await observers[0].v.getByRole('button',{name:'Отметить прочитанными',exact:true}).click();assert.equal(await observers[0].v.evaluate(()=>unreadCalendar()),0);assert.ok(await observers[1].v.evaluate(()=>unreadCalendar()>0));
 await p.evaluate(()=>go('notifications'));
 await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor();
 assert.ok(await p.evaluate(()=>unreadCalendar()>0&&!document.getElementById('notificationDot').hidden));
@@ -88,6 +104,7 @@ assert.equal(await p.evaluate(()=>unreadCalendar()),0);
 await p.getByRole('button',{name:'Открыть календарь',exact:true}).click();
 await p.getByRole('button',{name:'Изменить',exact:true}).last().click();await p.locator('#calNote').fill('Updated holiday '+name);await p.getByRole('button',{name:'Сохранить',exact:true}).click();
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
+for(const {v} of observers){await v.getByText('Updated holiday '+name,{exact:false}).first().waitFor({timeout:60000});assert.ok(await v.evaluate(()=>unreadCalendar()>0));}
 await p.waitForFunction(()=>unreadCalendar()>0);
 await p.evaluate(()=>go('notifications'));
 await p.getByText('Updated holiday '+name,{exact:false}).first().waitFor();
@@ -97,6 +114,10 @@ await q.waitForFunction(note=>!window.integraticumCourse.calendarEvents().some(e
 console.log(name+': calendar month navigation, UI create edit delete and second profile synchronization passed');
 assert.equal(await p.evaluate(()=>unreadCalendar()),0);
 console.log(name+': calendar notifications, read persistence, edited event unread and deletion passed');
+for(const {v} of observers)await v.waitForFunction(note=>!calendarNotices().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
+console.log(name+': distinct student and teacher accounts received calendar notices and independent read status');
+}finally{for(const {ctx} of observers)await ctx.close();}
+
 
 
 

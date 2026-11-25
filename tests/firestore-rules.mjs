@@ -50,5 +50,23 @@ await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),workspace)
 await assertFails(setDoc(ref('student',workspace),{...item,kind:'role'}));
 await assertFails(setDoc(ref('student',workspace),{...item,payload:123}));
 await assertFails(deleteDoc(ref('student',workspace)));
+
+const html=readFileSync('index.html','utf8');
+const resolver=new Function(html.slice(html.indexOf(' function workspaceEqual('),html.indexOf(' function workspaceFlush('))+';return workspaceResolve;')();
+const first=db('student'),second=db('student'),root='personalProgress/student/workspace';
+const original={kind:'sets',key:'concurrent',payload:JSON.stringify({id:'concurrent',name:'Original'}),deleted:false};
+await setDoc(doc(first,root,'concurrent'),original);
+await Promise.all([first,second].map((client,i)=>runTransaction(client,async tx=>{
+ const target=doc(client,root,'concurrent'),snap=await tx.get(target);
+ const changed={...original,payload:JSON.stringify({id:'concurrent',name:'Edit '+i})};
+ const result=resolver(changed,snap.data(),original,'conflict-'+i);
+ tx.set(target,result.main);if(result.copy)tx.set(doc(client,root,result.copy.key),result.copy);
+})));
+const concurrent=(await getDocs(collection(first,root))).docs.map(d=>d.data()).filter(x=>x.key==='concurrent'||x.key.startsWith('conflict-')).map(x=>JSON.parse(x.payload).name);
+if(concurrent.length!==2||!concurrent.some(x=>x.startsWith('Edit 0'))||!concurrent.some(x=>x.startsWith('Edit 1')))throw Error('Concurrent edit lost');
+for(let batch=0;batch<4;batch++){const writes=writeBatch(first);for(let i=0;i<250;i++){const key='load-'+(batch*250+i);writes.set(doc(first,root,key),{kind:'custom',key,payload:JSON.stringify({id:key,de:'Wort '+i,ru:'слово'}),deleted:false});}await writes.commit();}
+const loaded=(await getDocs(collection(second,root))).docs.filter(d=>d.id.startsWith('load-'));if(loaded.length!==1000)throw Error('Load count mismatch');
+console.log('Concurrent workspace edits and 1000-card load passed');
+
 console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

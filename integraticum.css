@@ -251,3 +251,20 @@ summary { cursor: pointer; }
 .site-sources summary { cursor: pointer; width: fit-content; }
 .site-sources p { margin: .5rem 0; }
 .site-sources a { color: inherit; text-underline-offset: .15em; }
+
+.admin-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  gap: 12px;
+}
+.admin-user { overflow-wrap: anywhere; }
+.admin-user select { flex: 1 1 190px; }
+.admin-user button { flex: 0 1 auto; }
+.admin-metrics { grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); }
+.admin-days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 8px;
+}
+.admin-days div { padding: 8px; border-radius: 10px; background: var(--sage); text-align: center; }
+.admin-days dd { margin: 3px 0 0; font-weight: 700; }

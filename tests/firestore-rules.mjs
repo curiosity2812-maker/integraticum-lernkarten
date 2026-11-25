@@ -28,5 +28,138 @@ const verified=await assertSucceeds(getDocFromServer(sr));if(verified.data().sta
 await assertFails(setDoc(ref('student','users/student'),{role:'teacher'}));
 await env.withSecurityRulesDisabled(async c=>{const d=c.firestore();await setDoc(doc(d,'joinRequests/g_legacy'),{groupId:'g',studentUid:'legacy',studentEmail:'old@example.com',studentName:'Legacy',status:'approved',extra:'legacy field'});await setDoc(doc(d,'joinRequests/g_mismatch'),{groupId:'g',studentUid:'different',status:'approved'});await setDoc(doc(d,'joinRequests/g_member'),{groupId:'g',studentUid:'member',status:'approved'});await setDoc(doc(d,'memberships/g_member'),{groupId:'g',uid:'member'});});
 for(const [uid,allowed] of [['legacy',true],['mismatch',false],['member',false]]){const d=db(uid),r=doc(d,'joinRequests/g_'+uid);const op=runTransaction(d,async tx=>{await tx.get(r);tx.update(r,{status:'pending'});});await (allowed?assertSucceeds(op):assertFails(op));}
-const noEmail=env.authenticatedContext('noemail').firestore();const nr=doc(noEmail,'joinRequests/g_noemail');const payload={groupId:'g',studentUid:'noemail',studentName:'Student',status:'pending',createdAt:serverTimestamp()};await assertFails(setDoc(nr,{...payload,studentEmail:'fake@example.com'}));await assertSucceeds(setDoc(nr,{...payload,studentEmail:''}));console.log('All rule and transaction checks passed');
+const noEmail=env.authenticatedContext('noemail').firestore();const nr=doc(noEmail,'joinRequests/g_noemail');const payload={groupId:'g',studentUid:'noemail',studentName:'Student',status:'pending',createdAt:serverTimestamp()};await assertFails(setDoc(nr,{...payload,studentEmail:'fake@example.com'}));await assertSucceeds(setDoc(nr,{...payload,studentEmail:''}));const progress='personalProgress/student/answers/event1';
+const answer={id:'word1',ok:false,mode:'typing',partial:false,errorType:'spelling',at:Date.now()};
+await assertSucceeds(setDoc(ref('student',progress),answer));
+await assertSucceeds(getDoc(ref('student',progress)));
+await assertSucceeds(getDocs(collection(db('student'),'personalProgress/student/answers')));
+for(const uid of ['other','owner','co']){await assertFails(getDoc(ref(uid,progress)));await assertFails(getDocs(collection(db(uid),'personalProgress/student/answers')));await assertFails(setDoc(ref(uid,'personalProgress/student/answers/forged'),answer));}
+await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),progress)));
+await assertFails(updateDoc(ref('student',progress),{ok:true}));
+await assertFails(deleteDoc(ref('student',progress)));
+await assertFails(setDoc(ref('student','personalProgress/student/answers/bad'),{...answer,mode:'invalid'}));
+await assertSucceeds(setDoc(ref('other','personalProgress/other/answers/event1'),answer));
+const workspace='personalProgress/student/workspace/sets%3As1';
+const item={kind:'sets',key:'s1',payload:JSON.stringify({id:'s1',name:'Test',wordIds:['word1']}),deleted:false};
+await assertSucceeds(setDoc(ref('student',workspace),item));
+await assertSucceeds(getDoc(ref('student',workspace)));
+await assertSucceeds(getDocs(collection(db('student'),'personalProgress/student/workspace')));
+await assertSucceeds(setDoc(ref('student',workspace),{...item,payload:'',deleted:true}));
+for(const uid of ['other','owner','co']){await assertFails(getDoc(ref(uid,workspace)));await assertFails(setDoc(ref(uid,workspace),item));await assertFails(getDocs(collection(db(uid),'personalProgress/student/workspace')));}
+await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),workspace)));
+await assertFails(setDoc(ref('student',workspace),{...item,kind:'role'}));
+await assertFails(setDoc(ref('student',workspace),{...item,payload:123}));
+await assertFails(deleteDoc(ref('student',workspace)));
+
+const html=readFileSync('index.html','utf8');
+const resolver=new Function(html.slice(html.indexOf(' function workspaceEqual('),html.indexOf(' function workspaceFlush('))+';return workspaceResolve;')();
+const first=db('student'),second=db('student'),root='personalProgress/student/workspace';
+const original={kind:'sets',key:'concurrent',payload:JSON.stringify({id:'concurrent',name:'Original'}),deleted:false};
+await setDoc(doc(first,root,'concurrent'),original);
+await Promise.all([first,second].map((client,i)=>runTransaction(client,async tx=>{
+ const target=doc(client,root,'concurrent'),snap=await tx.get(target);
+ const changed={...original,payload:JSON.stringify({id:'concurrent',name:'Edit '+i})};
+ const result=resolver(changed,snap.data(),original,'conflict-'+i);
+ tx.set(target,result.main);if(result.copy)tx.set(doc(client,root,result.copy.key),result.copy);
+})));
+const concurrent=(await getDocs(collection(first,root))).docs.map(d=>d.data()).filter(x=>x.key==='concurrent'||x.key.startsWith('conflict-')).map(x=>JSON.parse(x.payload).name);
+if(concurrent.length!==2||!concurrent.some(x=>x.startsWith('Edit 0'))||!concurrent.some(x=>x.startsWith('Edit 1')))throw Error('Concurrent edit lost');
+for(let batch=0;batch<4;batch++){const writes=writeBatch(first);for(let i=0;i<250;i++){const key='load-'+(batch*250+i);writes.set(doc(first,root,key),{kind:'custom',key,payload:JSON.stringify({id:key,de:'Wort '+i,ru:'слово'}),deleted:false});}await writes.commit();}
+const loaded=(await getDocs(collection(second,root))).docs.filter(d=>d.id.startsWith('load-'));if(loaded.length!==1000)throw Error('Load count mismatch');
+console.log('Concurrent workspace edits and 1000-card load passed');
+
+const code='PREP-0123456789ABCDEF01234567',invite='teacherInvitations/'+code,grant='groups/g/teachers/other';
+await assertSucceeds(setDoc(ref('owner',invite),{groupId:'g',status:'open',createdAt:serverTimestamp()}));
+await assertFails(getDoc(ref('student',invite)));
+await assertSucceeds(updateDoc(ref('other',invite),{status:'pending',teacherUid:'other',teacherEmail:'other@example.com'}));
+await assertFails(updateDoc(ref('other',invite),{status:'approved'}));
+const od=db('owner'),approval=writeBatch(od);approval.set(doc(od,grant),{invitationCode:code,teacherEmail:'other@example.com',createdAt:serverTimestamp()});approval.update(doc(od,invite),{status:'approved'});await assertSucceeds(approval.commit());
+await assertSucceeds(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+const course={name:'Test course',level:'A1',ownerUid:'other',ownerName:'Teacher',visibility:'group',groupId:'g',words:[{de:'Haus',ru:'дом'}],createdAt:serverTimestamp()};
+await assertSucceeds(setDoc(ref('other','courseSets/newgroup'),course));
+await assertFails(getDoc(ref('student','courseSets/newgroup')));
+await assertSucceeds(setDoc(ref('other','courseSets/newpublic'),{...course,visibility:'public',groupId:''}));
+await assertSucceeds(getDoc(ref('student','courseSets/newpublic')));
+await assertFails(setDoc(ref('student','courseSets/forged'),{...course,ownerUid:'student'}));
+await assertSucceeds(deleteDoc(ref('owner',grant)));
+await assertFails(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+await assertFails(setDoc(ref('other','courseSets/afterrevocation'),course));
+await assertFails(deleteDoc(ref('co','courseSets/newpublic')));
+await assertSucceeds(deleteDoc(ref('other','courseSets/newpublic')));
+console.log('Teacher invitation, revocation, group and public publishing regression passed');
+await env.withSecurityRulesDisabled(async c=>{await setDoc(doc(c.firestore(),'users/calendarAdmin'),{role:'super_admin'});});
+const calendarPath='calendarEvents/holiday';
+const holiday={type:'holiday',start:'2026-12-20',end:'2027-01-05',group:'all',note:'Winter break'};
+await assertSucceeds(setDoc(ref('calendarAdmin',calendarPath),holiday));
+for(const uid of ['student','owner','co']){await assertSucceeds(getDoc(ref(uid,calendarPath)));await assertFails(updateDoc(ref(uid,calendarPath),{note:'Changed'}));await assertFails(deleteDoc(ref(uid,calendarPath)));await assertFails(setDoc(ref(uid,'calendarEvents/other'),holiday));}
+await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),calendarPath)));
+await assertFails(updateDoc(ref('calendarAdmin',calendarPath),{end:'2026-01-01'}));
+await assertSucceeds(updateDoc(ref('calendarAdmin',calendarPath),{note:'Updated'}));
+await assertSucceeds(deleteDoc(ref('calendarAdmin',calendarPath)));
+console.log('Calendar administrator CRUD and role restrictions passed');
+const profiles='users';
+const studentProfile={role:'student',email:'student@example.com',name:''};
+await assertFails(setDoc(ref('student','users/student'),{...studentProfile,email:'owner@example.com'}));
+await assertSucceeds(setDoc(ref('student','users/student'),studentProfile));
+await assertFails(updateDoc(ref('student','users/student'),{role:'teacher'}));
+await assertFails(updateDoc(ref('student','users/student'),{role:'super_admin'}));
+await assertFails(getDoc(ref('owner','users/student')));
+await assertFails(getDocs(collection(db('owner'),profiles)));
+await assertFails(getDocs(collection(db('student'),profiles)));
+await assertSucceeds(getDocs(collection(db('calendarAdmin'),profiles)));
+await assertFails(setDoc(ref('calendarAdmin','users/nonexistent'),{role:'teacher'}));
+await assertFails(updateDoc(ref('calendarAdmin','users/calendarAdmin'),{role:'student'}));
+await assertFails(deleteDoc(ref('calendarAdmin','users/calendarAdmin')));
+await assertSucceeds(updateDoc(ref('calendarAdmin','users/student'),{role:'super_admin'}));
+const demotions=await Promise.allSettled([
+ updateDoc(ref('calendarAdmin','users/student'),{role:'student'}),
+ updateDoc(ref('student','users/calendarAdmin'),{role:'student'})
+]);
+const successfulDemotions=demotions.filter(result=>result.status==='fulfilled').length;
+if(successfulDemotions>1)throw Error('Concurrent role changes removed both administrators');
+// The emulator can reject both writes when their rule lookups contend on the same profiles.
+if(!successfulDemotions)await assertSucceeds(updateDoc(ref('calendarAdmin','users/student'),{role:'student'}));
+const admin=demotions[1].status==='fulfilled'?'student':'calendarAdmin';
+const removedAdmin=admin==='student'?'calendarAdmin':'student';
+await assertFails(getDocs(collection(db(removedAdmin),profiles)));
+await assertSucceeds(getDocs(collection(db(admin),profiles)));
+await assertFails(updateDoc(ref(admin,'users/'+admin),{role:'teacher'}));
+await assertSucceeds(getDocs(query(collection(db(admin),'memberships'),where('groupId','==','g'))));
+await assertSucceeds(getDocs(query(collection(db(admin),'joinRequests'),where('groupId','==','g'))));
+const assignment='groups/g/teachers/other';
+await assertFails(setDoc(ref('owner',assignment),{assignedBy:'owner',createdAt:serverTimestamp()}));
+await assertFails(setDoc(ref(admin,'groups/g/teachers/'+removedAdmin),{assignedBy:admin,createdAt:serverTimestamp()}));
+await assertSucceeds(setDoc(ref(admin,assignment),{assignedBy:admin,createdAt:serverTimestamp()}));
+await assertSucceeds(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+await assertSucceeds(deleteDoc(ref(admin,assignment)));
+await assertFails(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+await assertSucceeds(getDocs(collection(db(admin),'courseSets')));
+await assertSucceeds(deleteDoc(ref(admin,'courseSets/private')));
+await assertFails(deleteDoc(ref(admin,'groups/g')));
+
+const aggregate={exercises:4,words:2,weekStart:20780,days:[0,0,0,1,0,0,3]};
+const activity='learningActivity/member',groupActivity='groups/g/activity/member';
+await assertSucceeds(setDoc(ref('member',activity),aggregate));
+await assertSucceeds(setDoc(ref('member',groupActivity),aggregate));
+await assertFails(setDoc(ref('member',groupActivity),{...aggregate,days:[0,0,'private detail',1,0,0,3]}));
+await assertFails(setDoc(ref('member',activity),{...aggregate,answerIds:['private']}));
+await assertFails(setDoc(ref('other',activity),aggregate));
+await assertFails(setDoc(ref('other','groups/g/activity/other'),aggregate));
+await assertFails(getDoc(ref('other',groupActivity)));
+await assertFails(getDoc(ref('owner',activity)));
+await assertSucceeds(getDoc(ref('owner',groupActivity)));
+await assertSucceeds(getDoc(ref('co',groupActivity)));
+await assertSucceeds(getDocs(collection(db(admin),'learningActivity')));
+await assertFails(getDocs(collection(db('co'),'learningActivity')));
+await assertSucceeds(setDoc(ref('member','personalProgress/member/answers/sample'),answer));
+await assertSucceeds(setDoc(ref('member','personalProgress/member/workspace/sample'),item));
+await assertFails(getDoc(ref(admin,'personalProgress/member/answers/sample')));
+await assertFails(getDoc(ref(admin,'personalProgress/member/workspace/sample')));
+await assertFails(getDoc(ref('co','personalProgress/member/answers/sample')));
+await assertFails(getDoc(ref('co','personalProgress/member/workspace/sample')));
+await assertSucceeds(deleteDoc(ref(admin,'memberships/g_member')));
+await assertFails(getDoc(ref('owner',groupActivity)));
+await assertFails(setDoc(ref('member',groupActivity),aggregate));
+console.log('Academic administration, concurrent role protection and aggregate-only access passed');
+console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

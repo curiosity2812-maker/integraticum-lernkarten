@@ -48,16 +48,21 @@ const CATALOG=[
 ['die Voraussetzung','предпосылка; необходимое условие','передумова; необхідна умова','noun','B2','Работа','die Voraussetzungen','Deutschkenntnisse sind eine Voraussetzung.'],
 ['sich entscheiden','принимать решение','ухвалювати рішення','verb','A2','Повседневность','entscheidet sich · entschied sich · hat sich entschieden','Ich muss mich entscheiden.']
 ].map((a,i)=>({id:'c'+i,de:a[0],ru:a[1],uk:a[2],part:a[3],level:a[4],topic:a[5],forms:a[6],example:a[7],official:true}));
-const KEY='integraticum-v02';const defaults={version:2,sets:[],custom:[],records:{},history:[],selectedSets:[],lang:'ru',writing:'adaptive',newCount:5,reviewCount:10};let data=load(),page='home',filter={q:'',level:'all',topic:'all',part:'all',ch:false},selectedWord=null,selectedSet=null,editor=null,session=null,answer='',revealed=false,feedback=null,importPreview=[],bulkTarget=null;
-function load(){try{let x=JSON.parse(localStorage.getItem(KEY));return x&&x.version===2?{...defaults,...x}:structuredClone(defaults)}catch{return structuredClone(defaults)}}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){alert('Не удалось сохранить данные. Возможно, память браузера недоступна. Экспортируйте резервную копию.')}}
+const KEY='integraticum-v02';const defaults={version:2,sets:[],custom:[],records:{},history:[],selectedSets:[],lang:'ru',writing:'adaptive',newCount:5,reviewCount:10,learningSessions:[]};let data=load(),page='home',filter={q:'',level:'all',topic:'all',part:'all',ch:false},selectedWord=null,selectedSet=null,editor=null,session=null,answer='',revealed=false,feedback=null,importPreview=[],bulkTarget=null;
+let accountDataUid=null;
+function load(key=KEY){try{let x=JSON.parse(localStorage.getItem(key));return x&&x.version===2?{...structuredClone(defaults),...x}:structuredClone(defaults)}catch{return structuredClone(defaults)}}
+function save(){try{localStorage.setItem(accountDataUid?KEY+':'+accountDataUid:KEY,JSON.stringify(data));window.integraticumWorkspace?.capture()}catch(e){alert('Не удалось сохранить данные. Возможно, память браузера недоступна. Экспортируйте резервную копию.')}}
 function e(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function allWords(){return [...CATALOG,...data.custom]};function word(id){return (window.integraticumWordIndex&&window.integraticumWordIndex.get(id))||allWords().find(w=>w.id===id)};function translation(w){return w[data.lang]||w.ru||w.uk||'—'};function today(){return new Date().toISOString().slice(0,10)};function rec(id){return data.records[id]};function due(w){return rec(w.id)&&rec(w.id).due<=Date.now()};function uniqueIds(a){return [...new Set(a)]};function typeName(p){return ({"noun": "Существительное", "verb": "Глагол", "adj": "Прилагательное", "adv": "Наречие", "prep": "Предлог", "pron": "Местоимение", "conj": "Союз", "num": "Числительное", "particle": "Частица", "intj": "Междометие", "phrase": "Выражение", "article": "Артикль", "name": "Имя собственное", "abbrev": "Сокращение", "postp": "Послелог", "other": "Другое"})[p]||p};function btn(text,fn,cls='secondary'){return `<button class="${cls}" onclick="${fn}">${text}</button>`};function countDue(){return allWords().filter(due).length};function activeIds(){let ids=data.selectedSets.flatMap(id=>(data.sets.find(s=>s.id===id)?.wordIds||[]));return uniqueIds(ids)};function selectedPool(){let ids=activeIds();if(ids.length)return ids.map(word).filter(Boolean);let a=CATALOG.filter(w=>w.a1Reviewed);if(a.length)return a;let fallback=CATALOG.filter(w=>w.level==='A1');return fallback.length?fallback.slice(0,200):CATALOG.slice(0,200)};
-function go(p){closeMenu();page=p;render();window.scrollTo(0,0)}function render(){let views={home:v6Home,library:v6Library,sets:setsView,review:reviewView,progress:progressView,settings:settingsView,account:accountView,courses:courseView,notifications:notificationsView,word:wordView,set:setView,editor:editorView,bulk:bulkView,plan:v6Plan,calendar:calendarView,session:sessionView};document.getElementById('view').innerHTML=(views[page]||v6Home)();updateNavigation();}
+function allWords(){return [...CATALOG,...data.custom]};function word(id){return (window.integraticumWordIndex&&window.integraticumWordIndex.get(id))||allWords().find(w=>w.id===id)};function translation(w){return w[data.lang]||w.ru||w.uk||'—'};function today(){return new Date().toISOString().slice(0,10)};function rec(id){return data.records[id]};function due(w){return rec(w.id)&&rec(w.id).due<=Date.now()};function uniqueIds(a){return [...new Set(a)]};function typeName(p){return ({"noun": "Существительное", "verb": "Глагол", "adj": "Прилагательное", "adv": "Наречие", "prep": "Предлог", "pron": "Местоимение", "conj": "Союз", "num": "Числительное", "particle": "Частица", "intj": "Междометие", "phrase": "Выражение", "article": "Артикль", "name": "Имя собственное", "abbrev": "Сокращение", "postp": "Послелог", "other": "Другое"})[p]||p};function btn(text,fn,cls='secondary'){return `<button class="${cls}" onclick="${fn}">${text}</button>`};function countDue(){return allWords().filter(due).length};function activeIds(){let ids=data.selectedSets.flatMap(id=>(data.sets.find(s=>s.id===id)?.wordIds||[]));return uniqueIds(ids)};function selectedPool(){return activeIds().map(word).filter(Boolean)};
+const restorePages=['home','library','sets','review','progress','settings','account','courses','notifications','plan','calendar','admin','adminUsers','adminGroups','adminSets','adminActivity'];
+function rememberPage(){try{sessionStorage.setItem(KEY+':navigation',JSON.stringify({page:restorePages.includes(page)?page:({word:'library',set:'sets',editor:'library',bulk:'sets',session:'home',groupActivity:'courses'}[page]||'home'),filter}));}catch{}}
+function restorePage(){try{const saved=JSON.parse(sessionStorage.getItem(KEY+':navigation')||'null');if(saved&&restorePages.includes(saved.page)){page=saved.page;if(saved.filter&&typeof saved.filter==='object')filter={...filter,...saved.filter};}}catch{}}
+function go(p){window.integraticumCourse?.managementNavigate?.(p);if(p!=='courses')courseSectionFilter=null;closeMenu();page=p;render();window.scrollTo(0,0)}function render(){rememberPage();let views={home:v6Home,library:v6Library,sets:setsView,review:reviewView,progress:progressView,settings:settingsView,account:accountView,courses:courseView,notifications:notificationsView,word:wordView,set:setView,editor:editorView,bulk:bulkView,plan:v6Plan,calendar:calendarView,admin:managementView,adminUsers:managementView,adminGroups:managementView,adminSets:managementView,adminActivity:managementView,groupActivity:managementView,session:sessionView};document.getElementById('view').innerHTML=(views[page]||v6Home)();updateNavigation();}
 function homeView(){let total=Object.keys(data.records).length;return `<section class="card hero"><div class="sub">INTEGRATICUM · DEIN LERNRAUM</div><h1>Guten Tag! ✨</h1><p>Твой уютный уголок немецкого языка. Учимся в собственном темпе.</p><button class="wide" onclick="go('plan')">Начать заучивание →</button></section><h2>Твоё пространство</h2><div class="feature-list"><button class="feature sage" onclick="go('library')"><span>📖</span><span><b>Словарь</b><small>Найти и сохранить слова</small></span><i>›</i></button><button class="feature lilac" onclick="go('sets')"><span>🗂️</span><span><b>Мои наборы</b><small>Личные подборки лексики</small></span><i>›</i></button><button class="feature peach" onclick="go('courses')"><span>👥</span><span><b>Учебные группы</b><small>Участники и наборы курса</small></span><i>›</i></button><button class="feature blue" onclick="go('progress')"><span>📈</span><span><b>Мой прогресс</b><small>${total} изученных слов · ${data.history.length} упражнений</small></span><i>›</i></button></div><section class="card home-progress"><h2>Сегодня к повторению</h2><p>${countDue()} слов ждут тебя</p><button onclick="go('review')">Повторить →</button></section>`}
-function libraryView(){let levels=['all','A1','A2','B1','B2','C1','unknown'],topics=['all',...new Set(dictionaryCards().flatMap(w=>w.topics?.length?w.topics:[w.topic]))],parts=['all','noun','verb','adj','adv','prep','pron','conj','num','particle','intj','phrase','article','name','abbrev','postp','other'];let result=dictionaryResults();return `<div class="dictionary-tools"><div class="field"><label for="search">Поиск по словарю</label><div class="search-input">${uiIcon('search')}<input id="search" value="${e(filter.q)}" placeholder="Найти слово или выражение" oninput="filter.q=this.value;refreshResults()"></div></div><div class="grid"><div class="field"><label for="filterLevel">Уровень</label><select id="filterLevel" onchange="filter.level=this.value;window.integraticumResetPage?.();render()">${levels.map(x=>`<option ${filter.level===x?'selected':''} value="${x}">${x==='all'?'Все уровни':(x==='unknown'?'Неопределённый уровень':x)+' ('+dictionaryCards().filter(w=>x==='unknown'?!w.level_verified:w.level_verified===true&&w.level===x).length+')'}</option>`).join('')}</select></div><div class="field"><label for="filterPart">Часть речи</label><select id="filterPart" onchange="filter.part=this.value;window.integraticumResetPage?.();render()">${parts.map(x=>`<option ${filter.part===x?'selected':''} value="${x}">${x==='all'?'Все части речи':typeName(x)}</option>`).join('')}</select></div></div><div class="field"><label for="filterTopic">Тема</label><select id="filterTopic" onchange="filter.topic=this.value;window.integraticumResetPage?.();render()">${topics.map(x=>`<option ${filter.topic===x?'selected':''} value="${e(x)}">${x==='all'?'Все темы':e(x)}</option>`).join('')}</select></div><div class="row wrap"><label class="filter-check"><input type="checkbox" ${filter.ch?'checked':''} onchange="filter.ch=this.checked;refreshResults()"> Schweizer Hochdeutsch (CH)</label>${btn('Сбросить фильтры',"resetFilter()")}${btn('＋ Создать слово',"openEditor(null)")}</div></div><div id="results">${resultsHtml(result)}</div>`}
+const partHints={"all":"Выберите часть речи.","noun":"Кто или что? Например: человек, стол, счастье (der Mensch, der Tisch, das Glück).","verb":"Что делать? Например: идти, спать, быть (gehen, schlafen, sein).","adj":"Какой? Например: большой, красивый (groß, schön).","adv":"Как, где или когда? Например: быстро, здесь, сегодня (schnell, hier, heute).","prep":"Помогает сказать, например, где мы находимся, куда идём или с кем: in, nach, mit.","pron":"Помогает не повторять имена и названия: я, ты, он, этот (ich, du, er, dieser).","conj":"Соединяет слова и предложения: и, но, потому что (und, aber, weil).","num":"Сколько? Который по счёту? Например: два, второй (zwei, zweite).","particle":"Маленькое слово, которое меняет оттенок сказанного: например, doch в Komm doch! — Ну приходи же!","intj":"Слово, которым мы выражаем чувства или реакцию: ой, ах, ура! (oh, ach, hurra).","phrase":"Несколько слов, которые часто употребляются вместе: Guten Morgen! — Доброе утро!","article":"Маленькое слово перед существительным: der, die, das, ein, eine.","name":"Имя человека или название места: Anna, Zürich.","abbrev":"Слово или выражение, записанное короче: z. B. — например.","postp":"Как предлог, только стоит после слова: den Fluss entlang — вдоль реки.","other":"Слова, которые не вошли в остальные категории."};
+function libraryView(){let levels=['all','A1','A2','B1','B2','C1','unknown'],topics=['all',...new Set(dictionaryCards().flatMap(w=>w.topics?.length?w.topics:[w.topic]))],parts=['all','noun','verb','adj','adv','prep','pron','conj','num','particle','intj','phrase','article','name','abbrev','postp','other'];let result=dictionaryResults();return `<div class="dictionary-tools"><div class="field"><label for="search">Поиск по словарю</label><div class="search-input">${uiIcon('search')}<input id="search" value="${e(filter.q)}" placeholder="Найти слово или выражение" oninput="filter.q=this.value;refreshResults()"></div></div><div class="grid"><div class="field"><label for="filterLevel">Уровень</label><select id="filterLevel" onchange="filter.level=this.value;window.integraticumResetPage?.();render()">${levels.map(x=>`<option ${filter.level===x?'selected':''} value="${x}">${x==='all'?'Все уровни':(x==='unknown'?'Неопределённый уровень':x)+' ('+dictionaryCards().filter(w=>x==='unknown'?!w.level_verified:w.level_verified===true&&w.level===x).length+')'}</option>`).join('')}</select></div><div class="field"><label for="filterPart">Часть речи</label><select id="filterPart" onchange="filter.part=this.value;window.integraticumResetPage?.();render()">${parts.map(x=>`<option ${filter.part===x?'selected':''} value="${x}">${x==='all'?'Все части речи':typeName(x)}</option>`).join('')}</select></div></div>${filter.part!=='all'?`<div id="partHint" role="status" style="background:#EDF2E8;border:1px solid #D6E1D0;border-radius:12px;padding:12px 16px;margin:8px 0 14px;color:#304D38"><b>${e(typeName(filter.part))}</b><p style="margin:5px 0 0;font-size:0.9rem;line-height:1.5">${e(partHints[filter.part]||partHints.other)}</p></div>`:''}<div class="field"><label for="filterTopic">Тема</label><select id="filterTopic" onchange="filter.topic=this.value;window.integraticumResetPage?.();render()">${topics.map(x=>`<option ${filter.topic===x?'selected':''} value="${e(x)}">${x==='all'?'Все темы':e(x)}</option>`).join('')}</select></div><div class="row wrap"><label class="filter-check"><input type="checkbox" ${filter.ch?'checked':''} onchange="filter.ch=this.checked;refreshResults()"> Schweizer Hochdeutsch (CH)</label>${btn('Сбросить фильтры',"resetFilter()")}${btn('＋ Создать слово',"openEditor(null)")}</div></div><div id="results">${resultsHtml(result)}</div>`}
 function resultsHtml(arr){return `<p class="muted tiny">Найдено: ${arr.length}</p>${arr.length?arr.map(w=>`<div class="item row"><div><b>${e(w.de)}</b> ${/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span>`:''}${w.ch?'<span class="tag">CH</span>':''}<p class="muted tiny">${e(translation(w))} · ${e(w.topic)} · ${typeName(w.part)}</p></div>${btn('Открыть',`openWord('${w.id}')`)}</div>`).join(''):'<p class="note">Ничего не найдено.</p>'}`}
-function refreshResults(){if(window.integraticumResetPage)window.integraticumResetPage();let arr=dictionaryResults();document.getElementById('results').innerHTML=resultsHtml(arr)}function resetFilter(){window.integraticumResetPage?.();filter={q:'',level:'all',topic:'all',part:'all',ch:false};render()}
+function refreshResults(){rememberPage();if(window.integraticumResetPage)window.integraticumResetPage();let arr=dictionaryResults();document.getElementById('results').innerHTML=resultsHtml(arr)}function resetFilter(){window.integraticumResetPage?.();filter={q:'',level:'all',topic:'all',part:'all',ch:false};render()}
 function openWord(id){selectedWord=id;go('word')}function wordView(){let w=word(selectedWord);if(!w)return '<p>Карточка не найдена.</p>';return `<div class="row">${btn('← Библиотека',"go('library')")}<span class="tag">${w.official?'Integraticum':'Личная'}</span></div><section class="card hero"><p class="sub">${typeName(w.part).toUpperCase()} · ${w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?e(w.level)+' · ':''}${e(w.topic)}</p><div class="row"><div class="word">${e(w.de)}</div><button class="secondary speak" onclick="speakWord(${JSON.stringify(w.de).replace(/"/g,"&quot;")})" aria-label="Произнести слово">🔊</button></div><p><b>RU:</b> ${e(w.ru||'—')}</p>${w.uk?`<p><b>UK:</b> ${e(w.uk)}</p>`:''}${w.forms?`<p><b>Формы:</b> ${e(w.forms)}</p>`:''}${w.example?`<p><b>Пример:</b> ${e(w.example)}</p>`:''}${w.note?`<p>${e(w.note)}</p>`:''}</section><section class="card"><h3>Добавить в набор</h3><div class="field"><select id="targetset"><option value="">Выбери набор</option>${data.sets.map(s=>`<option value="${s.id}">${e(s.name)}</option>`).join('')}</select></div><div class="actions">${btn('Добавить',"addToChosenSet()",'')}${btn('Создать набор',"newSet()")}</div></section><section class="card"><h3>Изменения</h3><p class="foot">Официальные карточки не изменяются: редактирование создаёт личную копию.</p><div class="actions">${btn(w.official?'Создать личную копию':'Редактировать',`openEditor('${w.id}')`)}${!w.official?btn('Удалить',`deleteWord('${w.id}')`):''}</div></section>`}
 function addToChosenSet(){let id=document.getElementById('targetset').value;if(!id)return alert('Сначала выбери набор.');let s=data.sets.find(s=>s.id===id);if(!s.wordIds.includes(selectedWord))s.wordIds.push(selectedWord);save();alert('Карточка добавлена в набор.');render()}
 function newSet(){let name=prompt('Название нового набора:');if(!name?.trim())return;let id='s'+Date.now()+Math.random().toString(36).slice(2,6);data.sets.push({id,name:name.trim(),description:'',level:'A1',topic:'Другое',wordIds:[]});data.selectedSets.push(id);save();selectedSet=id;go('set')}
@@ -79,8 +84,10 @@ function bulkPreviewHtml(){return importPreview.length?`<section class="card"><h
 function commitBulk(){let s=data.sets.find(s=>s.id===bulkTarget);if(!s)return alert('Набор не найден.');let added=0;for(let v of importPreview){let existing=allWords().find(w=>w.de.toLocaleLowerCase('de')===v.de.toLocaleLowerCase('de'));let id;if(existing){id=existing.id}else{id='u'+Date.now()+Math.random().toString(36).slice(2,8);data.custom.push({id,de:v.de,ru:v.ru,uk:'',part:'other',level:s.level,topic:s.topic,forms:'',example:'',note:'',official:false})}if(!s.wordIds.includes(id)){s.wordIds.push(id);added++}}save();alert(`Добавлено в набор: ${added}.`);selectedSet=s.id;go('set')}
 function planView(){let pool=selectedPool(),dueWords=pool.filter(due),fresh=pool.filter(w=>!rec(w.id));return `<h1>Dein Lernplan</h1><p class="muted">Настрой занятие. Доступно: ${dueWords.length} повторений и ${fresh.length} новых слов в выбранных наборах.</p><section class="card hero"><div class="field"><label>Повторения: <b id="reviewValue">${data.reviewCount}</b></label><input type="range" min="0" max="20" value="${data.reviewCount}" oninput="document.getElementById('reviewValue').textContent=this.value" id="reviewCount"></div><div class="field"><label>Новые слова: <b id="newValue">${data.newCount}</b></label><input type="range" min="0" max="20" value="${data.newCount}" oninput="document.getElementById('newValue').textContent=this.value" id="newCount"></div><div class="field"><label>Написание</label><select id="writing"><option value="adaptive" ${data.writing==='adaptive'?'selected':''}>Адаптивное</option><option value="yes" ${data.writing==='yes'?'selected':''}>С написанием</option><option value="no" ${data.writing==='no'?'selected':''}>Без написания</option></select></div><button class="wide" onclick="startPlan()">Начать занятие</button></section><p class="foot">Если слов меньше, чем запрошено, занятие будет короче. При отсутствии выбранных наборов используются демонстрационные слова A1.</p>`}
 function startPlan(){data.reviewCount=+document.getElementById('reviewCount').value;data.newCount=+document.getElementById('newCount').value;data.writing=document.getElementById('writing').value;save();let pool=selectedPool(),rev=pool.filter(due).sort((a,b)=>rec(a.id).due-rec(b.id).due).slice(0,data.reviewCount),fresh=pool.filter(w=>!rec(w.id)).slice(0,data.newCount);startSession(uniqueIds([...rev,...fresh].map(w=>w.id)),'smart')}
-function startFree(mode){let ids=[...selectedPool()].sort(()=>Math.random()-.5).slice(0,12).map(w=>w.id);startSession(ids,'smart')}function startSet(id,mode){let s=data.sets.find(x=>x.id===id);startSession(s.wordIds,mode)}function startSession(ids,mode){let q=uniqueIds(ids).filter(id=>word(id)).map(id=>({id,tries:0}));if(!q.length)return alert('В наборе пока нет слов для занятия.');session={queue:q,index:0,mode,correct:0,results:[]};answer='';revealed=false;feedback=null;go('session')}
-function exerciseMode(item){if(session.mode!=='smart')return session.mode;if(!item.exercise) {let modes=['cards','choice','typing','recall'];if(data.writing==='no')modes=modes.filter(x=>x!=='typing');if(data.writing==='yes')modes=['typing','choice','recall','cards'];item.exercise=modes[Math.floor(Math.random()*modes.length)];}return item.exercise}
+function startFree(mode){let ids=[...selectedPool()].sort(()=>Math.random()-.5).slice(0,12).map(w=>w.id);startSession(ids,'smart')}function startSet(id,mode){let s=data.sets.find(x=>x.id===id);startSession(s.wordIds,mode)}function startSession(ids,mode){if(!window.integraticumAuthReady)return alert('Подождите, загружается аккаунт.');let q=uniqueIds(ids).filter(id=>word(id)).map(id=>({id,tries:0}));if(!q.length)return alert('В наборе пока нет слов для занятия.');if(mode==='smart'){const stages=data.writing==='no'?['cards','choice','recall']:['cards','choice','typing','recall'];const initial=q.map(x=>({...x,exercise:adaptiveMode(data.history,x.id,data.writing)}));const remaining=initial.flatMap(x=>stages.filter(exercise=>exercise!==x.exercise).map(exercise=>({id:x.id,tries:0,exercise})));q=[];const pending=[...initial,...remaining];while(pending.length){const last=q.at(-1);const eligible=pending.map((x,i)=>({x,i})).filter(({x})=>q.some(y=>y.id===x.id)||initial.some(y=>y.id===x.id&&y.exercise===x.exercise));const varied=eligible.filter(({x})=>x.exercise!==last?.exercise&&x.id!==last?.id);const different=eligible.filter(({x})=>x.exercise!==last?.exercise);const pool=varied.length?varied:different.length?different:eligible;const chosen=pool[Math.floor(Math.random()*pool.length)];q.push(pending.splice(chosen.i,1)[0]);}}session={queue:q,index:0,mode,correct:0,results:[],learningId:crypto.randomUUID()};persistLearning();answer='';revealed=false;feedback=null;go('session')}
+function reviewRecord(previous,h){const r=previous||{seen:0,streak:0};const streak=h.ok?r.streak+1:0;const hours=h.ok?[24,72,168,336,720,1440][Math.min(streak-1,5)]:h.partial?12:4;return {seen:r.seen+1,streak,due:h.at+hours*3600000,lastMode:h.mode};}
+function adaptiveMode(history,id,writing,tries=0){const recent=history.filter(h=>h.id===id).slice(-8),last=recent[recent.length-1];if(!last)return 'cards';if(!last.ok){if(['article_wrong','article_missing','spelling'].includes(last.errorType))return writing==='no'?'recall':'typing';if(last.errorType==='meaning')return 'choice';return tries?'cards':'recall';}const modes=writing==='no'?['choice','recall','cards']:['recall','typing','choice'];return modes.find(m=>m!==last.mode)||'recall';}
+function exerciseMode(item){if(session.mode!=='smart')return session.mode;if(!item.exercise)item.exercise=adaptiveMode(data.history,item.id,data.writing,item.tries);return item.exercise;}
 function choices(w){let pool=allWords().filter(x=>x.id!==w.id&&(!w.a1Reviewed||x.a1Reviewed)&&translation(x)!=='—'&&translation(x)!==translation(w));let same=pool.filter(x=>x.part===w.part).slice(0,3);if(same.length<3)same.push(...pool.filter(x=>!same.includes(x)).slice(0,3-same.length));let arr=[w,...same];let seed=session.index*3+w.id.length;return arr.sort((a,b)=>hash(a.id+seed)-hash(b.id+seed))}function hash(s){return [...s].reduce((a,c)=>((a*31+c.charCodeAt(0))>>>0),7)}
 function sessionView(){if(!session)return '<p>Нет активного занятия.</p>';if(session.index>=session.queue.length)return `<h1>Gut gemacht!</h1><section class="card center"><h2>Занятие завершено</h2><p>${session.results.length} проверок · ${session.correct} успешных</p><p class="foot">Ошибки учтены в следующем повторении.</p>${btn('На главную',"endSession()",'')}</section>`;let item=session.queue[session.index],w=word(item.id),mode=exerciseMode(item),pct=Math.round(100*session.index/session.queue.length),controls='';if(mode==='cards'||mode==='recall'){controls=`<div class="center"><p class="muted">${mode==='cards'?'Знакомство со словом':'Вспомни немецкое слово без подсказки'}</p><div class="word">${e(mode==='cards'?w.de:translation(w))}</div>${revealed?`<div class="note"><b>${e(w.de)}</b> — ${e(translation(w))}${w.forms?`<br><small>${e(w.forms)}</small>`:''}${w.example?`<br><small>${e(w.example)}</small>`:''}</div><div class="grid">${btn('Не вспомнил',"finishRecall(false)")}${btn('Вспомнил',"finishRecall(true)",'')}</div>`:btn('Показать ответ',"revealed=true;render()",'')}</div>`}else if(mode==='typing'){controls=`<p class="muted">Напиши немецкое слово${w.part==='noun'?' с артиклем':''}:</p><div class="word center">${e(translation(w))}</div><input id="typed" type="text" autocomplete="off" autocapitalize="off" placeholder="Введите ответ" value="${e(answer)}" oninput="answer=this.value" ${feedback?'disabled':''}>${feedback?`<div class="note">${feedback.ok?'✓ Правильно':`Правильный ответ: <b>${e(w.de)}</b>`}<br>${e(feedback.explanation||'')}</div>${btn('Далее',"nextQuestion()",'wide')}`:btn('Проверить',"checkTyped()",'wide')}`}else{controls=`<p class="muted">Выбери правильный перевод:</p><div class="word center">${e(w.de)}</div>${choices(w).map(o=>`<button class="choice ${feedback?(o.id===w.id?'right':o.id===answer?'wrong':''):o.id===answer?'picked':''}" onclick="pick('${o.id}')" ${feedback?'disabled':''}>${e(translation(o))}</button>`).join('')}${feedback?`<div class="note">${feedback.ok?'✓ Richtig!':`Правильно: ${e(translation(w))}`}<br>${e(feedback.explanation||'')}</div>${btn('Далее',"nextQuestion()",'wide')}`:btn('Проверить',"checkChoice()",'wide')}`};return `<div class="row">${btn('← Пауза',"pauseSession()")}<span class="tag">${({cards:'Lernkarten',recall:'Erinnern',typing:'Schreiben',choice:'Auswahl'})[mode]}</span></div><p class="tiny muted">Задание ${session.index+1} из ${session.queue.length}</p><button class="secondary speak" onclick="speakWord(word(session.queue[session.index].id).de)" aria-label="Слушать произношение">🔊 Слушать</button><div class="progress"><div style="width:${pct}%"></div></div><section class="card">${controls}</section><p class="foot">${mode==='cards'||mode==='recall'?'Самооценка не проверяется автоматически.':'Результат сохраняется после подтверждения ответа.'}</p>`}
 function speakWord(value){window.integraticumSpeakText(value)}
@@ -90,8 +97,8 @@ function classifyTyped(input,w){let actual=norm(input),expected=norm(w.de);if(ac
 let distance=spellingDistance(actual,expected);if(distance<=Math.max(1,Math.floor(expected.length*.2))||(noun&&spellingDistance(given,core)<=Math.max(1,Math.floor(core.length*.2))))return {ok:false,partial:true,errorType:'spelling',explanation:'Похоже на орфографическую ошибку. Сравни написание с образцом.'};return {ok:false,partial:false,errorType:'meaning',explanation:'Ответ не совпадает с ожидаемым словом. Проверь значение и написание.'}}
 function checkTyped(){let w=word(session.queue[session.index].id);feedback=classifyTyped(answer,w);render()}
 function finishRecall(ok){feedback={ok,partial:false};nextQuestion()}
-function nextQuestion(){if(!feedback)return;let item=session.queue[session.index],w=word(item.id),mode=exerciseMode(item),ok=feedback.ok,r=rec(w.id)||{seen:0,streak:0};let streak=ok?r.streak+1:0,days=ok?[1,3,7,14,30,60][Math.min(streak-1,5)]:1;data.records[w.id]={seen:r.seen+1,streak,due:Date.now()+days*86400000,lastMode:mode};data.history.push({id:w.id,ok,mode,partial:feedback.partial,errorType:feedback.errorType||(ok?'correct':'recall'),at:Date.now()});data.history=data.history.slice(-2000);session.results.push({id:w.id,ok});if(ok)session.correct++;if(!ok&&item.tries<1)session.queue.push({id:w.id,tries:item.tries+1});session.index++;answer='';revealed=false;feedback=null;save();render()}
-function pauseSession(){if(confirm('Закончить занятие? Уже проверенные ответы сохранены.')){session=null;go('home')}}function endSession(){session=null;go('home')}
+function nextQuestion(){if(!feedback)return;let item=session.queue[session.index],w=word(item.id),mode=exerciseMode(item),ok=feedback.ok,r=rec(w.id)||{seen:0,streak:0};const entry={id:w.id,ok,mode,partial:!!feedback.partial,errorType:feedback.errorType||(ok?'correct':'recall'),at:Date.now(),eventId:crypto.randomUUID()};data.records[w.id]=reviewRecord(r,entry);data.history.push(entry);window.integraticumCloud?.record(entry);data.history=data.history.slice(-2000);session.results.push({id:w.id,ok});if(ok)session.correct++;if(!ok&&item.tries<1)session.queue.push({id:w.id,tries:item.tries+1});session.index++;answer='';revealed=false;feedback=null;persistLearning();render()}
+function pauseSession(){if(confirm('Приостановить занятие? Можно продолжить позже.')){persistLearning();session=null;learningSetup=false;go('plan')}}function endSession(){persistLearning();session=null;learningSetup=false;go('plan')}
 function reviewView(){
   let dueList=allWords().filter(due).sort((a,b)=>rec(a.id).due-rec(b.id).due);
   let fresh=allWords().filter(w=>!rec(w.id)).slice(0,15);
@@ -99,15 +106,34 @@ function reviewView(){
   let label=dueList.length?'Повторить до 15 слов':'Начать изучение 15 новых слов';
   return `<h1>Wiederholung</h1><section class="card hero"><h2>${dueList.length} слов для повторения</h2><p class="muted">${dueList.length?'Повторим слова, которые уже изучали.':'Пока нет слов для повторения. Можно начать с новых слов.'}</p><button class="wide" ${!available.length?'disabled':''} onclick="startSession(${JSON.stringify(available.map(w=>w.id)).replace(/"/g,"'")},'smart')">${label}</button></section>${dueList.slice(0,30).map(w=>`<div class="item row"><b>${e(w.de)}</b><span class="muted tiny">${e(translation(w))}</span></div>`).join('')}`;
 }
-function progressView(){let records=Object.values(data.records),consolidated=records.filter(r=>r.streak>=4).length;return `<h1>Mein Fortschritt</h1><div class="grid"><div class="card"><h2>${records.length}</h2><p class="muted">Начато слов</p></div><div class="card"><h2>${consolidated}</h2><p class="muted">Закреплено*</p></div><div class="card"><h2>${countDue()}</h2><p class="muted">К повторению</p></div><div class="card"><h2>${data.history.length}</h2><p class="muted">Проверок</p></div></div><section class="card"><h3>Результаты по типам заданий</h3>${['choice','typing','cards','recall'].map(m=>{let h=data.history.filter(x=>x.mode===m);return `<p>${({choice:'Выбор',typing:'Написание',cards:'Карточки',recall:'Самопроверка'})[m]}: ${h.length?Math.round(100*h.filter(x=>x.ok).length/h.length)+'%':'пока нет данных'} (${h.length})</p>`}).join('')}<p class="foot">*Условный показатель: четыре последовательных успешных проверки. Это не гарантия долговременного знания.</p><h3>Типы ошибок</h3>${[['article_wrong','Неверный артикль'],['article_missing','Пропущен артикль'],['spelling','Орфография'],['meaning','Значение / другой ответ'],['empty','Пустой ответ']].map(([k,v])=>`<p>${v}: ${data.history.filter(x=>x.errorType===k).length}</p>`).join('')}</section>`}
-function calendarView(){if(!window.integraticumCourse?.hasMembership?.())return '<h1>Календарь курса</h1><section class="card"><p>Расписание доступно участникам учебных групп.</p><button onclick="go(\'courses\')">Учебные группы</button></section>';let d=new Date(),year=d.getFullYear(),month=d.getMonth(),first=(new Date(year,month,1).getDay()+6)%7,days=new Date(year,month+1,0).getDate(),names=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'];let cells=Array(first).fill('<span></span>');for(let n=1;n<=days;n++){let date=new Date(year,month,n),day=date.getDay(),lesson=[1,2,4,5].includes(day);cells.push(`<span class="cal-day ${lesson?'lesson':''} ${n===d.getDate()?'today':''}">${n}</span>`)}return `<h1>Календарь занятий</h1><section class="card"><h2>${d.toLocaleDateString('ru-RU',{month:'long',year:'numeric'})}</h2><p class="muted tiny">Предварительное расписание двух групп. Индивидуальный доступ и отмены будут подключены к Firebase.</p><div class="calendar-grid">${names.map(x=>`<b>${x}</b>`).join('')}${cells.join('')}</div><div class="note">Группа 1: Пн / Чт, 18:00–20:30<br>Группа 2: Вт / Пт, 18:00–20:30</div></section>`}
+const progressCategories=[['article_wrong','Неверный артикль','typing'],['article_missing','Пропущен артикль','typing'],['spelling','Орфография','typing'],['meaning','Значение и перевод','choice'],['empty','Незнакомые слова','recall'],['recall','Не удалось вспомнить','recall']];
+function progressAnalysis(history,now=Date.now()){const map=new Map(),day=86400000;for(const h of [...history].sort((a,b)=>a.at-b.at)){let x=map.get(h.id)||{id:h.id,n:0,score:0,streak:0,types:{}};if(h.ok){x.streak++;x.score*=0.5;for(const k of Object.keys(x.types))x.types[k]*=0.5;}else{const weight=Math.pow(0.5,Math.max(0,now-h.at)/(14*day));x.n++;x.streak=0;x.score+=weight;const k=h.errorType||'recall';x.types[k]=(x.types[k]||0)+weight;}map.set(h.id,x);}return [...map.values()].filter(x=>x.n&&x.streak<3&&x.score>=0.15).sort((a,b)=>b.score-a.score);}
+function difficultWords(){return progressAnalysis(data.history).map(x=>({...x,w:word(x.id)})).filter(x=>x.w);}
+function practiceMistakes(type='all'){const list=difficultWords().filter(x=>type==='all'||(x.types[type]||0)>=0.15).sort((a,b)=>type==='all'?b.score-a.score:(b.types[type]||0)-(a.types[type]||0));if(!list.length)return alert('Нет слов для этой тренировки.');const mode=progressCategories.find(x=>x[0]===type)?.[2]||'smart';startSession(list.slice(0,20).map(x=>x.id),mode);}
+function progressSummary(history,now=Date.now()){const day=86400000,days=[];for(let i=6;i>=0;i--){const d=new Date(now);d.setDate(d.getDate()-i);d.setHours(0,0,0,0);const end=new Date(d);end.setDate(end.getDate()+1);const h=history.filter(x=>x.at>=+d&&x.at<+end);days.push({label:d.toLocaleDateString('ru-RU',{weekday:'short',day:'numeric'}),n:h.length,ok:h.filter(x=>x.ok).length});}const recent=history.filter(x=>x.at>=now-7*day&&x.at<=now),previous=history.filter(x=>x.at>=now-14*day&&x.at<now-7*day);const accuracy=h=>h.length?Math.round(100*h.filter(x=>x.ok).length/h.length):null;return {days,accuracy:accuracy(history),recent:accuracy(recent),previous:accuracy(previous),count:recent.length};}
+function progressDetails(){const p=progressSummary(data.history),max=Math.max(1,...p.days.map(x=>x.n));return `<section class="card"><h2>Динамика обучения</h2><p>Точность ответов: <b>${p.accuracy===null?'Нет данных':p.accuracy+'%'}</b></p><p>За последние 7 дней: ${p.count} проверок · ${p.recent===null?'нет данных':p.recent+'% правильных'}</p>${p.previous!==null&&p.recent!==null?'<p>Изменение точности: '+(p.recent-p.previous>0?'+':'')+(p.recent-p.previous)+' п. п.</p>':''}${p.days.map(x=>'<p>'+e(x.label)+' · '+x.ok+' / '+x.n+' правильных<br><progress max="'+max+'" value="'+x.n+'"></progress></p>').join('')}</section><section class="card"><h2>Прогресс по наборам</h2>${unifiedLearningSets().map(x=>{const p=learningSetStatus(x),ids=new Set(x.wordIds||[]),h=data.history.filter(a=>ids.has(a.id)),dueCount=[...ids].filter(id=>rec(id)?.due<=Date.now()).length;return '<div class="item"><b>'+e(x.name)+'</b><p class="tiny muted">'+e(x.sourceLabel)+'</p><progress max="'+Math.max(1,p.total)+'" value="'+p.mastered+'"></progress><p>Закреплено '+p.mastered+' из '+p.total+' · к повторению '+dueCount+'</p><p>Точность: '+(h.length?Math.round(100*h.filter(a=>a.ok).length/h.length)+'%':'нет данных')+'</p></div>'}).join('')||'<p>Пока нет наборов.</p>'}<p class="tiny muted">Общие результаты слов, входящих в набор, включая тренировки в других наборах.</p></section>`;}
+function progressAdvice(){const difficult=difficultWords(),types=progressCategories.map(([k,label])=>({k,label,n:difficult.filter(x=>(x.types[k]||0)>=0.15).length})).filter(x=>x.n).sort((a,b)=>b.n-a.n);return `<section class="card"><h2>Над чем работать</h2>${data.history.length<5?'<p>Пока мало ответов для устойчивых рекомендаций. Продолжайте тренировки.</p>':''}${types.map(x=>'<p>'+e(x.label)+' · '+x.n+' слов</p><button class="secondary" onclick="practiceMistakes(\''+x.k+'\')">Тренировать</button>').join('')||'<p>Нет актуальных повторяющихся ошибок.</p>'}<h3>Сложные слова</h3>${difficult.slice(0,10).map(x=>'<p><b>'+e(x.w.de)+'</b> — '+e(translation(x.w))+' · ошибок в истории: '+x.n+'</p>').join('')||'<p>Пока нет сложных слов.</p>'}${difficult.length?'<button onclick="practiceMistakes()">Тренировать сложные слова</button>':''}${countDue()?'<button class="secondary" onclick="chooseLearning(\'review\')">Повторить слова по расписанию</button>':''}<p class="tiny muted">Анализ последних 2000 ответов: свежие ошибки важнее, успешные ответы уменьшают приоритет.</p></section>`;}
+function progressView(){let records=Object.values(data.records),consolidated=records.filter(r=>r.streak>=4).length;return `<h1>Мой прогресс</h1><p class="tiny muted">${e(window.integraticumProgressStatus||"Прогресс хранится локально")}</p><button class="secondary" onclick="go('account')">← Личный кабинет</button><div class="grid"><div class="card"><h2>${records.length}</h2><p class="muted">Начато слов</p></div><div class="card"><h2>${consolidated}</h2><p class="muted">Закреплено*</p></div><div class="card"><h2>${countDue()}</h2><p class="muted">К повторению</p></div><div class="card"><h2>${data.history.length}</h2><p class="muted">Проверок</p></div></div><section class="card"><h3>Результаты по типам заданий</h3>${['choice','typing','cards','recall'].map(m=>{let h=data.history.filter(x=>x.mode===m);return `<p>${({choice:'Выбор',typing:'Написание',cards:'Карточки',recall:'Самопроверка'})[m]}: ${h.length?Math.round(100*h.filter(x=>x.ok).length/h.length)+'%':'пока нет данных'} (${h.length})</p>`}).join('')}<p class="foot">*Условный показатель: четыре последовательных успешных проверки. Это не гарантия долговременного знания.</p><h3>Типы ошибок</h3>${[['article_wrong','Неверный артикль'],['article_missing','Пропущен артикль'],['spelling','Орфография'],['meaning','Значение / другой ответ'],['empty','Пустой ответ']].map(([k,v])=>`<p>${v}: ${data.history.filter(x=>x.errorType===k).length}</p>`).join('')}</section>${progressDetails()}${progressAdvice()}`}
+let calendarOffset=0,calendarEdit=null;
+const calendarTypes={cancel:'Отмена занятия',holiday:'Каникулы',move:'Перенос занятия',extra:'Дополнительное занятие',other:'Мероприятие'};
+function calendarDate(d){return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')}
+function calendarFormDirty(){return ['calType','calStart','calEnd','calGroup','calNote'].some(id=>{const el=document.getElementById(id);if(!el)return false;const initial=el.tagName==='SELECT'?(Array.from(el.options).find(o=>o.defaultSelected)||el.options[0])?.value:el.defaultValue;return el.value!==initial;});}
+function backgroundRender(){if(page==='calendar'&&calendarFormDirty()){updateNavigation();return;}window.render?.();}
+function calendarShift(n){calendarOffset=n===0?0:calendarOffset+n;render()}
+function calendarEscape(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function calendarView(){const api=window.integraticumCourse,admin=api?.accountProfile()?.role==='super_admin';if(!admin&&!api?.hasMembership?.())return '<h1>Календарь курса</h1><section class="card"><p>Расписание доступно участникам учебных групп.</p></section>';const now=new Date(),d=new Date(now.getFullYear(),now.getMonth()+calendarOffset,1),year=d.getFullYear(),month=d.getMonth(),first=(d.getDay()+6)%7,days=new Date(year,month+1,0).getDate(),events=api.calendarEvents(),cells=Array(first).fill('<span></span>');for(let n=1;n<=days;n++){const date=new Date(year,month,n),key=calendarDate(date),day=date.getDay(),matches=events.filter(e=>e.start<=key&&e.end>=key),group=[1,4].includes(day)?'1':[2,5].includes(day)?'2':'',cancel=matches.some(e=>['cancel','holiday','move'].includes(e.type)&&(e.group==='all'||e.group===group));cells.push('<span class="cal-day '+(group&&!cancel?'lesson ':'')+(key===calendarDate(now)?'today':'')+'" style="'+(matches.length?'background:#f4d8cb;':'')+(cancel?'text-decoration:line-through;':'')+'">'+n+'</span>')}const visible=events.filter(e=>e.start<=calendarDate(new Date(year,month+1,0))&&e.end>=calendarDate(d));const edit=events.find(e=>e.id===calendarEdit)||{};return '<h1>Календарь занятий</h1><section class="card"><div style="display:flex;gap:8px;align-items:center;justify-content:space-between"><button onclick="calendarShift(-1)">‹</button><h2>'+d.toLocaleDateString('ru-RU',{month:'long',year:'numeric'})+'</h2><button onclick="calendarShift(1)">›</button></div><button onclick="calendarShift(0)">Сегодня</button><div class="calendar-grid">'+['Пн','Вт','Ср','Чт','Пт','Сб','Вс'].map(x=>'<b>'+x+'</b>').join('')+cells.join('')+'</div><div class="note">Группа 1: Пн / Чт, 18:00–20:30<br>Группа 2: Вт / Пт, 18:00–20:30</div></section><section class="card"><h2>Изменения расписания</h2>'+ (visible.map(e=>'<p><b>'+calendarTypes[e.type]+'</b> · '+calendarEscape(e.start)+' — '+calendarEscape(e.end)+' · '+(e.group==='all'?'Обе группы':'Группа '+e.group)+'<br>'+calendarEscape(e.note)+(admin?' <button onclick="calendarEdit=\''+calendarEscape(e.id)+'\';render()">Изменить</button> <button onclick="integraticumCourse.deleteCalendar(\''+calendarEscape(e.id)+'\')">Удалить</button>':'')+'</p>').join('')||'<p>Нет изменений.</p>')+'</section>'+(admin?'<section class="card"><h2>'+ (calendarEdit?'Редактировать событие':'Добавить событие')+'</h2><form onsubmit="event.preventDefault();integraticumCourse.saveCalendar()"><label>Тип<select id="calType">'+Object.entries(calendarTypes).map(([k,v])=>'<option value="'+k+'" '+(edit.type===k?'selected':'')+'>'+v+'</option>').join('')+'</select></label><label>Начало<input required type="date" id="calStart" value="'+calendarEscape(edit.start||calendarDate(now))+'"></label><label>Окончание<input required type="date" id="calEnd" value="'+calendarEscape(edit.end||calendarDate(now))+'"></label><label>Группа<select id="calGroup">'+['all','1','2'].map(k=>'<option value="'+k+'" '+(edit.group===k?'selected':'')+'>'+(k==='all'?'Обе группы':'Группа '+k)+'</option>').join('')+'</select></label><label>Комментарий<textarea id="calNote" maxlength="1000">'+calendarEscape(edit.note||'')+'</textarea></label><button type="submit">Сохранить</button><button type="button" onclick="calendarEdit=null;render()">Отмена</button></form></section>':'')}
+
+function managementView(){
+  if(!window.integraticumAuthReady)return '<p role="status">Восстанавливаем вход…</p>';
+  return window.integraticumCourse?.managementView(page)||`<section class="card"><p>Раздел доступен сотрудникам с соответствующими правами.</p><button onclick="go('account')">Мой кабинет</button></section>`;
+}
 function courseView(){return window.integraticumCourse?.view?.()||'<section class="card">Подключаем учебные группы…</section>'}
 function accountCourseControls() {
   const profile = window.integraticumCourse?.accountProfile?.();
   if (!profile || profile.state === 'loading') return '<p class="muted" role="status">Проверяем роль аккаунта…</p>';
   if (profile.state === 'error') return `<p class="error" role="alert">Не удалось проверить роль аккаунта.</p>
     <button class="secondary" onclick="window.integraticumCourse.reload()">Проверить ещё раз</button>`;
-  const role = {super_admin:'Суперадминистратор',teacher:'Преподаватель',student:'Ученик'}[profile.role];
+  const role = {teacher:'Преподаватель',student:'Ученик'}[profile.role];
   return `<p>Роль: <strong>${role}</strong></p>
     ${profile.role === 'student'
       ? `<div class="actions"><button class="secondary" onclick="openCourseSection('courseJoin')">Ввести код приглашения</button></div>`
@@ -120,10 +146,10 @@ function accountCourseControls() {
         </div>`}`;
 }
 
-function accountView(){let u=window.integraticumUser;return `<h1>Мой кабинет</h1><section class="card"><h2>${u?'Вы вошли в аккаунт':'Регистрация и вход'}</h2>${u?`<div class="auth-profile"><b>${e(u.displayName||u.email||'Ученик')}</b><p class="tiny">${e(u.email||'Google аккаунт')}</p><p class="auth-hint">ID: ${e(u.uid)}</p></div><p class="auth-note">Вход работает через Firebase. Прогресс, наборы и история пока сохраняются только в этом браузере. Облачная синхронизация будет подключена после настройки безопасных правил доступа.</p><button class="secondary" onclick="window.integraticumAuth.signOut()">Выйти</button>`:`<p class="muted">Войдите, чтобы создать аккаунт Integraticum. Данные тренировок пока остаются на устройстве.</p><label for="authEmail">Электронная почта</label><input class="auth-input" id="authEmail" type="email" autocomplete="email" placeholder="name@example.com"><label for="authPassword">Пароль (не менее 6 символов)</label><input class="auth-input" id="authPassword" type="password" autocomplete="current-password" placeholder="••••••••"><div class="auth-actions"><button onclick="window.integraticumAuth.email('register')">Зарегистрироваться</button><button class="secondary" onclick="window.integraticumAuth.email('login')">Войти</button></div><p style="text-align:center">или</p><button class="secondary wide" onclick="window.integraticumAuth.google()">Войти через Google</button><p id="authError" class="auth-error" role="alert"></p><p class="auth-hint">При регистрации через email Firebase может отправить письмо для подтверждения адреса. Не используйте здесь пароль от других сервисов.</p>`}</section><section class="card"><h3>Учебная группа Integraticum</h3><p class="auth-note">Принадлежность к группе будет подтверждать преподаватель. Самостоятельный выбор группы не даёт доступа к закрытым материалам.</p>${u?accountCourseControls():''}</section>`}
+function accountView(){const u=window.integraticumUser;if(!window.integraticumAuthReady)return '<h1>Мой кабинет</h1><section class="card">Восстанавливаем вход…</section>';if(!u)return '<h1>Мой кабинет</h1><section class="card"><h2>Регистрация и вход</h2>'+`<p class="muted">Войдите, чтобы создать аккаунт Integraticum. Данные тренировок пока остаются на устройстве.</p><label for="authName">Имя (для регистрации, необязательно)</label><input class="auth-input" id="authName" type="text" autocomplete="name" maxlength="150"><label for="authEmail">Электронная почта</label><input class="auth-input" id="authEmail" type="email" autocomplete="email" placeholder="name@example.com"><label for="authPassword">Пароль (не менее 6 символов)</label><input class="auth-input" id="authPassword" type="password" autocomplete="current-password" placeholder="••••••••"><div class="auth-actions"><button onclick="window.integraticumAuth.email('register')">Зарегистрироваться</button><button class="secondary" onclick="window.integraticumAuth.email('login')">Войти</button></div><p style="text-align:center">или</p><button class="secondary wide" onclick="window.integraticumAuth.google()">Войти через Google</button><p id="authError" class="auth-error" role="alert"></p><p class="auth-hint">При регистрации через email Firebase может отправить письмо для подтверждения адреса. Не используйте здесь пароль от других сервисов.</p>`+'</section>';const p=window.integraticumCourse?.accountProfile?.(),role=({student:'Ученик',teacher:'Преподаватель',super_admin:'Суперадминистратор'})[p?.role]||'Аккаунт';return `<h1>Мой кабинет</h1><section class="card"><div class="auth-profile"><h2>${e(u.displayName||u.email||'Ученик')}</h2><p>${e(role)}</p><p class="tiny">${e(u.email||'')}</p></div>${window.integraticumPersistence!=='local'?'<p class="note">Браузер не разрешил постоянное хранение входа. Используйте обычное окно Safari.</p>':''}</section><div class="v6-grid">${v6Tile('purple','progress','Мой прогресс','Статистика и анализ ошибок','progress')}${v6Tile('peach','group','Мои учебные группы','Участие в курсе','courses')}${v6Tile('blue','folder','Учебные материалы','Наборы преподавателей','courseMaterials')}${v6Tile('rose','layers','Мои наборы','Личные карточки','sets')}${v6Tile('sage','book','Заучивание','Начать или продолжить тренировку','plan')}</div><section class="card"><div class="actions"><button class="secondary" onclick="openCourseSection('courseJoin')">Присоединиться к группе</button><button class="secondary" onclick="openCourseSection('courseOwnRequests')">Мои заявки</button><button class="secondary" onclick="go('settings')">Настройки</button></div></section>${p?.role==='super_admin'?`<section class="card"><button onclick="go('admin')">Управление</button></section>`:p?.role==='teacher'?'<section class="card">'+accountCourseControls()+'</section>':''}<section class="card"><button class="secondary" onclick="window.integraticumAuth.signOut()">Выйти из аккаунта</button></section>`}
 function settingsView(){return `<h1>Einstellungen</h1><section class="card"><div class="field"><label>Язык перевода карточек</label><select id="lang" onchange="data.lang=this.value;save();render()"><option value="ru" ${data.lang==='ru'?'selected':''}>Русский</option><option value="uk" ${data.lang==='uk'?'selected':''}>Українська</option></select></div><p class="foot">Полный перевод интерфейса на немецкий и украинский запланирован для следующей версии.</p></section><section class="card"><h3>Резервное копирование</h3><p class="foot">Данные сохраняются только в этом браузере и могут исчезнуть при очистке его памяти.</p><div class="actions">${btn('Скачать JSON',"exportData()",'')}${btn('Импорт JSON',"document.getElementById('importFile').click()")}</div><input id="importFile" type="file" accept=".json,application/json" style="display:none" onchange="importData(this.files[0])"></section><section class="card"><h3>Сведения</h3><p class="foot">Integraticum · Dein Lernraum · прототип с Firebase Authentication; учебные данные пока локальные. Готовая библиотека — демонстрационная, не полная учебная база.</p></section>`}
 function exportData(){let blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='integraticum-backup-v02.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}async function importData(file){if(!file)return;try{let x=JSON.parse(await file.text());if(x.version!==2||!Array.isArray(x.sets)||!Array.isArray(x.custom)||!x.records||!Array.isArray(x.history))throw Error('format');if(confirm('Заменить все локальные данные содержимым файла?')){data={...structuredClone(defaults),...x};save();go('home')}}catch{alert('Файл не подходит для версии 0.2. Импорт не выполнен.')}}
-window.integraticumBridge={get data(){return data},word,startSet,save};window.render=render;render();
+window.integraticumBridge={get data(){return data},word,startSet,save,switchAccount(uid){if(accountDataUid===uid)return;accountDataUid=uid;const key=uid?KEY+':'+uid:KEY;const existing=load(key);for(const k of Object.keys(data))delete data[k];Object.assign(data,structuredClone(defaults),existing);learningSetup=false;learningSet='';learningSource='library';learningOrder='new';learningFilter={level:'all',topic:'all',part:'all'};session=null;selectedSet=null;selectedWord=null;editor=null;feedback=null;answer='';revealed=false;if(['session','set','editor','bulk'].includes(page))page='account';window.render?.()}};window.render=render;
 
 /* Integraticum: load dictionary into existing prototype. Unverified translations remain marked. */
 (function () {
@@ -311,7 +337,7 @@ function toggleMenu() {
 }
 
 function pendingNotifications() {
-  return window.integraticumCourse?.pendingCount?.() || 0;
+  return (window.integraticumCourse?.pendingCount?.() || 0)+unreadCalendar();
 }
 
 function updateNavigation() {
@@ -325,14 +351,20 @@ function updateNavigation() {
   document.getElementById('notificationDot').hidden = !pendingNotifications();
 }
 
-function notificationsView() {
-  const pending = pendingNotifications();
-  return `<h1>Уведомления</h1><section class="card">${pending
-    ? `<p>Заявок на вступление в группу: ${pending}</p><button onclick="go('courses')">Посмотреть заявки</button>`
-    : '<p>Новых уведомлений нет.</p>'}</section>`;
+function calendarNotices(){const api=window.integraticumCourse;if(!window.integraticumUser||(!api?.hasMembership?.()&&api?.accountProfile()?.role!=='super_admin'))return [];return (api.calendarEvents()||[]).filter(e=>e.end>=calendarDate(new Date())).sort((a,b)=>a.start.localeCompare(b.start));}
+function calendarNoticeKey(e){return JSON.stringify([e.id,e.type,e.start,e.end,e.group,e.note]);}
+function calendarSeen(){try{return JSON.parse(localStorage.getItem(KEY+':calendarSeen:'+window.integraticumUser?.uid)||'[]')}catch{return []}}
+function unreadCalendar(){const seen=new Set(calendarSeen());return calendarNotices().filter(e=>!seen.has(calendarNoticeKey(e))).length;}
+function markCalendarRead(){try{localStorage.setItem(KEY+':calendarSeen:'+window.integraticumUser.uid,JSON.stringify(calendarNotices().map(calendarNoticeKey)))}catch{}render();}
+function notificationsView(){
+ const pending=window.integraticumCourse?.pendingCount?.()||0,events=calendarNotices(),seen=new Set(calendarSeen());
+ return '<h1>Уведомления</h1>'+ (pending?'<section class="card"><p>Заявок на вступление в группу: '+pending+'</p><button onclick="go(\'courses\')">Посмотреть заявки</button></section>':'')+
+ (events.length?'<section class="card"><h2>Изменения расписания</h2>'+events.map(e=>'<p><b>'+calendarEscape(calendarTypes[e.type]||e.type)+'</b>'+(!seen.has(calendarNoticeKey(e))?' · Новое':'')+'<br>'+calendarEscape(e.start)+' — '+calendarEscape(e.end)+' · '+(e.group==='all'?'Обе группы':'Группа '+calendarEscape(e.group))+'<br>'+calendarEscape(e.note)+'</p>').join('')+'<button onclick="markCalendarRead()">Отметить прочитанными</button> <button onclick="go(\'calendar\')">Открыть календарь</button></section>':(!pending?'<section class="card"><p>Новых уведомлений нет.</p></section>':''));
 }
 
+let courseSectionFilter=null;
 function openCourseSection(section) {
+  courseSectionFilter=section;
   go('courses');
   const target = document.getElementById(section);
   target?.scrollIntoView({block:'start'});
@@ -381,42 +413,46 @@ function v6Library() {
   return `<h1>Словарь</h1>${libraryView()}`;
 }
 
-function v6StartLearning(){
-  const pool=selectedPool();
-  const dueWords=pool.filter(due);
-  const fresh=pool.filter(w=>!rec(w.id));
-  const chosen=[...dueWords.slice(0,5),...fresh.slice(0,10)];
-  if(!chosen.length){
-    const more=pool.filter(w=>!!word(w.id)).slice(0,10);
-    if(!more.length){alert('Нет доступных слов. Проверьте загрузку словаря или создайте набор.');return;}
-    return startSession(more.map(w=>w.id),'smart');
-  }
-  startSession(uniqueIds(chosen.map(w=>w.id)),'smart');
+
+let learningSource='library',learningSet='',learningCount=10,learningMode='smart',learningOrder='new',learningFilter={level:'all',topic:'all',part:'all'},learningSetup=false;
+function learningPool(){
+ if(learningSource==='course')return window.integraticumCourse?.learningWords(learningSet)||[];
+ if(learningSource==='personal')return uniqueIds(data.sets.find(x=>x.id===learningSet)?.wordIds||[]).map(word).filter(Boolean);
+ if(learningSource==='mistakes')return difficultWords().map(x=>x.w);
+ if(learningSource==='review')return allWords().filter(due);
+ if(learningSource!=='library')return [];
+ return dictionaryCards().filter(w=>(learningFilter.level==='all'||(learningFilter.level==='unknown'?!w.level_verified:w.level_verified===true&&w.level===learningFilter.level))&&(learningFilter.topic==='all'||w.topic===learningFilter.topic||w.topics?.includes(learningFilter.topic))&&(learningFilter.part==='all'||w.part===learningFilter.part)&&translation(w)!=='—');
 }
-function v6Plan() {
-  const pool = selectedPool();
-  const fresh = pool.filter(w => !rec(w.id)).length;
-  const due = pool.filter(w => rec(w.id) && rec(w.id).due <= Date.now()).length;
-  const colors = ['purple', 'peach', 'blue'];
-  return `<h1>Заучивание</h1>
-    ${v6Banner('Продолжить заучивание', `${due} к повторению · ${fresh} новых слов`, 'v6StartLearning()', 'Начать заучивание')}
-    <h2 class="v6-section">Что будем изучать?</h2>
-    <div class="v6-grid shortcuts">
-      ${v6Tile('purple','layers','Мои наборы','Личные карточки','sets')}
-      ${v6Tile('peach','folder','Курс','Учебные материалы','courses')}
-      ${v6Tile('blue','book','Словарь','Найти карточку','library')}
-    </div>
-    ${data.sets.length ? `<div class="stack">${data.sets.map((set,i) =>
-      `<button class="v6-tile ${colors[i%colors.length]}" onclick="openSet('${e(set.id)}')">${uiIcon('layers')}
-        <span><b>${e(set.name)}</b><small>Карточек: ${set.wordIds.length}</small></span>${uiIcon('chevron')}</button>`).join('')}</div>`
-      : '<div class="v6-note">Начни со словаря или создай свой первый набор.</div>'}`;
+function learningCandidates(){const pool=learningPool();return learningOrder==='new'?pool.filter(w=>!rec(w.id)):learningOrder==='due'?pool.filter(due).sort((a,b)=>rec(a.id).due-rec(b.id).due):pool;}
+function v6StartLearning(){const pool=learningCandidates();if(!pool.length)return alert('Нет слов по выбранным условиям. Измените фильтры.');const chosen=pool.slice(0,learningCount);if(learningSource==='course'){for(const w of chosen)if(!data.custom.some(x=>x.id===w.id))data.custom.push(w);}const ids=uniqueIds(chosen.map(w=>w.id));if(learningSource==='library'&&document.getElementById('saveLearningSet')?.checked){const name=document.getElementById('learningName')?.value.trim()||'Подборка '+new Date().toLocaleDateString('ru-RU');data.sets.push({id:crypto.randomUUID(),name,wordIds:ids,description:'Подборка из библиотеки',level:learningFilter.level,topic:learningFilter.topic});save();}learningSetup=false;startSession(ids,learningMode);}
+function learningSelect(label,values,current,handler){return '<div class="field"><label>'+e(label)+'</label><select onchange="'+handler+'">'+values.map(([v,t])=>'<option value="'+e(v)+'" '+(v===current?'selected':'')+'>'+e(t)+'</option>').join('')+'</select></div>';}
+function chooseLearning(source,id=''){learningSource=source;learningSet=id;const selected=unifiedLearningSets().find(x=>x.source===source&&x.id===id);learningOrder=['mistakes','review'].includes(source)||selected&&learningSetStatus(selected).status==='done'?'all':'new';learningSetup=true;go('plan');}
+function resumeLearning(i){if(!window.integraticumAuthReady)return alert('Подождите, загружается аккаунт.');const saved=data.learningSessions?.[i];if(!saved||saved.index>=saved.queue.length||!saved.queue.slice(saved.index).every(x=>word(x.id)))return alert('Карточки занятия недоступны.');session=structuredClone(saved);answer='';revealed=false;feedback=null;go('session');}
+function persistLearning(){if(!session)return;data.learningSessions??=[];const i=data.learningSessions.findIndex(x=>x.learningId===session.learningId);if(i<0)data.learningSessions.push(structuredClone(session));else data.learningSessions[i]=structuredClone(session);save();}
+function unifiedLearningSets(){return [...data.sets.map(x=>({...x,source:'personal',sourceLabel:x.description==='Подборка из библиотеки'?'Подборка из библиотеки':'Личный набор'})),...(window.integraticumCourse?.learningSets()||[]).map(x=>({...x,source:'course',sourceLabel:x.visibility==='public'?'Общедоступный набор':'Набор учебной группы',wordIds:(window.integraticumCourse.learningWords(x.id)||[]).map(w=>w.id)}))];}
+function learningSetStatus(set){const ids=uniqueIds(set.wordIds||[]),seen=ids.filter(id=>rec(id)?.seen>0).length,mastered=ids.filter(id=>rec(id)?.streak>=4).length;return {seen,mastered,total:ids.length,status:ids.length&&mastered===ids.length?'done':seen?'started':'new'};}
+function v6Plan(){
+ if(!learningSetup){
+ const pending=(data.learningSessions||[]).map((x,i)=>({x,i})).filter(({x})=>x.index<x.queue.length).reverse();
+ const groups=[['started','Начатые наборы'],['new','Не начатые наборы'],['done','Завершённые наборы']];
+ return '<h1>Заучивание</h1><section class="card"><button class="wide" '+(pending.length?'':'disabled')+' onclick="resumeLearning('+ (pending[0]?.i??-1)+')">Продолжить заучивание</button><button class="wide secondary" onclick="chooseLearning(\'library\')">Начать новое заучивание</button></section>'+ (pending.length?'<section class="card"><h2>Незавершённые занятия</h2>'+pending.map(({x,i})=>'<p><button class="secondary" onclick="resumeLearning('+i+')">Продолжить · '+x.index+' / '+x.queue.length+'</button></p>').join('')+'</section>':'')+groups.map(([status,label])=>'<section class="card"><h2>'+label+'</h2>'+ (unifiedLearningSets().filter(x=>learningSetStatus(x).status===status).map(x=>{const p=learningSetStatus(x);return '<div class="item"><b>'+e(x.name)+'</b><p class="tiny muted">'+e(x.sourceLabel)+'</p><progress max="'+Math.max(1,p.total)+'" value="'+p.mastered+'"></progress><p>Усвоено '+p.mastered+' из '+p.total+' · начато '+p.seen+'</p><button class="secondary" data-id="'+e(x.id)+'" data-source="'+e(x.source)+'" onclick="chooseLearning(this.dataset.source,this.dataset.id);if(this.dataset.status!==\'new\'){learningOrder=\'all\';render()} " data-status="'+status+'">'+(status==='done'?'Повторить':status==='started'?'Продолжить':'Начать')+'</button></div>'}).join('')||'<p class="muted">Пока нет наборов.</p>')+'</section>').join('')+'<section class="card"><button class="secondary" onclick="chooseLearning(\'review\')">Слова к повторению</button><button class="secondary" onclick="chooseLearning(\'mistakes\')">Работа над ошибками</button></section>';
+ }
+ const source=learningSelect('Источник слов',[['library','Библиотека слов'],['personal','Мои наборы'],['course','Учебные наборы'],['mistakes','Мои ошибки'],['review','Повторение']],learningSource,"learningSource=this.value;learningOrder=['mistakes','review'].includes(this.value)?'all':'new';render()");
+ let controls='';
+ if(learningSource==='course')controls=learningSelect('Учебный набор',[['','Выберите набор'],...(window.integraticumCourse?.learningSets()||[]).map(x=>[x.id,x.name+' · '+(x.visibility==='public'?'Общий':'Группа')+' · '+x.count])],learningSet,'learningSet=this.value;render()');
+ if(learningSource==='personal')controls=learningSelect('Личный набор',[['','Выберите набор'],...data.sets.map(x=>[x.id,x.name+' · '+x.wordIds.length])],learningSet,'learningSet=this.value;render()');
+ if(learningSource==='library'){const cards=dictionaryCards(),topics=[...new Set(cards.flatMap(w=>w.topics?.length?w.topics:[w.topic]).filter(Boolean))].sort(),parts=[...new Set(cards.map(w=>w.part).filter(Boolean))];controls=learningSelect('Уровень',[['all','Все уровни'],...['A1','A2','B1','B2','C1','C2'].map(x=>[x,x]),['unknown','Неопределённый уровень']],learningFilter.level,'learningFilter.level=this.value;render()')+learningSelect('Тема',[['all','Все темы'],...topics.map(x=>[x,x])],learningFilter.topic,'learningFilter.topic=this.value;render()')+learningSelect('Часть речи',[['all','Все части речи'],...parts.map(x=>[x,typeName(x)])],learningFilter.part,'learningFilter.part=this.value;render()');}
+ const count=learningCandidates().length;
+ return '<h1>Новое заучивание</h1><button class="secondary" onclick="learningSetup=false;render()">Назад</button><section class="card">'+source+controls+learningSelect('Какие слова',[['new','Только новые'],['due','Пора повторить'],['all','Все подходящие']],learningOrder,'learningOrder=this.value;render()')+learningSelect('Количество слов',[5,10,15,20,30,50].map(x=>[String(x),String(x)]),String(learningCount),'learningCount=Number(this.value);render()')+learningSelect('Режим',[['smart','Смешанный'],['cards','Карточки'],['choice','Выбор ответа'],['typing','Письменный ответ'],['recall','Вспомнить перевод']],learningMode,'learningMode=this.value;render()')+(learningSource==='library'?'<label><input type="checkbox" id="saveLearningSet" checked> Сохранить подборку</label><input id="learningName" placeholder="Название подборки">':'')+'<p>Доступно слов: <b>'+count+'</b></p><button class="wide" '+(count?'':'disabled')+' onclick="v6StartLearning()">Начать занятие ('+Math.min(count,learningCount)+')</button></section>';
 }
 
+
+restorePage();render();
 </script>
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js';
-import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,setPersistence,browserLocalPersistence,browserSessionPersistence,inMemoryPersistence} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
-import {getFirestore,doc,getDoc,getDocFromServer,setDoc,collection,addDoc,getDocs,query,where,updateDoc,deleteDoc,serverTimestamp,runTransaction,writeBatch,onSnapshot} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
+import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,updateProfile,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,signOut,setPersistence,browserLocalPersistence,browserSessionPersistence,inMemoryPersistence} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js';
+import {getFirestore,doc,getDoc,getDocFromServer,setDoc,collection,addDoc,getDocs,getDocsFromServer,query,where,updateDoc,deleteDoc,serverTimestamp,runTransaction,writeBatch,onSnapshot} from 'https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js';
 const config={
  apiKey:'AIzaSyDzcol0E5U_LH2UzyEQ5aE5K6GjqbHzdPQ',
  authDomain:'integraticum.firebaseapp.com',
@@ -431,11 +467,57 @@ function error(message){const el=document.getElementById('authError');if(el)el.t
 function readable(err){let code=err?.code||'';return ({'auth/email-already-in-use':'Этот email уже зарегистрирован. Нажмите «Войти».','auth/invalid-email':'Проверьте адрес электронной почты.','auth/weak-password':'Пароль должен содержать не менее 6 символов.','auth/invalid-credential':'Неверный email или пароль.','auth/unauthorized-domain':'Нужно разрешить домен curiosity2812-maker.github.io в Firebase Authentication → Settings → Authorized domains.','auth/popup-blocked':'Браузер заблокировал окно Google. Попробуйте ещё раз или используйте email.','auth/operation-not-allowed':'Этот способ входа не включён в Firebase.'})[code]||'Ошибка Firebase: '+(code||err?.message||'неизвестная ошибка')}
 try{
  const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app);auth.languageCode='ru';
- const persistenceReady=setPersistence(auth,browserLocalPersistence).catch(()=>setPersistence(auth,browserSessionPersistence)).catch(()=>setPersistence(auth,inMemoryPersistence)).catch(err=>{console.warn('Auth persistence unavailable',err)});
+ const persistenceReady=setPersistence(auth,browserLocalPersistence).then(()=>{window.integraticumPersistence='local'}).catch(()=>setPersistence(auth,browserSessionPersistence).then(()=>{window.integraticumPersistence='session'})).catch(()=>setPersistence(auth,inMemoryPersistence).then(()=>{window.integraticumPersistence='memory'}));
 
- const {data,word,startSet,save}=window.integraticumBridge;
+ const {word,startSet,save}=window.integraticumBridge;
+ let progressUnsubscribe=null;
+ const progressStatus=(value)=>{window.integraticumProgressStatus=value;if(page==='progress')window.render?.()};
+ function syncProgress(user){
+  progressUnsubscribe?.();progressUnsubscribe=null;
+  if(!user){progressStatus('Войдите для облачного сохранения.');return;}
+  progressStatus('Загрузка облачного прогресса…');
+  const ref=collection(db,'personalProgress',user.uid,'answers');
+  progressUnsubscribe=onSnapshot(ref,{includeMetadataChanges:true},snapshot=>{
+   if(auth.currentUser?.uid!==user.uid||accountDataUid!==user.uid)return;
+   const merged=new Map();
+   for(const h of data.history)merged.set(h.eventId||JSON.stringify([h.id,h.at,h.mode,h.ok]),h);
+   for(const d of snapshot.docs){const h={...d.data(),eventId:d.id};merged.set(d.id,h);}
+   data.history=[...merged.values()].sort((a,b)=>a.at-b.at).slice(-2000);
+   const records={...data.records};
+   const byWord=new Map();for(const h of data.history){if(!byWord.has(h.id))byWord.set(h.id,[]);byWord.get(h.id).push(h);}
+   for(const [id,items] of byWord){const old=records[id];if(!old||items.length>=old.seen)records[id]=items.reduce(reviewRecord,null);}
+   data.records=records;save();progressStatus(snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites?'Локальная копия прогресса':'Облачный прогресс загружен');
+   if(!snapshot.metadata.fromCache&&!snapshot.metadata.hasPendingWrites) captureActivity(user.uid,snapshot.docs);
+   if(!snapshot.metadata.fromCache){const ids=new Set(snapshot.docs.map(d=>d.id));for(const h of data.history)if(h.eventId&&!ids.has(h.eventId))window.integraticumCloud.record(h);}
+  },()=>progressStatus('Облачная синхронизация недоступна. Ответы сохранены локально.'));
+ }
+
+ let workspaceStop=null,workspaceUid=null,workspaceReady=false,workspaceApplying=false,workspaceBase=new Map(),workspaceRemote=new Map(),workspacePending=new Map(),workspaceSending=new Set();
+ const workspaceFields=['lang','writing','newCount','reviewCount','selectedSets'];
+ function workspaceItems(){const items=new Map();for(const kind of ['sets','custom','learningSessions'])for(const item of data[kind]||[]){const key=item.id||item.learningId;if(key)items.set(kind+':'+key,{kind,key,payload:JSON.stringify(item),deleted:false});}for(const key of workspaceFields)items.set('settings:'+key,{kind:'settings',key,payload:JSON.stringify(data[key]),deleted:false});return items;}
+ function workspaceQueueKey(uid){return KEY+':workspacePending:'+uid;}
+ function workspaceStore(){try{localStorage.setItem(workspaceQueueKey(workspaceUid),JSON.stringify([...workspacePending]));}catch(e){console.warn('Workspace queue storage failed',e)}}
+ function workspaceCapture(){if(workspaceApplying||!workspaceUid||workspaceUid!==accountDataUid)return;const next=workspaceItems();for(const [id,item] of next)if(workspaceBase.get(id)?.payload!==item.payload)workspacePending.set(id,{...item,base:workspacePending.has(id)?(workspacePending.get(id).base??null):(workspaceRemote.get(id)??null)});for(const [id,item] of workspaceBase)if(!next.has(id))workspacePending.set(id,{...item,payload:'',deleted:true,base:workspacePending.has(id)?(workspacePending.get(id).base??null):(workspaceRemote.get(id)??null)});workspaceBase=next;workspaceStore();workspaceFlush();}
+ function workspaceEqual(a,b){return a===b||!!(a&&b&&a.kind===b.kind&&a.key===b.key&&a.payload===b.payload&&a.deleted===b.deleted);}
+ function workspaceResolve(item,remote,base,conflictId){
+  if(!remote||workspaceEqual(remote,base)||workspaceEqual(remote,item))return {main:item};
+  if(item.kind==='learningSessions'&&!item.deleted&&!remote.deleted){const l=JSON.parse(item.payload),r=JSON.parse(remote.payload);return {main:l.index>=r.index?item:remote};}
+  if(item.kind==='sets'||item.kind==='custom'||item.kind==='learningSessions'){
+   const preserve=item.deleted?remote:item;
+   if(!preserve.deleted){const value=JSON.parse(preserve.payload);if(item.kind==='learningSessions')value.learningId=conflictId;else value.id=conflictId;if(item.kind==='sets')value.name=(value.name||'Набор')+' (конфликтная копия)';return {main:item.deleted?item:remote,copy:{...preserve,key:conflictId,payload:JSON.stringify(value)}};}
+  }
+  return {main:item};
+ }
+ function workspaceFlush(){if(!workspaceReady||workspaceUid!==auth.currentUser?.uid)return;const uid=workspaceUid;for(const [id,item] of workspacePending){const token=uid+'/'+id;if(workspaceSending.has(token))continue;workspaceSending.add(token);const base=item.base??null;const {base:ignored,...payload}=item;const conflictId=crypto.randomUUID();const target=doc(db,'personalProgress',uid,'workspace',encodeURIComponent(id));runTransaction(db,async tx=>{const snap=await tx.get(target);const result=workspaceResolve(payload,snap.exists()?snap.data():null,base,conflictId);tx.set(target,result.main);if(result.copy)tx.set(doc(db,'personalProgress',uid,'workspace',encodeURIComponent(result.copy.kind+':'+result.copy.key)),result.copy);return result;}).then(result=>{if(workspaceUid===uid&&workspacePending.get(id)===item){workspaceRemote.set(id,result.main);workspacePending.delete(id);workspaceStore();if(result.copy)progressStatus('Конфликт изменений: сохранена дополнительная копия.');}}).catch(()=>{if(workspaceUid===uid)progressStatus('Наборы сохранены локально; синхронизация не подтверждена.');}).finally(()=>{workspaceSending.delete(token);if(workspaceUid===uid&&workspacePending.has(id)&&workspacePending.get(id)!==item)workspaceFlush();});}}
+ function syncWorkspace(user){workspaceStop?.();workspaceStop=null;workspaceUid=user?.uid||null;workspaceReady=false;workspaceBase=workspaceItems();workspaceRemote=new Map();workspacePending=new Map();if(!user)return;try{workspacePending=new Map(JSON.parse(localStorage.getItem(workspaceQueueKey(user.uid))||'[]'));}catch{}const uid=user.uid;workspaceStop=onSnapshot(collection(db,'personalProgress',uid,'workspace'),{includeMetadataChanges:true},snapshot=>{if(workspaceUid!==uid||accountDataUid!==uid||snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites)return;workspaceCapture();workspaceRemote=new Map(snapshot.docs.map(d=>{const x=d.data();return [x.kind+':'+x.key,x]}));if(!workspaceReady){for(const [id,item] of workspaceBase)if(!workspaceRemote.has(id)&&!workspacePending.has(id)&&item.kind!=='settings')workspacePending.set(id,item);if(!snapshot.size)for(const [id,item] of workspaceBase)if(!workspacePending.has(id))workspacePending.set(id,item);}
+ const combined=new Map([...workspaceRemote,...workspacePending]);workspaceApplying=true;try{for(const [id,item] of combined){if(item.kind==='settings'){if(!item.deleted&&workspaceFields.includes(item.key))data[item.key]=JSON.parse(item.payload);continue;}if(!['sets','custom','learningSessions'].includes(item.kind))continue;const arr=data[item.kind]||[];const i=arr.findIndex(x=>(x.id||x.learningId)===item.key);if(item.deleted){if(i>=0)arr.splice(i,1);}else{const value=JSON.parse(item.payload);if(i>=0)arr[i]=value;else arr.push(value);}data[item.kind]=arr;}workspaceBase=workspaceItems();save();}finally{workspaceApplying=false;}workspaceReady=true;workspaceStore();workspaceFlush();if(page!=='session'&&page!=='editor'&&page!=='bulk')window.render?.();},()=>{if(workspaceUid===uid)progressStatus('Облачное сохранение наборов недоступно.');});}
+ window.integraticumWorkspace={capture:workspaceCapture};
+ window.addEventListener('online',workspaceFlush);
+ const pendingProgress=new Set();
+ window.integraticumCloud={async record(h){const uid=auth.currentUser?.uid;if(!uid||uid!==accountDataUid||!h.eventId)return;const key=uid+'/'+h.eventId;if(pendingProgress.has(key))return;pendingProgress.add(key);try{const {eventId,...payload}=h;await setDoc(doc(db,'personalProgress',uid,'answers',eventId),payload);if(auth.currentUser?.uid===uid)progressStatus('Прогресс сохранён в облаке');}catch(e){if(auth.currentUser?.uid===uid)progressStatus('Ответ сохранён локально; облачная запись не подтверждена.');}finally{pendingProgress.delete(key);}}};
+
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
- let courseLoad = 0;
+ let courseLoad = 0, courseLoaded = false;
  let requestListeners=[];
  const stopRequestListeners=()=>{requestListeners.forEach(unsubscribe=>unsubscribe());requestListeners=[];};
  function watchRequests(user,loadId){
@@ -457,28 +539,32 @@ try{
  let selectedCourseGroup = null;
  const esc=(v)=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const isTeacher=()=>['teacher','super_admin'].includes(course.role);
- const refreshCourse=()=>{updateNavigation();if(['courses','notifications'].includes(page)||(page==='account'&&window.integraticumUser))window.render?.()};
+ let calendarItems=[],calendarStop=null; const refreshCourse=()=>{updateNavigation();if(page.startsWith('admin')||page==='groupActivity'||['courses','notifications','plan','calendar'].includes(page)||(page==='account'&&window.integraticumUser))backgroundRender()};
  const courseError=err=>{course.message='Ошибка: '+(err?.message||String(err));refreshCourse()};
  async function loadCourse(user) {
   const request = ++courseLoad;
+  courseLoaded=false;
   stopRequestListeners();
-  if(course.user?.uid!==user?.uid) selectedCourseGroup=null;
+  if(course.user?.uid!==user?.uid){
+   selectedCourseGroup=null;
+   resetManagement();
+  }
   Object.assign(course, {user,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''});
-  if (!user || !selectedCourseGroup) refreshCourse();
+  if (!user || (!selectedCourseGroup&&!page.startsWith('admin')&&page!=='groupActivity')) refreshCourse();
   if (!user) return;
 
   try {
    const profile = await getDoc(doc(db,'users',user.uid));
    if (request !== courseLoad) return;
-   const role = profile.data()?.role;
-   course.role = ['teacher','super_admin'].includes(role) ? role : 'student';
+   course.role = normalizedRole(profile.data()?.role);
    course.roleState = 'ready';
+   completeProfile(user,profile).catch(err=>console.warn('Profile registration:',err.code));
   } catch (err) {
    if (request !== courseLoad) return;
    course.roleState = 'error';
    course.message = 'Не удалось проверить роль: ' + (err?.message || err);
   }
-  if (!selectedCourseGroup) refreshCourse();
+  if (!selectedCourseGroup&&!page.startsWith('admin')&&page!=='groupActivity') refreshCourse();
 
   const rows = snapshot => snapshot.docs.map(item=>({...item.data(),id:item.id}));
   const collectionErrors = [];
@@ -537,33 +623,42 @@ try{
     course.message = course.message ? course.message+' '+message : message;
    }
   } finally {
-   if (request === courseLoad) {refreshCourse();if(course.roleState==='ready')watchRequests(user,request);}
+   if (request === courseLoad) {
+    courseLoaded=true;
+    refreshCourse();
+    scheduleActivity();
+    if(course.roleState==='ready')watchRequests(user,request);
+   }
   }
  }
  const owned=g=>course.user&&g.ownerUid===course.user.uid;
- const teaches=g=>isTeacher()&&(owned(g)||course.assignments.includes(g.id));
+ const teaches=g=>course.role==='super_admin'||(course.role==='teacher'&&(owned(g)||course.assignments.includes(g.id)));
  const teachingGroups=()=>course.groups.filter(teaches);
  const visibleGroups=()=>course.groups.filter(g=>teaches(g)||memberOf(g.id));
- function groupDetails(){
-  const g=visibleGroups().find(g=>g.id===selectedCourseGroup);
+ function groupDetails(groupId=selectedCourseGroup){
+  const g=visibleGroups().find(g=>g.id===groupId);
   if(!g)return '';
   const members=course.groupMembers.filter(m=>m.groupId===g.id);
-  const roster=course.rosterErrors.includes(g.id)?'<p>Не удалось загрузить список учеников.</p>':members.map(m=>{const r=course.requests.find(r=>r.groupId===g.id&&r.studentUid===m.uid&&r.status==='approved');return `<div class="item"><b>${esc(r?.studentName||r?.studentEmail||m.uid)}</b>${r?.studentName&&r?.studentEmail?`<p class="tiny">${esc(r.studentEmail)}</p>`:''}<button class="secondary" data-group="${esc(g.id)}" data-member="${esc(m.id)}" onclick="window.integraticumCourse.removeMember(this.dataset.group,this.dataset.member)">Удалить из группы</button></div>`}).join('')||'<p>Нет записей об учениках.</p>';
-  return `<section class="card" id="selectedCourseDetails"><h2>${esc(g.name)}</h2><p>${esc(g.level||'')} · ${esc(g.ownerName||'')}</p>${teaches(g)?`<h3>Ученики</h3>${roster}`:''}<h3>Материалы группы</h3>${course.published.filter(x=>x.groupId===g.id&&canSeeSet(x)).map(x=>`<div class="item"><b>${esc(x.name)}</b> <button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button></div>`).join('')||'<p>Нет материалов.</p>'}<button class="secondary" onclick="window.integraticumCourse.openGroup(null)">Закрыть</button></section>`;
+  const roster=course.rosterErrors.includes(g.id)?'<p>Не удалось загрузить список учеников.</p>':members.map(m=>{const r=course.requests.find(r=>r.groupId===g.id&&r.studentUid===m.uid&&r.status==='approved');return `<div class="item"><b>${esc(r?.studentName||r?.studentEmail||management.reads.get('users')?.items?.find(p=>p.id===m.uid)?.email||m.uid)}</b>${r?.studentName&&r?.studentEmail?`<p class="tiny">${esc(r.studentEmail)}</p>`:''}<button class="secondary" data-group="${esc(g.id)}" data-member="${esc(m.id)}" onclick="window.integraticumCourse.removeMember(this.dataset.group,this.dataset.member)">Удалить из группы</button></div>`}).join('')||'<p>Нет записей об учениках.</p>';
+  return `<section class="card" id="selectedCourseDetails"><h2>${esc(g.name)}</h2><p>${esc(g.level||'')} · ${esc(g.ownerName||'')}</p>${teaches(g)?`<h3>Ученики</h3>${roster}`:''}<h3>Материалы группы</h3>${course.published.filter(x=>x.groupId===g.id&&canSeeSet(x)).map(x=>`<div class="item"><b>${esc(x.name)}</b> <button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button></div>`).join('')||'<p>Нет материалов.</p>'}${course.role==='teacher'&&teaches(g)?`<button class="secondary" data-id="${esc(g.id)}" onclick="window.integraticumCourse.openGroupActivity(this.dataset.id)">Активность группы</button>`:''}${page==='courses'?'<button class="secondary" onclick="window.integraticumCourse.openGroup(null)">Закрыть</button>':''}</section>`;
  }
  const managesTeachers=g=>course.role==='super_admin'||(isTeacher()&&owned(g));
  const memberOf=id=>course.memberships.some(m=>m.groupId===id);
  const canSeeSet=x=>x.visibility==='public'||(x.visibility==='group'&&(memberOf(x.groupId)||teachingGroups().some(g=>g.id===x.groupId)));
  const courseBtn=(label,action,cls='secondary')=>`<button class="${cls}" onclick="window.integraticumCourse.${action}">${esc(label)}</button>`;
+ function requestSection(relevant){
+  return `<section class="card" id="courseRequests"><h2>Заявки учеников</h2>${relevant.map(r=>`<div class="item"><b>${esc(r.studentName||'Ученик')}</b><p class="tiny">${esc(r.studentEmail||'')} · ${esc(course.groups.find(g=>g.id===r.groupId)?.name||'Группа')}</p><div class="actions"><button data-id="${esc(r.id)}" onclick="window.integraticumCourse.approve(this.dataset.id)">Принять</button><button class="secondary" data-id="${esc(r.id)}" onclick="window.integraticumCourse.reject(this.dataset.id)">Отклонить</button></div></div>`).join('')||'<p class="muted">Нет ожидающих заявок.</p>'}</section>`;
+ }
+ function groupCreateForm(){
+  return `<section class="card hero" id="courseCreate"><h2>Добавить курс</h2><div class="field"><label for="groupName">Название новой группы</label><input id="groupName" placeholder="Например, Integraticum — моя группа"></div>
+    <div class="field"><label for="groupLevel">Уровень</label><select id="groupLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>mixed</option></select></div>
+    ${courseBtn('Создать группу','createGroup()','')}</section>`;
+ }
  function courseView(){if(!course.user)return '<section class="card"><h2>Учебные группы</h2><p>Войдите в аккаунт, чтобы присоединиться к группе.</p><button onclick="go(\'account\')">Войти</button></section>';
  let html=`<div id="courseRoot"><h1>Учебные группы</h1><p class="muted">${isTeacher()?'Режим преподавателя и личное обучение':'Мои группы и материалы курса'}</p>${course.message?`<div class="note">${esc(course.message)}</div>`:''}<section class="card"><h3>Мой режим</h3><p>Роль: <b>${esc(({teacher:'Преподаватель',super_admin:'Суперадминистратор',student:'Ученик'})[course.role] ||
    (course.roleState === 'error' ? 'Не удалось проверить' : 'Проверяем…'))}</b>. ${isTeacher()?'Учебные карточки и личные наборы доступны в обычных вкладках.':'Можно учить слова и вступать в учебные группы.'}</p></section>`;
  if(isTeacher()){
-  html+=`<section class="card hero" id="courseCreate"><h2>Добавить курс</h2>
-    <div class="field"><label for="groupName">Название новой группы</label><input id="groupName" placeholder="Например, Integraticum — моя группа"></div>
-    <div class="field"><label for="groupLevel">Уровень</label><select id="groupLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>mixed</option></select></div>
-    ${courseBtn('Создать группу','createGroup()','')}</section>
-    <section class="card" id="courseInvitations"><h2>Приглашения для учеников</h2>
+  html+=groupCreateForm()+`    <section class="card" id="courseInvitations"><h2>Приглашения для учеников</h2>
       ${teachingGroups().map(group=>`<div class="item">
         <b>${esc(group.name)}</b> <span class="tag">${esc(group.level||'A1–B2')}</span>
         <p>Код приглашения: <strong>${esc(group.code||'—')}</strong></p>
@@ -572,16 +667,16 @@ try{
       <p id="invitationStatus" class="muted" role="status"></p></section>`;
   html+=teacherSection();
   const relevant=course.requests.filter(r=>teachingGroups().some(g=>g.id===r.groupId)&&r.status==='pending'&&r.studentUid!==course.user.uid);
-  html+=`<section class="card" id="courseRequests"><h2>Заявки учеников</h2>${relevant.map(r=>`<div class="item"><b>${esc(r.studentName||'Ученик')}</b><p class="tiny">${esc(r.studentEmail||'')} · ${esc(course.groups.find(g=>g.id===r.groupId)?.name||'Группа')}</p><div class="actions"><button data-id="${esc(r.id)}" onclick="window.integraticumCourse.approve(this.dataset.id)">Принять</button><button class="secondary" data-id="${esc(r.id)}" onclick="window.integraticumCourse.reject(this.dataset.id)">Отклонить</button></div></div>`).join('')||'<p class="muted">Нет ожидающих заявок.</p>'}</section>`;
+  html+=requestSection(relevant);
   html+=`<section class="card" id="coursePublish"><h2>Опубликовать учебный набор</h2><p class="tiny muted">Публикуется отдельная копия набора. Личный оригинал остаётся только твоим.</p><div class="field"><label>Личный набор</label><select id="publishSet">${data.sets.map(s=>`<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('')}</select></div><div class="field"><label>Доступ</label><select id="publishGroup"><option value="public">Общая библиотека Integraticum</option>${teachingGroups().map(g=>`<option value="${esc(g.id)}">${esc(g.name)}</option>`).join('')}</select></div>${courseBtn('Опубликовать копию','publishSet()','')}</section>`;
  }
  html+=`<section class="card" id="courseJoin"><h2>Присоединиться к группе</h2><p class="tiny muted">Введите код преподавателя. Вступление подтверждается преподавателем.</p><div class="field"><label>Код приглашения</label><input id="joinCode" placeholder="Например, INT-ABC123"></div>${courseBtn('Отправить заявку','join()','')}</section>`;
- html+=`<section class="card"><h2>Мои заявки</h2>${course.requests.filter(r=>r.studentUid===course.user.uid).map(r=>`<p>${esc(course.groups.find(g=>g.id===r.groupId)?.name||r.groupId)}: ${esc(({pending:'Ожидает подтверждения',approved:memberOf(r.groupId)?'Принята':'Членство прекращено',rejected:'Отклонена'})[r.status]||r.status)}</p>`).join('')||'<p>Нет заявок.</p>'}<button class="secondary" onclick="window.integraticumCourse.reload()">Обновить заявки</button></section>`;
+ html+=`<section class="card" id="courseOwnRequests"><h2>Мои заявки</h2>${course.requests.filter(r=>r.studentUid===course.user.uid).map(r=>`<p>${esc(course.groups.find(g=>g.id===r.groupId)?.name||r.groupId)}: ${esc(({pending:'Ожидает подтверждения',approved:memberOf(r.groupId)?'Принята':'Членство прекращено',rejected:'Отклонена'})[r.status]||r.status)}</p>`).join('')||'<p>Нет заявок.</p>'}<button class="secondary" onclick="window.integraticumCourse.reload()">Обновить заявки</button></section>`;
  html+=`<section class="card"><h2>Мои учебные группы</h2>${visibleGroups().map(g=>`<div class="item"><button class="secondary" data-id="${esc(g.id)}" onclick="window.integraticumCourse.openGroup(this.dataset.id)">${esc(g.name)}</button><p class="tiny muted">${owned(g)?'Владелец':teaches(g)?'Преподаватель':'Ученик'}</p></div>`).join('')||'<p class="muted">Пока нет подтверждённых групп.</p>'}</section>`;
  html+=groupDetails();
- html+=`<section class="card" id="courseMaterials"><h2>Наборы слов преподавателей</h2><p class="tiny muted">Общие наборы слов и наборы доступных тебе групп. Оригиналы других преподавателей редактировать нельзя.</p>${course.published.filter(canSeeSet).map(x=>`<div class="item"><b>${esc(x.name)}</b> <span class="tag">${esc(x.level||'')}</span><p class="tiny muted">${esc(x.ownerName||'Преподаватель')} · ${esc(x.visibility==='public'?'Общий материал':'Материал группы')} · ${(x.words||[]).length} слов</p><div class="actions"><button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button><button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.copySet(this.dataset.id)">Скопировать себе</button>${x.ownerUid===course.user.uid?`<button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.removeSet(this.dataset.id)">Удалить публикацию</button>`:''}</div></div>`).join('')||'<p class="muted">Опубликованных материалов пока нет.</p>'}</section></div>`;return html}
- function teacherSection(){
-  const managed=course.groups.filter(managesTeachers);
+ html+=`<section class="card" id="courseMaterials"><h2>Наборы слов преподавателей</h2><p class="tiny muted">Общие наборы слов и наборы доступных тебе групп. Оригиналы других преподавателей редактировать нельзя.</p>${course.published.filter(canSeeSet).map(x=>`<div class="item"><b>${esc(x.name)}</b> <span class="tag">${esc(x.level||'')}</span><p class="tiny muted">${esc(x.ownerName||'Преподаватель')} · ${esc(x.visibility==='public'?'Общий материал':'Материал группы')} · ${(x.words||[]).length} слов</p><div class="actions"><button data-id="${esc(x.id)}" onclick="window.integraticumCourse.studySet(this.dataset.id)">Изучать</button><button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.copySet(this.dataset.id)">Скопировать себе</button>${x.ownerUid===course.user.uid?`<button class="secondary" data-id="${esc(x.id)}" onclick="window.integraticumCourse.removeSet(this.dataset.id)">Удалить публикацию</button>`:''}</div></div>`).join('')||'<p class="muted">Опубликованных материалов пока нет.</p>'}</section></div>`;if(courseSectionFilter){const template=document.createElement('template');template.innerHTML=html;const target=template.content.querySelector('#'+courseSectionFilter);if(target)return '<button class="secondary" onclick="go(\'account\')">← Личный кабинет</button>'+(course.message?'<p class="note">'+esc(course.message)+'</p>':'')+target.outerHTML;}return html}
+ function teacherSection(groupId){
+  const managed=course.groups.filter(g=>managesTeachers(g)&&(!groupId||g.id===groupId));
   return `<section class="card" id="courseTeachers"><h2>Преподаватели группы</h2>
     ${managed.map(group=>{
       const invites=course.teacherInvites.filter(i=>i.groupId===group.id&&['open','pending'].includes(i.status));
@@ -595,7 +690,7 @@ try{
           ${invite.status==='pending'?`<button data-id="${esc(invite.id)}" onclick="window.integraticumCourse.approveTeacher(this.dataset.id)">Подтвердить</button>`:''}
           <button class="secondary" data-id="${esc(invite.id)}" onclick="window.integraticumCourse.revokeTeacherInvite(this.dataset.id)">${invite.status==='open'?'Отозвать код':'Отклонить заявку'}</button>
           </div>`).join('')}
-        ${teachers.map(t=>`<p>Преподаватель: <strong>${esc(t.teacherEmail||t.id)}</strong></p>
+        ${teachers.map(t=>`<p>Преподаватель: <strong>${esc(t.teacherEmail||management.reads.get('users')?.items?.find(p=>p.id===t.id)?.email||t.id)}</strong></p>
           <button class="secondary" data-group="${esc(group.id)}" data-uid="${esc(t.id)}" onclick="window.integraticumCourse.removeTeacher(this.dataset.group,this.dataset.uid)">Отозвать доступ</button>`).join('')}
       </div>`;
     }).join('')}
@@ -619,7 +714,281 @@ try{
    if(auth.currentUser?.uid===user.uid)courseError(err);
   }
  }
- const actions={view:courseView,async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse();if(id!==null)requestAnimationFrame(()=>document.getElementById('selectedCourseDetails')?.scrollIntoView({block:'start',behavior:'smooth'}))},accountProfile:()=>({role:course.role,state:course.roleState}),
+
+ const roleLabels={student:'Ученик',teacher:'Преподаватель',super_admin:'Суперадминистратор'};
+ const normalizedRole=role=>Object.hasOwn(roleLabels,role)?role:'student';
+ const isAdmin=()=>course.role==='super_admin'&&course.user?.uid===auth.currentUser?.uid;
+ const management={groupId:'',activityGroup:'',search:'',roleFilter:'',reads:new Map()};
+ let profileStop,activityTimer,publishedActivity;
+ const dayNumber=ms=>Math.floor(ms/86400000);
+ const snapshotRows=snapshot=>snapshot.docs.map(d=>({...d.data(),id:d.id}));
+ const groupName=id=>course.groups.find(g=>g.id===id)?.name||id;
+ function resetManagement(){
+  Object.assign(management,{groupId:'',activityGroup:'',search:'',roleFilter:'',reads:new Map()});
+ }
+ async function completeProfile(user,profile){
+  const token=await user.getIdTokenResult();
+  if(auth.currentUser?.uid!==user.uid)return;
+  const identity={email:token.claims.email||'',name:token.claims.name||''};
+  if(identity.email.length>320||identity.name.length>150)return;
+  if(profile.exists()&&profile.data().email===identity.email&&profile.data().name===identity.name)return;
+  await runTransaction(db,async transaction=>{
+   const current=await transaction.get(profile.ref);
+   if(!current.exists())transaction.set(profile.ref,{...identity,role:'student'});
+   else if((identity.name||!current.data().name)&&
+    (current.data().email!==identity.email||current.data().name!==identity.name))transaction.update(profile.ref,identity);
+  });
+ }
+ function watchProfile(user){
+  profileStop?.();
+  if(!user)return;
+  profileStop=onSnapshot(doc(db,'users',user.uid),{includeMetadataChanges:true},snapshot=>{
+   if(snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites||auth.currentUser?.uid!==user.uid)return;
+   if(course.roleState==='ready'&&normalizedRole(snapshot.data()?.role)!==course.role){
+    resetManagement();
+    loadCourse(user);
+    if(page.startsWith('admin')||page==='groupActivity')backgroundRender();
+   }
+  },err=>console.warn('Profile subscription:',err.code));
+ }
+ function captureActivity(uid,docs){
+  if(!docs.length)return;
+  const weekStart=dayNumber(Date.now())-6,days=Array(7).fill(0),words=new Set();
+  for(const answer of docs){
+   const {id,at}=answer.data(),day=dayNumber(at)-weekStart;
+   words.add(id);
+   if(day>=0&&day<7)days[day]++;
+  }
+  publishedActivity={uid,summary:{exercises:docs.length,words:words.size,weekStart,days}};
+  scheduleActivity();
+ }
+ function scheduleActivity(){
+  clearTimeout(activityTimer);
+  if(!courseLoaded||!publishedActivity||publishedActivity.uid!==course.user?.uid)return;
+  activityTimer=setTimeout(async()=>{
+   const {uid,summary}=publishedActivity;
+   if(auth.currentUser?.uid!==uid||course.user?.uid!==uid)return;
+   const refs=[doc(db,'learningActivity',uid),...course.memberships.map(m=>doc(db,'groups',m.groupId,'activity',uid))];
+   const results=await Promise.allSettled(refs.map(ref=>runTransaction(db,async transaction=>{
+    const existing=(await transaction.get(ref)).data();
+    if(!existing||summary.exercises>existing.exercises||
+      (summary.exercises===existing.exercises&&summary.weekStart>existing.weekStart))transaction.set(ref,summary);
+   })));
+   for(const result of results)if(result.status==='rejected')console.warn('Activity summary:',result.reason.code);
+  },700);
+ }
+ function managementRead(key,load){
+  if(!management.reads.has(key)){
+   const result={state:'loading'};
+   management.reads.set(key,result);
+   Promise.resolve().then(load).then(items=>Object.assign(result,{state:'ready',items})).catch(err=>{
+    console.warn('Management data:',err.code);
+    Object.assign(result,{state:'error'});
+   }).finally(()=>{
+    if(management.reads.get(key)===result&&(page.startsWith('admin')||page==='groupActivity'))backgroundRender();
+   });
+  }
+  return management.reads.get(key);
+ }
+ function loadProfiles(){
+  return managementRead('users',async()=>snapshotRows(await getDocsFromServer(collection(db,'users'))));
+ }
+ function managementStatus(result){
+  if(result.state==='loading')return '<p role="status">Загрузка…</p>';
+  return '<p role="alert">Не удалось загрузить данные.</p>'+courseBtn('Обновить','reloadManagement()');
+ }
+ function profileLabel(profile){
+  return profile?.name||profile?.email||profile?.id||'Ученик';
+ }
+ function roleOptions(selected){
+  return Object.entries(roleLabels).map(([value,label])=>`<option value="${value}" ${value===selected?'selected':''}>${label}</option>`).join('');
+ }
+ function userCards(profiles){
+  const search=management.search.trim().toLocaleLowerCase('ru');
+  return profiles.filter(profile=>
+   (!management.roleFilter||management.roleFilter===normalizedRole(profile.role))&&
+   [profile.name,profile.email].some(value=>String(value||'').toLocaleLowerCase('ru').includes(search))
+  ).sort((a,b)=>profileLabel(a).localeCompare(profileLabel(b),'ru')).map(profile=>{
+   const role=normalizedRole(profile.role),id=profile.id,label=profileLabel(profile);
+   const groups=course.groups.filter(g=>g.ownerUid===id||course.groupTeachers.some(t=>t.id===id&&t.groupId===g.id)||
+    course.groupMembers.some(m=>m.uid===id&&m.groupId===g.id)).map(g=>g.name);
+   return `<article class="card admin-user">
+    <h2>${esc(label)}</h2>${profile.email&&profile.email!==label?`<p>${esc(profile.email)}</p>`:''}
+    <p>${esc(roleLabels[role])}</p><p class="muted">${groups.length?esc(groups.join(', ')):'Без группы'}</p>
+    ${id!==course.user.uid?`<form class="actions" data-id="${esc(id)}" onsubmit="event.preventDefault();window.integraticumCourse.changeRole(this.dataset.id,this.elements.newRole.value)">
+      <select name="newRole" aria-label="Новая роль для ${esc(label)}">${roleOptions(role)}</select>
+      <button class="secondary">Изменить роль</button>
+    </form>`:'<p class="muted">Ваш аккаунт</p>'}
+   </article>`;
+  }).join('')||'<p>Подходящих профилей нет.</p>';
+ }
+ function usersPage(){
+  const result=loadProfiles();
+  return `<h1>Пользователи</h1><p class="muted">Профили появляются здесь после входа в обновлённое приложение. Часть аккаунтов Firebase Authentication может пока отсутствовать.</p>
+   <section class="card admin-controls">
+    <div class="field"><label for="adminUserSearch">Поиск по имени или email</label><input type="search" id="adminUserSearch" value="${esc(management.search)}" oninput="window.integraticumCourse.filterUsers(this.value)"></div>
+    <div class="field"><label for="adminUserRole">Роль</label><select id="adminUserRole" onchange="window.integraticumCourse.filterUsers(undefined,this.value)">
+     <option value="">Все роли</option>${roleOptions(management.roleFilter)}</select></div>
+   </section><div id="adminUserResults" aria-live="polite">${result.state==='ready'?userCards(result.items):managementStatus(result)}</div>`;
+ }
+ function adminGroupsPage(){
+  const group=course.groups.find(g=>g.id===management.groupId);
+  if(!group)return `<h1>Группы</h1>${groupCreateForm()}<section class="card"><h2>Все группы</h2>
+   ${course.groups.map(g=>`<div class="item"><button class="secondary" data-id="${esc(g.id)}" onclick="window.integraticumCourse.openAdminGroup(this.dataset.id)">${esc(g.name)}</button></div>`).join('')||'<p>Групп пока нет.</p>'}</section>`;
+  const teachers=loadProfiles();
+  const available=teachers.items?.filter(p=>p.role==='teacher'&&p.id!==group.ownerUid&&!course.groupTeachers.some(t=>t.groupId===group.id&&t.id===p.id))||[];
+  const requests=course.requests.filter(r=>r.groupId===group.id&&r.status==='pending'&&r.studentUid!==course.user.uid);
+  return `<h1>Группа</h1>${courseBtn('Все группы','openAdminGroup()')}
+   ${groupDetails(group.id)}
+   <section class="card"><h2>Приглашение учеников</h2><p>Код группы <strong>${esc(group.code||'—')}</strong></p>
+    ${group.code?`<button class="secondary" data-id="${esc(group.id)}" onclick="window.integraticumCourse.copyInvitation(this.dataset.id)">Скопировать код</button>`:''}
+    <p id="invitationStatus" class="muted" role="status"></p></section>
+   ${requestSection(requests)}
+   ${teacherSection(group.id)}
+   <section class="card"><h2>Назначить преподавателя</h2><p>Владелец группы ${esc(group.ownerName||group.ownerUid)}</p>
+    ${teachers.state!=='ready'?managementStatus(teachers):available.length?`<form data-id="${esc(group.id)}" onsubmit="event.preventDefault();window.integraticumCourse.assignTeacher(this.dataset.id,this.elements.teacherUid.value)">
+     <div class="field"><label for="adminTeacher">Преподаватель</label><select id="adminTeacher" name="teacherUid">${available.map(p=>`<option value="${esc(p.id)}">${esc(profileLabel(p))}</option>`).join('')}</select></div>
+     <button>Назначить</button></form>`:'<p>Нет преподавателей, доступных для назначения.</p>'}
+   </section>`;
+ }
+ function adminSetsPage(){
+  const sets=managementRead('sets',async()=>snapshotRows(await getDocsFromServer(collection(db,'courseSets'))));
+  return `<h1>Наборы</h1><p class="muted">Опубликованные учебные материалы</p>
+   ${sets.state!=='ready'?managementStatus(sets):sets.items.map(set=>`<article class="card">
+    <h2>${esc(set.name)}</h2><p>${esc(set.ownerName||set.ownerUid||'Преподаватель')} · ${(set.words||[]).length} карточек</p>
+    <p>${set.visibility==='public'?'Общий доступ':`Доступ группы · ${esc(groupName(set.groupId))}`}</p>
+    <button class="secondary" data-id="${esc(set.id)}" onclick="window.integraticumCourse.removeSet(this.dataset.id)">Снять с публикации</button>
+   </article>`).join('')||'<p>Опубликованных наборов пока нет.</p>'}`;
+ }
+ async function fetchGroupActivity(groupId){
+  const roster=snapshotRows(await getDocsFromServer(query(collection(db,'memberships'),where('groupId','==',groupId))));
+  const summaries=await Promise.all(roster.map(async member=>{
+   const summary=await getDocFromServer(doc(db,'groups',groupId,'activity',member.uid));
+   return {id:member.uid,...summary.data(),available:summary.exists()};
+  }));
+  return summaries;
+ }
+ function weeklyCounts(row,start){
+  return Array.from({length:7},(_,index)=>row.days?.[start+index-row.weekStart]||0);
+ }
+ function activityPage(groupId,admin){
+  const result=managementRead(groupId?'activity:'+groupId:'activity',()=>{
+   if(groupId)return fetchGroupActivity(groupId);
+   return getDocsFromServer(collection(db,'learningActivity')).then(snapshotRows);
+  });
+  const selector=admin?`<section class="card"><div class="field"><label for="adminActivityGroup">Область статистики</label>
+    <select id="adminActivityGroup" onchange="window.integraticumCourse.selectActivityGroup(this.value)">
+    <option value="">Все аккаунты</option>${course.groups.map(g=>`<option value="${esc(g.id)}" ${groupId===g.id?'selected':''}>${esc(g.name)}</option>`).join('')}</select></div></section>`:'';
+  const header=`<h1>${groupId?'Активность группы':'Активность'}</h1>${groupId?`<p>${esc(groupName(groupId))}</p>`:''}${selector}
+   <p class="muted">${groupId?'Общая учебная активность участников группы. ':''}Сводка по упражнениям, сохранённым в облаке. Учитываются последние семь дней по UTC.</p>`;
+  if(result.state!=='ready')return header+managementStatus(result);
+  const start=dayNumber(Date.now())-6,totals=Array(7).fill(0);
+  let active=0,exercises=0,words=0;
+  for(const row of result.items){
+   const days=weeklyCounts(row,start);
+   if(days.some(Boolean))active++;
+   days.forEach((count,i)=>totals[i]+=count);
+   exercises+=row.exercises||0;
+   words+=row.words||0;
+  }
+  const label=id=>{
+   const profile=management.reads.get('users')?.items?.find(p=>p.id===id);
+   const request=course.requests.find(r=>r.studentUid===id&&r.groupId===groupId&&r.status==='approved');
+   return (profile&&(profile.name||profile.email))||request?.studentName||request?.studentEmail||'Участник';
+  };
+  return `${header}${courseBtn('Обновить статистику','reloadManagement()')}<div class="grid admin-metrics">
+   <div class="card"><h2 id="activityActive">${active}</h2><p>${groupId?'Активных учеников':'Активных аккаунтов'}</p></div>
+   <div class="card"><h2 id="activityExercises">${exercises}</h2><p>Упражнений всего</p></div>
+   <div class="card"><h2 id="activityWords">${words}</h2><p>Изучаемых слов (сумма по аккаунтам)</p></div>
+   </div><section class="card"><h2>Упражнения за семь дней</h2><dl class="admin-days">${totals.map((count,i)=>`<div><dt>${new Date((start+i)*86400000).toLocaleDateString('ru-RU',{day:'numeric',month:'short',timeZone:'UTC'})}</dt><dd>${count}</dd></div>`).join('')}</dl></section>
+   ${groupId?`<section class="card"><h2>Участники</h2>${result.items.map(row=>`<div class="item"><strong>${esc(label(row.id))}</strong><p>${row.available?`Упражнений ${row.exercises} · Изучаемых слов ${row.words}`:'Сводка пока недоступна'}</p></div>`).join('')||'<p>В группе пока нет учеников.</p>'}</section>`:''}`;
+ }
+ const managementActions={
+  managementNavigate(target){
+   if(!isAdmin()||target===page)return;
+   if(target==='adminUsers'||target==='adminGroups')management.reads.delete('users');
+   if(target==='adminGroups')management.groupId='';
+   if(target==='adminSets')management.reads.delete('sets');
+   if(target==='adminActivity'){
+    management.activityGroup='';
+    management.reads.delete('activity');
+   }
+  },
+  managementView(section){
+   if(course.roleState==='loading')return '<p role="status">Проверяем доступ…</p>';
+   const admin=isAdmin(),teacherGroup=section==='groupActivity'&&course.role==='teacher'&&teachingGroups().some(g=>g.id===management.activityGroup);
+   if(!admin&&!teacherGroup)return '';
+   if(!courseLoaded&&section!=='admin')return '<p role="status">Загружаем данные…</p>';
+   const back=`<div class="actions"><button class="secondary" onclick="go('${teacherGroup?'courses':section==='admin'?'account':'admin'}')">${teacherGroup?'Учебные группы':section==='admin'?'Мой кабинет':'Управление'}</button></div>`;
+   const message=course.message?`<p class="note" role="status">${esc(course.message)}</p>`:'';
+   if(section==='admin')return `${back}<h1>Управление</h1><div class="v6-grid">
+    ${v6Tile('purple','account','Пользователи','','adminUsers')}
+    ${v6Tile('peach','group','Группы','','adminGroups')}
+    ${v6Tile('blue','folder','Наборы','','adminSets')}
+    ${v6Tile('rose','progress','Активность','','adminActivity')}
+    ${v6Tile('sage','calendar','Календарь','','calendar')}</div>`;
+   if(section==='adminActivity'&&management.activityGroup)loadProfiles();
+   const view={adminUsers:usersPage,adminGroups:adminGroupsPage,adminSets:adminSetsPage,
+    adminActivity:()=>activityPage(management.activityGroup,true),
+    groupActivity:()=>activityPage(management.activityGroup,false)}[section];
+   return back+message+view();
+  },
+  filterUsers(search,role){
+   if(!isAdmin())return;
+   if(search!==undefined)management.search=search;
+   if(role!==undefined)management.roleFilter=role;
+   const items=management.reads.get('users')?.items, results=document.getElementById('adminUserResults');
+   if(items&&results)results.innerHTML=userCards(items);
+  },
+  async changeRole(uid,role){
+   const profile=management.reads.get('users')?.items?.find(p=>p.id===uid);
+   if(!isAdmin()||!profile||!Object.hasOwn(roleLabels,role)||uid===course.user.uid||normalizedRole(profile.role)===role)return;
+   if(!confirm(`Изменить роль «${profileLabel(profile)}» на «${roleLabels[role]}»?`))return;
+   await saveTeacherChange(()=>runTransaction(db,async transaction=>{
+    const ref=doc(db,'users',uid);
+    const [current,actingProfile]=await Promise.all([transaction.get(ref),transaction.get(doc(db,'users',course.user.uid))]);
+    if(actingProfile.data()?.role!=='super_admin')throw Error('Административный доступ отозван.');
+    if(!current.exists()||current.data().role!==profile.role)throw Error('Роль уже изменилась. Обновите список.');
+    transaction.update(ref,{role});
+   }),'Роль изменена.');
+   management.reads.delete('users');
+   if(page==='adminUsers')backgroundRender();
+  },
+  openAdminGroup(id=''){
+   if(!isAdmin())return;
+   management.groupId=id;
+   if(!id)course.message='';
+   backgroundRender();
+   window.scrollTo(0,0);
+  },
+  async assignTeacher(groupId,uid){
+   const profile=management.reads.get('users')?.items?.find(p=>p.id===uid);
+   if(!isAdmin()||!profile||profile.role!=='teacher'||!course.groups.some(g=>g.id===groupId&&g.ownerUid!==uid))return;
+   if(!confirm(`Назначить «${profileLabel(profile)}» в группу «${groupName(groupId)}»?`))return;
+   await saveTeacherChange(()=>setDoc(doc(db,'groups',groupId,'teachers',uid),{
+    assignedBy:course.user.uid,createdAt:serverTimestamp()
+   }),'Преподаватель назначен.');
+  },
+  openGroupActivity(id){
+   if(course.role!=='teacher'||!teachingGroups().some(g=>g.id===id))return;
+   management.activityGroup=id;
+   management.reads.delete('activity:'+id);
+   go('groupActivity');
+  },
+  selectActivityGroup(id){
+   if(!isAdmin())return;
+   management.activityGroup=id;
+   management.reads.delete(id?'activity:'+id:'activity');
+   backgroundRender();
+  },
+  reloadManagement(){
+   if(!isAdmin()&&!(page==='groupActivity'&&course.role==='teacher'))return;
+   management.reads.clear();
+   return loadCourse(auth.currentUser);
+  }
+ };
+
+ const actions={...managementActions,calendarEvents:()=>calendarItems,async saveCalendar(){if(course.role!=='super_admin')return;const item={type:document.getElementById('calType').value,start:document.getElementById('calStart').value,end:document.getElementById('calEnd').value,group:document.getElementById('calGroup').value,note:document.getElementById('calNote').value.trim()};if(item.start>item.end)return alert('Проверьте даты');try{if(calendarEdit)await setDoc(doc(db,'calendarEvents',calendarEdit),item);else await addDoc(collection(db,'calendarEvents'),item);calendarEdit=null;if(page==='calendar')window.render?.();else refreshCourse()}catch(e){alert('Не удалось сохранить событие')}},async deleteCalendar(id){if(course.role!=='super_admin'||!confirm('Удалить событие?'))return;try{await deleteDoc(doc(db,'calendarEvents',id));calendarEdit=null;refreshCourse()}catch(e){alert('Не удалось удалить событие')}},view:courseView,learningSets:()=>course.user?course.published.filter(canSeeSet).map(x=>({id:x.id,name:x.name,visibility:x.visibility,count:(x.words||[]).length})):[],learningWords(id){const x=course.user&&course.published.find(s=>s.id===id&&canSeeSet(s));return x?(x.words||[]).map((w,i)=>({...w,id:'course:'+x.id+':'+i,official:false})):[]},async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse();if(id!==null)requestAnimationFrame(()=>document.getElementById('selectedCourseDetails')?.scrollIntoView({block:'start',behavior:'smooth'}))},accountProfile:()=>({role:course.role,state:course.roleState}),
   async createTeacherInvite(groupId){
    if(!course.groups.some(g=>g.id===groupId&&managesTeachers(g)))return;
    const bytes=crypto.getRandomValues(new Uint8Array(12));
@@ -699,18 +1068,36 @@ try{
  },
  async reject(id){const r=course.requests.find(x=>x.id===id);if(!r||!teachingGroups().some(g=>g.id===r.groupId))return;try{await updateDoc(doc(db,'joinRequests',id),{status:'rejected'});await loadCourse(auth.currentUser);setMsg('Заявка отклонена.')}catch(e){courseError(e)}},
  async publishSet(){if(!isTeacher())return;const id=document.getElementById('publishSet')?.value,groupId=document.getElementById('publishGroup')?.value,s=data.sets.find(x=>x.id===id);if(!s)return setMsg('Сначала создайте личный набор во вкладке «Мои наборы».');if(groupId!=='public'&&!teachingGroups().some(g=>g.id===groupId))return setMsg('Нет доступа к выбранной группе.');const words=s.wordIds.map(word).filter(Boolean).map(w=>({de:w.de,ru:w.ru||'',uk:w.uk||'',part:w.part||'other',level:w.level||'A1',topic:w.topic||'',forms:w.forms||'',example:w.example||'',note:w.note||''}));if(words.length>150)return setMsg('Для публикации выберите набор не более 150 слов.');try{await addDoc(collection(db,'courseSets'),{name:s.name.slice(0,100),level:s.level,ownerUid:course.user.uid,ownerName:course.user.displayName||course.user.email||'Преподаватель',visibility:groupId==='public'?'public':'group',groupId:groupId==='public'?'':groupId,words,createdAt:serverTimestamp()});await loadCourse(auth.currentUser);setMsg('Копия набора опубликована.')}catch(e){courseError(e)}},
- async removeSet(id){const x=course.published.find(s=>s.id===id);if(!x||x.ownerUid!==course.user.uid)return;if(!confirm('Удалить опубликованную копию набора?'))return;try{await deleteDoc(doc(db,'courseSets',id));await loadCourse(auth.currentUser)}catch(e){courseError(e)}},
+ async removeSet(id){const x=course.published.find(s=>s.id===id)||(isAdmin()&&management.reads.get('sets')?.items?.find(s=>s.id===id));if(!x||!course.user||(course.role!=='super_admin'&&x.ownerUid!==course.user.uid))return;if(!confirm('Снять набор с публикации? Личный оригинал автора сохранится.'))return;try{await deleteDoc(doc(db,'courseSets',id));management.reads.delete('sets');await loadCourse(auth.currentUser);setMsg('Набор снят с публикации.')}catch(e){courseError(e)}},
  copySet(id){const x=course.published.find(s=>s.id===id);if(!x||!canSeeSet(x))return;const setId='s'+Date.now()+Math.random().toString(36).slice(2,6),ids=[];for(const w of x.words||[]){const wid='u'+Date.now()+Math.random().toString(36).slice(2,9);data.custom.push({...w,id:wid,official:false});ids.push(wid)}data.sets.push({id:setId,name:x.name+' (копия)',description:'Копия из материалов Integraticum',level:x.level||'A1',topic:'Integraticum',wordIds:ids});data.selectedSets.push(setId);save();setMsg('Копия добавлена в «Мои наборы».')},
- studySet(id){const x=course.published.find(s=>s.id===id);if(!x||!canSeeSet(x))return;actions.copySet(id);const last=data.sets[data.sets.length-1];if(last)startSet(last.id,'smart')}
+ studySet(id){const x=course.published.find(s=>s.id===id);if(!x||!canSeeSet(x))return;chooseLearning('course',id)}
  };
  window.integraticumCourse=actions;
 
  window.integraticumAuth={
- async email(mode){const email=document.getElementById('authEmail')?.value.trim(),password=document.getElementById('authPassword')?.value;if(!email||!password)return error('Введите email и пароль.');try{await persistenceReady;if(mode==='register')await createUserWithEmailAndPassword(auth,email,password);else await signInWithEmailAndPassword(auth,email,password)}catch(err){error(readable(err))}},
+ async email(mode){
+  const email=document.getElementById('authEmail')?.value.trim(),password=document.getElementById('authPassword')?.value;
+  const name=document.getElementById('authName')?.value.trim();
+  if(!email||!password)return error('Введите email и пароль.');
+  try{
+   await persistenceReady;
+   if(mode!=='register'){await signInWithEmailAndPassword(auth,email,password);return;}
+   const {user}=await createUserWithEmailAndPassword(auth,email,password);
+   if(!name)return;
+   try{
+    await updateProfile(user,{displayName:name});
+    await user.getIdToken(true);
+    await completeProfile(user,await getDocFromServer(doc(db,'users',user.uid)));
+    if(auth.currentUser?.uid!==user.uid||window.integraticumUser?.uid!==user.uid)return;
+    window.integraticumUser.displayName=name;
+    if(page==='account')backgroundRender();
+   }catch(err){console.warn('Profile name:',err.code);}
+  }catch(err){error(readable(err))}
+ },
  async google(){try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(err){if(['auth/popup-blocked','auth/popup-closed-by-user','auth/cancelled-popup-request'].includes(err.code))return error('Окно Google закрылось или было заблокировано. Попробуйте ещё раз в Safari либо войдите по электронной почте, если для аккаунта установлен пароль.');error(readable(err))}},
  async signOut(){try{await signOut(auth)}catch(err){error(readable(err))}}
  };
- onAuthStateChanged(auth,u=>{window.integraticumUser=u?{uid:u.uid,email:u.email,displayName:u.displayName}:null;loadCourse(u);status.textContent=u?(u.displayName||u.email||'Вход выполнен'):'Войти';if(typeof window.render==='function')window.render();else if(document.getElementById('view')&&document.querySelector('h1')?.textContent?.includes('Аккаунт'))window.location.hash='';});
- persistenceReady.then(()=>getRedirectResult(auth)).catch(err=>error(readable(err)));
+ onAuthStateChanged(auth,u=>{watchProfile(u);publishedActivity=null;clearTimeout(activityTimer);calendarStop?.();calendarItems=[];calendarEdit=null;if(u)calendarStop=onSnapshot(collection(db,'calendarEvents'),snap=>{if(auth.currentUser?.uid!==u.uid)return;calendarItems=snap.docs.map(d=>({...d.data(),id:d.id}));if(['calendar','notifications'].includes(page))backgroundRender();else updateNavigation()},e=>console.warn('Calendar subscription:',e.code));window.integraticumAuthReady=true;window.integraticumBridge.switchAccount(u?.uid||null);window.integraticumUser=u?{uid:u.uid,email:u.email,displayName:u.displayName}:null;syncWorkspace(u);syncProgress(u);loadCourse(u);status.textContent=u?(u.displayName||u.email||'Вход выполнен'):'Войти';if(typeof window.render==='function')window.render();else if(document.getElementById('view')&&document.querySelector('h1')?.textContent?.includes('Аккаунт'))window.location.hash='';});
+ persistenceReady.then(()=>{if(page==='account')window.render();return getRedirectResult(auth)}).catch(err=>error(readable(err)));
 }catch(err){status.textContent='Ошибка подключения';window.integraticumAuth={email(){error('Firebase не загрузился. Проверьте интернет.')},google(){error('Firebase не загрузился. Проверьте интернет.')},signOut(){}};}
 </script></body></html>

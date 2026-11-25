@@ -6,7 +6,7 @@ import {mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 const html=readFileSync('index.html','utf8').replace("projectId:'integraticum'","projectId:'demo-integraticum'").replace("import {getAuth,","import {connectAuthEmulator,getAuth,").replace("import {getFirestore,","import {connectFirestoreEmulator,getFirestore,").replace("auth.languageCode='ru';","connectAuthEmulator(auth,'http://127.0.0.1:9099',{disableWarnings:true});connectFirestoreEmulator(db,'127.0.0.1',8080);auth.languageCode='ru';");
-const server=createServer((req,res)=>{if(req.url==='/'){res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);}else if(req.url==='/integraticum.css'||req.url==='/integraticum-emblem.svg'){res.setHeader('Content-Type',req.url.endsWith('.css')?'text/css':'image/svg+xml');res.end(readFileSync(req.url.slice(1)));}else if(req.url.endsWith('.json')){res.setHeader('Content-Type','application/json');res.end('[]');}else{res.statusCode=404;res.end();}});
+const server=createServer((req,res)=>{if(req.url==='/'){res.setHeader('Content-Type','text/html; charset=utf-8');res.end(html);}else if(req.url==='/integraticum.css'||req.url==='/integraticum-emblem.svg'){res.setHeader('Content-Type',req.url.endsWith('.css')?'text/css':'image/svg+xml');res.end(readFileSync(req.url.slice(1)));}else if(req.url.endsWith('.json')){res.setHeader('Content-Type','application/json');try{res.end(readFileSync(req.url.slice(1)));}catch{res.statusCode=404;res.end('[]');}}else{res.statusCode=404;res.end();}});
 await new Promise(r=>server.listen(8765,'127.0.0.1',r));
 try{for(const [name,engine] of Object.entries({chromium,firefox,webkit})){
 const dir=await mkdtemp(join(tmpdir(),'integraticum-'));let context;
@@ -15,5 +15,22 @@ const roleResponse=await fetch(roleUrl,{method:'PATCH',headers:{Authorization:'B
 await p.reload();await p.waitForFunction(()=>window.integraticumCourse?.accountProfile()?.role==='teacher',{},{timeout:60000});
 for(const [button,id] of [['Добавить курс','courseCreate'],['Приглашения','courseInvitations'],['Заявки учеников','courseRequests'],['Опубликовать набор','coursePublish'],['Преподаватели группы','courseTeachers']]){await p.evaluate(()=>go('account'));await p.getByRole('button',{name:button,exact:true}).click();await p.locator('#'+id).waitFor({state:'visible'});}
 console.log(name+': teacher account navigation and five management sections passed');
+await p.evaluate(()=>go('library'));
+await p.getByText(/A1 · 776 карточек с проверенным русским переводом/).waitFor({timeout:60000});
+await p.getByText(/Записей в библиотеке:/).waitFor({timeout:60000});
+const counts=await p.evaluate(()=>{const all=dictionaryCards();return {total:all.length,a1:all.filter(w=>w.a1Reviewed).length,unknown:all.filter(w=>!w.level_verified).length};});
+assert.equal(counts.a1,776);assert.ok(counts.total>776&&counts.unknown>0);
+await p.locator('#filterLevel').selectOption('unknown');assert.ok(await p.evaluate(()=>dictionaryResults().length>0&&dictionaryResults().every(w=>!w.level_verified)));
+await p.locator('#filterLevel').selectOption('A1');assert.ok(await p.evaluate(()=>dictionaryResults().length>0&&dictionaryResults().every(w=>w.level_verified&&w.level==='A1')));
+await p.locator('#filterPart').selectOption('noun');assert.ok(await p.evaluate(()=>dictionaryResults().length>0&&dictionaryResults().every(w=>w.part==='noun')));
+const sample=await p.evaluate(()=>dictionaryResults().find(w=>w.ru&&w.de));
+await p.locator('#search').fill(sample.de);assert.ok(await p.evaluate(id=>dictionaryResults().some(w=>w.id===id),sample.id));
+await p.locator('#search').fill(sample.ru.split(';')[0].trim());assert.ok(await p.evaluate(id=>dictionaryResults().some(w=>w.id===id),sample.id));
+await p.locator('#search').fill('');await p.locator('#filterPart').selectOption('all');await p.locator('#filterLevel').selectOption('all');
+assert.equal(await p.locator('#results .item').count(),80);await p.getByRole('button',{name:'Вперёд →',exact:true}).click();await p.getByText(/Страница 2 из/).waitFor();
+await p.locator('#results').getByRole('button',{name:'Открыть',exact:true}).first().click();
+assert.ok(await p.evaluate(()=>page==='word'&&!!word(selectedWord)));
+console.log(name+': real dictionary loading, search, filters, pagination and word opening passed '+JSON.stringify(counts));
+
 }finally{await second?.close();await rm(secondDir,{recursive:true,force:true});}}finally{await context?.close();await rm(dir,{recursive:true,force:true});}
 }}finally{server.close();}

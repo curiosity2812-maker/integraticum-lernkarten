@@ -80,7 +80,7 @@ try{await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor({ti
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Browser holiday '+name,{timeout:60000});
 await p.getByRole('button',{name:'Изменить',exact:true}).last().click();await p.locator('#calNote').fill('Updated holiday '+name);await p.getByRole('button',{name:'Сохранить',exact:true}).click();
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
-p.once('dialog',d=>d.accept());await p.getByRole('button',{name:'Удалить',exact:true}).last().click();
+await p.getByRole('button',{name:'Удалить',exact:true}).last().click();
 await q.waitForFunction(note=>!window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
 console.log(name+': calendar month navigation, UI create edit delete and second profile synchronization passed');
 

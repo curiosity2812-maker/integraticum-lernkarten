@@ -265,7 +265,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       const wordText = String(r.word || '').trim();
       const gender = {masculine:'der',feminine:'die',neuter:'das'}[r.gender];
       const pos = ({adjective:'adj',adverb:'adv',preposition:'prep',pronoun:'pron',conjunction:'conj',numeral:'num',interjection:'intj'}[r.part_of_speech] || r.part_of_speech || 'other');
-      return {id:'dict_'+(r.id || i), de:wordText && gender && !/^(der|die|das)\s/i.test(wordText) ? gender+' '+wordText : wordText,
+      return {id:'dict_'+(r.id || i), legacyLemma:wordText, de:wordText && gender && !/^(der|die|das)\s/i.test(wordText) ? gender+' '+wordText : wordText,
         ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.cefr_source && r.cefr_source.name==='Goethe-Institut Wortliste' && r.cefr_source.match==='exact_headword' && !['A1','A2'].includes(r.cefr_source.level)), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
         example:r.example_de || '', example_ru:r.example_ru || '',
         example_source:/^https:\/\/tatoeba\.org\/en\/sentences\/show\/[0-9]+$/.test(r.example_source) ? r.example_source : '',
@@ -284,7 +284,8 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
     }
     const checkedImports = imported.map(card => {
       const entry = a2Reviewed.get(card.id);
-      if (!entry || entry.de !== card.de || entry.part !== card.part) return card;
+      const sourceHeadword = card.part === 'noun' ? card.de : card.legacyLemma;
+      if (!entry || entry.de !== sourceHeadword || entry.part !== card.part) return card;
       return {...card, ...entry, ru:entry.translations_ru.join('; '), level_verified:true,
         a2Reviewed:true, dictionary_unverified:false, example_source:''};
     });

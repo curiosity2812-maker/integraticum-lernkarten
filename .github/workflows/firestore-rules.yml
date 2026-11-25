@@ -34,4 +34,5 @@ jobs:
           java-version: '21'
       - run: npm install --no-save playwright firebase-tools@14
       - run: npx playwright install --with-deps chromium firefox webkit
+      - run: node -e 'const fs=require("fs");const c=JSON.parse(fs.readFileSync("firebase.json"));c.emulators={auth:{port:9099},firestore:{port:8080}};fs.writeFileSync("firebase.json",JSON.stringify(c));'
       - run: npx firebase emulators:exec --only auth,firestore --project demo-integraticum "node tests/browser.mjs"

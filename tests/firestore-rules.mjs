@@ -87,5 +87,15 @@ await assertFails(setDoc(ref('other','courseSets/afterrevocation'),course));
 await assertFails(deleteDoc(ref('co','courseSets/newpublic')));
 await assertSucceeds(deleteDoc(ref('other','courseSets/newpublic')));
 console.log('Teacher invitation, revocation, group and public publishing regression passed');
+await env.withSecurityRulesDisabled(async c=>{await setDoc(doc(c.firestore(),'users/calendarAdmin'),{role:'super_admin'});});
+const calendarPath='calendarEvents/holiday';
+const holiday={type:'holiday',start:'2026-12-20',end:'2027-01-05',group:'all',note:'Winter break'};
+await assertSucceeds(setDoc(ref('calendarAdmin',calendarPath),holiday));
+for(const uid of ['student','owner','co']){await assertSucceeds(getDoc(ref(uid,calendarPath)));await assertFails(updateDoc(ref(uid,calendarPath),{note:'Changed'}));await assertFails(deleteDoc(ref(uid,calendarPath)));await assertFails(setDoc(ref(uid,'calendarEvents/other'),holiday));}
+await assertFails(getDoc(doc(env.unauthenticatedContext().firestore(),calendarPath)));
+await assertFails(updateDoc(ref('calendarAdmin',calendarPath),{end:'2026-01-01'}));
+await assertSucceeds(updateDoc(ref('calendarAdmin',calendarPath),{note:'Updated'}));
+await assertSucceeds(deleteDoc(ref('calendarAdmin',calendarPath)));
+console.log('Calendar administrator CRUD and role restrictions passed');
 console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

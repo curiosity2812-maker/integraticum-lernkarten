@@ -72,8 +72,11 @@ const month=await p.locator('#view h2').first().textContent();
 await p.getByRole('button',{name:'›',exact:true}).click();assert.notEqual(await p.locator('#view h2').first().textContent(),month);
 await p.getByRole('button',{name:'‹',exact:true}).click();assert.equal(await p.locator('#view h2').first().textContent(),month);
 await p.locator('#calType').selectOption('holiday');await p.locator('#calNote').fill('Browser holiday '+name);
+const calendarDialogs=[];p.on('dialog',async d=>{calendarDialogs.push(d.message());await d.accept();});
+const calendarBefore=await p.evaluate(()=>Object.fromEntries(['calType','calStart','calEnd','calGroup','calNote'].map(id=>[id,document.getElementById(id).value])));
+console.log(name+': calendar form before save '+JSON.stringify(calendarBefore));
 await p.getByRole('button',{name:'Сохранить',exact:true}).click();
-await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor();
+try{await p.getByText('Browser holiday '+name,{exact:false}).first().waitFor({timeout:15000});}catch(e){const remote=await fetch('http://127.0.0.1:8080/v1/projects/demo-integraticum/databases/(default)/documents/calendarEvents',{headers:{Authorization:'Bearer owner'}});console.log(name+': calendar diagnostic '+JSON.stringify({dialogs:calendarDialogs,remote:await remote.json(),client:await p.evaluate(()=>window.integraticumCourse.calendarEvents())}));throw e;}
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Browser holiday '+name,{timeout:60000});
 await p.getByRole('button',{name:'Изменить',exact:true}).last().click();await p.locator('#calNote').fill('Updated holiday '+name);await p.getByRole('button',{name:'Сохранить',exact:true}).click();
 await q.waitForFunction(note=>window.integraticumCourse.calendarEvents().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});

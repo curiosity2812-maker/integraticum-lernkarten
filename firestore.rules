@@ -25,8 +25,8 @@ service cloud.firestore {
       return /databases/$(database)/documents/groups/$(groupId)/teachers/$(uid);
     }
     function teachesGroup(groupId) {
-      return ownsGroup(groupId) || (teacher() && exists(groupPath(groupId))
-        && exists(grantPath(groupId, request.auth.uid)));
+      return role() == 'super_admin' || (teacher() && (ownsGroup(groupId)
+        || (exists(groupPath(groupId)) && exists(grantPath(groupId, request.auth.uid)))));
     }
     function managesTeachers(groupId) {
       return role() == 'super_admin' || (teacher() && ownsGroup(groupId));
@@ -42,8 +42,24 @@ service cloud.firestore {
     }
 
     match /users/{uid} {
-      allow get: if signedIn() && request.auth.uid == uid;
-      allow list, create, update, delete: if false;
+      allow get: if signedIn() && (request.auth.uid == uid || role() == 'super_admin');
+      allow list: if role() == 'super_admin';
+      allow create: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['role','email','name'])
+        && request.resource.data.role == 'student' && ownProfileIdentity();
+      allow update: if (signedIn() && request.auth.uid == uid
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['email','name'])
+          && ownProfileIdentity())
+        || (role() == 'super_admin' && request.auth.uid != uid
+          && getAfter(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'super_admin'
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['role'])
+          && request.resource.data.role in ['student','teacher','super_admin']);
+
+      function ownProfileIdentity() {
+        return request.resource.data.email == request.auth.token.get('email','')
+          && request.resource.data.name == request.auth.token.get('name','')
+          && request.resource.data.email.size() <= 320 && request.resource.data.name.size() <= 150;
+      }
     }
     match /groups/{groupId} {
       allow get, list: if signedIn();
@@ -53,10 +69,23 @@ service cloud.firestore {
         && request.resource.data.code is string && request.resource.data.code.size() <= 24;
       allow update, delete: if false;
 
+      match /activity/{uid} {
+        allow get: if signedIn() && (request.auth.uid == uid || role() == 'super_admin'
+          || (teachesGroup(groupId) && exists(membershipPath(groupId, uid))));
+        allow create, update: if signedIn() && request.auth.uid == uid && isMember(groupId)
+          && validActivity();
+      }
+
       match /teachers/{uid} {
         allow get: if teacher() && (request.auth.uid == uid || managesTeachers(groupId));
         allow list: if managesTeachers(groupId);
         allow create: if managesTeachers(groupId) && approvesInvitation(groupId, uid);
+        allow create: if role() == 'super_admin' && exists(groupPath(groupId))
+            && get(groupPath(groupId)).data.ownerUid != uid
+            && userRole(uid) == 'teacher'
+            && request.resource.data.keys().hasOnly(['assignedBy','createdAt'])
+            && request.resource.data.assignedBy == request.auth.uid
+            && request.resource.data.createdAt == request.time;
         allow delete: if managesTeachers(groupId);
 
         function approvesInvitation(groupId, uid) {
@@ -148,7 +177,7 @@ service cloud.firestore {
       }
     }
     match /courseSets/{id} {
-      allow get, list: if signedIn() && (resource.data.visibility == 'public'
+      allow get, list: if signedIn() && (role() == 'super_admin' || resource.data.visibility == 'public'
         || teachesGroup(resource.data.groupId) || isMember(resource.data.groupId));
       allow create: if teacher() && request.resource.data.ownerUid == request.auth.uid
         && request.resource.data.keys().hasOnly(['name','level','ownerUid','ownerName','visibility','groupId','words','createdAt'])
@@ -157,7 +186,28 @@ service cloud.firestore {
         && ((request.resource.data.visibility == 'public' && request.resource.data.groupId == '')
           || (request.resource.data.visibility == 'group'
             && teachesGroup(request.resource.data.groupId)));
-      allow delete: if signedIn() && resource.data.ownerUid == request.auth.uid;
+      allow delete: if signedIn() && (role() == 'super_admin' || resource.data.ownerUid == request.auth.uid);
+    }
+    function activityCount(value) {
+      return value is int && value >= 0 && value <= 1000000000;
+    }
+    function validActivity() {
+      let summary = request.resource.data;
+      let days = summary.days;
+      return summary.keys().hasOnly(['exercises','words','weekStart','days'])
+        && activityCount(summary.exercises) && activityCount(summary.words)
+        && summary.words <= summary.exercises
+        && summary.weekStart is int && summary.weekStart >= 0 && summary.weekStart <= 100000
+        && days is list && days.size() == 7
+        && activityCount(days[0]) && activityCount(days[1]) && activityCount(days[2])
+        && activityCount(days[3]) && activityCount(days[4]) && activityCount(days[5])
+        && activityCount(days[6])
+        && days[0] + days[1] + days[2] + days[3] + days[4] + days[5] + days[6] <= summary.exercises;
+    }
+    match /learningActivity/{uid} {
+      allow get: if signedIn() && (request.auth.uid == uid || role() == 'super_admin');
+      allow list: if role() == 'super_admin';
+      allow create, update: if signedIn() && request.auth.uid == uid && validActivity();
     }
     match /personalProgress/{uid}/workspace/{itemId} {
       allow get, list: if signedIn() && request.auth.uid == uid;

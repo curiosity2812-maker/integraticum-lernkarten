@@ -76,12 +76,14 @@ try{
 for(const role of ['student','teacher']){
  const ctx=await engine.launch();const v=await ctx.newPage();observers.push({ctx,v,role});
  await v.goto('http://127.0.0.1:8765/');await v.waitForFunction(()=>window.integraticumAuthReady===true);await v.evaluate(()=>go('account'));
+ await v.locator('#authName').fill('Test '+role+' '+name);
  await v.locator('#authEmail').fill(name+'-'+role+'@example.test');await v.locator('#authPassword').fill('Test-only-123');await v.getByRole('button',{name:'Зарегистрироваться',exact:true}).click();
  await v.waitForFunction(()=>!!window.integraticumUser);const observerUid=await v.evaluate(()=>window.integraticumUser.uid);assert.notEqual(observerUid,uid);
  const base='http://127.0.0.1:8080/v1/projects/demo-integraticum/databases/(default)/documents/';
  const seed=async(path,fields)=>{const res=await fetch(base+path,{method:'PATCH',headers:{Authorization:'Bearer owner','Content-Type':'application/json'},body:JSON.stringify({fields:Object.fromEntries(Object.entries(fields).map(([k,value])=>[k,{stringValue:value}]))})});assert.ok(res.ok);};
  const gid='calendar-'+name+'-'+role;
- await seed('users/'+observerUid,{role});await seed('groups/'+gid,{ownerUid:role==='teacher'?observerUid:uid,name:'Calendar test',level:'A1',code:gid});
+ await v.waitForFunction(expected=>window.integraticumUser.displayName===expected,'Test '+role+' '+name);
+ await seed('users/'+observerUid,{role,name:'Test '+role+' '+name,email:name+'-'+role+'@example.test'});await seed('groups/'+gid,{ownerUid:role==='teacher'?observerUid:uid,name:'Calendar test',level:'A1',code:gid});
  if(role==='student')await seed('memberships/'+gid+'_'+observerUid,{groupId:gid,uid:observerUid});
  await v.reload();await v.waitForFunction(r=>window.integraticumCourse?.accountProfile()?.role===r&&window.integraticumCourse.hasMembership(),role,{timeout:60000});await v.evaluate(()=>go('notifications'));
 }
@@ -116,6 +118,126 @@ assert.equal(await p.evaluate(()=>unreadCalendar()),0);
 console.log(name+': calendar notifications, read persistence, edited event unread and deletion passed');
 for(const {v} of observers)await v.waitForFunction(note=>!calendarNotices().some(e=>e.note===note),'Updated holiday '+name,{timeout:60000});
 console.log(name+': distinct student and teacher accounts received calendar notices and independent read status');
+const studentPage=observers.find(x=>x.role==='student').v;
+const teacherPage=observers.find(x=>x.role==='teacher').v;
+const studentUid=await studentPage.evaluate(()=>window.integraticumUser.uid);
+const teacherUid=await teacherPage.evaluate(()=>window.integraticumUser.uid);
+for(const learner of [studentPage,teacherPage]){
+ await learner.evaluate(()=>go('account'));
+ assert.equal(await learner.getByRole('button',{name:'Управление',exact:true}).count(),0);
+ for(const route of ['admin','adminUsers','adminGroups','adminSets','adminActivity']){
+  await learner.evaluate(route=>go(route),route);
+  await learner.getByText('Раздел доступен сотрудникам с соответствующими правами.').waitFor();
+ }
+}
+await p.evaluate(()=>go('account'));
+await p.getByRole('button',{name:'Управление',exact:true}).click();
+await p.getByRole('heading',{name:'Управление',exact:true}).waitFor();
+for(const [width,height] of [[390,844],[768,1024],[1440,900]]){
+ await p.setViewportSize({width,height});
+ for(const section of ['Пользователи','Группы','Наборы','Активность','Календарь']){
+  await p.getByRole('button',{name:section,exact:true}).click();
+  await p.locator('#view h1').waitFor();
+  assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+2),
+   name+' '+width+'px: overflow in '+section);
+  await p.evaluate(()=>go('admin'));
+ }
+}
+await p.getByRole('button',{name:'Пользователи',exact:true}).click();
+await p.getByRole('heading',{name:`Test student ${name}`,exact:true}).waitFor();
+assert.equal(await p.getByRole('button',{name:'Добавить пользователя',exact:true}).count(),0);
+const searchInput=p.locator('#adminUserSearch');
+await searchInput.fill(`Test student ${name}`);
+assert.equal(await p.locator('.admin-user').count(),1);
+await searchInput.fill(`${name}-student@example.test`);
+assert.equal(await p.locator('.admin-user').count(),1);
+await p.locator('#adminUserRole').selectOption('teacher');
+assert.equal(await p.locator('.admin-user').count(),0);
+await p.locator('#adminUserRole').selectOption('student');
+const studentCard=p.locator('.admin-user');
+await studentCard.locator('select').selectOption('teacher');
+await studentCard.getByRole('button',{name:'Изменить роль',exact:true}).click();
+await studentPage.waitForFunction(()=>window.integraticumCourse.accountProfile().role==='teacher');
+await p.getByText('Роль изменена.',{exact:true}).waitFor();
+await p.locator('#adminUserRole').selectOption('teacher');
+await studentCard.locator('select').selectOption('student');
+await studentCard.getByRole('button',{name:'Изменить роль',exact:true}).click();
+await studentPage.waitForFunction(()=>window.integraticumCourse.accountProfile().role==='student');
+const teacherEmail=`${name}-teacher@example.test`;
+await p.getByRole('button',{name:'Управление',exact:true}).click();
+await p.getByRole('button',{name:'Группы',exact:true}).click();
+const groupName=`Группа администратора ${name}`;
+await p.locator('#groupName').fill(groupName);
+await p.getByRole('button',{name:'Создать группу',exact:true}).click();
+await p.getByRole('button',{name:groupName,exact:true}).click();
+const code=await p.getByText('Код группы',{exact:false}).locator('strong').textContent();
+await p.locator('#adminTeacher').selectOption(teacherUid);
+await p.getByRole('button',{name:'Назначить',exact:true}).click();
+await p.getByText(teacherEmail,{exact:true}).waitFor();
+await teacherPage.evaluate(()=>window.integraticumCourse.reload());
+await teacherPage.evaluate(()=>go('courses'));
+await teacherPage.getByRole('button',{name:groupName,exact:true}).waitFor();
+await studentPage.evaluate(()=>openCourseSection('courseJoin'));
+await studentPage.evaluate(()=>window.integraticumCourse.reload());
+await studentPage.locator('#joinCode').fill(code);
+await studentPage.getByRole('button',{name:'Отправить заявку',exact:true}).click();
+await p.locator('#courseRequests').getByRole('button',{name:'Принять',exact:true}).click();
+await p.locator('#selectedCourseDetails').getByText(`Test student ${name}`,{exact:true}).waitFor();
+await studentPage.waitForFunction(()=>window.integraticumCourse.hasMembership());
+await studentPage.getByText('Принята',{exact:false}).last().waitFor();
+await studentPage.evaluate(()=>{
+ startSession(['c0'],'recall');
+ finishRecall(true);
+});
+const groupId=await teacherPage.getByRole('button',{name:groupName,exact:true}).getAttribute('data-id');
+await p.getByRole('button',{name:'Управление',exact:true}).click();
+await p.getByRole('button',{name:'Активность',exact:true}).click();
+await p.locator('#adminActivityGroup').selectOption(groupId);
+const waitForActivity=async view=>{
+ for(let i=0;i<15;i++){
+  await view.locator('#activityExercises').waitFor();
+  if(await view.locator('#activityExercises').textContent()==='1')return;
+  await new Promise(resolve=>setTimeout(resolve,600));
+  await view.evaluate(()=>window.integraticumCourse.reloadManagement());
+ }
+ throw Error('Expected one cloud-saved exercise in group');
+};
+await waitForActivity(p);
+assert.equal(await p.locator('#activityActive').textContent(),'1');
+assert.equal(await p.locator('#activityWords').textContent(),'1');
+await teacherPage.getByRole('button',{name:groupName,exact:true}).click();
+await teacherPage.getByRole('button',{name:'Активность группы',exact:true}).click();
+await waitForActivity(teacherPage);
+assert.equal(await teacherPage.locator('#adminActivityGroup').count(),0);
+await teacherPage.getByText('Упражнений 1 · Изучаемых слов 1',{exact:true}).waitFor();
+await teacherPage.evaluate(()=>{
+ data.sets.push({id:'test-publication',name:'Материал для модерации',level:'A1',wordIds:['c0']});
+ save();
+ openCourseSection('coursePublish');
+});
+await teacherPage.locator('#publishSet').selectOption('test-publication');
+await teacherPage.getByRole('button',{name:'Опубликовать копию',exact:true}).click();
+await teacherPage.getByText('Копия набора опубликована.',{exact:true}).waitFor();
+await p.getByRole('button',{name:'Управление',exact:true}).click();
+await p.getByRole('button',{name:'Наборы',exact:true}).click();
+const publication=p.getByRole('article').filter({has:p.getByRole('heading',{name:'Материал для модерации',exact:true})});
+await publication.getByText('Общий доступ',{exact:true}).waitFor();
+await publication.getByRole('button',{name:'Снять с публикации',exact:true}).click();
+await p.getByText('Набор снят с публикации.',{exact:true}).waitFor();
+await publication.waitFor({state:'detached'});
+assert.ok(await teacherPage.evaluate(()=>data.sets.some(set=>set.id==='test-publication')));
+await p.getByRole('button',{name:'Управление',exact:true}).click();
+await p.getByRole('button',{name:'Группы',exact:true}).click();
+await p.getByRole('button',{name:groupName,exact:true}).click();
+await p.getByRole('button',{name:'Отозвать доступ',exact:true}).click();
+await p.getByText('Доступ преподавателя отозван.',{exact:true}).waitFor();
+await teacherPage.evaluate(()=>window.integraticumCourse.reload());
+await teacherPage.evaluate(()=>go('courses'));
+assert.equal(await teacherPage.getByRole('button',{name:groupName,exact:true}).count(),0);
+await p.locator('#selectedCourseDetails').getByRole('button',{name:'Удалить из группы',exact:true}).click();
+await p.getByText('Ученик удалён из группы.',{exact:true}).waitFor();
+assert.equal(await studentPage.evaluate(()=>window.integraticumUser.uid),studentUid);
+console.log(name+': administrator permissions, profiles, role changes, group management, set moderation, activity and responsive layout passed');
 }finally{for(const {ctx} of observers)await ctx.close();}
 
 

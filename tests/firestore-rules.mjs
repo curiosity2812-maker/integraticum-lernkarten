@@ -97,5 +97,69 @@ await assertFails(updateDoc(ref('calendarAdmin',calendarPath),{end:'2026-01-01'}
 await assertSucceeds(updateDoc(ref('calendarAdmin',calendarPath),{note:'Updated'}));
 await assertSucceeds(deleteDoc(ref('calendarAdmin',calendarPath)));
 console.log('Calendar administrator CRUD and role restrictions passed');
+const profiles='users';
+const studentProfile={role:'student',email:'student@example.com',name:''};
+await assertFails(setDoc(ref('student','users/student'),{...studentProfile,email:'owner@example.com'}));
+await assertSucceeds(setDoc(ref('student','users/student'),studentProfile));
+await assertFails(updateDoc(ref('student','users/student'),{role:'teacher'}));
+await assertFails(updateDoc(ref('student','users/student'),{role:'super_admin'}));
+await assertFails(getDoc(ref('owner','users/student')));
+await assertFails(getDocs(collection(db('owner'),profiles)));
+await assertFails(getDocs(collection(db('student'),profiles)));
+await assertSucceeds(getDocs(collection(db('calendarAdmin'),profiles)));
+await assertFails(setDoc(ref('calendarAdmin','users/nonexistent'),{role:'teacher'}));
+await assertFails(updateDoc(ref('calendarAdmin','users/calendarAdmin'),{role:'student'}));
+await assertFails(deleteDoc(ref('calendarAdmin','users/calendarAdmin')));
+await assertSucceeds(updateDoc(ref('calendarAdmin','users/student'),{role:'super_admin'}));
+const demotions=await Promise.allSettled([
+ updateDoc(ref('calendarAdmin','users/student'),{role:'student'}),
+ updateDoc(ref('student','users/calendarAdmin'),{role:'student'})
+]);
+const successfulDemotions=demotions.filter(result=>result.status==='fulfilled').length;
+if(successfulDemotions>1)throw Error('Concurrent role changes removed both administrators');
+// The emulator can reject both writes when their rule lookups contend on the same profiles.
+if(!successfulDemotions)await assertSucceeds(updateDoc(ref('calendarAdmin','users/student'),{role:'student'}));
+const admin=demotions[1].status==='fulfilled'?'student':'calendarAdmin';
+const removedAdmin=admin==='student'?'calendarAdmin':'student';
+await assertFails(getDocs(collection(db(removedAdmin),profiles)));
+await assertSucceeds(getDocs(collection(db(admin),profiles)));
+await assertFails(updateDoc(ref(admin,'users/'+admin),{role:'teacher'}));
+await assertSucceeds(getDocs(query(collection(db(admin),'memberships'),where('groupId','==','g'))));
+await assertSucceeds(getDocs(query(collection(db(admin),'joinRequests'),where('groupId','==','g'))));
+const assignment='groups/g/teachers/other';
+await assertFails(setDoc(ref('owner',assignment),{assignedBy:'owner',createdAt:serverTimestamp()}));
+await assertFails(setDoc(ref(admin,'groups/g/teachers/'+removedAdmin),{assignedBy:admin,createdAt:serverTimestamp()}));
+await assertSucceeds(setDoc(ref(admin,assignment),{assignedBy:admin,createdAt:serverTimestamp()}));
+await assertSucceeds(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+await assertSucceeds(deleteDoc(ref(admin,assignment)));
+await assertFails(getDocs(query(collection(db('other'),'memberships'),where('groupId','==','g'))));
+await assertSucceeds(getDocs(collection(db(admin),'courseSets')));
+await assertSucceeds(deleteDoc(ref(admin,'courseSets/private')));
+await assertFails(deleteDoc(ref(admin,'groups/g')));
+
+const aggregate={exercises:4,words:2,weekStart:20780,days:[0,0,0,1,0,0,3]};
+const activity='learningActivity/member',groupActivity='groups/g/activity/member';
+await assertSucceeds(setDoc(ref('member',activity),aggregate));
+await assertSucceeds(setDoc(ref('member',groupActivity),aggregate));
+await assertFails(setDoc(ref('member',groupActivity),{...aggregate,days:[0,0,'private detail',1,0,0,3]}));
+await assertFails(setDoc(ref('member',activity),{...aggregate,answerIds:['private']}));
+await assertFails(setDoc(ref('other',activity),aggregate));
+await assertFails(setDoc(ref('other','groups/g/activity/other'),aggregate));
+await assertFails(getDoc(ref('other',groupActivity)));
+await assertFails(getDoc(ref('owner',activity)));
+await assertSucceeds(getDoc(ref('owner',groupActivity)));
+await assertSucceeds(getDoc(ref('co',groupActivity)));
+await assertSucceeds(getDocs(collection(db(admin),'learningActivity')));
+await assertFails(getDocs(collection(db('co'),'learningActivity')));
+await assertSucceeds(setDoc(ref('member','personalProgress/member/answers/sample'),answer));
+await assertSucceeds(setDoc(ref('member','personalProgress/member/workspace/sample'),item));
+await assertFails(getDoc(ref(admin,'personalProgress/member/answers/sample')));
+await assertFails(getDoc(ref(admin,'personalProgress/member/workspace/sample')));
+await assertFails(getDoc(ref('co','personalProgress/member/answers/sample')));
+await assertFails(getDoc(ref('co','personalProgress/member/workspace/sample')));
+await assertSucceeds(deleteDoc(ref(admin,'memberships/g_member')));
+await assertFails(getDoc(ref('owner',groupActivity)));
+await assertFails(setDoc(ref('member',groupActivity),aggregate));
+console.log('Academic administration, concurrent role protection and aggregate-only access passed');
 console.log('All rule and transaction checks passed');
 }finally{await env.cleanup();}

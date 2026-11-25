@@ -31,6 +31,23 @@ assert.equal(await p.locator('#results .item').count(),80);await p.getByRole('bu
 await p.locator('#results').getByRole('button',{name:'Открыть',exact:true}).first().click();
 assert.ok(await p.evaluate(()=>page==='word'&&!!word(selectedWord)));
 console.log(name+': real dictionary loading, search, filters, pagination and word opening passed '+JSON.stringify(counts));
+await p.evaluate(()=>go('library'));
+const parts=await p.locator('#filterPart option').evaluateAll(xs=>xs.map(x=>x.value).filter(x=>x!=='all'));
+for(const part of parts){await p.locator('#filterPart').selectOption(part);assert.ok(await p.evaluate(v=>dictionaryResults().every(w=>w.part===v),part));}
+await p.locator('#filterPart').selectOption('all');
+const topic=await p.evaluate(()=>dictionaryCards().find(w=>w.a1Reviewed&&w.topic).topic);
+await p.locator('#filterTopic').selectOption(topic);assert.ok(await p.evaluate(t=>dictionaryResults().length>0&&dictionaryResults().every(w=>w.topic===t||w.topics?.includes(t)),topic));
+await p.locator('#filterTopic').selectOption('all');
+const uk=await p.evaluate(()=>dictionaryCards().find(w=>w.a1Reviewed&&w.uk));
+await p.locator('#search').fill(uk.uk);assert.ok(await p.evaluate(id=>dictionaryResults().some(w=>w.id===id),uk.id));
+await p.evaluate(()=>openWord('c0'));
+await p.getByText('die Wohnungen',{exact:false}).first().waitFor();
+await p.getByText('Räume, in denen jemand lebt.',{exact:false}).waitFor();
+await p.evaluate(()=>{window.testSpeech=[];Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{cancel(){},getVoices(){return [{lang:'de-DE'}]},speak(u){window.testSpeech.push({text:u.text,lang:u.lang,rate:u.rate})}}});window.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};});
+await p.getByRole('button',{name:'Произнести слово',exact:true}).click();await p.getByRole('button',{name:/Произнести пример/}).click();
+assert.deepEqual(await p.evaluate(()=>window.testSpeech),[{text:'die Wohnung',lang:'de-DE',rate:0.85},{text:'Ich wohne in einer kleinen Wohnung.',lang:'de-DE',rate:0.85}]);
+console.log(name+': part and topic filters, Ukrainian search, forms, definition and speech dispatch passed');
+
 
 }finally{await second?.close();await rm(secondDir,{recursive:true,force:true});}}finally{await context?.close();await rm(dir,{recursive:true,force:true});}
 }}finally{server.close();}

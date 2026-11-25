@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install PDF extraction utility
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - name: Retrieve official vocabulary
         run: |
           curl --fail --location --retry 3 'https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf' -o /tmp/goethe-a2.pdf

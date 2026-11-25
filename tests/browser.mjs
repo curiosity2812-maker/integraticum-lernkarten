@@ -136,7 +136,7 @@ await p.getByRole('heading',{name:'Управление',exact:true}).waitFor();
 for(const [width,height] of [[390,844],[768,1024],[1440,900]]){
  await p.setViewportSize({width,height});
  for(const section of ['Пользователи','Группы','Наборы','Активность','Календарь']){
-  await p.getByRole('button',{name:section,exact:true}).click();
+  await p.locator('#view').getByRole('button',{name:section,exact:true}).click();
   await p.locator('#view h1').waitFor();
   assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+2),
    name+' '+width+'px: overflow in '+section);
@@ -183,8 +183,8 @@ await studentPage.locator('#joinCode').fill(code);
 await studentPage.getByRole('button',{name:'Отправить заявку',exact:true}).click();
 await p.locator('#courseRequests').getByRole('button',{name:'Принять',exact:true}).click();
 await p.locator('#selectedCourseDetails').getByText(`Test student ${name}`,{exact:true}).waitFor();
-await studentPage.waitForFunction(()=>window.integraticumCourse.hasMembership());
-await studentPage.getByText('Принята',{exact:false}).last().waitFor();
+await studentPage.evaluate(()=>openCourseSection('courseOwnRequests'));
+await studentPage.getByText(groupName+': Принята',{exact:true}).waitFor();
 await studentPage.evaluate(()=>{
  startSession(['c0'],'recall');
  finishRecall(true);
@@ -232,7 +232,8 @@ await p.getByRole('button',{name:groupName,exact:true}).click();
 await p.getByRole('button',{name:'Отозвать доступ',exact:true}).click();
 await p.getByText('Доступ преподавателя отозван.',{exact:true}).waitFor();
 await teacherPage.evaluate(()=>window.integraticumCourse.reload());
-await teacherPage.evaluate(()=>go('courses'));
+await teacherPage.evaluate(()=>{go('account');go('courses');});
+await teacherPage.getByRole('heading',{name:'Учебные группы',exact:true}).waitFor();
 assert.equal(await teacherPage.getByRole('button',{name:groupName,exact:true}).count(),0);
 await p.locator('#selectedCourseDetails').getByRole('button',{name:'Удалить из группы',exact:true}).click();
 await p.getByText('Ученик удалён из группы.',{exact:true}).waitFor();

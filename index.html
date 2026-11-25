@@ -331,7 +331,7 @@ function toggleMenu() {
 }
 
 function pendingNotifications() {
-  return window.integraticumCourse?.pendingCount?.() || 0;
+  return (window.integraticumCourse?.pendingCount?.() || 0)+unreadCalendar();
 }
 
 function updateNavigation() {
@@ -345,11 +345,15 @@ function updateNavigation() {
   document.getElementById('notificationDot').hidden = !pendingNotifications();
 }
 
-function notificationsView() {
-  const pending = pendingNotifications();
-  return `<h1>Уведомления</h1><section class="card">${pending
-    ? `<p>Заявок на вступление в группу: ${pending}</p><button onclick="go('courses')">Посмотреть заявки</button>`
-    : '<p>Новых уведомлений нет.</p>'}</section>`;
+function calendarNotices(){const api=window.integraticumCourse;if(!window.integraticumUser||(!api?.hasMembership?.()&&api?.accountProfile()?.role!=='super_admin'))return [];return (api.calendarEvents()||[]).filter(e=>e.end>=calendarDate(new Date())).sort((a,b)=>a.start.localeCompare(b.start));}
+function calendarNoticeKey(e){return JSON.stringify([e.id,e.type,e.start,e.end,e.group,e.note]);}
+function calendarSeen(){try{return JSON.parse(localStorage.getItem(KEY+':calendarSeen:'+window.integraticumUser?.uid)||'[]')}catch{return []}}
+function unreadCalendar(){const seen=new Set(calendarSeen());return calendarNotices().filter(e=>!seen.has(calendarNoticeKey(e))).length;}
+function markCalendarRead(){try{localStorage.setItem(KEY+':calendarSeen:'+window.integraticumUser.uid,JSON.stringify(calendarNotices().map(calendarNoticeKey)))}catch{}render();}
+function notificationsView(){
+ const pending=window.integraticumCourse?.pendingCount?.()||0,events=calendarNotices(),seen=new Set(calendarSeen());
+ return '<h1>Уведомления</h1>'+ (pending?'<section class="card"><p>Заявок на вступление в группу: '+pending+'</p><button onclick="go(\'courses\')">Посмотреть заявки</button></section>':'')+
+ (events.length?'<section class="card"><h2>Изменения расписания</h2>'+events.map(e=>'<p><b>'+calendarEscape(calendarTypes[e.type]||e.type)+'</b>'+(!seen.has(calendarNoticeKey(e))?' · Новое':'')+'<br>'+calendarEscape(e.start)+' — '+calendarEscape(e.end)+' · '+(e.group==='all'?'Обе группы':'Группа '+calendarEscape(e.group))+'<br>'+calendarEscape(e.note)+'</p>').join('')+'<button onclick="markCalendarRead()">Отметить прочитанными</button> <button onclick="go(\'calendar\')">Открыть календарь</button></section>':(!pending?'<section class="card"><p>Новых уведомлений нет.</p></section>':''));
 }
 
 let courseSectionFilter=null;
@@ -781,7 +785,7 @@ try{
  async google(){try{await signInWithPopup(auth,new GoogleAuthProvider())}catch(err){if(['auth/popup-blocked','auth/popup-closed-by-user','auth/cancelled-popup-request'].includes(err.code))return error('Окно Google закрылось или было заблокировано. Попробуйте ещё раз в Safari либо войдите по электронной почте, если для аккаунта установлен пароль.');error(readable(err))}},
  async signOut(){try{await signOut(auth)}catch(err){error(readable(err))}}
  };
- onAuthStateChanged(auth,u=>{calendarStop?.();calendarItems=[];calendarEdit=null;if(u)calendarStop=onSnapshot(collection(db,'calendarEvents'),snap=>{if(auth.currentUser?.uid!==u.uid)return;calendarItems=snap.docs.map(d=>({...d.data(),id:d.id}));if(page==='calendar')window.render?.()},()=>{});window.integraticumAuthReady=true;window.integraticumBridge.switchAccount(u?.uid||null);window.integraticumUser=u?{uid:u.uid,email:u.email,displayName:u.displayName}:null;syncWorkspace(u);syncProgress(u);loadCourse(u);status.textContent=u?(u.displayName||u.email||'Вход выполнен'):'Войти';if(typeof window.render==='function')window.render();else if(document.getElementById('view')&&document.querySelector('h1')?.textContent?.includes('Аккаунт'))window.location.hash='';});
+ onAuthStateChanged(auth,u=>{calendarStop?.();calendarItems=[];calendarEdit=null;if(u)calendarStop=onSnapshot(collection(db,'calendarEvents'),snap=>{if(auth.currentUser?.uid!==u.uid)return;calendarItems=snap.docs.map(d=>({...d.data(),id:d.id}));if(['calendar','notifications'].includes(page))window.render?.();else updateNavigation()},e=>console.warn('Calendar subscription:',e.code));window.integraticumAuthReady=true;window.integraticumBridge.switchAccount(u?.uid||null);window.integraticumUser=u?{uid:u.uid,email:u.email,displayName:u.displayName}:null;syncWorkspace(u);syncProgress(u);loadCourse(u);status.textContent=u?(u.displayName||u.email||'Вход выполнен'):'Войти';if(typeof window.render==='function')window.render();else if(document.getElementById('view')&&document.querySelector('h1')?.textContent?.includes('Аккаунт'))window.location.hash='';});
  persistenceReady.then(()=>{if(page==='account')window.render();return getRedirectResult(auth)}).catch(err=>error(readable(err)));
 }catch(err){status.textContent='Ошибка подключения';window.integraticumAuth={email(){error('Firebase не загрузился. Проверьте интернет.')},google(){error('Firebase не загрузился. Проверьте интернет.')},signOut(){}};}
 </script></body></html>

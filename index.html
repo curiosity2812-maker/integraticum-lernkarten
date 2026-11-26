@@ -603,24 +603,25 @@ try{
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
  let courseLoad = 0, courseLoaded = false;
  let requestListeners=[];
+ const stopRequestListeners=()=>{requestListeners.forEach(unsubscribe=>unsubscribe());requestListeners=[];};
  let assignmentListeners=[];
- function stopAssignmentListeners(){
-  assignmentListeners.forEach(unsubscribe=>unsubscribe());
-  assignmentListeners=[];
- }
- function watchTeacherAssignments(user,loadId){
+ function stopAssignmentListeners(){assignmentListeners.forEach(stop=>stop());assignmentListeners=[];}
+ function watchAssignments(user,loadId){
   if(course.role!=='teacher')return;
-  for(const group of course.groups.filter(group=>!owned(group))){
-   const ref=doc(db,'groups',group.id,'teachers',user.uid);
-   assignmentListeners.push(onSnapshot(ref,{includeMetadataChanges:true},snapshot=>{
-    if(loadId!==courseLoad||auth.currentUser?.uid!==user.uid||snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites)return;
-    if(snapshot.exists()!==course.assignments.includes(group.id))loadCourse(user);
-   },err=>{
-    if(loadId===courseLoad&&auth.currentUser?.uid===user.uid)console.warn('Teacher assignment subscription:',err.code);
-   }));
+  const valid=()=>loadId===courseLoad&&auth.currentUser?.uid===user.uid;
+  const report=err=>{if(valid()){course.message='Не удалось обновить назначения преподавателя. Обновите доступ. '+(err?.message||'');refreshCourse();}};
+  assignmentListeners.push(onSnapshot(collection(db,'groups'),{includeMetadataChanges:true},snap=>{
+   if(!valid()||snap.metadata.fromCache||snap.metadata.hasPendingWrites)return;
+   const ids=items=>items.map(g=>g.id).sort().join('|');
+   if(ids(snap.docs)!==ids(course.groups))loadCourse(user);
+  },report));
+  for(const group of course.groups.filter(g=>!owned(g))){
+   assignmentListeners.push(onSnapshot(doc(db,'groups',group.id,'teachers',user.uid),{includeMetadataChanges:true},snap=>{
+    if(!valid()||snap.metadata.fromCache||snap.metadata.hasPendingWrites)return;
+    if(snap.exists()!==course.assignments.includes(group.id))loadCourse(user);
+   },report));
   }
  }
- const stopRequestListeners=()=>{requestListeners.forEach(unsubscribe=>unsubscribe());requestListeners=[];};
  function watchRequests(user,loadId){
   const sources=[query(collection(db,'joinRequests'),where('studentUid','==',user.uid)),...teachingGroups().map(g=>query(collection(db,'joinRequests'),where('groupId','==',g.id)))];
   const snapshots=new Map();
@@ -656,7 +657,7 @@ try{
   if (!user) return;
 
   try {
-   const profile = await getDoc(doc(db,'users',user.uid));
+   const profile = await getDocFromServer(doc(db,'users',user.uid));
    if (request !== courseLoad) return;
    course.role = normalizedRole(profile.data()?.role);
    course.roleState = 'ready';
@@ -685,7 +686,7 @@ try{
 
    const assignments = course.role === 'teacher' ? await Promise.all(groups.filter(group=>!owned(group)).map(async group=>{
     try {
-     const grant = await getDoc(doc(db,'groups',group.id,'teachers',user.uid));
+     const grant = await getDocFromServer(doc(db,'groups',group.id,'teachers',user.uid));
      return grant.exists() ? group.id : null;
     } catch (err) {
      collectionErrors.push(err?.message || String(err));
@@ -729,10 +730,7 @@ try{
     courseLoaded=true;
     refreshCourse();
     scheduleActivity();
-    if(course.roleState==='ready'){
-     watchRequests(user,request);
-     watchTeacherAssignments(user,request);
-    }
+    if(course.roleState==='ready'){watchRequests(user,request);watchAssignments(user,request);}
    }
   }
  }
@@ -1093,7 +1091,7 @@ try{
   }
  };
 
- const actions={...managementActions,calendarEvents:()=>calendarItems,async saveCalendar(){if(course.role!=='super_admin')return;const item={type:document.getElementById('calType').value,start:document.getElementById('calStart').value,end:document.getElementById('calEnd').value,group:document.getElementById('calGroup').value,note:document.getElementById('calNote').value.trim()};if(item.start>item.end)return alert('Проверьте даты');try{if(calendarEdit)await setDoc(doc(db,'calendarEvents',calendarEdit),item);else await addDoc(collection(db,'calendarEvents'),item);calendarEdit=null;if(page==='calendar')window.render?.();else refreshCourse()}catch(e){alert('Не удалось сохранить событие')}},async deleteCalendar(id){if(course.role!=='super_admin'||!confirm('Удалить событие?'))return;try{await deleteDoc(doc(db,'calendarEvents',id));calendarEdit=null;refreshCourse()}catch(e){alert('Не удалось удалить событие')}},view:courseView,learningSets:()=>course.user?course.published.filter(canSeeSet).map(x=>({id:x.id,name:x.name,visibility:x.visibility,count:(x.words||[]).length})):[],learningWords(id){const x=course.user&&course.published.find(s=>s.id===id&&canSeeSet(s));return x?(x.words||[]).map((w,i)=>({...w,id:'course:'+x.id+':'+i,official:false})):[]},async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse();if(id!==null)requestAnimationFrame(()=>document.getElementById('selectedCourseDetails')?.scrollIntoView({block:'start',behavior:'smooth'}))},accountProfile:()=>({role:course.role,state:course.roleState}),
+ const actions={...managementActions,calendarEvents:()=>calendarItems,async saveCalendar(){if(course.role!=='super_admin')return;const item={type:document.getElementById('calType').value,start:document.getElementById('calStart').value,end:document.getElementById('calEnd').value,group:document.getElementById('calGroup').value,note:document.getElementById('calNote').value.trim()};if(item.start>item.end)return alert('Проверьте даты');try{if(calendarEdit)await setDoc(doc(db,'calendarEvents',calendarEdit),item);else await addDoc(collection(db,'calendarEvents'),item);calendarEdit=null;if(page==='calendar')window.render?.();else refreshCourse()}catch(e){alert('Не удалось сохранить событие')}},async deleteCalendar(id){if(course.role!=='super_admin'||!confirm('Удалить событие?'))return;try{await deleteDoc(doc(db,'calendarEvents',id));calendarEdit=null;refreshCourse()}catch(e){alert('Не удалось удалить событие')}},view:courseView,learningSets:()=>course.user?course.published.filter(canSeeSet).map(x=>({id:x.id,name:x.name,visibility:x.visibility,count:(x.words||[]).length})):[],learningWords(id){const x=course.user&&course.published.find(s=>s.id===id&&canSeeSet(s));return x?(x.words||[]).map((w,i)=>({...w,id:'course:'+x.id+':'+i,official:false})):[]},async removeMember(groupId,id){const m=course.groupMembers.find(m=>m.id===id&&m.groupId===groupId);if(!m||!teachingGroups().some(g=>g.id===groupId))return;if(!confirm('Удалить ученика из группы? Личный аккаунт сохранится.'))return;try{await deleteDoc(doc(db,'memberships',id));await loadCourse(auth.currentUser);setMsg('Ученик удалён из группы.')}catch(e){courseError(e)}},openGroup(id){if(id!==null&&!visibleGroups().some(g=>g.id===id))return;selectedCourseGroup=id;refreshCourse();if(id!==null)requestAnimationFrame(()=>document.getElementById('selectedCourseDetails')?.scrollIntoView({block:'start',behavior:'smooth'}))},accountProfile:()=>({role:course.role,state:course.roleState}),teacherAccessSummary:()=>!courseLoaded?'Загружаем назначения…':course.message|| (teachingGroups().length?'Назначенные группы: '+teachingGroups().map(g=>g.name).join(', '):'Нет назначенных групп. Обратитесь к суперадминистратору.'),
   async createTeacherInvite(groupId){
    if(!course.groups.some(g=>g.id===groupId&&managesTeachers(g)))return;
    const bytes=crypto.getRandomValues(new Uint8Array(12));

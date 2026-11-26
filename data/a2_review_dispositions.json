@@ -418,7 +418,13 @@
       "word": "Wald",
       "part_of_speech": "name",
       "decision": "excluded_by_scope",
-      "reason": "Имена собственные и сокращения исключены из текущей задачи по правилам словаря; это не утверждение об отсутствии других значений."
+      "reason": "Имя собственное вне объёма; существительное лес обработано отдельно.",
+      "related_reviewed_id": "dict_3c198630305101e242fe",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 29
+      }
     },
     {
       "id": "574a06437cc632223f9d",
@@ -700,7 +706,7 @@
       "word": "früh",
       "part_of_speech": "adv",
       "decision": "covered_by_existing_card",
-      "reason": "Раннее время и наречное употребление уже отражены в карточке früh.",
+      "reason": "Наречное употребление рано представлено существующей карточкой.",
       "related_reviewed_id": "dict_7fcdc2aac429df956d9d",
       "related_level": "A2",
       "source": {
@@ -713,7 +719,7 @@
       "word": "Früh",
       "part_of_speech": "noun",
       "decision": "not_confirmed_as_separate_a2_sense",
-      "reason": "В словнике früh — прилагательное/наречие; отдельное существительное не подтверждено.",
+      "reason": "Региональное существительное die Früh не выделено Goethe как отдельная единица.",
       "related_reviewed_id": "dict_7fcdc2aac429df956d9d",
       "related_level": "A2",
       "source": {
@@ -1400,7 +1406,7 @@
       "word": "wagen",
       "part_of_speech": "verb",
       "decision": "not_confirmed_as_separate_a2_sense",
-      "reason": "Подтверждено существительное Wagen, не глагол осмеливаться.",
+      "reason": "Глагол wagen — осмелиться; уровень не следует из существительного Wagen.",
       "related_reviewed_id": "dict_7826cccc627aa17ba4cf",
       "related_level": "A2",
       "source": {
@@ -1439,7 +1445,7 @@
       "word": "Weinen",
       "part_of_speech": "noun",
       "decision": "not_confirmed_as_separate_a2_sense",
-      "reason": "Подтверждено weinen, не отдельное существительное.",
+      "reason": "Номинализация das Weinen не отдельная лемма Goethe A2.",
       "related_reviewed_id": "dict_cab696692c0be1c0ac7c",
       "related_level": "A2",
       "source": {
@@ -1989,7 +1995,7 @@
       "word": "im",
       "part_of_speech": "abbrev",
       "decision": "excluded_by_scope",
-      "reason": "Исключена исходная запись, классифицированная как имя собственное или сокращение. Это не исключает общеупотребительное слово с таким написанием и не подтверждает правильность исходной классификации."
+      "reason": "Слитная форма im = in dem, не отдельная лемма; не присваиваем уровень сокращению."
     },
     {
       "id": "eb4bfe88820014b3831d",
@@ -2751,14 +2757,14 @@
       "id": "1966c7d05727b0c0928b",
       "word": "noch",
       "part_of_speech": "adv",
-      "decision": "covered_by_existing_card",
-      "reason": "Точное совпадение леммы с учётом регистра, части речи и всех нормализованных вариантов перевода с уже сохранённой карточкой. Отдельную карточку не создавать; уровень существующей карточки не изменён.",
-      "related_reviewed_id": "a1-431-1",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Дополнительное количество, продолжающееся состояние и действие до конца периода уже A1.",
+      "related_reviewed_id": "adverb-noch-more",
       "related_level": "A1",
-      "matched_translations": [
-        "ещё",
-        "всё ещё"
-      ]
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 22
+      }
     },
     {
       "id": "901da265d3c43bccfa36",
@@ -11258,6 +11264,314 @@
         "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
         "page": 27
       }
+    },
+    {
+      "id": "a213e6cd06f909249013",
+      "word": "so",
+      "part_of_speech": "adv",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Способ действия и степень уже A1; сравнение so … wie подтверждено A1/A2.",
+      "related_reviewed_id": "a1-528-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 26
+      }
+    },
+    {
+      "id": "15278fd8b75f4811451f",
+      "word": "so",
+      "part_of_speech": "conj",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Самостоятельный союз so в условной конструкции не подтверждён примером; so … wie не основание для отдельной метки союза.",
+      "related_reviewed_id": "a1-528-3",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 26
+      }
+    },
+    {
+      "id": "3e131e0dc2b1d6beb6dd",
+      "word": "so",
+      "part_of_speech": "intj",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Разговорный сигнал начала/завершения прямо подтверждён A1 стр. 23 и A2 стр. 26.",
+      "related_reviewed_id": "a1-528-4",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 26
+      },
+      "lower_level_source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "page": 23
+      }
+    },
+    {
+      "id": "f3840052c7ebf41c7a60",
+      "word": "so",
+      "part_of_speech": "particle",
+      "decision": "covered_by_existing_card",
+      "reason": "Усилительное so уже представлено в карточке степени; отдельная классификация частицы не создаёт новой карточки.",
+      "related_reviewed_id": "a1-528-3",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 26
+      }
+    },
+    {
+      "id": "e967a3a7b6ca3e133e60",
+      "word": "Beruf",
+      "part_of_speech": "noun",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Профессия A1; глагольные переводы относятся к другой лемме.",
+      "related_reviewed_id": "beruf-profession",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 10
+      }
+    },
+    {
+      "id": "2d54efcbc55ef6982363",
+      "word": "Zahl",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Число подтверждено A2; различены Zahl, Ziffer, Anzahl, zahlen.",
+      "related_reviewed_id": "dict_2d54efcbc55ef6982363",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 31
+      }
+    },
+    {
+      "id": "e6ba8ea17f9dd66a27af",
+      "word": "Baby",
+      "part_of_speech": "noun",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Младенец/малыш A1; прочие переносные переводы не подтверждены.",
+      "related_reviewed_id": "goethe-16c8dad07f1f269b0dda-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 10
+      }
+    },
+    {
+      "id": "1623ee363ffbf63b954e",
+      "word": "beliebt",
+      "part_of_speech": "adj",
+      "decision": "covered_by_existing_card",
+      "reason": "Популярный; bei + Dativ, формы сравнения сохранены.",
+      "related_reviewed_id": "dict_1623ee363ffbf63b954e",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 10
+      }
+    },
+    {
+      "id": "f77982a86c11d9f4c71d",
+      "word": "gerade",
+      "part_of_speech": "adj",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Прямой/чётный — прилагательные; статья gerade A2 подтверждает временное наречие, не эти значения.",
+      "related_reviewed_id": "a1-254-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 16
+      }
+    },
+    {
+      "id": "09f5920982e232e76ac0",
+      "word": "gerade",
+      "part_of_speech": "adv",
+      "decision": "covered_by_existing_card",
+      "reason": "Сейчас уже A1; только что выделено по контексту свежести на стр. 15 A2.",
+      "related_reviewed_id": "dict_09f5920982e232e76ac0-recent",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 15
+      },
+      "additional_related_ids": [
+        "a1-254-1"
+      ]
+    },
+    {
+      "id": "42ad2502b0d6a52948ab",
+      "word": "Gerade",
+      "part_of_speech": "noun",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Геометрическое существительное Gerade не подтверждено в статье gerade A2.",
+      "related_reviewed_id": "a1-254-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 16
+      }
+    },
+    {
+      "id": "d2c45086b996f4fa54ff",
+      "word": "gerade",
+      "part_of_speech": "particle",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Фокусирующее gerade в смысле именно не подтверждено отдельно; временные употребления разграничены.",
+      "related_reviewed_id": "dict_09f5920982e232e76ac0-recent",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 16
+      }
+    },
+    {
+      "id": "a3139c77a9250e443bef",
+      "word": "Gestaltung",
+      "part_of_speech": "noun",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Gestaltung встречается в выходных данных, не как словарная единица A2.",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 2
+      }
+    },
+    {
+      "id": "372d64c8c7a003902342",
+      "word": "Schlafzimmer",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Спальня; Plural неизменный, добавлены пространственные подсказки.",
+      "related_reviewed_id": "dict_372d64c8c7a003902342",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 25
+      }
+    },
+    {
+      "id": "3c198630305101e242fe",
+      "word": "Wald",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Лес; формы и пространственное управление.",
+      "related_reviewed_id": "dict_3c198630305101e242fe",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 29
+      }
+    },
+    {
+      "id": "7fcdc2aac429df956d9d",
+      "word": "früh",
+      "part_of_speech": "adj",
+      "decision": "covered_by_existing_card",
+      "reason": "Ранний/рано; сравнение и употребление.",
+      "related_reviewed_id": "dict_7fcdc2aac429df956d9d",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 15
+      }
+    },
+    {
+      "id": "1ac654422d7f4fe1a72b",
+      "word": "Plakat",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Плакат/афиша; Plural Plakate.",
+      "related_reviewed_id": "dict_1ac654422d7f4fe1a72b",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 23
+      }
+    },
+    {
+      "id": "aa71c9564c9439c2feb6",
+      "word": "Lied",
+      "part_of_speech": "noun",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Песня A1.",
+      "related_reviewed_id": "a1-389-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 20
+      }
+    },
+    {
+      "id": "7826cccc627aa17ba4cf",
+      "word": "Wagen",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Автомобиль и вагон подтверждены разными контекстами A2; региональная форма Plural отмечена.",
+      "related_reviewed_id": "dict_7826cccc627aa17ba4cf",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 29
+      }
+    },
+    {
+      "id": "cab696692c0be1c0ac7c",
+      "word": "weinen",
+      "part_of_speech": "verb",
+      "decision": "covered_by_existing_card",
+      "reason": "Плакать; формы сохранены.",
+      "related_reviewed_id": "dict_cab696692c0be1c0ac7c",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 30
+      }
+    },
+    {
+      "id": "c9c6f1f132b87370849a",
+      "word": "noch",
+      "part_of_speech": "conj",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Союз weder … noch не подтверждён статьёй noch A2; пояснение добавлено без метки.",
+      "related_reviewed_id": "a1-431-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 22
+      }
+    },
+    {
+      "id": "9fc79d2e7c979d432dfd",
+      "word": "noch",
+      "part_of_speech": "particle",
+      "decision": "covered_by_existing_card",
+      "reason": "Употребление ещё/всё ещё охвачено A1; альтернативная классификация частицы не создаёт новой карточки.",
+      "related_reviewed_id": "a1-431-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 22
+      }
+    },
+    {
+      "id": "622fa00a9fecb5ed9fd5",
+      "word": "Kuchen",
+      "part_of_speech": "noun",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Восстановлена пропущенная лемма A1 стр. 18; A2 стр. 19 подтверждает тот же пищевой смысл.",
+      "related_reviewed_id": "dict_622fa00a9fecb5ed9fd5",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 19
+      },
+      "lower_level_source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "page": 18
+      }
     }
   ],
   "cross_level_overlap_candidates": [
@@ -11454,8 +11768,8 @@
     }
   ],
   "structural_audit": {
-    "cards": 598,
-    "unique_ids": 598,
+    "cards": 599,
+    "unique_ids": 599,
     "missing_required": [],
     "missing_forms": [],
     "missing_level_evidence": [],
@@ -11463,7 +11777,7 @@
   },
   "additional_queue_progress": {
     "last_reviewed_batch_range": "001–041 (scope exclusions and exact nonverb duplicates)",
-    "note": "Batch 026: 30 candidate dispositions; added two A2 senses of frei (free of charge, off work/school), A1 unoccupied retained. Directly consulted Goethe A1/A2 PDF text and page images for frei, Dusche, Ecke, Laden, Service, langsam, Messe, wenigstens; Wiktionary independently checked for frei, Service, wenigstens. Routine entries reconciled with existing evidence; no independent fresh source check for every routine entry. Raw candidates unchanged. Prior migration checks remain. Batch 027 onward remains.",
-    "last_semantic_review_batch": "026"
+    "note": "Batch 027: 30 dispositions; restored Kuchen (A1) and conversational So! (A1, if absent); added gerade 'just now' A2 from frisch context p.15. Directly consulted official Goethe A1/A2 PDFs (A1 p.18,23; A2 pp.15,16,19,22,26,29,31), checked screenshots A1 p.18 and A2 p.26; Duden Kuchen, gerade and früh; Langenscheidt/Wiktionary so. Routine entries reconciled against existing evidence, not independently rechecked one by one. Raw candidates unchanged. Prior migration checks remain. Batch 028 onward remains.",
+    "last_semantic_review_batch": "027"
   }
 }

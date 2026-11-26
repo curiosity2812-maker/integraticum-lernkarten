@@ -397,7 +397,13 @@
       "word": "Süß",
       "part_of_speech": "name",
       "decision": "excluded_by_scope",
-      "reason": "Имена собственные и сокращения исключены из текущей задачи по правилам словаря; это не утверждение об отсутствии других значений."
+      "reason": "Исходное имя вне объёма; прилагательное отдельно.",
+      "related_reviewed_id": "dict_0c8ae14e2294fa4c4ffb",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 27
+      }
     },
     {
       "id": "4cd261ee29fdbe97c397",
@@ -1276,7 +1282,7 @@
       "word": "Süß",
       "part_of_speech": "noun",
       "decision": "not_confirmed_as_separate_a2_sense",
-      "reason": "Подтверждено прилагательное süß, не существительное.",
+      "reason": "Существительное Süß не отдельная лемма списка A2.",
       "related_reviewed_id": "dict_0c8ae14e2294fa4c4ffb",
       "related_level": "A2",
       "source": {
@@ -1554,15 +1560,18 @@
       "id": "24d5b0d2d09cbf00b516",
       "word": "Wörterbuch",
       "part_of_speech": "noun",
-      "decision": "requires_level_resolution",
-      "reason": "A2: отдельная единица в языке экзаменационных инструкций, стр. 5. A1: то же значение в примере к Buch, стр. 12. Уровень не присвоен до решения о статусе примеров A1.",
+      "decision": "covered_by_existing_card",
+      "reason": "Восстановлена карточка словарь: явная единица Goethe A2 стр. 5, пример A1 стр. 12; прежняя страница 99 ошибочна.",
+      "related_reviewed_id": "dict_24d5b0d2d09cbf00b516",
+      "related_level": "A2",
       "source": {
         "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
         "page": 5
       },
-      "additional_source": {
+      "contextual_a1_source": {
         "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
-        "page": 12
+        "page": 12,
+        "scope": "example_only"
       }
     },
     {
@@ -2002,28 +2011,52 @@
       "word": "Schnell",
       "part_of_speech": "name",
       "decision": "excluded_by_scope",
-      "reason": "Исключена исходная запись, классифицированная как имя собственное или сокращение. Это не исключает общеупотребительное слово с таким написанием и не подтверждает правильность исходной классификации."
+      "reason": "Фамилия вне объёма; прилагательное A1.",
+      "related_reviewed_id": "a1-503-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 25
+      }
     },
     {
       "id": "f92416274b67bd51f4a8",
       "word": "da",
       "part_of_speech": "abbrev",
       "decision": "excluded_by_scope",
-      "reason": "Исключена исходная запись, классифицированная как имя собственное или сокращение. Это не исключает общеупотребительное слово с таким написанием и не подтверждает правильность исходной классификации."
+      "reason": "Исходное сокращение исключено; наречие da отдельно A1.",
+      "related_reviewed_id": "da-there",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 12
+      }
     },
     {
       "id": "b1684bab626b4bca191f",
       "word": "Gast",
       "part_of_speech": "name",
       "decision": "excluded_by_scope",
-      "reason": "Исключена исходная запись, классифицированная как имя собственное или сокращение. Это не исключает общеупотребительное слово с таким написанием и не подтверждает правильность исходной классификации."
+      "reason": "Фамилия вне объёма; существительное Gast A1.",
+      "related_reviewed_id": "a1-243-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 15
+      }
     },
     {
       "id": "4fd39c1ea93a8432cd30",
       "word": "Preis",
       "part_of_speech": "name",
       "decision": "excluded_by_scope",
-      "reason": "Исключена исходная запись, классифицированная как имя собственное или сокращение. Это не исключает общеупотребительное слово с таким написанием и не подтверждает правильность исходной классификации."
+      "reason": "Фамилия вне объёма; существительное Preis A1.",
+      "related_reviewed_id": "a1-461-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 23
+      }
     },
     {
       "id": "86b0f33ca141dcd51472",
@@ -2770,25 +2803,27 @@
       "id": "901da265d3c43bccfa36",
       "word": "Computer",
       "part_of_speech": "noun",
-      "decision": "covered_by_existing_card",
-      "reason": "Точное совпадение леммы с учётом регистра, части речи и всех нормализованных вариантов перевода с уже сохранённой карточкой. Отдельную карточку не создавать; уровень существующей карточки не изменён.",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Компьютер A1.",
       "related_reviewed_id": "computer-device",
       "related_level": "A1",
-      "matched_translations": [
-        "компьютер"
-      ]
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 12
+      }
     },
     {
       "id": "a19b59e961eab2aa516e",
       "word": "Eltern",
       "part_of_speech": "noun",
-      "decision": "covered_by_existing_card",
-      "reason": "Точное совпадение леммы с учётом регистра, части речи и всех нормализованных вариантов перевода с уже сохранённой карточкой. Отдельную карточку не создавать; уровень существующей карточки не изменён.",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Родители A1, только множественное число.",
       "related_reviewed_id": "eltern-parents",
       "related_level": "A1",
-      "matched_translations": [
-        "родители"
-      ]
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 5
+      }
     },
     {
       "id": "2df4202b29a715ca3316",
@@ -11572,6 +11607,285 @@
         "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
         "page": 18
       }
+    },
+    {
+      "id": "2e3062d98ef90317f542",
+      "word": "Menge",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Goethe подтверждает eine Menge = много; уточнён контекст, толпа отдельно не подтверждена.",
+      "related_reviewed_id": "dict_2e3062d98ef90317f542",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 21
+      }
+    },
+    {
+      "id": "3f35673050fa4dcd1f74",
+      "word": "schnell",
+      "part_of_speech": "adj",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Быстрый/быстро A1.",
+      "related_reviewed_id": "a1-503-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 25
+      }
+    },
+    {
+      "id": "0c8ae14e2294fa4c4ffb",
+      "word": "süß",
+      "part_of_speech": "adj",
+      "decision": "covered_by_existing_card",
+      "reason": "Сладкий и милый подтверждены двумя примерами Goethe.",
+      "related_reviewed_id": "dict_0c8ae14e2294fa4c4ffb",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 27
+      }
+    },
+    {
+      "id": "46bfdec2cb1c568da27a",
+      "word": "allein",
+      "part_of_speech": "adj",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Без компании — A1, самостоятельно — близкое употребление; оба контекста Goethe A2.",
+      "related_reviewed_id": "goethe-be0aa2c29e8e9cf20082-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 8
+      }
+    },
+    {
+      "id": "31b13ab8c1c75113e7a0",
+      "word": "allein",
+      "part_of_speech": "conj",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Союз allein (= aber) отсутствует в примерах статьи Goethe.",
+      "related_reviewed_id": "goethe-be0aa2c29e8e9cf20082-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 8
+      }
+    },
+    {
+      "id": "1222775efb369844871e",
+      "word": "Rezept",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Кулинарный и медицинский рецепты оба явно подтверждены; медицинский выделен отдельно.",
+      "related_reviewed_id": "dict_1222775efb369844871e-medical",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 24
+      },
+      "additional_related_ids": [
+        "dict_1222775efb369844871e"
+      ]
+    },
+    {
+      "id": "53c34a3483c8f0db2135",
+      "word": "bezahlen",
+      "part_of_speech": "verb",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Оплачивать/платить/заплатить — A1; добавлено управление.",
+      "related_reviewed_id": "shopping-pay",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 11
+      }
+    },
+    {
+      "id": "6190fb3b9d2adfa996f2",
+      "word": "da",
+      "part_of_speech": "adv",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Пространственное указание и привлечение внимания уже A1; A2 показывает те же контексты.",
+      "related_reviewed_id": "da-there",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 12
+      }
+    },
+    {
+      "id": "ffcfa0d7e74776c0723d",
+      "word": "da",
+      "part_of_speech": "conj",
+      "decision": "not_confirmed_as_separate_a2_sense",
+      "reason": "Причинный союз da не представлен статьёй Goethe A2; подсказка о порядке слов без присвоения уровня.",
+      "related_reviewed_id": "da-there",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 12
+      }
+    },
+    {
+      "id": "879f843471f056e43317",
+      "word": "faul",
+      "part_of_speech": "adj",
+      "decision": "covered_by_existing_card",
+      "reason": "Ленивый, не гнилой; формы сохранены.",
+      "related_reviewed_id": "dict_879f843471f056e43317",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 14
+      }
+    },
+    {
+      "id": "6c2b39cfc97f1fed9187",
+      "word": "Gast",
+      "part_of_speech": "noun",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Гость A1; может обозначать человека любого пола в общем употреблении.",
+      "related_reviewed_id": "a1-243-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 15
+      }
+    },
+    {
+      "id": "dba6be5f21a97202b9eb",
+      "word": "Radio",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Радио; имеющаяся карточка сохранена; A1 содержит название темы Radio/Fernsehen, но не отдельную словарную статью.",
+      "related_reviewed_id": "dict_dba6be5f21a97202b9eb",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 23
+      }
+    },
+    {
+      "id": "fe0c9bb7abfccd4e69bc",
+      "word": "See",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Озеро A1; море die See явно подтверждено A2 отдельно.",
+      "related_reviewed_id": "dict_fe0c9bb7abfccd4e69bc-sea",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 25
+      },
+      "additional_related_ids": [
+        "a1-513-1"
+      ]
+    },
+    {
+      "id": "54d37b7a6c3593edee0a",
+      "word": "beantworten",
+      "part_of_speech": "verb",
+      "decision": "covered_by_existing_card",
+      "reason": "Отвечать на вопрос/письмо; Akkusativ без предлога.",
+      "related_reviewed_id": "dict_54d37b7a6c3593edee0a",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 10
+      }
+    },
+    {
+      "id": "9434e58f8c67cf4ad6b6",
+      "word": "Kellner",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Официант, Goethe A2 тематическая группа профессий стр.5; страница 54 исходной записи неверна.",
+      "related_reviewed_id": "dict_9434e58f8c67cf4ad6b6",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 5
+      }
+    },
+    {
+      "id": "052a2a09ac878f5490fb",
+      "word": "schrecklich",
+      "part_of_speech": "adj",
+      "decision": "covered_by_existing_card",
+      "reason": "Ужасный и вызывающий страх; оба контекста Goethe A2.",
+      "related_reviewed_id": "dict_052a2a09ac878f5490fb",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 25
+      }
+    },
+    {
+      "id": "3891478377adbfed9a3f",
+      "word": "Zelt",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Палатка; глагольный перевод исключён.",
+      "related_reviewed_id": "dict_3891478377adbfed9a3f",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 31
+      }
+    },
+    {
+      "id": "966d7a786a94058ad51d",
+      "word": "dick",
+      "part_of_speech": "adj",
+      "decision": "covered_by_existing_card",
+      "reason": "Goethe A2 подтверждает полный/толстый о человеке; остальные значения не наследуют уровень.",
+      "related_reviewed_id": "dict_966d7a786a94058ad51d",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 12
+      }
+    },
+    {
+      "id": "aa9f8642d35dabed3b3a",
+      "word": "Preis",
+      "part_of_speech": "noun",
+      "decision": "lower_level_a1_confirmed",
+      "reason": "Цена A1; Goethe A2 иллюстрирует цену, не приз; глагольные переводы исключены.",
+      "related_reviewed_id": "a1-461-1",
+      "related_level": "A1",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 23
+      }
+    },
+    {
+      "id": "63762428f562fa64e4ac",
+      "word": "Rentner",
+      "part_of_speech": "noun",
+      "decision": "covered_by_existing_card",
+      "reason": "Пенсионер; женская форма добавлена в подсказку.",
+      "related_reviewed_id": "dict_63762428f562fa64e4ac",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 24
+      }
+    },
+    {
+      "id": "493f42b44a840f6eca06",
+      "word": "basteln",
+      "part_of_speech": "verb",
+      "decision": "covered_by_existing_card",
+      "reason": "Мастерить/делать поделки; формы и Akkusativ сохранены.",
+      "related_reviewed_id": "dict_493f42b44a840f6eca06",
+      "related_level": "A2",
+      "source": {
+        "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+        "page": 10
+      }
     }
   ],
   "cross_level_overlap_candidates": [
@@ -11768,8 +12082,8 @@
     }
   ],
   "structural_audit": {
-    "cards": 599,
-    "unique_ids": 599,
+    "cards": 602,
+    "unique_ids": 602,
     "missing_required": [],
     "missing_forms": [],
     "missing_level_evidence": [],
@@ -11777,7 +12091,7 @@
   },
   "additional_queue_progress": {
     "last_reviewed_batch_range": "001–041 (scope exclusions and exact nonverb duplicates)",
-    "note": "Batch 027: 30 dispositions; restored Kuchen (A1) and conversational So! (A1, if absent); added gerade 'just now' A2 from frisch context p.15. Directly consulted official Goethe A1/A2 PDFs (A1 p.18,23; A2 pp.15,16,19,22,26,29,31), checked screenshots A1 p.18 and A2 p.26; Duden Kuchen, gerade and früh; Langenscheidt/Wiktionary so. Routine entries reconciled against existing evidence, not independently rechecked one by one. Raw candidates unchanged. Prior migration checks remain. Batch 028 onward remains.",
-    "last_semantic_review_batch": "027"
+    "note": "Batch 028: 30 dispositions; added die See (sea), das Rezept (medical), Wörterbuch (explicit A2 entry; A1 example only). Directly consulted Goethe A1/A2 PDFs, A2 page images 5,12,24,25,27; Wiktionary Rezept, See, Wörterbuch, dick, süß. Routine entries reconciled against existing evidence, not independently rechecked one by one. Raw candidates unchanged. Prior migration checks remain. Batch 029 onward remains.",
+    "last_semantic_review_batch": "028"
   }
 }

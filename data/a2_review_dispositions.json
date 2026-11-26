@@ -16430,7 +16430,21 @@
   },
   "additional_queue_progress": {
     "last_reviewed_batch_range": "001–041 (scope exclusions and exact nonverb duplicates)",
-    "note": "Batch 041: 12 dispositions; added A2 nachmittags, refined four A1 and five A2 cards. Goethe A2 pp.6,21 and A1 pp.13,15 screenshots inspected; A2 pp.16,19,24,30 extracted passages checked. Duden checked for danke, dieser, geboren, natürlich, Kunst, Rücken and Wäsche; Wiktionary checked for nachmittags. Gesicht and Hilfe reconciled using existing evidence and Goethe. All original card IDs retained; raw source unchanged. Full queue ID coverage audit still pending; no deployment or migration testing.",
-    "last_semantic_review_batch": "041"
+    "note": "Batch 041: 12 dispositions; added A2 nachmittags, refined four A1 and five A2 cards. Goethe A2 pp.6,21 and A1 pp.13,15 screenshots inspected; A2 pp.16,19,24,30 extracted passages checked. Duden checked for danke, dieser, geboren, natürlich, Kunst, Rücken and Wäsche; Wiktionary checked for nachmittags. Gesicht and Hilfe reconciled using existing evidence and Goethe. All original card IDs retained; raw source unchanged. Full queue ID coverage audit still pending; no deployment or migration testing. Full queue coverage audit completed: all 1212 rows have an explicit disposition (1107) or a direct reviewed-card ID match (105, batches 001–009).",
+    "last_semantic_review_batch": "041",
+    "queue_coverage_audit": {
+      "batches": 41,
+      "source_rows": 1212,
+      "rows_with_explicit_disposition": 1107,
+      "rows_linked_by_card_id_without_explicit_disposition": 105,
+      "rows_without_either": 0,
+      "method": "Fetched all 41 candidate batches and matched source ID to disposition ID or reviewed card ID dict_<source_id> (including sense suffixes). Coverage is structural, not a fresh independent semantic review.",
+      "a1_cards": 832,
+      "a2_cards": 630,
+      "duplicate_reviewed_card_ids": 0,
+      "duplicate_disposition_ids": 0,
+      "missing_required_a2": 0,
+      "migration_tested": false
+    }
   }
 }

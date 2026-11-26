@@ -519,6 +519,23 @@ try{
  const course={user:null,role:null,roleState:'loading',groups:[],memberships:[],requests:[],published:[],assignments:[],teacherInvites:[],groupTeachers:[],groupMembers:[],rosterErrors:[],message:''};
  let courseLoad = 0, courseLoaded = false;
  let requestListeners=[];
+ let assignmentListeners=[];
+ function stopAssignmentListeners(){
+  assignmentListeners.forEach(unsubscribe=>unsubscribe());
+  assignmentListeners=[];
+ }
+ function watchTeacherAssignments(user,loadId){
+  if(course.role!=='teacher')return;
+  for(const group of course.groups.filter(group=>!owned(group))){
+   const ref=doc(db,'groups',group.id,'teachers',user.uid);
+   assignmentListeners.push(onSnapshot(ref,{includeMetadataChanges:true},snapshot=>{
+    if(loadId!==courseLoad||auth.currentUser?.uid!==user.uid||snapshot.metadata.fromCache||snapshot.metadata.hasPendingWrites)return;
+    if(snapshot.exists()!==course.assignments.includes(group.id))loadCourse(user);
+   },err=>{
+    if(loadId===courseLoad&&auth.currentUser?.uid===user.uid)console.warn('Teacher assignment subscription:',err.code);
+   }));
+  }
+ }
  const stopRequestListeners=()=>{requestListeners.forEach(unsubscribe=>unsubscribe());requestListeners=[];};
  function watchRequests(user,loadId){
   const sources=[query(collection(db,'joinRequests'),where('studentUid','==',user.uid)),...teachingGroups().map(g=>query(collection(db,'joinRequests'),where('groupId','==',g.id)))];
@@ -545,6 +562,7 @@ try{
   const request = ++courseLoad;
   courseLoaded=false;
   stopRequestListeners();
+  stopAssignmentListeners();
   if(course.user?.uid!==user?.uid){
    selectedCourseGroup=null;
    resetManagement();
@@ -627,7 +645,10 @@ try{
     courseLoaded=true;
     refreshCourse();
     scheduleActivity();
-    if(course.roleState==='ready')watchRequests(user,request);
+    if(course.roleState==='ready'){
+     watchRequests(user,request);
+     watchTeacherAssignments(user,request);
+    }
    }
   }
  }

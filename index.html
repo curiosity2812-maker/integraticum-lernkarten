@@ -63,7 +63,7 @@ const partHints={"all":"Выберите часть речи.","noun":"Кто и
 function libraryView(){let levels=['all','A1','A2','B1','B2','C1','unknown'],topics=['all',...new Set(dictionaryCards().flatMap(w=>w.topics?.length?w.topics:[w.topic]))],parts=['all','noun','verb','adj','adv','prep','pron','conj','num','particle','intj','phrase','article','name','abbrev','postp','other'];let result=dictionaryResults();return `<div class="dictionary-tools"><div class="field"><label for="search">Поиск по словарю</label><div class="search-input">${uiIcon('search')}<input id="search" value="${e(filter.q)}" placeholder="Найти слово или выражение" oninput="filter.q=this.value;refreshResults()"></div></div><div class="grid"><div class="field"><label for="filterLevel">Уровень</label><select id="filterLevel" onchange="filter.level=this.value;window.integraticumResetPage?.();render()">${levels.map(x=>`<option ${filter.level===x?'selected':''} value="${x}">${x==='all'?'Все уровни':(x==='unknown'?'Неопределённый уровень':x)+' ('+dictionaryCards().filter(w=>x==='unknown'?!w.level_verified:w.level_verified===true&&w.level===x).length+')'}</option>`).join('')}</select></div><div class="field"><label for="filterPart">Часть речи</label><select id="filterPart" onchange="filter.part=this.value;window.integraticumResetPage?.();render()">${parts.map(x=>`<option ${filter.part===x?'selected':''} value="${x}">${x==='all'?'Все части речи':typeName(x)}</option>`).join('')}</select></div></div>${filter.part!=='all'?`<div id="partHint" role="status" style="background:#EDF2E8;border:1px solid #D6E1D0;border-radius:12px;padding:12px 16px;margin:8px 0 14px;color:#304D38"><b>${e(typeName(filter.part))}</b><p style="margin:5px 0 0;font-size:0.9rem;line-height:1.5">${e(partHints[filter.part]||partHints.other)}</p></div>`:''}<div class="field"><label for="filterTopic">Тема</label><select id="filterTopic" onchange="filter.topic=this.value;window.integraticumResetPage?.();render()">${topics.map(x=>`<option ${filter.topic===x?'selected':''} value="${e(x)}">${x==='all'?'Все темы':e(x)}</option>`).join('')}</select></div><div class="row wrap"><label class="filter-check"><input type="checkbox" ${filter.ch?'checked':''} onchange="filter.ch=this.checked;refreshResults()"> Schweizer Hochdeutsch (CH)</label>${btn('Сбросить фильтры',"resetFilter()")}${btn('＋ Создать слово',"openEditor(null)")}</div></div><div id="results">${resultsHtml(result)}</div>`}
 function resultsHtml(arr){return `<p class="muted tiny">Найдено: ${arr.length}</p>${arr.length?arr.map(w=>`<div class="item row"><div><b>${e(w.de)}</b> ${/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span>`:''}${w.ch?'<span class="tag">CH</span>':''}<p class="muted tiny">${e(translation(w))} · ${e(w.topic)} · ${typeName(w.part)}</p></div>${btn('Открыть',`openWord('${w.id}')`)}</div>`).join(''):'<p class="note">Ничего не найдено.</p>'}`}
 function refreshResults(){rememberPage();if(window.integraticumResetPage)window.integraticumResetPage();let arr=dictionaryResults();document.getElementById('results').innerHTML=resultsHtml(arr)}function resetFilter(){window.integraticumResetPage?.();filter={q:'',level:'all',topic:'all',part:'all',ch:false};render()}
-function openWord(id){selectedWord=id;go('word')}function wordView(){let w=word(selectedWord);if(!w)return '<p>Карточка не найдена.</p>';return `<div class="row">${btn('← Библиотека',"go('library')")}<span class="tag">${w.official?'Integraticum':'Личная'}</span></div><section class="card hero"><p class="sub">${typeName(w.part).toUpperCase()} · ${w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?e(w.level)+' · ':''}${e(w.topic)}</p><div class="row"><div class="word">${e(w.de)}</div><button class="secondary speak" onclick="speakWord(${JSON.stringify(w.de).replace(/"/g,"&quot;")})" aria-label="Произнести слово">🔊</button></div><p><b>RU:</b> ${e(w.ru||'—')}</p>${w.uk?`<p><b>UK:</b> ${e(w.uk)}</p>`:''}${w.forms?`<p><b>Формы:</b> ${e(w.forms)}</p>`:''}${w.example?`<p><b>Пример:</b> ${e(w.example)}</p>`:''}${w.note?`<p>${e(w.note)}</p>`:''}</section><section class="card"><h3>Добавить в набор</h3><div class="field"><select id="targetset"><option value="">Выбери набор</option>${data.sets.map(s=>`<option value="${s.id}">${e(s.name)}</option>`).join('')}</select></div><div class="actions">${btn('Добавить',"addToChosenSet()",'')}${btn('Создать набор',"newSet()")}</div></section><section class="card"><h3>Изменения</h3><p class="foot">Официальные карточки не изменяются: редактирование создаёт личную копию.</p><div class="actions">${btn(w.official?'Создать личную копию':'Редактировать',`openEditor('${w.id}')`)}${!w.official?btn('Удалить',`deleteWord('${w.id}')`):''}</div></section>`}
+function openWord(id){selectedWord=id;go('word')}function wordView(){let w=word(selectedWord);if(!w)return '<p>Карточка не найдена.</p>';return `<div class="row">${btn('← Библиотека',"go('library')")}<span class="tag">${w.official?'Integraticum':'Личная'}</span></div><section class="card hero"><p class="sub">${typeName(w.part).toUpperCase()} · ${w.level_verified===true&&/^(A1|A2|B1|B2|C1)$/.test(String(w.level||''))?`<span class="tag">${e(w.level)}</span> · `:''}${e(w.topic)}</p><div class="row"><div class="word">${e(w.de)}</div><button class="secondary speak" onclick="speakWord(${JSON.stringify(w.de).replace(/"/g,"&quot;")})" aria-label="Произнести слово">🔊</button></div><p><b>RU:</b> ${e(w.ru||'—')}</p>${w.uk?`<p><b>UK:</b> ${e(w.uk)}</p>`:''}${w.forms?`<p><b>Формы:</b> ${e(w.forms)}</p>`:''}${w.example?`<p><b>Пример:</b> ${e(w.example)}</p>`:''}${w.note?`<p>${e(w.note)}</p>`:''}</section><section class="card"><h3>Добавить в набор</h3><div class="field"><select id="targetset"><option value="">Выбери набор</option>${data.sets.map(s=>`<option value="${s.id}">${e(s.name)}</option>`).join('')}</select></div><div class="actions">${btn('Добавить',"addToChosenSet()",'')}${btn('Создать набор',"newSet()")}</div></section><section class="card"><h3>Изменения</h3><p class="foot">Официальные карточки не изменяются: редактирование создаёт личную копию.</p><div class="actions">${btn(w.official?'Создать личную копию':'Редактировать',`openEditor('${w.id}')`)}${!w.official?btn('Удалить',`deleteWord('${w.id}')`):''}</div></section>`}
 function addToChosenSet(){let id=document.getElementById('targetset').value;if(!id)return alert('Сначала выбери набор.');let s=data.sets.find(s=>s.id===id);if(!s.wordIds.includes(selectedWord))s.wordIds.push(selectedWord);save();alert('Карточка добавлена в набор.');render()}
 function newSet(){let name=prompt('Название нового набора:');if(!name?.trim())return;let id='s'+Date.now()+Math.random().toString(36).slice(2,6);data.sets.push({id,name:name.trim(),description:'',level:'A1',topic:'Другое',wordIds:[]});data.selectedSets.push(id);save();selectedSet=id;go('set')}
 function setsView(){return `<div class="row"><h1>Meine Lernsets</h1>${btn('＋ Создать',"newSet()",'')}</div><p class="muted">Собственные наборы и выбранные для умной тренировки темы.</p>${data.sets.length?data.sets.map(s=>`<div class="item row"><div><b>${e(s.name)}</b><p class="tiny muted">${s.wordIds.length} слов · ${e(s.level)} · ${e(s.topic)}</p><label class="tiny"><input type="checkbox" style="width:auto" ${data.selectedSets.includes(s.id)?'checked':''} onchange="toggleSet('${s.id}',this.checked)"> Активен в умном плане</label></div>${btn('Открыть',`openSet('${s.id}')`)}</div>`).join(''):'<section class="card"><p>Пока нет личных наборов. Создай первый или выбери слова в библиотеке.</p></section>'}<p class="foot">Готовые слова можно добавлять в несколько наборов. Их прогресс учитывается один раз.</p>`}
@@ -164,7 +164,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
   const builtIn = [...CATALOG];
   let reviewed = [];
   let imported = [];
-  let a2Reviewed = new Map();
+  let a2Reviewed = [];
   const status = {reviewed:'loading', legacy:'loading', a2:'loading'};
   let dictionaryPage = 1;
   const dictionaryPageSize = 80;
@@ -225,7 +225,8 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
     const legacy = status.legacy === 'loading' ? ' · Загружается общий словарь…'
       : status.legacy === 'failed' ? ' · Общий словарь не загрузился. Обновите страницу.'
       : ` · Записей в библиотеке: ${window.integraticumDictionaryCount.toLocaleString('ru-RU')}`;
-    const notice = `<div class="dictionary-state" role="status">${checked}${legacy}</div>`;
+    const checkedA2 = status.a2==='loading'?' · Загружаются карточки A2…':status.a2==='failed'?' · Карточки A2 не загрузились. Обновите страницу.':` · A2 · ${a2Reviewed.length} проверенных карточек`;
+    const notice = `<div class="dictionary-state" role="status">${checked}${checkedA2}${legacy}</div>`;
     return notice + html;
   };
   wordView = function() {
@@ -266,7 +267,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       const gender = {masculine:'der',feminine:'die',neuter:'das'}[r.gender];
       const pos = ({adjective:'adj',adverb:'adv',preposition:'prep',pronoun:'pron',conjunction:'conj',numeral:'num',interjection:'intj'}[r.part_of_speech] || r.part_of_speech || 'other');
       return {id:'dict_'+(r.id || i), legacyLemma:wordText, de:wordText && gender && !/^(der|die|das)\s/i.test(wordText) ? gender+' '+wordText : wordText,
-        ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.cefr_source && r.cefr_source.name==='Goethe-Institut Wortliste' && r.cefr_source.match==='exact_headword' && !['A1','A2'].includes(r.cefr_source.level)), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
+        ru:(r.translation_candidates_ru || []).join('; ') || '—', uk:'', part:pos, level_verified:Boolean(r.translation_verified===true && r.cefr_source?.scope==='sense' && r.cefr_source.name==='Goethe-Institut Wortliste' && !['A1','A2'].includes(r.cefr_source.level)), level:(()=>{const raw=String(r.level ?? r.cefr_level ?? r.cefr ?? r.goethe_level ?? r.language_level ?? '').trim().toUpperCase();return /^(A1|A2|B1|B2|C1)$/.test(raw)?raw:''})(), topic:(Array.isArray(r.topics)&&r.topics.length?r.topics[0]:r.topic)||'Без темы', forms:'',
         example:r.example_de || '', example_ru:r.example_ru || '',
         example_source:/^https:\/\/tatoeba\.org\/en\/sentences\/show\/[0-9]+$/.test(r.example_source) ? r.example_source : '',
         official:true, dictionary_unverified:!r.translation_verified};
@@ -274,22 +275,21 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
   }
 
   function refreshCatalog() {
-    const ids = new Set(reviewed.map(w => w.id));
+    const importedById = new Map(imported.map(w => [w.id,w]));
+    const a2Cards = a2Reviewed.map(w => { const previous = importedById.get(w.id); return {...previous, ...w, lemma:w.lemma||w.de, part:reviewedParts[w.part]||w.part, ru:w.translations_ru.join('; '), uk:previous?.uk||'', topic:w.topic||previous?.topic||'Без темы', topics:w.topics||previous?.topics||[], official:true, level_verified:true, a2Reviewed:true, dictionary_unverified:false, dictionary_duplicate:false, example_source:''}; });
+    const confirmedCards = [...reviewed, ...a2Cards];
+    const ids = new Set(confirmedCards.map(w => w.id));
     const key = w => `${fold(w.de)}|${w.part}`;
     const current = new Map();
-    for (const card of reviewed) {
+    for (const card of confirmedCards) {
       const matching = current.get(key(card)) || [];
       matching.push(card);
       current.set(key(card), matching);
     }
-    const checkedImports = imported.map(card => {
-      const entry = a2Reviewed.get(card.id);
-      const sourceHeadword = card.part === 'noun' ? card.de : card.legacyLemma;
-      if (!entry || entry.de !== sourceHeadword || entry.part !== card.part) return card;
-      return {...card, ...entry, ru:entry.translations_ru.join('; '), level_verified:true,
-        a2Reviewed:true, dictionary_unverified:false, example_source:''};
-    });
-    const older = [...builtIn.filter(w => !ids.has(w.id)), ...checkedImports].map(w => {
+    // Preserve old IDs for saved sets and progress; only same-ID reviewed cards replace their raw counterpart.
+    const olderById = new Map();
+    for (const card of [...builtIn, ...imported]) if (!ids.has(card.id) && !olderById.has(card.id)) olderById.set(card.id,card);
+    const older = [...olderById.values()].map(w => {
       const matching = current.get(key(w));
       if (matching?.length !== 1) return w;
       const candidates = w.ru.split(';').map(fold).filter(Boolean);
@@ -298,7 +298,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       // Retain the original record and ID for existing sets and progress.
       return {...w, dictionary_duplicate:true};
     });
-    CATALOG.splice(0, CATALOG.length, ...reviewed, ...older);
+    CATALOG.splice(0, CATALOG.length, ...confirmedCards, ...older);
     window.integraticumWordIndex = new Map(CATALOG.map(w => [w.id,w]));
     window.integraticumDictionaryCount = CATALOG.filter(w => !w.dictionary_duplicate).length;
     if (['library','home','plan','review','word'].includes(page)) render();
@@ -316,7 +316,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
   }
 
   loadDictionary(A1_SOURCE, 'reviewed', rows => {
-    if (rows.length !== 776 || new Set(rows.map(w => w.id)).size !== rows.length ||
+    if (!rows.length || new Set(rows.map(w => w.id)).size !== rows.length ||
         rows.some(w => !w.de || !w.ru || w.level!=='A1')) {
       throw new Error('Не удалось проверить состав словаря A1.');
     }
@@ -324,16 +324,17 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
       official:true, level_verified:true, a1Reviewed:true}));
   });
   loadDictionary(A2_SOURCE, 'a2', rows => {
-    const source = 'https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf';
-    if (new Set(rows.map(w=>w.id)).size !== rows.length || rows.some(w=>
-        !/^dict_[0-9a-f]+$/.test(w.id) || !w.de || !w.part || w.level!=='A2' ||
+    const scopes = new Set(['sense','word_group','construction','attested_example','thematic_headword','sense_in_example']);
+    const officialSource = value => { try { const url=new URL(value); return url.protocol==='https:' && ['www.goethe.de','lernplattform.goethe.de'].includes(url.hostname); } catch { return false; } };
+    if (!rows.length || new Set(rows.map(w=>w.id)).size !== rows.length || rows.some(w=>
+        !/^[A-Za-z0-9_-]+$/.test(w.id) || !w.de || !w.part || w.level!=='A2' ||
         !w.translations_ru?.length || !w.definition_de || !w.example || !w.example_ru ||
-        w.source_evidence?.level?.scope!=='sense' || w.source_evidence.level.url!==source ||
+        !scopes.has(w.source_evidence?.level?.scope) || !officialSource(w.source_evidence.level.url) ||
         !Number.isInteger(w.source_evidence.level.page) || !w.source_evidence.meaning?.length ||
         w.source_evidence.meaning.some(url=>!/^https:\/\//.test(url)))) {
       throw new Error('Не удалось проверить состав словаря A2.');
     }
-    a2Reviewed = new Map(rows.map(w=>[w.id,w]));
+    a2Reviewed = rows;
   });
   loadDictionary(LEGACY_SOURCE, 'legacy', rows => { imported = adaptLegacy(rows); });
 })();

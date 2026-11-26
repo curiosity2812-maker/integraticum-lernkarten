@@ -1819,7 +1819,12 @@
       "a1_ids": [
         "a1-613-1"
       ],
-      "status": "requires_sense_comparison"
+      "status": "resolved_distinct_sense",
+      "decision": "A2 причинять боль кому-либо, A1 болеть (часть тела). A2 карточка уточнена; A1 не изменена.",
+      "sources": [
+        "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"
+      ]
     },
     {
       "a2_id": "dict_fb9ebadf1dd5574966d0",
@@ -1828,7 +1833,12 @@
       "a1_ids": [
         "a1-262-1"
       ],
-      "status": "requires_sense_comparison"
+      "status": "requires_a1_source_correction",
+      "decision": "A1 Goethe содержит gestorben; A2 содержит полный глагол sterben. Не удалять A2; уровень полной леммы A1 требует проверки.",
+      "sources": [
+        "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"
+      ]
     },
     {
       "a2_id": "dict_1f47db3e9cc90302f03e",
@@ -1837,7 +1847,12 @@
       "a1_ids": [
         "a1-234-2"
       ],
-      "status": "requires_sense_comparison"
+      "status": "same_sense_keep_lower_level",
+      "decision": "Значение подруга подтверждено A1; романтическое значение не выделено однозначно. Сохранить A1 и проверить дополнительное значение.",
+      "sources": [
+        "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"
+      ]
     },
     {
       "a2_id": "dict_67b9dbe65389d5801665",
@@ -1846,7 +1861,12 @@
       "a1_ids": [
         "goethe-0e6e7bc6a4d06d0cf67a-1"
       ],
-      "status": "requires_sense_comparison"
+      "status": "same_sense_keep_lower_level",
+      "decision": "Одинаковое значение; оставить A1 при интеграции, A2 запись сохранить до объединения подсказок.",
+      "sources": [
+        "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"
+      ]
     },
     {
       "a2_id": "dict_85048944c44a15d54e9b",
@@ -1855,8 +1875,141 @@
       "a1_ids": [
         "besuchen-person"
       ],
-      "status": "requires_sense_comparison"
+      "status": "same_sense_keep_lower_level",
+      "decision": "Примеры Goethe A2 демонстрируют посещение человека, как A1. При интеграции оставить A1 и объединить подсказки.",
+      "sources": [
+        "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+        "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"
+      ]
     }
   ],
-  "canonical_followup_status": "Confirmed compound headwords still need their own raw dictionary IDs or new canonical entries; do not reuse rejected fragment IDs."
+  "canonical_followup_status": "Five compound headwords restored; IDs recorded separately.",
+  "canonical_followup_resolved": [
+    {
+      "id": "canonical-a2-fuehrerschein",
+      "de": "der Führerschein"
+    },
+    {
+      "id": "dict_c7d97ee097c4d64d0e0f",
+      "de": "das Krankenhaus"
+    },
+    {
+      "id": "canonical-a2-krankenkasse",
+      "de": "die Krankenkasse"
+    },
+    {
+      "id": "canonical-a2-mineralwasser",
+      "de": "das Mineralwasser"
+    },
+    {
+      "id": "canonical-a2-spaziergang",
+      "de": "der Spaziergang"
+    }
+  ],
+  "simple_pending_reconciliation": [
+    {
+      "candidate_id": "dict_3633e617bb503c893d76",
+      "de": "Schokolade",
+      "existing_reviewed_ids": [
+        "dict_3633e617bb503c893d76"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_7a1242ac6c0b605621ec",
+      "de": "Müll",
+      "existing_reviewed_ids": [
+        "dict_7a1242ac6c0b605621ec"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_5e2cee74c37f606e51ef",
+      "de": "Klavier",
+      "existing_reviewed_ids": [
+        "dict_5e2cee74c37f606e51ef"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_b2e275f6fa277e02935f",
+      "de": "Nachbar",
+      "existing_reviewed_ids": [
+        "dict_b2e275f6fa277e02935f"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_c8c26ef0676727d6fe3d",
+      "de": "Handtuch",
+      "existing_reviewed_ids": [
+        "dict_c8c26ef0676727d6fe3d"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_73f398b22711b1acf919",
+      "de": "Ring",
+      "existing_reviewed_ids": [
+        "dict_73f398b22711b1acf919"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_dd9e95bbbbf05f6c4450",
+      "de": "Fluss",
+      "existing_reviewed_ids": [
+        "dict_dd9e95bbbbf05f6c4450"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_a9678d5b9273c40a89aa",
+      "de": "Hauptstadt",
+      "existing_reviewed_ids": [
+        "dict_a9678d5b9273c40a89aa"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_7fce3b69d8926de1a8e7",
+      "de": "Ermäßigung",
+      "existing_reviewed_ids": [
+        "dict_7fce3b69d8926de1a8e7"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_e6ce9b24fc81db08ab89",
+      "de": "notwendig",
+      "existing_reviewed_ids": [
+        "dict_e6ce9b24fc81db08ab89"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_f4c035b17ca5db36799b",
+      "de": "interessant",
+      "existing_reviewed_ids": [
+        "dict_f4c035b17ca5db36799b"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    },
+    {
+      "candidate_id": "dict_4c2b20ac4521b5a12d44",
+      "de": "schädlich",
+      "existing_reviewed_ids": [
+        "dict_4c2b20ac4521b5a12d44"
+      ],
+      "status": "already_in_reviewed_file_no_duplicate"
+    }
+  ],
+  "structural_audit": {
+    "cards": 543,
+    "unique_ids": 543,
+    "missing_required": [],
+    "missing_forms": [],
+    "missing_level_evidence": [],
+    "missing_meaning_evidence": []
+  }
 }

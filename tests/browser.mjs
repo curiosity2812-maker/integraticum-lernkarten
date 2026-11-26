@@ -53,6 +53,21 @@ for(const [width,height] of [[390,844],[768,1024],[1440,900]]){
  }
 }
 const grammarId='dict_25c911117321203d0b6d';
+const verbFinalRule='В придаточной части предложения ставим спрягаемый глагол в конец.';
+for(const id of [grammarId,'dict_506798d74aff752349b1','a2-wenn-temporal-reviewed','dict_1db2bd023e7a29397bb7']){
+  await p.evaluate(id=>openWord(id),id);
+  await p.locator('.grammar-rule').getByText(verbFinalRule,{exact:true}).waitFor();
+  assert.ok(await p.evaluate(()=>{
+    const rule=document.querySelector('.grammar-rule');
+    const example=[...document.querySelectorAll('#view b')].find(label=>label.textContent==='Пример:');
+    return Boolean(rule.compareDocumentPosition(example)&Node.DOCUMENT_POSITION_FOLLOWING);
+  }));
+}
+for(const id of ['dict_a96cf27c24d2ba08b1a6','dict_0c34654f5e5f13725e57']){
+  await p.evaluate(id=>openWord(id),id);
+  await p.locator('.grammar-support').waitFor();
+  assert.equal(await p.locator('.grammar-rule').count(),0);
+}
 for(const mode of ['cards','recall','typing','choice']){
  await p.evaluate(({id,mode})=>startSession([id],mode),{id:grammarId,mode});
  assert.equal(await p.locator('.grammar-support').count(),0);
@@ -60,6 +75,7 @@ for(const mode of ['cards','recall','typing','choice']){
  else if(mode==='typing'){await p.locator('#typed').fill('weil');await p.getByRole('button',{name:'Проверить',exact:true}).click();}
  else {await p.evaluate(id=>pick(id),grammarId);await p.getByRole('button',{name:'Проверить',exact:true}).click();}
  await p.locator('.grammar-support').getByText('Nebensatz · глагол в конце',{exact:true}).waitFor();
+ await p.locator('.grammar-rule').getByText(verbFinalRule,{exact:true}).waitFor();
 }
 await p.evaluate(()=>{session=null;go('library');});
 await p.locator('#search').fill('');await p.locator('#filterPart').selectOption('all');await p.locator('#filterLevel').selectOption('all');

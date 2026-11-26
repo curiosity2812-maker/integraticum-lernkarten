@@ -187,7 +187,16 @@ function grammarSupport(w) {
     else if(['a2-ja-surprise-reviewed','a2-aber-modal-reviewed','dict_b29ee00d00c5726b35ea'].includes(id)) labels=['Modalpartikel · порядок слов не меняется'];
     else if(id==='dict_9aa28ad2a74cb2eba5e6') labels=['Ответ на отрицание / Modalpartikel'];
   }
-  const a1Note=w.a1Reviewed && (['prep','conj','particle','pron','adv','verb','adj','phrase','noun'].includes(part)) ? String(w.note||'').trim() : '';
+  if(part==='adv' && ['also','deshalb','deswegen','darum','daher','trotzdem','sonst','außerdem','dann','danach','vorher','anschließend','zuerst','später','schließlich'].includes(de)) {
+    labels=['Hauptsatz · глагол на 2-м месте, если наречие стоит первым'];
+  }
+  if(part==='verb'){
+    const present=String(w.forms||'').split('·')[0].trim();
+    if(/(?:^|\s)sich(?:\s|$)/.test(present)||/^sich\s/.test(de)) labels.push('Reflexiv · возвратный глагол');
+    const prefix=present.split(/\s+/).at(-1);
+    if(present.split(/\s+/).length>1 && ['ab','an','auf','aus','bei','ein','fest','fort','her','hin','los','mit','nach','um','vor','weg','weiter','zu','zurück','zusammen','teil','statt','fern','kennen'].includes(prefix) && de.replace(/^sich\s+/,'').startsWith(prefix)) labels.push('Trennbar · приставка отделяется в простом главном предложении');
+  }
+  const a1Note=w.a1Reviewed ? String(w.note||'').trim() : '';
   const hint=String(w.grammar_hint||a1Note||'').trim();
   if(!labels.length && hint) labels=['Употребление'];
   return {labels,hint};

@@ -1,0 +1,61 @@
+name: A2 candidate index
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/a2-dictionary-review]
+    paths: ['.github/workflows/a2-candidate-index.yml']
+permissions:
+  contents: write
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PDF extraction utility
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Retrieve official vocabulary
+        run: |
+          curl --fail --location --retry 3 'https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf' -o /tmp/goethe-a2.pdf
+          pdftotext -layout /tmp/goethe-a2.pdf /tmp/goethe-a2.txt
+      - name: Index possible matches
+        run: |
+          python - <<'PY'
+          import json, pathlib, re, unicodedata, collections
+          def norm(s):
+              return unicodedata.normalize('NFC',s).casefold().strip()
+          pages = pathlib.Path('/tmp/goethe-a2.txt').read_text().split('\f')
+          assert len(pages)>10
+          index = collections.defaultdict(list)
+          for n,page in enumerate(pages,1):
+              for line in page.splitlines():
+                  head = re.split(r'\s{2,}',line.strip())[0]
+                  head = re.sub(r'^(der|die|das|sich)\s+','',head)
+                  m = re.match(r'([A-Za-zÄÖÜäöüß][A-Za-zÄÖÜäöüß-]+)',head)
+                  if m: index[norm(m.group(1))].append(n)
+          assert len(index)>300, 'Unexpected PDF layout'
+          root=pathlib.Path('data')
+          raw=json.loads((root/'integraticum_dictionary_cards_unverified.json').read_text())
+          reviewed=json.loads((root/'integraticum_a2_reviewed.json').read_text())
+          a1=json.loads((root/'integraticum_a1_reviewed.json').read_text())
+          done={(norm(x.get('de','')),x.get('part')) for x in reviewed+a1}
+          parts={'noun':'noun','verb':'verb','adjective':'adj','adverb':'adv','conjunction':'conj','preposition':'prep'}
+          rows=[]
+          for x in raw:
+              word=norm(x.get('word',''))
+              part=parts.get(x.get('part_of_speech'),x.get('part_of_speech'))
+              if word not in index: continue
+              rows.append({'source':x,'possible_goethe_pages':sorted(set(index[word])),'existing_review_same_word_part':(word,part) in done,'status':'candidate_only'})
+          out=root/'a2_candidates'
+          out.mkdir(exist_ok=True)
+          for p in out.glob('*.json'): p.unlink()
+          for i in range(0,len(rows),30):
+              (out/f'batch_{i//30+1:03}.json').write_text(json.dumps(rows[i:i+30],ensure_ascii=False,indent=2))
+          (out/'manifest.json').write_text(json.dumps({'candidates':len(rows),'reviewed_a2':len(reviewed),'status':'candidate_only','method':'PDF headword heuristic; verify page, part of speech and sense manually'},indent=2))
+          PY
+      - name: Commit candidate index
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/a2_candidates
+          git diff --cached --quiet || git commit -m 'Generate Goethe A2 candidate index'
+          git push origin HEAD:feature/a2-dictionary-review

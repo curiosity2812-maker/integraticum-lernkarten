@@ -16,10 +16,40 @@ await p.reload();await p.waitForFunction(()=>window.integraticumCourse?.accountP
 for(const [button,id] of [['Добавить курс','courseCreate'],['Приглашения','courseInvitations'],['Заявки учеников','courseRequests'],['Опубликовать набор','coursePublish'],['Преподаватели группы','courseTeachers']]){await p.evaluate(()=>go('account'));await p.getByRole('button',{name:button,exact:true}).click();await p.locator('#'+id).waitFor({state:'visible'});}
 console.log(name+': teacher account navigation and five management sections passed');
 await p.evaluate(()=>go('library'));
-await p.getByText(/A1 · 776 карточек с проверенным русским переводом/).waitFor({timeout:60000});
+await p.getByText(/A1 · 832 карточек с проверенным русским переводом/).waitFor({timeout:60000});
 await p.getByText(/Записей в библиотеке:/).waitFor({timeout:60000});
-const counts=await p.evaluate(()=>{const all=dictionaryCards();return {total:all.length,a1:all.filter(w=>w.a1Reviewed).length,unknown:all.filter(w=>!w.level_verified).length};});
-assert.equal(counts.a1,776);assert.ok(counts.total>776&&counts.unknown>0);
+
+await p.getByText(/A2 · 630 проверенных карточек/).waitFor({timeout:60000});
+const counts=await p.evaluate(()=>{const all=dictionaryCards();return {total:all.length,a1:all.filter(w=>w.a1Reviewed).length,a2:all.filter(w=>w.a2Reviewed).length,unknown:all.filter(w=>!w.level_verified).length};});
+assert.equal(counts.a1,832);assert.equal(counts.a2,630);assert.ok(counts.total>1462&&counts.unknown>0);
+await p.locator('#filterLevel').selectOption('A2');
+assert.equal(await p.evaluate(()=>dictionaryResults().length),630);
+await p.locator('#filterPart').selectOption('conj');
+await p.locator('#search').fill('weil');
+await p.locator('#results').getByRole('button',{name:'Открыть',exact:true}).first().click();
+await p.locator('.grammar-support').getByText('Nebensatz · глагол в конце',{exact:true}).waitFor();
+for(const [width,height] of [[390,844],[768,1024],[1440,900]]){
+ await p.setViewportSize({width,height});
+ for(const [id,label] of [['dict_25c911117321203d0b6d','Nebensatz · глагол в конце'],['conjunction-denn-reason','Hauptsatz · обычный порядок слов'],['a1-320-1','Wo? · Dativ'],['a1-320-2','Wohin? · Akkusativ'],['a1-320-3','Время · Dativ'],['a1-647-1','Dativ'],['dict_2483930c6658347aa523','zu + Infinitiv']]){
+  await p.evaluate(id=>openWord(id),id);
+  await p.locator('.grammar-chip').getByText(label,{exact:true}).waitFor();
+  assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth+2),name+' '+width+' '+id+' overflow');
+  assert.ok(await p.locator('.grammar-support').isVisible());
+ }
+}
+const grammarId='dict_25c911117321203d0b6d';
+for(const mode of ['cards','recall','typing','choice']){
+ await p.evaluate(({id,mode})=>startSession([id],mode),{id:grammarId,mode});
+ assert.equal(await p.locator('.grammar-support').count(),0);
+ if(mode==='cards'||mode==='recall')await p.getByRole('button',{name:'Показать ответ',exact:true}).click();
+ else if(mode==='typing'){await p.locator('#typed').fill('weil');await p.getByRole('button',{name:'Проверить',exact:true}).click();}
+ else {await p.evaluate(id=>pick(id),grammarId);await p.getByRole('button',{name:'Проверить',exact:true}).click();}
+ await p.locator('.grammar-support').getByText('Nebensatz · глагол в конце',{exact:true}).waitFor();
+}
+await p.evaluate(()=>{session=null;go('library');});
+await p.locator('#search').fill('');await p.locator('#filterPart').selectOption('all');await p.locator('#filterLevel').selectOption('all');
+console.log(name+': A2 search, sense-aware grammar chips at three screen sizes, and four learning modes passed');
+
 await p.locator('#filterLevel').selectOption('unknown');assert.ok(await p.evaluate(()=>dictionaryResults().length>0&&dictionaryResults().every(w=>!w.level_verified)));
 await p.locator('#filterLevel').selectOption('A1');assert.ok(await p.evaluate(()=>dictionaryResults().length>0&&dictionaryResults().every(w=>w.level_verified&&w.level==='A1')));
 await p.locator('#filterPart').selectOption('noun');assert.ok(await p.evaluate(()=>dictionaryResults().length>0&&dictionaryResults().every(w=>w.part==='noun')));

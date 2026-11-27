@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-27",
+  "scope": "Verified staged deduplication decisions against structural audit, not deployment or new independent dictionary verification.",
+  "audit": "data/b1_audit/structural_audit_2026-11-27.json",
+  "stage_files": [
+    "data/b1_audit/dedup_stage_001.json",
+    "data/b1_audit/dedup_stage_002.json",
+    "data/b1_audit/dedup_stage_003.json",
+    "data/b1_audit/dedup_stage_004.json",
+    "data/b1_audit/dedup_stage_005.json",
+    "data/b1_audit/dedup_stage_006.json",
+    "data/b1_audit/dedup_stage_007.json",
+    "data/b1_audit/dedup_stage_008.json",
+    "data/b1_audit/dedup_stage_009.json",
+    "data/b1_audit/dedup_stage_010.json",
+    "data/b1_audit/dedup_stage_011.json",
+    "data/b1_audit/dedup_stage_012.json"
+  ],
+  "original_record_count": 3673,
+  "unique_candidate_rows": 141,
+  "covered_candidate_rows": 141,
+  "same_id_groups_reviewed": 14,
+  "remaining_cross_batch_groups_reviewed": 44,
+  "merge_proposals": 40,
+  "same_id_merges": 14,
+  "distinct_id_aliases": 26,
+  "retained_separate_records": 61,
+  "projected_record_count_if_all_merges_applied": 3633,
+  "checks": {
+    "allCandidateRowsCovered": true,
+    "noUnexpectedRows": true,
+    "noRepeatedOverlayRows": true,
+    "allSameIdGroups": true,
+    "allSourceShasMatch": true,
+    "translationsAndHintsPreserved": true,
+    "noAliasChains": true,
+    "uniqueMergeIds": true
+  },
+  "release_blockers": [
+    "b1-leidtun-apology: support phrase and verb variants",
+    "b1-glace-ch: gender, spelling, plural and correct dictionary sense",
+    "b1-personenstand-status: plural conflict and legal context",
+    "b1-fasnacht-ch: exact dictionary entry and plural",
+    "b1-mittel-cleaning: direct sense and CEFR verification"
+  ],
+  "additional_followup": "Review per-stage followup_review entries; compare A1/A2 meanings and levels, reconcile source evidence and grammatical forms, test progress migration and consumer handling before release.",
+  "original_batches_modified": false,
+  "production_modified": false,
+  "student_progress_migration_tested": false
+}

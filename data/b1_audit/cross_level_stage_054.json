@@ -1,0 +1,2801 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1053,
+    1072
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 11,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 4,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1053,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit einem Instrument Musik machen. Example: Meine Schwester spielt seit zwei Jahren Geige.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 3,
+        "record": {
+          "id": "b1-spielen-instrument",
+          "de": "spielen",
+          "lemma": "spielen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "играть на музыкальном инструменте"
+          ],
+          "definition_de": "Mit einem Instrument Musik machen.",
+          "example": "Meine Schwester spielt seit zwei Jahren Geige.",
+          "example_ru": "Моя сестра уже два года играет на скрипке.",
+          "forms": "spielt · spielte · hat gespielt",
+          "grammar_hint": "Geige / Klavier spielen обычно без артикля; seit + Dativ при продолжающемся действии.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 694,
+          "record": {
+            "id": "a1-537-1",
+            "de": "spielen",
+            "lemma": "spielen",
+            "ru": "играть",
+            "uk": "",
+            "translations_ru": [
+              "играть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Sich zum Spaß beschäftigen oder an einem Spiel teilnehmen.",
+            "example": "Die Kinder spielen im Garten.",
+            "example_ru": "Дети играют в саду.",
+            "note": "mit jemandem (Dativ) spielen — играть с кем-либо; Karten spielen — играть в карты. Игра на музыкальном инструменте — отдельное употребление A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "870248681414019d8783"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 607,
+          "record": {
+            "id": "dict_61afa9a03d3824cbc7a9-music",
+            "de": "spielen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "играть на музыкальном инструменте"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Mit einem Musikinstrument Musik machen.",
+            "example": "Meine Schwester spielt Gitarre.",
+            "example_ru": "Моя сестра играет на гитаре.",
+            "grammar_hint": "Klavier / Gitarre / Geige spielen — обычно без артикля. Auf einer Gitarre spielen — auf + Dativ.",
+            "usage_note": "Играть в игры — отдельная карточка A1. Goethe A2, стр. 18 и 26; A1 статья spielen стр. 23 иллюстрирует игры.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/spielen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_61afa9a03d3824cbc7a9-music",
+        "alias_id": "b1-spielen-instrument",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_61afa9a03d3824cbc7a9-music"
+      }
+    },
+    {
+      "candidate_number": 1054,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich an einem Kartenspiel beteiligen. Example: Abends spielen wir manchmal Karten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 4,
+        "record": {
+          "id": "b1-spielen-cards",
+          "de": "Karten spielen",
+          "lemma": "spielen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "играть в карты"
+          ],
+          "definition_de": "Sich an einem Kartenspiel beteiligen.",
+          "example": "Abends spielen wir manchmal Karten.",
+          "example_ru": "По вечерам мы иногда играем в карты.",
+          "forms": "spielt · spielte · hat gespielt",
+          "grammar_hint": "Karten spielen, Schach spielen — обычно без артикля; отдельный учебный контекст.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 773,
+          "record": {
+            "id": "a1-537-2",
+            "de": "Karten spielen",
+            "lemma": "Karten spielen",
+            "ru": "играть в карты",
+            "uk": "",
+            "translations_ru": [
+              "играть в карты"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "",
+            "definition_de": "Ein Spiel mit Spielkarten spielen.",
+            "example": "Am Abend spielen wir Karten.",
+            "example_ru": "Вечером мы играем в карты.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "870248681414019d8783"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 694,
+          "record": {
+            "id": "a1-537-1",
+            "de": "spielen",
+            "lemma": "spielen",
+            "ru": "играть",
+            "uk": "",
+            "translations_ru": [
+              "играть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Sich zum Spaß beschäftigen oder an einem Spiel teilnehmen.",
+            "example": "Die Kinder spielen im Garten.",
+            "example_ru": "Дети играют в саду.",
+            "note": "mit jemandem (Dativ) spielen — играть с кем-либо; Karten spielen — играть в карты. Игра на музыкальном инструменте — отдельное употребление A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "870248681414019d8783"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 607,
+          "record": {
+            "id": "dict_61afa9a03d3824cbc7a9-music",
+            "de": "spielen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "играть на музыкальном инструменте"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Mit einem Musikinstrument Musik machen.",
+            "example": "Meine Schwester spielt Gitarre.",
+            "example_ru": "Моя сестра играет на гитаре.",
+            "grammar_hint": "Klavier / Gitarre / Geige spielen — обычно без артикля. Auf einer Gitarre spielen — auf + Dativ.",
+            "usage_note": "Играть в игры — отдельная карточка A1. Goethe A2, стр. 18 и 26; A1 статья spielen стр. 23 иллюстрирует игры.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/spielen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-537-2",
+        "alias_id": "b1-spielen-cards",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-537-2"
+      }
+    },
+    {
+      "candidate_number": 1055,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Beschäftigung zur Unterhaltung, häufig mit festgelegten Regeln. Example: Wir erklären den Gästen die Regeln des Spiels.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 5,
+        "record": {
+          "id": "b1-spiel-game",
+          "de": "das Spiel",
+          "lemma": "Spiel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "игра"
+          ],
+          "definition_de": "Eine Beschäftigung zur Unterhaltung, häufig mit festgelegten Regeln.",
+          "example": "Wir erklären den Gästen die Regeln des Spiels.",
+          "example_ru": "Мы объясняем гостям правила игры.",
+          "forms": "die Spiele",
+          "grammar_hint": "ein Spiel spielen; Genitiv: des Spiels / des Spieles.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spiel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 362,
+          "record": {
+            "id": "dict_67298bd3356ae3727182",
+            "de": "das Spiel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "игра",
+              "матч"
+            ],
+            "definition_de": "Eine Tätigkeit mit Regeln, die der Unterhaltung dient; auch ein sportlicher Wettkampf.",
+            "forms": "Plural · die Spiele",
+            "example": "Wir sehen heute ein Fußballspiel.",
+            "example_ru": "Сегодня мы смотрим футбольный матч.",
+            "grammar_hint": "",
+            "usage_note": "В Швейцарии: Fussballspiel.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Spiel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_67298bd3356ae3727182",
+        "alias_id": "b1-spiel-game",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_67298bd3356ae3727182"
+      }
+    },
+    {
+      "candidate_number": 1056,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine einzelne sportliche Begegnung zwischen Gegnern. Example: Das Spiel endete mit einem Unentschieden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 6,
+        "record": {
+          "id": "b1-spiel-match",
+          "de": "das Spiel",
+          "lemma": "Spiel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "матч",
+            "игра (спортивная)"
+          ],
+          "definition_de": "Eine einzelne sportliche Begegnung zwischen Gegnern.",
+          "example": "Das Spiel endete mit einem Unentschieden.",
+          "example_ru": "Матч закончился вничью.",
+          "forms": "die Spiele",
+          "grammar_hint": "ein Spiel gewinnen / verlieren; es steht 2:1 — счёт 2:1.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spiel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 362,
+          "record": {
+            "id": "dict_67298bd3356ae3727182",
+            "de": "das Spiel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "игра",
+              "матч"
+            ],
+            "definition_de": "Eine Tätigkeit mit Regeln, die der Unterhaltung dient; auch ein sportlicher Wettkampf.",
+            "forms": "Plural · die Spiele",
+            "example": "Wir sehen heute ein Fußballspiel.",
+            "example_ru": "Сегодня мы смотрим футбольный матч.",
+            "grammar_hint": "",
+            "usage_note": "В Швейцарии: Fussballspiel.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Spiel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_67298bd3356ae3727182",
+        "alias_id": "b1-spiel-match",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_67298bd3356ae3727182"
+      }
+    },
+    {
+      "candidate_number": 1057,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Körperliche oder geistige Betätigung, die auch als Wettkampf ausgeübt wird. Example: Ich interessiere mich besonders für Sport.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 12,
+        "record": {
+          "id": "b1-sport-interest",
+          "de": "der Sport",
+          "lemma": "Sport",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "спорт"
+          ],
+          "definition_de": "Körperliche oder geistige Betätigung, die auch als Wettkampf ausgeübt wird.",
+          "example": "Ich interessiere mich besonders für Sport.",
+          "example_ru": "Я особенно интересуюсь спортом.",
+          "forms": "обычно Singular; редкое Plural Sporte",
+          "grammar_hint": "sich interessieren für + Akkusativ; контекст интереса к спорту.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sport"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 544,
+          "record": {
+            "id": "a1-538-1",
+            "de": "der Sport",
+            "lemma": "Sport",
+            "ru": "спорт",
+            "uk": "",
+            "translations_ru": [
+              "спорт"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Bewegung oder Training, oft als Freizeitbeschäftigung oder Wettbewerb.",
+            "example": "Sie macht am Wochenende Sport.",
+            "example_ru": "По выходным она занимается спортом.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "67266241ee04f360d92f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-538-1",
+        "alias_id": "b1-sport-interest",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-538-1"
+      }
+    },
+    {
+      "candidate_number": 1058,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Sich regelmäßig oder gelegentlich sportlich betätigen. Example: Ich treibe zweimal pro Woche Sport.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 13,
+        "record": {
+          "id": "b1-sport-activity",
+          "de": "Sport machen / treiben",
+          "lemma": "Sport",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "заниматься спортом"
+          ],
+          "definition_de": "Sich regelmäßig oder gelegentlich sportlich betätigen.",
+          "example": "Ich treibe zweimal pro Woche Sport.",
+          "example_ru": "Я занимаюсь спортом два раза в неделю.",
+          "forms": "macht · machte · hat gemacht; treibt · trieb · hat getrieben",
+          "grammar_hint": "Sport machen/treiben без артикля; учебная конструкция.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sport"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 544,
+          "record": {
+            "id": "a1-538-1",
+            "de": "der Sport",
+            "lemma": "Sport",
+            "ru": "спорт",
+            "uk": "",
+            "translations_ru": [
+              "спорт"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Bewegung oder Training, oft als Freizeitbeschäftigung oder Wettbewerb.",
+            "example": "Sie macht am Wochenende Sport.",
+            "example_ru": "По выходным она занимается спортом.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "67266241ee04f360d92f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1059,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Im Sport geübt oder körperlich aktiv. Example: Mein Bruder ist sportlicher als ich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 16,
+        "record": {
+          "id": "b1-sportlich-person",
+          "de": "sportlich",
+          "lemma": "sportlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "спортивный",
+            "физически активный"
+          ],
+          "definition_de": "Im Sport geübt oder körperlich aktiv.",
+          "example": "Mein Bruder ist sportlicher als ich.",
+          "example_ru": "Мой брат спортивнее меня.",
+          "forms": "sportlich · sportlicher · am sportlichsten",
+          "grammar_hint": "Komparativ + als; unsportlich — неспортивный.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sportlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 497,
+          "record": {
+            "id": "dict_32053edb2473b50f84b3",
+            "de": "sportlich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "спортивный",
+              "физически подготовленный"
+            ],
+            "definition_de": "Gut im Sport und körperlich fit sein.",
+            "forms": "sportlich · sportlicher · am sportlichsten",
+            "example": "Meine Schwester ist sportlicher als ich.",
+            "example_ru": "Моя сестра спортивнее меня.",
+            "grammar_hint": "Сравнение с als; so sportlich wie — такой же спортивный, как.",
+            "usage_note": "Здесь качество человека; переносное значение «честный, благородный» не включено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sportlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_32053edb2473b50f84b3",
+        "alias_id": "b1-sportlich-person",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_32053edb2473b50f84b3"
+      }
+    },
+    {
+      "candidate_number": 1060,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: In der Gestaltung an Kleidung für Sport und Bewegung angelehnt. Example: Ich suche eine sportliche Jacke für den Alltag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 17,
+        "record": {
+          "id": "b1-sportlich-clothes",
+          "de": "sportlich",
+          "lemma": "sportlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "спортивный (стиль одежды)"
+          ],
+          "definition_de": "In der Gestaltung an Kleidung für Sport und Bewegung angelehnt.",
+          "example": "Ich suche eine sportliche Jacke für den Alltag.",
+          "example_ru": "Я ищу куртку спортивного стиля на каждый день.",
+          "forms": "sportlich · sportlicher · am sportlichsten (при сравнении стиля); относительное значение обычно без сравнения",
+          "grammar_hint": "sportliche Kleidung — спортивный стиль, не обязательно специализированная спортивная форма.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sportlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 497,
+          "record": {
+            "id": "dict_32053edb2473b50f84b3",
+            "de": "sportlich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "спортивный",
+              "физически подготовленный"
+            ],
+            "definition_de": "Gut im Sport und körperlich fit sein.",
+            "forms": "sportlich · sportlicher · am sportlichsten",
+            "example": "Meine Schwester ist sportlicher als ich.",
+            "example_ru": "Моя сестра спортивнее меня.",
+            "grammar_hint": "Сравнение с als; so sportlich wie — такой же спортивный, как.",
+            "usage_note": "Здесь качество человека; переносное значение «честный, благородный» не включено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sportlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1061,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein von Menschen gemeinsam verwendetes System sprachlicher Zeichen. Example: In unserer Gruppe werden mehrere Sprachen gesprochen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 18,
+        "record": {
+          "id": "b1-sprache-language",
+          "de": "die Sprache",
+          "lemma": "Sprache",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "язык (средство общения)"
+          ],
+          "definition_de": "Ein von Menschen gemeinsam verwendetes System sprachlicher Zeichen.",
+          "example": "In unserer Gruppe werden mehrere Sprachen gesprochen.",
+          "example_ru": "В нашей группе говорят на нескольких языках.",
+          "forms": "die Sprachen",
+          "grammar_hint": "eine Sprache lernen / sprechen (Akk.); auf Deutsch — по-немецки.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sprache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 545,
+          "record": {
+            "id": "a1-539-1",
+            "de": "die Sprache",
+            "lemma": "Sprache",
+            "ru": "язык",
+            "uk": "",
+            "translations_ru": [
+              "язык"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Sprachen",
+            "definition_de": "Ein System von Wörtern und Regeln, mit dem Menschen sich verständigen.",
+            "example": "Welche Sprachen sprichst du zu Hause?",
+            "example_ru": "На каких языках ты говоришь дома?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "906fcb88ba0bc7c24e95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-539-1",
+        "alias_id": "b1-sprache-language",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-539-1"
+      }
+    },
+    {
+      "candidate_number": 1062,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich durch gesprochene Wörter äußern. Example: Bitte sprich ein bisschen langsamer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 22,
+        "record": {
+          "id": "b1-sprechen-voice",
+          "de": "sprechen",
+          "lemma": "sprechen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "говорить",
+            "разговаривать"
+          ],
+          "definition_de": "Sich durch gesprochene Wörter äußern.",
+          "example": "Bitte sprich ein bisschen langsamer.",
+          "example_ru": "Пожалуйста, говори немного медленнее.",
+          "forms": "spricht · sprach · hat gesprochen",
+          "grammar_hint": "du sprichst; Imperativ: sprich!; langsam sprechen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 695,
+          "record": {
+            "id": "a1-540-1",
+            "de": "sprechen",
+            "lemma": "sprechen",
+            "ru": "говорить; разговаривать; говорить с кем-то",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "говорить с кем-то"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Mit Worten kommunizieren oder eine Sprache benutzen.",
+            "example": "Kann ich mit der Lehrerin sprechen?",
+            "example_ru": "Можно поговорить с учительницей?",
+            "note": "mit + Dativ (с кем), über + Akkusativ (о ком/чём); Deutsch sprechen — говорить по-немецки, без предлога; sprich! — повелительная форма. sagen — сказать, сообщить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "16afd4c71985a735b4eb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-540-1",
+        "alias_id": "b1-sprechen-voice",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-540-1"
+      }
+    },
+    {
+      "candidate_number": 1063,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Sprache mündlich verwenden können. Example: Sie spricht fließend Italienisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 23,
+        "record": {
+          "id": "b1-sprechen-language",
+          "de": "sprechen",
+          "lemma": "sprechen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "говорить на языке",
+            "владеть языком"
+          ],
+          "definition_de": "Eine Sprache mündlich verwenden können.",
+          "example": "Sie spricht fließend Italienisch.",
+          "example_ru": "Она свободно говорит по-итальянски.",
+          "forms": "spricht · sprach · hat gesprochen",
+          "grammar_hint": "Deutsch sprechen; auf Deutsch sprechen — говорить по-немецки. CH: fliessend.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 695,
+          "record": {
+            "id": "a1-540-1",
+            "de": "sprechen",
+            "lemma": "sprechen",
+            "ru": "говорить; разговаривать; говорить с кем-то",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "говорить с кем-то"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Mit Worten kommunizieren oder eine Sprache benutzen.",
+            "example": "Kann ich mit der Lehrerin sprechen?",
+            "example_ru": "Можно поговорить с учительницей?",
+            "note": "mit + Dativ (с кем), über + Akkusativ (о ком/чём); Deutsch sprechen — говорить по-немецки, без предлога; sprich! — повелительная форма. sagen — сказать, сообщить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "16afd4c71985a735b4eb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-540-1",
+        "alias_id": "b1-sprechen-language",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-540-1"
+      }
+    },
+    {
+      "candidate_number": 1064,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Ein Thema im Gespräch behandeln. Example: Wir sprechen morgen über die Ergebnisse.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 24,
+        "record": {
+          "id": "b1-sprechen-about",
+          "de": "über etwas sprechen",
+          "lemma": "sprechen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "говорить о чём-либо",
+            "обсуждать"
+          ],
+          "definition_de": "Ein Thema im Gespräch behandeln.",
+          "example": "Wir sprechen morgen über die Ergebnisse.",
+          "example_ru": "Завтра мы поговорим о результатах.",
+          "forms": "spricht · sprach · hat gesprochen",
+          "grammar_hint": "über + Akkusativ; darüber sprechen, dass … — глагол в конце dass-придаточного.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 695,
+          "record": {
+            "id": "a1-540-1",
+            "de": "sprechen",
+            "lemma": "sprechen",
+            "ru": "говорить; разговаривать; говорить с кем-то",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "говорить с кем-то"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Mit Worten kommunizieren oder eine Sprache benutzen.",
+            "example": "Kann ich mit der Lehrerin sprechen?",
+            "example_ru": "Можно поговорить с учительницей?",
+            "note": "mit + Dativ (с кем), über + Akkusativ (о ком/чём); Deutsch sprechen — говорить по-немецки, без предлога; sprich! — повелительная форма. sagen — сказать, сообщить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "16afd4c71985a735b4eb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1065,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Sich mündlich an eine Zuhörerschaft wenden. Example: Die Direktorin spricht heute bei der Eröffnung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 25,
+        "record": {
+          "id": "b1-sprechen-address",
+          "de": "sprechen",
+          "lemma": "sprechen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "выступать",
+            "произносить речь"
+          ],
+          "definition_de": "Sich mündlich an eine Zuhörerschaft wenden.",
+          "example": "Die Direktorin spricht heute bei der Eröffnung.",
+          "example_ru": "Директор сегодня выступает на открытии.",
+          "forms": "spricht · sprach · hat gesprochen",
+          "grammar_hint": "vor Publikum sprechen; bei + Dativ. Учебный контекст публичной речи.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 695,
+          "record": {
+            "id": "a1-540-1",
+            "de": "sprechen",
+            "lemma": "sprechen",
+            "ru": "говорить; разговаривать; говорить с кем-то",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "говорить с кем-то"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Mit Worten kommunizieren oder eine Sprache benutzen.",
+            "example": "Kann ich mit der Lehrerin sprechen?",
+            "example_ru": "Можно поговорить с учительницей?",
+            "note": "mit + Dativ (с кем), über + Akkusativ (о ком/чём); Deutsch sprechen — говорить по-немецки, без предлога; sprich! — повелительная форма. sagen — сказать, сообщить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "16afd4c71985a735b4eb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1066,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein persönliches oder telefonisches Gespräch mit einer bestimmten Person führen wollen. Example: Könnte ich bitte die Kursleiterin sprechen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 26,
+        "record": {
+          "id": "b1-sprechen-contact",
+          "de": "jemanden sprechen",
+          "lemma": "sprechen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "поговорить с кем-либо",
+            "связаться с кем-либо"
+          ],
+          "definition_de": "Ein persönliches oder telefonisches Gespräch mit einer bestimmten Person führen wollen.",
+          "example": "Könnte ich bitte die Kursleiterin sprechen?",
+          "example_ru": "Могу я, пожалуйста, поговорить с руководительницей курса?",
+          "forms": "spricht · sprach · hat gesprochen",
+          "grammar_hint": "jemanden sprechen (Akk.) или mit jemandem sprechen (Dativ). Вежливая просьба с könnte.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 695,
+          "record": {
+            "id": "a1-540-1",
+            "de": "sprechen",
+            "lemma": "sprechen",
+            "ru": "говорить; разговаривать; говорить с кем-то",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "говорить с кем-то"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Mit Worten kommunizieren oder eine Sprache benutzen.",
+            "example": "Kann ich mit der Lehrerin sprechen?",
+            "example_ru": "Можно поговорить с учительницей?",
+            "note": "mit + Dativ (с кем), über + Akkusativ (о ком/чём); Deutsch sprechen — говорить по-немецки, без предлога; sprich! — повелительная форма. sagen — сказать, сообщить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "16afd4c71985a735b4eb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1067,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein größerer Ort mit vielen Einwohnern und städtischer Infrastruktur. Example: Diese Stadt hat eine lange Geschichte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_091.json",
+        "sha": "26591259b85fe4eec1b34acea2de38e775bfbc53",
+        "batch": 91,
+        "row": 6,
+        "record": {
+          "id": "b1-stadt-settlement",
+          "de": "die Stadt",
+          "lemma": "Stadt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "город"
+          ],
+          "definition_de": "Ein größerer Ort mit vielen Einwohnern und städtischer Infrastruktur.",
+          "example": "Diese Stadt hat eine lange Geschichte.",
+          "example_ru": "У этого города долгая история.",
+          "forms": "die Städte",
+          "grammar_hint": "in einer Stadt (Dativ); Dativ Plural: in den Städten.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stadt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 23,
+          "record": {
+            "id": "city-stadt",
+            "de": "die Stadt",
+            "lemma": "Stadt",
+            "ru": "город",
+            "uk": "",
+            "translations_ru": [
+              "город"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Städte",
+            "definition_de": "Ein größerer Ort mit vielen Straßen und Häusern.",
+            "example": "Diese Stadt hat zwei Bahnhöfe.",
+            "example_ru": "В этом городе два вокзала.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "5eb6c94c6e7417b19184"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "city-stadt",
+        "alias_id": "b1-stadt-settlement",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "city-stadt"
+      }
+    },
+    {
+      "candidate_number": 1068,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: In einem städtischen Wohn- oder Lebensumfeld. Example: Meine Eltern wohnen lieber in der Stadt als auf dem Land.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_091.json",
+        "sha": "26591259b85fe4eec1b34acea2de38e775bfbc53",
+        "batch": 91,
+        "row": 7,
+        "record": {
+          "id": "b1-stadt-urban-life",
+          "de": "in der Stadt",
+          "lemma": "Stadt",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в городе"
+          ],
+          "definition_de": "In einem städtischen Wohn- oder Lebensumfeld.",
+          "example": "Meine Eltern wohnen lieber in der Stadt als auf dem Land.",
+          "example_ru": "Мои родители предпочитают жить в городе, а не в сельской местности.",
+          "forms": "die Stadt · die Städte",
+          "grammar_hint": "in der Stadt (Dativ); auf dem Land (Dativ). Учебный контекст, не отдельное значение.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stadt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 23,
+          "record": {
+            "id": "city-stadt",
+            "de": "die Stadt",
+            "lemma": "Stadt",
+            "ru": "город",
+            "uk": "",
+            "translations_ru": [
+              "город"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Städte",
+            "definition_de": "Ein größerer Ort mit vielen Straßen und Häusern.",
+            "example": "Diese Stadt hat zwei Bahnhöfe.",
+            "example_ru": "В этом городе два вокзала.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "5eb6c94c6e7417b19184"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1069,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: In Richtung des Stadtzentrums, etwa zum Einkaufen oder für Besorgungen. Example: Ich fahre am Nachmittag noch in die Stadt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_091.json",
+        "sha": "26591259b85fe4eec1b34acea2de38e775bfbc53",
+        "batch": 91,
+        "row": 8,
+        "record": {
+          "id": "b1-stadt-centre",
+          "de": "in die Stadt",
+          "lemma": "Stadt",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в город",
+            "в центр города"
+          ],
+          "definition_de": "In Richtung des Stadtzentrums, etwa zum Einkaufen oder für Besorgungen.",
+          "example": "Ich fahre am Nachmittag noch in die Stadt.",
+          "example_ru": "После обеда я ещё поеду в центр города.",
+          "forms": "die Stadt · die Städte",
+          "grammar_hint": "in die Stadt (Akk. направления); в разговорной речи часто имеется в виду центр города.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stadt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 23,
+          "record": {
+            "id": "city-stadt",
+            "de": "die Stadt",
+            "lemma": "Stadt",
+            "ru": "город",
+            "uk": "",
+            "translations_ru": [
+              "город"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Städte",
+            "definition_de": "Ein größerer Ort mit vielen Straßen und Häusern.",
+            "example": "Diese Stadt hat zwei Bahnhöfe.",
+            "example_ru": "В этом городе два вокзала.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "5eb6c94c6e7417b19184"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1070,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Karte, auf der Straßen und wichtige Orte einer Stadt eingezeichnet sind. Example: Auf dem Stadtplan finde ich das Museum.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_091.json",
+        "sha": "26591259b85fe4eec1b34acea2de38e775bfbc53",
+        "batch": 91,
+        "row": 10,
+        "record": {
+          "id": "b1-stadtplan-map",
+          "de": "der Stadtplan",
+          "lemma": "Stadtplan",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "план города",
+            "карта города"
+          ],
+          "definition_de": "Eine Karte, auf der Straßen und wichtige Orte einer Stadt eingezeichnet sind.",
+          "example": "Auf dem Stadtplan finde ich das Museum.",
+          "example_ru": "На карте города я нахожу музей.",
+          "forms": "die Stadtpläne",
+          "grammar_hint": "auf dem Stadtplan (Dativ); род определяется Plan.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stadtplan"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 34,
+          "record": {
+            "id": "dict_67f8a34befcd73593e55",
+            "de": "der Stadtplan",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "план города",
+              "карта города"
+            ],
+            "definition_de": "Eine Karte, auf der man die Straßen und wichtige Orte einer Stadt sieht.",
+            "forms": "Plural · die Stadtpläne",
+            "example": "Auf dem Stadtplan findest du den Bahnhof.",
+            "example_ru": "На карте города ты найдёшь вокзал.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Stadtplan"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_67f8a34befcd73593e55",
+        "alias_id": "b1-stadtplan-map",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_67f8a34befcd73593e55"
+      }
+    },
+    {
+      "candidate_number": 1071,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine weithin bekannte Person, etwa aus Musik, Film oder Sport. Example: Der junge Schauspieler wurde über Nacht zum Star.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_091.json",
+        "sha": "26591259b85fe4eec1b34acea2de38e775bfbc53",
+        "batch": 91,
+        "row": 14,
+        "record": {
+          "id": "b1-star-celebrity",
+          "de": "der Star",
+          "lemma": "Star",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "звезда",
+            "знаменитость"
+          ],
+          "definition_de": "Eine weithin bekannte Person, etwa aus Musik, Film oder Sport.",
+          "example": "Der junge Schauspieler wurde über Nacht zum Star.",
+          "example_ru": "Молодой актёр за одну ночь стал звездой.",
+          "forms": "die Stars",
+          "grammar_hint": "zum Star werden (zu + Dativ); не путать с der Star — скворец (die Stare).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Star"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 498,
+          "record": {
+            "id": "dict_f6c24b6853b44bf21334",
+            "de": "der Star",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "звезда",
+              "знаменитость"
+            ],
+            "definition_de": "Eine Person, die durch ihre Auftritte oder Leistungen sehr berühmt ist.",
+            "forms": "Plural · die Stars",
+            "example": "Dieser Schauspieler ist ein großer Star.",
+            "example_ru": "Этот актёр — большая звезда.",
+            "grammar_hint": "",
+            "usage_note": "В этой карточке только знаменитость; не скворец и не медицинский термин.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Star"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f6c24b6853b44bf21334",
+        "alias_id": "b1-star-celebrity",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f6c24b6853b44bf21334"
+      }
+    },
+    {
+      "candidate_number": 1072,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Mit kräftigem Geschmack oder hoher Konzentration zubereitet. Example: Ich trinke morgens gern starken Kaffee.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_091.json",
+        "sha": "26591259b85fe4eec1b34acea2de38e775bfbc53",
+        "batch": 91,
+        "row": 15,
+        "record": {
+          "id": "b1-stark-coffee",
+          "de": "stark",
+          "lemma": "stark",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "крепкий (о напитке)"
+          ],
+          "definition_de": "Mit kräftigem Geschmack oder hoher Konzentration zubereitet.",
+          "example": "Ich trinke morgens gern starken Kaffee.",
+          "example_ru": "Утром я люблю пить крепкий кофе.",
+          "forms": "stark · stärker · am stärksten",
+          "grammar_hint": "starker Kaffee; Gegensatz schwach; контекст концентрации напитка.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/stark"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 206,
+          "record": {
+            "id": "dict_714ec32c0c9845cebfb3",
+            "de": "stark",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "сильный",
+              "крепкий"
+            ],
+            "definition_de": "Mit großer Kraft oder hoher Intensität, zum Beispiel bei Schmerzen oder Getränken.",
+            "forms": "stark · stärker · am stärksten",
+            "example": "Heute sind meine Kopfschmerzen stärker als gestern.",
+            "example_ru": "Сегодня голова болит сильнее, чем вчера.",
+            "grammar_hint": "В сравнительной и превосходной степени a меняется на ä.",
+            "usage_note": "Starker Kaffee bedeutet «крепкий кофе».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/stark"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_714ec32c0c9845cebfb3",
+        "alias_id": "b1-stark-coffee",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_714ec32c0c9845cebfb3"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_61afa9a03d3824cbc7a9-music",
+      "alias_ids": [
+        "b1-spielen-instrument"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_61afa9a03d3824cbc7a9-music",
+        "de": "spielen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "играть на музыкальном инструменте"
+        ],
+        "forms": "spielt · spielte · hat gespielt",
+        "definition_de": "Mit einem Musikinstrument Musik machen.",
+        "example": "Meine Schwester spielt Gitarre.",
+        "example_ru": "Моя сестра играет на гитаре.",
+        "grammar_hint": "Klavier / Gitarre / Geige spielen — обычно без артикля. Auf einer Gitarre spielen — auf + Dativ.",
+        "usage_note": "Играть в игры — отдельная карточка A1. Goethe A2, стр. 18 и 26; A1 статья spielen стр. 23 иллюстрирует игры.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/spielen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-spielen-instrument"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spielen-instrument",
+            "de": "spielen",
+            "part": "verb",
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Mit einem Instrument Musik machen.",
+            "translations_ru": [
+              "играть на музыкальном инструменте"
+            ],
+            "grammar_hint": "Geige / Klavier spielen обычно без артикля; seit + Dativ при продолжающемся действии.",
+            "example": "Meine Schwester spielt seit zwei Jahren Geige.",
+            "example_ru": "Моя сестра уже два года играет на скрипке."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-537-2",
+      "alias_ids": [
+        "b1-spielen-cards"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-537-2",
+        "de": "Karten spielen",
+        "lemma": "Karten spielen",
+        "ru": "играть в карты",
+        "uk": "",
+        "translations_ru": [
+          "играть в карты"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг"
+        ],
+        "forms": "",
+        "definition_de": "Ein Spiel mit Spielkarten spielen.",
+        "example": "Am Abend spielen wir Karten.",
+        "example_ru": "Вечером мы играем в карты.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "870248681414019d8783"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-spielen-cards"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spielen-cards",
+            "de": "Karten spielen",
+            "part": "phrase",
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Sich an einem Kartenspiel beteiligen.",
+            "translations_ru": [
+              "играть в карты"
+            ],
+            "grammar_hint": "Karten spielen, Schach spielen — обычно без артикля; отдельный учебный контекст.",
+            "example": "Abends spielen wir manchmal Karten.",
+            "example_ru": "По вечерам мы иногда играем в карты."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_67298bd3356ae3727182",
+      "alias_ids": [
+        "b1-spiel-game",
+        "b1-spiel-match"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_67298bd3356ae3727182",
+        "de": "das Spiel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "игра",
+          "матч"
+        ],
+        "definition_de": "Eine Tätigkeit mit Regeln, die der Unterhaltung dient; auch ein sportlicher Wettkampf.",
+        "forms": "Plural · die Spiele",
+        "example": "Wir sehen heute ein Fußballspiel.",
+        "example_ru": "Сегодня мы смотрим футбольный матч.",
+        "grammar_hint": "",
+        "usage_note": "В Швейцарии: Fussballspiel.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Spiel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-spiel-game",
+          "b1-spiel-match"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spiel-game",
+            "de": "das Spiel",
+            "part": "noun",
+            "forms": "die Spiele",
+            "definition_de": "Eine Beschäftigung zur Unterhaltung, häufig mit festgelegten Regeln.",
+            "translations_ru": [
+              "игра"
+            ],
+            "grammar_hint": "ein Spiel spielen; Genitiv: des Spiels / des Spieles.",
+            "example": "Wir erklären den Gästen die Regeln des Spiels.",
+            "example_ru": "Мы объясняем гостям правила игры."
+          },
+          {
+            "id": "b1-spiel-match",
+            "de": "das Spiel",
+            "part": "noun",
+            "forms": "die Spiele",
+            "definition_de": "Eine einzelne sportliche Begegnung zwischen Gegnern.",
+            "translations_ru": [
+              "матч",
+              "игра (спортивная)"
+            ],
+            "grammar_hint": "ein Spiel gewinnen / verlieren; es steht 2:1 — счёт 2:1.",
+            "example": "Das Spiel endete mit einem Unentschieden.",
+            "example_ru": "Матч закончился вничью."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spiel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spiel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-538-1",
+      "alias_ids": [
+        "b1-sport-interest"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-538-1",
+        "de": "der Sport",
+        "lemma": "Sport",
+        "ru": "спорт",
+        "uk": "",
+        "translations_ru": [
+          "спорт"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг"
+        ],
+        "forms": "обычно только Singular в этом употреблении",
+        "definition_de": "Bewegung oder Training, oft als Freizeitbeschäftigung oder Wettbewerb.",
+        "example": "Sie macht am Wochenende Sport.",
+        "example_ru": "По выходным она занимается спортом.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "67266241ee04f360d92f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sport-interest"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sport-interest",
+            "de": "der Sport",
+            "part": "noun",
+            "forms": "обычно Singular; редкое Plural Sporte",
+            "definition_de": "Körperliche oder geistige Betätigung, die auch als Wettkampf ausgeübt wird.",
+            "translations_ru": [
+              "спорт"
+            ],
+            "grammar_hint": "sich interessieren für + Akkusativ; контекст интереса к спорту.",
+            "example": "Ich interessiere mich besonders für Sport.",
+            "example_ru": "Я особенно интересуюсь спортом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sport"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_32053edb2473b50f84b3",
+      "alias_ids": [
+        "b1-sportlich-person"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_32053edb2473b50f84b3",
+        "de": "sportlich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "спортивный",
+          "физически подготовленный"
+        ],
+        "definition_de": "Gut im Sport und körperlich fit sein.",
+        "forms": "sportlich · sportlicher · am sportlichsten",
+        "example": "Meine Schwester ist sportlicher als ich.",
+        "example_ru": "Моя сестра спортивнее меня.",
+        "grammar_hint": "Сравнение с als; so sportlich wie — такой же спортивный, как.",
+        "usage_note": "Здесь качество человека; переносное значение «честный, благородный» не включено.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sportlich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-sportlich-person"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sportlich-person",
+            "de": "sportlich",
+            "part": "adj",
+            "forms": "sportlich · sportlicher · am sportlichsten",
+            "definition_de": "Im Sport geübt oder körperlich aktiv.",
+            "translations_ru": [
+              "спортивный",
+              "физически активный"
+            ],
+            "grammar_hint": "Komparativ + als; unsportlich — неспортивный.",
+            "example": "Mein Bruder ist sportlicher als ich.",
+            "example_ru": "Мой брат спортивнее меня."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sportlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-539-1",
+      "alias_ids": [
+        "b1-sprache-language"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-539-1",
+        "de": "die Sprache",
+        "lemma": "Sprache",
+        "ru": "язык",
+        "uk": "",
+        "translations_ru": [
+          "язык"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Sprachen",
+        "definition_de": "Ein System von Wörtern und Regeln, mit dem Menschen sich verständigen.",
+        "example": "Welche Sprachen sprichst du zu Hause?",
+        "example_ru": "На каких языках ты говоришь дома?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "906fcb88ba0bc7c24e95"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sprache-language"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sprache-language",
+            "de": "die Sprache",
+            "part": "noun",
+            "forms": "die Sprachen",
+            "definition_de": "Ein von Menschen gemeinsam verwendetes System sprachlicher Zeichen.",
+            "translations_ru": [
+              "язык (средство общения)"
+            ],
+            "grammar_hint": "eine Sprache lernen / sprechen (Akk.); auf Deutsch — по-немецки.",
+            "example": "In unserer Gruppe werden mehrere Sprachen gesprochen.",
+            "example_ru": "В нашей группе говорят на нескольких языках."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sprache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-540-1",
+      "alias_ids": [
+        "b1-sprechen-voice",
+        "b1-sprechen-language"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-540-1",
+        "de": "sprechen",
+        "lemma": "sprechen",
+        "ru": "говорить; разговаривать; говорить с кем-то",
+        "uk": "",
+        "translations_ru": [
+          "говорить",
+          "разговаривать",
+          "говорить с кем-то"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "spricht · sprach · hat gesprochen",
+        "definition_de": "Mit Worten kommunizieren oder eine Sprache benutzen.",
+        "example": "Kann ich mit der Lehrerin sprechen?",
+        "example_ru": "Можно поговорить с учительницей?",
+        "note": "mit + Dativ (с кем), über + Akkusativ (о ком/чём); Deutsch sprechen — говорить по-немецки, без предлога; sprich! — повелительная форма. sagen — сказать, сообщить.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "16afd4c71985a735b4eb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sprechen-voice",
+          "b1-sprechen-language"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sprechen-voice",
+            "de": "sprechen",
+            "part": "verb",
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Sich durch gesprochene Wörter äußern.",
+            "translations_ru": [
+              "говорить",
+              "разговаривать"
+            ],
+            "grammar_hint": "du sprichst; Imperativ: sprich!; langsam sprechen.",
+            "example": "Bitte sprich ein bisschen langsamer.",
+            "example_ru": "Пожалуйста, говори немного медленнее."
+          },
+          {
+            "id": "b1-sprechen-language",
+            "de": "sprechen",
+            "part": "verb",
+            "forms": "spricht · sprach · hat gesprochen",
+            "definition_de": "Eine Sprache mündlich verwenden können.",
+            "translations_ru": [
+              "говорить на языке",
+              "владеть языком"
+            ],
+            "grammar_hint": "Deutsch sprechen; auf Deutsch sprechen — говорить по-немецки. CH: fliessend.",
+            "example": "Sie spricht fließend Italienisch.",
+            "example_ru": "Она свободно говорит по-итальянски."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sprechen",
+              "https://www.duden.de/rechtschreibung/sprechen"
+            ],
+            "meaning_review": "goethe_context_reviewed_dictionary_general_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "city-stadt",
+      "alias_ids": [
+        "b1-stadt-settlement"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "city-stadt",
+        "de": "die Stadt",
+        "lemma": "Stadt",
+        "ru": "город",
+        "uk": "",
+        "translations_ru": [
+          "город"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "die Städte",
+        "definition_de": "Ein größerer Ort mit vielen Straßen und Häusern.",
+        "example": "Diese Stadt hat zwei Bahnhöfe.",
+        "example_ru": "В этом городе два вокзала.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "5eb6c94c6e7417b19184"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-stadt-settlement"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stadt-settlement",
+            "de": "die Stadt",
+            "part": "noun",
+            "forms": "die Städte",
+            "definition_de": "Ein größerer Ort mit vielen Einwohnern und städtischer Infrastruktur.",
+            "translations_ru": [
+              "город"
+            ],
+            "grammar_hint": "in einer Stadt (Dativ); Dativ Plural: in den Städten.",
+            "example": "Diese Stadt hat eine lange Geschichte.",
+            "example_ru": "У этого города долгая история."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stadt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_67f8a34befcd73593e55",
+      "alias_ids": [
+        "b1-stadtplan-map"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_67f8a34befcd73593e55",
+        "de": "der Stadtplan",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "план города",
+          "карта города"
+        ],
+        "definition_de": "Eine Karte, auf der man die Straßen und wichtige Orte einer Stadt sieht.",
+        "forms": "Plural · die Stadtpläne",
+        "example": "Auf dem Stadtplan findest du den Bahnhof.",
+        "example_ru": "На карте города ты найдёшь вокзал.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Stadtplan"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-stadtplan-map"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stadtplan-map",
+            "de": "der Stadtplan",
+            "part": "noun",
+            "forms": "die Stadtpläne",
+            "definition_de": "Eine Karte, auf der Straßen und wichtige Orte einer Stadt eingezeichnet sind.",
+            "translations_ru": [
+              "план города",
+              "карта города"
+            ],
+            "grammar_hint": "auf dem Stadtplan (Dativ); род определяется Plan.",
+            "example": "Auf dem Stadtplan finde ich das Museum.",
+            "example_ru": "На карте города я нахожу музей."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stadtplan"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f6c24b6853b44bf21334",
+      "alias_ids": [
+        "b1-star-celebrity"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f6c24b6853b44bf21334",
+        "de": "der Star",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "звезда",
+          "знаменитость"
+        ],
+        "definition_de": "Eine Person, die durch ihre Auftritte oder Leistungen sehr berühmt ist.",
+        "forms": "Plural · die Stars",
+        "example": "Dieser Schauspieler ist ein großer Star.",
+        "example_ru": "Этот актёр — большая звезда.",
+        "grammar_hint": "",
+        "usage_note": "В этой карточке только знаменитость; не скворец и не медицинский термин.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Star"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-star-celebrity"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-star-celebrity",
+            "de": "der Star",
+            "part": "noun",
+            "forms": "die Stars",
+            "definition_de": "Eine weithin bekannte Person, etwa aus Musik, Film oder Sport.",
+            "translations_ru": [
+              "звезда",
+              "знаменитость"
+            ],
+            "grammar_hint": "zum Star werden (zu + Dativ); не путать с der Star — скворец (die Stare).",
+            "example": "Der junge Schauspieler wurde über Nacht zum Star.",
+            "example_ru": "Молодой актёр за одну ночь стал звездой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Star"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_714ec32c0c9845cebfb3",
+      "alias_ids": [
+        "b1-stark-coffee"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_714ec32c0c9845cebfb3",
+        "de": "stark",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "сильный",
+          "крепкий"
+        ],
+        "definition_de": "Mit großer Kraft oder hoher Intensität, zum Beispiel bei Schmerzen oder Getränken.",
+        "forms": "stark · stärker · am stärksten",
+        "example": "Heute sind meine Kopfschmerzen stärker als gestern.",
+        "example_ru": "Сегодня голова болит сильнее, чем вчера.",
+        "grammar_hint": "В сравнительной и превосходной степени a меняется на ä.",
+        "usage_note": "Starker Kaffee bedeutet «крепкий кофе».",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/stark"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-stark-coffee"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stark-coffee",
+            "de": "stark",
+            "part": "adj",
+            "forms": "stark · stärker · am stärksten",
+            "definition_de": "Mit kräftigem Geschmack oder hoher Konzentration zubereitet.",
+            "translations_ru": [
+              "крепкий (о напитке)"
+            ],
+            "grammar_hint": "starker Kaffee; Gegensatz schwach; контекст концентрации напитка.",
+            "example": "Ich trinke morgens gern starken Kaffee.",
+            "example_ru": "Утром я люблю пить крепкий кофе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 82–83 visually checked. Exam-list membership; earliest CEFR level pending A1/A2 comparison. Pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/stark"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

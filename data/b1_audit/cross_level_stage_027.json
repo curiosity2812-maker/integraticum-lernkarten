@@ -1,0 +1,3124 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    513,
+    532
+  ],
+  "reviewed": 20,
+  "merge_count": 11,
+  "merge_target_count": 11,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 8,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 513,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich an einem Ort in einer liegenden Position befinden. Example: Meine Brille liegt auf dem Schreibtisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_053.json",
+        "sha": "1345b265de66ab430582ad2cec02c4087f4cbbe7",
+        "batch": 53,
+        "row": 29,
+        "record": {
+          "id": "b1-liegen-position",
+          "de": "liegen",
+          "lemma": "liegen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "лежать",
+            "находиться (в горизонтальном положении)"
+          ],
+          "definition_de": "Sich an einem Ort in einer liegenden Position befinden.",
+          "example": "Meine Brille liegt auf dem Schreibtisch.",
+          "example_ru": "Мои очки лежат на письменном столе.",
+          "forms": "liegt · lag · hat / ist gelegen",
+          "grammar_hint": "Wo? auf dem Tisch (Dativ). legen — класть (Wohin?). В CH/A и на юге Германии часто ist gelegen; на севере Германии hat gelegen. im Bett / im Krankenhaus liegen — лежать в постели / находиться в больнице.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 60,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/liegen",
+              "https://www.duden.de/rechtschreibung/liegen_lehnen_ruhen",
+              "https://grammis.ids-mannheim.de/fragen/87"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 625,
+          "record": {
+            "id": "a1-390-1",
+            "de": "liegen",
+            "lemma": "liegen",
+            "ru": "лежать",
+            "uk": "",
+            "translations_ru": [
+              "лежать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "liegt · lag · hat gelegen",
+            "definition_de": "Flach auf einer Fläche sein.",
+            "example": "Das Buch liegt auf dem Tisch.",
+            "example_ru": "Книга лежит на столе.",
+            "note": "Швейцарский вариант Perfekt: ist gelegen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "909b302f4fea2d89f8b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 626,
+          "record": {
+            "id": "a1-390-2",
+            "de": "liegen",
+            "lemma": "liegen",
+            "ru": "находиться (о месте)",
+            "uk": "",
+            "translations_ru": [
+              "находиться (о месте)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "liegt · lag · hat gelegen",
+            "definition_de": "Sich an einem geografischen Ort befinden.",
+            "example": "Das Dorf liegt am See.",
+            "example_ru": "Деревня находится у озера.",
+            "note": "Швейцарский вариант Perfekt: ist gelegen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "909b302f4fea2d89f8b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-390-1",
+        "alias_id": "b1-liegen-position",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-390-1"
+      }
+    },
+    {
+      "candidate_number": 514,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine feste räumliche oder geografische Lage haben. Example: Das Dorf liegt zwischen zwei Seen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_053.json",
+        "sha": "1345b265de66ab430582ad2cec02c4087f4cbbe7",
+        "batch": 53,
+        "row": 30,
+        "record": {
+          "id": "b1-liegen-geography",
+          "de": "liegen",
+          "lemma": "liegen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "находиться",
+            "располагаться (географически)"
+          ],
+          "definition_de": "Eine feste räumliche oder geografische Lage haben.",
+          "example": "Das Dorf liegt zwischen zwei Seen.",
+          "example_ru": "Деревня находится между двумя озёрами.",
+          "forms": "liegt · lag · hat / ist gelegen",
+          "grammar_hint": "Wo? zwischen zwei Seen (Dativ); am See liegen. Schnee liegt auf den Bergen — в горах лежит снег (продолжение контекста на стр. 61).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 60,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/liegen",
+              "https://www.duden.de/rechtschreibung/liegen_lehnen_ruhen",
+              "https://grammis.ids-mannheim.de/fragen/87"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 625,
+          "record": {
+            "id": "a1-390-1",
+            "de": "liegen",
+            "lemma": "liegen",
+            "ru": "лежать",
+            "uk": "",
+            "translations_ru": [
+              "лежать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "liegt · lag · hat gelegen",
+            "definition_de": "Flach auf einer Fläche sein.",
+            "example": "Das Buch liegt auf dem Tisch.",
+            "example_ru": "Книга лежит на столе.",
+            "note": "Швейцарский вариант Perfekt: ist gelegen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "909b302f4fea2d89f8b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 626,
+          "record": {
+            "id": "a1-390-2",
+            "de": "liegen",
+            "lemma": "liegen",
+            "ru": "находиться (о месте)",
+            "uk": "",
+            "translations_ru": [
+              "находиться (о месте)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "liegt · lag · hat gelegen",
+            "definition_de": "Sich an einem geografischen Ort befinden.",
+            "example": "Das Dorf liegt am See.",
+            "example_ru": "Деревня находится у озера.",
+            "note": "Швейцарский вариант Perfekt: ist gelegen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "909b302f4fea2d89f8b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-390-2",
+        "alias_id": "b1-liegen-geography",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-390-2"
+      }
+    },
+    {
+      "candidate_number": 515,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Auf der linken Seite oder in diese Richtung. Example: An der Ampel gehen Sie nach links.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 4,
+        "record": {
+          "id": "b1-links-direction",
+          "de": "links / nach links",
+          "lemma": "links",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "налево",
+            "слева"
+          ],
+          "definition_de": "Auf der linken Seite oder in diese Richtung.",
+          "example": "An der Ampel gehen Sie nach links.",
+          "example_ru": "У светофора поверните налево.",
+          "forms": "неизменяемое",
+          "grammar_hint": "links stehen — стоять слева; links abbiegen / nach links gehen — поворачивать налево. Наречие не склоняется.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/links"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 627,
+          "record": {
+            "id": "a1-391-1",
+            "de": "links",
+            "lemma": "links",
+            "ru": "слева; налево (при движении)",
+            "uk": "",
+            "translations_ru": [
+              "слева",
+              "налево (при движении)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "",
+            "definition_de": "Auf der linken Seite oder nach links.",
+            "example": "Die Apotheke ist links.",
+            "example_ru": "Аптека слева.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "4bf0e3ab9b477b133e1a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-391-1",
+        "alias_id": "b1-links-direction",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-391-1"
+      }
+    },
+    {
+      "candidate_number": 516,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Zur linken Seite gehörend. Example: Die Apotheke befindet sich auf der linken Straßenseite.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 5,
+        "record": {
+          "id": "b1-link-left-adjective",
+          "de": "link-",
+          "lemma": "link",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "левый (о стороне)"
+          ],
+          "definition_de": "Zur linken Seite gehörend.",
+          "example": "Die Apotheke befindet sich auf der linken Straßenseite.",
+          "example_ru": "Аптека находится на левой стороне улицы.",
+          "forms": "linke · linker · linkes (склонение); без сравнения в пространственном значении",
+          "grammar_hint": "die linke Hand, auf der linken Seite. Для наречного употребления: links, не link.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/link"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 164,
+          "record": {
+            "id": "dict_9cd0df31838744ed42aa",
+            "de": "der Link",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ссылка"
+            ],
+            "definition_de": "Ein Verweis, den man anklicken kann, um zum Beispiel eine andere Internetseite zu öffnen.",
+            "forms": "Plural · die Links",
+            "example": "Kannst du mir den Link zum Kurs schicken?",
+            "example_ru": "Можешь прислать мне ссылку на курс?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Link"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цифровые технологии и связь",
+            "topics": [
+              "Цифровые технологии и связь"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 517,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Besteckteil mit einer kleinen Mulde zum Essen oder Umrühren. Example: Für den Joghurt brauche ich einen kleinen Löffel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 12,
+        "record": {
+          "id": "b1-loeffel-spoon",
+          "de": "der Löffel",
+          "lemma": "Löffel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ложка"
+          ],
+          "definition_de": "Ein Besteckteil mit einer kleinen Mulde zum Essen oder Umrühren.",
+          "example": "Für den Joghurt brauche ich einen kleinen Löffel.",
+          "example_ru": "Для йогурта мне нужна маленькая ложка.",
+          "forms": "die Löffel",
+          "grammar_hint": "der Teelöffel — чайная ложка; der Esslöffel — столовая ложка; Dativ Plural: den Löffeln.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/L%C3%B6ffel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 86,
+          "record": {
+            "id": "dict_f0869023be388b0bd5d0",
+            "de": "der Löffel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ложка"
+            ],
+            "definition_de": "Ein Essgerät mit einem Griff und einer kleinen Vertiefung.",
+            "forms": "Plural · die Löffel",
+            "example": "Ich esse die Suppe mit einem Löffel.",
+            "example_ru": "Я ем суп ложкой.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/L%C3%B6ffel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f0869023be388b0bd5d0",
+        "alias_id": "b1-loeffel-spoon",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f0869023be388b0bd5d0"
+      }
+    },
+    {
+      "candidate_number": 518,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein öffentliches gastronomisches Geschäft, in dem Gäste essen oder trinken können. Example: Wir treffen uns in einem kleinen Lokal am Fluss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 15,
+        "record": {
+          "id": "b1-lokal-restaurant",
+          "de": "das Lokal",
+          "lemma": "Lokal",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "заведение",
+            "кафе",
+            "ресторан"
+          ],
+          "definition_de": "Ein öffentliches gastronomisches Geschäft, in dem Gäste essen oder trinken können.",
+          "example": "Wir treffen uns in einem kleinen Lokal am Fluss.",
+          "example_ru": "Мы встретимся в небольшом заведении у реки.",
+          "forms": "die Lokale",
+          "grammar_hint": "in einem Lokal (Dativ); ein Lokal besuchen. Существительное Lokal с большой буквы, прилагательное lokal — местный.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Lokal"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 484,
+          "record": {
+            "id": "a1-393-1",
+            "de": "das Lokal",
+            "lemma": "Lokal",
+            "ru": "заведение, ресторан",
+            "uk": "",
+            "translations_ru": [
+              "заведение, ресторан"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Lokale",
+            "definition_de": "Ein Ort, an dem Gäste essen oder trinken können.",
+            "example": "Wir essen in einem kleinen Lokal.",
+            "example_ru": "Мы едим в небольшом заведении.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "6805b9aebfecf44eff7e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-393-1",
+        "alias_id": "b1-lokal-restaurant",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-393-1"
+      }
+    },
+    {
+      "candidate_number": 519,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Ergebnis oder Vorgehen, mit dem eine Aufgabe oder Schwierigkeit bewältigt wird. Example: Wir suchen eine einfache Lösung für das Problem.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 23,
+        "record": {
+          "id": "b1-loesung-answer",
+          "de": "die Lösung",
+          "lemma": "Lösung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "решение",
+            "ответ (к задаче)",
+            "выход из ситуации"
+          ],
+          "definition_de": "Ein Ergebnis oder Vorgehen, mit dem eine Aufgabe oder Schwierigkeit bewältigt wird.",
+          "example": "Wir suchen eine einfache Lösung für das Problem.",
+          "example_ru": "Мы ищем простое решение проблемы.",
+          "forms": "die Lösungen",
+          "grammar_hint": "eine Lösung finden; die Lösung für + Akkusativ; die Lösung der Aufgabe (Genitiv).",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/L%C3%B6sung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 485,
+          "record": {
+            "id": "a1-394-1",
+            "de": "die Lösung",
+            "lemma": "Lösung",
+            "ru": "решение",
+            "uk": "",
+            "translations_ru": [
+              "решение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Lösungen",
+            "definition_de": "Eine Antwort auf eine Aufgabe oder ein Problem.",
+            "example": "Die Lösung steht auf Seite zehn.",
+            "example_ru": "Решение на десятой странице.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "093ea6e162cad3197d2c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-394-1",
+        "alias_id": "b1-loesung-answer",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-394-1"
+      }
+    },
+    {
+      "candidate_number": 520,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Absichtlich etwas Unwahres sagen. Example: Er hat gelogen, obwohl er die Wahrheit kannte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 25,
+        "record": {
+          "id": "b1-luegen-lie",
+          "de": "lügen",
+          "lemma": "lügen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "лгать",
+            "врать"
+          ],
+          "definition_de": "Absichtlich etwas Unwahres sagen.",
+          "example": "Er hat gelogen, obwohl er die Wahrheit kannte.",
+          "example_ru": "Он солгал, хотя знал правду.",
+          "forms": "lügt · log · hat gelogen",
+          "grammar_hint": "Обычно без прямого дополнения; jemanden anlügen (Akkusativ) — лгать кому-либо. После obwohl глагол в конце.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/l%C3%BCgen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 464,
+          "record": {
+            "id": "dict_dd2eac9f8f463b694244",
+            "de": "lügen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "лгать",
+              "врать"
+            ],
+            "definition_de": "Absichtlich etwas Unwahres sagen.",
+            "forms": "lügt · log · hat gelogen",
+            "example": "Warum hast du gelogen?",
+            "example_ru": "Почему ты соврал?",
+            "grammar_hint": "Не путать с liegen — лежать.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/l%C3%BCgen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dd2eac9f8f463b694244",
+        "alias_id": "b1-luegen-lie",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dd2eac9f8f463b694244"
+      }
+    },
+    {
+      "candidate_number": 521,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine bewusst unwahre Behauptung. Example: Später stellte sich seine Geschichte als Lüge heraus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 26,
+        "record": {
+          "id": "b1-luege-lie",
+          "de": "die Lüge",
+          "lemma": "Lüge",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ложь",
+            "враньё"
+          ],
+          "definition_de": "Eine bewusst unwahre Behauptung.",
+          "example": "Später stellte sich seine Geschichte als Lüge heraus.",
+          "example_ru": "Позже выяснилось, что его история была ложью.",
+          "forms": "die Lügen",
+          "grammar_hint": "eine Lüge erzählen; Gegenteil: die Wahrheit; das Lügen — процесс лжи.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/L%C3%BCge"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 193,
+          "record": {
+            "id": "dict_424a3193772cac2651d5",
+            "de": "die Lüge",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ложь",
+              "враньё"
+            ],
+            "definition_de": "Eine Aussage, die jemand bewusst macht, obwohl sie nicht wahr ist.",
+            "forms": "Plural · die Lügen",
+            "example": "Die Geschichte über das gestohlene Fahrrad war eine Lüge.",
+            "example_ru": "История про украденный велосипед была ложью.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/L%C3%BCge"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_424a3193772cac2651d5",
+        "alias_id": "b1-luege-lie",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_424a3193772cac2651d5"
+      }
+    },
+    {
+      "candidate_number": 522,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Etwas gern haben, essen oder unternehmen wollen. Example: Hast du Lust auf einen Spaziergang?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 27,
+        "record": {
+          "id": "b1-lust-on-something",
+          "de": "Lust auf etwas haben",
+          "lemma": "Lust",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "хотеть чего-либо",
+            "иметь желание"
+          ],
+          "definition_de": "Etwas gern haben, essen oder unternehmen wollen.",
+          "example": "Hast du Lust auf einen Spaziergang?",
+          "example_ru": "Хочешь прогуляться?",
+          "forms": "die Lust; без мн. ч. в данном значении",
+          "grammar_hint": "Lust auf + Akkusativ: auf einen Tee, auf einen Ausflug. keine Lust auf etwas haben — не хотеть чего-либо.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Lust"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 463,
+          "record": {
+            "id": "dict_e406aa0157b880742b0a",
+            "de": "die Lust",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "желание",
+              "охота"
+            ],
+            "definition_de": "Das Gefühl, etwas gerne tun oder haben zu wollen.",
+            "forms": "В этом значении без Plural",
+            "example": "Ich habe Lust auf einen Spaziergang.",
+            "example_ru": "Мне хочется прогуляться.",
+            "grammar_hint": "Lust auf + Akkusativ haben; Lust haben, etwas zu tun.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Lust"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_e406aa0157b880742b0a",
+        "alias_id": "b1-lust-on-something",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_e406aa0157b880742b0a"
+      }
+    },
+    {
+      "candidate_number": 523,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Den Wunsch verspüren, eine bestimmte Tätigkeit auszuführen. Example: Ich habe heute keine Lust, allein zu kochen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 28,
+        "record": {
+          "id": "b1-lust-to-do",
+          "de": "Lust haben, etwas zu tun",
+          "lemma": "Lust",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "хотеть что-либо сделать",
+            "иметь желание сделать"
+          ],
+          "definition_de": "Den Wunsch verspüren, eine bestimmte Tätigkeit auszuführen.",
+          "example": "Ich habe heute keine Lust, allein zu kochen.",
+          "example_ru": "Сегодня мне не хочется готовить одной.",
+          "forms": "die Lust; без мн. ч. в данном значении",
+          "grammar_hint": "Lust haben, … zu + Infinitiv; запятая обязательна, так как инфинитивная группа зависит от существительного Lust.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Lust"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 463,
+          "record": {
+            "id": "dict_e406aa0157b880742b0a",
+            "de": "die Lust",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "желание",
+              "охота"
+            ],
+            "definition_de": "Das Gefühl, etwas gerne tun oder haben zu wollen.",
+            "forms": "В этом значении без Plural",
+            "example": "Ich habe Lust auf einen Spaziergang.",
+            "example_ru": "Мне хочется прогуляться.",
+            "grammar_hint": "Lust auf + Akkusativ haben; Lust haben, etwas zu tun.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Lust"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 524,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: So unterhaltsam, dass man lachen oder sich freuen kann. Example: Auf der Reise ist uns etwas Lustiges passiert.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 29,
+        "record": {
+          "id": "b1-lustig-funny",
+          "de": "lustig",
+          "lemma": "lustig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "смешной",
+            "забавный",
+            "весёлый"
+          ],
+          "definition_de": "So unterhaltsam, dass man lachen oder sich freuen kann.",
+          "example": "Auf der Reise ist uns etwas Lustiges passiert.",
+          "example_ru": "В поездке с нами произошло что-то забавное.",
+          "forms": "lustig · lustiger · am lustigsten",
+          "grammar_hint": "ein lustiger Film; etwas Lustiges — субстантивированное прилагательное с большой буквы. Nicht immer gleichbedeutend mit komisch (странный / смешной).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/lustig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 628,
+          "record": {
+            "id": "a1-395-1",
+            "de": "lustig",
+            "lemma": "lustig",
+            "ru": "забавный; смешной; весёлый (о фильме или истории)",
+            "uk": "",
+            "translations_ru": [
+              "забавный",
+              "смешной",
+              "весёлый (о фильме или истории)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "lustiger · am lustigsten",
+            "definition_de": "So, dass man lachen muss oder gute Laune bekommt.",
+            "example": "Der Film ist lustig.",
+            "example_ru": "Фильм смешной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "ea6d9d12a6beaa930a47"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-395-1",
+        "alias_id": "b1-lustig-funny",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-395-1"
+      }
+    },
+    {
+      "candidate_number": 525,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Tätigkeit ausführen oder erledigen. Example: Was machst du nach dem Unterricht?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_054.json",
+        "sha": "84c6bce06d54682e09edb63bff35f286a6e3913a",
+        "batch": 54,
+        "row": 30,
+        "record": {
+          "id": "b1-machen-do",
+          "de": "machen",
+          "lemma": "machen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "делать",
+            "выполнять",
+            "заниматься чем-либо"
+          ],
+          "definition_de": "Eine Tätigkeit ausführen oder erledigen.",
+          "example": "Was machst du nach dem Unterricht?",
+          "example_ru": "Что ты делаешь после урока?",
+          "forms": "macht · machte · hat gemacht",
+          "grammar_hint": "etwas (Akkusativ) machen; Was machst du? Часто в устойчивых сочетаниях, которые будут рассмотрены отдельно.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_64af129e22d6e3d3bad7",
+        "alias_id": "b1-machen-do",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_64af129e22d6e3d3bad7"
+      }
+    },
+    {
+      "candidate_number": 526,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine Mahlzeit für sich oder andere zubereiten. Example: Ich mache heute das Abendessen für uns alle.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 1,
+        "record": {
+          "id": "b1-machen-meal",
+          "de": "das Essen machen",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "готовить еду",
+            "приготовить обед"
+          ],
+          "definition_de": "Eine Mahlzeit für sich oder andere zubereiten.",
+          "example": "Ich mache heute das Abendessen für uns alle.",
+          "example_ru": "Сегодня я приготовлю ужин для нас всех.",
+          "forms": "macht · machte · hat gemacht",
+          "grammar_hint": "das Essen (Akkusativ) machen = zubereiten; für + Akkusativ.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 527,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Das Bett nach dem Schlafen ordentlich herrichten. Example: Vor dem Frühstück mache ich mein Bett.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 2,
+        "record": {
+          "id": "b1-machen-bed",
+          "de": "das Bett machen",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "заправлять кровать"
+          ],
+          "definition_de": "Das Bett nach dem Schlafen ordentlich herrichten.",
+          "example": "Vor dem Frühstück mache ich mein Bett.",
+          "example_ru": "Перед завтраком я заправляю кровать.",
+          "forms": "macht · machte · hat gemacht",
+          "grammar_hint": "das Bett machen — заправлять, не изготавливать кровать; die Betten machen — заправлять кровати.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 528,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Etwas auf eine höhere Temperatur bringen. Example: Ich mache dir die Milch warm.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 3,
+        "record": {
+          "id": "b1-machen-warm",
+          "de": "etwas warm machen",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "разогревать",
+            "согревать"
+          ],
+          "definition_de": "Etwas auf eine höhere Temperatur bringen.",
+          "example": "Ich mache dir die Milch warm.",
+          "example_ru": "Я подогрею тебе молоко.",
+          "forms": "macht · machte · hat gemacht",
+          "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) warm machen; прилагательное без окончания. Возможны warm machen / warmmachen.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 529,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bei einer Person Freude an einer Tätigkeit hervorrufen. Example: Das gemeinsame Kochen macht mir Spaß.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 4,
+        "record": {
+          "id": "b1-machen-fun",
+          "de": "Spaß machen",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "доставлять удовольствие",
+            "нравиться",
+            "быть увлекательным"
+          ],
+          "definition_de": "Bei einer Person Freude an einer Tätigkeit hervorrufen.",
+          "example": "Das gemeinsame Kochen macht mir Spaß.",
+          "example_ru": "Совместное приготовление еды доставляет мне удовольствие.",
+          "forms": "macht · machte · hat gemacht",
+          "grammar_hint": "jemandem (Dativ) Spaß machen; подлежащее — занятие, mir — тот, кому оно нравится. CH: Spass.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen",
+              "https://www.duden.de/rechtschreibung/Spasz"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 530,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Wegen einer ungewissen oder schwierigen Situation besorgt sein. Example: Ich mache mir Sorgen um meine Prüfung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 5,
+        "record": {
+          "id": "b1-machen-worry",
+          "de": "sich Sorgen machen",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "беспокоиться",
+            "волноваться"
+          ],
+          "definition_de": "Wegen einer ungewissen oder schwierigen Situation besorgt sein.",
+          "example": "Ich mache mir Sorgen um meine Prüfung.",
+          "example_ru": "Я переживаю из-за экзамена.",
+          "forms": "macht sich Sorgen · machte sich Sorgen · hat sich Sorgen gemacht",
+          "grammar_hint": "sich (Dativ: mir, dir) + Sorgen (Akkusativ); um + Akkusativ. Mach dir keine Sorgen! — Не переживай!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen",
+              "https://www.duden.de/rechtschreibung/sorgen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 531,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine Person um Rat für die eigene Situation bitten. Example: Was würdest du an meiner Stelle machen, wenn der Kurs ausfällt?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 6,
+        "record": {
+          "id": "b1-machen-advice",
+          "de": "Was würdest du an meiner Stelle machen?",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "что бы ты сделала на моём месте?"
+          ],
+          "definition_de": "Eine Person um Rat für die eigene Situation bitten.",
+          "example": "Was würdest du an meiner Stelle machen, wenn der Kurs ausfällt?",
+          "example_ru": "Что бы ты сделала на моём месте, если курс отменят?",
+          "forms": "macht · machte · hat gemacht; würde machen",
+          "grammar_hint": "Konjunktiv II: würde + Infinitiv; an meiner Stelle (Dativ); в придаточном с wenn глагол в конце. Это учебная конструкция для просьбы о совете, а не новое самостоятельное значение machen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 532,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Ausdrücken, dass sich eine Situation nicht beeinflussen lässt. Example: Der letzte Bus ist schon weg. Da kann man nichts machen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_055.json",
+        "sha": "3bc430a1b50766dc1fd1eb2f75cd97cbc0b52d2f",
+        "batch": 55,
+        "row": 7,
+        "record": {
+          "id": "b1-machen-helpless",
+          "de": "Da kann man nichts machen.",
+          "lemma": "machen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "тут ничего не поделаешь",
+            "ничего нельзя изменить"
+          ],
+          "definition_de": "Ausdrücken, dass sich eine Situation nicht beeinflussen lässt.",
+          "example": "Der letzte Bus ist schon weg. Da kann man nichts machen.",
+          "example_ru": "Последний автобус уже ушёл. Тут ничего не поделаешь.",
+          "forms": "macht · machte · hat gemacht",
+          "grammar_hint": "man + 3-е лицо Singular; können + Infinitiv без zu. Отрицательное местоимение nichts.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen",
+              "https://www.duden.de/rechtschreibung/machen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 813,
+          "record": {
+            "id": "dict_64af129e22d6e3d3bad7",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "делать; сделать",
+            "uk": "робити; зробити",
+            "translations_ru": [
+              "делать",
+              "сделать"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+            "example": "Was machst du am Wochenende?",
+            "example_ru": "Что ты делаешь на выходных?",
+            "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 814,
+          "record": {
+            "id": "a1-machen-price-reviewed",
+            "de": "machen",
+            "lemma": "machen",
+            "part": "verb",
+            "level": "A1",
+            "ru": "составлять (о сумме); стоить (всего)",
+            "uk": "становити (про суму)",
+            "translations_ru": [
+              "составлять (о сумме)",
+              "стоить (всего)"
+            ],
+            "topic": "Повседневная жизнь",
+            "topics": [
+              "Повседневная жизнь"
+            ],
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Einen bestimmten Gesamtbetrag ergeben.",
+            "example": "Das macht zusammen zwölf Franken.",
+            "example_ru": "Итого двенадцать франков.",
+            "note": "О сумме к оплате: Das macht …; не универсальный синоним kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 20,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-390-1",
+      "alias_ids": [
+        "b1-liegen-position"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-390-1",
+        "de": "liegen",
+        "lemma": "liegen",
+        "ru": "лежать",
+        "uk": "",
+        "translations_ru": [
+          "лежать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "liegt · lag · hat gelegen",
+        "definition_de": "Flach auf einer Fläche sein.",
+        "example": "Das Buch liegt auf dem Tisch.",
+        "example_ru": "Книга лежит на столе.",
+        "note": "Швейцарский вариант Perfekt: ist gelegen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "909b302f4fea2d89f8b2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-liegen-position"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-liegen-position",
+            "de": "liegen",
+            "part": "verb",
+            "forms": "liegt · lag · hat / ist gelegen",
+            "definition_de": "Sich an einem Ort in einer liegenden Position befinden.",
+            "translations_ru": [
+              "лежать",
+              "находиться (в горизонтальном положении)"
+            ],
+            "grammar_hint": "Wo? auf dem Tisch (Dativ). legen — класть (Wohin?). В CH/A и на юге Германии часто ist gelegen; на севере Германии hat gelegen. im Bett / im Krankenhaus liegen — лежать в постели / находиться в больнице.",
+            "example": "Meine Brille liegt auf dem Schreibtisch.",
+            "example_ru": "Мои очки лежат на письменном столе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 60,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/liegen",
+              "https://www.duden.de/rechtschreibung/liegen_lehnen_ruhen",
+              "https://grammis.ids-mannheim.de/fragen/87"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-390-2",
+      "alias_ids": [
+        "b1-liegen-geography"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-390-2",
+        "de": "liegen",
+        "lemma": "liegen",
+        "ru": "находиться (о месте)",
+        "uk": "",
+        "translations_ru": [
+          "находиться (о месте)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "liegt · lag · hat gelegen",
+        "definition_de": "Sich an einem geografischen Ort befinden.",
+        "example": "Das Dorf liegt am See.",
+        "example_ru": "Деревня находится у озера.",
+        "note": "Швейцарский вариант Perfekt: ist gelegen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "909b302f4fea2d89f8b2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-liegen-geography"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-liegen-geography",
+            "de": "liegen",
+            "part": "verb",
+            "forms": "liegt · lag · hat / ist gelegen",
+            "definition_de": "Eine feste räumliche oder geografische Lage haben.",
+            "translations_ru": [
+              "находиться",
+              "располагаться (географически)"
+            ],
+            "grammar_hint": "Wo? zwischen zwei Seen (Dativ); am See liegen. Schnee liegt auf den Bergen — в горах лежит снег (продолжение контекста на стр. 61).",
+            "example": "Das Dorf liegt zwischen zwei Seen.",
+            "example_ru": "Деревня находится между двумя озёрами."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 60,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/liegen",
+              "https://www.duden.de/rechtschreibung/liegen_lehnen_ruhen",
+              "https://grammis.ids-mannheim.de/fragen/87"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-391-1",
+      "alias_ids": [
+        "b1-links-direction"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-391-1",
+        "de": "links",
+        "lemma": "links",
+        "ru": "слева; налево (при движении)",
+        "uk": "",
+        "translations_ru": [
+          "слева",
+          "налево (при движении)"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "",
+        "definition_de": "Auf der linken Seite oder nach links.",
+        "example": "Die Apotheke ist links.",
+        "example_ru": "Аптека слева.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "4bf0e3ab9b477b133e1a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-links-direction"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-links-direction",
+            "de": "links / nach links",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Auf der linken Seite oder in diese Richtung.",
+            "translations_ru": [
+              "налево",
+              "слева"
+            ],
+            "grammar_hint": "links stehen — стоять слева; links abbiegen / nach links gehen — поворачивать налево. Наречие не склоняется.",
+            "example": "An der Ampel gehen Sie nach links.",
+            "example_ru": "У светофора поверните налево."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/links"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f0869023be388b0bd5d0",
+      "alias_ids": [
+        "b1-loeffel-spoon"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f0869023be388b0bd5d0",
+        "de": "der Löffel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ложка"
+        ],
+        "definition_de": "Ein Essgerät mit einem Griff und einer kleinen Vertiefung.",
+        "forms": "Plural · die Löffel",
+        "example": "Ich esse die Suppe mit einem Löffel.",
+        "example_ru": "Я ем суп ложкой.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 20,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/L%C3%B6ffel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-loeffel-spoon"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-loeffel-spoon",
+            "de": "der Löffel",
+            "part": "noun",
+            "forms": "die Löffel",
+            "definition_de": "Ein Besteckteil mit einer kleinen Mulde zum Essen oder Umrühren.",
+            "translations_ru": [
+              "ложка"
+            ],
+            "grammar_hint": "der Teelöffel — чайная ложка; der Esslöffel — столовая ложка; Dativ Plural: den Löffeln.",
+            "example": "Für den Joghurt brauche ich einen kleinen Löffel.",
+            "example_ru": "Для йогурта мне нужна маленькая ложка."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/L%C3%B6ffel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-393-1",
+      "alias_ids": [
+        "b1-lokal-restaurant"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-393-1",
+        "de": "das Lokal",
+        "lemma": "Lokal",
+        "ru": "заведение, ресторан",
+        "uk": "",
+        "translations_ru": [
+          "заведение, ресторан"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг"
+        ],
+        "forms": "die Lokale",
+        "definition_de": "Ein Ort, an dem Gäste essen oder trinken können.",
+        "example": "Wir essen in einem kleinen Lokal.",
+        "example_ru": "Мы едим в небольшом заведении.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "6805b9aebfecf44eff7e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-lokal-restaurant"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-lokal-restaurant",
+            "de": "das Lokal",
+            "part": "noun",
+            "forms": "die Lokale",
+            "definition_de": "Ein öffentliches gastronomisches Geschäft, in dem Gäste essen oder trinken können.",
+            "translations_ru": [
+              "заведение",
+              "кафе",
+              "ресторан"
+            ],
+            "grammar_hint": "in einem Lokal (Dativ); ein Lokal besuchen. Существительное Lokal с большой буквы, прилагательное lokal — местный.",
+            "example": "Wir treffen uns in einem kleinen Lokal am Fluss.",
+            "example_ru": "Мы встретимся в небольшом заведении у реки."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Lokal"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-394-1",
+      "alias_ids": [
+        "b1-loesung-answer"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-394-1",
+        "de": "die Lösung",
+        "lemma": "Lösung",
+        "ru": "решение",
+        "uk": "",
+        "translations_ru": [
+          "решение"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Lösungen",
+        "definition_de": "Eine Antwort auf eine Aufgabe oder ein Problem.",
+        "example": "Die Lösung steht auf Seite zehn.",
+        "example_ru": "Решение на десятой странице.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "093ea6e162cad3197d2c"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-loesung-answer"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-loesung-answer",
+            "de": "die Lösung",
+            "part": "noun",
+            "forms": "die Lösungen",
+            "definition_de": "Ein Ergebnis oder Vorgehen, mit dem eine Aufgabe oder Schwierigkeit bewältigt wird.",
+            "translations_ru": [
+              "решение",
+              "ответ (к задаче)",
+              "выход из ситуации"
+            ],
+            "grammar_hint": "eine Lösung finden; die Lösung für + Akkusativ; die Lösung der Aufgabe (Genitiv).",
+            "example": "Wir suchen eine einfache Lösung für das Problem.",
+            "example_ru": "Мы ищем простое решение проблемы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/L%C3%B6sung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_dd2eac9f8f463b694244",
+      "alias_ids": [
+        "b1-luegen-lie"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_dd2eac9f8f463b694244",
+        "de": "lügen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "лгать",
+          "врать"
+        ],
+        "definition_de": "Absichtlich etwas Unwahres sagen.",
+        "forms": "lügt · log · hat gelogen",
+        "example": "Warum hast du gelogen?",
+        "example_ru": "Почему ты соврал?",
+        "grammar_hint": "Не путать с liegen — лежать.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 20,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/l%C3%BCgen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-luegen-lie"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-luegen-lie",
+            "de": "lügen",
+            "part": "verb",
+            "forms": "lügt · log · hat gelogen",
+            "definition_de": "Absichtlich etwas Unwahres sagen.",
+            "translations_ru": [
+              "лгать",
+              "врать"
+            ],
+            "grammar_hint": "Обычно без прямого дополнения; jemanden anlügen (Akkusativ) — лгать кому-либо. После obwohl глагол в конце.",
+            "example": "Er hat gelogen, obwohl er die Wahrheit kannte.",
+            "example_ru": "Он солгал, хотя знал правду."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/l%C3%BCgen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_424a3193772cac2651d5",
+      "alias_ids": [
+        "b1-luege-lie"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_424a3193772cac2651d5",
+        "de": "die Lüge",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ложь",
+          "враньё"
+        ],
+        "definition_de": "Eine Aussage, die jemand bewusst macht, obwohl sie nicht wahr ist.",
+        "forms": "Plural · die Lügen",
+        "example": "Die Geschichte über das gestohlene Fahrrad war eine Lüge.",
+        "example_ru": "История про украденный велосипед была ложью.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 20,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/L%C3%BCge"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-luege-lie"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-luege-lie",
+            "de": "die Lüge",
+            "part": "noun",
+            "forms": "die Lügen",
+            "definition_de": "Eine bewusst unwahre Behauptung.",
+            "translations_ru": [
+              "ложь",
+              "враньё"
+            ],
+            "grammar_hint": "eine Lüge erzählen; Gegenteil: die Wahrheit; das Lügen — процесс лжи.",
+            "example": "Später stellte sich seine Geschichte als Lüge heraus.",
+            "example_ru": "Позже выяснилось, что его история была ложью."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/L%C3%BCge"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_e406aa0157b880742b0a",
+      "alias_ids": [
+        "b1-lust-on-something"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_e406aa0157b880742b0a",
+        "de": "die Lust",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "желание",
+          "охота"
+        ],
+        "definition_de": "Das Gefühl, etwas gerne tun oder haben zu wollen.",
+        "forms": "В этом значении без Plural",
+        "example": "Ich habe Lust auf einen Spaziergang.",
+        "example_ru": "Мне хочется прогуляться.",
+        "grammar_hint": "Lust auf + Akkusativ haben; Lust haben, etwas zu tun.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 20,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Lust"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-lust-on-something"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-lust-on-something",
+            "de": "Lust auf etwas haben",
+            "part": "phrase",
+            "forms": "die Lust; без мн. ч. в данном значении",
+            "definition_de": "Etwas gern haben, essen oder unternehmen wollen.",
+            "translations_ru": [
+              "хотеть чего-либо",
+              "иметь желание"
+            ],
+            "grammar_hint": "Lust auf + Akkusativ: auf einen Tee, auf einen Ausflug. keine Lust auf etwas haben — не хотеть чего-либо.",
+            "example": "Hast du Lust auf einen Spaziergang?",
+            "example_ru": "Хочешь прогуляться?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Lust"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-395-1",
+      "alias_ids": [
+        "b1-lustig-funny"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-395-1",
+        "de": "lustig",
+        "lemma": "lustig",
+        "ru": "забавный; смешной; весёлый (о фильме или истории)",
+        "uk": "",
+        "translations_ru": [
+          "забавный",
+          "смешной",
+          "весёлый (о фильме или истории)"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "lustiger · am lustigsten",
+        "definition_de": "So, dass man lachen muss oder gute Laune bekommt.",
+        "example": "Der Film ist lustig.",
+        "example_ru": "Фильм смешной.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "ea6d9d12a6beaa930a47"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-lustig-funny"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-lustig-funny",
+            "de": "lustig",
+            "part": "adj",
+            "forms": "lustig · lustiger · am lustigsten",
+            "definition_de": "So unterhaltsam, dass man lachen oder sich freuen kann.",
+            "translations_ru": [
+              "смешной",
+              "забавный",
+              "весёлый"
+            ],
+            "grammar_hint": "ein lustiger Film; etwas Lustiges — субстантивированное прилагательное с большой буквы. Nicht immer gleichbedeutend mit komisch (странный / смешной).",
+            "example": "Auf der Reise ist uns etwas Lustiges passiert.",
+            "example_ru": "В поездке с нами произошло что-то забавное."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/lustig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_64af129e22d6e3d3bad7",
+      "alias_ids": [
+        "b1-machen-do"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_64af129e22d6e3d3bad7",
+        "de": "machen",
+        "lemma": "machen",
+        "part": "verb",
+        "level": "A1",
+        "ru": "делать; сделать",
+        "uk": "робити; зробити",
+        "translations_ru": [
+          "делать",
+          "сделать"
+        ],
+        "topic": "Повседневная жизнь",
+        "topics": [
+          "Повседневная жизнь"
+        ],
+        "forms": "macht · machte · hat gemacht",
+        "definition_de": "Eine Tätigkeit ausführen oder etwas herstellen.",
+        "example": "Was machst du am Wochenende?",
+        "example_ru": "Что ты делаешь на выходных?",
+        "note": "etwas machen + Akkusativ; Hausaufgaben machen. Essen machen — готовить еду.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 20,
+            "scope": "sense"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-machen-do"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-machen-do",
+            "de": "machen",
+            "part": "verb",
+            "forms": "macht · machte · hat gemacht",
+            "definition_de": "Eine Tätigkeit ausführen oder erledigen.",
+            "translations_ru": [
+              "делать",
+              "выполнять",
+              "заниматься чем-либо"
+            ],
+            "grammar_hint": "etwas (Akkusativ) machen; Was machst du? Часто в устойчивых сочетаниях, которые будут рассмотрены отдельно.",
+            "example": "Was machst du nach dem Unterricht?",
+            "example_ru": "Что ты делаешь после урока?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 61,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/machen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

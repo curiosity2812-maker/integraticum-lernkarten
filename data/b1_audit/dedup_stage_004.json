@@ -1,0 +1,730 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged overlay for cross-batch candidates 1–5 of 44. Same lexical sense, distinct IDs. Earliest source row retained as canonical, old second ID preserved as alias, not yet implemented in progress storage. Glace variants require source review. Original batches unchanged. Row coordinates one-based and bound to SHA; original records preserve all evidence.",
+  "candidate_groups_reviewed": 5,
+  "input_records": 10,
+  "output_records": 5,
+  "alias_map": {
+    "b1-bub-boy-ch": "b1-bub-boy-regional",
+    "b1-selb-identical": "b1-derselbe-the-very-same",
+    "b1-ecard-at": "b1-ecard-austrian-insurance",
+    "b1-einschalten-on": "b1-einschalten-switch-on",
+    "b1-glace-icecream-ch": "b1-glace-ch"
+  },
+  "groups": [
+    {
+      "canonical_id": "b1-bub-boy-regional",
+      "alias_ids": [
+        "b1-bub-boy-ch"
+      ],
+      "retain": {
+        "batch": 10,
+        "row": 21
+      },
+      "suppress": {
+        "batch": 42,
+        "row": 1
+      },
+      "merged_record": {
+        "id": "b1-bub-boy-regional",
+        "de": "der Bub",
+        "lemma": "Bub",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "мальчик",
+          "мальчик (Австрия, Швейцария, юг Германии)"
+        ],
+        "definition_de": "Ein Junge, besonders im süddeutschen, österreichischen und schweizerischen Sprachgebrauch.",
+        "example": "Die Buben spielen nach der Schule im Hof.",
+        "example_ru": "Мальчики играют после школы во дворе.",
+        "forms": "die Buben",
+        "grammar_hint": "Региональное слово, употребляется в том числе в Швейцарии и Австрии. Общеупотребительный вариант: der Junge.\nРегиональный вариант Junge; слабое склонение, разговорно также сильные формы.",
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения",
+          "Семья и отношения"
+        ],
+        "equivalent": "der Junge",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Bub",
+            "https://www.duden.de/rechtschreibung/Bub"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [
+          "dict_1ebdefba7a1a403ede11"
+        ],
+        "alternative_definitions_de": [
+          "Ein Junge im Kindesalter."
+        ],
+        "alternative_forms": [
+          "die Buben; den/dem/des Buben"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Buben spielen im Garten.",
+            "ru": "Мальчики играют в саду."
+          }
+        ],
+        "alternative_surfaces": [],
+        "alias_ids": [
+          "b1-bub-boy-ch"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 10,
+          "row": 21,
+          "sha": "d7b7438f6913fc087745d286705de733a63a3624",
+          "record": {
+            "id": "b1-bub-boy-regional",
+            "de": "der Bub",
+            "lemma": "Bub",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "мальчик"
+            ],
+            "definition_de": "Ein Junge, besonders im süddeutschen, österreichischen und schweizerischen Sprachgebrauch.",
+            "example": "Die Buben spielen nach der Schule im Hof.",
+            "example_ru": "Мальчики играют после школы во дворе.",
+            "forms": "die Buben",
+            "grammar_hint": "Региональное слово, употребляется в том числе в Швейцарии и Австрии. Общеупотребительный вариант: der Junge.",
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ],
+            "equivalent": "der Junge",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Bub",
+                "https://www.duden.de/rechtschreibung/Bub"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": [
+              "dict_1ebdefba7a1a403ede11"
+            ]
+          }
+        },
+        {
+          "batch": 42,
+          "row": 1,
+          "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+          "record": {
+            "id": "b1-bub-boy-ch",
+            "de": "der Bub",
+            "lemma": "Bub",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "мальчик (Австрия, Швейцария, юг Германии)"
+            ],
+            "definition_de": "Ein Junge im Kindesalter.",
+            "example": "Die Buben spielen im Garten.",
+            "example_ru": "Мальчики играют в саду.",
+            "forms": "die Buben; den/dem/des Buben",
+            "grammar_hint": "Региональный вариант Junge; слабое склонение, разговорно также сильные формы.",
+            "topic": "Семья и отношения",
+            "topics": [
+              "Семья и отношения"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 53,
+                "scope": "regional_variant",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Bub"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-derselbe-the-very-same",
+      "alias_ids": [
+        "b1-selb-identical"
+      ],
+      "retain": {
+        "batch": 11,
+        "row": 24
+      },
+      "suppress": {
+        "batch": 85,
+        "row": 24
+      },
+      "merged_record": {
+        "id": "b1-derselbe-the-very-same",
+        "de": "derselbe / dieselbe / dasselbe",
+        "lemma": "derselbe",
+        "part": "pron",
+        "level": "B1",
+        "translations_ru": [
+          "тот же самый / та же самая / то же самое",
+          "тот же самый",
+          "та же самая",
+          "то же самое"
+        ],
+        "definition_de": "Bezeichnet genau dieselbe Person oder Sache, die schon gemeint oder genannt wurde.",
+        "example": "Wir sind gestern mit demselben Zug gefahren.",
+        "example_ru": "Вчера мы ехали на одном и том же поезде.",
+        "forms": "derselbe · dieselbe · dasselbe · Pl. dieselben",
+        "grammar_hint": "Меняются обе части: derselbe Zug → mit demselben Zug. Сравни: der gleiche Zug может обозначать поезд того же типа.\nОбе части склоняются: denselben Bus, demselben Mann; am selben Tag. Derselbe подчёркивает идентичность, der gleiche — совпадение вида; в разговорной речи различие не всегда строго.",
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/derselbe"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [
+          "dict_e42987d87d3988e35487"
+        ],
+        "alternative_definitions_de": [
+          "Verweist auf die Identität einer bereits bekannten Person oder Sache."
+        ],
+        "alternative_forms": [
+          "derselbe · dieselbe · dasselbe; Pl. dieselben"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir nehmen jeden Morgen denselben Bus.",
+            "ru": "Каждое утро мы ездим на одном и том же автобусе."
+          }
+        ],
+        "alternative_surfaces": [],
+        "alias_ids": [
+          "b1-selb-identical"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 11,
+          "row": 24,
+          "sha": "c4f1b7b5ce8e4cb78da72fefc8eaf80e90814af4",
+          "record": {
+            "id": "b1-derselbe-the-very-same",
+            "de": "derselbe / dieselbe / dasselbe",
+            "lemma": "derselbe",
+            "part": "pron",
+            "level": "B1",
+            "translations_ru": [
+              "тот же самый / та же самая / то же самое"
+            ],
+            "definition_de": "Bezeichnet genau dieselbe Person oder Sache, die schon gemeint oder genannt wurde.",
+            "example": "Wir sind gestern mit demselben Zug gefahren.",
+            "example_ru": "Вчера мы ехали на одном и том же поезде.",
+            "forms": "derselbe · dieselbe · dasselbe · Pl. dieselben",
+            "grammar_hint": "Меняются обе части: derselbe Zug → mit demselben Zug. Сравни: der gleiche Zug может обозначать поезд того же типа.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/derselbe"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": [
+              "dict_e42987d87d3988e35487"
+            ]
+          }
+        },
+        {
+          "batch": 85,
+          "row": 24,
+          "sha": "64c84a56f0f676454a82d6bccf1fc89e42750386",
+          "record": {
+            "id": "b1-selb-identical",
+            "de": "derselbe / dieselbe / dasselbe",
+            "lemma": "derselbe",
+            "part": "pron",
+            "level": "B1",
+            "translations_ru": [
+              "тот же самый",
+              "та же самая",
+              "то же самое"
+            ],
+            "definition_de": "Verweist auf die Identität einer bereits bekannten Person oder Sache.",
+            "example": "Wir nehmen jeden Morgen denselben Bus.",
+            "example_ru": "Каждое утро мы ездим на одном и том же автобусе.",
+            "forms": "derselbe · dieselbe · dasselbe; Pl. dieselben",
+            "grammar_hint": "Обе части склоняются: denselben Bus, demselben Mann; am selben Tag. Derselbe подчёркивает идентичность, der gleiche — совпадение вида; в разговорной речи различие не всегда строго.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 79,
+                "scope": "context",
+                "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/derselbe"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-ecard-austrian-insurance",
+      "alias_ids": [
+        "b1-ecard-at"
+      ],
+      "retain": {
+        "batch": 13,
+        "row": 21
+      },
+      "suppress": {
+        "batch": 109,
+        "row": 20
+      },
+      "merged_record": {
+        "id": "b1-ecard-austrian-insurance",
+        "de": "die e-card",
+        "lemma": "e-card",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "карта медицинского страхования (Австрия)"
+        ],
+        "definition_de": "Eine österreichische Chipkarte, die unter anderem den Krankenversicherungsschutz nachweist.",
+        "example": "Beim Arzt zeige ich meine e-card.",
+        "example_ru": "У врача я предъявляю карту медицинского страхования.",
+        "forms": "die e-cards",
+        "grammar_hint": "Австрийское название; в Германии Gesundheitskarte, в Швейцарии Versichertenkarte.\nA: e-card; D/CH: Versichertenkarte в соответствующем контексте. Национальные системы различаются.",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 33,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://www.oesterreich.gv.at/de/themen/gesundheit/elektronisches-gesundheitssystem/ecard/ecard",
+            "https://www.gesundheit.gv.at/gesundheitsleistungen/arztbesuch/e-card.html"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine in Österreich verwendete Karte für den Zugang zu Leistungen der Sozialversicherung."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "In der Arztpraxis legt er seine e-card vor.",
+            "ru": "В кабинете врача он предъявляет свою страховую карту."
+          }
+        ],
+        "alternative_surfaces": [],
+        "alias_ids": [
+          "b1-ecard-at"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 13,
+          "row": 21,
+          "sha": "dd4295b18483719a81b57e7216485555187264ef",
+          "record": {
+            "id": "b1-ecard-austrian-insurance",
+            "de": "die e-card",
+            "lemma": "e-card",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "карта медицинского страхования (Австрия)"
+            ],
+            "definition_de": "Eine österreichische Chipkarte, die unter anderem den Krankenversicherungsschutz nachweist.",
+            "example": "Beim Arzt zeige ich meine e-card.",
+            "example_ru": "У врача я предъявляю карту медицинского страхования.",
+            "forms": "die e-cards",
+            "grammar_hint": "Австрийское название; в Германии Gesundheitskarte, в Швейцарии Versichertenkarte.",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 33,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.oesterreich.gv.at/de/themen/gesundheit/elektronisches-gesundheitssystem/ecard/ecard"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 109,
+          "row": 20,
+          "sha": "832b31963512b0484d75989a814f1e79ac2ca228",
+          "record": {
+            "id": "b1-ecard-at",
+            "de": "die e-card",
+            "lemma": "e-card",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "карта медицинского страхования (Австрия)"
+            ],
+            "definition_de": "Eine in Österreich verwendete Karte für den Zugang zu Leistungen der Sozialversicherung.",
+            "example": "In der Arztpraxis legt er seine e-card vor.",
+            "example_ru": "В кабинете врача он предъявляет свою страховую карту.",
+            "forms": "die e-cards",
+            "grammar_hint": "A: e-card; D/CH: Versichertenkarte в соответствующем контексте. Национальные системы различаются.",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 93,
+                "scope": "context_or_regional",
+                "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+              },
+              "meaning": [
+                "https://www.gesundheit.gv.at/gesundheitsleistungen/arztbesuch/e-card.html"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-einschalten-switch-on",
+      "alias_ids": [
+        "b1-einschalten-on"
+      ],
+      "retain": {
+        "batch": 15,
+        "row": 13
+      },
+      "suppress": {
+        "batch": 79,
+        "row": 2
+      },
+      "merged_record": {
+        "id": "b1-einschalten-switch-on",
+        "de": "einschalten",
+        "lemma": "einschalten",
+        "part": "verb",
+        "level": "B1",
+        "translations_ru": [
+          "включать",
+          "включить (устройство)"
+        ],
+        "definition_de": "Ein Gerät in Betrieb setzen.",
+        "example": "Schalte bitte die Lampe ein.",
+        "example_ru": "Включи, пожалуйста, лампу.",
+        "forms": "schaltet ein · schaltete ein · hat eingeschaltet",
+        "grammar_hint": "Отделяемая приставка; противоположное: ausschalten.\nОтделяемая приставка ein-; etwas einschalten (Akk.); противоположность ausschalten.",
+        "topic": "Техника и медиа",
+        "topics": [
+          "Техника и медиа"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 34,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/einschalten"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Schaltest du bitte die Heizung ein?",
+            "ru": "Включишь, пожалуйста, отопление?"
+          }
+        ],
+        "alternative_surfaces": [],
+        "alias_ids": [
+          "b1-einschalten-on"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 15,
+          "row": 13,
+          "sha": "e11de68ec4c6d411172526a35fef951983334910",
+          "record": {
+            "id": "b1-einschalten-switch-on",
+            "de": "einschalten",
+            "lemma": "einschalten",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "включать",
+              "включить (устройство)"
+            ],
+            "definition_de": "Ein Gerät in Betrieb setzen.",
+            "example": "Schalte bitte die Lampe ein.",
+            "example_ru": "Включи, пожалуйста, лампу.",
+            "forms": "schaltet ein · schaltete ein · hat eingeschaltet",
+            "grammar_hint": "Отделяемая приставка; противоположное: ausschalten.",
+            "topic": "Техника и медиа",
+            "topics": [
+              "Техника и медиа"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 34,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/einschalten"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 79,
+          "row": 2,
+          "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+          "record": {
+            "id": "b1-einschalten-on",
+            "de": "einschalten",
+            "lemma": "einschalten",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "включать"
+            ],
+            "definition_de": "Ein Gerät in Betrieb setzen.",
+            "example": "Schaltest du bitte die Heizung ein?",
+            "example_ru": "Включишь, пожалуйста, отопление?",
+            "forms": "schaltet ein · schaltete ein · hat eingeschaltet",
+            "grammar_hint": "Отделяемая приставка ein-; etwas einschalten (Akk.); противоположность ausschalten.",
+            "topic": "Техника и медиа",
+            "topics": [
+              "Техника и медиа"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 76,
+                "scope": "context",
+                "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/einschalten"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-glace-ch",
+      "alias_ids": [
+        "b1-glace-icecream-ch"
+      ],
+      "retain": {
+        "batch": 16,
+        "row": 1
+      },
+      "suppress": {
+        "batch": 30,
+        "row": 10
+      },
+      "merged_record": {
+        "id": "b1-glace-ch",
+        "de": "die Glace",
+        "lemma": "Glace",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "мороженое (швейцарский вариант)",
+          "мороженое (Швейцария)"
+        ],
+        "definition_de": "Eine gefrorene Süßspeise, die in der Schweiz so genannt wird.",
+        "example": "Zum Dessert bestellen wir eine Glace.",
+        "example_ru": "На десерт мы заказываем мороженое.",
+        "forms": "die Glaces (также Glacen в CH)",
+        "grammar_hint": "CH: die Glace; встречается также Glacé. В Германии и Австрии — das Eis. Региональный эквивалент значения A2.\nCH: Glace / Glacé; Goethe указывает оба рода, Wiktionary — женский род для Glace. D/A: das Eis.",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "equivalent": "das Eis",
+        "ch": true,
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 35,
+            "scope": "regional_equivalent"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Glace",
+            "https://www.duden.de/rechtschreibung/Glace_Glasur"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine gefrorene Süßspeise."
+        ],
+        "alternative_forms": [
+          "die Glacen / Glacés"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Sommer esse ich gern Vanilleglace.",
+            "ru": "Летом я люблю есть ванильное мороженое."
+          }
+        ],
+        "alternative_surfaces": [
+          "die/das Glace / Glacé"
+        ],
+        "alias_ids": [
+          "b1-glace-icecream-ch"
+        ],
+        "release_blocker": "Recheck Swiss gender, spelling and plural variants against appropriate ice-cream dictionary sense; one stored Duden URL refers to glaze. Preserve alternatives without marking them independently confirmed."
+      },
+      "original_records": [
+        {
+          "batch": 16,
+          "row": 1,
+          "sha": "f20851521bdaa99738e49e7fa7732a82af061dd0",
+          "record": {
+            "id": "b1-glace-ch",
+            "de": "die Glace",
+            "lemma": "Glace",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "мороженое (швейцарский вариант)"
+            ],
+            "definition_de": "Eine gefrorene Süßspeise, die in der Schweiz so genannt wird.",
+            "example": "Zum Dessert bestellen wir eine Glace.",
+            "example_ru": "На десерт мы заказываем мороженое.",
+            "forms": "die Glaces (также Glacen в CH)",
+            "grammar_hint": "CH: die Glace; встречается также Glacé. В Германии и Австрии — das Eis. Региональный эквивалент значения A2.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "equivalent": "das Eis",
+            "ch": true,
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 35,
+                "scope": "regional_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Glace",
+                "https://www.duden.de/rechtschreibung/Glace_Glasur"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 30,
+          "row": 10,
+          "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+          "record": {
+            "id": "b1-glace-icecream-ch",
+            "de": "die/das Glace / Glacé",
+            "lemma": "Glace",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "мороженое (Швейцария)"
+            ],
+            "definition_de": "Eine gefrorene Süßspeise.",
+            "example": "Im Sommer esse ich gern Vanilleglace.",
+            "example_ru": "Летом я люблю есть ванильное мороженое.",
+            "forms": "die Glacen / Glacés",
+            "grammar_hint": "CH: Glace / Glacé; Goethe указывает оба рода, Wiktionary — женский род для Glace. D/A: das Eis.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 46,
+                "scope": "context"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Glace"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ]
+}

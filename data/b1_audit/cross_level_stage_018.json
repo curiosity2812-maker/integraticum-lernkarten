@@ -1,0 +1,2947 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 333–352 using staged definitions, examples and grammar. Conditional proposals only. No independent CEFR verification or changes to original cards, deployed levels or progress.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    333,
+    352
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 10,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 4,
+  "followup_review": [
+    {
+      "id": "b1-junge-boy",
+      "issue": "Keep мальчик as the base translation; парень is age- and context-dependent. Preserve weak declension and verify regional Bub usage separately."
+    },
+    {
+      "id": "b1-kaffee-gathering",
+      "issue": "Prefer на кофе or в гости на кофе in the example. Verify the broader social-meal reading before using чаепитие as a gloss."
+    },
+    {
+      "id": "b1-karneval-festival",
+      "issue": "Keep Fasching and Fasnacht as related regional terms; verify distribution before assigning categorical country labels."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 333,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same low-age adjective; keep attributive form and comparison.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_041.json",
+        "sha": "bde11c98b241126689f885816a12d4aad47b89a8",
+        "batch": 41,
+        "row": 26,
+        "record": {
+          "id": "b1-jung-age",
+          "de": "jung",
+          "lemma": "jung",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "молодой",
+            "юный"
+          ],
+          "definition_de": "Von noch geringem Lebensalter.",
+          "example": "Unsere Nachbarn sind ein junges Paar.",
+          "example_ru": "Наши соседи — молодая пара.",
+          "forms": "jung · jünger · am jüngsten",
+          "grammar_hint": "junge Leute; zu jung für etwas (Akkusativ); противоположность alt.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 594,
+          "record": {
+            "id": "a1-329-1",
+            "de": "jung",
+            "lemma": "jung",
+            "ru": "молодой",
+            "uk": "",
+            "translations_ru": [
+              "молодой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "jünger · am jüngsten",
+            "definition_de": "Mit einem niedrigen Lebensalter.",
+            "example": "Mein Bruder ist noch jung.",
+            "example_ru": "Мой брат ещё молодой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e64e6a13339dd5a4af9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-329-1",
+        "alias_id": "b1-jung-age",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-329-1"
+      }
+    },
+    {
+      "candidate_number": 334,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Figurative im Herzen jung bleiben and bleiben plus predicative adjective merit dedicated practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_041.json",
+        "sha": "bde11c98b241126689f885816a12d4aad47b89a8",
+        "batch": 41,
+        "row": 27,
+        "record": {
+          "id": "b1-jung-stay",
+          "de": "jung bleiben",
+          "lemma": "jung",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "оставаться молодым",
+            "сохранять молодость"
+          ],
+          "definition_de": "Auch mit zunehmendem Alter jugendlich wirken oder sich so fühlen.",
+          "example": "Sie ist im Herzen jung geblieben.",
+          "example_ru": "В душе она осталась молодой.",
+          "forms": "bleibt · blieb · ist geblieben; jung · jünger · am jüngsten",
+          "grammar_hint": "bleiben + прилагательное без окончания; Perfekt с sein.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 594,
+          "record": {
+            "id": "a1-329-1",
+            "de": "jung",
+            "lemma": "jung",
+            "ru": "молодой",
+            "uk": "",
+            "translations_ru": [
+              "молодой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "jünger · am jüngsten",
+            "definition_de": "Mit einem niedrigen Lebensalter.",
+            "example": "Mein Bruder ist noch jung.",
+            "example_ru": "Мой брат ещё молодой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e64e6a13339dd5a4af9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 335,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Same low age, applied at the time of an event; preserve the adverbial gloss and construction separately.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_041.json",
+        "sha": "bde11c98b241126689f885816a12d4aad47b89a8",
+        "batch": 41,
+        "row": 28,
+        "record": {
+          "id": "b1-jung-adverbial",
+          "de": "jung",
+          "lemma": "jung",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "в молодом возрасте",
+            "рано (по возрасту)"
+          ],
+          "definition_de": "Beschreibt das geringe Lebensalter bei einem Ereignis.",
+          "example": "Mein Großvater begann sehr jung zu arbeiten.",
+          "example_ru": "Мой дедушка начал работать в очень молодом возрасте.",
+          "forms": "jung · jünger · am jüngsten",
+          "grammar_hint": "jung heiraten / jung anfangen; прилагательное в наречном употреблении не склоняется.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 594,
+          "record": {
+            "id": "a1-329-1",
+            "de": "jung",
+            "lemma": "jung",
+            "ru": "молодой",
+            "uk": "",
+            "translations_ru": [
+              "молодой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "jünger · am jüngsten",
+            "definition_de": "Mit einem niedrigen Lebensalter.",
+            "example": "Mein Bruder ist noch jung.",
+            "example_ru": "Мой брат ещё молодой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e64e6a13339dd5a4af9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-329-1",
+        "alias_id": "b1-jung-adverbial",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-329-1"
+      }
+    },
+    {
+      "candidate_number": 336,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 already lists both comparative degrees; preserve als and the capitalized nominalized form as contextual practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_041.json",
+        "sha": "bde11c98b241126689f885816a12d4aad47b89a8",
+        "batch": 41,
+        "row": 29,
+        "record": {
+          "id": "b1-jung-comparison",
+          "de": "jünger / der Jüngste",
+          "lemma": "jung",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "моложе",
+            "самый младший"
+          ],
+          "definition_de": "Vergleicht das Alter von Personen innerhalb einer Gruppe.",
+          "example": "Mein Bruder ist drei Jahre jünger als ich.",
+          "example_ru": "Мой брат на три года младше меня.",
+          "forms": "jung · jünger · am jüngsten",
+          "grammar_hint": "Komparativ + als; der Jüngste / die Jüngste — субстантивированное прилагательное с большой буквы.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 594,
+          "record": {
+            "id": "a1-329-1",
+            "de": "jung",
+            "lemma": "jung",
+            "ru": "молодой",
+            "uk": "",
+            "translations_ru": [
+              "молодой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "jünger · am jüngsten",
+            "definition_de": "Mit einem niedrigen Lebensalter.",
+            "example": "Mein Bruder ist noch jung.",
+            "example_ru": "Мой брат ещё молодой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e64e6a13339dd5a4af9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-329-1",
+        "alias_id": "b1-jung-comparison",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-329-1"
+      }
+    },
+    {
+      "candidate_number": 337,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same boy sense. Treat парень as a context-dependent gloss requiring age/register review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_041.json",
+        "sha": "bde11c98b241126689f885816a12d4aad47b89a8",
+        "batch": 41,
+        "row": 30,
+        "record": {
+          "id": "b1-junge-boy",
+          "de": "der Junge",
+          "lemma": "Junge",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "мальчик",
+            "парень (в зависимости от возраста)"
+          ],
+          "definition_de": "Ein männliches Kind oder ein junger Mensch.",
+          "example": "Der Junge wartet vor der Schule auf seinen Vater.",
+          "example_ru": "Мальчик ждёт своего отца перед школой.",
+          "forms": "die Jungen",
+          "grammar_hint": "n-Deklination: den/dem/des Jungen. В Австрии и Швейцарии также der Bub; не путать с прилагательным jung.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Junge"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 461,
+          "record": {
+            "id": "a1-330-1",
+            "de": "der Junge",
+            "lemma": "Junge",
+            "ru": "мальчик",
+            "uk": "",
+            "translations_ru": [
+              "мальчик"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Jungen",
+            "definition_de": "Ein männliches Kind.",
+            "example": "Der Junge spielt im Garten.",
+            "example_ru": "Мальчик играет в саду.",
+            "note": "Akkusativ и Dativ: den Jungen, dem Jungen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "3e6e1d7f01aedaf13fa4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-330-1",
+        "alias_id": "b1-junge-boy",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-330-1"
+      }
+    },
+    {
+      "candidate_number": 338,
+      "decision": "retain_distinct_sense",
+      "reason": "Retail product in beans or ground form, distinct from the prepared drink.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 5,
+        "record": {
+          "id": "b1-kaffee-product",
+          "de": "der Kaffee",
+          "lemma": "Kaffee",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кофе (зёрна или молотый)"
+          ],
+          "definition_de": "Ein Produkt aus gerösteten Kaffeebohnen.",
+          "example": "Ich kaufe heute gemahlenen Kaffee.",
+          "example_ru": "Сегодня я покупаю молотый кофе.",
+          "forms": "обычно Singular; die Kaffees (сорта)",
+          "grammar_hint": "eine Packung Kaffee; der Kaffee — мужской род.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kaffee"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 33,
+          "record": {
+            "id": "food-kaffee",
+            "de": "der Kaffee",
+            "lemma": "Kaffee",
+            "ru": "кофе",
+            "uk": "",
+            "translations_ru": [
+              "кофе"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно Singular как напиток",
+            "definition_de": "Ein Getränk aus gerösteten Kaffeebohnen.",
+            "example": "Am Morgen trinke ich Kaffee ohne Zucker.",
+            "example_ru": "Утром я пью кофе без сахара.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "2e83a594e28972d7784d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 339,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same beverage; preserve counting a serving as a usage note.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 6,
+        "record": {
+          "id": "b1-kaffee-drink",
+          "de": "der Kaffee",
+          "lemma": "Kaffee",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кофе (напиток)",
+            "чашка кофе"
+          ],
+          "definition_de": "Ein Getränk, das aus gerösteten Kaffeebohnen zubereitet wird.",
+          "example": "Ich hätte gern einen Kaffee mit Milch.",
+          "example_ru": "Я хотела бы чашку кофе с молоком.",
+          "forms": "обычно Singular; die Kaffees (порции/сорта)",
+          "grammar_hint": "Kaffee trinken без артикля; einen Kaffee bestellen — заказать порцию.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kaffee"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 33,
+          "record": {
+            "id": "food-kaffee",
+            "de": "der Kaffee",
+            "lemma": "Kaffee",
+            "ru": "кофе",
+            "uk": "",
+            "translations_ru": [
+              "кофе"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно Singular как напиток",
+            "definition_de": "Ein Getränk aus gerösteten Kaffeebohnen.",
+            "example": "Am Morgen trinke ich Kaffee ohne Zucker.",
+            "example_ru": "Утром я пью кофе без сахара.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "2e83a594e28972d7784d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "food-kaffee",
+        "alias_id": "b1-kaffee-drink",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "food-kaffee"
+      }
+    },
+    {
+      "candidate_number": 340,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Invitation or social visit around coffee; retain the phrase translation and einladen pattern.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 7,
+        "record": {
+          "id": "b1-kaffee-gathering",
+          "de": "zum Kaffee",
+          "lemma": "Kaffee",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "на кофе",
+            "на чаепитие с кофе"
+          ],
+          "definition_de": "Zu einer gemeinsamen Mahlzeit oder einem Treffen mit Kaffee.",
+          "example": "Am Sonntag kommen unsere Nachbarn zum Kaffee.",
+          "example_ru": "В воскресенье соседи придут к нам на кофе.",
+          "forms": "zum = zu dem (+ Dativ)",
+          "grammar_hint": "jemanden (Akkusativ) zum Kaffee einladen; иногда подразумевается также выпечка.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kaffee"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 33,
+          "record": {
+            "id": "food-kaffee",
+            "de": "der Kaffee",
+            "lemma": "Kaffee",
+            "ru": "кофе",
+            "uk": "",
+            "translations_ru": [
+              "кофе"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно Singular как напиток",
+            "definition_de": "Ein Getränk aus gerösteten Kaffeebohnen.",
+            "example": "Am Morgen trinke ich Kaffee ohne Zucker.",
+            "example_ru": "Утром я пью кофе без сахара.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "2e83a594e28972d7784d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 341,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same calendar or scheduling tool; distinguish Terminkalender for an appointment planner.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 10,
+        "record": {
+          "id": "b1-kalender-dates",
+          "de": "der Kalender",
+          "lemma": "Kalender",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "календарь",
+            "ежедневник"
+          ],
+          "definition_de": "Eine Übersicht über Tage, Wochen und Monate, die auch zur Planung dient.",
+          "example": "Ich trage unsere Treffen in den Kalender ein.",
+          "example_ru": "Я вношу наши встречи в календарь.",
+          "forms": "die Kalender",
+          "grammar_hint": "im Kalender nachsehen; einen Termin eintragen. Terminkalender — ежедневник для встреч.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kalender"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 255,
+          "record": {
+            "id": "dict_f4c89a94ec732981e16a",
+            "de": "der Kalender",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "календарь"
+            ],
+            "definition_de": "Eine Übersicht über Tage, Wochen und Monate, in die man auch Termine eintragen kann.",
+            "forms": "Plural · die Kalender",
+            "example": "Der nächste Kurstermin steht in meinem Kalender.",
+            "example_ru": "Дата следующего занятия записана у меня в календаре.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kalender"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f4c89a94ec732981e16a",
+        "alias_id": "b1-kalender-dates",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f4c89a94ec732981e16a"
+      }
+    },
+    {
+      "candidate_number": 342,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A2 temperature example already suggests weather; preserve explicit outdoor clause and the weather gloss separately.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 11,
+        "record": {
+          "id": "b1-kalt-weather",
+          "de": "kalt",
+          "lemma": "kalt",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "холодно",
+            "холодный (о погоде)"
+          ],
+          "definition_de": "Von niedriger Außentemperatur geprägt.",
+          "example": "Im Januar ist es hier oft kalt.",
+          "example_ru": "В январе здесь часто холодно.",
+          "forms": "kalt · kälter · am kältesten",
+          "grammar_hint": "Es ist kalt — холодно на улице; ein kalter Winter — холодная зима.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 489,
+          "record": {
+            "id": "dict_7416a772314fedb3fc1d",
+            "de": "kalt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "холодный",
+              "холодно"
+            ],
+            "definition_de": "Mit wenig Wärme; nicht warm.",
+            "forms": "kalt · kälter · am kältesten",
+            "example": "Heute ist es kälter als gestern.",
+            "example_ru": "Сегодня холоднее, чем вчера.",
+            "grammar_hint": "Mir ist kalt — мне холодно (Dativ); der Tee ist kalt — чай холодный.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kalt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7416a772314fedb3fc1d",
+        "alias_id": "b1-kalt-weather",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7416a772314fedb3fc1d"
+      }
+    },
+    {
+      "candidate_number": 343,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same low physical temperature; the finger example adds a tactile context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 12,
+        "record": {
+          "id": "b1-kalt-object",
+          "de": "kalt",
+          "lemma": "kalt",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "холодный (на ощупь)"
+          ],
+          "definition_de": "Von niedriger Temperatur, die man beim Berühren spürt.",
+          "example": "Deine Finger sind ganz kalt.",
+          "example_ru": "У тебя совсем холодные пальцы.",
+          "forms": "kalt · kälter · am kältesten",
+          "grammar_hint": "kalte Hände haben; kalt sein — состояние.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 489,
+          "record": {
+            "id": "dict_7416a772314fedb3fc1d",
+            "de": "kalt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "холодный",
+              "холодно"
+            ],
+            "definition_de": "Mit wenig Wärme; nicht warm.",
+            "forms": "kalt · kälter · am kältesten",
+            "example": "Heute ist es kälter als gestern.",
+            "example_ru": "Сегодня холоднее, чем вчера.",
+            "grammar_hint": "Mir ist kalt — мне холодно (Dativ); der Tee ist kalt — чай холодный.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kalt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7416a772314fedb3fc1d",
+        "alias_id": "b1-kalt-object",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7416a772314fedb3fc1d"
+      }
+    },
+    {
+      "candidate_number": 344,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Inchoative werden and the verb-final bevor clause are dedicated construction practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 13,
+        "record": {
+          "id": "b1-kalt-food-cooled",
+          "de": "kalt werden",
+          "lemma": "kalt",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "остывать",
+            "становиться холодным"
+          ],
+          "definition_de": "Beim Abkühlen an Temperatur verlieren.",
+          "example": "Iss die Suppe, bevor sie kalt wird.",
+          "example_ru": "Ешь суп, пока он не остыл.",
+          "forms": "wird kalt · wurde kalt · ist kalt geworden",
+          "grammar_hint": "werden + прилагательное — изменение состояния; после bevor глагол в конце.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 489,
+          "record": {
+            "id": "dict_7416a772314fedb3fc1d",
+            "de": "kalt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "холодный",
+              "холодно"
+            ],
+            "definition_de": "Mit wenig Wärme; nicht warm.",
+            "forms": "kalt · kälter · am kältesten",
+            "example": "Heute ist es kälter als gestern.",
+            "example_ru": "Сегодня холоднее, чем вчера.",
+            "grammar_hint": "Mir ist kalt — мне холодно (Dativ); der Tee ist kalt — чай холодный.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kalt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 345,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Food or meal context with essen; retain the phrase and the alternative etwas Kaltes.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 14,
+        "record": {
+          "id": "b1-kalt-food-unheated",
+          "de": "kalt essen",
+          "lemma": "kalt",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "есть холодную пищу",
+            "есть без разогрева"
+          ],
+          "definition_de": "Speisen ohne Erwärmen oder kalt zu sich nehmen.",
+          "example": "Im Sommer essen wir mittags manchmal kalt.",
+          "example_ru": "Летом мы иногда едим на обед холодные блюда.",
+          "forms": "kalt · kälter · am kältesten",
+          "grammar_hint": "kalt essen — есть холодную пищу; etwas Kaltes essen — съесть что-нибудь холодное.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 489,
+          "record": {
+            "id": "dict_7416a772314fedb3fc1d",
+            "de": "kalt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "холодный",
+              "холодно"
+            ],
+            "definition_de": "Mit wenig Wärme; nicht warm.",
+            "forms": "kalt · kälter · am kältesten",
+            "example": "Heute ist es kälter als gestern.",
+            "example_ru": "Сегодня холоднее, чем вчера.",
+            "grammar_hint": "Mir ist kalt — мне холодно (Dativ); der Tee ist kalt — чай холодный.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kalt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 346,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A2 explicitly lists Mir ist kalt; preserve the Dativ experiencer and keep its phrase-level gloss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 15,
+        "record": {
+          "id": "b1-kalt-feeling",
+          "de": "jemandem ist kalt",
+          "lemma": "kalt",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "кому-либо холодно",
+            "мёрзнуть"
+          ],
+          "definition_de": "Eine niedrige Temperatur als unangenehm empfinden.",
+          "example": "Mir ist kalt, ich hole eine Decke.",
+          "example_ru": "Мне холодно, я принесу одеяло.",
+          "forms": "ist kalt · war kalt · ist kalt gewesen",
+          "grammar_hint": "Лицо в Dativ: mir, dir, ihm. Ich bin kalt означает, что сам человек холодный, а не ощущение холода.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 489,
+          "record": {
+            "id": "dict_7416a772314fedb3fc1d",
+            "de": "kalt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "холодный",
+              "холодно"
+            ],
+            "definition_de": "Mit wenig Wärme; nicht warm.",
+            "forms": "kalt · kälter · am kältesten",
+            "example": "Heute ist es kälter als gestern.",
+            "example_ru": "Сегодня холоднее, чем вчера.",
+            "grammar_hint": "Mir ist kalt — мне холодно (Dativ); der Tee ist kalt — чай холодный.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kalt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7416a772314fedb3fc1d",
+        "alias_id": "b1-kalt-feeling",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7416a772314fedb3fc1d"
+      }
+    },
+    {
+      "candidate_number": 347,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same camera for still photos or video.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 17,
+        "record": {
+          "id": "b1-kamera-device",
+          "de": "die Kamera",
+          "lemma": "Kamera",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "камера",
+            "фотоаппарат",
+            "видеокамера"
+          ],
+          "definition_de": "Ein Gerät für Fotos oder Videoaufnahmen.",
+          "example": "Mit dieser Kamera kann man auch Videos aufnehmen.",
+          "example_ru": "На эту камеру можно снимать и видео.",
+          "forms": "die Kameras",
+          "grammar_hint": "mit der Kamera fotografieren; die Digitalkamera.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kamera"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 253,
+          "record": {
+            "id": "dict_9b1a62d00a31a84cd981",
+            "de": "die Kamera",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "камера",
+              "фотоаппарат"
+            ],
+            "definition_de": "Ein Gerät, mit dem man Fotos oder Videos aufnehmen kann.",
+            "forms": "Plural · die Kameras",
+            "example": "Meine Kamera ist klein und passt in die Jackentasche.",
+            "example_ru": "Моя камера маленькая и помещается в карман куртки.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kamera"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9b1a62d00a31a84cd981",
+        "alias_id": "b1-kamera-device",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9b1a62d00a31a84cd981"
+      }
+    },
+    {
+      "candidate_number": 348,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same damaged or nonfunctional state; preserve the related verbs as cross-references.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 26,
+        "record": {
+          "id": "b1-kaputt-broken",
+          "de": "kaputt",
+          "lemma": "kaputt",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "сломанный",
+            "неисправный"
+          ],
+          "definition_de": "Nicht mehr funktionsfähig oder beschädigt.",
+          "example": "Mein alter Wecker ist kaputt.",
+          "example_ru": "Мой старый будильник сломан.",
+          "forms": "в значении неисправности обычно без сравнения; разговорно kaputter · am kaputtesten",
+          "grammar_hint": "kaputt sein — состояние; kaputtgehen — сломаться; kaputtmachen — сломать.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaputt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 595,
+          "record": {
+            "id": "a1-332-1",
+            "de": "kaputt",
+            "lemma": "kaputt",
+            "ru": "сломанный; неисправный",
+            "uk": "",
+            "translations_ru": [
+              "сломанный",
+              "неисправный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Beschädigt und deshalb nicht zu gebrauchen.",
+            "example": "Mein Handy ist kaputt.",
+            "example_ru": "Мой телефон сломан.",
+            "note": "В значении «не работает, сломан» обычно без степеней сравнения; при сравнении степени повреждения разговорное употребление возможно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "a45e21a92f91f86f1544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-332-1",
+        "alias_id": "b1-kaputt-broken",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-332-1"
+      }
+    },
+    {
+      "candidate_number": 349,
+      "decision": "retain_distinct_sense",
+      "reason": "Colloquial exhaustion differs from damage to an object.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 27,
+        "record": {
+          "id": "b1-kaputt-exhausted",
+          "de": "kaputt",
+          "lemma": "kaputt",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "измотанный",
+            "очень уставший"
+          ],
+          "definition_de": "Umgangssprachlich: körperlich oder seelisch sehr erschöpft.",
+          "example": "Nach dem langen Arbeitstag bin ich völlig kaputt.",
+          "example_ru": "После долгого рабочего дня я совершенно вымоталась.",
+          "forms": "kaputt · kaputter · am kaputtesten (разговорно)",
+          "grammar_hint": "Разговорное слово о человеке; нейтральнее erschöpft / sehr müde.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaputt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 595,
+          "record": {
+            "id": "a1-332-1",
+            "de": "kaputt",
+            "lemma": "kaputt",
+            "ru": "сломанный; неисправный",
+            "uk": "",
+            "translations_ru": [
+              "сломанный",
+              "неисправный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Beschädigt und deshalb nicht zu gebrauchen.",
+            "example": "Mein Handy ist kaputt.",
+            "example_ru": "Мой телефон сломан.",
+            "note": "В значении «не работает, сломан» обычно без степеней сравнения; при сравнении степени повреждения разговорное употребление возможно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "a45e21a92f91f86f1544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 350,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same change to a damaged or nonfunctional state; preserve separation and sein in Perfekt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 28,
+        "record": {
+          "id": "b1-kaputtgehen-break",
+          "de": "kaputtgehen",
+          "lemma": "kaputtgehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ломаться",
+            "разбиваться",
+            "выходить из строя"
+          ],
+          "definition_de": "Seine Funktion verlieren oder beschädigt werden.",
+          "example": "Beim Umzug ist eine Lampe kaputtgegangen.",
+          "example_ru": "При переезде сломалась лампа.",
+          "forms": "geht kaputt · ging kaputt · ist kaputtgegangen",
+          "grammar_hint": "Отделяемый компонент; Perfekt с sein; без прямого дополнения.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaputtgehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 596,
+          "record": {
+            "id": "a1-332-2",
+            "de": "kaputtgehen",
+            "lemma": "kaputtgehen",
+            "ru": "ломаться; сломаться",
+            "uk": "",
+            "translations_ru": [
+              "ломаться",
+              "сломаться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht kaputt · ging kaputt · ist kaputtgegangen",
+            "definition_de": "So beschädigt werden, dass etwas nicht mehr funktioniert.",
+            "example": "Das Spielzeug ist kaputtgegangen.",
+            "example_ru": "Игрушка сломалась.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "a45e21a92f91f86f1544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-332-2",
+        "alias_id": "b1-kaputtgehen-break",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-332-2"
+      }
+    },
+    {
+      "candidate_number": 351,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same festive tradition; preserve regional terminology with a follow-up for geographical scope.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_042.json",
+        "sha": "4c0f80ee56f8adc2d6798e655f6eb716367846bc",
+        "batch": 42,
+        "row": 30,
+        "record": {
+          "id": "b1-karneval-festival",
+          "de": "der Karneval",
+          "lemma": "Karneval",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "карнавал"
+          ],
+          "definition_de": "Eine traditionelle Festzeit mit Kostümen und Umzügen vor der Fastenzeit.",
+          "example": "Viele Menschen tragen beim Karneval bunte Kostüme.",
+          "example_ru": "На карнавале многие носят яркие костюмы.",
+          "forms": "die Karnevals / Karnevale",
+          "grammar_hint": "Региональные названия: Fasching (D/A), Fasnacht (CH). Отдельные региональные карточки — при следующей сверке.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Karneval"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 621,
+          "record": {
+            "id": "dict_9657c7553c8100d7f16e",
+            "de": "der Karneval",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "карнавал"
+            ],
+            "forms": "Plural · die Karnevale (редко)",
+            "definition_de": "Ein Fest mit Kostümen und Umzügen, besonders vor der Fastenzeit.",
+            "example": "Im Februar feiern viele Menschen Karneval.",
+            "example_ru": "В феврале многие празднуют карнавал.",
+            "grammar_hint": "Karneval feiern — праздновать карнавал.",
+            "usage_note": "Региональные названия: Fasching, в Швейцарии Fasnacht. Не точный эквивалент русской Масленицы.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 6,
+                "scope": "thematic_headword"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Karneval"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Праздники и традиции",
+            "topics": [
+              "Праздники и традиции"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9657c7553c8100d7f16e",
+        "alias_id": "b1-karneval-festival",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9657c7553c8100d7f16e"
+      }
+    },
+    {
+      "candidate_number": 352,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same postcard or greeting card; the card game and menu records represent separate meanings.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 7,
+        "record": {
+          "id": "b1-karte-postcard",
+          "de": "die Karte",
+          "lemma": "Karte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "открытка"
+          ],
+          "definition_de": "Eine kurze schriftliche Nachricht auf einem festen Stück Papier.",
+          "example": "Wir schicken unseren Freunden eine Karte aus den Ferien.",
+          "example_ru": "Мы отправляем друзьям открытку из отпуска.",
+          "forms": "die Karten",
+          "grammar_hint": "jemandem (Dativ) eine Karte (Akkusativ) schreiben; Postkarte, Grußkarte.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 462,
+          "record": {
+            "id": "a1-333-1",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "открытка",
+            "uk": "",
+            "translations_ru": [
+              "открытка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+            "example": "Ich schicke dir eine Karte aus Bern.",
+            "example_ru": "Я пришлю тебе открытку из Берна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 759,
+          "record": {
+            "id": "a1-333-2",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "игральная карта",
+            "uk": "",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Ein Stück aus einem Kartenspiel.",
+            "example": "Zieh bitte eine Karte.",
+            "example_ru": "Вытащи, пожалуйста, одну карту.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 760,
+          "record": {
+            "id": "a1-333-3",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+            "example": "Kann ich die Karte sehen?",
+            "example_ru": "Можно посмотреть меню?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-333-1",
+        "alias_id": "b1-karte-postcard",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-333-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-329-1",
+      "alias_ids": [
+        "b1-jung-age",
+        "b1-jung-adverbial",
+        "b1-jung-comparison"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-329-1",
+        "de": "jung",
+        "lemma": "jung",
+        "ru": "молодой; юный",
+        "uk": "",
+        "translations_ru": [
+          "молодой",
+          "юный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Семья и отношения",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "jünger · am jüngsten",
+        "definition_de": "Mit einem niedrigen Lebensalter.",
+        "example": "Mein Bruder ist noch jung.",
+        "example_ru": "Мой брат ещё молодой.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "7e64e6a13339dd5a4af9"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "junge Leute; zu jung für etwas (Akkusativ); противоположность alt.\njung heiraten / jung anfangen; прилагательное в наречном употреблении не склоняется.\nKomparativ + als; der Jüngste / die Jüngste — субстантивированное прилагательное с большой буквы.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "jung · jünger · am jüngsten"
+        ],
+        "alternative_definitions_de": [
+          "Von noch geringem Lebensalter."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Unsere Nachbarn sind ein junges Paar.",
+            "ru": "Наши соседи — молодая пара."
+          },
+          {
+            "de": "Mein Großvater begann sehr jung zu arbeiten.",
+            "ru": "Мой дедушка начал работать в очень молодом возрасте."
+          },
+          {
+            "de": "Mein Bruder ist drei Jahre jünger als ich.",
+            "ru": "Мой брат на три года младше меня."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-jung-age",
+            "de": "jung",
+            "part": "adj",
+            "forms": "jung · jünger · am jüngsten",
+            "definition_de": "Von noch geringem Lebensalter.",
+            "translations_ru": [
+              "молодой",
+              "юный"
+            ],
+            "grammar_hint": "junge Leute; zu jung für etwas (Akkusativ); противоположность alt.",
+            "example": "Unsere Nachbarn sind ein junges Paar.",
+            "example_ru": "Наши соседи — молодая пара."
+          },
+          {
+            "id": "b1-jung-adverbial",
+            "de": "jung",
+            "part": "adj",
+            "forms": "jung · jünger · am jüngsten",
+            "definition_de": "Beschreibt das geringe Lebensalter bei einem Ereignis.",
+            "translations_ru": [
+              "в молодом возрасте",
+              "рано (по возрасту)"
+            ],
+            "grammar_hint": "jung heiraten / jung anfangen; прилагательное в наречном употреблении не склоняется.",
+            "example": "Mein Großvater begann sehr jung zu arbeiten.",
+            "example_ru": "Мой дедушка начал работать в очень молодом возрасте."
+          },
+          {
+            "id": "b1-jung-comparison",
+            "de": "jünger / der Jüngste",
+            "part": "adj",
+            "forms": "jung · jünger · am jüngsten",
+            "definition_de": "Vergleicht das Alter von Personen innerhalb einer Gruppe.",
+            "translations_ru": [
+              "моложе",
+              "самый младший"
+            ],
+            "grammar_hint": "Komparativ + als; der Jüngste / die Jüngste — субстантивированное прилагательное с большой буквы.",
+            "example": "Mein Bruder ist drei Jahre jünger als ich.",
+            "example_ru": "Мой брат на три года младше меня."
+          }
+        ],
+        "alias_ids": [
+          "b1-jung-age",
+          "b1-jung-adverbial",
+          "b1-jung-comparison"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/jung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-330-1",
+      "alias_ids": [
+        "b1-junge-boy"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-330-1",
+        "de": "der Junge",
+        "lemma": "Junge",
+        "ru": "мальчик",
+        "uk": "",
+        "translations_ru": [
+          "мальчик"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Семья и отношения"
+        ],
+        "forms": "die Jungen",
+        "definition_de": "Ein männliches Kind.",
+        "example": "Der Junge spielt im Garten.",
+        "example_ru": "Мальчик играет в саду.",
+        "note": "Akkusativ и Dativ: den Jungen, dem Jungen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "3e6e1d7f01aedaf13fa4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "n-Deklination: den/dem/des Jungen. В Австрии и Швейцарии также der Bub; не путать с прилагательным jung.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein männliches Kind oder ein junger Mensch."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Der Junge wartet vor der Schule auf seinen Vater.",
+            "ru": "Мальчик ждёт своего отца перед школой."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-junge-boy",
+            "de": "der Junge",
+            "part": "noun",
+            "forms": "die Jungen",
+            "definition_de": "Ein männliches Kind oder ein junger Mensch.",
+            "translations_ru": [
+              "мальчик",
+              "парень (в зависимости от возраста)"
+            ],
+            "grammar_hint": "n-Deklination: den/dem/des Jungen. В Австрии и Швейцарии также der Bub; не путать с прилагательным jung.",
+            "example": "Der Junge wartet vor der Schule auf seinen Vater.",
+            "example_ru": "Мальчик ждёт своего отца перед школой."
+          }
+        ],
+        "alias_ids": [
+          "b1-junge-boy"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Junge"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "food-kaffee",
+      "alias_ids": [
+        "b1-kaffee-drink"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "food-kaffee",
+        "de": "der Kaffee",
+        "lemma": "Kaffee",
+        "ru": "кофе; кофе (напиток)",
+        "uk": "",
+        "translations_ru": [
+          "кофе",
+          "кофе (напиток)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "обычно Singular как напиток",
+        "definition_de": "Ein Getränk aus gerösteten Kaffeebohnen.",
+        "example": "Am Morgen trinke ich Kaffee ohne Zucker.",
+        "example_ru": "Утром я пью кофе без сахара.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "2e83a594e28972d7784d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Kaffee trinken без артикля; einen Kaffee bestellen — заказать порцию.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "обычно Singular; die Kaffees (порции/сорта)"
+        ],
+        "alternative_definitions_de": [
+          "Ein Getränk, das aus gerösteten Kaffeebohnen zubereitet wird."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich hätte gern einen Kaffee mit Milch.",
+            "ru": "Я хотела бы чашку кофе с молоком."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kaffee-drink",
+            "de": "der Kaffee",
+            "part": "noun",
+            "forms": "обычно Singular; die Kaffees (порции/сорта)",
+            "definition_de": "Ein Getränk, das aus gerösteten Kaffeebohnen zubereitet wird.",
+            "translations_ru": [
+              "кофе (напиток)",
+              "чашка кофе"
+            ],
+            "grammar_hint": "Kaffee trinken без артикля; einen Kaffee bestellen — заказать порцию.",
+            "example": "Ich hätte gern einen Kaffee mit Milch.",
+            "example_ru": "Я хотела бы чашку кофе с молоком."
+          }
+        ],
+        "alias_ids": [
+          "b1-kaffee-drink"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kaffee"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_f4c89a94ec732981e16a",
+      "alias_ids": [
+        "b1-kalender-dates"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f4c89a94ec732981e16a",
+        "de": "der Kalender",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "календарь"
+        ],
+        "definition_de": "Eine Übersicht über Tage, Wochen und Monate, in die man auch Termine eintragen kann.",
+        "forms": "Plural · die Kalender",
+        "example": "Der nächste Kurstermin steht in meinem Kalender.",
+        "example_ru": "Дата следующего занятия записана у меня в календаре.",
+        "grammar_hint": "im Kalender nachsehen; einen Termin eintragen. Terminkalender — ежедневник для встреч.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kalender"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы",
+          "Время и даты"
+        ],
+        "ru": "календарь",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Kalender"
+        ],
+        "alternative_definitions_de": [
+          "Eine Übersicht über Tage, Wochen und Monate, die auch zur Planung dient."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich trage unsere Treffen in den Kalender ein.",
+            "ru": "Я вношу наши встречи в календарь."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kalender-dates",
+            "de": "der Kalender",
+            "part": "noun",
+            "forms": "die Kalender",
+            "definition_de": "Eine Übersicht über Tage, Wochen und Monate, die auch zur Planung dient.",
+            "translations_ru": [
+              "календарь",
+              "ежедневник"
+            ],
+            "grammar_hint": "im Kalender nachsehen; einen Termin eintragen. Terminkalender — ежедневник для встреч.",
+            "example": "Ich trage unsere Treffen in den Kalender ein.",
+            "example_ru": "Я вношу наши встречи в календарь."
+          }
+        ],
+        "alias_ids": [
+          "b1-kalender-dates"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kalender"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_7416a772314fedb3fc1d",
+      "alias_ids": [
+        "b1-kalt-weather",
+        "b1-kalt-object",
+        "b1-kalt-feeling"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_7416a772314fedb3fc1d",
+        "de": "kalt",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "холодный",
+          "холодно",
+          "холодный (на ощупь)"
+        ],
+        "definition_de": "Mit wenig Wärme; nicht warm.",
+        "forms": "kalt · kälter · am kältesten",
+        "example": "Heute ist es kälter als gestern.",
+        "example_ru": "Сегодня холоднее, чем вчера.",
+        "grammar_hint": "Mir ist kalt — мне холодно (Dativ); der Tee ist kalt — чай холодный.\nEs ist kalt — холодно на улице; ein kalter Winter — холодная зима.\nkalte Hände haben; kalt sein — состояние.\nЛицо в Dativ: mir, dir, ihm. Ich bin kalt означает, что сам человек холодный, а не ощущение холода.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/kalt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода",
+          "Природа и погода",
+          "Здоровье"
+        ],
+        "ru": "холодный; холодно; холодный (на ощупь)",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Von niedriger Temperatur, die man beim Berühren spürt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Januar ist es hier oft kalt.",
+            "ru": "В январе здесь часто холодно."
+          },
+          {
+            "de": "Deine Finger sind ganz kalt.",
+            "ru": "У тебя совсем холодные пальцы."
+          },
+          {
+            "de": "Mir ist kalt, ich hole eine Decke.",
+            "ru": "Мне холодно, я принесу одеяло."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kalt-weather",
+            "de": "kalt",
+            "part": "adj",
+            "forms": "kalt · kälter · am kältesten",
+            "definition_de": "Von niedriger Außentemperatur geprägt.",
+            "translations_ru": [
+              "холодно",
+              "холодный (о погоде)"
+            ],
+            "grammar_hint": "Es ist kalt — холодно на улице; ein kalter Winter — холодная зима.",
+            "example": "Im Januar ist es hier oft kalt.",
+            "example_ru": "В январе здесь часто холодно."
+          },
+          {
+            "id": "b1-kalt-object",
+            "de": "kalt",
+            "part": "adj",
+            "forms": "kalt · kälter · am kältesten",
+            "definition_de": "Von niedriger Temperatur, die man beim Berühren spürt.",
+            "translations_ru": [
+              "холодный (на ощупь)"
+            ],
+            "grammar_hint": "kalte Hände haben; kalt sein — состояние.",
+            "example": "Deine Finger sind ganz kalt.",
+            "example_ru": "У тебя совсем холодные пальцы."
+          },
+          {
+            "id": "b1-kalt-feeling",
+            "de": "jemandem ist kalt",
+            "part": "phrase",
+            "forms": "ist kalt · war kalt · ist kalt gewesen",
+            "definition_de": "Eine niedrige Temperatur als unangenehm empfinden.",
+            "translations_ru": [
+              "кому-либо холодно",
+              "мёрзнуть"
+            ],
+            "grammar_hint": "Лицо в Dativ: mir, dir, ihm. Ich bin kalt означает, что сам человек холодный, а не ощущение холода.",
+            "example": "Mir ist kalt, ich hole eine Decke.",
+            "example_ru": "Мне холодно, я принесу одеяло."
+          }
+        ],
+        "alias_ids": [
+          "b1-kalt-weather",
+          "b1-kalt-object",
+          "b1-kalt-feeling"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kalt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_9b1a62d00a31a84cd981",
+      "alias_ids": [
+        "b1-kamera-device"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9b1a62d00a31a84cd981",
+        "de": "die Kamera",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "камера",
+          "фотоаппарат",
+          "видеокамера"
+        ],
+        "definition_de": "Ein Gerät, mit dem man Fotos oder Videos aufnehmen kann.",
+        "forms": "Plural · die Kameras",
+        "example": "Meine Kamera ist klein und passt in die Jackentasche.",
+        "example_ru": "Моя камера маленькая и помещается в карман куртки.",
+        "grammar_hint": "mit der Kamera fotografieren; die Digitalkamera.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kamera"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения",
+          "Техника и медиа"
+        ],
+        "ru": "камера; фотоаппарат; видеокамера",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Kameras"
+        ],
+        "alternative_definitions_de": [
+          "Ein Gerät für Fotos oder Videoaufnahmen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Mit dieser Kamera kann man auch Videos aufnehmen.",
+            "ru": "На эту камеру можно снимать и видео."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kamera-device",
+            "de": "die Kamera",
+            "part": "noun",
+            "forms": "die Kameras",
+            "definition_de": "Ein Gerät für Fotos oder Videoaufnahmen.",
+            "translations_ru": [
+              "камера",
+              "фотоаппарат",
+              "видеокамера"
+            ],
+            "grammar_hint": "mit der Kamera fotografieren; die Digitalkamera.",
+            "example": "Mit dieser Kamera kann man auch Videos aufnehmen.",
+            "example_ru": "На эту камеру можно снимать и видео."
+          }
+        ],
+        "alias_ids": [
+          "b1-kamera-device"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 53,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kamera"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-332-1",
+      "alias_ids": [
+        "b1-kaputt-broken"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-332-1",
+        "de": "kaputt",
+        "lemma": "kaputt",
+        "ru": "сломанный; неисправный",
+        "uk": "",
+        "translations_ru": [
+          "сломанный",
+          "неисправный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Дом и быт"
+        ],
+        "forms": "В данном значении обычно без степеней сравнения",
+        "definition_de": "Beschädigt und deshalb nicht zu gebrauchen.",
+        "example": "Mein Handy ist kaputt.",
+        "example_ru": "Мой телефон сломан.",
+        "note": "В значении «не работает, сломан» обычно без степеней сравнения; при сравнении степени повреждения разговорное употребление возможно.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "a45e21a92f91f86f1544"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "kaputt sein — состояние; kaputtgehen — сломаться; kaputtmachen — сломать.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "в значении неисправности обычно без сравнения; разговорно kaputter · am kaputtesten"
+        ],
+        "alternative_definitions_de": [
+          "Nicht mehr funktionsfähig oder beschädigt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Mein alter Wecker ist kaputt.",
+            "ru": "Мой старый будильник сломан."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kaputt-broken",
+            "de": "kaputt",
+            "part": "adj",
+            "forms": "в значении неисправности обычно без сравнения; разговорно kaputter · am kaputtesten",
+            "definition_de": "Nicht mehr funktionsfähig oder beschädigt.",
+            "translations_ru": [
+              "сломанный",
+              "неисправный"
+            ],
+            "grammar_hint": "kaputt sein — состояние; kaputtgehen — сломаться; kaputtmachen — сломать.",
+            "example": "Mein alter Wecker ist kaputt.",
+            "example_ru": "Мой старый будильник сломан."
+          }
+        ],
+        "alias_ids": [
+          "b1-kaputt-broken"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaputt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-332-2",
+      "alias_ids": [
+        "b1-kaputtgehen-break"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-332-2",
+        "de": "kaputtgehen",
+        "lemma": "kaputtgehen",
+        "ru": "ломаться; сломаться; разбиваться; выходить из строя",
+        "uk": "",
+        "translations_ru": [
+          "ломаться",
+          "сломаться",
+          "разбиваться",
+          "выходить из строя"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Дом и быт"
+        ],
+        "forms": "geht kaputt · ging kaputt · ist kaputtgegangen",
+        "definition_de": "So beschädigt werden, dass etwas nicht mehr funktioniert.",
+        "example": "Das Spielzeug ist kaputtgegangen.",
+        "example_ru": "Игрушка сломалась.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "a45e21a92f91f86f1544"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Отделяемый компонент; Perfekt с sein; без прямого дополнения.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Seine Funktion verlieren oder beschädigt werden."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Beim Umzug ist eine Lampe kaputtgegangen.",
+            "ru": "При переезде сломалась лампа."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kaputtgehen-break",
+            "de": "kaputtgehen",
+            "part": "verb",
+            "forms": "geht kaputt · ging kaputt · ist kaputtgegangen",
+            "definition_de": "Seine Funktion verlieren oder beschädigt werden.",
+            "translations_ru": [
+              "ломаться",
+              "разбиваться",
+              "выходить из строя"
+            ],
+            "grammar_hint": "Отделяемый компонент; Perfekt с sein; без прямого дополнения.",
+            "example": "Beim Umzug ist eine Lampe kaputtgegangen.",
+            "example_ru": "При переезде сломалась лампа."
+          }
+        ],
+        "alias_ids": [
+          "b1-kaputtgehen-break"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaputtgehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_9657c7553c8100d7f16e",
+      "alias_ids": [
+        "b1-karneval-festival"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9657c7553c8100d7f16e",
+        "de": "der Karneval",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "карнавал"
+        ],
+        "forms": "Plural · die Karnevale (редко)",
+        "definition_de": "Ein Fest mit Kostümen und Umzügen, besonders vor der Fastenzeit.",
+        "example": "Im Februar feiern viele Menschen Karneval.",
+        "example_ru": "В феврале многие празднуют карнавал.",
+        "grammar_hint": "Karneval feiern — праздновать карнавал.\nРегиональные названия: Fasching (D/A), Fasnacht (CH). Отдельные региональные карточки — при следующей сверке.",
+        "usage_note": "Региональные названия: Fasching, в Швейцарии Fasnacht. Не точный эквивалент русской Масленицы.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 6,
+            "scope": "thematic_headword"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/Karneval"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Праздники и традиции",
+        "topics": [
+          "Праздники и традиции",
+          "Досуг и культура"
+        ],
+        "ru": "карнавал",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Karnevals / Karnevale"
+        ],
+        "alternative_definitions_de": [
+          "Eine traditionelle Festzeit mit Kostümen und Umzügen vor der Fastenzeit."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Viele Menschen tragen beim Karneval bunte Kostüme.",
+            "ru": "На карнавале многие носят яркие костюмы."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-karneval-festival",
+            "de": "der Karneval",
+            "part": "noun",
+            "forms": "die Karnevals / Karnevale",
+            "definition_de": "Eine traditionelle Festzeit mit Kostümen und Umzügen vor der Fastenzeit.",
+            "translations_ru": [
+              "карнавал"
+            ],
+            "grammar_hint": "Региональные названия: Fasching (D/A), Fasnacht (CH). Отдельные региональные карточки — при следующей сверке.",
+            "example": "Viele Menschen tragen beim Karneval bunte Kostüme.",
+            "example_ru": "На карнавале многие носят яркие костюмы."
+          }
+        ],
+        "alias_ids": [
+          "b1-karneval-festival"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Karneval"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-333-1",
+      "alias_ids": [
+        "b1-karte-postcard"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-333-1",
+        "de": "die Karte",
+        "lemma": "Karte",
+        "ru": "открытка",
+        "uk": "",
+        "translations_ru": [
+          "открытка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Общение"
+        ],
+        "forms": "die Karten",
+        "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+        "example": "Ich schicke dir eine Karte aus Bern.",
+        "example_ru": "Я пришлю тебе открытку из Берна.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "b8097dc4efd29bbe6f9b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem (Dativ) eine Karte (Akkusativ) schreiben; Postkarte, Grußkarte.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine kurze schriftliche Nachricht auf einem festen Stück Papier."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir schicken unseren Freunden eine Karte aus den Ferien.",
+            "ru": "Мы отправляем друзьям открытку из отпуска."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-karte-postcard",
+            "de": "die Karte",
+            "part": "noun",
+            "forms": "die Karten",
+            "definition_de": "Eine kurze schriftliche Nachricht auf einem festen Stück Papier.",
+            "translations_ru": [
+              "открытка"
+            ],
+            "grammar_hint": "jemandem (Dativ) eine Karte (Akkusativ) schreiben; Postkarte, Grußkarte.",
+            "example": "Wir schicken unseren Freunden eine Karte aus den Ferien.",
+            "example_ru": "Мы отправляем друзьям открытку из отпуска."
+          }
+        ],
+        "alias_ids": [
+          "b1-karte-postcard"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

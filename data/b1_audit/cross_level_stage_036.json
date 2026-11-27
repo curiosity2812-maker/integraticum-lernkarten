@@ -1,0 +1,3299 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    693,
+    712
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 16,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 693,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der Bruder eines Elternteils oder der Ehemann einer Tante. Example: Am Sonntag besuchen wir meinen Onkel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 13,
+        "record": {
+          "id": "b1-onkel-uncle",
+          "de": "der Onkel",
+          "lemma": "Onkel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дядя"
+          ],
+          "definition_de": "Der Bruder eines Elternteils oder der Ehemann einer Tante.",
+          "example": "Am Sonntag besuchen wir meinen Onkel.",
+          "example_ru": "В воскресенье мы навестим моего дядю.",
+          "forms": "die Onkel",
+          "grammar_hint": "die Tante — тётя; zu meinem Onkel (Dativ).",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Onkel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 547,
+          "record": {
+            "id": "dict_62408b4626cbb8d6d410",
+            "de": "der Onkel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "дядя"
+            ],
+            "definition_de": "Ein Bruder eines Elternteils oder der Ehemann einer Tante.",
+            "forms": "Plural · die Onkel",
+            "example": "Mein Onkel wohnt in einer anderen Stadt.",
+            "example_ru": "Мой дядя живёт в другом городе.",
+            "grammar_hint": "Женский род: die Tante; Dativ Plural: den Onkeln.",
+            "usage_note": "Разговорное обращение к постороннему мужчине и другие значения не включены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 5,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Onkel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_62408b4626cbb8d6d410",
+        "alias_id": "b1-onkel-uncle",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_62408b4626cbb8d6d410"
+      }
+    },
+    {
+      "candidate_number": 694,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der Vater eines Elternteils, familiär bezeichnet. Example: Mein Opa erzählt gern Geschichten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 14,
+        "record": {
+          "id": "b1-opa-grandfather",
+          "de": "der Opa",
+          "lemma": "Opa",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дедушка"
+          ],
+          "definition_de": "Der Vater eines Elternteils, familiär bezeichnet.",
+          "example": "Mein Opa erzählt gern Geschichten.",
+          "example_ru": "Мой дедушка любит рассказывать истории.",
+          "forms": "die Opas",
+          "grammar_hint": "Семейное, разговорное обозначение der Großvater; CH: Grossvater.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Opa"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 19,
+          "record": {
+            "id": "opa-grandfather",
+            "de": "der Opa",
+            "lemma": "Opa",
+            "ru": "дедушка",
+            "uk": "",
+            "translations_ru": [
+              "дедушка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Opas",
+            "definition_de": "Der Vater des Vaters oder der Mutter.",
+            "example": "Mein Opa trinkt gern Tee.",
+            "example_ru": "Мой дедушка любит пить чай.",
+            "note": "Разговорное семейное слово. Нейтральный вариант — der Großvater.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "c5e47f06f25fac3961db"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "opa-grandfather",
+        "alias_id": "b1-opa-grandfather",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "opa-grandfather"
+      }
+    },
+    {
+      "candidate_number": 695,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine meist süße Zitrusfrucht mit orangefarbener Schale. Example: Zum Frühstück esse ich eine Orange.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 21,
+        "record": {
+          "id": "b1-orange-fruit",
+          "de": "die Orange",
+          "lemma": "Orange",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "апельсин"
+          ],
+          "definition_de": "Eine meist süße Zitrusfrucht mit orangefarbener Schale.",
+          "example": "Zum Frühstück esse ich eine Orange.",
+          "example_ru": "На завтрак я ем апельсин.",
+          "forms": "die Orangen",
+          "grammar_hint": "Также die Apfelsine, прежде всего север Германии; das Orange — название цвета, orange — прилагательное.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Orange"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 178,
+          "record": {
+            "id": "dict_faa5522c7dfa27bb3600",
+            "de": "die Orange",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "апельсин"
+            ],
+            "definition_de": "Eine runde Zitrusfrucht mit einer dicken, meist orangefarbenen Schale.",
+            "forms": "Plural · die Orangen",
+            "example": "Ich habe zwei Orangen für den Ausflug eingepackt.",
+            "example_ru": "Я взяла с собой на экскурсию два апельсина.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Orange"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 474,
+          "record": {
+            "id": "dict_98b8f179d9a99919e8c5",
+            "de": "orange",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "оранжевый"
+            ],
+            "definition_de": "Von einer Farbe zwischen Rot und Gelb.",
+            "forms": "orange · normalerweise keine Steigerung",
+            "example": "Mein neuer Schal ist orange.",
+            "example_ru": "Мой новый шарф оранжевый.",
+            "grammar_hint": "Перед существительным: ein orangefarbenes Kleid; также ein oranges Kleid. Обычно без степеней сравнения.",
+            "usage_note": "Не путать с die Orange (апельсин).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 5,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/orange"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_faa5522c7dfa27bb3600",
+        "alias_id": "b1-orange-fruit",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_faa5522c7dfa27bb3600"
+      }
+    },
+    {
+      "candidate_number": 696,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die nötigen Schritte und Mittel für ein Vorhaben koordinieren. Example: Wir organisieren einen Ausflug für unsere Gruppe.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 2,
+        "record": {
+          "id": "b1-organisieren-arrange",
+          "de": "organisieren",
+          "lemma": "organisieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "организовывать",
+            "устраивать",
+            "подготавливать"
+          ],
+          "definition_de": "Die nötigen Schritte und Mittel für ein Vorhaben koordinieren.",
+          "example": "Wir organisieren einen Ausflug für unsere Gruppe.",
+          "example_ru": "Мы организуем экскурсию для нашей группы.",
+          "forms": "organisiert · organisierte · hat organisiert",
+          "grammar_hint": "etwas organisieren (Akk.); глаголы на -ieren образуют Partizip II без ge-.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/organisieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 467,
+          "record": {
+            "id": "dict_f17206340434c44bb501",
+            "de": "organisieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "организовывать",
+              "организовать"
+            ],
+            "definition_de": "Eine Veranstaltung oder Tätigkeit planen und vorbereiten.",
+            "forms": "organisiert · organisierte · hat organisiert",
+            "example": "Wir organisieren eine Reise für die Gruppe.",
+            "example_ru": "Мы организуем поездку для группы.",
+            "grammar_hint": "etwas (Akkusativ) organisieren; глаголы на -ieren без ge- в Perfekt.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/organisieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f17206340434c44bb501",
+        "alias_id": "b1-organisieren-arrange",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f17206340434c44bb501"
+      }
+    },
+    {
+      "candidate_number": 697,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine räumliche Stelle oder eine Siedlung. Example: Bitte geben Sie den Ort der Veranstaltung an.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 7,
+        "record": {
+          "id": "b1-ort-location",
+          "de": "der Ort",
+          "lemma": "Ort",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "место",
+            "населённый пункт"
+          ],
+          "definition_de": "Eine räumliche Stelle oder eine Siedlung.",
+          "example": "Bitte geben Sie den Ort der Veranstaltung an.",
+          "example_ru": "Пожалуйста, укажите место проведения мероприятия.",
+          "forms": "die Orte",
+          "grammar_hint": "Ort und Datum — место и дата; vor Ort — на месте; здесь Plural Orte, не Örter.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ort"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 497,
+          "record": {
+            "id": "a1-446-1",
+            "de": "der Ort",
+            "lemma": "Ort",
+            "ru": "населённый пункт",
+            "uk": "",
+            "translations_ru": [
+              "населённый пункт"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Orte",
+            "definition_de": "Eine Stadt, ein Dorf oder eine andere Siedlung.",
+            "example": "Der Ort liegt in den Bergen.",
+            "example_ru": "Этот населённый пункт находится в горах.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "bfcdfe020e4e9b076a0c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 698,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine unbestimmte kleine Anzahl von Dingen oder Personen. Example: Ich brauche noch ein paar Minuten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 11,
+        "record": {
+          "id": "b1-paar-few",
+          "de": "ein paar",
+          "lemma": "paar",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "несколько",
+            "немного (с исчисляемыми предметами)"
+          ],
+          "definition_de": "Eine unbestimmte kleine Anzahl von Dingen oder Personen.",
+          "example": "Ich brauche noch ein paar Minuten.",
+          "example_ru": "Мне нужно ещё несколько минут.",
+          "forms": "неизменяемое ein paar",
+          "grammar_hint": "ein paar с маленькой буквы — несколько; mit ein paar Freunden (Dativ Pl.). Не обязательно два.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/paar"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 243,
+          "record": {
+            "id": "dict_dece9c5428c9c97a6468",
+            "de": "das Paar",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "пара"
+            ],
+            "definition_de": "Zwei Menschen oder zwei Dinge, die zusammengehören.",
+            "forms": "Plural · die Paare",
+            "example": "Ich brauche ein neues Paar Schuhe.",
+            "example_ru": "Мне нужна новая пара обуви.",
+            "grammar_hint": "",
+            "usage_note": "Das Paar пишем с заглавной буквы: ein Paar Schuhe — пара туфель. В выражении ein paar Tage слово paar пишем со строчной: «несколько дней».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Paar"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 483,
+          "record": {
+            "id": "dict_f55409986530eda6c7e9",
+            "de": "ein paar",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "несколько",
+              "пару"
+            ],
+            "definition_de": "Eine kleine, nicht genau bestimmte Anzahl.",
+            "forms": "",
+            "example": "Ich brauche ein paar Minuten.",
+            "example_ru": "Мне нужно несколько минут.",
+            "grammar_hint": "Неопределённое количество перед существительным во множественном числе; paar со строчной буквы.",
+            "usage_note": "Не путать с ein Paar — одна пара.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/ein_paar"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f55409986530eda6c7e9",
+        "alias_id": "b1-paar-few",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f55409986530eda6c7e9"
+      }
+    },
+    {
+      "candidate_number": 699,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Zwei Menschen, die durch eine partnerschaftliche Beziehung verbunden sind. Example: Das Paar wohnt seit zwei Jahren zusammen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 12,
+        "record": {
+          "id": "b1-paar-couple",
+          "de": "das Paar",
+          "lemma": "Paar",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "пара (люди)"
+          ],
+          "definition_de": "Zwei Menschen, die durch eine partnerschaftliche Beziehung verbunden sind.",
+          "example": "Das Paar wohnt seit zwei Jahren zusammen.",
+          "example_ru": "Пара живёт вместе уже два года.",
+          "forms": "die Paare",
+          "grammar_hint": "ein Paar sein; ein verheiratetes Paar — супружеская пара.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Paar"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 243,
+          "record": {
+            "id": "dict_dece9c5428c9c97a6468",
+            "de": "das Paar",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "пара"
+            ],
+            "definition_de": "Zwei Menschen oder zwei Dinge, die zusammengehören.",
+            "forms": "Plural · die Paare",
+            "example": "Ich brauche ein neues Paar Schuhe.",
+            "example_ru": "Мне нужна новая пара обуви.",
+            "grammar_hint": "",
+            "usage_note": "Das Paar пишем с заглавной буквы: ein Paar Schuhe — пара туфель. В выражении ein paar Tage слово paar пишем со строчной: «несколько дней».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Paar"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 483,
+          "record": {
+            "id": "dict_f55409986530eda6c7e9",
+            "de": "ein paar",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "несколько",
+              "пару"
+            ],
+            "definition_de": "Eine kleine, nicht genau bestimmte Anzahl.",
+            "forms": "",
+            "example": "Ich brauche ein paar Minuten.",
+            "example_ru": "Мне нужно несколько минут.",
+            "grammar_hint": "Неопределённое количество перед существительным во множественном числе; paar со строчной буквы.",
+            "usage_note": "Не путать с ein Paar — одна пара.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/ein_paar"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dece9c5428c9c97a6468",
+        "alias_id": "b1-paar-couple",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dece9c5428c9c97a6468"
+      }
+    },
+    {
+      "candidate_number": 700,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Einheit aus zwei zusammengehörenden Gegenständen. Example: Ich kaufe ein Paar warme Socken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 13,
+        "record": {
+          "id": "b1-paar-pair",
+          "de": "ein Paar",
+          "lemma": "Paar",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "пара (две вещи)"
+          ],
+          "definition_de": "Eine Einheit aus zwei zusammengehörenden Gegenständen.",
+          "example": "Ich kaufe ein Paar warme Socken.",
+          "example_ru": "Я покупаю пару тёплых носков.",
+          "forms": "als Mengenangabe: zwei Paar Socken; eigenständig: die Paare",
+          "grammar_hint": "ein Paar с большой буквы — два связанных предмета; ein paar Socken — несколько носков, не обязательно пара.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Paar"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 243,
+          "record": {
+            "id": "dict_dece9c5428c9c97a6468",
+            "de": "das Paar",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "пара"
+            ],
+            "definition_de": "Zwei Menschen oder zwei Dinge, die zusammengehören.",
+            "forms": "Plural · die Paare",
+            "example": "Ich brauche ein neues Paar Schuhe.",
+            "example_ru": "Мне нужна новая пара обуви.",
+            "grammar_hint": "",
+            "usage_note": "Das Paar пишем с заглавной буквы: ein Paar Schuhe — пара туфель. В выражении ein paar Tage слово paar пишем со строчной: «несколько дней».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Paar"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 483,
+          "record": {
+            "id": "dict_f55409986530eda6c7e9",
+            "de": "ein paar",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "несколько",
+              "пару"
+            ],
+            "definition_de": "Eine kleine, nicht genau bestimmte Anzahl.",
+            "forms": "",
+            "example": "Ich brauche ein paar Minuten.",
+            "example_ru": "Мне нужно несколько минут.",
+            "grammar_hint": "Неопределённое количество перед существительным во множественном числе; paar со строчной буквы.",
+            "usage_note": "Не путать с ein Paar — одна пара.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/ein_paar"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dece9c5428c9c97a6468",
+        "alias_id": "b1-paar-pair",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dece9c5428c9c97a6468"
+      }
+    },
+    {
+      "candidate_number": 701,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Gegenstände für den Transport oder eine Reise in ein Behältnis legen. Example: Heute Abend packe ich meinen Koffer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 14,
+        "record": {
+          "id": "b1-packen-luggage",
+          "de": "packen",
+          "lemma": "packen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "собирать (чемодан)",
+            "упаковывать"
+          ],
+          "definition_de": "Gegenstände für den Transport oder eine Reise in ein Behältnis legen.",
+          "example": "Heute Abend packe ich meinen Koffer.",
+          "example_ru": "Сегодня вечером я собираю чемодан.",
+          "forms": "packt · packte · hat gepackt",
+          "grammar_hint": "den Koffer packen (Akk.); etwas in den Koffer packen; einpacken — упаковывать (отделяемая приставка).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/packen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 493,
+          "record": {
+            "id": "dict_6b6bde2331a8b9e28581",
+            "de": "packen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "паковать",
+              "собирать (вещи)",
+              "укладывать"
+            ],
+            "definition_de": "Sachen für den Transport oder eine Reise zusammenlegen und verstauen.",
+            "forms": "packt · packte · hat gepackt",
+            "example": "Ich packe heute Abend meinen Koffer.",
+            "example_ru": "Сегодня вечером я собираю чемодан.",
+            "grammar_hint": "etwas packen (+ Akkusativ); einpacken и auspacken — отделяемые глаголы.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/packen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Путешествия и отпуск",
+            "topics": [
+              "Путешествия и отпуск"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6b6bde2331a8b9e28581",
+        "alias_id": "b1-packen-luggage",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6b6bde2331a8b9e28581"
+      }
+    },
+    {
+      "candidate_number": 702,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine verpackte Sendung, die befördert oder zugestellt werden kann. Example: Ich hole das Paket morgen bei der Post ab.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 15,
+        "record": {
+          "id": "b1-paket-parcel",
+          "de": "das Paket",
+          "lemma": "Paket",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "посылка",
+            "пакет (упаковка)"
+          ],
+          "definition_de": "Eine verpackte Sendung, die befördert oder zugestellt werden kann.",
+          "example": "Ich hole das Paket morgen bei der Post ab.",
+          "example_ru": "Я заберу посылку завтра на почте.",
+          "forms": "die Pakete",
+          "grammar_hint": "ein Paket verschicken / abholen; die Tüte — пакет для покупок, не почтовая посылка.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Paket"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 198,
+          "record": {
+            "id": "dict_46832ed10197626d13ac",
+            "de": "das Paket",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "посылка"
+            ],
+            "definition_de": "Eine verpackte Sendung, die zum Beispiel mit der Post verschickt wird.",
+            "forms": "Plural · die Pakete",
+            "example": "Mein Paket ist gestern angekommen.",
+            "example_ru": "Моя посылка пришла вчера.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Paket"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Документы и правила",
+            "topics": [
+              "Документы и правила"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_46832ed10197626d13ac",
+        "alias_id": "b1-paket-parcel",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_46832ed10197626d13ac"
+      }
+    },
+    {
+      "candidate_number": 703,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein dünnes Material, das etwa zum Schreiben oder Drucken dient. Example: Für den Drucker brauchen wir neues Papier.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 18,
+        "record": {
+          "id": "b1-papier-material",
+          "de": "das Papier",
+          "lemma": "Papier",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "бумага"
+          ],
+          "definition_de": "Ein dünnes Material, das etwa zum Schreiben oder Drucken dient.",
+          "example": "Für den Drucker brauchen wir neues Papier.",
+          "example_ru": "Для принтера нам нужна новая бумага.",
+          "forms": "обычно Singular; die Papiere (виды)",
+          "grammar_hint": "ein Blatt Papier — лист бумаги; auf Papier schreiben — писать на бумаге.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Papier"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 498,
+          "record": {
+            "id": "a1-447-1",
+            "de": "das Papier",
+            "lemma": "Papier",
+            "ru": "бумага",
+            "uk": "",
+            "translations_ru": [
+              "бумага"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Ein dünnes Material, auf das man schreiben kann.",
+            "example": "Hast du ein Blatt Papier für mich?",
+            "example_ru": "У тебя есть лист бумаги для меня?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "00cf1bd56798562ecde6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-447-1",
+        "alias_id": "b1-papier-material",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-447-1"
+      }
+    },
+    {
+      "candidate_number": 704,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Schriftstücke, die zum Nachweis von Angaben oder Rechten dienen. Example: Bitte nehmen Sie Ihre Papiere zum Termin mit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 19,
+        "record": {
+          "id": "b1-papier-documents",
+          "de": "die Papiere",
+          "lemma": "Papier",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "документы",
+            "бумаги"
+          ],
+          "definition_de": "Schriftstücke, die zum Nachweis von Angaben oder Rechten dienen.",
+          "example": "Bitte nehmen Sie Ihre Papiere zum Termin mit.",
+          "example_ru": "Пожалуйста, возьмите документы с собой на встречу.",
+          "forms": "Plural: die Papiere; Singular: das Papier",
+          "grammar_hint": "В данном значении обычно Plural; die Unterlagen — документы, материалы; Ausweispapiere — удостоверяющие личность документы.",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Papier"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 499,
+          "record": {
+            "id": "a1-448-1",
+            "de": "die Papiere",
+            "lemma": "Papiere",
+            "ru": "документы; документы, удостоверяющие личность",
+            "uk": "",
+            "translations_ru": [
+              "документы",
+              "документы, удостоверяющие личность"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "только Plural в этом употреблении",
+            "definition_de": "Dokumente, mit denen man sich ausweisen kann.",
+            "example": "Die Polizei möchte meine Papiere sehen.",
+            "example_ru": "Полиция хочет посмотреть мои документы.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "87513c9a7c13e4ffbb8f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 498,
+          "record": {
+            "id": "a1-447-1",
+            "de": "das Papier",
+            "lemma": "Papier",
+            "ru": "бумага",
+            "uk": "",
+            "translations_ru": [
+              "бумага"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Ein dünnes Material, auf das man schreiben kann.",
+            "example": "Hast du ein Blatt Papier für mich?",
+            "example_ru": "У тебя есть лист бумаги для меня?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "00cf1bd56798562ecde6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-448-1",
+        "alias_id": "b1-papier-documents",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-448-1"
+      }
+    },
+    {
+      "candidate_number": 705,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine gestaltete Grünanlage zur Erholung. Example: Am Abend gehen wir im Park spazieren.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 23,
+        "record": {
+          "id": "b1-park-green",
+          "de": "der Park",
+          "lemma": "Park",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "парк"
+          ],
+          "definition_de": "Eine gestaltete Grünanlage zur Erholung.",
+          "example": "Am Abend gehen wir im Park spazieren.",
+          "example_ru": "Вечером мы гуляем в парке.",
+          "forms": "die Parks",
+          "grammar_hint": "im Park (Wo? Dativ); in den Park (Wohin? Akkusativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Park"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 150,
+          "record": {
+            "id": "dict_50cf99f09b2bb42052bd",
+            "de": "der Park",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "парк"
+            ],
+            "definition_de": "Eine größere Grünanlage mit Bäumen und Wegen.",
+            "forms": "Plural · die Parks",
+            "example": "Nach dem Mittagessen gehen wir in den Park.",
+            "example_ru": "После обеда мы идём в парк.",
+            "grammar_hint": "Wo? im Park (in + Dativ); Wohin? in den Park (in + Akkusativ).",
+            "usage_note": "Park также встречается в примере A1 на стр. 11, но не как отдельная заглавная словарная единица; сохранён явно подтверждённый уровень A2. Parken — парковаться.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Park"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_50cf99f09b2bb42052bd",
+        "alias_id": "b1-park-green",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_50cf99f09b2bb42052bd"
+      }
+    },
+    {
+      "candidate_number": 706,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Fahrzeug für eine gewisse Zeit an einem Ort abstellen. Example: Du kannst hinter dem Haus parken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 24,
+        "record": {
+          "id": "b1-parken-vehicle",
+          "de": "parken",
+          "lemma": "parken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "парковаться",
+            "парковать машину"
+          ],
+          "definition_de": "Ein Fahrzeug für eine gewisse Zeit an einem Ort abstellen.",
+          "example": "Du kannst hinter dem Haus parken.",
+          "example_ru": "Ты можешь припарковаться за домом.",
+          "forms": "parkt · parkte · hat geparkt",
+          "grammar_hint": "(ein Auto) parken; hinter dem Haus (Wo? Dativ). D/A: parken; CH: parkieren.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/parken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 417,
+          "record": {
+            "id": "dict_c85c7dd73114c740bc3d",
+            "de": "parken",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "парковать",
+              "парковаться"
+            ],
+            "definition_de": "Ein Fahrzeug vorübergehend an einem Ort abstellen.",
+            "forms": "parkt · parkte · hat geparkt",
+            "example": "Hier darf man nur eine Stunde parken.",
+            "example_ru": "Здесь можно парковаться только на один час.",
+            "grammar_hint": "ein Auto (Akkusativ) parken; hier parken.",
+            "usage_note": "das Parken — парковка как действие (номинализация); отдельно уровень не назначен. Kein Parken / Parken verboten — парковка запрещена.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/parken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c85c7dd73114c740bc3d",
+        "alias_id": "b1-parken-vehicle",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c85c7dd73114c740bc3d"
+      }
+    },
+    {
+      "candidate_number": 707,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Das Abstellen eines Fahrzeugs für eine gewisse Zeit. Example: Das Parken vor der Einfahrt ist verboten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 25,
+        "record": {
+          "id": "b1-parken-nominal",
+          "de": "das Parken",
+          "lemma": "parken",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "парковка (действие)",
+            "стоянка автомобиля"
+          ],
+          "definition_de": "Das Abstellen eines Fahrzeugs für eine gewisse Zeit.",
+          "example": "Das Parken vor der Einfahrt ist verboten.",
+          "example_ru": "Парковка перед въездом запрещена.",
+          "forms": "без множественного числа; substantivierter Infinitiv",
+          "grammar_hint": "Субстантивированный инфинитив с das, большая буква; Parkplatz — парковочное место.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/parken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 417,
+          "record": {
+            "id": "dict_c85c7dd73114c740bc3d",
+            "de": "parken",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "парковать",
+              "парковаться"
+            ],
+            "definition_de": "Ein Fahrzeug vorübergehend an einem Ort abstellen.",
+            "forms": "parkt · parkte · hat geparkt",
+            "example": "Hier darf man nur eine Stunde parken.",
+            "example_ru": "Здесь можно парковаться только на один час.",
+            "grammar_hint": "ein Auto (Akkusativ) parken; hier parken.",
+            "usage_note": "das Parken — парковка как действие (номинализация); отдельно уровень не назначен. Kein Parken / Parken verboten — парковка запрещена.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/parken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 708,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Person oder Einrichtung, mit der man bei einer Aufgabe zusammenarbeitet. Example: Unsere Schule sucht neue Partner für das Projekt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 28,
+        "record": {
+          "id": "b1-partner-cooperation",
+          "de": "der Partner / die Partnerin",
+          "lemma": "Partner",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "партнёр",
+            "партнёрша (совместная деятельность)"
+          ],
+          "definition_de": "Eine Person oder Einrichtung, mit der man bei einer Aufgabe zusammenarbeitet.",
+          "example": "Unsere Schule sucht neue Partner für das Projekt.",
+          "example_ru": "Наша школа ищет новых партнёров для проекта.",
+          "forms": "die Partner / die Partnerinnen",
+          "grammar_hint": "mit einem Partner zusammenarbeiten (Dativ); Partner für + Akkusativ.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Partner"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 807,
+          "record": {
+            "id": "dict_94dc2a749d9110362101",
+            "de": "der Partner / die Partnerin",
+            "lemma": "Partner",
+            "part": "noun",
+            "level": "A1",
+            "ru": "партнёр; партнёрша",
+            "uk": "партнер; партнерка",
+            "translations_ru": [
+              "партнёр",
+              "партнёрша"
+            ],
+            "topic": "Люди и отношения",
+            "topics": [
+              "Люди и отношения"
+            ],
+            "forms": "der Partner · Pl. die Partner; die Partnerin · Pl. die Partnerinnen",
+            "definition_de": "Eine Person, mit der jemand eine Beziehung führt.",
+            "example": "Meine Partnerin lebt in Bern.",
+            "example_ru": "Моя партнёрша живёт в Берне.",
+            "note": "В Goethe подтверждён личный партнёр; деловые и спортивные контексты отдельно не маркируются.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 709,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Person, mit der jemand eine feste persönliche Beziehung führt. Example: Sie lebt mit ihrer Partnerin zusammen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_067.json",
+        "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+        "batch": 67,
+        "row": 29,
+        "record": {
+          "id": "b1-partner-relationship",
+          "de": "der Partner / die Partnerin",
+          "lemma": "Partner",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "партнёр",
+            "партнёрша (отношения)"
+          ],
+          "definition_de": "Eine Person, mit der jemand eine feste persönliche Beziehung führt.",
+          "example": "Sie lebt mit ihrer Partnerin zusammen.",
+          "example_ru": "Она живёт вместе со своей партнёршей.",
+          "forms": "die Partner / die Partnerinnen",
+          "grammar_hint": "mit + Dativ zusammenleben; Lebenspartner / Lebenspartnerin — партнёр по жизни.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Partner"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 807,
+          "record": {
+            "id": "dict_94dc2a749d9110362101",
+            "de": "der Partner / die Partnerin",
+            "lemma": "Partner",
+            "part": "noun",
+            "level": "A1",
+            "ru": "партнёр; партнёрша",
+            "uk": "партнер; партнерка",
+            "translations_ru": [
+              "партнёр",
+              "партнёрша"
+            ],
+            "topic": "Люди и отношения",
+            "topics": [
+              "Люди и отношения"
+            ],
+            "forms": "der Partner · Pl. die Partner; die Partnerin · Pl. die Partnerinnen",
+            "definition_de": "Eine Person, mit der jemand eine Beziehung führt.",
+            "example": "Meine Partnerin lebt in Bern.",
+            "example_ru": "Моя партнёрша живёт в Берне.",
+            "note": "В Goethe подтверждён личный партнёр; деловые и спортивные контексты отдельно не маркируются.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_94dc2a749d9110362101",
+        "alias_id": "b1-partner-relationship",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_94dc2a749d9110362101"
+      }
+    },
+    {
+      "candidate_number": 710,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein zwangloses Treffen zum gemeinsamen Feiern. Example: Am Samstag feiern wir eine Party im Garten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_068.json",
+        "sha": "ff6b5f39f2ef004c54bee9b826b97bc76ffb91ba",
+        "batch": 68,
+        "row": 1,
+        "record": {
+          "id": "b1-party-celebration",
+          "de": "die Party",
+          "lemma": "Party",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "вечеринка"
+          ],
+          "definition_de": "Ein zwangloses Treffen zum gemeinsamen Feiern.",
+          "example": "Am Samstag feiern wir eine Party im Garten.",
+          "example_ru": "В субботу мы устраиваем вечеринку в саду.",
+          "forms": "die Partys",
+          "grammar_hint": "auf einer Party (Wo?, Dativ); auf eine Party gehen (Wohin?, Akkusativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; some cards are pedagogical contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Party"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 501,
+          "record": {
+            "id": "a1-450-1",
+            "de": "die Party",
+            "lemma": "Party",
+            "ru": "вечеринка",
+            "uk": "",
+            "translations_ru": [
+              "вечеринка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Partys",
+            "definition_de": "Ein Treffen, bei dem Menschen zusammen feiern.",
+            "example": "Am Samstag machen wir eine Party.",
+            "example_ru": "В субботу мы устроим вечеринку.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "48bb70d1750abc2c5216"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-450-1",
+        "alias_id": "b1-party-celebration",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-450-1"
+      }
+    },
+    {
+      "candidate_number": 711,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein amtliches Dokument zur Identifikation auf Reisen. Example: Mein Pass ist noch zwei Jahre gültig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_068.json",
+        "sha": "ff6b5f39f2ef004c54bee9b826b97bc76ffb91ba",
+        "batch": 68,
+        "row": 2,
+        "record": {
+          "id": "b1-pass-passport",
+          "de": "der Pass",
+          "lemma": "Pass",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "паспорт",
+            "заграничный паспорт"
+          ],
+          "definition_de": "Ein amtliches Dokument zur Identifikation auf Reisen.",
+          "example": "Mein Pass ist noch zwei Jahre gültig.",
+          "example_ru": "Мой паспорт действителен ещё два года.",
+          "forms": "die Pässe",
+          "grammar_hint": "einen Pass beantragen / verlängern lassen; der Reisepass — загранпаспорт.",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; some cards are pedagogical contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Pass"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 502,
+          "record": {
+            "id": "a1-451-1",
+            "de": "der Pass",
+            "lemma": "Pass",
+            "ru": "паспорт",
+            "uk": "",
+            "translations_ru": [
+              "паспорт"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "die Pässe",
+            "definition_de": "Ein amtliches Dokument, mit dem man ins Ausland reisen kann.",
+            "example": "Ist dein Pass noch gültig?",
+            "example_ru": "Твой паспорт ещё действителен?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "aff0e7d9c52bd1aed743"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-451-1",
+        "alias_id": "b1-pass-passport",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-451-1"
+      }
+    },
+    {
+      "candidate_number": 712,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die richtige Größe oder Form für jemanden oder etwas haben. Example: Die neuen Schuhe passen mir gut.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_068.json",
+        "sha": "ff6b5f39f2ef004c54bee9b826b97bc76ffb91ba",
+        "batch": 68,
+        "row": 4,
+        "record": {
+          "id": "b1-passen-fit",
+          "de": "passen",
+          "lemma": "passen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "подходить по размеру",
+            "быть впору"
+          ],
+          "definition_de": "Die richtige Größe oder Form für jemanden oder etwas haben.",
+          "example": "Die neuen Schuhe passen mir gut.",
+          "example_ru": "Новые туфли мне хорошо подходят по размеру.",
+          "forms": "passt · passte · hat gepasst",
+          "grammar_hint": "jemandem passen + Dativ: mir, dir, ihm; Die Schuhe passen mir (подлежащее Schuhe).",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; some cards are pedagogical contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/passen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 215,
+          "record": {
+            "id": "dict_8ec4c275fbd83beb27f3",
+            "de": "passen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "подходить",
+              "быть впору"
+            ],
+            "definition_de": "Die richtige Größe für jemanden haben, vor allem bei Kleidung und Schuhen.",
+            "forms": "passt · passte · hat gepasst",
+            "example": "Diese Schuhe passen mir gut.",
+            "example_ru": "Эти туфли мне впору.",
+            "grammar_hint": "Кому подходит? Dativ: Die Schuhe passen mir.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/passen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 568,
+          "record": {
+            "id": "a2-passen-suitable-reviewed",
+            "de": "passen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "подходить",
+              "соответствовать"
+            ],
+            "definition_de": "Für einen bestimmten Zweck oder eine Situation geeignet sein.",
+            "forms": "passt · passte · hat gepasst",
+            "example": "Welches Wort passt in diese Lücke?",
+            "example_ru": "Какое слово подходит для этого пропуска?",
+            "grammar_hint": "zu + Dativ: Das passt gut zu deiner Idee.",
+            "usage_note": "Размер одежды — другое значение; пасовать в игре здесь не подтверждено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/passen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8ec4c275fbd83beb27f3",
+        "alias_id": "b1-passen-fit",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8ec4c275fbd83beb27f3"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_62408b4626cbb8d6d410",
+      "alias_ids": [
+        "b1-onkel-uncle"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_62408b4626cbb8d6d410",
+        "de": "der Onkel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "дядя"
+        ],
+        "definition_de": "Ein Bruder eines Elternteils oder der Ehemann einer Tante.",
+        "forms": "Plural · die Onkel",
+        "example": "Mein Onkel wohnt in einer anderen Stadt.",
+        "example_ru": "Мой дядя живёт в другом городе.",
+        "grammar_hint": "Женский род: die Tante; Dativ Plural: den Onkeln.",
+        "usage_note": "Разговорное обращение к постороннему мужчине и другие значения не включены.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 5,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Onkel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-onkel-uncle"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-onkel-uncle",
+            "de": "der Onkel",
+            "part": "noun",
+            "forms": "die Onkel",
+            "definition_de": "Der Bruder eines Elternteils oder der Ehemann einer Tante.",
+            "translations_ru": [
+              "дядя"
+            ],
+            "grammar_hint": "die Tante — тётя; zu meinem Onkel (Dativ).",
+            "example": "Am Sonntag besuchen wir meinen Onkel.",
+            "example_ru": "В воскресенье мы навестим моего дядю."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Onkel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "opa-grandfather",
+      "alias_ids": [
+        "b1-opa-grandfather"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "opa-grandfather",
+        "de": "der Opa",
+        "lemma": "Opa",
+        "ru": "дедушка",
+        "uk": "",
+        "translations_ru": [
+          "дедушка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья"
+        ],
+        "forms": "die Opas",
+        "definition_de": "Der Vater des Vaters oder der Mutter.",
+        "example": "Mein Opa trinkt gern Tee.",
+        "example_ru": "Мой дедушка любит пить чай.",
+        "note": "Разговорное семейное слово. Нейтральный вариант — der Großvater.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "c5e47f06f25fac3961db"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-opa-grandfather"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-opa-grandfather",
+            "de": "der Opa",
+            "part": "noun",
+            "forms": "die Opas",
+            "definition_de": "Der Vater eines Elternteils, familiär bezeichnet.",
+            "translations_ru": [
+              "дедушка"
+            ],
+            "grammar_hint": "Семейное, разговорное обозначение der Großvater; CH: Grossvater.",
+            "example": "Mein Opa erzählt gern Geschichten.",
+            "example_ru": "Мой дедушка любит рассказывать истории."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Opa"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_faa5522c7dfa27bb3600",
+      "alias_ids": [
+        "b1-orange-fruit"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_faa5522c7dfa27bb3600",
+        "de": "die Orange",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "апельсин"
+        ],
+        "definition_de": "Eine runde Zitrusfrucht mit einer dicken, meist orangefarbenen Schale.",
+        "forms": "Plural · die Orangen",
+        "example": "Ich habe zwei Orangen für den Ausflug eingepackt.",
+        "example_ru": "Я взяла с собой на экскурсию два апельсина.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Orange"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-orange-fruit"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-orange-fruit",
+            "de": "die Orange",
+            "part": "noun",
+            "forms": "die Orangen",
+            "definition_de": "Eine meist süße Zitrusfrucht mit orangefarbener Schale.",
+            "translations_ru": [
+              "апельсин"
+            ],
+            "grammar_hint": "Также die Apfelsine, прежде всего север Германии; das Orange — название цвета, orange — прилагательное.",
+            "example": "Zum Frühstück esse ich eine Orange.",
+            "example_ru": "На завтрак я ем апельсин."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Orange"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f17206340434c44bb501",
+      "alias_ids": [
+        "b1-organisieren-arrange"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f17206340434c44bb501",
+        "de": "organisieren",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "организовывать",
+          "организовать"
+        ],
+        "definition_de": "Eine Veranstaltung oder Tätigkeit planen und vorbereiten.",
+        "forms": "organisiert · organisierte · hat organisiert",
+        "example": "Wir organisieren eine Reise für die Gruppe.",
+        "example_ru": "Мы организуем поездку для группы.",
+        "grammar_hint": "etwas (Akkusativ) organisieren; глаголы на -ieren без ge- в Perfekt.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/organisieren"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Работа и профессии",
+        "topics": [
+          "Работа и профессии"
+        ],
+        "alias_ids": [
+          "b1-organisieren-arrange"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-organisieren-arrange",
+            "de": "organisieren",
+            "part": "verb",
+            "forms": "organisiert · organisierte · hat organisiert",
+            "definition_de": "Die nötigen Schritte und Mittel für ein Vorhaben koordinieren.",
+            "translations_ru": [
+              "организовывать",
+              "устраивать",
+              "подготавливать"
+            ],
+            "grammar_hint": "etwas organisieren (Akk.); глаголы на -ieren образуют Partizip II без ge-.",
+            "example": "Wir organisieren einen Ausflug für unsere Gruppe.",
+            "example_ru": "Мы организуем экскурсию для нашей группы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/organisieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f55409986530eda6c7e9",
+      "alias_ids": [
+        "b1-paar-few"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f55409986530eda6c7e9",
+        "de": "ein paar",
+        "part": "pron",
+        "level": "A2",
+        "translations_ru": [
+          "несколько",
+          "пару"
+        ],
+        "definition_de": "Eine kleine, nicht genau bestimmte Anzahl.",
+        "forms": "",
+        "example": "Ich brauche ein paar Minuten.",
+        "example_ru": "Мне нужно несколько минут.",
+        "grammar_hint": "Неопределённое количество перед существительным во множественном числе; paar со строчной буквы.",
+        "usage_note": "Не путать с ein Paar — одна пара.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/ein_paar"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-paar-few"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-paar-few",
+            "de": "ein paar",
+            "part": "pron",
+            "forms": "неизменяемое ein paar",
+            "definition_de": "Eine unbestimmte kleine Anzahl von Dingen oder Personen.",
+            "translations_ru": [
+              "несколько",
+              "немного (с исчисляемыми предметами)"
+            ],
+            "grammar_hint": "ein paar с маленькой буквы — несколько; mit ein paar Freunden (Dativ Pl.). Не обязательно два.",
+            "example": "Ich brauche noch ein paar Minuten.",
+            "example_ru": "Мне нужно ещё несколько минут."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/paar"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_dece9c5428c9c97a6468",
+      "alias_ids": [
+        "b1-paar-couple",
+        "b1-paar-pair"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_dece9c5428c9c97a6468",
+        "de": "das Paar",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "пара"
+        ],
+        "definition_de": "Zwei Menschen oder zwei Dinge, die zusammengehören.",
+        "forms": "Plural · die Paare",
+        "example": "Ich brauche ein neues Paar Schuhe.",
+        "example_ru": "Мне нужна новая пара обуви.",
+        "grammar_hint": "",
+        "usage_note": "Das Paar пишем с заглавной буквы: ein Paar Schuhe — пара туфель. В выражении ein paar Tage слово paar пишем со строчной: «несколько дней».",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Paar"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-paar-couple",
+          "b1-paar-pair"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-paar-couple",
+            "de": "das Paar",
+            "part": "noun",
+            "forms": "die Paare",
+            "definition_de": "Zwei Menschen, die durch eine partnerschaftliche Beziehung verbunden sind.",
+            "translations_ru": [
+              "пара (люди)"
+            ],
+            "grammar_hint": "ein Paar sein; ein verheiratetes Paar — супружеская пара.",
+            "example": "Das Paar wohnt seit zwei Jahren zusammen.",
+            "example_ru": "Пара живёт вместе уже два года."
+          },
+          {
+            "id": "b1-paar-pair",
+            "de": "ein Paar",
+            "part": "phrase",
+            "forms": "als Mengenangabe: zwei Paar Socken; eigenständig: die Paare",
+            "definition_de": "Eine Einheit aus zwei zusammengehörenden Gegenständen.",
+            "translations_ru": [
+              "пара (две вещи)"
+            ],
+            "grammar_hint": "ein Paar с большой буквы — два связанных предмета; ein paar Socken — несколько носков, не обязательно пара.",
+            "example": "Ich kaufe ein Paar warme Socken.",
+            "example_ru": "Я покупаю пару тёплых носков."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Paar"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Paar"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_6b6bde2331a8b9e28581",
+      "alias_ids": [
+        "b1-packen-luggage"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_6b6bde2331a8b9e28581",
+        "de": "packen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "паковать",
+          "собирать (вещи)",
+          "укладывать"
+        ],
+        "definition_de": "Sachen für den Transport oder eine Reise zusammenlegen und verstauen.",
+        "forms": "packt · packte · hat gepackt",
+        "example": "Ich packe heute Abend meinen Koffer.",
+        "example_ru": "Сегодня вечером я собираю чемодан.",
+        "grammar_hint": "etwas packen (+ Akkusativ); einpacken и auspacken — отделяемые глаголы.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/packen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Путешествия и отпуск",
+        "topics": [
+          "Путешествия и отпуск"
+        ],
+        "alias_ids": [
+          "b1-packen-luggage"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-packen-luggage",
+            "de": "packen",
+            "part": "verb",
+            "forms": "packt · packte · hat gepackt",
+            "definition_de": "Gegenstände für den Transport oder eine Reise in ein Behältnis legen.",
+            "translations_ru": [
+              "собирать (чемодан)",
+              "упаковывать"
+            ],
+            "grammar_hint": "den Koffer packen (Akk.); etwas in den Koffer packen; einpacken — упаковывать (отделяемая приставка).",
+            "example": "Heute Abend packe ich meinen Koffer.",
+            "example_ru": "Сегодня вечером я собираю чемодан."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/packen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_46832ed10197626d13ac",
+      "alias_ids": [
+        "b1-paket-parcel"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_46832ed10197626d13ac",
+        "de": "das Paket",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "посылка"
+        ],
+        "definition_de": "Eine verpackte Sendung, die zum Beispiel mit der Post verschickt wird.",
+        "forms": "Plural · die Pakete",
+        "example": "Mein Paket ist gestern angekommen.",
+        "example_ru": "Моя посылка пришла вчера.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Paket"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Документы и правила",
+        "topics": [
+          "Документы и правила"
+        ],
+        "alias_ids": [
+          "b1-paket-parcel"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-paket-parcel",
+            "de": "das Paket",
+            "part": "noun",
+            "forms": "die Pakete",
+            "definition_de": "Eine verpackte Sendung, die befördert oder zugestellt werden kann.",
+            "translations_ru": [
+              "посылка",
+              "пакет (упаковка)"
+            ],
+            "grammar_hint": "ein Paket verschicken / abholen; die Tüte — пакет для покупок, не почтовая посылка.",
+            "example": "Ich hole das Paket morgen bei der Post ab.",
+            "example_ru": "Я заберу посылку завтра на почте."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Paket"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-447-1",
+      "alias_ids": [
+        "b1-papier-material"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-447-1",
+        "de": "das Papier",
+        "lemma": "Papier",
+        "ru": "бумага",
+        "uk": "",
+        "translations_ru": [
+          "бумага"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "обычно только Singular в этом употреблении",
+        "definition_de": "Ein dünnes Material, auf das man schreiben kann.",
+        "example": "Hast du ein Blatt Papier für mich?",
+        "example_ru": "У тебя есть лист бумаги для меня?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "00cf1bd56798562ecde6"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-papier-material"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-papier-material",
+            "de": "das Papier",
+            "part": "noun",
+            "forms": "обычно Singular; die Papiere (виды)",
+            "definition_de": "Ein dünnes Material, das etwa zum Schreiben oder Drucken dient.",
+            "translations_ru": [
+              "бумага"
+            ],
+            "grammar_hint": "ein Blatt Papier — лист бумаги; auf Papier schreiben — писать на бумаге.",
+            "example": "Für den Drucker brauchen wir neues Papier.",
+            "example_ru": "Для принтера нам нужна новая бумага."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Papier"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-448-1",
+      "alias_ids": [
+        "b1-papier-documents"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-448-1",
+        "de": "die Papiere",
+        "lemma": "Papiere",
+        "ru": "документы; документы, удостоверяющие личность",
+        "uk": "",
+        "translations_ru": [
+          "документы",
+          "документы, удостоверяющие личность"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения"
+        ],
+        "forms": "только Plural в этом употреблении",
+        "definition_de": "Dokumente, mit denen man sich ausweisen kann.",
+        "example": "Die Polizei möchte meine Papiere sehen.",
+        "example_ru": "Полиция хочет посмотреть мои документы.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "87513c9a7c13e4ffbb8f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-papier-documents"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-papier-documents",
+            "de": "die Papiere",
+            "part": "noun",
+            "forms": "Plural: die Papiere; Singular: das Papier",
+            "definition_de": "Schriftstücke, die zum Nachweis von Angaben oder Rechten dienen.",
+            "translations_ru": [
+              "документы",
+              "бумаги"
+            ],
+            "grammar_hint": "В данном значении обычно Plural; die Unterlagen — документы, материалы; Ausweispapiere — удостоверяющие личность документы.",
+            "example": "Bitte nehmen Sie Ihre Papiere zum Termin mit.",
+            "example_ru": "Пожалуйста, возьмите документы с собой на встречу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Papier"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_50cf99f09b2bb42052bd",
+      "alias_ids": [
+        "b1-park-green"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_50cf99f09b2bb42052bd",
+        "de": "der Park",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "парк"
+        ],
+        "definition_de": "Eine größere Grünanlage mit Bäumen und Wegen.",
+        "forms": "Plural · die Parks",
+        "example": "Nach dem Mittagessen gehen wir in den Park.",
+        "example_ru": "После обеда мы идём в парк.",
+        "grammar_hint": "Wo? im Park (in + Dativ); Wohin? in den Park (in + Akkusativ).",
+        "usage_note": "Park также встречается в примере A1 на стр. 11, но не как отдельная заглавная словарная единица; сохранён явно подтверждённый уровень A2. Parken — парковаться.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Park"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-park-green"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-park-green",
+            "de": "der Park",
+            "part": "noun",
+            "forms": "die Parks",
+            "definition_de": "Eine gestaltete Grünanlage zur Erholung.",
+            "translations_ru": [
+              "парк"
+            ],
+            "grammar_hint": "im Park (Wo? Dativ); in den Park (Wohin? Akkusativ).",
+            "example": "Am Abend gehen wir im Park spazieren.",
+            "example_ru": "Вечером мы гуляем в парке."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Park"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_c85c7dd73114c740bc3d",
+      "alias_ids": [
+        "b1-parken-vehicle"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c85c7dd73114c740bc3d",
+        "de": "parken",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "парковать",
+          "парковаться"
+        ],
+        "definition_de": "Ein Fahrzeug vorübergehend an einem Ort abstellen.",
+        "forms": "parkt · parkte · hat geparkt",
+        "example": "Hier darf man nur eine Stunde parken.",
+        "example_ru": "Здесь можно парковаться только на один час.",
+        "grammar_hint": "ein Auto (Akkusativ) parken; hier parken.",
+        "usage_note": "das Parken — парковка как действие (номинализация); отдельно уровень не назначен. Kein Parken / Parken verboten — парковка запрещена.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/parken"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-parken-vehicle"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-parken-vehicle",
+            "de": "parken",
+            "part": "verb",
+            "forms": "parkt · parkte · hat geparkt",
+            "definition_de": "Ein Fahrzeug für eine gewisse Zeit an einem Ort abstellen.",
+            "translations_ru": [
+              "парковаться",
+              "парковать машину"
+            ],
+            "grammar_hint": "(ein Auto) parken; hinter dem Haus (Wo? Dativ). D/A: parken; CH: parkieren.",
+            "example": "Du kannst hinter dem Haus parken.",
+            "example_ru": "Ты можешь припарковаться за домом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/parken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_94dc2a749d9110362101",
+      "alias_ids": [
+        "b1-partner-relationship"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_94dc2a749d9110362101",
+        "de": "der Partner / die Partnerin",
+        "lemma": "Partner",
+        "part": "noun",
+        "level": "A1",
+        "ru": "партнёр; партнёрша",
+        "uk": "партнер; партнерка",
+        "translations_ru": [
+          "партнёр",
+          "партнёрша"
+        ],
+        "topic": "Люди и отношения",
+        "topics": [
+          "Люди и отношения"
+        ],
+        "forms": "der Partner · Pl. die Partner; die Partnerin · Pl. die Partnerinnen",
+        "definition_de": "Eine Person, mit der jemand eine Beziehung führt.",
+        "example": "Meine Partnerin lebt in Bern.",
+        "example_ru": "Моя партнёрша живёт в Берне.",
+        "note": "В Goethe подтверждён личный партнёр; деловые и спортивные контексты отдельно не маркируются.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-partner-relationship"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-partner-relationship",
+            "de": "der Partner / die Partnerin",
+            "part": "noun",
+            "forms": "die Partner / die Partnerinnen",
+            "definition_de": "Eine Person, mit der jemand eine feste persönliche Beziehung führt.",
+            "translations_ru": [
+              "партнёр",
+              "партнёрша (отношения)"
+            ],
+            "grammar_hint": "mit + Dativ zusammenleben; Lebenspartner / Lebenspartnerin — партнёр по жизни.",
+            "example": "Sie lebt mit ihrer Partnerin zusammen.",
+            "example_ru": "Она живёт вместе со своей партнёршей."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Partner"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-450-1",
+      "alias_ids": [
+        "b1-party-celebration"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-450-1",
+        "de": "die Party",
+        "lemma": "Party",
+        "ru": "вечеринка",
+        "uk": "",
+        "translations_ru": [
+          "вечеринка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг"
+        ],
+        "forms": "die Partys",
+        "definition_de": "Ein Treffen, bei dem Menschen zusammen feiern.",
+        "example": "Am Samstag machen wir eine Party.",
+        "example_ru": "В субботу мы устроим вечеринку.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "48bb70d1750abc2c5216"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-party-celebration"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-party-celebration",
+            "de": "die Party",
+            "part": "noun",
+            "forms": "die Partys",
+            "definition_de": "Ein zwangloses Treffen zum gemeinsamen Feiern.",
+            "translations_ru": [
+              "вечеринка"
+            ],
+            "grammar_hint": "auf einer Party (Wo?, Dativ); auf eine Party gehen (Wohin?, Akkusativ).",
+            "example": "Am Samstag feiern wir eine Party im Garten.",
+            "example_ru": "В субботу мы устраиваем вечеринку в саду."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; some cards are pedagogical contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Party"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-451-1",
+      "alias_ids": [
+        "b1-pass-passport"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-451-1",
+        "de": "der Pass",
+        "lemma": "Pass",
+        "ru": "паспорт",
+        "uk": "",
+        "translations_ru": [
+          "паспорт"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "die Pässe",
+        "definition_de": "Ein amtliches Dokument, mit dem man ins Ausland reisen kann.",
+        "example": "Ist dein Pass noch gültig?",
+        "example_ru": "Твой паспорт ещё действителен?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "aff0e7d9c52bd1aed743"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-pass-passport"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-pass-passport",
+            "de": "der Pass",
+            "part": "noun",
+            "forms": "die Pässe",
+            "definition_de": "Ein amtliches Dokument zur Identifikation auf Reisen.",
+            "translations_ru": [
+              "паспорт",
+              "заграничный паспорт"
+            ],
+            "grammar_hint": "einen Pass beantragen / verlängern lassen; der Reisepass — загранпаспорт.",
+            "example": "Mein Pass ist noch zwei Jahre gültig.",
+            "example_ru": "Мой паспорт действителен ещё два года."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; some cards are pedagogical contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Pass"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_8ec4c275fbd83beb27f3",
+      "alias_ids": [
+        "b1-passen-fit"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8ec4c275fbd83beb27f3",
+        "de": "passen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "подходить",
+          "быть впору"
+        ],
+        "definition_de": "Die richtige Größe für jemanden haben, vor allem bei Kleidung und Schuhen.",
+        "forms": "passt · passte · hat gepasst",
+        "example": "Diese Schuhe passen mir gut.",
+        "example_ru": "Эти туфли мне впору.",
+        "grammar_hint": "Кому подходит? Dativ: Die Schuhe passen mir.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/passen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-passen-fit"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-passen-fit",
+            "de": "passen",
+            "part": "verb",
+            "forms": "passt · passte · hat gepasst",
+            "definition_de": "Die richtige Größe oder Form für jemanden oder etwas haben.",
+            "translations_ru": [
+              "подходить по размеру",
+              "быть впору"
+            ],
+            "grammar_hint": "jemandem passen + Dativ: mir, dir, ihm; Die Schuhe passen mir (подлежащее Schuhe).",
+            "example": "Die neuen Schuhe passen mir gut.",
+            "example_ru": "Новые туфли мне хорошо подходят по размеру."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 69,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; some cards are pedagogical contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/passen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

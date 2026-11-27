@@ -1,0 +1,2839 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    853,
+    872
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 6,
+  "retained_teaching_contexts_pending_level_review": 0,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 853,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Drückt Bedauern über den im Nebensatz beschriebenen Sachverhalt aus. Example: Schade, dass du morgen nicht kommen kannst.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 26,
+        "record": {
+          "id": "b1-schade-dass",
+          "de": "Schade, dass …",
+          "lemma": "schade",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "жаль, что …"
+          ],
+          "definition_de": "Drückt Bedauern über den im Nebensatz beschriebenen Sachverhalt aus.",
+          "example": "Schade, dass du morgen nicht kommen kannst.",
+          "example_ru": "Жаль, что ты завтра не можешь прийти.",
+          "forms": "неизменяемое; dass — подчинительный союз",
+          "grammar_hint": "После dass спрягаемый глагол в конце придаточного: nicht kommen kannst. Запятая обязательна.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/schade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 404,
+          "record": {
+            "id": "dict_94298c5ae5a411eb355c",
+            "de": "schade",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "жаль",
+              "жалко",
+              "как жаль"
+            ],
+            "definition_de": "Drückt aus, dass man etwas bedauert.",
+            "forms": "Не склоняется; обычных степеней сравнения нет",
+            "example": "Schade, dass der Kurs heute ausfällt.",
+            "example_ru": "Жаль, что сегодня занятие отменено.",
+            "grammar_hint": "После dass — придаточное со спрягаемым глаголом в конце: Schade, dass du nicht kommst.",
+            "usage_note": "Предикативное, несклоняемое; степеней сравнения нет. Es ist schade, dass … / Schade, dass … — Жаль, что … . Не путать с schaden — вредить.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schade"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_94298c5ae5a411eb355c",
+        "alias_id": "b1-schade-dass",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_94298c5ae5a411eb355c"
+      }
+    },
+    {
+      "candidate_number": 854,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Negative Folgen für jemanden oder etwas verursachend. Example: Zu viel Lärm kann für das Gehör schädlich sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 29,
+        "record": {
+          "id": "b1-schaedlich-harmful",
+          "de": "schädlich",
+          "lemma": "schädlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "вредный",
+            "вредоносный"
+          ],
+          "definition_de": "Negative Folgen für jemanden oder etwas verursachend.",
+          "example": "Zu viel Lärm kann für das Gehör schädlich sein.",
+          "example_ru": "Слишком сильный шум может быть вреден для слуха.",
+          "forms": "schädlich · schädlicher · am schädlichsten",
+          "grammar_hint": "schädlich für + Akkusativ; schaden + Dativ; der Schaden — ущерб.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%A4dlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 287,
+          "record": {
+            "id": "dict_4c2b20ac4521b5a12d44",
+            "de": "schädlich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "вредный"
+            ],
+            "definition_de": "So, dass etwas Schaden verursacht.",
+            "forms": "schädlich · schädlicher · am schädlichsten",
+            "example": "Zu viel Zucker ist schädlich für die Zähne.",
+            "example_ru": "Слишком много сахара вредно для зубов.",
+            "grammar_hint": "schädlich für + Akkusativ",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/resources/files/pdf329/goethe-zertifikat_a2_wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sch%C3%A4dlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4c2b20ac4521b5a12d44",
+        "alias_id": "b1-schaedlich-harmful",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4c2b20ac4521b5a12d44"
+      }
+    },
+    {
+      "candidate_number": 855,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine schwierige Aufgabe bewältigen oder ein Ziel erreichen. Example: Mit etwas Hilfe schaffe ich die Aufgabe bis morgen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 30,
+        "record": {
+          "id": "b1-schaffen-manage",
+          "de": "schaffen",
+          "lemma": "schaffen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "справляться",
+            "успевать",
+            "осиливать"
+          ],
+          "definition_de": "Eine schwierige Aufgabe bewältigen oder ein Ziel erreichen.",
+          "example": "Mit etwas Hilfe schaffe ich die Aufgabe bis morgen.",
+          "example_ru": "С небольшой помощью я справлюсь с заданием к завтрашнему дню.",
+          "forms": "schafft · schaffte · hat geschafft",
+          "grammar_hint": "etwas schaffen (Akk.); Das schaffst du! В значении «создавать» другие формы: schafft · schuf · hat geschaffen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/schaffen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 408,
+          "record": {
+            "id": "dict_91830b8040f11317bb93",
+            "de": "schaffen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "справляться",
+              "справиться",
+              "осилить"
+            ],
+            "definition_de": "Eine schwierige Aufgabe erfolgreich bewältigen.",
+            "forms": "schafft · schaffte · hat geschafft",
+            "example": "Keine Sorge, du schaffst die Prüfung.",
+            "example_ru": "Не волнуйся, ты справишься с экзаменом.",
+            "grammar_hint": "etwas schaffen + Akkusativ; es schaffen, etwas zu tun — суметь что-то сделать.",
+            "usage_note": "Слабое спряжение в значении справиться: schafft · schaffte · hat geschafft. Сильное schaffen — создавать: schafft · schuf · hat geschaffen, отдельный смысл без подтверждения A2. Швейцарское schaffen — работать также не маркируется. Geschafft! — Получилось!",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schaffen",
+                "https://de.wiktionary.org/wiki/geschafft"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_91830b8040f11317bb93",
+        "alias_id": "b1-schaffen-manage",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_91830b8040f11317bb93"
+      }
+    },
+    {
+      "candidate_number": 856,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein Bedienelement, mit dem ein Stromkreis oder Gerät gesteuert wird. Example: Der Schalter für die Lampe befindet sich am Kabel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 4,
+        "record": {
+          "id": "b1-schalter-switch",
+          "de": "der Schalter",
+          "lemma": "Schalter",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "выключатель",
+            "переключатель"
+          ],
+          "definition_de": "Ein Bedienelement, mit dem ein Stromkreis oder Gerät gesteuert wird.",
+          "example": "Der Schalter für die Lampe befindet sich am Kabel.",
+          "example_ru": "Выключатель лампы находится на проводе.",
+          "forms": "die Schalter",
+          "grammar_hint": "den Schalter betätigen; der Lichtschalter — выключатель света.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Schalter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 530,
+          "record": {
+            "id": "a1-491-1",
+            "de": "der Schalter",
+            "lemma": "Schalter",
+            "ru": "окошко; стойка обслуживания; касса (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "окошко",
+              "стойка обслуживания",
+              "касса (по контексту)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "die Schalter",
+            "definition_de": "Eine Stelle, an der man Auskunft, Fahrkarten oder andere Leistungen bekommt.",
+            "example": "Die Fahrkarte bekommen Sie am Schalter.",
+            "example_ru": "Билет Вы получите в кассе.",
+            "note": "am Schalter — у окошка/кассы. A2 также приводит сложное слово Lichtschalter (выключатель света); отдельно значение Schalter «выключатель» не маркируется по одному композиту.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "338f937def0e0de009bc"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 857,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Arbeitsplatz, an dem Kunden persönlich bedient werden. Example: Am Schalter können Sie Ihre Fahrkarte kaufen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 5,
+        "record": {
+          "id": "b1-schalter-counter",
+          "de": "der Schalter",
+          "lemma": "Schalter",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "окно обслуживания",
+            "касса",
+            "стойка"
+          ],
+          "definition_de": "Ein Arbeitsplatz, an dem Kunden persönlich bedient werden.",
+          "example": "Am Schalter können Sie Ihre Fahrkarte kaufen.",
+          "example_ru": "В кассе вы можете купить билет.",
+          "forms": "die Schalter",
+          "grammar_hint": "am Schalter (an dem + Dativ); zum Schalter gehen (zu + Dativ).",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Schalter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 530,
+          "record": {
+            "id": "a1-491-1",
+            "de": "der Schalter",
+            "lemma": "Schalter",
+            "ru": "окошко; стойка обслуживания; касса (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "окошко",
+              "стойка обслуживания",
+              "касса (по контексту)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "die Schalter",
+            "definition_de": "Eine Stelle, an der man Auskunft, Fahrkarten oder andere Leistungen bekommt.",
+            "example": "Die Fahrkarte bekommen Sie am Schalter.",
+            "example_ru": "Билет Вы получите в кассе.",
+            "note": "am Schalter — у окошка/кассы. A2 также приводит сложное слово Lichtschalter (выключатель света); отдельно значение Schalter «выключатель» не маркируется по одному композиту.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "338f937def0e0de009bc"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-491-1",
+        "alias_id": "b1-schalter-counter",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-491-1"
+      }
+    },
+    {
+      "candidate_number": 858,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit einer Würze, die im Mund ein brennendes Gefühl erzeugt. Example: Die rote Sauce ist mir zu scharf.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 6,
+        "record": {
+          "id": "b1-scharf-spicy",
+          "de": "scharf",
+          "lemma": "scharf",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "острый",
+            "жгучий (вкус)"
+          ],
+          "definition_de": "Mit einer Würze, die im Mund ein brennendes Gefühl erzeugt.",
+          "example": "Die rote Sauce ist mir zu scharf.",
+          "example_ru": "Красный соус для меня слишком острый.",
+          "forms": "scharf · schärfer · am schärfsten",
+          "grammar_hint": "scharf schmecken; mir zu scharf (Dativ). Gegensatz: mild.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/scharf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 335,
+          "record": {
+            "id": "dict_f7631b489f7b5607df6a",
+            "de": "scharf",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "острый"
+            ],
+            "definition_de": "Bei Speisen: stark würzig oder brennend im Mund; bei Messern: gut schneidend.",
+            "forms": "scharf · schärfer · am schärfsten",
+            "example": "Das Curry ist mir zu scharf.",
+            "example_ru": "Карри для меня слишком острое.",
+            "grammar_hint": "",
+            "usage_note": "Два значения подтверждены: scharfes Messer — острый нож; scharfe Suppe — острый суп (с жгучими приправами). Не путать с würzig — пряный, не обязательно жгучий. Другие значения, например резко тормозить, не подтверждены для этой карточки A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/scharf",
+                "https://www.duden.de/rechtschreibung/scharf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f7631b489f7b5607df6a",
+        "alias_id": "b1-scharf-spicy",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f7631b489f7b5607df6a"
+      }
+    },
+    {
+      "candidate_number": 859,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Mit einer Kante oder Spitze, die leicht schneiden kann. Example: Für das Gemüse brauche ich ein scharfes Messer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 7,
+        "record": {
+          "id": "b1-scharf-blade",
+          "de": "scharf",
+          "lemma": "scharf",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "острый",
+            "хорошо заточенный"
+          ],
+          "definition_de": "Mit einer Kante oder Spitze, die leicht schneiden kann.",
+          "example": "Für das Gemüse brauche ich ein scharfes Messer.",
+          "example_ru": "Для овощей мне нужен острый нож.",
+          "forms": "scharf · schärfer · am schärfsten",
+          "grammar_hint": "ein scharfes Messer; Gegenteil: stumpf — тупой.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/scharf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 335,
+          "record": {
+            "id": "dict_f7631b489f7b5607df6a",
+            "de": "scharf",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "острый"
+            ],
+            "definition_de": "Bei Speisen: stark würzig oder brennend im Mund; bei Messern: gut schneidend.",
+            "forms": "scharf · schärfer · am schärfsten",
+            "example": "Das Curry ist mir zu scharf.",
+            "example_ru": "Карри для меня слишком острое.",
+            "grammar_hint": "",
+            "usage_note": "Два значения подтверждены: scharfes Messer — острый нож; scharfe Suppe — острый суп (с жгучими приправами). Не путать с würzig — пряный, не обязательно жгучий. Другие значения, например резко тормозить, не подтверждены для этой карточки A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/scharf",
+                "https://www.duden.de/rechtschreibung/scharf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 860,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Licht ausstrahlen oder als Lichtquelle sichtbar sein. Example: Am Nachmittag scheint die Sonne ins Wohnzimmer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 21,
+        "record": {
+          "id": "b1-scheinen-shine",
+          "de": "scheinen",
+          "lemma": "scheinen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "светить",
+            "сиять"
+          ],
+          "definition_de": "Licht ausstrahlen oder als Lichtquelle sichtbar sein.",
+          "example": "Am Nachmittag scheint die Sonne ins Wohnzimmer.",
+          "example_ru": "После обеда солнце светит в гостиную.",
+          "forms": "scheint · schien · hat geschienen",
+          "grammar_hint": "die Sonne scheint; Perfekt с haben, несмотря на отсутствие прямого объекта.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/scheinen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 665,
+          "record": {
+            "id": "a1-492-1",
+            "de": "scheinen",
+            "lemma": "scheinen",
+            "ru": "светить",
+            "uk": "",
+            "translations_ru": [
+              "светить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "scheint · schien · hat geschienen",
+            "definition_de": "Licht geben, besonders von der Sonne.",
+            "example": "Heute scheint die Sonne.",
+            "example_ru": "Сегодня светит солнце.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e5108e1c13e6aef9d5cf"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-492-1",
+        "alias_id": "b1-scheinen-shine",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-492-1"
+      }
+    },
+    {
+      "candidate_number": 861,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Einen bestimmten Eindruck vermitteln, ohne Gewissheit darüber auszudrücken. Example: Der neue Kollege scheint sehr freundlich zu sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 22,
+        "record": {
+          "id": "b1-scheinen-seem",
+          "de": "scheinen",
+          "lemma": "scheinen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "казаться",
+            "по-видимому"
+          ],
+          "definition_de": "Einen bestimmten Eindruck vermitteln, ohne Gewissheit darüber auszudrücken.",
+          "example": "Der neue Kollege scheint sehr freundlich zu sein.",
+          "example_ru": "Новый коллега кажется очень дружелюбным.",
+          "forms": "scheint · schien · hat geschienen",
+          "grammar_hint": "scheinen + zu + Infinitiv: scheint zu sein. Es scheint, dass … — глагол в конце придаточного. При модальности не требуется отдельный перевод «светить».",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/scheinen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 665,
+          "record": {
+            "id": "a1-492-1",
+            "de": "scheinen",
+            "lemma": "scheinen",
+            "ru": "светить",
+            "uk": "",
+            "translations_ru": [
+              "светить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "scheint · schien · hat geschienen",
+            "definition_de": "Licht geben, besonders von der Sonne.",
+            "example": "Heute scheint die Sonne.",
+            "example_ru": "Сегодня светит солнце.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e5108e1c13e6aef9d5cf"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 862,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Jemandem etwas ohne Bezahlung als Geschenk überlassen. Example: Zum Geburtstag schenke ich meiner Freundin ein Buch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 23,
+        "record": {
+          "id": "b1-schenken-give",
+          "de": "schenken",
+          "lemma": "schenken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "дарить",
+            "подарить"
+          ],
+          "definition_de": "Jemandem etwas ohne Bezahlung als Geschenk überlassen.",
+          "example": "Zum Geburtstag schenke ich meiner Freundin ein Buch.",
+          "example_ru": "На день рождения я подарю подруге книгу.",
+          "forms": "schenkt · schenkte · hat geschenkt",
+          "grammar_hint": "jemandem (Dativ) etwas (Akk.) schenken; das Geschenk — подарок.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schenken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 409,
+          "record": {
+            "id": "dict_340948c0fff968498073",
+            "de": "schenken",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "дарить",
+              "подарить"
+            ],
+            "definition_de": "Einer Person etwas geben, ohne Geld dafür zu verlangen.",
+            "forms": "schenkt · schenkte · hat geschenkt",
+            "example": "Ich schenke meiner Mutter ein Buch.",
+            "example_ru": "Я дарю маме книгу.",
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) schenken; zum Geburtstag (zu + Dativ).",
+            "usage_note": "Подтверждено дарить/подарить. Aufmerksamkeit schenken, sich etwas schenken и другие устойчивые переносные значения не получают A2 автоматически.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schenken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_340948c0fff968498073",
+        "alias_id": "b1-schenken-give",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_340948c0fff968498073"
+      }
+    },
+    {
+      "candidate_number": 863,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Werkzeug mit zwei beweglichen Schneiden zum Trennen von Material. Example: Mit dieser Schere kann man Stoff schneiden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 24,
+        "record": {
+          "id": "b1-schere-scissors",
+          "de": "die Schere",
+          "lemma": "Schere",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ножницы"
+          ],
+          "definition_de": "Ein Werkzeug mit zwei beweglichen Schneiden zum Trennen von Material.",
+          "example": "Mit dieser Schere kann man Stoff schneiden.",
+          "example_ru": "Этими ножницами можно резать ткань.",
+          "forms": "die Scheren",
+          "grammar_hint": "В немецком Singular: eine Schere; в русском «ножницы» во множественном числе. mit der Schere (Dativ).",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schere"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 268,
+          "record": {
+            "id": "dict_b89e80eb0fd7e9a46e2a",
+            "de": "die Schere",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ножницы"
+            ],
+            "definition_de": "Ein Werkzeug mit zwei Klingen, mit dem man zum Beispiel Papier oder Stoff schneidet.",
+            "forms": "Plural · die Scheren",
+            "example": "Kann ich kurz deine Schere benutzen?",
+            "example_ru": "Могу я ненадолго воспользоваться твоими ножницами?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schere"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b89e80eb0fd7e9a46e2a",
+        "alias_id": "b1-schere-scissors",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b89e80eb0fd7e9a46e2a"
+      }
+    },
+    {
+      "candidate_number": 864,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas zu einer anderen Person befördern lassen. Example: Ich schicke meiner Schwester ein Paket.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 25,
+        "record": {
+          "id": "b1-schicken-send-item",
+          "de": "schicken",
+          "lemma": "schicken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "отправлять",
+            "посылать"
+          ],
+          "definition_de": "Etwas zu einer anderen Person befördern lassen.",
+          "example": "Ich schicke meiner Schwester ein Paket.",
+          "example_ru": "Я отправляю сестре посылку.",
+          "forms": "schickt · schickte · hat geschickt",
+          "grammar_hint": "jemandem (Dativ) etwas (Akk.) schicken; an jemanden (Akk.) schicken.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schicken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 666,
+          "record": {
+            "id": "a1-493-1",
+            "de": "schicken",
+            "lemma": "schicken",
+            "ru": "отправлять",
+            "uk": "",
+            "translations_ru": [
+              "отправлять"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schickt · schickte · hat geschickt",
+            "definition_de": "Etwas an einen anderen Ort oder an eine Person senden.",
+            "example": "Ich schicke dir eine Nachricht.",
+            "example_ru": "Я отправлю тебе сообщение.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "3d98422665bc2dab5b42"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-493-1",
+        "alias_id": "b1-schicken-send-item",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-493-1"
+      }
+    },
+    {
+      "candidate_number": 865,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Nachricht oder Datei an eine andere Person übermitteln. Example: Schickst du mir bitte das Foto per E-Mail?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 26,
+        "record": {
+          "id": "b1-schicken-digital",
+          "de": "schicken",
+          "lemma": "schicken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "отправлять (сообщение, файл)"
+          ],
+          "definition_de": "Eine Nachricht oder Datei an eine andere Person übermitteln.",
+          "example": "Schickst du mir bitte das Foto per E-Mail?",
+          "example_ru": "Отправишь мне, пожалуйста, фотографию по электронной почте?",
+          "forms": "schickt · schickte · hat geschickt",
+          "grammar_hint": "mir (Dativ), das Foto (Akk.); per E-Mail. Учебный контекст значения отправлять.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schicken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 666,
+          "record": {
+            "id": "a1-493-1",
+            "de": "schicken",
+            "lemma": "schicken",
+            "ru": "отправлять",
+            "uk": "",
+            "translations_ru": [
+              "отправлять"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schickt · schickte · hat geschickt",
+            "definition_de": "Etwas an einen anderen Ort oder an eine Person senden.",
+            "example": "Ich schicke dir eine Nachricht.",
+            "example_ru": "Я отправлю тебе сообщение.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "3d98422665bc2dab5b42"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-493-1",
+        "alias_id": "b1-schicken-digital",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-493-1"
+      }
+    },
+    {
+      "candidate_number": 866,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Person veranlassen, an einen Ort zu gehen oder eine Aufgabe zu erledigen. Example: Die Chefin schickt mich morgen zu einem Kunden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_079.json",
+        "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+        "batch": 79,
+        "row": 27,
+        "record": {
+          "id": "b1-schicken-person",
+          "de": "schicken",
+          "lemma": "schicken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "посылать",
+            "отправлять (человека куда-либо)"
+          ],
+          "definition_de": "Eine Person veranlassen, an einen Ort zu gehen oder eine Aufgabe zu erledigen.",
+          "example": "Die Chefin schickt mich morgen zu einem Kunden.",
+          "example_ru": "Начальница отправляет меня завтра к клиенту.",
+          "forms": "schickt · schickte · hat geschickt",
+          "grammar_hint": "jemanden (Akk.) zu jemandem (Dativ) schicken; jemanden einkaufen schicken (Infinitiv без zu).",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schicken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 666,
+          "record": {
+            "id": "a1-493-1",
+            "de": "schicken",
+            "lemma": "schicken",
+            "ru": "отправлять",
+            "uk": "",
+            "translations_ru": [
+              "отправлять"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schickt · schickte · hat geschickt",
+            "definition_de": "Etwas an einen anderen Ort oder an eine Person senden.",
+            "example": "Ich schicke dir eine Nachricht.",
+            "example_ru": "Я отправлю тебе сообщение.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "3d98422665bc2dab5b42"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 867,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein größeres Wasserfahrzeug zur Beförderung von Menschen oder Gütern. Example: Wir fahren mit dem Schiff über den See.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 2,
+        "record": {
+          "id": "b1-schiff-vessel",
+          "de": "das Schiff",
+          "lemma": "Schiff",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "корабль",
+            "судно",
+            "теплоход"
+          ],
+          "definition_de": "Ein größeres Wasserfahrzeug zur Beförderung von Menschen oder Gütern.",
+          "example": "Wir fahren mit dem Schiff über den See.",
+          "example_ru": "Мы переправляемся через озеро на теплоходе.",
+          "forms": "die Schiffe",
+          "grammar_hint": "mit dem Schiff (Dativ); an Bord gehen — подняться на борт.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schiff"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 195,
+          "record": {
+            "id": "dict_6bb357cb99bc51fa7f5b",
+            "de": "das Schiff",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "корабль",
+              "судно"
+            ],
+            "definition_de": "Ein größeres Fahrzeug, das auf dem Wasser fährt.",
+            "forms": "Plural · die Schiffe",
+            "example": "Das Schiff fährt um zehn Uhr vom Hafen ab.",
+            "example_ru": "Корабль отправляется из порта в десять часов.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schiff"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6bb357cb99bc51fa7f5b",
+        "alias_id": "b1-schiff-vessel",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6bb357cb99bc51fa7f5b"
+      }
+    },
+    {
+      "candidate_number": 868,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine sichtbare Fläche mit einer Aufschrift oder einem Hinweis. Example: Am Eingang hängt ein Schild mit den Öffnungszeiten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 3,
+        "record": {
+          "id": "b1-schild-sign",
+          "de": "das Schild",
+          "lemma": "Schild",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "табличка",
+            "вывеска",
+            "знак"
+          ],
+          "definition_de": "Eine sichtbare Fläche mit einer Aufschrift oder einem Hinweis.",
+          "example": "Am Eingang hängt ein Schild mit den Öffnungszeiten.",
+          "example_ru": "У входа висит табличка с часами работы.",
+          "forms": "die Schilder",
+          "grammar_hint": "das Schild (табличка), der Schild (щит), Plural die Schilde. auf dem Schild (Dativ).",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schild"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 531,
+          "record": {
+            "id": "a1-494-1",
+            "de": "das Schild",
+            "lemma": "Schild",
+            "ru": "табличка; знак",
+            "uk": "",
+            "translations_ru": [
+              "табличка",
+              "знак"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Schilder",
+            "definition_de": "Eine Tafel mit einem Zeichen oder einer Aufschrift.",
+            "example": "Auf dem Schild steht „Eingang“.",
+            "example_ru": "На табличке написано «Вход».",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "d296249f64c6181c1d53"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-494-1",
+        "alias_id": "b1-schild-sign",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-494-1"
+      }
+    },
+    {
+      "candidate_number": 869,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein an einem Gegenstand befestigter Hinweis, etwa auf den Preis. Example: Vor dem Waschen entferne ich das Preisschild.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 4,
+        "record": {
+          "id": "b1-schild-tag",
+          "de": "das Schild",
+          "lemma": "Schild",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ярлык",
+            "бирка",
+            "этикетка"
+          ],
+          "definition_de": "Ein an einem Gegenstand befestigter Hinweis, etwa auf den Preis.",
+          "example": "Vor dem Waschen entferne ich das Preisschild.",
+          "example_ru": "Перед стиркой я снимаю ценник.",
+          "forms": "die Schilder",
+          "grammar_hint": "das Preisschild — ценник; das Etikett — этикетка. Учебный контекст общего значения информационной таблички.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schild"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 531,
+          "record": {
+            "id": "a1-494-1",
+            "de": "das Schild",
+            "lemma": "Schild",
+            "ru": "табличка; знак",
+            "uk": "",
+            "translations_ru": [
+              "табличка",
+              "знак"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Schilder",
+            "definition_de": "Eine Tafel mit einem Zeichen oder einer Aufschrift.",
+            "example": "Auf dem Schild steht „Eingang“.",
+            "example_ru": "На табличке написано «Вход».",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "d296249f64c6181c1d53"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 870,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Einer Person gegenüber ärgerlich einen Vorwurf äußern. Example: Der Vater schimpft mit seinem Sohn wegen der Unordnung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 5,
+        "record": {
+          "id": "b1-schimpfen-scold",
+          "de": "mit jemandem schimpfen",
+          "lemma": "schimpfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ругать кого-либо",
+            "браниться на кого-либо"
+          ],
+          "definition_de": "Einer Person gegenüber ärgerlich einen Vorwurf äußern.",
+          "example": "Der Vater schimpft mit seinem Sohn wegen der Unordnung.",
+          "example_ru": "Отец ругает сына за беспорядок.",
+          "forms": "schimpft · schimpfte · hat geschimpft",
+          "grammar_hint": "mit + Dativ; jemanden ausschimpfen (Akk.) — отругать кого-либо.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schimpfen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 228,
+          "record": {
+            "id": "dict_4516e5d598accce2cc80",
+            "de": "schimpfen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "ругаться",
+              "возмущаться"
+            ],
+            "definition_de": "Sich laut oder ärgerlich über jemanden oder etwas äußern.",
+            "forms": "schimpft · schimpfte · hat geschimpft",
+            "example": "Die Leute schimpfen über die lange Wartezeit.",
+            "example_ru": "Люди возмущаются долгим ожиданием.",
+            "grammar_hint": "Из-за чего или о чём возмущаются? über + Akkusativ: über die lange Wartezeit.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schimpfen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 871,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Seinen Ärger über eine Sache oder Person deutlich äußern. Example: Viele Fahrgäste schimpfen über die Verspätung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 6,
+        "record": {
+          "id": "b1-schimpfen-complain",
+          "de": "über / auf etwas schimpfen",
+          "lemma": "schimpfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ругаться по поводу",
+            "возмущаться",
+            "бранить"
+          ],
+          "definition_de": "Seinen Ärger über eine Sache oder Person deutlich äußern.",
+          "example": "Viele Fahrgäste schimpfen über die Verspätung.",
+          "example_ru": "Многие пассажиры возмущаются задержкой.",
+          "forms": "schimpft · schimpfte · hat geschimpft",
+          "grammar_hint": "über + Akkusativ или auf + Akkusativ; über das Wetter schimpfen. Не путать с mit jemandem schimpfen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schimpfen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 228,
+          "record": {
+            "id": "dict_4516e5d598accce2cc80",
+            "de": "schimpfen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "ругаться",
+              "возмущаться"
+            ],
+            "definition_de": "Sich laut oder ärgerlich über jemanden oder etwas äußern.",
+            "forms": "schimpft · schimpfte · hat geschimpft",
+            "example": "Die Leute schimpfen über die lange Wartezeit.",
+            "example_ru": "Люди возмущаются долгим ожиданием.",
+            "grammar_hint": "Из-за чего или о чём возмущаются? über + Akkusativ: über die lange Wartezeit.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schimpfen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4516e5d598accce2cc80",
+        "alias_id": "b1-schimpfen-complain",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4516e5d598accce2cc80"
+      }
+    },
+    {
+      "candidate_number": 872,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein aus Fleisch, meist vom Schwein, hergestelltes Lebensmittel. Example: Ich nehme ein Sandwich mit Schinken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 7,
+        "record": {
+          "id": "b1-schinken-ham",
+          "de": "der Schinken",
+          "lemma": "Schinken",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ветчина"
+          ],
+          "definition_de": "Ein aus Fleisch, meist vom Schwein, hergestelltes Lebensmittel.",
+          "example": "Ich nehme ein Sandwich mit Schinken.",
+          "example_ru": "Я возьму сэндвич с ветчиной.",
+          "forms": "die Schinken; как продукт обычно Singular",
+          "grammar_hint": "mit Schinken (Dativ без артикля); Kochschinken — варёная ветчина.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schinken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 532,
+          "record": {
+            "id": "a1-495-1",
+            "de": "der Schinken",
+            "lemma": "Schinken",
+            "ru": "ветчина",
+            "uk": "",
+            "translations_ru": [
+              "ветчина"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Schinken",
+            "definition_de": "Fleisch vom Schwein, das man gesalzen, gekocht oder geräuchert isst.",
+            "example": "Ich esse ein Brötchen mit Schinken.",
+            "example_ru": "Я ем булочку с ветчиной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "c18f834167dafa245fc5"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-495-1",
+        "alias_id": "b1-schinken-ham",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-495-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_94298c5ae5a411eb355c",
+      "alias_ids": [
+        "b1-schade-dass"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_94298c5ae5a411eb355c",
+        "de": "schade",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "жаль",
+          "жалко",
+          "как жаль"
+        ],
+        "definition_de": "Drückt aus, dass man etwas bedauert.",
+        "forms": "Не склоняется; обычных степеней сравнения нет",
+        "example": "Schade, dass der Kurs heute ausfällt.",
+        "example_ru": "Жаль, что сегодня занятие отменено.",
+        "grammar_hint": "После dass — придаточное со спрягаемым глаголом в конце: Schade, dass du nicht kommst.",
+        "usage_note": "Предикативное, несклоняемое; степеней сравнения нет. Es ist schade, dass … / Schade, dass … — Жаль, что … . Не путать с schaden — вредить.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schade"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-schade-dass"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schade-dass",
+            "de": "Schade, dass …",
+            "part": "phrase",
+            "forms": "неизменяемое; dass — подчинительный союз",
+            "definition_de": "Drückt Bedauern über den im Nebensatz beschriebenen Sachverhalt aus.",
+            "translations_ru": [
+              "жаль, что …"
+            ],
+            "grammar_hint": "После dass спрягаемый глагол в конце придаточного: nicht kommen kannst. Запятая обязательна.",
+            "example": "Schade, dass du morgen nicht kommen kannst.",
+            "example_ru": "Жаль, что ты завтра не можешь прийти."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/schade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4c2b20ac4521b5a12d44",
+      "alias_ids": [
+        "b1-schaedlich-harmful"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4c2b20ac4521b5a12d44",
+        "de": "schädlich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "вредный"
+        ],
+        "definition_de": "So, dass etwas Schaden verursacht.",
+        "forms": "schädlich · schädlicher · am schädlichsten",
+        "example": "Zu viel Zucker ist schädlich für die Zähne.",
+        "example_ru": "Слишком много сахара вредно для зубов.",
+        "grammar_hint": "schädlich für + Akkusativ",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/resources/files/pdf329/goethe-zertifikat_a2_wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sch%C3%A4dlich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-schaedlich-harmful"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schaedlich-harmful",
+            "de": "schädlich",
+            "part": "adj",
+            "forms": "schädlich · schädlicher · am schädlichsten",
+            "definition_de": "Negative Folgen für jemanden oder etwas verursachend.",
+            "translations_ru": [
+              "вредный",
+              "вредоносный"
+            ],
+            "grammar_hint": "schädlich für + Akkusativ; schaden + Dativ; der Schaden — ущерб.",
+            "example": "Zu viel Lärm kann für das Gehör schädlich sein.",
+            "example_ru": "Слишком сильный шум может быть вреден для слуха."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%A4dlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_91830b8040f11317bb93",
+      "alias_ids": [
+        "b1-schaffen-manage"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_91830b8040f11317bb93",
+        "de": "schaffen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "справляться",
+          "справиться",
+          "осилить"
+        ],
+        "definition_de": "Eine schwierige Aufgabe erfolgreich bewältigen.",
+        "forms": "schafft · schaffte · hat geschafft",
+        "example": "Keine Sorge, du schaffst die Prüfung.",
+        "example_ru": "Не волнуйся, ты справишься с экзаменом.",
+        "grammar_hint": "etwas schaffen + Akkusativ; es schaffen, etwas zu tun — суметь что-то сделать.",
+        "usage_note": "Слабое спряжение в значении справиться: schafft · schaffte · hat geschafft. Сильное schaffen — создавать: schafft · schuf · hat geschaffen, отдельный смысл без подтверждения A2. Швейцарское schaffen — работать также не маркируется. Geschafft! — Получилось!",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schaffen",
+            "https://de.wiktionary.org/wiki/geschafft"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-schaffen-manage"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schaffen-manage",
+            "de": "schaffen",
+            "part": "verb",
+            "forms": "schafft · schaffte · hat geschafft",
+            "definition_de": "Eine schwierige Aufgabe bewältigen oder ein Ziel erreichen.",
+            "translations_ru": [
+              "справляться",
+              "успевать",
+              "осиливать"
+            ],
+            "grammar_hint": "etwas schaffen (Akk.); Das schaffst du! В значении «создавать» другие формы: schafft · schuf · hat geschaffen.",
+            "example": "Mit etwas Hilfe schaffe ich die Aufgabe bis morgen.",
+            "example_ru": "С небольшой помощью я справлюсь с заданием к завтрашнему дню."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/schaffen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-491-1",
+      "alias_ids": [
+        "b1-schalter-counter"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-491-1",
+        "de": "der Schalter",
+        "lemma": "Schalter",
+        "ru": "окошко; стойка обслуживания; касса (по контексту)",
+        "uk": "",
+        "translations_ru": [
+          "окошко",
+          "стойка обслуживания",
+          "касса (по контексту)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения"
+        ],
+        "forms": "die Schalter",
+        "definition_de": "Eine Stelle, an der man Auskunft, Fahrkarten oder andere Leistungen bekommt.",
+        "example": "Die Fahrkarte bekommen Sie am Schalter.",
+        "example_ru": "Билет Вы получите в кассе.",
+        "note": "am Schalter — у окошка/кассы. A2 также приводит сложное слово Lichtschalter (выключатель света); отдельно значение Schalter «выключатель» не маркируется по одному композиту.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "338f937def0e0de009bc"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schalter-counter"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schalter-counter",
+            "de": "der Schalter",
+            "part": "noun",
+            "forms": "die Schalter",
+            "definition_de": "Ein Arbeitsplatz, an dem Kunden persönlich bedient werden.",
+            "translations_ru": [
+              "окно обслуживания",
+              "касса",
+              "стойка"
+            ],
+            "grammar_hint": "am Schalter (an dem + Dativ); zum Schalter gehen (zu + Dativ).",
+            "example": "Am Schalter können Sie Ihre Fahrkarte kaufen.",
+            "example_ru": "В кассе вы можете купить билет."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Schalter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f7631b489f7b5607df6a",
+      "alias_ids": [
+        "b1-scharf-spicy"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f7631b489f7b5607df6a",
+        "de": "scharf",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "острый"
+        ],
+        "definition_de": "Bei Speisen: stark würzig oder brennend im Mund; bei Messern: gut schneidend.",
+        "forms": "scharf · schärfer · am schärfsten",
+        "example": "Das Curry ist mir zu scharf.",
+        "example_ru": "Карри для меня слишком острое.",
+        "grammar_hint": "",
+        "usage_note": "Два значения подтверждены: scharfes Messer — острый нож; scharfe Suppe — острый суп (с жгучими приправами). Не путать с würzig — пряный, не обязательно жгучий. Другие значения, например резко тормозить, не подтверждены для этой карточки A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/scharf",
+            "https://www.duden.de/rechtschreibung/scharf"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-scharf-spicy"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-scharf-spicy",
+            "de": "scharf",
+            "part": "adj",
+            "forms": "scharf · schärfer · am schärfsten",
+            "definition_de": "Mit einer Würze, die im Mund ein brennendes Gefühl erzeugt.",
+            "translations_ru": [
+              "острый",
+              "жгучий (вкус)"
+            ],
+            "grammar_hint": "scharf schmecken; mir zu scharf (Dativ). Gegensatz: mild.",
+            "example": "Die rote Sauce ist mir zu scharf.",
+            "example_ru": "Красный соус для меня слишком острый."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/scharf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-492-1",
+      "alias_ids": [
+        "b1-scheinen-shine"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-492-1",
+        "de": "scheinen",
+        "lemma": "scheinen",
+        "ru": "светить",
+        "uk": "",
+        "translations_ru": [
+          "светить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "scheint · schien · hat geschienen",
+        "definition_de": "Licht geben, besonders von der Sonne.",
+        "example": "Heute scheint die Sonne.",
+        "example_ru": "Сегодня светит солнце.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "e5108e1c13e6aef9d5cf"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-scheinen-shine"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-scheinen-shine",
+            "de": "scheinen",
+            "part": "verb",
+            "forms": "scheint · schien · hat geschienen",
+            "definition_de": "Licht ausstrahlen oder als Lichtquelle sichtbar sein.",
+            "translations_ru": [
+              "светить",
+              "сиять"
+            ],
+            "grammar_hint": "die Sonne scheint; Perfekt с haben, несмотря на отсутствие прямого объекта.",
+            "example": "Am Nachmittag scheint die Sonne ins Wohnzimmer.",
+            "example_ru": "После обеда солнце светит в гостиную."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/scheinen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_340948c0fff968498073",
+      "alias_ids": [
+        "b1-schenken-give"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_340948c0fff968498073",
+        "de": "schenken",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "дарить",
+          "подарить"
+        ],
+        "definition_de": "Einer Person etwas geben, ohne Geld dafür zu verlangen.",
+        "forms": "schenkt · schenkte · hat geschenkt",
+        "example": "Ich schenke meiner Mutter ein Buch.",
+        "example_ru": "Я дарю маме книгу.",
+        "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) schenken; zum Geburtstag (zu + Dativ).",
+        "usage_note": "Подтверждено дарить/подарить. Aufmerksamkeit schenken, sich etwas schenken и другие устойчивые переносные значения не получают A2 автоматически.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schenken"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-schenken-give"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schenken-give",
+            "de": "schenken",
+            "part": "verb",
+            "forms": "schenkt · schenkte · hat geschenkt",
+            "definition_de": "Jemandem etwas ohne Bezahlung als Geschenk überlassen.",
+            "translations_ru": [
+              "дарить",
+              "подарить"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akk.) schenken; das Geschenk — подарок.",
+            "example": "Zum Geburtstag schenke ich meiner Freundin ein Buch.",
+            "example_ru": "На день рождения я подарю подруге книгу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schenken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_b89e80eb0fd7e9a46e2a",
+      "alias_ids": [
+        "b1-schere-scissors"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_b89e80eb0fd7e9a46e2a",
+        "de": "die Schere",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ножницы"
+        ],
+        "definition_de": "Ein Werkzeug mit zwei Klingen, mit dem man zum Beispiel Papier oder Stoff schneidet.",
+        "forms": "Plural · die Scheren",
+        "example": "Kann ich kurz deine Schere benutzen?",
+        "example_ru": "Могу я ненадолго воспользоваться твоими ножницами?",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schere"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-schere-scissors"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schere-scissors",
+            "de": "die Schere",
+            "part": "noun",
+            "forms": "die Scheren",
+            "definition_de": "Ein Werkzeug mit zwei beweglichen Schneiden zum Trennen von Material.",
+            "translations_ru": [
+              "ножницы"
+            ],
+            "grammar_hint": "В немецком Singular: eine Schere; в русском «ножницы» во множественном числе. mit der Schere (Dativ).",
+            "example": "Mit dieser Schere kann man Stoff schneiden.",
+            "example_ru": "Этими ножницами можно резать ткань."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schere"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-493-1",
+      "alias_ids": [
+        "b1-schicken-send-item",
+        "b1-schicken-digital"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-493-1",
+        "de": "schicken",
+        "lemma": "schicken",
+        "ru": "отправлять",
+        "uk": "",
+        "translations_ru": [
+          "отправлять"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schickt · schickte · hat geschickt",
+        "definition_de": "Etwas an einen anderen Ort oder an eine Person senden.",
+        "example": "Ich schicke dir eine Nachricht.",
+        "example_ru": "Я отправлю тебе сообщение.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "3d98422665bc2dab5b42"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schicken-send-item",
+          "b1-schicken-digital"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schicken-send-item",
+            "de": "schicken",
+            "part": "verb",
+            "forms": "schickt · schickte · hat geschickt",
+            "definition_de": "Etwas zu einer anderen Person befördern lassen.",
+            "translations_ru": [
+              "отправлять",
+              "посылать"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akk.) schicken; an jemanden (Akk.) schicken.",
+            "example": "Ich schicke meiner Schwester ein Paket.",
+            "example_ru": "Я отправляю сестре посылку."
+          },
+          {
+            "id": "b1-schicken-digital",
+            "de": "schicken",
+            "part": "verb",
+            "forms": "schickt · schickte · hat geschickt",
+            "definition_de": "Eine Nachricht oder Datei an eine andere Person übermitteln.",
+            "translations_ru": [
+              "отправлять (сообщение, файл)"
+            ],
+            "grammar_hint": "mir (Dativ), das Foto (Akk.); per E-Mail. Учебный контекст значения отправлять.",
+            "example": "Schickst du mir bitte das Foto per E-Mail?",
+            "example_ru": "Отправишь мне, пожалуйста, фотографию по электронной почте?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schicken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schicken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_6bb357cb99bc51fa7f5b",
+      "alias_ids": [
+        "b1-schiff-vessel"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_6bb357cb99bc51fa7f5b",
+        "de": "das Schiff",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "корабль",
+          "судно"
+        ],
+        "definition_de": "Ein größeres Fahrzeug, das auf dem Wasser fährt.",
+        "forms": "Plural · die Schiffe",
+        "example": "Das Schiff fährt um zehn Uhr vom Hafen ab.",
+        "example_ru": "Корабль отправляется из порта в десять часов.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schiff"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-schiff-vessel"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schiff-vessel",
+            "de": "das Schiff",
+            "part": "noun",
+            "forms": "die Schiffe",
+            "definition_de": "Ein größeres Wasserfahrzeug zur Beförderung von Menschen oder Gütern.",
+            "translations_ru": [
+              "корабль",
+              "судно",
+              "теплоход"
+            ],
+            "grammar_hint": "mit dem Schiff (Dativ); an Bord gehen — подняться на борт.",
+            "example": "Wir fahren mit dem Schiff über den See.",
+            "example_ru": "Мы переправляемся через озеро на теплоходе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schiff"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-494-1",
+      "alias_ids": [
+        "b1-schild-sign"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-494-1",
+        "de": "das Schild",
+        "lemma": "Schild",
+        "ru": "табличка; знак",
+        "uk": "",
+        "translations_ru": [
+          "табличка",
+          "знак"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "die Schilder",
+        "definition_de": "Eine Tafel mit einem Zeichen oder einer Aufschrift.",
+        "example": "Auf dem Schild steht „Eingang“.",
+        "example_ru": "На табличке написано «Вход».",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "d296249f64c6181c1d53"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schild-sign"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schild-sign",
+            "de": "das Schild",
+            "part": "noun",
+            "forms": "die Schilder",
+            "definition_de": "Eine sichtbare Fläche mit einer Aufschrift oder einem Hinweis.",
+            "translations_ru": [
+              "табличка",
+              "вывеска",
+              "знак"
+            ],
+            "grammar_hint": "das Schild (табличка), der Schild (щит), Plural die Schilde. auf dem Schild (Dativ).",
+            "example": "Am Eingang hängt ein Schild mit den Öffnungszeiten.",
+            "example_ru": "У входа висит табличка с часами работы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schild"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4516e5d598accce2cc80",
+      "alias_ids": [
+        "b1-schimpfen-complain"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4516e5d598accce2cc80",
+        "de": "schimpfen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "ругаться",
+          "возмущаться"
+        ],
+        "definition_de": "Sich laut oder ärgerlich über jemanden oder etwas äußern.",
+        "forms": "schimpft · schimpfte · hat geschimpft",
+        "example": "Die Leute schimpfen über die lange Wartezeit.",
+        "example_ru": "Люди возмущаются долгим ожиданием.",
+        "grammar_hint": "Из-за чего или о чём возмущаются? über + Akkusativ: über die lange Wartezeit.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schimpfen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-schimpfen-complain"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schimpfen-complain",
+            "de": "über / auf etwas schimpfen",
+            "part": "verb",
+            "forms": "schimpft · schimpfte · hat geschimpft",
+            "definition_de": "Seinen Ärger über eine Sache oder Person deutlich äußern.",
+            "translations_ru": [
+              "ругаться по поводу",
+              "возмущаться",
+              "бранить"
+            ],
+            "grammar_hint": "über + Akkusativ или auf + Akkusativ; über das Wetter schimpfen. Не путать с mit jemandem schimpfen.",
+            "example": "Viele Fahrgäste schimpfen über die Verspätung.",
+            "example_ru": "Многие пассажиры возмущаются задержкой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schimpfen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-495-1",
+      "alias_ids": [
+        "b1-schinken-ham"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-495-1",
+        "de": "der Schinken",
+        "lemma": "Schinken",
+        "ru": "ветчина",
+        "uk": "",
+        "translations_ru": [
+          "ветчина"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Schinken",
+        "definition_de": "Fleisch vom Schwein, das man gesalzen, gekocht oder geräuchert isst.",
+        "example": "Ich esse ein Brötchen mit Schinken.",
+        "example_ru": "Я ем булочку с ветчиной.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "c18f834167dafa245fc5"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schinken-ham"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schinken-ham",
+            "de": "der Schinken",
+            "part": "noun",
+            "forms": "die Schinken; как продукт обычно Singular",
+            "definition_de": "Ein aus Fleisch, meist vom Schwein, hergestelltes Lebensmittel.",
+            "translations_ru": [
+              "ветчина"
+            ],
+            "grammar_hint": "mit Schinken (Dativ без артикля); Kochschinken — варёная ветчина.",
+            "example": "Ich nehme ein Sandwich mit Schinken.",
+            "example_ru": "Я возьму сэндвич с ветчиной."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schinken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

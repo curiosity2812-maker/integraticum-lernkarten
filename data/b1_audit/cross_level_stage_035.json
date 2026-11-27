@@ -1,0 +1,2437 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    673,
+    692
+  ],
+  "reviewed": 20,
+  "merge_count": 11,
+  "merge_target_count": 7,
+  "retained_distinct_senses": 8,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 673,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht verschlossen oder nicht zugemacht. Example: Die Balkontür ist noch offen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 14,
+        "record": {
+          "id": "b1-offen-door",
+          "de": "offen",
+          "lemma": "offen",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "открытый (дверь, окно)"
+          ],
+          "definition_de": "Nicht verschlossen oder nicht zugemacht.",
+          "example": "Die Balkontür ist noch offen.",
+          "example_ru": "Балконная дверь ещё открыта.",
+          "forms": "offen · offener · am offensten (при градуируемости)",
+          "grammar_hint": "offen sein — быть открытым; öffnen — открывать; разговорное auf sein. Для бинарного состояния сравнение обычно не нужно.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 466,
+          "record": {
+            "id": "dict_6569368f61f529b7d51f",
+            "de": "offen",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "открытый",
+              "открыто"
+            ],
+            "definition_de": "Nicht geschlossen oder für Besucher zugänglich.",
+            "forms": "offen · offener · am offensten (если степень допускается)",
+            "example": "Ist die Apotheke noch offen?",
+            "example_ru": "Аптека ещё открыта?",
+            "grammar_hint": "В значении режима работы степени сравнения обычно не используются.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/offen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6569368f61f529b7d51f",
+        "alias_id": "b1-offen-door",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6569368f61f529b7d51f"
+      }
+    },
+    {
+      "candidate_number": 674,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Für Kunden oder Besucher zu einer Zeit zugänglich. Example: Ist die Apotheke am Sonntag offen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 15,
+        "record": {
+          "id": "b1-offen-business",
+          "de": "offen",
+          "lemma": "offen",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "открытый",
+            "работающий (магазин)"
+          ],
+          "definition_de": "Für Kunden oder Besucher zu einer Zeit zugänglich.",
+          "example": "Ist die Apotheke am Sonntag offen?",
+          "example_ru": "Аптека открыта в воскресенье?",
+          "forms": "offen · offener · am offensten; в данном значении обычно без сравнения",
+          "grammar_hint": "Der Laden ist offen / geöffnet — магазин открыт; Der Laden öffnet um neun — открывается в девять.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 466,
+          "record": {
+            "id": "dict_6569368f61f529b7d51f",
+            "de": "offen",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "открытый",
+              "открыто"
+            ],
+            "definition_de": "Nicht geschlossen oder für Besucher zugänglich.",
+            "forms": "offen · offener · am offensten (если степень допускается)",
+            "example": "Ist die Apotheke noch offen?",
+            "example_ru": "Аптека ещё открыта?",
+            "grammar_hint": "В значении режима работы степени сравнения обычно не используются.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/offen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6569368f61f529b7d51f",
+        "alias_id": "b1-offen-business",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6569368f61f529b7d51f"
+      }
+    },
+    {
+      "candidate_number": 675,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Beschreibt eine Begleitsituation mit nicht geschlossenem Fenster. Example: Ich lese gern bei offenem Fenster.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 16,
+        "record": {
+          "id": "b1-offen-window-context",
+          "de": "bei offenem Fenster",
+          "lemma": "offen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "при открытом окне",
+            "с открытым окном"
+          ],
+          "definition_de": "Beschreibt eine Begleitsituation mit nicht geschlossenem Fenster.",
+          "example": "Ich lese gern bei offenem Fenster.",
+          "example_ru": "Я люблю читать с открытым окном.",
+          "forms": "offen · offener · am offensten; bei + Dativ",
+          "grammar_hint": "bei + Dativ; без артикля средний род: offenem Fenster. Учебный контекст физического значения offen, не отдельное значение.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 466,
+          "record": {
+            "id": "dict_6569368f61f529b7d51f",
+            "de": "offen",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "открытый",
+              "открыто"
+            ],
+            "definition_de": "Nicht geschlossen oder für Besucher zugänglich.",
+            "forms": "offen · offener · am offensten (если степень допускается)",
+            "example": "Ist die Apotheke noch offen?",
+            "example_ru": "Аптека ещё открыта?",
+            "grammar_hint": "В значении режима работы степени сравнения обычно не используются.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/offen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6569368f61f529b7d51f",
+        "alias_id": "b1-offen-window-context",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6569368f61f529b7d51f"
+      }
+    },
+    {
+      "candidate_number": 676,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ohne Verstellung und ohne etwas zu verheimlichen. Example: Wir sprechen offen über unsere Schwierigkeiten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 17,
+        "record": {
+          "id": "b1-offen-frank",
+          "de": "offen",
+          "lemma": "offen",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "откровенный",
+            "открытый",
+            "откровенно"
+          ],
+          "definition_de": "Ohne Verstellung und ohne etwas zu verheimlichen.",
+          "example": "Wir sprechen offen über unsere Schwierigkeiten.",
+          "example_ru": "Мы откровенно говорим о наших трудностях.",
+          "forms": "offen · offener · am offensten",
+          "grammar_hint": "offen über + Akk. sprechen; offen für + Akk. sein — быть открытым к чему-либо.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 466,
+          "record": {
+            "id": "dict_6569368f61f529b7d51f",
+            "de": "offen",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "открытый",
+              "открыто"
+            ],
+            "definition_de": "Nicht geschlossen oder für Besucher zugänglich.",
+            "forms": "offen · offener · am offensten (если степень допускается)",
+            "example": "Ist die Apotheke noch offen?",
+            "example_ru": "Аптека ещё открыта?",
+            "grammar_hint": "В значении режима работы степени сравнения обычно не используются.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/offen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 677,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Noch nicht beantwortet, entschieden oder abgeschlossen. Example: Zwei Fragen sind noch offen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 18,
+        "record": {
+          "id": "b1-offen-unresolved",
+          "de": "offen",
+          "lemma": "offen",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "нерешённый",
+            "невыясненный",
+            "открытый (вопрос)"
+          ],
+          "definition_de": "Noch nicht beantwortet, entschieden oder abgeschlossen.",
+          "example": "Zwei Fragen sind noch offen.",
+          "example_ru": "Два вопроса ещё не решены.",
+          "forms": "offen · offener · am offensten; обычно без сравнения для нерешённого статуса",
+          "grammar_hint": "eine offene Frage; etwas bleibt offen — что-либо остаётся нерешённым; eine offene Rechnung — неоплаченный счёт.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 466,
+          "record": {
+            "id": "dict_6569368f61f529b7d51f",
+            "de": "offen",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "открытый",
+              "открыто"
+            ],
+            "definition_de": "Nicht geschlossen oder für Besucher zugänglich.",
+            "forms": "offen · offener · am offensten (если степень допускается)",
+            "example": "Ist die Apotheke noch offen?",
+            "example_ru": "Аптека ещё открыта?",
+            "grammar_hint": "В значении режима работы степени сравнения обычно не используются.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/offen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 678,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Den Betrieb für Kunden oder Besucher beginnen. Example: Die Bibliothek öffnet um zehn Uhr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 26,
+        "record": {
+          "id": "b1-oeffnen-business",
+          "de": "öffnen",
+          "lemma": "öffnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "открываться",
+            "начинать работу (магазин)"
+          ],
+          "definition_de": "Den Betrieb für Kunden oder Besucher beginnen.",
+          "example": "Die Bibliothek öffnet um zehn Uhr.",
+          "example_ru": "Библиотека открывается в десять часов.",
+          "forms": "öffnet · öffnete · hat geöffnet",
+          "grammar_hint": "В этом употреблении без объекта и без sich: Der Laden öffnet. geöffnet sein — состояние.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 650,
+          "record": {
+            "id": "a1-438-1",
+            "de": "öffnen",
+            "lemma": "öffnen",
+            "ru": "открывать",
+            "uk": "",
+            "translations_ru": [
+              "открывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Etwas so verändern, dass es offen ist.",
+            "example": "Öffne bitte das Fenster.",
+            "example_ru": "Открой, пожалуйста, окно.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "0f70497714c1edebfc45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 679,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Tür, ein Fenster oder einen Durchgang nicht mehr geschlossen halten. Example: Kannst du bitte die Balkontür öffnen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 27,
+        "record": {
+          "id": "b1-oeffnen-door",
+          "de": "öffnen",
+          "lemma": "öffnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "открывать (дверь, окно)"
+          ],
+          "definition_de": "Eine Tür, ein Fenster oder einen Durchgang nicht mehr geschlossen halten.",
+          "example": "Kannst du bitte die Balkontür öffnen?",
+          "example_ru": "Можешь, пожалуйста, открыть балконную дверь?",
+          "forms": "öffnet · öffnete · hat geöffnet",
+          "grammar_hint": "etwas öffnen + Akk.; das Fenster aufmachen — разговорный синоним; Die Tür öffnet sich — дверь открывается.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 650,
+          "record": {
+            "id": "a1-438-1",
+            "de": "öffnen",
+            "lemma": "öffnen",
+            "ru": "открывать",
+            "uk": "",
+            "translations_ru": [
+              "открывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Etwas so verändern, dass es offen ist.",
+            "example": "Öffne bitte das Fenster.",
+            "example_ru": "Открой, пожалуйста, окно.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "0f70497714c1edebfc45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-438-1",
+        "alias_id": "b1-oeffnen-door",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-438-1"
+      }
+    },
+    {
+      "candidate_number": 680,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Den Verschluss eines Behälters oder einer Verpackung lösen. Example: Ich kann diese Flasche nicht öffnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 28,
+        "record": {
+          "id": "b1-oeffnen-container",
+          "de": "öffnen",
+          "lemma": "öffnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "открывать",
+            "вскрывать (упаковку, ёмкость)"
+          ],
+          "definition_de": "Den Verschluss eines Behälters oder einer Verpackung lösen.",
+          "example": "Ich kann diese Flasche nicht öffnen.",
+          "example_ru": "Я не могу открыть эту бутылку.",
+          "forms": "öffnet · öffnete · hat geöffnet",
+          "grammar_hint": "eine Flasche / Dose / Packung öffnen (Akk.). Контекст физического открытия.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 650,
+          "record": {
+            "id": "a1-438-1",
+            "de": "öffnen",
+            "lemma": "öffnen",
+            "ru": "открывать",
+            "uk": "",
+            "translations_ru": [
+              "открывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Etwas so verändern, dass es offen ist.",
+            "example": "Öffne bitte das Fenster.",
+            "example_ru": "Открой, пожалуйста, окно.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "0f70497714c1edebfc45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-438-1",
+        "alias_id": "b1-oeffnen-container",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-438-1"
+      }
+    },
+    {
+      "candidate_number": 681,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine digitale Datei oder Anwendung zur Nutzung aufrufen. Example: Öffne bitte das Dokument auf deinem Computer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 29,
+        "record": {
+          "id": "b1-oeffnen-file",
+          "de": "öffnen",
+          "lemma": "öffnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "открывать (файл, программу)"
+          ],
+          "definition_de": "Eine digitale Datei oder Anwendung zur Nutzung aufrufen.",
+          "example": "Öffne bitte das Dokument auf deinem Computer.",
+          "example_ru": "Пожалуйста, открой документ на своём компьютере.",
+          "forms": "öffnet · öffnete · hat geöffnet",
+          "grammar_hint": "eine Datei öffnen (Akk.); mit einem Doppelklick (Dativ).",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 650,
+          "record": {
+            "id": "a1-438-1",
+            "de": "öffnen",
+            "lemma": "öffnen",
+            "ru": "открывать",
+            "uk": "",
+            "translations_ru": [
+              "открывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Etwas so verändern, dass es offen ist.",
+            "example": "Öffne bitte das Fenster.",
+            "example_ru": "Открой, пожалуйста, окно.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "0f70497714c1edebfc45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 682,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Sich im Zustand befinden, in dem ein Betrieb zugänglich ist. Example: Das Museum ist bis achtzehn Uhr geöffnet.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_065.json",
+        "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+        "batch": 65,
+        "row": 30,
+        "record": {
+          "id": "b1-geoeffnet-sein-state",
+          "de": "geöffnet sein",
+          "lemma": "öffnen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть открытым",
+            "работать (о заведении)"
+          ],
+          "definition_de": "Sich im Zustand befinden, in dem ein Betrieb zugänglich ist.",
+          "example": "Das Museum ist bis achtzehn Uhr geöffnet.",
+          "example_ru": "Музей открыт до восемнадцати часов.",
+          "forms": "öffnet · öffnete · hat geöffnet; ist geöffnet · war geöffnet · ist geöffnet gewesen",
+          "grammar_hint": "sein + Partizip II: состояние (Zustandspassiv). wird geöffnet — действие открытия (Vorgangspassiv). bis achtzehn Uhr — до 18:00.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 650,
+          "record": {
+            "id": "a1-438-1",
+            "de": "öffnen",
+            "lemma": "öffnen",
+            "ru": "открывать",
+            "uk": "",
+            "translations_ru": [
+              "открывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Etwas so verändern, dass es offen ist.",
+            "example": "Öffne bitte das Fenster.",
+            "example_ru": "Открой, пожалуйста, окно.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "0f70497714c1edebfc45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 683,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zu vielen verschiedenen Zeitpunkten oder in vielen Fällen. Example: Wir treffen uns oft nach dem Kurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 1,
+        "record": {
+          "id": "b1-oft-frequent",
+          "de": "oft",
+          "lemma": "oft",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "часто"
+          ],
+          "definition_de": "Zu vielen verschiedenen Zeitpunkten oder in vielen Fällen.",
+          "example": "Wir treffen uns oft nach dem Kurs.",
+          "example_ru": "Мы часто встречаемся после курса.",
+          "forms": "oft · öfter · am öftesten (редко); häufiger · am häufigsten",
+          "grammar_hint": "Наречие частотности; в начале главного предложения глагол на втором месте.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/oft"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 652,
+          "record": {
+            "id": "a1-440-1",
+            "de": "oft",
+            "lemma": "oft",
+            "ru": "часто",
+            "uk": "",
+            "translations_ru": [
+              "часто"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "öfter · am häufigsten",
+            "definition_de": "Viele Male oder regelmäßig.",
+            "example": "Ich fahre oft mit dem Zug.",
+            "example_ru": "Я часто езжу на поезде.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "9231e6965586129261a3"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-440-1",
+        "alias_id": "b1-oft-frequent",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-440-1"
+      }
+    },
+    {
+      "candidate_number": 684,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Mit größerer Häufigkeit oder bei mehreren Gelegenheiten. Example: Seit Januar gehe ich öfter schwimmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 2,
+        "record": {
+          "id": "b1-oefter-frequency",
+          "de": "öfter",
+          "lemma": "oft",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "чаще",
+            "довольно часто",
+            "неоднократно"
+          ],
+          "definition_de": "Mit größerer Häufigkeit oder bei mehreren Gelegenheiten.",
+          "example": "Seit Januar gehe ich öfter schwimmen.",
+          "example_ru": "С января я чаще хожу плавать.",
+          "forms": "oft · öfter · am öftesten (редко); häufig · häufiger · am häufigsten",
+          "grammar_hint": "öfter als früher — чаще, чем раньше; без сравнения также довольно часто. Не отдельная лексема, а сравнительная форма oft.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/oft"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 652,
+          "record": {
+            "id": "a1-440-1",
+            "de": "oft",
+            "lemma": "oft",
+            "ru": "часто",
+            "uk": "",
+            "translations_ru": [
+              "часто"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "öfter · am häufigsten",
+            "definition_de": "Viele Male oder regelmäßig.",
+            "example": "Ich fahre oft mit dem Zug.",
+            "example_ru": "Я часто езжу на поезде.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "9231e6965586129261a3"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-440-1",
+        "alias_id": "b1-oefter-frequency",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-440-1"
+      }
+    },
+    {
+      "candidate_number": 685,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet das Fehlen oder den Ausschluss einer Person oder Sache. Example: Ich trinke meinen Kaffee ohne Zucker.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 3,
+        "record": {
+          "id": "b1-ohne-exclusion",
+          "de": "ohne",
+          "lemma": "ohne",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "без"
+          ],
+          "definition_de": "Kennzeichnet das Fehlen oder den Ausschluss einer Person oder Sache.",
+          "example": "Ich trinke meinen Kaffee ohne Zucker.",
+          "example_ru": "Я пью кофе без сахара.",
+          "forms": "ohne + Akkusativ",
+          "grammar_hint": "ohne den Schlüssel, ohne meine Tasche; с местоимением ohne mich. Противоположность mit + Dativ.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ohne"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 45,
+          "record": {
+            "id": "grammar-ohne",
+            "de": "ohne",
+            "lemma": "ohne",
+            "ru": "без",
+            "uk": "",
+            "translations_ru": [
+              "без"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass etwas oder jemand fehlt oder nicht dabei ist.",
+            "example": "Sie kommt ohne ihren Bruder.",
+            "example_ru": "Она приходит без брата.",
+            "note": "ohne + Akkusativ: ohne ihren Bruder.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "e93234452348b2324636"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "grammar-ohne",
+        "alias_id": "b1-ohne-exclusion",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "grammar-ohne"
+      }
+    },
+    {
+      "candidate_number": 686,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bezeichnet eine Handlung, die bei einer anderen Handlung ausbleibt. Example: Sie ging weg, ohne sich zu verabschieden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 4,
+        "record": {
+          "id": "b1-ohne-zu-infinitive",
+          "de": "ohne … zu",
+          "lemma": "ohne",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "не делая чего-либо",
+            "без того, чтобы"
+          ],
+          "definition_de": "Bezeichnet eine Handlung, die bei einer anderen Handlung ausbleibt.",
+          "example": "Sie ging weg, ohne sich zu verabschieden.",
+          "example_ru": "Она ушла, не попрощавшись.",
+          "forms": "ohne + zu + Infinitiv",
+          "grammar_hint": "Инфинитивная конструкция, обычно при совпадающем исполнителе; запятая обязательна. Отделяемый глагол: ohne anzurufen; неотделяемый: ohne zu bezahlen.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ohne"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 45,
+          "record": {
+            "id": "grammar-ohne",
+            "de": "ohne",
+            "lemma": "ohne",
+            "ru": "без",
+            "uk": "",
+            "translations_ru": [
+              "без"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass etwas oder jemand fehlt oder nicht dabei ist.",
+            "example": "Sie kommt ohne ihren Bruder.",
+            "example_ru": "Она приходит без брата.",
+            "note": "ohne + Akkusativ: ohne ihren Bruder.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "e93234452348b2324636"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 687,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Leitet einen Nebensatz ein, der einen ausbleibenden Begleitumstand bezeichnet. Example: Ich öffnete das Fenster, ohne dass jemand es bemerkte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 5,
+        "record": {
+          "id": "b1-ohne-dass-clause",
+          "de": "ohne dass",
+          "lemma": "ohne",
+          "part": "conj",
+          "level": "B1",
+          "translations_ru": [
+            "без того, чтобы",
+            "так, что не"
+          ],
+          "definition_de": "Leitet einen Nebensatz ein, der einen ausbleibenden Begleitumstand bezeichnet.",
+          "example": "Ich öffnete das Fenster, ohne dass jemand es bemerkte.",
+          "example_ru": "Я открыла окно так, что никто этого не заметил.",
+          "forms": "неизменяемый подчинительный союз",
+          "grammar_hint": "Спрягаемый глагол обязательно в конце придаточного; возможны разные подлежащие. Запятая обязательна; дополнительное nicht обычно не нужно.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ohne"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 45,
+          "record": {
+            "id": "grammar-ohne",
+            "de": "ohne",
+            "lemma": "ohne",
+            "ru": "без",
+            "uk": "",
+            "translations_ru": [
+              "без"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass etwas oder jemand fehlt oder nicht dabei ist.",
+            "example": "Sie kommt ohne ihren Bruder.",
+            "example_ru": "Она приходит без брата.",
+            "note": "ohne + Akkusativ: ohne ihren Bruder.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "e93234452348b2324636"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 688,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Körperorgan zum Hören; auch sein von außen sichtbarer Teil. Example: Mein linkes Ohr tut weh.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 6,
+        "record": {
+          "id": "b1-ohr-ear",
+          "de": "das Ohr",
+          "lemma": "Ohr",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ухо"
+          ],
+          "definition_de": "Ein Körperorgan zum Hören; auch sein von außen sichtbarer Teil.",
+          "example": "Mein linkes Ohr tut weh.",
+          "example_ru": "У меня болит левое ухо.",
+          "forms": "die Ohren",
+          "grammar_hint": "Ohrenschmerzen haben; im Ohr (Dativ); hinter den Ohren (Dativ Pl.).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ohr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 143,
+          "record": {
+            "id": "dict_b4f506b6a430894881eb",
+            "de": "das Ohr",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ухо"
+            ],
+            "definition_de": "Ein Teil des Körpers, mit dem man hört.",
+            "forms": "Plural · die Ohren",
+            "example": "Nach dem Schwimmen tut mir ein Ohr weh.",
+            "example_ru": "После плавания у меня болит ухо.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Ohr"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b4f506b6a430894881eb",
+        "alias_id": "b1-ohr-ear",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b4f506b6a430894881eb"
+      }
+    },
+    {
+      "candidate_number": 689,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine fetthaltige Flüssigkeit, die man zum Kochen oder Würzen verwendet. Example: Für den Salat brauche ich etwas Öl.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 9,
+        "record": {
+          "id": "b1-oel-food",
+          "de": "das Öl",
+          "lemma": "Öl",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "растительное масло",
+            "масло (пищевое)"
+          ],
+          "definition_de": "Eine fetthaltige Flüssigkeit, die man zum Kochen oder Würzen verwendet.",
+          "example": "Für den Salat brauche ich etwas Öl.",
+          "example_ru": "Для салата мне нужно немного масла.",
+          "forms": "die Öle (виды); обычно Singular",
+          "grammar_hint": "Olivenöl — оливковое масло; Butter — сливочное масло.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%96l"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 496,
+          "record": {
+            "id": "a1-442-1",
+            "de": "das Öl",
+            "lemma": "Öl",
+            "ru": "растительное масло",
+            "uk": "",
+            "translations_ru": [
+              "растительное масло"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Öle",
+            "definition_de": "Ein flüssiges Fett, das man hier zum Kochen benutzt.",
+            "example": "Ich brauche etwas Öl für den Salat.",
+            "example_ru": "Мне нужно немного масла для салата.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "477304884f4189d2c6c9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-442-1",
+        "alias_id": "b1-oel-food",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-442-1"
+      }
+    },
+    {
+      "candidate_number": 690,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein flüssiger Brennstoff, der unter anderem zur Wärmeerzeugung eingesetzt wird. Example: Das alte Haus wird mit Öl geheizt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 10,
+        "record": {
+          "id": "b1-oel-heating",
+          "de": "das Öl",
+          "lemma": "Öl",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "топочный мазут",
+            "жидкое печное топливо"
+          ],
+          "definition_de": "Ein flüssiger Brennstoff, der unter anderem zur Wärmeerzeugung eingesetzt wird.",
+          "example": "Das alte Haus wird mit Öl geheizt.",
+          "example_ru": "Старый дом отапливается жидким топливом.",
+          "forms": "die Öle (виды); обычно Singular",
+          "grammar_hint": "mit Öl heizen (Dativ); точнее das Heizöl — печное топливо; Erdöl — нефть.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%96l"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 496,
+          "record": {
+            "id": "a1-442-1",
+            "de": "das Öl",
+            "lemma": "Öl",
+            "ru": "растительное масло",
+            "uk": "",
+            "translations_ru": [
+              "растительное масло"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Öle",
+            "definition_de": "Ein flüssiges Fett, das man hier zum Kochen benutzt.",
+            "example": "Ich brauche etwas Öl für den Salat.",
+            "example_ru": "Мне нужно немного масла для салата.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "477304884f4189d2c6c9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 691,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Flüssigkeit zur Schmierung beweglicher Maschinenteile. Example: Vor der Fahrt kontrolliere ich den Ölstand.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 11,
+        "record": {
+          "id": "b1-oel-motor",
+          "de": "das Öl",
+          "lemma": "Öl",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "машинное масло",
+            "моторное масло"
+          ],
+          "definition_de": "Eine Flüssigkeit zur Schmierung beweglicher Maschinenteile.",
+          "example": "Vor der Fahrt kontrolliere ich den Ölstand.",
+          "example_ru": "Перед поездкой я проверяю уровень масла.",
+          "forms": "die Öle (виды); обычно Singular",
+          "grammar_hint": "Motoröl wechseln — менять моторное масло; der Ölstand — уровень масла.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%96l"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 496,
+          "record": {
+            "id": "a1-442-1",
+            "de": "das Öl",
+            "lemma": "Öl",
+            "ru": "растительное масло",
+            "uk": "",
+            "translations_ru": [
+              "растительное масло"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Öle",
+            "definition_de": "Ein flüssiges Fett, das man hier zum Kochen benutzt.",
+            "example": "Ich brauche etwas Öl für den Salat.",
+            "example_ru": "Мне нужно немного масла для салата.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "477304884f4189d2c6c9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 692,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Mutter eines Elternteils, familiär bezeichnet. Example: Meine Oma backt gern Kuchen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_066.json",
+        "sha": "4fe34523b2b8dd870a8b261680cb409a6b672716",
+        "batch": 66,
+        "row": 12,
+        "record": {
+          "id": "b1-oma-grandmother",
+          "de": "die Oma",
+          "lemma": "Oma",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "бабушка"
+          ],
+          "definition_de": "Die Mutter eines Elternteils, familiär bezeichnet.",
+          "example": "Meine Oma backt gern Kuchen.",
+          "example_ru": "Моя бабушка любит печь пироги.",
+          "forms": "die Omas",
+          "grammar_hint": "Семейное, разговорное обозначение die Großmutter; CH: Grossmutter.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Oma"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 18,
+          "record": {
+            "id": "oma-grandmother",
+            "de": "die Oma",
+            "lemma": "Oma",
+            "ru": "бабушка",
+            "uk": "",
+            "translations_ru": [
+              "бабушка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Omas",
+            "definition_de": "Die Mutter des Vaters oder der Mutter.",
+            "example": "Meine Oma kommt morgen zu Besuch.",
+            "example_ru": "Моя бабушка завтра придёт в гости.",
+            "note": "Разговорное семейное слово. Нейтральный вариант — die Großmutter.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "3bea7b9b7f3d8dfe75fb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "oma-grandmother",
+        "alias_id": "b1-oma-grandmother",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "oma-grandmother"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_6569368f61f529b7d51f",
+      "alias_ids": [
+        "b1-offen-door",
+        "b1-offen-business",
+        "b1-offen-window-context"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_6569368f61f529b7d51f",
+        "de": "offen",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "открытый",
+          "открыто"
+        ],
+        "definition_de": "Nicht geschlossen oder für Besucher zugänglich.",
+        "forms": "offen · offener · am offensten (если степень допускается)",
+        "example": "Ist die Apotheke noch offen?",
+        "example_ru": "Аптека ещё открыта?",
+        "grammar_hint": "В значении режима работы степени сравнения обычно не используются.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/offen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-offen-door",
+          "b1-offen-business",
+          "b1-offen-window-context"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-offen-door",
+            "de": "offen",
+            "part": "adj",
+            "forms": "offen · offener · am offensten (при градуируемости)",
+            "definition_de": "Nicht verschlossen oder nicht zugemacht.",
+            "translations_ru": [
+              "открытый (дверь, окно)"
+            ],
+            "grammar_hint": "offen sein — быть открытым; öffnen — открывать; разговорное auf sein. Для бинарного состояния сравнение обычно не нужно.",
+            "example": "Die Balkontür ist noch offen.",
+            "example_ru": "Балконная дверь ещё открыта."
+          },
+          {
+            "id": "b1-offen-business",
+            "de": "offen",
+            "part": "adj",
+            "forms": "offen · offener · am offensten; в данном значении обычно без сравнения",
+            "definition_de": "Für Kunden oder Besucher zu einer Zeit zugänglich.",
+            "translations_ru": [
+              "открытый",
+              "работающий (магазин)"
+            ],
+            "grammar_hint": "Der Laden ist offen / geöffnet — магазин открыт; Der Laden öffnet um neun — открывается в девять.",
+            "example": "Ist die Apotheke am Sonntag offen?",
+            "example_ru": "Аптека открыта в воскресенье?"
+          },
+          {
+            "id": "b1-offen-window-context",
+            "de": "bei offenem Fenster",
+            "part": "phrase",
+            "forms": "offen · offener · am offensten; bei + Dativ",
+            "definition_de": "Beschreibt eine Begleitsituation mit nicht geschlossenem Fenster.",
+            "translations_ru": [
+              "при открытом окне",
+              "с открытым окном"
+            ],
+            "grammar_hint": "bei + Dativ; без артикля средний род: offenem Fenster. Учебный контекст физического значения offen, не отдельное значение.",
+            "example": "Ich lese gern bei offenem Fenster.",
+            "example_ru": "Я люблю читать с открытым окном."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/offen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-438-1",
+      "alias_ids": [
+        "b1-oeffnen-door",
+        "b1-oeffnen-container"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-438-1",
+        "de": "öffnen",
+        "lemma": "öffnen",
+        "ru": "открывать",
+        "uk": "",
+        "translations_ru": [
+          "открывать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "öffnet · öffnete · hat geöffnet",
+        "definition_de": "Etwas so verändern, dass es offen ist.",
+        "example": "Öffne bitte das Fenster.",
+        "example_ru": "Открой, пожалуйста, окно.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "0f70497714c1edebfc45"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-oeffnen-door",
+          "b1-oeffnen-container"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-oeffnen-door",
+            "de": "öffnen",
+            "part": "verb",
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Eine Tür, ein Fenster oder einen Durchgang nicht mehr geschlossen halten.",
+            "translations_ru": [
+              "открывать (дверь, окно)"
+            ],
+            "grammar_hint": "etwas öffnen + Akk.; das Fenster aufmachen — разговорный синоним; Die Tür öffnet sich — дверь открывается.",
+            "example": "Kannst du bitte die Balkontür öffnen?",
+            "example_ru": "Можешь, пожалуйста, открыть балконную дверь?"
+          },
+          {
+            "id": "b1-oeffnen-container",
+            "de": "öffnen",
+            "part": "verb",
+            "forms": "öffnet · öffnete · hat geöffnet",
+            "definition_de": "Den Verschluss eines Behälters oder einer Verpackung lösen.",
+            "translations_ru": [
+              "открывать",
+              "вскрывать (упаковку, ёмкость)"
+            ],
+            "grammar_hint": "eine Flasche / Dose / Packung öffnen (Akk.). Контекст физического открытия.",
+            "example": "Ich kann diese Flasche nicht öffnen.",
+            "example_ru": "Я не могу открыть эту бутылку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%B6ffnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-440-1",
+      "alias_ids": [
+        "b1-oft-frequent",
+        "b1-oefter-frequency"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-440-1",
+        "de": "oft",
+        "lemma": "oft",
+        "ru": "часто",
+        "uk": "",
+        "translations_ru": [
+          "часто"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "öfter · am häufigsten",
+        "definition_de": "Viele Male oder regelmäßig.",
+        "example": "Ich fahre oft mit dem Zug.",
+        "example_ru": "Я часто езжу на поезде.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "9231e6965586129261a3"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-oft-frequent",
+          "b1-oefter-frequency"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-oft-frequent",
+            "de": "oft",
+            "part": "adv",
+            "forms": "oft · öfter · am öftesten (редко); häufiger · am häufigsten",
+            "definition_de": "Zu vielen verschiedenen Zeitpunkten oder in vielen Fällen.",
+            "translations_ru": [
+              "часто"
+            ],
+            "grammar_hint": "Наречие частотности; в начале главного предложения глагол на втором месте.",
+            "example": "Wir treffen uns oft nach dem Kurs.",
+            "example_ru": "Мы часто встречаемся после курса."
+          },
+          {
+            "id": "b1-oefter-frequency",
+            "de": "öfter",
+            "part": "adv",
+            "forms": "oft · öfter · am öftesten (редко); häufig · häufiger · am häufigsten",
+            "definition_de": "Mit größerer Häufigkeit oder bei mehreren Gelegenheiten.",
+            "translations_ru": [
+              "чаще",
+              "довольно часто",
+              "неоднократно"
+            ],
+            "grammar_hint": "öfter als früher — чаще, чем раньше; без сравнения также довольно часто. Не отдельная лексема, а сравнительная форма oft.",
+            "example": "Seit Januar gehe ich öfter schwimmen.",
+            "example_ru": "С января я чаще хожу плавать."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/oft"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/oft"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "grammar-ohne",
+      "alias_ids": [
+        "b1-ohne-exclusion"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "grammar-ohne",
+        "de": "ohne",
+        "lemma": "ohne",
+        "ru": "без",
+        "uk": "",
+        "translations_ru": [
+          "без"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "+ Akkusativ",
+        "definition_de": "Zeigt, dass etwas oder jemand fehlt oder nicht dabei ist.",
+        "example": "Sie kommt ohne ihren Bruder.",
+        "example_ru": "Она приходит без брата.",
+        "note": "ohne + Akkusativ: ohne ihren Bruder.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "e93234452348b2324636"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-ohne-exclusion"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ohne-exclusion",
+            "de": "ohne",
+            "part": "prep",
+            "forms": "ohne + Akkusativ",
+            "definition_de": "Kennzeichnet das Fehlen oder den Ausschluss einer Person oder Sache.",
+            "translations_ru": [
+              "без"
+            ],
+            "grammar_hint": "ohne den Schlüssel, ohne meine Tasche; с местоимением ohne mich. Противоположность mit + Dativ.",
+            "example": "Ich trinke meinen Kaffee ohne Zucker.",
+            "example_ru": "Я пью кофе без сахара."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ohne"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_b4f506b6a430894881eb",
+      "alias_ids": [
+        "b1-ohr-ear"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_b4f506b6a430894881eb",
+        "de": "das Ohr",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ухо"
+        ],
+        "definition_de": "Ein Teil des Körpers, mit dem man hört.",
+        "forms": "Plural · die Ohren",
+        "example": "Nach dem Schwimmen tut mir ein Ohr weh.",
+        "example_ru": "После плавания у меня болит ухо.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Ohr"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-ohr-ear"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ohr-ear",
+            "de": "das Ohr",
+            "part": "noun",
+            "forms": "die Ohren",
+            "definition_de": "Ein Körperorgan zum Hören; auch sein von außen sichtbarer Teil.",
+            "translations_ru": [
+              "ухо"
+            ],
+            "grammar_hint": "Ohrenschmerzen haben; im Ohr (Dativ); hinter den Ohren (Dativ Pl.).",
+            "example": "Mein linkes Ohr tut weh.",
+            "example_ru": "У меня болит левое ухо."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ohr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-442-1",
+      "alias_ids": [
+        "b1-oel-food"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-442-1",
+        "de": "das Öl",
+        "lemma": "Öl",
+        "ru": "растительное масло",
+        "uk": "",
+        "translations_ru": [
+          "растительное масло"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Öle",
+        "definition_de": "Ein flüssiges Fett, das man hier zum Kochen benutzt.",
+        "example": "Ich brauche etwas Öl für den Salat.",
+        "example_ru": "Мне нужно немного масла для салата.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "477304884f4189d2c6c9"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-oel-food"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-oel-food",
+            "de": "das Öl",
+            "part": "noun",
+            "forms": "die Öle (виды); обычно Singular",
+            "definition_de": "Eine fetthaltige Flüssigkeit, die man zum Kochen oder Würzen verwendet.",
+            "translations_ru": [
+              "растительное масло",
+              "масло (пищевое)"
+            ],
+            "grammar_hint": "Olivenöl — оливковое масло; Butter — сливочное масло.",
+            "example": "Für den Salat brauche ich etwas Öl.",
+            "example_ru": "Для салата мне нужно немного масла."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%96l"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "oma-grandmother",
+      "alias_ids": [
+        "b1-oma-grandmother"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "oma-grandmother",
+        "de": "die Oma",
+        "lemma": "Oma",
+        "ru": "бабушка",
+        "uk": "",
+        "translations_ru": [
+          "бабушка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья"
+        ],
+        "forms": "die Omas",
+        "definition_de": "Die Mutter des Vaters oder der Mutter.",
+        "example": "Meine Oma kommt morgen zu Besuch.",
+        "example_ru": "Моя бабушка завтра придёт в гости.",
+        "note": "Разговорное семейное слово. Нейтральный вариант — die Großmutter.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "3bea7b9b7f3d8dfe75fb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-oma-grandmother"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-oma-grandmother",
+            "de": "die Oma",
+            "part": "noun",
+            "forms": "die Omas",
+            "definition_de": "Die Mutter eines Elternteils, familiär bezeichnet.",
+            "translations_ru": [
+              "бабушка"
+            ],
+            "grammar_hint": "Семейное, разговорное обозначение die Großmutter; CH: Grossmutter.",
+            "example": "Meine Oma backt gern Kuchen.",
+            "example_ru": "Моя бабушка любит печь пироги."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 68,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; forms and pedagogical contexts need not be distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Oma"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

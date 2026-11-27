@@ -1,0 +1,2854 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    613,
+    632
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 10,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 4,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 613,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet eine Position seitlich von einer Person oder Sache. Example: Die Lampe steht neben dem Sofa.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_061.json",
+        "sha": "3692effdb71f3c47a9839e685c287b09cb0b47fb",
+        "batch": 61,
+        "row": 26,
+        "record": {
+          "id": "b1-neben-location",
+          "de": "neben",
+          "lemma": "neben",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "рядом с",
+            "возле",
+            "сбоку от"
+          ],
+          "definition_de": "Bezeichnet eine Position seitlich von einer Person oder Sache.",
+          "example": "Die Lampe steht neben dem Sofa.",
+          "example_ru": "Лампа стоит рядом с диваном.",
+          "forms": "neben + Dativ (Wo?)",
+          "grammar_hint": "Wechselpräposition: местоположение — Dativ. Neben mir ist ein Platz frei.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/id/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 11,
+          "record": {
+            "id": "dict_4c4793b30e0353b1160f",
+            "de": "neben",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "рядом с",
+              "возле",
+              "около"
+            ],
+            "definition_de": "Bezeichnet eine Position direkt an der Seite von etwas.",
+            "example": "Der Stuhl steht neben dem Fenster.",
+            "example_ru": "Стул стоит рядом с окном.",
+            "grammar_hint": "Wechselpräposition: Wo? neben + Dativ (neben dem Schrank); Wohin? neben + Akkusativ (neben den Schrank stellen).",
+            "usage_note": "Подтверждено пространственное значение. Кроме, наряду с — отдельное употребление, не маркируется автоматически.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/neben"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4c4793b30e0353b1160f",
+        "alias_id": "b1-neben-location",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4c4793b30e0353b1160f"
+      }
+    },
+    {
+      "candidate_number": 614,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bezeichnet eine Richtung zu einem Platz seitlich von etwas. Example: Ich stelle die Lampe neben das Sofa.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_061.json",
+        "sha": "3692effdb71f3c47a9839e685c287b09cb0b47fb",
+        "batch": 61,
+        "row": 27,
+        "record": {
+          "id": "b1-neben-direction",
+          "de": "neben",
+          "lemma": "neben",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "рядом с",
+            "возле (куда?)"
+          ],
+          "definition_de": "Bezeichnet eine Richtung zu einem Platz seitlich von etwas.",
+          "example": "Ich stelle die Lampe neben das Sofa.",
+          "example_ru": "Я ставлю лампу рядом с диваном.",
+          "forms": "neben + Akkusativ (Wohin?)",
+          "grammar_hint": "Wechselpräposition: новое положение — Akkusativ; движение само по себе не определяет падеж. Сравни: neben dem Sofa stehen / neben das Sofa stellen.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/id/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 11,
+          "record": {
+            "id": "dict_4c4793b30e0353b1160f",
+            "de": "neben",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "рядом с",
+              "возле",
+              "около"
+            ],
+            "definition_de": "Bezeichnet eine Position direkt an der Seite von etwas.",
+            "example": "Der Stuhl steht neben dem Fenster.",
+            "example_ru": "Стул стоит рядом с окном.",
+            "grammar_hint": "Wechselpräposition: Wo? neben + Dativ (neben dem Schrank); Wohin? neben + Akkusativ (neben den Schrank stellen).",
+            "usage_note": "Подтверждено пространственное значение. Кроме, наряду с — отдельное употребление, не маркируется автоматически.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/neben"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 615,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich für etwas Angebotenes entscheiden. Example: Ich nehme die Suppe als Vorspeise.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 3,
+        "record": {
+          "id": "b1-nehmen-order",
+          "de": "nehmen",
+          "lemma": "nehmen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "брать",
+            "выбирать",
+            "заказывать (в ресторане)"
+          ],
+          "definition_de": "Sich für etwas Angebotenes entscheiden.",
+          "example": "Ich nehme die Suppe als Vorspeise.",
+          "example_ru": "На закуску я возьму суп.",
+          "forms": "nimmt · nahm · hat genommen",
+          "grammar_hint": "etwas nehmen (Akk.); при заказе Ich nehme …; du nimmst, Imperativ Nimm!",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 639,
+          "record": {
+            "id": "a1-426-1",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "брать; взять; выбирать",
+            "uk": "",
+            "translations_ru": [
+              "брать",
+              "взять",
+              "выбирать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Etwas greifen, auswählen oder sich dafür entscheiden.",
+            "example": "Ich nehme die Suppe.",
+            "example_ru": "Я возьму суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 640,
+          "record": {
+            "id": "a1-426-2",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "поехать на (транспорте); воспользоваться (транспортом)",
+            "uk": "",
+            "translations_ru": [
+              "поехать на (транспорте)",
+              "воспользоваться (транспортом)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Ein bestimmtes Verkehrsmittel benutzen.",
+            "example": "Wir nehmen den Bus.",
+            "example_ru": "Мы поедем на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-426-1",
+        "alias_id": "b1-nehmen-order",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-426-1"
+      }
+    },
+    {
+      "candidate_number": 616,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein Medikament zur Behandlung anwenden. Example: Er nimmt das Medikament jeden Abend.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 4,
+        "record": {
+          "id": "b1-nehmen-medicine",
+          "de": "nehmen",
+          "lemma": "nehmen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "принимать (лекарство)"
+          ],
+          "definition_de": "Ein Medikament zur Behandlung anwenden.",
+          "example": "Er nimmt das Medikament jeden Abend.",
+          "example_ru": "Он принимает лекарство каждый вечер.",
+          "forms": "nimmt · nahm · hat genommen",
+          "grammar_hint": "Tabletten nehmen / einnehmen (отделяемая приставка: nimmt ein · nahm ein · hat eingenommen).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 639,
+          "record": {
+            "id": "a1-426-1",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "брать; взять; выбирать",
+            "uk": "",
+            "translations_ru": [
+              "брать",
+              "взять",
+              "выбирать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Etwas greifen, auswählen oder sich dafür entscheiden.",
+            "example": "Ich nehme die Suppe.",
+            "example_ru": "Я возьму суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 640,
+          "record": {
+            "id": "a1-426-2",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "поехать на (транспорте); воспользоваться (транспортом)",
+            "uk": "",
+            "translations_ru": [
+              "поехать на (транспорте)",
+              "воспользоваться (транспортом)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Ein bestimmtes Verkehrsmittel benutzen.",
+            "example": "Wir nehmen den Bus.",
+            "example_ru": "Мы поедем на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 617,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Etwas greifen oder von seinem bisherigen Ort wegbringen. Example: Sie nimmt den Schlüssel vom Tisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 5,
+        "record": {
+          "id": "b1-nehmen-grasp",
+          "de": "nehmen",
+          "lemma": "nehmen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "брать",
+            "взять",
+            "забирать"
+          ],
+          "definition_de": "Etwas greifen oder von seinem bisherigen Ort wegbringen.",
+          "example": "Sie nimmt den Schlüssel vom Tisch.",
+          "example_ru": "Она берёт ключ со стола.",
+          "forms": "nimmt · nahm · hat genommen",
+          "grammar_hint": "etwas (Akk.) aus / von + Dativ nehmen; du nimmst.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 639,
+          "record": {
+            "id": "a1-426-1",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "брать; взять; выбирать",
+            "uk": "",
+            "translations_ru": [
+              "брать",
+              "взять",
+              "выбирать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Etwas greifen, auswählen oder sich dafür entscheiden.",
+            "example": "Ich nehme die Suppe.",
+            "example_ru": "Я возьму суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 640,
+          "record": {
+            "id": "a1-426-2",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "поехать на (транспорте); воспользоваться (транспортом)",
+            "uk": "",
+            "translations_ru": [
+              "поехать на (транспорте)",
+              "воспользоваться (транспортом)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Ein bestimmtes Verkehrsmittel benutzen.",
+            "example": "Wir nehmen den Bus.",
+            "example_ru": "Мы поедем на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-426-1",
+        "alias_id": "b1-nehmen-grasp",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-426-1"
+      }
+    },
+    {
+      "candidate_number": 618,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Verkehrsmittel für einen Weg wählen und benutzen. Example: Wir nehmen den nächsten Bus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 6,
+        "record": {
+          "id": "b1-nehmen-transport",
+          "de": "nehmen",
+          "lemma": "nehmen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ехать на",
+            "воспользоваться (транспортом)"
+          ],
+          "definition_de": "Ein Verkehrsmittel für einen Weg wählen und benutzen.",
+          "example": "Wir nehmen den nächsten Bus.",
+          "example_ru": "Мы поедем на следующем автобусе.",
+          "forms": "nimmt · nahm · hat genommen",
+          "grammar_hint": "den Bus nehmen (Akk.); mit dem Bus fahren (Dativ).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 639,
+          "record": {
+            "id": "a1-426-1",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "брать; взять; выбирать",
+            "uk": "",
+            "translations_ru": [
+              "брать",
+              "взять",
+              "выбирать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Etwas greifen, auswählen oder sich dafür entscheiden.",
+            "example": "Ich nehme die Suppe.",
+            "example_ru": "Я возьму суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 640,
+          "record": {
+            "id": "a1-426-2",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "поехать на (транспорте); воспользоваться (транспортом)",
+            "uk": "",
+            "translations_ru": [
+              "поехать на (транспорте)",
+              "воспользоваться (транспортом)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Ein bestimmtes Verkehrsmittel benutzen.",
+            "example": "Wir nehmen den Bus.",
+            "example_ru": "Мы поедем на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-426-2",
+        "alias_id": "b1-nehmen-transport",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-426-2"
+      }
+    },
+    {
+      "candidate_number": 619,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Sich für eine bestimmte Zeit von der Arbeit freistellen lassen. Example: Im Dezember möchte ich zwei Wochen Urlaub nehmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 7,
+        "record": {
+          "id": "b1-nehmen-leave",
+          "de": "Urlaub nehmen",
+          "lemma": "nehmen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "брать отпуск"
+          ],
+          "definition_de": "Sich für eine bestimmte Zeit von der Arbeit freistellen lassen.",
+          "example": "Im Dezember möchte ich zwei Wochen Urlaub nehmen.",
+          "example_ru": "В декабре я хочу взять отпуск на две недели.",
+          "forms": "nimmt Urlaub · nahm Urlaub · hat Urlaub genommen",
+          "grammar_hint": "Urlaub nehmen — брать отпуск; Urlaub machen — отдыхать в отпуске.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 639,
+          "record": {
+            "id": "a1-426-1",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "брать; взять; выбирать",
+            "uk": "",
+            "translations_ru": [
+              "брать",
+              "взять",
+              "выбирать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Etwas greifen, auswählen oder sich dafür entscheiden.",
+            "example": "Ich nehme die Suppe.",
+            "example_ru": "Я возьму суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 640,
+          "record": {
+            "id": "a1-426-2",
+            "de": "nehmen",
+            "lemma": "nehmen",
+            "ru": "поехать на (транспорте); воспользоваться (транспортом)",
+            "uk": "",
+            "translations_ru": [
+              "поехать на (транспорте)",
+              "воспользоваться (транспортом)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Ein bestimmtes Verkehrsmittel benutzen.",
+            "example": "Wir nehmen den Bus.",
+            "example_ru": "Мы поедем на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "a0952df5b1126e8a505e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 620,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine ablehnende oder verneinende Antwort auf eine Frage. Example: Möchtest du Tee? – Nein, danke.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 8,
+        "record": {
+          "id": "b1-nein-answer",
+          "de": "nein",
+          "lemma": "nein",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "нет"
+          ],
+          "definition_de": "Eine ablehnende oder verneinende Antwort auf eine Frage.",
+          "example": "Möchtest du Tee? – Nein, danke.",
+          "example_ru": "Хочешь чаю? — Нет, спасибо.",
+          "forms": "неизменяемая частица ответа",
+          "grammar_hint": "nein — отдельный ответ; nicht — отрицание внутри предложения; doch — возражение на отрицательный вопрос.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nein"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 641,
+          "record": {
+            "id": "a1-427-1",
+            "de": "nein",
+            "lemma": "nein",
+            "ru": "нет",
+            "uk": "",
+            "translations_ru": [
+              "нет"
+            ],
+            "part": "interjection",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "неизменяемая частица ответа",
+            "definition_de": "Eine verneinende Antwort.",
+            "example": "Kommst du mit? — Nein.",
+            "example_ru": "Ты идёшь с нами? — Нет.",
+            "note": "Nein — самостоятельный отрицательный ответ. Внутри предложения отрицание выражают nicht или kein. На отрицательный вопрос утвердительно отвечают doch. Das Nein — существительное, отдельно не подтверждено для A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "7b5e61815c75440a401f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-427-1",
+        "alias_id": "b1-nein-answer",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-427-1"
+      }
+    },
+    {
+      "candidate_number": 621,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Person mit einem bestimmten Namen bezeichnen. Example: Meine Freunde nennen mich Lena.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 9,
+        "record": {
+          "id": "b1-nennen-name-person",
+          "de": "nennen",
+          "lemma": "nennen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "называть (по имени)",
+            "звать"
+          ],
+          "definition_de": "Eine Person mit einem bestimmten Namen bezeichnen.",
+          "example": "Meine Freunde nennen mich Lena.",
+          "example_ru": "Мои друзья называют меня Леной.",
+          "forms": "nennt · nannte · hat genannt",
+          "grammar_hint": "jemanden (Akk.) + Name/Bezeichnung nennen; heißen — называться (без объекта).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 401,
+          "record": {
+            "id": "dict_af0a059c5af11f4b5cfc",
+            "de": "nennen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "называть",
+              "звать (по имени)"
+            ],
+            "definition_de": "Eine Person mit einem bestimmten Namen bezeichnen oder ansprechen.",
+            "forms": "nennt · nannte · hat genannt",
+            "example": "Alle nennen meinen Bruder Max.",
+            "example_ru": "Все зовут моего брата Максом.",
+            "grammar_hint": "jemanden (Akkusativ) beim Namen nennen / jemanden Max nennen. Назвать что-либо: etwas nennen.",
+            "usage_note": "Не путать с heißen — называться.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nennen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_af0a059c5af11f4b5cfc",
+        "alias_id": "b1-nennen-name-person",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_af0a059c5af11f4b5cfc"
+      }
+    },
+    {
+      "candidate_number": 622,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Einer Sache eine Bezeichnung geben oder diese verwenden. Example: Wie nennt man dieses Werkzeug auf Deutsch?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 10,
+        "record": {
+          "id": "b1-nennen-designate",
+          "de": "nennen",
+          "lemma": "nennen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "называть",
+            "именовать"
+          ],
+          "definition_de": "Einer Sache eine Bezeichnung geben oder diese verwenden.",
+          "example": "Wie nennt man dieses Werkzeug auf Deutsch?",
+          "example_ru": "Как называется этот инструмент по-немецки?",
+          "forms": "nennt · nannte · hat genannt",
+          "grammar_hint": "Wie nennt man das? — Как это называется? man — неопределённое подлежащее, глагол в 3-м лице ед. числа.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 401,
+          "record": {
+            "id": "dict_af0a059c5af11f4b5cfc",
+            "de": "nennen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "называть",
+              "звать (по имени)"
+            ],
+            "definition_de": "Eine Person mit einem bestimmten Namen bezeichnen oder ansprechen.",
+            "forms": "nennt · nannte · hat genannt",
+            "example": "Alle nennen meinen Bruder Max.",
+            "example_ru": "Все зовут моего брата Максом.",
+            "grammar_hint": "jemanden (Akkusativ) beim Namen nennen / jemanden Max nennen. Назвать что-либо: etwas nennen.",
+            "usage_note": "Не путать с heißen — называться.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nennen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 623,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Innerlich unruhig oder angespannt sein. Example: Vor dem Vorstellungsgespräch bin ich nervös.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 13,
+        "record": {
+          "id": "b1-nervoes-anxious",
+          "de": "nervös",
+          "lemma": "nervös",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "нервный",
+            "взволнованный",
+            "нервничать (nervös sein)"
+          ],
+          "definition_de": "Innerlich unruhig oder angespannt sein.",
+          "example": "Vor dem Vorstellungsgespräch bin ich nervös.",
+          "example_ru": "Перед собеседованием я нервничаю.",
+          "forms": "nervös · nervöser · am nervösesten",
+          "grammar_hint": "nervös sein / werden; jemanden nervös machen (Akk.).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nerv%C3%B6s"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 221,
+          "record": {
+            "id": "dict_523c7c17c2e4d1b480aa",
+            "de": "nervös",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "нервный",
+              "взволнованный"
+            ],
+            "definition_de": "Innerlich unruhig oder angespannt, etwa vor einem wichtigen Ereignis.",
+            "forms": "nervös · nervöser · am nervösesten",
+            "example": "Vor dem Gespräch war ich nervöser als vor der Prüfung.",
+            "example_ru": "Перед разговором я волновалась больше, чем перед экзаменом.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nerv%C3%B6s"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_523c7c17c2e4d1b480aa",
+        "alias_id": "b1-nervoes-anxious",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_523c7c17c2e4d1b480aa"
+      }
+    },
+    {
+      "candidate_number": 624,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Im Umgang mit anderen freundlich und angenehm. Example: Unsere neuen Nachbarn sind sehr nett.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 14,
+        "record": {
+          "id": "b1-nett-kind",
+          "de": "nett",
+          "lemma": "nett",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "милый",
+            "приятный",
+            "приветливый"
+          ],
+          "definition_de": "Im Umgang mit anderen freundlich und angenehm.",
+          "example": "Unsere neuen Nachbarn sind sehr nett.",
+          "example_ru": "Наши новые соседи очень приветливые.",
+          "forms": "nett · netter · am nettesten",
+          "grammar_hint": "nett zu jemandem (Dativ) sein; freundlich — дружелюбный.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nett"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 358,
+          "record": {
+            "id": "dict_931db7aba294856524bb",
+            "de": "nett",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "милый",
+              "приятный",
+              "любезный"
+            ],
+            "definition_de": "Freundlich und angenehm im Umgang mit anderen.",
+            "forms": "nett · netter · am nettesten",
+            "example": "Meine neue Kollegin ist sehr nett.",
+            "example_ru": "Моя новая коллега очень приятная.",
+            "grammar_hint": "",
+            "usage_note": "nett zu jemandem (Dativ) sein — быть любезным с кем-либо.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nett"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_931db7aba294856524bb",
+        "alias_id": "b1-nett-kind",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_931db7aba294856524bb"
+      }
+    },
+    {
+      "candidate_number": 625,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine freundliche Handlung anerkennend bewerten. Example: Das war wirklich nett von dir.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 15,
+        "record": {
+          "id": "b1-nett-kind-act",
+          "de": "nett von jemandem",
+          "lemma": "nett",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "мило с чьей-либо стороны",
+            "любезно с чьей-либо стороны"
+          ],
+          "definition_de": "Eine freundliche Handlung anerkennend bewerten.",
+          "example": "Das war wirklich nett von dir.",
+          "example_ru": "Это было очень мило с твоей стороны.",
+          "forms": "nett · netter · am nettesten; von + Dativ",
+          "grammar_hint": "Das ist nett von dir/Ihnen; von + Dativ; контекст оценки поступка, не отдельное словарное значение nett.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nett"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 358,
+          "record": {
+            "id": "dict_931db7aba294856524bb",
+            "de": "nett",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "милый",
+              "приятный",
+              "любезный"
+            ],
+            "definition_de": "Freundlich und angenehm im Umgang mit anderen.",
+            "forms": "nett · netter · am nettesten",
+            "example": "Meine neue Kollegin ist sehr nett.",
+            "example_ru": "Моя новая коллега очень приятная.",
+            "grammar_hint": "",
+            "usage_note": "nett zu jemandem (Dativ) sein — быть любезным с кем-либо.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nett"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 626,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Erst vor kurzer Zeit hergestellt oder noch kaum benutzt. Example: Die Schuhe sind ganz neu.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 21,
+        "record": {
+          "id": "b1-neu-unused",
+          "de": "neu",
+          "lemma": "neu",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "новый",
+            "не бывший в употреблении"
+          ],
+          "definition_de": "Erst vor kurzer Zeit hergestellt oder noch kaum benutzt.",
+          "example": "Die Schuhe sind ganz neu.",
+          "example_ru": "Туфли совсем новые.",
+          "forms": "neu · neuer · am neuesten",
+          "grammar_hint": "brandneu — совершенно новый; Gegenteil: alt / gebraucht.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 642,
+          "record": {
+            "id": "a1-428-1",
+            "de": "neu",
+            "lemma": "neu",
+            "ru": "новый",
+            "uk": "",
+            "translations_ru": [
+              "новый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "neuer · am neuesten",
+            "definition_de": "Erst seit kurzer Zeit vorhanden oder in Gebrauch.",
+            "example": "Ich habe eine neue Wohnung.",
+            "example_ru": "У меня новая квартира.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "09470152500d7138b749"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-428-1",
+        "alias_id": "b1-neu-unused",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-428-1"
+      }
+    },
+    {
+      "candidate_number": 627,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Seit kurzer Zeit in einer bestimmten Situation vorhanden. Example: Seit Mai habe ich eine neue Arbeitsstelle.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 22,
+        "record": {
+          "id": "b1-neu-recent-change",
+          "de": "neu",
+          "lemma": "neu",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "новый",
+            "недавно приобретённый",
+            "недавно появившийся"
+          ],
+          "definition_de": "Seit kurzer Zeit in einer bestimmten Situation vorhanden.",
+          "example": "Seit Mai habe ich eine neue Arbeitsstelle.",
+          "example_ru": "С мая у меня новая работа.",
+          "forms": "neu · neuer · am neuesten",
+          "grammar_hint": "neu для человека не обязательно означает неиспользованный предмет: eine neue Wohnung может быть в старом доме.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 642,
+          "record": {
+            "id": "a1-428-1",
+            "de": "neu",
+            "lemma": "neu",
+            "ru": "новый",
+            "uk": "",
+            "translations_ru": [
+              "новый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "neuer · am neuesten",
+            "definition_de": "Erst seit kurzer Zeit vorhanden oder in Gebrauch.",
+            "example": "Ich habe eine neue Wohnung.",
+            "example_ru": "У меня новая квартира.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "09470152500d7138b749"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-428-1",
+        "alias_id": "b1-neu-recent-change",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-428-1"
+      }
+    },
+    {
+      "candidate_number": 628,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Einer Person bisher nicht bekannt. Example: Diese Regel ist mir neu.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 23,
+        "record": {
+          "id": "b1-neu-unfamiliar",
+          "de": "neu",
+          "lemma": "neu",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "новый",
+            "неизвестный",
+            "не знакомый ранее"
+          ],
+          "definition_de": "Einer Person bisher nicht bekannt.",
+          "example": "Diese Regel ist mir neu.",
+          "example_ru": "Это правило для меня новое.",
+          "forms": "neu · neuer · am neuesten",
+          "grammar_hint": "etwas ist jemandem neu (Dativ); neu für jemanden (für + Akk.).",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 642,
+          "record": {
+            "id": "a1-428-1",
+            "de": "neu",
+            "lemma": "neu",
+            "ru": "новый",
+            "uk": "",
+            "translations_ru": [
+              "новый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "neuer · am neuesten",
+            "definition_de": "Erst seit kurzer Zeit vorhanden oder in Gebrauch.",
+            "example": "Ich habe eine neue Wohnung.",
+            "example_ru": "У меня новая квартира.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "09470152500d7138b749"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 629,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Verneint eine Aussage oder Handlung. Example: Ich habe den Brief nicht gelesen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 27,
+        "record": {
+          "id": "b1-nicht-sentence",
+          "de": "nicht",
+          "lemma": "nicht",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "не (отрицание действия или высказывания)"
+          ],
+          "definition_de": "Verneint eine Aussage oder Handlung.",
+          "example": "Ich habe den Brief nicht gelesen.",
+          "example_ru": "Я не прочитала письмо.",
+          "forms": "неизменяемая отрицательная частица",
+          "grammar_hint": "При отрицании всего предложения nicht обычно ближе к концу, перед конечным инфинитивом/Partizip II или отделяемой приставкой; не всегда последнее слово. kein отрицает существительное с неопределённым или нулевым артиклем.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nicht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 643,
+          "record": {
+            "id": "a1-429-1",
+            "de": "nicht",
+            "lemma": "nicht",
+            "ru": "не",
+            "uk": "",
+            "translations_ru": [
+              "не"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Verneint eine Aussage oder einen Teil davon.",
+            "example": "Ich komme heute nicht.",
+            "example_ru": "Сегодня я не приду.",
+            "note": "nicht отрицает глагол, признак или конкретный член предложения; перед отрицаемым признаком/членом, при общем отрицании обычно ближе к концу, перед второй частью сказуемого. kein — для существительного с неопределённым или нулевым артиклем: Ich habe kein Auto. Ich komme nicht.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "9715e416942b175c8433"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-429-1",
+        "alias_id": "b1-nicht-sentence",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-429-1"
+      }
+    },
+    {
+      "candidate_number": 630,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Verneint gezielt einen bestimmten Satzteil. Example: Ich komme nicht am Montag, sondern am Dienstag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 28,
+        "record": {
+          "id": "b1-nicht-constituent",
+          "de": "nicht",
+          "lemma": "nicht",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "не (отрицание отдельного члена предложения)"
+          ],
+          "definition_de": "Verneint gezielt einen bestimmten Satzteil.",
+          "example": "Ich komme nicht am Montag, sondern am Dienstag.",
+          "example_ru": "Я приду не в понедельник, а во вторник.",
+          "forms": "неизменяемое",
+          "grammar_hint": "nicht ставится перед выделяемым отрицанием: nicht heute, nicht mit dem Bus, nicht teuer; nicht …, sondern … .",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nicht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 643,
+          "record": {
+            "id": "a1-429-1",
+            "de": "nicht",
+            "lemma": "nicht",
+            "ru": "не",
+            "uk": "",
+            "translations_ru": [
+              "не"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Verneint eine Aussage oder einen Teil davon.",
+            "example": "Ich komme heute nicht.",
+            "example_ru": "Сегодня я не приду.",
+            "note": "nicht отрицает глагол, признак или конкретный член предложения; перед отрицаемым признаком/членом, при общем отрицании обычно ближе к концу, перед второй частью сказуемого. kein — для существительного с неопределённым или нулевым артиклем: Ich habe kein Auto. Ich komme nicht.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "9715e416942b175c8433"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-429-1",
+        "alias_id": "b1-nicht-constituent",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-429-1"
+      }
+    },
+    {
+      "candidate_number": 631,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Verstärkt oder begrenzt eine Verneinung durch zusätzliche Gradwörter. Example: Der Test war gar nicht schwierig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_062.json",
+        "sha": "74bf7b305b9e7d5147ce63276aedf4a7da77afad",
+        "batch": 62,
+        "row": 29,
+        "record": {
+          "id": "b1-nicht-emphasis",
+          "de": "gar nicht / nicht so",
+          "lemma": "nicht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "совсем не",
+            "вовсе не (gar nicht)",
+            "не так (nicht so)"
+          ],
+          "definition_de": "Verstärkt oder begrenzt eine Verneinung durch zusätzliche Gradwörter.",
+          "example": "Der Test war gar nicht schwierig.",
+          "example_ru": "Тест был совсем не сложным.",
+          "forms": "неизменяемое",
+          "grammar_hint": "gar nicht усиливает отрицание; nicht so schwierig — не настолько сложно; nicht schlecht — неплохо. Это конструкции отрицания, не отдельные значения nicht.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nicht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 643,
+          "record": {
+            "id": "a1-429-1",
+            "de": "nicht",
+            "lemma": "nicht",
+            "ru": "не",
+            "uk": "",
+            "translations_ru": [
+              "не"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Verneint eine Aussage oder einen Teil davon.",
+            "example": "Ich komme heute nicht.",
+            "example_ru": "Сегодня я не приду.",
+            "note": "nicht отрицает глагол, признак или конкретный член предложения; перед отрицаемым признаком/членом, при общем отрицании обычно ближе к концу, перед второй частью сказуемого. kein — для существительного с неопределённым или нулевым артиклем: Ich habe kein Auto. Ich komme nicht.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "9715e416942b175c8433"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 632,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Verneint das Vorhandensein einer Sache oder eines Inhalts. Example: Ich habe im Schrank nichts gefunden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_063.json",
+        "sha": "40efc11a24183cfe2dd98abd7e304991c6ac12e5",
+        "batch": 63,
+        "row": 3,
+        "record": {
+          "id": "b1-nichts-none",
+          "de": "nichts",
+          "lemma": "nichts",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "ничего",
+            "ничто"
+          ],
+          "definition_de": "Verneint das Vorhandensein einer Sache oder eines Inhalts.",
+          "example": "Ich habe im Schrank nichts gefunden.",
+          "example_ru": "Я ничего не нашла в шкафу.",
+          "forms": "неизменяемое неопределённое местоимение",
+          "grammar_hint": "В отличие от русского, дополнительное nicht обычно не требуется: Ich sehe nichts.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 67,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish usage contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nichts"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 645,
+          "record": {
+            "id": "a1-430-1",
+            "de": "nichts",
+            "lemma": "nichts",
+            "ru": "ничего; ничто",
+            "uk": "",
+            "translations_ru": [
+              "ничего",
+              "ничто"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Bezeichnet das Fehlen von allem, was gemeint sein könnte.",
+            "example": "Ich habe nichts gehört.",
+            "example_ru": "Я ничего не слышала.",
+            "note": "Неопределённое отрицательное местоимение. Не склоняется: Ich sehe nichts. Nichts ist passiert. Das macht nichts — ничего страшного. Не добавляем nicht к тому же отрицанию.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "88ed2f84a0d20bb9d6eb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-430-1",
+        "alias_id": "b1-nichts-none",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-430-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_4c4793b30e0353b1160f",
+      "alias_ids": [
+        "b1-neben-location"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4c4793b30e0353b1160f",
+        "de": "neben",
+        "part": "prep",
+        "level": "A2",
+        "translations_ru": [
+          "рядом с",
+          "возле",
+          "около"
+        ],
+        "definition_de": "Bezeichnet eine Position direkt an der Seite von etwas.",
+        "example": "Der Stuhl steht neben dem Fenster.",
+        "example_ru": "Стул стоит рядом с окном.",
+        "grammar_hint": "Wechselpräposition: Wo? neben + Dativ (neben dem Schrank); Wohin? neben + Akkusativ (neben den Schrank stellen).",
+        "usage_note": "Подтверждено пространственное значение. Кроме, наряду с — отдельное употребление, не маркируется автоматически.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/neben"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление"
+        ],
+        "alias_ids": [
+          "b1-neben-location"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-neben-location",
+            "de": "neben",
+            "part": "prep",
+            "forms": "neben + Dativ (Wo?)",
+            "definition_de": "Bezeichnet eine Position seitlich von einer Person oder Sache.",
+            "translations_ru": [
+              "рядом с",
+              "возле",
+              "сбоку от"
+            ],
+            "grammar_hint": "Wechselpräposition: местоположение — Dativ. Neben mir ist ein Platz frei.",
+            "example": "Die Lampe steht neben dem Sofa.",
+            "example_ru": "Лампа стоит рядом с диваном."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/id/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-426-1",
+      "alias_ids": [
+        "b1-nehmen-order",
+        "b1-nehmen-grasp"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-426-1",
+        "de": "nehmen",
+        "lemma": "nehmen",
+        "ru": "брать; взять; выбирать",
+        "uk": "",
+        "translations_ru": [
+          "брать",
+          "взять",
+          "выбирать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "nimmt · nahm · hat genommen",
+        "definition_de": "Etwas greifen, auswählen oder sich dafür entscheiden.",
+        "example": "Ich nehme die Suppe.",
+        "example_ru": "Я возьму суп.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "a0952df5b1126e8a505e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-nehmen-order",
+          "b1-nehmen-grasp"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nehmen-order",
+            "de": "nehmen",
+            "part": "verb",
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Sich für etwas Angebotenes entscheiden.",
+            "translations_ru": [
+              "брать",
+              "выбирать",
+              "заказывать (в ресторане)"
+            ],
+            "grammar_hint": "etwas nehmen (Akk.); при заказе Ich nehme …; du nimmst, Imperativ Nimm!",
+            "example": "Ich nehme die Suppe als Vorspeise.",
+            "example_ru": "На закуску я возьму суп."
+          },
+          {
+            "id": "b1-nehmen-grasp",
+            "de": "nehmen",
+            "part": "verb",
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Etwas greifen oder von seinem bisherigen Ort wegbringen.",
+            "translations_ru": [
+              "брать",
+              "взять",
+              "забирать"
+            ],
+            "grammar_hint": "etwas (Akk.) aus / von + Dativ nehmen; du nimmst.",
+            "example": "Sie nimmt den Schlüssel vom Tisch.",
+            "example_ru": "Она берёт ключ со стола."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-426-2",
+      "alias_ids": [
+        "b1-nehmen-transport"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-426-2",
+        "de": "nehmen",
+        "lemma": "nehmen",
+        "ru": "поехать на (транспорте); воспользоваться (транспортом)",
+        "uk": "",
+        "translations_ru": [
+          "поехать на (транспорте)",
+          "воспользоваться (транспортом)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "nimmt · nahm · hat genommen",
+        "definition_de": "Ein bestimmtes Verkehrsmittel benutzen.",
+        "example": "Wir nehmen den Bus.",
+        "example_ru": "Мы поедем на автобусе.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "a0952df5b1126e8a505e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-nehmen-transport"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nehmen-transport",
+            "de": "nehmen",
+            "part": "verb",
+            "forms": "nimmt · nahm · hat genommen",
+            "definition_de": "Ein Verkehrsmittel für einen Weg wählen und benutzen.",
+            "translations_ru": [
+              "ехать на",
+              "воспользоваться (транспортом)"
+            ],
+            "grammar_hint": "den Bus nehmen (Akk.); mit dem Bus fahren (Dativ).",
+            "example": "Wir nehmen den nächsten Bus.",
+            "example_ru": "Мы поедем на следующем автобусе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nehmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-427-1",
+      "alias_ids": [
+        "b1-nein-answer"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-427-1",
+        "de": "nein",
+        "lemma": "nein",
+        "ru": "нет",
+        "uk": "",
+        "translations_ru": [
+          "нет"
+        ],
+        "part": "interjection",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "неизменяемая частица ответа",
+        "definition_de": "Eine verneinende Antwort.",
+        "example": "Kommst du mit? — Nein.",
+        "example_ru": "Ты идёшь с нами? — Нет.",
+        "note": "Nein — самостоятельный отрицательный ответ. Внутри предложения отрицание выражают nicht или kein. На отрицательный вопрос утвердительно отвечают doch. Das Nein — существительное, отдельно не подтверждено для A2.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "7b5e61815c75440a401f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-nein-answer"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nein-answer",
+            "de": "nein",
+            "part": "particle",
+            "forms": "неизменяемая частица ответа",
+            "definition_de": "Eine ablehnende oder verneinende Antwort auf eine Frage.",
+            "translations_ru": [
+              "нет"
+            ],
+            "grammar_hint": "nein — отдельный ответ; nicht — отрицание внутри предложения; doch — возражение на отрицательный вопрос.",
+            "example": "Möchtest du Tee? – Nein, danke.",
+            "example_ru": "Хочешь чаю? — Нет, спасибо."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nein"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_af0a059c5af11f4b5cfc",
+      "alias_ids": [
+        "b1-nennen-name-person"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_af0a059c5af11f4b5cfc",
+        "de": "nennen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "называть",
+          "звать (по имени)"
+        ],
+        "definition_de": "Eine Person mit einem bestimmten Namen bezeichnen oder ansprechen.",
+        "forms": "nennt · nannte · hat genannt",
+        "example": "Alle nennen meinen Bruder Max.",
+        "example_ru": "Все зовут моего брата Максом.",
+        "grammar_hint": "jemanden (Akkusativ) beim Namen nennen / jemanden Max nennen. Назвать что-либо: etwas nennen.",
+        "usage_note": "Не путать с heißen — называться.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/nennen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-nennen-name-person"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nennen-name-person",
+            "de": "nennen",
+            "part": "verb",
+            "forms": "nennt · nannte · hat genannt",
+            "definition_de": "Eine Person mit einem bestimmten Namen bezeichnen.",
+            "translations_ru": [
+              "называть (по имени)",
+              "звать"
+            ],
+            "grammar_hint": "jemanden (Akk.) + Name/Bezeichnung nennen; heißen — называться (без объекта).",
+            "example": "Meine Freunde nennen mich Lena.",
+            "example_ru": "Мои друзья называют меня Леной."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_523c7c17c2e4d1b480aa",
+      "alias_ids": [
+        "b1-nervoes-anxious"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_523c7c17c2e4d1b480aa",
+        "de": "nervös",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "нервный",
+          "взволнованный"
+        ],
+        "definition_de": "Innerlich unruhig oder angespannt, etwa vor einem wichtigen Ereignis.",
+        "forms": "nervös · nervöser · am nervösesten",
+        "example": "Vor dem Gespräch war ich nervöser als vor der Prüfung.",
+        "example_ru": "Перед разговором я волновалась больше, чем перед экзаменом.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/nerv%C3%B6s"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-nervoes-anxious"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nervoes-anxious",
+            "de": "nervös",
+            "part": "adj",
+            "forms": "nervös · nervöser · am nervösesten",
+            "definition_de": "Innerlich unruhig oder angespannt sein.",
+            "translations_ru": [
+              "нервный",
+              "взволнованный",
+              "нервничать (nervös sein)"
+            ],
+            "grammar_hint": "nervös sein / werden; jemanden nervös machen (Akk.).",
+            "example": "Vor dem Vorstellungsgespräch bin ich nervös.",
+            "example_ru": "Перед собеседованием я нервничаю."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nerv%C3%B6s"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_931db7aba294856524bb",
+      "alias_ids": [
+        "b1-nett-kind"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_931db7aba294856524bb",
+        "de": "nett",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "милый",
+          "приятный",
+          "любезный"
+        ],
+        "definition_de": "Freundlich und angenehm im Umgang mit anderen.",
+        "forms": "nett · netter · am nettesten",
+        "example": "Meine neue Kollegin ist sehr nett.",
+        "example_ru": "Моя новая коллега очень приятная.",
+        "grammar_hint": "",
+        "usage_note": "nett zu jemandem (Dativ) sein — быть любезным с кем-либо.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/nett"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-nett-kind"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nett-kind",
+            "de": "nett",
+            "part": "adj",
+            "forms": "nett · netter · am nettesten",
+            "definition_de": "Im Umgang mit anderen freundlich und angenehm.",
+            "translations_ru": [
+              "милый",
+              "приятный",
+              "приветливый"
+            ],
+            "grammar_hint": "nett zu jemandem (Dativ) sein; freundlich — дружелюбный.",
+            "example": "Unsere neuen Nachbarn sind sehr nett.",
+            "example_ru": "Наши новые соседи очень приветливые."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nett"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-428-1",
+      "alias_ids": [
+        "b1-neu-unused",
+        "b1-neu-recent-change"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-428-1",
+        "de": "neu",
+        "lemma": "neu",
+        "ru": "новый",
+        "uk": "",
+        "translations_ru": [
+          "новый"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "neuer · am neuesten",
+        "definition_de": "Erst seit kurzer Zeit vorhanden oder in Gebrauch.",
+        "example": "Ich habe eine neue Wohnung.",
+        "example_ru": "У меня новая квартира.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "09470152500d7138b749"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-neu-unused",
+          "b1-neu-recent-change"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-neu-unused",
+            "de": "neu",
+            "part": "adj",
+            "forms": "neu · neuer · am neuesten",
+            "definition_de": "Erst vor kurzer Zeit hergestellt oder noch kaum benutzt.",
+            "translations_ru": [
+              "новый",
+              "не бывший в употреблении"
+            ],
+            "grammar_hint": "brandneu — совершенно новый; Gegenteil: alt / gebraucht.",
+            "example": "Die Schuhe sind ganz neu.",
+            "example_ru": "Туфли совсем новые."
+          },
+          {
+            "id": "b1-neu-recent-change",
+            "de": "neu",
+            "part": "adj",
+            "forms": "neu · neuer · am neuesten",
+            "definition_de": "Seit kurzer Zeit in einer bestimmten Situation vorhanden.",
+            "translations_ru": [
+              "новый",
+              "недавно приобретённый",
+              "недавно появившийся"
+            ],
+            "grammar_hint": "neu для человека не обязательно означает неиспользованный предмет: eine neue Wohnung может быть в старом доме.",
+            "example": "Seit Mai habe ich eine neue Arbeitsstelle.",
+            "example_ru": "С мая у меня новая работа."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/neu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-429-1",
+      "alias_ids": [
+        "b1-nicht-sentence",
+        "b1-nicht-constituent"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-429-1",
+        "de": "nicht",
+        "lemma": "nicht",
+        "ru": "не",
+        "uk": "",
+        "translations_ru": [
+          "не"
+        ],
+        "part": "particle",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "",
+        "definition_de": "Verneint eine Aussage oder einen Teil davon.",
+        "example": "Ich komme heute nicht.",
+        "example_ru": "Сегодня я не приду.",
+        "note": "nicht отрицает глагол, признак или конкретный член предложения; перед отрицаемым признаком/членом, при общем отрицании обычно ближе к концу, перед второй частью сказуемого. kein — для существительного с неопределённым или нулевым артиклем: Ich habe kein Auto. Ich komme nicht.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "9715e416942b175c8433"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-nicht-sentence",
+          "b1-nicht-constituent"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nicht-sentence",
+            "de": "nicht",
+            "part": "particle",
+            "forms": "неизменяемая отрицательная частица",
+            "definition_de": "Verneint eine Aussage oder Handlung.",
+            "translations_ru": [
+              "не (отрицание действия или высказывания)"
+            ],
+            "grammar_hint": "При отрицании всего предложения nicht обычно ближе к концу, перед конечным инфинитивом/Partizip II или отделяемой приставкой; не всегда последнее слово. kein отрицает существительное с неопределённым или нулевым артиклем.",
+            "example": "Ich habe den Brief nicht gelesen.",
+            "example_ru": "Я не прочитала письмо."
+          },
+          {
+            "id": "b1-nicht-constituent",
+            "de": "nicht",
+            "part": "particle",
+            "forms": "неизменяемое",
+            "definition_de": "Verneint gezielt einen bestimmten Satzteil.",
+            "translations_ru": [
+              "не (отрицание отдельного члена предложения)"
+            ],
+            "grammar_hint": "nicht ставится перед выделяемым отрицанием: nicht heute, nicht mit dem Bus, nicht teuer; nicht …, sondern … .",
+            "example": "Ich komme nicht am Montag, sondern am Dienstag.",
+            "example_ru": "Я приду не в понедельник, а во вторник."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nicht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 66,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish pedagogical usage contexts rather than independent dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nicht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-430-1",
+      "alias_ids": [
+        "b1-nichts-none"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-430-1",
+        "de": "nichts",
+        "lemma": "nichts",
+        "ru": "ничего; ничто",
+        "uk": "",
+        "translations_ru": [
+          "ничего",
+          "ничто"
+        ],
+        "part": "pronoun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Bezeichnet das Fehlen von allem, was gemeint sein könnte.",
+        "example": "Ich habe nichts gehört.",
+        "example_ru": "Я ничего не слышала.",
+        "note": "Неопределённое отрицательное местоимение. Не склоняется: Ich sehe nichts. Nichts ist passiert. Das macht nichts — ничего страшного. Не добавляем nicht к тому же отрицанию.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "88ed2f84a0d20bb9d6eb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-nichts-none"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-nichts-none",
+            "de": "nichts",
+            "part": "pron",
+            "forms": "неизменяемое неопределённое местоимение",
+            "definition_de": "Verneint das Vorhandensein einer Sache oder eines Inhalts.",
+            "translations_ru": [
+              "ничего",
+              "ничто"
+            ],
+            "grammar_hint": "В отличие от русского, дополнительное nicht обычно не требуется: Ich sehe nichts.",
+            "example": "Ich habe im Schrank nichts gefunden.",
+            "example_ru": "Я ничего не нашла в шкафу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 67,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison; some cards distinguish usage contexts rather than independent senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/nichts"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

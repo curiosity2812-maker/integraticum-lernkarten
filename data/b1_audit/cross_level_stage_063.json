@@ -1,0 +1,3098 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1233,
+    1252
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 16,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 0,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1233,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit einer anderen Person ein Gespräch führen. Example: Wir haben uns lange über Musik unterhalten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 28,
+        "record": {
+          "id": "b1-unterhalten-conversation",
+          "de": "sich unterhalten",
+          "lemma": "unterhalten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "беседовать",
+            "разговаривать",
+            "общаться"
+          ],
+          "definition_de": "Mit einer anderen Person ein Gespräch führen.",
+          "example": "Wir haben uns lange über Musik unterhalten.",
+          "example_ru": "Мы долго беседовали о музыке.",
+          "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+          "grammar_hint": "sich (Akk.) mit jemandem (Dat.) über etwas (Akk.) unterhalten; неотделяемый; Perfekt с haben.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unterhalten"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 385,
+          "record": {
+            "id": "dict_4dc0c977b31a746115e7",
+            "de": "sich unterhalten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "беседовать",
+              "разговаривать",
+              "общаться"
+            ],
+            "definition_de": "Mit einer anderen Person ein Gespräch führen.",
+            "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+            "example": "Wir unterhalten uns über unsere Reise.",
+            "example_ru": "Мы беседуем о нашем путешествии.",
+            "grammar_hint": "sich mit + Dativ über + Akkusativ unterhalten.",
+            "usage_note": "Неотделяемая приставка; Perfekt без ge-. Значения «содержать», «развлекать» не включены в эту карточку.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/unterhalten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4dc0c977b31a746115e7",
+        "alias_id": "b1-unterhalten-conversation",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4dc0c977b31a746115e7"
+      }
+    },
+    {
+      "candidate_number": 1234,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Sich bei einer Beschäftigung oder Veranstaltung amüsieren. Example: Wir haben uns bei dem Spieleabend gut unterhalten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 29,
+        "record": {
+          "id": "b1-unterhalten-enjoy",
+          "de": "sich unterhalten",
+          "lemma": "unterhalten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "приятно проводить время",
+            "развлекаться"
+          ],
+          "definition_de": "Sich bei einer Beschäftigung oder Veranstaltung amüsieren.",
+          "example": "Wir haben uns bei dem Spieleabend gut unterhalten.",
+          "example_ru": "Мы хорошо провели время на вечере игр.",
+          "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+          "grammar_hint": "sich gut unterhalten; jemanden unterhalten — развлекать кого-либо; в конкретном контексте также хорошо беседовать.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unterhalten"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 385,
+          "record": {
+            "id": "dict_4dc0c977b31a746115e7",
+            "de": "sich unterhalten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "беседовать",
+              "разговаривать",
+              "общаться"
+            ],
+            "definition_de": "Mit einer anderen Person ein Gespräch führen.",
+            "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+            "example": "Wir unterhalten uns über unsere Reise.",
+            "example_ru": "Мы беседуем о нашем путешествии.",
+            "grammar_hint": "sich mit + Dativ über + Akkusativ unterhalten.",
+            "usage_note": "Неотделяемая приставка; Perfekt без ge-. Значения «содержать», «развлекать» не включены в эту карточку.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/unterhalten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1235,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Ort, an dem jemand vorübergehend wohnen oder übernachten kann. Example: Für unsere Reise suchen wir eine Unterkunft in der Nähe des Bahnhofs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 1,
+        "record": {
+          "id": "b1-unterkunft-lodging",
+          "de": "die Unterkunft",
+          "lemma": "Unterkunft",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "жильё",
+            "место проживания",
+            "ночлег"
+          ],
+          "definition_de": "Ein Ort, an dem jemand vorübergehend wohnen oder übernachten kann.",
+          "example": "Für unsere Reise suchen wir eine Unterkunft in der Nähe des Bahnhofs.",
+          "example_ru": "Для поездки мы ищем жильё недалеко от вокзала.",
+          "forms": "die Unterkünfte",
+          "grammar_hint": "eine Unterkunft buchen/finden; Unterkunft und Verpflegung — проживание и питание.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterkunft"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 246,
+          "record": {
+            "id": "dict_62fcf5fa6ecd074d0e42",
+            "de": "die Unterkunft",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "жильё",
+              "место для ночлега"
+            ],
+            "definition_de": "Ein Ort, an dem man vorübergehend wohnen oder übernachten kann.",
+            "forms": "Plural · die Unterkünfte",
+            "example": "Für die Reise suchen wir eine günstige Unterkunft.",
+            "example_ru": "Мы ищем недорогое жильё на время поездки.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Unterkunft"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Путешествия и отпуск",
+            "topics": [
+              "Путешествия и отпуск"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_62fcf5fa6ecd074d0e42",
+        "alias_id": "b1-unterkunft-lodging",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_62fcf5fa6ecd074d0e42"
+      }
+    },
+    {
+      "candidate_number": 1236,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Aktivität oder Maßnahme planen und ausführen. Example: Am Wochenende möchten wir gemeinsam etwas unternehmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 4,
+        "record": {
+          "id": "b1-unternehmen-activity",
+          "de": "unternehmen",
+          "lemma": "unternehmen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "предпринимать",
+            "заниматься чем-либо",
+            "делать"
+          ],
+          "definition_de": "Eine Aktivität oder Maßnahme planen und ausführen.",
+          "example": "Am Wochenende möchten wir gemeinsam etwas unternehmen.",
+          "example_ru": "На выходных мы хотим вместе чем-нибудь заняться.",
+          "forms": "unternimmt · unternahm · hat unternommen",
+          "grammar_hint": "etwas (Akk.) unternehmen; einen Ausflug unternehmen; etwas gegen ein Problem unternehmen. Неотделяемый.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unternehmen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 506,
+          "record": {
+            "id": "dict_bf24163251a25e2d88eb",
+            "de": "unternehmen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "заниматься чем-либо",
+              "делать что-либо (в свободное время)",
+              "отправляться куда-либо"
+            ],
+            "definition_de": "Etwas zur Unterhaltung machen, oft gemeinsam mit anderen.",
+            "forms": "unternimmt · unternahm · hat unternommen",
+            "example": "Am Wochenende möchten wir zusammen etwas unternehmen.",
+            "example_ru": "На выходных мы хотим вместе чем-нибудь заняться.",
+            "grammar_hint": "Неотделяемый глагол, без ge- в Partizip II; etwas unternehmen.",
+            "usage_note": "Не путать с das Unternehmen — предприятие; значение «предпринимать меры» здесь не маркировано A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/unternehmen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_bf24163251a25e2d88eb",
+        "alias_id": "b1-unternehmen-activity",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_bf24163251a25e2d88eb"
+      }
+    },
+    {
+      "candidate_number": 1237,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Organisiertes Lehren und Lernen in einer Schule oder einem Kurs. Example: Morgen beginnt der Unterricht eine Stunde später.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 7,
+        "record": {
+          "id": "b1-unterricht-lesson",
+          "de": "der Unterricht",
+          "lemma": "Unterricht",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "занятия",
+            "урок",
+            "обучение"
+          ],
+          "definition_de": "Organisiertes Lehren und Lernen in einer Schule oder einem Kurs.",
+          "example": "Morgen beginnt der Unterricht eine Stunde später.",
+          "example_ru": "Завтра занятия начнутся на час позже.",
+          "forms": "meist Singular; die Unterrichte (редко)",
+          "grammar_hint": "am Unterricht teilnehmen (+ Dat.); Unterricht geben/haben; eine Unterrichtsstunde — один урок.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterricht"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 566,
+          "record": {
+            "id": "a1-582-1",
+            "de": "der Unterricht",
+            "lemma": "Unterricht",
+            "ru": "занятие; урок; уроки",
+            "uk": "",
+            "translations_ru": [
+              "занятие",
+              "урок",
+              "уроки"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Die Zeit, in der eine Lehrperson anderen etwas beibringt.",
+            "example": "Der Unterricht beginnt gleich.",
+            "example_ru": "Занятие сейчас начнётся.",
+            "note": "Unterricht haben — быть на занятиях; im Unterricht — на уроке. Обычно без множественного числа; отдельный урок как единица — die Unterrichtsstunde.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "51ff10f3aecc0953e811"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-582-1",
+        "alias_id": "b1-unterricht-lesson",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-582-1"
+      }
+    },
+    {
+      "candidate_number": 1238,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Merkmal, durch das sich Dinge oder Personen voneinander abheben. Example: Der Unterschied zwischen den beiden Angeboten ist gering.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 10,
+        "record": {
+          "id": "b1-unterschied-difference",
+          "de": "der Unterschied",
+          "lemma": "Unterschied",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "разница",
+            "различие"
+          ],
+          "definition_de": "Ein Merkmal, durch das sich Dinge oder Personen voneinander abheben.",
+          "example": "Der Unterschied zwischen den beiden Angeboten ist gering.",
+          "example_ru": "Разница между двумя предложениями небольшая.",
+          "forms": "die Unterschiede",
+          "grammar_hint": "der Unterschied zwischen + Dat.; einen Unterschied erkennen/machen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterschied"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 180,
+          "record": {
+            "id": "dict_3058fbaf0a3b78995b66",
+            "de": "der Unterschied",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "разница",
+              "отличие"
+            ],
+            "definition_de": "Ein Merkmal, durch das zwei Dinge oder Personen voneinander abweichen.",
+            "forms": "Plural · die Unterschiede",
+            "example": "Ich sehe keinen Unterschied zwischen den beiden Bildern.",
+            "example_ru": "Я не вижу разницы между этими двумя картинками.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Unterschied"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3058fbaf0a3b78995b66",
+        "alias_id": "b1-unterschied-difference",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3058fbaf0a3b78995b66"
+      }
+    },
+    {
+      "candidate_number": 1239,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Schriftstück mit dem eigenen Namen bestätigen. Example: Ich muss den Mietvertrag noch unterschreiben.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 12,
+        "record": {
+          "id": "b1-unterschreiben-sign",
+          "de": "unterschreiben",
+          "lemma": "unterschreiben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "подписывать",
+            "подписать"
+          ],
+          "definition_de": "Ein Schriftstück mit dem eigenen Namen bestätigen.",
+          "example": "Ich muss den Mietvertrag noch unterschreiben.",
+          "example_ru": "Мне ещё нужно подписать договор аренды.",
+          "forms": "unterschreibt · unterschrieb · hat unterschrieben",
+          "grammar_hint": "etwas (Akk.) unterschreiben; неотделяемый; Partizip II без ge-.",
+          "topic": "Документы и учреждения",
+          "topics": [
+            "Документы и учреждения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unterschreiben"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 715,
+          "record": {
+            "id": "a1-583-1",
+            "de": "unterschreiben",
+            "lemma": "unterschreiben",
+            "ru": "подписывать; подписать",
+            "uk": "",
+            "translations_ru": [
+              "подписывать",
+              "подписать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "unterschreibt · unterschrieb · hat unterschrieben",
+            "definition_de": "Seinen Namen zur Bestätigung unter etwas schreiben.",
+            "example": "Bitte unterschreiben Sie hier.",
+            "example_ru": "Подпишите здесь, пожалуйста.",
+            "note": "Неотделяемый глагол: Ich unterschreibe den Vertrag (Akkusativ). Perfekt: hat unterschrieben, без ge-.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "c59155a44159b7f292ed"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-583-1",
+        "alias_id": "b1-unterschreiben-sign",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-583-1"
+      }
+    },
+    {
+      "candidate_number": 1240,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der eigenhändig oder elektronisch angebrachte Name zur Bestätigung eines Dokuments. Example: Für die Anmeldung fehlt nur noch Ihre Unterschrift.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 13,
+        "record": {
+          "id": "b1-unterschrift-signature",
+          "de": "die Unterschrift",
+          "lemma": "Unterschrift",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "подпись"
+          ],
+          "definition_de": "Der eigenhändig oder elektronisch angebrachte Name zur Bestätigung eines Dokuments.",
+          "example": "Für die Anmeldung fehlt nur noch Ihre Unterschrift.",
+          "example_ru": "Для регистрации не хватает только вашей подписи.",
+          "forms": "die Unterschriften",
+          "grammar_hint": "eine Unterschrift leisten; mit Ihrer Unterschrift; nicht Aufschrift (надпись).",
+          "topic": "Документы и учреждения",
+          "topics": [
+            "Документы и учреждения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterschrift"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 567,
+          "record": {
+            "id": "a1-584-1",
+            "de": "die Unterschrift",
+            "lemma": "Unterschrift",
+            "ru": "подпись",
+            "uk": "",
+            "translations_ru": [
+              "подпись"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "die Unterschriften",
+            "definition_de": "Ein von Hand geschriebener Name zur Bestätigung.",
+            "example": "Auf dem Formular fehlt die Unterschrift.",
+            "example_ru": "На бланке нет подписи.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "dddd3c94b92da4685acf"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-584-1",
+        "alias_id": "b1-unterschrift-signature",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-584-1"
+      }
+    },
+    {
+      "candidate_number": 1241,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Den Gesundheitszustand einer Person medizinisch prüfen. Example: Die Ärztin untersucht mein Knie.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 17,
+        "record": {
+          "id": "b1-untersuchen-medical",
+          "de": "untersuchen",
+          "lemma": "untersuchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "осматривать",
+            "обследовать (мед.)"
+          ],
+          "definition_de": "Den Gesundheitszustand einer Person medizinisch prüfen.",
+          "example": "Die Ärztin untersucht mein Knie.",
+          "example_ru": "Врач обследует моё колено.",
+          "forms": "untersucht · untersuchte · hat untersucht",
+          "grammar_hint": "jemanden/etwas (Akk.) untersuchen; sich untersuchen lassen — пройти обследование; von + Dat. (кем).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/untersuchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 204,
+          "record": {
+            "id": "dict_54f06d08b58e4f281d59",
+            "de": "untersuchen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "осматривать",
+              "обследовать"
+            ],
+            "definition_de": "Sich jemanden oder etwas genau ansehen, zum Beispiel um eine Krankheit oder Verletzung zu erkennen.",
+            "forms": "untersucht · untersuchte · hat untersucht",
+            "example": "Die Ärztin untersucht mein Knie.",
+            "example_ru": "Врач осматривает моё колено.",
+            "grammar_hint": "Кого или что осматривают? Akkusativ: jemanden oder etwas untersuchen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/untersuchen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_54f06d08b58e4f281d59",
+        "alias_id": "b1-untersuchen-medical",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_54f06d08b58e4f281d59"
+      }
+    },
+    {
+      "candidate_number": 1242,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Einen Sachverhalt oder Gegenstand systematisch prüfen, um ihn besser zu verstehen. Example: Das Team untersucht die Gründe für den Fehler.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 18,
+        "record": {
+          "id": "b1-untersuchen-investigate",
+          "de": "untersuchen",
+          "lemma": "untersuchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "исследовать",
+            "изучать",
+            "проверять"
+          ],
+          "definition_de": "Einen Sachverhalt oder Gegenstand systematisch prüfen, um ihn besser zu verstehen.",
+          "example": "Das Team untersucht die Gründe für den Fehler.",
+          "example_ru": "Команда исследует причины ошибки.",
+          "forms": "untersucht · untersuchte · hat untersucht",
+          "grammar_hint": "etwas (Akk.) untersuchen; auf etwas (Akk.) untersuchen; это значение дополнительно подтверждено словарём, отдельная проверка CEFR нужна.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "dictionary_extension",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/untersuchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 204,
+          "record": {
+            "id": "dict_54f06d08b58e4f281d59",
+            "de": "untersuchen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "осматривать",
+              "обследовать"
+            ],
+            "definition_de": "Sich jemanden oder etwas genau ansehen, zum Beispiel um eine Krankheit oder Verletzung zu erkennen.",
+            "forms": "untersucht · untersuchte · hat untersucht",
+            "example": "Die Ärztin untersucht mein Knie.",
+            "example_ru": "Врач осматривает моё колено.",
+            "grammar_hint": "Кого или что осматривают? Akkusativ: jemanden oder etwas untersuchen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/untersuchen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1243,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Zeit, in der man von der Arbeit freigestellt ist und sich erholen kann. Example: Im Juli nehmen wir zwei Wochen Urlaub.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_105.json",
+        "sha": "01974558f5f51745fc07c5a858c2c0c6e46342b2",
+        "batch": 105,
+        "row": 24,
+        "record": {
+          "id": "b1-urlaub-leave",
+          "de": "der Urlaub",
+          "lemma": "Urlaub",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "отпуск",
+            "отдых"
+          ],
+          "definition_de": "Eine Zeit, in der man von der Arbeit freigestellt ist und sich erholen kann.",
+          "example": "Im Juli nehmen wir zwei Wochen Urlaub.",
+          "example_ru": "В июле мы берём две недели отпуска.",
+          "forms": "die Urlaube",
+          "grammar_hint": "Urlaub nehmen/machen; im Urlaub sein; CH обычно die Ferien (Pl.).",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Urlaub"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 568,
+          "record": {
+            "id": "a1-585-1",
+            "de": "der Urlaub",
+            "lemma": "Urlaub",
+            "ru": "отпуск",
+            "uk": "",
+            "translations_ru": [
+              "отпуск"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Urlaube",
+            "definition_de": "Freie Tage, an denen man nicht zur Arbeit gehen muss.",
+            "example": "Im Juli habe ich Urlaub.",
+            "example_ru": "В июле у меня отпуск.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "aa97fca8fecd600b5b9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-585-1",
+        "alias_id": "b1-urlaub-leave",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-585-1"
+      }
+    },
+    {
+      "candidate_number": 1244,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein männlicher Elternteil. Example: Ihr Vater besucht sie am Wochenende.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_106.json",
+        "sha": "49cd2a52769b9923c700d412691a79cf9ec7bf7a",
+        "batch": 106,
+        "row": 2,
+        "record": {
+          "id": "b1-vater-parent",
+          "de": "der Vater",
+          "lemma": "Vater",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "отец",
+            "папа"
+          ],
+          "definition_de": "Ein männlicher Elternteil.",
+          "example": "Ihr Vater besucht sie am Wochenende.",
+          "example_ru": "Её отец навестит её на выходных.",
+          "forms": "die Väter",
+          "grammar_hint": "Vater werden — стать отцом; Genitiv des Vaters; Dativ Plural den Vätern.",
+          "topic": "Семья",
+          "topics": [
+            "Семья"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 91–92 visually inspected. B1 exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Vater"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 569,
+          "record": {
+            "id": "a1-586-1",
+            "de": "der Vater",
+            "lemma": "Vater",
+            "ru": "отец; папа",
+            "uk": "",
+            "translations_ru": [
+              "отец",
+              "папа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Väter",
+            "definition_de": "Ein männlicher Elternteil.",
+            "example": "Mein Vater kocht heute für uns.",
+            "example_ru": "Мой отец сегодня готовит для нас.",
+            "note": "Vater — нейтральное обозначение; Papa — разговорное обращение.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "13924558db4c7b4de10c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-586-1",
+        "alias_id": "b1-vater-parent",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-586-1"
+      }
+    },
+    {
+      "candidate_number": 1245,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bestimmen, dass eine Handlung nicht erlaubt ist. Example: Die Hausordnung verbietet den Bewohnern das Rauchen im Flur.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_106.json",
+        "sha": "49cd2a52769b9923c700d412691a79cf9ec7bf7a",
+        "batch": 106,
+        "row": 19,
+        "record": {
+          "id": "b1-verbieten-forbid",
+          "de": "verbieten",
+          "lemma": "verbieten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "запрещать",
+            "запретить"
+          ],
+          "definition_de": "Bestimmen, dass eine Handlung nicht erlaubt ist.",
+          "example": "Die Hausordnung verbietet den Bewohnern das Rauchen im Flur.",
+          "example_ru": "Правила дома запрещают жильцам курить в коридоре.",
+          "forms": "verbietet · verbot · hat verboten",
+          "grammar_hint": "jemandem (Dat.) etwas (Akk.) verbieten; jemandem verbieten, etwas zu tun; неотделяемый сильный глагол.",
+          "topic": "Документы и учреждения",
+          "topics": [
+            "Документы и учреждения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 91–92 visually inspected. B1 exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verbieten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 507,
+          "record": {
+            "id": "dict_382c5f145fb270e9c3c5",
+            "de": "verbieten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "запрещать",
+              "запретить"
+            ],
+            "definition_de": "Sagen oder bestimmen, dass jemand etwas nicht tun darf.",
+            "forms": "verbietet · verbot · hat verboten",
+            "example": "Die Schule verbietet den Schülern das Rauchen.",
+            "example_ru": "Школа запрещает ученикам курить.",
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) verbieten; verboten sein — быть запрещённым. Неотделяемая приставка ver-.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verbieten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Документы и правила",
+            "topics": [
+              "Документы и правила"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_382c5f145fb270e9c3c5",
+        "alias_id": "b1-verbieten-forbid",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_382c5f145fb270e9c3c5"
+      }
+    },
+    {
+      "candidate_number": 1246,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht durch eine Regel oder Vorschrift gestattet. Example: Das Parkieren vor der Einfahrt ist verboten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_106.json",
+        "sha": "49cd2a52769b9923c700d412691a79cf9ec7bf7a",
+        "batch": 106,
+        "row": 21,
+        "record": {
+          "id": "b1-verboten-prohibited",
+          "de": "verboten",
+          "lemma": "verboten",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "запрещённый",
+            "запрещено"
+          ],
+          "definition_de": "Nicht durch eine Regel oder Vorschrift gestattet.",
+          "example": "Das Parkieren vor der Einfahrt ist verboten.",
+          "example_ru": "Парковка перед въездом запрещена.",
+          "forms": "Partizip II; обычно без сравнения в значении запрета",
+          "grammar_hint": "Es ist verboten, hier zu parken/parkieren; запятая при инфинитивной группе с формальным es. Связано с verbieten.",
+          "topic": "Документы и учреждения",
+          "topics": [
+            "Документы и учреждения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 91–92 visually inspected. B1 exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verboten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 716,
+          "record": {
+            "id": "a1-587-1",
+            "de": "verboten",
+            "lemma": "verboten",
+            "ru": "запрещённый; запрещено",
+            "uk": "",
+            "translations_ru": [
+              "запрещённый",
+              "запрещено"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Durch eine Regel nicht erlaubt.",
+            "example": "Hier ist Parken verboten.",
+            "example_ru": "Здесь парковаться запрещено.",
+            "note": "Partizip II от verbieten. В значении «не разрешено» обычные степени сравнения не употребляются.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "fa6095240025572ab557"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-587-1",
+        "alias_id": "b1-verboten-prohibited",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-587-1"
+      }
+    },
+    {
+      "candidate_number": 1247,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Durch berufliche oder andere bezahlte Arbeit Einkommen erzielen. Example: Mit dieser Tätigkeit verdient sie genug für ihren Lebensunterhalt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 3,
+        "record": {
+          "id": "b1-verdienen-earn",
+          "de": "verdienen",
+          "lemma": "verdienen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "зарабатывать",
+            "получать заработок"
+          ],
+          "definition_de": "Durch berufliche oder andere bezahlte Arbeit Einkommen erzielen.",
+          "example": "Mit dieser Tätigkeit verdient sie genug für ihren Lebensunterhalt.",
+          "example_ru": "Этой работой она зарабатывает достаточно на жизнь.",
+          "forms": "verdient · verdiente · hat verdient",
+          "grammar_hint": "Geld (Akk.) verdienen; an etwas (Dat.) verdienen; неотделяемый.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verdienen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 717,
+          "record": {
+            "id": "a1-588-1",
+            "de": "verdienen",
+            "lemma": "verdienen",
+            "ru": "зарабатывать",
+            "uk": "",
+            "translations_ru": [
+              "зарабатывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Работа",
+            "topics": [
+              "Работа"
+            ],
+            "forms": "verdient · verdiente · hat verdient",
+            "definition_de": "Durch Arbeit Geld bekommen.",
+            "example": "Er verdient genug für die Miete.",
+            "example_ru": "Он зарабатывает достаточно, чтобы платить за жильё.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "be1dd4462422a24f3ab7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-588-1",
+        "alias_id": "b1-verdienen-earn",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-588-1"
+      }
+    },
+    {
+      "candidate_number": 1248,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Aufgrund des eigenen Handelns einer Anerkennung oder Folge würdig sein. Example: Nach all der Arbeit hast du eine Pause verdient.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 4,
+        "record": {
+          "id": "b1-verdienen-deserve",
+          "de": "verdienen",
+          "lemma": "verdienen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "заслуживать",
+            "заслужить"
+          ],
+          "definition_de": "Aufgrund des eigenen Handelns einer Anerkennung oder Folge würdig sein.",
+          "example": "Nach all der Arbeit hast du eine Pause verdient.",
+          "example_ru": "После всей этой работы ты заслужила отдых.",
+          "forms": "verdient · verdiente · hat verdient",
+          "grammar_hint": "etwas (Akk.) verdienen; es verdienen, … zu + Infinitiv; nicht nur Geld verdienen.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verdienen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 717,
+          "record": {
+            "id": "a1-588-1",
+            "de": "verdienen",
+            "lemma": "verdienen",
+            "ru": "зарабатывать",
+            "uk": "",
+            "translations_ru": [
+              "зарабатывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Работа",
+            "topics": [
+              "Работа"
+            ],
+            "forms": "verdient · verdiente · hat verdient",
+            "definition_de": "Durch Arbeit Geld bekommen.",
+            "example": "Er verdient genug für die Miete.",
+            "example_ru": "Он зарабатывает достаточно, чтобы платить за жильё.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "be1dd4462422a24f3ab7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1249,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Zusammenschluss von Personen mit einem gemeinsamen Zweck. Example: Unser Verein bietet kostenlose Sprachkurse an.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 5,
+        "record": {
+          "id": "b1-verein-association",
+          "de": "der Verein",
+          "lemma": "Verein",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "объединение",
+            "общество",
+            "клуб"
+          ],
+          "definition_de": "Ein Zusammenschluss von Personen mit einem gemeinsamen Zweck.",
+          "example": "Unser Verein bietet kostenlose Sprachkurse an.",
+          "example_ru": "Наше объединение предлагает бесплатные языковые курсы.",
+          "forms": "die Vereine",
+          "grammar_hint": "Mitglied in einem Verein sein; einem Verein (Dat.) beitreten.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verein"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 570,
+          "record": {
+            "id": "a1-589-1",
+            "de": "der Verein",
+            "lemma": "Verein",
+            "ru": "клуб, объединение",
+            "uk": "",
+            "translations_ru": [
+              "клуб, объединение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Vereine",
+            "definition_de": "Eine Gruppe, die sich dauerhaft für ein gemeinsames Ziel organisiert.",
+            "example": "Er spielt Fußball in einem Verein.",
+            "example_ru": "Он играет в футбол в клубе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "e5c6dfcf711dfc89f916"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-589-1",
+        "alias_id": "b1-verein-association",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-589-1"
+      }
+    },
+    {
+      "candidate_number": 1250,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Information oder eine beabsichtigte Handlung nicht mehr im Gedächtnis haben. Example: Ich habe vergessen, die Rechnung zu bezahlen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 9,
+        "record": {
+          "id": "b1-vergessen-memory",
+          "de": "vergessen",
+          "lemma": "vergessen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "забывать",
+            "забыть (информацию, дело)"
+          ],
+          "definition_de": "Eine Information oder eine beabsichtigte Handlung nicht mehr im Gedächtnis haben.",
+          "example": "Ich habe vergessen, die Rechnung zu bezahlen.",
+          "example_ru": "Я забыла оплатить счёт.",
+          "forms": "vergisst · vergaß · hat vergessen",
+          "grammar_hint": "etwas (Akk.) vergessen; vergessen, etwas zu tun; CH: vergass; неотделяемый.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vergessen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 205,
+          "record": {
+            "id": "dict_22bac0950c7d72ee2f4f",
+            "de": "vergessen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "забывать",
+              "забыть"
+            ],
+            "definition_de": "Sich an etwas nicht erinnern oder nicht daran denken, etwas zu tun oder mitzunehmen.",
+            "forms": "vergisst · vergaß · hat vergessen",
+            "example": "Ich habe vergessen, den Termin in den Kalender einzutragen.",
+            "example_ru": "Я забыла записать встречу в календарь.",
+            "grammar_hint": "etwas (Akkusativ) vergessen; vergessen, etwas zu tun: Ich habe vergessen, dich anzurufen. Сильный глагол: vergisst · vergaß · hat vergessen. В Швейцарии: vergass.",
+            "usage_note": "das Vergessen — забывание, субстантивация. Sich vergessen — другое, редкое значение; не маркируется по данной статье.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vergessen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_22bac0950c7d72ee2f4f",
+        "alias_id": "b1-vergessen-memory",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_22bac0950c7d72ee2f4f"
+      }
+    },
+    {
+      "candidate_number": 1251,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Einen Gegenstand unbeabsichtigt an einem Ort zurücklassen. Example: Ich habe meine Brille im Büro vergessen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 10,
+        "record": {
+          "id": "b1-vergessen-leave",
+          "de": "vergessen",
+          "lemma": "vergessen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "забыть",
+            "оставить по забывчивости"
+          ],
+          "definition_de": "Einen Gegenstand unbeabsichtigt an einem Ort zurücklassen.",
+          "example": "Ich habe meine Brille im Büro vergessen.",
+          "example_ru": "Я забыла очки в офисе.",
+          "forms": "vergisst · vergaß · hat vergessen",
+          "grammar_hint": "etwas (Akk.) an einem Ort (Dat.) vergessen; контекст общего значения, связать при объединении; CH: vergass.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vergessen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 205,
+          "record": {
+            "id": "dict_22bac0950c7d72ee2f4f",
+            "de": "vergessen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "забывать",
+              "забыть"
+            ],
+            "definition_de": "Sich an etwas nicht erinnern oder nicht daran denken, etwas zu tun oder mitzunehmen.",
+            "forms": "vergisst · vergaß · hat vergessen",
+            "example": "Ich habe vergessen, den Termin in den Kalender einzutragen.",
+            "example_ru": "Я забыла записать встречу в календарь.",
+            "grammar_hint": "etwas (Akkusativ) vergessen; vergessen, etwas zu tun: Ich habe vergessen, dich anzurufen. Сильный глагол: vergisst · vergaß · hat vergessen. В Швейцарии: vergass.",
+            "usage_note": "das Vergessen — забывание, субстантивация. Sich vergessen — другое, редкое значение; не маркируется по данной статье.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vergessen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_22bac0950c7d72ee2f4f",
+        "alias_id": "b1-vergessen-leave",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_22bac0950c7d72ee2f4f"
+      }
+    },
+    {
+      "candidate_number": 1252,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Gemeinsamkeiten und Unterschiede zwischen Dingen feststellen. Example: Vor dem Kauf vergleichen wir die Preise.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 11,
+        "record": {
+          "id": "b1-vergleichen-compare",
+          "de": "vergleichen",
+          "lemma": "vergleichen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сравнивать",
+            "сопоставлять"
+          ],
+          "definition_de": "Gemeinsamkeiten und Unterschiede zwischen Dingen feststellen.",
+          "example": "Vor dem Kauf vergleichen wir die Preise.",
+          "example_ru": "Перед покупкой мы сравниваем цены.",
+          "forms": "vergleicht · verglich · hat verglichen",
+          "grammar_hint": "etwas (Akk.) mit etwas (Dat.) vergleichen; неотделяемый сильный глагол.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vergleichen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 106,
+          "record": {
+            "id": "dict_d6c14c4a591620584f77",
+            "de": "vergleichen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "сравнивать",
+              "сравнить"
+            ],
+            "definition_de": "Zwei oder mehr Dinge auf Gemeinsamkeiten und Unterschiede prüfen.",
+            "forms": "vergleicht · verglich · hat verglichen",
+            "example": "Ich vergleiche den neuen Fahrplan mit dem alten.",
+            "example_ru": "Я сравниваю новое расписание со старым.",
+            "grammar_hint": "Сравниваем что с чем? etwas (Akkusativ) mit etwas (Dativ) vergleichen.",
+            "usage_note": "Angebote vergleichen — сравнивать предложения. Etwas mit etwas vergleichen — сравнивать что-либо с чем-либо. Приставка ver- не отделяется, Perfekt: hat verglichen.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vergleichen",
+                "https://www.duden.de/rechtschreibung/vergleichen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_d6c14c4a591620584f77",
+        "alias_id": "b1-vergleichen-compare",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_d6c14c4a591620584f77"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_4dc0c977b31a746115e7",
+      "alias_ids": [
+        "b1-unterhalten-conversation"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4dc0c977b31a746115e7",
+        "de": "sich unterhalten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "беседовать",
+          "разговаривать",
+          "общаться"
+        ],
+        "definition_de": "Mit einer anderen Person ein Gespräch führen.",
+        "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+        "example": "Wir unterhalten uns über unsere Reise.",
+        "example_ru": "Мы беседуем о нашем путешествии.",
+        "grammar_hint": "sich mit + Dativ über + Akkusativ unterhalten.",
+        "usage_note": "Неотделяемая приставка; Perfekt без ge-. Значения «содержать», «развлекать» не включены в эту карточку.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/unterhalten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-unterhalten-conversation"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unterhalten-conversation",
+            "de": "sich unterhalten",
+            "part": "verb",
+            "forms": "unterhält sich · unterhielt sich · hat sich unterhalten",
+            "definition_de": "Mit einer anderen Person ein Gespräch führen.",
+            "translations_ru": [
+              "беседовать",
+              "разговаривать",
+              "общаться"
+            ],
+            "grammar_hint": "sich (Akk.) mit jemandem (Dat.) über etwas (Akk.) unterhalten; неотделяемый; Perfekt с haben.",
+            "example": "Wir haben uns lange über Musik unterhalten.",
+            "example_ru": "Мы долго беседовали о музыке."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unterhalten"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_62fcf5fa6ecd074d0e42",
+      "alias_ids": [
+        "b1-unterkunft-lodging"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_62fcf5fa6ecd074d0e42",
+        "de": "die Unterkunft",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "жильё",
+          "место для ночлега"
+        ],
+        "definition_de": "Ein Ort, an dem man vorübergehend wohnen oder übernachten kann.",
+        "forms": "Plural · die Unterkünfte",
+        "example": "Für die Reise suchen wir eine günstige Unterkunft.",
+        "example_ru": "Мы ищем недорогое жильё на время поездки.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Unterkunft"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Путешествия и отпуск",
+        "topics": [
+          "Путешествия и отпуск"
+        ],
+        "alias_ids": [
+          "b1-unterkunft-lodging"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unterkunft-lodging",
+            "de": "die Unterkunft",
+            "part": "noun",
+            "forms": "die Unterkünfte",
+            "definition_de": "Ein Ort, an dem jemand vorübergehend wohnen oder übernachten kann.",
+            "translations_ru": [
+              "жильё",
+              "место проживания",
+              "ночлег"
+            ],
+            "grammar_hint": "eine Unterkunft buchen/finden; Unterkunft und Verpflegung — проживание и питание.",
+            "example": "Für unsere Reise suchen wir eine Unterkunft in der Nähe des Bahnhofs.",
+            "example_ru": "Для поездки мы ищем жильё недалеко от вокзала."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterkunft"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_bf24163251a25e2d88eb",
+      "alias_ids": [
+        "b1-unternehmen-activity"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_bf24163251a25e2d88eb",
+        "de": "unternehmen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "заниматься чем-либо",
+          "делать что-либо (в свободное время)",
+          "отправляться куда-либо"
+        ],
+        "definition_de": "Etwas zur Unterhaltung machen, oft gemeinsam mit anderen.",
+        "forms": "unternimmt · unternahm · hat unternommen",
+        "example": "Am Wochenende möchten wir zusammen etwas unternehmen.",
+        "example_ru": "На выходных мы хотим вместе чем-нибудь заняться.",
+        "grammar_hint": "Неотделяемый глагол, без ge- в Partizip II; etwas unternehmen.",
+        "usage_note": "Не путать с das Unternehmen — предприятие; значение «предпринимать меры» здесь не маркировано A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/unternehmen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-unternehmen-activity"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unternehmen-activity",
+            "de": "unternehmen",
+            "part": "verb",
+            "forms": "unternimmt · unternahm · hat unternommen",
+            "definition_de": "Eine Aktivität oder Maßnahme planen und ausführen.",
+            "translations_ru": [
+              "предпринимать",
+              "заниматься чем-либо",
+              "делать"
+            ],
+            "grammar_hint": "etwas (Akk.) unternehmen; einen Ausflug unternehmen; etwas gegen ein Problem unternehmen. Неотделяемый.",
+            "example": "Am Wochenende möchten wir gemeinsam etwas unternehmen.",
+            "example_ru": "На выходных мы хотим вместе чем-нибудь заняться."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unternehmen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-582-1",
+      "alias_ids": [
+        "b1-unterricht-lesson"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-582-1",
+        "de": "der Unterricht",
+        "lemma": "Unterricht",
+        "ru": "занятие; урок; уроки",
+        "uk": "",
+        "translations_ru": [
+          "занятие",
+          "урок",
+          "уроки"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "обычно только Singular в этом употреблении",
+        "definition_de": "Die Zeit, in der eine Lehrperson anderen etwas beibringt.",
+        "example": "Der Unterricht beginnt gleich.",
+        "example_ru": "Занятие сейчас начнётся.",
+        "note": "Unterricht haben — быть на занятиях; im Unterricht — на уроке. Обычно без множественного числа; отдельный урок как единица — die Unterrichtsstunde.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "51ff10f3aecc0953e811"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-unterricht-lesson"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unterricht-lesson",
+            "de": "der Unterricht",
+            "part": "noun",
+            "forms": "meist Singular; die Unterrichte (редко)",
+            "definition_de": "Organisiertes Lehren und Lernen in einer Schule oder einem Kurs.",
+            "translations_ru": [
+              "занятия",
+              "урок",
+              "обучение"
+            ],
+            "grammar_hint": "am Unterricht teilnehmen (+ Dat.); Unterricht geben/haben; eine Unterrichtsstunde — один урок.",
+            "example": "Morgen beginnt der Unterricht eine Stunde später.",
+            "example_ru": "Завтра занятия начнутся на час позже."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterricht"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_3058fbaf0a3b78995b66",
+      "alias_ids": [
+        "b1-unterschied-difference"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3058fbaf0a3b78995b66",
+        "de": "der Unterschied",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "разница",
+          "отличие"
+        ],
+        "definition_de": "Ein Merkmal, durch das zwei Dinge oder Personen voneinander abweichen.",
+        "forms": "Plural · die Unterschiede",
+        "example": "Ich sehe keinen Unterschied zwischen den beiden Bildern.",
+        "example_ru": "Я не вижу разницы между этими двумя картинками.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Unterschied"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-unterschied-difference"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unterschied-difference",
+            "de": "der Unterschied",
+            "part": "noun",
+            "forms": "die Unterschiede",
+            "definition_de": "Ein Merkmal, durch das sich Dinge oder Personen voneinander abheben.",
+            "translations_ru": [
+              "разница",
+              "различие"
+            ],
+            "grammar_hint": "der Unterschied zwischen + Dat.; einen Unterschied erkennen/machen.",
+            "example": "Der Unterschied zwischen den beiden Angeboten ist gering.",
+            "example_ru": "Разница между двумя предложениями небольшая."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterschied"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-583-1",
+      "alias_ids": [
+        "b1-unterschreiben-sign"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-583-1",
+        "de": "unterschreiben",
+        "lemma": "unterschreiben",
+        "ru": "подписывать; подписать",
+        "uk": "",
+        "translations_ru": [
+          "подписывать",
+          "подписать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения"
+        ],
+        "forms": "unterschreibt · unterschrieb · hat unterschrieben",
+        "definition_de": "Seinen Namen zur Bestätigung unter etwas schreiben.",
+        "example": "Bitte unterschreiben Sie hier.",
+        "example_ru": "Подпишите здесь, пожалуйста.",
+        "note": "Неотделяемый глагол: Ich unterschreibe den Vertrag (Akkusativ). Perfekt: hat unterschrieben, без ge-.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "c59155a44159b7f292ed"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-unterschreiben-sign"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unterschreiben-sign",
+            "de": "unterschreiben",
+            "part": "verb",
+            "forms": "unterschreibt · unterschrieb · hat unterschrieben",
+            "definition_de": "Ein Schriftstück mit dem eigenen Namen bestätigen.",
+            "translations_ru": [
+              "подписывать",
+              "подписать"
+            ],
+            "grammar_hint": "etwas (Akk.) unterschreiben; неотделяемый; Partizip II без ge-.",
+            "example": "Ich muss den Mietvertrag noch unterschreiben.",
+            "example_ru": "Мне ещё нужно подписать договор аренды."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unterschreiben"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-584-1",
+      "alias_ids": [
+        "b1-unterschrift-signature"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-584-1",
+        "de": "die Unterschrift",
+        "lemma": "Unterschrift",
+        "ru": "подпись",
+        "uk": "",
+        "translations_ru": [
+          "подпись"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения"
+        ],
+        "forms": "die Unterschriften",
+        "definition_de": "Ein von Hand geschriebener Name zur Bestätigung.",
+        "example": "Auf dem Formular fehlt die Unterschrift.",
+        "example_ru": "На бланке нет подписи.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "dddd3c94b92da4685acf"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-unterschrift-signature"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unterschrift-signature",
+            "de": "die Unterschrift",
+            "part": "noun",
+            "forms": "die Unterschriften",
+            "definition_de": "Der eigenhändig oder elektronisch angebrachte Name zur Bestätigung eines Dokuments.",
+            "translations_ru": [
+              "подпись"
+            ],
+            "grammar_hint": "eine Unterschrift leisten; mit Ihrer Unterschrift; nicht Aufschrift (надпись).",
+            "example": "Für die Anmeldung fehlt nur noch Ihre Unterschrift.",
+            "example_ru": "Для регистрации не хватает только вашей подписи."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unterschrift"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_54f06d08b58e4f281d59",
+      "alias_ids": [
+        "b1-untersuchen-medical"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_54f06d08b58e4f281d59",
+        "de": "untersuchen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "осматривать",
+          "обследовать"
+        ],
+        "definition_de": "Sich jemanden oder etwas genau ansehen, zum Beispiel um eine Krankheit oder Verletzung zu erkennen.",
+        "forms": "untersucht · untersuchte · hat untersucht",
+        "example": "Die Ärztin untersucht mein Knie.",
+        "example_ru": "Врач осматривает моё колено.",
+        "grammar_hint": "Кого или что осматривают? Akkusativ: jemanden oder etwas untersuchen.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/untersuchen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-untersuchen-medical"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-untersuchen-medical",
+            "de": "untersuchen",
+            "part": "verb",
+            "forms": "untersucht · untersuchte · hat untersucht",
+            "definition_de": "Den Gesundheitszustand einer Person medizinisch prüfen.",
+            "translations_ru": [
+              "осматривать",
+              "обследовать (мед.)"
+            ],
+            "grammar_hint": "jemanden/etwas (Akk.) untersuchen; sich untersuchen lassen — пройти обследование; von + Dat. (кем).",
+            "example": "Die Ärztin untersucht mein Knie.",
+            "example_ru": "Врач обследует моё колено."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/untersuchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-585-1",
+      "alias_ids": [
+        "b1-urlaub-leave"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-585-1",
+        "de": "der Urlaub",
+        "lemma": "Urlaub",
+        "ru": "отпуск",
+        "uk": "",
+        "translations_ru": [
+          "отпуск"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "die Urlaube",
+        "definition_de": "Freie Tage, an denen man nicht zur Arbeit gehen muss.",
+        "example": "Im Juli habe ich Urlaub.",
+        "example_ru": "В июле у меня отпуск.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "aa97fca8fecd600b5b9b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-urlaub-leave"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-urlaub-leave",
+            "de": "der Urlaub",
+            "part": "noun",
+            "forms": "die Urlaube",
+            "definition_de": "Eine Zeit, in der man von der Arbeit freigestellt ist und sich erholen kann.",
+            "translations_ru": [
+              "отпуск",
+              "отдых"
+            ],
+            "grammar_hint": "Urlaub nehmen/machen; im Urlaub sein; CH обычно die Ferien (Pl.).",
+            "example": "Im Juli nehmen wir zwei Wochen Urlaub.",
+            "example_ru": "В июле мы берём две недели отпуска."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword",
+              "note": "Printed pages 90–91 visually inspected; B1 exam-list coverage is not proof of earliest CEFR level. Additional dictionary senses not independently level-confirmed; A1/A2 and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Urlaub"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-586-1",
+      "alias_ids": [
+        "b1-vater-parent"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-586-1",
+        "de": "der Vater",
+        "lemma": "Vater",
+        "ru": "отец; папа",
+        "uk": "",
+        "translations_ru": [
+          "отец",
+          "папа"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья"
+        ],
+        "forms": "die Väter",
+        "definition_de": "Ein männlicher Elternteil.",
+        "example": "Mein Vater kocht heute für uns.",
+        "example_ru": "Мой отец сегодня готовит для нас.",
+        "note": "Vater — нейтральное обозначение; Papa — разговорное обращение.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "13924558db4c7b4de10c"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-vater-parent"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vater-parent",
+            "de": "der Vater",
+            "part": "noun",
+            "forms": "die Väter",
+            "definition_de": "Ein männlicher Elternteil.",
+            "translations_ru": [
+              "отец",
+              "папа"
+            ],
+            "grammar_hint": "Vater werden — стать отцом; Genitiv des Vaters; Dativ Plural den Vätern.",
+            "example": "Ihr Vater besucht sie am Wochenende.",
+            "example_ru": "Её отец навестит её на выходных."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 91–92 visually inspected. B1 exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Vater"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_382c5f145fb270e9c3c5",
+      "alias_ids": [
+        "b1-verbieten-forbid"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_382c5f145fb270e9c3c5",
+        "de": "verbieten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "запрещать",
+          "запретить"
+        ],
+        "definition_de": "Sagen oder bestimmen, dass jemand etwas nicht tun darf.",
+        "forms": "verbietet · verbot · hat verboten",
+        "example": "Die Schule verbietet den Schülern das Rauchen.",
+        "example_ru": "Школа запрещает ученикам курить.",
+        "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) verbieten; verboten sein — быть запрещённым. Неотделяемая приставка ver-.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/verbieten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Документы и правила",
+        "topics": [
+          "Документы и правила"
+        ],
+        "alias_ids": [
+          "b1-verbieten-forbid"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verbieten-forbid",
+            "de": "verbieten",
+            "part": "verb",
+            "forms": "verbietet · verbot · hat verboten",
+            "definition_de": "Bestimmen, dass eine Handlung nicht erlaubt ist.",
+            "translations_ru": [
+              "запрещать",
+              "запретить"
+            ],
+            "grammar_hint": "jemandem (Dat.) etwas (Akk.) verbieten; jemandem verbieten, etwas zu tun; неотделяемый сильный глагол.",
+            "example": "Die Hausordnung verbietet den Bewohnern das Rauchen im Flur.",
+            "example_ru": "Правила дома запрещают жильцам курить в коридоре."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 91–92 visually inspected. B1 exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verbieten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-587-1",
+      "alias_ids": [
+        "b1-verboten-prohibited"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-587-1",
+        "de": "verboten",
+        "lemma": "verboten",
+        "ru": "запрещённый; запрещено",
+        "uk": "",
+        "translations_ru": [
+          "запрещённый",
+          "запрещено"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "В данном значении обычно без степеней сравнения",
+        "definition_de": "Durch eine Regel nicht erlaubt.",
+        "example": "Hier ist Parken verboten.",
+        "example_ru": "Здесь парковаться запрещено.",
+        "note": "Partizip II от verbieten. В значении «не разрешено» обычные степени сравнения не употребляются.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "fa6095240025572ab557"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-verboten-prohibited"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verboten-prohibited",
+            "de": "verboten",
+            "part": "adjective",
+            "forms": "Partizip II; обычно без сравнения в значении запрета",
+            "definition_de": "Nicht durch eine Regel oder Vorschrift gestattet.",
+            "translations_ru": [
+              "запрещённый",
+              "запрещено"
+            ],
+            "grammar_hint": "Es ist verboten, hier zu parken/parkieren; запятая при инфинитивной группе с формальным es. Связано с verbieten.",
+            "example": "Das Parkieren vor der Einfahrt ist verboten.",
+            "example_ru": "Парковка перед въездом запрещена."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 91,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 91–92 visually inspected. B1 exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verboten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-588-1",
+      "alias_ids": [
+        "b1-verdienen-earn"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-588-1",
+        "de": "verdienen",
+        "lemma": "verdienen",
+        "ru": "зарабатывать",
+        "uk": "",
+        "translations_ru": [
+          "зарабатывать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Работа",
+        "topics": [
+          "Работа"
+        ],
+        "forms": "verdient · verdiente · hat verdient",
+        "definition_de": "Durch Arbeit Geld bekommen.",
+        "example": "Er verdient genug für die Miete.",
+        "example_ru": "Он зарабатывает достаточно, чтобы платить за жильё.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "be1dd4462422a24f3ab7"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-verdienen-earn"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verdienen-earn",
+            "de": "verdienen",
+            "part": "verb",
+            "forms": "verdient · verdiente · hat verdient",
+            "definition_de": "Durch berufliche oder andere bezahlte Arbeit Einkommen erzielen.",
+            "translations_ru": [
+              "зарабатывать",
+              "получать заработок"
+            ],
+            "grammar_hint": "Geld (Akk.) verdienen; an etwas (Dat.) verdienen; неотделяемый.",
+            "example": "Mit dieser Tätigkeit verdient sie genug für ihren Lebensunterhalt.",
+            "example_ru": "Этой работой она зарабатывает достаточно на жизнь."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verdienen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-589-1",
+      "alias_ids": [
+        "b1-verein-association"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-589-1",
+        "de": "der Verein",
+        "lemma": "Verein",
+        "ru": "клуб, объединение",
+        "uk": "",
+        "translations_ru": [
+          "клуб, объединение"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "die Vereine",
+        "definition_de": "Eine Gruppe, die sich dauerhaft für ein gemeinsames Ziel organisiert.",
+        "example": "Er spielt Fußball in einem Verein.",
+        "example_ru": "Он играет в футбол в клубе.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "e5c6dfcf711dfc89f916"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-verein-association"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verein-association",
+            "de": "der Verein",
+            "part": "noun",
+            "forms": "die Vereine",
+            "definition_de": "Ein Zusammenschluss von Personen mit einem gemeinsamen Zweck.",
+            "translations_ru": [
+              "объединение",
+              "общество",
+              "клуб"
+            ],
+            "grammar_hint": "Mitglied in einem Verein sein; einem Verein (Dat.) beitreten.",
+            "example": "Unser Verein bietet kostenlose Sprachkurse an.",
+            "example_ru": "Наше объединение предлагает бесплатные языковые курсы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verein"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_22bac0950c7d72ee2f4f",
+      "alias_ids": [
+        "b1-vergessen-memory",
+        "b1-vergessen-leave"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_22bac0950c7d72ee2f4f",
+        "de": "vergessen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "забывать",
+          "забыть"
+        ],
+        "definition_de": "Sich an etwas nicht erinnern oder nicht daran denken, etwas zu tun oder mitzunehmen.",
+        "forms": "vergisst · vergaß · hat vergessen",
+        "example": "Ich habe vergessen, den Termin in den Kalender einzutragen.",
+        "example_ru": "Я забыла записать встречу в календарь.",
+        "grammar_hint": "etwas (Akkusativ) vergessen; vergessen, etwas zu tun: Ich habe vergessen, dich anzurufen. Сильный глагол: vergisst · vergaß · hat vergessen. В Швейцарии: vergass.",
+        "usage_note": "das Vergessen — забывание, субстантивация. Sich vergessen — другое, редкое значение; не маркируется по данной статье.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vergessen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-vergessen-memory",
+          "b1-vergessen-leave"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vergessen-memory",
+            "de": "vergessen",
+            "part": "verb",
+            "forms": "vergisst · vergaß · hat vergessen",
+            "definition_de": "Eine Information oder eine beabsichtigte Handlung nicht mehr im Gedächtnis haben.",
+            "translations_ru": [
+              "забывать",
+              "забыть (информацию, дело)"
+            ],
+            "grammar_hint": "etwas (Akk.) vergessen; vergessen, etwas zu tun; CH: vergass; неотделяемый.",
+            "example": "Ich habe vergessen, die Rechnung zu bezahlen.",
+            "example_ru": "Я забыла оплатить счёт."
+          },
+          {
+            "id": "b1-vergessen-leave",
+            "de": "vergessen",
+            "part": "verb",
+            "forms": "vergisst · vergaß · hat vergessen",
+            "definition_de": "Einen Gegenstand unbeabsichtigt an einem Ort zurücklassen.",
+            "translations_ru": [
+              "забыть",
+              "оставить по забывчивости"
+            ],
+            "grammar_hint": "etwas (Akk.) an einem Ort (Dat.) vergessen; контекст общего значения, связать при объединении; CH: vergass.",
+            "example": "Ich habe meine Brille im Büro vergessen.",
+            "example_ru": "Я забыла очки в офисе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vergessen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vergessen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_d6c14c4a591620584f77",
+      "alias_ids": [
+        "b1-vergleichen-compare"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_d6c14c4a591620584f77",
+        "de": "vergleichen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "сравнивать",
+          "сравнить"
+        ],
+        "definition_de": "Zwei oder mehr Dinge auf Gemeinsamkeiten und Unterschiede prüfen.",
+        "forms": "vergleicht · verglich · hat verglichen",
+        "example": "Ich vergleiche den neuen Fahrplan mit dem alten.",
+        "example_ru": "Я сравниваю новое расписание со старым.",
+        "grammar_hint": "Сравниваем что с чем? etwas (Akkusativ) mit etwas (Dativ) vergleichen.",
+        "usage_note": "Angebote vergleichen — сравнивать предложения. Etwas mit etwas vergleichen — сравнивать что-либо с чем-либо. Приставка ver- не отделяется, Perfekt: hat verglichen.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vergleichen",
+            "https://www.duden.de/rechtschreibung/vergleichen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-vergleichen-compare"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vergleichen-compare",
+            "de": "vergleichen",
+            "part": "verb",
+            "forms": "vergleicht · verglich · hat verglichen",
+            "definition_de": "Gemeinsamkeiten und Unterschiede zwischen Dingen feststellen.",
+            "translations_ru": [
+              "сравнивать",
+              "сопоставлять"
+            ],
+            "grammar_hint": "etwas (Akk.) mit etwas (Dat.) vergleichen; неотделяемый сильный глагол.",
+            "example": "Vor dem Kauf vergleichen wir die Preise.",
+            "example_ru": "Перед покупкой мы сравниваем цены."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vergleichen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

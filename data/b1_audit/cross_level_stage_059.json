@@ -1,0 +1,3099 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1153,
+    1172
+  ],
+  "reviewed": 20,
+  "merge_count": 18,
+  "merge_target_count": 16,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1153,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Rückschlagspiel mit Schlägern, Ball und Netz. Example: Meine Freunde spielen jeden Samstag Tennis.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 8,
+        "record": {
+          "id": "b1-tennis-sport",
+          "de": "das Tennis",
+          "lemma": "Tennis",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "теннис"
+          ],
+          "definition_de": "Ein Rückschlagspiel mit Schlägern, Ball und Netz.",
+          "example": "Meine Freunde spielen jeden Samstag Tennis.",
+          "example_ru": "Мои друзья каждую субботу играют в теннис.",
+          "forms": "без множественного числа",
+          "grammar_hint": "Tennis spielen без артикля; der Tennisschläger — теннисная ракетка.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tennis"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 169,
+          "record": {
+            "id": "dict_a2bd40932dcfc7d01687",
+            "de": "das Tennis",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "теннис"
+            ],
+            "definition_de": "Ein Sport, bei dem man einen Ball mit einem Schläger über ein Netz schlägt.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Meine Schwester spielt samstags Tennis.",
+            "example_ru": "Моя сестра по субботам играет в теннис.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Tennis"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a2bd40932dcfc7d01687",
+        "alias_id": "b1-tennis-sport",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a2bd40932dcfc7d01687"
+      }
+    },
+    {
+      "candidate_number": 1154,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein vereinbarter Zeitpunkt für ein Treffen oder eine Aufgabe. Example: Ich habe morgen einen Termin beim Zahnarzt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 11,
+        "record": {
+          "id": "b1-termin-appointment",
+          "de": "der Termin",
+          "lemma": "Termin",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "назначенная встреча",
+            "приём",
+            "назначенное время"
+          ],
+          "definition_de": "Ein vereinbarter Zeitpunkt für ein Treffen oder eine Aufgabe.",
+          "example": "Ich habe morgen einen Termin beim Zahnarzt.",
+          "example_ru": "Завтра у меня приём у стоматолога.",
+          "forms": "die Termine",
+          "grammar_hint": "einen Termin vereinbaren / verschieben / absagen; beim Zahnarzt (Dativ).",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Termin"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 556,
+          "record": {
+            "id": "a1-559-1",
+            "de": "der Termin",
+            "lemma": "Termin",
+            "ru": "назначенная встреча или приём",
+            "uk": "",
+            "translations_ru": [
+              "назначенная встреча или приём"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "die Termine",
+            "definition_de": "Ein vereinbarter Zeitpunkt, etwa für einen Besuch beim Arzt.",
+            "example": "Ich habe morgen einen Termin beim Arzt.",
+            "example_ru": "У меня завтра приём у врача.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "a00957ceeb3a6c22432d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-559-1",
+        "alias_id": "b1-termin-appointment",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-559-1"
+      }
+    },
+    {
+      "candidate_number": 1155,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Aufgabe oder Aufgabenfolge zur Überprüfung von Kenntnissen oder Fähigkeiten. Example: Morgen schreiben wir einen kurzen Test.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 15,
+        "record": {
+          "id": "b1-test-exam",
+          "de": "der Test",
+          "lemma": "Test",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "тест",
+            "проверочная работа"
+          ],
+          "definition_de": "Eine Aufgabe oder Aufgabenfolge zur Überprüfung von Kenntnissen oder Fähigkeiten.",
+          "example": "Morgen schreiben wir einen kurzen Test.",
+          "example_ru": "Завтра мы пишем небольшой тест.",
+          "forms": "die Tests",
+          "grammar_hint": "einen Test schreiben / bestehen; Prüfung — экзамен или проверка.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Test"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 557,
+          "record": {
+            "id": "a1-560-1",
+            "de": "der Test",
+            "lemma": "Test",
+            "ru": "тест; проверочная работа",
+            "uk": "",
+            "translations_ru": [
+              "тест",
+              "проверочная работа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Tests",
+            "definition_de": "Eine kurze Prüfung oder eine Untersuchung.",
+            "example": "Der Test dauert zwanzig Minuten.",
+            "example_ru": "Тест длится двадцать минут.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "f15917f692e973cbed16"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-560-1",
+        "alias_id": "b1-test-exam",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-560-1"
+      }
+    },
+    {
+      "candidate_number": 1156,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit einem hohen Preis verbunden. Example: Die Wohnung ist mir zu teuer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 16,
+        "record": {
+          "id": "b1-teuer-expensive",
+          "de": "teuer",
+          "lemma": "teuer",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "дорогой",
+            "дорогостоящий"
+          ],
+          "definition_de": "Mit einem hohen Preis verbunden.",
+          "example": "Die Wohnung ist mir zu teuer.",
+          "example_ru": "Квартира для меня слишком дорогая.",
+          "forms": "teuer · teurer · am teuersten",
+          "grammar_hint": "При склонении: ein teures Auto, eine teure Wohnung; mir (Dativ) zu teuer sein.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/teuer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 702,
+          "record": {
+            "id": "a1-561-1",
+            "de": "teuer",
+            "lemma": "teuer",
+            "ru": "дорогой по цене",
+            "uk": "",
+            "translations_ru": [
+              "дорогой по цене"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "teurer · am teuersten",
+            "definition_de": "So, dass man viel dafür bezahlen muss.",
+            "example": "Das Hotel ist zu teuer.",
+            "example_ru": "Гостиница слишком дорогая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "f8e83f611441a76f7c14"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-561-1",
+        "alias_id": "b1-teuer-expensive",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-561-1"
+      }
+    },
+    {
+      "candidate_number": 1157,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine sprachliche Einheit aus zusammenhängenden Aussagen. Example: Lest den kurzen Text und beantwortet die Fragen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 17,
+        "record": {
+          "id": "b1-text-writing",
+          "de": "der Text",
+          "lemma": "Text",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "текст"
+          ],
+          "definition_de": "Eine sprachliche Einheit aus zusammenhängenden Aussagen.",
+          "example": "Lest den kurzen Text und beantwortet die Fragen.",
+          "example_ru": "Прочитайте короткий текст и ответьте на вопросы.",
+          "forms": "die Texte",
+          "grammar_hint": "einen Text lesen; im Text (Dativ); den Text zusammenfassen.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Text"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 558,
+          "record": {
+            "id": "a1-562-1",
+            "de": "der Text",
+            "lemma": "Text",
+            "ru": "текст",
+            "uk": "",
+            "translations_ru": [
+              "текст"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Texte",
+            "definition_de": "Mehrere zusammenhängende geschriebene oder gesprochene Sätze.",
+            "example": "Lies bitte den ganzen Text.",
+            "example_ru": "Прочитай, пожалуйста, весь текст.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "4fafbea92d6c0d7df74f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-562-1",
+        "alias_id": "b1-text-writing",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-562-1"
+      }
+    },
+    {
+      "candidate_number": 1158,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Ort, an dem Schauspiel oder andere Bühnenkunst aufgeführt wird. Example: Am Freitag gehen wir mit Freunden ins Theater.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 18,
+        "record": {
+          "id": "b1-theater-venue",
+          "de": "das Theater",
+          "lemma": "Theater",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "театр"
+          ],
+          "definition_de": "Ein Ort, an dem Schauspiel oder andere Bühnenkunst aufgeführt wird.",
+          "example": "Am Freitag gehen wir mit Freunden ins Theater.",
+          "example_ru": "В пятницу мы идём с друзьями в театр.",
+          "forms": "die Theater",
+          "grammar_hint": "ins Theater gehen (Akk.); im Theater sein (Dativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Theater"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 184,
+          "record": {
+            "id": "dict_c41563abb52b6d92cc73",
+            "de": "das Theater",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "театр"
+            ],
+            "definition_de": "Ein Ort, an dem Schauspieler vor Publikum Stücke aufführen.",
+            "forms": "Plural · die Theater",
+            "example": "Wir haben Karten für das Theater am Samstag.",
+            "example_ru": "У нас есть билеты в театр на субботу.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Theater"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c41563abb52b6d92cc73",
+        "alias_id": "b1-theater-venue",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c41563abb52b6d92cc73"
+      }
+    },
+    {
+      "candidate_number": 1159,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Gegenstand, über den man spricht, schreibt oder nachdenkt. Example: Heute diskutieren wir über das Thema Wohnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 19,
+        "record": {
+          "id": "b1-thema-topic",
+          "de": "das Thema",
+          "lemma": "Thema",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "тема"
+          ],
+          "definition_de": "Ein Gegenstand, über den man spricht, schreibt oder nachdenkt.",
+          "example": "Heute diskutieren wir über das Thema Wohnen.",
+          "example_ru": "Сегодня мы обсуждаем тему жилья.",
+          "forms": "die Themen",
+          "grammar_hint": "über ein Thema sprechen (Akk.); zu einem Thema (Dativ); особое множественное число.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Thema"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 559,
+          "record": {
+            "id": "a1-563-1",
+            "de": "das Thema",
+            "lemma": "Thema",
+            "ru": "тема",
+            "uk": "",
+            "translations_ru": [
+              "тема"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Themen",
+            "definition_de": "Das, worüber man spricht, schreibt oder nachdenkt.",
+            "example": "Das Thema heute ist Wohnen.",
+            "example_ru": "Тема сегодня — жильё.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "320ac89285a02d4434c5"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-563-1",
+        "alias_id": "b1-thema-topic",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-563-1"
+      }
+    },
+    {
+      "candidate_number": 1160,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Berechtigung zur Nutzung eines Verkehrsmittels. Example: Ich zeige mein digitales Ticket bei der Kontrolle.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 23,
+        "record": {
+          "id": "b1-ticket-travel",
+          "de": "das Ticket",
+          "lemma": "Ticket",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "билет (на транспорт)"
+          ],
+          "definition_de": "Eine Berechtigung zur Nutzung eines Verkehrsmittels.",
+          "example": "Ich zeige mein digitales Ticket bei der Kontrolle.",
+          "example_ru": "Я показываю электронный билет при проверке.",
+          "forms": "die Tickets",
+          "grammar_hint": "CH также das Billett; Fahrkarte — проездной билет; Flugticket — авиабилет.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ticket"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 560,
+          "record": {
+            "id": "a1-564-1",
+            "de": "das Ticket",
+            "lemma": "Ticket",
+            "ru": "билет",
+            "uk": "",
+            "translations_ru": [
+              "билет"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "die Tickets",
+            "definition_de": "Eine Karte, mit der man fahren oder zu einer Veranstaltung gehen darf.",
+            "example": "Das Ticket ist bis morgen gültig.",
+            "example_ru": "Билет действителен до завтра.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "7de32b1314ee0c499058"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-564-1",
+        "alias_id": "b1-ticket-travel",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-564-1"
+      }
+    },
+    {
+      "candidate_number": 1161,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Berechtigung zum Besuch einer Veranstaltung. Example: Die Tickets für die Ausstellung sind bereits ausverkauft.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 24,
+        "record": {
+          "id": "b1-ticket-entry",
+          "de": "das Ticket",
+          "lemma": "Ticket",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "входной билет",
+            "билет на мероприятие"
+          ],
+          "definition_de": "Eine Berechtigung zum Besuch einer Veranstaltung.",
+          "example": "Die Tickets für die Ausstellung sind bereits ausverkauft.",
+          "example_ru": "Билеты на выставку уже распроданы.",
+          "forms": "die Tickets",
+          "grammar_hint": "Ticket für + Akkusativ; Eintrittskarte — входной билет. Контекст допуска.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ticket"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 560,
+          "record": {
+            "id": "a1-564-1",
+            "de": "das Ticket",
+            "lemma": "Ticket",
+            "ru": "билет",
+            "uk": "",
+            "translations_ru": [
+              "билет"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "die Tickets",
+            "definition_de": "Eine Karte, mit der man fahren oder zu einer Veranstaltung gehen darf.",
+            "example": "Das Ticket ist bis morgen gültig.",
+            "example_ru": "Билет действителен до завтра.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "7de32b1314ee0c499058"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-564-1",
+        "alias_id": "b1-ticket-entry",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-564-1"
+      }
+    },
+    {
+      "candidate_number": 1162,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Von der Oberfläche weit nach unten reichend. Example: An dieser Stelle ist der Fluss besonders tief.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 25,
+        "record": {
+          "id": "b1-tief-water",
+          "de": "tief",
+          "lemma": "tief",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "глубокий"
+          ],
+          "definition_de": "Von der Oberfläche weit nach unten reichend.",
+          "example": "An dieser Stelle ist der Fluss besonders tief.",
+          "example_ru": "В этом месте река особенно глубокая.",
+          "forms": "tief · tiefer · am tiefsten",
+          "grammar_hint": "Wie tief? — какой глубины? Gegensatz flach.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tief",
+              "https://www.duden.de/rechtschreibung/tief"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 309,
+          "record": {
+            "id": "dict_640d38b73d70c1ad3044",
+            "de": "tief",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "глубокий"
+            ],
+            "definition_de": "Mit großem Abstand von der Oberfläche nach unten.",
+            "forms": "tief · tiefer · am tiefsten",
+            "example": "Der See ist hier sehr tief.",
+            "example_ru": "Озеро здесь очень глубокое.",
+            "grammar_hint": "",
+            "usage_note": "Пространственная глубина (водоём, яма). Низкий голос, низкое положение, глубокий сон — другие контексты, не подтверждены данным примером.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tief"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_640d38b73d70c1ad3044",
+        "alias_id": "b1-tief-water",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_640d38b73d70c1ad3044"
+      }
+    },
+    {
+      "candidate_number": 1163,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Ausdehnung von der Vorderseite zur Rückseite aufweisend. Example: Das Regal ist vierzig Zentimeter tief.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 26,
+        "record": {
+          "id": "b1-tief-dimensions",
+          "de": "tief",
+          "lemma": "tief",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "глубокий",
+            "имеющий глубину (размер предмета)"
+          ],
+          "definition_de": "Eine Ausdehnung von der Vorderseite zur Rückseite aufweisend.",
+          "example": "Das Regal ist vierzig Zentimeter tief.",
+          "example_ru": "Глубина стеллажа — сорок сантиметров.",
+          "forms": "tief · tiefer · am tiefsten",
+          "grammar_hint": "Zahl + Maßeinheit + tief; breit — шириной, hoch — высотой.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tief",
+              "https://www.duden.de/rechtschreibung/tief"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 309,
+          "record": {
+            "id": "dict_640d38b73d70c1ad3044",
+            "de": "tief",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "глубокий"
+            ],
+            "definition_de": "Mit großem Abstand von der Oberfläche nach unten.",
+            "forms": "tief · tiefer · am tiefsten",
+            "example": "Der See ist hier sehr tief.",
+            "example_ru": "Озеро здесь очень глубокое.",
+            "grammar_hint": "",
+            "usage_note": "Пространственная глубина (водоём, яма). Низкий голос, низкое положение, глубокий сон — другие контексты, не подтверждены данным примером.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tief"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_640d38b73d70c1ad3044",
+        "alias_id": "b1-tief-dimensions",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_640d38b73d70c1ad3044"
+      }
+    },
+    {
+      "candidate_number": 1164,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Mit einem kräftigen Atemzug Luft aufnehmen. Example: Die Ärztin bittet mich, tief einzuatmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 27,
+        "record": {
+          "id": "b1-tief-breathe",
+          "de": "tief einatmen",
+          "lemma": "tief",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "глубоко вдохнуть"
+          ],
+          "definition_de": "Mit einem kräftigen Atemzug Luft aufnehmen.",
+          "example": "Die Ärztin bittet mich, tief einzuatmen.",
+          "example_ru": "Врач просит меня глубоко вдохнуть.",
+          "forms": "tief · tiefer · am tiefsten; atmet ein · atmete ein · hat eingeatmet",
+          "grammar_hint": "einatmen — отделяемый глагол; zu-Infinitiv: einzuatmen; tief без окончания.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tief",
+              "https://www.duden.de/rechtschreibung/tief"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 309,
+          "record": {
+            "id": "dict_640d38b73d70c1ad3044",
+            "de": "tief",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "глубокий"
+            ],
+            "definition_de": "Mit großem Abstand von der Oberfläche nach unten.",
+            "forms": "tief · tiefer · am tiefsten",
+            "example": "Der See ist hier sehr tief.",
+            "example_ru": "Озеро здесь очень глубокое.",
+            "grammar_hint": "",
+            "usage_note": "Пространственная глубина (водоём, яма). Низкий голос, низкое положение, глубокий сон — другие контексты, не подтверждены данным примером.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tief"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1165,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Lebewesen aus dem Tierreich; im Alltag meist im Gegensatz zum Menschen. Example: Im Wald kann man viele Tiere beobachten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_098.json",
+        "sha": "104ec3ec8ff0a148058977ddb676fa6cbc40bb37",
+        "batch": 98,
+        "row": 28,
+        "record": {
+          "id": "b1-tier-animal",
+          "de": "das Tier",
+          "lemma": "Tier",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "животное"
+          ],
+          "definition_de": "Ein Lebewesen aus dem Tierreich; im Alltag meist im Gegensatz zum Menschen.",
+          "example": "Im Wald kann man viele Tiere beobachten.",
+          "example_ru": "В лесу можно наблюдать за многими животными.",
+          "forms": "die Tiere",
+          "grammar_hint": "ein Tier füttern; wilde Tiere — дикие животные.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tier"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 168,
+          "record": {
+            "id": "dict_191c536746c94ad1b1ba",
+            "de": "das Tier",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "животное"
+            ],
+            "definition_de": "Ein Lebewesen wie etwa ein Hund, eine Katze oder ein Vogel.",
+            "forms": "Plural · die Tiere",
+            "example": "Welche Tiere kann man in diesem Park sehen?",
+            "example_ru": "Каких животных можно увидеть в этом парке?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Tier"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_191c536746c94ad1b1ba",
+        "alias_id": "b1-tier-animal",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_191c536746c94ad1b1ba"
+      }
+    },
+    {
+      "candidate_number": 1166,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Hinweis, der bei einer Entscheidung oder Aufgabe hilft. Example: Danke für den Tipp mit dem günstigen Laden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 1,
+        "record": {
+          "id": "b1-tipp-advice",
+          "de": "der Tipp",
+          "lemma": "Tipp",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "совет",
+            "подсказка"
+          ],
+          "definition_de": "Ein Hinweis, der bei einer Entscheidung oder Aufgabe hilft.",
+          "example": "Danke für den Tipp mit dem günstigen Laden.",
+          "example_ru": "Спасибо за совет насчёт недорогого магазина.",
+          "forms": "die Tipps",
+          "grammar_hint": "jemandem (Dat.) einen Tipp (Akk.) geben; не путать с Trinkgeld.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tipp"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 340,
+          "record": {
+            "id": "dict_579791946073c759156f",
+            "de": "der Tipp",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "совет",
+              "подсказка"
+            ],
+            "definition_de": "Eine kurze Empfehlung, die jemandem weiterhilft.",
+            "forms": "Plural · die Tipps",
+            "example": "Danke für deinen Tipp!",
+            "example_ru": "Спасибо за твой совет!",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Tipp"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_579791946073c759156f",
+        "alias_id": "b1-tipp-advice",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_579791946073c759156f"
+      }
+    },
+    {
+      "candidate_number": 1167,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Möbelstück mit einer erhöhten Arbeits- oder Abstellfläche. Example: Wir stellen den Tisch ans Fenster.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 3,
+        "record": {
+          "id": "b1-tisch-furniture",
+          "de": "der Tisch",
+          "lemma": "Tisch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "стол"
+          ],
+          "definition_de": "Ein Möbelstück mit einer erhöhten Arbeits- oder Abstellfläche.",
+          "example": "Wir stellen den Tisch ans Fenster.",
+          "example_ru": "Мы поставим стол к окну.",
+          "forms": "die Tische",
+          "grammar_hint": "am Tisch sitzen; etwas auf den Tisch legen; Dativ Plural: den Tischen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tisch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 4,
+          "record": {
+            "id": "c3",
+            "de": "der Tisch",
+            "lemma": "Tisch",
+            "ru": "стол",
+            "uk": "стіл",
+            "translations_ru": [
+              "стол"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Tische",
+            "definition_de": "Ein Möbel mit einer Platte, an dem man essen oder arbeiten kann.",
+            "example": "Der Tisch steht in der Küche.",
+            "example_ru": "Стол стоит на кухне.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "1827a221d10556d4caf9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c3",
+        "alias_id": "b1-tisch-furniture",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c3"
+      }
+    },
+    {
+      "candidate_number": 1168,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der Name eines Buches, Films oder anderen Werks. Example: Der Titel des Romans ist sehr kurz.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 4,
+        "record": {
+          "id": "b1-titel-work",
+          "de": "der Titel",
+          "lemma": "Titel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "название",
+            "заглавие"
+          ],
+          "definition_de": "Der Name eines Buches, Films oder anderen Werks.",
+          "example": "Der Titel des Romans ist sehr kurz.",
+          "example_ru": "Название романа очень короткое.",
+          "forms": "die Titel",
+          "grammar_hint": "der Titel eines Buches; Genitiv: des Titels.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Titel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 264,
+          "record": {
+            "id": "dict_4af69bdaadc835dd88d8",
+            "de": "der Titel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "название",
+              "заглавие"
+            ],
+            "definition_de": "Der Name eines Buches, Films, Liedes oder anderen Werks.",
+            "forms": "Plural · die Titel",
+            "example": "Kennst du den Titel von diesem Lied?",
+            "example_ru": "Ты знаешь название этой песни?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Titel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4af69bdaadc835dd88d8",
+        "alias_id": "b1-titel-work",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4af69bdaadc835dd88d8"
+      }
+    },
+    {
+      "candidate_number": 1169,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Bezeichnung für einen besonderen Rang oder eine erworbene Qualifikation. Example: Sie trägt den akademischen Titel Doktorin.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 5,
+        "record": {
+          "id": "b1-titel-rank",
+          "de": "der Titel",
+          "lemma": "Titel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "титул",
+            "звание"
+          ],
+          "definition_de": "Eine Bezeichnung für einen besonderen Rang oder eine erworbene Qualifikation.",
+          "example": "Sie trägt den akademischen Titel Doktorin.",
+          "example_ru": "Она имеет академическое звание доктора.",
+          "forms": "die Titel",
+          "grammar_hint": "einen Titel tragen; akademischer Titel; название произведения — другое значение.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Titel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 264,
+          "record": {
+            "id": "dict_4af69bdaadc835dd88d8",
+            "de": "der Titel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "название",
+              "заглавие"
+            ],
+            "definition_de": "Der Name eines Buches, Films, Liedes oder anderen Werks.",
+            "forms": "Plural · die Titel",
+            "example": "Kennst du den Titel von diesem Lied?",
+            "example_ru": "Ты знаешь название этой песни?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Titel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1170,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein weibliches Kind in Bezug auf seine Eltern. Example: Meine Tochter beginnt morgen eine Ausbildung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 6,
+        "record": {
+          "id": "b1-tochter-child",
+          "de": "die Tochter",
+          "lemma": "Tochter",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дочь"
+          ],
+          "definition_de": "Ein weibliches Kind in Bezug auf seine Eltern.",
+          "example": "Meine Tochter beginnt morgen eine Ausbildung.",
+          "example_ru": "Моя дочь завтра начинает профессиональное обучение.",
+          "forms": "die Töchter",
+          "grammar_hint": "Plural mit Umlaut; Dativ Plural: den Töchtern.",
+          "topic": "Семья",
+          "topics": [
+            "Семья"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tochter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 561,
+          "record": {
+            "id": "a1-566-1",
+            "de": "die Tochter",
+            "lemma": "Tochter",
+            "ru": "дочь",
+            "uk": "",
+            "translations_ru": [
+              "дочь"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Töchter",
+            "definition_de": "Ein weibliches Kind in Bezug auf seine Eltern.",
+            "example": "Meine Tochter kommt um fünf nach Hause.",
+            "example_ru": "Моя дочь приходит домой в пять.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "0ccc2e65b85299c04c73"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-566-1",
+        "alias_id": "b1-tochter-child",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-566-1"
+      }
+    },
+    {
+      "candidate_number": 1171,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Raum oder eine sanitäre Einrichtung für die Notdurft. Example: Die Toilette befindet sich im Erdgeschoss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 9,
+        "record": {
+          "id": "b1-toilette-restroom",
+          "de": "die Toilette",
+          "lemma": "Toilette",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "туалет"
+          ],
+          "definition_de": "Ein Raum oder eine sanitäre Einrichtung für die Notdurft.",
+          "example": "Die Toilette befindet sich im Erdgeschoss.",
+          "example_ru": "Туалет находится на первом этаже.",
+          "forms": "die Toiletten",
+          "grammar_hint": "auf die Toilette gehen (Akk.); auf der Toilette sein (Dat.); das WC.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Toilette"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 562,
+          "record": {
+            "id": "a1-567-1",
+            "de": "die Toilette",
+            "lemma": "Toilette",
+            "ru": "туалет",
+            "uk": "",
+            "translations_ru": [
+              "туалет"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Toiletten",
+            "definition_de": "Ein Raum mit einem WC.",
+            "example": "Die Toilette ist im ersten Stock.",
+            "example_ru": "Туалет на первом этаже.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "ad9aa01c7c3a0cb6906a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-567-1",
+        "alias_id": "b1-toilette-restroom",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-567-1"
+      }
+    },
+    {
+      "candidate_number": 1172,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Umgangssprachliches Lob für etwas besonders Erfreuliches. Example: Das war ein toller Ausflug.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 11,
+        "record": {
+          "id": "b1-toll-great",
+          "de": "toll",
+          "lemma": "toll",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "отличный",
+            "замечательный",
+            "здорово"
+          ],
+          "definition_de": "Umgangssprachliches Lob für etwas besonders Erfreuliches.",
+          "example": "Das war ein toller Ausflug.",
+          "example_ru": "Это была замечательная поездка.",
+          "forms": "toll · toller · am tollsten",
+          "grammar_hint": "Das ist toll! — Это здорово! Разговорная положительная оценка; иногда ирония.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/toll"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 500,
+          "record": {
+            "id": "dict_2e4cd3c06f365336a58a",
+            "de": "toll",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "отличный",
+              "замечательный",
+              "классный"
+            ],
+            "definition_de": "So gut, dass man sich darüber freut oder begeistert ist.",
+            "forms": "toll · toller · am tollsten",
+            "example": "Wir hatten einen tollen Abend.",
+            "example_ru": "У нас был замечательный вечер.",
+            "grammar_hint": "Разговорное положительное прилагательное; склоняется перед существительным.",
+            "usage_note": "Устаревшие и медицинские значения не относятся к этой карточке.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/toll"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2e4cd3c06f365336a58a",
+        "alias_id": "b1-toll-great",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2e4cd3c06f365336a58a"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_a2bd40932dcfc7d01687",
+      "alias_ids": [
+        "b1-tennis-sport"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a2bd40932dcfc7d01687",
+        "de": "das Tennis",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "теннис"
+        ],
+        "definition_de": "Ein Sport, bei dem man einen Ball mit einem Schläger über ein Netz schlägt.",
+        "forms": "В этом значении обычно в единственном числе",
+        "example": "Meine Schwester spielt samstags Tennis.",
+        "example_ru": "Моя сестра по субботам играет в теннис.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Tennis"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-tennis-sport"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tennis-sport",
+            "de": "das Tennis",
+            "part": "noun",
+            "forms": "без множественного числа",
+            "definition_de": "Ein Rückschlagspiel mit Schlägern, Ball und Netz.",
+            "translations_ru": [
+              "теннис"
+            ],
+            "grammar_hint": "Tennis spielen без артикля; der Tennisschläger — теннисная ракетка.",
+            "example": "Meine Freunde spielen jeden Samstag Tennis.",
+            "example_ru": "Мои друзья каждую субботу играют в теннис."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tennis"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-559-1",
+      "alias_ids": [
+        "b1-termin-appointment"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-559-1",
+        "de": "der Termin",
+        "lemma": "Termin",
+        "ru": "назначенная встреча или приём",
+        "uk": "",
+        "translations_ru": [
+          "назначенная встреча или приём"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "die Termine",
+        "definition_de": "Ein vereinbarter Zeitpunkt, etwa für einen Besuch beim Arzt.",
+        "example": "Ich habe morgen einen Termin beim Arzt.",
+        "example_ru": "У меня завтра приём у врача.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "a00957ceeb3a6c22432d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-termin-appointment"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-termin-appointment",
+            "de": "der Termin",
+            "part": "noun",
+            "forms": "die Termine",
+            "definition_de": "Ein vereinbarter Zeitpunkt für ein Treffen oder eine Aufgabe.",
+            "translations_ru": [
+              "назначенная встреча",
+              "приём",
+              "назначенное время"
+            ],
+            "grammar_hint": "einen Termin vereinbaren / verschieben / absagen; beim Zahnarzt (Dativ).",
+            "example": "Ich habe morgen einen Termin beim Zahnarzt.",
+            "example_ru": "Завтра у меня приём у стоматолога."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Termin"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-560-1",
+      "alias_ids": [
+        "b1-test-exam"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-560-1",
+        "de": "der Test",
+        "lemma": "Test",
+        "ru": "тест; проверочная работа",
+        "uk": "",
+        "translations_ru": [
+          "тест",
+          "проверочная работа"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Tests",
+        "definition_de": "Eine kurze Prüfung oder eine Untersuchung.",
+        "example": "Der Test dauert zwanzig Minuten.",
+        "example_ru": "Тест длится двадцать минут.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "f15917f692e973cbed16"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-test-exam"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-test-exam",
+            "de": "der Test",
+            "part": "noun",
+            "forms": "die Tests",
+            "definition_de": "Eine Aufgabe oder Aufgabenfolge zur Überprüfung von Kenntnissen oder Fähigkeiten.",
+            "translations_ru": [
+              "тест",
+              "проверочная работа"
+            ],
+            "grammar_hint": "einen Test schreiben / bestehen; Prüfung — экзамен или проверка.",
+            "example": "Morgen schreiben wir einen kurzen Test.",
+            "example_ru": "Завтра мы пишем небольшой тест."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Test"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-561-1",
+      "alias_ids": [
+        "b1-teuer-expensive"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-561-1",
+        "de": "teuer",
+        "lemma": "teuer",
+        "ru": "дорогой по цене",
+        "uk": "",
+        "translations_ru": [
+          "дорогой по цене"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "teurer · am teuersten",
+        "definition_de": "So, dass man viel dafür bezahlen muss.",
+        "example": "Das Hotel ist zu teuer.",
+        "example_ru": "Гостиница слишком дорогая.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "f8e83f611441a76f7c14"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-teuer-expensive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-teuer-expensive",
+            "de": "teuer",
+            "part": "adj",
+            "forms": "teuer · teurer · am teuersten",
+            "definition_de": "Mit einem hohen Preis verbunden.",
+            "translations_ru": [
+              "дорогой",
+              "дорогостоящий"
+            ],
+            "grammar_hint": "При склонении: ein teures Auto, eine teure Wohnung; mir (Dativ) zu teuer sein.",
+            "example": "Die Wohnung ist mir zu teuer.",
+            "example_ru": "Квартира для меня слишком дорогая."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/teuer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-562-1",
+      "alias_ids": [
+        "b1-text-writing"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-562-1",
+        "de": "der Text",
+        "lemma": "Text",
+        "ru": "текст",
+        "uk": "",
+        "translations_ru": [
+          "текст"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Texte",
+        "definition_de": "Mehrere zusammenhängende geschriebene oder gesprochene Sätze.",
+        "example": "Lies bitte den ganzen Text.",
+        "example_ru": "Прочитай, пожалуйста, весь текст.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "4fafbea92d6c0d7df74f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-text-writing"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-text-writing",
+            "de": "der Text",
+            "part": "noun",
+            "forms": "die Texte",
+            "definition_de": "Eine sprachliche Einheit aus zusammenhängenden Aussagen.",
+            "translations_ru": [
+              "текст"
+            ],
+            "grammar_hint": "einen Text lesen; im Text (Dativ); den Text zusammenfassen.",
+            "example": "Lest den kurzen Text und beantwortet die Fragen.",
+            "example_ru": "Прочитайте короткий текст и ответьте на вопросы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Text"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_c41563abb52b6d92cc73",
+      "alias_ids": [
+        "b1-theater-venue"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c41563abb52b6d92cc73",
+        "de": "das Theater",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "театр"
+        ],
+        "definition_de": "Ein Ort, an dem Schauspieler vor Publikum Stücke aufführen.",
+        "forms": "Plural · die Theater",
+        "example": "Wir haben Karten für das Theater am Samstag.",
+        "example_ru": "У нас есть билеты в театр на субботу.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Theater"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-theater-venue"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-theater-venue",
+            "de": "das Theater",
+            "part": "noun",
+            "forms": "die Theater",
+            "definition_de": "Ein Ort, an dem Schauspiel oder andere Bühnenkunst aufgeführt wird.",
+            "translations_ru": [
+              "театр"
+            ],
+            "grammar_hint": "ins Theater gehen (Akk.); im Theater sein (Dativ).",
+            "example": "Am Freitag gehen wir mit Freunden ins Theater.",
+            "example_ru": "В пятницу мы идём с друзьями в театр."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Theater"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-563-1",
+      "alias_ids": [
+        "b1-thema-topic"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-563-1",
+        "de": "das Thema",
+        "lemma": "Thema",
+        "ru": "тема",
+        "uk": "",
+        "translations_ru": [
+          "тема"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Themen",
+        "definition_de": "Das, worüber man spricht, schreibt oder nachdenkt.",
+        "example": "Das Thema heute ist Wohnen.",
+        "example_ru": "Тема сегодня — жильё.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "320ac89285a02d4434c5"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-thema-topic"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-thema-topic",
+            "de": "das Thema",
+            "part": "noun",
+            "forms": "die Themen",
+            "definition_de": "Ein Gegenstand, über den man spricht, schreibt oder nachdenkt.",
+            "translations_ru": [
+              "тема"
+            ],
+            "grammar_hint": "über ein Thema sprechen (Akk.); zu einem Thema (Dativ); особое множественное число.",
+            "example": "Heute diskutieren wir über das Thema Wohnen.",
+            "example_ru": "Сегодня мы обсуждаем тему жилья."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Thema"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-564-1",
+      "alias_ids": [
+        "b1-ticket-travel",
+        "b1-ticket-entry"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-564-1",
+        "de": "das Ticket",
+        "lemma": "Ticket",
+        "ru": "билет",
+        "uk": "",
+        "translations_ru": [
+          "билет"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "die Tickets",
+        "definition_de": "Eine Karte, mit der man fahren oder zu einer Veranstaltung gehen darf.",
+        "example": "Das Ticket ist bis morgen gültig.",
+        "example_ru": "Билет действителен до завтра.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "7de32b1314ee0c499058"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-ticket-travel",
+          "b1-ticket-entry"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ticket-travel",
+            "de": "das Ticket",
+            "part": "noun",
+            "forms": "die Tickets",
+            "definition_de": "Eine Berechtigung zur Nutzung eines Verkehrsmittels.",
+            "translations_ru": [
+              "билет (на транспорт)"
+            ],
+            "grammar_hint": "CH также das Billett; Fahrkarte — проездной билет; Flugticket — авиабилет.",
+            "example": "Ich zeige mein digitales Ticket bei der Kontrolle.",
+            "example_ru": "Я показываю электронный билет при проверке."
+          },
+          {
+            "id": "b1-ticket-entry",
+            "de": "das Ticket",
+            "part": "noun",
+            "forms": "die Tickets",
+            "definition_de": "Eine Berechtigung zum Besuch einer Veranstaltung.",
+            "translations_ru": [
+              "входной билет",
+              "билет на мероприятие"
+            ],
+            "grammar_hint": "Ticket für + Akkusativ; Eintrittskarte — входной билет. Контекст допуска.",
+            "example": "Die Tickets für die Ausstellung sind bereits ausverkauft.",
+            "example_ru": "Билеты на выставку уже распроданы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ticket"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ticket"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_640d38b73d70c1ad3044",
+      "alias_ids": [
+        "b1-tief-water",
+        "b1-tief-dimensions"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_640d38b73d70c1ad3044",
+        "de": "tief",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "глубокий"
+        ],
+        "definition_de": "Mit großem Abstand von der Oberfläche nach unten.",
+        "forms": "tief · tiefer · am tiefsten",
+        "example": "Der See ist hier sehr tief.",
+        "example_ru": "Озеро здесь очень глубокое.",
+        "grammar_hint": "",
+        "usage_note": "Пространственная глубина (водоём, яма). Низкий голос, низкое положение, глубокий сон — другие контексты, не подтверждены данным примером.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/tief"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление"
+        ],
+        "alias_ids": [
+          "b1-tief-water",
+          "b1-tief-dimensions"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tief-water",
+            "de": "tief",
+            "part": "adj",
+            "forms": "tief · tiefer · am tiefsten",
+            "definition_de": "Von der Oberfläche weit nach unten reichend.",
+            "translations_ru": [
+              "глубокий"
+            ],
+            "grammar_hint": "Wie tief? — какой глубины? Gegensatz flach.",
+            "example": "An dieser Stelle ist der Fluss besonders tief.",
+            "example_ru": "В этом месте река особенно глубокая."
+          },
+          {
+            "id": "b1-tief-dimensions",
+            "de": "tief",
+            "part": "adj",
+            "forms": "tief · tiefer · am tiefsten",
+            "definition_de": "Eine Ausdehnung von der Vorderseite zur Rückseite aufweisend.",
+            "translations_ru": [
+              "глубокий",
+              "имеющий глубину (размер предмета)"
+            ],
+            "grammar_hint": "Zahl + Maßeinheit + tief; breit — шириной, hoch — высотой.",
+            "example": "Das Regal ist vierzig Zentimeter tief.",
+            "example_ru": "Глубина стеллажа — сорок сантиметров."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tief",
+              "https://www.duden.de/rechtschreibung/tief"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tief",
+              "https://www.duden.de/rechtschreibung/tief"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_191c536746c94ad1b1ba",
+      "alias_ids": [
+        "b1-tier-animal"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_191c536746c94ad1b1ba",
+        "de": "das Tier",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "животное"
+        ],
+        "definition_de": "Ein Lebewesen wie etwa ein Hund, eine Katze oder ein Vogel.",
+        "forms": "Plural · die Tiere",
+        "example": "Welche Tiere kann man in diesem Park sehen?",
+        "example_ru": "Каких животных можно увидеть в этом парке?",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Tier"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-tier-animal"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tier-animal",
+            "de": "das Tier",
+            "part": "noun",
+            "forms": "die Tiere",
+            "definition_de": "Ein Lebewesen aus dem Tierreich; im Alltag meist im Gegensatz zum Menschen.",
+            "translations_ru": [
+              "животное"
+            ],
+            "grammar_hint": "ein Tier füttern; wilde Tiere — дикие животные.",
+            "example": "Im Wald kann man viele Tiere beobachten.",
+            "example_ru": "В лесу можно наблюдать за многими животными."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 86,
+              "scope": "context",
+              "note": "Printed pages 86–87 visually inspected. B1 exam-list membership or illustrative context; earliest CEFR level pending A1/A2 comparison. Shared lexical senses require final merging."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tier"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_579791946073c759156f",
+      "alias_ids": [
+        "b1-tipp-advice"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_579791946073c759156f",
+        "de": "der Tipp",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "совет",
+          "подсказка"
+        ],
+        "definition_de": "Eine kurze Empfehlung, die jemandem weiterhilft.",
+        "forms": "Plural · die Tipps",
+        "example": "Danke für deinen Tipp!",
+        "example_ru": "Спасибо за твой совет!",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Tipp"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-tipp-advice"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tipp-advice",
+            "de": "der Tipp",
+            "part": "noun",
+            "forms": "die Tipps",
+            "definition_de": "Ein Hinweis, der bei einer Entscheidung oder Aufgabe hilft.",
+            "translations_ru": [
+              "совет",
+              "подсказка"
+            ],
+            "grammar_hint": "jemandem (Dat.) einen Tipp (Akk.) geben; не путать с Trinkgeld.",
+            "example": "Danke für den Tipp mit dem günstigen Laden.",
+            "example_ru": "Спасибо за совет насчёт недорогого магазина."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tipp"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "c3",
+      "alias_ids": [
+        "b1-tisch-furniture"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c3",
+        "de": "der Tisch",
+        "lemma": "Tisch",
+        "ru": "стол",
+        "uk": "стіл",
+        "translations_ru": [
+          "стол"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Tische",
+        "definition_de": "Ein Möbel mit einer Platte, an dem man essen oder arbeiten kann.",
+        "example": "Der Tisch steht in der Küche.",
+        "example_ru": "Стол стоит на кухне.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "1827a221d10556d4caf9"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-tisch-furniture"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tisch-furniture",
+            "de": "der Tisch",
+            "part": "noun",
+            "forms": "die Tische",
+            "definition_de": "Ein Möbelstück mit einer erhöhten Arbeits- oder Abstellfläche.",
+            "translations_ru": [
+              "стол"
+            ],
+            "grammar_hint": "am Tisch sitzen; etwas auf den Tisch legen; Dativ Plural: den Tischen.",
+            "example": "Wir stellen den Tisch ans Fenster.",
+            "example_ru": "Мы поставим стол к окну."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tisch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4af69bdaadc835dd88d8",
+      "alias_ids": [
+        "b1-titel-work"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4af69bdaadc835dd88d8",
+        "de": "der Titel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "название",
+          "заглавие"
+        ],
+        "definition_de": "Der Name eines Buches, Films, Liedes oder anderen Werks.",
+        "forms": "Plural · die Titel",
+        "example": "Kennst du den Titel von diesem Lied?",
+        "example_ru": "Ты знаешь название этой песни?",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Titel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-titel-work"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-titel-work",
+            "de": "der Titel",
+            "part": "noun",
+            "forms": "die Titel",
+            "definition_de": "Der Name eines Buches, Films oder anderen Werks.",
+            "translations_ru": [
+              "название",
+              "заглавие"
+            ],
+            "grammar_hint": "der Titel eines Buches; Genitiv: des Titels.",
+            "example": "Der Titel des Romans ist sehr kurz.",
+            "example_ru": "Название романа очень короткое."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Titel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-566-1",
+      "alias_ids": [
+        "b1-tochter-child"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-566-1",
+        "de": "die Tochter",
+        "lemma": "Tochter",
+        "ru": "дочь",
+        "uk": "",
+        "translations_ru": [
+          "дочь"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья"
+        ],
+        "forms": "die Töchter",
+        "definition_de": "Ein weibliches Kind in Bezug auf seine Eltern.",
+        "example": "Meine Tochter kommt um fünf nach Hause.",
+        "example_ru": "Моя дочь приходит домой в пять.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "0ccc2e65b85299c04c73"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-tochter-child"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tochter-child",
+            "de": "die Tochter",
+            "part": "noun",
+            "forms": "die Töchter",
+            "definition_de": "Ein weibliches Kind in Bezug auf seine Eltern.",
+            "translations_ru": [
+              "дочь"
+            ],
+            "grammar_hint": "Plural mit Umlaut; Dativ Plural: den Töchtern.",
+            "example": "Meine Tochter beginnt morgen eine Ausbildung.",
+            "example_ru": "Моя дочь завтра начинает профессиональное обучение."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tochter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-567-1",
+      "alias_ids": [
+        "b1-toilette-restroom"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-567-1",
+        "de": "die Toilette",
+        "lemma": "Toilette",
+        "ru": "туалет",
+        "uk": "",
+        "translations_ru": [
+          "туалет"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Toiletten",
+        "definition_de": "Ein Raum mit einem WC.",
+        "example": "Die Toilette ist im ersten Stock.",
+        "example_ru": "Туалет на первом этаже.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "ad9aa01c7c3a0cb6906a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-toilette-restroom"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-toilette-restroom",
+            "de": "die Toilette",
+            "part": "noun",
+            "forms": "die Toiletten",
+            "definition_de": "Ein Raum oder eine sanitäre Einrichtung für die Notdurft.",
+            "translations_ru": [
+              "туалет"
+            ],
+            "grammar_hint": "auf die Toilette gehen (Akk.); auf der Toilette sein (Dat.); das WC.",
+            "example": "Die Toilette befindet sich im Erdgeschoss.",
+            "example_ru": "Туалет находится на первом этаже."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Toilette"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2e4cd3c06f365336a58a",
+      "alias_ids": [
+        "b1-toll-great"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2e4cd3c06f365336a58a",
+        "de": "toll",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "отличный",
+          "замечательный",
+          "классный"
+        ],
+        "definition_de": "So gut, dass man sich darüber freut oder begeistert ist.",
+        "forms": "toll · toller · am tollsten",
+        "example": "Wir hatten einen tollen Abend.",
+        "example_ru": "У нас был замечательный вечер.",
+        "grammar_hint": "Разговорное положительное прилагательное; склоняется перед существительным.",
+        "usage_note": "Устаревшие и медицинские значения не относятся к этой карточке.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/toll"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-toll-great"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-toll-great",
+            "de": "toll",
+            "part": "adjective",
+            "forms": "toll · toller · am tollsten",
+            "definition_de": "Umgangssprachliches Lob für etwas besonders Erfreuliches.",
+            "translations_ru": [
+              "отличный",
+              "замечательный",
+              "здорово"
+            ],
+            "grammar_hint": "Das ist toll! — Это здорово! Разговорная положительная оценка; иногда ирония.",
+            "example": "Das war ein toller Ausflug.",
+            "example_ru": "Это была замечательная поездка."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/toll"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

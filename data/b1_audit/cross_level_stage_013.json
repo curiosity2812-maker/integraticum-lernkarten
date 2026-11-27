@@ -1,0 +1,3066 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 233–252 using staged definitions, examples and grammar. Conditional proposals only. No independent CEFR verification or changes to original cards, deployed levels or progress.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    233,
+    252
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 5,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [
+    {
+      "id": "b1-hell-color",
+      "issue": "The source example illustrates hellgrün; add a standalone adjectival example such as ein heller Farbton to distinguish the sense from the spelling of compounds."
+    },
+    {
+      "id": "b1-heissen-meaning",
+      "issue": "A1 note mentions Was heißt das? as a possible reading; verify earliest level for this distinct sense before release."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 233,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 already uses the same question about the word in another language.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 18,
+        "record": {
+          "id": "b1-heissen-translation",
+          "de": "wie heißt … auf Deutsch?",
+          "lemma": "heißen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "как будет … по-немецки?"
+          ],
+          "definition_de": "Nach der Entsprechung eines Wortes in einer Sprache fragen.",
+          "example": "Wie heißt dieses Gemüse auf Deutsch?",
+          "example_ru": "Как называется этот овощ по-немецки?",
+          "forms": "heißt · hieß · hat geheißen",
+          "grammar_hint": "auf Deutsch / auf Russisch; при вопросе wie глагол на втором месте.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hei%C3%9Fen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 390,
+          "record": {
+            "id": "a1-299-1",
+            "de": "heißen",
+            "lemma": "heißen",
+            "ru": "зваться; называться",
+            "uk": "",
+            "translations_ru": [
+              "зваться",
+              "называться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "heißt · hieß · hat geheißen",
+            "definition_de": "Einen bestimmten Namen tragen.",
+            "example": "Wie heißt du?",
+            "example_ru": "Как тебя зовут?",
+            "note": "В Швейцарии heissen: ich heisse, du heisst. Не путать с heiß (heiss) — горячий.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "ab44c3caf5b4409c61b1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 391,
+          "record": {
+            "id": "a1-299-2",
+            "de": "heißen",
+            "lemma": "heißen",
+            "ru": "называться; именоваться",
+            "uk": "",
+            "translations_ru": [
+              "называться",
+              "именоваться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "heißt · hieß · hat geheißen",
+            "definition_de": "Mit einem bestimmten Wort bezeichnet werden.",
+            "example": "Wie heißt das auf Deutsch?",
+            "example_ru": "Как это называется по-немецки?",
+            "note": "Wie heißt das auf Deutsch? — Как это называется по-немецки? Was heißt das? может означать «Что это значит?», но отдельное значение не подтверждено примерами этих статей. В Швейцарии: heissen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "ab44c3caf5b4409c61b1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-299-2",
+        "alias_id": "b1-heissen-translation",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-299-2"
+      }
+    },
+    {
+      "candidate_number": 234,
+      "decision": "retain_distinct_sense",
+      "reason": "Meaning or interpretation differs from naming; retain dass verb-final guidance.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 19,
+        "record": {
+          "id": "b1-heissen-meaning",
+          "de": "heißen",
+          "lemma": "heißen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "означать",
+            "значить"
+          ],
+          "definition_de": "Einen bestimmten Inhalt oder Sinn haben.",
+          "example": "Was heißt diese Abkürzung?",
+          "example_ru": "Что означает это сокращение?",
+          "forms": "heißt · hieß · hat geheißen",
+          "grammar_hint": "Das heißt, dass … — Это значит, что …; после dass глагол в конце. Синоним bedeuten.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hei%C3%9Fen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 390,
+          "record": {
+            "id": "a1-299-1",
+            "de": "heißen",
+            "lemma": "heißen",
+            "ru": "зваться; называться",
+            "uk": "",
+            "translations_ru": [
+              "зваться",
+              "называться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "heißt · hieß · hat geheißen",
+            "definition_de": "Einen bestimmten Namen tragen.",
+            "example": "Wie heißt du?",
+            "example_ru": "Как тебя зовут?",
+            "note": "В Швейцарии heissen: ich heisse, du heisst. Не путать с heiß (heiss) — горячий.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "ab44c3caf5b4409c61b1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 391,
+          "record": {
+            "id": "a1-299-2",
+            "de": "heißen",
+            "lemma": "heißen",
+            "ru": "называться; именоваться",
+            "uk": "",
+            "translations_ru": [
+              "называться",
+              "именоваться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "heißt · hieß · hat geheißen",
+            "definition_de": "Mit einem bestimmten Wort bezeichnet werden.",
+            "example": "Wie heißt das auf Deutsch?",
+            "example_ru": "Как это называется по-немецки?",
+            "note": "Wie heißt das auf Deutsch? — Как это называется по-немецки? Was heißt das? может означать «Что это значит?», но отдельное значение не подтверждено примерами этих статей. В Швейцарии: heissen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "ab44c3caf5b4409c61b1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 235,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Both definitions cover the heating system or device.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 22,
+        "record": {
+          "id": "b1-heizung-heating",
+          "de": "die Heizung",
+          "lemma": "Heizung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "отопление",
+            "отопительный прибор"
+          ],
+          "definition_de": "Eine Anlage oder ein Gerät zum Erwärmen von Räumen.",
+          "example": "Unsere Heizung funktioniert seit gestern nicht mehr.",
+          "example_ru": "Наше отопление со вчерашнего дня не работает.",
+          "forms": "die Heizungen",
+          "grammar_hint": "die Heizung einschalten / ausschalten; der Heizkörper — радиатор.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Heizung"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 40,
+          "record": {
+            "id": "dict_9cb00e20c8e67ff531df",
+            "de": "die Heizung",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "отопление",
+              "система отопления"
+            ],
+            "definition_de": "Eine Anlage oder ein Gerät, das einen Raum oder ein Gebäude warm macht.",
+            "forms": "Plural · die Heizungen",
+            "example": "Die Heizung funktioniert heute nicht.",
+            "example_ru": "Сегодня отопление не работает.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Heizung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9cb00e20c8e67ff531df",
+        "alias_id": "b1-heizung-heating",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9cb00e20c8e67ff531df"
+      }
+    },
+    {
+      "candidate_number": 236,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same assistance sense, with person in Dativ and bei + Dativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 24,
+        "record": {
+          "id": "b1-helfen-assist",
+          "de": "helfen",
+          "lemma": "helfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "помогать",
+            "помочь"
+          ],
+          "definition_de": "Eine Person bei einer Aufgabe oder in einer schwierigen Situation unterstützen.",
+          "example": "Kannst du mir beim Tragen helfen?",
+          "example_ru": "Можешь помочь мне нести вещи?",
+          "forms": "hilft · half · hat geholfen",
+          "grammar_hint": "jemandem (Dativ) helfen; bei + Dativ; helfen, etwas zu tun. Imperativ: Hilf!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/helfen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 430,
+          "record": {
+            "id": "a1-300-1",
+            "de": "helfen",
+            "lemma": "helfen",
+            "ru": "помогать; помочь",
+            "uk": "",
+            "translations_ru": [
+              "помогать",
+              "помочь"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "hilft · half · hat geholfen",
+            "definition_de": "Jemanden bei einer Aufgabe oder in einer schwierigen Situation unterstützen.",
+            "example": "Hilfst du mir bitte?",
+            "example_ru": "Поможешь мне, пожалуйста?",
+            "note": "jemandem helfen + Dativ: Ich helfe dir. jemandem bei etwas helfen (bei + Dativ); jemandem helfen, etwas zu tun. Hilf mir bitte! (Imperativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "6956441138ef9a74f3bd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-300-1",
+        "alias_id": "b1-helfen-assist",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-300-1"
+      }
+    },
+    {
+      "candidate_number": 237,
+      "decision": "retain_distinct_sense",
+      "reason": "A device or remedy is effective; retain gegen + Akkusativ and inanimate subject.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 25,
+        "record": {
+          "id": "b1-helfen-remedy",
+          "de": "helfen",
+          "lemma": "helfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "помогать",
+            "оказывать действие (о средстве)"
+          ],
+          "definition_de": "Eine gewünschte Wirkung haben oder Beschwerden lindern.",
+          "example": "Die neue Brille hilft mir beim Lesen.",
+          "example_ru": "Новые очки помогают мне читать.",
+          "forms": "hilft · half · hat geholfen",
+          "grammar_hint": "etwas hilft jemandem (Dativ); gegen + Akkusativ (gegen Schmerzen); субъектом может быть средство.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/helfen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 430,
+          "record": {
+            "id": "a1-300-1",
+            "de": "helfen",
+            "lemma": "helfen",
+            "ru": "помогать; помочь",
+            "uk": "",
+            "translations_ru": [
+              "помогать",
+              "помочь"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "hilft · half · hat geholfen",
+            "definition_de": "Jemanden bei einer Aufgabe oder in einer schwierigen Situation unterstützen.",
+            "example": "Hilfst du mir bitte?",
+            "example_ru": "Поможешь мне, пожалуйста?",
+            "note": "jemandem helfen + Dativ: Ich helfe dir. jemandem bei etwas helfen (bei + Dativ); jemandem helfen, etwas zu tun. Hilf mir bitte! (Imperativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "6956441138ef9a74f3bd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 238,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same support sense, with help-seeking collocations.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 26,
+        "record": {
+          "id": "b1-hilfe-assistance",
+          "de": "die Hilfe",
+          "lemma": "Hilfe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "помощь",
+            "поддержка"
+          ],
+          "definition_de": "Unterstützung, die jemand einer anderen Person gibt.",
+          "example": "Ohne deine Hilfe hätte ich das nicht geschafft.",
+          "example_ru": "Без твоей помощи я бы не справилась.",
+          "forms": "die Hilfen; в значении помощи часто Singular",
+          "grammar_hint": "Hilfe brauchen; um Hilfe bitten; Danke für deine Hilfe (+ Akkusativ).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hilfe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 452,
+          "record": {
+            "id": "a1-307-1",
+            "de": "die Hilfe",
+            "lemma": "Hilfe",
+            "ru": "помощь",
+            "uk": "",
+            "translations_ru": [
+              "помощь"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Hilfen; в значении помощи как поддержки обычно Singular",
+            "definition_de": "Unterstützung, wenn jemand etwas allein nicht gut kann.",
+            "example": "Danke für deine Hilfe.",
+            "example_ru": "Спасибо за помощь.",
+            "note": "Hilfe brauchen — нуждаться в помощи; um Hilfe bitten — просить о помощи; Hilfe! — На помощь!",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f7a1897365eec03d0fed"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-307-1",
+        "alias_id": "b1-hilfe-assistance",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-307-1"
+      }
+    },
+    {
+      "candidate_number": 239,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Fixed first-aid term with specific meaning and independent practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 27,
+        "record": {
+          "id": "b1-erste-hilfe-first-aid",
+          "de": "Erste Hilfe",
+          "lemma": "Hilfe",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "первая помощь"
+          ],
+          "definition_de": "Unmittelbare Unterstützung für verletzte oder plötzlich erkrankte Menschen bis zur weiteren Versorgung.",
+          "example": "In der Fahrschule besuchen wir einen Kurs in Erster Hilfe.",
+          "example_ru": "В автошколе мы посещаем курс первой помощи.",
+          "forms": "die Erste Hilfe; обычно Singular",
+          "grammar_hint": "Erste Hilfe leisten; ein Erste-Hilfe-Kurs; in Erster Hilfe (Dativ).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hilfe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 452,
+          "record": {
+            "id": "a1-307-1",
+            "de": "die Hilfe",
+            "lemma": "Hilfe",
+            "ru": "помощь",
+            "uk": "",
+            "translations_ru": [
+              "помощь"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Hilfen; в значении помощи как поддержки обычно Singular",
+            "definition_de": "Unterstützung, wenn jemand etwas allein nicht gut kann.",
+            "example": "Danke für deine Hilfe.",
+            "example_ru": "Спасибо за помощь.",
+            "note": "Hilfe brauchen — нуждаться в помощи; um Hilfe bitten — просить о помощи; Hilfe! — На помощь!",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f7a1897365eec03d0fed"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 240,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same independent call for urgent assistance.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 28,
+        "record": {
+          "id": "b1-hilfe-call",
+          "de": "Hilfe!",
+          "lemma": "Hilfe",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Помогите!",
+            "На помощь!"
+          ],
+          "definition_de": "Ein Ausruf, mit dem man dringend Unterstützung verlangt.",
+          "example": "Hilfe! Ich komme hier nicht heraus!",
+          "example_ru": "Помогите! Я не могу отсюда выбраться!",
+          "forms": "устойчивое восклицание",
+          "grammar_hint": "Без артикля; также Helfen Sie mir bitte! — Помогите мне, пожалуйста.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hilfe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 757,
+          "record": {
+            "id": "a1-307-2",
+            "de": "Hilfe!",
+            "lemma": "Hilfe!",
+            "ru": "Помогите!",
+            "uk": "",
+            "translations_ru": [
+              "Помогите!"
+            ],
+            "part": "interjection",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Ein Ruf, mit dem jemand dringend um Unterstützung bittet.",
+            "example": "Hilfe! Ich komme hier nicht raus!",
+            "example_ru": "Помогите! Я не могу отсюда выбраться!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f7a1897365eec03d0fed"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 452,
+          "record": {
+            "id": "a1-307-1",
+            "de": "die Hilfe",
+            "lemma": "Hilfe",
+            "ru": "помощь",
+            "uk": "",
+            "translations_ru": [
+              "помощь"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Hilfen; в значении помощи как поддержки обычно Singular",
+            "definition_de": "Unterstützung, wenn jemand etwas allein nicht gut kann.",
+            "example": "Danke für deine Hilfe.",
+            "example_ru": "Спасибо за помощь.",
+            "note": "Hilfe brauchen — нуждаться в помощи; um Hilfe bitten — просить о помощи; Hilfe! — На помощь!",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f7a1897365eec03d0fed"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-307-2",
+        "alias_id": "b1-hilfe-call",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-307-2"
+      }
+    },
+    {
+      "candidate_number": 241,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 already uses hell for morning daylight; preserve the inchoative es wird hell.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 29,
+        "record": {
+          "id": "b1-hell-daylight",
+          "de": "hell",
+          "lemma": "hell",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "светло",
+            "светлый (о времени суток)"
+          ],
+          "definition_de": "Mit ausreichendem Tageslicht, nicht dunkel.",
+          "example": "Im Juni wird es schon sehr früh hell.",
+          "example_ru": "В июне светает очень рано.",
+          "forms": "hell · heller · am hellsten",
+          "grammar_hint": "Es wird hell — светает; es wird dunkel — темнеет.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hell"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 583,
+          "record": {
+            "id": "a1-301-1",
+            "de": "hell",
+            "lemma": "hell",
+            "ru": "светлый; светло",
+            "uk": "",
+            "translations_ru": [
+              "светлый",
+              "светло"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "heller · am hellsten",
+            "definition_de": "Mit viel Licht.",
+            "example": "Hier ist es morgens hell.",
+            "example_ru": "По утрам здесь светло.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "fbe43920653995ee133f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-301-1",
+        "alias_id": "b1-hell-daylight",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-301-1"
+      }
+    },
+    {
+      "candidate_number": 242,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Well-lit rooms fit the existing physical-light definition.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_035.json",
+        "sha": "fd8eb966d2ae032044818985c7f69f4d20b83e58",
+        "batch": 35,
+        "row": 30,
+        "record": {
+          "id": "b1-hell-room",
+          "de": "hell",
+          "lemma": "hell",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "светлый",
+            "хорошо освещённый"
+          ],
+          "definition_de": "Durch Licht gut erhellt.",
+          "example": "Wir suchen eine helle Wohnung mit großen Fenstern.",
+          "example_ru": "Мы ищем светлую квартиру с большими окнами.",
+          "forms": "hell · heller · am hellsten",
+          "grammar_hint": "eine helle Wohnung; das Zimmer ist hell. Отдельное употребление со значением светлого оттенка цвета — в следующем пакете.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hell"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 583,
+          "record": {
+            "id": "a1-301-1",
+            "de": "hell",
+            "lemma": "hell",
+            "ru": "светлый; светло",
+            "uk": "",
+            "translations_ru": [
+              "светлый",
+              "светло"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "heller · am hellsten",
+            "definition_de": "Mit viel Licht.",
+            "example": "Hier ist es morgens hell.",
+            "example_ru": "По утрам здесь светло.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "fbe43920653995ee133f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-301-1",
+        "alias_id": "b1-hell-room",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-301-1"
+      }
+    },
+    {
+      "candidate_number": 243,
+      "decision": "retain_distinct_sense",
+      "reason": "Light color shade differs from illumination; retain compound color spelling.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 1,
+        "record": {
+          "id": "b1-hell-color",
+          "de": "hell",
+          "lemma": "hell",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "светлый (оттенок цвета)"
+          ],
+          "definition_de": "Von einem Farbton mit geringer Dunkelheit.",
+          "example": "Sie trägt heute eine hellgrüne Jacke.",
+          "example_ru": "Сегодня на ней светло-зелёная куртка.",
+          "forms": "hell · heller · am hellsten",
+          "grammar_hint": "hellblau, hellgrün, hellgrau — слитно; противоположность dunkelblau и т. п.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hell"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 583,
+          "record": {
+            "id": "a1-301-1",
+            "de": "hell",
+            "lemma": "hell",
+            "ru": "светлый; светло",
+            "uk": "",
+            "translations_ru": [
+              "светлый",
+              "светло"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "heller · am hellsten",
+            "definition_de": "Mit viel Licht.",
+            "example": "Hier ist es morgens hell.",
+            "example_ru": "По утрам здесь светло.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "fbe43920653995ee133f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 244,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same shirt sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 2,
+        "record": {
+          "id": "b1-hemd-shirt",
+          "de": "das Hemd",
+          "lemma": "Hemd",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "рубашка"
+          ],
+          "definition_de": "Ein Kleidungsstück für den Oberkörper, meist mit Knöpfen.",
+          "example": "Für das Vorstellungsgespräch bügle ich mein Hemd.",
+          "example_ru": "Для собеседования я глажу рубашку.",
+          "forms": "die Hemden",
+          "grammar_hint": "ein Hemd anziehen / bügeln; die Bluse — блузка.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hemd"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 147,
+          "record": {
+            "id": "dict_09a265ff105c5584c8c7",
+            "de": "das Hemd",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "рубашка"
+            ],
+            "definition_de": "Ein Oberteil, das gewöhnlich vorn Knöpfe hat.",
+            "forms": "Plural · die Hemden",
+            "example": "Für das Fest ziehe ich ein weißes Hemd an.",
+            "example_ru": "На праздник я надену белую рубашку.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Hemd"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_09a265ff105c5584c8c7",
+        "alias_id": "b1-hemd-shirt",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_09a265ff105c5584c8c7"
+      }
+    },
+    {
+      "candidate_number": 245,
+      "decision": "retain_distinct_sense",
+      "reason": "Elapsed time with sein differs from movement toward the speaker.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 3,
+        "record": {
+          "id": "b1-her-time-ago",
+          "de": "her",
+          "lemma": "her",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "назад",
+            "тому назад"
+          ],
+          "definition_de": "Bezeichnet den zeitlichen Abstand zu einem vergangenen Ereignis.",
+          "example": "Unser letzter Besuch ist schon zwei Jahre her.",
+          "example_ru": "Наш последний визит был уже два года назад.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Das ist lange her. Сравните: vor zwei Jahren — два года назад; zwei Jahre her — обычно с sein.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/her"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 396,
+          "record": {
+            "id": "dict_0a26ec2a5f00ec0363ef",
+            "de": "her",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "сюда",
+              "к говорящему"
+            ],
+            "definition_de": "Bezeichnet eine Bewegung zum Standort der sprechenden Person.",
+            "example": "Komm schnell her, ich brauche deine Hilfe!",
+            "example_ru": "Иди скорее сюда, мне нужна твоя помощь!",
+            "grammar_hint": "her — движение к говорящему; hin — от говорящего к другой цели.",
+            "usage_note": "Временное значение «назад» не подтверждено этим примером Goethe.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/her"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 246,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same direction toward speaker; retain a natural imperative example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 4,
+        "record": {
+          "id": "b1-her-direction",
+          "de": "her",
+          "lemma": "her",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "сюда",
+            "в сторону говорящего"
+          ],
+          "definition_de": "Bezeichnet eine Bewegung auf den Standort des Sprechenden zu.",
+          "example": "Bring bitte den Stuhl zu mir her.",
+          "example_ru": "Принеси, пожалуйста, стул сюда, ко мне.",
+          "forms": "неизменяемое",
+          "grammar_hint": "her — к говорящему; hin — от говорящего к другому месту. Komm her!",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/her"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 396,
+          "record": {
+            "id": "dict_0a26ec2a5f00ec0363ef",
+            "de": "her",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "сюда",
+              "к говорящему"
+            ],
+            "definition_de": "Bezeichnet eine Bewegung zum Standort der sprechenden Person.",
+            "example": "Komm schnell her, ich brauche deine Hilfe!",
+            "example_ru": "Иди скорее сюда, мне нужна твоя помощь!",
+            "grammar_hint": "her — движение к говорящему; hin — от говорящего к другой цели.",
+            "usage_note": "Временное значение «назад» не подтверждено этим примером Goethe.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/her"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0a26ec2a5f00ec0363ef",
+        "alias_id": "b1-her-direction",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0a26ec2a5f00ec0363ef"
+      }
+    },
+    {
+      "candidate_number": 247,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same cooking appliance; retain the oven distinction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 7,
+        "record": {
+          "id": "b1-herd-stove",
+          "de": "der Herd",
+          "lemma": "Herd",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кухонная плита"
+          ],
+          "definition_de": "Ein Küchengerät, mit dem man Speisen erhitzt und kocht.",
+          "example": "Der Topf steht noch auf dem Herd.",
+          "example_ru": "Кастрюля ещё стоит на плите.",
+          "forms": "die Herde",
+          "grammar_hint": "den Herd einschalten / ausschalten; auf dem Herd (Dativ). Der Backofen — духовка.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Herd"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 450,
+          "record": {
+            "id": "a1-302-1",
+            "de": "der Herd",
+            "lemma": "Herd",
+            "ru": "кухонная плита; плита",
+            "uk": "",
+            "translations_ru": [
+              "кухонная плита",
+              "плита"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Herde",
+            "definition_de": "Ein Gerät zum Kochen und Backen.",
+            "example": "Der Herd ist noch warm.",
+            "example_ru": "Плита ещё тёплая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "c45b19605c6e51c99d50"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-302-1",
+        "alias_id": "b1-herd-stove",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-302-1"
+      }
+    },
+    {
+      "candidate_number": 248,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same inward direction toward speaker; mark rein as colloquial.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 8,
+        "record": {
+          "id": "b1-herein-inward",
+          "de": "herein / rein",
+          "lemma": "herein",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "внутрь",
+            "сюда внутрь"
+          ],
+          "definition_de": "Bezeichnet eine Bewegung in einen Raum hinein, häufig zum Sprecher.",
+          "example": "Die Tür ist offen, kommen Sie bitte herein.",
+          "example_ru": "Дверь открыта, заходите, пожалуйста.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Herein! — Войдите! rein — разговорный вариант; hereinkommen — отделяемый глагол.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herein"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 434,
+          "record": {
+            "id": "dict_0bc29ac9bec9f2983ac1",
+            "de": "herein",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "сюда внутрь",
+              "внутрь"
+            ],
+            "definition_de": "Bezeichnet eine Bewegung von draußen in den Raum, in dem sich der Sprecher befindet.",
+            "example": "Komm bitte herein, es ist kalt draußen.",
+            "example_ru": "Заходи, пожалуйста, на улице холодно.",
+            "grammar_hint": "herein — внутрь, к говорящему; hinein — внутрь, в направлении от говорящего.",
+            "usage_note": "Herein! — Войдите! Разговорный вариант: rein.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/herein"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0bc29ac9bec9f2983ac1",
+        "alias_id": "b1-herein-inward",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0bc29ac9bec9f2983ac1"
+      }
+    },
+    {
+      "candidate_number": 249,
+      "decision": "retain_distinct_sense",
+      "reason": "A polite third-person reference to a man is distinct from addressing him by surname.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 10,
+        "record": {
+          "id": "b1-herr-man",
+          "de": "der Herr",
+          "lemma": "Herr",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "господин",
+            "мужчина (вежливо)"
+          ],
+          "definition_de": "Eine höfliche Bezeichnung für einen erwachsenen Mann.",
+          "example": "Ein Herr wartet draußen auf Sie.",
+          "example_ru": "Вас снаружи ждёт мужчина.",
+          "forms": "die Herren; den / dem / des Herrn",
+          "grammar_hint": "Слабое склонение с особой формой -n в ед. числе: Ich sehe den Herrn. Мн. ч.: die Herren.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Herr"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 451,
+          "record": {
+            "id": "a1-303-1",
+            "de": "der Herr",
+            "lemma": "Herr",
+            "ru": "господин (обращение)",
+            "uk": "",
+            "translations_ru": [
+              "господин (обращение)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Herren",
+            "definition_de": "Eine höfliche Anrede für einen Mann, meist vor seinem Nachnamen.",
+            "example": "Guten Morgen, Herr Keller.",
+            "example_ru": "Доброе утро, господин Келлер.",
+            "note": "Akkusativ и Dativ: den Herrn, dem Herrn.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "2051086be3887e92979a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 250,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "The A1 example already has Herr plus surname; retain case and salutation patterns.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 11,
+        "record": {
+          "id": "b1-herr-address",
+          "de": "Herr + Nachname",
+          "lemma": "Herr",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "господин (обращение)"
+          ],
+          "definition_de": "Höfliche Anrede eines Mannes vor seinem Familiennamen.",
+          "example": "Guten Morgen, Herr Weber!",
+          "example_ru": "Доброе утро, господин Вебер!",
+          "forms": "Herr · Herrn; die Herren",
+          "grammar_hint": "В обращении Herr Weber; mit Herrn Weber (Dativ); Sehr geehrter Herr Weber — начало письма.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Herr"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 451,
+          "record": {
+            "id": "a1-303-1",
+            "de": "der Herr",
+            "lemma": "Herr",
+            "ru": "господин (обращение)",
+            "uk": "",
+            "translations_ru": [
+              "господин (обращение)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Herren",
+            "definition_de": "Eine höfliche Anrede für einen Mann, meist vor seinem Nachnamen.",
+            "example": "Guten Morgen, Herr Keller.",
+            "example_ru": "Доброе утро, господин Келлер.",
+            "note": "Akkusativ и Dativ: den Herrn, dem Herrn.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "2051086be3887e92979a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-303-1",
+        "alias_id": "b1-herr-address",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-303-1"
+      }
+    },
+    {
+      "candidate_number": 251,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same manufacturing sense and separable prefix.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 12,
+        "record": {
+          "id": "b1-herstellen-manufacture",
+          "de": "herstellen",
+          "lemma": "herstellen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "производить",
+            "изготавливать"
+          ],
+          "definition_de": "Aus Materialien oder Bestandteilen ein Produkt anfertigen.",
+          "example": "Die Werkstatt stellt Möbel aus Holz her.",
+          "example_ru": "Мастерская изготавливает деревянную мебель.",
+          "forms": "stellt her · stellte her · hat hergestellt",
+          "grammar_hint": "Отделяемая приставка her-; etwas (Akkusativ) herstellen; die Herstellung — производство.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herstellen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 469,
+          "record": {
+            "id": "dict_a3294e64806baa84d587",
+            "de": "herstellen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "производить",
+              "изготавливать"
+            ],
+            "definition_de": "Ein Produkt machen oder produzieren.",
+            "forms": "stellt her · stellte her · hat hergestellt",
+            "example": "Die Firma stellt Fahrräder her.",
+            "example_ru": "Фирма производит велосипеды.",
+            "grammar_hint": "Отделяемая приставка her-; etwas (Akkusativ) herstellen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/herstellen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a3294e64806baa84d587",
+        "alias_id": "b1-herstellen-manufacture",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a3294e64806baa84d587"
+      }
+    },
+    {
+      "candidate_number": 252,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same download sense; preserve colloquial runterladen separately from the standard headword.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 14,
+        "record": {
+          "id": "b1-herunterladen-download",
+          "de": "herunterladen / runterladen",
+          "lemma": "herunterladen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "скачивать",
+            "загружать на устройство"
+          ],
+          "definition_de": "Eine Datei aus einem Netzwerk auf das eigene Gerät übertragen.",
+          "example": "Du kannst die Übungen als PDF herunterladen.",
+          "example_ru": "Ты можешь скачать упражнения в PDF.",
+          "forms": "lädt herunter · lud herunter · hat heruntergeladen",
+          "grammar_hint": "Отделяемая приставка; runterladen — разговорное. Gegensatz: hochladen — загружать на сервер.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herunterladen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 231,
+          "record": {
+            "id": "dict_88f0c81d7a84149bdb5d",
+            "de": "herunterladen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "скачивать",
+              "скачать"
+            ],
+            "definition_de": "Daten aus dem Internet oder einem Netzwerk auf das eigene Gerät übertragen.",
+            "forms": "lädt herunter · lud herunter · hat heruntergeladen",
+            "example": "Ich lade die Datei auf mein Tablet herunter.",
+            "example_ru": "Я скачиваю файл на свой планшет.",
+            "grammar_hint": "В главном предложении herunter отделяется. В Perfekt: Ich habe die Datei heruntergeladen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/herunterladen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цифровые технологии и связь",
+            "topics": [
+              "Цифровые технологии и связь"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_88f0c81d7a84149bdb5d",
+        "alias_id": "b1-herunterladen-download",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_88f0c81d7a84149bdb5d"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-299-2",
+      "alias_ids": [
+        "b1-heissen-translation"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-299-2",
+        "de": "heißen",
+        "lemma": "heißen",
+        "ru": "называться; именоваться",
+        "uk": "",
+        "translations_ru": [
+          "называться",
+          "именоваться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование",
+          "Учёба и языки"
+        ],
+        "forms": "heißt · hieß · hat geheißen",
+        "definition_de": "Mit einem bestimmten Wort bezeichnet werden.",
+        "example": "Wie heißt das auf Deutsch?",
+        "example_ru": "Как это называется по-немецки?",
+        "note": "Wie heißt das auf Deutsch? — Как это называется по-немецки? Was heißt das? может означать «Что это значит?», но отдельное значение не подтверждено примерами этих статей. В Швейцарии: heissen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "ab44c3caf5b4409c61b1"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "auf Deutsch / auf Russisch; при вопросе wie глагол на втором месте.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Wie heißt dieses Gemüse auf Deutsch?",
+            "ru": "Как называется этот овощ по-немецки?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-heissen-translation",
+            "de": "wie heißt … auf Deutsch?",
+            "part": "phrase",
+            "forms": "heißt · hieß · hat geheißen",
+            "definition_de": "Nach der Entsprechung eines Wortes in einer Sprache fragen.",
+            "translations_ru": [
+              "как будет … по-немецки?"
+            ],
+            "grammar_hint": "auf Deutsch / auf Russisch; при вопросе wie глагол на втором месте.",
+            "example": "Wie heißt dieses Gemüse auf Deutsch?",
+            "example_ru": "Как называется этот овощ по-немецки?"
+          }
+        ],
+        "alias_ids": [
+          "b1-heissen-translation"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hei%C3%9Fen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_9cb00e20c8e67ff531df",
+      "alias_ids": [
+        "b1-heizung-heating"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9cb00e20c8e67ff531df",
+        "de": "die Heizung",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "отопление",
+          "система отопления",
+          "отопительный прибор"
+        ],
+        "definition_de": "Eine Anlage oder ein Gerät, das einen Raum oder ein Gebäude warm macht.",
+        "forms": "Plural · die Heizungen",
+        "example": "Die Heizung funktioniert heute nicht.",
+        "example_ru": "Сегодня отопление не работает.",
+        "grammar_hint": "die Heizung einschalten / ausschalten; der Heizkörper — радиатор.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Heizung"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "ru": "отопление; система отопления; отопительный прибор",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Heizungen"
+        ],
+        "alternative_definitions_de": [
+          "Eine Anlage oder ein Gerät zum Erwärmen von Räumen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Unsere Heizung funktioniert seit gestern nicht mehr.",
+            "ru": "Наше отопление со вчерашнего дня не работает."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-heizung-heating",
+            "de": "die Heizung",
+            "part": "noun",
+            "forms": "die Heizungen",
+            "definition_de": "Eine Anlage oder ein Gerät zum Erwärmen von Räumen.",
+            "translations_ru": [
+              "отопление",
+              "отопительный прибор"
+            ],
+            "grammar_hint": "die Heizung einschalten / ausschalten; der Heizkörper — радиатор.",
+            "example": "Unsere Heizung funktioniert seit gestern nicht mehr.",
+            "example_ru": "Наше отопление со вчерашнего дня не работает."
+          }
+        ],
+        "alias_ids": [
+          "b1-heizung-heating"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Heizung"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-300-1",
+      "alias_ids": [
+        "b1-helfen-assist"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-300-1",
+        "de": "helfen",
+        "lemma": "helfen",
+        "ru": "помогать; помочь",
+        "uk": "",
+        "translations_ru": [
+          "помогать",
+          "помочь"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "hilft · half · hat geholfen",
+        "definition_de": "Jemanden bei einer Aufgabe oder in einer schwierigen Situation unterstützen.",
+        "example": "Hilfst du mir bitte?",
+        "example_ru": "Поможешь мне, пожалуйста?",
+        "note": "jemandem helfen + Dativ: Ich helfe dir. jemandem bei etwas helfen (bei + Dativ); jemandem helfen, etwas zu tun. Hilf mir bitte! (Imperativ).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "6956441138ef9a74f3bd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem (Dativ) helfen; bei + Dativ; helfen, etwas zu tun. Imperativ: Hilf!",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Person bei einer Aufgabe oder in einer schwierigen Situation unterstützen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Kannst du mir beim Tragen helfen?",
+            "ru": "Можешь помочь мне нести вещи?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-helfen-assist",
+            "de": "helfen",
+            "part": "verb",
+            "forms": "hilft · half · hat geholfen",
+            "definition_de": "Eine Person bei einer Aufgabe oder in einer schwierigen Situation unterstützen.",
+            "translations_ru": [
+              "помогать",
+              "помочь"
+            ],
+            "grammar_hint": "jemandem (Dativ) helfen; bei + Dativ; helfen, etwas zu tun. Imperativ: Hilf!",
+            "example": "Kannst du mir beim Tragen helfen?",
+            "example_ru": "Можешь помочь мне нести вещи?"
+          }
+        ],
+        "alias_ids": [
+          "b1-helfen-assist"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/helfen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-307-1",
+      "alias_ids": [
+        "b1-hilfe-assistance"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-307-1",
+        "de": "die Hilfe",
+        "lemma": "Hilfe",
+        "ru": "помощь; поддержка",
+        "uk": "",
+        "translations_ru": [
+          "помощь",
+          "поддержка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Общение"
+        ],
+        "forms": "die Hilfen; в значении помощи как поддержки обычно Singular",
+        "definition_de": "Unterstützung, wenn jemand etwas allein nicht gut kann.",
+        "example": "Danke für deine Hilfe.",
+        "example_ru": "Спасибо за помощь.",
+        "note": "Hilfe brauchen — нуждаться в помощи; um Hilfe bitten — просить о помощи; Hilfe! — На помощь!",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "f7a1897365eec03d0fed"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Hilfe brauchen; um Hilfe bitten; Danke für deine Hilfe (+ Akkusativ).",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Hilfen; в значении помощи часто Singular"
+        ],
+        "alternative_definitions_de": [
+          "Unterstützung, die jemand einer anderen Person gibt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ohne deine Hilfe hätte ich das nicht geschafft.",
+            "ru": "Без твоей помощи я бы не справилась."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hilfe-assistance",
+            "de": "die Hilfe",
+            "part": "noun",
+            "forms": "die Hilfen; в значении помощи часто Singular",
+            "definition_de": "Unterstützung, die jemand einer anderen Person gibt.",
+            "translations_ru": [
+              "помощь",
+              "поддержка"
+            ],
+            "grammar_hint": "Hilfe brauchen; um Hilfe bitten; Danke für deine Hilfe (+ Akkusativ).",
+            "example": "Ohne deine Hilfe hätte ich das nicht geschafft.",
+            "example_ru": "Без твоей помощи я бы не справилась."
+          }
+        ],
+        "alias_ids": [
+          "b1-hilfe-assistance"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hilfe"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-307-2",
+      "alias_ids": [
+        "b1-hilfe-call"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-307-2",
+        "de": "Hilfe!",
+        "lemma": "Hilfe!",
+        "ru": "Помогите!; На помощь!",
+        "uk": "",
+        "translations_ru": [
+          "Помогите!",
+          "На помощь!"
+        ],
+        "part": "interjection",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Ein Ruf, mit dem jemand dringend um Unterstützung bittet.",
+        "example": "Hilfe! Ich komme hier nicht raus!",
+        "example_ru": "Помогите! Я не могу отсюда выбраться!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "f7a1897365eec03d0fed"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Без артикля; также Helfen Sie mir bitte! — Помогите мне, пожалуйста.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "устойчивое восклицание"
+        ],
+        "alternative_definitions_de": [
+          "Ein Ausruf, mit dem man dringend Unterstützung verlangt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Hilfe! Ich komme hier nicht heraus!",
+            "ru": "Помогите! Я не могу отсюда выбраться!"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hilfe-call",
+            "de": "Hilfe!",
+            "part": "phrase",
+            "forms": "устойчивое восклицание",
+            "definition_de": "Ein Ausruf, mit dem man dringend Unterstützung verlangt.",
+            "translations_ru": [
+              "Помогите!",
+              "На помощь!"
+            ],
+            "grammar_hint": "Без артикля; также Helfen Sie mir bitte! — Помогите мне, пожалуйста.",
+            "example": "Hilfe! Ich komme hier nicht heraus!",
+            "example_ru": "Помогите! Я не могу отсюда выбраться!"
+          }
+        ],
+        "alias_ids": [
+          "b1-hilfe-call"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hilfe"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-301-1",
+      "alias_ids": [
+        "b1-hell-daylight",
+        "b1-hell-room"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-301-1",
+        "de": "hell",
+        "lemma": "hell",
+        "ru": "светлый; светло; хорошо освещённый",
+        "uk": "",
+        "translations_ru": [
+          "светлый",
+          "светло",
+          "хорошо освещённый"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Природа и погода",
+          "Дом и быт"
+        ],
+        "forms": "heller · am hellsten",
+        "definition_de": "Mit viel Licht.",
+        "example": "Hier ist es morgens hell.",
+        "example_ru": "По утрам здесь светло.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "fbe43920653995ee133f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Es wird hell — светает; es wird dunkel — темнеет.\neine helle Wohnung; das Zimmer ist hell. Отдельное употребление со значением светлого оттенка цвета — в следующем пакете.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "hell · heller · am hellsten"
+        ],
+        "alternative_definitions_de": [
+          "Durch Licht gut erhellt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Juni wird es schon sehr früh hell.",
+            "ru": "В июне светает очень рано."
+          },
+          {
+            "de": "Wir suchen eine helle Wohnung mit großen Fenstern.",
+            "ru": "Мы ищем светлую квартиру с большими окнами."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hell-daylight",
+            "de": "hell",
+            "part": "adj",
+            "forms": "hell · heller · am hellsten",
+            "definition_de": "Mit ausreichendem Tageslicht, nicht dunkel.",
+            "translations_ru": [
+              "светло",
+              "светлый (о времени суток)"
+            ],
+            "grammar_hint": "Es wird hell — светает; es wird dunkel — темнеет.",
+            "example": "Im Juni wird es schon sehr früh hell.",
+            "example_ru": "В июне светает очень рано."
+          },
+          {
+            "id": "b1-hell-room",
+            "de": "hell",
+            "part": "adj",
+            "forms": "hell · heller · am hellsten",
+            "definition_de": "Durch Licht gut erhellt.",
+            "translations_ru": [
+              "светлый",
+              "хорошо освещённый"
+            ],
+            "grammar_hint": "eine helle Wohnung; das Zimmer ist hell. Отдельное употребление со значением светлого оттенка цвета — в следующем пакете.",
+            "example": "Wir suchen eine helle Wohnung mit großen Fenstern.",
+            "example_ru": "Мы ищем светлую квартиру с большими окнами."
+          }
+        ],
+        "alias_ids": [
+          "b1-hell-daylight",
+          "b1-hell-room"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hell"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hell"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_09a265ff105c5584c8c7",
+      "alias_ids": [
+        "b1-hemd-shirt"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_09a265ff105c5584c8c7",
+        "de": "das Hemd",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "рубашка"
+        ],
+        "definition_de": "Ein Oberteil, das gewöhnlich vorn Knöpfe hat.",
+        "forms": "Plural · die Hemden",
+        "example": "Für das Fest ziehe ich ein weißes Hemd an.",
+        "example_ru": "На праздник я надену белую рубашку.",
+        "grammar_hint": "ein Hemd anziehen / bügeln; die Bluse — блузка.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Hemd"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность",
+          "Покупки и услуги"
+        ],
+        "ru": "рубашка",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Hemden"
+        ],
+        "alternative_definitions_de": [
+          "Ein Kleidungsstück für den Oberkörper, meist mit Knöpfen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Für das Vorstellungsgespräch bügle ich mein Hemd.",
+            "ru": "Для собеседования я глажу рубашку."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hemd-shirt",
+            "de": "das Hemd",
+            "part": "noun",
+            "forms": "die Hemden",
+            "definition_de": "Ein Kleidungsstück für den Oberkörper, meist mit Knöpfen.",
+            "translations_ru": [
+              "рубашка"
+            ],
+            "grammar_hint": "ein Hemd anziehen / bügeln; die Bluse — блузка.",
+            "example": "Für das Vorstellungsgespräch bügle ich mein Hemd.",
+            "example_ru": "Для собеседования я глажу рубашку."
+          }
+        ],
+        "alias_ids": [
+          "b1-hemd-shirt"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hemd"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_0a26ec2a5f00ec0363ef",
+      "alias_ids": [
+        "b1-her-direction"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_0a26ec2a5f00ec0363ef",
+        "de": "her",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "сюда",
+          "к говорящему",
+          "в сторону говорящего"
+        ],
+        "definition_de": "Bezeichnet eine Bewegung zum Standort der sprechenden Person.",
+        "example": "Komm schnell her, ich brauche deine Hilfe!",
+        "example_ru": "Иди скорее сюда, мне нужна твоя помощь!",
+        "grammar_hint": "her — движение к говорящему; hin — от говорящего к другой цели.\nKomm her! — Иди сюда! her обозначает направление к тому, кто говорит.",
+        "usage_note": "Временное значение «назад» не подтверждено этим примером Goethe.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/her"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление",
+          "Грамматика и связь предложений"
+        ],
+        "ru": "сюда; к говорящему; в сторону говорящего",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Bezeichnet eine Bewegung auf den Standort des Sprechenden zu."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Komm bitte her und hilf mir.",
+            "ru": "Подойди, пожалуйста, и помоги мне."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-her-direction",
+            "de": "her",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Bezeichnet eine Bewegung auf den Standort des Sprechenden zu.",
+            "translations_ru": [
+              "сюда",
+              "в сторону говорящего"
+            ],
+            "grammar_hint": "Komm her! — Иди сюда! her обозначает направление к тому, кто говорит.",
+            "example": "Komm bitte her und hilf mir.",
+            "example_ru": "Подойди, пожалуйста, и помоги мне."
+          }
+        ],
+        "alias_ids": [
+          "b1-her-direction"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/her"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-302-1",
+      "alias_ids": [
+        "b1-herd-stove"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-302-1",
+        "de": "der Herd",
+        "lemma": "Herd",
+        "ru": "кухонная плита; плита",
+        "uk": "",
+        "translations_ru": [
+          "кухонная плита",
+          "плита"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё",
+          "Дом и быт"
+        ],
+        "forms": "die Herde",
+        "definition_de": "Ein Gerät zum Kochen und Backen.",
+        "example": "Der Herd ist noch warm.",
+        "example_ru": "Плита ещё тёплая.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "c45b19605c6e51c99d50"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "den Herd einschalten / ausschalten; auf dem Herd (Dativ). Der Backofen — духовка.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein Küchengerät, mit dem man Speisen erhitzt und kocht."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Der Topf steht noch auf dem Herd.",
+            "ru": "Кастрюля ещё стоит на плите."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-herd-stove",
+            "de": "der Herd",
+            "part": "noun",
+            "forms": "die Herde",
+            "definition_de": "Ein Küchengerät, mit dem man Speisen erhitzt und kocht.",
+            "translations_ru": [
+              "кухонная плита"
+            ],
+            "grammar_hint": "den Herd einschalten / ausschalten; auf dem Herd (Dativ). Der Backofen — духовка.",
+            "example": "Der Topf steht noch auf dem Herd.",
+            "example_ru": "Кастрюля ещё стоит на плите."
+          }
+        ],
+        "alias_ids": [
+          "b1-herd-stove"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Herd"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_0bc29ac9bec9f2983ac1",
+      "alias_ids": [
+        "b1-herein-inward"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_0bc29ac9bec9f2983ac1",
+        "de": "herein",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "сюда внутрь",
+          "внутрь"
+        ],
+        "definition_de": "Bezeichnet eine Bewegung von draußen in den Raum, in dem sich der Sprecher befindet.",
+        "example": "Komm bitte herein, es ist kalt draußen.",
+        "example_ru": "Заходи, пожалуйста, на улице холодно.",
+        "grammar_hint": "herein — внутрь, к говорящему; hinein — внутрь, в направлении от говорящего.\nHerein! — Войдите! rein — разговорный вариант; hereinkommen — отделяемый глагол.",
+        "usage_note": "Herein! — Войдите! Разговорный вариант: rein.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/herein"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление",
+          "Дом и быт"
+        ],
+        "ru": "сюда внутрь; внутрь",
+        "alternative_surfaces": [
+          "herein / rein"
+        ],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Bezeichnet eine Bewegung in einen Raum hinein, häufig zum Sprecher."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Tür ist offen, kommen Sie bitte herein.",
+            "ru": "Дверь открыта, заходите, пожалуйста."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-herein-inward",
+            "de": "herein / rein",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Bezeichnet eine Bewegung in einen Raum hinein, häufig zum Sprecher.",
+            "translations_ru": [
+              "внутрь",
+              "сюда внутрь"
+            ],
+            "grammar_hint": "Herein! — Войдите! rein — разговорный вариант; hereinkommen — отделяемый глагол.",
+            "example": "Die Tür ist offen, kommen Sie bitte herein.",
+            "example_ru": "Дверь открыта, заходите, пожалуйста."
+          }
+        ],
+        "alias_ids": [
+          "b1-herein-inward"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herein"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-303-1",
+      "alias_ids": [
+        "b1-herr-address"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-303-1",
+        "de": "der Herr",
+        "lemma": "Herr",
+        "ru": "господин (обращение)",
+        "uk": "",
+        "translations_ru": [
+          "господин (обращение)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Общение"
+        ],
+        "forms": "die Herren",
+        "definition_de": "Eine höfliche Anrede für einen Mann, meist vor seinem Nachnamen.",
+        "example": "Guten Morgen, Herr Keller.",
+        "example_ru": "Доброе утро, господин Келлер.",
+        "note": "Akkusativ и Dativ: den Herrn, dem Herrn.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "2051086be3887e92979a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "В обращении Herr Weber; mit Herrn Weber (Dativ); Sehr geehrter Herr Weber — начало письма.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Guten Morgen, Herr Weber!",
+            "ru": "Доброе утро, господин Вебер!"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-herr-address",
+            "de": "Herr + Nachname",
+            "part": "phrase",
+            "forms": "Herr · Herrn; die Herren",
+            "definition_de": "Höfliche Anrede eines Mannes vor seinem Familiennamen.",
+            "translations_ru": [
+              "господин (обращение)"
+            ],
+            "grammar_hint": "В обращении Herr Weber; mit Herrn Weber (Dativ); Sehr geehrter Herr Weber — начало письма.",
+            "example": "Guten Morgen, Herr Weber!",
+            "example_ru": "Доброе утро, господин Вебер!"
+          }
+        ],
+        "alias_ids": [
+          "b1-herr-address"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Herr"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_a3294e64806baa84d587",
+      "alias_ids": [
+        "b1-herstellen-manufacture"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a3294e64806baa84d587",
+        "de": "herstellen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "производить",
+          "изготавливать"
+        ],
+        "definition_de": "Ein Produkt machen oder produzieren.",
+        "forms": "stellt her · stellte her · hat hergestellt",
+        "example": "Die Firma stellt Fahrräder her.",
+        "example_ru": "Фирма производит велосипеды.",
+        "grammar_hint": "Отделяемая приставка her-; etwas (Akkusativ) herstellen.\nОтделяемая приставка her-; etwas (Akkusativ) herstellen; die Herstellung — производство.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/herstellen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Работа и профессии",
+        "topics": [
+          "Работа и профессии"
+        ],
+        "ru": "производить; изготавливать",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Aus Materialien oder Bestandteilen ein Produkt anfertigen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Werkstatt stellt Möbel aus Holz her.",
+            "ru": "Мастерская изготавливает деревянную мебель."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-herstellen-manufacture",
+            "de": "herstellen",
+            "part": "verb",
+            "forms": "stellt her · stellte her · hat hergestellt",
+            "definition_de": "Aus Materialien oder Bestandteilen ein Produkt anfertigen.",
+            "translations_ru": [
+              "производить",
+              "изготавливать"
+            ],
+            "grammar_hint": "Отделяемая приставка her-; etwas (Akkusativ) herstellen; die Herstellung — производство.",
+            "example": "Die Werkstatt stellt Möbel aus Holz her.",
+            "example_ru": "Мастерская изготавливает деревянную мебель."
+          }
+        ],
+        "alias_ids": [
+          "b1-herstellen-manufacture"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herstellen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_88f0c81d7a84149bdb5d",
+      "alias_ids": [
+        "b1-herunterladen-download"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_88f0c81d7a84149bdb5d",
+        "de": "herunterladen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "скачивать",
+          "скачать",
+          "загружать на устройство"
+        ],
+        "definition_de": "Daten aus dem Internet oder einem Netzwerk auf das eigene Gerät übertragen.",
+        "forms": "lädt herunter · lud herunter · hat heruntergeladen",
+        "example": "Ich lade die Datei auf mein Tablet herunter.",
+        "example_ru": "Я скачиваю файл на свой планшет.",
+        "grammar_hint": "В главном предложении herunter отделяется. В Perfekt: Ich habe die Datei heruntergeladen.\nОтделяемая приставка; runterladen — разговорное. Gegensatz: hochladen — загружать на сервер.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/herunterladen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цифровые технологии и связь",
+        "topics": [
+          "Цифровые технологии и связь",
+          "Техника и медиа"
+        ],
+        "ru": "скачивать; скачать; загружать на устройство",
+        "alternative_surfaces": [
+          "herunterladen / runterladen"
+        ],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Datei aus einem Netzwerk auf das eigene Gerät übertragen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Du kannst die Übungen als PDF herunterladen.",
+            "ru": "Ты можешь скачать упражнения в PDF."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-herunterladen-download",
+            "de": "herunterladen / runterladen",
+            "part": "verb",
+            "forms": "lädt herunter · lud herunter · hat heruntergeladen",
+            "definition_de": "Eine Datei aus einem Netzwerk auf das eigene Gerät übertragen.",
+            "translations_ru": [
+              "скачивать",
+              "загружать на устройство"
+            ],
+            "grammar_hint": "Отделяемая приставка; runterladen — разговорное. Gegensatz: hochladen — загружать на сервер.",
+            "example": "Du kannst die Übungen als PDF herunterladen.",
+            "example_ru": "Ты можешь скачать упражнения в PDF."
+          }
+        ],
+        "alias_ids": [
+          "b1-herunterladen-download"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 49,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herunterladen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,2851 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of indexed candidates 113–132 using stored definitions, examples and hints. Thirteen conditional same-sense merge proposals, not applied. Four contexts deferred, including a combined temporal record and a broad lower-level history/story definition. No independent CEFR or dictionary verification. Original IDs and levels unchanged.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    113,
+    132
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 4,
+  "followup_review": [
+    {
+      "id": "b1-gerade-now",
+      "issue": "Two lower IDs represent distinct temporal uses. Preserve both and determine migration strategy without duplicating progress; verify each level separately."
+    },
+    {
+      "id": "b1-geschichte-history",
+      "issue": "A2 definition includes past/history but example only narrative. Verify source scope and distinguish historical past, academic subject and story; coordinate with story merge."
+    },
+    {
+      "id": "b1-gern-preference",
+      "issue": "Preserve gern/gerne and comparison lieber/am liebsten; ensure renderer handles alternative forms."
+    },
+    {
+      "id": "b1-geschwister-siblings",
+      "issue": "Verify rare singular usage and preserve plural-first teaching."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 113,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same travel luggage sense; retain Gepäckstück and collocations.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 10,
+        "record": {
+          "id": "b1-gepaeck-luggage",
+          "de": "das Gepäck",
+          "lemma": "Gepäck",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "багаж",
+            "дорожные вещи"
+          ],
+          "definition_de": "Sachen, die man auf einer Reise mitnimmt.",
+          "example": "Unser Gepäck liegt noch im Auto.",
+          "example_ru": "Наш багаж ещё в машине.",
+          "forms": "обычно без множественного числа",
+          "grammar_hint": "ein Gepäckstück, zwei Gepäckstücke; mit leichtem Gepäck reisen.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gep%C3%A4ck"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 334,
+          "record": {
+            "id": "a1-253-1",
+            "de": "das Gepäck",
+            "lemma": "Gepäck",
+            "ru": "багаж",
+            "uk": "",
+            "translations_ru": [
+              "багаж"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "обычно только Singular",
+            "definition_de": "Die Taschen und Koffer, die man auf einer Reise mitnimmt.",
+            "example": "Ihr Gepäck ist schon im Bus.",
+            "example_ru": "Ваш багаж уже в автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "46d04f13893289b12b85"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-253-1",
+        "alias_id": "b1-gepaeck-luggage",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-253-1",
+          "de": "das Gepäck",
+          "lemma": "Gepäck",
+          "ru": "багаж; дорожные вещи",
+          "uk": "",
+          "translations_ru": [
+            "багаж",
+            "дорожные вещи"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия",
+            "Транспорт и путешествия"
+          ],
+          "forms": "обычно только Singular",
+          "definition_de": "Die Taschen und Koffer, die man auf einer Reise mitnimmt.",
+          "example": "Ihr Gepäck ist schon im Bus.",
+          "example_ru": "Ваш багаж уже в автобусе.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "46d04f13893289b12b85"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "ein Gepäckstück, zwei Gepäckstücke; mit leichtem Gepäck reisen.",
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "обычно без множественного числа"
+          ],
+          "alternative_definitions_de": [
+            "Sachen, die man auf einer Reise mitnimmt."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Unser Gepäck liegt noch im Auto.",
+              "ru": "Наш багаж ещё в машине."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Gepäck",
+              "part": "noun",
+              "forms": "обычно без множественного числа",
+              "definition_de": "Sachen, die man auf einer Reise mitnimmt.",
+              "translations_ru": [
+                "багаж",
+                "дорожные вещи"
+              ],
+              "grammar_hint": "ein Gepäckstück, zwei Gepäckstücke; mit leichtem Gepäck reisen.",
+              "example": "Unser Gepäck liegt noch im Auto.",
+              "example_ru": "Наш багаж ещё в машине."
+            }
+          ],
+          "alias_ids": [
+            "b1-gepaeck-luggage"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gep%C3%A4ck"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 114,
+      "decision": "retain_distinct_sense",
+      "reason": "Straight adjective vs temporal adverb; distinct meaning and function.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 11,
+        "record": {
+          "id": "b1-gerade-straight",
+          "de": "gerade",
+          "lemma": "gerade",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "прямой",
+            "ровный"
+          ],
+          "definition_de": "Ohne Krümmung oder schiefe Lage.",
+          "example": "Die Linie ist nicht ganz gerade.",
+          "example_ru": "Линия не совсем ровная.",
+          "forms": "gerade · gerader · am geradesten",
+          "grammar_hint": "eine gerade Linie; gerade stehen; Gegensatz: krumm / schief.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gerade"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 335,
+          "record": {
+            "id": "a1-254-1",
+            "de": "gerade",
+            "lemma": "gerade",
+            "ru": "сейчас; как раз",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "как раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "In diesem Moment.",
+            "example": "Ich bin gerade im Zug.",
+            "example_ru": "Я сейчас в поезде.",
+            "note": "gerade + Präsens — сейчас, в данный момент. Временное значение «только что» выделено отдельно в A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "90b6f425a186af963fff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 599,
+          "record": {
+            "id": "dict_09f5920982e232e76ac0-recent",
+            "de": "gerade",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "только что"
+            ],
+            "definition_de": "Vor einem sehr kurzen Moment.",
+            "example": "Der Bus ist gerade abgefahren.",
+            "example_ru": "Автобус только что уехал.",
+            "grammar_hint": "gerade + Perfekt часто обозначает недавнее действие; gerade + Präsens часто означает «сейчас»: Ich esse gerade.",
+            "usage_note": "Временное значение недавнего действия подтверждено примером в статье frisch, стр. 15; основное значение сейчас уже A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense",
+                "context": "frisch"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/gerade_soeben_direkt_knapp"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 115,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "B1 combines now and just now, already separated in A1 and A2. Do not map one ID to two targets automatically; stage split/migration review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 12,
+        "record": {
+          "id": "b1-gerade-now",
+          "de": "gerade",
+          "lemma": "gerade",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "сейчас",
+            "в данный момент",
+            "только что"
+          ],
+          "definition_de": "Zu diesem Zeitpunkt oder kurz zuvor.",
+          "example": "Ich kann nicht sprechen, ich koche gerade.",
+          "example_ru": "Я не могу говорить, я сейчас готовлю.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Präsens: gerade сейчас; Perfekt: Ich bin gerade angekommen — я только что приехала.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gerade"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 335,
+          "record": {
+            "id": "a1-254-1",
+            "de": "gerade",
+            "lemma": "gerade",
+            "ru": "сейчас; как раз",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "как раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "In diesem Moment.",
+            "example": "Ich bin gerade im Zug.",
+            "example_ru": "Я сейчас в поезде.",
+            "note": "gerade + Präsens — сейчас, в данный момент. Временное значение «только что» выделено отдельно в A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "90b6f425a186af963fff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 599,
+          "record": {
+            "id": "dict_09f5920982e232e76ac0-recent",
+            "de": "gerade",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "только что"
+            ],
+            "definition_de": "Vor einem sehr kurzen Moment.",
+            "example": "Der Bus ist gerade abgefahren.",
+            "example_ru": "Автобус только что уехал.",
+            "grammar_hint": "gerade + Perfekt часто обозначает недавнее действие; gerade + Präsens часто означает «сейчас»: Ich esse gerade.",
+            "usage_note": "Временное значение недавнего действия подтверждено примером в статье frisch, стр. 15; основное значение сейчас уже A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense",
+                "context": "frisch"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/gerade_soeben_direkt_knapp"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 116,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same direction without turning.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 13,
+        "record": {
+          "id": "b1-geradeaus-direction",
+          "de": "geradeaus",
+          "lemma": "geradeaus",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "прямо",
+            "по прямой"
+          ],
+          "definition_de": "In derselben Richtung weiter, ohne abzubiegen.",
+          "example": "Gehen Sie noch hundert Meter geradeaus.",
+          "example_ru": "Пройдите ещё сто метров прямо.",
+          "forms": "неизменяемое",
+          "grammar_hint": "geradeaus gehen / fahren; противопоставление: links oder rechts abbiegen.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/geradeaus"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 336,
+          "record": {
+            "id": "a1-255-1",
+            "de": "geradeaus",
+            "lemma": "geradeaus",
+            "ru": "прямо",
+            "uk": "",
+            "translations_ru": [
+              "прямо"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "Weiter in derselben Richtung, ohne abzubiegen.",
+            "example": "Gehen Sie hier geradeaus.",
+            "example_ru": "Здесь идите прямо.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "71f1d4744a0629e7a71c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-255-1",
+        "alias_id": "b1-geradeaus-direction",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-255-1",
+          "de": "geradeaus",
+          "lemma": "geradeaus",
+          "ru": "прямо; по прямой",
+          "uk": "",
+          "translations_ru": [
+            "прямо",
+            "по прямой"
+          ],
+          "part": "adv",
+          "level": "A1",
+          "topic": "Город",
+          "topics": [
+            "Город",
+            "Транспорт и путешествия"
+          ],
+          "forms": "",
+          "definition_de": "Weiter in derselben Richtung, ohne abzubiegen.",
+          "example": "Gehen Sie hier geradeaus.",
+          "example_ru": "Здесь идите прямо.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "71f1d4744a0629e7a71c"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "geradeaus gehen / fahren; противопоставление: links oder rechts abbiegen.",
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "неизменяемое"
+          ],
+          "alternative_definitions_de": [
+            "In derselben Richtung weiter, ohne abzubiegen."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Gehen Sie noch hundert Meter geradeaus.",
+              "ru": "Пройдите ещё сто метров прямо."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "geradeaus",
+              "part": "adv",
+              "forms": "неизменяемое",
+              "definition_de": "In derselben Richtung weiter, ohne abzubiegen.",
+              "translations_ru": [
+                "прямо",
+                "по прямой"
+              ],
+              "grammar_hint": "geradeaus gehen / fahren; противопоставление: links oder rechts abbiegen.",
+              "example": "Gehen Sie noch hundert Meter geradeaus.",
+              "example_ru": "Пройдите ещё сто метров прямо."
+            }
+          ],
+          "alias_ids": [
+            "b1-geradeaus-direction"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/geradeaus"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 117,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same device/tool sense and temperature-measurement example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 14,
+        "record": {
+          "id": "b1-geraet-device",
+          "de": "das Gerät",
+          "lemma": "Gerät",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "прибор",
+            "устройство",
+            "аппарат"
+          ],
+          "definition_de": "Ein Gegenstand, der eine technische Aufgabe erfüllt oder bei einer Tätigkeit hilft.",
+          "example": "Dieses Gerät misst die Temperatur im Zimmer.",
+          "example_ru": "Этот прибор измеряет температуру в комнате.",
+          "forms": "die Geräte",
+          "grammar_hint": "das Haushaltsgerät, das Elektrogerät; ein Gerät einschalten / ausschalten.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ger%C3%A4t"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 189,
+          "record": {
+            "id": "dict_937422275d2ae26d5627",
+            "de": "das Gerät",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "прибор",
+              "устройство"
+            ],
+            "definition_de": "Ein Gegenstand, mit dem man eine bestimmte Tätigkeit ausführen kann.",
+            "forms": "Plural · die Geräte",
+            "example": "Mit diesem Gerät kann man die Temperatur messen.",
+            "example_ru": "Этим прибором можно измерить температуру.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Ger%C3%A4t"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_937422275d2ae26d5627",
+        "alias_id": "b1-geraet-device",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "dict_937422275d2ae26d5627",
+          "de": "das Gerät",
+          "part": "noun",
+          "level": "A2",
+          "translations_ru": [
+            "прибор",
+            "устройство",
+            "аппарат"
+          ],
+          "definition_de": "Ein Gegenstand, mit dem man eine bestimmte Tätigkeit ausführen kann.",
+          "forms": "Plural · die Geräte",
+          "example": "Mit diesem Gerät kann man die Temperatur messen.",
+          "example_ru": "Этим прибором можно измерить температуру.",
+          "grammar_hint": "das Haushaltsgerät, das Elektrogerät; ein Gerät einschalten / ausschalten.",
+          "usage_note": "",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+              "page": 16,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ger%C3%A4t"
+            ],
+            "example": "integraticum_original"
+          },
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт",
+            "Техника и медиа"
+          ],
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "die Geräte"
+          ],
+          "alternative_definitions_de": [
+            "Ein Gegenstand, der eine technische Aufgabe erfüllt oder bei einer Tätigkeit hilft."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Dieses Gerät misst die Temperatur im Zimmer.",
+              "ru": "Этот прибор измеряет температуру в комнате."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Gerät",
+              "part": "noun",
+              "forms": "die Geräte",
+              "definition_de": "Ein Gegenstand, der eine technische Aufgabe erfüllt oder bei einer Tätigkeit hilft.",
+              "translations_ru": [
+                "прибор",
+                "устройство",
+                "аппарат"
+              ],
+              "grammar_hint": "das Haushaltsgerät, das Elektrogerät; ein Gerät einschalten / ausschalten.",
+              "example": "Dieses Gerät misst die Temperatur im Zimmer.",
+              "example_ru": "Этот прибор измеряет температуру в комнате."
+            }
+          ],
+          "alias_ids": [
+            "b1-geraet-device"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ger%C3%A4t"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 118,
+      "decision": "retain_distinct_sense",
+      "reason": "Court vs prepared dish.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 16,
+        "record": {
+          "id": "b1-gericht-court",
+          "de": "das Gericht",
+          "lemma": "Gericht",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "суд"
+          ],
+          "definition_de": "Eine staatliche Einrichtung, die rechtliche Streitfälle entscheidet.",
+          "example": "Das Gericht prüft morgen den Fall.",
+          "example_ru": "Суд завтра рассмотрит дело.",
+          "forms": "die Gerichte",
+          "grammar_hint": "vor Gericht stehen; vor Gericht gehen; Gericht не означает судью (der Richter / die Richterin).",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gericht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 259,
+          "record": {
+            "id": "dict_14c56314cfea7478459b",
+            "de": "das Gericht",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "блюдо"
+            ],
+            "definition_de": "Eine Speise, die man als Ganzes zubereitet oder serviert.",
+            "forms": "Plural · die Gerichte",
+            "example": "Dieses Gericht wird mit Reis und Gemüse serviert.",
+            "example_ru": "Это блюдо подают с рисом и овощами.",
+            "grammar_hint": "",
+            "usage_note": "Здесь речь о еде. В юридическом контексте das Gericht означает «суд».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gericht"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 119,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same prepared dish sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 17,
+        "record": {
+          "id": "b1-gericht-dish",
+          "de": "das Gericht",
+          "lemma": "Gericht",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "блюдо",
+            "кушанье"
+          ],
+          "definition_de": "Eine zubereitete Speise, die man serviert oder isst.",
+          "example": "Heute gibt es ein vegetarisches Gericht mit Reis.",
+          "example_ru": "Сегодня есть вегетарианское блюдо с рисом.",
+          "forms": "die Gerichte",
+          "grammar_hint": "ein warmes Gericht; das Lieblingsgericht; не путать с Gericht — суд.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gericht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 259,
+          "record": {
+            "id": "dict_14c56314cfea7478459b",
+            "de": "das Gericht",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "блюдо"
+            ],
+            "definition_de": "Eine Speise, die man als Ganzes zubereitet oder serviert.",
+            "forms": "Plural · die Gerichte",
+            "example": "Dieses Gericht wird mit Reis und Gemüse serviert.",
+            "example_ru": "Это блюдо подают с рисом и овощами.",
+            "grammar_hint": "",
+            "usage_note": "Здесь речь о еде. В юридическом контексте das Gericht означает «суд».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gericht"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_14c56314cfea7478459b",
+        "alias_id": "b1-gericht-dish",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "dict_14c56314cfea7478459b",
+          "de": "das Gericht",
+          "part": "noun",
+          "level": "A2",
+          "translations_ru": [
+            "блюдо",
+            "кушанье"
+          ],
+          "definition_de": "Eine Speise, die man als Ganzes zubereitet oder serviert.",
+          "forms": "Plural · die Gerichte",
+          "example": "Dieses Gericht wird mit Reis und Gemüse serviert.",
+          "example_ru": "Это блюдо подают с рисом и овощами.",
+          "grammar_hint": "ein warmes Gericht; das Lieblingsgericht; не путать с Gericht — суд.",
+          "usage_note": "Здесь речь о еде. В юридическом контексте das Gericht означает «суд».",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+              "page": 16,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gericht"
+            ],
+            "example": "integraticum_original"
+          },
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "die Gerichte"
+          ],
+          "alternative_definitions_de": [
+            "Eine zubereitete Speise, die man serviert oder isst."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Heute gibt es ein vegetarisches Gericht mit Reis.",
+              "ru": "Сегодня есть вегетарианское блюдо с рисом."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Gericht",
+              "part": "noun",
+              "forms": "die Gerichte",
+              "definition_de": "Eine zubereitete Speise, die man serviert oder isst.",
+              "translations_ru": [
+                "блюдо",
+                "кушанье"
+              ],
+              "grammar_hint": "ein warmes Gericht; das Lieblingsgericht; не путать с Gericht — суд.",
+              "example": "Heute gibt es ein vegetarisches Gericht mit Reis.",
+              "example_ru": "Сегодня есть вегетарианское блюдо с рисом."
+            }
+          ],
+          "alias_ids": [
+            "b1-gericht-dish"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gericht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 120,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same preference/pleasure sense; retain gerne variant and comparative forms.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 19,
+        "record": {
+          "id": "b1-gern-preference",
+          "de": "gern / gerne",
+          "lemma": "gern",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "охотно",
+            "с удовольствием",
+            "любить (делать что-либо)"
+          ],
+          "definition_de": "Drückt aus, dass man eine Tätigkeit mag.",
+          "example": "Am Wochenende lese ich gern Krimis.",
+          "example_ru": "По выходным я люблю читать детективы.",
+          "forms": "gern / gerne · lieber · am liebsten",
+          "grammar_hint": "gern + глагол: Ich tanze gern. Lieber — предпочтение, am liebsten — больше всего.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gern"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 337,
+          "record": {
+            "id": "a1-256-1",
+            "de": "gern",
+            "lemma": "gern",
+            "ru": "охотно; с удовольствием",
+            "uk": "",
+            "translations_ru": [
+              "охотно",
+              "с удовольствием"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "lieber · am liebsten",
+            "definition_de": "Mit Freude oder Vergnügen.",
+            "example": "Ich lese gern im Garten.",
+            "example_ru": "Я люблю читать в саду.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "65dafb982be87d3c1034"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-256-1",
+        "alias_id": "b1-gern-preference",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-256-1",
+          "de": "gern",
+          "lemma": "gern",
+          "ru": "охотно; с удовольствием; любить (делать что-либо)",
+          "uk": "",
+          "translations_ru": [
+            "охотно",
+            "с удовольствием",
+            "любить (делать что-либо)"
+          ],
+          "part": "adv",
+          "level": "A1",
+          "topic": "Повседневность",
+          "topics": [
+            "Повседневность",
+            "Досуг и культура"
+          ],
+          "forms": "lieber · am liebsten",
+          "definition_de": "Mit Freude oder Vergnügen.",
+          "example": "Ich lese gern im Garten.",
+          "example_ru": "Я люблю читать в саду.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "65dafb982be87d3c1034"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "gern + глагол: Ich tanze gern. Lieber — предпочтение, am liebsten — больше всего.",
+          "alternative_surfaces": [
+            "gern / gerne"
+          ],
+          "alternative_forms": [
+            "gern / gerne · lieber · am liebsten"
+          ],
+          "alternative_definitions_de": [
+            "Drückt aus, dass man eine Tätigkeit mag."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Am Wochenende lese ich gern Krimis.",
+              "ru": "По выходным я люблю читать детективы."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "gern / gerne",
+              "part": "adv",
+              "forms": "gern / gerne · lieber · am liebsten",
+              "definition_de": "Drückt aus, dass man eine Tätigkeit mag.",
+              "translations_ru": [
+                "охотно",
+                "с удовольствием",
+                "любить (делать что-либо)"
+              ],
+              "grammar_hint": "gern + глагол: Ich tanze gern. Lieber — предпочтение, am liebsten — больше всего.",
+              "example": "Am Wochenende lese ich gern Krimis.",
+              "example_ru": "По выходным я люблю читать детективы."
+            }
+          ],
+          "alias_ids": [
+            "b1-gern-preference"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gern"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 121,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same retail shop sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 21,
+        "record": {
+          "id": "b1-geschaeft-shop",
+          "de": "das Geschäft",
+          "lemma": "Geschäft",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "магазин",
+            "торговая точка"
+          ],
+          "definition_de": "Ein Ort, an dem Waren verkauft werden.",
+          "example": "Neben dem Bahnhof gibt es ein kleines Geschäft.",
+          "example_ru": "Рядом с вокзалом есть небольшой магазин.",
+          "forms": "die Geschäfte",
+          "grammar_hint": "in einem Geschäft einkaufen; ein Geschäft öffnen / schließen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesch%C3%A4ft"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 338,
+          "record": {
+            "id": "a1-257-1",
+            "de": "das Geschäft",
+            "lemma": "Geschäft",
+            "ru": "магазин",
+            "uk": "",
+            "translations_ru": [
+              "магазин"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Geschäfte",
+            "definition_de": "Ein Laden, in dem Waren verkauft werden.",
+            "example": "Das Geschäft öffnet um neun.",
+            "example_ru": "Магазин открывается в девять.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "9ff3ba5395c1fc0700e3"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-257-1",
+        "alias_id": "b1-geschaeft-shop",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-257-1",
+          "de": "das Geschäft",
+          "lemma": "Geschäft",
+          "ru": "магазин; торговая точка",
+          "uk": "",
+          "translations_ru": [
+            "магазин",
+            "торговая точка"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Покупки",
+          "topics": [
+            "Покупки",
+            "Покупки и услуги"
+          ],
+          "forms": "die Geschäfte",
+          "definition_de": "Ein Laden, in dem Waren verkauft werden.",
+          "example": "Das Geschäft öffnet um neun.",
+          "example_ru": "Магазин открывается в девять.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "9ff3ba5395c1fc0700e3"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "in einem Geschäft einkaufen; ein Geschäft öffnen / schließen.",
+          "alternative_surfaces": [],
+          "alternative_forms": [],
+          "alternative_definitions_de": [
+            "Ein Ort, an dem Waren verkauft werden."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Neben dem Bahnhof gibt es ein kleines Geschäft.",
+              "ru": "Рядом с вокзалом есть небольшой магазин."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Geschäft",
+              "part": "noun",
+              "forms": "die Geschäfte",
+              "definition_de": "Ein Ort, an dem Waren verkauft werden.",
+              "translations_ru": [
+                "магазин",
+                "торговая точка"
+              ],
+              "grammar_hint": "in einem Geschäft einkaufen; ein Geschäft öffnen / schließen.",
+              "example": "Neben dem Bahnhof gibt es ein kleines Geschäft.",
+              "example_ru": "Рядом с вокзалом есть небольшой магазин."
+            }
+          ],
+          "alias_ids": [
+            "b1-geschaeft-shop"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesch%C3%A4ft"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 122,
+      "decision": "retain_distinct_sense",
+      "reason": "Commercial transaction/business vs retail shop.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 22,
+        "record": {
+          "id": "b1-geschaeft-business",
+          "de": "das Geschäft",
+          "lemma": "Geschäft",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сделка",
+            "дело",
+            "коммерческая деятельность"
+          ],
+          "definition_de": "Eine Vereinbarung oder Tätigkeit mit wirtschaftlichem Zweck.",
+          "example": "Die beiden Firmen haben ein gutes Geschäft gemacht.",
+          "example_ru": "Обе фирмы заключили выгодную сделку.",
+          "forms": "die Geschäfte",
+          "grammar_hint": "ein Geschäft machen / abschließen; Geschäfte machen. Дополнительное значение слова; в Goethe на стр. 45 непосредственно показан магазин.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "headword"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesch%C3%A4ft"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 338,
+          "record": {
+            "id": "a1-257-1",
+            "de": "das Geschäft",
+            "lemma": "Geschäft",
+            "ru": "магазин",
+            "uk": "",
+            "translations_ru": [
+              "магазин"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Geschäfte",
+            "definition_de": "Ein Laden, in dem Waren verkauft werden.",
+            "example": "Das Geschäft öffnet um neun.",
+            "example_ru": "Магазин открывается в девять.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "9ff3ba5395c1fc0700e3"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 123,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same gift sense; retain case constructions.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 25,
+        "record": {
+          "id": "b1-geschenk-present",
+          "de": "das Geschenk",
+          "lemma": "Geschenk",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "подарок"
+          ],
+          "definition_de": "Etwas, das man einer anderen Person gibt, ohne dafür eine Bezahlung zu erwarten.",
+          "example": "Wir suchen ein Geschenk für unsere Nachbarin.",
+          "example_ru": "Мы ищем подарок для нашей соседки.",
+          "forms": "die Geschenke",
+          "grammar_hint": "ein Geschenk für + Akkusativ; jemandem (Dativ) ein Geschenk (Akkusativ) machen.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschenk"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 339,
+          "record": {
+            "id": "a1-258-1",
+            "de": "das Geschenk",
+            "lemma": "Geschenk",
+            "ru": "подарок; дар (в значении подарка)",
+            "uk": "",
+            "translations_ru": [
+              "подарок",
+              "дар (в значении подарка)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Geschenke",
+            "definition_de": "Etwas, das man jemandem gibt, ohne Geld dafür zu verlangen.",
+            "example": "Das ist ein Geschenk für dich.",
+            "example_ru": "Это подарок для тебя.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "c0c8049146a226f5b835"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-258-1",
+        "alias_id": "b1-geschenk-present",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-258-1",
+          "de": "das Geschenk",
+          "lemma": "Geschenk",
+          "ru": "подарок; дар (в значении подарка)",
+          "uk": "",
+          "translations_ru": [
+            "подарок",
+            "дар (в значении подарка)"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Общение",
+          "topics": [
+            "Общение",
+            "Семья и отношения"
+          ],
+          "forms": "die Geschenke",
+          "definition_de": "Etwas, das man jemandem gibt, ohne Geld dafür zu verlangen.",
+          "example": "Das ist ein Geschenk für dich.",
+          "example_ru": "Это подарок для тебя.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "c0c8049146a226f5b835"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "ein Geschenk für + Akkusativ; jemandem (Dativ) ein Geschenk (Akkusativ) machen.",
+          "alternative_surfaces": [],
+          "alternative_forms": [],
+          "alternative_definitions_de": [
+            "Etwas, das man einer anderen Person gibt, ohne dafür eine Bezahlung zu erwarten."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Wir suchen ein Geschenk für unsere Nachbarin.",
+              "ru": "Мы ищем подарок для нашей соседки."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Geschenk",
+              "part": "noun",
+              "forms": "die Geschenke",
+              "definition_de": "Etwas, das man einer anderen Person gibt, ohne dafür eine Bezahlung zu erwarten.",
+              "translations_ru": [
+                "подарок"
+              ],
+              "grammar_hint": "ein Geschenk für + Akkusativ; jemandem (Dativ) ein Geschenk (Akkusativ) machen.",
+              "example": "Wir suchen ein Geschenk für unsere Nachbarin.",
+              "example_ru": "Мы ищем подарок для нашей соседки."
+            }
+          ],
+          "alias_ids": [
+            "b1-geschenk-present"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschenk"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 124,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "A2 definition already includes history/past but only story is exemplified; preserve history and academic subject pending source scope and split review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 26,
+        "record": {
+          "id": "b1-geschichte-history",
+          "de": "die Geschichte",
+          "lemma": "Geschichte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "история",
+            "прошлое",
+            "история как учебный предмет"
+          ],
+          "definition_de": "Vergangene Ereignisse und ihre Entwicklung oder das Fach darüber.",
+          "example": "Im Museum lernen wir viel über die Geschichte der Stadt.",
+          "example_ru": "В музее мы многое узнаём об истории города.",
+          "forms": "die Geschichten; в значении учебного предмета обычно Singular",
+          "grammar_hint": "die Geschichte eines Landes; Geschichte studieren. Не путать с рассказом.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschichte"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 373,
+          "record": {
+            "id": "dict_e761ae0672be842439a2",
+            "de": "die Geschichte",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "история",
+              "рассказ"
+            ],
+            "definition_de": "Eine Erzählung über Ereignisse oder die Vergangenheit von Menschen und Ländern.",
+            "forms": "Plural · die Geschichten (рассказы); история как область знаний без Plural",
+            "example": "Meine Großmutter erzählt mir eine Geschichte.",
+            "example_ru": "Моя бабушка рассказывает мне историю.",
+            "grammar_hint": "",
+            "usage_note": "die Geschichte — рассказ (eine Geschichte erzählen); история как прошлое или учебный предмет (Geschichte lernen), обычно без Plural. В Швейцарии: Grossmutter.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Geschichte",
+                "https://www.duden.de/rechtschreibung/Geschichte"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 125,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same narrative/story sense as lower-level example; do not erase broader A2 definition; reconcile history decision separately.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 27,
+        "record": {
+          "id": "b1-geschichte-story",
+          "de": "die Geschichte",
+          "lemma": "Geschichte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "рассказ",
+            "история",
+            "повествование"
+          ],
+          "definition_de": "Eine mündliche oder schriftliche Darstellung von Ereignissen.",
+          "example": "Er erzählt uns eine lustige Geschichte aus seiner Kindheit.",
+          "example_ru": "Он рассказывает нам смешную историю из своего детства.",
+          "forms": "die Geschichten",
+          "grammar_hint": "jemandem (Dativ) eine Geschichte (Akkusativ) erzählen; eine Geschichte lesen / erfinden.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschichte"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 373,
+          "record": {
+            "id": "dict_e761ae0672be842439a2",
+            "de": "die Geschichte",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "история",
+              "рассказ"
+            ],
+            "definition_de": "Eine Erzählung über Ereignisse oder die Vergangenheit von Menschen und Ländern.",
+            "forms": "Plural · die Geschichten (рассказы); история как область знаний без Plural",
+            "example": "Meine Großmutter erzählt mir eine Geschichte.",
+            "example_ru": "Моя бабушка рассказывает мне историю.",
+            "grammar_hint": "",
+            "usage_note": "die Geschichte — рассказ (eine Geschichte erzählen); история как прошлое или учебный предмет (Geschichte lernen), обычно без Plural. В Швейцарии: Grossmutter.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Geschichte",
+                "https://www.duden.de/rechtschreibung/Geschichte"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_e761ae0672be842439a2",
+        "alias_id": "b1-geschichte-story",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "dict_e761ae0672be842439a2",
+          "de": "die Geschichte",
+          "part": "noun",
+          "level": "A2",
+          "translations_ru": [
+            "история",
+            "рассказ",
+            "повествование"
+          ],
+          "definition_de": "Eine Erzählung über Ereignisse oder die Vergangenheit von Menschen und Ländern.",
+          "forms": "Plural · die Geschichten (рассказы); история как область знаний без Plural",
+          "example": "Meine Großmutter erzählt mir eine Geschichte.",
+          "example_ru": "Моя бабушка рассказывает мне историю.",
+          "grammar_hint": "jemandem (Dativ) eine Geschichte (Akkusativ) erzählen; eine Geschichte lesen / erfinden.",
+          "usage_note": "die Geschichte — рассказ (eine Geschichte erzählen); история как прошлое или учебный предмет (Geschichte lernen), обычно без Plural. В Швейцарии: Grossmutter.",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+              "page": 16,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschichte",
+              "https://www.duden.de/rechtschreibung/Geschichte"
+            ],
+            "example": "integraticum_original"
+          },
+          "topic": "Искусство, музыка и развлечения",
+          "topics": [
+            "Искусство, музыка и развлечения",
+            "Досуг и культура"
+          ],
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "die Geschichten"
+          ],
+          "alternative_definitions_de": [
+            "Eine mündliche oder schriftliche Darstellung von Ereignissen."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Er erzählt uns eine lustige Geschichte aus seiner Kindheit.",
+              "ru": "Он рассказывает нам смешную историю из своего детства."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "die Geschichte",
+              "part": "noun",
+              "forms": "die Geschichten",
+              "definition_de": "Eine mündliche oder schriftliche Darstellung von Ereignissen.",
+              "translations_ru": [
+                "рассказ",
+                "история",
+                "повествование"
+              ],
+              "grammar_hint": "jemandem (Dativ) eine Geschichte (Akkusativ) erzählen; eine Geschichte lesen / erfinden.",
+              "example": "Er erzählt uns eine lustige Geschichte aus seiner Kindheit.",
+              "example_ru": "Он рассказывает нам смешную историю из своего детства."
+            }
+          ],
+          "alias_ids": [
+            "b1-geschichte-story"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschichte"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 126,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same dishes/tableware collective sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 29,
+        "record": {
+          "id": "b1-geschirr-dishes",
+          "de": "das Geschirr",
+          "lemma": "Geschirr",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "посуда"
+          ],
+          "definition_de": "Teller, Tassen, Schüsseln und ähnliche Dinge zum Essen oder Kochen.",
+          "example": "Nach dem Abendessen räume ich das Geschirr weg.",
+          "example_ru": "После ужина я убираю посуду.",
+          "forms": "в этом значении обычно без множественного числа",
+          "grammar_hint": "Geschirr spülen / abwaschen; die Geschirrspülmaschine. Собирательное существительное.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschirr"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 50,
+          "record": {
+            "id": "dict_bd0bd8c53aeff1e57cc1",
+            "de": "das Geschirr",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "посуда"
+            ],
+            "definition_de": "Teller, Tassen und anderes, das man beim Essen und Trinken benutzt.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Nach dem Essen räume ich das Geschirr in die Spülmaschine.",
+            "example_ru": "После еды я складываю посуду в посудомоечную машину.",
+            "grammar_hint": "",
+            "usage_note": "Здесь речь о посуде для еды и питья. В других контекстах у слова есть другие значения.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Geschirr"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_bd0bd8c53aeff1e57cc1",
+        "alias_id": "b1-geschirr-dishes",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "dict_bd0bd8c53aeff1e57cc1",
+          "de": "das Geschirr",
+          "part": "noun",
+          "level": "A2",
+          "translations_ru": [
+            "посуда"
+          ],
+          "definition_de": "Teller, Tassen und anderes, das man beim Essen und Trinken benutzt.",
+          "forms": "В этом значении обычно в единственном числе",
+          "example": "Nach dem Essen räume ich das Geschirr in die Spülmaschine.",
+          "example_ru": "После еды я складываю посуду в посудомоечную машину.",
+          "grammar_hint": "Geschirr spülen / abwaschen; die Geschirrspülmaschine. Собирательное существительное.",
+          "usage_note": "Здесь речь о посуде для еды и питья. В других контекстах у слова есть другие значения.",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+              "page": 16,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschirr"
+            ],
+            "example": "integraticum_original"
+          },
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "в этом значении обычно без множественного числа"
+          ],
+          "alternative_definitions_de": [
+            "Teller, Tassen, Schüsseln und ähnliche Dinge zum Essen oder Kochen."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Nach dem Abendessen räume ich das Geschirr weg.",
+              "ru": "После ужина я убираю посуду."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Geschirr",
+              "part": "noun",
+              "forms": "в этом значении обычно без множественного числа",
+              "definition_de": "Teller, Tassen, Schüsseln und ähnliche Dinge zum Essen oder Kochen.",
+              "translations_ru": [
+                "посуда"
+              ],
+              "grammar_hint": "Geschirr spülen / abwaschen; die Geschirrspülmaschine. Собирательное существительное.",
+              "example": "Nach dem Abendessen räume ich das Geschirr weg.",
+              "example_ru": "После ужина я убираю посуду."
+            }
+          ],
+          "alias_ids": [
+            "b1-geschirr-dishes"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschirr"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 127,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same siblings sense; retain plural and singular usage guidance.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 4,
+        "record": {
+          "id": "b1-geschwister-siblings",
+          "de": "die Geschwister",
+          "lemma": "Geschwister",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "братья и сёстры",
+            "родные братья и сёстры"
+          ],
+          "definition_de": "Brüder und Schwestern einer Person.",
+          "example": "Meine Geschwister wohnen in verschiedenen Städten.",
+          "example_ru": "Мои братья и сёстры живут в разных городах.",
+          "forms": "Plural: die Geschwister; Dativ: den Geschwistern",
+          "grammar_hint": "Hast du Geschwister? В обычной речи для одного человека: ein Bruder / eine Schwester; das Geschwister — редкое специальное употребление.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschwister"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 340,
+          "record": {
+            "id": "a1-259-1",
+            "de": "die Geschwister",
+            "lemma": "Geschwister",
+            "ru": "родные братья и сёстры",
+            "uk": "",
+            "translations_ru": [
+              "родные братья и сёстры"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "только Plural в этом употреблении",
+            "definition_de": "Die Brüder und Schwestern einer Person.",
+            "example": "Hast du Geschwister?",
+            "example_ru": "У тебя есть братья или сёстры?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "078674c9f87e8c2d8aea"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-259-1",
+        "alias_id": "b1-geschwister-siblings",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-259-1",
+          "de": "die Geschwister",
+          "lemma": "Geschwister",
+          "ru": "родные братья и сёстры; братья и сёстры",
+          "uk": "",
+          "translations_ru": [
+            "родные братья и сёстры",
+            "братья и сёстры"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Семья",
+          "topics": [
+            "Семья",
+            "Семья и отношения"
+          ],
+          "forms": "только Plural в этом употреблении",
+          "definition_de": "Die Brüder und Schwestern einer Person.",
+          "example": "Hast du Geschwister?",
+          "example_ru": "У тебя есть братья или сёстры?",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "078674c9f87e8c2d8aea"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "Hast du Geschwister? В обычной речи для одного человека: ein Bruder / eine Schwester; das Geschwister — редкое специальное употребление.",
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "Plural: die Geschwister; Dativ: den Geschwistern"
+          ],
+          "alternative_definitions_de": [
+            "Brüder und Schwestern einer Person."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Meine Geschwister wohnen in verschiedenen Städten.",
+              "ru": "Мои братья и сёстры живут в разных городах."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "die Geschwister",
+              "part": "noun",
+              "forms": "Plural: die Geschwister; Dativ: den Geschwistern",
+              "definition_de": "Brüder und Schwestern einer Person.",
+              "translations_ru": [
+                "братья и сёстры",
+                "родные братья и сёстры"
+              ],
+              "grammar_hint": "Hast du Geschwister? В обычной речи для одного человека: ein Bruder / eine Schwester; das Geschwister — редкое специальное употребление.",
+              "example": "Meine Geschwister wohnen in verschiedenen Städten.",
+              "example_ru": "Мои братья и сёстры живут в разных городах."
+            }
+          ],
+          "alias_ids": [
+            "b1-geschwister-siblings"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Geschwister"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 128,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same anatomical face sense and reflexive Dativ construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 9,
+        "record": {
+          "id": "b1-gesicht-face",
+          "de": "das Gesicht",
+          "lemma": "Gesicht",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лицо"
+          ],
+          "definition_de": "Der vordere Teil des Kopfes mit Augen, Nase und Mund.",
+          "example": "Das Kind hat Schokolade im Gesicht.",
+          "example_ru": "У ребёнка на лице шоколад.",
+          "forms": "die Gesichter",
+          "grammar_hint": "sich (Dativ) das Gesicht (Akkusativ) waschen: Ich wasche mir das Gesicht.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesicht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 379,
+          "record": {
+            "id": "dict_5ba3426b9f2e8bb0d99e",
+            "de": "das Gesicht",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "лицо"
+            ],
+            "definition_de": "Der vordere Teil des menschlichen Kopfes mit Augen, Nase und Mund.",
+            "forms": "Plural · die Gesichter",
+            "example": "Sie wäscht sich jeden Morgen das Gesicht.",
+            "example_ru": "Она каждое утро умывается.",
+            "grammar_hint": "sich (Dativ) das Gesicht (Akkusativ) waschen: Ich wasche mir das Gesicht. У mir видно Dativ, у sich форма совпадает с Akkusativ.",
+            "usage_note": "ein freundliches Gesicht — приветливое лицо. Другие значения не подтверждены этой статьёй Goethe.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gesicht"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_5ba3426b9f2e8bb0d99e",
+        "alias_id": "b1-gesicht-face",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "dict_5ba3426b9f2e8bb0d99e",
+          "de": "das Gesicht",
+          "part": "noun",
+          "level": "A2",
+          "translations_ru": [
+            "лицо"
+          ],
+          "definition_de": "Der vordere Teil des menschlichen Kopfes mit Augen, Nase und Mund.",
+          "forms": "Plural · die Gesichter",
+          "example": "Sie wäscht sich jeden Morgen das Gesicht.",
+          "example_ru": "Она каждое утро умывается.",
+          "grammar_hint": "sich (Dativ) das Gesicht (Akkusativ) waschen: Ich wasche mir das Gesicht. У mir видно Dativ, у sich форма совпадает с Akkusativ.\nsich (Dativ) das Gesicht (Akkusativ) waschen: Ich wasche mir das Gesicht.",
+          "usage_note": "ein freundliches Gesicht — приветливое лицо. Другие значения не подтверждены этой статьёй Goethe.",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+              "page": 16,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesicht"
+            ],
+            "example": "integraticum_original"
+          },
+          "topic": "Здоровье и тело",
+          "topics": [
+            "Здоровье и тело",
+            "Здоровье"
+          ],
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "die Gesichter"
+          ],
+          "alternative_definitions_de": [
+            "Der vordere Teil des Kopfes mit Augen, Nase und Mund."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Das Kind hat Schokolade im Gesicht.",
+              "ru": "У ребёнка на лице шоколад."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Gesicht",
+              "part": "noun",
+              "forms": "die Gesichter",
+              "definition_de": "Der vordere Teil des Kopfes mit Augen, Nase und Mund.",
+              "translations_ru": [
+                "лицо"
+              ],
+              "grammar_hint": "sich (Dativ) das Gesicht (Akkusativ) waschen: Ich wasche mir das Gesicht.",
+              "example": "Das Kind hat Schokolade im Gesicht.",
+              "example_ru": "У ребёнка на лице шоколад."
+            }
+          ],
+          "alias_ids": [
+            "b1-gesicht-face"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesicht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 129,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Facial expression vs anatomical face; related metonymic usage, preserve collocations pending level review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 10,
+        "record": {
+          "id": "b1-gesicht-expression",
+          "de": "das Gesicht",
+          "lemma": "Gesicht",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "выражение лица",
+            "мина"
+          ],
+          "definition_de": "Der Ausdruck, den die Züge einer Person zeigen.",
+          "example": "Warum machst du so ein ernstes Gesicht?",
+          "example_ru": "Почему у тебя такое серьёзное выражение лица?",
+          "forms": "die Gesichter",
+          "grammar_hint": "ein langes Gesicht machen — выглядеть разочарованным; ein freundliches Gesicht machen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesicht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 379,
+          "record": {
+            "id": "dict_5ba3426b9f2e8bb0d99e",
+            "de": "das Gesicht",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "лицо"
+            ],
+            "definition_de": "Der vordere Teil des menschlichen Kopfes mit Augen, Nase und Mund.",
+            "forms": "Plural · die Gesichter",
+            "example": "Sie wäscht sich jeden Morgen das Gesicht.",
+            "example_ru": "Она каждое утро умывается.",
+            "grammar_hint": "sich (Dativ) das Gesicht (Akkusativ) waschen: Ich wasche mir das Gesicht. У mir видно Dativ, у sich форма совпадает с Akkusativ.",
+            "usage_note": "ein freundliches Gesicht — приветливое лицо. Другие значения не подтверждены этой статьёй Goethe.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gesicht"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 130,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same conversation sense; retain mit/über case patterns.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 12,
+        "record": {
+          "id": "b1-gespraech-conversation",
+          "de": "das Gespräch",
+          "lemma": "Gespräch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "разговор",
+            "беседа"
+          ],
+          "definition_de": "Ein Austausch von Gedanken oder Informationen durch Sprechen.",
+          "example": "Nach dem Unterricht hatte ich ein Gespräch mit der Lehrerin.",
+          "example_ru": "После урока у меня состоялся разговор с преподавательницей.",
+          "forms": "die Gespräche",
+          "grammar_hint": "ein Gespräch mit + Dativ führen; ein Gespräch über + Akkusativ.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gespr%C3%A4ch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 341,
+          "record": {
+            "id": "a1-260-1",
+            "de": "das Gespräch",
+            "lemma": "Gespräch",
+            "ru": "разговор; беседа",
+            "uk": "",
+            "translations_ru": [
+              "разговор",
+              "беседа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Gespräche",
+            "definition_de": "Ein Austausch, bei dem Personen miteinander sprechen.",
+            "example": "Das Gespräch beginnt um zwei.",
+            "example_ru": "Разговор начнётся в два.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "c5cfea70e8d269690239"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-260-1",
+        "alias_id": "b1-gespraech-conversation",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-260-1",
+          "de": "das Gespräch",
+          "lemma": "Gespräch",
+          "ru": "разговор; беседа",
+          "uk": "",
+          "translations_ru": [
+            "разговор",
+            "беседа"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "forms": "die Gespräche",
+          "definition_de": "Ein Austausch, bei dem Personen miteinander sprechen.",
+          "example": "Das Gespräch beginnt um zwei.",
+          "example_ru": "Разговор начнётся в два.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "c5cfea70e8d269690239"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "ein Gespräch mit + Dativ führen; ein Gespräch über + Akkusativ.",
+          "alternative_surfaces": [],
+          "alternative_forms": [],
+          "alternative_definitions_de": [
+            "Ein Austausch von Gedanken oder Informationen durch Sprechen."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Nach dem Unterricht hatte ich ein Gespräch mit der Lehrerin.",
+              "ru": "После урока у меня состоялся разговор с преподавательницей."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "das Gespräch",
+              "part": "noun",
+              "forms": "die Gespräche",
+              "definition_de": "Ein Austausch von Gedanken oder Informationen durch Sprechen.",
+              "translations_ru": [
+                "разговор",
+                "беседа"
+              ],
+              "grammar_hint": "ein Gespräch mit + Dativ führen; ein Gespräch über + Akkusativ.",
+              "example": "Nach dem Unterricht hatte ich ein Gespräch mit der Lehrerin.",
+              "example_ru": "После урока у меня состоялся разговор с преподавательницей."
+            }
+          ],
+          "alias_ids": [
+            "b1-gespraech-conversation"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gespr%C3%A4ch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 131,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Telephone conversation is a specialization of general conversation; preserve phone context pending source and exercise review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 13,
+        "record": {
+          "id": "b1-gespraech-phone",
+          "de": "das Gespräch",
+          "lemma": "Gespräch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "телефонный разговор",
+            "звонок"
+          ],
+          "definition_de": "Ein mündlicher Austausch über das Telefon.",
+          "example": "Das Gespräch mit der Arztpraxis hat nur fünf Minuten gedauert.",
+          "example_ru": "Телефонный разговор с врачебной практикой длился всего пять минут.",
+          "forms": "die Gespräche",
+          "grammar_hint": "В этом контексте часто Telefonat / Telefongespräch; ein Gespräch annehmen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gespr%C3%A4ch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 341,
+          "record": {
+            "id": "a1-260-1",
+            "de": "das Gespräch",
+            "lemma": "Gespräch",
+            "ru": "разговор; беседа",
+            "uk": "",
+            "translations_ru": [
+              "разговор",
+              "беседа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Gespräche",
+            "definition_de": "Ein Austausch, bei dem Personen miteinander sprechen.",
+            "example": "Das Gespräch beginnt um zwei.",
+            "example_ru": "Разговор начнётся в два.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "c5cfea70e8d269690239"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 132,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same previous-day adverb; retain V2 reminder.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 14,
+        "record": {
+          "id": "b1-gestern-yesterday",
+          "de": "gestern",
+          "lemma": "gestern",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "вчера"
+          ],
+          "definition_de": "Am Tag unmittelbar vor heute.",
+          "example": "Gestern habe ich meine Nachbarin besucht.",
+          "example_ru": "Вчера я навестила соседку.",
+          "forms": "неизменяемое",
+          "grammar_hint": "gestern Abend / gestern Morgen; если gestern на первом месте, спрягаемый глагол на втором: Gestern war ich zu Hause.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gestern"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 342,
+          "record": {
+            "id": "a1-261-1",
+            "de": "gestern",
+            "lemma": "gestern",
+            "ru": "вчера",
+            "uk": "",
+            "translations_ru": [
+              "вчера"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Am Tag vor heute.",
+            "example": "Gestern war ich zu Hause.",
+            "example_ru": "Вчера я была дома.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "881131cddeb158aac6f7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-261-1",
+        "alias_id": "b1-gestern-yesterday",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope, reconcile prior intra-B1 overlays, preserve all original examples, morphology and metadata; verify exercise rendering and progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-261-1",
+          "de": "gestern",
+          "lemma": "gestern",
+          "ru": "вчера",
+          "uk": "",
+          "translations_ru": [
+            "вчера"
+          ],
+          "part": "adv",
+          "level": "A1",
+          "topic": "Время",
+          "topics": [
+            "Время",
+            "Время и даты"
+          ],
+          "forms": "",
+          "definition_de": "Am Tag vor heute.",
+          "example": "Gestern war ich zu Hause.",
+          "example_ru": "Вчера я была дома.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 16,
+              "row_id": "881131cddeb158aac6f7"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "gestern Abend / gestern Morgen; если gestern на первом месте, спрягаемый глагол на втором: Gestern war ich zu Hause.",
+          "alternative_surfaces": [],
+          "alternative_forms": [
+            "неизменяемое"
+          ],
+          "alternative_definitions_de": [
+            "Am Tag unmittelbar vor heute."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Gestern habe ich meine Nachbarin besucht.",
+              "ru": "Вчера я навестила соседку."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "gestern",
+              "part": "adv",
+              "forms": "неизменяемое",
+              "definition_de": "Am Tag unmittelbar vor heute.",
+              "translations_ru": [
+                "вчера"
+              ],
+              "grammar_hint": "gestern Abend / gestern Morgen; если gestern на первом месте, спрягаемый глагол на втором: Gestern war ich zu Hause.",
+              "example": "Gestern habe ich meine Nachbarin besucht.",
+              "example_ru": "Вчера я навестила соседку."
+            }
+          ],
+          "alias_ids": [
+            "b1-gestern-yesterday"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gestern"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    }
+  ]
+}

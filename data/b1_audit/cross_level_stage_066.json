@@ -1,0 +1,3163 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1293,
+    1312
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 3,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1293,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Mannschaftssportart, bei der ein Ball über ein Netz gespielt wird. Example: Im Sommer spielen wir oft Volleyball im Park.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 15,
+        "record": {
+          "id": "b1-volleyball-sport",
+          "de": "der Volleyball",
+          "lemma": "Volleyball",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "волейбол"
+          ],
+          "definition_de": "Eine Mannschaftssportart, bei der ein Ball über ein Netz gespielt wird.",
+          "example": "Im Sommer spielen wir oft Volleyball im Park.",
+          "example_ru": "Летом мы часто играем в волейбол в парке.",
+          "forms": "kein Plural als Sportart; die Volleybälle (мячи)",
+          "grammar_hint": "Volleyball spielen, обычно без артикля; der Volleyball также сам мяч (отдельное значение).",
+          "topic": "Спорт",
+          "topics": [
+            "Спорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Volleyball"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 518,
+          "record": {
+            "id": "dict_2279a1565bb193a9c6ad",
+            "de": "der Volleyball",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "волейбол"
+            ],
+            "definition_de": "Eine Sportart, bei der zwei Mannschaften einen Ball über ein Netz spielen.",
+            "forms": "В значении вида спорта обычно без артикля и множественного числа",
+            "example": "Wir spielen jeden Freitag Volleyball.",
+            "example_ru": "Мы играем в волейбол каждую пятницу.",
+            "grammar_hint": "Volleyball spielen — без артикля. Для мяча der Volleyball, Plural die Volleybälle; это отдельное значение.",
+            "usage_note": "Метка A2 относится к виду спорта по контексту Goethe.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Volleyball"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2279a1565bb193a9c6ad",
+        "alias_id": "b1-volleyball-sport",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2279a1565bb193a9c6ad"
+      }
+    },
+    {
+      "candidate_number": 1294,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet den Ausgangspunkt einer Bewegung oder Herkunft. Example: Ich komme gerade vom Sprachkurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 17,
+        "record": {
+          "id": "b1-von-origin",
+          "de": "von",
+          "lemma": "von",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "от",
+            "из",
+            "с (исходная точка)"
+          ],
+          "definition_de": "Kennzeichnet den Ausgangspunkt einer Bewegung oder Herkunft.",
+          "example": "Ich komme gerade vom Sprachkurs.",
+          "example_ru": "Я только что с языковых занятий.",
+          "forms": "Dativ",
+          "grammar_hint": "von + Dat.; vom = von dem; von der Arbeit, von zu Hause. Woher? von или aus в зависимости от исходной точки.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 724,
+          "record": {
+            "id": "a1-599-1",
+            "de": "von",
+            "lemma": "von",
+            "ru": "передаёт принадлежность (по-русски обычно родительный падеж)",
+            "uk": "",
+            "translations_ru": [
+              "передаёт принадлежность (по-русски обычно родительный падеж)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wem etwas gehört oder mit wem es verbunden ist.",
+            "example": "Das ist das Fahrrad von Lea.",
+            "example_ru": "Это велосипед Леа.",
+            "note": "von + Dativ; у имени Lea падеж внешне не выражен: das Fahrrad von meiner Schwester.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 725,
+          "record": {
+            "id": "a1-599-2",
+            "de": "von",
+            "lemma": "von",
+            "ru": "от; из; с (исходная точка)",
+            "uk": "",
+            "translations_ru": [
+              "от",
+              "из",
+              "с (исходная точка)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ausgangspunkt einer Bewegung.",
+            "example": "Ich komme gerade vom Bahnhof.",
+            "example_ru": "Я только что с вокзала.",
+            "note": "von + Dativ: vom Bahnhof (vom = von dem).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-599-2",
+        "alias_id": "b1-von-origin",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-599-2"
+      }
+    },
+    {
+      "candidate_number": 1295,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet eine Zuordnung oder persönliche Beziehung. Example: Eine Freundin von mir wohnt in Winterthur.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 18,
+        "record": {
+          "id": "b1-von-relation",
+          "de": "von",
+          "lemma": "von",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "у",
+            "из числа",
+            "принадлежащий кому-либо"
+          ],
+          "definition_de": "Kennzeichnet eine Zuordnung oder persönliche Beziehung.",
+          "example": "Eine Freundin von mir wohnt in Winterthur.",
+          "example_ru": "Одна моя подруга живёт в Винтертуре.",
+          "forms": "Dativ",
+          "grammar_hint": "von mir/dir/ihr; das Fahrrad von meinem Bruder — велосипед моего брата. Не всегда переводится отдельным предлогом.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 724,
+          "record": {
+            "id": "a1-599-1",
+            "de": "von",
+            "lemma": "von",
+            "ru": "передаёт принадлежность (по-русски обычно родительный падеж)",
+            "uk": "",
+            "translations_ru": [
+              "передаёт принадлежность (по-русски обычно родительный падеж)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wem etwas gehört oder mit wem es verbunden ist.",
+            "example": "Das ist das Fahrrad von Lea.",
+            "example_ru": "Это велосипед Леа.",
+            "note": "von + Dativ; у имени Lea падеж внешне не выражен: das Fahrrad von meiner Schwester.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 725,
+          "record": {
+            "id": "a1-599-2",
+            "de": "von",
+            "lemma": "von",
+            "ru": "от; из; с (исходная точка)",
+            "uk": "",
+            "translations_ru": [
+              "от",
+              "из",
+              "с (исходная точка)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ausgangspunkt einer Bewegung.",
+            "example": "Ich komme gerade vom Bahnhof.",
+            "example_ru": "Я только что с вокзала.",
+            "note": "von + Dativ: vom Bahnhof (vom = von dem).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-599-1",
+        "alias_id": "b1-von-relation",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-599-1"
+      }
+    },
+    {
+      "candidate_number": 1296,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Ordnet etwas dem Zeitpunkt seiner Entstehung zu. Example: Die Nachricht von gestern war wichtig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 19,
+        "record": {
+          "id": "b1-von-date",
+          "de": "von",
+          "lemma": "von",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "от",
+            "за (дата происхождения)"
+          ],
+          "definition_de": "Ordnet etwas dem Zeitpunkt seiner Entstehung zu.",
+          "example": "Die Nachricht von gestern war wichtig.",
+          "example_ru": "Вчерашнее сообщение было важным.",
+          "forms": "Dativ (при именной группе)",
+          "grammar_hint": "ein Brief vom Montag; von gestern — после von наречие без падежного окончания.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 724,
+          "record": {
+            "id": "a1-599-1",
+            "de": "von",
+            "lemma": "von",
+            "ru": "передаёт принадлежность (по-русски обычно родительный падеж)",
+            "uk": "",
+            "translations_ru": [
+              "передаёт принадлежность (по-русски обычно родительный падеж)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wem etwas gehört oder mit wem es verbunden ist.",
+            "example": "Das ist das Fahrrad von Lea.",
+            "example_ru": "Это велосипед Леа.",
+            "note": "von + Dativ; у имени Lea падеж внешне не выражен: das Fahrrad von meiner Schwester.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 725,
+          "record": {
+            "id": "a1-599-2",
+            "de": "von",
+            "lemma": "von",
+            "ru": "от; из; с (исходная точка)",
+            "uk": "",
+            "translations_ru": [
+              "от",
+              "из",
+              "с (исходная точка)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ausgangspunkt einer Bewegung.",
+            "example": "Ich komme gerade vom Bahnhof.",
+            "example_ru": "Я только что с вокзала.",
+            "note": "von + Dativ: vom Bahnhof (vom = von dem).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1297,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Kennzeichnet den Beginn eines Zeitraums, der sich danach fortsetzt. Example: Von nächster Woche an beginnt der Kurs früher.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 20,
+        "record": {
+          "id": "b1-von-start",
+          "de": "von … an",
+          "lemma": "von",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "начиная с",
+            "с … и далее"
+          ],
+          "definition_de": "Kennzeichnet den Beginn eines Zeitraums, der sich danach fortsetzt.",
+          "example": "Von nächster Woche an beginnt der Kurs früher.",
+          "example_ru": "Начиная со следующей недели курс будет начинаться раньше.",
+          "forms": "von + Dativ; an nachgestellt",
+          "grammar_hint": "von diesem Tag an; von jetzt an; ab + Dativ — близкое по смыслу. При объединении связать с временным von.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "context",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 724,
+          "record": {
+            "id": "a1-599-1",
+            "de": "von",
+            "lemma": "von",
+            "ru": "передаёт принадлежность (по-русски обычно родительный падеж)",
+            "uk": "",
+            "translations_ru": [
+              "передаёт принадлежность (по-русски обычно родительный падеж)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wem etwas gehört oder mit wem es verbunden ist.",
+            "example": "Das ist das Fahrrad von Lea.",
+            "example_ru": "Это велосипед Леа.",
+            "note": "von + Dativ; у имени Lea падеж внешне не выражен: das Fahrrad von meiner Schwester.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 725,
+          "record": {
+            "id": "a1-599-2",
+            "de": "von",
+            "lemma": "von",
+            "ru": "от; из; с (исходная точка)",
+            "uk": "",
+            "translations_ru": [
+              "от",
+              "из",
+              "с (исходная точка)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ausgangspunkt einer Bewegung.",
+            "example": "Ich komme gerade vom Bahnhof.",
+            "example_ru": "Я только что с вокзала.",
+            "note": "von + Dativ: vom Bahnhof (vom = von dem).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1298,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Kennzeichnet die beiden Grenzen einer Zeitspanne oder Strecke. Example: Die Bibliothek ist von neun bis zwölf Uhr geöffnet.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 21,
+        "record": {
+          "id": "b1-von-bis",
+          "de": "von … bis",
+          "lemma": "von",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "с … до",
+            "от … до"
+          ],
+          "definition_de": "Kennzeichnet die beiden Grenzen einer Zeitspanne oder Strecke.",
+          "example": "Die Bibliothek ist von neun bis zwölf Uhr geöffnet.",
+          "example_ru": "Библиотека открыта с девяти до двенадцати часов.",
+          "forms": "von + Dativ; bis без артикля или с дополнительным предлогом",
+          "grammar_hint": "von Montag bis Freitag; vom Bahnhof bis zum Park (Dativ из-за zu). Не считать bis всегда управляющим Dativ.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "context",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 724,
+          "record": {
+            "id": "a1-599-1",
+            "de": "von",
+            "lemma": "von",
+            "ru": "передаёт принадлежность (по-русски обычно родительный падеж)",
+            "uk": "",
+            "translations_ru": [
+              "передаёт принадлежность (по-русски обычно родительный падеж)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wem etwas gehört oder mit wem es verbunden ist.",
+            "example": "Das ist das Fahrrad von Lea.",
+            "example_ru": "Это велосипед Леа.",
+            "note": "von + Dativ; у имени Lea падеж внешне не выражен: das Fahrrad von meiner Schwester.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 725,
+          "record": {
+            "id": "a1-599-2",
+            "de": "von",
+            "lemma": "von",
+            "ru": "от; из; с (исходная точка)",
+            "uk": "",
+            "translations_ru": [
+              "от",
+              "из",
+              "с (исходная точка)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ausgangspunkt einer Bewegung.",
+            "example": "Ich komme gerade vom Bahnhof.",
+            "example_ru": "Я только что с вокзала.",
+            "note": "von + Dativ: vom Bahnhof (vom = von dem).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "7343c81cb1bd0bc7c5b4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1299,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet einen früheren Zeitpunkt oder zeitlichen Abstand. Example: Vor drei Tagen habe ich die Unterlagen geschickt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 23,
+        "record": {
+          "id": "b1-vor-time",
+          "de": "vor",
+          "lemma": "vor",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "назад",
+            "перед",
+            "до (время)"
+          ],
+          "definition_de": "Kennzeichnet einen früheren Zeitpunkt oder zeitlichen Abstand.",
+          "example": "Vor drei Tagen habe ich die Unterlagen geschickt.",
+          "example_ru": "Три дня назад я отправила документы.",
+          "forms": "Dativ",
+          "grammar_hint": "vor + Dat. при времени: vor dem Essen / vor drei Tagen; seit drei Tagen — действие продолжается, vor drei Tagen — момент в прошлом.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vor"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 446,
+          "record": {
+            "id": "a1-600-1",
+            "de": "vor",
+            "lemma": "vor",
+            "ru": "перед (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "перед (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt einen Ort auf der Vorderseite von etwas.",
+            "example": "Das Auto steht vor der Tür.",
+            "example_ru": "Машина стоит перед дверью.",
+            "note": "Местоположение: vor + Dativ, vor der Tür.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "59ad6cbf75794d608431"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 447,
+          "record": {
+            "id": "a1-600-2",
+            "de": "vor",
+            "lemma": "vor",
+            "ru": "назад (время)",
+            "uk": "",
+            "translations_ru": [
+              "назад (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, wie lange etwas zurückliegt.",
+            "example": "Der Bus ist vor fünf Minuten abgefahren.",
+            "example_ru": "Автобус отправился пять минут назад.",
+            "note": "Время: vor + Dativ, vor fünf Minuten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "59ad6cbf75794d608431"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-600-2",
+        "alias_id": "b1-vor-time",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-600-2"
+      }
+    },
+    {
+      "candidate_number": 1300,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet einen Ort auf der Vorderseite eines Bezugspunktes. Example: Vor dem Eingang stehen zwei Fahrräder.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 24,
+        "record": {
+          "id": "b1-vor-space",
+          "de": "vor",
+          "lemma": "vor",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "перед",
+            "у (место)"
+          ],
+          "definition_de": "Kennzeichnet einen Ort auf der Vorderseite eines Bezugspunktes.",
+          "example": "Vor dem Eingang stehen zwei Fahrräder.",
+          "example_ru": "Перед входом стоят два велосипеда.",
+          "forms": "Wechselpräposition: Dativ/Akkusativ",
+          "grammar_hint": "Wo? vor dem Eingang (Dat.); Wohin? vor den Eingang stellen (Akk.). Только пространственное значение является переменным управлением.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vor"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 446,
+          "record": {
+            "id": "a1-600-1",
+            "de": "vor",
+            "lemma": "vor",
+            "ru": "перед (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "перед (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt einen Ort auf der Vorderseite von etwas.",
+            "example": "Das Auto steht vor der Tür.",
+            "example_ru": "Машина стоит перед дверью.",
+            "note": "Местоположение: vor + Dativ, vor der Tür.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "59ad6cbf75794d608431"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 447,
+          "record": {
+            "id": "a1-600-2",
+            "de": "vor",
+            "lemma": "vor",
+            "ru": "назад (время)",
+            "uk": "",
+            "translations_ru": [
+              "назад (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, wie lange etwas zurückliegt.",
+            "example": "Der Bus ist vor fünf Minuten abgefahren.",
+            "example_ru": "Автобус отправился пять минут назад.",
+            "note": "Время: vor + Dativ, vor fünf Minuten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "59ad6cbf75794d608431"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-600-1",
+        "alias_id": "b1-vor-space",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-600-1"
+      }
+    },
+    {
+      "candidate_number": 1301,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Gibt einen Grund an, der eine Reaktion oder einen Zustand auslöst. Example: Sie zitterte vor Kälte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_111.json",
+        "sha": "724794bb00b8ba5bc16ee70fe7c7862806dd8a20",
+        "batch": 111,
+        "row": 25,
+        "record": {
+          "id": "b1-vor-cause",
+          "de": "vor",
+          "lemma": "vor",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "от",
+            "из-за (причина, чувство)"
+          ],
+          "definition_de": "Gibt einen Grund an, der eine Reaktion oder einen Zustand auslöst.",
+          "example": "Sie zitterte vor Kälte.",
+          "example_ru": "Она дрожала от холода.",
+          "forms": "Dativ",
+          "grammar_hint": "vor Angst/Kälte/Freude; vor starken Schmerzen; здесь причинное значение, не Wechselpräposition.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vor"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 446,
+          "record": {
+            "id": "a1-600-1",
+            "de": "vor",
+            "lemma": "vor",
+            "ru": "перед (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "перед (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt einen Ort auf der Vorderseite von etwas.",
+            "example": "Das Auto steht vor der Tür.",
+            "example_ru": "Машина стоит перед дверью.",
+            "note": "Местоположение: vor + Dativ, vor der Tür.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "59ad6cbf75794d608431"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 447,
+          "record": {
+            "id": "a1-600-2",
+            "de": "vor",
+            "lemma": "vor",
+            "ru": "назад (время)",
+            "uk": "",
+            "translations_ru": [
+              "назад (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, wie lange etwas zurückliegt.",
+            "example": "Der Bus ist vor fünf Minuten abgefahren.",
+            "example_ru": "Автобус отправился пять минут назад.",
+            "note": "Время: vor + Dativ, vor fünf Minuten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "59ad6cbf75794d608431"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1302,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet einen Weg entlang eines Ortes, ohne dort anzuhalten. Example: Der Radweg führt am See vorbei.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 2,
+        "record": {
+          "id": "b1-vorbei-past",
+          "de": "vorbei",
+          "lemma": "vorbei",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "мимо"
+          ],
+          "definition_de": "Bezeichnet einen Weg entlang eines Ortes, ohne dort anzuhalten.",
+          "example": "Der Radweg führt am See vorbei.",
+          "example_ru": "Велодорожка проходит мимо озера.",
+          "forms": "unveränderlich",
+          "grammar_hint": "an + Dativ + vorbei; vorbeifahren: fährt vorbei · fuhr vorbei · ist vorbeigefahren. Не путать с durch + Akk.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbei"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 129,
+          "record": {
+            "id": "dict_cb5b34791fa1977fef1f",
+            "de": "vorbei",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "мимо"
+            ],
+            "definition_de": "An einer Person oder einem Ort entlang und dann weiter.",
+            "forms": "",
+            "example": "Der Bus fährt am Bahnhof vorbei.",
+            "example_ru": "Автобус проезжает мимо вокзала.",
+            "grammar_hint": "Мимо чего? an + Dativ: am Bahnhof vorbei. В главном предложении с vorbeifahren приставка vorbei отделяется и стоит в конце.",
+            "usage_note": "bei jemandem vorbeikommen означает «зайти к кому-то». Komm doch am Freitag bei mir vorbei. — Заходи ко мне в пятницу.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorbei"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_cb5b34791fa1977fef1f",
+        "alias_id": "b1-vorbei-past",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_cb5b34791fa1977fef1f"
+      }
+    },
+    {
+      "candidate_number": 1303,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Nicht länger andauern. Example: Die Pause ist schon vorbei.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 3,
+        "record": {
+          "id": "b1-vorbei-ended",
+          "de": "vorbei sein",
+          "lemma": "vorbei",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "закончиться",
+            "пройти",
+            "быть позади"
+          ],
+          "definition_de": "Nicht länger andauern.",
+          "example": "Die Pause ist schon vorbei.",
+          "example_ru": "Перерыв уже закончился.",
+          "forms": "ist vorbei · war vorbei · ist vorbei gewesen",
+          "grammar_hint": "vorbei sein — состояние; Es ist vorbei! — Всё закончилось!",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbei"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 129,
+          "record": {
+            "id": "dict_cb5b34791fa1977fef1f",
+            "de": "vorbei",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "мимо"
+            ],
+            "definition_de": "An einer Person oder einem Ort entlang und dann weiter.",
+            "forms": "",
+            "example": "Der Bus fährt am Bahnhof vorbei.",
+            "example_ru": "Автобус проезжает мимо вокзала.",
+            "grammar_hint": "Мимо чего? an + Dativ: am Bahnhof vorbei. В главном предложении с vorbeifahren приставка vorbei отделяется и стоит в конце.",
+            "usage_note": "bei jemandem vorbeikommen означает «зайти к кому-то». Komm doch am Freitag bei mir vorbei. — Заходи ко мне в пятницу.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorbei"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1304,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas für einen späteren Zweck fertig machen. Example: Ich bereite die Unterlagen für morgen vor.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 5,
+        "record": {
+          "id": "b1-vorbereiten-prepare",
+          "de": "vorbereiten",
+          "lemma": "vorbereiten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "готовить",
+            "подготавливать"
+          ],
+          "definition_de": "Etwas für einen späteren Zweck fertig machen.",
+          "example": "Ich bereite die Unterlagen für morgen vor.",
+          "example_ru": "Я готовлю документы на завтра.",
+          "forms": "bereitet vor · bereitete vor · hat vorbereitet",
+          "grammar_hint": "etwas (Akk.) für + Akk. vorbereiten; отделяемый, но Partizip II vorbereitet без ge-; zu: vorzubereiten.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbereiten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 134,
+          "record": {
+            "id": "dict_b9ec2634b273aced63b8",
+            "de": "vorbereiten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "готовить",
+              "подготавливать",
+              "готовиться"
+            ],
+            "definition_de": "Etwas im Voraus bereitmachen oder sich auf etwas einstellen.",
+            "forms": "bereitet vor · bereitete vor · hat vorbereitet",
+            "example": "Ich bereite mich auf das Gespräch mit meiner Lehrerin vor.",
+            "example_ru": "Я готовлюсь к разговору со своей преподавательницей.",
+            "grammar_hint": "Готовить что-то: etwas vorbereiten. Готовиться к чему-то: sich auf etwas vorbereiten (auf + Akkusativ). В простом главном предложении vor отделяется.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorbereiten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b9ec2634b273aced63b8",
+        "alias_id": "b1-vorbereiten-prepare",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b9ec2634b273aced63b8"
+      }
+    },
+    {
+      "candidate_number": 1305,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Sich auf eine bevorstehende Aufgabe einstellen. Example: Wir bereiten uns auf die Prüfung vor.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 6,
+        "record": {
+          "id": "b1-vorbereiten-reflexive",
+          "de": "sich vorbereiten",
+          "lemma": "vorbereiten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "готовиться",
+            "подготавливаться"
+          ],
+          "definition_de": "Sich auf eine bevorstehende Aufgabe einstellen.",
+          "example": "Wir bereiten uns auf die Prüfung vor.",
+          "example_ru": "Мы готовимся к экзамену.",
+          "forms": "bereitet sich vor · bereitete sich vor · hat sich vorbereitet",
+          "grammar_hint": "sich (Akk.) auf + Akk. vorbereiten; Perfekt с haben; gut vorbereitet sein — быть хорошо подготовленным.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbereiten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 134,
+          "record": {
+            "id": "dict_b9ec2634b273aced63b8",
+            "de": "vorbereiten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "готовить",
+              "подготавливать",
+              "готовиться"
+            ],
+            "definition_de": "Etwas im Voraus bereitmachen oder sich auf etwas einstellen.",
+            "forms": "bereitet vor · bereitete vor · hat vorbereitet",
+            "example": "Ich bereite mich auf das Gespräch mit meiner Lehrerin vor.",
+            "example_ru": "Я готовлюсь к разговору со своей преподавательницей.",
+            "grammar_hint": "Готовить что-то: etwas vorbereiten. Готовиться к чему-то: sich auf etwas vorbereiten (auf + Akkusativ). В простом главном предложении vor отделяется.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorbereiten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b9ec2634b273aced63b8",
+        "alias_id": "b1-vorbereiten-reflexive",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b9ec2634b273aced63b8"
+      }
+    },
+    {
+      "candidate_number": 1306,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet den Tag zwei Tage vor heute. Example: Vorgestern habe ich den Brief abgeschickt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 10,
+        "record": {
+          "id": "b1-vorgestern-day",
+          "de": "vorgestern",
+          "lemma": "vorgestern",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "позавчера"
+          ],
+          "definition_de": "Bezeichnet den Tag zwei Tage vor heute.",
+          "example": "Vorgestern habe ich den Brief abgeschickt.",
+          "example_ru": "Позавчера я отправила письмо.",
+          "forms": "unveränderlich",
+          "grammar_hint": "vorgestern — gestern — heute; обстоятельство на первой позиции, глагол на второй.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorgestern"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 478,
+          "record": {
+            "id": "dict_c8b692d940f53063e59b",
+            "de": "vorgestern",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "позавчера"
+            ],
+            "definition_de": "Zwei Tage vor dem heutigen Tag.",
+            "forms": "",
+            "example": "Vorgestern habe ich meine Freundin besucht.",
+            "example_ru": "Позавчера я навестила подругу.",
+            "grammar_hint": "Наречие времени; без предлога. Если стоит первым, спрягаемый глагол занимает вторую позицию.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorgestern"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c8b692d940f53063e59b",
+        "alias_id": "b1-vorgestern-day",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c8b692d940f53063e59b"
+      }
+    },
+    {
+      "candidate_number": 1307,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet eine Handlung vor einem anderen genannten Zeitpunkt. Example: Wir gehen ins Kino, aber vorher essen wir etwas.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 12,
+        "record": {
+          "id": "b1-vorher-before",
+          "de": "vorher",
+          "lemma": "vorher",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "до этого",
+            "перед этим",
+            "заранее"
+          ],
+          "definition_de": "Bezeichnet eine Handlung vor einem anderen genannten Zeitpunkt.",
+          "example": "Wir gehen ins Kino, aber vorher essen wir etwas.",
+          "example_ru": "Мы пойдём в кино, но перед этим что-нибудь поедим.",
+          "forms": "unveränderlich",
+          "grammar_hint": "vorher — наречие, не требует падежа; vor + Dat. — предлог времени; vorher на первой позиции требует V2.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorher"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 212,
+          "record": {
+            "id": "dict_ef2ccd4b67f775894d1b",
+            "de": "vorher",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "до этого",
+              "перед этим"
+            ],
+            "definition_de": "Vor dem Zeitpunkt oder Ereignis, von dem gerade die Rede ist.",
+            "forms": "",
+            "example": "Wir treffen uns um sieben. Vorher muss ich noch einkaufen.",
+            "example_ru": "Мы встречаемся в семь. До этого мне ещё нужно сходить за покупками.",
+            "grammar_hint": "Если vorher стоит первым в главном предложении, сразу после него идёт спрягаемый глагол: Vorher muss ich …",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ef2ccd4b67f775894d1b",
+        "alias_id": "b1-vorher-before",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ef2ccd4b67f775894d1b"
+      }
+    },
+    {
+      "candidate_number": 1308,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Idee, die jemand anderen zur Entscheidung unterbreitet. Example: Dein Vorschlag gefällt mir gut.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 22,
+        "record": {
+          "id": "b1-vorschlag-proposal",
+          "de": "der Vorschlag",
+          "lemma": "Vorschlag",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "предложение",
+            "идея"
+          ],
+          "definition_de": "Eine Idee, die jemand anderen zur Entscheidung unterbreitet.",
+          "example": "Dein Vorschlag gefällt mir gut.",
+          "example_ru": "Мне нравится твоё предложение.",
+          "forms": "die Vorschläge",
+          "grammar_hint": "jemandem (Dat.) einen Vorschlag (Akk.) machen; einen Vorschlag annehmen/ablehnen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Vorschlag"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 55,
+          "record": {
+            "id": "dict_5694448ab807c85fc947",
+            "de": "der Vorschlag",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "предложение"
+            ],
+            "definition_de": "Eine Idee, die man anderen zur Entscheidung anbietet.",
+            "forms": "Plural · die Vorschläge",
+            "example": "Ich habe einen Vorschlag: Wir treffen uns vor dem Kino.",
+            "example_ru": "У меня есть предложение: встретимся перед кинотеатром.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Vorschlag"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_5694448ab807c85fc947",
+        "alias_id": "b1-vorschlag-proposal",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_5694448ab807c85fc947"
+      }
+    },
+    {
+      "candidate_number": 1309,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Auf mögliche Gefahren achtend und unnötige Risiken vermeidend. Example: Bitte sei beim Tragen der Gläser vorsichtig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 25,
+        "record": {
+          "id": "b1-vorsichtig-careful",
+          "de": "vorsichtig",
+          "lemma": "vorsichtig",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "осторожный",
+            "осмотрительный",
+            "осторожно"
+          ],
+          "definition_de": "Auf mögliche Gefahren achtend und unnötige Risiken vermeidend.",
+          "example": "Bitte sei beim Tragen der Gläser vorsichtig.",
+          "example_ru": "Пожалуйста, будь осторожна, когда несёшь стаканы.",
+          "forms": "vorsichtig · vorsichtiger · am vorsichtigsten",
+          "grammar_hint": "vorsichtig mit + Dat. umgehen; наречное употребление: vorsichtig fahren; Gegensatz: unvorsichtig.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorsichtig"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 220,
+          "record": {
+            "id": "dict_a928b67795c5d0f36df0",
+            "de": "vorsichtig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "осторожный",
+              "осмотрительный"
+            ],
+            "definition_de": "So, dass jemand aufmerksam handelt, um Gefahren oder Fehler zu vermeiden.",
+            "forms": "vorsichtig · vorsichtiger · am vorsichtigsten",
+            "example": "Auf nasser Straße fährt sie besonders vorsichtig.",
+            "example_ru": "По мокрой дороге она едет особенно осторожно.",
+            "grammar_hint": "",
+            "usage_note": "Также наречное употребление: vorsichtig fahren — ехать осторожно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorsichtig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a928b67795c5d0f36df0",
+        "alias_id": "b1-vorsichtig-careful",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a928b67795c5d0f36df0"
+      }
+    },
+    {
+      "candidate_number": 1310,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Sich gedanklich ein Bild von einer Sache oder Situation machen. Example: Ich kann mir gut vorstellen, in diesem Beruf zu arbeiten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 26,
+        "record": {
+          "id": "b1-vorstellen-imagine",
+          "de": "sich etwas vorstellen",
+          "lemma": "vorstellen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "представлять себе",
+            "воображать"
+          ],
+          "definition_de": "Sich gedanklich ein Bild von einer Sache oder Situation machen.",
+          "example": "Ich kann mir gut vorstellen, in diesem Beruf zu arbeiten.",
+          "example_ru": "Я вполне могу представить себе работу в этой профессии.",
+          "forms": "stellt sich etwas vor · stellte sich etwas vor · hat sich etwas vorgestellt",
+          "grammar_hint": "sich (Dat.) etwas (Akk.) vorstellen: ich stelle mir das vor; sich vorstellen, dass … — глагол в конце; отделяемый.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorstellen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 559,
+          "record": {
+            "id": "dict_d0c7cd6ec3e4743616ed",
+            "de": "vorstellen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "представлять",
+              "представить",
+              "знакомить",
+              "познакомить"
+            ],
+            "definition_de": "Einer Person sagen, wer eine andere Person ist, damit beide einander kennenlernen.",
+            "forms": "stellt vor · stellte vor · hat vorgestellt",
+            "example": "Ich stelle dir meine Kollegin vor.",
+            "example_ru": "Я познакомлю тебя со своей коллегой.",
+            "grammar_hint": "jemandem (Dativ) jemanden (Akkusativ) vorstellen; отделяемая приставка vor-.",
+            "usage_note": "sich vorstellen — представляться (A1); sich etwas vorstellen — воображать, отдельное значение, не подтвержденное на A2 этими примерами.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorstellen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1311,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Person einer anderen Person bekannt machen. Example: Ich möchte dir meine neue Kollegin vorstellen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 27,
+        "record": {
+          "id": "b1-vorstellen-introduce",
+          "de": "jemanden vorstellen",
+          "lemma": "vorstellen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "представлять",
+            "знакомить (людей)"
+          ],
+          "definition_de": "Eine Person einer anderen Person bekannt machen.",
+          "example": "Ich möchte dir meine neue Kollegin vorstellen.",
+          "example_ru": "Я хочу познакомить тебя с моей новой коллегой.",
+          "forms": "stellt vor · stellte vor · hat vorgestellt",
+          "grammar_hint": "jemandem (Dat.) jemanden (Akk.) vorstellen; отделяемый. dir — кому, meine Kollegin — кого.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorstellen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 559,
+          "record": {
+            "id": "dict_d0c7cd6ec3e4743616ed",
+            "de": "vorstellen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "представлять",
+              "представить",
+              "знакомить",
+              "познакомить"
+            ],
+            "definition_de": "Einer Person sagen, wer eine andere Person ist, damit beide einander kennenlernen.",
+            "forms": "stellt vor · stellte vor · hat vorgestellt",
+            "example": "Ich stelle dir meine Kollegin vor.",
+            "example_ru": "Я познакомлю тебя со своей коллегой.",
+            "grammar_hint": "jemandem (Dativ) jemanden (Akkusativ) vorstellen; отделяемая приставка vor-.",
+            "usage_note": "sich vorstellen — представляться (A1); sich etwas vorstellen — воображать, отдельное значение, не подтвержденное на A2 этими примерами.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorstellen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_d0c7cd6ec3e4743616ed",
+        "alias_id": "b1-vorstellen-introduce",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_d0c7cd6ec3e4743616ed"
+      }
+    },
+    {
+      "candidate_number": 1312,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Anderen den eigenen Namen und gegebenenfalls weitere Angaben nennen. Example: Am ersten Kurstag stellen wir uns der Gruppe vor.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_112.json",
+        "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+        "batch": 112,
+        "row": 28,
+        "record": {
+          "id": "b1-vorstellen-self",
+          "de": "sich vorstellen",
+          "lemma": "vorstellen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "представляться",
+            "знакомиться (называя себя)"
+          ],
+          "definition_de": "Anderen den eigenen Namen und gegebenenfalls weitere Angaben nennen.",
+          "example": "Am ersten Kurstag stellen wir uns der Gruppe vor.",
+          "example_ru": "В первый день курса мы представляемся группе.",
+          "forms": "stellt sich vor · stellte sich vor · hat sich vorgestellt",
+          "grammar_hint": "sich (Akk.) vorstellen: Ich stelle mich vor; кому — jemandem (Dat.); не путать с ich stelle mir etwas vor.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorstellen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 727,
+          "record": {
+            "id": "a1-603-1",
+            "de": "sich vorstellen",
+            "lemma": "sich vorstellen",
+            "ru": "представляться; представиться",
+            "uk": "",
+            "translations_ru": [
+              "представляться",
+              "представиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "stellt sich vor · stellte sich vor · hat sich vorgestellt",
+            "definition_de": "Anderen sagen, wie man heißt oder wer man ist.",
+            "example": "Darf ich mich kurz vorstellen?",
+            "example_ru": "Можно я вкратце представлюсь?",
+            "note": "Представляться: ich stelle mich vor (Akkusativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "60dd279f29b1ea1978f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 559,
+          "record": {
+            "id": "dict_d0c7cd6ec3e4743616ed",
+            "de": "vorstellen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "представлять",
+              "представить",
+              "знакомить",
+              "познакомить"
+            ],
+            "definition_de": "Einer Person sagen, wer eine andere Person ist, damit beide einander kennenlernen.",
+            "forms": "stellt vor · stellte vor · hat vorgestellt",
+            "example": "Ich stelle dir meine Kollegin vor.",
+            "example_ru": "Я познакомлю тебя со своей коллегой.",
+            "grammar_hint": "jemandem (Dativ) jemanden (Akkusativ) vorstellen; отделяемая приставка vor-.",
+            "usage_note": "sich vorstellen — представляться (A1); sich etwas vorstellen — воображать, отдельное значение, не подтвержденное на A2 этими примерами.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/vorstellen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-603-1",
+        "alias_id": "b1-vorstellen-self",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-603-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_2279a1565bb193a9c6ad",
+      "alias_ids": [
+        "b1-volleyball-sport"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2279a1565bb193a9c6ad",
+        "de": "der Volleyball",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "волейбол"
+        ],
+        "definition_de": "Eine Sportart, bei der zwei Mannschaften einen Ball über ein Netz spielen.",
+        "forms": "В значении вида спорта обычно без артикля и множественного числа",
+        "example": "Wir spielen jeden Freitag Volleyball.",
+        "example_ru": "Мы играем в волейбол каждую пятницу.",
+        "grammar_hint": "Volleyball spielen — без артикля. Для мяча der Volleyball, Plural die Volleybälle; это отдельное значение.",
+        "usage_note": "Метка A2 относится к виду спорта по контексту Goethe.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Volleyball"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-volleyball-sport"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-volleyball-sport",
+            "de": "der Volleyball",
+            "part": "noun",
+            "forms": "kein Plural als Sportart; die Volleybälle (мячи)",
+            "definition_de": "Eine Mannschaftssportart, bei der ein Ball über ein Netz gespielt wird.",
+            "translations_ru": [
+              "волейбол"
+            ],
+            "grammar_hint": "Volleyball spielen, обычно без артикля; der Volleyball также сам мяч (отдельное значение).",
+            "example": "Im Sommer spielen wir oft Volleyball im Park.",
+            "example_ru": "Летом мы часто играем в волейбол в парке."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Volleyball"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-599-2",
+      "alias_ids": [
+        "b1-von-origin"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-599-2",
+        "de": "von",
+        "lemma": "von",
+        "ru": "от; из; с (исходная точка)",
+        "uk": "",
+        "translations_ru": [
+          "от",
+          "из",
+          "с (исходная точка)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Nennt den Ausgangspunkt einer Bewegung.",
+        "example": "Ich komme gerade vom Bahnhof.",
+        "example_ru": "Я только что с вокзала.",
+        "note": "von + Dativ: vom Bahnhof (vom = von dem).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "7343c81cb1bd0bc7c5b4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-von-origin"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-von-origin",
+            "de": "von",
+            "part": "preposition",
+            "forms": "Dativ",
+            "definition_de": "Kennzeichnet den Ausgangspunkt einer Bewegung oder Herkunft.",
+            "translations_ru": [
+              "от",
+              "из",
+              "с (исходная точка)"
+            ],
+            "grammar_hint": "von + Dat.; vom = von dem; von der Arbeit, von zu Hause. Woher? von или aus в зависимости от исходной точки.",
+            "example": "Ich komme gerade vom Sprachkurs.",
+            "example_ru": "Я только что с языковых занятий."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-599-1",
+      "alias_ids": [
+        "b1-von-relation"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-599-1",
+        "de": "von",
+        "lemma": "von",
+        "ru": "передаёт принадлежность (по-русски обычно родительный падеж)",
+        "uk": "",
+        "translations_ru": [
+          "передаёт принадлежность (по-русски обычно родительный падеж)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Zeigt, wem etwas gehört oder mit wem es verbunden ist.",
+        "example": "Das ist das Fahrrad von Lea.",
+        "example_ru": "Это велосипед Леа.",
+        "note": "von + Dativ; у имени Lea падеж внешне не выражен: das Fahrrad von meiner Schwester.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "7343c81cb1bd0bc7c5b4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-von-relation"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-von-relation",
+            "de": "von",
+            "part": "preposition",
+            "forms": "Dativ",
+            "definition_de": "Kennzeichnet eine Zuordnung oder persönliche Beziehung.",
+            "translations_ru": [
+              "у",
+              "из числа",
+              "принадлежащий кому-либо"
+            ],
+            "grammar_hint": "von mir/dir/ihr; das Fahrrad von meinem Bruder — велосипед моего брата. Не всегда переводится отдельным предлогом.",
+            "example": "Eine Freundin von mir wohnt in Winterthur.",
+            "example_ru": "Одна моя подруга живёт в Винтертуре."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 94,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/von"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-600-2",
+      "alias_ids": [
+        "b1-vor-time"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-600-2",
+        "de": "vor",
+        "lemma": "vor",
+        "ru": "назад (время)",
+        "uk": "",
+        "translations_ru": [
+          "назад (время)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Gibt an, wie lange etwas zurückliegt.",
+        "example": "Der Bus ist vor fünf Minuten abgefahren.",
+        "example_ru": "Автобус отправился пять минут назад.",
+        "note": "Время: vor + Dativ, vor fünf Minuten.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "59ad6cbf75794d608431"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-vor-time"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vor-time",
+            "de": "vor",
+            "part": "preposition",
+            "forms": "Dativ",
+            "definition_de": "Kennzeichnet einen früheren Zeitpunkt oder zeitlichen Abstand.",
+            "translations_ru": [
+              "назад",
+              "перед",
+              "до (время)"
+            ],
+            "grammar_hint": "vor + Dat. при времени: vor dem Essen / vor drei Tagen; seit drei Tagen — действие продолжается, vor drei Tagen — момент в прошлом.",
+            "example": "Vor drei Tagen habe ich die Unterlagen geschickt.",
+            "example_ru": "Три дня назад я отправила документы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vor"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-600-1",
+      "alias_ids": [
+        "b1-vor-space"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-600-1",
+        "de": "vor",
+        "lemma": "vor",
+        "ru": "перед (местонахождение)",
+        "uk": "",
+        "translations_ru": [
+          "перед (местонахождение)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Nennt einen Ort auf der Vorderseite von etwas.",
+        "example": "Das Auto steht vor der Tür.",
+        "example_ru": "Машина стоит перед дверью.",
+        "note": "Местоположение: vor + Dativ, vor der Tür.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "59ad6cbf75794d608431"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-vor-space"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vor-space",
+            "de": "vor",
+            "part": "preposition",
+            "forms": "Wechselpräposition: Dativ/Akkusativ",
+            "definition_de": "Kennzeichnet einen Ort auf der Vorderseite eines Bezugspunktes.",
+            "translations_ru": [
+              "перед",
+              "у (место)"
+            ],
+            "grammar_hint": "Wo? vor dem Eingang (Dat.); Wohin? vor den Eingang stellen (Akk.). Только пространственное значение является переменным управлением.",
+            "example": "Vor dem Eingang stehen zwei Fahrräder.",
+            "example_ru": "Перед входом стоят два велосипеда."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 94–95 visually inspected. B1 exam-list coverage is not proof of earliest CEFR level; medical Virus is an additional dictionary sense. A1/A2 reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vor"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_cb5b34791fa1977fef1f",
+      "alias_ids": [
+        "b1-vorbei-past"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_cb5b34791fa1977fef1f",
+        "de": "vorbei",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "мимо"
+        ],
+        "definition_de": "An einer Person oder einem Ort entlang und dann weiter.",
+        "forms": "",
+        "example": "Der Bus fährt am Bahnhof vorbei.",
+        "example_ru": "Автобус проезжает мимо вокзала.",
+        "grammar_hint": "Мимо чего? an + Dativ: am Bahnhof vorbei. В главном предложении с vorbeifahren приставка vorbei отделяется и стоит в конце.",
+        "usage_note": "bei jemandem vorbeikommen означает «зайти к кому-то». Komm doch am Freitag bei mir vorbei. — Заходи ко мне в пятницу.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vorbei"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление"
+        ],
+        "alias_ids": [
+          "b1-vorbei-past"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorbei-past",
+            "de": "vorbei",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezeichnet einen Weg entlang eines Ortes, ohne dort anzuhalten.",
+            "translations_ru": [
+              "мимо"
+            ],
+            "grammar_hint": "an + Dativ + vorbei; vorbeifahren: fährt vorbei · fuhr vorbei · ist vorbeigefahren. Не путать с durch + Akk.",
+            "example": "Der Radweg führt am See vorbei.",
+            "example_ru": "Велодорожка проходит мимо озера."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbei"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_b9ec2634b273aced63b8",
+      "alias_ids": [
+        "b1-vorbereiten-prepare",
+        "b1-vorbereiten-reflexive"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_b9ec2634b273aced63b8",
+        "de": "vorbereiten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "готовить",
+          "подготавливать",
+          "готовиться"
+        ],
+        "definition_de": "Etwas im Voraus bereitmachen oder sich auf etwas einstellen.",
+        "forms": "bereitet vor · bereitete vor · hat vorbereitet",
+        "example": "Ich bereite mich auf das Gespräch mit meiner Lehrerin vor.",
+        "example_ru": "Я готовлюсь к разговору со своей преподавательницей.",
+        "grammar_hint": "Готовить что-то: etwas vorbereiten. Готовиться к чему-то: sich auf etwas vorbereiten (auf + Akkusativ). В простом главном предложении vor отделяется.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vorbereiten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-vorbereiten-prepare",
+          "b1-vorbereiten-reflexive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorbereiten-prepare",
+            "de": "vorbereiten",
+            "part": "verb",
+            "forms": "bereitet vor · bereitete vor · hat vorbereitet",
+            "definition_de": "Etwas für einen späteren Zweck fertig machen.",
+            "translations_ru": [
+              "готовить",
+              "подготавливать"
+            ],
+            "grammar_hint": "etwas (Akk.) für + Akk. vorbereiten; отделяемый, но Partizip II vorbereitet без ge-; zu: vorzubereiten.",
+            "example": "Ich bereite die Unterlagen für morgen vor.",
+            "example_ru": "Я готовлю документы на завтра."
+          },
+          {
+            "id": "b1-vorbereiten-reflexive",
+            "de": "sich vorbereiten",
+            "part": "verb",
+            "forms": "bereitet sich vor · bereitete sich vor · hat sich vorbereitet",
+            "definition_de": "Sich auf eine bevorstehende Aufgabe einstellen.",
+            "translations_ru": [
+              "готовиться",
+              "подготавливаться"
+            ],
+            "grammar_hint": "sich (Akk.) auf + Akk. vorbereiten; Perfekt с haben; gut vorbereitet sein — быть хорошо подготовленным.",
+            "example": "Wir bereiten uns auf die Prüfung vor.",
+            "example_ru": "Мы готовимся к экзамену."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbereiten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorbereiten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_c8b692d940f53063e59b",
+      "alias_ids": [
+        "b1-vorgestern-day"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c8b692d940f53063e59b",
+        "de": "vorgestern",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "позавчера"
+        ],
+        "definition_de": "Zwei Tage vor dem heutigen Tag.",
+        "forms": "",
+        "example": "Vorgestern habe ich meine Freundin besucht.",
+        "example_ru": "Позавчера я навестила подругу.",
+        "grammar_hint": "Наречие времени; без предлога. Если стоит первым, спрягаемый глагол занимает вторую позицию.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vorgestern"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-vorgestern-day"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorgestern-day",
+            "de": "vorgestern",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezeichnet den Tag zwei Tage vor heute.",
+            "translations_ru": [
+              "позавчера"
+            ],
+            "grammar_hint": "vorgestern — gestern — heute; обстоятельство на первой позиции, глагол на второй.",
+            "example": "Vorgestern habe ich den Brief abgeschickt.",
+            "example_ru": "Позавчера я отправила письмо."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorgestern"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ef2ccd4b67f775894d1b",
+      "alias_ids": [
+        "b1-vorher-before"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ef2ccd4b67f775894d1b",
+        "de": "vorher",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "до этого",
+          "перед этим"
+        ],
+        "definition_de": "Vor dem Zeitpunkt oder Ereignis, von dem gerade die Rede ist.",
+        "forms": "",
+        "example": "Wir treffen uns um sieben. Vorher muss ich noch einkaufen.",
+        "example_ru": "Мы встречаемся в семь. До этого мне ещё нужно сходить за покупками.",
+        "grammar_hint": "Если vorher стоит первым в главном предложении, сразу после него идёт спрягаемый глагол: Vorher muss ich …",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vorher"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-vorher-before"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorher-before",
+            "de": "vorher",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezeichnet eine Handlung vor einem anderen genannten Zeitpunkt.",
+            "translations_ru": [
+              "до этого",
+              "перед этим",
+              "заранее"
+            ],
+            "grammar_hint": "vorher — наречие, не требует падежа; vor + Dat. — предлог времени; vorher на первой позиции требует V2.",
+            "example": "Wir gehen ins Kino, aber vorher essen wir etwas.",
+            "example_ru": "Мы пойдём в кино, но перед этим что-нибудь поедим."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorher"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_5694448ab807c85fc947",
+      "alias_ids": [
+        "b1-vorschlag-proposal"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_5694448ab807c85fc947",
+        "de": "der Vorschlag",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "предложение"
+        ],
+        "definition_de": "Eine Idee, die man anderen zur Entscheidung anbietet.",
+        "forms": "Plural · die Vorschläge",
+        "example": "Ich habe einen Vorschlag: Wir treffen uns vor dem Kino.",
+        "example_ru": "У меня есть предложение: встретимся перед кинотеатром.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Vorschlag"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-vorschlag-proposal"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorschlag-proposal",
+            "de": "der Vorschlag",
+            "part": "noun",
+            "forms": "die Vorschläge",
+            "definition_de": "Eine Idee, die jemand anderen zur Entscheidung unterbreitet.",
+            "translations_ru": [
+              "предложение",
+              "идея"
+            ],
+            "grammar_hint": "jemandem (Dat.) einen Vorschlag (Akk.) machen; einen Vorschlag annehmen/ablehnen.",
+            "example": "Dein Vorschlag gefällt mir gut.",
+            "example_ru": "Мне нравится твоё предложение."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Vorschlag"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a928b67795c5d0f36df0",
+      "alias_ids": [
+        "b1-vorsichtig-careful"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a928b67795c5d0f36df0",
+        "de": "vorsichtig",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "осторожный",
+          "осмотрительный"
+        ],
+        "definition_de": "So, dass jemand aufmerksam handelt, um Gefahren oder Fehler zu vermeiden.",
+        "forms": "vorsichtig · vorsichtiger · am vorsichtigsten",
+        "example": "Auf nasser Straße fährt sie besonders vorsichtig.",
+        "example_ru": "По мокрой дороге она едет особенно осторожно.",
+        "grammar_hint": "",
+        "usage_note": "Также наречное употребление: vorsichtig fahren — ехать осторожно.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vorsichtig"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-vorsichtig-careful"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorsichtig-careful",
+            "de": "vorsichtig",
+            "part": "adjective",
+            "forms": "vorsichtig · vorsichtiger · am vorsichtigsten",
+            "definition_de": "Auf mögliche Gefahren achtend und unnötige Risiken vermeidend.",
+            "translations_ru": [
+              "осторожный",
+              "осмотрительный",
+              "осторожно"
+            ],
+            "grammar_hint": "vorsichtig mit + Dat. umgehen; наречное употребление: vorsichtig fahren; Gegensatz: unvorsichtig.",
+            "example": "Bitte sei beim Tragen der Gläser vorsichtig.",
+            "example_ru": "Пожалуйста, будь осторожна, когда несёшь стаканы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorsichtig"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_d0c7cd6ec3e4743616ed",
+      "alias_ids": [
+        "b1-vorstellen-introduce"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_d0c7cd6ec3e4743616ed",
+        "de": "vorstellen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "представлять",
+          "представить",
+          "знакомить",
+          "познакомить"
+        ],
+        "definition_de": "Einer Person sagen, wer eine andere Person ist, damit beide einander kennenlernen.",
+        "forms": "stellt vor · stellte vor · hat vorgestellt",
+        "example": "Ich stelle dir meine Kollegin vor.",
+        "example_ru": "Я познакомлю тебя со своей коллегой.",
+        "grammar_hint": "jemandem (Dativ) jemanden (Akkusativ) vorstellen; отделяемая приставка vor-.",
+        "usage_note": "sich vorstellen — представляться (A1); sich etwas vorstellen — воображать, отдельное значение, не подтвержденное на A2 этими примерами.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/vorstellen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-vorstellen-introduce"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorstellen-introduce",
+            "de": "jemanden vorstellen",
+            "part": "verb",
+            "forms": "stellt vor · stellte vor · hat vorgestellt",
+            "definition_de": "Eine Person einer anderen Person bekannt machen.",
+            "translations_ru": [
+              "представлять",
+              "знакомить (людей)"
+            ],
+            "grammar_hint": "jemandem (Dat.) jemanden (Akk.) vorstellen; отделяемый. dir — кому, meine Kollegin — кого.",
+            "example": "Ich möchte dir meine neue Kollegin vorstellen.",
+            "example_ru": "Я хочу познакомить тебя с моей новой коллегой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorstellen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-603-1",
+      "alias_ids": [
+        "b1-vorstellen-self"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-603-1",
+        "de": "sich vorstellen",
+        "lemma": "sich vorstellen",
+        "ru": "представляться; представиться",
+        "uk": "",
+        "translations_ru": [
+          "представляться",
+          "представиться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "stellt sich vor · stellte sich vor · hat sich vorgestellt",
+        "definition_de": "Anderen sagen, wie man heißt oder wer man ist.",
+        "example": "Darf ich mich kurz vorstellen?",
+        "example_ru": "Можно я вкратце представлюсь?",
+        "note": "Представляться: ich stelle mich vor (Akkusativ).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "60dd279f29b1ea1978f4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-vorstellen-self"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vorstellen-self",
+            "de": "sich vorstellen",
+            "part": "verb",
+            "forms": "stellt sich vor · stellte sich vor · hat sich vorgestellt",
+            "definition_de": "Anderen den eigenen Namen und gegebenenfalls weitere Angaben nennen.",
+            "translations_ru": [
+              "представляться",
+              "знакомиться (называя себя)"
+            ],
+            "grammar_hint": "sich (Akk.) vorstellen: Ich stelle mich vor; кому — jemandem (Dat.); не путать с ich stelle mir etwas vor.",
+            "example": "Am ersten Kurstag stellen wir uns der Gruppe vor.",
+            "example_ru": "В первый день курса мы представляемся группе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 95,
+              "scope": "attested_context",
+              "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vorstellen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

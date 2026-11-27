@@ -1,0 +1,2770 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1253,
+    1272
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 12,
+  "retained_distinct_senses": 5,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1253,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: In einer Ehe mit einer anderen Person lebend. Example: Meine Schwester ist seit zwei Jahren verheiratet.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 22,
+        "record": {
+          "id": "b1-verheiratet-married",
+          "de": "verheiratet",
+          "lemma": "verheiratet",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "женатый",
+            "замужняя",
+            "состоящий в браке"
+          ],
+          "definition_de": "In einer Ehe mit einer anderen Person lebend.",
+          "example": "Meine Schwester ist seit zwei Jahren verheiratet.",
+          "example_ru": "Моя сестра замужем уже два года.",
+          "forms": "keine Steigerung im wörtlichen Sinn",
+          "grammar_hint": "mit jemandem (Dat.) verheiratet sein; seit + Dat. для длительности; heiraten — вступать в брак.",
+          "topic": "Семья",
+          "topics": [
+            "Семья"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verheiratet"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 718,
+          "record": {
+            "id": "a1-590-1",
+            "de": "verheiratet",
+            "lemma": "verheiratet",
+            "ru": "состоящий в браке; женатый; замужем",
+            "uk": "",
+            "translations_ru": [
+              "состоящий в браке",
+              "женатый",
+              "замужем"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "In einer Ehe lebend.",
+            "example": "Sie ist seit fünf Jahren verheiratet.",
+            "example_ru": "Она замужем пять лет.",
+            "note": "Семейное положение. Степени сравнения в этом значении не употребляются.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "8f0df05db47c307f65ee"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-590-1",
+        "alias_id": "b1-verheiratet-married",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-590-1"
+      }
+    },
+    {
+      "candidate_number": 1254,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Sache gegen Bezahlung an eine andere Person abgeben. Example: Wir verkaufen unseren alten Schreibtisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 24,
+        "record": {
+          "id": "b1-verkaufen-sell",
+          "de": "verkaufen",
+          "lemma": "verkaufen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "продавать",
+            "продать"
+          ],
+          "definition_de": "Eine Sache gegen Bezahlung an eine andere Person abgeben.",
+          "example": "Wir verkaufen unseren alten Schreibtisch.",
+          "example_ru": "Мы продаём наш старый письменный стол.",
+          "forms": "verkauft · verkaufte · hat verkauft",
+          "grammar_hint": "jemandem (Dat.) etwas (Akk.) verkaufen; etwas für einen Preis verkaufen.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verkaufen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 719,
+          "record": {
+            "id": "a1-591-1",
+            "de": "verkaufen",
+            "lemma": "verkaufen",
+            "ru": "продавать; продать",
+            "uk": "",
+            "translations_ru": [
+              "продавать",
+              "продать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "verkauft · verkaufte · hat verkauft",
+            "definition_de": "Etwas gegen Geld abgeben.",
+            "example": "Wir verkaufen unser Auto.",
+            "example_ru": "Мы продаём нашу машину.",
+            "note": " verkauft — Partizip II или форма Präsens; verkauft sein — быть проданным.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "c607c8d4a63d11be2f1d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-591-1",
+        "alias_id": "b1-verkaufen-sell",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-591-1"
+      }
+    },
+    {
+      "candidate_number": 1255,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Person, die beruflich Waren anbietet und verkauft. Example: Die Verkäuferin zeigt mir verschiedene Modelle.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 25,
+        "record": {
+          "id": "b1-verkaeufer-salesperson",
+          "de": "der Verkäufer / die Verkäuferin",
+          "lemma": "Verkäufer",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "продавец",
+            "продавщица"
+          ],
+          "definition_de": "Eine Person, die beruflich Waren anbietet und verkauft.",
+          "example": "Die Verkäuferin zeigt mir verschiedene Modelle.",
+          "example_ru": "Продавщица показывает мне разные модели.",
+          "forms": "die Verkäufer / die Verkäuferinnen",
+          "grammar_hint": "der Verkäufer: обычное склонение; im Verkauf arbeiten — работать в продажах.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verk%C3%A4ufer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 571,
+          "record": {
+            "id": "a1-592-1",
+            "de": "der Verkäufer",
+            "lemma": "Verkäufer",
+            "ru": "продавец",
+            "uk": "",
+            "translations_ru": [
+              "продавец"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Verkäufer",
+            "definition_de": "Ein Mann, der Waren verkauft.",
+            "example": "Der Verkäufer zeigt mir zwei Jacken.",
+            "example_ru": "Продавец показывает мне две куртки.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "5c81607b29a6555293c9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-592-1",
+        "alias_id": "b1-verkaeufer-salesperson",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-592-1"
+      }
+    },
+    {
+      "candidate_number": 1256,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Gesamtheit der Bewegungen von Fahrzeugen und Personen auf Verkehrswegen. Example: Am Morgen ist auf dieser Straße viel Verkehr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 26,
+        "record": {
+          "id": "b1-verkehr-traffic",
+          "de": "der Verkehr",
+          "lemma": "Verkehr",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дорожное движение",
+            "транспортное движение"
+          ],
+          "definition_de": "Die Gesamtheit der Bewegungen von Fahrzeugen und Personen auf Verkehrswegen.",
+          "example": "Am Morgen ist auf dieser Straße viel Verkehr.",
+          "example_ru": "Утром на этой улице интенсивное движение.",
+          "forms": "meist Singular",
+          "grammar_hint": "öffentlicher Verkehr; im Verkehr; dichter Verkehr. В CH также öV — öffentlicher Verkehr.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verkehr"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 191,
+          "record": {
+            "id": "dict_102029386e962c26c54b",
+            "de": "der Verkehr",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "дорожное движение"
+            ],
+            "definition_de": "Die Bewegung von Fahrzeugen und anderen Verkehrsteilnehmern auf den Straßen.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Abends gibt es auf dieser Straße viel Verkehr.",
+            "example_ru": "По вечерам на этой улице оживлённое движение.",
+            "grammar_hint": "Обычно без множественного числа в значении дорожного движения: viel Verkehr, starker Verkehr.",
+            "usage_note": "Verkehr — движение транспорта; öffentliche Verkehrsmittel — общественный транспорт. Прочие значения (общение, отношения, оборот) не подтверждены данным примером.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Verkehr"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_102029386e962c26c54b",
+        "alias_id": "b1-verkehr-traffic",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_102029386e962c26c54b"
+      }
+    },
+    {
+      "candidate_number": 1257,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Fahrzeug oder anderes Mittel zur Beförderung von Personen oder Gütern. Example: Für den Arbeitsweg nutze ich öffentliche Verkehrsmittel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_107.json",
+        "sha": "1025f953bae69e1d54d70e080d4dfbb5d5fd5f5a",
+        "batch": 107,
+        "row": 27,
+        "record": {
+          "id": "b1-verkehrsmittel-vehicle",
+          "de": "das Verkehrsmittel",
+          "lemma": "Verkehrsmittel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "транспортное средство",
+            "вид транспорта"
+          ],
+          "definition_de": "Ein Fahrzeug oder anderes Mittel zur Beförderung von Personen oder Gütern.",
+          "example": "Für den Arbeitsweg nutze ich öffentliche Verkehrsmittel.",
+          "example_ru": "Для поездок на работу я пользуюсь общественным транспортом.",
+          "forms": "die Verkehrsmittel",
+          "grammar_hint": "mit öffentlichen Verkehrsmitteln fahren (Dat. Pl.); der Verkehr — движение.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verkehrsmittel"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 517,
+          "record": {
+            "id": "dict_9c5da17d09f9060e5c4e",
+            "de": "das Verkehrsmittel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "транспортное средство",
+              "вид транспорта"
+            ],
+            "definition_de": "Ein Fahrzeug oder anderes Mittel, mit dem Menschen oder Güter von einem Ort zum anderen gelangen.",
+            "forms": "Plural · die Verkehrsmittel",
+            "example": "Welche öffentlichen Verkehrsmittel gibt es hier?",
+            "example_ru": "Какие виды общественного транспорта здесь есть?",
+            "grammar_hint": "Единственное и множественное число различаются артиклем: das/die Verkehrsmittel.",
+            "usage_note": "Исправлена исходная ошибочная ссылка на страницу 92.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Verkehrsmittel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9c5da17d09f9060e5c4e",
+        "alias_id": "b1-verkehrsmittel-vehicle",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9c5da17d09f9060e5c4e"
+      }
+    },
+    {
+      "candidate_number": 1258,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine körperliche Verletzung erleiden. Example: Beim Training habe ich mir den Knöchel verletzt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 8,
+        "record": {
+          "id": "b1-verletzen-reflexive",
+          "de": "sich verletzen",
+          "lemma": "verletzen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "травмироваться",
+            "пораниться"
+          ],
+          "definition_de": "Eine körperliche Verletzung erleiden.",
+          "example": "Beim Training habe ich mir den Knöchel verletzt.",
+          "example_ru": "На тренировке я травмировала лодыжку.",
+          "forms": "verletzt sich · verletzte sich · hat sich verletzt",
+          "grammar_hint": "Ich habe mich verletzt (Akk.); Ich habe mir den Knöchel verletzt (mir — Dat., den Knöchel — Akk.).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verletzen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 410,
+          "record": {
+            "id": "dict_bee7217e18923fa67fa7",
+            "de": "sich verletzen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "травмироваться",
+              "пораниться",
+              "получить травму"
+            ],
+            "definition_de": "Sich eine körperliche Verletzung zuziehen.",
+            "forms": "verletzt sich · verletzte sich · hat sich verletzt",
+            "example": "Er hat sich beim Sport am Knie verletzt.",
+            "example_ru": "Он травмировал колено во время занятий спортом.",
+            "grammar_hint": "sich (Akkusativ) verletzen; sich am Knie verletzen.",
+            "usage_note": "В A2 подтверждены травма и возвратное sich verletzen; jemanden verletzen — ранить кого-то (Akkusativ), verletzen в смыслах обидеть или нарушить правило — другие словарные значения. Не переносим метку на них автоматически.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verletzen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_bee7217e18923fa67fa7",
+        "alias_id": "b1-verletzen-reflexive",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_bee7217e18923fa67fa7"
+      }
+    },
+    {
+      "candidate_number": 1259,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Romantische Gefühle für eine Person entwickeln. Example: Er hat sich in seine Nachbarin verliebt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 10,
+        "record": {
+          "id": "b1-verlieben-fall",
+          "de": "sich verlieben",
+          "lemma": "verlieben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "влюбляться",
+            "влюбиться"
+          ],
+          "definition_de": "Romantische Gefühle für eine Person entwickeln.",
+          "example": "Er hat sich in seine Nachbarin verliebt.",
+          "example_ru": "Он влюбился в свою соседку.",
+          "forms": "verliebt sich · verliebte sich · hat sich verliebt",
+          "grammar_hint": "sich (Akk.) in jemanden (Akk.) verlieben; Perfekt с haben.",
+          "topic": "Семья",
+          "topics": [
+            "Семья"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieben"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 375,
+          "record": {
+            "id": "dict_ea97f3610e3b0ff523e0",
+            "de": "sich verlieben",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "влюбляться",
+              "влюбиться"
+            ],
+            "definition_de": "Beginnen, jemanden zu lieben.",
+            "forms": "verliebt sich · verliebte sich · hat sich verliebt",
+            "example": "Sie hat sich in ihn verliebt.",
+            "example_ru": "Она в него влюбилась.",
+            "grammar_hint": "sich in jemanden (Akkusativ) verlieben.",
+            "usage_note": "Не путать с verliebt sein in + Akkusativ — быть влюблённым.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verlieben"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ea97f3610e3b0ff523e0",
+        "alias_id": "b1-verlieben-fall",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ea97f3610e3b0ff523e0"
+      }
+    },
+    {
+      "candidate_number": 1260,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Romantische Gefühle für jemanden haben. Example: Sie ist seit einigen Wochen in ihn verliebt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 11,
+        "record": {
+          "id": "b1-verliebt-state",
+          "de": "verliebt",
+          "lemma": "verliebt",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "влюблённый"
+          ],
+          "definition_de": "Romantische Gefühle für jemanden haben.",
+          "example": "Sie ist seit einigen Wochen in ihn verliebt.",
+          "example_ru": "Она влюблена в него уже несколько недель.",
+          "forms": "verliebt · verliebter · am verliebtesten",
+          "grammar_hint": "in jemanden (Akk.) verliebt sein — состояние; sich verlieben — действие.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verliebt"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 521,
+          "record": {
+            "id": "dict_cd90b10730657266f78a",
+            "de": "verliebt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "влюблённый",
+              "влюблённая"
+            ],
+            "definition_de": "Starke Liebesgefühle für eine Person haben.",
+            "forms": "verliebt · verliebter · am verliebtesten",
+            "example": "Sie ist in ihren Freund verliebt.",
+            "example_ru": "Она влюблена в своего парня.",
+            "grammar_hint": "in + Akkusativ verliebt sein; sich in jemanden verlieben — влюбиться.",
+            "usage_note": "verliebt sein in + Akkusativ — быть влюблённым в кого-либо; sich in jemanden verlieben — влюбиться, переход к состоянию.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verliebt",
+                "https://www.duden.de/rechtschreibung/verliebt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1261,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Etwas nicht mehr besitzen oder finden, weil es abhandengekommen ist. Example: Auf der Reise habe ich meinen Schlüssel verloren.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 12,
+        "record": {
+          "id": "b1-verlieren-object",
+          "de": "verlieren",
+          "lemma": "verlieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "терять",
+            "потерять (вещь)"
+          ],
+          "definition_de": "Etwas nicht mehr besitzen oder finden, weil es abhandengekommen ist.",
+          "example": "Auf der Reise habe ich meinen Schlüssel verloren.",
+          "example_ru": "В поездке я потеряла ключ.",
+          "forms": "verliert · verlor · hat verloren",
+          "grammar_hint": "etwas (Akk.) verlieren; verloren gehen — потеряться; неотделяемый сильный глагол.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 274,
+          "record": {
+            "id": "dict_a7344c19454b3938c250",
+            "de": "verlieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "терять",
+              "потерять"
+            ],
+            "definition_de": "Etwas nicht mehr haben oder nicht mehr finden, weil es abhandengekommen ist.",
+            "forms": "verliert · verlor · hat verloren",
+            "example": "Ich habe auf dem Markt meine Mütze verloren.",
+            "example_ru": "Я потеряла шапку на рынке.",
+            "grammar_hint": "Что потеряли? Akkusativ: meine Mütze.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verlieren",
+                "https://www.duden.de/rechtschreibung/verlieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1262,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Etwas bisher Vorhandenes nicht mehr haben. Example: Durch die Schließung hat er seine Arbeitsstelle verloren.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 13,
+        "record": {
+          "id": "b1-verlieren-job",
+          "de": "verlieren",
+          "lemma": "verlieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "лишаться",
+            "терять (работу, положение)"
+          ],
+          "definition_de": "Etwas bisher Vorhandenes nicht mehr haben.",
+          "example": "Durch die Schließung hat er seine Arbeitsstelle verloren.",
+          "example_ru": "Из-за закрытия предприятия он потерял работу.",
+          "forms": "verliert · verlor · hat verloren",
+          "grammar_hint": "seine Stelle (Akk.) verlieren; CH: Schliessung; связать с общим значением при итоговом объединении.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieren"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 274,
+          "record": {
+            "id": "dict_a7344c19454b3938c250",
+            "de": "verlieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "терять",
+              "потерять"
+            ],
+            "definition_de": "Etwas nicht mehr haben oder nicht mehr finden, weil es abhandengekommen ist.",
+            "forms": "verliert · verlor · hat verloren",
+            "example": "Ich habe auf dem Markt meine Mütze verloren.",
+            "example_ru": "Я потеряла шапку на рынке.",
+            "grammar_hint": "Что потеряли? Akkusativ: meine Mütze.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verlieren",
+                "https://www.duden.de/rechtschreibung/verlieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1263,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Die Zuversicht oder Bereitschaft zum Weitermachen einbüßen. Example: Auch nach mehreren Fehlern solltest du den Mut nicht verlieren.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 14,
+        "record": {
+          "id": "b1-verlieren-courage",
+          "de": "den Mut verlieren",
+          "lemma": "verlieren",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "падать духом",
+            "терять мужество"
+          ],
+          "definition_de": "Die Zuversicht oder Bereitschaft zum Weitermachen einbüßen.",
+          "example": "Auch nach mehreren Fehlern solltest du den Mut nicht verlieren.",
+          "example_ru": "Даже после нескольких ошибок не стоит падать духом.",
+          "forms": "verliert · verlor · hat verloren",
+          "grammar_hint": "den Mut (Akk.) verlieren; Gegensatz: Mut fassen; устойчивое сочетание общего значения verlieren.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 274,
+          "record": {
+            "id": "dict_a7344c19454b3938c250",
+            "de": "verlieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "терять",
+              "потерять"
+            ],
+            "definition_de": "Etwas nicht mehr haben oder nicht mehr finden, weil es abhandengekommen ist.",
+            "forms": "verliert · verlor · hat verloren",
+            "example": "Ich habe auf dem Markt meine Mütze verloren.",
+            "example_ru": "Я потеряла шапку на рынке.",
+            "grammar_hint": "Что потеряли? Akkusativ: meine Mütze.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verlieren",
+                "https://www.duden.de/rechtschreibung/verlieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a7344c19454b3938c250",
+        "alias_id": "b1-verlieren-courage",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a7344c19454b3938c250"
+      }
+    },
+    {
+      "candidate_number": 1264,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: In einem Spiel oder Wettbewerb nicht gewinnen. Example: Unsere Mannschaft hat das Endspiel verloren.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 15,
+        "record": {
+          "id": "b1-verlieren-game",
+          "de": "verlieren",
+          "lemma": "verlieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "проигрывать",
+            "проиграть"
+          ],
+          "definition_de": "In einem Spiel oder Wettbewerb nicht gewinnen.",
+          "example": "Unsere Mannschaft hat das Endspiel verloren.",
+          "example_ru": "Наша команда проиграла финальный матч.",
+          "forms": "verliert · verlor · hat verloren",
+          "grammar_hint": "ein Spiel (Akk.) verlieren; gegen jemanden (Akk.) verlieren; Gegenteil: gewinnen.",
+          "topic": "Спорт",
+          "topics": [
+            "Спорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 274,
+          "record": {
+            "id": "dict_a7344c19454b3938c250",
+            "de": "verlieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "терять",
+              "потерять"
+            ],
+            "definition_de": "Etwas nicht mehr haben oder nicht mehr finden, weil es abhandengekommen ist.",
+            "forms": "verliert · verlor · hat verloren",
+            "example": "Ich habe auf dem Markt meine Mütze verloren.",
+            "example_ru": "Я потеряла шапку на рынке.",
+            "grammar_hint": "Что потеряли? Akkusativ: meine Mütze.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verlieren",
+                "https://www.duden.de/rechtschreibung/verlieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a7344c19454b3938c250",
+        "alias_id": "b1-verlieren-game",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a7344c19454b3938c250"
+      }
+    },
+    {
+      "candidate_number": 1265,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Sache gegen regelmäßige Bezahlung zur Nutzung überlassen. Example: Die Familie vermietet eine kleine Wohnung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 19,
+        "record": {
+          "id": "b1-vermieten-rent",
+          "de": "vermieten",
+          "lemma": "vermieten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сдавать в аренду"
+          ],
+          "definition_de": "Eine Sache gegen regelmäßige Bezahlung zur Nutzung überlassen.",
+          "example": "Die Familie vermietet eine kleine Wohnung.",
+          "example_ru": "Семья сдаёт небольшую квартиру.",
+          "forms": "vermietet · vermietete · hat vermietet",
+          "grammar_hint": "etwas (Akk.) an jemanden (Akk.) vermieten; mieten — снимать в аренду.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vermieten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 720,
+          "record": {
+            "id": "a1-593-1",
+            "de": "vermieten",
+            "lemma": "vermieten",
+            "ru": "сдавать внаём",
+            "uk": "",
+            "translations_ru": [
+              "сдавать внаём"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "vermietet · vermietete · hat vermietet",
+            "definition_de": "Jemandem etwas gegen Miete zur Nutzung überlassen.",
+            "example": "Sie vermietet ein Zimmer.",
+            "example_ru": "Она сдаёт комнату.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "227c62c05044f666fcbb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1266,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bereits einer anderen Person zur Miete überlassen sein. Example: Das Zimmer ist seit Oktober vermietet.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 20,
+        "record": {
+          "id": "b1-vermietet-state",
+          "de": "vermietet sein",
+          "lemma": "vermieten",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть сданным в аренду"
+          ],
+          "definition_de": "Bereits einer anderen Person zur Miete überlassen sein.",
+          "example": "Das Zimmer ist seit Oktober vermietet.",
+          "example_ru": "Комната сдана в аренду с октября.",
+          "forms": "ist vermietet · war vermietet · ist vermietet gewesen",
+          "grammar_hint": "sein + Partizip II — состояние; wird vermietet — процесс или предложение аренды. Связать с vermieten.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vermieten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 720,
+          "record": {
+            "id": "a1-593-1",
+            "de": "vermieten",
+            "lemma": "vermieten",
+            "ru": "сдавать внаём",
+            "uk": "",
+            "translations_ru": [
+              "сдавать внаём"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "vermietet · vermietete · hat vermietet",
+            "definition_de": "Jemandem etwas gegen Miete zur Nutzung überlassen.",
+            "example": "Sie vermietet ein Zimmer.",
+            "example_ru": "Она сдаёт комнату.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "227c62c05044f666fcbb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-593-1",
+        "alias_id": "b1-vermietet-state",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-593-1"
+      }
+    },
+    {
+      "candidate_number": 1267,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Person, die anderen etwas zur Miete überlässt. Example: Die Vermieterin beantwortet unsere Fragen zum Vertrag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_108.json",
+        "sha": "17d493a48b2d8c1f5c2400493b9d4a7f6196d705",
+        "batch": 108,
+        "row": 21,
+        "record": {
+          "id": "b1-vermieter-person",
+          "de": "der Vermieter / die Vermieterin",
+          "lemma": "Vermieter",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "арендодатель",
+            "арендодательница"
+          ],
+          "definition_de": "Eine Person, die anderen etwas zur Miete überlässt.",
+          "example": "Die Vermieterin beantwortet unsere Fragen zum Vertrag.",
+          "example_ru": "Арендодательница отвечает на наши вопросы о договоре.",
+          "forms": "die Vermieter / die Vermieterinnen",
+          "grammar_hint": "der Mieter — арендатор; обычное склонение: den Vermieter.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Vermieter"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 572,
+          "record": {
+            "id": "a1-594-1",
+            "de": "der Vermieter",
+            "lemma": "Vermieter",
+            "ru": "арендодатель",
+            "uk": "",
+            "translations_ru": [
+              "арендодатель"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Vermieter",
+            "definition_de": "Ein Mann, der gegen Bezahlung etwas zur Nutzung überlässt.",
+            "example": "Der Vermieter hat mir den Schlüssel gegeben.",
+            "example_ru": "Арендодатель дал мне ключ.",
+            "note": "Женская форма: die Vermieterin, die Vermieterinnen. Не обязательно собственник жилья; тот, кто сдаёт его в аренду.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "31fcf288fb21738b3f61"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-594-1",
+        "alias_id": "b1-vermieter-person",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-594-1"
+      }
+    },
+    {
+      "candidate_number": 1268,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Verkehrsmittel nicht rechtzeitig erreichen. Example: Wegen des Staus habe ich meinen Anschlussbus verpasst.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_109.json",
+        "sha": "832b31963512b0484d75989a814f1e79ac2ca228",
+        "batch": 109,
+        "row": 1,
+        "record": {
+          "id": "b1-verpassen-transport",
+          "de": "verpassen",
+          "lemma": "verpassen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пропустить",
+            "опоздать на (транспорт)",
+            "не успеть на"
+          ],
+          "definition_de": "Ein Verkehrsmittel nicht rechtzeitig erreichen.",
+          "example": "Wegen des Staus habe ich meinen Anschlussbus verpasst.",
+          "example_ru": "Из-за пробки я не успела на пересадочный автобус.",
+          "forms": "verpasst · verpasste · hat verpasst",
+          "grammar_hint": "den Zug/Bus (Akk.) verpassen; без предлога. Не путать с vermissen — скучать по.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verpassen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 202,
+          "record": {
+            "id": "dict_a20a5108546ab3508e5d",
+            "de": "verpassen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "пропускать",
+              "пропустить",
+              "опоздать на"
+            ],
+            "definition_de": "Zu spät kommen und dadurch ein Verkehrsmittel oder eine Gelegenheit nicht mehr bekommen.",
+            "forms": "verpasst · verpasste · hat verpasst",
+            "example": "Ich habe heute Morgen die Straßenbahn verpasst.",
+            "example_ru": "Сегодня утром я не успела на трамвай.",
+            "grammar_hint": "Что пропустили? Akkusativ: die Straßenbahn verpassen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verpassen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a20a5108546ab3508e5d",
+        "alias_id": "b1-verpassen-transport",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a20a5108546ab3508e5d"
+      }
+    },
+    {
+      "candidate_number": 1269,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bei einem Ereignis nicht dabei sein oder eine Gelegenheit nicht nutzen. Example: Ich möchte den Anfang des Konzerts nicht verpassen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_109.json",
+        "sha": "832b31963512b0484d75989a814f1e79ac2ca228",
+        "batch": 109,
+        "row": 2,
+        "record": {
+          "id": "b1-verpassen-event",
+          "de": "verpassen",
+          "lemma": "verpassen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пропускать",
+            "пропустить",
+            "не застать"
+          ],
+          "definition_de": "Bei einem Ereignis nicht dabei sein oder eine Gelegenheit nicht nutzen.",
+          "example": "Ich möchte den Anfang des Konzerts nicht verpassen.",
+          "example_ru": "Я не хочу пропустить начало концерта.",
+          "forms": "verpasst · verpasste · hat verpasst",
+          "grammar_hint": "etwas (Akk.) verpassen; eine Gelegenheit verpassen — упустить возможность. Связано с общим значением; при объединении учесть контекст транспорта.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verpassen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 202,
+          "record": {
+            "id": "dict_a20a5108546ab3508e5d",
+            "de": "verpassen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "пропускать",
+              "пропустить",
+              "опоздать на"
+            ],
+            "definition_de": "Zu spät kommen und dadurch ein Verkehrsmittel oder eine Gelegenheit nicht mehr bekommen.",
+            "forms": "verpasst · verpasste · hat verpasst",
+            "example": "Ich habe heute Morgen die Straßenbahn verpasst.",
+            "example_ru": "Сегодня утром я не успела на трамвай.",
+            "grammar_hint": "Что пропустили? Akkusativ: die Straßenbahn verpassen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verpassen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1270,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Den Wohnort für eine Reise vorübergehend verlassen. Example: Nächste Woche verreisen wir für ein paar Tage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_109.json",
+        "sha": "832b31963512b0484d75989a814f1e79ac2ca228",
+        "batch": 109,
+        "row": 7,
+        "record": {
+          "id": "b1-verreisen-trip",
+          "de": "verreisen",
+          "lemma": "verreisen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "уезжать в поездку",
+            "отправляться в путешествие"
+          ],
+          "definition_de": "Den Wohnort für eine Reise vorübergehend verlassen.",
+          "example": "Nächste Woche verreisen wir für ein paar Tage.",
+          "example_ru": "На следующей неделе мы уезжаем на несколько дней.",
+          "forms": "verreist · verreiste · ist verreist",
+          "grammar_hint": "Perfekt с sein; verreist sein — быть в отъезде; неотделяемый.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verreisen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 270,
+          "record": {
+            "id": "dict_811c1a18ad3b26aa5389",
+            "de": "verreisen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "уезжать",
+              "уехать в поездку"
+            ],
+            "definition_de": "Für eine Reise den Wohnort verlassen und eine Zeit lang weg sein.",
+            "forms": "verreist · verreiste · ist verreist",
+            "example": "Nächste Woche verreisen wir für ein paar Tage.",
+            "example_ru": "На следующей неделе мы уезжаем на несколько дней.",
+            "grammar_hint": "В Perfekt употребляем sein: Wir sind verreist.",
+            "usage_note": "ver- не отделяется; Perfekt с sein. Verreisen — уезжать в поездку, не просто покидать место.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verreisen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Путешествия и отпуск",
+            "topics": [
+              "Путешествия и отпуск"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1271,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein geplantes Ereignis auf einen anderen Zeitpunkt legen. Example: Wir verschieben die Besprechung auf kommenden Montag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_109.json",
+        "sha": "832b31963512b0484d75989a814f1e79ac2ca228",
+        "batch": 109,
+        "row": 12,
+        "record": {
+          "id": "b1-verschieben-postpone",
+          "de": "verschieben",
+          "lemma": "verschieben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "переносить",
+            "откладывать"
+          ],
+          "definition_de": "Ein geplantes Ereignis auf einen anderen Zeitpunkt legen.",
+          "example": "Wir verschieben die Besprechung auf kommenden Montag.",
+          "example_ru": "Мы переносим совещание на следующий понедельник.",
+          "forms": "verschiebt · verschob · hat verschoben",
+          "grammar_hint": "einen Termin (Akk.) auf + Akk. verschieben; um zwei Tage — на два дня; неотделяемый.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verschieben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 133,
+          "record": {
+            "id": "dict_6e16958cf3f7fce180ee",
+            "de": "verschieben",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "переносить",
+              "перенести",
+              "откладывать (встречу)"
+            ],
+            "definition_de": "Einen vereinbarten Termin auf eine andere Zeit legen.",
+            "forms": "verschiebt · verschob · hat verschoben",
+            "example": "Können wir den Termin auf Freitag verschieben?",
+            "example_ru": "Можем перенести встречу на пятницу?",
+            "grammar_hint": "Переносим что? Akkusativ: den Termin. На какой день? auf + Akkusativ: auf Freitag.",
+            "usage_note": "Подтверждено перенесение времени встречи. Einen Schrank verschieben — передвинуть шкаф (другое значение, отдельно уровень A2 здесь не подтверждён).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verschieben",
+                "https://www.duden.de/rechtschreibung/verschieben"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1272,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: In seinen Merkmalen von anderen Dingen oder Personen abweichend. Example: Die beiden Wohnungen sind sehr verschieden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_109.json",
+        "sha": "832b31963512b0484d75989a814f1e79ac2ca228",
+        "batch": 109,
+        "row": 13,
+        "record": {
+          "id": "b1-verschieden-different",
+          "de": "verschieden",
+          "lemma": "verschieden",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "различный",
+            "неодинаковый"
+          ],
+          "definition_de": "In seinen Merkmalen von anderen Dingen oder Personen abweichend.",
+          "example": "Die beiden Wohnungen sind sehr verschieden.",
+          "example_ru": "Эти две квартиры сильно отличаются.",
+          "forms": "verschieden · verschiedener · am verschiedensten (в значении различия)",
+          "grammar_hint": "verschieden von + Dat.; unterschiedlich — близкий синоним.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verschieden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 336,
+          "record": {
+            "id": "dict_00d8344ee552b1c68460",
+            "de": "verschieden",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "разный",
+              "различный",
+              "несколько (во мн. ч.)"
+            ],
+            "definition_de": "Nicht gleich oder von unterschiedlicher Art; im Plural auch mehrere.",
+            "forms": "verschieden · verschiedener · am verschiedensten",
+            "example": "Wir haben verschiedene Hobbys.",
+            "example_ru": "У нас разные увлечения.",
+            "grammar_hint": "",
+            "usage_note": "verschiedene Farben — разные цвета; verschiedene Leute — разные/несколько человек (не обязательно многие). Степени сравнения относятся к различию, не к количеству. Не путать с Partizip II глагола verscheiden — скончаться (книжное; уровень здесь не подтверждён).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 29,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/verschieden",
+                "https://www.duden.de/rechtschreibung/verschieden_unterschiedlich",
+                "https://www.duden.de/rechtschreibung/verscheiden"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_00d8344ee552b1c68460",
+        "alias_id": "b1-verschieden-different",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_00d8344ee552b1c68460"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-590-1",
+      "alias_ids": [
+        "b1-verheiratet-married"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-590-1",
+        "de": "verheiratet",
+        "lemma": "verheiratet",
+        "ru": "состоящий в браке; женатый; замужем",
+        "uk": "",
+        "translations_ru": [
+          "состоящий в браке",
+          "женатый",
+          "замужем"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья"
+        ],
+        "forms": "В данном значении обычно без степеней сравнения",
+        "definition_de": "In einer Ehe lebend.",
+        "example": "Sie ist seit fünf Jahren verheiratet.",
+        "example_ru": "Она замужем пять лет.",
+        "note": "Семейное положение. Степени сравнения в этом значении не употребляются.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "8f0df05db47c307f65ee"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-verheiratet-married"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verheiratet-married",
+            "de": "verheiratet",
+            "part": "adjective",
+            "forms": "keine Steigerung im wörtlichen Sinn",
+            "definition_de": "In einer Ehe mit einer anderen Person lebend.",
+            "translations_ru": [
+              "женатый",
+              "замужняя",
+              "состоящий в браке"
+            ],
+            "grammar_hint": "mit jemandem (Dat.) verheiratet sein; seit + Dat. для длительности; heiraten — вступать в брак.",
+            "example": "Meine Schwester ist seit zwei Jahren verheiratet.",
+            "example_ru": "Моя сестра замужем уже два года."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verheiratet"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-591-1",
+      "alias_ids": [
+        "b1-verkaufen-sell"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-591-1",
+        "de": "verkaufen",
+        "lemma": "verkaufen",
+        "ru": "продавать; продать",
+        "uk": "",
+        "translations_ru": [
+          "продавать",
+          "продать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "verkauft · verkaufte · hat verkauft",
+        "definition_de": "Etwas gegen Geld abgeben.",
+        "example": "Wir verkaufen unser Auto.",
+        "example_ru": "Мы продаём нашу машину.",
+        "note": " verkauft — Partizip II или форма Präsens; verkauft sein — быть проданным.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "c607c8d4a63d11be2f1d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-verkaufen-sell"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verkaufen-sell",
+            "de": "verkaufen",
+            "part": "verb",
+            "forms": "verkauft · verkaufte · hat verkauft",
+            "definition_de": "Eine Sache gegen Bezahlung an eine andere Person abgeben.",
+            "translations_ru": [
+              "продавать",
+              "продать"
+            ],
+            "grammar_hint": "jemandem (Dat.) etwas (Akk.) verkaufen; etwas für einen Preis verkaufen.",
+            "example": "Wir verkaufen unseren alten Schreibtisch.",
+            "example_ru": "Мы продаём наш старый письменный стол."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verkaufen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-592-1",
+      "alias_ids": [
+        "b1-verkaeufer-salesperson"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-592-1",
+        "de": "der Verkäufer",
+        "lemma": "Verkäufer",
+        "ru": "продавец",
+        "uk": "",
+        "translations_ru": [
+          "продавец"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "die Verkäufer",
+        "definition_de": "Ein Mann, der Waren verkauft.",
+        "example": "Der Verkäufer zeigt mir zwei Jacken.",
+        "example_ru": "Продавец показывает мне две куртки.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "5c81607b29a6555293c9"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-verkaeufer-salesperson"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verkaeufer-salesperson",
+            "de": "der Verkäufer / die Verkäuferin",
+            "part": "noun",
+            "forms": "die Verkäufer / die Verkäuferinnen",
+            "definition_de": "Eine Person, die beruflich Waren anbietet und verkauft.",
+            "translations_ru": [
+              "продавец",
+              "продавщица"
+            ],
+            "grammar_hint": "der Verkäufer: обычное склонение; im Verkauf arbeiten — работать в продажах.",
+            "example": "Die Verkäuferin zeigt mir verschiedene Modelle.",
+            "example_ru": "Продавщица показывает мне разные модели."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verk%C3%A4ufer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_102029386e962c26c54b",
+      "alias_ids": [
+        "b1-verkehr-traffic"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_102029386e962c26c54b",
+        "de": "der Verkehr",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "дорожное движение"
+        ],
+        "definition_de": "Die Bewegung von Fahrzeugen und anderen Verkehrsteilnehmern auf den Straßen.",
+        "forms": "В этом значении обычно в единственном числе",
+        "example": "Abends gibt es auf dieser Straße viel Verkehr.",
+        "example_ru": "По вечерам на этой улице оживлённое движение.",
+        "grammar_hint": "Обычно без множественного числа в значении дорожного движения: viel Verkehr, starker Verkehr.",
+        "usage_note": "Verkehr — движение транспорта; öffentliche Verkehrsmittel — общественный транспорт. Прочие значения (общение, отношения, оборот) не подтверждены данным примером.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Verkehr"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-verkehr-traffic"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verkehr-traffic",
+            "de": "der Verkehr",
+            "part": "noun",
+            "forms": "meist Singular",
+            "definition_de": "Die Gesamtheit der Bewegungen von Fahrzeugen und Personen auf Verkehrswegen.",
+            "translations_ru": [
+              "дорожное движение",
+              "транспортное движение"
+            ],
+            "grammar_hint": "öffentlicher Verkehr; im Verkehr; dichter Verkehr. В CH также öV — öffentlicher Verkehr.",
+            "example": "Am Morgen ist auf dieser Straße viel Verkehr.",
+            "example_ru": "Утром на этой улице интенсивное движение."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verkehr"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_9c5da17d09f9060e5c4e",
+      "alias_ids": [
+        "b1-verkehrsmittel-vehicle"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9c5da17d09f9060e5c4e",
+        "de": "das Verkehrsmittel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "транспортное средство",
+          "вид транспорта"
+        ],
+        "definition_de": "Ein Fahrzeug oder anderes Mittel, mit dem Menschen oder Güter von einem Ort zum anderen gelangen.",
+        "forms": "Plural · die Verkehrsmittel",
+        "example": "Welche öffentlichen Verkehrsmittel gibt es hier?",
+        "example_ru": "Какие виды общественного транспорта здесь есть?",
+        "grammar_hint": "Единственное и множественное число различаются артиклем: das/die Verkehrsmittel.",
+        "usage_note": "Исправлена исходная ошибочная ссылка на страницу 92.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Verkehrsmittel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-verkehrsmittel-vehicle"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verkehrsmittel-vehicle",
+            "de": "das Verkehrsmittel",
+            "part": "noun",
+            "forms": "die Verkehrsmittel",
+            "definition_de": "Ein Fahrzeug oder anderes Mittel zur Beförderung von Personen oder Gütern.",
+            "translations_ru": [
+              "транспортное средство",
+              "вид транспорта"
+            ],
+            "grammar_hint": "mit öffentlichen Verkehrsmitteln fahren (Dat. Pl.); der Verkehr — движение.",
+            "example": "Für den Arbeitsweg nutze ich öffentliche Verkehrsmittel.",
+            "example_ru": "Для поездок на работу я пользуюсь общественным транспортом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 92,
+              "scope": "headword_or_attested_context",
+              "note": "Printed page 92 visually inspected; B1 exam-list coverage, not earliest CEFR level. A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Verkehrsmittel"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_bee7217e18923fa67fa7",
+      "alias_ids": [
+        "b1-verletzen-reflexive"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_bee7217e18923fa67fa7",
+        "de": "sich verletzen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "травмироваться",
+          "пораниться",
+          "получить травму"
+        ],
+        "definition_de": "Sich eine körperliche Verletzung zuziehen.",
+        "forms": "verletzt sich · verletzte sich · hat sich verletzt",
+        "example": "Er hat sich beim Sport am Knie verletzt.",
+        "example_ru": "Он травмировал колено во время занятий спортом.",
+        "grammar_hint": "sich (Akkusativ) verletzen; sich am Knie verletzen.",
+        "usage_note": "В A2 подтверждены травма и возвратное sich verletzen; jemanden verletzen — ранить кого-то (Akkusativ), verletzen в смыслах обидеть или нарушить правило — другие словарные значения. Не переносим метку на них автоматически.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/verletzen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-verletzen-reflexive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verletzen-reflexive",
+            "de": "sich verletzen",
+            "part": "verb",
+            "forms": "verletzt sich · verletzte sich · hat sich verletzt",
+            "definition_de": "Eine körperliche Verletzung erleiden.",
+            "translations_ru": [
+              "травмироваться",
+              "пораниться"
+            ],
+            "grammar_hint": "Ich habe mich verletzt (Akk.); Ich habe mir den Knöchel verletzt (mir — Dat., den Knöchel — Akk.).",
+            "example": "Beim Training habe ich mir den Knöchel verletzt.",
+            "example_ru": "На тренировке я травмировала лодыжку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verletzen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ea97f3610e3b0ff523e0",
+      "alias_ids": [
+        "b1-verlieben-fall"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ea97f3610e3b0ff523e0",
+        "de": "sich verlieben",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "влюбляться",
+          "влюбиться"
+        ],
+        "definition_de": "Beginnen, jemanden zu lieben.",
+        "forms": "verliebt sich · verliebte sich · hat sich verliebt",
+        "example": "Sie hat sich in ihn verliebt.",
+        "example_ru": "Она в него влюбилась.",
+        "grammar_hint": "sich in jemanden (Akkusativ) verlieben.",
+        "usage_note": "Не путать с verliebt sein in + Akkusativ — быть влюблённым.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/verlieben"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-verlieben-fall"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verlieben-fall",
+            "de": "sich verlieben",
+            "part": "verb",
+            "forms": "verliebt sich · verliebte sich · hat sich verliebt",
+            "definition_de": "Romantische Gefühle für eine Person entwickeln.",
+            "translations_ru": [
+              "влюбляться",
+              "влюбиться"
+            ],
+            "grammar_hint": "sich (Akk.) in jemanden (Akk.) verlieben; Perfekt с haben.",
+            "example": "Er hat sich in seine Nachbarin verliebt.",
+            "example_ru": "Он влюбился в свою соседку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieben"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a7344c19454b3938c250",
+      "alias_ids": [
+        "b1-verlieren-courage",
+        "b1-verlieren-game"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a7344c19454b3938c250",
+        "de": "verlieren",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "терять",
+          "потерять"
+        ],
+        "definition_de": "Etwas nicht mehr haben oder nicht mehr finden, weil es abhandengekommen ist.",
+        "forms": "verliert · verlor · hat verloren",
+        "example": "Ich habe auf dem Markt meine Mütze verloren.",
+        "example_ru": "Я потеряла шапку на рынке.",
+        "grammar_hint": "Что потеряли? Akkusativ: meine Mütze.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/verlieren",
+            "https://www.duden.de/rechtschreibung/verlieren"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-verlieren-courage",
+          "b1-verlieren-game"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verlieren-courage",
+            "de": "den Mut verlieren",
+            "part": "phrase",
+            "forms": "verliert · verlor · hat verloren",
+            "definition_de": "Die Zuversicht oder Bereitschaft zum Weitermachen einbüßen.",
+            "translations_ru": [
+              "падать духом",
+              "терять мужество"
+            ],
+            "grammar_hint": "den Mut (Akk.) verlieren; Gegensatz: Mut fassen; устойчивое сочетание общего значения verlieren.",
+            "example": "Auch nach mehreren Fehlern solltest du den Mut nicht verlieren.",
+            "example_ru": "Даже после нескольких ошибок не стоит падать духом."
+          },
+          {
+            "id": "b1-verlieren-game",
+            "de": "verlieren",
+            "part": "verb",
+            "forms": "verliert · verlor · hat verloren",
+            "definition_de": "In einem Spiel oder Wettbewerb nicht gewinnen.",
+            "translations_ru": [
+              "проигрывать",
+              "проиграть"
+            ],
+            "grammar_hint": "ein Spiel (Akk.) verlieren; gegen jemanden (Akk.) verlieren; Gegenteil: gewinnen.",
+            "example": "Unsere Mannschaft hat das Endspiel verloren.",
+            "example_ru": "Наша команда проиграла финальный матч."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verlieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-593-1",
+      "alias_ids": [
+        "b1-vermietet-state"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-593-1",
+        "de": "vermieten",
+        "lemma": "vermieten",
+        "ru": "сдавать внаём",
+        "uk": "",
+        "translations_ru": [
+          "сдавать внаём"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "vermietet · vermietete · hat vermietet",
+        "definition_de": "Jemandem etwas gegen Miete zur Nutzung überlassen.",
+        "example": "Sie vermietet ein Zimmer.",
+        "example_ru": "Она сдаёт комнату.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "227c62c05044f666fcbb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-vermietet-state"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vermietet-state",
+            "de": "vermietet sein",
+            "part": "phrase",
+            "forms": "ist vermietet · war vermietet · ist vermietet gewesen",
+            "definition_de": "Bereits einer anderen Person zur Miete überlassen sein.",
+            "translations_ru": [
+              "быть сданным в аренду"
+            ],
+            "grammar_hint": "sein + Partizip II — состояние; wird vermietet — процесс или предложение аренды. Связать с vermieten.",
+            "example": "Das Zimmer ist seit Oktober vermietet.",
+            "example_ru": "Комната сдана в аренду с октября."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "context",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/vermieten"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-594-1",
+      "alias_ids": [
+        "b1-vermieter-person"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-594-1",
+        "de": "der Vermieter",
+        "lemma": "Vermieter",
+        "ru": "арендодатель",
+        "uk": "",
+        "translations_ru": [
+          "арендодатель"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Vermieter",
+        "definition_de": "Ein Mann, der gegen Bezahlung etwas zur Nutzung überlässt.",
+        "example": "Der Vermieter hat mir den Schlüssel gegeben.",
+        "example_ru": "Арендодатель дал мне ключ.",
+        "note": "Женская форма: die Vermieterin, die Vermieterinnen. Не обязательно собственник жилья; тот, кто сдаёт его в аренду.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "31fcf288fb21738b3f61"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-vermieter-person"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-vermieter-person",
+            "de": "der Vermieter / die Vermieterin",
+            "part": "noun",
+            "forms": "die Vermieter / die Vermieterinnen",
+            "definition_de": "Eine Person, die anderen etwas zur Miete überlässt.",
+            "translations_ru": [
+              "арендодатель",
+              "арендодательница"
+            ],
+            "grammar_hint": "der Mieter — арендатор; обычное склонение: den Vermieter.",
+            "example": "Die Vermieterin beantwortet unsere Fragen zum Vertrag.",
+            "example_ru": "Арендодательница отвечает на наши вопросы о договоре."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 92–93 visually inspected. B1 exam-list coverage; earliest CEFR level and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Vermieter"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a20a5108546ab3508e5d",
+      "alias_ids": [
+        "b1-verpassen-transport"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a20a5108546ab3508e5d",
+        "de": "verpassen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "пропускать",
+          "пропустить",
+          "опоздать на"
+        ],
+        "definition_de": "Zu spät kommen und dadurch ein Verkehrsmittel oder eine Gelegenheit nicht mehr bekommen.",
+        "forms": "verpasst · verpasste · hat verpasst",
+        "example": "Ich habe heute Morgen die Straßenbahn verpasst.",
+        "example_ru": "Сегодня утром я не успела на трамвай.",
+        "grammar_hint": "Что пропустили? Akkusativ: die Straßenbahn verpassen.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/verpassen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-verpassen-transport"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verpassen-transport",
+            "de": "verpassen",
+            "part": "verb",
+            "forms": "verpasst · verpasste · hat verpasst",
+            "definition_de": "Ein Verkehrsmittel nicht rechtzeitig erreichen.",
+            "translations_ru": [
+              "пропустить",
+              "опоздать на (транспорт)",
+              "не успеть на"
+            ],
+            "grammar_hint": "den Zug/Bus (Akk.) verpassen; без предлога. Не путать с vermissen — скучать по.",
+            "example": "Wegen des Staus habe ich meinen Anschlussbus verpasst.",
+            "example_ru": "Из-за пробки я не успела на пересадочный автобус."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verpassen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_00d8344ee552b1c68460",
+      "alias_ids": [
+        "b1-verschieden-different"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_00d8344ee552b1c68460",
+        "de": "verschieden",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "разный",
+          "различный",
+          "несколько (во мн. ч.)"
+        ],
+        "definition_de": "Nicht gleich oder von unterschiedlicher Art; im Plural auch mehrere.",
+        "forms": "verschieden · verschiedener · am verschiedensten",
+        "example": "Wir haben verschiedene Hobbys.",
+        "example_ru": "У нас разные увлечения.",
+        "grammar_hint": "",
+        "usage_note": "verschiedene Farben — разные цвета; verschiedene Leute — разные/несколько человек (не обязательно многие). Степени сравнения относятся к различию, не к количеству. Не путать с Partizip II глагола verscheiden — скончаться (книжное; уровень здесь не подтверждён).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 29,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/verschieden",
+            "https://www.duden.de/rechtschreibung/verschieden_unterschiedlich",
+            "https://www.duden.de/rechtschreibung/verscheiden"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-verschieden-different"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-verschieden-different",
+            "de": "verschieden",
+            "part": "adjective",
+            "forms": "verschieden · verschiedener · am verschiedensten (в значении различия)",
+            "definition_de": "In seinen Merkmalen von anderen Dingen oder Personen abweichend.",
+            "translations_ru": [
+              "различный",
+              "неодинаковый"
+            ],
+            "grammar_hint": "verschieden von + Dat.; unterschiedlich — близкий синоним.",
+            "example": "Die beiden Wohnungen sind sehr verschieden.",
+            "example_ru": "Эти две квартиры сильно отличаются."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 93,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 93–94 visually checked. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/verschieden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2981 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 253–272 using staged definitions, examples and grammar. Conditional proposals only; original IDs, cards, progress and CEFR labels unchanged. No new independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    253,
+    272
+  ],
+  "reviewed": 20,
+  "merge_count": 12,
+  "merge_target_count": 11,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 5,
+  "followup_review": [
+    {
+      "id": "b1-heute-from-today",
+      "issue": "Prefer с сегодняшнего дня as the Russian gloss. Keep the starting-point expression available for dedicated practice."
+    },
+    {
+      "id": "b1-hinten-exit",
+      "issue": "Use выходить сзади as the general translation; через заднюю дверь is appropriate in the bus example."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 253,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same warmth or sincere friendliness; preserve the uninflected adverbial example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 17,
+        "record": {
+          "id": "b1-herzlich-warm",
+          "de": "herzlich",
+          "lemma": "herzlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "сердечный",
+            "душевный",
+            "от всей души"
+          ],
+          "definition_de": "Mit aufrichtiger Freundlichkeit oder Zuneigung.",
+          "example": "Wir bedanken uns herzlich für die Einladung.",
+          "example_ru": "Мы сердечно благодарим за приглашение.",
+          "forms": "herzlich · herzlicher · am herzlichsten",
+          "grammar_hint": "Herzlichen Dank! / Herzlichen Glückwunsch! При глаголе herzlich без окончания.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herzlich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 584,
+          "record": {
+            "id": "a1-304-1",
+            "de": "herzlich",
+            "lemma": "herzlich",
+            "ru": "сердечный; сердечно",
+            "uk": "",
+            "translations_ru": [
+              "сердечный",
+              "сердечно"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "herzlicher · am herzlichsten",
+            "definition_de": "Mit freundlichen und warmen Gefühlen.",
+            "example": "Wir begrüßen unsere Gäste herzlich.",
+            "example_ru": "Мы сердечно приветствуем наших гостей.",
+            "note": "Herzlichen Glückwunsch! — Сердечные поздравления! Herzlich willkommen! — Добро пожаловать! В наречном употреблении без окончания.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "bc61c389ab3ec4694893"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/herzlich",
+                "scope": "meaning_or_grammar",
+                "note": "Прилагательное и его наречное употребление в приветствиях и поздравлениях."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-304-1",
+        "alias_id": "b1-herzlich-warm",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-304-1"
+      }
+    },
+    {
+      "candidate_number": 254,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same current calendar day.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 18,
+        "record": {
+          "id": "b1-heute-today",
+          "de": "heute",
+          "lemma": "heute",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "сегодня"
+          ],
+          "definition_de": "Am gegenwärtigen Kalendertag.",
+          "example": "Heute endet der Kurs etwas früher.",
+          "example_ru": "Сегодня курс заканчивается немного раньше.",
+          "forms": "неизменяемое",
+          "grammar_hint": "heute Morgen / heute Abend (существительные с большой буквы); если heute в начале, глагол на втором месте.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/heute"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 42,
+          "record": {
+            "id": "time-heute",
+            "de": "heute",
+            "lemma": "heute",
+            "ru": "сегодня",
+            "uk": "",
+            "translations_ru": [
+              "сегодня"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Tag.",
+            "example": "Heute endet der Kurs um acht.",
+            "example_ru": "Сегодня курс заканчивается в восемь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "03bc0663f9e5ed26d87a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "time-heute",
+        "alias_id": "b1-heute-today",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "time-heute"
+      }
+    },
+    {
+      "candidate_number": 255,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "ab heute establishes a starting date rather than locating a single event on the current day.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 19,
+        "record": {
+          "id": "b1-heute-from-today",
+          "de": "ab heute",
+          "lemma": "heute",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "с сегодняшнего дня",
+            "начиная с сегодня"
+          ],
+          "definition_de": "Vom gegenwärtigen Tag an.",
+          "example": "Ab heute gilt der neue Fahrplan.",
+          "example_ru": "С сегодняшнего дня действует новое расписание.",
+          "forms": "неизменяемое выражение",
+          "grammar_hint": "ab heute — начало действия; seit heute — действие началось сегодня и продолжается.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/heute"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 42,
+          "record": {
+            "id": "time-heute",
+            "de": "heute",
+            "lemma": "heute",
+            "ru": "сегодня",
+            "uk": "",
+            "translations_ru": [
+              "сегодня"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Tag.",
+            "example": "Heute endet der Kurs um acht.",
+            "example_ru": "Сегодня курс заканчивается в восемь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "03bc0663f9e5ed26d87a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 256,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "The construction fixes a date exactly one week from today; retain the dedicated time-expression practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 20,
+        "record": {
+          "id": "b1-heute-future-interval",
+          "de": "heute in einer Woche",
+          "lemma": "heute",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "ровно через неделю",
+            "через неделю с сегодняшнего дня"
+          ],
+          "definition_de": "Am gleichen Wochentag der folgenden Woche.",
+          "example": "Heute in einer Woche beginnt mein Praktikum.",
+          "example_ru": "Ровно через неделю начинается моя практика.",
+          "forms": "неизменяемое heute; in + Dativ",
+          "grammar_hint": "heute in einer Woche = in sieben Tagen; heute in acht Tagen — традиционная формула, которую можно понимать как через неделю. Для точного срока лучше in sieben Tagen.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/heute"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 42,
+          "record": {
+            "id": "time-heute",
+            "de": "heute",
+            "lemma": "heute",
+            "ru": "сегодня",
+            "uk": "",
+            "translations_ru": [
+              "сегодня"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Tag.",
+            "example": "Heute endet der Kurs um acht.",
+            "example_ru": "Сегодня курс заканчивается в восемь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "03bc0663f9e5ed26d87a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 257,
+      "decision": "retain_distinct_sense",
+      "reason": "The present era is a separate sense from the current calendar day.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 21,
+        "record": {
+          "id": "b1-heute-nowadays",
+          "de": "heute",
+          "lemma": "heute",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "в наши дни",
+            "сегодня (в современную эпоху)"
+          ],
+          "definition_de": "In der heutigen Zeit, nicht nur an einem einzelnen Tag.",
+          "example": "Heute bezahlen viele Menschen mit dem Handy.",
+          "example_ru": "В наши дни многие люди платят телефоном.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Синоним heutzutage; противоположность früher. Не обязательно речь о сегодняшней дате.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/heute"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 42,
+          "record": {
+            "id": "time-heute",
+            "de": "heute",
+            "lemma": "heute",
+            "ru": "сегодня",
+            "uk": "",
+            "translations_ru": [
+              "сегодня"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Tag.",
+            "example": "Heute endet der Kurs um acht.",
+            "example_ru": "Сегодня курс заканчивается в восемь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "03bc0663f9e5ed26d87a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 258,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same location at this place.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 23,
+        "record": {
+          "id": "b1-hier-place",
+          "de": "hier",
+          "lemma": "hier",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "здесь",
+            "тут"
+          ],
+          "definition_de": "An dem Ort, an dem sich der Sprecher befindet oder auf den er verweist.",
+          "example": "Hier können wir in Ruhe lernen.",
+          "example_ru": "Здесь мы можем спокойно учиться.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Wo? hier; Wohin? hierher; Woher? von hier.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hier"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 585,
+          "record": {
+            "id": "a1-306-1",
+            "de": "hier",
+            "lemma": "hier",
+            "ru": "здесь; тут",
+            "uk": "",
+            "translations_ru": [
+              "здесь",
+              "тут"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Ort.",
+            "example": "Warte bitte hier.",
+            "example_ru": "Подожди здесь, пожалуйста.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "bd21a91d47e97f7d5912"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-306-1",
+        "alias_id": "b1-hier-place",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-306-1"
+      }
+    },
+    {
+      "candidate_number": 259,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "von hier (aus) marks a point of origin; the A1 example only teaches location.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 24,
+        "record": {
+          "id": "b1-hier-origin",
+          "de": "von hier",
+          "lemma": "hier",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "отсюда",
+            "с этого места"
+          ],
+          "definition_de": "Bezeichnet den Ausgangspunkt an diesem Ort.",
+          "example": "Von hier aus sieht man die Berge.",
+          "example_ru": "Отсюда видны горы.",
+          "forms": "von + hier; неизменяемое hier",
+          "grammar_hint": "von hier (aus) — отсюда; bis hier — досюда. Woher? von hier.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hier"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 585,
+          "record": {
+            "id": "a1-306-1",
+            "de": "hier",
+            "lemma": "hier",
+            "ru": "здесь; тут",
+            "uk": "",
+            "translations_ru": [
+              "здесь",
+              "тут"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Ort.",
+            "example": "Warte bitte hier.",
+            "example_ru": "Подожди здесь, пожалуйста.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "bd21a91d47e97f7d5912"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 260,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Presenting or handing over an item with hier ist/sind uses a separate classroom-ready construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 25,
+        "record": {
+          "id": "b1-hier-present",
+          "de": "hier ist / hier sind",
+          "lemma": "hier",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "вот",
+            "вот здесь"
+          ],
+          "definition_de": "Lenkt die Aufmerksamkeit auf etwas, das gezeigt oder übergeben wird.",
+          "example": "Hier sind deine Unterlagen für den Kurs.",
+          "example_ru": "Вот твои документы для курса.",
+          "forms": "ist / sind · war / waren",
+          "grammar_hint": "Согласование с подлежащим: Hier ist der Schlüssel. Hier sind die Schlüssel.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hier"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 585,
+          "record": {
+            "id": "a1-306-1",
+            "de": "hier",
+            "lemma": "hier",
+            "ru": "здесь; тут",
+            "uk": "",
+            "translations_ru": [
+              "здесь",
+              "тут"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Ort.",
+            "example": "Warte bitte hier.",
+            "example_ru": "Подожди здесь, пожалуйста.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "bd21a91d47e97f7d5912"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 261,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same telephone self-introduction; preserve the complete greeting.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 26,
+        "record": {
+          "id": "b1-hier-phone",
+          "de": "Hier ist …",
+          "lemma": "hier",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Это … (представление по телефону)"
+          ],
+          "definition_de": "Eine Formulierung, mit der man am Telefon den eigenen Namen nennt.",
+          "example": "Guten Tag, hier ist Maria Keller.",
+          "example_ru": "Добрый день, это Мария Келлер.",
+          "forms": "устойчивое выражение",
+          "grammar_hint": "Hier spricht … — аналогичная формула; при представлении по телефону не всегда нужно Ich bin …",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hier"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 586,
+          "record": {
+            "id": "a1-306-2",
+            "de": "Hier ist …",
+            "lemma": "Hier ist …",
+            "ru": "это …; говорит … (по телефону)",
+            "uk": "",
+            "translations_ru": [
+              "это …",
+              "говорит … (по телефону)"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "Formel, mit der man sich am Telefon vorstellt.",
+            "example": "Guten Tag, hier ist Nina Keller.",
+            "example_ru": "Добрый день, это Нина Келлер.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "bd21a91d47e97f7d5912"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 585,
+          "record": {
+            "id": "a1-306-1",
+            "de": "hier",
+            "lemma": "hier",
+            "ru": "здесь; тут",
+            "uk": "",
+            "translations_ru": [
+              "здесь",
+              "тут"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "An diesem Ort.",
+            "example": "Warte bitte hier.",
+            "example_ru": "Подожди здесь, пожалуйста.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "bd21a91d47e97f7d5912"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-306-2",
+        "alias_id": "b1-hier-phone",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-306-2"
+      }
+    },
+    {
+      "candidate_number": 262,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same visible sky sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 28,
+        "record": {
+          "id": "b1-himmel-sky",
+          "de": "der Himmel",
+          "lemma": "Himmel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "небо"
+          ],
+          "definition_de": "Der sichtbare Raum über der Erde.",
+          "example": "Am Abend färbt sich der Himmel rosa.",
+          "example_ru": "Вечером небо становится розовым.",
+          "forms": "die Himmel; в данном значении обычно Singular",
+          "grammar_hint": "am Himmel — на небе; ein wolkenloser Himmel. В других контекстах Himmel может означать рай.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Himmel"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 250,
+          "record": {
+            "id": "dict_117d63587f6311c40347",
+            "de": "der Himmel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "небо"
+            ],
+            "definition_de": "Der Raum über der Erde, den man sieht, wenn man nach oben schaut.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Heute Morgen ist der Himmel grau.",
+            "example_ru": "Сегодня утром небо серое.",
+            "grammar_hint": "",
+            "usage_note": "Небо в погодном контексте; небеса в религиозном смысле и балдахин — другие значения.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Himmel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_117d63587f6311c40347",
+        "alias_id": "b1-himmel-sky",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_117d63587f6311c40347"
+      }
+    },
+    {
+      "candidate_number": 263,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same rear-location sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_036.json",
+        "sha": "1ddd6837dfd295da8e6ed55ff91dd3b0aa3074bb",
+        "batch": 36,
+        "row": 30,
+        "record": {
+          "id": "b1-hinten-back",
+          "de": "hinten",
+          "lemma": "hinten",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "сзади",
+            "в задней части"
+          ],
+          "definition_de": "An der Rückseite oder im hinteren Bereich eines Ortes.",
+          "example": "Im Bus sitzen wir meistens ganz hinten.",
+          "example_ru": "В автобусе мы обычно сидим в самом конце.",
+          "forms": "неизменяемое",
+          "grammar_hint": "hinten — сзади; nach hinten — назад (направление); von hinten — сзади (откуда). Gegensatz: vorne.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinten"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 587,
+          "record": {
+            "id": "a1-308-1",
+            "de": "hinten",
+            "lemma": "hinten",
+            "ru": "сзади; в задней части",
+            "uk": "",
+            "translations_ru": [
+              "сзади",
+              "в задней части"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "Im hinteren Teil oder weiter vom Eingang entfernt.",
+            "example": "Die Toilette ist hinten.",
+            "example_ru": "Туалет в глубине помещения.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "c684bffc646b9dcad7d8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-308-1",
+        "alias_id": "b1-hinten-back",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-308-1"
+      }
+    },
+    {
+      "candidate_number": 264,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Retain transport exit practice with the separable verb aussteigen; the A1 match teaches location only.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 1,
+        "record": {
+          "id": "b1-hinten-exit",
+          "de": "hinten aussteigen",
+          "lemma": "hinten",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "выходить через заднюю дверь",
+            "выходить сзади"
+          ],
+          "definition_de": "Ein Fahrzeug im hinteren Bereich verlassen.",
+          "example": "Im Bus steigen wir hinten aus.",
+          "example_ru": "В автобусе мы выходим через заднюю дверь.",
+          "forms": "steigt aus · stieg aus · ist ausgestiegen",
+          "grammar_hint": "hinten обозначает место выхода; aussteigen — отделяемый глагол.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 587,
+          "record": {
+            "id": "a1-308-1",
+            "de": "hinten",
+            "lemma": "hinten",
+            "ru": "сзади; в задней части",
+            "uk": "",
+            "translations_ru": [
+              "сзади",
+              "в задней части"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "",
+            "definition_de": "Im hinteren Teil oder weiter vom Eingang entfernt.",
+            "example": "Die Toilette ist hinten.",
+            "example_ru": "Туалет в глубине помещения.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "c684bffc646b9dcad7d8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 265,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same location sense with hinter + Dativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 2,
+        "record": {
+          "id": "b1-hinter-location",
+          "de": "hinter",
+          "lemma": "hinter",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "за",
+            "позади"
+          ],
+          "definition_de": "Bezeichnet eine Lage auf der Rückseite eines Gegenstands.",
+          "example": "Die Fahrräder stehen hinter der Garage.",
+          "example_ru": "Велосипеды стоят за гаражом.",
+          "forms": "hinter + Dativ (Wo?)",
+          "grammar_hint": "Местоположение: hinter der Garage. Wechselpräposition.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 12,
+          "record": {
+            "id": "dict_a1681771261ff0bc036e",
+            "de": "hinter",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "за",
+              "позади"
+            ],
+            "definition_de": "Bezeichnet eine Lage oder ein Ziel auf der Rückseite von etwas.",
+            "example": "Die Fahrräder stehen hinter dem Haus.",
+            "example_ru": "Велосипеды стоят за домом.",
+            "grammar_hint": "Wechselpräposition. Wo? hinter + Dativ: hinter dem Haus. Wohin? hinter + Akkusativ: hinter das Haus. Wir gehen hinter das Haus.",
+            "usage_note": "Правило относится к пространственному употреблению. hinter — предлог, hinten — наречие (сзади).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/hinter"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a1681771261ff0bc036e",
+        "alias_id": "b1-hinter-location",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a1681771261ff0bc036e"
+      }
+    },
+    {
+      "candidate_number": 266,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A2 explicitly teaches the destination use with hinter + Akkusativ; preserve the contrasting case example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 3,
+        "record": {
+          "id": "b1-hinter-direction",
+          "de": "hinter",
+          "lemma": "hinter",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "за (куда)",
+            "позади (направление)"
+          ],
+          "definition_de": "Bezeichnet eine Bewegung zu einem Ort auf der Rückseite.",
+          "example": "Stell die Kiste bitte hinter den Schrank.",
+          "example_ru": "Поставь коробку, пожалуйста, за шкаф.",
+          "forms": "hinter + Akkusativ (Wohin?)",
+          "grammar_hint": "Смена местоположения: hinter den Schrank; состояние: hinter dem Schrank.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 12,
+          "record": {
+            "id": "dict_a1681771261ff0bc036e",
+            "de": "hinter",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "за",
+              "позади"
+            ],
+            "definition_de": "Bezeichnet eine Lage oder ein Ziel auf der Rückseite von etwas.",
+            "example": "Die Fahrräder stehen hinter dem Haus.",
+            "example_ru": "Велосипеды стоят за домом.",
+            "grammar_hint": "Wechselpräposition. Wo? hinter + Dativ: hinter dem Haus. Wohin? hinter + Akkusativ: hinter das Haus. Wir gehen hinter das Haus.",
+            "usage_note": "Правило относится к пространственному употреблению. hinter — предлог, hinten — наречие (сзади).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/hinter"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a1681771261ff0bc036e",
+        "alias_id": "b1-hinter-direction",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a1681771261ff0bc036e"
+      }
+    },
+    {
+      "candidate_number": 267,
+      "decision": "retain_distinct_sense",
+      "reason": "Inflected adjective meaning rear, distinct from the two-way preposition.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 4,
+        "record": {
+          "id": "b1-hinter-adjectival",
+          "de": "hintere / hinterer / hinteres",
+          "lemma": "hinter",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "задний",
+            "находящийся сзади"
+          ],
+          "definition_de": "Im hinteren Teil eines Bereichs gelegen.",
+          "example": "Wir benutzen den hinteren Eingang.",
+          "example_ru": "Мы пользуемся задним входом.",
+          "forms": "обычно без степеней сравнения",
+          "grammar_hint": "der hintere Eingang; den hinteren Eingang (Akkusativ). Не путать с предлогом hinter.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 12,
+          "record": {
+            "id": "dict_a1681771261ff0bc036e",
+            "de": "hinter",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "за",
+              "позади"
+            ],
+            "definition_de": "Bezeichnet eine Lage oder ein Ziel auf der Rückseite von etwas.",
+            "example": "Die Fahrräder stehen hinter dem Haus.",
+            "example_ru": "Велосипеды стоят за домом.",
+            "grammar_hint": "Wechselpräposition. Wo? hinter + Dativ: hinter dem Haus. Wohin? hinter + Akkusativ: hinter das Haus. Wir gehen hinter das Haus.",
+            "usage_note": "Правило относится к пространственному употреблению. hinter — предлог, hinten — наречие (сзади).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/hinter"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 268,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same leisure activity sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 11,
+        "record": {
+          "id": "b1-hobby-hobby",
+          "de": "das Hobby",
+          "lemma": "Hobby",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "хобби",
+            "увлечение"
+          ],
+          "definition_de": "Eine Tätigkeit, die man aus Interesse in der Freizeit ausübt.",
+          "example": "Fotografieren ist seit Jahren mein Hobby.",
+          "example_ru": "Фотография уже много лет моё хобби.",
+          "forms": "die Hobbys",
+          "grammar_hint": "ein Hobby haben; Hobbys nachgehen (+ Dativ). Мн. ч. Hobbys, не Hobbies в немецком.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hobby"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 453,
+          "record": {
+            "id": "a1-309-1",
+            "de": "das Hobby",
+            "lemma": "Hobby",
+            "ru": "хобби; увлечение",
+            "uk": "",
+            "translations_ru": [
+              "хобби",
+              "увлечение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Hobbys",
+            "definition_de": "Eine Tätigkeit, die man in seiner Freizeit gern ausübt.",
+            "example": "Mein Hobby ist Fotografie.",
+            "example_ru": "Моё хобби — фотография.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "d51ceca80d746691cd0a"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Hobby",
+                "scope": "meaning",
+                "note": "Синоним в контексте досуга."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-309-1",
+        "alias_id": "b1-hobby-hobby",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-309-1"
+      }
+    },
+    {
+      "candidate_number": 269,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same physical height or measurement sense; preserve the form hoher.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 12,
+        "record": {
+          "id": "b1-hoch-dimension",
+          "de": "hoch",
+          "lemma": "hoch",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "высокий",
+            "высотой"
+          ],
+          "definition_de": "Von einer bestimmten oder großen vertikalen Ausdehnung.",
+          "example": "Das Regal ist zwei Meter hoch.",
+          "example_ru": "Стеллаж высотой два метра.",
+          "forms": "hoch · höher · am höchsten",
+          "grammar_hint": "Перед существительным: ein hoher Schrank (без c); для роста человека обычно groß.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 392,
+          "record": {
+            "id": "a1-310-1",
+            "de": "hoch",
+            "lemma": "hoch",
+            "ru": "высокий; высотой",
+            "uk": "",
+            "translations_ru": [
+              "высокий",
+              "высотой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Mit großer Höhe oder mit einer bestimmten Höhe.",
+            "example": "Der Turm ist zwanzig Meter hoch.",
+            "example_ru": "Высота башни — двадцать метров.",
+            "note": "Перед существительным: ein hoher Turm (не hocher). Значение «высокий» о цене подтверждено отдельно на A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "8c866572561f07866dc3"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich",
+                "scope": "meaning_and_grammar"
+              },
+              {
+                "url": "https://www.duden.de/sprachwissen/sprachratgeber/steigerung-komparation-deutsche-adjektive",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 629,
+          "record": {
+            "id": "dict_f6c15732583d5388cfce-price",
+            "de": "hoch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "высокий (о цене, размере суммы)"
+            ],
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Bei einem Preis oder Betrag über dem üblichen Maß liegen.",
+            "example": "Die Miete ist hier sehr hoch.",
+            "example_ru": "Арендная плата здесь очень высокая.",
+            "grammar_hint": "ein hoher Preis; höhere Preise; am höchsten.",
+            "usage_note": "Отдельное значение от физической высоты (A1).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-310-1",
+        "alias_id": "b1-hoch-dimension",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-310-1"
+      }
+    },
+    {
+      "candidate_number": 270,
+      "decision": "retain_distinct_sense",
+      "reason": "A location high above something differs from how tall an object is or how high a price is.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 13,
+        "record": {
+          "id": "b1-hoch-location",
+          "de": "hoch",
+          "lemma": "hoch",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "высоко"
+          ],
+          "definition_de": "In großer Entfernung nach oben gelegen.",
+          "example": "Die Hütte liegt hoch über dem Tal.",
+          "example_ru": "Хижина находится высоко над долиной.",
+          "forms": "hoch · höher · am höchsten",
+          "grammar_hint": "Прилагательное в наречном употреблении, без окончания: hoch über + Dativ при местоположении; höher liegen als …",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 392,
+          "record": {
+            "id": "a1-310-1",
+            "de": "hoch",
+            "lemma": "hoch",
+            "ru": "высокий; высотой",
+            "uk": "",
+            "translations_ru": [
+              "высокий",
+              "высотой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Mit großer Höhe oder mit einer bestimmten Höhe.",
+            "example": "Der Turm ist zwanzig Meter hoch.",
+            "example_ru": "Высота башни — двадцать метров.",
+            "note": "Перед существительным: ein hoher Turm (не hocher). Значение «высокий» о цене подтверждено отдельно на A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "8c866572561f07866dc3"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich",
+                "scope": "meaning_and_grammar"
+              },
+              {
+                "url": "https://www.duden.de/sprachwissen/sprachratgeber/steigerung-komparation-deutsche-adjektive",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 629,
+          "record": {
+            "id": "dict_f6c15732583d5388cfce-price",
+            "de": "hoch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "высокий (о цене, размере суммы)"
+            ],
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Bei einem Preis oder Betrag über dem üblichen Maß liegen.",
+            "example": "Die Miete ist hier sehr hoch.",
+            "example_ru": "Арендная плата здесь очень высокая.",
+            "grammar_hint": "ein hoher Preis; höhere Preise; am höchsten.",
+            "usage_note": "Отдельное значение от физической высоты (A1).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 271,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same high-price or amount sense; A2 example also refers to rent.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 14,
+        "record": {
+          "id": "b1-hoch-price",
+          "de": "hoch",
+          "lemma": "hoch",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "высокий",
+            "большой (цены, суммы)"
+          ],
+          "definition_de": "Von einem großen zahlenmäßigen Wert.",
+          "example": "Die Mieten in dieser Gegend sind hoch.",
+          "example_ru": "Арендные платежи в этом районе высокие.",
+          "forms": "hoch · höher · am höchsten",
+          "grammar_hint": "hohe Preise / hohe Kosten; niedrige Preise — противоположность.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 392,
+          "record": {
+            "id": "a1-310-1",
+            "de": "hoch",
+            "lemma": "hoch",
+            "ru": "высокий; высотой",
+            "uk": "",
+            "translations_ru": [
+              "высокий",
+              "высотой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Mit großer Höhe oder mit einer bestimmten Höhe.",
+            "example": "Der Turm ist zwanzig Meter hoch.",
+            "example_ru": "Высота башни — двадцать метров.",
+            "note": "Перед существительным: ein hoher Turm (не hocher). Значение «высокий» о цене подтверждено отдельно на A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "8c866572561f07866dc3"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich",
+                "scope": "meaning_and_grammar"
+              },
+              {
+                "url": "https://www.duden.de/sprachwissen/sprachratgeber/steigerung-komparation-deutsche-adjektive",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 629,
+          "record": {
+            "id": "dict_f6c15732583d5388cfce-price",
+            "de": "hoch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "высокий (о цене, размере суммы)"
+            ],
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Bei einem Preis oder Betrag über dem üblichen Maß liegen.",
+            "example": "Die Miete ist hier sehr hoch.",
+            "example_ru": "Арендная плата здесь очень высокая.",
+            "grammar_hint": "ein hoher Preis; höhere Preise; am höchsten.",
+            "usage_note": "Отдельное значение от физической высоты (A1).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f6c15732583d5388cfce-price",
+        "alias_id": "b1-hoch-price",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f6c15732583d5388cfce-price"
+      }
+    },
+    {
+      "candidate_number": 272,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same wedding celebration sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 19,
+        "record": {
+          "id": "b1-hochzeit-wedding",
+          "de": "die Hochzeit",
+          "lemma": "Hochzeit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "свадьба"
+          ],
+          "definition_de": "Die Feier anlässlich einer Eheschließung.",
+          "example": "Wir sind im Mai zu einer Hochzeit eingeladen.",
+          "example_ru": "В мае нас пригласили на свадьбу.",
+          "forms": "die Hochzeiten",
+          "grammar_hint": "zur Hochzeit (zu + Dativ); Hochzeit feiern. Не путать с Ehe — брак.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hochzeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 454,
+          "record": {
+            "id": "a1-311-1",
+            "de": "die Hochzeit",
+            "lemma": "Hochzeit",
+            "ru": "свадьба",
+            "uk": "",
+            "translations_ru": [
+              "свадьба"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Hochzeiten",
+            "definition_de": "Das Fest, bei dem zwei Personen heiraten.",
+            "example": "Die Hochzeit ist im Mai.",
+            "example_ru": "Свадьба в мае.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "7e992787898d30f5e694"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-311-1",
+        "alias_id": "b1-hochzeit-wedding",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-311-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-304-1",
+      "alias_ids": [
+        "b1-herzlich-warm"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-304-1",
+        "de": "herzlich",
+        "lemma": "herzlich",
+        "ru": "сердечный; сердечно; душевный; от всей души",
+        "uk": "",
+        "translations_ru": [
+          "сердечный",
+          "сердечно",
+          "душевный",
+          "от всей души"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Общение"
+        ],
+        "forms": "herzlicher · am herzlichsten",
+        "definition_de": "Mit freundlichen und warmen Gefühlen.",
+        "example": "Wir begrüßen unsere Gäste herzlich.",
+        "example_ru": "Мы сердечно приветствуем наших гостей.",
+        "note": "Herzlichen Glückwunsch! — Сердечные поздравления! Herzlich willkommen! — Добро пожаловать! В наречном употреблении без окончания.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "bc61c389ab3ec4694893"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/herzlich",
+            "scope": "meaning_or_grammar",
+            "note": "Прилагательное и его наречное употребление в приветствиях и поздравлениях."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Herzlichen Dank! / Herzlichen Glückwunsch! При глаголе herzlich без окончания.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "herzlich · herzlicher · am herzlichsten"
+        ],
+        "alternative_definitions_de": [
+          "Mit aufrichtiger Freundlichkeit oder Zuneigung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir bedanken uns herzlich für die Einladung.",
+            "ru": "Мы сердечно благодарим за приглашение."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-herzlich-warm",
+            "de": "herzlich",
+            "part": "adj",
+            "forms": "herzlich · herzlicher · am herzlichsten",
+            "definition_de": "Mit aufrichtiger Freundlichkeit oder Zuneigung.",
+            "translations_ru": [
+              "сердечный",
+              "душевный",
+              "от всей души"
+            ],
+            "grammar_hint": "Herzlichen Dank! / Herzlichen Glückwunsch! При глаголе herzlich без окончания.",
+            "example": "Wir bedanken uns herzlich für die Einladung.",
+            "example_ru": "Мы сердечно благодарим за приглашение."
+          }
+        ],
+        "alias_ids": [
+          "b1-herzlich-warm"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/herzlich"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "time-heute",
+      "alias_ids": [
+        "b1-heute-today"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "time-heute",
+        "de": "heute",
+        "lemma": "heute",
+        "ru": "сегодня",
+        "uk": "",
+        "translations_ru": [
+          "сегодня"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время",
+          "Время и даты"
+        ],
+        "forms": "",
+        "definition_de": "An diesem Tag.",
+        "example": "Heute endet der Kurs um acht.",
+        "example_ru": "Сегодня курс заканчивается в восемь.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "03bc0663f9e5ed26d87a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "heute Morgen / heute Abend (существительные с большой буквы); если heute в начале, глагол на втором месте.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Am gegenwärtigen Kalendertag."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Heute endet der Kurs etwas früher.",
+            "ru": "Сегодня курс заканчивается немного раньше."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-heute-today",
+            "de": "heute",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Am gegenwärtigen Kalendertag.",
+            "translations_ru": [
+              "сегодня"
+            ],
+            "grammar_hint": "heute Morgen / heute Abend (существительные с большой буквы); если heute в начале, глагол на втором месте.",
+            "example": "Heute endet der Kurs etwas früher.",
+            "example_ru": "Сегодня курс заканчивается немного раньше."
+          }
+        ],
+        "alias_ids": [
+          "b1-heute-today"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/heute"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-306-1",
+      "alias_ids": [
+        "b1-hier-place"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-306-1",
+        "de": "hier",
+        "lemma": "hier",
+        "ru": "здесь; тут",
+        "uk": "",
+        "translations_ru": [
+          "здесь",
+          "тут"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "",
+        "definition_de": "An diesem Ort.",
+        "example": "Warte bitte hier.",
+        "example_ru": "Подожди здесь, пожалуйста.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "bd21a91d47e97f7d5912"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wo? hier; Wohin? hierher; Woher? von hier.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "An dem Ort, an dem sich der Sprecher befindet oder auf den er verweist."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Hier können wir in Ruhe lernen.",
+            "ru": "Здесь мы можем спокойно учиться."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hier-place",
+            "de": "hier",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "An dem Ort, an dem sich der Sprecher befindet oder auf den er verweist.",
+            "translations_ru": [
+              "здесь",
+              "тут"
+            ],
+            "grammar_hint": "Wo? hier; Wohin? hierher; Woher? von hier.",
+            "example": "Hier können wir in Ruhe lernen.",
+            "example_ru": "Здесь мы можем спокойно учиться."
+          }
+        ],
+        "alias_ids": [
+          "b1-hier-place"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hier"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-306-2",
+      "alias_ids": [
+        "b1-hier-phone"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-306-2",
+        "de": "Hier ist …",
+        "lemma": "Hier ist …",
+        "ru": "это …; говорит … (по телефону); Это … (представление по телефону)",
+        "uk": "",
+        "translations_ru": [
+          "это …",
+          "говорит … (по телефону)",
+          "Это … (представление по телефону)"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Formel, mit der man sich am Telefon vorstellt.",
+        "example": "Guten Tag, hier ist Nina Keller.",
+        "example_ru": "Добрый день, это Нина Келлер.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "bd21a91d47e97f7d5912"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Hier spricht … — аналогичная формула; при представлении по телефону не всегда нужно Ich bin …",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "устойчивое выражение"
+        ],
+        "alternative_definitions_de": [
+          "Eine Formulierung, mit der man am Telefon den eigenen Namen nennt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Guten Tag, hier ist Maria Keller.",
+            "ru": "Добрый день, это Мария Келлер."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hier-phone",
+            "de": "Hier ist …",
+            "part": "phrase",
+            "forms": "устойчивое выражение",
+            "definition_de": "Eine Formulierung, mit der man am Telefon den eigenen Namen nennt.",
+            "translations_ru": [
+              "Это … (представление по телефону)"
+            ],
+            "grammar_hint": "Hier spricht … — аналогичная формула; при представлении по телефону не всегда нужно Ich bin …",
+            "example": "Guten Tag, hier ist Maria Keller.",
+            "example_ru": "Добрый день, это Мария Келлер."
+          }
+        ],
+        "alias_ids": [
+          "b1-hier-phone"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hier"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_117d63587f6311c40347",
+      "alias_ids": [
+        "b1-himmel-sky"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_117d63587f6311c40347",
+        "de": "der Himmel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "небо"
+        ],
+        "definition_de": "Der Raum über der Erde, den man sieht, wenn man nach oben schaut.",
+        "forms": "В этом значении обычно в единственном числе",
+        "example": "Heute Morgen ist der Himmel grau.",
+        "example_ru": "Сегодня утром небо серое.",
+        "grammar_hint": "am Himmel — на небе; ein wolkenloser Himmel. В других контекстах Himmel может означать рай.",
+        "usage_note": "Небо в погодном контексте; небеса в религиозном смысле и балдахин — другие значения.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Himmel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода",
+          "Природа и погода"
+        ],
+        "ru": "небо",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Himmel; в данном значении обычно Singular"
+        ],
+        "alternative_definitions_de": [
+          "Der sichtbare Raum über der Erde."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Am Abend färbt sich der Himmel rosa.",
+            "ru": "Вечером небо становится розовым."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-himmel-sky",
+            "de": "der Himmel",
+            "part": "noun",
+            "forms": "die Himmel; в данном значении обычно Singular",
+            "definition_de": "Der sichtbare Raum über der Erde.",
+            "translations_ru": [
+              "небо"
+            ],
+            "grammar_hint": "am Himmel — на небе; ein wolkenloser Himmel. В других контекстах Himmel может означать рай.",
+            "example": "Am Abend färbt sich der Himmel rosa.",
+            "example_ru": "Вечером небо становится розовым."
+          }
+        ],
+        "alias_ids": [
+          "b1-himmel-sky"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Himmel"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-308-1",
+      "alias_ids": [
+        "b1-hinten-back"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-308-1",
+        "de": "hinten",
+        "lemma": "hinten",
+        "ru": "сзади; в задней части",
+        "uk": "",
+        "translations_ru": [
+          "сзади",
+          "в задней части"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Транспорт и путешествия"
+        ],
+        "forms": "",
+        "definition_de": "Im hinteren Teil oder weiter vom Eingang entfernt.",
+        "example": "Die Toilette ist hinten.",
+        "example_ru": "Туалет в глубине помещения.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "c684bffc646b9dcad7d8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "hinten — сзади; nach hinten — назад (направление); von hinten — сзади (откуда). Gegensatz: vorne.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "An der Rückseite oder im hinteren Bereich eines Ortes."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Bus sitzen wir meistens ganz hinten.",
+            "ru": "В автобусе мы обычно сидим в самом конце."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hinten-back",
+            "de": "hinten",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "An der Rückseite oder im hinteren Bereich eines Ortes.",
+            "translations_ru": [
+              "сзади",
+              "в задней части"
+            ],
+            "grammar_hint": "hinten — сзади; nach hinten — назад (направление); von hinten — сзади (откуда). Gegensatz: vorne.",
+            "example": "Im Bus sitzen wir meistens ganz hinten.",
+            "example_ru": "В автобусе мы обычно сидим в самом конце."
+          }
+        ],
+        "alias_ids": [
+          "b1-hinten-back"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinten"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_a1681771261ff0bc036e",
+      "alias_ids": [
+        "b1-hinter-location",
+        "b1-hinter-direction"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a1681771261ff0bc036e",
+        "de": "hinter",
+        "part": "prep",
+        "level": "A2",
+        "translations_ru": [
+          "за",
+          "позади"
+        ],
+        "definition_de": "Bezeichnet eine Lage oder ein Ziel auf der Rückseite von etwas.",
+        "example": "Die Fahrräder stehen hinter dem Haus.",
+        "example_ru": "Велосипеды стоят за домом.",
+        "grammar_hint": "Wechselpräposition. Wo? hinter + Dativ: hinter dem Haus. Wohin? hinter + Akkusativ: hinter das Haus. Wir gehen hinter das Haus.\nМестоположение: hinter der Garage. Wechselpräposition.\nСмена местоположения: hinter den Schrank; состояние: hinter dem Schrank.",
+        "usage_note": "Правило относится к пространственному употреблению. hinter — предлог, hinten — наречие (сзади).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/hinter"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление",
+          "Грамматика и связь предложений"
+        ],
+        "ru": "за; позади",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "hinter + Dativ (Wo?)"
+        ],
+        "alternative_definitions_de": [
+          "Bezeichnet eine Lage auf der Rückseite eines Gegenstands."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Fahrräder stehen hinter der Garage.",
+            "ru": "Велосипеды стоят за гаражом."
+          },
+          {
+            "de": "Stell die Kiste bitte hinter den Schrank.",
+            "ru": "Поставь коробку, пожалуйста, за шкаф."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hinter-location",
+            "de": "hinter",
+            "part": "prep",
+            "forms": "hinter + Dativ (Wo?)",
+            "definition_de": "Bezeichnet eine Lage auf der Rückseite eines Gegenstands.",
+            "translations_ru": [
+              "за",
+              "позади"
+            ],
+            "grammar_hint": "Местоположение: hinter der Garage. Wechselpräposition.",
+            "example": "Die Fahrräder stehen hinter der Garage.",
+            "example_ru": "Велосипеды стоят за гаражом."
+          },
+          {
+            "id": "b1-hinter-direction",
+            "de": "hinter",
+            "part": "prep",
+            "forms": "hinter + Akkusativ (Wohin?)",
+            "definition_de": "Bezeichnet eine Bewegung zu einem Ort auf der Rückseite.",
+            "translations_ru": [
+              "за (куда)",
+              "позади (направление)"
+            ],
+            "grammar_hint": "Смена местоположения: hinter den Schrank; состояние: hinter dem Schrank.",
+            "example": "Stell die Kiste bitte hinter den Schrank.",
+            "example_ru": "Поставь коробку, пожалуйста, за шкаф."
+          }
+        ],
+        "alias_ids": [
+          "b1-hinter-location",
+          "b1-hinter-direction"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hinter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-309-1",
+      "alias_ids": [
+        "b1-hobby-hobby"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-309-1",
+        "de": "das Hobby",
+        "lemma": "Hobby",
+        "ru": "хобби; увлечение",
+        "uk": "",
+        "translations_ru": [
+          "хобби",
+          "увлечение"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг",
+          "Досуг и культура"
+        ],
+        "forms": "die Hobbys",
+        "definition_de": "Eine Tätigkeit, die man in seiner Freizeit gern ausübt.",
+        "example": "Mein Hobby ist Fotografie.",
+        "example_ru": "Моё хобби — фотография.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "d51ceca80d746691cd0a"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Hobby",
+            "scope": "meaning",
+            "note": "Синоним в контексте досуга."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "ein Hobby haben; Hobbys nachgehen (+ Dativ). Мн. ч. Hobbys, не Hobbies в немецком.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Tätigkeit, die man aus Interesse in der Freizeit ausübt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Fotografieren ist seit Jahren mein Hobby.",
+            "ru": "Фотография уже много лет моё хобби."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hobby-hobby",
+            "de": "das Hobby",
+            "part": "noun",
+            "forms": "die Hobbys",
+            "definition_de": "Eine Tätigkeit, die man aus Interesse in der Freizeit ausübt.",
+            "translations_ru": [
+              "хобби",
+              "увлечение"
+            ],
+            "grammar_hint": "ein Hobby haben; Hobbys nachgehen (+ Dativ). Мн. ч. Hobbys, не Hobbies в немецком.",
+            "example": "Fotografieren ist seit Jahren mein Hobby.",
+            "example_ru": "Фотография уже много лет моё хобби."
+          }
+        ],
+        "alias_ids": [
+          "b1-hobby-hobby"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hobby"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-310-1",
+      "alias_ids": [
+        "b1-hoch-dimension"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-310-1",
+        "de": "hoch",
+        "lemma": "hoch",
+        "ru": "высокий; высотой",
+        "uk": "",
+        "translations_ru": [
+          "высокий",
+          "высотой"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Дом и быт"
+        ],
+        "forms": "hoch · höher · am höchsten",
+        "definition_de": "Mit großer Höhe oder mit einer bestimmten Höhe.",
+        "example": "Der Turm ist zwanzig Meter hoch.",
+        "example_ru": "Высота башни — двадцать метров.",
+        "note": "Перед существительным: ein hoher Turm (не hocher). Значение «высокий» о цене подтверждено отдельно на A2.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "8c866572561f07866dc3"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich",
+            "scope": "meaning_and_grammar"
+          },
+          {
+            "url": "https://www.duden.de/sprachwissen/sprachratgeber/steigerung-komparation-deutsche-adjektive",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Перед существительным: ein hoher Schrank (без c); для роста человека обычно groß.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Von einer bestimmten oder großen vertikalen Ausdehnung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Das Regal ist zwei Meter hoch.",
+            "ru": "Стеллаж высотой два метра."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hoch-dimension",
+            "de": "hoch",
+            "part": "adj",
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Von einer bestimmten oder großen vertikalen Ausdehnung.",
+            "translations_ru": [
+              "высокий",
+              "высотой"
+            ],
+            "grammar_hint": "Перед существительным: ein hoher Schrank (без c); для роста человека обычно groß.",
+            "example": "Das Regal ist zwei Meter hoch.",
+            "example_ru": "Стеллаж высотой два метра."
+          }
+        ],
+        "alias_ids": [
+          "b1-hoch-dimension"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_f6c15732583d5388cfce-price",
+      "alias_ids": [
+        "b1-hoch-price"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f6c15732583d5388cfce-price",
+        "de": "hoch",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "высокий (о цене, размере суммы)"
+        ],
+        "forms": "hoch · höher · am höchsten",
+        "definition_de": "Bei einem Preis oder Betrag über dem üblichen Maß liegen.",
+        "example": "Die Miete ist hier sehr hoch.",
+        "example_ru": "Арендная плата здесь очень высокая.",
+        "grammar_hint": "ein hoher Preis; höhere Preise; am höchsten.\nhohe Preise / hohe Kosten; niedrige Preise — противоположность.",
+        "usage_note": "Отдельное значение от физической высоты (A1).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/hoch_bedeutend_grosz_stattlich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги",
+          "Деньги и банки"
+        ],
+        "ru": "высокий (о цене, размере суммы)",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Von einem großen zahlenmäßigen Wert."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Mieten in dieser Gegend sind hoch.",
+            "ru": "Арендные платежи в этом районе высокие."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hoch-price",
+            "de": "hoch",
+            "part": "adj",
+            "forms": "hoch · höher · am höchsten",
+            "definition_de": "Von einem großen zahlenmäßigen Wert.",
+            "translations_ru": [
+              "высокий",
+              "большой (цены, суммы)"
+            ],
+            "grammar_hint": "hohe Preise / hohe Kosten; niedrige Preise — противоположность.",
+            "example": "Die Mieten in dieser Gegend sind hoch.",
+            "example_ru": "Арендные платежи в этом районе высокие."
+          }
+        ],
+        "alias_ids": [
+          "b1-hoch-price"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-311-1",
+      "alias_ids": [
+        "b1-hochzeit-wedding"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-311-1",
+        "de": "die Hochzeit",
+        "lemma": "Hochzeit",
+        "ru": "свадьба",
+        "uk": "",
+        "translations_ru": [
+          "свадьба"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья",
+          "Семья и отношения"
+        ],
+        "forms": "die Hochzeiten",
+        "definition_de": "Das Fest, bei dem zwei Personen heiraten.",
+        "example": "Die Hochzeit ist im Mai.",
+        "example_ru": "Свадьба в мае.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "7e992787898d30f5e694"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "zur Hochzeit (zu + Dativ); Hochzeit feiern. Не путать с Ehe — брак.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Die Feier anlässlich einer Eheschließung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir sind im Mai zu einer Hochzeit eingeladen.",
+            "ru": "В мае нас пригласили на свадьбу."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hochzeit-wedding",
+            "de": "die Hochzeit",
+            "part": "noun",
+            "forms": "die Hochzeiten",
+            "definition_de": "Die Feier anlässlich einer Eheschließung.",
+            "translations_ru": [
+              "свадьба"
+            ],
+            "grammar_hint": "zur Hochzeit (zu + Dativ); Hochzeit feiern. Не путать с Ehe — брак.",
+            "example": "Wir sind im Mai zu einer Hochzeit eingeladen.",
+            "example_ru": "В мае нас пригласили на свадьбу."
+          }
+        ],
+        "alias_ids": [
+          "b1-hochzeit-wedding"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hochzeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

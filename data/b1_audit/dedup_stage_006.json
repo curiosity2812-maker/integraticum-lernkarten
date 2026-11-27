@@ -1,0 +1,750 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged overlay for cross-batch candidates 11–15 of 44. Four merge proposals; distinct Gang senses and general Frucht retained separately. Earliest source row canonical; old ID retained as alias, not implemented in progress storage. Original batches unchanged; row coordinates one-based and bound to SHA. No new independent dictionary verification.",
+  "candidate_groups_reviewed": 5,
+  "input_records": 12,
+  "output_records": 8,
+  "alias_map": {
+    "b1-korridor-hall": "b1-korridor-hallway",
+    "b1-fruechte-fruit-ch": "b1-fruechte-ch-fruit",
+    "b1-trottoir-sidewalk": "b1-trottoir-sidewalk-ch",
+    "b1-geschieden-status": "b1-geschieden-divorced"
+  },
+  "groups": [
+    {
+      "canonical_id": "b1-korridor-hallway",
+      "alias_ids": [
+        "b1-korridor-hall"
+      ],
+      "retain": {
+        "batch": 23,
+        "row": 9
+      },
+      "suppress": {
+        "batch": 48,
+        "row": 1
+      },
+      "merged_record": {
+        "id": "b1-korridor-hallway",
+        "de": "der Korridor",
+        "lemma": "Korridor",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "коридор"
+        ],
+        "definition_de": "Ein Durchgang, über den man verschiedene Räume erreicht.",
+        "example": "Im Korridor stehen keine Möbel.",
+        "example_ru": "В коридоре нет мебели.",
+        "forms": "die Korridore",
+        "grammar_hint": "В Швейцарии также употребляется Korridor; синонимы Flur, Gang.\nim Korridor (Dativ); in den Korridor (Akkusativ). D/CH: Korridor, auch Gang; D: Flur.",
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "equivalent": "der Flur",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 41,
+            "scope": "regional_or_contextual_equivalent"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Korridor"
+          ],
+          "independent_meaning_checked": true,
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Ein länglicher Bereich im Gebäude, über den man verschiedene Räume erreicht."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Die Garderobe steht im Korridor neben der Eingangstür.",
+            "ru": "Вешалка стоит в коридоре рядом с входной дверью."
+          }
+        ],
+        "alias_ids": [
+          "b1-korridor-hall"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 23,
+          "row": 9,
+          "sha": "b6241348321ed346d4d9f54e9998bb8e57476bf5",
+          "record": {
+            "id": "b1-korridor-hallway",
+            "de": "der Korridor",
+            "lemma": "Korridor",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "коридор"
+            ],
+            "definition_de": "Ein Durchgang, über den man verschiedene Räume erreicht.",
+            "example": "Im Korridor stehen keine Möbel.",
+            "example_ru": "В коридоре нет мебели.",
+            "forms": "die Korridore",
+            "grammar_hint": "В Швейцарии также употребляется Korridor; синонимы Flur, Gang.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "equivalent": "der Flur",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 41,
+                "scope": "regional_or_contextual_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Korridor"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 48,
+          "row": 1,
+          "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+          "record": {
+            "id": "b1-korridor-hall",
+            "de": "der Korridor",
+            "lemma": "Korridor",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "коридор"
+            ],
+            "definition_de": "Ein länglicher Bereich im Gebäude, über den man verschiedene Räume erreicht.",
+            "example": "Die Garderobe steht im Korridor neben der Eingangstür.",
+            "example_ru": "Вешалка стоит в коридоре рядом с входной дверью.",
+            "forms": "die Korridore",
+            "grammar_hint": "im Korridor (Dativ); in den Korridor (Akkusativ). D/CH: Korridor, auch Gang; D: Flur.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 56,
+                "scope": "context",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Korridor"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-fruechte-ch-fruit",
+      "alias_ids": [
+        "b1-fruechte-fruit-ch"
+      ],
+      "retain": {
+        "batch": 24,
+        "row": 23
+      },
+      "suppress": {
+        "batch": 65,
+        "row": 7
+      },
+      "merged_record": {
+        "id": "b1-fruechte-ch-fruit",
+        "de": "die Früchte",
+        "lemma": "Frucht",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "фрукты (швейцарское употребление)",
+          "фрукты (в швейцарском употреблении)"
+        ],
+        "definition_de": "In der Schweiz gebräuchliche Sammelbezeichnung für essbares Obst.",
+        "example": "Ich kaufe frische Früchte auf dem Wochenmarkt.",
+        "example_ru": "Я покупаю свежие фрукты на рынке.",
+        "forms": "die Frucht · die Früchte",
+        "grammar_hint": "CH: Früchte; D/A: Obst. Это региональное употребление, а не совершенно новый смысл.\nШвейцарский вариант Obst; Frucht в единственном числе — плод, фрукт. Не путать с ботаническим и переносным значениями.",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "ch": true,
+        "equivalent": "das Obst",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 42,
+            "scope": "regional_equivalent"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Frucht"
+          ],
+          "independent_meaning_checked": true,
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "In der Schweiz gebräuchliche Sammelbezeichnung für essbare Früchte."
+        ],
+        "alternative_forms": [
+          "Singular: die Frucht; Plural: die Früchte"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Laden kaufe ich Früchte und Brot.",
+            "ru": "В магазине я покупаю фрукты и хлеб."
+          }
+        ],
+        "alias_ids": [
+          "b1-fruechte-fruit-ch"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 24,
+          "row": 23,
+          "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+          "record": {
+            "id": "b1-fruechte-ch-fruit",
+            "de": "die Früchte",
+            "lemma": "Frucht",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "фрукты (швейцарское употребление)"
+            ],
+            "definition_de": "In der Schweiz gebräuchliche Sammelbezeichnung für essbares Obst.",
+            "example": "Ich kaufe frische Früchte auf dem Wochenmarkt.",
+            "example_ru": "Я покупаю свежие фрукты на рынке.",
+            "forms": "die Frucht · die Früchte",
+            "grammar_hint": "CH: Früchte; D/A: Obst. Это региональное употребление, а не совершенно новый смысл.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "ch": true,
+            "equivalent": "das Obst",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 42,
+                "scope": "regional_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Frucht"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 65,
+          "row": 7,
+          "sha": "4b249274c6d4b0d89c98c2b60c9c9764a435af47",
+          "record": {
+            "id": "b1-fruechte-fruit-ch",
+            "de": "die Früchte",
+            "lemma": "Frucht",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "фрукты (в швейцарском употреблении)"
+            ],
+            "definition_de": "In der Schweiz gebräuchliche Sammelbezeichnung für essbare Früchte.",
+            "example": "Im Laden kaufe ich Früchte und Brot.",
+            "example_ru": "В магазине я покупаю фрукты и хлеб.",
+            "forms": "Singular: die Frucht; Plural: die Früchte",
+            "grammar_hint": "Швейцарский вариант Obst; Frucht в единственном числе — плод, фрукт. Не путать с ботаническим и переносным значениями.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 68,
+                "scope": "context",
+                "note": "Goethe exam vocabulary and regional equivalents; earliest CEFR level pending cross-level comparison; some cards separate pedagogical usage contexts rather than independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Frucht"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-trottoir-sidewalk-ch",
+      "alias_ids": [
+        "b1-trottoir-sidewalk"
+      ],
+      "retain": {
+        "batch": 27,
+        "row": 14
+      },
+      "suppress": {
+        "batch": 101,
+        "row": 9
+      },
+      "merged_record": {
+        "id": "b1-trottoir-sidewalk-ch",
+        "de": "das Trottoir",
+        "lemma": "Trottoir",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "тротуар (швейцарский вариант)",
+          "тротуар (Швейцария)"
+        ],
+        "definition_de": "In der Schweiz übliche Bezeichnung für einen Fußweg entlang der Straße.",
+        "example": "Bitte stell dein Velo nicht mitten aufs Trottoir.",
+        "example_ru": "Пожалуйста, не ставь велосипед посреди тротуара.",
+        "forms": "die Trottoirs",
+        "grammar_hint": "CH: Trottoir; D/A: Gehsteig, Gehweg. auf dem Trottoir (Dativ), aufs Trottoir (Akkusativ).\nCH: das Trottoir; D/A: der Gehsteig; также der Gehweg. Возможный дубль предыдущих пакетов, объединить при финальной сверке.",
+        "topic": "Транспорт и путешествия",
+        "topics": [
+          "Транспорт и путешествия",
+          "Город и транспорт"
+        ],
+        "ch": true,
+        "equivalent": "der Gehsteig",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 44,
+            "scope": "context"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Trottoir"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Ein für Fußgänger bestimmter Bereich neben der Fahrbahn."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Bitte bleiben Sie mit dem Kinderwagen auf dem Trottoir.",
+            "ru": "Пожалуйста, оставайтесь с детской коляской на тротуаре."
+          }
+        ],
+        "alias_ids": [
+          "b1-trottoir-sidewalk"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 27,
+          "row": 14,
+          "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+          "record": {
+            "id": "b1-trottoir-sidewalk-ch",
+            "de": "das Trottoir",
+            "lemma": "Trottoir",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "тротуар (швейцарский вариант)"
+            ],
+            "definition_de": "In der Schweiz übliche Bezeichnung für einen Fußweg entlang der Straße.",
+            "example": "Bitte stell dein Velo nicht mitten aufs Trottoir.",
+            "example_ru": "Пожалуйста, не ставь велосипед посреди тротуара.",
+            "forms": "die Trottoirs",
+            "grammar_hint": "CH: Trottoir; D/A: Gehsteig, Gehweg. auf dem Trottoir (Dativ), aufs Trottoir (Akkusativ).",
+            "topic": "Транспорт и путешествия",
+            "topics": [
+              "Транспорт и путешествия"
+            ],
+            "ch": true,
+            "equivalent": "der Gehsteig",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 44,
+                "scope": "context"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Trottoir"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 101,
+          "row": 9,
+          "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+          "record": {
+            "id": "b1-trottoir-sidewalk",
+            "de": "das Trottoir",
+            "lemma": "Trottoir",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "тротуар (Швейцария)"
+            ],
+            "definition_de": "Ein für Fußgänger bestimmter Bereich neben der Fahrbahn.",
+            "example": "Bitte bleiben Sie mit dem Kinderwagen auf dem Trottoir.",
+            "example_ru": "Пожалуйста, оставайтесь с детской коляской на тротуаре.",
+            "forms": "die Trottoirs",
+            "grammar_hint": "CH: das Trottoir; D/A: der Gehsteig; также der Gehweg. Возможный дубль предыдущих пакетов, объединить при финальной сверке.",
+            "topic": "Город и транспорт",
+            "topics": [
+              "Город и транспорт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 88,
+                "scope": "headword",
+                "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Trottoir"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-geschieden-divorced",
+      "alias_ids": [
+        "b1-geschieden-status"
+      ],
+      "retain": {
+        "batch": 28,
+        "row": 28
+      },
+      "suppress": {
+        "batch": 79,
+        "row": 18
+      },
+      "merged_record": {
+        "id": "b1-geschieden-divorced",
+        "de": "geschieden",
+        "lemma": "geschieden",
+        "part": "adj",
+        "level": "B1",
+        "translations_ru": [
+          "разведённый",
+          "разведена",
+          "в разводе",
+          "разведённая"
+        ],
+        "definition_de": "Nicht mehr verheiratet, weil die Ehe rechtlich beendet wurde.",
+        "example": "Mein Onkel ist seit zwei Jahren geschieden.",
+        "example_ru": "Мой дядя уже два года в разводе.",
+        "forms": "без степеней сравнения; Partizip II от scheiden",
+        "grammar_hint": "geschieden sein (состояние); sich scheiden lassen (развестись). seit + Dativ.\ngeschieden sein — семейное положение; sich scheiden lassen — действие. Другие статусы: ledig, verheiratet, verwitwet.",
+        "topic": "Семья и отношения",
+        "topics": [
+          "Семья и отношения"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 45,
+            "scope": "context"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/geschieden"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Nach einer rechtlichen Auflösung der Ehe nicht mehr mit dem früheren Ehepartner verheiratet."
+        ],
+        "alternative_forms": [
+          "без степеней сравнения; Partizip II от scheiden"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Mein Onkel ist seit zwei Jahren geschieden.",
+            "ru": "Мой дядя разведён уже два года."
+          }
+        ],
+        "alias_ids": [
+          "b1-geschieden-status"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 28,
+          "row": 28,
+          "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+          "record": {
+            "id": "b1-geschieden-divorced",
+            "de": "geschieden",
+            "lemma": "geschieden",
+            "part": "adj",
+            "level": "B1",
+            "translations_ru": [
+              "разведённый",
+              "разведена",
+              "в разводе"
+            ],
+            "definition_de": "Nicht mehr verheiratet, weil die Ehe rechtlich beendet wurde.",
+            "example": "Mein Onkel ist seit zwei Jahren geschieden.",
+            "example_ru": "Мой дядя уже два года в разводе.",
+            "forms": "без степеней сравнения",
+            "grammar_hint": "geschieden sein (состояние); sich scheiden lassen (развестись). seit + Dativ.",
+            "topic": "Семья и отношения",
+            "topics": [
+              "Семья и отношения"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 45,
+                "scope": "context"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/geschieden"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 79,
+          "row": 18,
+          "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+          "record": {
+            "id": "b1-geschieden-status",
+            "de": "geschieden",
+            "lemma": "geschieden",
+            "part": "adj",
+            "level": "B1",
+            "translations_ru": [
+              "разведённый",
+              "разведённая"
+            ],
+            "definition_de": "Nach einer rechtlichen Auflösung der Ehe nicht mehr mit dem früheren Ehepartner verheiratet.",
+            "example": "Mein Onkel ist seit zwei Jahren geschieden.",
+            "example_ru": "Мой дядя разведён уже два года.",
+            "forms": "без степеней сравнения; Partizip II от scheiden",
+            "grammar_hint": "geschieden sein — семейное положение; sich scheiden lassen — действие. Другие статусы: ledig, verheiratet, verwitwet.",
+            "topic": "Семья и отношения",
+            "topics": [
+              "Семья и отношения"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 76,
+                "scope": "context",
+                "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/geschieden"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ],
+  "retained_distinct": [
+    {
+      "lemma": "Gang",
+      "decision": "keep_all_three",
+      "reason": "Distinct senses: corridor, transmission gear, course of a meal.",
+      "original_records": [
+        {
+          "batch": 23,
+          "row": 8,
+          "sha": "b6241348321ed346d4d9f54e9998bb8e57476bf5",
+          "record": {
+            "id": "b1-gang-corridor",
+            "de": "der Gang",
+            "lemma": "Gang",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "коридор",
+              "проход"
+            ],
+            "definition_de": "Ein länglicher Durchgang zwischen Räumen oder Bereichen.",
+            "example": "Die Toiletten befinden sich am Ende des Ganges.",
+            "example_ru": "Туалеты находятся в конце коридора.",
+            "forms": "die Gänge",
+            "grammar_hint": "im Gang; den Gang entlang. Другие значения Gang рассматриваются отдельно.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "equivalent": "der Flur",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 41,
+                "scope": "regional_or_contextual_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gang"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 25,
+          "row": 16,
+          "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+          "record": {
+            "id": "b1-gang-gear",
+            "de": "der Gang",
+            "lemma": "Gang",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "передача (в коробке передач)"
+            ],
+            "definition_de": "Eine wählbare Übersetzungsstufe eines Getriebes.",
+            "example": "Bei dieser Steigung fahre ich im zweiten Gang.",
+            "example_ru": "На этом подъёме я еду на второй передаче.",
+            "forms": "die Gänge",
+            "grammar_hint": "in den dritten Gang schalten (Akkusativ); im dritten Gang fahren (Dativ). Коридор уже в B1 №023.",
+            "topic": "Транспорт и путешествия",
+            "topics": [
+              "Транспорт и путешествия"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 43,
+                "scope": "context"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gang"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 25,
+          "row": 17,
+          "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+          "record": {
+            "id": "b1-gang-meal-course",
+            "de": "der Gang",
+            "lemma": "Gang",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "блюдо",
+              "перемена блюд (часть обеда)"
+            ],
+            "definition_de": "Ein einzelner Teil eines mehrteiligen Menüs.",
+            "example": "Als zweiten Gang servieren wir Fisch mit Gemüse.",
+            "example_ru": "В качестве второго блюда мы подаём рыбу с овощами.",
+            "forms": "die Gänge",
+            "grammar_hint": "ein Menü mit drei Gängen; der erste Gang — первое блюдо по порядку, не обязательно суп.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 43,
+                "scope": "context"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gang"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "lemma": "Frucht",
+      "decision": "keep_singular_general_fruit",
+      "reason": "Preserve general singular fruit/plant sense separately from Swiss collective plural usage; only the two Swiss plural cards merge.",
+      "original_records": [
+        {
+          "batch": 24,
+          "row": 22,
+          "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+          "record": {
+            "id": "b1-frucht-fruit",
+            "de": "die Frucht",
+            "lemma": "Frucht",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "плод",
+              "фрукт"
+            ],
+            "definition_de": "Ein Teil einer Pflanze, der aus einer Blüte entsteht und oft essbar ist.",
+            "example": "Diese tropische Frucht schmeckt süß.",
+            "example_ru": "Этот тропический фрукт сладкий на вкус.",
+            "forms": "die Früchte",
+            "grammar_hint": "Frucht — отдельный плод; Obst — собирательное название фруктов.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 42,
+                "scope": "context"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Frucht"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ]
+}

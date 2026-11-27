@@ -1,0 +1,3496 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1433,
+    1452
+  ],
+  "reviewed": 20,
+  "merge_count": 15,
+  "merge_target_count": 15,
+  "retained_distinct_senses": 4,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1433,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine transportable Unterkunft aus Stoff und einem Gestänge. Example: Am See bauen wir unser Zelt auf.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 1,
+        "record": {
+          "id": "b1-zelt-tent",
+          "de": "das Zelt",
+          "lemma": "Zelt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "палатка"
+          ],
+          "definition_de": "Eine transportable Unterkunft aus Stoff und einem Gestänge.",
+          "example": "Am See bauen wir unser Zelt auf.",
+          "example_ru": "У озера мы ставим палатку.",
+          "forms": "die Zelte",
+          "grammar_hint": "ein Zelt aufbauen/abbauen; im Zelt übernachten (Dat.).",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zelt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 261,
+          "record": {
+            "id": "dict_3891478377adbfed9a3f",
+            "de": "das Zelt",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "палатка"
+            ],
+            "definition_de": "Ein transportabler Schutz aus Stoff oder ähnlichem Material, den man zum Beispiel zum Schlafen aufstellt.",
+            "forms": "Plural · die Zelte",
+            "example": "Wir stellen das Zelt am See auf.",
+            "example_ru": "Мы ставим палатку у озера.",
+            "grammar_hint": "ein Zelt aufstellen / abbauen — поставить / разобрать палатку; im Zelt schlafen — спать в палатке.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zelt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Путешествия и отпуск",
+            "topics": [
+              "Путешествия и отпуск"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3891478377adbfed9a3f",
+        "alias_id": "b1-zelt-tent",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3891478377adbfed9a3f"
+      }
+    },
+    {
+      "candidate_number": 1434,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der mittlere oder besonders wichtige Bereich einer Ortschaft. Example: Vom Zentrum aus fahren mehrere Busse zum Bahnhof.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 4,
+        "record": {
+          "id": "b1-zentrum-city",
+          "de": "das Zentrum",
+          "lemma": "Zentrum",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "центр города",
+            "центр"
+          ],
+          "definition_de": "Der mittlere oder besonders wichtige Bereich einer Ortschaft.",
+          "example": "Vom Zentrum aus fahren mehrere Busse zum Bahnhof.",
+          "example_ru": "Из центра до вокзала ходят несколько автобусов.",
+          "forms": "die Zentren",
+          "grammar_hint": "im Zentrum (Dat.); ins Zentrum (Akk.); vom Zentrum aus — из центра.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zentrum"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 397,
+          "record": {
+            "id": "dict_f84be64b54aa74267c36",
+            "de": "das Zentrum",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "центр (города)"
+            ],
+            "definition_de": "Der mittlere, meist zentrale Bereich einer Stadt.",
+            "example": "Unsere Schule liegt im Zentrum.",
+            "example_ru": "Наша школа находится в центре города.",
+            "grammar_hint": "",
+            "usage_note": "im Zentrum — в центре; ins Zentrum — в центр.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zentrum"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Zentren",
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f84be64b54aa74267c36",
+        "alias_id": "b1-zentrum-city",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f84be64b54aa74267c36"
+      }
+    },
+    {
+      "candidate_number": 1435,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Einrichtung, in der bestimmte Angebote oder Tätigkeiten gebündelt sind. Example: Im neuen Einkaufszentrum gibt es eine Apotheke.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 5,
+        "record": {
+          "id": "b1-zentrum-facility",
+          "de": "das Zentrum",
+          "lemma": "Zentrum",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "центр (учреждение, комплекс)"
+          ],
+          "definition_de": "Eine Einrichtung, in der bestimmte Angebote oder Tätigkeiten gebündelt sind.",
+          "example": "Im neuen Einkaufszentrum gibt es eine Apotheke.",
+          "example_ru": "В новом торговом центре есть аптека.",
+          "forms": "die Zentren",
+          "grammar_hint": "Einkaufszentrum, Kulturzentrum, Gesundheitszentrum; Genitiv des Zentrums.",
+          "topic": "Документы и учреждения",
+          "topics": [
+            "Документы и учреждения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zentrum"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 397,
+          "record": {
+            "id": "dict_f84be64b54aa74267c36",
+            "de": "das Zentrum",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "центр (города)"
+            ],
+            "definition_de": "Der mittlere, meist zentrale Bereich einer Stadt.",
+            "example": "Unsere Schule liegt im Zentrum.",
+            "example_ru": "Наша школа находится в центре города.",
+            "grammar_hint": "",
+            "usage_note": "im Zentrum — в центре; ins Zentrum — в центр.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zentrum"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Zentren",
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1436,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein kleines oder loses Stück Papier zum Schreiben von Notizen. Example: Die Telefonnummer steht auf einem Zettel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 8,
+        "record": {
+          "id": "b1-zettel-note",
+          "de": "der Zettel",
+          "lemma": "Zettel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "листок",
+            "записка",
+            "бумажка"
+          ],
+          "definition_de": "Ein kleines oder loses Stück Papier zum Schreiben von Notizen.",
+          "example": "Die Telefonnummer steht auf einem Zettel.",
+          "example_ru": "Номер телефона записан на листке.",
+          "forms": "die Zettel",
+          "grammar_hint": "auf einem Zettel (Dat.) stehen; einen Zettel schreiben; Dativ Pl. den Zetteln.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zettel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 157,
+          "record": {
+            "id": "dict_961db19e767063292466",
+            "de": "der Zettel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "листок бумаги",
+              "записка"
+            ],
+            "definition_de": "Ein kleines Blatt Papier, auf dem man etwas notieren kann.",
+            "forms": "Plural · die Zettel",
+            "example": "Die Adresse steht auf einem Zettel neben dem Telefon.",
+            "example_ru": "Адрес записан на листке рядом с телефоном.",
+            "grammar_hint": "",
+            "usage_note": "Plural без изменения: die Zettel; auf einen Zettel schreiben (Akkusativ).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zettel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_961db19e767063292466",
+        "alias_id": "b1-zettel-note",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_961db19e767063292466"
+      }
+    },
+    {
+      "candidate_number": 1437,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Dokument über schulische oder berufliche Leistungen. Example: Am Ende des Schuljahres bekommen die Kinder ihre Zeugnisse.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 11,
+        "record": {
+          "id": "b1-zeugnis-certificate",
+          "de": "das Zeugnis",
+          "lemma": "Zeugnis",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "аттестат",
+            "свидетельство",
+            "табель успеваемости"
+          ],
+          "definition_de": "Ein Dokument über schulische oder berufliche Leistungen.",
+          "example": "Am Ende des Schuljahres bekommen die Kinder ihre Zeugnisse.",
+          "example_ru": "В конце учебного года дети получают табели успеваемости.",
+          "forms": "die Zeugnisse",
+          "grammar_hint": "ein Zeugnis ausstellen; Schulzeugnis, Arbeitszeugnis; Genitiv des Zeugnisses.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeugnis"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 256,
+          "record": {
+            "id": "dict_21ce3aa0ce7efd4dcc8a",
+            "de": "das Zeugnis",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "табель",
+              "свидетельство об успеваемости"
+            ],
+            "definition_de": "Ein Dokument, in dem eine Schule die Leistungen einer Schülerin oder eines Schülers festhält.",
+            "forms": "Plural · die Zeugnisse",
+            "example": "Am letzten Schultag bekommen die Kinder ihre Zeugnisse.",
+            "example_ru": "В последний учебный день дети получают табели.",
+            "grammar_hint": "",
+            "usage_note": "Schulzeugnis — документ с оценками; Arbeitszeugnis — характеристика с места работы (отдельное значение, уровень не переносится автоматически).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zeugnis"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_21ce3aa0ce7efd4dcc8a",
+        "alias_id": "b1-zeugnis-certificate",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_21ce3aa0ce7efd4dcc8a"
+      }
+    },
+    {
+      "candidate_number": 1438,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein angestrebtes Ergebnis einer Handlung oder Entwicklung. Example: Mein Ziel ist es, die Prüfung im Sommer zu bestehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 15,
+        "record": {
+          "id": "b1-ziel-goal",
+          "de": "das Ziel",
+          "lemma": "Ziel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "цель"
+          ],
+          "definition_de": "Ein angestrebtes Ergebnis einer Handlung oder Entwicklung.",
+          "example": "Mein Ziel ist es, die Prüfung im Sommer zu bestehen.",
+          "example_ru": "Моя цель — сдать экзамен летом.",
+          "forms": "die Ziele",
+          "grammar_hint": "ein Ziel erreichen/verfolgen; sich (Dat.) ein Ziel setzen; Ziel + Infinitivgruppe.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ziel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 241,
+          "record": {
+            "id": "dict_59b8823a12af6f150c23",
+            "de": "das Ziel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "финиш",
+              "конечный пункт"
+            ],
+            "definition_de": "Der Ort, an dem ein Weg, ein Lauf oder ein Rennen endet.",
+            "forms": "Plural · die Ziele",
+            "example": "Nach dem langen Lauf wartete meine Familie im Ziel auf mich.",
+            "example_ru": "После долгого забега семья ждала меня на финише.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Ziel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1439,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein kleines, in Papier gerolltes Tabakprodukt. Example: Auf dem Boden lag eine Zigarette.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 17,
+        "record": {
+          "id": "b1-zigarette-cigarette",
+          "de": "die Zigarette",
+          "lemma": "Zigarette",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сигарета"
+          ],
+          "definition_de": "Ein kleines, in Papier gerolltes Tabakprodukt.",
+          "example": "Auf dem Boden lag eine Zigarette.",
+          "example_ru": "На полу лежала сигарета.",
+          "forms": "die Zigaretten",
+          "grammar_hint": "eine Packung Zigaretten; eine Zigarette rauchen.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zigarette"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 581,
+          "record": {
+            "id": "a1-644-1",
+            "de": "die Zigarette",
+            "lemma": "Zigarette",
+            "ru": "сигарета",
+            "uk": "",
+            "translations_ru": [
+              "сигарета"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Zigaretten",
+            "definition_de": "Eine kleine Rolle aus Papier und Tabak zum Rauchen.",
+            "example": "Vor dem Eingang raucht jemand eine Zigarette.",
+            "example_ru": "Перед входом кто-то курит сигарету.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "47b1067e48ed6a145cc8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-644-1",
+        "alias_id": "b1-zigarette-cigarette",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-644-1"
+      }
+    },
+    {
+      "candidate_number": 1440,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein durch Wände abgegrenzter Teil einer Wohnung oder eines Gebäudes. Example: Das größere Zimmer hat zwei Fenster.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 18,
+        "record": {
+          "id": "b1-zimmer-room",
+          "de": "das Zimmer",
+          "lemma": "Zimmer",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "комната"
+          ],
+          "definition_de": "Ein durch Wände abgegrenzter Teil einer Wohnung oder eines Gebäudes.",
+          "example": "Das größere Zimmer hat zwei Fenster.",
+          "example_ru": "В большей комнате два окна.",
+          "forms": "die Zimmer",
+          "grammar_hint": "im Zimmer (Dat.); ins Zimmer (Akk.); CH: grössere; Zimmer ≠ Wohnung.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zimmer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 2,
+          "record": {
+            "id": "c1",
+            "de": "das Zimmer",
+            "lemma": "Zimmer",
+            "ru": "комната",
+            "uk": "кімната",
+            "translations_ru": [
+              "комната"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Zimmer",
+            "definition_de": "Ein eigener Raum in einer Wohnung oder einem Haus.",
+            "example": "Mein Zimmer ist hell.",
+            "example_ru": "Моя комната светлая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "c359a1cfbebbdf3f11b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 449,
+          "record": {
+            "id": "a1-645-1",
+            "de": "das Zimmer",
+            "lemma": "Zimmer",
+            "ru": "гостиничный номер",
+            "uk": "",
+            "translations_ru": [
+              "гостиничный номер"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "die Zimmer",
+            "definition_de": "Ein Raum in einem Hotel, den Gäste zum Übernachten buchen.",
+            "example": "Wir haben ein Zimmer für zwei Nächte gebucht.",
+            "example_ru": "Мы забронировали номер на две ночи.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "c359a1cfbebbdf3f11b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c1",
+        "alias_id": "b1-zimmer-room",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c1"
+      }
+    },
+    {
+      "candidate_number": 1441,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Raum, den Gäste in einer Unterkunft mieten können. Example: Wir haben ein Zimmer für zwei Nächte gebucht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 19,
+        "record": {
+          "id": "b1-zimmer-hotel",
+          "de": "das Zimmer",
+          "lemma": "Zimmer",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "номер (в гостинице)"
+          ],
+          "definition_de": "Ein Raum, den Gäste in einer Unterkunft mieten können.",
+          "example": "Wir haben ein Zimmer für zwei Nächte gebucht.",
+          "example_ru": "Мы забронировали номер на две ночи.",
+          "forms": "die Zimmer",
+          "grammar_hint": "ein Zimmer buchen/reservieren; Einzelzimmer, Doppelzimmer; контекст основного значения комнаты.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zimmer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 2,
+          "record": {
+            "id": "c1",
+            "de": "das Zimmer",
+            "lemma": "Zimmer",
+            "ru": "комната",
+            "uk": "кімната",
+            "translations_ru": [
+              "комната"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Zimmer",
+            "definition_de": "Ein eigener Raum in einer Wohnung oder einem Haus.",
+            "example": "Mein Zimmer ist hell.",
+            "example_ru": "Моя комната светлая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "c359a1cfbebbdf3f11b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 449,
+          "record": {
+            "id": "a1-645-1",
+            "de": "das Zimmer",
+            "lemma": "Zimmer",
+            "ru": "гостиничный номер",
+            "uk": "",
+            "translations_ru": [
+              "гостиничный номер"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "die Zimmer",
+            "definition_de": "Ein Raum in einem Hotel, den Gäste zum Übernachten buchen.",
+            "example": "Wir haben ein Zimmer für zwei Nächte gebucht.",
+            "example_ru": "Мы забронировали номер на две ночи.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "c359a1cfbebbdf3f11b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-645-1",
+        "alias_id": "b1-zimmer-hotel",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-645-1"
+      }
+    },
+    {
+      "candidate_number": 1442,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Unterhaltungsbetrieb mit artistischen Vorführungen. Example: Am Wochenende besuchen wir einen Zirkus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 21,
+        "record": {
+          "id": "b1-zirkus-circus",
+          "de": "der Zirkus",
+          "lemma": "Zirkus",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "цирк"
+          ],
+          "definition_de": "Ein Unterhaltungsbetrieb mit artistischen Vorführungen.",
+          "example": "Am Wochenende besuchen wir einen Zirkus.",
+          "example_ru": "На выходных мы пойдём в цирк.",
+          "forms": "die Zirkusse",
+          "grammar_hint": "in den Zirkus gehen (Akk.); im Zirkus (Dat.).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zirkus"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 17,
+          "record": {
+            "id": "dict_1221c56969079fc5b017",
+            "de": "der Zirkus",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "цирк"
+            ],
+            "definition_de": "Eine Veranstaltung mit Kunststücken, oft in einem großen Zelt.",
+            "forms": "Plural · die Zirkusse",
+            "example": "Die Kinder möchten am Samstag in den Zirkus gehen.",
+            "example_ru": "Дети хотят в субботу пойти в цирк.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zirkus"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_1221c56969079fc5b017",
+        "alias_id": "b1-zirkus-circus",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_1221c56969079fc5b017"
+      }
+    },
+    {
+      "candidate_number": 1443,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine gelbe Zitrusfrucht mit saurem Geschmack. Example: Für die Soße brauche ich den Saft einer Zitrone.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 22,
+        "record": {
+          "id": "b1-zitrone-lemon",
+          "de": "die Zitrone",
+          "lemma": "Zitrone",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лимон"
+          ],
+          "definition_de": "Eine gelbe Zitrusfrucht mit saurem Geschmack.",
+          "example": "Für die Soße brauche ich den Saft einer Zitrone.",
+          "example_ru": "Для соуса мне нужен сок одного лимона.",
+          "forms": "die Zitronen",
+          "grammar_hint": "Zitronensaft; eine Scheibe Zitrone; CH: Sosse.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zitrone"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 46,
+          "record": {
+            "id": "dict_d8e3b80c6be09b101c51",
+            "de": "die Zitrone",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "лимон"
+            ],
+            "definition_de": "Eine gelbe Zitrusfrucht, die sauer schmeckt.",
+            "forms": "Plural · die Zitronen",
+            "example": "Für den Salat brauche ich den Saft einer Zitrone.",
+            "example_ru": "Для салата мне нужен сок одного лимона.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zitrone"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_d8e3b80c6be09b101c51",
+        "alias_id": "b1-zitrone-lemon",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_d8e3b80c6be09b101c51"
+      }
+    },
+    {
+      "candidate_number": 1444,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine staatliche Stelle zur Kontrolle des grenzüberschreitenden Warenverkehrs. Example: Am Flughafen müssen wir noch durch den Zoll.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 24,
+        "record": {
+          "id": "b1-zoll-customs",
+          "de": "der Zoll",
+          "lemma": "Zoll",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "таможня",
+            "таможенный контроль"
+          ],
+          "definition_de": "Eine staatliche Stelle zur Kontrolle des grenzüberschreitenden Warenverkehrs.",
+          "example": "Am Flughafen müssen wir noch durch den Zoll.",
+          "example_ru": "В аэропорту нам ещё нужно пройти таможню.",
+          "forms": "die Zölle (обычно о пошлинах); учреждение чаще Singular",
+          "grammar_hint": "durch den Zoll (Akk.) gehen; beim Zoll (Dat.); Zollgebühren — таможенные сборы; der Zoll как мера длины — отдельное значение.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zoll"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 582,
+          "record": {
+            "id": "a1-646-1",
+            "de": "der Zoll",
+            "lemma": "Zoll",
+            "ru": "таможня",
+            "uk": "",
+            "translations_ru": [
+              "таможня"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "обычно Singular в значении «таможенная служба»",
+            "definition_de": "Die Behörde, die Waren an einer Grenze kontrolliert.",
+            "example": "Am Flughafen mussten wir noch durch den Zoll.",
+            "example_ru": "В аэропорту нам ещё нужно было пройти таможню.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "616d05013b0e9eb5ae7a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-646-1",
+        "alias_id": "b1-zoll-customs",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-646-1"
+      }
+    },
+    {
+      "candidate_number": 1445,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Einrichtung, in der Tiere gehalten und Besuchern gezeigt werden. Example: Die Kinder möchten am Sonntag in den Zoo gehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 26,
+        "record": {
+          "id": "b1-zoo-zoo",
+          "de": "der Zoo",
+          "lemma": "Zoo",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "зоопарк"
+          ],
+          "definition_de": "Eine Einrichtung, in der Tiere gehalten und Besuchern gezeigt werden.",
+          "example": "Die Kinder möchten am Sonntag in den Zoo gehen.",
+          "example_ru": "Дети хотят в воскресенье пойти в зоопарк.",
+          "forms": "die Zoos",
+          "grammar_hint": "in den Zoo (Akk.); im Zoo (Dat.); zoologischer Garten.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zoo"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 51,
+          "record": {
+            "id": "dict_d9c4a1c35dc6090bb7a0",
+            "de": "der Zoo",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "зоопарк"
+            ],
+            "definition_de": "Ein Park, in dem Besucher verschiedene Tiere sehen können.",
+            "forms": "Plural · die Zoos",
+            "example": "Die Kinder wollen im Zoo die Elefanten sehen.",
+            "example_ru": "Дети хотят посмотреть на слонов в зоопарке.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zoo"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_d9c4a1c35dc6090bb7a0",
+        "alias_id": "b1-zoo-zoo",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_d9c4a1c35dc6090bb7a0"
+      }
+    },
+    {
+      "candidate_number": 1446,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet das Ziel einer Bewegung, häufig eine Person oder Einrichtung. Example: Ich gehe nach der Arbeit zur Apotheke.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 27,
+        "record": {
+          "id": "b1-zu-direction",
+          "de": "zu",
+          "lemma": "zu",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "к",
+            "в",
+            "на (направление)"
+          ],
+          "definition_de": "Kennzeichnet das Ziel einer Bewegung, häufig eine Person oder Einrichtung.",
+          "example": "Ich gehe nach der Arbeit zur Apotheke.",
+          "example_ru": "После работы я иду в аптеку.",
+          "forms": "Dativ",
+          "grammar_hint": "zu + Dat.; zum = zu dem, zur = zu der; zum Arzt, zur Schule. Wohin? не означает автоматически Akkusativ; zu не Wechselpräposition.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 417,
+          "record": {
+            "id": "a1-647-1",
+            "de": "zu",
+            "lemma": "zu",
+            "ru": "к; в (к месту назначения); на (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "к",
+              "в (к месту назначения)",
+              "на (по контексту)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt das Ziel, zu dem sich jemand bewegt.",
+            "example": "Ich fahre zur Arbeit.",
+            "example_ru": "Я еду на работу.",
+            "note": "zu + Dativ: zur Arbeit (zur = zu der). Всегда Dativ; zum = zu dem, zur = zu der. zu — не Wechselpräposition, даже при Wohin?; zu Fuß, zu Hause — отдельные устойчивые выражения; zum Essen — к еде/во время еды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 809,
+          "record": {
+            "id": "dict_105ede09f0e248499831",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "слишком",
+            "uk": "занадто",
+            "translations_ru": [
+              "слишком"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Неизменяемая частица степени",
+            "definition_de": "Zeigt an, dass ein Maß überschritten wird.",
+            "example": "Der Kaffee ist mir zu heiß.",
+            "example_ru": "Кофе для меня слишком горячий.",
+            "note": "zu + прилагательное/наречие: zu teuer, zu schnell. Не путать с предлогом zu + Dativ.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 810,
+          "record": {
+            "id": "dict_2483930c6658347aa523",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "частица при инфинитиве (обычно без перевода)",
+            "uk": "частка при інфінітиві",
+            "translations_ru": [
+              "частица при инфинитиве (обычно без перевода)"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "zu + Infinitiv",
+            "definition_de": "Kennzeichnet einen abhängigen Infinitiv.",
+            "example": "Ich habe heute viel zu erledigen.",
+            "example_ru": "Мне сегодня нужно многое сделать.",
+            "note": "У простого глагола zu перед инфинитивом, у отделяемого внутри: einzukaufen. После модальных глаголов — без zu. В сложных конструкциях с инфинитивом правило зависит от управляющего слова.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-647-1",
+        "alias_id": "b1-zu-direction",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-647-1"
+      }
+    },
+    {
+      "candidate_number": 1447,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet den Aufenthalt am eigenen Wohnort. Example: Am Freitag arbeite ich zu Hause.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 28,
+        "record": {
+          "id": "b1-zu-hause",
+          "de": "zu Hause / zuhause",
+          "lemma": "zu Hause",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "дома"
+          ],
+          "definition_de": "Kennzeichnet den Aufenthalt am eigenen Wohnort.",
+          "example": "Am Freitag arbeite ich zu Hause.",
+          "example_ru": "В пятницу я работаю дома.",
+          "forms": "feste Wendung",
+          "grammar_hint": "Wo? zu Hause / zuhause; Wohin? nach Hause / nachhause; Woher? von zu Hause. das Zuhause — существительное.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu%20Hause"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 385,
+          "record": {
+            "id": "a1-294-3",
+            "de": "zu Hause",
+            "lemma": "zu Hause",
+            "ru": "дома",
+            "uk": "",
+            "translations_ru": [
+              "дома"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "",
+            "definition_de": "An dem Ort, an dem man wohnt.",
+            "example": "Ich bleibe heute zu Hause.",
+            "example_ru": "Сегодня я остаюсь дома.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "71379cc3ded1808fd117"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-294-3",
+        "alias_id": "b1-zu-hause",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-294-3"
+      }
+    },
+    {
+      "candidate_number": 1448,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet die Fortbewegung ohne Fahrzeug. Example: Bei gutem Wetter gehe ich zu Fuß zur Arbeit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 29,
+        "record": {
+          "id": "b1-zu-fuss",
+          "de": "zu Fuß",
+          "lemma": "zu Fuß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "пешком"
+          ],
+          "definition_de": "Bezeichnet die Fortbewegung ohne Fahrzeug.",
+          "example": "Bei gutem Wetter gehe ich zu Fuß zur Arbeit.",
+          "example_ru": "В хорошую погоду я хожу на работу пешком.",
+          "forms": "feste Wendung",
+          "grammar_hint": "zu Fuß без артикля; CH: zu Fuss; mit dem Bus — на автобусе.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu%20Fu%C3%9F"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 418,
+          "record": {
+            "id": "a1-647-2",
+            "de": "zu Fuß",
+            "lemma": "zu Fuß",
+            "ru": "пешком",
+            "uk": "",
+            "translations_ru": [
+              "пешком"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "",
+            "definition_de": "Ohne Fahrzeug, indem man geht.",
+            "example": "Wir gehen zu Fuß zum Bahnhof.",
+            "example_ru": "Мы идём на вокзал пешком.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-647-2",
+        "alias_id": "b1-zu-fuss",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-647-2"
+      }
+    },
+    {
+      "candidate_number": 1449,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet einen Grad, der über dem erwünschten Maß liegt. Example: Der Schrank ist zu breit für die Nische.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_120.json",
+        "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+        "batch": 120,
+        "row": 30,
+        "record": {
+          "id": "b1-zu-degree",
+          "de": "zu",
+          "lemma": "zu",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "слишком"
+          ],
+          "definition_de": "Kennzeichnet einen Grad, der über dem erwünschten Maß liegt.",
+          "example": "Der Schrank ist zu breit für die Nische.",
+          "example_ru": "Шкаф слишком широкий для ниши.",
+          "forms": "unveränderlich",
+          "grammar_hint": "zu + Adjektiv/Adverb: zu groß, zu spät; viel zu teuer — чересчур дорого; nicht zu verwechseln mit zu + Dativ oder Infinitiv.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 417,
+          "record": {
+            "id": "a1-647-1",
+            "de": "zu",
+            "lemma": "zu",
+            "ru": "к; в (к месту назначения); на (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "к",
+              "в (к месту назначения)",
+              "на (по контексту)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt das Ziel, zu dem sich jemand bewegt.",
+            "example": "Ich fahre zur Arbeit.",
+            "example_ru": "Я еду на работу.",
+            "note": "zu + Dativ: zur Arbeit (zur = zu der). Всегда Dativ; zum = zu dem, zur = zu der. zu — не Wechselpräposition, даже при Wohin?; zu Fuß, zu Hause — отдельные устойчивые выражения; zum Essen — к еде/во время еды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 809,
+          "record": {
+            "id": "dict_105ede09f0e248499831",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "слишком",
+            "uk": "занадто",
+            "translations_ru": [
+              "слишком"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Неизменяемая частица степени",
+            "definition_de": "Zeigt an, dass ein Maß überschritten wird.",
+            "example": "Der Kaffee ist mir zu heiß.",
+            "example_ru": "Кофе для меня слишком горячий.",
+            "note": "zu + прилагательное/наречие: zu teuer, zu schnell. Не путать с предлогом zu + Dativ.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 810,
+          "record": {
+            "id": "dict_2483930c6658347aa523",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "частица при инфинитиве (обычно без перевода)",
+            "uk": "частка при інфінітиві",
+            "translations_ru": [
+              "частица при инфинитиве (обычно без перевода)"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "zu + Infinitiv",
+            "definition_de": "Kennzeichnet einen abhängigen Infinitiv.",
+            "example": "Ich habe heute viel zu erledigen.",
+            "example_ru": "Мне сегодня нужно многое сделать.",
+            "note": "У простого глагола zu перед инфинитивом, у отделяемого внутри: einzukaufen. После модальных глаголов — без zu. В сложных конструкциях с инфинитивом правило зависит от управляющего слова.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_105ede09f0e248499831",
+        "alias_id": "b1-zu-degree",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_105ede09f0e248499831"
+      }
+    },
+    {
+      "candidate_number": 1450,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Regelmäßig eine Schule als Schülerin oder Schüler besuchen. Example: Meine Tochter geht seit August zur Schule.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_121.json",
+        "sha": "8199fd8280afee2e07af49f947438eeb87019068",
+        "batch": 121,
+        "row": 1,
+        "record": {
+          "id": "b1-zu-school",
+          "de": "zur Schule gehen",
+          "lemma": "zu",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "ходить в школу",
+            "учиться в школе"
+          ],
+          "definition_de": "Regelmäßig eine Schule als Schülerin oder Schüler besuchen.",
+          "example": "Meine Tochter geht seit August zur Schule.",
+          "example_ru": "Моя дочь с августа ходит в школу.",
+          "forms": "zu + Dativ",
+          "grammar_hint": "zur = zu der; здесь посещение учреждения, не только направление. Связать с zu-direction.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page visually inspected in current turn. B1 exam-list coverage only, earliest CEFR level and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 417,
+          "record": {
+            "id": "a1-647-1",
+            "de": "zu",
+            "lemma": "zu",
+            "ru": "к; в (к месту назначения); на (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "к",
+              "в (к месту назначения)",
+              "на (по контексту)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt das Ziel, zu dem sich jemand bewegt.",
+            "example": "Ich fahre zur Arbeit.",
+            "example_ru": "Я еду на работу.",
+            "note": "zu + Dativ: zur Arbeit (zur = zu der). Всегда Dativ; zum = zu dem, zur = zu der. zu — не Wechselpräposition, даже при Wohin?; zu Fuß, zu Hause — отдельные устойчивые выражения; zum Essen — к еде/во время еды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 809,
+          "record": {
+            "id": "dict_105ede09f0e248499831",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "слишком",
+            "uk": "занадто",
+            "translations_ru": [
+              "слишком"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Неизменяемая частица степени",
+            "definition_de": "Zeigt an, dass ein Maß überschritten wird.",
+            "example": "Der Kaffee ist mir zu heiß.",
+            "example_ru": "Кофе для меня слишком горячий.",
+            "note": "zu + прилагательное/наречие: zu teuer, zu schnell. Не путать с предлогом zu + Dativ.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 810,
+          "record": {
+            "id": "dict_2483930c6658347aa523",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "частица при инфинитиве (обычно без перевода)",
+            "uk": "частка при інфінітиві",
+            "translations_ru": [
+              "частица при инфинитиве (обычно без перевода)"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "zu + Infinitiv",
+            "definition_de": "Kennzeichnet einen abhängigen Infinitiv.",
+            "example": "Ich habe heute viel zu erledigen.",
+            "example_ru": "Мне сегодня нужно многое сделать.",
+            "note": "У простого глагола zu перед инфинитивом, у отделяемого внутри: einzukaufen. После модальных глаголов — без zu. В сложных конструкциях с инфинитивом правило зависит от управляющего слова.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1451,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Gibt den Preis pro verkauftem Stück an. Example: Ich kaufe drei Hefte zu zwei Franken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_121.json",
+        "sha": "8199fd8280afee2e07af49f947438eeb87019068",
+        "batch": 121,
+        "row": 2,
+        "record": {
+          "id": "b1-zu-price",
+          "de": "zu",
+          "lemma": "zu",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "по (цене за единицу)"
+          ],
+          "definition_de": "Gibt den Preis pro verkauftem Stück an.",
+          "example": "Ich kaufe drei Hefte zu zwei Franken.",
+          "example_ru": "Я покупаю три тетради по два франка.",
+          "forms": "Dativ",
+          "grammar_hint": "zu je zwei Franken; при числительном падеж обычно не виден. Не путать с zu teuer.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page visually inspected in current turn. B1 exam-list coverage only, earliest CEFR level and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu",
+              "https://www.duden.de/rechtschreibung/zu_Praeposition"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 417,
+          "record": {
+            "id": "a1-647-1",
+            "de": "zu",
+            "lemma": "zu",
+            "ru": "к; в (к месту назначения); на (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "к",
+              "в (к месту назначения)",
+              "на (по контексту)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt das Ziel, zu dem sich jemand bewegt.",
+            "example": "Ich fahre zur Arbeit.",
+            "example_ru": "Я еду на работу.",
+            "note": "zu + Dativ: zur Arbeit (zur = zu der). Всегда Dativ; zum = zu dem, zur = zu der. zu — не Wechselpräposition, даже при Wohin?; zu Fuß, zu Hause — отдельные устойчивые выражения; zum Essen — к еде/во время еды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 809,
+          "record": {
+            "id": "dict_105ede09f0e248499831",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "слишком",
+            "uk": "занадто",
+            "translations_ru": [
+              "слишком"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Неизменяемая частица степени",
+            "definition_de": "Zeigt an, dass ein Maß überschritten wird.",
+            "example": "Der Kaffee ist mir zu heiß.",
+            "example_ru": "Кофе для меня слишком горячий.",
+            "note": "zu + прилагательное/наречие: zu teuer, zu schnell. Не путать с предлогом zu + Dativ.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 810,
+          "record": {
+            "id": "dict_2483930c6658347aa523",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "частица при инфинитиве (обычно без перевода)",
+            "uk": "частка при інфінітиві",
+            "translations_ru": [
+              "частица при инфинитиве (обычно без перевода)"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "zu + Infinitiv",
+            "definition_de": "Kennzeichnet einen abhängigen Infinitiv.",
+            "example": "Ich habe heute viel zu erledigen.",
+            "example_ru": "Мне сегодня нужно многое сделать.",
+            "note": "У простого глагола zu перед инфинитивом, у отделяемого внутри: einzukaufen. После модальных глаголов — без zu. В сложных конструкциях с инфинитивом правило зависит от управляющего слова.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1452,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bezeichnet eine Mahlzeit, bei der etwas gegessen oder getrunken wird. Example: Zum Frühstück trinke ich meistens Tee.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_121.json",
+        "sha": "8199fd8280afee2e07af49f947438eeb87019068",
+        "batch": 121,
+        "row": 3,
+        "record": {
+          "id": "b1-zu-meal",
+          "de": "zu",
+          "lemma": "zu",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "к",
+            "во время (приёма пищи)"
+          ],
+          "definition_de": "Bezeichnet eine Mahlzeit, bei der etwas gegessen oder getrunken wird.",
+          "example": "Zum Frühstück trinke ich meistens Tee.",
+          "example_ru": "За завтраком я обычно пью чай.",
+          "forms": "Dativ",
+          "grammar_hint": "zum Frühstück, zum Abendessen; zum = zu dem. Вопрос wann? или wozu? зависит от контекста.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page visually inspected in current turn. B1 exam-list coverage only, earliest CEFR level and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 417,
+          "record": {
+            "id": "a1-647-1",
+            "de": "zu",
+            "lemma": "zu",
+            "ru": "к; в (к месту назначения); на (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "к",
+              "в (к месту назначения)",
+              "на (по контексту)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt das Ziel, zu dem sich jemand bewegt.",
+            "example": "Ich fahre zur Arbeit.",
+            "example_ru": "Я еду на работу.",
+            "note": "zu + Dativ: zur Arbeit (zur = zu der). Всегда Dativ; zum = zu dem, zur = zu der. zu — не Wechselpräposition, даже при Wohin?; zu Fuß, zu Hause — отдельные устойчивые выражения; zum Essen — к еде/во время еды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "a795237923f85f52edac"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 809,
+          "record": {
+            "id": "dict_105ede09f0e248499831",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "слишком",
+            "uk": "занадто",
+            "translations_ru": [
+              "слишком"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Неизменяемая частица степени",
+            "definition_de": "Zeigt an, dass ein Maß überschritten wird.",
+            "example": "Der Kaffee ist mir zu heiß.",
+            "example_ru": "Кофе для меня слишком горячий.",
+            "note": "zu + прилагательное/наречие: zu teuer, zu schnell. Не путать с предлогом zu + Dativ.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 810,
+          "record": {
+            "id": "dict_2483930c6658347aa523",
+            "de": "zu",
+            "lemma": "zu",
+            "part": "particle",
+            "level": "A1",
+            "ru": "частица при инфинитиве (обычно без перевода)",
+            "uk": "частка при інфінітиві",
+            "translations_ru": [
+              "частица при инфинитиве (обычно без перевода)"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "zu + Infinitiv",
+            "definition_de": "Kennzeichnet einen abhängigen Infinitiv.",
+            "example": "Ich habe heute viel zu erledigen.",
+            "example_ru": "Мне сегодня нужно многое сделать.",
+            "note": "У простого глагола zu перед инфинитивом, у отделяемого внутри: einzukaufen. После модальных глаголов — без zu. В сложных конструкциях с инфинитивом правило зависит от управляющего слова.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/zu",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_3891478377adbfed9a3f",
+      "alias_ids": [
+        "b1-zelt-tent"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3891478377adbfed9a3f",
+        "de": "das Zelt",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "палатка"
+        ],
+        "definition_de": "Ein transportabler Schutz aus Stoff oder ähnlichem Material, den man zum Beispiel zum Schlafen aufstellt.",
+        "forms": "Plural · die Zelte",
+        "example": "Wir stellen das Zelt am See auf.",
+        "example_ru": "Мы ставим палатку у озера.",
+        "grammar_hint": "ein Zelt aufstellen / abbauen — поставить / разобрать палатку; im Zelt schlafen — спать в палатке.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zelt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Путешествия и отпуск",
+        "topics": [
+          "Путешествия и отпуск"
+        ],
+        "alias_ids": [
+          "b1-zelt-tent"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zelt-tent",
+            "de": "das Zelt",
+            "part": "noun",
+            "forms": "die Zelte",
+            "definition_de": "Eine transportable Unterkunft aus Stoff und einem Gestänge.",
+            "translations_ru": [
+              "палатка"
+            ],
+            "grammar_hint": "ein Zelt aufbauen/abbauen; im Zelt übernachten (Dat.).",
+            "example": "Am See bauen wir unser Zelt auf.",
+            "example_ru": "У озера мы ставим палатку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zelt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f84be64b54aa74267c36",
+      "alias_ids": [
+        "b1-zentrum-city"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f84be64b54aa74267c36",
+        "de": "das Zentrum",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "центр (города)"
+        ],
+        "definition_de": "Der mittlere, meist zentrale Bereich einer Stadt.",
+        "example": "Unsere Schule liegt im Zentrum.",
+        "example_ru": "Наша школа находится в центре города.",
+        "grammar_hint": "",
+        "usage_note": "im Zentrum — в центре; ins Zentrum — в центр.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zentrum"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "Plural · die Zentren",
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-zentrum-city"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zentrum-city",
+            "de": "das Zentrum",
+            "part": "noun",
+            "forms": "die Zentren",
+            "definition_de": "Der mittlere oder besonders wichtige Bereich einer Ortschaft.",
+            "translations_ru": [
+              "центр города",
+              "центр"
+            ],
+            "grammar_hint": "im Zentrum (Dat.); ins Zentrum (Akk.); vom Zentrum aus — из центра.",
+            "example": "Vom Zentrum aus fahren mehrere Busse zum Bahnhof.",
+            "example_ru": "Из центра до вокзала ходят несколько автобусов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zentrum"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_961db19e767063292466",
+      "alias_ids": [
+        "b1-zettel-note"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_961db19e767063292466",
+        "de": "der Zettel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "листок бумаги",
+          "записка"
+        ],
+        "definition_de": "Ein kleines Blatt Papier, auf dem man etwas notieren kann.",
+        "forms": "Plural · die Zettel",
+        "example": "Die Adresse steht auf einem Zettel neben dem Telefon.",
+        "example_ru": "Адрес записан на листке рядом с телефоном.",
+        "grammar_hint": "",
+        "usage_note": "Plural без изменения: die Zettel; auf einen Zettel schreiben (Akkusativ).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zettel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-zettel-note"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zettel-note",
+            "de": "der Zettel",
+            "part": "noun",
+            "forms": "die Zettel",
+            "definition_de": "Ein kleines oder loses Stück Papier zum Schreiben von Notizen.",
+            "translations_ru": [
+              "листок",
+              "записка",
+              "бумажка"
+            ],
+            "grammar_hint": "auf einem Zettel (Dat.) stehen; einen Zettel schreiben; Dativ Pl. den Zetteln.",
+            "example": "Die Telefonnummer steht auf einem Zettel.",
+            "example_ru": "Номер телефона записан на листке."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zettel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_21ce3aa0ce7efd4dcc8a",
+      "alias_ids": [
+        "b1-zeugnis-certificate"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_21ce3aa0ce7efd4dcc8a",
+        "de": "das Zeugnis",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "табель",
+          "свидетельство об успеваемости"
+        ],
+        "definition_de": "Ein Dokument, in dem eine Schule die Leistungen einer Schülerin oder eines Schülers festhält.",
+        "forms": "Plural · die Zeugnisse",
+        "example": "Am letzten Schultag bekommen die Kinder ihre Zeugnisse.",
+        "example_ru": "В последний учебный день дети получают табели.",
+        "grammar_hint": "",
+        "usage_note": "Schulzeugnis — документ с оценками; Arbeitszeugnis — характеристика с места работы (отдельное значение, уровень не переносится автоматически).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zeugnis"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-zeugnis-certificate"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zeugnis-certificate",
+            "de": "das Zeugnis",
+            "part": "noun",
+            "forms": "die Zeugnisse",
+            "definition_de": "Ein Dokument über schulische oder berufliche Leistungen.",
+            "translations_ru": [
+              "аттестат",
+              "свидетельство",
+              "табель успеваемости"
+            ],
+            "grammar_hint": "ein Zeugnis ausstellen; Schulzeugnis, Arbeitszeugnis; Genitiv des Zeugnisses.",
+            "example": "Am Ende des Schuljahres bekommen die Kinder ihre Zeugnisse.",
+            "example_ru": "В конце учебного года дети получают табели успеваемости."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeugnis"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-644-1",
+      "alias_ids": [
+        "b1-zigarette-cigarette"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-644-1",
+        "de": "die Zigarette",
+        "lemma": "Zigarette",
+        "ru": "сигарета",
+        "uk": "",
+        "translations_ru": [
+          "сигарета"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "die Zigaretten",
+        "definition_de": "Eine kleine Rolle aus Papier und Tabak zum Rauchen.",
+        "example": "Vor dem Eingang raucht jemand eine Zigarette.",
+        "example_ru": "Перед входом кто-то курит сигарету.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "47b1067e48ed6a145cc8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zigarette-cigarette"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zigarette-cigarette",
+            "de": "die Zigarette",
+            "part": "noun",
+            "forms": "die Zigaretten",
+            "definition_de": "Ein kleines, in Papier gerolltes Tabakprodukt.",
+            "translations_ru": [
+              "сигарета"
+            ],
+            "grammar_hint": "eine Packung Zigaretten; eine Zigarette rauchen.",
+            "example": "Auf dem Boden lag eine Zigarette.",
+            "example_ru": "На полу лежала сигарета."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zigarette"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "c1",
+      "alias_ids": [
+        "b1-zimmer-room"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c1",
+        "de": "das Zimmer",
+        "lemma": "Zimmer",
+        "ru": "комната",
+        "uk": "кімната",
+        "translations_ru": [
+          "комната"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Zimmer",
+        "definition_de": "Ein eigener Raum in einer Wohnung oder einem Haus.",
+        "example": "Mein Zimmer ist hell.",
+        "example_ru": "Моя комната светлая.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "c359a1cfbebbdf3f11b2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zimmer-room"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zimmer-room",
+            "de": "das Zimmer",
+            "part": "noun",
+            "forms": "die Zimmer",
+            "definition_de": "Ein durch Wände abgegrenzter Teil einer Wohnung oder eines Gebäudes.",
+            "translations_ru": [
+              "комната"
+            ],
+            "grammar_hint": "im Zimmer (Dat.); ins Zimmer (Akk.); CH: grössere; Zimmer ≠ Wohnung.",
+            "example": "Das größere Zimmer hat zwei Fenster.",
+            "example_ru": "В большей комнате два окна."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zimmer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-645-1",
+      "alias_ids": [
+        "b1-zimmer-hotel"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-645-1",
+        "de": "das Zimmer",
+        "lemma": "Zimmer",
+        "ru": "гостиничный номер",
+        "uk": "",
+        "translations_ru": [
+          "гостиничный номер"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Путешествия",
+        "topics": [
+          "Путешествия"
+        ],
+        "forms": "die Zimmer",
+        "definition_de": "Ein Raum in einem Hotel, den Gäste zum Übernachten buchen.",
+        "example": "Wir haben ein Zimmer für zwei Nächte gebucht.",
+        "example_ru": "Мы забронировали номер на две ночи.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "c359a1cfbebbdf3f11b2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zimmer-hotel"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zimmer-hotel",
+            "de": "das Zimmer",
+            "part": "noun",
+            "forms": "die Zimmer",
+            "definition_de": "Ein Raum, den Gäste in einer Unterkunft mieten können.",
+            "translations_ru": [
+              "номер (в гостинице)"
+            ],
+            "grammar_hint": "ein Zimmer buchen/reservieren; Einzelzimmer, Doppelzimmer; контекст основного значения комнаты.",
+            "example": "Wir haben ein Zimmer für zwei Nächte gebucht.",
+            "example_ru": "Мы забронировали номер на две ночи."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zimmer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_1221c56969079fc5b017",
+      "alias_ids": [
+        "b1-zirkus-circus"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_1221c56969079fc5b017",
+        "de": "der Zirkus",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "цирк"
+        ],
+        "definition_de": "Eine Veranstaltung mit Kunststücken, oft in einem großen Zelt.",
+        "forms": "Plural · die Zirkusse",
+        "example": "Die Kinder möchten am Samstag in den Zirkus gehen.",
+        "example_ru": "Дети хотят в субботу пойти в цирк.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zirkus"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-zirkus-circus"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zirkus-circus",
+            "de": "der Zirkus",
+            "part": "noun",
+            "forms": "die Zirkusse",
+            "definition_de": "Ein Unterhaltungsbetrieb mit artistischen Vorführungen.",
+            "translations_ru": [
+              "цирк"
+            ],
+            "grammar_hint": "in den Zirkus gehen (Akk.); im Zirkus (Dat.).",
+            "example": "Am Wochenende besuchen wir einen Zirkus.",
+            "example_ru": "На выходных мы пойдём в цирк."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zirkus"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_d8e3b80c6be09b101c51",
+      "alias_ids": [
+        "b1-zitrone-lemon"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_d8e3b80c6be09b101c51",
+        "de": "die Zitrone",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "лимон"
+        ],
+        "definition_de": "Eine gelbe Zitrusfrucht, die sauer schmeckt.",
+        "forms": "Plural · die Zitronen",
+        "example": "Für den Salat brauche ich den Saft einer Zitrone.",
+        "example_ru": "Для салата мне нужен сок одного лимона.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zitrone"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-zitrone-lemon"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zitrone-lemon",
+            "de": "die Zitrone",
+            "part": "noun",
+            "forms": "die Zitronen",
+            "definition_de": "Eine gelbe Zitrusfrucht mit saurem Geschmack.",
+            "translations_ru": [
+              "лимон"
+            ],
+            "grammar_hint": "Zitronensaft; eine Scheibe Zitrone; CH: Sosse.",
+            "example": "Für die Soße brauche ich den Saft einer Zitrone.",
+            "example_ru": "Для соуса мне нужен сок одного лимона."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zitrone"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-646-1",
+      "alias_ids": [
+        "b1-zoll-customs"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-646-1",
+        "de": "der Zoll",
+        "lemma": "Zoll",
+        "ru": "таможня",
+        "uk": "",
+        "translations_ru": [
+          "таможня"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "обычно Singular в значении «таможенная служба»",
+        "definition_de": "Die Behörde, die Waren an einer Grenze kontrolliert.",
+        "example": "Am Flughafen mussten wir noch durch den Zoll.",
+        "example_ru": "В аэропорту нам ещё нужно было пройти таможню.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "616d05013b0e9eb5ae7a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zoll-customs"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zoll-customs",
+            "de": "der Zoll",
+            "part": "noun",
+            "forms": "die Zölle (обычно о пошлинах); учреждение чаще Singular",
+            "definition_de": "Eine staatliche Stelle zur Kontrolle des grenzüberschreitenden Warenverkehrs.",
+            "translations_ru": [
+              "таможня",
+              "таможенный контроль"
+            ],
+            "grammar_hint": "durch den Zoll (Akk.) gehen; beim Zoll (Dat.); Zollgebühren — таможенные сборы; der Zoll как мера длины — отдельное значение.",
+            "example": "Am Flughafen müssen wir noch durch den Zoll.",
+            "example_ru": "В аэропорту нам ещё нужно пройти таможню."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zoll"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_d9c4a1c35dc6090bb7a0",
+      "alias_ids": [
+        "b1-zoo-zoo"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_d9c4a1c35dc6090bb7a0",
+        "de": "der Zoo",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "зоопарк"
+        ],
+        "definition_de": "Ein Park, in dem Besucher verschiedene Tiere sehen können.",
+        "forms": "Plural · die Zoos",
+        "example": "Die Kinder wollen im Zoo die Elefanten sehen.",
+        "example_ru": "Дети хотят посмотреть на слонов в зоопарке.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zoo"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-zoo-zoo"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zoo-zoo",
+            "de": "der Zoo",
+            "part": "noun",
+            "forms": "die Zoos",
+            "definition_de": "Eine Einrichtung, in der Tiere gehalten und Besuchern gezeigt werden.",
+            "translations_ru": [
+              "зоопарк"
+            ],
+            "grammar_hint": "in den Zoo (Akk.); im Zoo (Dat.); zoologischer Garten.",
+            "example": "Die Kinder möchten am Sonntag in den Zoo gehen.",
+            "example_ru": "Дети хотят в воскресенье пойти в зоопарк."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zoo"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-647-1",
+      "alias_ids": [
+        "b1-zu-direction"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-647-1",
+        "de": "zu",
+        "lemma": "zu",
+        "ru": "к; в (к месту назначения); на (по контексту)",
+        "uk": "",
+        "translations_ru": [
+          "к",
+          "в (к месту назначения)",
+          "на (по контексту)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Nennt das Ziel, zu dem sich jemand bewegt.",
+        "example": "Ich fahre zur Arbeit.",
+        "example_ru": "Я еду на работу.",
+        "note": "zu + Dativ: zur Arbeit (zur = zu der). Всегда Dativ; zum = zu dem, zur = zu der. zu — не Wechselpräposition, даже при Wohin?; zu Fuß, zu Hause — отдельные устойчивые выражения; zum Essen — к еде/во время еды.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "a795237923f85f52edac"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zu-direction"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zu-direction",
+            "de": "zu",
+            "part": "preposition",
+            "forms": "Dativ",
+            "definition_de": "Kennzeichnet das Ziel einer Bewegung, häufig eine Person oder Einrichtung.",
+            "translations_ru": [
+              "к",
+              "в",
+              "на (направление)"
+            ],
+            "grammar_hint": "zu + Dat.; zum = zu dem, zur = zu der; zum Arzt, zur Schule. Wohin? не означает автоматически Akkusativ; zu не Wechselpräposition.",
+            "example": "Ich gehe nach der Arbeit zur Apotheke.",
+            "example_ru": "После работы я иду в аптеку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-294-3",
+      "alias_ids": [
+        "b1-zu-hause"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-294-3",
+        "de": "zu Hause",
+        "lemma": "zu Hause",
+        "ru": "дома",
+        "uk": "",
+        "translations_ru": [
+          "дома"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "",
+        "definition_de": "An dem Ort, an dem man wohnt.",
+        "example": "Ich bleibe heute zu Hause.",
+        "example_ru": "Сегодня я остаюсь дома.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "71379cc3ded1808fd117"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "a795237923f85f52edac"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zu-hause"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zu-hause",
+            "de": "zu Hause / zuhause",
+            "part": "phrase",
+            "forms": "feste Wendung",
+            "definition_de": "Kennzeichnet den Aufenthalt am eigenen Wohnort.",
+            "translations_ru": [
+              "дома"
+            ],
+            "grammar_hint": "Wo? zu Hause / zuhause; Wohin? nach Hause / nachhause; Woher? von zu Hause. das Zuhause — существительное.",
+            "example": "Am Freitag arbeite ich zu Hause.",
+            "example_ru": "В пятницу я работаю дома."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu%20Hause"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-647-2",
+      "alias_ids": [
+        "b1-zu-fuss"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-647-2",
+        "de": "zu Fuß",
+        "lemma": "zu Fuß",
+        "ru": "пешком",
+        "uk": "",
+        "translations_ru": [
+          "пешком"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "",
+        "definition_de": "Ohne Fahrzeug, indem man geht.",
+        "example": "Wir gehen zu Fuß zum Bahnhof.",
+        "example_ru": "Мы идём на вокзал пешком.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "a795237923f85f52edac"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zu-fuss"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zu-fuss",
+            "de": "zu Fuß",
+            "part": "phrase",
+            "forms": "feste Wendung",
+            "definition_de": "Bezeichnet die Fortbewegung ohne Fahrzeug.",
+            "translations_ru": [
+              "пешком"
+            ],
+            "grammar_hint": "zu Fuß без артикля; CH: zu Fuss; mit dem Bus — на автобусе.",
+            "example": "Bei gutem Wetter gehe ich zu Fuß zur Arbeit.",
+            "example_ru": "В хорошую погоду я хожу на работу пешком."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu%20Fu%C3%9F"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_105ede09f0e248499831",
+      "alias_ids": [
+        "b1-zu-degree"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_105ede09f0e248499831",
+        "de": "zu",
+        "lemma": "zu",
+        "part": "particle",
+        "level": "A1",
+        "ru": "слишком",
+        "uk": "занадто",
+        "translations_ru": [
+          "слишком"
+        ],
+        "topic": "Грамматика",
+        "topics": [
+          "Грамматика"
+        ],
+        "forms": "Неизменяемая частица степени",
+        "definition_de": "Zeigt an, dass ein Maß überschritten wird.",
+        "example": "Der Kaffee ist mir zu heiß.",
+        "example_ru": "Кофе для меня слишком горячий.",
+        "note": "zu + прилагательное/наречие: zu teuer, zu schnell. Не путать с предлогом zu + Dativ.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "scope": "attested_example"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "attested_example"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/zu",
+            "scope": "meaning"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zu-degree"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zu-degree",
+            "de": "zu",
+            "part": "particle",
+            "forms": "unveränderlich",
+            "definition_de": "Kennzeichnet einen Grad, der über dem erwünschten Maß liegt.",
+            "translations_ru": [
+              "слишком"
+            ],
+            "grammar_hint": "zu + Adjektiv/Adverb: zu groß, zu spät; viel zu teuer — чересчур дорого; nicht zu verwechseln mit zu + Dativ oder Infinitiv.",
+            "example": "Der Schrank ist zu breit für die Nische.",
+            "example_ru": "Шкаф слишком широкий для ниши."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zu"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

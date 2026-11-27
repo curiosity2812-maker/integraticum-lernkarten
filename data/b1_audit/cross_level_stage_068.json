@@ -1,0 +1,2947 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1333,
+    1352
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 11,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 4,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1333,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Fragt nach einem Grund. Example: Warum ist die Tür geschlossen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 9,
+        "record": {
+          "id": "b1-warum-direct",
+          "de": "warum",
+          "lemma": "warum",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "почему?",
+            "зачем?"
+          ],
+          "definition_de": "Fragt nach einem Grund.",
+          "example": "Warum ist die Tür geschlossen?",
+          "example_ru": "Почему дверь закрыта?",
+          "forms": "unveränderlich",
+          "grammar_hint": "W-вопрос: warum + спрягаемый глагол + подлежащее; ответ с weil — глагол в конце придаточного.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/warum"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 731,
+          "record": {
+            "id": "a1-608-1",
+            "de": "warum",
+            "lemma": "warum",
+            "ru": "почему; отчего; зачем (в зависимости от контекста)",
+            "uk": "",
+            "translations_ru": [
+              "почему",
+              "отчего",
+              "зачем (в зависимости от контекста)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Fragt nach dem Grund.",
+            "example": "Warum kommst du so spät?",
+            "example_ru": "Почему ты приходишь так поздно?",
+            "note": "В прямом вопросе warum + спрягаемый глагол + подлежащее; в косвенном вопросе глагол в конце: Ich weiß nicht, warum er fehlt. Wozu чаще спрашивает о цели.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "6c63e6d156ddcd0d0c72"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-608-1",
+        "alias_id": "b1-warum-direct",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-608-1"
+      }
+    },
+    {
+      "candidate_number": 1334,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Leitet eine eingebettete Frage nach einem Grund ein. Example: Ich verstehe nicht, warum der Drucker nicht funktioniert.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 10,
+        "record": {
+          "id": "b1-warum-indirect",
+          "de": "warum",
+          "lemma": "warum",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "почему (косвенный вопрос)"
+          ],
+          "definition_de": "Leitet eine eingebettete Frage nach einem Grund ein.",
+          "example": "Ich verstehe nicht, warum der Drucker nicht funktioniert.",
+          "example_ru": "Я не понимаю, почему принтер не работает.",
+          "forms": "unveränderlich",
+          "grammar_hint": "В косвенном вопросе спрягаемый глагол в конце. Контекст основного вопросительного слова.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/warum"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 731,
+          "record": {
+            "id": "a1-608-1",
+            "de": "warum",
+            "lemma": "warum",
+            "ru": "почему; отчего; зачем (в зависимости от контекста)",
+            "uk": "",
+            "translations_ru": [
+              "почему",
+              "отчего",
+              "зачем (в зависимости от контекста)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Fragt nach dem Grund.",
+            "example": "Warum kommst du so spät?",
+            "example_ru": "Почему ты приходишь так поздно?",
+            "note": "В прямом вопросе warum + спрягаемый глагол + подлежащее; в косвенном вопросе глагол в конце: Ich weiß nicht, warum er fehlt. Wozu чаще спрашивает о цели.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "6c63e6d156ddcd0d0c72"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1335,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Fragt nach einer Sache, Handlung oder Information. Example: Was brauchst du für den Kurs?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 11,
+        "record": {
+          "id": "b1-was-question",
+          "de": "was",
+          "lemma": "was",
+          "part": "pronoun",
+          "level": "B1",
+          "translations_ru": [
+            "что?",
+            "что именно?"
+          ],
+          "definition_de": "Fragt nach einer Sache, Handlung oder Information.",
+          "example": "Was brauchst du für den Kurs?",
+          "example_ru": "Что тебе нужно для курса?",
+          "forms": "unveränderlich in Nom./Akk.",
+          "grammar_hint": "Was как подлежащее: Was fehlt? Как дополнение: Was kaufst du? Для людей используется wer/wen.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/was"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 732,
+          "record": {
+            "id": "a1-609-1",
+            "de": "was",
+            "lemma": "was",
+            "ru": "что",
+            "uk": "",
+            "translations_ru": [
+              "что"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Fragt nach einer Sache oder einem Inhalt.",
+            "example": "Was möchtest du trinken?",
+            "example_ru": "Что ты хочешь выпить?",
+            "note": "was — что? В разговорной речи was также сокращённое etwas (что-то): Soll ich dir was mitbringen? Goethe A2 стр.21. В нейтральной письменной речи предпочтительно etwas.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "2afe070a3ce5741191a8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-609-1",
+        "alias_id": "b1-was-question",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-609-1"
+      }
+    },
+    {
+      "candidate_number": 1336,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Leitet eine Frage nach einer Sache innerhalb eines Satzes ein. Example: Kannst du mir sagen, was du brauchst?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 12,
+        "record": {
+          "id": "b1-was-indirect",
+          "de": "was",
+          "lemma": "was",
+          "part": "pronoun",
+          "level": "B1",
+          "translations_ru": [
+            "что (косвенный вопрос)"
+          ],
+          "definition_de": "Leitet eine Frage nach einer Sache innerhalb eines Satzes ein.",
+          "example": "Kannst du mir sagen, was du brauchst?",
+          "example_ru": "Можешь сказать мне, что тебе нужно?",
+          "forms": "unveränderlich in Nom./Akk.",
+          "grammar_hint": "В косвенном вопросе глагол в конце: was du brauchst; контекст основного вопросительного местоимения.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/was"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 732,
+          "record": {
+            "id": "a1-609-1",
+            "de": "was",
+            "lemma": "was",
+            "ru": "что",
+            "uk": "",
+            "translations_ru": [
+              "что"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Fragt nach einer Sache oder einem Inhalt.",
+            "example": "Was möchtest du trinken?",
+            "example_ru": "Что ты хочешь выпить?",
+            "note": "was — что? В разговорной речи was также сокращённое etwas (что-то): Soll ich dir was mitbringen? Goethe A2 стр.21. В нейтральной письменной речи предпочтительно etwas.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "2afe070a3ce5741191a8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1337,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Umgangssprachliche Kurzform von etwas. Example: Ich möchte noch was trinken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 13,
+        "record": {
+          "id": "b1-was-indefinite",
+          "de": "was",
+          "lemma": "was",
+          "part": "pronoun",
+          "level": "B1",
+          "translations_ru": [
+            "что-нибудь",
+            "что-то (разг.)"
+          ],
+          "definition_de": "Umgangssprachliche Kurzform von etwas.",
+          "example": "Ich möchte noch was trinken.",
+          "example_ru": "Я хочу ещё что-нибудь выпить.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Разговорное was = etwas, не вопросительное слово. В официальном тексте лучше etwas.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/was"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 732,
+          "record": {
+            "id": "a1-609-1",
+            "de": "was",
+            "lemma": "was",
+            "ru": "что",
+            "uk": "",
+            "translations_ru": [
+              "что"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Fragt nach einer Sache oder einem Inhalt.",
+            "example": "Was möchtest du trinken?",
+            "example_ru": "Что ты хочешь выпить?",
+            "note": "was — что? В разговорной речи was также сокращённое etwas (что-то): Soll ich dir was mitbringen? Goethe A2 стр.21. В нейтральной письменной речи предпочтительно etwas.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "2afe070a3ce5741191a8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1338,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit Wasser und gegebenenfalls einem Reinigungsmittel sauber machen. Example: Sie wäscht ihre Arbeitskleidung am Sonntag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 15,
+        "record": {
+          "id": "b1-waschen-object",
+          "de": "waschen",
+          "lemma": "waschen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "мыть",
+            "стирать"
+          ],
+          "definition_de": "Mit Wasser und gegebenenfalls einem Reinigungsmittel sauber machen.",
+          "example": "Sie wäscht ihre Arbeitskleidung am Sonntag.",
+          "example_ru": "Она стирает рабочую одежду в воскресенье.",
+          "forms": "wäscht · wusch · hat gewaschen",
+          "grammar_hint": "etwas/jemanden (Akk.) waschen; Kleidung waschen — стирать; Gemüse waschen — мыть.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/waschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 735,
+          "record": {
+            "id": "a1-611-2",
+            "de": "waschen",
+            "lemma": "waschen",
+            "ru": "стирать; мыть",
+            "uk": "",
+            "translations_ru": [
+              "стирать",
+              "мыть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "wäscht · wusch · hat gewaschen",
+            "definition_de": "Kleidung oder andere Dinge mit Wasser reinigen.",
+            "example": "Morgen wasche ich die Handtücher.",
+            "example_ru": "Завтра я постираю полотенца.",
+            "note": "waschen + Akkusativ: die Wäsche waschen — стирать бельё; das Auto waschen — мыть машину; sich die Hände waschen — мыть себе руки (sich в Dativ, Hände в Akkusativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "1c415eca26565bcde7c5"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/waschen",
+                "scope": "meaning",
+                "note": "Одежду стирают, руки и предметы моют."
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-611-2",
+        "alias_id": "b1-waschen-object",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-611-2"
+      }
+    },
+    {
+      "candidate_number": 1339,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Den eigenen Körper reinigen. Example: Nach dem Sport wäscht er sich gründlich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 16,
+        "record": {
+          "id": "b1-waschen-reflexive",
+          "de": "sich waschen",
+          "lemma": "waschen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "мыться",
+            "умываться"
+          ],
+          "definition_de": "Den eigenen Körper reinigen.",
+          "example": "Nach dem Sport wäscht er sich gründlich.",
+          "example_ru": "После спорта он тщательно моется.",
+          "forms": "wäscht sich · wusch sich · hat sich gewaschen",
+          "grammar_hint": "sich (Akk.) waschen: ich wasche mich. Если есть прямое дополнение — часть тела, местоимение обычно в Dativ.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/waschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 734,
+          "record": {
+            "id": "a1-611-1",
+            "de": "sich waschen",
+            "lemma": "sich waschen",
+            "ru": "мыться",
+            "uk": "",
+            "translations_ru": [
+              "мыться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "wäscht sich · wusch sich · hat sich gewaschen",
+            "definition_de": "Den eigenen Körper mit Wasser sauber machen.",
+            "example": "Ich wasche mich vor dem Frühstück.",
+            "example_ru": "Я моюсь перед завтраком.",
+            "note": "Мыться: ich wasche mich (Akkusativ). Мыть себе руки: ich wasche mir die Hände (mir — Dativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "1c415eca26565bcde7c5"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 735,
+          "record": {
+            "id": "a1-611-2",
+            "de": "waschen",
+            "lemma": "waschen",
+            "ru": "стирать; мыть",
+            "uk": "",
+            "translations_ru": [
+              "стирать",
+              "мыть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "wäscht · wusch · hat gewaschen",
+            "definition_de": "Kleidung oder andere Dinge mit Wasser reinigen.",
+            "example": "Morgen wasche ich die Handtücher.",
+            "example_ru": "Завтра я постираю полотенца.",
+            "note": "waschen + Akkusativ: die Wäsche waschen — стирать бельё; das Auto waschen — мыть машину; sich die Hände waschen — мыть себе руки (sich в Dativ, Hände в Akkusativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "1c415eca26565bcde7c5"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/waschen",
+                "scope": "meaning",
+                "note": "Одежду стирают, руки и предметы моют."
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-611-1",
+        "alias_id": "b1-waschen-reflexive",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-611-1"
+      }
+    },
+    {
+      "candidate_number": 1340,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Die eigenen Hände mit Wasser reinigen. Example: Vor dem Essen wasche ich mir die Hände.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 17,
+        "record": {
+          "id": "b1-waschen-bodypart",
+          "de": "sich die Hände waschen",
+          "lemma": "waschen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "мыть руки",
+            "мыть себе руки"
+          ],
+          "definition_de": "Die eigenen Hände mit Wasser reinigen.",
+          "example": "Vor dem Essen wasche ich mir die Hände.",
+          "example_ru": "Перед едой я мою руки.",
+          "forms": "wäscht sich die Hände · wusch sich die Hände · hat sich die Hände gewaschen",
+          "grammar_hint": "mir (Dat.) + die Hände (Akk.); du wäschst dir die Hände. Грамматическая конструкция waschen, объединить с основной карточкой при финальной сверке.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/waschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 735,
+          "record": {
+            "id": "a1-611-2",
+            "de": "waschen",
+            "lemma": "waschen",
+            "ru": "стирать; мыть",
+            "uk": "",
+            "translations_ru": [
+              "стирать",
+              "мыть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "wäscht · wusch · hat gewaschen",
+            "definition_de": "Kleidung oder andere Dinge mit Wasser reinigen.",
+            "example": "Morgen wasche ich die Handtücher.",
+            "example_ru": "Завтра я постираю полотенца.",
+            "note": "waschen + Akkusativ: die Wäsche waschen — стирать бельё; das Auto waschen — мыть машину; sich die Hände waschen — мыть себе руки (sich в Dativ, Hände в Akkusativ).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "1c415eca26565bcde7c5"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/waschen",
+                "scope": "meaning",
+                "note": "Одежду стирают, руки и предметы моют."
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "scope": "sense"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1341,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Textilien, die gewaschen werden sollen oder bereits gewaschen sind; auch der Waschvorgang. Example: Die saubere Wäsche liegt im Korb.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 18,
+        "record": {
+          "id": "b1-waesche-laundry",
+          "de": "die Wäsche",
+          "lemma": "Wäsche",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "бельё",
+            "вещи для стирки",
+            "стирка"
+          ],
+          "definition_de": "Textilien, die gewaschen werden sollen oder bereits gewaschen sind; auch der Waschvorgang.",
+          "example": "Die saubere Wäsche liegt im Korb.",
+          "example_ru": "Чистое бельё лежит в корзине.",
+          "forms": "meist Singular; die Wäschen (редко, о процессах стирки)",
+          "grammar_hint": "Wäsche waschen, aufhängen, zusammenlegen; Unterwäsche — нижнее бельё.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/W%C3%A4sche"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 380,
+          "record": {
+            "id": "dict_d60bc808089cc2ca9de2",
+            "de": "die Wäsche",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "бельё",
+              "вещи для стирки"
+            ],
+            "definition_de": "Kleidung und Textilien, die gewaschen werden oder bereits gewaschen sind.",
+            "forms": "Plural · die Wäschen (отдельные стирки); бельё обычно Singular",
+            "example": "Am Samstag wasche ich die Wäsche.",
+            "example_ru": "В субботу я стираю бельё.",
+            "grammar_hint": "",
+            "usage_note": "Wäsche waschen — стирать бельё; Wäsche aufhängen — развешивать бельё; Wäsche trocknen — сушить бельё. Geldwäsche — отмывание денег, другое слово.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/W%C3%A4sche",
+                "https://www.duden.de/rechtschreibung/Waesche"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_d60bc808089cc2ca9de2",
+        "alias_id": "b1-waesche-laundry",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_d60bc808089cc2ca9de2"
+      }
+    },
+    {
+      "candidate_number": 1342,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Flüssigkeit, die zum Trinken, Waschen und für viele andere Zwecke verwendet wird. Example: Im Kühlschrank steht eine Flasche Wasser.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 20,
+        "record": {
+          "id": "b1-wasser-liquid",
+          "de": "das Wasser",
+          "lemma": "Wasser",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "вода"
+          ],
+          "definition_de": "Eine Flüssigkeit, die zum Trinken, Waschen und für viele andere Zwecke verwendet wird.",
+          "example": "Im Kühlschrank steht eine Flasche Wasser.",
+          "example_ru": "В холодильнике стоит бутылка воды.",
+          "forms": "meist Singular; die Wasser/Wässer in speziellen Bedeutungen",
+          "grammar_hint": "ein Glas Wasser; kaltes/warmes Wasser; обычно неисчисляемое.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wasser"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 32,
+          "record": {
+            "id": "food-wasser",
+            "de": "das Wasser",
+            "lemma": "Wasser",
+            "ru": "вода",
+            "uk": "",
+            "translations_ru": [
+              "вода"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно только Singular",
+            "definition_de": "Eine klare Flüssigkeit, die man trinken kann.",
+            "example": "Kann ich bitte ein Glas Wasser haben?",
+            "example_ru": "Можно мне стакан воды?",
+            "note": "В обычном значении Singular; Mineralwasser — отдельное сложное слово. ein Glas Wasser — стакан воды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "6e004c45f6d7ddb88e1b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "food-wasser",
+        "alias_id": "b1-wasser-liquid",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "food-wasser"
+      }
+    },
+    {
+      "candidate_number": 1343,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine Portion Wasser, die in einem Lokal bestellt wird. Example: Für mich bitte ein Wasser ohne Kohlensäure.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 21,
+        "record": {
+          "id": "b1-wasser-serving",
+          "de": "ein Wasser",
+          "lemma": "Wasser",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "одна порция воды",
+            "одна бутылка или стакан воды (при заказе)"
+          ],
+          "definition_de": "Eine Portion Wasser, die in einem Lokal bestellt wird.",
+          "example": "Für mich bitte ein Wasser ohne Kohlensäure.",
+          "example_ru": "Мне, пожалуйста, одну воду без газа.",
+          "forms": "ein Wasser; zwei Wasser (при заказе)",
+          "grammar_hint": "Сокращение от ein Glas/eine Flasche Wasser; контекст, не отдельная лексема.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wasser"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 32,
+          "record": {
+            "id": "food-wasser",
+            "de": "das Wasser",
+            "lemma": "Wasser",
+            "ru": "вода",
+            "uk": "",
+            "translations_ru": [
+              "вода"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно только Singular",
+            "definition_de": "Eine klare Flüssigkeit, die man trinken kann.",
+            "example": "Kann ich bitte ein Glas Wasser haben?",
+            "example_ru": "Можно мне стакан воды?",
+            "note": "В обычном значении Singular; Mineralwasser — отдельное сложное слово. ein Glas Wasser — стакан воды.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "6e004c45f6d7ddb88e1b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1344,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Geld in kleinere Einheiten oder in eine andere Währung tauschen. Example: Kann ich hier Franken in Euro wechseln?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 22,
+        "record": {
+          "id": "b1-wechseln-money",
+          "de": "wechseln",
+          "lemma": "wechseln",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "разменивать",
+            "обменивать деньги"
+          ],
+          "definition_de": "Geld in kleinere Einheiten oder in eine andere Währung tauschen.",
+          "example": "Kann ich hier Franken in Euro wechseln?",
+          "example_ru": "Могу я здесь обменять франки на евро?",
+          "forms": "wechselt · wechselte · hat gewechselt",
+          "grammar_hint": "Geld (Akk.) in + Akk. wechseln; Geld wechseln — также разменивать купюры.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wechseln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 393,
+          "record": {
+            "id": "dict_b1ef1fa318f707027801",
+            "de": "wechseln",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "менять",
+              "заменять",
+              "обменивать (деньги)",
+              "разменивать"
+            ],
+            "definition_de": "Etwas durch etwas anderes ersetzen oder Geld in andere Münzen, Scheine oder eine andere Währung tauschen.",
+            "example": "Ich muss vor der Reise Geld wechseln.",
+            "example_ru": "Перед поездкой мне нужно обменять деньги.",
+            "grammar_hint": "etwas (Akkusativ) wechseln. Для этих значений Perfekt с haben.",
+            "usage_note": "Подтверждены замена предмета (einen Reifen wechseln — поменять шину) и обмен денег. Для смены места или перехода в другое учреждение возможен sein; здесь эти значения не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wechseln"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "wechselt · wechselte · hat gewechselt",
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b1ef1fa318f707027801",
+        "alias_id": "b1-wechseln-money",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b1ef1fa318f707027801"
+      }
+    },
+    {
+      "candidate_number": 1345,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas durch einen anderen Gegenstand ersetzen. Example: Wir müssen die Batterien der Fernbedienung wechseln.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 23,
+        "record": {
+          "id": "b1-wechseln-replace",
+          "de": "wechseln",
+          "lemma": "wechseln",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "менять",
+            "заменять"
+          ],
+          "definition_de": "Etwas durch einen anderen Gegenstand ersetzen.",
+          "example": "Wir müssen die Batterien der Fernbedienung wechseln.",
+          "example_ru": "Нам нужно заменить батарейки в пульте.",
+          "forms": "wechselt · wechselte · hat gewechselt",
+          "grammar_hint": "etwas (Akk.) wechseln; die Reifen, die Kleidung wechseln. Perfekt с haben при прямом дополнении.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wechseln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 393,
+          "record": {
+            "id": "dict_b1ef1fa318f707027801",
+            "de": "wechseln",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "менять",
+              "заменять",
+              "обменивать (деньги)",
+              "разменивать"
+            ],
+            "definition_de": "Etwas durch etwas anderes ersetzen oder Geld in andere Münzen, Scheine oder eine andere Währung tauschen.",
+            "example": "Ich muss vor der Reise Geld wechseln.",
+            "example_ru": "Перед поездкой мне нужно обменять деньги.",
+            "grammar_hint": "etwas (Akkusativ) wechseln. Для этих значений Perfekt с haben.",
+            "usage_note": "Подтверждены замена предмета (einen Reifen wechseln — поменять шину) и обмен денег. Для смены места или перехода в другое учреждение возможен sein; здесь эти значения не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wechseln"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "wechselt · wechselte · hat gewechselt",
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b1ef1fa318f707027801",
+        "alias_id": "b1-wechseln-replace",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b1ef1fa318f707027801"
+      }
+    },
+    {
+      "candidate_number": 1346,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine bisher genutzte Einrichtung, Stelle oder Bezugsperson durch eine andere ersetzen. Example: Sie hat ihren Hausarzt gewechselt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 24,
+        "record": {
+          "id": "b1-wechseln-provider",
+          "de": "wechseln",
+          "lemma": "wechseln",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сменить",
+            "менять (врача, работу, поставщика)"
+          ],
+          "definition_de": "Eine bisher genutzte Einrichtung, Stelle oder Bezugsperson durch eine andere ersetzen.",
+          "example": "Sie hat ihren Hausarzt gewechselt.",
+          "example_ru": "Она сменила семейного врача.",
+          "forms": "wechselt · wechselte · hat gewechselt",
+          "grammar_hint": "den Arzt (Akk.) wechseln; при переходе без прямого дополнения часто sein: Sie ist zu einer anderen Firma gewechselt. Контекст общего значения замены.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wechseln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 393,
+          "record": {
+            "id": "dict_b1ef1fa318f707027801",
+            "de": "wechseln",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "менять",
+              "заменять",
+              "обменивать (деньги)",
+              "разменивать"
+            ],
+            "definition_de": "Etwas durch etwas anderes ersetzen oder Geld in andere Münzen, Scheine oder eine andere Währung tauschen.",
+            "example": "Ich muss vor der Reise Geld wechseln.",
+            "example_ru": "Перед поездкой мне нужно обменять деньги.",
+            "grammar_hint": "etwas (Akkusativ) wechseln. Для этих значений Perfekt с haben.",
+            "usage_note": "Подтверждены замена предмета (einen Reifen wechseln — поменять шину) и обмен денег. Для смены места или перехода в другое учреждение возможен sein; здесь эти значения не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wechseln"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "wechselt · wechselte · hat gewechselt",
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b1ef1fa318f707027801",
+        "alias_id": "b1-wechseln-provider",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b1ef1fa318f707027801"
+      }
+    },
+    {
+      "candidate_number": 1347,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine schlafende Person zum Aufwachen bringen. Example: Kannst du mich um halb sieben wecken?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 25,
+        "record": {
+          "id": "b1-wecken-wake",
+          "de": "wecken",
+          "lemma": "wecken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "будить",
+            "разбудить"
+          ],
+          "definition_de": "Eine schlafende Person zum Aufwachen bringen.",
+          "example": "Kannst du mich um halb sieben wecken?",
+          "example_ru": "Можешь разбудить меня в половине седьмого?",
+          "forms": "weckt · weckte · hat geweckt",
+          "grammar_hint": "jemanden (Akk.) wecken; aufwachen — проснуться, Perfekt с sein.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wecken"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 272,
+          "record": {
+            "id": "dict_3553e49805b83e723f14",
+            "de": "wecken",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "будить",
+              "разбудить"
+            ],
+            "definition_de": "Dafür sorgen, dass jemand aufwacht.",
+            "forms": "weckt · weckte · hat geweckt",
+            "example": "Kannst du mich morgen um sieben wecken?",
+            "example_ru": "Можешь разбудить меня завтра в семь?",
+            "grammar_hint": "Кого будим? Akkusativ: mich wecken.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wecken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3553e49805b83e723f14",
+        "alias_id": "b1-wecken-wake",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3553e49805b83e723f14"
+      }
+    },
+    {
+      "candidate_number": 1348,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Strecke, die zum Gehen oder Fahren genutzt werden kann. Example: Der schmale Weg führt durch den Wald.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 28,
+        "record": {
+          "id": "b1-weg-path",
+          "de": "der Weg",
+          "lemma": "Weg",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дорога",
+            "тропа",
+            "путь"
+          ],
+          "definition_de": "Eine Strecke, die zum Gehen oder Fahren genutzt werden kann.",
+          "example": "Der schmale Weg führt durch den Wald.",
+          "example_ru": "Узкая тропа ведёт через лес.",
+          "forms": "die Wege",
+          "grammar_hint": "auf dem Weg (Dat.); Genitiv des Weges/des Wegs; не путать с weg [vɛk] — прочь.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Weg"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 172,
+          "record": {
+            "id": "dict_705e7e22ff3e1e41d34d",
+            "de": "der Weg",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "путь",
+              "дорога"
+            ],
+            "definition_de": "Eine Strecke, auf der man von einem Ort zu einem anderen kommt.",
+            "forms": "Plural · die Wege",
+            "example": "Kennst du den Weg zum Rathaus?",
+            "example_ru": "Ты знаешь дорогу к ратуше?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Weg"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 398,
+          "record": {
+            "id": "dict_46f3d2dc53a0741118ca",
+            "de": "weg",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "прочь",
+              "отсюда",
+              "нет на месте",
+              "пропал"
+            ],
+            "definition_de": "Bezeichnet das Entfernen von einem Ort oder dass etwas nicht mehr da ist.",
+            "example": "Mein Schlüssel ist weg.",
+            "example_ru": "Мой ключ пропал.",
+            "grammar_hint": "weg часто образует отделяемые глаголы: weggehen, wegwerfen.",
+            "usage_note": "Не путать с der Weg — путь, дорога.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weg"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_705e7e22ff3e1e41d34d",
+        "alias_id": "b1-weg-path",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_705e7e22ff3e1e41d34d"
+      }
+    },
+    {
+      "candidate_number": 1349,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Die Richtung oder Verbindung, über die man ein Ziel erreicht. Example: Können Sie mir den Weg zur Bibliothek erklären?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 29,
+        "record": {
+          "id": "b1-weg-route",
+          "de": "der Weg",
+          "lemma": "Weg",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "путь",
+            "маршрут",
+            "дорога до места"
+          ],
+          "definition_de": "Die Richtung oder Verbindung, über die man ein Ziel erreicht.",
+          "example": "Können Sie mir den Weg zur Bibliothek erklären?",
+          "example_ru": "Можете объяснить мне, как пройти к библиотеке?",
+          "forms": "die Wege",
+          "grammar_hint": "der Weg zu + Dat.; auf dem Weg zur Arbeit — по дороге на работу.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Weg"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 172,
+          "record": {
+            "id": "dict_705e7e22ff3e1e41d34d",
+            "de": "der Weg",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "путь",
+              "дорога"
+            ],
+            "definition_de": "Eine Strecke, auf der man von einem Ort zu einem anderen kommt.",
+            "forms": "Plural · die Wege",
+            "example": "Kennst du den Weg zum Rathaus?",
+            "example_ru": "Ты знаешь дорогу к ратуше?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Weg"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 398,
+          "record": {
+            "id": "dict_46f3d2dc53a0741118ca",
+            "de": "weg",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "прочь",
+              "отсюда",
+              "нет на месте",
+              "пропал"
+            ],
+            "definition_de": "Bezeichnet das Entfernen von einem Ort oder dass etwas nicht mehr da ist.",
+            "example": "Mein Schlüssel ist weg.",
+            "example_ru": "Мой ключ пропал.",
+            "grammar_hint": "weg часто образует отделяемые глаголы: weggehen, wegwerfen.",
+            "usage_note": "Не путать с der Weg — путь, дорога.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weg"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_705e7e22ff3e1e41d34d",
+        "alias_id": "b1-weg-route",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_705e7e22ff3e1e41d34d"
+      }
+    },
+    {
+      "candidate_number": 1350,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht mehr am erwarteten Ort vorhanden sein. Example: Mein Schlüssel ist plötzlich weg.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_114.json",
+        "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+        "batch": 114,
+        "row": 30,
+        "record": {
+          "id": "b1-weg-missing",
+          "de": "weg",
+          "lemma": "weg",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "нет на месте",
+            "пропал",
+            "исчез"
+          ],
+          "definition_de": "Nicht mehr am erwarteten Ort vorhanden sein.",
+          "example": "Mein Schlüssel ist plötzlich weg.",
+          "example_ru": "Мой ключ внезапно пропал.",
+          "forms": "unveränderlich",
+          "grammar_hint": "weg sein — отсутствовать, пропасть; weg [vɛk] с кратким гласным, der Weg [veːk] с долгим; далее weg- как отделяемая часть глагола.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weg"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 172,
+          "record": {
+            "id": "dict_705e7e22ff3e1e41d34d",
+            "de": "der Weg",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "путь",
+              "дорога"
+            ],
+            "definition_de": "Eine Strecke, auf der man von einem Ort zu einem anderen kommt.",
+            "forms": "Plural · die Wege",
+            "example": "Kennst du den Weg zum Rathaus?",
+            "example_ru": "Ты знаешь дорогу к ратуше?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Weg"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 398,
+          "record": {
+            "id": "dict_46f3d2dc53a0741118ca",
+            "de": "weg",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "прочь",
+              "отсюда",
+              "нет на месте",
+              "пропал"
+            ],
+            "definition_de": "Bezeichnet das Entfernen von einem Ort oder dass etwas nicht mehr da ist.",
+            "example": "Mein Schlüssel ist weg.",
+            "example_ru": "Мой ключ пропал.",
+            "grammar_hint": "weg часто образует отделяемые глаголы: weggehen, wegwerfen.",
+            "usage_note": "Не путать с der Weg — путь, дорога.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weg"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_46f3d2dc53a0741118ca",
+        "alias_id": "b1-weg-missing",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_46f3d2dc53a0741118ca"
+      }
+    },
+    {
+      "candidate_number": 1351,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nennt den Grund für einen Vorgang oder Zustand. Example: Wegen des starken Schneefalls fällt der Kurs aus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 2,
+        "record": {
+          "id": "b1-wegen-cause",
+          "de": "wegen",
+          "lemma": "wegen",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "из-за",
+            "по причине",
+            "вследствие"
+          ],
+          "definition_de": "Nennt den Grund für einen Vorgang oder Zustand.",
+          "example": "Wegen des starken Schneefalls fällt der Kurs aus.",
+          "example_ru": "Из-за сильного снегопада занятие отменяется.",
+          "forms": "Genitiv; также Dativ в отдельных контекстах",
+          "grammar_hint": "В письменной стандартной речи обычно Genitiv: wegen des Wetters. Разговорный Dativ распространён; с личными местоимениями также meinetwegen, deinetwegen. Не союз: после wegen именная группа.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wegen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 9,
+          "record": {
+            "id": "dict_dc6282a0291d616ab912",
+            "de": "wegen",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "из-за"
+            ],
+            "definition_de": "Nennt den Grund für etwas.",
+            "example": "Wegen des Regens bleiben wir zu Hause.",
+            "example_ru": "Из-за дождя мы остаёмся дома.",
+            "grammar_hint": "wegen + Genitiv — причина: wegen des Regens. В разговорной речи часто Dativ; в некоторых конструкциях Dativ допустим и в стандартной речи. Wegen des Regens bleiben wir zu Hause: после начальной группы спрягаемый глагол на втором месте.",
+            "usage_note": "В Goethe A2 предлог стоит перед существительным; постпозиция возможна (der Kinder wegen), но отдельно уровень не подтверждён. Не путать с weil + придаточное, где глагол в конце.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wegen",
+                "https://www.duden.de/rechtschreibung/wegen_infolge_bezueglich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dc6282a0291d616ab912",
+        "alias_id": "b1-wegen-cause",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dc6282a0291d616ab912"
+      }
+    },
+    {
+      "candidate_number": 1352,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Nennt den Anlass, aus dem jemand Kontakt aufnimmt. Example: Ich melde mich wegen meiner Bewerbung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 3,
+        "record": {
+          "id": "b1-wegen-matter",
+          "de": "wegen",
+          "lemma": "wegen",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "по поводу",
+            "насчёт"
+          ],
+          "definition_de": "Nennt den Anlass, aus dem jemand Kontakt aufnimmt.",
+          "example": "Ich melde mich wegen meiner Bewerbung.",
+          "example_ru": "Я обращаюсь по поводу своей заявки.",
+          "forms": "Genitiv; также Dativ в отдельных контекстах",
+          "grammar_hint": "wegen + именная группа; контекст причинного значения, объединить с wegen-cause. Сравните: weil ich eine Frage habe — союз, глагол в конце.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wegen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 9,
+          "record": {
+            "id": "dict_dc6282a0291d616ab912",
+            "de": "wegen",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "из-за"
+            ],
+            "definition_de": "Nennt den Grund für etwas.",
+            "example": "Wegen des Regens bleiben wir zu Hause.",
+            "example_ru": "Из-за дождя мы остаёмся дома.",
+            "grammar_hint": "wegen + Genitiv — причина: wegen des Regens. В разговорной речи часто Dativ; в некоторых конструкциях Dativ допустим и в стандартной речи. Wegen des Regens bleiben wir zu Hause: после начальной группы спрягаемый глагол на втором месте.",
+            "usage_note": "В Goethe A2 предлог стоит перед существительным; постпозиция возможна (der Kinder wegen), но отдельно уровень не подтверждён. Не путать с weil + придаточное, где глагол в конце.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wegen",
+                "https://www.duden.de/rechtschreibung/wegen_infolge_bezueglich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-608-1",
+      "alias_ids": [
+        "b1-warum-direct"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-608-1",
+        "de": "warum",
+        "lemma": "warum",
+        "ru": "почему; отчего; зачем (в зависимости от контекста)",
+        "uk": "",
+        "translations_ru": [
+          "почему",
+          "отчего",
+          "зачем (в зависимости от контекста)"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "",
+        "definition_de": "Fragt nach dem Grund.",
+        "example": "Warum kommst du so spät?",
+        "example_ru": "Почему ты приходишь так поздно?",
+        "note": "В прямом вопросе warum + спрягаемый глагол + подлежащее; в косвенном вопросе глагол в конце: Ich weiß nicht, warum er fehlt. Wozu чаще спрашивает о цели.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "6c63e6d156ddcd0d0c72"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-warum-direct"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-warum-direct",
+            "de": "warum",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Fragt nach einem Grund.",
+            "translations_ru": [
+              "почему?",
+              "зачем?"
+            ],
+            "grammar_hint": "W-вопрос: warum + спрягаемый глагол + подлежащее; ответ с weil — глагол в конце придаточного.",
+            "example": "Warum ist die Tür geschlossen?",
+            "example_ru": "Почему дверь закрыта?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/warum"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-609-1",
+      "alias_ids": [
+        "b1-was-question"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-609-1",
+        "de": "was",
+        "lemma": "was",
+        "ru": "что",
+        "uk": "",
+        "translations_ru": [
+          "что"
+        ],
+        "part": "pronoun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Fragt nach einer Sache oder einem Inhalt.",
+        "example": "Was möchtest du trinken?",
+        "example_ru": "Что ты хочешь выпить?",
+        "note": "was — что? В разговорной речи was также сокращённое etwas (что-то): Soll ich dir was mitbringen? Goethe A2 стр.21. В нейтральной письменной речи предпочтительно etwas.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "2afe070a3ce5741191a8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-was-question"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-was-question",
+            "de": "was",
+            "part": "pronoun",
+            "forms": "unveränderlich in Nom./Akk.",
+            "definition_de": "Fragt nach einer Sache, Handlung oder Information.",
+            "translations_ru": [
+              "что?",
+              "что именно?"
+            ],
+            "grammar_hint": "Was как подлежащее: Was fehlt? Как дополнение: Was kaufst du? Для людей используется wer/wen.",
+            "example": "Was brauchst du für den Kurs?",
+            "example_ru": "Что тебе нужно для курса?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/was"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-611-2",
+      "alias_ids": [
+        "b1-waschen-object"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-611-2",
+        "de": "waschen",
+        "lemma": "waschen",
+        "ru": "стирать; мыть",
+        "uk": "",
+        "translations_ru": [
+          "стирать",
+          "мыть"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "wäscht · wusch · hat gewaschen",
+        "definition_de": "Kleidung oder andere Dinge mit Wasser reinigen.",
+        "example": "Morgen wasche ich die Handtücher.",
+        "example_ru": "Завтра я постираю полотенца.",
+        "note": "waschen + Akkusativ: die Wäsche waschen — стирать бельё; das Auto waschen — мыть машину; sich die Hände waschen — мыть себе руки (sich в Dativ, Hände в Akkusativ).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "1c415eca26565bcde7c5"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/waschen",
+            "scope": "meaning",
+            "note": "Одежду стирают, руки и предметы моют."
+          },
+          {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "scope": "sense"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-waschen-object"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-waschen-object",
+            "de": "waschen",
+            "part": "verb",
+            "forms": "wäscht · wusch · hat gewaschen",
+            "definition_de": "Mit Wasser und gegebenenfalls einem Reinigungsmittel sauber machen.",
+            "translations_ru": [
+              "мыть",
+              "стирать"
+            ],
+            "grammar_hint": "etwas/jemanden (Akk.) waschen; Kleidung waschen — стирать; Gemüse waschen — мыть.",
+            "example": "Sie wäscht ihre Arbeitskleidung am Sonntag.",
+            "example_ru": "Она стирает рабочую одежду в воскресенье."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/waschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-611-1",
+      "alias_ids": [
+        "b1-waschen-reflexive"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-611-1",
+        "de": "sich waschen",
+        "lemma": "sich waschen",
+        "ru": "мыться",
+        "uk": "",
+        "translations_ru": [
+          "мыться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "wäscht sich · wusch sich · hat sich gewaschen",
+        "definition_de": "Den eigenen Körper mit Wasser sauber machen.",
+        "example": "Ich wasche mich vor dem Frühstück.",
+        "example_ru": "Я моюсь перед завтраком.",
+        "note": "Мыться: ich wasche mich (Akkusativ). Мыть себе руки: ich wasche mir die Hände (mir — Dativ).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "1c415eca26565bcde7c5"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-waschen-reflexive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-waschen-reflexive",
+            "de": "sich waschen",
+            "part": "verb",
+            "forms": "wäscht sich · wusch sich · hat sich gewaschen",
+            "definition_de": "Den eigenen Körper reinigen.",
+            "translations_ru": [
+              "мыться",
+              "умываться"
+            ],
+            "grammar_hint": "sich (Akk.) waschen: ich wasche mich. Если есть прямое дополнение — часть тела, местоимение обычно в Dativ.",
+            "example": "Nach dem Sport wäscht er sich gründlich.",
+            "example_ru": "После спорта он тщательно моется."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/waschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_d60bc808089cc2ca9de2",
+      "alias_ids": [
+        "b1-waesche-laundry"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_d60bc808089cc2ca9de2",
+        "de": "die Wäsche",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "бельё",
+          "вещи для стирки"
+        ],
+        "definition_de": "Kleidung und Textilien, die gewaschen werden oder bereits gewaschen sind.",
+        "forms": "Plural · die Wäschen (отдельные стирки); бельё обычно Singular",
+        "example": "Am Samstag wasche ich die Wäsche.",
+        "example_ru": "В субботу я стираю бельё.",
+        "grammar_hint": "",
+        "usage_note": "Wäsche waschen — стирать бельё; Wäsche aufhängen — развешивать бельё; Wäsche trocknen — сушить бельё. Geldwäsche — отмывание денег, другое слово.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/W%C3%A4sche",
+            "https://www.duden.de/rechtschreibung/Waesche"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-waesche-laundry"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-waesche-laundry",
+            "de": "die Wäsche",
+            "part": "noun",
+            "forms": "meist Singular; die Wäschen (редко, о процессах стирки)",
+            "definition_de": "Textilien, die gewaschen werden sollen oder bereits gewaschen sind; auch der Waschvorgang.",
+            "translations_ru": [
+              "бельё",
+              "вещи для стирки",
+              "стирка"
+            ],
+            "grammar_hint": "Wäsche waschen, aufhängen, zusammenlegen; Unterwäsche — нижнее бельё.",
+            "example": "Die saubere Wäsche liegt im Korb.",
+            "example_ru": "Чистое бельё лежит в корзине."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/W%C3%A4sche"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "food-wasser",
+      "alias_ids": [
+        "b1-wasser-liquid"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "food-wasser",
+        "de": "das Wasser",
+        "lemma": "Wasser",
+        "ru": "вода",
+        "uk": "",
+        "translations_ru": [
+          "вода"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "обычно только Singular",
+        "definition_de": "Eine klare Flüssigkeit, die man trinken kann.",
+        "example": "Kann ich bitte ein Glas Wasser haben?",
+        "example_ru": "Можно мне стакан воды?",
+        "note": "В обычном значении Singular; Mineralwasser — отдельное сложное слово. ein Glas Wasser — стакан воды.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "6e004c45f6d7ddb88e1b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-wasser-liquid"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wasser-liquid",
+            "de": "das Wasser",
+            "part": "noun",
+            "forms": "meist Singular; die Wasser/Wässer in speziellen Bedeutungen",
+            "definition_de": "Eine Flüssigkeit, die zum Trinken, Waschen und für viele andere Zwecke verwendet wird.",
+            "translations_ru": [
+              "вода"
+            ],
+            "grammar_hint": "ein Glas Wasser; kaltes/warmes Wasser; обычно неисчисляемое.",
+            "example": "Im Kühlschrank steht eine Flasche Wasser.",
+            "example_ru": "В холодильнике стоит бутылка воды."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wasser"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_b1ef1fa318f707027801",
+      "alias_ids": [
+        "b1-wechseln-money",
+        "b1-wechseln-replace",
+        "b1-wechseln-provider"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_b1ef1fa318f707027801",
+        "de": "wechseln",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "менять",
+          "заменять",
+          "обменивать (деньги)",
+          "разменивать"
+        ],
+        "definition_de": "Etwas durch etwas anderes ersetzen oder Geld in andere Münzen, Scheine oder eine andere Währung tauschen.",
+        "example": "Ich muss vor der Reise Geld wechseln.",
+        "example_ru": "Перед поездкой мне нужно обменять деньги.",
+        "grammar_hint": "etwas (Akkusativ) wechseln. Для этих значений Perfekt с haben.",
+        "usage_note": "Подтверждены замена предмета (einen Reifen wechseln — поменять шину) и обмен денег. Для смены места или перехода в другое учреждение возможен sein; здесь эти значения не маркируются A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/wechseln"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "wechselt · wechselte · hat gewechselt",
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-wechseln-money",
+          "b1-wechseln-replace",
+          "b1-wechseln-provider"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wechseln-money",
+            "de": "wechseln",
+            "part": "verb",
+            "forms": "wechselt · wechselte · hat gewechselt",
+            "definition_de": "Geld in kleinere Einheiten oder in eine andere Währung tauschen.",
+            "translations_ru": [
+              "разменивать",
+              "обменивать деньги"
+            ],
+            "grammar_hint": "Geld (Akk.) in + Akk. wechseln; Geld wechseln — также разменивать купюры.",
+            "example": "Kann ich hier Franken in Euro wechseln?",
+            "example_ru": "Могу я здесь обменять франки на евро?"
+          },
+          {
+            "id": "b1-wechseln-replace",
+            "de": "wechseln",
+            "part": "verb",
+            "forms": "wechselt · wechselte · hat gewechselt",
+            "definition_de": "Etwas durch einen anderen Gegenstand ersetzen.",
+            "translations_ru": [
+              "менять",
+              "заменять"
+            ],
+            "grammar_hint": "etwas (Akk.) wechseln; die Reifen, die Kleidung wechseln. Perfekt с haben при прямом дополнении.",
+            "example": "Wir müssen die Batterien der Fernbedienung wechseln.",
+            "example_ru": "Нам нужно заменить батарейки в пульте."
+          },
+          {
+            "id": "b1-wechseln-provider",
+            "de": "wechseln",
+            "part": "verb",
+            "forms": "wechselt · wechselte · hat gewechselt",
+            "definition_de": "Eine bisher genutzte Einrichtung, Stelle oder Bezugsperson durch eine andere ersetzen.",
+            "translations_ru": [
+              "сменить",
+              "менять (врача, работу, поставщика)"
+            ],
+            "grammar_hint": "den Arzt (Akk.) wechseln; при переходе без прямого дополнения часто sein: Sie ist zu einer anderen Firma gewechselt. Контекст общего значения замены.",
+            "example": "Sie hat ihren Hausarzt gewechselt.",
+            "example_ru": "Она сменила семейного врача."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wechseln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wechseln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "attested_context",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wechseln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_3553e49805b83e723f14",
+      "alias_ids": [
+        "b1-wecken-wake"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3553e49805b83e723f14",
+        "de": "wecken",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "будить",
+          "разбудить"
+        ],
+        "definition_de": "Dafür sorgen, dass jemand aufwacht.",
+        "forms": "weckt · weckte · hat geweckt",
+        "example": "Kannst du mich morgen um sieben wecken?",
+        "example_ru": "Можешь разбудить меня завтра в семь?",
+        "grammar_hint": "Кого будим? Akkusativ: mich wecken.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/wecken"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-wecken-wake"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wecken-wake",
+            "de": "wecken",
+            "part": "verb",
+            "forms": "weckt · weckte · hat geweckt",
+            "definition_de": "Eine schlafende Person zum Aufwachen bringen.",
+            "translations_ru": [
+              "будить",
+              "разбудить"
+            ],
+            "grammar_hint": "jemanden (Akk.) wecken; aufwachen — проснуться, Perfekt с sein.",
+            "example": "Kannst du mich um halb sieben wecken?",
+            "example_ru": "Можешь разбудить меня в половине седьмого?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 96,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wecken"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_705e7e22ff3e1e41d34d",
+      "alias_ids": [
+        "b1-weg-path",
+        "b1-weg-route"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_705e7e22ff3e1e41d34d",
+        "de": "der Weg",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "путь",
+          "дорога"
+        ],
+        "definition_de": "Eine Strecke, auf der man von einem Ort zu einem anderen kommt.",
+        "forms": "Plural · die Wege",
+        "example": "Kennst du den Weg zum Rathaus?",
+        "example_ru": "Ты знаешь дорогу к ратуше?",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Weg"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-weg-path",
+          "b1-weg-route"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weg-path",
+            "de": "der Weg",
+            "part": "noun",
+            "forms": "die Wege",
+            "definition_de": "Eine Strecke, die zum Gehen oder Fahren genutzt werden kann.",
+            "translations_ru": [
+              "дорога",
+              "тропа",
+              "путь"
+            ],
+            "grammar_hint": "auf dem Weg (Dat.); Genitiv des Weges/des Wegs; не путать с weg [vɛk] — прочь.",
+            "example": "Der schmale Weg führt durch den Wald.",
+            "example_ru": "Узкая тропа ведёт через лес."
+          },
+          {
+            "id": "b1-weg-route",
+            "de": "der Weg",
+            "part": "noun",
+            "forms": "die Wege",
+            "definition_de": "Die Richtung oder Verbindung, über die man ein Ziel erreicht.",
+            "translations_ru": [
+              "путь",
+              "маршрут",
+              "дорога до места"
+            ],
+            "grammar_hint": "der Weg zu + Dat.; auf dem Weg zur Arbeit — по дороге на работу.",
+            "example": "Können Sie mir den Weg zur Bibliothek erklären?",
+            "example_ru": "Можете объяснить мне, как пройти к библиотеке?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Weg"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Weg"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_46f3d2dc53a0741118ca",
+      "alias_ids": [
+        "b1-weg-missing"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_46f3d2dc53a0741118ca",
+        "de": "weg",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "прочь",
+          "отсюда",
+          "нет на месте",
+          "пропал"
+        ],
+        "definition_de": "Bezeichnet das Entfernen von einem Ort oder dass etwas nicht mehr da ist.",
+        "example": "Mein Schlüssel ist weg.",
+        "example_ru": "Мой ключ пропал.",
+        "grammar_hint": "weg часто образует отделяемые глаголы: weggehen, wegwerfen.",
+        "usage_note": "Не путать с der Weg — путь, дорога.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/weg"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление"
+        ],
+        "alias_ids": [
+          "b1-weg-missing"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weg-missing",
+            "de": "weg",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Nicht mehr am erwarteten Ort vorhanden sein.",
+            "translations_ru": [
+              "нет на месте",
+              "пропал",
+              "исчез"
+            ],
+            "grammar_hint": "weg sein — отсутствовать, пропасть; weg [vɛk] с кратким гласным, der Weg [veːk] с долгим; далее weg- как отделяемая часть глагола.",
+            "example": "Mein Schlüssel ist plötzlich weg.",
+            "example_ru": "Мой ключ внезапно пропал."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weg"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_dc6282a0291d616ab912",
+      "alias_ids": [
+        "b1-wegen-cause"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_dc6282a0291d616ab912",
+        "de": "wegen",
+        "part": "prep",
+        "level": "A2",
+        "translations_ru": [
+          "из-за"
+        ],
+        "definition_de": "Nennt den Grund für etwas.",
+        "example": "Wegen des Regens bleiben wir zu Hause.",
+        "example_ru": "Из-за дождя мы остаёмся дома.",
+        "grammar_hint": "wegen + Genitiv — причина: wegen des Regens. В разговорной речи часто Dativ; в некоторых конструкциях Dativ допустим и в стандартной речи. Wegen des Regens bleiben wir zu Hause: после начальной группы спрягаемый глагол на втором месте.",
+        "usage_note": "В Goethe A2 предлог стоит перед существительным; постпозиция возможна (der Kinder wegen), но отдельно уровень не подтверждён. Не путать с weil + придаточное, где глагол в конце.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/wegen",
+            "https://www.duden.de/rechtschreibung/wegen_infolge_bezueglich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-wegen-cause"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wegen-cause",
+            "de": "wegen",
+            "part": "preposition",
+            "forms": "Genitiv; также Dativ в отдельных контекстах",
+            "definition_de": "Nennt den Grund für einen Vorgang oder Zustand.",
+            "translations_ru": [
+              "из-за",
+              "по причине",
+              "вследствие"
+            ],
+            "grammar_hint": "В письменной стандартной речи обычно Genitiv: wegen des Wetters. Разговорный Dativ распространён; с личными местоимениями также meinetwegen, deinetwegen. Не союз: после wegen именная группа.",
+            "example": "Wegen des starken Schneefalls fällt der Kurs aus.",
+            "example_ru": "Из-за сильного снегопада занятие отменяется."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wegen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1985 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual semantic comparison of indexed candidates 33–52 using stored lower-level definitions and examples. One same-sense merge proposal, not applied; no independent level or dictionary verification. Other records retain IDs and provisional metadata.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    33,
+    52
+  ],
+  "reviewed": 20,
+  "merge_count": 1,
+  "retained_distinct_senses": 9,
+  "retained_teaching_contexts_pending_level_review": 10,
+  "followup_review": [
+    {
+      "id": "b1-eis-drink-ice",
+      "issue": "Compare against B1 frozen-water sense; specialized context, not different substance."
+    },
+    {
+      "id": "b1-empfaenger-recipient",
+      "issue": "Confirm A1 source scope and migration, retain feminine form and all original examples."
+    },
+    {
+      "id": "b1-entschuldigen-send-apologies",
+      "issue": "A1 hint refers to A2 reflexive card not found by this exact index; broaden matching to reflexive constructions."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 33,
+      "decision": "retain_distinct_sense",
+      "reason": "Indeterminate future occasion vs exactly once.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 4,
+        "record": {
+          "id": "b1-einmal-someday",
+          "de": "einmal / mal",
+          "lemma": "einmal",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "когда-нибудь",
+            "однажды (в будущем)"
+          ],
+          "definition_de": "Verweist auf eine noch nicht bestimmte Gelegenheit in der Zukunft.",
+          "example": "Ich möchte einmal nach Island reisen.",
+          "example_ru": "Я хочу когда-нибудь поехать в Исландию.",
+          "forms": "неизменяемое наречие",
+          "grammar_hint": "В разговорной речи часто mal. Сравни irgendwann; не обязательно ровно один раз.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 34,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/einmal"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 803,
+          "record": {
+            "id": "dict_18633ac9324944ff3c30",
+            "de": "einmal",
+            "lemma": "einmal",
+            "ru": "один раз",
+            "uk": "один раз",
+            "translations_ru": [
+              "один раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Bei genau einer Gelegenheit.",
+            "example": "Ich trainiere einmal pro Woche.",
+            "example_ru": "Я тренируюсь один раз в неделю.",
+            "note": "noch einmal — ещё раз; einmal в значении однажды/когда-нибудь существует отдельно и не получает эту метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 7,
+                "scope": "word_group"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/einmal",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 34,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Indeterminate past occasion vs exactly once; related to future use but distinct teaching context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 5,
+        "record": {
+          "id": "b1-einmal-past",
+          "de": "einmal / mal",
+          "lemma": "einmal",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "когда-то",
+            "некогда",
+            "однажды (в прошлом)"
+          ],
+          "definition_de": "Verweist auf einen nicht genau bestimmten Zeitpunkt in der Vergangenheit.",
+          "example": "Mein Vater hat einmal in Bern gearbeitet.",
+          "example_ru": "Мой отец когда-то работал в Берне.",
+          "forms": "неизменяемое наречие",
+          "grammar_hint": "Контекст и время глагола показывают, относится ли einmal к прошлому или будущему.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 34,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/einmal"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 803,
+          "record": {
+            "id": "dict_18633ac9324944ff3c30",
+            "de": "einmal",
+            "lemma": "einmal",
+            "ru": "один раз",
+            "uk": "один раз",
+            "translations_ru": [
+              "один раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Bei genau einer Gelegenheit.",
+            "example": "Ich trainiere einmal pro Woche.",
+            "example_ru": "Я тренируюсь один раз в неделю.",
+            "note": "noch einmal — ещё раз; einmal в значении однажды/когда-нибудь существует отдельно и не получает эту метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 7,
+                "scope": "word_group"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/einmal",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 35,
+      "decision": "retain_distinct_sense",
+      "reason": "Polite modal particle vs numerical frequency.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 6,
+        "record": {
+          "id": "b1-einmal-polite-particle",
+          "de": "(ein)mal",
+          "lemma": "einmal",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "-ка",
+            "пожалуйста",
+            "часто без отдельного перевода"
+          ],
+          "definition_de": "Macht eine Bitte oder Aufforderung im Gespräch oft weniger direkt.",
+          "example": "Schau dir das mal an!",
+          "example_ru": "Посмотри-ка на это!",
+          "forms": "неизменяемая частица",
+          "grammar_hint": "Частица mal обычно стоит в середине предложения, не меняет порядок слов. Она не означает здесь «один раз».",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 34,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/einmal"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 803,
+          "record": {
+            "id": "dict_18633ac9324944ff3c30",
+            "de": "einmal",
+            "lemma": "einmal",
+            "ru": "один раз",
+            "uk": "один раз",
+            "translations_ru": [
+              "один раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Bei genau einer Gelegenheit.",
+            "example": "Ich trainiere einmal pro Woche.",
+            "example_ru": "Я тренируюсь один раз в неделю.",
+            "note": "noch einmal — ещё раз; einmal в значении однажды/когда-нибудь существует отдельно и не получает эту метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 7,
+                "scope": "word_group"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/einmal",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 36,
+      "decision": "retain_distinct_sense",
+      "reason": "Frozen water vs frozen dessert.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 29,
+        "record": {
+          "id": "b1-eis-frozen-water",
+          "de": "das Eis",
+          "lemma": "Eis",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лёд (замёрзшая вода)"
+          ],
+          "definition_de": "Wasser, das durch Kälte fest geworden ist.",
+          "example": "Auf dem Weg liegt noch Eis.",
+          "example_ru": "На дороге ещё лежит лёд.",
+          "forms": "обычно без множественного числа",
+          "grammar_hint": "auf Eis ausrutschen — поскользнуться на льду. Мороженое — отдельное значение A2.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Eis"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 484,
+          "record": {
+            "id": "dict_e87bd3277e0afc756882",
+            "de": "das Eis",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мороженое"
+            ],
+            "definition_de": "Eine kalte, gefrorene Süßspeise.",
+            "forms": "Обычно без множественного числа",
+            "example": "Im Sommer esse ich gern Eis.",
+            "example_ru": "Летом я люблю есть мороженое.",
+            "grammar_hint": "",
+            "usage_note": "В списке A2 подтверждено значение «мороженое». Значение «лёд» существует, но здесь не помечено A2 отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 13,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Eis"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 37,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Ice for drinks vs frozen dessert; specialization of frozen water, not new independent sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 30,
+        "record": {
+          "id": "b1-eis-drink-ice",
+          "de": "das Eis",
+          "lemma": "Eis",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лёд для напитков",
+            "кубики льда"
+          ],
+          "definition_de": "Gefrorenes Wasser, das zur Kühlung von Getränken verwendet wird.",
+          "example": "Für mich bitte Mineralwasser mit Eis.",
+          "example_ru": "Мне, пожалуйста, минеральную воду со льдом.",
+          "forms": "обычно без множественного числа; der Eiswürfel · die Eiswürfel",
+          "grammar_hint": "mit Eis / ohne Eis; mit и ohne требуют Dativ и Akkusativ соответственно. CH: Glace/Glacé — мороженое, не лёд.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Eis"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 484,
+          "record": {
+            "id": "dict_e87bd3277e0afc756882",
+            "de": "das Eis",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мороженое"
+            ],
+            "definition_de": "Eine kalte, gefrorene Süßspeise.",
+            "forms": "Обычно без множественного числа",
+            "example": "Im Sommer esse ich gern Eis.",
+            "example_ru": "Летом я люблю есть мороженое.",
+            "grammar_hint": "",
+            "usage_note": "В списке A2 подтверждено значение «мороженое». Значение «лёд» существует, но здесь не помечено A2 отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 13,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Eis"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 38,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Recipient of a message or parcel is already the A1 sense; B1 adds feminine form and a useful contrast with Absender.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_016.json",
+        "sha": "f20851521bdaa99738e49e7fa7732a82af061dd0",
+        "batch": 16,
+        "row": 11,
+        "record": {
+          "id": "b1-empfaenger-recipient",
+          "de": "der Empfänger / die Empfängerin",
+          "lemma": "Empfänger",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "получатель / получательница",
+            "адресат"
+          ],
+          "definition_de": "Eine Person, für die eine Nachricht oder Sendung bestimmt ist.",
+          "example": "Schreib den Namen des Empfängers gut lesbar auf den Umschlag.",
+          "example_ru": "Напиши имя получателя на конверте разборчиво.",
+          "forms": "die Empfänger · die Empfängerinnen",
+          "grammar_hint": "der Absender — отправитель. Здесь Empfänger — человек, не прибор.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Empf%C3%A4nger"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 254,
+          "record": {
+            "id": "empfaenger-recipient",
+            "de": "der Empfänger",
+            "lemma": "Empfänger",
+            "ru": "получатель; адресат",
+            "uk": "",
+            "translations_ru": [
+              "получатель",
+              "адресат"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Empfänger",
+            "definition_de": "Eine Person oder Stelle, an die man etwas schickt.",
+            "example": "Schreiben Sie den Namen des Empfängers auf das Paket.",
+            "example_ru": "Напишите имя получателя на посылке.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "0f65547e57d3a85d7480"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "empfaenger-recipient",
+        "alias_id": "b1-empfaenger-recipient",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Verify lower level source evidence for same sense; confirm feminine form and inflection; check dedup overlays and progress migration before applying."
+        ],
+        "merged_record": {
+          "id": "empfaenger-recipient",
+          "de": "der Empfänger",
+          "lemma": "Empfänger",
+          "ru": "получатель; адресат; получатель / получательница; получательница",
+          "uk": "",
+          "translations_ru": [
+            "получатель",
+            "адресат",
+            "получатель / получательница",
+            "получательница"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Общение",
+          "topics": [
+            "Общение",
+            "Покупки и услуги"
+          ],
+          "forms": "die Empfänger",
+          "definition_de": "Eine Person oder Stelle, an die man etwas schickt.",
+          "example": "Schreiben Sie den Namen des Empfängers auf das Paket.",
+          "example_ru": "Напишите имя получателя на посылке.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 14,
+              "row_id": "0f65547e57d3a85d7480"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "der Absender — отправитель. Здесь Empfänger — человек, не прибор.",
+          "alternative_surfaces": [
+            "der Empfänger / die Empfängerin"
+          ],
+          "alternative_forms": [
+            "die Empfänger · die Empfängerinnen"
+          ],
+          "alternative_definitions_de": [
+            "Eine Person, für die eine Nachricht oder Sendung bestimmt ist."
+          ],
+          "alternative_examples": [
+            {
+              "de": "Schreib den Namen des Empfängers gut lesbar auf den Umschlag.",
+              "ru": "Напиши имя получателя на конверте разборчиво."
+            }
+          ],
+          "alias_ids": [
+            "b1-empfaenger-recipient"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Empf%C3%A4nger"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 39,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Calendar construction without article vs general noun Ende.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_016.json",
+        "sha": "f20851521bdaa99738e49e7fa7732a82af061dd0",
+        "batch": 16,
+        "row": 13,
+        "record": {
+          "id": "b1-ende-calendar",
+          "de": "Ende + Monat",
+          "lemma": "Ende",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в конце (месяца)"
+          ],
+          "definition_de": "Bezeichnet den letzten Abschnitt eines genannten Monats.",
+          "example": "Der nächste Kurs beginnt Ende September.",
+          "example_ru": "Следующий курс начинается в конце сентября.",
+          "forms": "das Ende · die Enden; в конструкции без артикля",
+          "grammar_hint": "Ende September, Anfang Mai, Mitte Juli — без am и артикля. Сравни am Ende des Monats.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ende"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 257,
+          "record": {
+            "id": "ende-end",
+            "de": "das Ende",
+            "lemma": "Ende",
+            "ru": "конец; окончание",
+            "uk": "",
+            "translations_ru": [
+              "конец",
+              "окончание"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Enden",
+            "definition_de": "Der letzte Teil oder der Punkt, an dem etwas aufhört.",
+            "example": "Am Ende der Woche habe ich frei.",
+            "example_ru": "В конце недели я свободна.",
+            "note": "am Ende + Genitiv (am Ende der Woche); zu Ende sein — закончиться. Не путать с глаголом enden.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "e292fe97e7e765f924c0"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 40,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Age-range construction vs general noun Ende.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_016.json",
+        "sha": "f20851521bdaa99738e49e7fa7732a82af061dd0",
+        "batch": 16,
+        "row": 14,
+        "record": {
+          "id": "b1-ende-age",
+          "de": "Ende dreißig / Ende vierzig / Ende fünfzig",
+          "lemma": "Ende",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "под сорок / под пятьдесят / под шестьдесят"
+          ],
+          "definition_de": "Bezeichnet ein Alter im letzten Abschnitt eines Lebensjahrzehnts.",
+          "example": "Meine Nachbarin ist Ende vierzig.",
+          "example_ru": "Моей соседке под пятьдесят.",
+          "forms": "устойчивое выражение; Ende + числительное",
+          "grammar_hint": "Anfang dreißig — чуть за тридцать; Mitte dreißig — около 35; Ende dreißig — ближе к сорока. CH: dreissig.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ende"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 257,
+          "record": {
+            "id": "ende-end",
+            "de": "das Ende",
+            "lemma": "Ende",
+            "ru": "конец; окончание",
+            "uk": "",
+            "translations_ru": [
+              "конец",
+              "окончание"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Enden",
+            "definition_de": "Der letzte Teil oder der Punkt, an dem etwas aufhört.",
+            "example": "Am Ende der Woche habe ich frei.",
+            "example_ru": "В конце недели я свободна.",
+            "note": "am Ende + Genitiv (am Ende der Woche); zu Ende sein — закончиться. Не путать с глаголом enden.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "e292fe97e7e765f924c0"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 41,
+      "decision": "retain_distinct_sense",
+      "reason": "Close relationship/cooperation vs physical narrowness.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_016.json",
+        "sha": "f20851521bdaa99738e49e7fa7732a82af061dd0",
+        "batch": 16,
+        "row": 18,
+        "record": {
+          "id": "b1-eng-close-cooperation",
+          "de": "eng",
+          "lemma": "eng",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "тесный",
+            "тесно (о сотрудничестве, связи)"
+          ],
+          "definition_de": "Durch regelmäßigen Kontakt oder starke Verbundenheit geprägt.",
+          "example": "Unsere beiden Teams arbeiten eng zusammen.",
+          "example_ru": "Наши две команды тесно сотрудничают.",
+          "forms": "eng · enger · am engsten",
+          "grammar_hint": "eng mit + Dativ zusammenarbeiten; enge Zusammenarbeit. Пространственное значение уже на A2.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 35,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/eng"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 137,
+          "record": {
+            "id": "dict_267b0c0a9d2a348600f4",
+            "de": "eng",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "тесный",
+              "узкий"
+            ],
+            "definition_de": "So, dass für eine Person, Bewegung oder etwas anderes wenig Platz bleibt.",
+            "forms": "eng · enger · am engsten",
+            "example": "Diese Schuhe sind mir zu eng.",
+            "example_ru": "Эти туфли мне слишком тесные.",
+            "grammar_hint": "Если говорим, кому одежда тесна, можно использовать Dativ: Die Schuhe sind mir zu eng.",
+            "usage_note": "eng — узкий/тесный в физическом смысле. Mir ist die Hose zu eng — брюки мне тесны; enge Freundschaft как переносное значение отдельно не подтверждено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 13,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/eng"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 42,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Having someone convey apologies vs transitive forgive; preserve lassen construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_017.json",
+        "sha": "6929ada428fb44cb8251b8b94a862c84fb280e19",
+        "batch": 17,
+        "row": 8,
+        "record": {
+          "id": "b1-entschuldigen-send-apologies",
+          "de": "sich entschuldigen lassen",
+          "lemma": "entschuldigen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "просить передать извинения за отсутствие"
+          ],
+          "definition_de": "Durch eine andere Person mitteilen lassen, dass man nicht teilnehmen kann.",
+          "example": "Frau Keller lässt sich für die Sitzung entschuldigen.",
+          "example_ru": "Госпожа Келлер просит передать извинения за отсутствие на заседании.",
+          "forms": "lässt sich entschuldigen · ließ sich entschuldigen · hat sich entschuldigen lassen",
+          "grammar_hint": "lassen + Infinitiv без zu; в Perfekt два инфинитива: entschuldigen lassen. Обычное sich entschuldigen уже на A2.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 36,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/entschuldigen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 258,
+          "record": {
+            "id": "entschuldigen-apology",
+            "de": "entschuldigen",
+            "lemma": "entschuldigen",
+            "ru": "извинять; прощать",
+            "uk": "",
+            "translations_ru": [
+              "извинять",
+              "прощать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "entschuldigt · entschuldigte · hat entschuldigt",
+            "definition_de": "Jemandem einen Fehler verzeihen. Mit der Aufforderung „Entschuldigen Sie …“ bittet man darum.",
+            "example": "Entschuldigen Sie bitte die Verspätung.",
+            "example_ru": "Пожалуйста, извините за опоздание.",
+            "note": "jemanden/etwas entschuldigen + Akkusativ; Entschuldigen Sie bitte! Возвратное sich entschuldigen — извиняться, отдельная карточка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "cae7235942d94e0d7e9d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 43,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Personal experience/events vs accumulated experience or knowledge; related senses, separate usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_017.json",
+        "sha": "6929ada428fb44cb8251b8b94a862c84fb280e19",
+        "batch": 17,
+        "row": 27,
+        "record": {
+          "id": "b1-erfahrung-experience-event",
+          "de": "die Erfahrung / die Erfahrungen",
+          "lemma": "Erfahrung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "опыт (пережитый)",
+            "впечатления от собственного опыта"
+          ],
+          "definition_de": "Ein persönliches Erlebnis, aus dem man Erkenntnisse gewinnt.",
+          "example": "Mit diesem Anbieter haben wir gute Erfahrungen gemacht.",
+          "example_ru": "У нас был хороший опыт работы с этим поставщиком.",
+          "forms": "die Erfahrungen",
+          "grammar_hint": "gute/schlechte Erfahrungen mit + Dativ machen. Опыт как накопленные навыки уже представлен на A2.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 36,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Erfahrung"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 267,
+          "record": {
+            "id": "dict_88b136467c495c222d63",
+            "de": "die Erfahrung",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "опыт"
+            ],
+            "definition_de": "Wissen oder Können, das man durch eigene Erlebnisse oder praktisches Tun erwirbt.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Er hat viel Erfahrung im Umgang mit Kunden.",
+            "example_ru": "У него большой опыт работы с клиентами.",
+            "grammar_hint": "Erfahrung in + Dativ / mit + Dativ haben; Erfahrungen sammeln — набираться опыта.",
+            "usage_note": "В значении «практический опыт» обычно говорим im Singular: viel Erfahrung. Die Erfahrungen — отдельные случаи или пережитые события.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Erfahrung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 44,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Reflexive Dativ construction for finding an explanation vs explaining to another person.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_018.json",
+        "sha": "94f9cabf2fc7b240beb3337d16b66874fbedc43a",
+        "batch": 18,
+        "row": 20,
+        "record": {
+          "id": "b1-erklaeren-reflexive-account",
+          "de": "sich etwas erklären",
+          "lemma": "erklären",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "объяснять себе",
+            "находить объяснение"
+          ],
+          "definition_de": "Sich den Grund für einen Sachverhalt verständlich machen.",
+          "example": "Ich kann mir nicht erklären, warum die Datei fehlt.",
+          "example_ru": "Я не могу понять, почему файла нет.",
+          "forms": "erklärt sich etwas · erklärte sich etwas · hat sich etwas erklärt",
+          "grammar_hint": "Возвратное местоимение Dativ: ich kann mir das erklären. Косвенный вопрос: warum die Datei fehlt.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 37,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/erkl%C3%A4ren"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 262,
+          "record": {
+            "id": "erklaeren-explain",
+            "de": "erklären",
+            "lemma": "erklären",
+            "ru": "объяснять",
+            "uk": "",
+            "translations_ru": [
+              "объяснять"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "erklärt · erklärte · hat erklärt",
+            "definition_de": "Etwas so beschreiben, dass jemand es versteht.",
+            "example": "Kannst du mir die Regel erklären?",
+            "example_ru": "Можешь объяснить мне правило?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "2ca7ecebc4adabddc316"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 45,
+      "decision": "retain_distinct_sense",
+      "reason": "Achieve a goal vs reach a place or contact someone.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_019.json",
+        "sha": "44451c364c9668e0e14212214923181d137f276c",
+        "batch": 19,
+        "row": 8,
+        "record": {
+          "id": "b1-erreichen-achieve",
+          "de": "erreichen",
+          "lemma": "erreichen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "достигать",
+            "добиваться (цели, результата)"
+          ],
+          "definition_de": "Ein angestrebtes Ergebnis verwirklichen.",
+          "example": "Mit regelmäßiger Übung kannst du dein Ziel erreichen.",
+          "example_ru": "С регулярной практикой ты можешь достичь своей цели.",
+          "forms": "erreicht · erreichte · hat erreicht",
+          "grammar_hint": "ein Ziel erreichen + Akkusativ. Смысл «дозвониться / добраться» уже на A2.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 37,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/erreichen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 201,
+          "record": {
+            "id": "dict_9322ab35aff496ad88ac",
+            "de": "erreichen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "успеть на",
+              "добраться до",
+              "дозвониться"
+            ],
+            "definition_de": "Rechtzeitig zu einem Verkehrsmittel kommen, an einen Ort gelangen oder jemanden zum Beispiel am Telefon kontaktieren.",
+            "forms": "erreicht · erreichte · hat erreicht",
+            "example": "Wenn wir jetzt losgehen, erreichen wir noch den Bus.",
+            "example_ru": "Если мы сейчас выйдем, то ещё успеем на автобус.",
+            "grammar_hint": "erreichen + Akkusativ, без предлога; неотделяемый глагол, Perfekt без ge-.",
+            "usage_note": "Den Bus/Zug erreichen — успеть на автобус/поезд; jemanden erreichen — связаться с кем-либо, дозвониться (не только по телефону). Ein Ziel erreichen — достичь цели; это отдельный контекст без дополнительного подтверждения уровня в данной сверке.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/erreichen",
+                "https://www.duden.de/rechtschreibung/erreichen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 46,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Reach a measurable value vs reach transport or contact a person.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_019.json",
+        "sha": "44451c364c9668e0e14212214923181d137f276c",
+        "batch": 19,
+        "row": 9,
+        "record": {
+          "id": "b1-erreichen-value",
+          "de": "erreichen",
+          "lemma": "erreichen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "достигать (величины, скорости, уровня)"
+          ],
+          "definition_de": "Bis zu einem bestimmten messbaren Wert gelangen.",
+          "example": "Das Fahrzeug erreicht eine Geschwindigkeit von 100 Kilometern pro Stunde.",
+          "example_ru": "Транспортное средство развивает скорость 100 километров в час.",
+          "forms": "erreicht · erreichte · hat erreicht",
+          "grammar_hint": "eine Temperatur / Geschwindigkeit / Höhe erreichen + Akkusativ.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 37,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/erreichen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 201,
+          "record": {
+            "id": "dict_9322ab35aff496ad88ac",
+            "de": "erreichen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "успеть на",
+              "добраться до",
+              "дозвониться"
+            ],
+            "definition_de": "Rechtzeitig zu einem Verkehrsmittel kommen, an einen Ort gelangen oder jemanden zum Beispiel am Telefon kontaktieren.",
+            "forms": "erreicht · erreichte · hat erreicht",
+            "example": "Wenn wir jetzt losgehen, erreichen wir noch den Bus.",
+            "example_ru": "Если мы сейчас выйдем, то ещё успеем на автобус.",
+            "grammar_hint": "erreichen + Akkusativ, без предлога; неотделяемый глагол, Perfekt без ge-.",
+            "usage_note": "Den Bus/Zug erreichen — успеть на автобус/поезд; jemanden erreichen — связаться с кем-либо, дозвониться (не только по телефону). Ein Ziel erreichen — достичь цели; это отдельный контекст без дополнительного подтверждения уровня в данной сверке.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/erreichen",
+                "https://www.duden.de/rechtschreibung/erreichen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 47,
+      "decision": "retain_distinct_sense",
+      "reason": "Passive prefield placeholder vs weather and referential pronoun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_019.json",
+        "sha": "44451c364c9668e0e14212214923181d137f276c",
+        "batch": 19,
+        "row": 30,
+        "record": {
+          "id": "b1-es-passive-placeholder",
+          "de": "es (Vorfeld im Passiv)",
+          "lemma": "es",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "формальное es (без перевода)"
+          ],
+          "definition_de": "Besetzt die erste Satzposition, wenn das eigentliche Subjekt später im Passivsatz folgt.",
+          "example": "Es wurden gestern mehrere Anträge geprüft.",
+          "example_ru": "Вчера рассмотрели несколько заявлений.",
+          "forms": "неизменяемый формальный заполнитель",
+          "grammar_hint": "Es не подлежащее: wurden согласуется с mehrere Anträge. Если первым стоит gestern, es исчезает: Gestern wurden mehrere Anträge geprüft.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://grammis.ids-mannheim.de/progr%40mm/1553"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 266,
+          "record": {
+            "id": "es-weather",
+            "de": "es",
+            "lemma": "es",
+            "ru": "обычно отдельно не переводится (о погоде)",
+            "uk": "",
+            "translations_ru": [
+              "обычно отдельно не переводится (о погоде)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Steht als grammatisches Subjekt bei Verben für Wetter und ähnliche Vorgänge.",
+            "example": "Es schneit heute.",
+            "example_ru": "Сегодня идёт снег.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "d088e5354a95dc2e6244"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 821,
+          "record": {
+            "id": "es-referential",
+            "de": "es",
+            "lemma": "es",
+            "ru": "оно; это; его (Akkusativ, для среднего рода)",
+            "uk": "",
+            "translations_ru": [
+              "оно",
+              "это",
+              "его (Akkusativ, для среднего рода)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Nominativ: es · Akkusativ: es · Dativ: ihm",
+            "definition_de": "Personalpronomen, das auf ein Nomen im Neutrum oder auf einen zuvor genannten Inhalt verweist.",
+            "example": "Wo ist das Buch? Ich finde es nicht.",
+            "example_ru": "Где книга? Я не могу её найти.",
+            "note": "В Nominativ и Akkusativ форма es одинакова. В русском перевод зависит от рода русского слова: das Buch — книга, её. Не путать с безличным es в Es regnet.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "scope": "reference_to_content_in_example"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 10,
+                "scope": "neuter_reference_in_example"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/es_das_man",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 48,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Identification construction vs weather and referential pronoun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 1,
+        "record": {
+          "id": "b1-es-identification",
+          "de": "es (Identifikation)",
+          "lemma": "es",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "это",
+            "в русском часто без перевода"
+          ],
+          "definition_de": "Verweist in einem Identifikationssatz auf die Person, die gerade festgestellt wird.",
+          "example": "Wer klingelt? – Ich bin es, Anna.",
+          "example_ru": "Кто звонит в дверь? — Это я, Анна.",
+          "forms": "es · разговорное сокращение ’s",
+          "grammar_hint": "Ich bin es / Ich bin’s. Глагол согласуется с ich, du и т. д.: Du bist es.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://grammis.ids-mannheim.de/systematische-grammatik/395"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 266,
+          "record": {
+            "id": "es-weather",
+            "de": "es",
+            "lemma": "es",
+            "ru": "обычно отдельно не переводится (о погоде)",
+            "uk": "",
+            "translations_ru": [
+              "обычно отдельно не переводится (о погоде)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Steht als grammatisches Subjekt bei Verben für Wetter und ähnliche Vorgänge.",
+            "example": "Es schneit heute.",
+            "example_ru": "Сегодня идёт снег.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "d088e5354a95dc2e6244"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 821,
+          "record": {
+            "id": "es-referential",
+            "de": "es",
+            "lemma": "es",
+            "ru": "оно; это; его (Akkusativ, для среднего рода)",
+            "uk": "",
+            "translations_ru": [
+              "оно",
+              "это",
+              "его (Akkusativ, для среднего рода)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Nominativ: es · Akkusativ: es · Dativ: ihm",
+            "definition_de": "Personalpronomen, das auf ein Nomen im Neutrum oder auf einen zuvor genannten Inhalt verweist.",
+            "example": "Wo ist das Buch? Ich finde es nicht.",
+            "example_ru": "Где книга? Я не могу её найти.",
+            "note": "В Nominativ и Akkusativ форма es одинакова. В русском перевод зависит от рода русского слова: das Buch — книга, её. Не путать с безличным es в Es regnet.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "scope": "reference_to_content_in_example"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 10,
+                "scope": "neuter_reference_in_example"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/es_das_man",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 49,
+      "decision": "retain_distinct_sense",
+      "reason": "Anticipatory object correlate vs weather and referential pronoun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 2,
+        "record": {
+          "id": "b1-es-object-correlate",
+          "de": "es (Korrelat im Akkusativ)",
+          "lemma": "es",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "формальное es (предвосхищает придаточное)"
+          ],
+          "definition_de": "Verweist vorab auf eine nachfolgende Ergänzung zum Verb.",
+          "example": "Ich finde es schön, dass du uns besuchst.",
+          "example_ru": "Мне приятно, что ты нас навещаешь.",
+          "forms": "неизменяемое es",
+          "grammar_hint": "finde es + прилагательное + dass; глагол придаточного в конце. Это не обычное местоимение среднего рода.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://grammis.ids-mannheim.de/systematische-grammatik/395"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 266,
+          "record": {
+            "id": "es-weather",
+            "de": "es",
+            "lemma": "es",
+            "ru": "обычно отдельно не переводится (о погоде)",
+            "uk": "",
+            "translations_ru": [
+              "обычно отдельно не переводится (о погоде)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Steht als grammatisches Subjekt bei Verben für Wetter und ähnliche Vorgänge.",
+            "example": "Es schneit heute.",
+            "example_ru": "Сегодня идёт снег.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "d088e5354a95dc2e6244"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 821,
+          "record": {
+            "id": "es-referential",
+            "de": "es",
+            "lemma": "es",
+            "ru": "оно; это; его (Akkusativ, для среднего рода)",
+            "uk": "",
+            "translations_ru": [
+              "оно",
+              "это",
+              "его (Akkusativ, для среднего рода)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Nominativ: es · Akkusativ: es · Dativ: ihm",
+            "definition_de": "Personalpronomen, das auf ein Nomen im Neutrum oder auf einen zuvor genannten Inhalt verweist.",
+            "example": "Wo ist das Buch? Ich finde es nicht.",
+            "example_ru": "Где книга? Я не могу её найти.",
+            "note": "В Nominativ и Akkusativ форма es одинакова. В русском перевод зависит от рода русского слова: das Buch — книга, её. Не путать с безличным es в Es regnet.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "scope": "reference_to_content_in_example"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 10,
+                "scope": "neuter_reference_in_example"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/es_das_man",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 50,
+      "decision": "retain_distinct_sense",
+      "reason": "Anticipatory subject correlate vs weather and referential pronoun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 3,
+        "record": {
+          "id": "b1-es-subject-correlate",
+          "de": "es (Korrelat zum Subjektsatz)",
+          "lemma": "es",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "формальное es (часто без перевода)"
+          ],
+          "definition_de": "Kündigt eine nachfolgende Infinitivgruppe oder einen Subjektsatz an.",
+          "example": "Es macht mir Freude, neue Wörter zu lernen.",
+          "example_ru": "Мне доставляет удовольствие учить новые слова.",
+          "forms": "неизменяемое es",
+          "grammar_hint": "Если инфинитивная группа стоит первой, es не нужно: Neue Wörter zu lernen macht mir Freude. Отличать от погодного es.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://grammis.ids-mannheim.de/systematische-grammatik/395"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 266,
+          "record": {
+            "id": "es-weather",
+            "de": "es",
+            "lemma": "es",
+            "ru": "обычно отдельно не переводится (о погоде)",
+            "uk": "",
+            "translations_ru": [
+              "обычно отдельно не переводится (о погоде)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Steht als grammatisches Subjekt bei Verben für Wetter und ähnliche Vorgänge.",
+            "example": "Es schneit heute.",
+            "example_ru": "Сегодня идёт снег.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "d088e5354a95dc2e6244"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 821,
+          "record": {
+            "id": "es-referential",
+            "de": "es",
+            "lemma": "es",
+            "ru": "оно; это; его (Akkusativ, для среднего рода)",
+            "uk": "",
+            "translations_ru": [
+              "оно",
+              "это",
+              "его (Akkusativ, для среднего рода)"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Nominativ: es · Akkusativ: es · Dativ: ihm",
+            "definition_de": "Personalpronomen, das auf ein Nomen im Neutrum oder auf einen zuvor genannten Inhalt verweist.",
+            "example": "Wo ist das Buch? Ich finde es nicht.",
+            "example_ru": "Где книга? Я не могу её найти.",
+            "note": "В Nominativ и Akkusativ форма es одинакова. В русском перевод зависит от рода русского слова: das Buch — книга, её. Не путать с безличным es в Es regnet.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "scope": "reference_to_content_in_example"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 10,
+                "scope": "neuter_reference_in_example"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/es_das_man",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 51,
+      "decision": "retain_distinct_sense",
+      "reason": "Degree/quantity modifier vs indefinite pronoun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 8,
+        "record": {
+          "id": "b1-etwas-degree",
+          "de": "etwas",
+          "lemma": "etwas",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "немного",
+            "несколько",
+            "чуть"
+          ],
+          "definition_de": "Gibt ein geringes Maß oder eine kleine Menge an.",
+          "example": "Kannst du bitte etwas langsamer sprechen?",
+          "example_ru": "Можешь, пожалуйста, говорить немного медленнее?",
+          "forms": "неизменяемое наречие",
+          "grammar_hint": "etwas + Komparativ: etwas größer, etwas später. Также etwas Wasser — немного воды.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "usage_context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/etwas"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 430,
+          "record": {
+            "id": "dict_f499f8d9d7e6bf335840",
+            "de": "etwas",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "что-то",
+              "что-нибудь"
+            ],
+            "definition_de": "Bezeichnet eine Sache, die nicht näher bestimmt wird.",
+            "example": "Möchtest du etwas trinken?",
+            "example_ru": "Хочешь что-нибудь выпить?",
+            "grammar_hint": "Неопределённое местоимение, не склоняется.",
+            "usage_note": "etwas anderes — что-то другое; разговорное was — что-то. В Goethe A1 стр.14 и 24 слово встречается в примерах, в A2 стр.14 явно выделено как статья. Метка A2 сохранена по явному включению.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense",
+                "additional_context": {
+                  "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                  "page": 24,
+                  "scope": "example_only"
+                }
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/etwas"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 52,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Nominalized adjective construction vs simple indefinite pronoun; preserve capitalization and declension.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 9,
+        "record": {
+          "id": "b1-etwas-nominalized-adjective",
+          "de": "etwas + substantiviertes Adjektiv",
+          "lemma": "etwas",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "что-то (хорошее, новое, интересное)"
+          ],
+          "definition_de": "Bezeichnet zusammen mit einem substantivierten Adjektiv eine nicht näher bestimmte Sache.",
+          "example": "Heute habe ich etwas Interessantes gelernt.",
+          "example_ru": "Сегодня я узнала кое-что интересное.",
+          "forms": "etwas + Adjektiv auf -es (Nom./Akk.); -em (Dat.)",
+          "grammar_hint": "Прилагательное пишется с большой буквы: etwas Neues, etwas Schönes; mit etwas Neuem (Dativ).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "usage_context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/etwas"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 430,
+          "record": {
+            "id": "dict_f499f8d9d7e6bf335840",
+            "de": "etwas",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "что-то",
+              "что-нибудь"
+            ],
+            "definition_de": "Bezeichnet eine Sache, die nicht näher bestimmt wird.",
+            "example": "Möchtest du etwas trinken?",
+            "example_ru": "Хочешь что-нибудь выпить?",
+            "grammar_hint": "Неопределённое местоимение, не склоняется.",
+            "usage_note": "etwas anderes — что-то другое; разговорное was — что-то. В Goethe A1 стр.14 и 24 слово встречается в примерах, в A2 стр.14 явно выделено как статья. Метка A2 сохранена по явному включению.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense",
+                "additional_context": {
+                  "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                  "page": 24,
+                  "scope": "example_only"
+                }
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/etwas"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ]
+}

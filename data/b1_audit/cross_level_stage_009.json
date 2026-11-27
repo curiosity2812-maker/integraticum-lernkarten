@@ -1,0 +1,3251 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of indexed candidates 153–172 using stored definitions, examples and hints. Sixteen conditional merges into thirteen lower-level targets; phrase-specific translations remain in usage variants, not mixed into base-word translations. No independent CEFR or dictionary verification. Original IDs and levels unchanged.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    153,
+    172
+  ],
+  "reviewed": 20,
+  "merge_count": 16,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [
+    {
+      "id": "b1-glueck-wish",
+      "issue": "A1 example supports wish, but preserve standalone phrase training."
+    },
+    {
+      "id": "b1-glueck-fortunately",
+      "issue": "A1 hint supports usage; verify external level and preserve phrase-specific meaning."
+    },
+    {
+      "id": "b1-gross-grown",
+      "issue": "Russian translations вырасти/стать взрослым are dynamic; review stative groß sein vs groß werden."
+    },
+    {
+      "id": "b1-groesse-height",
+      "issue": "Review broad definition combining spatial size and body height before finalizing."
+    },
+    {
+      "id": "b1-groesse-clothing",
+      "issue": "Confirm shoe-size extension independently."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 153,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same railway track sense; A1 already distinguishes Bahnsteig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 25,
+        "record": {
+          "id": "b1-gleis-track",
+          "de": "das Gleis",
+          "lemma": "Gleis",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "железнодорожный путь",
+            "путь (на вокзале)"
+          ],
+          "definition_de": "Die Schienen, auf denen ein Zug fährt; am Bahnhof auch eine nummerierte Abfahrtsstelle.",
+          "example": "Der Zug nach Zürich fährt heute von Gleis drei ab.",
+          "example_ru": "Поезд в Цюрих сегодня отправляется с третьего пути.",
+          "forms": "die Gleise",
+          "grammar_hint": "von Gleis 3 abfahren; an Gleis 3 warten; Bahnsteig — платформа, а не сами рельсы.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gleis"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 354,
+          "record": {
+            "id": "a1-269-1",
+            "de": "das Gleis",
+            "lemma": "Gleis",
+            "ru": "железнодорожный путь; рельсы (железнодорожный путь)",
+            "uk": "",
+            "translations_ru": [
+              "железнодорожный путь",
+              "рельсы (железнодорожный путь)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "die Gleise",
+            "definition_de": "Die Schienen, auf denen ein Zug fährt.",
+            "example": "Der Zug fährt von Gleis vier ab.",
+            "example_ru": "Поезд отправляется с четвёртого пути.",
+            "note": "Gleis — путь (номер пути); Bahnsteig — пассажирская платформа. von Gleis 4 — с четвёртого пути.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "0981430d542b99be00e5"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-269-1",
+        "alias_id": "b1-gleis-track",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-269-1"
+      }
+    },
+    {
+      "candidate_number": 154,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same luck sense; retain Glück haben and Pech haben.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 26,
+        "record": {
+          "id": "b1-glueck-luck",
+          "de": "das Glück",
+          "lemma": "Glück",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "удача",
+            "везение"
+          ],
+          "definition_de": "Ein günstiger Umstand, den man nicht unbedingt selbst bewirkt hat.",
+          "example": "Wir hatten Glück und bekamen noch zwei Plätze.",
+          "example_ru": "Нам повезло, и мы получили ещё два места.",
+          "forms": "без множественного числа",
+          "grammar_hint": "Glück haben — повезти; Pech haben — не повезти.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCck"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 355,
+          "record": {
+            "id": "a1-270-1",
+            "de": "das Glück",
+            "lemma": "Glück",
+            "ru": "удача; везение",
+            "uk": "",
+            "translations_ru": [
+              "удача",
+              "везение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "обычно только Singular",
+            "definition_de": "Ein günstiger Zufall oder ein guter Ausgang.",
+            "example": "Viel Glück bei der Prüfung!",
+            "example_ru": "Удачи на экзамене!",
+            "note": "Viel Glück! — Удачи!; zum Glück — к счастью, по счастливой случайности. Самостоятельное значение «счастье» как состояние не следует смешивать с удачей.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "8a162bc76078fb405e8d"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Gl%C3%BCck",
+                "scope": "meaning_or_grammar",
+                "note": "Разграничение удачи и состояния счастья; устойчивое выражение подтверждено Goethe A2, стр. 16."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-270-1",
+        "alias_id": "b1-glueck-luck",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-270-1"
+      }
+    },
+    {
+      "candidate_number": 155,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 example explicitly uses wish Viel Glück; preserve as phrase variant, not bare noun gloss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 27,
+        "record": {
+          "id": "b1-glueck-wish",
+          "de": "Viel Glück!",
+          "lemma": "Glück",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Удачи!"
+          ],
+          "definition_de": "Ein Wunsch nach einem guten Ergebnis für eine andere Person.",
+          "example": "Viel Glück bei deinem Vorstellungsgespräch!",
+          "example_ru": "Удачи на собеседовании!",
+          "forms": "устойчивое пожелание",
+          "grammar_hint": "jemandem (Dativ) Glück wünschen; viel Glück bei + Dativ.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCck"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 355,
+          "record": {
+            "id": "a1-270-1",
+            "de": "das Glück",
+            "lemma": "Glück",
+            "ru": "удача; везение",
+            "uk": "",
+            "translations_ru": [
+              "удача",
+              "везение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "обычно только Singular",
+            "definition_de": "Ein günstiger Zufall oder ein guter Ausgang.",
+            "example": "Viel Glück bei der Prüfung!",
+            "example_ru": "Удачи на экзамене!",
+            "note": "Viel Glück! — Удачи!; zum Glück — к счастью, по счастливой случайности. Самостоятельное значение «счастье» как состояние не следует смешивать с удачей.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "8a162bc76078fb405e8d"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Gl%C3%BCck",
+                "scope": "meaning_or_grammar",
+                "note": "Разграничение удачи и состояния счастья; устойчивое выражение подтверждено Goethe A2, стр. 16."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-270-1",
+        "alias_id": "b1-glueck-wish",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-270-1"
+      }
+    },
+    {
+      "candidate_number": 156,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 hint explicitly includes zum Glück; preserve phrase and V2 guidance, not bare noun gloss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 28,
+        "record": {
+          "id": "b1-glueck-fortunately",
+          "de": "zum Glück",
+          "lemma": "Glück",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "к счастью",
+            "по счастью"
+          ],
+          "definition_de": "Drückt Erleichterung über einen günstigen Umstand aus.",
+          "example": "Zum Glück hatte ich meinen Schlüssel dabei.",
+          "example_ru": "К счастью, ключ был у меня с собой.",
+          "forms": "zu dem = zum (+ Dativ)",
+          "grammar_hint": "Zum Glück в начале предложения занимает первое место; спрягаемый глагол на втором.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCck"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 355,
+          "record": {
+            "id": "a1-270-1",
+            "de": "das Glück",
+            "lemma": "Glück",
+            "ru": "удача; везение",
+            "uk": "",
+            "translations_ru": [
+              "удача",
+              "везение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "обычно только Singular",
+            "definition_de": "Ein günstiger Zufall oder ein guter Ausgang.",
+            "example": "Viel Glück bei der Prüfung!",
+            "example_ru": "Удачи на экзамене!",
+            "note": "Viel Glück! — Удачи!; zum Glück — к счастью, по счастливой случайности. Самостоятельное значение «счастье» как состояние не следует смешивать с удачей.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "8a162bc76078fb405e8d"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Gl%C3%BCck",
+                "scope": "meaning_or_grammar",
+                "note": "Разграничение удачи и состояния счастья; устойчивое выражение подтверждено Goethe A2, стр. 16."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-270-1",
+        "alias_id": "b1-glueck-fortunately",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-270-1"
+      }
+    },
+    {
+      "candidate_number": 157,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same happy/content sense; retain comparison and mit + Dativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 29,
+        "record": {
+          "id": "b1-gluecklich-happy",
+          "de": "glücklich",
+          "lemma": "glücklich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "счастливый",
+            "довольный"
+          ],
+          "definition_de": "Von Freude und Zufriedenheit erfüllt.",
+          "example": "Sie ist mit ihrer neuen Arbeit sehr glücklich.",
+          "example_ru": "Она очень счастлива на новой работе.",
+          "forms": "glücklich · glücklicher · am glücklichsten",
+          "grammar_hint": "glücklich sein; glücklich mit + Dativ; glücklich verheiratet sein.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gl%C3%BCcklich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 356,
+          "record": {
+            "id": "a1-271-1",
+            "de": "glücklich",
+            "lemma": "glücklich",
+            "ru": "счастливый; довольный (чем-либо)",
+            "uk": "",
+            "translations_ru": [
+              "счастливый",
+              "довольный (чем-либо)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "glücklicher · am glücklichsten",
+            "definition_de": "Voller Freude oder sehr zufrieden.",
+            "example": "Sie ist mit ihrer Entscheidung glücklich.",
+            "example_ru": "Она довольна своим решением.",
+            "note": "glücklich sein — быть счастливым; mit etwas glücklich sein — быть довольным чем-либо (+ Dativ). В пожелании ein glückliches neues Jahr — счастливого Нового года. Удачливый — не универсальный перевод; Glück haben — повезти.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "35cf9fdeef40e1c07e5f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-271-1",
+        "alias_id": "b1-gluecklich-happy",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-271-1"
+      }
+    },
+    {
+      "candidate_number": 158,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 hint explicitly includes ein glückliches neues Jahr; retain phrase variant and adjective ending.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 30,
+        "record": {
+          "id": "b1-gluecklich-wishing",
+          "de": "ein glückliches Jahr",
+          "lemma": "glücklich",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "счастливый год",
+            "благополучный год"
+          ],
+          "definition_de": "Ein Jahr, für das man einer Person Freude und Wohlergehen wünscht.",
+          "example": "Ich wünsche euch ein glückliches neues Jahr!",
+          "example_ru": "Желаю вам счастливого Нового года!",
+          "forms": "glücklich · glücklicher · am glücklichsten",
+          "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; ein glückliches Jahr — окончание -es прилагательного.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gl%C3%BCcklich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 356,
+          "record": {
+            "id": "a1-271-1",
+            "de": "glücklich",
+            "lemma": "glücklich",
+            "ru": "счастливый; довольный (чем-либо)",
+            "uk": "",
+            "translations_ru": [
+              "счастливый",
+              "довольный (чем-либо)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "glücklicher · am glücklichsten",
+            "definition_de": "Voller Freude oder sehr zufrieden.",
+            "example": "Sie ist mit ihrer Entscheidung glücklich.",
+            "example_ru": "Она довольна своим решением.",
+            "note": "glücklich sein — быть счастливым; mit etwas glücklich sein — быть довольным чем-либо (+ Dativ). В пожелании ein glückliches neues Jahr — счастливого Нового года. Удачливый — не универсальный перевод; Glück haben — повезти.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "35cf9fdeef40e1c07e5f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-271-1",
+        "alias_id": "b1-gluecklich-wishing",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-271-1"
+      }
+    },
+    {
+      "candidate_number": 159,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same congratulation noun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 1,
+        "record": {
+          "id": "b1-glueckwunsch-congratulation",
+          "de": "der Glückwunsch",
+          "lemma": "Glückwunsch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "поздравление"
+          ],
+          "definition_de": "Ein Wunsch, mit dem man jemandem zu einem erfreulichen Ereignis gratuliert.",
+          "example": "Vielen Dank für deine Glückwünsche zur Hochzeit.",
+          "example_ru": "Большое спасибо за поздравления со свадьбой.",
+          "forms": "die Glückwünsche",
+          "grammar_hint": "Glückwunsch zu + Dativ; jemandem einen Glückwunsch aussprechen; Herzlichen Glückwunsch!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCckwunsch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 357,
+          "record": {
+            "id": "a1-272-1",
+            "de": "der Glückwunsch",
+            "lemma": "Glückwunsch",
+            "ru": "поздравление",
+            "uk": "",
+            "translations_ru": [
+              "поздравление"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Glückwünsche",
+            "definition_de": "Worte, mit denen man jemandem zu einem guten Ereignis gratuliert.",
+            "example": "Herzlichen Glückwunsch zur Hochzeit!",
+            "example_ru": "Сердечно поздравляю со свадьбой!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "77f579a2c8ed41ea173f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-272-1",
+        "alias_id": "b1-glueckwunsch-congratulation",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-272-1"
+      }
+    },
+    {
+      "candidate_number": 160,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same congratulating verb; Dativ patterns already stated in A1.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 8,
+        "record": {
+          "id": "b1-gratulieren-congratulate",
+          "de": "gratulieren",
+          "lemma": "gratulieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "поздравлять",
+            "поздравить"
+          ],
+          "definition_de": "Einer Person zu einem erfreulichen Ereignis gute Wünsche aussprechen.",
+          "example": "Ich gratuliere dir zum bestandenen Test.",
+          "example_ru": "Я поздравляю тебя с успешно сданным тестом.",
+          "forms": "gratuliert · gratulierte · hat gratuliert",
+          "grammar_hint": "jemandem (Dativ) zu etwas (Dativ) gratulieren: dir zur Prüfung. Не Akkusativ для человека.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gratulieren"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 359,
+          "record": {
+            "id": "a1-274-1",
+            "de": "gratulieren",
+            "lemma": "gratulieren",
+            "ru": "поздравлять; поздравить",
+            "uk": "",
+            "translations_ru": [
+              "поздравлять",
+              "поздравить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "gratuliert · gratulierte · hat gratuliert",
+            "definition_de": "Jemandem zu einem guten Ereignis seine Freude ausdrücken.",
+            "example": "Ich gratuliere dir zum Geburtstag.",
+            "example_ru": "Поздравляю тебя с днём рождения.",
+            "note": "jemandem gratulieren (Dativ), zu etwas gratulieren (zu + Dativ). jemandem (Dativ) zu etwas (Dativ) gratulieren.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "a7873f216ae5cdc2e913"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-274-1",
+        "alias_id": "b1-gratulieren-congratulate",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-274-1"
+      }
+    },
+    {
+      "candidate_number": 161,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same grilling verb; preserve Swiss grillieren forms from A1.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 14,
+        "record": {
+          "id": "b1-grillen-cook",
+          "de": "grillen",
+          "lemma": "grillen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "жарить на гриле",
+            "готовить на гриле"
+          ],
+          "definition_de": "Lebensmittel auf einem Grill garen.",
+          "example": "Am Samstag grillen wir Gemüse im Garten.",
+          "example_ru": "В субботу мы будем жарить овощи на гриле в саду.",
+          "forms": "grillt · grillte · hat gegrillt",
+          "grammar_hint": "etwas (Akkusativ) grillen; D/A: grillen; CH: grillieren.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/grillen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 360,
+          "record": {
+            "id": "a1-275-1",
+            "de": "grillen",
+            "lemma": "grillen",
+            "ru": "жарить на гриле",
+            "uk": "",
+            "translations_ru": [
+              "жарить на гриле"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "grillt · grillte · hat gegrillt",
+            "definition_de": "Essen auf einem Grill zubereiten.",
+            "example": "Wir grillen heute Gemüse.",
+            "example_ru": "Сегодня мы жарим овощи на гриле.",
+            "note": "Жарить/готовить именно на гриле; в Швейцарии часто grillieren (grilliert · grillierte · hat grilliert).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "d2088f4adfbe032a6ee4"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/grillen",
+                "scope": "meaning_or_grammar",
+                "note": "Значение приготовления на гриле."
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/grillieren",
+                "scope": "swiss_variant"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-275-1",
+        "alias_id": "b1-grillen-cook",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-275-1"
+      }
+    },
+    {
+      "candidate_number": 162,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same influenza noun; retain distinction from Erkältung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 17,
+        "record": {
+          "id": "b1-grippe-influenza",
+          "de": "die Grippe",
+          "lemma": "Grippe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "грипп"
+          ],
+          "definition_de": "Eine durch Influenzaviren verursachte Infektionskrankheit.",
+          "example": "Wegen einer Grippe bleibt er diese Woche zu Hause.",
+          "example_ru": "Из-за гриппа он на этой неделе остаётся дома.",
+          "forms": "обычно Singular; die Grippen редко",
+          "grammar_hint": "Grippe haben; an Grippe erkranken (+ Dativ); не путать с Erkältung — простуда.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Grippe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 37,
+          "record": {
+            "id": "dict_190e28b896f230d25da1",
+            "de": "die Grippe",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "грипп"
+            ],
+            "definition_de": "Eine ansteckende Krankheit, die oft mit Fieber und plötzlicher Schwäche beginnt.",
+            "forms": "Обычно в единственном числе",
+            "example": "Er liegt mit Grippe im Bett.",
+            "example_ru": "Он лежит в постели с гриппом.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Grippe"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_190e28b896f230d25da1",
+        "alias_id": "b1-grippe-influenza",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_190e28b896f230d25da1"
+      }
+    },
+    {
+      "candidate_number": 163,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same large spatial dimension as A1 size sense; retain Swiss spelling and adjective inflection.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 18,
+        "record": {
+          "id": "b1-gross-dimensions",
+          "de": "groß",
+          "lemma": "groß",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "большой",
+            "крупный"
+          ],
+          "definition_de": "Von beträchtlicher räumlicher Ausdehnung.",
+          "example": "Wir brauchen einen großen Tisch für die ganze Familie.",
+          "example_ru": "Нам нужен большой стол для всей семьи.",
+          "forms": "groß · größer · am größten",
+          "grammar_hint": "CH: gross, grösser, am grössten. Перед существительным склоняется: ein großer Tisch, einen großen Tisch.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 361,
+          "record": {
+            "id": "a1-276-1",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "высокий (о человеке); ростом (при указании роста)",
+            "uk": "",
+            "translations_ru": [
+              "высокий (о человеке)",
+              "ростом (при указании роста)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Von beträchtlicher Körperhöhe oder mit einer genannten Körperhöhe.",
+            "example": "Wie groß bist du?",
+            "example_ru": "Какого ты роста?",
+            "note": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 362,
+          "record": {
+            "id": "a1-276-2",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "большой",
+            "uk": "",
+            "translations_ru": [
+              "большой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Mehr Platz einnehmend oder mehr Einwohner habend als Vergleichbares.",
+            "example": "Zürich ist eine große Stadt.",
+            "example_ru": "Цюрих — большой город.",
+            "note": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-276-2",
+        "alias_id": "b1-gross-dimensions",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-276-2"
+      }
+    },
+    {
+      "candidate_number": 164,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same human height sense; use height target, not dimensions target.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 19,
+        "record": {
+          "id": "b1-gross-height",
+          "de": "groß",
+          "lemma": "groß",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "высокий (о росте)"
+          ],
+          "definition_de": "Von einer bestimmten Körperhöhe oder von überdurchschnittlicher Körperhöhe.",
+          "example": "Mein Sohn ist schon einen Meter siebzig groß.",
+          "example_ru": "Рост моего сына уже метр семьдесят.",
+          "forms": "groß · größer · am größten",
+          "grammar_hint": "Wie groß bist du? — Какой у тебя рост? Для роста человека обычно groß, не hoch.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 361,
+          "record": {
+            "id": "a1-276-1",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "высокий (о человеке); ростом (при указании роста)",
+            "uk": "",
+            "translations_ru": [
+              "высокий (о человеке)",
+              "ростом (при указании роста)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Von beträchtlicher Körperhöhe oder mit einer genannten Körperhöhe.",
+            "example": "Wie groß bist du?",
+            "example_ru": "Какого ты роста?",
+            "note": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 362,
+          "record": {
+            "id": "a1-276-2",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "большой",
+            "uk": "",
+            "translations_ru": [
+              "большой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Mehr Platz einnehmend oder mehr Einwohner habend als Vergleichbares.",
+            "example": "Zürich ist eine große Stadt.",
+            "example_ru": "Цюрих — большой город.",
+            "note": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-276-1",
+        "alias_id": "b1-gross-height",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-276-1"
+      }
+    },
+    {
+      "candidate_number": 165,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Clothing fit with Dativ and zu is specialized size context; retain pending source scope and comparison with A2 grammar.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 20,
+        "record": {
+          "id": "b1-gross-clothing",
+          "de": "zu groß",
+          "lemma": "groß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "слишком большой",
+            "великоватый (об одежде)"
+          ],
+          "definition_de": "So weit oder lang, dass ein Kleidungsstück nicht richtig passt.",
+          "example": "Diese Hose ist mir zu groß.",
+          "example_ru": "Эти брюки мне велики.",
+          "forms": "groß · größer · am größten",
+          "grammar_hint": "jemandem (Dativ) zu groß sein; zu + прилагательное = слишком; Gegensatz: zu klein.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 361,
+          "record": {
+            "id": "a1-276-1",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "высокий (о человеке); ростом (при указании роста)",
+            "uk": "",
+            "translations_ru": [
+              "высокий (о человеке)",
+              "ростом (при указании роста)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Von beträchtlicher Körperhöhe oder mit einer genannten Körperhöhe.",
+            "example": "Wie groß bist du?",
+            "example_ru": "Какого ты роста?",
+            "note": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 362,
+          "record": {
+            "id": "a1-276-2",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "большой",
+            "uk": "",
+            "translations_ru": [
+              "большой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Mehr Platz einnehmend oder mehr Einwohner habend als Vergleichbares.",
+            "example": "Zürich ist eine große Stadt.",
+            "example_ru": "Цюрих — большой город.",
+            "note": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 166,
+      "decision": "retain_distinct_sense",
+      "reason": "Adult/grown meaning distinct from height; stored Russian verbs need review against stative sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 21,
+        "record": {
+          "id": "b1-gross-grown",
+          "de": "groß sein",
+          "lemma": "groß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "вырасти",
+            "стать взрослым"
+          ],
+          "definition_de": "Nicht mehr klein oder kindlich sein.",
+          "example": "Wenn ich groß bin, möchte ich Ärztin werden.",
+          "example_ru": "Когда я вырасту, хочу стать врачом.",
+          "forms": "groß · größer · am größten",
+          "grammar_hint": "groß werden — расти; в придаточном с wenn спрягаемый глагол стоит в конце.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 361,
+          "record": {
+            "id": "a1-276-1",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "высокий (о человеке); ростом (при указании роста)",
+            "uk": "",
+            "translations_ru": [
+              "высокий (о человеке)",
+              "ростом (при указании роста)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Von beträchtlicher Körperhöhe oder mit einer genannten Körperhöhe.",
+            "example": "Wie groß bist du?",
+            "example_ru": "Какого ты роста?",
+            "note": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 362,
+          "record": {
+            "id": "a1-276-2",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "большой",
+            "uk": "",
+            "translations_ru": [
+              "большой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Mehr Platz einnehmend oder mehr Einwohner habend als Vergleichbares.",
+            "example": "Zürich ist eine große Stadt.",
+            "example_ru": "Цюрих — большой город.",
+            "note": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 167,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Intensity or extent vs physical size; separate context, verify level source.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 22,
+        "record": {
+          "id": "b1-gross-intensity",
+          "de": "groß",
+          "lemma": "groß",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "сильный",
+            "значительный"
+          ],
+          "definition_de": "Von erheblichem Ausmaß oder hoher Intensität.",
+          "example": "Nach der Wanderung hatten alle großen Hunger.",
+          "example_ru": "После похода все сильно проголодались.",
+          "forms": "groß · größer · am größten",
+          "grammar_hint": "großen Hunger / große Angst / große Freude haben; перед существительным прилагательное склоняется.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 361,
+          "record": {
+            "id": "a1-276-1",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "высокий (о человеке); ростом (при указании роста)",
+            "uk": "",
+            "translations_ru": [
+              "высокий (о человеке)",
+              "ростом (при указании роста)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Von beträchtlicher Körperhöhe oder mit einer genannten Körperhöhe.",
+            "example": "Wie groß bist du?",
+            "example_ru": "Какого ты роста?",
+            "note": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 362,
+          "record": {
+            "id": "a1-276-2",
+            "de": "groß",
+            "lemma": "groß",
+            "ru": "большой",
+            "uk": "",
+            "translations_ru": [
+              "большой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "größer · am größten",
+            "definition_de": "Mehr Platz einnehmend oder mehr Einwohner habend als Vergleichbares.",
+            "example": "Zürich ist eine große Stadt.",
+            "example_ru": "Цюрих — большой город.",
+            "note": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "b9f2485665f52eb15ac8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 168,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same grandparents noun; plural and Swiss spelling.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 23,
+        "record": {
+          "id": "b1-grosseltern-family",
+          "de": "die Großeltern",
+          "lemma": "Großeltern",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "бабушка и дедушка"
+          ],
+          "definition_de": "Die Eltern der eigenen Eltern.",
+          "example": "Am Sonntag besuchen wir unsere Großeltern.",
+          "example_ru": "В воскресенье мы навещаем бабушку и дедушку.",
+          "forms": "только Plural: die Großeltern",
+          "grammar_hint": "Groß- в названиях родства: die Großmutter, der Großvater; CH: Grosseltern, Grossmutter, Grossvater.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gro%C3%9Feltern"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 364,
+          "record": {
+            "id": "a1-278-1",
+            "de": "die Großeltern",
+            "lemma": "Großeltern",
+            "ru": "бабушка и дедушка",
+            "uk": "",
+            "translations_ru": [
+              "бабушка и дедушка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "только Plural в этом употреблении",
+            "definition_de": "Die Eltern der Mutter oder des Vaters.",
+            "example": "Meine Großeltern leben in Bern.",
+            "example_ru": "Мои бабушка и дедушка живут в Берне.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "92ed8203b0bb4bed89aa"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-278-1",
+        "alias_id": "b1-grosseltern-family",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-278-1"
+      }
+    },
+    {
+      "candidate_number": 169,
+      "decision": "retain_distinct_sense",
+      "reason": "General size or human height vs clothing size; retain separately and verify whether size and height need separate cards.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 24,
+        "record": {
+          "id": "b1-groesse-height",
+          "de": "die Größe",
+          "lemma": "Größe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "рост",
+            "величина",
+            "размер"
+          ],
+          "definition_de": "Das Maß der räumlichen Ausdehnung oder der Körperhöhe.",
+          "example": "Tragen Sie bitte Ihre Größe in Zentimetern ein.",
+          "example_ru": "Пожалуйста, укажите свой рост в сантиметрах.",
+          "forms": "die Größen",
+          "grammar_hint": "die Größe eines Raums; Körpergröße — рост человека; CH: Grösse.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gr%C3%B6%C3%9Fe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 363,
+          "record": {
+            "id": "a1-277-1",
+            "de": "die Größe",
+            "lemma": "Größe",
+            "ru": "размер (одежды)",
+            "uk": "",
+            "translations_ru": [
+              "размер (одежды)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Größen",
+            "definition_de": "Die Angabe, wie groß ein Kleidungsstück ist.",
+            "example": "Haben Sie diese Jacke in Größe 40?",
+            "example_ru": "У Вас есть эта куртка сорокового размера?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "f15a1c234e6596570e60"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 170,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same standardized clothing size; shoe-size extension requires scope check.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_031.json",
+        "sha": "b213d01ce6c8bdcc3f2b03e8a2bdc8ab8d5fcc00",
+        "batch": 31,
+        "row": 25,
+        "record": {
+          "id": "b1-groesse-clothing",
+          "de": "die Größe",
+          "lemma": "Größe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "размер (одежды или обуви)"
+          ],
+          "definition_de": "Eine standardisierte Angabe, nach der Kleidung oder Schuhe ausgewählt werden.",
+          "example": "Haben Sie diese Jacke in einer anderen Größe?",
+          "example_ru": "У вас есть эта куртка другого размера?",
+          "forms": "die Größen",
+          "grammar_hint": "in Größe 38 — размера 38; Welche Größe tragen Sie? CH: Grösse.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gr%C3%B6%C3%9Fe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 363,
+          "record": {
+            "id": "a1-277-1",
+            "de": "die Größe",
+            "lemma": "Größe",
+            "ru": "размер (одежды)",
+            "uk": "",
+            "translations_ru": [
+              "размер (одежды)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Größen",
+            "definition_de": "Die Angabe, wie groß ein Kleidungsstück ist.",
+            "example": "Haben Sie diese Jacke in Größe 40?",
+            "example_ru": "У Вас есть эта куртка сорокового размера?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "f15a1c234e6596570e60"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-277-1",
+        "alias_id": "b1-groesse-clothing",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-277-1"
+      }
+    },
+    {
+      "candidate_number": 171,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same group of people.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 1,
+        "record": {
+          "id": "b1-gruppe-people",
+          "de": "die Gruppe",
+          "lemma": "Gruppe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "группа"
+          ],
+          "definition_de": "Mehrere Menschen, die gemeinsam etwas tun oder zusammengehören.",
+          "example": "Unsere Gruppe trifft sich jeden Dienstag.",
+          "example_ru": "Наша группа встречается каждый вторник.",
+          "forms": "die Gruppen",
+          "grammar_hint": "in einer Gruppe arbeiten; eine Gruppe von Lernenden.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gruppe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 367,
+          "record": {
+            "id": "a1-281-1",
+            "de": "die Gruppe",
+            "lemma": "Gruppe",
+            "ru": "группа",
+            "uk": "",
+            "translations_ru": [
+              "группа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Gruppen",
+            "definition_de": "Mehrere Personen, die zusammengehören oder zusammen etwas tun.",
+            "example": "Unsere Gruppe trifft sich um sechs.",
+            "example_ru": "Наша группа собирается в шесть.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "8fdbe9c73709fbf9fbd5"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-281-1",
+        "alias_id": "b1-gruppe-people",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-281-1"
+      }
+    },
+    {
+      "candidate_number": 172,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same greeting noun; preserve Swiss spelling.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 4,
+        "record": {
+          "id": "b1-gruss-greeting",
+          "de": "der Gruß",
+          "lemma": "Gruß",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "привет",
+            "приветствие"
+          ],
+          "definition_de": "Ein freundliches Zeichen der Aufmerksamkeit gegenüber einer Person.",
+          "example": "Er schickte mir einen Gruß aus den Ferien.",
+          "example_ru": "Он прислал мне привет из отпуска.",
+          "forms": "die Grüße",
+          "grammar_hint": "einen Gruß schicken; CH: der Gruss, die Grüsse.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gru%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 368,
+          "record": {
+            "id": "a1-282-1",
+            "de": "der Gruß",
+            "lemma": "Gruß",
+            "ru": "привет; приветствие",
+            "uk": "",
+            "translations_ru": [
+              "привет",
+              "приветствие"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Grüße",
+            "definition_de": "Worte, mit denen man jemanden grüßt.",
+            "example": "Viele Grüße an deine Familie!",
+            "example_ru": "Передавай привет своей семье!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "e11663cbe69965ae2ccd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-282-1",
+        "alias_id": "b1-gruss-greeting",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-282-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-269-1",
+      "alias_ids": [
+        "b1-gleis-track"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-269-1",
+        "de": "das Gleis",
+        "lemma": "Gleis",
+        "ru": "железнодорожный путь; рельсы (железнодорожный путь); путь (на вокзале)",
+        "uk": "",
+        "translations_ru": [
+          "железнодорожный путь",
+          "рельсы (железнодорожный путь)",
+          "путь (на вокзале)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт",
+          "Транспорт и путешествия"
+        ],
+        "forms": "die Gleise",
+        "definition_de": "Die Schienen, auf denen ein Zug fährt.",
+        "example": "Der Zug fährt von Gleis vier ab.",
+        "example_ru": "Поезд отправляется с четвёртого пути.",
+        "note": "Gleis — путь (номер пути); Bahnsteig — пассажирская платформа. von Gleis 4 — с четвёртого пути.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "0981430d542b99be00e5"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Gleis — путь (номер пути); Bahnsteig — пассажирская платформа. von Gleis 4 — с четвёртого пути.\nvon Gleis 3 abfahren; an Gleis 3 warten; Bahnsteig — платформа, а не сами рельсы.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Die Schienen, auf denen ein Zug fährt; am Bahnhof auch eine nummerierte Abfahrtsstelle."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Der Zug nach Zürich fährt heute von Gleis drei ab.",
+            "ru": "Поезд в Цюрих сегодня отправляется с третьего пути."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gleis-track",
+            "de": "das Gleis",
+            "part": "noun",
+            "forms": "die Gleise",
+            "definition_de": "Die Schienen, auf denen ein Zug fährt; am Bahnhof auch eine nummerierte Abfahrtsstelle.",
+            "translations_ru": [
+              "железнодорожный путь",
+              "путь (на вокзале)"
+            ],
+            "grammar_hint": "von Gleis 3 abfahren; an Gleis 3 warten; Bahnsteig — платформа, а не сами рельсы.",
+            "example": "Der Zug nach Zürich fährt heute von Gleis drei ab.",
+            "example_ru": "Поезд в Цюрих сегодня отправляется с третьего пути."
+          }
+        ],
+        "alias_ids": [
+          "b1-gleis-track"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gleis"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-270-1",
+      "alias_ids": [
+        "b1-glueck-luck",
+        "b1-glueck-wish",
+        "b1-glueck-fortunately"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-270-1",
+        "de": "das Glück",
+        "lemma": "Glück",
+        "ru": "удача; везение",
+        "uk": "",
+        "translations_ru": [
+          "удача",
+          "везение"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение",
+          "Работа и профессии",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "обычно только Singular",
+        "definition_de": "Ein günstiger Zufall oder ein guter Ausgang.",
+        "example": "Viel Glück bei der Prüfung!",
+        "example_ru": "Удачи на экзамене!",
+        "note": "Viel Glück! — Удачи!; zum Glück — к счастью, по счастливой случайности. Самостоятельное значение «счастье» как состояние не следует смешивать с удачей.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "8a162bc76078fb405e8d"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Gl%C3%BCck",
+            "scope": "meaning_or_grammar",
+            "note": "Разграничение удачи и состояния счастья; устойчивое выражение подтверждено Goethe A2, стр. 16."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Viel Glück! — Удачи!; zum Glück — к счастью, по счастливой случайности. Самостоятельное значение «счастье» как состояние не следует смешивать с удачей.\nGlück haben — повезти; Pech haben — не повезти.\njemandem (Dativ) Glück wünschen; viel Glück bei + Dativ.\nZum Glück в начале предложения занимает первое место; спрягаемый глагол на втором.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "без множественного числа"
+        ],
+        "alternative_definitions_de": [
+          "Ein günstiger Umstand, den man nicht unbedingt selbst bewirkt hat."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir hatten Glück und bekamen noch zwei Plätze.",
+            "ru": "Нам повезло, и мы получили ещё два места."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-glueck-luck",
+            "de": "das Glück",
+            "part": "noun",
+            "forms": "без множественного числа",
+            "definition_de": "Ein günstiger Umstand, den man nicht unbedingt selbst bewirkt hat.",
+            "translations_ru": [
+              "удача",
+              "везение"
+            ],
+            "grammar_hint": "Glück haben — повезти; Pech haben — не повезти.",
+            "example": "Wir hatten Glück und bekamen noch zwei Plätze.",
+            "example_ru": "Нам повезло, и мы получили ещё два места."
+          },
+          {
+            "id": "b1-glueck-wish",
+            "de": "Viel Glück!",
+            "part": "phrase",
+            "forms": "устойчивое пожелание",
+            "definition_de": "Ein Wunsch nach einem guten Ergebnis für eine andere Person.",
+            "translations_ru": [
+              "Удачи!"
+            ],
+            "grammar_hint": "jemandem (Dativ) Glück wünschen; viel Glück bei + Dativ.",
+            "example": "Viel Glück bei deinem Vorstellungsgespräch!",
+            "example_ru": "Удачи на собеседовании!"
+          },
+          {
+            "id": "b1-glueck-fortunately",
+            "de": "zum Glück",
+            "part": "phrase",
+            "forms": "zu dem = zum (+ Dativ)",
+            "definition_de": "Drückt Erleichterung über einen günstigen Umstand aus.",
+            "translations_ru": [
+              "к счастью",
+              "по счастью"
+            ],
+            "grammar_hint": "Zum Glück в начале предложения занимает первое место; спрягаемый глагол на втором.",
+            "example": "Zum Glück hatte ich meinen Schlüssel dabei.",
+            "example_ru": "К счастью, ключ был у меня с собой."
+          }
+        ],
+        "alias_ids": [
+          "b1-glueck-luck",
+          "b1-glueck-wish",
+          "b1-glueck-fortunately"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCck"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCck"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCck"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-271-1",
+      "alias_ids": [
+        "b1-gluecklich-happy",
+        "b1-gluecklich-wishing"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-271-1",
+        "de": "glücklich",
+        "lemma": "glücklich",
+        "ru": "счастливый; довольный (чем-либо); довольный",
+        "uk": "",
+        "translations_ru": [
+          "счастливый",
+          "довольный (чем-либо)",
+          "довольный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Семья и отношения",
+          "Общение"
+        ],
+        "forms": "glücklicher · am glücklichsten",
+        "definition_de": "Voller Freude oder sehr zufrieden.",
+        "example": "Sie ist mit ihrer Entscheidung glücklich.",
+        "example_ru": "Она довольна своим решением.",
+        "note": "glücklich sein — быть счастливым; mit etwas glücklich sein — быть довольным чем-либо (+ Dativ). В пожелании ein glückliches neues Jahr — счастливого Нового года. Удачливый — не универсальный перевод; Glück haben — повезти.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "35cf9fdeef40e1c07e5f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "glücklich sein — быть счастливым; mit etwas glücklich sein — быть довольным чем-либо (+ Dativ). В пожелании ein glückliches neues Jahr — счастливого Нового года. Удачливый — не универсальный перевод; Glück haben — повезти.\nglücklich sein; glücklich mit + Dativ; glücklich verheiratet sein.\njemandem (Dativ) etwas (Akkusativ) wünschen; ein glückliches Jahr — окончание -es прилагательного.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "glücklich · glücklicher · am glücklichsten"
+        ],
+        "alternative_definitions_de": [
+          "Von Freude und Zufriedenheit erfüllt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Sie ist mit ihrer neuen Arbeit sehr glücklich.",
+            "ru": "Она очень счастлива на новой работе."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gluecklich-happy",
+            "de": "glücklich",
+            "part": "adj",
+            "forms": "glücklich · glücklicher · am glücklichsten",
+            "definition_de": "Von Freude und Zufriedenheit erfüllt.",
+            "translations_ru": [
+              "счастливый",
+              "довольный"
+            ],
+            "grammar_hint": "glücklich sein; glücklich mit + Dativ; glücklich verheiratet sein.",
+            "example": "Sie ist mit ihrer neuen Arbeit sehr glücklich.",
+            "example_ru": "Она очень счастлива на новой работе."
+          },
+          {
+            "id": "b1-gluecklich-wishing",
+            "de": "ein glückliches Jahr",
+            "part": "phrase",
+            "forms": "glücklich · glücklicher · am glücklichsten",
+            "definition_de": "Ein Jahr, für das man einer Person Freude und Wohlergehen wünscht.",
+            "translations_ru": [
+              "счастливый год",
+              "благополучный год"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; ein glückliches Jahr — окончание -es прилагательного.",
+            "example": "Ich wünsche euch ein glückliches neues Jahr!",
+            "example_ru": "Желаю вам счастливого Нового года!"
+          }
+        ],
+        "alias_ids": [
+          "b1-gluecklich-happy",
+          "b1-gluecklich-wishing"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gl%C3%BCcklich"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gl%C3%BCcklich"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-272-1",
+      "alias_ids": [
+        "b1-glueckwunsch-congratulation"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-272-1",
+        "de": "der Glückwunsch",
+        "lemma": "Glückwunsch",
+        "ru": "поздравление",
+        "uk": "",
+        "translations_ru": [
+          "поздравление"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "die Glückwünsche",
+        "definition_de": "Worte, mit denen man jemandem zu einem guten Ereignis gratuliert.",
+        "example": "Herzlichen Glückwunsch zur Hochzeit!",
+        "example_ru": "Сердечно поздравляю со свадьбой!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "77f579a2c8ed41ea173f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Glückwunsch zu + Dativ; jemandem einen Glückwunsch aussprechen; Herzlichen Glückwunsch!",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein Wunsch, mit dem man jemandem zu einem erfreulichen Ereignis gratuliert."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Vielen Dank für deine Glückwünsche zur Hochzeit.",
+            "ru": "Большое спасибо за поздравления со свадьбой."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-glueckwunsch-congratulation",
+            "de": "der Glückwunsch",
+            "part": "noun",
+            "forms": "die Glückwünsche",
+            "definition_de": "Ein Wunsch, mit dem man jemandem zu einem erfreulichen Ereignis gratuliert.",
+            "translations_ru": [
+              "поздравление"
+            ],
+            "grammar_hint": "Glückwunsch zu + Dativ; jemandem einen Glückwunsch aussprechen; Herzlichen Glückwunsch!",
+            "example": "Vielen Dank für deine Glückwünsche zur Hochzeit.",
+            "example_ru": "Большое спасибо за поздравления со свадьбой."
+          }
+        ],
+        "alias_ids": [
+          "b1-glueckwunsch-congratulation"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gl%C3%BCckwunsch"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-274-1",
+      "alias_ids": [
+        "b1-gratulieren-congratulate"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-274-1",
+        "de": "gratulieren",
+        "lemma": "gratulieren",
+        "ru": "поздравлять; поздравить",
+        "uk": "",
+        "translations_ru": [
+          "поздравлять",
+          "поздравить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "gratuliert · gratulierte · hat gratuliert",
+        "definition_de": "Jemandem zu einem guten Ereignis seine Freude ausdrücken.",
+        "example": "Ich gratuliere dir zum Geburtstag.",
+        "example_ru": "Поздравляю тебя с днём рождения.",
+        "note": "jemandem gratulieren (Dativ), zu etwas gratulieren (zu + Dativ). jemandem (Dativ) zu etwas (Dativ) gratulieren.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "a7873f216ae5cdc2e913"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem gratulieren (Dativ), zu etwas gratulieren (zu + Dativ). jemandem (Dativ) zu etwas (Dativ) gratulieren.\njemandem (Dativ) zu etwas (Dativ) gratulieren: dir zur Prüfung. Не Akkusativ для человека.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Einer Person zu einem erfreulichen Ereignis gute Wünsche aussprechen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich gratuliere dir zum bestandenen Test.",
+            "ru": "Я поздравляю тебя с успешно сданным тестом."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gratulieren-congratulate",
+            "de": "gratulieren",
+            "part": "verb",
+            "forms": "gratuliert · gratulierte · hat gratuliert",
+            "definition_de": "Einer Person zu einem erfreulichen Ereignis gute Wünsche aussprechen.",
+            "translations_ru": [
+              "поздравлять",
+              "поздравить"
+            ],
+            "grammar_hint": "jemandem (Dativ) zu etwas (Dativ) gratulieren: dir zur Prüfung. Не Akkusativ для человека.",
+            "example": "Ich gratuliere dir zum bestandenen Test.",
+            "example_ru": "Я поздравляю тебя с успешно сданным тестом."
+          }
+        ],
+        "alias_ids": [
+          "b1-gratulieren-congratulate"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gratulieren"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-275-1",
+      "alias_ids": [
+        "b1-grillen-cook"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-275-1",
+        "de": "grillen",
+        "lemma": "grillen",
+        "ru": "жарить на гриле; готовить на гриле",
+        "uk": "",
+        "translations_ru": [
+          "жарить на гриле",
+          "готовить на гриле"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "grillt · grillte · hat gegrillt",
+        "definition_de": "Essen auf einem Grill zubereiten.",
+        "example": "Wir grillen heute Gemüse.",
+        "example_ru": "Сегодня мы жарим овощи на гриле.",
+        "note": "Жарить/готовить именно на гриле; в Швейцарии часто grillieren (grilliert · grillierte · hat grilliert).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "d2088f4adfbe032a6ee4"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/grillen",
+            "scope": "meaning_or_grammar",
+            "note": "Значение приготовления на гриле."
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/grillieren",
+            "scope": "swiss_variant"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Жарить/готовить именно на гриле; в Швейцарии часто grillieren (grilliert · grillierte · hat grilliert).\netwas (Akkusativ) grillen; D/A: grillen; CH: grillieren.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Lebensmittel auf einem Grill garen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Am Samstag grillen wir Gemüse im Garten.",
+            "ru": "В субботу мы будем жарить овощи на гриле в саду."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-grillen-cook",
+            "de": "grillen",
+            "part": "verb",
+            "forms": "grillt · grillte · hat gegrillt",
+            "definition_de": "Lebensmittel auf einem Grill garen.",
+            "translations_ru": [
+              "жарить на гриле",
+              "готовить на гриле"
+            ],
+            "grammar_hint": "etwas (Akkusativ) grillen; D/A: grillen; CH: grillieren.",
+            "example": "Am Samstag grillen wir Gemüse im Garten.",
+            "example_ru": "В субботу мы будем жарить овощи на гриле в саду."
+          }
+        ],
+        "alias_ids": [
+          "b1-grillen-cook"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/grillen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_190e28b896f230d25da1",
+      "alias_ids": [
+        "b1-grippe-influenza"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_190e28b896f230d25da1",
+        "de": "die Grippe",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "грипп"
+        ],
+        "definition_de": "Eine ansteckende Krankheit, die oft mit Fieber und plötzlicher Schwäche beginnt.",
+        "forms": "Обычно в единственном числе",
+        "example": "Er liegt mit Grippe im Bett.",
+        "example_ru": "Он лежит в постели с гриппом.",
+        "grammar_hint": "Grippe haben; an Grippe erkranken (+ Dativ); не путать с Erkältung — простуда.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Grippe"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "обычно Singular; die Grippen редко"
+        ],
+        "alternative_definitions_de": [
+          "Eine durch Influenzaviren verursachte Infektionskrankheit."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wegen einer Grippe bleibt er diese Woche zu Hause.",
+            "ru": "Из-за гриппа он на этой неделе остаётся дома."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-grippe-influenza",
+            "de": "die Grippe",
+            "part": "noun",
+            "forms": "обычно Singular; die Grippen редко",
+            "definition_de": "Eine durch Influenzaviren verursachte Infektionskrankheit.",
+            "translations_ru": [
+              "грипп"
+            ],
+            "grammar_hint": "Grippe haben; an Grippe erkranken (+ Dativ); не путать с Erkältung — простуда.",
+            "example": "Wegen einer Grippe bleibt er diese Woche zu Hause.",
+            "example_ru": "Из-за гриппа он на этой неделе остаётся дома."
+          }
+        ],
+        "alias_ids": [
+          "b1-grippe-influenza"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Grippe"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-276-2",
+      "alias_ids": [
+        "b1-gross-dimensions"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-276-2",
+        "de": "groß",
+        "lemma": "groß",
+        "ru": "большой; крупный",
+        "uk": "",
+        "translations_ru": [
+          "большой",
+          "крупный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Дом и быт"
+        ],
+        "forms": "größer · am größten",
+        "definition_de": "Mehr Platz einnehmend oder mehr Einwohner habend als Vergleichbares.",
+        "example": "Zürich ist eine große Stadt.",
+        "example_ru": "Цюрих — большой город.",
+        "note": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "b9f2485665f52eb15ac8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Большой по размеру: eine große Stadt. Wie groß ist die Wohnung? — Какова площадь квартиры? 80 m² groß — площадью 80 м². Взрослый/великий — отдельные контексты, не подтверждённые данной статьёй.\nCH: gross, grösser, am grössten. Перед существительным склоняется: ein großer Tisch, einen großen Tisch.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "groß · größer · am größten"
+        ],
+        "alternative_definitions_de": [
+          "Von beträchtlicher räumlicher Ausdehnung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir brauchen einen großen Tisch für die ganze Familie.",
+            "ru": "Нам нужен большой стол для всей семьи."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gross-dimensions",
+            "de": "groß",
+            "part": "adj",
+            "forms": "groß · größer · am größten",
+            "definition_de": "Von beträchtlicher räumlicher Ausdehnung.",
+            "translations_ru": [
+              "большой",
+              "крупный"
+            ],
+            "grammar_hint": "CH: gross, grösser, am grössten. Перед существительным склоняется: ein großer Tisch, einen großen Tisch.",
+            "example": "Wir brauchen einen großen Tisch für die ganze Familie.",
+            "example_ru": "Нам нужен большой стол для всей семьи."
+          }
+        ],
+        "alias_ids": [
+          "b1-gross-dimensions"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-276-1",
+      "alias_ids": [
+        "b1-gross-height"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-276-1",
+        "de": "groß",
+        "lemma": "groß",
+        "ru": "высокий (о человеке); ростом (при указании роста); высокий (о росте)",
+        "uk": "",
+        "translations_ru": [
+          "высокий (о человеке)",
+          "ростом (при указании роста)",
+          "высокий (о росте)"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Знакомство",
+        "topics": [
+          "Знакомство",
+          "Семья и отношения"
+        ],
+        "forms": "größer · am größten",
+        "definition_de": "Von beträchtlicher Körperhöhe oder mit einer genannten Körperhöhe.",
+        "example": "Wie groß bist du?",
+        "example_ru": "Какого ты роста?",
+        "note": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "b9f2485665f52eb15ac8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wie groß bist du? — Какого ты роста? Ich bin 1,70 m groß. В Швейцарии: gross.\nWie groß bist du? — Какой у тебя рост? Для роста человека обычно groß, не hoch.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "groß · größer · am größten"
+        ],
+        "alternative_definitions_de": [
+          "Von einer bestimmten Körperhöhe oder von überdurchschnittlicher Körperhöhe."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Mein Sohn ist schon einen Meter siebzig groß.",
+            "ru": "Рост моего сына уже метр семьдесят."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gross-height",
+            "de": "groß",
+            "part": "adj",
+            "forms": "groß · größer · am größten",
+            "definition_de": "Von einer bestimmten Körperhöhe oder von überdurchschnittlicher Körperhöhe.",
+            "translations_ru": [
+              "высокий (о росте)"
+            ],
+            "grammar_hint": "Wie groß bist du? — Какой у тебя рост? Для роста человека обычно groß, не hoch.",
+            "example": "Mein Sohn ist schon einen Meter siebzig groß.",
+            "example_ru": "Рост моего сына уже метр семьдесят."
+          }
+        ],
+        "alias_ids": [
+          "b1-gross-height"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gro%C3%9F"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-278-1",
+      "alias_ids": [
+        "b1-grosseltern-family"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-278-1",
+        "de": "die Großeltern",
+        "lemma": "Großeltern",
+        "ru": "бабушка и дедушка",
+        "uk": "",
+        "translations_ru": [
+          "бабушка и дедушка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья",
+          "Семья и отношения"
+        ],
+        "forms": "только Plural в этом употреблении",
+        "definition_de": "Die Eltern der Mutter oder des Vaters.",
+        "example": "Meine Großeltern leben in Bern.",
+        "example_ru": "Мои бабушка и дедушка живут в Берне.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "92ed8203b0bb4bed89aa"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Groß- в названиях родства: die Großmutter, der Großvater; CH: Grosseltern, Grossmutter, Grossvater.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "только Plural: die Großeltern"
+        ],
+        "alternative_definitions_de": [
+          "Die Eltern der eigenen Eltern."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Am Sonntag besuchen wir unsere Großeltern.",
+            "ru": "В воскресенье мы навещаем бабушку и дедушку."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-grosseltern-family",
+            "de": "die Großeltern",
+            "part": "noun",
+            "forms": "только Plural: die Großeltern",
+            "definition_de": "Die Eltern der eigenen Eltern.",
+            "translations_ru": [
+              "бабушка и дедушка"
+            ],
+            "grammar_hint": "Groß- в названиях родства: die Großmutter, der Großvater; CH: Grosseltern, Grossmutter, Grossvater.",
+            "example": "Am Sonntag besuchen wir unsere Großeltern.",
+            "example_ru": "В воскресенье мы навещаем бабушку и дедушку."
+          }
+        ],
+        "alias_ids": [
+          "b1-grosseltern-family"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gro%C3%9Feltern"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-277-1",
+      "alias_ids": [
+        "b1-groesse-clothing"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-277-1",
+        "de": "die Größe",
+        "lemma": "Größe",
+        "ru": "размер (одежды); размер (одежды или обуви)",
+        "uk": "",
+        "translations_ru": [
+          "размер (одежды)",
+          "размер (одежды или обуви)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки",
+          "Покупки и услуги"
+        ],
+        "forms": "die Größen",
+        "definition_de": "Die Angabe, wie groß ein Kleidungsstück ist.",
+        "example": "Haben Sie diese Jacke in Größe 40?",
+        "example_ru": "У Вас есть эта куртка сорокового размера?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "f15a1c234e6596570e60"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "in Größe 38 — размера 38; Welche Größe tragen Sie? CH: Grösse.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine standardisierte Angabe, nach der Kleidung oder Schuhe ausgewählt werden."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Haben Sie diese Jacke in einer anderen Größe?",
+            "ru": "У вас есть эта куртка другого размера?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-groesse-clothing",
+            "de": "die Größe",
+            "part": "noun",
+            "forms": "die Größen",
+            "definition_de": "Eine standardisierte Angabe, nach der Kleidung oder Schuhe ausgewählt werden.",
+            "translations_ru": [
+              "размер (одежды или обуви)"
+            ],
+            "grammar_hint": "in Größe 38 — размера 38; Welche Größe tragen Sie? CH: Grösse.",
+            "example": "Haben Sie diese Jacke in einer anderen Größe?",
+            "example_ru": "У вас есть эта куртка другого размера?"
+          }
+        ],
+        "alias_ids": [
+          "b1-groesse-clothing"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gr%C3%B6%C3%9Fe"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-281-1",
+      "alias_ids": [
+        "b1-gruppe-people"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-281-1",
+        "de": "die Gruppe",
+        "lemma": "Gruppe",
+        "ru": "группа",
+        "uk": "",
+        "translations_ru": [
+          "группа"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование",
+          "Учёба и языки"
+        ],
+        "forms": "die Gruppen",
+        "definition_de": "Mehrere Personen, die zusammengehören oder zusammen etwas tun.",
+        "example": "Unsere Gruppe trifft sich um sechs.",
+        "example_ru": "Наша группа собирается в шесть.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "8fdbe9c73709fbf9fbd5"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "in einer Gruppe arbeiten; eine Gruppe von Lernenden.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Mehrere Menschen, die gemeinsam etwas tun oder zusammengehören."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Unsere Gruppe trifft sich jeden Dienstag.",
+            "ru": "Наша группа встречается каждый вторник."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gruppe-people",
+            "de": "die Gruppe",
+            "part": "noun",
+            "forms": "die Gruppen",
+            "definition_de": "Mehrere Menschen, die gemeinsam etwas tun oder zusammengehören.",
+            "translations_ru": [
+              "группа"
+            ],
+            "grammar_hint": "in einer Gruppe arbeiten; eine Gruppe von Lernenden.",
+            "example": "Unsere Gruppe trifft sich jeden Dienstag.",
+            "example_ru": "Наша группа встречается каждый вторник."
+          }
+        ],
+        "alias_ids": [
+          "b1-gruppe-people"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gruppe"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-282-1",
+      "alias_ids": [
+        "b1-gruss-greeting"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-282-1",
+        "de": "der Gruß",
+        "lemma": "Gruß",
+        "ru": "привет; приветствие",
+        "uk": "",
+        "translations_ru": [
+          "привет",
+          "приветствие"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "die Grüße",
+        "definition_de": "Worte, mit denen man jemanden grüßt.",
+        "example": "Viele Grüße an deine Familie!",
+        "example_ru": "Передавай привет своей семье!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "e11663cbe69965ae2ccd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "einen Gruß schicken; CH: der Gruss, die Grüsse.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein freundliches Zeichen der Aufmerksamkeit gegenüber einer Person."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Er schickte mir einen Gruß aus den Ferien.",
+            "ru": "Он прислал мне привет из отпуска."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gruss-greeting",
+            "de": "der Gruß",
+            "part": "noun",
+            "forms": "die Grüße",
+            "definition_de": "Ein freundliches Zeichen der Aufmerksamkeit gegenüber einer Person.",
+            "translations_ru": [
+              "привет",
+              "приветствие"
+            ],
+            "grammar_hint": "einen Gruß schicken; CH: der Gruss, die Grüsse.",
+            "example": "Er schickte mir einen Gruß aus den Ferien.",
+            "example_ru": "Он прислал мне привет из отпуска."
+          }
+        ],
+        "alias_ids": [
+          "b1-gruss-greeting"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gru%C3%9F"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

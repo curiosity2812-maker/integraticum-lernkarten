@@ -1,0 +1,3759 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1193,
+    1212
+  ],
+  "reviewed": 20,
+  "merge_count": 16,
+  "merge_target_count": 15,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1193,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Flüssigkeit durch den Mund aufnehmen. Example: Nach dem Spaziergang trinkt sie ein Glas Wasser.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 30,
+        "record": {
+          "id": "b1-trinken-beverage",
+          "de": "trinken",
+          "lemma": "trinken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пить",
+            "выпивать"
+          ],
+          "definition_de": "Flüssigkeit durch den Mund aufnehmen.",
+          "example": "Nach dem Spaziergang trinkt sie ein Glas Wasser.",
+          "example_ru": "После прогулки она выпивает стакан воды.",
+          "forms": "trinkt · trank · hat getrunken",
+          "grammar_hint": "etwas (Akk.) trinken; aus + Dativ trinken; ein Glas Wasser trinken.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trinken"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 37,
+          "record": {
+            "id": "food-trinken",
+            "de": "trinken",
+            "lemma": "trinken",
+            "ru": "пить; выпить",
+            "uk": "",
+            "translations_ru": [
+              "пить",
+              "выпить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "trinkt · trank · hat getrunken",
+            "definition_de": "Eine Flüssigkeit zu sich nehmen.",
+            "example": "Nach dem Sport trinke ich viel Wasser.",
+            "example_ru": "После спорта я пью много воды.",
+            "note": "Сильный глагол. etwas trinken + Akkusativ; du trinkst. Das Trinken — питьё (субстантивация), встречается в A1 в тематическом контексте стр. 24.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "78973702fd3ae1c5000b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "food-trinken",
+        "alias_id": "b1-trinken-beverage",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "food-trinken"
+      }
+    },
+    {
+      "candidate_number": 1194,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ohne oder mit sehr wenig Feuchtigkeit. Example: Die Jacke ist endlich wieder trocken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 2,
+        "record": {
+          "id": "b1-trocken-moisture",
+          "de": "trocken",
+          "lemma": "trocken",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "сухой"
+          ],
+          "definition_de": "Ohne oder mit sehr wenig Feuchtigkeit.",
+          "example": "Die Jacke ist endlich wieder trocken.",
+          "example_ru": "Куртка наконец снова сухая.",
+          "forms": "trocken · trockener · am trockensten",
+          "grammar_hint": "ein trockenes Handtuch; trocken werden — высыхать.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trocken"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 331,
+          "record": {
+            "id": "dict_a4a588eb60fd97729d3d",
+            "de": "trocken",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "сухой"
+            ],
+            "definition_de": "Ohne Nässe, beispielsweise nach dem Trocknen von Kleidung.",
+            "forms": "trocken · trockener · am trockensten",
+            "example": "Die Handtücher sind schon trocken.",
+            "example_ru": "Полотенца уже сухие.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/trocken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a4a588eb60fd97729d3d",
+        "alias_id": "b1-trocken-moisture",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a4a588eb60fd97729d3d"
+      }
+    },
+    {
+      "candidate_number": 1195,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ohne Niederschlag oder mit wenig Regen. Example: Am Wochenende bleibt es trocken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 3,
+        "record": {
+          "id": "b1-trocken-weather",
+          "de": "trocken",
+          "lemma": "trocken",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "сухой (о погоде)",
+            "без осадков"
+          ],
+          "definition_de": "Ohne Niederschlag oder mit wenig Regen.",
+          "example": "Am Wochenende bleibt es trocken.",
+          "example_ru": "На выходных будет сухая погода.",
+          "forms": "trocken · trockener · am trockensten",
+          "grammar_hint": "es bleibt trocken; trockenes Klima. Связано с основным значением.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trocken"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 331,
+          "record": {
+            "id": "dict_a4a588eb60fd97729d3d",
+            "de": "trocken",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "сухой"
+            ],
+            "definition_de": "Ohne Nässe, beispielsweise nach dem Trocknen von Kleidung.",
+            "forms": "trocken · trockener · am trockensten",
+            "example": "Die Handtücher sind schon trocken.",
+            "example_ru": "Полотенца уже сухие.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/trocken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a4a588eb60fd97729d3d",
+        "alias_id": "b1-trocken-weather",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a4a588eb60fd97729d3d"
+      }
+    },
+    {
+      "candidate_number": 1196,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bei Wein: mit einem geringen Gehalt an Restzucker. Example: Der Gast bestellt einen trockenen Weißwein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 4,
+        "record": {
+          "id": "b1-trocken-wine",
+          "de": "trocken",
+          "lemma": "trocken",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "сухой (о вине)"
+          ],
+          "definition_de": "Bei Wein: mit einem geringen Gehalt an Restzucker.",
+          "example": "Der Gast bestellt einen trockenen Weißwein.",
+          "example_ru": "Гость заказывает сухое белое вино.",
+          "forms": "trocken · trockener · am trockensten",
+          "grammar_hint": "trockener Wein — сухое вино; противоположность: süß, lieblich.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trocken"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 331,
+          "record": {
+            "id": "dict_a4a588eb60fd97729d3d",
+            "de": "trocken",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "сухой"
+            ],
+            "definition_de": "Ohne Nässe, beispielsweise nach dem Trocknen von Kleidung.",
+            "forms": "trocken · trockener · am trockensten",
+            "example": "Die Handtücher sind schon trocken.",
+            "example_ru": "Полотенца уже сухие.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/trocken"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1197,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein saugfähiges Stück Stoff zum Abtrocknen. Example: Im Bad liegen zwei frische Handtücher.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 13,
+        "record": {
+          "id": "b1-handtuch-towel",
+          "de": "das Handtuch",
+          "lemma": "Handtuch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "полотенце"
+          ],
+          "definition_de": "Ein saugfähiges Stück Stoff zum Abtrocknen.",
+          "example": "Im Bad liegen zwei frische Handtücher.",
+          "example_ru": "В ванной лежат два свежих полотенца.",
+          "forms": "die Handtücher",
+          "grammar_hint": "sich mit einem Handtuch abtrocknen; род по Tuch.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "context",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Handtuch"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 23,
+          "record": {
+            "id": "dict_c8c26ef0676727d6fe3d",
+            "de": "das Handtuch",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "полотенце"
+            ],
+            "definition_de": "Ein Stück Stoff, mit dem man sich abtrocknet.",
+            "forms": "Plural · die Handtücher",
+            "example": "Im Bad liegt ein sauberes Handtuch für dich.",
+            "example_ru": "В ванной для тебя лежит чистое полотенце.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Handtuch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c8c26ef0676727d6fe3d",
+        "alias_id": "b1-handtuch-towel",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c8c26ef0676727d6fe3d"
+      }
+    },
+    {
+      "candidate_number": 1198,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Handlung ausführen. Example: Was sollen wir jetzt tun?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 15,
+        "record": {
+          "id": "b1-tun-action",
+          "de": "tun",
+          "lemma": "tun",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "делать",
+            "совершать"
+          ],
+          "definition_de": "Eine Handlung ausführen.",
+          "example": "Was sollen wir jetzt tun?",
+          "example_ru": "Что нам теперь делать?",
+          "forms": "tut · tat · hat getan",
+          "grammar_hint": "etwas (Akk.) tun; viel zu tun haben — иметь много дел. Не во всех сочетаниях взаимозаменяемо с machen.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tun"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 707,
+          "record": {
+            "id": "a1-574-1",
+            "de": "tun",
+            "lemma": "tun",
+            "ru": "делать",
+            "uk": "",
+            "translations_ru": [
+              "делать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "tut · tat · hat getan",
+            "definition_de": "Etwas machen oder ausführen.",
+            "example": "Was kann ich für dich tun?",
+            "example_ru": "Что я могу для тебя сделать?",
+            "note": "tun — делать. Что-то болит: Mein Rücken tut weh (wehtun). Es tut mir leid — мне жаль; mir стоит в Dativ. Отдельные значения ставить/класть здесь не подтверждены.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "866172c60f53a1be61bb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-574-1",
+        "alias_id": "b1-tun-action",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-574-1"
+      }
+    },
+    {
+      "candidate_number": 1199,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Etwas an eine bestimmte Stelle bringen. Example: Tu bitte etwas Salz in die Suppe.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 16,
+        "record": {
+          "id": "b1-tun-put",
+          "de": "tun",
+          "lemma": "tun",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "класть",
+            "добавлять"
+          ],
+          "definition_de": "Etwas an eine bestimmte Stelle bringen.",
+          "example": "Tu bitte etwas Salz in die Suppe.",
+          "example_ru": "Добавь, пожалуйста, немного соли в суп.",
+          "forms": "tut · tat · hat getan",
+          "grammar_hint": "etwas (Akk.) in etwas (Akk.) tun; разговорное употребление вместо legen, geben, hinzufügen по контексту.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tun"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 707,
+          "record": {
+            "id": "a1-574-1",
+            "de": "tun",
+            "lemma": "tun",
+            "ru": "делать",
+            "uk": "",
+            "translations_ru": [
+              "делать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "tut · tat · hat getan",
+            "definition_de": "Etwas machen oder ausführen.",
+            "example": "Was kann ich für dich tun?",
+            "example_ru": "Что я могу для тебя сделать?",
+            "note": "tun — делать. Что-то болит: Mein Rücken tut weh (wehtun). Es tut mir leid — мне жаль; mir стоит в Dativ. Отдельные значения ставить/класть здесь не подтверждены.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "866172c60f53a1be61bb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1200,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Schmerzen verursachen oder schmerzhaft sein. Example: Meine Schulter tut mir seit gestern weh.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 18,
+        "record": {
+          "id": "b1-wehtun-pain",
+          "de": "wehtun",
+          "lemma": "wehtun",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "болеть",
+            "причинять боль"
+          ],
+          "definition_de": "Schmerzen verursachen oder schmerzhaft sein.",
+          "example": "Meine Schulter tut mir seit gestern weh.",
+          "example_ru": "У меня со вчерашнего дня болит плечо.",
+          "forms": "tut weh · tat weh · hat wehgetan",
+          "grammar_hint": "jemandem (Dat.) wehtun; часть тела — подлежащее: Meine Knie tun mir weh. Отделяемый глагол.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "context",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wehtun"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 736,
+          "record": {
+            "id": "a1-613-1",
+            "de": "wehtun",
+            "lemma": "wehtun",
+            "ru": "болеть; причинять боль",
+            "uk": "",
+            "translations_ru": [
+              "болеть",
+              "причинять боль"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "tut weh · tat weh · hat wehgetan",
+            "definition_de": "Schmerzen verursachen.",
+            "example": "Mein Fuß tut weh.",
+            "example_ru": "У меня болит стопа.",
+            "note": "Dativ у лица, испытывающего боль: Mir tut der Rücken weh. Отделяемый глагол.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "060d0eb34162aa147763"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 216,
+          "record": {
+            "id": "dict_dac7065fb281ba5ad743",
+            "de": "wehtun",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "причинять боль",
+              "делать больно"
+            ],
+            "definition_de": "Einer anderen Person Schmerzen zufügen.",
+            "forms": "tut weh · tat weh · hat wehgetan",
+            "example": "Pass auf, du tust mir weh!",
+            "example_ru": "Осторожно, ты делаешь мне больно!",
+            "grammar_hint": "Dativ у того, кому причиняют боль.",
+            "usage_note": "Значение «болеть (о части тела)» уже представлено на A1; здесь выделено причинение боли другому человеку. jemandem wehtun (Dativ). Отделяемый глагол: Tu mir nicht weh!",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wehtun"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-613-1",
+        "alias_id": "b1-wehtun-pain",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-613-1"
+      }
+    },
+    {
+      "candidate_number": 1201,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein beweglicher Verschluss für einen Eingang. Example: Vor der Tür steht ein Paket.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 20,
+        "record": {
+          "id": "b1-tuer-door",
+          "de": "die Tür",
+          "lemma": "Tür",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дверь"
+          ],
+          "definition_de": "Ein beweglicher Verschluss für einen Eingang.",
+          "example": "Vor der Tür steht ein Paket.",
+          "example_ru": "Перед дверью стоит посылка.",
+          "forms": "die Türen",
+          "grammar_hint": "die Tür öffnen/schließen; an die Tür klopfen; CH написание schließen → schliessen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/T%C3%BCr"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 802,
+          "record": {
+            "id": "dict_ef00118918ca2f62077d",
+            "de": "die Tür",
+            "part": "noun",
+            "level": "A1",
+            "translations_ru": [
+              "дверь"
+            ],
+            "definition_de": "Ein beweglicher Teil, mit dem man einen Eingang oder Durchgang öffnet und schließt.",
+            "forms": "die Türen",
+            "example": "Mach bitte die Tür leise zu.",
+            "example_ru": "Закрой дверь тихо, пожалуйста.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "scope": "attested_example"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "scope": "attested_example"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "attested_example"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "scope": "attested_example"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "scope": "attested_example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/T%C3%BCr",
+                "scope": "meaning"
+              }
+            ],
+            "lemma": "Tür",
+            "ru": "дверь",
+            "uk": "двері",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "note": "A1: неоднократно засвидетельствовано в примерах, A2: отдельный заголовок. die Tür öffnen/schließen; an der Tür.",
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ef00118918ca2f62077d",
+        "alias_id": "b1-tuer-door",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ef00118918ca2f62077d"
+      }
+    },
+    {
+      "candidate_number": 1202,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Für eine Person, Gruppe oder Sache besonders kennzeichnend. Example: Dieses Gericht ist typisch für die Region.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 25,
+        "record": {
+          "id": "b1-typisch-characteristic",
+          "de": "typisch",
+          "lemma": "typisch",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "типичный",
+            "характерный",
+            "типично"
+          ],
+          "definition_de": "Für eine Person, Gruppe oder Sache besonders kennzeichnend.",
+          "example": "Dieses Gericht ist typisch für die Region.",
+          "example_ru": "Это блюдо характерно для региона.",
+          "forms": "typisch · typischer · am typischsten",
+          "grammar_hint": "typisch für + Akk.; Das ist typisch für ihn! — Это в его духе!",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/typisch"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 303,
+          "record": {
+            "id": "dict_e5fe23834b06649da9a0",
+            "de": "typisch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "типичный",
+              "характерный"
+            ],
+            "definition_de": "So, wie man es von einer Person, Sache oder Gruppe kennt.",
+            "forms": "typisch · typischer · am typischsten",
+            "example": "Dieses Gericht ist typisch für die Region.",
+            "example_ru": "Это блюдо типично для региона.",
+            "grammar_hint": "typisch für + Akkusativ: typisch für diese Region. Typisch Anna! — В духе Анны!",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/typisch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_e5fe23834b06649da9a0",
+        "alias_id": "b1-typisch-characteristic",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_e5fe23834b06649da9a0"
+      }
+    },
+    {
+      "candidate_number": 1203,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Fertigkeit durch Wiederholung verbessern. Example: Wir üben heute die Aussprache langer Wörter.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 27,
+        "record": {
+          "id": "b1-ueben-practise",
+          "de": "üben",
+          "lemma": "üben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "упражняться",
+            "практиковаться",
+            "тренировать"
+          ],
+          "definition_de": "Eine Fertigkeit durch Wiederholung verbessern.",
+          "example": "Wir üben heute die Aussprache langer Wörter.",
+          "example_ru": "Сегодня мы тренируем произношение длинных слов.",
+          "forms": "übt · übte · hat geübt",
+          "grammar_hint": "etwas (Akk.) üben; für eine Prüfung üben; üben, etwas zu tun.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCben"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 418,
+          "record": {
+            "id": "dict_e2ebb443040cc7d26a20",
+            "de": "üben",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "упражняться",
+              "тренироваться",
+              "практиковаться"
+            ],
+            "definition_de": "Eine Tätigkeit wiederholen, um sie besser zu beherrschen.",
+            "forms": "übt · übte · hat geübt",
+            "example": "Ich übe jeden Abend die Aussprache.",
+            "example_ru": "Я каждый вечер тренирую произношение.",
+            "grammar_hint": "etwas (Akkusativ) üben — тренировать что-либо, например die Aussprache; auch ohne Objekt: Ich übe jeden Tag.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/%C3%BCben"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_e2ebb443040cc7d26a20",
+        "alias_id": "b1-ueben-practise",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_e2ebb443040cc7d26a20"
+      }
+    },
+    {
+      "candidate_number": 1204,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet eine räumlich höhere Lage ohne unmittelbaren Kontakt. Example: Über dem Sofa hängt eine kleine Lampe.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_101.json",
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "batch": 101,
+        "row": 30,
+        "record": {
+          "id": "b1-ueber-above",
+          "de": "über",
+          "lemma": "über",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "над",
+            "выше"
+          ],
+          "definition_de": "Bezeichnet eine räumlich höhere Lage ohne unmittelbaren Kontakt.",
+          "example": "Über dem Sofa hängt eine kleine Lampe.",
+          "example_ru": "Над диваном висит маленькая лампа.",
+          "forms": "Wechselpräposition: Dativ / Akkusativ",
+          "grammar_hint": "Wo? über + Dat. (über dem Sofa); Wohin? über + Akk. (die Lampe über das Sofa hängen). Остальные значения отдельно; возможный дубль ранее изученного предлога.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 708,
+          "record": {
+            "id": "a1-575-1",
+            "de": "über",
+            "lemma": "über",
+            "ru": "через (с одной стороны на другую)",
+            "uk": "",
+            "translations_ru": [
+              "через (с одной стороны на другую)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+            "example": "Wir gehen über die Straße.",
+            "example_ru": "Мы переходим улицу.",
+            "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 709,
+          "record": {
+            "id": "a1-575-2",
+            "de": "über",
+            "lemma": "über",
+            "ru": "над (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "над (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ bei einem festen Ort",
+            "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+            "example": "Die Lampe hängt über dem Tisch.",
+            "example_ru": "Лампа висит над столом.",
+            "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 710,
+          "record": {
+            "id": "a1-575-3",
+            "de": "über",
+            "lemma": "über",
+            "ru": "больше; свыше; старше (о возрасте)",
+            "uk": "",
+            "translations_ru": [
+              "больше",
+              "свыше",
+              "старше (о возрасте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "über + числовое выражение",
+            "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+            "example": "Die Teilnehmer sind über achtzehn.",
+            "example_ru": "Участникам больше восемнадцати.",
+            "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 606,
+          "record": {
+            "id": "dict_31dedfe24b52464b8dd1-topic",
+            "de": "über",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+            "example": "Wir sprechen über den neuen Film.",
+            "example_ru": "Мы говорим о новом фильме.",
+            "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+            "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense",
+                "context": "informieren (sich) über; Artikel über"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-575-2",
+        "alias_id": "b1-ueber-above",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-575-2"
+      }
+    },
+    {
+      "candidate_number": 1205,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet einen Weg quer durch einen Bereich oder über ein Hindernis. Example: Wir gehen über die Brücke zum Park.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 1,
+        "record": {
+          "id": "b1-ueber-cross",
+          "de": "über",
+          "lemma": "über",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "через",
+            "по другую сторону"
+          ],
+          "definition_de": "Bezeichnet einen Weg quer durch einen Bereich oder über ein Hindernis.",
+          "example": "Wir gehen über die Brücke zum Park.",
+          "example_ru": "Мы идём через мост в парк.",
+          "forms": "Akkusativ",
+          "grammar_hint": "über die Brücke gehen; über den Zaun springen. При пересечении — Akkusativ, а не просто любое движение.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 708,
+          "record": {
+            "id": "a1-575-1",
+            "de": "über",
+            "lemma": "über",
+            "ru": "через (с одной стороны на другую)",
+            "uk": "",
+            "translations_ru": [
+              "через (с одной стороны на другую)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+            "example": "Wir gehen über die Straße.",
+            "example_ru": "Мы переходим улицу.",
+            "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 709,
+          "record": {
+            "id": "a1-575-2",
+            "de": "über",
+            "lemma": "über",
+            "ru": "над (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "над (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ bei einem festen Ort",
+            "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+            "example": "Die Lampe hängt über dem Tisch.",
+            "example_ru": "Лампа висит над столом.",
+            "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 710,
+          "record": {
+            "id": "a1-575-3",
+            "de": "über",
+            "lemma": "über",
+            "ru": "больше; свыше; старше (о возрасте)",
+            "uk": "",
+            "translations_ru": [
+              "больше",
+              "свыше",
+              "старше (о возрасте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "über + числовое выражение",
+            "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+            "example": "Die Teilnehmer sind über achtzehn.",
+            "example_ru": "Участникам больше восемнадцати.",
+            "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 606,
+          "record": {
+            "id": "dict_31dedfe24b52464b8dd1-topic",
+            "de": "über",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+            "example": "Wir sprechen über den neuen Film.",
+            "example_ru": "Мы говорим о новом фильме.",
+            "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+            "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense",
+                "context": "informieren (sich) über; Artikel über"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-575-1",
+        "alias_id": "b1-ueber-cross",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-575-1"
+      }
+    },
+    {
+      "candidate_number": 1206,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Kennzeichnet einen Zwischenort auf einem Weg. Example: Der Zug fährt über Bern nach Lausanne.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 2,
+        "record": {
+          "id": "b1-ueber-via",
+          "de": "über",
+          "lemma": "über",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "через",
+            "с пересадкой в",
+            "по маршруту через"
+          ],
+          "definition_de": "Kennzeichnet einen Zwischenort auf einem Weg.",
+          "example": "Der Zug fährt über Bern nach Lausanne.",
+          "example_ru": "Поезд идёт в Лозанну через Берн.",
+          "forms": "Akkusativ",
+          "grammar_hint": "über + Akk. при обозначении маршрута; названия городов обычно без артикля.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 708,
+          "record": {
+            "id": "a1-575-1",
+            "de": "über",
+            "lemma": "über",
+            "ru": "через (с одной стороны на другую)",
+            "uk": "",
+            "translations_ru": [
+              "через (с одной стороны на другую)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+            "example": "Wir gehen über die Straße.",
+            "example_ru": "Мы переходим улицу.",
+            "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 709,
+          "record": {
+            "id": "a1-575-2",
+            "de": "über",
+            "lemma": "über",
+            "ru": "над (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "над (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ bei einem festen Ort",
+            "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+            "example": "Die Lampe hängt über dem Tisch.",
+            "example_ru": "Лампа висит над столом.",
+            "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 710,
+          "record": {
+            "id": "a1-575-3",
+            "de": "über",
+            "lemma": "über",
+            "ru": "больше; свыше; старше (о возрасте)",
+            "uk": "",
+            "translations_ru": [
+              "больше",
+              "свыше",
+              "старше (о возрасте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "über + числовое выражение",
+            "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+            "example": "Die Teilnehmer sind über achtzehn.",
+            "example_ru": "Участникам больше восемнадцати.",
+            "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 606,
+          "record": {
+            "id": "dict_31dedfe24b52464b8dd1-topic",
+            "de": "über",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+            "example": "Wir sprechen über den neuen Film.",
+            "example_ru": "Мы говорим о новом фильме.",
+            "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+            "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense",
+                "context": "informieren (sich) über; Artikel über"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1207,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bezeichnet einen Zeitraum, in dem etwas geschieht oder andauert. Example: Über die Feiertage bleibt das Büro geschlossen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 3,
+        "record": {
+          "id": "b1-ueber-duration",
+          "de": "über",
+          "lemma": "über",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "на протяжении",
+            "в течение",
+            "на (период времени)"
+          ],
+          "definition_de": "Bezeichnet einen Zeitraum, in dem etwas geschieht oder andauert.",
+          "example": "Über die Feiertage bleibt das Büro geschlossen.",
+          "example_ru": "На время праздников офис будет закрыт.",
+          "forms": "Akkusativ",
+          "grammar_hint": "über + Akk.; übers = über das; auch: den ganzen Tag über. Не путать с количественным über.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 708,
+          "record": {
+            "id": "a1-575-1",
+            "de": "über",
+            "lemma": "über",
+            "ru": "через (с одной стороны на другую)",
+            "uk": "",
+            "translations_ru": [
+              "через (с одной стороны на другую)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+            "example": "Wir gehen über die Straße.",
+            "example_ru": "Мы переходим улицу.",
+            "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 709,
+          "record": {
+            "id": "a1-575-2",
+            "de": "über",
+            "lemma": "über",
+            "ru": "над (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "над (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ bei einem festen Ort",
+            "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+            "example": "Die Lampe hängt über dem Tisch.",
+            "example_ru": "Лампа висит над столом.",
+            "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 710,
+          "record": {
+            "id": "a1-575-3",
+            "de": "über",
+            "lemma": "über",
+            "ru": "больше; свыше; старше (о возрасте)",
+            "uk": "",
+            "translations_ru": [
+              "больше",
+              "свыше",
+              "старше (о возрасте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "über + числовое выражение",
+            "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+            "example": "Die Teilnehmer sind über achtzehn.",
+            "example_ru": "Участникам больше восемнадцати.",
+            "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 606,
+          "record": {
+            "id": "dict_31dedfe24b52464b8dd1-topic",
+            "de": "über",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+            "example": "Wir sprechen über den neuen Film.",
+            "example_ru": "Мы говорим о новом фильме.",
+            "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+            "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense",
+                "context": "informieren (sich) über; Artikel über"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1208,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zeigt an, dass eine genannte Menge oder Grenze überschritten wird. Example: Mit über hundert Gästen war der Saal voll.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 4,
+        "record": {
+          "id": "b1-ueber-more",
+          "de": "über",
+          "lemma": "über",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "более",
+            "свыше",
+            "больше"
+          ],
+          "definition_de": "Zeigt an, dass eine genannte Menge oder Grenze überschritten wird.",
+          "example": "Mit über hundert Gästen war der Saal voll.",
+          "example_ru": "При более чем ста гостях зал был полон.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Количественное наречие: не управляет падежом. Mit über hundert Gästen — Dativ из-за mit. Сравните: eine Rechnung über 100 Franken — счёт ровно на 100 франков.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 708,
+          "record": {
+            "id": "a1-575-1",
+            "de": "über",
+            "lemma": "über",
+            "ru": "через (с одной стороны на другую)",
+            "uk": "",
+            "translations_ru": [
+              "через (с одной стороны на другую)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+            "example": "Wir gehen über die Straße.",
+            "example_ru": "Мы переходим улицу.",
+            "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 709,
+          "record": {
+            "id": "a1-575-2",
+            "de": "über",
+            "lemma": "über",
+            "ru": "над (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "над (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ bei einem festen Ort",
+            "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+            "example": "Die Lampe hängt über dem Tisch.",
+            "example_ru": "Лампа висит над столом.",
+            "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 710,
+          "record": {
+            "id": "a1-575-3",
+            "de": "über",
+            "lemma": "über",
+            "ru": "больше; свыше; старше (о возрасте)",
+            "uk": "",
+            "translations_ru": [
+              "больше",
+              "свыше",
+              "старше (о возрасте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "über + числовое выражение",
+            "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+            "example": "Die Teilnehmer sind über achtzehn.",
+            "example_ru": "Участникам больше восемнадцати.",
+            "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 606,
+          "record": {
+            "id": "dict_31dedfe24b52464b8dd1-topic",
+            "de": "über",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+            "example": "Wir sprechen über den neuen Film.",
+            "example_ru": "Мы говорим о новом фильме.",
+            "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+            "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense",
+                "context": "informieren (sich) über; Artikel über"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-575-3",
+        "alias_id": "b1-ueber-more",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-575-3"
+      }
+    },
+    {
+      "candidate_number": 1209,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Gibt das Thema eines Gesprächs, Textes oder Gedankens an. Example: Wir sprechen über die neue Wohnung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 5,
+        "record": {
+          "id": "b1-ueber-topic",
+          "de": "über",
+          "lemma": "über",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "о",
+            "об",
+            "на тему"
+          ],
+          "definition_de": "Gibt das Thema eines Gesprächs, Textes oder Gedankens an.",
+          "example": "Wir sprechen über die neue Wohnung.",
+          "example_ru": "Мы говорим о новой квартире.",
+          "forms": "Akkusativ",
+          "grammar_hint": "über + Akk.; sprechen, diskutieren, nachdenken über; worüber? — о чём?",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 708,
+          "record": {
+            "id": "a1-575-1",
+            "de": "über",
+            "lemma": "über",
+            "ru": "через (с одной стороны на другую)",
+            "uk": "",
+            "translations_ru": [
+              "через (с одной стороны на другую)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+            "example": "Wir gehen über die Straße.",
+            "example_ru": "Мы переходим улицу.",
+            "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 709,
+          "record": {
+            "id": "a1-575-2",
+            "de": "über",
+            "lemma": "über",
+            "ru": "над (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "над (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Dativ bei einem festen Ort",
+            "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+            "example": "Die Lampe hängt über dem Tisch.",
+            "example_ru": "Лампа висит над столом.",
+            "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 710,
+          "record": {
+            "id": "a1-575-3",
+            "de": "über",
+            "lemma": "über",
+            "ru": "больше; свыше; старше (о возрасте)",
+            "uk": "",
+            "translations_ru": [
+              "больше",
+              "свыше",
+              "старше (о возрасте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "über + числовое выражение",
+            "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+            "example": "Die Teilnehmer sind über achtzehn.",
+            "example_ru": "Участникам больше восемнадцати.",
+            "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5d868f1db2c71c436fe7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 606,
+          "record": {
+            "id": "dict_31dedfe24b52464b8dd1-topic",
+            "de": "über",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+            "example": "Wir sprechen über den neuen Film.",
+            "example_ru": "Мы говорим о новом фильме.",
+            "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+            "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense",
+                "context": "informieren (sich) über; Artikel über"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_31dedfe24b52464b8dd1-topic",
+        "alias_id": "b1-ueber-topic",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_31dedfe24b52464b8dd1-topic"
+      }
+    },
+    {
+      "candidate_number": 1210,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet sämtliche Orte innerhalb des gemeinten Bereichs. Example: In der Altstadt sieht man überall Blumen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 6,
+        "record": {
+          "id": "b1-ueberall-place",
+          "de": "überall",
+          "lemma": "überall",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "везде",
+            "повсюду"
+          ],
+          "definition_de": "Bezeichnet sämtliche Orte innerhalb des gemeinten Bereichs.",
+          "example": "In der Altstadt sieht man überall Blumen.",
+          "example_ru": "В старом городе повсюду видны цветы.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Wo? überall; Wohin? überallhin; противоположность: nirgends, nirgendwo.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCberall"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 424,
+          "record": {
+            "id": "dict_5deb0b77f25cd690524a",
+            "de": "überall",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "везде",
+              "всюду"
+            ],
+            "definition_de": "An jedem Ort oder an allen gemeinten Orten.",
+            "example": "Im Frühling sieht man überall Blumen.",
+            "example_ru": "Весной повсюду видны цветы.",
+            "grammar_hint": "Отвечает на Wo?; не склоняется.",
+            "usage_note": "Антоним: nirgends.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/%C3%BCberall"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_5deb0b77f25cd690524a",
+        "alias_id": "b1-ueberall-place",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_5deb0b77f25cd690524a"
+      }
+    },
+    {
+      "candidate_number": 1211,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet den zweiten Tag nach dem heutigen Tag. Example: Übermorgen beginnt der neue Kurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 13,
+        "record": {
+          "id": "b1-uebermorgen-day",
+          "de": "übermorgen",
+          "lemma": "übermorgen",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "послезавтра"
+          ],
+          "definition_de": "Bezeichnet den zweiten Tag nach dem heutigen Tag.",
+          "example": "Übermorgen beginnt der neue Kurs.",
+          "example_ru": "Послезавтра начинается новый курс.",
+          "forms": "unveränderlich",
+          "grammar_hint": "heute — morgen — übermorgen; в начале предложения после временного обстоятельства глагол на второй позиции.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCbermorgen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 279,
+          "record": {
+            "id": "dict_0233774972319c60b7aa",
+            "de": "übermorgen",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "послезавтра"
+            ],
+            "definition_de": "Am Tag nach morgen.",
+            "forms": "",
+            "example": "Übermorgen beginnt der neue Deutschkurs.",
+            "example_ru": "Послезавтра начинается новый курс немецкого.",
+            "grammar_hint": "Если übermorgen стоит первым в главном предложении, сразу после него ставим спрягаемый глагол: Übermorgen beginnt …",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/%C3%BCbermorgen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0233774972319c60b7aa",
+        "alias_id": "b1-uebermorgen-day",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0233774972319c60b7aa"
+      }
+    },
+    {
+      "candidate_number": 1212,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Nacht an einem bestimmten, oft vorübergehenden Ort verbringen. Example: Wir übernachten bei Freunden in Basel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 14,
+        "record": {
+          "id": "b1-uebernachten-stay",
+          "de": "übernachten",
+          "lemma": "übernachten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ночевать",
+            "переночевать"
+          ],
+          "definition_de": "Die Nacht an einem bestimmten, oft vorübergehenden Ort verbringen.",
+          "example": "Wir übernachten bei Freunden in Basel.",
+          "example_ru": "Мы ночуем у друзей в Базеле.",
+          "forms": "übernachtet · übernachtete · hat übernachtet",
+          "grammar_hint": "bei + Dat. у кого-либо; in + Dat. где-либо; неотделяемый глагол, Perfekt с haben.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCbernachten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 711,
+          "record": {
+            "id": "a1-576-1",
+            "de": "übernachten",
+            "lemma": "übernachten",
+            "ru": "ночевать; переночевать",
+            "uk": "",
+            "translations_ru": [
+              "ночевать",
+              "переночевать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "übernachtet · übernachtete · hat übernachtet",
+            "definition_de": "Die Nacht an einem bestimmten Ort verbringen.",
+            "example": "Wir übernachten bei Freunden.",
+            "example_ru": "Мы ночуем у друзей.",
+            "note": "bei Freunden (Dativ), im Hotel; неотделяемая приставка über-, Partizip II без ge-.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "1925c8b396aa4d3ef23a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-576-1",
+        "alias_id": "b1-uebernachten-stay",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-576-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "food-trinken",
+      "alias_ids": [
+        "b1-trinken-beverage"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "food-trinken",
+        "de": "trinken",
+        "lemma": "trinken",
+        "ru": "пить; выпить",
+        "uk": "",
+        "translations_ru": [
+          "пить",
+          "выпить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "trinkt · trank · hat getrunken",
+        "definition_de": "Eine Flüssigkeit zu sich nehmen.",
+        "example": "Nach dem Sport trinke ich viel Wasser.",
+        "example_ru": "После спорта я пью много воды.",
+        "note": "Сильный глагол. etwas trinken + Akkusativ; du trinkst. Das Trinken — питьё (субстантивация), встречается в A1 в тематическом контексте стр. 24.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "78973702fd3ae1c5000b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-trinken-beverage"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-trinken-beverage",
+            "de": "trinken",
+            "part": "verb",
+            "forms": "trinkt · trank · hat getrunken",
+            "definition_de": "Flüssigkeit durch den Mund aufnehmen.",
+            "translations_ru": [
+              "пить",
+              "выпивать"
+            ],
+            "grammar_hint": "etwas (Akk.) trinken; aus + Dativ trinken; ein Glas Wasser trinken.",
+            "example": "Nach dem Spaziergang trinkt sie ein Glas Wasser.",
+            "example_ru": "После прогулки она выпивает стакан воды."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trinken"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a4a588eb60fd97729d3d",
+      "alias_ids": [
+        "b1-trocken-moisture",
+        "b1-trocken-weather"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a4a588eb60fd97729d3d",
+        "de": "trocken",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "сухой"
+        ],
+        "definition_de": "Ohne Nässe, beispielsweise nach dem Trocknen von Kleidung.",
+        "forms": "trocken · trockener · am trockensten",
+        "example": "Die Handtücher sind schon trocken.",
+        "example_ru": "Полотенца уже сухие.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/trocken"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-trocken-moisture",
+          "b1-trocken-weather"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-trocken-moisture",
+            "de": "trocken",
+            "part": "adjective",
+            "forms": "trocken · trockener · am trockensten",
+            "definition_de": "Ohne oder mit sehr wenig Feuchtigkeit.",
+            "translations_ru": [
+              "сухой"
+            ],
+            "grammar_hint": "ein trockenes Handtuch; trocken werden — высыхать.",
+            "example": "Die Jacke ist endlich wieder trocken.",
+            "example_ru": "Куртка наконец снова сухая."
+          },
+          {
+            "id": "b1-trocken-weather",
+            "de": "trocken",
+            "part": "adjective",
+            "forms": "trocken · trockener · am trockensten",
+            "definition_de": "Ohne Niederschlag oder mit wenig Regen.",
+            "translations_ru": [
+              "сухой (о погоде)",
+              "без осадков"
+            ],
+            "grammar_hint": "es bleibt trocken; trockenes Klima. Связано с основным значением.",
+            "example": "Am Wochenende bleibt es trocken.",
+            "example_ru": "На выходных будет сухая погода."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trocken"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/trocken"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_c8c26ef0676727d6fe3d",
+      "alias_ids": [
+        "b1-handtuch-towel"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c8c26ef0676727d6fe3d",
+        "de": "das Handtuch",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "полотенце"
+        ],
+        "definition_de": "Ein Stück Stoff, mit dem man sich abtrocknet.",
+        "forms": "Plural · die Handtücher",
+        "example": "Im Bad liegt ein sauberes Handtuch für dich.",
+        "example_ru": "В ванной для тебя лежит чистое полотенце.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Handtuch"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-handtuch-towel"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-handtuch-towel",
+            "de": "das Handtuch",
+            "part": "noun",
+            "forms": "die Handtücher",
+            "definition_de": "Ein saugfähiges Stück Stoff zum Abtrocknen.",
+            "translations_ru": [
+              "полотенце"
+            ],
+            "grammar_hint": "sich mit einem Handtuch abtrocknen; род по Tuch.",
+            "example": "Im Bad liegen zwei frische Handtücher.",
+            "example_ru": "В ванной лежат два свежих полотенца."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "context",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Handtuch"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-574-1",
+      "alias_ids": [
+        "b1-tun-action"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-574-1",
+        "de": "tun",
+        "lemma": "tun",
+        "ru": "делать",
+        "uk": "",
+        "translations_ru": [
+          "делать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "tut · tat · hat getan",
+        "definition_de": "Etwas machen oder ausführen.",
+        "example": "Was kann ich für dich tun?",
+        "example_ru": "Что я могу для тебя сделать?",
+        "note": "tun — делать. Что-то болит: Mein Rücken tut weh (wehtun). Es tut mir leid — мне жаль; mir стоит в Dativ. Отдельные значения ставить/класть здесь не подтверждены.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "866172c60f53a1be61bb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-tun-action"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tun-action",
+            "de": "tun",
+            "part": "verb",
+            "forms": "tut · tat · hat getan",
+            "definition_de": "Eine Handlung ausführen.",
+            "translations_ru": [
+              "делать",
+              "совершать"
+            ],
+            "grammar_hint": "etwas (Akk.) tun; viel zu tun haben — иметь много дел. Не во всех сочетаниях взаимозаменяемо с machen.",
+            "example": "Was sollen wir jetzt tun?",
+            "example_ru": "Что нам теперь делать?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tun"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-613-1",
+      "alias_ids": [
+        "b1-wehtun-pain"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-613-1",
+        "de": "wehtun",
+        "lemma": "wehtun",
+        "ru": "болеть; причинять боль",
+        "uk": "",
+        "translations_ru": [
+          "болеть",
+          "причинять боль"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "tut weh · tat weh · hat wehgetan",
+        "definition_de": "Schmerzen verursachen.",
+        "example": "Mein Fuß tut weh.",
+        "example_ru": "У меня болит стопа.",
+        "note": "Dativ у лица, испытывающего боль: Mir tut der Rücken weh. Отделяемый глагол.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "060d0eb34162aa147763"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-wehtun-pain"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wehtun-pain",
+            "de": "wehtun",
+            "part": "verb",
+            "forms": "tut weh · tat weh · hat wehgetan",
+            "definition_de": "Schmerzen verursachen oder schmerzhaft sein.",
+            "translations_ru": [
+              "болеть",
+              "причинять боль"
+            ],
+            "grammar_hint": "jemandem (Dat.) wehtun; часть тела — подлежащее: Meine Knie tun mir weh. Отделяемый глагол.",
+            "example": "Meine Schulter tut mir seit gestern weh.",
+            "example_ru": "У меня со вчерашнего дня болит плечо."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "context",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wehtun"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ef00118918ca2f62077d",
+      "alias_ids": [
+        "b1-tuer-door"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ef00118918ca2f62077d",
+        "de": "die Tür",
+        "part": "noun",
+        "level": "A1",
+        "translations_ru": [
+          "дверь"
+        ],
+        "definition_de": "Ein beweglicher Teil, mit dem man einen Eingang oder Durchgang öffnet und schließt.",
+        "forms": "die Türen",
+        "example": "Mach bitte die Tür leise zu.",
+        "example_ru": "Закрой дверь тихо, пожалуйста.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "scope": "attested_example"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "scope": "attested_example"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "scope": "attested_example"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "scope": "attested_example"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "scope": "attested_example"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/T%C3%BCr",
+            "scope": "meaning"
+          }
+        ],
+        "lemma": "Tür",
+        "ru": "дверь",
+        "uk": "двері",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "note": "A1: неоднократно засвидетельствовано в примерах, A2: отдельный заголовок. die Tür öffnen/schließen; an der Tür.",
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-tuer-door"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tuer-door",
+            "de": "die Tür",
+            "part": "noun",
+            "forms": "die Türen",
+            "definition_de": "Ein beweglicher Verschluss für einen Eingang.",
+            "translations_ru": [
+              "дверь"
+            ],
+            "grammar_hint": "die Tür öffnen/schließen; an die Tür klopfen; CH написание schließen → schliessen.",
+            "example": "Vor der Tür steht ein Paket.",
+            "example_ru": "Перед дверью стоит посылка."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/T%C3%BCr"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_e5fe23834b06649da9a0",
+      "alias_ids": [
+        "b1-typisch-characteristic"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_e5fe23834b06649da9a0",
+        "de": "typisch",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "типичный",
+          "характерный"
+        ],
+        "definition_de": "So, wie man es von einer Person, Sache oder Gruppe kennt.",
+        "forms": "typisch · typischer · am typischsten",
+        "example": "Dieses Gericht ist typisch für die Region.",
+        "example_ru": "Это блюдо типично для региона.",
+        "grammar_hint": "typisch für + Akkusativ: typisch für diese Region. Typisch Anna! — В духе Анны!",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/typisch"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-typisch-characteristic"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-typisch-characteristic",
+            "de": "typisch",
+            "part": "adjective",
+            "forms": "typisch · typischer · am typischsten",
+            "definition_de": "Für eine Person, Gruppe oder Sache besonders kennzeichnend.",
+            "translations_ru": [
+              "типичный",
+              "характерный",
+              "типично"
+            ],
+            "grammar_hint": "typisch für + Akk.; Das ist typisch für ihn! — Это в его духе!",
+            "example": "Dieses Gericht ist typisch für die Region.",
+            "example_ru": "Это блюдо характерно для региона."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/typisch"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_e2ebb443040cc7d26a20",
+      "alias_ids": [
+        "b1-ueben-practise"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_e2ebb443040cc7d26a20",
+        "de": "üben",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "упражняться",
+          "тренироваться",
+          "практиковаться"
+        ],
+        "definition_de": "Eine Tätigkeit wiederholen, um sie besser zu beherrschen.",
+        "forms": "übt · übte · hat geübt",
+        "example": "Ich übe jeden Abend die Aussprache.",
+        "example_ru": "Я каждый вечер тренирую произношение.",
+        "grammar_hint": "etwas (Akkusativ) üben — тренировать что-либо, например die Aussprache; auch ohne Objekt: Ich übe jeden Tag.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/%C3%BCben"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-ueben-practise"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueben-practise",
+            "de": "üben",
+            "part": "verb",
+            "forms": "übt · übte · hat geübt",
+            "definition_de": "Eine Fertigkeit durch Wiederholung verbessern.",
+            "translations_ru": [
+              "упражняться",
+              "практиковаться",
+              "тренировать"
+            ],
+            "grammar_hint": "etwas (Akk.) üben; für eine Prüfung üben; üben, etwas zu tun.",
+            "example": "Wir üben heute die Aussprache langer Wörter.",
+            "example_ru": "Сегодня мы тренируем произношение длинных слов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCben"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-575-2",
+      "alias_ids": [
+        "b1-ueber-above"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-575-2",
+        "de": "über",
+        "lemma": "über",
+        "ru": "над (местонахождение)",
+        "uk": "",
+        "translations_ru": [
+          "над (местонахождение)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "+ Dativ bei einem festen Ort",
+        "definition_de": "Bezeichnet eine Stelle oberhalb von etwas.",
+        "example": "Die Lampe hängt über dem Tisch.",
+        "example_ru": "Лампа висит над столом.",
+        "note": "Wo? über dem Tisch (Dativ); Wohin? die Lampe über den Tisch hängen (Akkusativ). Не применять правило Wo/Wohin к непространственным значениям.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "5d868f1db2c71c436fe7"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-ueber-above"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueber-above",
+            "de": "über",
+            "part": "preposition",
+            "forms": "Wechselpräposition: Dativ / Akkusativ",
+            "definition_de": "Bezeichnet eine räumlich höhere Lage ohne unmittelbaren Kontakt.",
+            "translations_ru": [
+              "над",
+              "выше"
+            ],
+            "grammar_hint": "Wo? über + Dat. (über dem Sofa); Wohin? über + Akk. (die Lampe über das Sofa hängen). Остальные значения отдельно; возможный дубль ранее изученного предлога.",
+            "example": "Über dem Sofa hängt eine kleine Lampe.",
+            "example_ru": "Над диваном висит маленькая лампа."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_entry_consulted",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-575-1",
+      "alias_ids": [
+        "b1-ueber-cross"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-575-1",
+        "de": "über",
+        "lemma": "über",
+        "ru": "через (с одной стороны на другую)",
+        "uk": "",
+        "translations_ru": [
+          "через (с одной стороны на другую)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "+ Akkusativ",
+        "definition_de": "Bezeichnet einen Weg von einer Seite zur anderen.",
+        "example": "Wir gehen über die Straße.",
+        "example_ru": "Мы переходим улицу.",
+        "note": "über + Akkusativ при пересечении: über die Straße gehen; über einen Zaun springen. Это не обязательно движение к конечной точке над предметом.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "5d868f1db2c71c436fe7"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-ueber-cross"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueber-cross",
+            "de": "über",
+            "part": "preposition",
+            "forms": "Akkusativ",
+            "definition_de": "Bezeichnet einen Weg quer durch einen Bereich oder über ein Hindernis.",
+            "translations_ru": [
+              "через",
+              "по другую сторону"
+            ],
+            "grammar_hint": "über die Brücke gehen; über den Zaun springen. При пересечении — Akkusativ, а не просто любое движение.",
+            "example": "Wir gehen über die Brücke zum Park.",
+            "example_ru": "Мы идём через мост в парк."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-575-3",
+      "alias_ids": [
+        "b1-ueber-more"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-575-3",
+        "de": "über",
+        "lemma": "über",
+        "ru": "больше; свыше; старше (о возрасте)",
+        "uk": "",
+        "translations_ru": [
+          "больше",
+          "свыше",
+          "старше (о возрасте)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "über + числовое выражение",
+        "definition_de": "Zeigt, dass ein Wert größer ist als die genannte Zahl.",
+        "example": "Die Teilnehmer sind über achtzehn.",
+        "example_ru": "Участникам больше восемнадцати.",
+        "note": "über 18 = старше 18; über einen Monat = больше месяца. При числительном падеж часто не виден.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "5d868f1db2c71c436fe7"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-ueber-more"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueber-more",
+            "de": "über",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Zeigt an, dass eine genannte Menge oder Grenze überschritten wird.",
+            "translations_ru": [
+              "более",
+              "свыше",
+              "больше"
+            ],
+            "grammar_hint": "Количественное наречие: не управляет падежом. Mit über hundert Gästen — Dativ из-за mit. Сравните: eine Rechnung über 100 Franken — счёт ровно на 100 франков.",
+            "example": "Mit über hundert Gästen war der Saal voll.",
+            "example_ru": "При более чем ста гостях зал был полон."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_31dedfe24b52464b8dd1-topic",
+      "alias_ids": [
+        "b1-ueber-topic"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_31dedfe24b52464b8dd1-topic",
+        "de": "über",
+        "part": "prep",
+        "level": "A2",
+        "translations_ru": [
+          "о",
+          "об",
+          "на тему"
+        ],
+        "forms": "+ Akkusativ",
+        "definition_de": "Bezeichnet das Thema, auf das sich ein Gespräch, ein Text oder ein Gedanke bezieht.",
+        "example": "Wir sprechen über den neuen Film.",
+        "example_ru": "Мы говорим о новом фильме.",
+        "grammar_hint": "über + Akkusativ в значении темы: über den Film sprechen, sich über die Reise informieren. Worüber? — О чём? Über wen? — О ком?",
+        "usage_note": "Это не пространственное употребление Wechselpräposition: падеж определяется значением и управлением, а не вопросом Wo/Wohin. Подтверждено в примерах Goethe A2 стр. 18 и 24, не в отдельной статье über.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense",
+            "context": "informieren (sich) über; Artikel über"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/ueber_auf_darueber_darauf"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-ueber-topic"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueber-topic",
+            "de": "über",
+            "part": "preposition",
+            "forms": "Akkusativ",
+            "definition_de": "Gibt das Thema eines Gesprächs, Textes oder Gedankens an.",
+            "translations_ru": [
+              "о",
+              "об",
+              "на тему"
+            ],
+            "grammar_hint": "über + Akk.; sprechen, diskutieren, nachdenken über; worüber? — о чём?",
+            "example": "Wir sprechen über die neue Wohnung.",
+            "example_ru": "Мы говорим о новой квартире."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_5deb0b77f25cd690524a",
+      "alias_ids": [
+        "b1-ueberall-place"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_5deb0b77f25cd690524a",
+        "de": "überall",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "везде",
+          "всюду"
+        ],
+        "definition_de": "An jedem Ort oder an allen gemeinten Orten.",
+        "example": "Im Frühling sieht man überall Blumen.",
+        "example_ru": "Весной повсюду видны цветы.",
+        "grammar_hint": "Отвечает на Wo?; не склоняется.",
+        "usage_note": "Антоним: nirgends.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/%C3%BCberall"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Место и направление",
+        "topics": [
+          "Место и направление"
+        ],
+        "alias_ids": [
+          "b1-ueberall-place"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueberall-place",
+            "de": "überall",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezeichnet sämtliche Orte innerhalb des gemeinten Bereichs.",
+            "translations_ru": [
+              "везде",
+              "повсюду"
+            ],
+            "grammar_hint": "Wo? überall; Wohin? überallhin; противоположность: nirgends, nirgendwo.",
+            "example": "In der Altstadt sieht man überall Blumen.",
+            "example_ru": "В старом городе повсюду видны цветы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCberall"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_0233774972319c60b7aa",
+      "alias_ids": [
+        "b1-uebermorgen-day"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_0233774972319c60b7aa",
+        "de": "übermorgen",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "послезавтра"
+        ],
+        "definition_de": "Am Tag nach morgen.",
+        "forms": "",
+        "example": "Übermorgen beginnt der neue Deutschkurs.",
+        "example_ru": "Послезавтра начинается новый курс немецкого.",
+        "grammar_hint": "Если übermorgen стоит первым в главном предложении, сразу после него ставим спрягаемый глагол: Übermorgen beginnt …",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/%C3%BCbermorgen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-uebermorgen-day"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-uebermorgen-day",
+            "de": "übermorgen",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezeichnet den zweiten Tag nach dem heutigen Tag.",
+            "translations_ru": [
+              "послезавтра"
+            ],
+            "grammar_hint": "heute — morgen — übermorgen; в начале предложения после временного обстоятельства глагол на второй позиции.",
+            "example": "Übermorgen beginnt der neue Kurs.",
+            "example_ru": "Послезавтра начинается новый курс."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCbermorgen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-576-1",
+      "alias_ids": [
+        "b1-uebernachten-stay"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-576-1",
+        "de": "übernachten",
+        "lemma": "übernachten",
+        "ru": "ночевать; переночевать",
+        "uk": "",
+        "translations_ru": [
+          "ночевать",
+          "переночевать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Путешествия",
+        "topics": [
+          "Путешествия"
+        ],
+        "forms": "übernachtet · übernachtete · hat übernachtet",
+        "definition_de": "Die Nacht an einem bestimmten Ort verbringen.",
+        "example": "Wir übernachten bei Freunden.",
+        "example_ru": "Мы ночуем у друзей.",
+        "note": "bei Freunden (Dativ), im Hotel; неотделяемая приставка über-, Partizip II без ge-.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "1925c8b396aa4d3ef23a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-uebernachten-stay"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-uebernachten-stay",
+            "de": "übernachten",
+            "part": "verb",
+            "forms": "übernachtet · übernachtete · hat übernachtet",
+            "definition_de": "Die Nacht an einem bestimmten, oft vorübergehenden Ort verbringen.",
+            "translations_ru": [
+              "ночевать",
+              "переночевать"
+            ],
+            "grammar_hint": "bei + Dat. у кого-либо; in + Dat. где-либо; неотделяемый глагол, Perfekt с haben.",
+            "example": "Wir übernachten bei Freunden in Basel.",
+            "example_ru": "Мы ночуем у друзей в Базеле."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCbernachten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

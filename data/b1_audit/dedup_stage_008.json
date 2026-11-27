@@ -1,0 +1,744 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged overlay for cross-batch candidates 21–25 of 44. Three merge proposals; six distinct teaching records retained; one source row refers to previously processed leidtun overlay, not reactivated. Earliest source row canonical; old ID retained as alias, not implemented in progress storage. Original batches unchanged; row coordinates one-based and bound to SHA. No new independent dictionary verification.",
+  "candidate_groups_reviewed": 5,
+  "input_records": 13,
+  "output_records": 10,
+  "new_overlay_output_records": 9,
+  "prior_stage_reference_count": 1,
+  "alias_map": {
+    "b1-schularbeit-exam-at": "b1-schularbeit-test-at",
+    "b1-kosten-taste-at": "b1-kosten-taste",
+    "b1-waschmittel-detergent": "b1-mittel-cleaning"
+  },
+  "groups": [
+    {
+      "canonical_id": "b1-schularbeit-test-at",
+      "alias_ids": [
+        "b1-schularbeit-exam-at"
+      ],
+      "retain": {
+        "batch": 45,
+        "row": 7
+      },
+      "suppress": {
+        "batch": 83,
+        "row": 20
+      },
+      "merged_record": {
+        "id": "b1-schularbeit-test-at",
+        "de": "die Schularbeit",
+        "lemma": "Schularbeit",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "письменная контрольная работа (Австрия)",
+          "контрольная работа (Австрия)"
+        ],
+        "definition_de": "In Österreich eine schriftliche Prüfung während der Schulzeit.",
+        "example": "Für die nächste Schularbeit übt er jeden Abend.",
+        "example_ru": "К следующей контрольной он готовится каждый вечер.",
+        "forms": "die Schularbeiten",
+        "grammar_hint": "Региональный вариант Klassenarbeit; в иных контекстах Schularbeit может означать учебную работу вообще.\nA: Schularbeit; D: Klassenarbeit; CH часто Prüfung / Lernkontrolle. В иных контекстах Schularbeit может означать школьную работу.",
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 55,
+            "scope": "regional_variant",
+            "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schularbeit"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine schriftliche Leistungsüberprüfung im Schulunterricht in Österreich."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Morgen schreiben wir eine Schularbeit in Mathematik.",
+            "ru": "Завтра мы пишем контрольную по математике."
+          }
+        ],
+        "alias_ids": [
+          "b1-schularbeit-exam-at"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 45,
+          "row": 7,
+          "sha": "13905c85e6ea071ccd204947e419b4638fb735dd",
+          "record": {
+            "id": "b1-schularbeit-test-at",
+            "de": "die Schularbeit",
+            "lemma": "Schularbeit",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "письменная контрольная работа (Австрия)"
+            ],
+            "definition_de": "In Österreich eine schriftliche Prüfung während der Schulzeit.",
+            "example": "Für die nächste Schularbeit übt er jeden Abend.",
+            "example_ru": "К следующей контрольной он готовится каждый вечер.",
+            "forms": "die Schularbeiten",
+            "grammar_hint": "Региональный вариант Klassenarbeit; в иных контекстах Schularbeit может означать учебную работу вообще.",
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 55,
+                "scope": "regional_variant",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schularbeit"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 83,
+          "row": 20,
+          "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+          "record": {
+            "id": "b1-schularbeit-exam-at",
+            "de": "die Schularbeit",
+            "lemma": "Schularbeit",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "контрольная работа (Австрия)"
+            ],
+            "definition_de": "Eine schriftliche Leistungsüberprüfung im Schulunterricht in Österreich.",
+            "example": "Morgen schreiben wir eine Schularbeit in Mathematik.",
+            "example_ru": "Завтра мы пишем контрольную по математике.",
+            "forms": "die Schularbeiten",
+            "grammar_hint": "A: Schularbeit; D: Klassenarbeit; CH часто Prüfung / Lernkontrolle. В иных контекстах Schularbeit может означать школьную работу.",
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 78,
+                "scope": "context",
+                "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schularbeit"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-kosten-taste",
+      "alias_ids": [
+        "b1-kosten-taste-at"
+      ],
+      "retain": {
+        "batch": 48,
+        "row": 5
+      },
+      "suppress": {
+        "batch": 71,
+        "row": 11
+      },
+      "merged_record": {
+        "id": "b1-kosten-taste",
+        "de": "kosten",
+        "lemma": "kosten",
+        "part": "verb",
+        "level": "B1",
+        "translations_ru": [
+          "пробовать на вкус",
+          "дегустировать"
+        ],
+        "definition_de": "Eine kleine Menge eines Lebensmittels essen oder trinken, um seinen Geschmack zu beurteilen.",
+        "example": "Darf ich die hausgemachte Marmelade kosten?",
+        "example_ru": "Можно мне попробовать домашнее варенье?",
+        "forms": "kostet · kostete · hat gekostet",
+        "grammar_hint": "etwas (Akkusativ) kosten; в Goethe как австрийский вариант probieren, но слово понятно и в других регионах.\nВ Австрии распространено kosten в смысле probieren; также встречается в других регионах. etwas kosten / von etwas kosten (Dat.); омоним kosten — стоить.",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 57,
+            "scope": "regional_variant",
+            "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/kosten"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine Speise oder ein Getränk in kleiner Menge geschmacklich prüfen."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Darf ich von der Sauce kosten?",
+            "ru": "Можно мне попробовать соус?"
+          }
+        ],
+        "alias_ids": [
+          "b1-kosten-taste-at"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 48,
+          "row": 5,
+          "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+          "record": {
+            "id": "b1-kosten-taste",
+            "de": "kosten",
+            "lemma": "kosten",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "пробовать на вкус",
+              "дегустировать"
+            ],
+            "definition_de": "Eine kleine Menge eines Lebensmittels essen oder trinken, um seinen Geschmack zu beurteilen.",
+            "example": "Darf ich die hausgemachte Marmelade kosten?",
+            "example_ru": "Можно мне попробовать домашнее варенье?",
+            "forms": "kostet · kostete · hat gekostet",
+            "grammar_hint": "etwas (Akkusativ) kosten; в Goethe как австрийский вариант probieren, но слово понятно и в других регионах.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 57,
+                "scope": "regional_variant",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kosten"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 71,
+          "row": 11,
+          "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+          "record": {
+            "id": "b1-kosten-taste-at",
+            "de": "kosten",
+            "lemma": "kosten",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "пробовать на вкус",
+              "дегустировать"
+            ],
+            "definition_de": "Eine Speise oder ein Getränk in kleiner Menge geschmacklich prüfen.",
+            "example": "Darf ich von der Sauce kosten?",
+            "example_ru": "Можно мне попробовать соус?",
+            "forms": "kostet · kostete · hat gekostet",
+            "grammar_hint": "В Австрии распространено kosten в смысле probieren; также встречается в других регионах. etwas kosten / von etwas kosten (Dat.); омоним kosten — стоить.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 71,
+                "scope": "context",
+                "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kosten"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-mittel-cleaning",
+      "alias_ids": [
+        "b1-waschmittel-detergent"
+      ],
+      "retain": {
+        "batch": 58,
+        "row": 27
+      },
+      "suppress": {
+        "batch": 114,
+        "row": 19
+      },
+      "merged_record": {
+        "id": "b1-mittel-cleaning",
+        "de": "das Waschmittel",
+        "lemma": "Waschmittel",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "средство для стирки",
+          "стиральный порошок или гель",
+          "стиральный порошок"
+        ],
+        "definition_de": "Ein Produkt, mit dem Textilien gewaschen werden.",
+        "example": "Für dunkle Kleidung benutze ich ein flüssiges Waschmittel.",
+        "example_ru": "Для тёмной одежды я использую жидкое средство для стирки.",
+        "forms": "die Waschmittel",
+        "grammar_hint": "das Mittel — средство; das Waschmittel — именно для стирки, das Spülmittel — для мытья посуды.\nflüssiges Waschmittel — жидкое средство; Waschpulver — именно порошок.\nОбщее значение — средство для стирки; порошок и гель являются его разновидностями. Waschmittel не обязательно порошок.",
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 64,
+            "scope": "context_derived",
+            "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Mittel",
+            "https://de.wiktionary.org/wiki/Waschmittel"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Ein Mittel zur Reinigung von Textilien beim Waschen."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Für diese Jacke brauche ich ein mildes Waschmittel.",
+            "ru": "Для этой куртки мне нужно мягкое средство для стирки."
+          }
+        ],
+        "alias_ids": [
+          "b1-waschmittel-detergent"
+        ],
+        "release_blocker": "Direct dictionary sense and CEFR coverage must be checked; distinguish general detergent from powder-specific translations."
+      },
+      "original_records": [
+        {
+          "batch": 58,
+          "row": 27,
+          "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+          "record": {
+            "id": "b1-mittel-cleaning",
+            "de": "das Waschmittel",
+            "lemma": "Waschmittel",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "средство для стирки",
+              "стиральный порошок или гель"
+            ],
+            "definition_de": "Ein Produkt, mit dem Textilien gewaschen werden.",
+            "example": "Für dunkle Kleidung benutze ich ein flüssiges Waschmittel.",
+            "example_ru": "Для тёмной одежды я использую жидкое средство для стирки.",
+            "forms": "die Waschmittel",
+            "grammar_hint": "das Mittel — средство; das Waschmittel — именно для стирки, das Spülmittel — для мытья посуды.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 64,
+                "scope": "context_derived",
+                "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mittel"
+              ],
+              "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 114,
+          "row": 19,
+          "sha": "937be6018145fa390ddadaa2fe2419bc82b2f7de",
+          "record": {
+            "id": "b1-waschmittel-detergent",
+            "de": "das Waschmittel",
+            "lemma": "Waschmittel",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "средство для стирки",
+              "стиральный порошок"
+            ],
+            "definition_de": "Ein Mittel zur Reinigung von Textilien beim Waschen.",
+            "example": "Für diese Jacke brauche ich ein mildes Waschmittel.",
+            "example_ru": "Для этой куртки мне нужно мягкое средство для стирки.",
+            "forms": "die Waschmittel",
+            "grammar_hint": "flüssiges Waschmittel — жидкое средство; Waschpulver — именно порошок.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 96,
+                "scope": "headword_or_attested_sense",
+                "note": "Printed pages 96–97 visually inspected. Exam-list coverage does not establish earliest CEFR level. A1/A2 and cross-batch sense reconciliation pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Waschmittel"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ],
+  "retained_distinct": [
+    {
+      "lemma": "kosten",
+      "decision": "keep_price_and_effort_contexts",
+      "reason": "Price and time/effort contexts retained separately from tasting; first two are related pedagogical contexts, tasting is a distinct lexical meaning.",
+      "original_records": [
+        {
+          "batch": 48,
+          "row": 3,
+          "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+          "record": {
+            "id": "b1-kosten-price",
+            "de": "kosten",
+            "lemma": "kosten",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "стоить (о цене)"
+            ],
+            "definition_de": "Einen bestimmten Preis haben.",
+            "example": "Wie viel kostet die Monatskarte?",
+            "example_ru": "Сколько стоит месячный проездной?",
+            "forms": "kostet · kostete · hat gekostet",
+            "grammar_hint": "Wie viel kostet …? Das kostet mich 30 Franken. При указании лица в учебном примере используем Akkusativ: mich, dich.",
+            "topic": "Покупки и услуги",
+            "topics": [
+              "Покупки и услуги"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 57,
+                "scope": "context",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kosten"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 48,
+          "row": 4,
+          "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+          "record": {
+            "id": "b1-kosten-effort",
+            "de": "kosten",
+            "lemma": "kosten",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "требовать",
+              "отнимать (время, силы)"
+            ],
+            "definition_de": "Einen Aufwand an Zeit oder Energie verursachen.",
+            "example": "Die Vorbereitung kostet mich viel Zeit.",
+            "example_ru": "Подготовка отнимает у меня много времени.",
+            "forms": "kostet · kostete · hat gekostet",
+            "grammar_hint": "etwas kostet jemanden Zeit / Kraft / Mühe; два Akkusativ: mich viel Zeit.",
+            "topic": "Время и даты",
+            "topics": [
+              "Время и даты"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 57,
+                "scope": "context",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kosten"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "lemma": "leidtun",
+      "decision": "keep_sympathy_separate_from_apology",
+      "reason": "Sympathy for a person/animal versus apology or regret about a situation; preserve distinct pedagogical contexts and Dativ. The apology verb row was already handled in stage 003 and is not reactivated.",
+      "original_records": [
+        {
+          "batch": 52,
+          "row": 19,
+          "sha": "49010d3c8f027d4f3b5bea0dd7cb453646d81384",
+          "record": {
+            "id": "b1-leidtun-sympathy",
+            "de": "jemandem leidtun",
+            "lemma": "leidtun",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "вызывать сочувствие",
+              "быть жалко кого-либо"
+            ],
+            "definition_de": "Bei einer Person Mitgefühl für jemanden hervorrufen.",
+            "example": "Das verletzte Tier tut mir leid.",
+            "example_ru": "Мне жалко раненое животное.",
+            "forms": "tut leid · tat leid · hat leidgetan",
+            "grammar_hint": "Лицо, испытывающее сочувствие, в Dativ: mir, dir, ihm. Инфинитив пишется слитно leidtun; в главном предложении tut … leid.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 60,
+                "scope": "context",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/leidtun",
+                "https://www.duden.de/rechtschreibung/leidtun"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "lemma": "nah",
+      "decision": "keep_all_pedagogical_contexts",
+      "reason": "Preserve spatial positive and superlative teaching contexts and separate temporal/order next sense; not three independent dictionary senses.",
+      "original_records": [
+        {
+          "batch": 60,
+          "row": 30,
+          "sha": "0b5ae40d3ad2a4fe00b44167f6d502c69f5c3053",
+          "record": {
+            "id": "b1-naechst-nearest",
+            "de": "nächste / nächster / nächstes",
+            "lemma": "nah",
+            "part": "adj",
+            "level": "B1",
+            "translations_ru": [
+              "ближайший"
+            ],
+            "definition_de": "Räumlich am wenigsten entfernt.",
+            "example": "Wo ist die nächste Apotheke?",
+            "example_ru": "Где ближайшая аптека?",
+            "forms": "nah · näher · am nächsten; атрибутивно: der nächste / die nächste / das nächste",
+            "grammar_hint": "nächst- — превосходная степень nah; nächste в пространственном смысле означает ближайшая, не обязательно следующая по порядку.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 65,
+                "scope": "context",
+                "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nah"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 61,
+          "row": 1,
+          "sha": "3692effdb71f3c47a9839e685c287b09cb0b47fb",
+          "record": {
+            "id": "b1-naechst-next",
+            "de": "nächste / nächster / nächstes",
+            "lemma": "nah",
+            "part": "adj",
+            "level": "B1",
+            "translations_ru": [
+              "следующий",
+              "ближайший по времени"
+            ],
+            "definition_de": "In einer zeitlichen oder geordneten Folge unmittelbar danach kommend.",
+            "example": "Nächste Woche beginnt der neue Kurs.",
+            "example_ru": "На следующей неделе начинается новый курс.",
+            "forms": "nah · näher · am nächsten; nächst- склоняется",
+            "grammar_hint": "nächste Woche (Akk. времени без предлога); der nächste Zug — следующий поезд.",
+            "topic": "Время и даты",
+            "topics": [
+              "Время и даты"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/id/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 65,
+                "scope": "context",
+                "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nah",
+                "https://www.duden.de/rechtschreibung/naechste"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 61,
+          "row": 9,
+          "sha": "3692effdb71f3c47a9839e685c287b09cb0b47fb",
+          "record": {
+            "id": "b1-nah-distance",
+            "de": "nah / nahe",
+            "lemma": "nah",
+            "part": "adj",
+            "level": "B1",
+            "translations_ru": [
+              "близкий",
+              "близко",
+              "недалеко"
+            ],
+            "definition_de": "Mit geringem räumlichem Abstand.",
+            "example": "Der Bahnhof ist ganz nah.",
+            "example_ru": "Вокзал совсем близко.",
+            "forms": "nah · näher · am nächsten",
+            "grammar_hint": "nah bei + Dativ; nahe + Dativ (как предлог); ein nahes Ziel.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/id/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 65,
+                "scope": "context",
+                "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/nah"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ],
+  "prior_stage_references": [
+    {
+      "canonical_id": "b1-leidtun-apology",
+      "path": "data/b1_audit/dedup_stage_003.json",
+      "source_record": {
+        "batch": 101,
+        "row": 17,
+        "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+        "record": {
+          "id": "b1-leidtun-apology",
+          "de": "leidtun",
+          "lemma": "leidtun",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сожалеть",
+            "быть жаль"
+          ],
+          "definition_de": "Bedauern oder Mitgefühl ausdrücken.",
+          "example": "Es tut mir leid, dass ich so spät antworte.",
+          "example_ru": "Мне жаль, что я отвечаю так поздно.",
+          "forms": "tut leid · tat leid · hat leidgetan",
+          "grammar_hint": "jemandem (Dat.) leidtun; es tut mir leid; dass + глагол в конце. Отделяемый глагол.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "context",
+              "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/leidtun"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "decision": "retain_previous_overlay_and_release_blocker"
+    }
+  ]
+}

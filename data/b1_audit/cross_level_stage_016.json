@@ -1,0 +1,3744 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 293–312 using staged definitions, examples and grammar. Conditional proposals only. No independent CEFR verification or changes to original cards, deployed levels or progress.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    293,
+    312
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 5,
+  "followup_review": [
+    {
+      "id": "a1-320-1",
+      "issue": "Consolidate with stage 015's geographic-location usage proposal at release; preserve both B1 IDs and the distinction from destination and temporal records."
+    },
+    {
+      "id": "b1-in-school",
+      "issue": "Verify the regional distribution of ins Gymnasium and aufs Gymnasium before release."
+    },
+    {
+      "id": "b1-ja-acknowledge",
+      "issue": "For the displayed context Entschuldigung! – Ja, bitte?, prefer Да, слушаю?; Да, пожалуйста belongs to an acceptance context."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 293,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same physical location; use Dativ for position or movement within the area.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 4,
+        "record": {
+          "id": "b1-in-location",
+          "de": "in",
+          "lemma": "in",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "в",
+            "внутри (местоположение)"
+          ],
+          "definition_de": "Gibt an, wo sich etwas in einem räumlichen Bereich befindet.",
+          "example": "Das Büro liegt im zweiten Stock.",
+          "example_ru": "Офис находится на втором этаже.",
+          "forms": "in + Dativ; im = in dem",
+          "grammar_hint": "Wo? im Zimmer, in der Küche. Движение внутри помещения тоже может быть с Dativ: Ich laufe im Zimmer.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-320-1",
+        "alias_id": "b1-in-location",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-320-1"
+      }
+    },
+    {
+      "candidate_number": 294,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same destination into an area; use Akkusativ when the phrase gives the goal.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 5,
+        "record": {
+          "id": "b1-in-direction",
+          "de": "in",
+          "lemma": "in",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "в",
+            "внутрь (направление)"
+          ],
+          "definition_de": "Gibt das Ziel einer Bewegung in einen räumlichen Bereich an.",
+          "example": "Wir bringen die Kisten in den Keller.",
+          "example_ru": "Мы относим коробки в подвал.",
+          "forms": "in + Akkusativ; ins = in das",
+          "grammar_hint": "Wohin? in den Keller; Wo? im Keller. Только для Wechselpräpositionen действует это различие.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-320-2",
+        "alias_id": "b1-in-direction",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-320-2"
+      }
+    },
+    {
+      "candidate_number": 295,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same time elapsed before a future event; preserve in einer Stunde with Dativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 6,
+        "record": {
+          "id": "b1-in-future",
+          "de": "in",
+          "lemma": "in",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "через (промежуток времени)"
+          ],
+          "definition_de": "Gibt an, nach welcher Zeitspanne etwas stattfindet.",
+          "example": "Der Zug kommt in zehn Minuten an.",
+          "example_ru": "Поезд прибывает через десять минут.",
+          "forms": "in + Dativ",
+          "grammar_hint": "in einer Stunde — через час; seit einer Stunde — уже час; innerhalb einer Stunde — в течение часа.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-320-3",
+        "alias_id": "b1-in-future",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-320-3"
+      }
+    },
+    {
+      "candidate_number": 296,
+      "decision": "retain_distinct_sense",
+      "reason": "Calendar time with months or seasons differs from an interval until an event.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 7,
+        "record": {
+          "id": "b1-in-month",
+          "de": "im",
+          "lemma": "in",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "в (месяце, сезоне)"
+          ],
+          "definition_de": "Ordnet ein Ereignis einem Monat oder einer Jahreszeit zu.",
+          "example": "Im September beginnen die neuen Kurse.",
+          "example_ru": "В сентябре начинаются новые курсы.",
+          "forms": "in + Dativ; im = in dem",
+          "grammar_hint": "im März, im Sommer; am Montag, um acht Uhr. Для временного in правило Wo/Wohin не применяется.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 297,
+      "decision": "retain_distinct_sense",
+      "reason": "Abstract situation and transition into a state are outside the spatial and future-interval senses in the matched records.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 8,
+        "record": {
+          "id": "b1-in-situation",
+          "de": "in",
+          "lemma": "in",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "в (ситуации, состоянии)"
+          ],
+          "definition_de": "Bezeichnet einen abstrakten Zustand oder eine Lage.",
+          "example": "In dieser Situation brauchen wir Geduld.",
+          "example_ru": "В этой ситуации нам нужно терпение.",
+          "forms": "in + Dativ bei einem Zustand",
+          "grammar_hint": "in einer schwierigen Lage sein; in Schwierigkeiten geraten (Akkusativ при переходе в состояние).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 298,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "School attendance is an institutional expression; preserve dedicated practice and verify the regional distribution of ins/aufs before release.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 9,
+        "record": {
+          "id": "b1-in-school",
+          "de": "ins Gymnasium",
+          "lemma": "in",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в гимназию (поступать, ходить)"
+          ],
+          "definition_de": "Bezeichnet den Übergang in eine bestimmte Schule.",
+          "example": "Unser Sohn kommt nächstes Jahr ins Gymnasium.",
+          "example_ru": "В следующем году наш сын поступит в гимназию.",
+          "forms": "ins = in das (+ Akkusativ)",
+          "grammar_hint": "Варианты: ins Gymnasium (в частности A/CH), aufs Gymnasium (D). Речь об обучении, а не обязательно о движении в здание.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 299,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same reflexive verb for obtaining information; preserve über + Akkusativ and bei + Dativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 15,
+        "record": {
+          "id": "b1-informieren-reflexive",
+          "de": "sich informieren",
+          "lemma": "informieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "узнавать информацию",
+            "наводить справки"
+          ],
+          "definition_de": "Sich selbst die nötigen Auskünfte beschaffen.",
+          "example": "Ich informiere mich über die Aufnahmebedingungen.",
+          "example_ru": "Я узнаю об условиях поступления.",
+          "forms": "informiert sich · informierte sich · hat sich informiert",
+          "grammar_hint": "sich (Akkusativ) über + Akkusativ informieren; sich bei + Dativ informieren — узнать у кого-либо.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/informieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 390,
+          "record": {
+            "id": "dict_a067470e0e9fe8668017",
+            "de": "sich informieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "узнавать",
+              "наводить справки",
+              "получать информацию"
+            ],
+            "definition_de": "Sich die nötigen Kenntnisse über ein Thema verschaffen.",
+            "example": "Ich informiere mich über die neuen Kurse.",
+            "example_ru": "Я узнаю информацию о новых курсах.",
+            "grammar_hint": "sich informieren über + Akkusativ; ich informiere mich, du informierst dich. Приставка неотделяемая; Partizip II без ge-.",
+            "usage_note": "В Goethe A2 два возвратных примера: sich über etwas informieren. informiert — личная форма/Partizip II, не отдельный подтверждённый смысл прилагательного. Невозвратное jemanden informieren существует отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/informieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "informiert sich · informierte sich · hat sich informiert",
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a067470e0e9fe8668017",
+        "alias_id": "b1-informieren-reflexive",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a067470e0e9fe8668017"
+      }
+    },
+    {
+      "candidate_number": 300,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same information or details sense; preserve both complement patterns.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 16,
+        "record": {
+          "id": "b1-information-facts",
+          "de": "die Information",
+          "lemma": "Information",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "информация",
+            "сведения"
+          ],
+          "definition_de": "Eine Mitteilung, die Wissen über einen Sachverhalt vermittelt.",
+          "example": "Die Informationen zum Kurs stehen auf der Website.",
+          "example_ru": "Информация о курсе размещена на сайте.",
+          "forms": "die Informationen",
+          "grammar_hint": "Informationen über + Akkusativ / zu + Dativ; Informationen erhalten.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Information"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 457,
+          "record": {
+            "id": "a1-321-1",
+            "de": "die Information",
+            "lemma": "Information",
+            "ru": "информация; сведения",
+            "uk": "",
+            "translations_ru": [
+              "информация",
+              "сведения"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Informationen",
+            "definition_de": "Eine Auskunft über etwas.",
+            "example": "Ich brauche eine Information zum Kurs.",
+            "example_ru": "Мне нужна информация о курсе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "af1d75867523705cae73"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 758,
+          "record": {
+            "id": "a1-321-2",
+            "de": "die Information",
+            "lemma": "Information",
+            "ru": "справочная; стойка информации",
+            "uk": "",
+            "translations_ru": [
+              "справочная",
+              "стойка информации"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Informationen",
+            "definition_de": "Eine Stelle, an der man Auskunft bekommt.",
+            "example": "Fragen Sie bitte an der Information.",
+            "example_ru": "Спросите, пожалуйста, в справочной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "af1d75867523705cae73"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-321-1",
+        "alias_id": "b1-information-facts",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-321-1"
+      }
+    },
+    {
+      "candidate_number": 301,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same information desk sense; keep it independent of the A1 information-content entry.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 17,
+        "record": {
+          "id": "b1-information-desk",
+          "de": "die Information",
+          "lemma": "Information",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "справочная",
+            "информационная стойка"
+          ],
+          "definition_de": "Eine Anlaufstelle, an der Fragen beantwortet werden.",
+          "example": "An der Information bekommen Sie einen Stadtplan.",
+          "example_ru": "В справочной вы можете получить карту города.",
+          "forms": "в этом значении обычно Singular",
+          "grammar_hint": "an der Information (Dativ); zur Information gehen. Синоним: die Auskunft (в соответствующем контексте).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Information"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 457,
+          "record": {
+            "id": "a1-321-1",
+            "de": "die Information",
+            "lemma": "Information",
+            "ru": "информация; сведения",
+            "uk": "",
+            "translations_ru": [
+              "информация",
+              "сведения"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Informationen",
+            "definition_de": "Eine Auskunft über etwas.",
+            "example": "Ich brauche eine Information zum Kurs.",
+            "example_ru": "Мне нужна информация о курсе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "af1d75867523705cae73"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 758,
+          "record": {
+            "id": "a1-321-2",
+            "de": "die Information",
+            "lemma": "Information",
+            "ru": "справочная; стойка информации",
+            "uk": "",
+            "translations_ru": [
+              "справочная",
+              "стойка информации"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Informationen",
+            "definition_de": "Eine Stelle, an der man Auskunft bekommt.",
+            "example": "Fragen Sie bitte an der Information.",
+            "example_ru": "Спросите, пожалуйста, в справочной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "af1d75867523705cae73"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-321-2",
+        "alias_id": "b1-information-desk",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-321-2"
+      }
+    },
+    {
+      "candidate_number": 302,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same island sense; keep auf einer Insel and auf eine Insel as separate examples.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 25,
+        "record": {
+          "id": "b1-insel-island",
+          "de": "die Insel",
+          "lemma": "Insel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "остров"
+          ],
+          "definition_de": "Ein Stück Land, das vollständig von Wasser umgeben ist.",
+          "example": "Auf der Insel gibt es mehrere kleine Dörfer.",
+          "example_ru": "На острове есть несколько маленьких деревень.",
+          "forms": "die Inseln",
+          "grammar_hint": "auf einer Insel (Dativ); auf eine Insel fahren (Akkusativ).",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Insel"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 14,
+          "record": {
+            "id": "dict_4d81d1dfcfbfb9d9db99",
+            "de": "die Insel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "остров"
+            ],
+            "definition_de": "Ein Stück Land, das auf allen Seiten von Wasser umgeben ist.",
+            "forms": "Plural · die Inseln",
+            "example": "Wir fahren mit dem Schiff auf eine kleine Insel.",
+            "example_ru": "Мы едем на корабле на маленький остров.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Insel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4d81d1dfcfbfb9d9db99",
+        "alias_id": "b1-insel-island",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4d81d1dfcfbfb9d9db99"
+      }
+    },
+    {
+      "candidate_number": 303,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same intelligence sense; preserve the uninflected adverbial example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 4,
+        "record": {
+          "id": "b1-intelligent-clever",
+          "de": "intelligent",
+          "lemma": "intelligent",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "умный",
+            "интеллектуально развитый"
+          ],
+          "definition_de": "Fähig, Zusammenhänge schnell zu verstehen und Probleme zu lösen.",
+          "example": "Die Schülerin ist intelligent und findet oft eigene Lösungen.",
+          "example_ru": "Ученица умная и часто находит собственные решения.",
+          "forms": "intelligent · intelligenter · am intelligentesten",
+          "grammar_hint": "eine intelligente Person; intelligent handeln — наречное употребление без окончания.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/intelligent"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 282,
+          "record": {
+            "id": "dict_3db0a3cdfc07beb84bfc",
+            "de": "intelligent",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "умный",
+              "сообразительный"
+            ],
+            "definition_de": "Fähig, schnell zu verstehen und Probleme zu lösen.",
+            "forms": "intelligent · intelligenter · am intelligentesten",
+            "example": "Sie ist sehr intelligent.",
+            "example_ru": "Она очень умная.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/intelligent"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3db0a3cdfc07beb84bfc",
+        "alias_id": "b1-intelligent-clever",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3db0a3cdfc07beb84bfc"
+      }
+    },
+    {
+      "candidate_number": 304,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same interest-arousing quality and the object pattern with finden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 10,
+        "record": {
+          "id": "b1-interessant-interesting",
+          "de": "interessant",
+          "lemma": "interessant",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "интересный",
+            "занимательный"
+          ],
+          "definition_de": "So beschaffen, dass etwas Aufmerksamkeit und Neugier weckt.",
+          "example": "Ich finde diese Ausstellung sehr interessant.",
+          "example_ru": "Я считаю эту выставку очень интересной.",
+          "forms": "interessant · interessanter · am interessantesten",
+          "grammar_hint": "ein interessanter Film; etwas interessant finden (Akkusativ + прилагательное без окончания).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/interessant"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 286,
+          "record": {
+            "id": "dict_f4c035b17ca5db36799b",
+            "de": "interessant",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "интересный",
+              "занимательный"
+            ],
+            "definition_de": "So, dass etwas Interesse weckt.",
+            "forms": "interessant · interessanter · am interessantesten",
+            "example": "Das Buch ist interessant.",
+            "example_ru": "Книга интересная.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/interessant"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f4c035b17ca5db36799b",
+        "alias_id": "b1-interessant-interesting",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f4c035b17ca5db36799b"
+      }
+    },
+    {
+      "candidate_number": 305,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A2 definition and note explicitly cover Interesse an + Dativ. Keep the contextual glosses and the separate pattern sich interessieren für + Akkusativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 11,
+        "record": {
+          "id": "b1-interesse-interest",
+          "de": "das Interesse",
+          "lemma": "Interesse",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "интерес",
+            "увлечение"
+          ],
+          "definition_de": "Aufmerksamkeit und Neugier gegenüber einem Thema oder einer Tätigkeit.",
+          "example": "Sie hat großes Interesse an Sprachen.",
+          "example_ru": "Она проявляет большой интерес к языкам.",
+          "forms": "die Interessen",
+          "grammar_hint": "Interesse an + Dativ; Interesse zeigen; Interessen haben. Для sich interessieren — für + Akkusativ.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Interesse"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 337,
+          "record": {
+            "id": "dict_420ade0842c343b1af2d",
+            "de": "das Interesse",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "интерес",
+              "увлечение"
+            ],
+            "definition_de": "Der Wunsch, mehr über etwas zu erfahren, oder ein Thema, mit dem man sich gern beschäftigt.",
+            "forms": "Plural · die Interessen",
+            "example": "Meine Interessen sind Musik und Sport.",
+            "example_ru": "Мои увлечения — музыка и спорт.",
+            "grammar_hint": "Interesse an + Dativ haben.",
+            "usage_note": "Interesse an etwas (Dativ) haben — интересоваться чем-либо; die Interessen — интересы, увлечения. Сравните: sich für etwas (Akkusativ) interessieren.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Interesse",
+                "https://www.duden.de/rechtschreibung/Interesse"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_420ade0842c343b1af2d",
+        "alias_id": "b1-interesse-interest",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_420ade0842c343b1af2d"
+      }
+    },
+    {
+      "candidate_number": 306,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same cross-national sense in a team; preserve the contextual translation.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 14,
+        "record": {
+          "id": "b1-international-mixed",
+          "de": "international",
+          "lemma": "international",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "международный",
+            "многонациональный"
+          ],
+          "definition_de": "Menschen oder Einrichtungen aus verschiedenen Ländern umfassend.",
+          "example": "In unserem internationalen Team arbeiten Menschen aus sechs Ländern.",
+          "example_ru": "В нашей международной команде работают люди из шести стран.",
+          "forms": "обычно без сравнения; internationaler · am internationalsten при оценке степени",
+          "grammar_hint": "ein internationales Team; international zusammengesetzt sein.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/international"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 592,
+          "record": {
+            "id": "a1-322-1",
+            "de": "international",
+            "lemma": "international",
+            "ru": "международный; интернациональный",
+            "uk": "",
+            "translations_ru": [
+              "международный",
+              "интернациональный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "gewöhnlich ohne Steigerung",
+            "definition_de": "Mehrere Länder oder Menschen aus vielen Ländern betreffend.",
+            "example": "Unsere Gruppe ist international.",
+            "example_ru": "У нас международная группа.",
+            "note": "Обычно не имеет степеней сравнения в значении принадлежности к нескольким странам; сравнительные формы возможны при сравнении степени международного характера.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "232e48f069bf098af986"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/international",
+                "scope": "meaning_or_grammar",
+                "note": "Синонимы и обычное отсутствие степеней в словарном описании."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-322-1",
+        "alias_id": "b1-international-mixed",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-322-1"
+      }
+    },
+    {
+      "candidate_number": 307,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "The adverbial phrase describes recognition across countries; preserve the phrase-level translation and qualification.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 15,
+        "record": {
+          "id": "b1-international-known",
+          "de": "international bekannt",
+          "lemma": "international",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "известный во всём мире",
+            "известный на международном уровне"
+          ],
+          "definition_de": "In vielen Ländern bekannt sein.",
+          "example": "Die Sängerin ist international bekannt.",
+          "example_ru": "Певица известна на международном уровне.",
+          "forms": "international (наречное употребление); bekannt · bekannter · am bekanntesten",
+          "grammar_hint": "international здесь без окончания; international bekannt / international tätig.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/international"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 592,
+          "record": {
+            "id": "a1-322-1",
+            "de": "international",
+            "lemma": "international",
+            "ru": "международный; интернациональный",
+            "uk": "",
+            "translations_ru": [
+              "международный",
+              "интернациональный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "gewöhnlich ohne Steigerung",
+            "definition_de": "Mehrere Länder oder Menschen aus vielen Ländern betreffend.",
+            "example": "Unsere Gruppe ist international.",
+            "example_ru": "У нас международная группа.",
+            "note": "Обычно не имеет степеней сравнения в значении принадлежности к нескольким странам; сравнительные формы возможны при сравнении степени международного характера.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "232e48f069bf098af986"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/international",
+                "scope": "meaning_or_grammar",
+                "note": "Синонимы и обычное отсутствие степеней в словарном описании."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 308,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same interview sense; retain ein Interview führen and ein Interview geben.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 16,
+        "record": {
+          "id": "b1-interview-conversation",
+          "de": "das Interview",
+          "lemma": "Interview",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "интервью"
+          ],
+          "definition_de": "Ein Gespräch, bei dem eine Person gezielt Fragen stellt, häufig zur Veröffentlichung.",
+          "example": "Die Journalistin führt ein Interview mit dem Autor.",
+          "example_ru": "Журналистка берёт интервью у автора.",
+          "forms": "die Interviews",
+          "grammar_hint": "ein Interview mit + Dativ führen; jemandem (Dativ) ein Interview geben.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Interview"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 171,
+          "record": {
+            "id": "dict_aaf2265d269193bfde6a",
+            "de": "das Interview",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "интервью"
+            ],
+            "definition_de": "Ein Gespräch, bei dem eine Person Fragen stellt und eine andere sie beantwortet.",
+            "forms": "Plural · die Interviews",
+            "example": "Im Radio habe ich ein Interview mit einer Schauspielerin gehört.",
+            "example_ru": "По радио я услышала интервью с актрисой.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Interview"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_aaf2265d269193bfde6a",
+        "alias_id": "b1-interview-conversation",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_aaf2265d269193bfde6a"
+      }
+    },
+    {
+      "candidate_number": 309,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same standalone affirmative reply; keep the modal-particle card independent.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 22,
+        "record": {
+          "id": "b1-ja-affirmative",
+          "de": "ja",
+          "lemma": "ja",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "да"
+          ],
+          "definition_de": "Bejaht eine Frage oder drückt Einverständnis aus.",
+          "example": "Hast du morgen frei? – Ja.",
+          "example_ru": "Ты завтра свободна? — Да.",
+          "forms": "неизменяемое",
+          "grammar_hint": "На утвердительный вопрос: ja / nein. Чтобы опровергнуть отрицательный вопрос, часто используется doch.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ja"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 47,
+          "record": {
+            "id": "particle-ja-answer",
+            "de": "ja",
+            "lemma": "ja",
+            "ru": "да",
+            "uk": "",
+            "translations_ru": [
+              "да"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Bestätigt eine Frage ohne Verneinung.",
+            "example": "«Lernst du Deutsch?» – «Ja.»",
+            "example_ru": "«Ты учишь немецкий?» — «Да».",
+            "note": "Самостоятельный утвердительный ответ. Для возражения на отрицание часто используется doch.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e0769bc112e126ce9eb"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "row_id": "1ee13f06ec889c70c0a1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 566,
+          "record": {
+            "id": "a2-ja-surprise-reviewed",
+            "de": "ja",
+            "part": "particle",
+            "level": "A2",
+            "translations_ru": [
+              "же",
+              "ведь",
+              "вот это (при удивлении)"
+            ],
+            "definition_de": "Drückt im Satz aus, dass der Sprecher etwas bemerkt und darüber überrascht oder erfreut ist.",
+            "forms": "неизменяемая модальная частица",
+            "example": "Du bist ja schon fertig!",
+            "example_ru": "Ты уже закончил!",
+            "grammar_hint": "Без ударения, обычно внутри предложения: Das ist ja schön! Не занимает самостоятельно первое место; порядок слов главного предложения не меняется.",
+            "usage_note": "Часто не переводится отдельным словом, передаёт эмоцию. Утвердительный ответ ja — A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ja",
+                "https://www.deutschakademie.de/online-deutschkurs/deutsche-grammatik/wortarten/partikel/"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "particle-ja-answer",
+        "alias_id": "b1-ja-affirmative",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "particle-ja-answer"
+      }
+    },
+    {
+      "candidate_number": 310,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "A conversational invitation to speak differs from answering a positive yes/no question.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 23,
+        "record": {
+          "id": "b1-ja-acknowledge",
+          "de": "Ja, bitte?",
+          "lemma": "ja",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "да, слушаю",
+            "да, пожалуйста"
+          ],
+          "definition_de": "Eine Reaktion, die zeigt, dass man auf eine Anrede eingeht.",
+          "example": "Entschuldigung! – Ja, bitte?",
+          "example_ru": "Извините! — Да, слушаю?",
+          "forms": "устойчивая реплика",
+          "grammar_hint": "При обращении или телефонном разговоре сигнализирует готовность слушать; интонация вопросительная.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ja"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 47,
+          "record": {
+            "id": "particle-ja-answer",
+            "de": "ja",
+            "lemma": "ja",
+            "ru": "да",
+            "uk": "",
+            "translations_ru": [
+              "да"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Bestätigt eine Frage ohne Verneinung.",
+            "example": "«Lernst du Deutsch?» – «Ja.»",
+            "example_ru": "«Ты учишь немецкий?» — «Да».",
+            "note": "Самостоятельный утвердительный ответ. Для возражения на отрицание часто используется doch.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e0769bc112e126ce9eb"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "row_id": "1ee13f06ec889c70c0a1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 566,
+          "record": {
+            "id": "a2-ja-surprise-reviewed",
+            "de": "ja",
+            "part": "particle",
+            "level": "A2",
+            "translations_ru": [
+              "же",
+              "ведь",
+              "вот это (при удивлении)"
+            ],
+            "definition_de": "Drückt im Satz aus, dass der Sprecher etwas bemerkt und darüber überrascht oder erfreut ist.",
+            "forms": "неизменяемая модальная частица",
+            "example": "Du bist ja schon fertig!",
+            "example_ru": "Ты уже закончил!",
+            "grammar_hint": "Без ударения, обычно внутри предложения: Das ist ja schön! Не занимает самостоятельно первое место; порядок слов главного предложения не меняется.",
+            "usage_note": "Часто не переводится отдельным словом, передаёт эмоцию. Утвердительный ответ ja — A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ja",
+                "https://www.deutschakademie.de/online-deutschkurs/deutsche-grammatik/wortarten/partikel/"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 311,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Repeated agreement has tone-dependent pragmatic force; retain dedicated dialogue practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 24,
+        "record": {
+          "id": "b1-ja-repeated-assurance",
+          "de": "ja, ja",
+          "lemma": "ja",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "да-да",
+            "хорошо, хорошо"
+          ],
+          "definition_de": "Wiederholte Zustimmung oder Versicherung, manchmal mit Ungeduld.",
+          "example": "Vergiss den Regenschirm nicht! – Ja, ja, ich nehme ihn mit.",
+          "example_ru": "Не забудь зонтик! — Да-да, я возьму его.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Интонация важна: может звучать успокаивающе или нетерпеливо. Не всегда уместно в официальном разговоре.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ja"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 47,
+          "record": {
+            "id": "particle-ja-answer",
+            "de": "ja",
+            "lemma": "ja",
+            "ru": "да",
+            "uk": "",
+            "translations_ru": [
+              "да"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Bestätigt eine Frage ohne Verneinung.",
+            "example": "«Lernst du Deutsch?» – «Ja.»",
+            "example_ru": "«Ты учишь немецкий?» — «Да».",
+            "note": "Самостоятельный утвердительный ответ. Для возражения на отрицание часто используется doch.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e0769bc112e126ce9eb"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "row_id": "1ee13f06ec889c70c0a1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 566,
+          "record": {
+            "id": "a2-ja-surprise-reviewed",
+            "de": "ja",
+            "part": "particle",
+            "level": "A2",
+            "translations_ru": [
+              "же",
+              "ведь",
+              "вот это (при удивлении)"
+            ],
+            "definition_de": "Drückt im Satz aus, dass der Sprecher etwas bemerkt und darüber überrascht oder erfreut ist.",
+            "forms": "неизменяемая модальная частица",
+            "example": "Du bist ja schon fertig!",
+            "example_ru": "Ты уже закончил!",
+            "grammar_hint": "Без ударения, обычно внутри предложения: Das ist ja schön! Не занимает самостоятельно первое место; порядок слов главного предложения не меняется.",
+            "usage_note": "Часто не переводится отдельным словом, передаёт эмоцию. Утвердительный ответ ja — A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ja",
+                "https://www.deutschakademie.de/online-deutschkurs/deutsche-grammatik/wortarten/partikel/"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 312,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Conversational expression of surprise or request for confirmation, distinct from the plain affirmative reply.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_040.json",
+        "sha": "b5cbc6a72707d334dbafa1e27682750b47ba5cde",
+        "batch": 40,
+        "row": 25,
+        "record": {
+          "id": "b1-ja-question-surprise",
+          "de": "Ja, wirklich?",
+          "lemma": "ja",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "да, правда?",
+            "неужели?"
+          ],
+          "definition_de": "Eine Rückfrage, die Überraschung oder Interesse zeigt.",
+          "example": "Morgen gibt es keinen Unterricht. – Ja, wirklich?",
+          "example_ru": "Завтра не будет занятий. — Да, правда?",
+          "forms": "устойчивая вопросительная реплика",
+          "grammar_hint": "Восходящая интонация; wirklich? — «правда?».",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ja"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 47,
+          "record": {
+            "id": "particle-ja-answer",
+            "de": "ja",
+            "lemma": "ja",
+            "ru": "да",
+            "uk": "",
+            "translations_ru": [
+              "да"
+            ],
+            "part": "particle",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Bestätigt eine Frage ohne Verneinung.",
+            "example": "«Lernst du Deutsch?» – «Ja.»",
+            "example_ru": "«Ты учишь немецкий?» — «Да».",
+            "note": "Самостоятельный утвердительный ответ. Для возражения на отрицание часто используется doch.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "7e0769bc112e126ce9eb"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "row_id": "1ee13f06ec889c70c0a1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 566,
+          "record": {
+            "id": "a2-ja-surprise-reviewed",
+            "de": "ja",
+            "part": "particle",
+            "level": "A2",
+            "translations_ru": [
+              "же",
+              "ведь",
+              "вот это (при удивлении)"
+            ],
+            "definition_de": "Drückt im Satz aus, dass der Sprecher etwas bemerkt und darüber überrascht oder erfreut ist.",
+            "forms": "неизменяемая модальная частица",
+            "example": "Du bist ja schon fertig!",
+            "example_ru": "Ты уже закончил!",
+            "grammar_hint": "Без ударения, обычно внутри предложения: Das ist ja schön! Не занимает самостоятельно первое место; порядок слов главного предложения не меняется.",
+            "usage_note": "Часто не переводится отдельным словом, передаёт эмоцию. Утвердительный ответ ja — A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/ja",
+                "https://www.deutschakademie.de/online-deutschkurs/deutsche-grammatik/wortarten/partikel/"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-320-1",
+      "alias_ids": [
+        "b1-in-location"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-320-1",
+        "de": "in",
+        "lemma": "in",
+        "ru": "в (местонахождение); в; внутри (местоположение)",
+        "uk": "",
+        "translations_ru": [
+          "в (местонахождение)",
+          "в",
+          "внутри (местоположение)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+        "example": "Ich arbeite in einem Geschäft.",
+        "example_ru": "Я работаю в магазине.",
+        "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "508647b59867d1d31870"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/in",
+            "scope": "meaning_and_case"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wo? im Zimmer, in der Küche. Движение внутри помещения тоже может быть с Dativ: Ich laufe im Zimmer.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "in + Dativ; im = in dem"
+        ],
+        "alternative_definitions_de": [
+          "Gibt an, wo sich etwas in einem räumlichen Bereich befindet."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Das Büro liegt im zweiten Stock.",
+            "ru": "Офис находится на втором этаже."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-in-location",
+            "de": "in",
+            "part": "prep",
+            "forms": "in + Dativ; im = in dem",
+            "definition_de": "Gibt an, wo sich etwas in einem räumlichen Bereich befindet.",
+            "translations_ru": [
+              "в",
+              "внутри (местоположение)"
+            ],
+            "grammar_hint": "Wo? im Zimmer, in der Küche. Движение внутри помещения тоже может быть с Dativ: Ich laufe im Zimmer.",
+            "example": "Das Büro liegt im zweiten Stock.",
+            "example_ru": "Офис находится на втором этаже."
+          }
+        ],
+        "alias_ids": [
+          "b1-in-location"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-320-2",
+      "alias_ids": [
+        "b1-in-direction"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-320-2",
+        "de": "in",
+        "lemma": "in",
+        "ru": "в (направление внутрь); в; внутрь (направление)",
+        "uk": "",
+        "translations_ru": [
+          "в (направление внутрь)",
+          "в",
+          "внутрь (направление)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "+ Akkusativ",
+        "definition_de": "Nennt den Ort, in den man sich bewegt.",
+        "example": "Wir gehen ins Kino.",
+        "example_ru": "Мы идём в кино.",
+        "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "508647b59867d1d31870"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/in",
+            "scope": "meaning_and_case"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wohin? in den Keller; Wo? im Keller. Только для Wechselpräpositionen действует это различие.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "in + Akkusativ; ins = in das"
+        ],
+        "alternative_definitions_de": [
+          "Gibt das Ziel einer Bewegung in einen räumlichen Bereich an."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir bringen die Kisten in den Keller.",
+            "ru": "Мы относим коробки в подвал."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-in-direction",
+            "de": "in",
+            "part": "prep",
+            "forms": "in + Akkusativ; ins = in das",
+            "definition_de": "Gibt das Ziel einer Bewegung in einen räumlichen Bereich an.",
+            "translations_ru": [
+              "в",
+              "внутрь (направление)"
+            ],
+            "grammar_hint": "Wohin? in den Keller; Wo? im Keller. Только для Wechselpräpositionen действует это различие.",
+            "example": "Wir bringen die Kisten in den Keller.",
+            "example_ru": "Мы относим коробки в подвал."
+          }
+        ],
+        "alias_ids": [
+          "b1-in-direction"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-320-3",
+      "alias_ids": [
+        "b1-in-future"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-320-3",
+        "de": "in",
+        "lemma": "in",
+        "ru": "через (время); через (промежуток времени)",
+        "uk": "",
+        "translations_ru": [
+          "через (время)",
+          "через (промежуток времени)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время",
+          "Время и даты"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+        "example": "Der Bus kommt in zehn Minuten.",
+        "example_ru": "Автобус придёт через десять минут.",
+        "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "508647b59867d1d31870"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/in",
+            "scope": "meaning_and_case"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "in + Dativ: in einer Stunde — через час; seit einer Stunde — уже час; innerhalb einer Stunde — в течение часа, в пределах часа.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "in + Dativ"
+        ],
+        "alternative_definitions_de": [
+          "Gibt an, nach welcher Zeitspanne etwas stattfindet."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Der Zug kommt in zehn Minuten an.",
+            "ru": "Поезд прибывает через десять минут."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-in-future",
+            "de": "in",
+            "part": "prep",
+            "forms": "in + Dativ",
+            "definition_de": "Gibt an, nach welcher Zeitspanne etwas stattfindet.",
+            "translations_ru": [
+              "через (промежуток времени)"
+            ],
+            "grammar_hint": "in + Dativ: in einer Stunde — через час; seit einer Stunde — уже час; innerhalb einer Stunde — в течение часа, в пределах часа.",
+            "example": "Der Zug kommt in zehn Minuten an.",
+            "example_ru": "Поезд прибывает через десять минут."
+          }
+        ],
+        "alias_ids": [
+          "b1-in-future"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_a067470e0e9fe8668017",
+      "alias_ids": [
+        "b1-informieren-reflexive"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a067470e0e9fe8668017",
+        "de": "sich informieren",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "узнавать",
+          "наводить справки",
+          "получать информацию",
+          "узнавать информацию"
+        ],
+        "definition_de": "Sich die nötigen Kenntnisse über ein Thema verschaffen.",
+        "example": "Ich informiere mich über die neuen Kurse.",
+        "example_ru": "Я узнаю информацию о новых курсах.",
+        "grammar_hint": "sich informieren über + Akkusativ; ich informiere mich, du informierst dich. Приставка неотделяемая; Partizip II без ge-.\nsich (Akkusativ) über + Akkusativ informieren; sich bei + Dativ informieren — узнать у кого-либо.",
+        "usage_note": "В Goethe A2 два возвратных примера: sich über etwas informieren. informiert — личная форма/Partizip II, не отдельный подтверждённый смысл прилагательного. Невозвратное jemanden informieren существует отдельно.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/informieren"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "informiert sich · informierte sich · hat sich informiert",
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения",
+          "Общение"
+        ],
+        "ru": "узнавать; наводить справки; получать информацию; узнавать информацию",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Sich selbst die nötigen Auskünfte beschaffen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich informiere mich über die Aufnahmebedingungen.",
+            "ru": "Я узнаю об условиях поступления."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-informieren-reflexive",
+            "de": "sich informieren",
+            "part": "verb",
+            "forms": "informiert sich · informierte sich · hat sich informiert",
+            "definition_de": "Sich selbst die nötigen Auskünfte beschaffen.",
+            "translations_ru": [
+              "узнавать информацию",
+              "наводить справки"
+            ],
+            "grammar_hint": "sich (Akkusativ) über + Akkusativ informieren; sich bei + Dativ informieren — узнать у кого-либо.",
+            "example": "Ich informiere mich über die Aufnahmebedingungen.",
+            "example_ru": "Я узнаю об условиях поступления."
+          }
+        ],
+        "alias_ids": [
+          "b1-informieren-reflexive"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/informieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-321-1",
+      "alias_ids": [
+        "b1-information-facts"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-321-1",
+        "de": "die Information",
+        "lemma": "Information",
+        "ru": "информация; сведения",
+        "uk": "",
+        "translations_ru": [
+          "информация",
+          "сведения"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Общение"
+        ],
+        "forms": "die Informationen",
+        "definition_de": "Eine Auskunft über etwas.",
+        "example": "Ich brauche eine Information zum Kurs.",
+        "example_ru": "Мне нужна информация о курсе.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "af1d75867523705cae73"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Informationen über + Akkusativ / zu + Dativ; Informationen erhalten.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Mitteilung, die Wissen über einen Sachverhalt vermittelt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Informationen zum Kurs stehen auf der Website.",
+            "ru": "Информация о курсе размещена на сайте."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-information-facts",
+            "de": "die Information",
+            "part": "noun",
+            "forms": "die Informationen",
+            "definition_de": "Eine Mitteilung, die Wissen über einen Sachverhalt vermittelt.",
+            "translations_ru": [
+              "информация",
+              "сведения"
+            ],
+            "grammar_hint": "Informationen über + Akkusativ / zu + Dativ; Informationen erhalten.",
+            "example": "Die Informationen zum Kurs stehen auf der Website.",
+            "example_ru": "Информация о курсе размещена на сайте."
+          }
+        ],
+        "alias_ids": [
+          "b1-information-facts"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Information"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-321-2",
+      "alias_ids": [
+        "b1-information-desk"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-321-2",
+        "de": "die Information",
+        "lemma": "Information",
+        "ru": "справочная; стойка информации; информационная стойка",
+        "uk": "",
+        "translations_ru": [
+          "справочная",
+          "стойка информации",
+          "информационная стойка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Транспорт и путешествия"
+        ],
+        "forms": "die Informationen",
+        "definition_de": "Eine Stelle, an der man Auskunft bekommt.",
+        "example": "Fragen Sie bitte an der Information.",
+        "example_ru": "Спросите, пожалуйста, в справочной.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "af1d75867523705cae73"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "an der Information (Dativ); zur Information gehen. Синоним: die Auskunft (в соответствующем контексте).",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "в этом значении обычно Singular"
+        ],
+        "alternative_definitions_de": [
+          "Eine Anlaufstelle, an der Fragen beantwortet werden."
+        ],
+        "alternative_examples": [
+          {
+            "de": "An der Information bekommen Sie einen Stadtplan.",
+            "ru": "В справочной вы можете получить карту города."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-information-desk",
+            "de": "die Information",
+            "part": "noun",
+            "forms": "в этом значении обычно Singular",
+            "definition_de": "Eine Anlaufstelle, an der Fragen beantwortet werden.",
+            "translations_ru": [
+              "справочная",
+              "информационная стойка"
+            ],
+            "grammar_hint": "an der Information (Dativ); zur Information gehen. Синоним: die Auskunft (в соответствующем контексте).",
+            "example": "An der Information bekommen Sie einen Stadtplan.",
+            "example_ru": "В справочной вы можете получить карту города."
+          }
+        ],
+        "alias_ids": [
+          "b1-information-desk"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Information"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_4d81d1dfcfbfb9d9db99",
+      "alias_ids": [
+        "b1-insel-island"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4d81d1dfcfbfb9d9db99",
+        "de": "die Insel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "остров"
+        ],
+        "definition_de": "Ein Stück Land, das auf allen Seiten von Wasser umgeben ist.",
+        "forms": "Plural · die Inseln",
+        "example": "Wir fahren mit dem Schiff auf eine kleine Insel.",
+        "example_ru": "Мы едем на корабле на маленький остров.",
+        "grammar_hint": "auf einer Insel (Dativ); auf eine Insel fahren (Akkusativ).",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Insel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода",
+          "Природа и погода"
+        ],
+        "ru": "остров",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Inseln"
+        ],
+        "alternative_definitions_de": [
+          "Ein Stück Land, das vollständig von Wasser umgeben ist."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Auf der Insel gibt es mehrere kleine Dörfer.",
+            "ru": "На острове есть несколько маленьких деревень."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-insel-island",
+            "de": "die Insel",
+            "part": "noun",
+            "forms": "die Inseln",
+            "definition_de": "Ein Stück Land, das vollständig von Wasser umgeben ist.",
+            "translations_ru": [
+              "остров"
+            ],
+            "grammar_hint": "auf einer Insel (Dativ); auf eine Insel fahren (Akkusativ).",
+            "example": "Auf der Insel gibt es mehrere kleine Dörfer.",
+            "example_ru": "На острове есть несколько маленьких деревень."
+          }
+        ],
+        "alias_ids": [
+          "b1-insel-island"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Insel"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_3db0a3cdfc07beb84bfc",
+      "alias_ids": [
+        "b1-intelligent-clever"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3db0a3cdfc07beb84bfc",
+        "de": "intelligent",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "умный",
+          "сообразительный",
+          "интеллектуально развитый"
+        ],
+        "definition_de": "Fähig, schnell zu verstehen und Probleme zu lösen.",
+        "forms": "intelligent · intelligenter · am intelligentesten",
+        "example": "Sie ist sehr intelligent.",
+        "example_ru": "Она очень умная.",
+        "grammar_hint": "eine intelligente Person; intelligent handeln — наречное употребление без окончания.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/intelligent"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения",
+          "Учёба и языки"
+        ],
+        "ru": "умный; сообразительный; интеллектуально развитый",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Fähig, Zusammenhänge schnell zu verstehen und Probleme zu lösen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Schülerin ist intelligent und findet oft eigene Lösungen.",
+            "ru": "Ученица умная и часто находит собственные решения."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-intelligent-clever",
+            "de": "intelligent",
+            "part": "adj",
+            "forms": "intelligent · intelligenter · am intelligentesten",
+            "definition_de": "Fähig, Zusammenhänge schnell zu verstehen und Probleme zu lösen.",
+            "translations_ru": [
+              "умный",
+              "интеллектуально развитый"
+            ],
+            "grammar_hint": "eine intelligente Person; intelligent handeln — наречное употребление без окончания.",
+            "example": "Die Schülerin ist intelligent und findet oft eigene Lösungen.",
+            "example_ru": "Ученица умная и часто находит собственные решения."
+          }
+        ],
+        "alias_ids": [
+          "b1-intelligent-clever"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/intelligent"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_f4c035b17ca5db36799b",
+      "alias_ids": [
+        "b1-interessant-interesting"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f4c035b17ca5db36799b",
+        "de": "interessant",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "интересный",
+          "занимательный"
+        ],
+        "definition_de": "So, dass etwas Interesse weckt.",
+        "forms": "interessant · interessanter · am interessantesten",
+        "example": "Das Buch ist interessant.",
+        "example_ru": "Книга интересная.",
+        "grammar_hint": "ein interessanter Film; etwas interessant finden (Akkusativ + прилагательное без окончания).",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/interessant"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения",
+          "Общение"
+        ],
+        "ru": "интересный; занимательный",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "So beschaffen, dass etwas Aufmerksamkeit und Neugier weckt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich finde diese Ausstellung sehr interessant.",
+            "ru": "Я считаю эту выставку очень интересной."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-interessant-interesting",
+            "de": "interessant",
+            "part": "adj",
+            "forms": "interessant · interessanter · am interessantesten",
+            "definition_de": "So beschaffen, dass etwas Aufmerksamkeit und Neugier weckt.",
+            "translations_ru": [
+              "интересный",
+              "занимательный"
+            ],
+            "grammar_hint": "ein interessanter Film; etwas interessant finden (Akkusativ + прилагательное без окончания).",
+            "example": "Ich finde diese Ausstellung sehr interessant.",
+            "example_ru": "Я считаю эту выставку очень интересной."
+          }
+        ],
+        "alias_ids": [
+          "b1-interessant-interesting"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/interessant"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_420ade0842c343b1af2d",
+      "alias_ids": [
+        "b1-interesse-interest"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_420ade0842c343b1af2d",
+        "de": "das Interesse",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "интерес",
+          "увлечение"
+        ],
+        "definition_de": "Der Wunsch, mehr über etwas zu erfahren, oder ein Thema, mit dem man sich gern beschäftigt.",
+        "forms": "Plural · die Interessen",
+        "example": "Meine Interessen sind Musik und Sport.",
+        "example_ru": "Мои увлечения — музыка и спорт.",
+        "grammar_hint": "Interesse an + Dativ haben.\nInteresse an + Dativ; Interesse zeigen; Interessen haben. Для sich interessieren — für + Akkusativ.",
+        "usage_note": "Interesse an etwas (Dativ) haben — интересоваться чем-либо; die Interessen — интересы, увлечения. Сравните: sich für etwas (Akkusativ) interessieren.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Interesse",
+            "https://www.duden.de/rechtschreibung/Interesse"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка",
+          "Досуг и культура"
+        ],
+        "ru": "интерес; увлечение",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Sie hat großes Interesse an Sprachen.",
+            "ru": "Она проявляет большой интерес к языкам."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-interesse-interest",
+            "de": "das Interesse",
+            "part": "noun",
+            "forms": "die Interessen",
+            "definition_de": "Aufmerksamkeit und Neugier gegenüber einem Thema oder einer Tätigkeit.",
+            "translations_ru": [
+              "интерес",
+              "увлечение"
+            ],
+            "grammar_hint": "Interesse an + Dativ; Interesse zeigen; Interessen haben. Для sich interessieren — für + Akkusativ.",
+            "example": "Sie hat großes Interesse an Sprachen.",
+            "example_ru": "Она проявляет большой интерес к языкам."
+          }
+        ],
+        "alias_ids": [
+          "b1-interesse-interest"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Interesse"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-322-1",
+      "alias_ids": [
+        "b1-international-mixed"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-322-1",
+        "de": "international",
+        "lemma": "international",
+        "ru": "международный; интернациональный; многонациональный",
+        "uk": "",
+        "translations_ru": [
+          "международный",
+          "интернациональный",
+          "многонациональный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Работа и профессии"
+        ],
+        "forms": "gewöhnlich ohne Steigerung",
+        "definition_de": "Mehrere Länder oder Menschen aus vielen Ländern betreffend.",
+        "example": "Unsere Gruppe ist international.",
+        "example_ru": "У нас международная группа.",
+        "note": "Обычно не имеет степеней сравнения в значении принадлежности к нескольким странам; сравнительные формы возможны при сравнении степени международного характера.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "232e48f069bf098af986"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/international",
+            "scope": "meaning_or_grammar",
+            "note": "Синонимы и обычное отсутствие степеней в словарном описании."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "ein internationales Team; international zusammengesetzt sein.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "обычно без сравнения; internationaler · am internationalsten при оценке степени"
+        ],
+        "alternative_definitions_de": [
+          "Menschen oder Einrichtungen aus verschiedenen Ländern umfassend."
+        ],
+        "alternative_examples": [
+          {
+            "de": "In unserem internationalen Team arbeiten Menschen aus sechs Ländern.",
+            "ru": "В нашей международной команде работают люди из шести стран."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-international-mixed",
+            "de": "international",
+            "part": "adj",
+            "forms": "обычно без сравнения; internationaler · am internationalsten при оценке степени",
+            "definition_de": "Menschen oder Einrichtungen aus verschiedenen Ländern umfassend.",
+            "translations_ru": [
+              "международный",
+              "многонациональный"
+            ],
+            "grammar_hint": "ein internationales Team; international zusammengesetzt sein.",
+            "example": "In unserem internationalen Team arbeiten Menschen aus sechs Ländern.",
+            "example_ru": "В нашей международной команде работают люди из шести стран."
+          }
+        ],
+        "alias_ids": [
+          "b1-international-mixed"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/international"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_aaf2265d269193bfde6a",
+      "alias_ids": [
+        "b1-interview-conversation"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_aaf2265d269193bfde6a",
+        "de": "das Interview",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "интервью"
+        ],
+        "definition_de": "Ein Gespräch, bei dem eine Person Fragen stellt und eine andere sie beantwortet.",
+        "forms": "Plural · die Interviews",
+        "example": "Im Radio habe ich ein Interview mit einer Schauspielerin gehört.",
+        "example_ru": "По радио я услышала интервью с актрисой.",
+        "grammar_hint": "ein Interview mit + Dativ führen; jemandem (Dativ) ein Interview geben.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Interview"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения",
+          "Техника и медиа"
+        ],
+        "ru": "интервью",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Interviews"
+        ],
+        "alternative_definitions_de": [
+          "Ein Gespräch, bei dem eine Person gezielt Fragen stellt, häufig zur Veröffentlichung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Journalistin führt ein Interview mit dem Autor.",
+            "ru": "Журналистка берёт интервью у автора."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-interview-conversation",
+            "de": "das Interview",
+            "part": "noun",
+            "forms": "die Interviews",
+            "definition_de": "Ein Gespräch, bei dem eine Person gezielt Fragen stellt, häufig zur Veröffentlichung.",
+            "translations_ru": [
+              "интервью"
+            ],
+            "grammar_hint": "ein Interview mit + Dativ führen; jemandem (Dativ) ein Interview geben.",
+            "example": "Die Journalistin führt ein Interview mit dem Autor.",
+            "example_ru": "Журналистка берёт интервью у автора."
+          }
+        ],
+        "alias_ids": [
+          "b1-interview-conversation"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Interview"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "particle-ja-answer",
+      "alias_ids": [
+        "b1-ja-affirmative"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "particle-ja-answer",
+        "de": "ja",
+        "lemma": "ja",
+        "ru": "да",
+        "uk": "",
+        "translations_ru": [
+          "да"
+        ],
+        "part": "particle",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Bestätigt eine Frage ohne Verneinung.",
+        "example": "«Lernst du Deutsch?» – «Ja.»",
+        "example_ru": "«Ты учишь немецкий?» — «Да».",
+        "note": "Самостоятельный утвердительный ответ. Для возражения на отрицание часто используется doch.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "7e0769bc112e126ce9eb"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "row_id": "1ee13f06ec889c70c0a1"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "На утвердительный вопрос: ja / nein. Чтобы опровергнуть отрицательный вопрос, часто используется doch.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Bejaht eine Frage oder drückt Einverständnis aus."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Hast du morgen frei? – Ja.",
+            "ru": "Ты завтра свободна? — Да."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ja-affirmative",
+            "de": "ja",
+            "part": "particle",
+            "forms": "неизменяемое",
+            "definition_de": "Bejaht eine Frage oder drückt Einverständnis aus.",
+            "translations_ru": [
+              "да"
+            ],
+            "grammar_hint": "На утвердительный вопрос: ja / nein. Чтобы опровергнуть отрицательный вопрос, часто используется doch.",
+            "example": "Hast du morgen frei? – Ja.",
+            "example_ru": "Ты завтра свободна? — Да."
+          }
+        ],
+        "alias_ids": [
+          "b1-ja-affirmative"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 52,
+              "scope": "context",
+              "note": "B1 exam vocabulary, earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ja"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

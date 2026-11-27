@@ -1,0 +1,3458 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 353–372 using staged definitions, examples and grammar. Conditional proposals only. No independent CEFR verification or changes to original cards, deployed levels or progress.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    353,
+    372
+  ],
+  "reviewed": 20,
+  "merge_count": 16,
+  "merge_target_count": 12,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [
+    {
+      "id": "b1-karte-travel-ticket",
+      "issue": "Use билет на транспорт as the broad gloss. Проездной is appropriate only if the specific context indicates a pass. Cross-reference Fahrkarte and Swiss Billett."
+    },
+    {
+      "id": "a1-338-1",
+      "issue": "Keep separate labeled examples for countable and noncount nouns and for standalone kein pronouns; preserve their individual IDs in any migration."
+    },
+    {
+      "id": "b1-kennen-familiarity",
+      "issue": "The definition mentions a domain or subject area, but the example covers a city. Validate a separate domain example before release."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 353,
+      "decision": "retain_distinct_sense",
+      "reason": "The transport-ticket sense is absent from the indexed Karte matches. A1 Fahrkarte is a related headword, so preserve Karte and cross-reference it.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 8,
+        "record": {
+          "id": "b1-karte-travel-ticket",
+          "de": "die Karte",
+          "lemma": "Karte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "билет (на транспорт)",
+            "проездной"
+          ],
+          "definition_de": "Ein Nachweis, der zur Nutzung eines Verkehrsmittels berechtigt.",
+          "example": "Mit dieser Karte darfst du auch den Bus benutzen.",
+          "example_ru": "По этому билету можно ездить и на автобусе.",
+          "forms": "die Karten",
+          "grammar_hint": "eine gültige Karte; точнее Fahrkarte, CH: Billett.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 462,
+          "record": {
+            "id": "a1-333-1",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "открытка",
+            "uk": "",
+            "translations_ru": [
+              "открытка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+            "example": "Ich schicke dir eine Karte aus Bern.",
+            "example_ru": "Я пришлю тебе открытку из Берна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 759,
+          "record": {
+            "id": "a1-333-2",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "игральная карта",
+            "uk": "",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Ein Stück aus einem Kartenspiel.",
+            "example": "Zieh bitte eine Karte.",
+            "example_ru": "Вытащи, пожалуйста, одну карту.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 760,
+          "record": {
+            "id": "a1-333-3",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+            "example": "Kann ich die Karte sehen?",
+            "example_ru": "Можно посмотреть меню?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 354,
+      "decision": "retain_distinct_sense",
+      "reason": "Admission to a theater or event differs from postal, playing-card, and menu senses and from the transport use.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 9,
+        "record": {
+          "id": "b1-karte-admission",
+          "de": "die Karte",
+          "lemma": "Karte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "входной билет"
+          ],
+          "definition_de": "Ein Nachweis, der den Zutritt zu einer Veranstaltung erlaubt.",
+          "example": "Für das Theater habe ich zwei Karten reserviert.",
+          "example_ru": "Я забронировала два билета в театр.",
+          "forms": "die Karten",
+          "grammar_hint": "Karten für + Akkusativ; Eintrittskarte, Konzertkarte.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 462,
+          "record": {
+            "id": "a1-333-1",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "открытка",
+            "uk": "",
+            "translations_ru": [
+              "открытка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+            "example": "Ich schicke dir eine Karte aus Bern.",
+            "example_ru": "Я пришлю тебе открытку из Берна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 759,
+          "record": {
+            "id": "a1-333-2",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "игральная карта",
+            "uk": "",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Ein Stück aus einem Kartenspiel.",
+            "example": "Zieh bitte eine Karte.",
+            "example_ru": "Вытащи, пожалуйста, одну карту.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 760,
+          "record": {
+            "id": "a1-333-3",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+            "example": "Kann ich die Karte sehen?",
+            "example_ru": "Можно посмотреть меню?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 355,
+      "decision": "retain_distinct_sense",
+      "reason": "Geographic map differs from the indexed Karte senses; Stadtplan is a map of a city, which is narrower.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 10,
+        "record": {
+          "id": "b1-karte-map",
+          "de": "die Karte",
+          "lemma": "Karte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "карта (географическая)"
+          ],
+          "definition_de": "Eine Darstellung eines geografischen Gebietes zur Orientierung.",
+          "example": "Auf der Karte suchen wir einen Wanderweg.",
+          "example_ru": "На карте мы ищем туристический маршрут.",
+          "forms": "die Karten",
+          "grammar_hint": "auf der Karte (Dativ); Landkarte, Stadtkarte.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 462,
+          "record": {
+            "id": "a1-333-1",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "открытка",
+            "uk": "",
+            "translations_ru": [
+              "открытка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+            "example": "Ich schicke dir eine Karte aus Bern.",
+            "example_ru": "Я пришлю тебе открытку из Берна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 759,
+          "record": {
+            "id": "a1-333-2",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "игральная карта",
+            "uk": "",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Ein Stück aus einem Kartenspiel.",
+            "example": "Zieh bitte eine Karte.",
+            "example_ru": "Вытащи, пожалуйста, одну карту.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 760,
+          "record": {
+            "id": "a1-333-3",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+            "example": "Kann ich die Karte sehen?",
+            "example_ru": "Можно посмотреть меню?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 356,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same restaurant menu. Keep the request with uns in Dativ and generic Speisekarte cross-reference.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 11,
+        "record": {
+          "id": "b1-karte-menu",
+          "de": "die Karte",
+          "lemma": "Karte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "меню",
+            "карта блюд"
+          ],
+          "definition_de": "Eine Übersicht der angebotenen Speisen oder Getränke in einem Lokal.",
+          "example": "Könnten Sie uns bitte die Karte bringen?",
+          "example_ru": "Не могли бы вы принести нам меню?",
+          "forms": "die Karten",
+          "grammar_hint": "Kurzform von Speisekarte; Getränkekarte — карта напитков.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 462,
+          "record": {
+            "id": "a1-333-1",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "открытка",
+            "uk": "",
+            "translations_ru": [
+              "открытка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+            "example": "Ich schicke dir eine Karte aus Bern.",
+            "example_ru": "Я пришлю тебе открытку из Берна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 759,
+          "record": {
+            "id": "a1-333-2",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "игральная карта",
+            "uk": "",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Ein Stück aus einem Kartenspiel.",
+            "example": "Zieh bitte eine Karte.",
+            "example_ru": "Вытащи, пожалуйста, одну карту.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 760,
+          "record": {
+            "id": "a1-333-3",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+            "example": "Kann ich die Karte sehen?",
+            "example_ru": "Можно посмотреть меню?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-333-3",
+        "alias_id": "b1-karte-menu",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-333-3"
+      }
+    },
+    {
+      "candidate_number": 357,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same playing card. Preserve Karten spielen as an example of the plural.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 12,
+        "record": {
+          "id": "b1-karte-playing",
+          "de": "die Karte",
+          "lemma": "Karte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "игральная карта"
+          ],
+          "definition_de": "Ein einzelnes Blatt eines Kartenspiels.",
+          "example": "Am Abend spielen wir mit den Nachbarn Karten.",
+          "example_ru": "Вечером мы играем с соседями в карты.",
+          "forms": "die Karten",
+          "grammar_hint": "Karten spielen — без артикля; eine Karte ziehen.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 462,
+          "record": {
+            "id": "a1-333-1",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "открытка",
+            "uk": "",
+            "translations_ru": [
+              "открытка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine kleine Karte, die man meist ohne Umschlag mit Grüßen verschickt.",
+            "example": "Ich schicke dir eine Karte aus Bern.",
+            "example_ru": "Я пришлю тебе открытку из Берна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 759,
+          "record": {
+            "id": "a1-333-2",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "игральная карта",
+            "uk": "",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Ein Stück aus einem Kartenspiel.",
+            "example": "Zieh bitte eine Karte.",
+            "example_ru": "Вытащи, пожалуйста, одну карту.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 760,
+          "record": {
+            "id": "a1-333-3",
+            "de": "die Karte",
+            "lemma": "Karte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Karten",
+            "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+            "example": "Kann ich die Karte sehen?",
+            "example_ru": "Можно посмотреть меню?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "b8097dc4efd29bbe6f9b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-333-2",
+        "alias_id": "b1-karte-playing",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-333-2"
+      }
+    },
+    {
+      "candidate_number": 358,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same transport ticket. Keep Swiss Billett and the distinction between a ticket for a trip and a pass.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 14,
+        "record": {
+          "id": "b1-fahrkarte-ticket",
+          "de": "die Fahrkarte",
+          "lemma": "Fahrkarte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "проездной билет",
+            "билет на транспорт"
+          ],
+          "definition_de": "Ein Dokument, das zur Fahrt mit einem Verkehrsmittel berechtigt.",
+          "example": "Am Automaten kaufe ich eine Fahrkarte nach Bern.",
+          "example_ru": "В автомате я покупаю билет до Берна.",
+          "forms": "die Fahrkarten",
+          "grammar_hint": "eine Fahrkarte lösen / kaufen; CH: Billett.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Fahrkarte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 28,
+          "record": {
+            "id": "travel-ticket",
+            "de": "die Fahrkarte",
+            "lemma": "Fahrkarte",
+            "ru": "билет (на транспорт)",
+            "uk": "",
+            "translations_ru": [
+              "билет (на транспорт)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "die Fahrkarten",
+            "definition_de": "Ein Ticket für eine Fahrt mit Bus, Bahn oder einem anderen Verkehrsmittel.",
+            "example": "Die Fahrkarte gilt bis Zürich.",
+            "example_ru": "Билет действует до Цюриха.",
+            "note": "В Швейцарии также распространено das Billett (die Billette). Fahrkarte — именно билет на транспорт, Ticket имеет более широкое значение.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "472d0d478ea07d084c4c"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Fahrkarte",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "travel-ticket",
+        "alias_id": "b1-fahrkarte-ticket",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "travel-ticket"
+      }
+    },
+    {
+      "candidate_number": 359,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same edible tuber; preserve die Kartoffeln and contextual everyday Russian картошка.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 16,
+        "record": {
+          "id": "b1-kartoffel-potato",
+          "de": "die Kartoffel",
+          "lemma": "Kartoffel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "картофель",
+            "картошка"
+          ],
+          "definition_de": "Eine essbare Knolle, die als Grundnahrungsmittel verwendet wird.",
+          "example": "Wir kochen Kartoffeln zum Mittagessen.",
+          "example_ru": "Мы варим картофель на обед.",
+          "forms": "die Kartoffeln",
+          "grammar_hint": "Kartoffeln schälen / kochen; A: Erdapfel.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kartoffel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 463,
+          "record": {
+            "id": "a1-335-1",
+            "de": "die Kartoffel",
+            "lemma": "Kartoffel",
+            "ru": "картофель",
+            "uk": "",
+            "translations_ru": [
+              "картофель"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Kartoffeln",
+            "definition_de": "Eine Knolle, die man kocht oder brät und isst.",
+            "example": "Wir kochen heute Kartoffeln.",
+            "example_ru": "Сегодня мы варим картофель.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "56ffd6f3045ee8723705"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-335-1",
+        "alias_id": "b1-kartoffel-potato",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-335-1"
+      }
+    },
+    {
+      "candidate_number": 360,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same food sense; retain eine Scheibe Käse as a countable serving expression.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 18,
+        "record": {
+          "id": "b1-kaese-cheese",
+          "de": "der Käse",
+          "lemma": "Käse",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сыр"
+          ],
+          "definition_de": "Ein Lebensmittel, das durch Verarbeitung von Milch entsteht.",
+          "example": "Ich lege eine Scheibe Käse aufs Brot.",
+          "example_ru": "Я кладу ломтик сыра на хлеб.",
+          "forms": "die Käse (сорта); обычно Singular",
+          "grammar_hint": "ein Stück Käse; aufs Brot = auf das Brot (Akkusativ).",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%A4se"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 146,
+          "record": {
+            "id": "dict_055572b52b2506e10115",
+            "de": "der Käse",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "сыр"
+            ],
+            "definition_de": "Ein Lebensmittel, das meist aus Milch hergestellt wird.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Zum Frühstück esse ich Brot mit Käse.",
+            "example_ru": "На завтрак я ем хлеб с сыром.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/K%C3%A4se"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_055572b52b2506e10115",
+        "alias_id": "b1-kaese-cheese",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_055572b52b2506e10115"
+      }
+    },
+    {
+      "candidate_number": 361,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same point of payment in a store; preserve the location example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 19,
+        "record": {
+          "id": "b1-kasse-checkout",
+          "de": "die Kasse",
+          "lemma": "Kasse",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "касса"
+          ],
+          "definition_de": "Der Ort in einem Geschäft, an dem Waren bezahlt werden.",
+          "example": "Vor der Kasse warten mehrere Kunden.",
+          "example_ru": "Перед кассой ждут несколько покупателей.",
+          "forms": "die Kassen",
+          "grammar_hint": "an der Kasse bezahlen (Dativ); zur Kasse gehen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kasse"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 464,
+          "record": {
+            "id": "a1-336-1",
+            "de": "die Kasse",
+            "lemma": "Kasse",
+            "ru": "касса",
+            "uk": "",
+            "translations_ru": [
+              "касса"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Kassen",
+            "definition_de": "Die Stelle im Geschäft, an der man bezahlt.",
+            "example": "Die Kasse ist neben dem Ausgang.",
+            "example_ru": "Касса рядом с выходом.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "0a7c1567d7d95faad98b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-336-1",
+        "alias_id": "b1-kasse-checkout",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-336-1"
+      }
+    },
+    {
+      "candidate_number": 362,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same purchase sense, with the thing purchased in Akkusativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 25,
+        "record": {
+          "id": "b1-kaufen-buy",
+          "de": "kaufen",
+          "lemma": "kaufen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "покупать",
+            "купить"
+          ],
+          "definition_de": "Etwas gegen Bezahlung erwerben.",
+          "example": "Ich kaufe morgen einen neuen Wasserkocher.",
+          "example_ru": "Я завтра куплю новый чайник.",
+          "forms": "kauft · kaufte · hat gekauft",
+          "grammar_hint": "etwas (Akkusativ) kaufen; bei + Dativ — у продавца.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaufen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 14,
+          "record": {
+            "id": "c17",
+            "de": "kaufen",
+            "lemma": "kaufen",
+            "ru": "покупать; купить",
+            "uk": "купувати",
+            "translations_ru": [
+              "покупать",
+              "купить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kauft · kaufte · hat gekauft",
+            "definition_de": "Für Geld etwas bekommen.",
+            "example": "Ich kaufe Brot.",
+            "example_ru": "Я покупаю хлеб.",
+            "note": "kaufen + Akkusativ: Ich kaufe einen Mantel.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "243759ecbaa32ff1b827"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/kaufen",
+                "scope": "meaning",
+                "note": "Русские видовые пары."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c17",
+        "alias_id": "b1-kaufen-buy",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c17"
+      }
+    },
+    {
+      "candidate_number": 363,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Beneficiary construction adds a reflexive Dativ and dedicated practice; the A1 note teaches the direct object only.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_043.json",
+        "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+        "batch": 43,
+        "row": 26,
+        "record": {
+          "id": "b1-kaufen-self",
+          "de": "sich etwas kaufen",
+          "lemma": "kaufen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "покупать себе",
+            "купить себе"
+          ],
+          "definition_de": "Etwas für den eigenen Gebrauch erwerben.",
+          "example": "Ich habe mir eine warme Jacke gekauft.",
+          "example_ru": "Я купила себе тёплую куртку.",
+          "forms": "kauft sich etwas · kaufte sich etwas · hat sich etwas gekauft",
+          "grammar_hint": "sich здесь Dativ, предмет Akkusativ: mir eine Jacke, dir ein Buch. Сравните: Ich kaufe meiner Mutter eine Jacke.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaufen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 14,
+          "record": {
+            "id": "c17",
+            "de": "kaufen",
+            "lemma": "kaufen",
+            "ru": "покупать; купить",
+            "uk": "купувати",
+            "translations_ru": [
+              "покупать",
+              "купить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kauft · kaufte · hat gekauft",
+            "definition_de": "Für Geld etwas bekommen.",
+            "example": "Ich kaufe Brot.",
+            "example_ru": "Я покупаю хлеб.",
+            "note": "kaufen + Akkusativ: Ich kaufe einen Mantel.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "243759ecbaa32ff1b827"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/kaufen",
+                "scope": "meaning",
+                "note": "Русские видовые пары."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 364,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 definition and milk example already cover nouns used without an article; preserve keine Zeit as a contextual example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 1,
+        "record": {
+          "id": "b1-kein-uncountable",
+          "de": "kein / keine",
+          "lemma": "kein",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "нет",
+            "не иметь (с неисчисляемыми существительными)"
+          ],
+          "definition_de": "Verneint ein Nomen, das ohne Artikel stehen kann.",
+          "example": "Heute habe ich keine Zeit für einen Spaziergang.",
+          "example_ru": "Сегодня у меня нет времени на прогулку.",
+          "forms": "kein · keine · keinen · keinem · keiner · keines",
+          "grammar_hint": "kein вместо неопределённого или нулевого артикля: kein Geld, keine Zeit, keinen Hunger. Не меняет позицию глагола.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kein"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 597,
+          "record": {
+            "id": "a1-338-1",
+            "de": "kein",
+            "lemma": "kein",
+            "ru": "нет (в соответствующей конструкции); никакой; ни один (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "нет (в соответствующей конструкции)",
+              "никакой",
+              "ни один (по контексту)"
+            ],
+            "part": "article",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verneint ein Nomen, das ohne Artikel oder mit ein stehen würde.",
+            "example": "Wir haben keine Milch mehr.",
+            "example_ru": "У нас больше нет молока.",
+            "note": "Отрицательный артикль kein: kein Mann, keine Frau, kein Kind, keine Kinder. Akkusativ: keinen Mann; Dativ: keinem Mann, keiner Frau, keinem Kind, keinen Kindern. Отрицает существительное с ein или без артикля. С определённым артиклем обычно nicht: Das ist nicht mein Buch. Самостоятельное употребление: Ich habe keinen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "c25a2cb10e3038ad6e13"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/kein",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-338-1",
+        "alias_id": "b1-kein-uncountable",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-338-1"
+      }
+    },
+    {
+      "candidate_number": 365,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 note explicitly covers countable nouns, including plural keine Kinder; preserve the chair example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 2,
+        "record": {
+          "id": "b1-kein-countable",
+          "de": "kein / keine",
+          "lemma": "kein",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "ни одного",
+            "никакой",
+            "нет"
+          ],
+          "definition_de": "Verneint das Vorhandensein zählbarer Personen oder Dinge.",
+          "example": "In diesem Raum stehen keine Stühle.",
+          "example_ru": "В этой комнате нет стульев.",
+          "forms": "Singular: kein/e; Plural: keine (N/A), keinen (D), keiner (G)",
+          "grammar_hint": "kein Stuhl, keine Lampe, kein Bett; Plural keine Stühle. С определённым артиклем обычно nicht: Das ist nicht der Stuhl.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kein"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 597,
+          "record": {
+            "id": "a1-338-1",
+            "de": "kein",
+            "lemma": "kein",
+            "ru": "нет (в соответствующей конструкции); никакой; ни один (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "нет (в соответствующей конструкции)",
+              "никакой",
+              "ни один (по контексту)"
+            ],
+            "part": "article",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verneint ein Nomen, das ohne Artikel oder mit ein stehen würde.",
+            "example": "Wir haben keine Milch mehr.",
+            "example_ru": "У нас больше нет молока.",
+            "note": "Отрицательный артикль kein: kein Mann, keine Frau, kein Kind, keine Kinder. Akkusativ: keinen Mann; Dativ: keinem Mann, keiner Frau, keinem Kind, keinen Kindern. Отрицает существительное с ein или без артикля. С определённым артиклем обычно nicht: Das ist nicht mein Buch. Самостоятельное употребление: Ich habe keinen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "c25a2cb10e3038ad6e13"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/kein",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-338-1",
+        "alias_id": "b1-kein-countable",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-338-1"
+      }
+    },
+    {
+      "candidate_number": 366,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 note already teaches nounless keinen; preserve neuter keins and the dialogue without flattening pronoun translations into determiner glosses.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 3,
+        "record": {
+          "id": "b1-kein-standalone",
+          "de": "keiner / keine / keins",
+          "lemma": "kein",
+          "part": "pron",
+          "level": "B1",
+          "translations_ru": [
+            "ни один",
+            "ни одна",
+            "ни одного"
+          ],
+          "definition_de": "Verneint eine bereits erwähnte Person oder Sache, ohne das Nomen zu wiederholen.",
+          "example": "Hast du ein Ladegerät? – Nein, ich habe keins.",
+          "example_ru": "У тебя есть зарядное устройство? — Нет, у меня нет.",
+          "forms": "keiner · keine · keins / keines; keinen · keinem; Plural keine",
+          "grammar_hint": "Самостоятельные формы: kein Auto → keins; kein Stift → keiner (N), keinen (A).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kein",
+              "https://de.wiktionary.org/wiki/keiner"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 597,
+          "record": {
+            "id": "a1-338-1",
+            "de": "kein",
+            "lemma": "kein",
+            "ru": "нет (в соответствующей конструкции); никакой; ни один (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "нет (в соответствующей конструкции)",
+              "никакой",
+              "ни один (по контексту)"
+            ],
+            "part": "article",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verneint ein Nomen, das ohne Artikel oder mit ein stehen würde.",
+            "example": "Wir haben keine Milch mehr.",
+            "example_ru": "У нас больше нет молока.",
+            "note": "Отрицательный артикль kein: kein Mann, keine Frau, kein Kind, keine Kinder. Akkusativ: keinen Mann; Dativ: keinem Mann, keiner Frau, keinem Kind, keinen Kindern. Отрицает существительное с ein или без артикля. С определённым артиклем обычно nicht: Das ist nicht mein Buch. Самостоятельное употребление: Ich habe keinen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "c25a2cb10e3038ad6e13"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/kein",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-338-1",
+        "alias_id": "b1-kein-standalone",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-338-1"
+      }
+    },
+    {
+      "candidate_number": 367,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same below-ground building space; preserve im Keller as the location example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 4,
+        "record": {
+          "id": "b1-keller-basement",
+          "de": "der Keller",
+          "lemma": "Keller",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "подвал",
+            "погреб"
+          ],
+          "definition_de": "Ein Raum oder Geschoss unterhalb des Erdgeschosses.",
+          "example": "Im Keller bewahren wir die Winterreifen auf.",
+          "example_ru": "В подвале мы храним зимние шины.",
+          "forms": "die Keller",
+          "grammar_hint": "im Keller (Dativ); in den Keller (Akkusativ).",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Keller"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 80,
+          "record": {
+            "id": "dict_ea7ed748c2fdb640d866",
+            "de": "der Keller",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "подвал"
+            ],
+            "definition_de": "Ein Raum oder Bereich eines Gebäudes, der ganz oder teilweise unter der Erde liegt.",
+            "forms": "Plural · die Keller",
+            "example": "Unsere Fahrräder stehen im Keller.",
+            "example_ru": "Наши велосипеды стоят в подвале.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Keller"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ea7ed748c2fdb640d866",
+        "alias_id": "b1-keller-basement",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ea7ed748c2fdb640d866"
+      }
+    },
+    {
+      "candidate_number": 368,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A2 explicitly teaches Kellnerin and Kellnerinnen in its note; preserve feminine example and forms as contextual information.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 5,
+        "record": {
+          "id": "b1-kellner-waiter",
+          "de": "der Kellner / die Kellnerin",
+          "lemma": "Kellner",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "официант",
+            "официантка"
+          ],
+          "definition_de": "Eine Person, die Gäste in einem Lokal bedient.",
+          "example": "Die Kellnerin bringt uns die Rechnung.",
+          "example_ru": "Официантка приносит нам счёт.",
+          "forms": "die Kellner / die Kellnerinnen",
+          "grammar_hint": "als Kellner arbeiten; jemandem (Dativ) die Rechnung bringen. CH: Serviceangestellter / Serviceangestellte.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kellner",
+              "https://de.wiktionary.org/wiki/Kellnerin"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 548,
+          "record": {
+            "id": "dict_9434e58f8c67cf4ad6b6",
+            "de": "der Kellner",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "официант"
+            ],
+            "definition_de": "Ein Mann, der in einem Restaurant oder Café Gäste bedient.",
+            "forms": "Plural · die Kellner",
+            "example": "Der Kellner bringt uns die Speisekarte.",
+            "example_ru": "Официант приносит нам меню.",
+            "grammar_hint": "Женский род: die Kellnerin, Plural die Kellnerinnen.",
+            "usage_note": "В швейцарской речи также Servicepersonal (общее обозначение).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 5,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kellner"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9434e58f8c67cf4ad6b6",
+        "alias_id": "b1-kellner-waiter",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9434e58f8c67cf4ad6b6"
+      }
+    },
+    {
+      "candidate_number": 369,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "A1 example explicitly covers familiarity with a place; keep the café example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 8,
+        "record": {
+          "id": "b1-kennen-place",
+          "de": "kennen",
+          "lemma": "kennen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "знать",
+            "быть знакомым с местом"
+          ],
+          "definition_de": "Mit einem Ort oder einer Einrichtung vertraut sein.",
+          "example": "Kennst du ein gutes Café in der Nähe?",
+          "example_ru": "Ты знаешь хорошее кафе поблизости?",
+          "forms": "kennt · kannte · hat gekannt",
+          "grammar_hint": "kennen + Akkusativ: ein Café kennen. wissen — знать факт; wissen, wo das Café ist.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 598,
+          "record": {
+            "id": "a1-339-1",
+            "de": "kennen",
+            "lemma": "kennen",
+            "ru": "знать, быть знакомым",
+            "uk": "",
+            "translations_ru": [
+              "знать, быть знакомым"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kennt · kannte · hat gekannt",
+            "definition_de": "Mit einer Person oder Sache vertraut sein.",
+            "example": "Kennst du diese Straße?",
+            "example_ru": "Ты знаешь эту улицу?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "1ee98518893c8b8a1888"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-339-1",
+        "alias_id": "b1-kennen-place",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-339-1"
+      }
+    },
+    {
+      "candidate_number": 370,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 definition explicitly covers familiarity with a person; keep the direct-object example and contextual gloss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 9,
+        "record": {
+          "id": "b1-kennen-person",
+          "de": "kennen",
+          "lemma": "kennen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "знать кого-либо",
+            "быть знакомым"
+          ],
+          "definition_de": "Mit einer Person bereits bekannt sein.",
+          "example": "Ich kenne unsere neue Nachbarin schon lange.",
+          "example_ru": "Я уже давно знаю нашу новую соседку.",
+          "forms": "kennt · kannte · hat gekannt",
+          "grammar_hint": "jemanden (Akkusativ) kennen; kennen описывает знакомство, kennenlernen — его начало.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 598,
+          "record": {
+            "id": "a1-339-1",
+            "de": "kennen",
+            "lemma": "kennen",
+            "ru": "знать, быть знакомым",
+            "uk": "",
+            "translations_ru": [
+              "знать, быть знакомым"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kennt · kannte · hat gekannt",
+            "definition_de": "Mit einer Person oder Sache vertraut sein.",
+            "example": "Kennst du diese Straße?",
+            "example_ru": "Ты знаешь эту улицу?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "1ee98518893c8b8a1888"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-339-1",
+        "alias_id": "b1-kennen-person",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-339-1"
+      }
+    },
+    {
+      "candidate_number": 371,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 definition already covers familiarity with a thing or place; preserve the city example without assuming a separate new sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 10,
+        "record": {
+          "id": "b1-kennen-familiarity",
+          "de": "kennen",
+          "lemma": "kennen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "знать",
+            "быть знакомым с чем-либо"
+          ],
+          "definition_de": "Mit einer Sache oder einem Gebiet durch Erfahrung vertraut sein.",
+          "example": "Ich kenne diese Stadt sehr gut.",
+          "example_ru": "Я очень хорошо знаю этот город.",
+          "forms": "kennt · kannte · hat gekannt",
+          "grammar_hint": "etwas kennen (Akkusativ); сравните: Ich weiß, wie man dorthin kommt (wissen + придаточное).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 598,
+          "record": {
+            "id": "a1-339-1",
+            "de": "kennen",
+            "lemma": "kennen",
+            "ru": "знать, быть знакомым",
+            "uk": "",
+            "translations_ru": [
+              "знать, быть знакомым"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kennt · kannte · hat gekannt",
+            "definition_de": "Mit einer Person oder Sache vertraut sein.",
+            "example": "Kennst du diese Straße?",
+            "example_ru": "Ты знаешь эту улицу?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "1ee98518893c8b8a1888"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-339-1",
+        "alias_id": "b1-kennen-familiarity",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-339-1"
+      }
+    },
+    {
+      "candidate_number": 372,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same first-acquaintance sense; preserve the reciprocal uns example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_044.json",
+        "sha": "59f50ec7ef7345af5726483acae51d3b4181be1e",
+        "batch": 44,
+        "row": 11,
+        "record": {
+          "id": "b1-kennenlernen-person",
+          "de": "kennenlernen",
+          "lemma": "kennenlernen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "знакомиться",
+            "познакомиться"
+          ],
+          "definition_de": "Zum ersten Mal mit einer Person in Kontakt kommen.",
+          "example": "Wir haben uns bei einem Sprachkurs kennengelernt.",
+          "example_ru": "Мы познакомились на языковом курсе.",
+          "forms": "lernt kennen · lernte kennen · hat kennengelernt",
+          "grammar_hint": "jemanden (Akkusativ) kennenlernen; sich kennenlernen — познакомиться друг с другом. Допустимо также kennen lernen.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennenlernen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 599,
+          "record": {
+            "id": "a1-340-1",
+            "de": "kennenlernen",
+            "lemma": "kennenlernen",
+            "ru": "знакомиться",
+            "uk": "",
+            "translations_ru": [
+              "знакомиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "lernt kennen · lernte kennen · hat kennengelernt",
+            "definition_de": "Zum ersten Mal Kontakt zu jemandem bekommen.",
+            "example": "Ich möchte deine Familie kennenlernen.",
+            "example_ru": "Я хочу познакомиться с твоей семьёй.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "4f41afaf35d52f2ead4d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-340-1",
+        "alias_id": "b1-kennenlernen-person",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-340-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-333-3",
+      "alias_ids": [
+        "b1-karte-menu"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-333-3",
+        "de": "die Karte",
+        "lemma": "Karte",
+        "ru": "меню; карта блюд",
+        "uk": "",
+        "translations_ru": [
+          "меню",
+          "карта блюд"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "die Karten",
+        "definition_de": "Eine Liste mit den Speisen oder Getränken in einem Lokal.",
+        "example": "Kann ich die Karte sehen?",
+        "example_ru": "Можно посмотреть меню?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "b8097dc4efd29bbe6f9b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Kurzform von Speisekarte; Getränkekarte — карта напитков.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Übersicht der angebotenen Speisen oder Getränke in einem Lokal."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Könnten Sie uns bitte die Karte bringen?",
+            "ru": "Не могли бы вы принести нам меню?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-karte-menu",
+            "de": "die Karte",
+            "part": "noun",
+            "forms": "die Karten",
+            "definition_de": "Eine Übersicht der angebotenen Speisen oder Getränke in einem Lokal.",
+            "translations_ru": [
+              "меню",
+              "карта блюд"
+            ],
+            "grammar_hint": "Kurzform von Speisekarte; Getränkekarte — карта напитков.",
+            "example": "Könnten Sie uns bitte die Karte bringen?",
+            "example_ru": "Не могли бы вы принести нам меню?"
+          }
+        ],
+        "alias_ids": [
+          "b1-karte-menu"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-333-2",
+      "alias_ids": [
+        "b1-karte-playing"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-333-2",
+        "de": "die Karte",
+        "lemma": "Karte",
+        "ru": "игральная карта",
+        "uk": "",
+        "translations_ru": [
+          "игральная карта"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг",
+          "Досуг и культура"
+        ],
+        "forms": "die Karten",
+        "definition_de": "Ein Stück aus einem Kartenspiel.",
+        "example": "Zieh bitte eine Karte.",
+        "example_ru": "Вытащи, пожалуйста, одну карту.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "b8097dc4efd29bbe6f9b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Karten spielen — без артикля; eine Karte ziehen.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein einzelnes Blatt eines Kartenspiels."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Am Abend spielen wir mit den Nachbarn Karten.",
+            "ru": "Вечером мы играем с соседями в карты."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-karte-playing",
+            "de": "die Karte",
+            "part": "noun",
+            "forms": "die Karten",
+            "definition_de": "Ein einzelnes Blatt eines Kartenspiels.",
+            "translations_ru": [
+              "игральная карта"
+            ],
+            "grammar_hint": "Karten spielen — без артикля; eine Karte ziehen.",
+            "example": "Am Abend spielen wir mit den Nachbarn Karten.",
+            "example_ru": "Вечером мы играем с соседями в карты."
+          }
+        ],
+        "alias_ids": [
+          "b1-karte-playing"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/Karte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "travel-ticket",
+      "alias_ids": [
+        "b1-fahrkarte-ticket"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "travel-ticket",
+        "de": "die Fahrkarte",
+        "lemma": "Fahrkarte",
+        "ru": "билет (на транспорт); проездной билет; билет на транспорт",
+        "uk": "",
+        "translations_ru": [
+          "билет (на транспорт)",
+          "проездной билет",
+          "билет на транспорт"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт",
+          "Транспорт и путешествия"
+        ],
+        "forms": "die Fahrkarten",
+        "definition_de": "Ein Ticket für eine Fahrt mit Bus, Bahn oder einem anderen Verkehrsmittel.",
+        "example": "Die Fahrkarte gilt bis Zürich.",
+        "example_ru": "Билет действует до Цюриха.",
+        "note": "В Швейцарии также распространено das Billett (die Billette). Fahrkarte — именно билет на транспорт, Ticket имеет более широкое значение.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 14,
+            "row_id": "472d0d478ea07d084c4c"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Fahrkarte",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "eine Fahrkarte lösen / kaufen; CH: Billett.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein Dokument, das zur Fahrt mit einem Verkehrsmittel berechtigt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Am Automaten kaufe ich eine Fahrkarte nach Bern.",
+            "ru": "В автомате я покупаю билет до Берна."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-fahrkarte-ticket",
+            "de": "die Fahrkarte",
+            "part": "noun",
+            "forms": "die Fahrkarten",
+            "definition_de": "Ein Dokument, das zur Fahrt mit einem Verkehrsmittel berechtigt.",
+            "translations_ru": [
+              "проездной билет",
+              "билет на транспорт"
+            ],
+            "grammar_hint": "eine Fahrkarte lösen / kaufen; CH: Billett.",
+            "example": "Am Automaten kaufe ich eine Fahrkarte nach Bern.",
+            "example_ru": "В автомате я покупаю билет до Берна."
+          }
+        ],
+        "alias_ids": [
+          "b1-fahrkarte-ticket"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Fahrkarte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-335-1",
+      "alias_ids": [
+        "b1-kartoffel-potato"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-335-1",
+        "de": "die Kartoffel",
+        "lemma": "Kartoffel",
+        "ru": "картофель; картошка",
+        "uk": "",
+        "translations_ru": [
+          "картофель",
+          "картошка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "die Kartoffeln",
+        "definition_de": "Eine Knolle, die man kocht oder brät und isst.",
+        "example": "Wir kochen heute Kartoffeln.",
+        "example_ru": "Сегодня мы варим картофель.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "56ffd6f3045ee8723705"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Kartoffeln schälen / kochen; A: Erdapfel.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine essbare Knolle, die als Grundnahrungsmittel verwendet wird."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir kochen Kartoffeln zum Mittagessen.",
+            "ru": "Мы варим картофель на обед."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kartoffel-potato",
+            "de": "die Kartoffel",
+            "part": "noun",
+            "forms": "die Kartoffeln",
+            "definition_de": "Eine essbare Knolle, die als Grundnahrungsmittel verwendet wird.",
+            "translations_ru": [
+              "картофель",
+              "картошка"
+            ],
+            "grammar_hint": "Kartoffeln schälen / kochen; A: Erdapfel.",
+            "example": "Wir kochen Kartoffeln zum Mittagessen.",
+            "example_ru": "Мы варим картофель на обед."
+          }
+        ],
+        "alias_ids": [
+          "b1-kartoffel-potato"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kartoffel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_055572b52b2506e10115",
+      "alias_ids": [
+        "b1-kaese-cheese"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_055572b52b2506e10115",
+        "de": "der Käse",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "сыр"
+        ],
+        "definition_de": "Ein Lebensmittel, das meist aus Milch hergestellt wird.",
+        "forms": "В этом значении обычно в единственном числе",
+        "example": "Zum Frühstück esse ich Brot mit Käse.",
+        "example_ru": "На завтрак я ем хлеб с сыром.",
+        "grammar_hint": "ein Stück Käse; aufs Brot = auf das Brot (Akkusativ).",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/K%C3%A4se"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "ru": "сыр",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Käse (сорта); обычно Singular"
+        ],
+        "alternative_definitions_de": [
+          "Ein Lebensmittel, das durch Verarbeitung von Milch entsteht."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich lege eine Scheibe Käse aufs Brot.",
+            "ru": "Я кладу ломтик сыра на хлеб."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kaese-cheese",
+            "de": "der Käse",
+            "part": "noun",
+            "forms": "die Käse (сорта); обычно Singular",
+            "definition_de": "Ein Lebensmittel, das durch Verarbeitung von Milch entsteht.",
+            "translations_ru": [
+              "сыр"
+            ],
+            "grammar_hint": "ein Stück Käse; aufs Brot = auf das Brot (Akkusativ).",
+            "example": "Ich lege eine Scheibe Käse aufs Brot.",
+            "example_ru": "Я кладу ломтик сыра на хлеб."
+          }
+        ],
+        "alias_ids": [
+          "b1-kaese-cheese"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%A4se"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-336-1",
+      "alias_ids": [
+        "b1-kasse-checkout"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-336-1",
+        "de": "die Kasse",
+        "lemma": "Kasse",
+        "ru": "касса",
+        "uk": "",
+        "translations_ru": [
+          "касса"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки",
+          "Покупки и услуги"
+        ],
+        "forms": "die Kassen",
+        "definition_de": "Die Stelle im Geschäft, an der man bezahlt.",
+        "example": "Die Kasse ist neben dem Ausgang.",
+        "example_ru": "Касса рядом с выходом.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "0a7c1567d7d95faad98b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "an der Kasse bezahlen (Dativ); zur Kasse gehen.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Der Ort in einem Geschäft, an dem Waren bezahlt werden."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Vor der Kasse warten mehrere Kunden.",
+            "ru": "Перед кассой ждут несколько покупателей."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kasse-checkout",
+            "de": "die Kasse",
+            "part": "noun",
+            "forms": "die Kassen",
+            "definition_de": "Der Ort in einem Geschäft, an dem Waren bezahlt werden.",
+            "translations_ru": [
+              "касса"
+            ],
+            "grammar_hint": "an der Kasse bezahlen (Dativ); zur Kasse gehen.",
+            "example": "Vor der Kasse warten mehrere Kunden.",
+            "example_ru": "Перед кассой ждут несколько покупателей."
+          }
+        ],
+        "alias_ids": [
+          "b1-kasse-checkout"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kasse"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "c17",
+      "alias_ids": [
+        "b1-kaufen-buy"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c17",
+        "de": "kaufen",
+        "lemma": "kaufen",
+        "ru": "покупать; купить",
+        "uk": "купувати",
+        "translations_ru": [
+          "покупать",
+          "купить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Покупки и услуги"
+        ],
+        "forms": "kauft · kaufte · hat gekauft",
+        "definition_de": "Für Geld etwas bekommen.",
+        "example": "Ich kaufe Brot.",
+        "example_ru": "Я покупаю хлеб.",
+        "note": "kaufen + Akkusativ: Ich kaufe einen Mantel.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "243759ecbaa32ff1b827"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/kaufen",
+            "scope": "meaning",
+            "note": "Русские видовые пары."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "etwas (Akkusativ) kaufen; bei + Dativ — у продавца.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Etwas gegen Bezahlung erwerben."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich kaufe morgen einen neuen Wasserkocher.",
+            "ru": "Я завтра куплю новый чайник."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kaufen-buy",
+            "de": "kaufen",
+            "part": "verb",
+            "forms": "kauft · kaufte · hat gekauft",
+            "definition_de": "Etwas gegen Bezahlung erwerben.",
+            "translations_ru": [
+              "покупать",
+              "купить"
+            ],
+            "grammar_hint": "etwas (Akkusativ) kaufen; bei + Dativ — у продавца.",
+            "example": "Ich kaufe morgen einen neuen Wasserkocher.",
+            "example_ru": "Я завтра куплю новый чайник."
+          }
+        ],
+        "alias_ids": [
+          "b1-kaufen-buy"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kaufen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-338-1",
+      "alias_ids": [
+        "b1-kein-uncountable",
+        "b1-kein-countable",
+        "b1-kein-standalone"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-338-1",
+        "de": "kein",
+        "lemma": "kein",
+        "ru": "нет (в соответствующей конструкции); никакой; ни один (по контексту)",
+        "uk": "",
+        "translations_ru": [
+          "нет (в соответствующей конструкции)",
+          "никакой",
+          "ни один (по контексту)"
+        ],
+        "part": "article",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "",
+        "definition_de": "Verneint ein Nomen, das ohne Artikel oder mit ein stehen würde.",
+        "example": "Wir haben keine Milch mehr.",
+        "example_ru": "У нас больше нет молока.",
+        "note": "Отрицательный артикль kein: kein Mann, keine Frau, kein Kind, keine Kinder. Akkusativ: keinen Mann; Dativ: keinem Mann, keiner Frau, keinem Kind, keinen Kindern. Отрицает существительное с ein или без артикля. С определённым артиклем обычно nicht: Das ist nicht mein Buch. Самостоятельное употребление: Ich habe keinen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "c25a2cb10e3038ad6e13"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/kein",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "kein вместо неопределённого или нулевого артикля: kein Geld, keine Zeit, keinen Hunger. Не меняет позицию глагола.\nkein Stuhl, keine Lampe, kein Bett; Plural keine Stühle. С определённым артиклем обычно nicht: Das ist nicht der Stuhl.\nСамостоятельные формы: kein Auto → keins; kein Stift → keiner (N), keinen (A).",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Heute habe ich keine Zeit für einen Spaziergang.",
+            "ru": "Сегодня у меня нет времени на прогулку."
+          },
+          {
+            "de": "In diesem Raum stehen keine Stühle.",
+            "ru": "В этой комнате нет стульев."
+          },
+          {
+            "de": "Hast du ein Ladegerät? – Nein, ich habe keins.",
+            "ru": "У тебя есть зарядное устройство? — Нет, у меня нет."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kein-uncountable",
+            "de": "kein / keine",
+            "part": "pron",
+            "forms": "kein · keine · keinen · keinem · keiner · keines",
+            "definition_de": "Verneint ein Nomen, das ohne Artikel stehen kann.",
+            "translations_ru": [
+              "нет",
+              "не иметь (с неисчисляемыми существительными)"
+            ],
+            "grammar_hint": "kein вместо неопределённого или нулевого артикля: kein Geld, keine Zeit, keinen Hunger. Не меняет позицию глагола.",
+            "example": "Heute habe ich keine Zeit für einen Spaziergang.",
+            "example_ru": "Сегодня у меня нет времени на прогулку."
+          },
+          {
+            "id": "b1-kein-countable",
+            "de": "kein / keine",
+            "part": "pron",
+            "forms": "Singular: kein/e; Plural: keine (N/A), keinen (D), keiner (G)",
+            "definition_de": "Verneint das Vorhandensein zählbarer Personen oder Dinge.",
+            "translations_ru": [
+              "ни одного",
+              "никакой",
+              "нет"
+            ],
+            "grammar_hint": "kein Stuhl, keine Lampe, kein Bett; Plural keine Stühle. С определённым артиклем обычно nicht: Das ist nicht der Stuhl.",
+            "example": "In diesem Raum stehen keine Stühle.",
+            "example_ru": "В этой комнате нет стульев."
+          },
+          {
+            "id": "b1-kein-standalone",
+            "de": "keiner / keine / keins",
+            "part": "pron",
+            "forms": "keiner · keine · keins / keines; keinen · keinem; Plural keine",
+            "definition_de": "Verneint eine bereits erwähnte Person oder Sache, ohne das Nomen zu wiederholen.",
+            "translations_ru": [
+              "ни один",
+              "ни одна",
+              "ни одного"
+            ],
+            "grammar_hint": "Самостоятельные формы: kein Auto → keins; kein Stift → keiner (N), keinen (A).",
+            "example": "Hast du ein Ladegerät? – Nein, ich habe keins.",
+            "example_ru": "У тебя есть зарядное устройство? — Нет, у меня нет."
+          }
+        ],
+        "alias_ids": [
+          "b1-kein-uncountable",
+          "b1-kein-countable",
+          "b1-kein-standalone"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kein"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kein"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kein",
+              "https://de.wiktionary.org/wiki/keiner"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_ea7ed748c2fdb640d866",
+      "alias_ids": [
+        "b1-keller-basement"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ea7ed748c2fdb640d866",
+        "de": "der Keller",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "подвал",
+          "погреб"
+        ],
+        "definition_de": "Ein Raum oder Bereich eines Gebäudes, der ganz oder teilweise unter der Erde liegt.",
+        "forms": "Plural · die Keller",
+        "example": "Unsere Fahrräder stehen im Keller.",
+        "example_ru": "Наши велосипеды стоят в подвале.",
+        "grammar_hint": "im Keller (Dativ); in den Keller (Akkusativ).",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Keller"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "ru": "подвал; погреб",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Keller"
+        ],
+        "alternative_definitions_de": [
+          "Ein Raum oder Geschoss unterhalb des Erdgeschosses."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Keller bewahren wir die Winterreifen auf.",
+            "ru": "В подвале мы храним зимние шины."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-keller-basement",
+            "de": "der Keller",
+            "part": "noun",
+            "forms": "die Keller",
+            "definition_de": "Ein Raum oder Geschoss unterhalb des Erdgeschosses.",
+            "translations_ru": [
+              "подвал",
+              "погреб"
+            ],
+            "grammar_hint": "im Keller (Dativ); in den Keller (Akkusativ).",
+            "example": "Im Keller bewahren wir die Winterreifen auf.",
+            "example_ru": "В подвале мы храним зимние шины."
+          }
+        ],
+        "alias_ids": [
+          "b1-keller-basement"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Keller"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_9434e58f8c67cf4ad6b6",
+      "alias_ids": [
+        "b1-kellner-waiter"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9434e58f8c67cf4ad6b6",
+        "de": "der Kellner",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "официант"
+        ],
+        "definition_de": "Ein Mann, der in einem Restaurant oder Café Gäste bedient.",
+        "forms": "Plural · die Kellner",
+        "example": "Der Kellner bringt uns die Speisekarte.",
+        "example_ru": "Официант приносит нам меню.",
+        "grammar_hint": "Женский род: die Kellnerin, Plural die Kellnerinnen.\nals Kellner arbeiten; jemandem (Dativ) die Rechnung bringen. CH: Serviceangestellter / Serviceangestellte.",
+        "usage_note": "В швейцарской речи также Servicepersonal (общее обозначение).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 5,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kellner"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки",
+          "Работа и профессии"
+        ],
+        "ru": "официант",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Die Kellnerin bringt uns die Rechnung.",
+            "ru": "Официантка приносит нам счёт."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kellner-waiter",
+            "de": "der Kellner / die Kellnerin",
+            "part": "noun",
+            "forms": "die Kellner / die Kellnerinnen",
+            "definition_de": "Eine Person, die Gäste in einem Lokal bedient.",
+            "translations_ru": [
+              "официант",
+              "официантка"
+            ],
+            "grammar_hint": "als Kellner arbeiten; jemandem (Dativ) die Rechnung bringen. CH: Serviceangestellter / Serviceangestellte.",
+            "example": "Die Kellnerin bringt uns die Rechnung.",
+            "example_ru": "Официантка приносит нам счёт."
+          }
+        ],
+        "alias_ids": [
+          "b1-kellner-waiter"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kellner",
+              "https://de.wiktionary.org/wiki/Kellnerin"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-339-1",
+      "alias_ids": [
+        "b1-kennen-place",
+        "b1-kennen-person",
+        "b1-kennen-familiarity"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-339-1",
+        "de": "kennen",
+        "lemma": "kennen",
+        "ru": "знать, быть знакомым; знать; быть знакомым с местом",
+        "uk": "",
+        "translations_ru": [
+          "знать, быть знакомым",
+          "знать",
+          "быть знакомым с местом"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Общение",
+          "Семья и отношения"
+        ],
+        "forms": "kennt · kannte · hat gekannt",
+        "definition_de": "Mit einer Person oder Sache vertraut sein.",
+        "example": "Kennst du diese Straße?",
+        "example_ru": "Ты знаешь эту улицу?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "1ee98518893c8b8a1888"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "kennen + Akkusativ: ein Café kennen. wissen — знать факт; wissen, wo das Café ist.\njemanden (Akkusativ) kennen; kennen описывает знакомство, kennenlernen — его начало.\netwas kennen (Akkusativ); сравните: Ich weiß, wie man dorthin kommt (wissen + придаточное).",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Mit einem Ort oder einer Einrichtung vertraut sein."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Kennst du ein gutes Café in der Nähe?",
+            "ru": "Ты знаешь хорошее кафе поблизости?"
+          },
+          {
+            "de": "Ich kenne unsere neue Nachbarin schon lange.",
+            "ru": "Я уже давно знаю нашу новую соседку."
+          },
+          {
+            "de": "Ich kenne diese Stadt sehr gut.",
+            "ru": "Я очень хорошо знаю этот город."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kennen-place",
+            "de": "kennen",
+            "part": "verb",
+            "forms": "kennt · kannte · hat gekannt",
+            "definition_de": "Mit einem Ort oder einer Einrichtung vertraut sein.",
+            "translations_ru": [
+              "знать",
+              "быть знакомым с местом"
+            ],
+            "grammar_hint": "kennen + Akkusativ: ein Café kennen. wissen — знать факт; wissen, wo das Café ist.",
+            "example": "Kennst du ein gutes Café in der Nähe?",
+            "example_ru": "Ты знаешь хорошее кафе поблизости?"
+          },
+          {
+            "id": "b1-kennen-person",
+            "de": "kennen",
+            "part": "verb",
+            "forms": "kennt · kannte · hat gekannt",
+            "definition_de": "Mit einer Person bereits bekannt sein.",
+            "translations_ru": [
+              "знать кого-либо",
+              "быть знакомым"
+            ],
+            "grammar_hint": "jemanden (Akkusativ) kennen; kennen описывает знакомство, kennenlernen — его начало.",
+            "example": "Ich kenne unsere neue Nachbarin schon lange.",
+            "example_ru": "Я уже давно знаю нашу новую соседку."
+          },
+          {
+            "id": "b1-kennen-familiarity",
+            "de": "kennen",
+            "part": "verb",
+            "forms": "kennt · kannte · hat gekannt",
+            "definition_de": "Mit einer Sache oder einem Gebiet durch Erfahrung vertraut sein.",
+            "translations_ru": [
+              "знать",
+              "быть знакомым с чем-либо"
+            ],
+            "grammar_hint": "etwas kennen (Akkusativ); сравните: Ich weiß, wie man dorthin kommt (wissen + придаточное).",
+            "example": "Ich kenne diese Stadt sehr gut.",
+            "example_ru": "Я очень хорошо знаю этот город."
+          }
+        ],
+        "alias_ids": [
+          "b1-kennen-place",
+          "b1-kennen-person",
+          "b1-kennen-familiarity"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-340-1",
+      "alias_ids": [
+        "b1-kennenlernen-person"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-340-1",
+        "de": "kennenlernen",
+        "lemma": "kennenlernen",
+        "ru": "знакомиться; познакомиться",
+        "uk": "",
+        "translations_ru": [
+          "знакомиться",
+          "познакомиться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Семья и отношения"
+        ],
+        "forms": "lernt kennen · lernte kennen · hat kennengelernt",
+        "definition_de": "Zum ersten Mal Kontakt zu jemandem bekommen.",
+        "example": "Ich möchte deine Familie kennenlernen.",
+        "example_ru": "Я хочу познакомиться с твоей семьёй.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "4f41afaf35d52f2ead4d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemanden (Akkusativ) kennenlernen; sich kennenlernen — познакомиться друг с другом. Допустимо также kennen lernen.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Zum ersten Mal mit einer Person in Kontakt kommen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir haben uns bei einem Sprachkurs kennengelernt.",
+            "ru": "Мы познакомились на языковом курсе."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kennenlernen-person",
+            "de": "kennenlernen",
+            "part": "verb",
+            "forms": "lernt kennen · lernte kennen · hat kennengelernt",
+            "definition_de": "Zum ersten Mal mit einer Person in Kontakt kommen.",
+            "translations_ru": [
+              "знакомиться",
+              "познакомиться"
+            ],
+            "grammar_hint": "jemanden (Akkusativ) kennenlernen; sich kennenlernen — познакомиться друг с другом. Допустимо также kennen lernen.",
+            "example": "Wir haben uns bei einem Sprachkurs kennengelernt.",
+            "example_ru": "Мы познакомились на языковом курсе."
+          }
+        ],
+        "alias_ids": [
+          "b1-kennenlernen-person"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 54,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kennenlernen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,2679 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1033,
+    1052
+  ],
+  "reviewed": 20,
+  "merge_count": 12,
+  "merge_target_count": 9,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 7,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1033,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nennt eine Folge, die bei Nichterfüllung einer Bedingung eintreten kann. Example: Nimm den Schlüssel mit, sonst kommst du nicht hinein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_088.json",
+        "sha": "a525f5d1b7690a097cd46e64a8ab033cde0f5dfa",
+        "batch": 88,
+        "row": 19,
+        "record": {
+          "id": "b1-sonst-otherwise",
+          "de": "sonst",
+          "lemma": "sonst",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "иначе",
+            "а то"
+          ],
+          "definition_de": "Nennt eine Folge, die bei Nichterfüllung einer Bedingung eintreten kann.",
+          "example": "Nimm den Schlüssel mit, sonst kommst du nicht hinein.",
+          "example_ru": "Возьми ключ, иначе не сможешь войти.",
+          "forms": "неизменяемое союзное наречие",
+          "grammar_hint": "sonst на первом месте главного предложения, глагол сразу после него: sonst kommst du …; не подчинительный союз.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed page 81 visually inspected. Exam-list membership only; earliest CEFR and overlapping teaching contexts require final reconciliation."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sonst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 5,
+          "record": {
+            "id": "dict_e5a841abeb01ce91123e",
+            "de": "sonst",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "иначе",
+              "а то"
+            ],
+            "definition_de": "Nennt, was geschieht, wenn etwas nicht geschieht oder nicht getan wird.",
+            "example": "Nimm einen Schirm mit, sonst wirst du nass.",
+            "example_ru": "Возьми зонт, а то промокнешь.",
+            "grammar_hint": "В примере после sonst сразу стоит спрягаемый глагол wirst.",
+            "usage_note": "В сочетании sonst noch означает «ещё». Brauchst du sonst noch etwas? — Тебе ещё что-нибудь нужно?",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sonst"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_e5a841abeb01ce91123e",
+        "alias_id": "b1-sonst-otherwise",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_e5a841abeb01ce91123e"
+      }
+    },
+    {
+      "candidate_number": 1034,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Verweist auf die von der aktuellen Situation abweichende Gewohnheit. Example: Heute ist der Laden leer; sonst ist er sehr voll.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_088.json",
+        "sha": "a525f5d1b7690a097cd46e64a8ab033cde0f5dfa",
+        "batch": 88,
+        "row": 20,
+        "record": {
+          "id": "b1-sonst-usual",
+          "de": "sonst",
+          "lemma": "sonst",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "обычно",
+            "в остальное время"
+          ],
+          "definition_de": "Verweist auf die von der aktuellen Situation abweichende Gewohnheit.",
+          "example": "Heute ist der Laden leer; sonst ist er sehr voll.",
+          "example_ru": "Сегодня магазин пуст; обычно он переполнен.",
+          "forms": "неизменяемое",
+          "grammar_hint": "sonst в значении normalerweise; Sonst ist … — V2.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed page 81 visually inspected. Exam-list membership only; earliest CEFR and overlapping teaching contexts require final reconciliation."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sonst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 5,
+          "record": {
+            "id": "dict_e5a841abeb01ce91123e",
+            "de": "sonst",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "иначе",
+              "а то"
+            ],
+            "definition_de": "Nennt, was geschieht, wenn etwas nicht geschieht oder nicht getan wird.",
+            "example": "Nimm einen Schirm mit, sonst wirst du nass.",
+            "example_ru": "Возьми зонт, а то промокнешь.",
+            "grammar_hint": "В примере после sonst сразу стоит спрягаемый глагол wirst.",
+            "usage_note": "В сочетании sonst noch означает «ещё». Brauchst du sonst noch etwas? — Тебе ещё что-нибудь нужно?",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sonst"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1035,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: So interessant, dass man aufmerksam bleibt und wissen möchte, wie es weitergeht. Example: Der Krimi war bis zum Ende spannend.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 4,
+        "record": {
+          "id": "b1-spannend-interesting",
+          "de": "spannend",
+          "lemma": "spannend",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "увлекательный",
+            "захватывающий",
+            "интересный"
+          ],
+          "definition_de": "So interessant, dass man aufmerksam bleibt und wissen möchte, wie es weitergeht.",
+          "example": "Der Krimi war bis zum Ende spannend.",
+          "example_ru": "Детектив был захватывающим до самого конца.",
+          "forms": "spannend · spannender · am spannendsten",
+          "grammar_hint": "spannend — вызывающий интерес; gespannt sein auf + Akk. — с нетерпением ожидать.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spannend"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 368,
+          "record": {
+            "id": "dict_8964c8d55ea9d4c8016a",
+            "de": "spannend",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "увлекательный",
+              "захватывающий",
+              "интересный"
+            ],
+            "definition_de": "So interessant, dass man wissen möchte, wie es weitergeht.",
+            "forms": "spannend · spannender · am spannendsten",
+            "example": "Der Film war bis zum Ende spannend.",
+            "example_ru": "Фильм был увлекательным до самого конца.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/spannend"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8964c8d55ea9d4c8016a",
+        "alias_id": "b1-spannend-interesting",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8964c8d55ea9d4c8016a"
+      }
+    },
+    {
+      "candidate_number": 1036,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Weniger Geld ausgeben oder Geld für einen späteren Kauf zurücklegen. Example: Ich spare auf ein neues Fahrrad.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 5,
+        "record": {
+          "id": "b1-sparen-money",
+          "de": "sparen",
+          "lemma": "sparen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "копить",
+            "откладывать деньги",
+            "экономить"
+          ],
+          "definition_de": "Weniger Geld ausgeben oder Geld für einen späteren Kauf zurücklegen.",
+          "example": "Ich spare auf ein neues Fahrrad.",
+          "example_ru": "Я коплю на новый велосипед.",
+          "forms": "spart · sparte · hat gespart",
+          "grammar_hint": "auf + Akk. sparen — копить на цель; für etwas sparen (Akk.) также возможно.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sparen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 273,
+          "record": {
+            "id": "dict_7bf0b455eddc89a075d2",
+            "de": "sparen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "копить",
+              "экономить"
+            ],
+            "definition_de": "Geld beiseitelegen oder bewusst weniger Geld, Zeit oder andere Mittel verbrauchen.",
+            "forms": "spart · sparte · hat gespart",
+            "example": "Wir sparen für ein neues Fahrrad.",
+            "example_ru": "Мы копим на новый велосипед.",
+            "grammar_hint": "für + Akkusativ sparen: für ein Fahrrad sparen. Geld sparen — экономить/копить деньги; an + Dativ sparen — экономить на чём-либо.",
+            "usage_note": "Goethe A2 подтверждает накопление денег на покупку. Иные ресурсы (Zeit, Energie) и sich etwas sparen — отдельные употребления, уровень не установлен этой статьёй.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sparen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7bf0b455eddc89a075d2",
+        "alias_id": "b1-sparen-money",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7bf0b455eddc89a075d2"
+      }
+    },
+    {
+      "candidate_number": 1037,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Ressource möglichst wenig verbrauchen. Example: Um Wasser zu sparen, duschen wir kürzer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 6,
+        "record": {
+          "id": "b1-sparen-resource",
+          "de": "sparen",
+          "lemma": "sparen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "экономить",
+            "сберегать (ресурсы)"
+          ],
+          "definition_de": "Eine Ressource möglichst wenig verbrauchen.",
+          "example": "Um Wasser zu sparen, duschen wir kürzer.",
+          "example_ru": "Чтобы экономить воду, мы принимаем душ быстрее.",
+          "forms": "spart · sparte · hat gespart",
+          "grammar_hint": "Wasser/Strom/Zeit sparen (Akk.); um … zu — цель, инфинитив с zu в конце.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sparen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 273,
+          "record": {
+            "id": "dict_7bf0b455eddc89a075d2",
+            "de": "sparen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "копить",
+              "экономить"
+            ],
+            "definition_de": "Geld beiseitelegen oder bewusst weniger Geld, Zeit oder andere Mittel verbrauchen.",
+            "forms": "spart · sparte · hat gespart",
+            "example": "Wir sparen für ein neues Fahrrad.",
+            "example_ru": "Мы копим на новый велосипед.",
+            "grammar_hint": "für + Akkusativ sparen: für ein Fahrrad sparen. Geld sparen — экономить/копить деньги; an + Dativ sparen — экономить на чём-либо.",
+            "usage_note": "Goethe A2 подтверждает накопление денег на покупку. Иные ресурсы (Zeit, Energie) и sich etwas sparen — отдельные употребления, уровень не установлен этой статьёй.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sparen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7bf0b455eddc89a075d2",
+        "alias_id": "b1-sparen-resource",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7bf0b455eddc89a075d2"
+      }
+    },
+    {
+      "candidate_number": 1038,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bei einer Person Freude an einer Tätigkeit hervorrufen. Example: Das gemeinsame Kochen macht mir Spaß.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 9,
+        "record": {
+          "id": "b1-spass-enjoyment",
+          "de": "Spaß machen",
+          "lemma": "Spaß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "доставлять удовольствие",
+            "нравиться"
+          ],
+          "definition_de": "Bei einer Person Freude an einer Tätigkeit hervorrufen.",
+          "example": "Das gemeinsame Kochen macht mir Spaß.",
+          "example_ru": "Мне нравится готовить вместе с другими.",
+          "forms": "der Spaß; в значении удовольствия обычно без Plural; macht · machte · hat gemacht",
+          "grammar_hint": "jemandem (Dativ) Spaß machen; CH: Spass. Plural Späße — шутки, другое значение.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spa%C3%9F"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 319,
+          "record": {
+            "id": "dict_8294156f907f08e8a312",
+            "de": "der Spaß",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "удовольствие",
+              "веселье"
+            ],
+            "definition_de": "Freude, die man bei einer Tätigkeit empfindet.",
+            "forms": "В значении «удовольствие» обычно без Plural",
+            "example": "Das Tanzen macht mir Spaß.",
+            "example_ru": "Танцы доставляют мне удовольствие.",
+            "grammar_hint": "jemandem (Dativ) Spaß machen.",
+            "usage_note": "В Швейцарии: Spass. Plural die Späße — шутки, другое значение.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Spa%C3%9F"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1039,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Wunsch, dass jemand eine Tätigkeit gerne erlebt. Example: Viel Spaß beim Ausflug!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 10,
+        "record": {
+          "id": "b1-spass-wish",
+          "de": "Viel Spaß!",
+          "lemma": "Spaß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "приятного времяпрепровождения!",
+            "хорошо повеселиться!"
+          ],
+          "definition_de": "Wunsch, dass jemand eine Tätigkeit gerne erlebt.",
+          "example": "Viel Spaß beim Ausflug!",
+          "example_ru": "Хорошей прогулки!",
+          "forms": "устойчивая формула; der Spaß",
+          "grammar_hint": "Viel Spaß bei + Dativ; beim = bei dem. CH: Viel Spass!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spa%C3%9F"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 319,
+          "record": {
+            "id": "dict_8294156f907f08e8a312",
+            "de": "der Spaß",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "удовольствие",
+              "веселье"
+            ],
+            "definition_de": "Freude, die man bei einer Tätigkeit empfindet.",
+            "forms": "В значении «удовольствие» обычно без Plural",
+            "example": "Das Tanzen macht mir Spaß.",
+            "example_ru": "Танцы доставляют мне удовольствие.",
+            "grammar_hint": "jemandem (Dativ) Spaß machen.",
+            "usage_note": "В Швейцарии: Spass. Plural die Späße — шутки, другое значение.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Spa%C3%9F"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1040,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Fragt nach der aktuellen Uhrzeit. Example: Entschuldigung, wie spät ist es?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 11,
+        "record": {
+          "id": "b1-spaet-time-question",
+          "de": "Wie spät ist es?",
+          "lemma": "spät",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "который час?",
+            "сколько времени?"
+          ],
+          "definition_de": "Fragt nach der aktuellen Uhrzeit.",
+          "example": "Entschuldigung, wie spät ist es?",
+          "example_ru": "Извините, который час?",
+          "forms": "spät · später · am spätesten",
+          "grammar_hint": "Wie spät ist es? — устойчивая форма вопроса о времени; не о факте опоздания.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1041,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zu einer weit fortgeschrittenen Tageszeit gelegen. Example: Es ist schon spät; wir sollten nach Hause gehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 12,
+        "record": {
+          "id": "b1-spaet-late-hour",
+          "de": "spät",
+          "lemma": "spät",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "поздний",
+            "поздно"
+          ],
+          "definition_de": "Zu einer weit fortgeschrittenen Tageszeit gelegen.",
+          "example": "Es ist schon spät; wir sollten nach Hause gehen.",
+          "example_ru": "Уже поздно, нам пора домой.",
+          "forms": "spät · später · am spätesten",
+          "grammar_hint": "es ist spät — поздно; Gegenteil früh.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-534-1",
+        "alias_id": "b1-spaet-late-hour",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-534-1"
+      }
+    },
+    {
+      "candidate_number": 1042,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Nach dem vorgesehenen oder zulässigen Zeitpunkt. Example: Ich bin heute zu spät zum Unterricht gekommen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 13,
+        "record": {
+          "id": "b1-spaet-too-late",
+          "de": "zu spät",
+          "lemma": "spät",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "слишком поздно",
+            "с опозданием"
+          ],
+          "definition_de": "Nach dem vorgesehenen oder zulässigen Zeitpunkt.",
+          "example": "Ich bin heute zu spät zum Unterricht gekommen.",
+          "example_ru": "Сегодня я опоздала на урок.",
+          "forms": "spät · später · am spätesten",
+          "grammar_hint": "zu spät kommen — опаздывать; zu + прилагательное означает чрезмерность.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1043,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Handlung zu einem fortgeschrittenen Zeitpunkt ausführend. Example: Am Samstag frühstücke ich meistens spät.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 14,
+        "record": {
+          "id": "b1-spaet-late-action",
+          "de": "spät",
+          "lemma": "spät",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "поздно (о времени действия)"
+          ],
+          "definition_de": "Eine Handlung zu einem fortgeschrittenen Zeitpunkt ausführend.",
+          "example": "Am Samstag frühstücke ich meistens spät.",
+          "example_ru": "В субботу я обычно завтракаю поздно.",
+          "forms": "spät · später · am spätesten",
+          "grammar_hint": "spät aufstehen / schlafen gehen; spät ≠ zu spät.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-534-1",
+        "alias_id": "b1-spaet-late-action",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-534-1"
+      }
+    },
+    {
+      "candidate_number": 1044,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bezeichnet den gegen Abend liegenden Teil des Nachmittags. Example: Am späten Nachmittag wird es kühler.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 15,
+        "record": {
+          "id": "b1-spaet-afternoon",
+          "de": "am späten Nachmittag",
+          "lemma": "spät",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "ближе к вечеру",
+            "во второй половине дня, ближе к вечеру"
+          ],
+          "definition_de": "Bezeichnet den gegen Abend liegenden Teil des Nachmittags.",
+          "example": "Am späten Nachmittag wird es kühler.",
+          "example_ru": "Ближе к вечеру станет прохладнее.",
+          "forms": "spät · später · am spätesten",
+          "grammar_hint": "am = an dem; Dativ: am späten Nachmittag; учебный контекст.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1045,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zu einem nach dem aktuellen Zeitpunkt liegenden Zeitpunkt. Example: Ich beantworte deine Nachricht später.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 16,
+        "record": {
+          "id": "b1-spaeter-afterwards",
+          "de": "später",
+          "lemma": "spät",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "позже",
+            "потом"
+          ],
+          "definition_de": "Zu einem nach dem aktuellen Zeitpunkt liegenden Zeitpunkt.",
+          "example": "Ich beantworte deine Nachricht später.",
+          "example_ru": "Я отвечу на твоё сообщение позже.",
+          "forms": "Komparativ: später; spät · später · am spätesten",
+          "grammar_hint": "später als + сравнение; Bis später! — До скорого!",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 693,
+          "record": {
+            "id": "a1-535-1",
+            "de": "später",
+            "lemma": "später",
+            "ru": "позже",
+            "uk": "",
+            "translations_ru": [
+              "позже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Zu einem Zeitpunkt nach jetzt oder nach dem genannten Zeitpunkt.",
+            "example": "Ich rufe dich später an.",
+            "example_ru": "Я позвоню тебе позже.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "714a4ae13be42dd7bb39"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-535-1",
+        "alias_id": "b1-spaeter-afterwards",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-535-1"
+      }
+    },
+    {
+      "candidate_number": 1046,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Verweist auf eine noch nicht genauer festgelegte Zukunft. Example: Was möchtest du später mal beruflich machen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 17,
+        "record": {
+          "id": "b1-spaeter-future",
+          "de": "später mal",
+          "lemma": "spät",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "когда-нибудь потом",
+            "в будущем"
+          ],
+          "definition_de": "Verweist auf eine noch nicht genauer festgelegte Zukunft.",
+          "example": "Was möchtest du später mal beruflich machen?",
+          "example_ru": "Чем ты хотела бы заниматься в будущем?",
+          "forms": "spät · später · am spätesten",
+          "grammar_hint": "mal — разговорная частица; später mal не указывает точный срок.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 692,
+          "record": {
+            "id": "a1-534-1",
+            "de": "spät",
+            "lemma": "spät",
+            "ru": "поздно; поздний",
+            "uk": "",
+            "translations_ru": [
+              "поздно",
+              "поздний"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "später · am spätesten",
+            "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+            "example": "Es ist schon spät.",
+            "example_ru": "Уже поздно.",
+            "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bf0bc4a1a428ee74ff69"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1047,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich zur Erholung zu Fuß bewegen. Example: Nach dem Abendessen gehen wir am Fluss spazieren.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 19,
+        "record": {
+          "id": "b1-spazieren-walk",
+          "de": "spazieren gehen",
+          "lemma": "spazieren gehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "гулять",
+            "ходить на прогулку"
+          ],
+          "definition_de": "Sich zur Erholung zu Fuß bewegen.",
+          "example": "Nach dem Abendessen gehen wir am Fluss spazieren.",
+          "example_ru": "После ужина мы гуляем у реки.",
+          "forms": "geht spazieren · ging spazieren · ist spazieren gegangen",
+          "grammar_hint": "gehen + Infinitiv без zu; с zu: spazieren zu gehen; Perfekt с sein.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spazieren_gehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 496,
+          "record": {
+            "id": "dict_d70af00e0f9fe015bcd8",
+            "de": "spazieren gehen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "гулять",
+              "ходить на прогулку"
+            ],
+            "definition_de": "Zu Fuß unterwegs sein, um sich zu erholen oder die freie Zeit zu genießen.",
+            "forms": "geht spazieren · ging spazieren · ist spazieren gegangen",
+            "example": "Nach dem Essen gehen wir am See spazieren.",
+            "example_ru": "После еды мы гуляем у озера.",
+            "grammar_hint": "Ich gehe spazieren. Präteritum: ich ging spazieren. Perfekt: ich bin spazieren gegangen. С модальным глаголом: Ich möchte spazieren gehen.",
+            "usage_note": "Именно spazieren gehen — заголовочная конструкция Goethe A2. Пишется раздельно; spazieren — самостоятельный глагол, но отдельная карточка по этому источнику не нужна.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/spazieren_gehen",
+                "https://www.duden.de/rechtschreibung/spazieren",
+                "https://www.duden.de/sprachwissen/rechtschreibregeln/getrennt-und-zusammenschreibung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_d70af00e0f9fe015bcd8",
+        "alias_id": "b1-spazieren-walk",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_d70af00e0f9fe015bcd8"
+      }
+    },
+    {
+      "candidate_number": 1048,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Ein gemütlicher Weg zu Fuß in der Freizeit. Example: Wir machen einen Spaziergang durch den Park.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 20,
+        "record": {
+          "id": "b1-spaziergang-walk",
+          "de": "der Spaziergang",
+          "lemma": "Spaziergang",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "прогулка"
+          ],
+          "definition_de": "Ein gemütlicher Weg zu Fuß in der Freizeit.",
+          "example": "Wir machen einen Spaziergang durch den Park.",
+          "example_ru": "Мы прогуливаемся по парку.",
+          "forms": "die Spaziergänge",
+          "grammar_hint": "einen Spaziergang machen; durch + Akk.; spazieren gehen — глагольная конструкция.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Spaziergang"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 533,
+          "record": {
+            "id": "canonical-a2-spaziergang",
+            "de": "der Spaziergang",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "прогулка пешком",
+              "прогулка"
+            ],
+            "definition_de": "Ein Weg zu Fuß, den man zur Erholung zurücklegt.",
+            "forms": "Plural · die Spaziergänge",
+            "example": "Nach dem Mittagessen machen wir einen Spaziergang.",
+            "example_ru": "После обеда мы идём на прогулку.",
+            "grammar_hint": "einen Spaziergang machen (+ Akkusativ); spazieren gehen — гулять.",
+            "usage_note": "Переносное значение лёгкой задачи здесь не включено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Spaziergang"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1049,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Digitale Informationen dauerhaft auf einem Medium ablegen. Example: Speichere das Dokument unter einem neuen Namen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 21,
+        "record": {
+          "id": "b1-speichern-save",
+          "de": "speichern",
+          "lemma": "speichern",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сохранять (файл, данные)"
+          ],
+          "definition_de": "Digitale Informationen dauerhaft auf einem Medium ablegen.",
+          "example": "Speichere das Dokument unter einem neuen Namen.",
+          "example_ru": "Сохрани документ под новым именем.",
+          "forms": "speichert · speicherte · hat gespeichert",
+          "grammar_hint": "etwas (Akk.) speichern; Daten sichern — обеспечивать сохранность, часто резервное копирование.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/speichern"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 412,
+          "record": {
+            "id": "dict_1737a494c09652a236b6",
+            "de": "speichern",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "сохранять (данные)"
+            ],
+            "definition_de": "Daten so ablegen, dass man sie später wieder verwenden kann.",
+            "forms": "speichert · speicherte · hat gespeichert",
+            "example": "Bitte speichere das Dokument auf dem Computer.",
+            "example_ru": "Пожалуйста, сохрани документ на компьютере.",
+            "grammar_hint": "etwas (Akkusativ) speichern.",
+            "usage_note": "В списке A2 сохранение файла. Накапливать воду/энергию — другие смыслы, не маркируются автоматически.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/speichern"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цифровые технологии и связь",
+            "topics": [
+              "Цифровые технологии и связь"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_1737a494c09652a236b6",
+        "alias_id": "b1-speichern-save",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_1737a494c09652a236b6"
+      }
+    },
+    {
+      "candidate_number": 1050,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Übersicht über die Gerichte, die ein Lokal anbietet. Example: Könnten Sie uns die Speisekarte bringen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_089.json",
+        "sha": "c5d484cf847a22787a80434362412152b68a227b",
+        "batch": 89,
+        "row": 25,
+        "record": {
+          "id": "b1-speisekarte-menu",
+          "de": "die Speisekarte",
+          "lemma": "Speisekarte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "меню (список блюд)"
+          ],
+          "definition_de": "Eine Übersicht über die Gerichte, die ein Lokal anbietet.",
+          "example": "Könnten Sie uns die Speisekarte bringen?",
+          "example_ru": "Не могли бы вы принести нам меню?",
+          "forms": "die Speisekarten",
+          "grammar_hint": "jemandem (Dativ) die Speisekarte (Akk.) bringen; auf der Speisekarte (Dativ).",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Speisekarte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 543,
+          "record": {
+            "id": "a1-536-1",
+            "de": "die Speisekarte",
+            "lemma": "Speisekarte",
+            "ru": "меню",
+            "uk": "",
+            "translations_ru": [
+              "меню"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Speisekarten",
+            "definition_de": "Eine Liste der Gerichte, die man in einem Lokal bestellen kann.",
+            "example": "Kann ich bitte die Speisekarte bekommen?",
+            "example_ru": "Можно мне меню, пожалуйста?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "be0ee83a419cd6e056a9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-536-1",
+        "alias_id": "b1-speisekarte-menu",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-536-1"
+      }
+    },
+    {
+      "candidate_number": 1051,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich zum Vergnügen beschäftigen, etwa mit Spielzeug. Example: Die Kinder spielen im Hof.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 1,
+        "record": {
+          "id": "b1-spielen-child",
+          "de": "spielen",
+          "lemma": "spielen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "играть (развлекаться)"
+          ],
+          "definition_de": "Sich zum Vergnügen beschäftigen, etwa mit Spielzeug.",
+          "example": "Die Kinder spielen im Hof.",
+          "example_ru": "Дети играют во дворе.",
+          "forms": "spielt · spielte · hat gespielt",
+          "grammar_hint": "mit + Dativ: mit Bauklötzen spielen; место: im Hof (Dativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 694,
+          "record": {
+            "id": "a1-537-1",
+            "de": "spielen",
+            "lemma": "spielen",
+            "ru": "играть",
+            "uk": "",
+            "translations_ru": [
+              "играть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Sich zum Spaß beschäftigen oder an einem Spiel teilnehmen.",
+            "example": "Die Kinder spielen im Garten.",
+            "example_ru": "Дети играют в саду.",
+            "note": "mit jemandem (Dativ) spielen — играть с кем-либо; Karten spielen — играть в карты. Игра на музыкальном инструменте — отдельное употребление A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "870248681414019d8783"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 607,
+          "record": {
+            "id": "dict_61afa9a03d3824cbc7a9-music",
+            "de": "spielen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "играть на музыкальном инструменте"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Mit einem Musikinstrument Musik machen.",
+            "example": "Meine Schwester spielt Gitarre.",
+            "example_ru": "Моя сестра играет на гитаре.",
+            "grammar_hint": "Klavier / Gitarre / Geige spielen — обычно без артикля. Auf einer Gitarre spielen — auf + Dativ.",
+            "usage_note": "Играть в игры — отдельная карточка A1. Goethe A2, стр. 18 и 26; A1 статья spielen стр. 23 иллюстрирует игры.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/spielen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-537-1",
+        "alias_id": "b1-spielen-child",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-537-1"
+      }
+    },
+    {
+      "candidate_number": 1052,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: An einer sportlichen Partie teilnehmen. Example: Am Freitag spielen wir gegen ein anderes Team.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_090.json",
+        "sha": "d03cae087a51cd23dcb6b11a9bec41ad9af7f56e",
+        "batch": 90,
+        "row": 2,
+        "record": {
+          "id": "b1-spielen-sport",
+          "de": "spielen",
+          "lemma": "spielen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "играть (в спортивную игру)"
+          ],
+          "definition_de": "An einer sportlichen Partie teilnehmen.",
+          "example": "Am Freitag spielen wir gegen ein anderes Team.",
+          "example_ru": "В пятницу мы играем против другой команды.",
+          "forms": "spielt · spielte · hat gespielt",
+          "grammar_hint": "Fußball spielen без артикля; gegen + Akkusativ; CH: Fussball.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 694,
+          "record": {
+            "id": "a1-537-1",
+            "de": "spielen",
+            "lemma": "spielen",
+            "ru": "играть",
+            "uk": "",
+            "translations_ru": [
+              "играть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Sich zum Spaß beschäftigen oder an einem Spiel teilnehmen.",
+            "example": "Die Kinder spielen im Garten.",
+            "example_ru": "Дети играют в саду.",
+            "note": "mit jemandem (Dativ) spielen — играть с кем-либо; Karten spielen — играть в карты. Игра на музыкальном инструменте — отдельное употребление A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "870248681414019d8783"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 607,
+          "record": {
+            "id": "dict_61afa9a03d3824cbc7a9-music",
+            "de": "spielen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "играть на музыкальном инструменте"
+            ],
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Mit einem Musikinstrument Musik machen.",
+            "example": "Meine Schwester spielt Gitarre.",
+            "example_ru": "Моя сестра играет на гитаре.",
+            "grammar_hint": "Klavier / Gitarre / Geige spielen — обычно без артикля. Auf einer Gitarre spielen — auf + Dativ.",
+            "usage_note": "Играть в игры — отдельная карточка A1. Goethe A2, стр. 18 и 26; A1 статья spielen стр. 23 иллюстрирует игры.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/spielen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-537-1",
+        "alias_id": "b1-spielen-sport",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-537-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_e5a841abeb01ce91123e",
+      "alias_ids": [
+        "b1-sonst-otherwise"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_e5a841abeb01ce91123e",
+        "de": "sonst",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "иначе",
+          "а то"
+        ],
+        "definition_de": "Nennt, was geschieht, wenn etwas nicht geschieht oder nicht getan wird.",
+        "example": "Nimm einen Schirm mit, sonst wirst du nass.",
+        "example_ru": "Возьми зонт, а то промокнешь.",
+        "grammar_hint": "В примере после sonst сразу стоит спрягаемый глагол wirst.",
+        "usage_note": "В сочетании sonst noch означает «ещё». Brauchst du sonst noch etwas? — Тебе ещё что-нибудь нужно?",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sonst"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-sonst-otherwise"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sonst-otherwise",
+            "de": "sonst",
+            "part": "adv",
+            "forms": "неизменяемое союзное наречие",
+            "definition_de": "Nennt eine Folge, die bei Nichterfüllung einer Bedingung eintreten kann.",
+            "translations_ru": [
+              "иначе",
+              "а то"
+            ],
+            "grammar_hint": "sonst на первом месте главного предложения, глагол сразу после него: sonst kommst du …; не подчинительный союз.",
+            "example": "Nimm den Schlüssel mit, sonst kommst du nicht hinein.",
+            "example_ru": "Возьми ключ, иначе не сможешь войти."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed page 81 visually inspected. Exam-list membership only; earliest CEFR and overlapping teaching contexts require final reconciliation."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sonst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_8964c8d55ea9d4c8016a",
+      "alias_ids": [
+        "b1-spannend-interesting"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8964c8d55ea9d4c8016a",
+        "de": "spannend",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "увлекательный",
+          "захватывающий",
+          "интересный"
+        ],
+        "definition_de": "So interessant, dass man wissen möchte, wie es weitergeht.",
+        "forms": "spannend · spannender · am spannendsten",
+        "example": "Der Film war bis zum Ende spannend.",
+        "example_ru": "Фильм был увлекательным до самого конца.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/spannend"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-spannend-interesting"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spannend-interesting",
+            "de": "spannend",
+            "part": "adj",
+            "forms": "spannend · spannender · am spannendsten",
+            "definition_de": "So interessant, dass man aufmerksam bleibt und wissen möchte, wie es weitergeht.",
+            "translations_ru": [
+              "увлекательный",
+              "захватывающий",
+              "интересный"
+            ],
+            "grammar_hint": "spannend — вызывающий интерес; gespannt sein auf + Akk. — с нетерпением ожидать.",
+            "example": "Der Krimi war bis zum Ende spannend.",
+            "example_ru": "Детектив был захватывающим до самого конца."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spannend"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_7bf0b455eddc89a075d2",
+      "alias_ids": [
+        "b1-sparen-money",
+        "b1-sparen-resource"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_7bf0b455eddc89a075d2",
+        "de": "sparen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "копить",
+          "экономить"
+        ],
+        "definition_de": "Geld beiseitelegen oder bewusst weniger Geld, Zeit oder andere Mittel verbrauchen.",
+        "forms": "spart · sparte · hat gespart",
+        "example": "Wir sparen für ein neues Fahrrad.",
+        "example_ru": "Мы копим на новый велосипед.",
+        "grammar_hint": "für + Akkusativ sparen: für ein Fahrrad sparen. Geld sparen — экономить/копить деньги; an + Dativ sparen — экономить на чём-либо.",
+        "usage_note": "Goethe A2 подтверждает накопление денег на покупку. Иные ресурсы (Zeit, Energie) и sich etwas sparen — отдельные употребления, уровень не установлен этой статьёй.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sparen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-sparen-money",
+          "b1-sparen-resource"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sparen-money",
+            "de": "sparen",
+            "part": "verb",
+            "forms": "spart · sparte · hat gespart",
+            "definition_de": "Weniger Geld ausgeben oder Geld für einen späteren Kauf zurücklegen.",
+            "translations_ru": [
+              "копить",
+              "откладывать деньги",
+              "экономить"
+            ],
+            "grammar_hint": "auf + Akk. sparen — копить на цель; für etwas sparen (Akk.) также возможно.",
+            "example": "Ich spare auf ein neues Fahrrad.",
+            "example_ru": "Я коплю на новый велосипед."
+          },
+          {
+            "id": "b1-sparen-resource",
+            "de": "sparen",
+            "part": "verb",
+            "forms": "spart · sparte · hat gespart",
+            "definition_de": "Eine Ressource möglichst wenig verbrauchen.",
+            "translations_ru": [
+              "экономить",
+              "сберегать (ресурсы)"
+            ],
+            "grammar_hint": "Wasser/Strom/Zeit sparen (Akk.); um … zu — цель, инфинитив с zu в конце.",
+            "example": "Um Wasser zu sparen, duschen wir kürzer.",
+            "example_ru": "Чтобы экономить воду, мы принимаем душ быстрее."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sparen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sparen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-534-1",
+      "alias_ids": [
+        "b1-spaet-late-hour",
+        "b1-spaet-late-action"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-534-1",
+        "de": "spät",
+        "lemma": "spät",
+        "ru": "поздно; поздний",
+        "uk": "",
+        "translations_ru": [
+          "поздно",
+          "поздний"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "später · am spätesten",
+        "definition_de": "Gegen Ende eines Zeitraums oder nach dem erwarteten Zeitpunkt.",
+        "example": "Es ist schon spät.",
+        "example_ru": "Уже поздно.",
+        "note": "spät — поздно; ein später Termin — поздний приём. zu spät — слишком поздно; später — позже.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "bf0bc4a1a428ee74ff69"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-spaet-late-hour",
+          "b1-spaet-late-action"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spaet-late-hour",
+            "de": "spät",
+            "part": "adj",
+            "forms": "spät · später · am spätesten",
+            "definition_de": "Zu einer weit fortgeschrittenen Tageszeit gelegen.",
+            "translations_ru": [
+              "поздний",
+              "поздно"
+            ],
+            "grammar_hint": "es ist spät — поздно; Gegenteil früh.",
+            "example": "Es ist schon spät; wir sollten nach Hause gehen.",
+            "example_ru": "Уже поздно, нам пора домой."
+          },
+          {
+            "id": "b1-spaet-late-action",
+            "de": "spät",
+            "part": "adv",
+            "forms": "spät · später · am spätesten",
+            "definition_de": "Eine Handlung zu einem fortgeschrittenen Zeitpunkt ausführend.",
+            "translations_ru": [
+              "поздно (о времени действия)"
+            ],
+            "grammar_hint": "spät aufstehen / schlafen gehen; spät ≠ zu spät.",
+            "example": "Am Samstag frühstücke ich meistens spät.",
+            "example_ru": "В субботу я обычно завтракаю поздно."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-535-1",
+      "alias_ids": [
+        "b1-spaeter-afterwards"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-535-1",
+        "de": "später",
+        "lemma": "später",
+        "ru": "позже",
+        "uk": "",
+        "translations_ru": [
+          "позже"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "",
+        "definition_de": "Zu einem Zeitpunkt nach jetzt oder nach dem genannten Zeitpunkt.",
+        "example": "Ich rufe dich später an.",
+        "example_ru": "Я позвоню тебе позже.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "714a4ae13be42dd7bb39"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-spaeter-afterwards"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spaeter-afterwards",
+            "de": "später",
+            "part": "adv",
+            "forms": "Komparativ: später; spät · später · am spätesten",
+            "definition_de": "Zu einem nach dem aktuellen Zeitpunkt liegenden Zeitpunkt.",
+            "translations_ru": [
+              "позже",
+              "потом"
+            ],
+            "grammar_hint": "später als + сравнение; Bis später! — До скорого!",
+            "example": "Ich beantworte deine Nachricht später.",
+            "example_ru": "Я отвечу на твоё сообщение позже."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sp%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_d70af00e0f9fe015bcd8",
+      "alias_ids": [
+        "b1-spazieren-walk"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_d70af00e0f9fe015bcd8",
+        "de": "spazieren gehen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "гулять",
+          "ходить на прогулку"
+        ],
+        "definition_de": "Zu Fuß unterwegs sein, um sich zu erholen oder die freie Zeit zu genießen.",
+        "forms": "geht spazieren · ging spazieren · ist spazieren gegangen",
+        "example": "Nach dem Essen gehen wir am See spazieren.",
+        "example_ru": "После еды мы гуляем у озера.",
+        "grammar_hint": "Ich gehe spazieren. Präteritum: ich ging spazieren. Perfekt: ich bin spazieren gegangen. С модальным глаголом: Ich möchte spazieren gehen.",
+        "usage_note": "Именно spazieren gehen — заголовочная конструкция Goethe A2. Пишется раздельно; spazieren — самостоятельный глагол, но отдельная карточка по этому источнику не нужна.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/spazieren_gehen",
+            "https://www.duden.de/rechtschreibung/spazieren",
+            "https://www.duden.de/sprachwissen/rechtschreibregeln/getrennt-und-zusammenschreibung"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-spazieren-walk"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spazieren-walk",
+            "de": "spazieren gehen",
+            "part": "phrase",
+            "forms": "geht spazieren · ging spazieren · ist spazieren gegangen",
+            "definition_de": "Sich zur Erholung zu Fuß bewegen.",
+            "translations_ru": [
+              "гулять",
+              "ходить на прогулку"
+            ],
+            "grammar_hint": "gehen + Infinitiv без zu; с zu: spazieren zu gehen; Perfekt с sein.",
+            "example": "Nach dem Abendessen gehen wir am Fluss spazieren.",
+            "example_ru": "После ужина мы гуляем у реки."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spazieren_gehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_1737a494c09652a236b6",
+      "alias_ids": [
+        "b1-speichern-save"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_1737a494c09652a236b6",
+        "de": "speichern",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "сохранять (данные)"
+        ],
+        "definition_de": "Daten so ablegen, dass man sie später wieder verwenden kann.",
+        "forms": "speichert · speicherte · hat gespeichert",
+        "example": "Bitte speichere das Dokument auf dem Computer.",
+        "example_ru": "Пожалуйста, сохрани документ на компьютере.",
+        "grammar_hint": "etwas (Akkusativ) speichern.",
+        "usage_note": "В списке A2 сохранение файла. Накапливать воду/энергию — другие смыслы, не маркируются автоматически.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/speichern"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цифровые технологии и связь",
+        "topics": [
+          "Цифровые технологии и связь"
+        ],
+        "alias_ids": [
+          "b1-speichern-save"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-speichern-save",
+            "de": "speichern",
+            "part": "verb",
+            "forms": "speichert · speicherte · hat gespeichert",
+            "definition_de": "Digitale Informationen dauerhaft auf einem Medium ablegen.",
+            "translations_ru": [
+              "сохранять (файл, данные)"
+            ],
+            "grammar_hint": "etwas (Akk.) speichern; Daten sichern — обеспечивать сохранность, часто резервное копирование.",
+            "example": "Speichere das Dokument unter einem neuen Namen.",
+            "example_ru": "Сохрани документ под новым именем."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 81,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/speichern"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-536-1",
+      "alias_ids": [
+        "b1-speisekarte-menu"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-536-1",
+        "de": "die Speisekarte",
+        "lemma": "Speisekarte",
+        "ru": "меню",
+        "uk": "",
+        "translations_ru": [
+          "меню"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Speisekarten",
+        "definition_de": "Eine Liste der Gerichte, die man in einem Lokal bestellen kann.",
+        "example": "Kann ich bitte die Speisekarte bekommen?",
+        "example_ru": "Можно мне меню, пожалуйста?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "be0ee83a419cd6e056a9"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-speisekarte-menu"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-speisekarte-menu",
+            "de": "die Speisekarte",
+            "part": "noun",
+            "forms": "die Speisekarten",
+            "definition_de": "Eine Übersicht über die Gerichte, die ein Lokal anbietet.",
+            "translations_ru": [
+              "меню (список блюд)"
+            ],
+            "grammar_hint": "jemandem (Dativ) die Speisekarte (Akk.) bringen; auf der Speisekarte (Dativ).",
+            "example": "Könnten Sie uns die Speisekarte bringen?",
+            "example_ru": "Не могли бы вы принести нам меню?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Speisekarte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-537-1",
+      "alias_ids": [
+        "b1-spielen-child",
+        "b1-spielen-sport"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-537-1",
+        "de": "spielen",
+        "lemma": "spielen",
+        "ru": "играть",
+        "uk": "",
+        "translations_ru": [
+          "играть"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг"
+        ],
+        "forms": "spielt · spielte · hat gespielt",
+        "definition_de": "Sich zum Spaß beschäftigen oder an einem Spiel teilnehmen.",
+        "example": "Die Kinder spielen im Garten.",
+        "example_ru": "Дети играют в саду.",
+        "note": "mit jemandem (Dativ) spielen — играть с кем-либо; Karten spielen — играть в карты. Игра на музыкальном инструменте — отдельное употребление A2.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "870248681414019d8783"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-spielen-child",
+          "b1-spielen-sport"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-spielen-child",
+            "de": "spielen",
+            "part": "verb",
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "Sich zum Vergnügen beschäftigen, etwa mit Spielzeug.",
+            "translations_ru": [
+              "играть (развлекаться)"
+            ],
+            "grammar_hint": "mit + Dativ: mit Bauklötzen spielen; место: im Hof (Dativ).",
+            "example": "Die Kinder spielen im Hof.",
+            "example_ru": "Дети играют во дворе."
+          },
+          {
+            "id": "b1-spielen-sport",
+            "de": "spielen",
+            "part": "verb",
+            "forms": "spielt · spielte · hat gespielt",
+            "definition_de": "An einer sportlichen Partie teilnehmen.",
+            "translations_ru": [
+              "играть (в спортивную игру)"
+            ],
+            "grammar_hint": "Fußball spielen без артикля; gegen + Akkusativ; CH: Fussball.",
+            "example": "Am Freitag spielen wir gegen ein anderes Team.",
+            "example_ru": "В пятницу мы играем против другой команды."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 82,
+              "scope": "context",
+              "note": "Printed page 82 visually inspected. B1 exam-list membership, not earliest CEFR level. Some teaching contexts share lexical senses; A1/A2 and global deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/spielen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

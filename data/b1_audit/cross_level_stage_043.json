@@ -1,0 +1,2746 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    833,
+    852
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 11,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 4,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 833,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet eine ungefähre Mengen- oder Zahlenangabe. Example: An dem Kurs nehmen rund zwanzig Personen teil.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 18,
+        "record": {
+          "id": "b1-rund-approx",
+          "de": "rund",
+          "lemma": "rund",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "около",
+            "примерно",
+            "приблизительно"
+          ],
+          "definition_de": "Kennzeichnet eine ungefähre Mengen- oder Zahlenangabe.",
+          "example": "An dem Kurs nehmen rund zwanzig Personen teil.",
+          "example_ru": "В курсе участвуют около двадцати человек.",
+          "forms": "неизменяемое наречие",
+          "grammar_hint": "rund + число; ≈ ungefähr / etwa. Не склоняется перед числом.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rund"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 514,
+          "record": {
+            "id": "dict_f6dfa6391c24a6032116",
+            "de": "rund",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "круглый"
+            ],
+            "definition_de": "So geformt, dass es keine Ecken hat, zum Beispiel wie ein Kreis.",
+            "forms": "rund · runder · am rundesten",
+            "example": "Wir brauchen einen runden Tisch.",
+            "example_ru": "Нам нужен круглый стол.",
+            "grammar_hint": "Перед существительным склоняется: ein runder Tisch, einen runden Tisch.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/rund"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 515,
+          "record": {
+            "id": "dict_72e34c760fa2db2ae2c8",
+            "de": "rund",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "около",
+              "примерно",
+              "приблизительно"
+            ],
+            "definition_de": "Zeigt vor einer Zahl an, dass sie nicht ganz genau ist.",
+            "forms": "",
+            "example": "Die Fahrt dauert rund zwei Stunden.",
+            "example_ru": "Поездка длится около двух часов.",
+            "grammar_hint": "Не склоняется; rund + число. Синонимы: etwa, ungefähr.",
+            "usage_note": "Не путать с прилагательным rund.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/rund"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_72e34c760fa2db2ae2c8",
+        "alias_id": "b1-rund-approx",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_72e34c760fa2db2ae2c8"
+      }
+    },
+    {
+      "candidate_number": 834,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Gegenstände, die jemandem gehören oder von ihm benutzt werden. Example: Ich packe meine Sachen vor der Abreise.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 23,
+        "record": {
+          "id": "b1-sache-belongings",
+          "de": "die Sachen",
+          "lemma": "Sache",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "вещи",
+            "личные вещи"
+          ],
+          "definition_de": "Gegenstände, die jemandem gehören oder von ihm benutzt werden.",
+          "example": "Ich packe meine Sachen vor der Abreise.",
+          "example_ru": "Я собираю свои вещи перед отъездом.",
+          "forms": "die Sache · die Sachen",
+          "grammar_hint": "meine Sachen packen; обычно Plural при обозначении личных вещей.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 516,
+          "record": {
+            "id": "dict_f407fa6050aff63397a8",
+            "de": "die Sache",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "вещь",
+              "дело"
+            ],
+            "definition_de": "Ein Gegenstand oder etwas, womit man sich beschäftigt.",
+            "forms": "Plural · die Sachen",
+            "example": "Meine Sachen liegen noch im Auto.",
+            "example_ru": "Мои вещи ещё лежат в машине.",
+            "grammar_hint": "Die Sachen — часто личные вещи; das ist meine Sache — это моё дело.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Sache"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f407fa6050aff63397a8",
+        "alias_id": "b1-sache-belongings",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f407fa6050aff63397a8"
+      }
+    },
+    {
+      "candidate_number": 835,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Gegenstand, dessen genaue Art nicht näher benannt wird. Example: Auf dem Flohmarkt findet man viele nützliche Sachen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 24,
+        "record": {
+          "id": "b1-sache-object",
+          "de": "die Sache",
+          "lemma": "Sache",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "вещь",
+            "предмет"
+          ],
+          "definition_de": "Ein Gegenstand, dessen genaue Art nicht näher benannt wird.",
+          "example": "Auf dem Flohmarkt findet man viele nützliche Sachen.",
+          "example_ru": "На барахолке можно найти много полезных вещей.",
+          "forms": "die Sachen",
+          "grammar_hint": "Предметный смысл; часто во множественном числе. Контекст близок к persönliche Sachen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 516,
+          "record": {
+            "id": "dict_f407fa6050aff63397a8",
+            "de": "die Sache",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "вещь",
+              "дело"
+            ],
+            "definition_de": "Ein Gegenstand oder etwas, womit man sich beschäftigt.",
+            "forms": "Plural · die Sachen",
+            "example": "Meine Sachen liegen noch im Auto.",
+            "example_ru": "Мои вещи ещё лежат в машине.",
+            "grammar_hint": "Die Sachen — часто личные вещи; das ist meine Sache — это моё дело.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Sache"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f407fa6050aff63397a8",
+        "alias_id": "b1-sache-object",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f407fa6050aff63397a8"
+      }
+    },
+    {
+      "candidate_number": 836,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Angelegenheit, die jemanden betrifft oder geklärt werden soll. Example: Das ist eine Sache zwischen dir und mir.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 25,
+        "record": {
+          "id": "b1-sache-matter",
+          "de": "die Sache",
+          "lemma": "Sache",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дело",
+            "вопрос",
+            "обстоятельство"
+          ],
+          "definition_de": "Eine Angelegenheit, die jemanden betrifft oder geklärt werden soll.",
+          "example": "Das ist eine Sache zwischen dir und mir.",
+          "example_ru": "Это дело между тобой и мной.",
+          "forms": "die Sachen",
+          "grammar_hint": "Das ist deine Sache — это твоё дело; eine Sache klären — прояснить вопрос.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 516,
+          "record": {
+            "id": "dict_f407fa6050aff63397a8",
+            "de": "die Sache",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "вещь",
+              "дело"
+            ],
+            "definition_de": "Ein Gegenstand oder etwas, womit man sich beschäftigt.",
+            "forms": "Plural · die Sachen",
+            "example": "Meine Sachen liegen noch im Auto.",
+            "example_ru": "Мои вещи ещё лежат в машине.",
+            "grammar_hint": "Die Sachen — часто личные вещи; das ist meine Sache — это моё дело.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Sache"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 837,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Getränk aus ausgepressten Früchten oder Gemüse. Example: Zum Frühstück trinke ich ein Glas Orangensaft.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 28,
+        "record": {
+          "id": "b1-saft-juice",
+          "de": "der Saft",
+          "lemma": "Saft",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сок"
+          ],
+          "definition_de": "Ein Getränk aus ausgepressten Früchten oder Gemüse.",
+          "example": "Zum Frühstück trinke ich ein Glas Orangensaft.",
+          "example_ru": "На завтрак я пью стакан апельсинового сока.",
+          "forms": "die Säfte; напиток как вещество обычно Singular",
+          "grammar_hint": "ein Glas Saft; Apfelsaft, Orangensaft; frisch gepresster Saft.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Saft"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 525,
+          "record": {
+            "id": "a1-485-1",
+            "de": "der Saft",
+            "lemma": "Saft",
+            "ru": "сок",
+            "uk": "",
+            "translations_ru": [
+              "сок"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Säfte",
+            "definition_de": "Ein Getränk, das aus Früchten oder Gemüse gewonnen wird.",
+            "example": "Möchtest du ein Glas Saft?",
+            "example_ru": "Хочешь стакан сока?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "b189d2193412a7f6f967"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-485-1",
+        "alias_id": "b1-saft-juice",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-485-1"
+      }
+    },
+    {
+      "candidate_number": 838,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas mit Worten ausdrücken. Example: Sie sagte, dass sie später kommt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 29,
+        "record": {
+          "id": "b1-sagen-speak",
+          "de": "sagen",
+          "lemma": "sagen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "говорить",
+            "сказать",
+            "произносить"
+          ],
+          "definition_de": "Etwas mit Worten ausdrücken.",
+          "example": "Sie sagte, dass sie später kommt.",
+          "example_ru": "Она сказала, что придёт позже.",
+          "forms": "sagt · sagte · hat gesagt",
+          "grammar_hint": "etwas (Akk.) sagen; sagen, dass … — спрягаемый глагол в конце придаточного.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sagen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 664,
+          "record": {
+            "id": "a1-486-1",
+            "de": "sagen",
+            "lemma": "sagen",
+            "ru": "говорить; сказать; сообщать",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "сказать",
+              "сообщать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sagt · sagte · hat gesagt",
+            "definition_de": "Etwas mit Worten mitteilen.",
+            "example": "Sag mir bitte deinen Namen.",
+            "example_ru": "Скажи мне, пожалуйста, своё имя.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) sagen; sagen, dass … — глагол в конце придаточного. sprechen — разговаривать, владеть языком; sagen — сообщать содержание.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "2ed700586e8df66ed546"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-486-1",
+        "alias_id": "b1-sagen-speak",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-486-1"
+      }
+    },
+    {
+      "candidate_number": 839,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Einer anderen Person eine Information mündlich mitteilen. Example: Kannst du mir sagen, wann der Kurs beginnt?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_077.json",
+        "sha": "aab5e2ac58a41ec9b47a5876c7a61f18aa3cf81c",
+        "batch": 77,
+        "row": 30,
+        "record": {
+          "id": "b1-sagen-inform",
+          "de": "jemandem etwas sagen",
+          "lemma": "sagen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сообщать кому-либо что-либо",
+            "говорить кому-либо"
+          ],
+          "definition_de": "Einer anderen Person eine Information mündlich mitteilen.",
+          "example": "Kannst du mir sagen, wann der Kurs beginnt?",
+          "example_ru": "Можешь сказать мне, когда начинается курс?",
+          "forms": "sagt · sagte · hat gesagt",
+          "grammar_hint": "jemandem (Dativ) etwas (Akk.) sagen; косвенный вопрос wann … beginnt — глагол в конце. Не путать с jemandem etwas erzählen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sagen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 664,
+          "record": {
+            "id": "a1-486-1",
+            "de": "sagen",
+            "lemma": "sagen",
+            "ru": "говорить; сказать; сообщать",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "сказать",
+              "сообщать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sagt · sagte · hat gesagt",
+            "definition_de": "Etwas mit Worten mitteilen.",
+            "example": "Sag mir bitte deinen Namen.",
+            "example_ru": "Скажи мне, пожалуйста, своё имя.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) sagen; sagen, dass … — глагол в конце придаточного. sprechen — разговаривать, владеть языком; sagen — сообщать содержание.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "2ed700586e8df66ed546"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-486-1",
+        "alias_id": "b1-sagen-inform",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-486-1"
+      }
+    },
+    {
+      "candidate_number": 840,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Frage nach einer passenden sprachlichen Formulierung. Example: Wie sagt man dieses Wort auf Deutsch?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 1,
+        "record": {
+          "id": "b1-sagen-language",
+          "de": "Wie sagt man … auf Deutsch?",
+          "lemma": "sagen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "как сказать … по-немецки?",
+            "как будет … по-немецки?"
+          ],
+          "definition_de": "Frage nach einer passenden sprachlichen Formulierung.",
+          "example": "Wie sagt man dieses Wort auf Deutsch?",
+          "example_ru": "Как сказать это слово по-немецки?",
+          "forms": "sagt · sagte · hat gesagt",
+          "grammar_hint": "man — неопределённое подлежащее, глагол в 3-м лице Singular; auf Deutsch — по-немецки.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sagen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 664,
+          "record": {
+            "id": "a1-486-1",
+            "de": "sagen",
+            "lemma": "sagen",
+            "ru": "говорить; сказать; сообщать",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "сказать",
+              "сообщать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sagt · sagte · hat gesagt",
+            "definition_de": "Etwas mit Worten mitteilen.",
+            "example": "Sag mir bitte deinen Namen.",
+            "example_ru": "Скажи мне, пожалуйста, своё имя.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) sagen; sagen, dass … — глагол в конце придаточного. sprechen — разговаривать, владеть языком; sagen — сообщать содержание.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "2ed700586e8df66ed546"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 841,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Umgangssprachliche Einleitung einer Frage oder Bitte. Example: Sag mal, hast du am Freitag Zeit?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 2,
+        "record": {
+          "id": "b1-sagen-conversation",
+          "de": "Sag mal …",
+          "lemma": "sagen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "скажи-ка …",
+            "слушай …"
+          ],
+          "definition_de": "Umgangssprachliche Einleitung einer Frage oder Bitte.",
+          "example": "Sag mal, hast du am Freitag Zeit?",
+          "example_ru": "Слушай, у тебя есть время в пятницу?",
+          "forms": "sagt · sagte · hat gesagt; Imperativ: sag(e)!",
+          "grammar_hint": "mal смягчает обращение; вежливая форма Sagen Sie mal … . Это учебная конструкция, не отдельное значение sagen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sagen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 664,
+          "record": {
+            "id": "a1-486-1",
+            "de": "sagen",
+            "lemma": "sagen",
+            "ru": "говорить; сказать; сообщать",
+            "uk": "",
+            "translations_ru": [
+              "говорить",
+              "сказать",
+              "сообщать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sagt · sagte · hat gesagt",
+            "definition_de": "Etwas mit Worten mitteilen.",
+            "example": "Sag mir bitte deinen Namen.",
+            "example_ru": "Скажи мне, пожалуйста, своё имя.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) sagen; sagen, dass … — глагол в конце придаточного. sprechen — разговаривать, владеть языком; sagen — сообщать содержание.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "2ed700586e8df66ed546"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 842,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Gericht aus Gemüse oder anderen Zutaten, meist mit einer Würzung. Example: Zum Abendessen mache ich einen Salat mit Gurken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 6,
+        "record": {
+          "id": "b1-salat-dish",
+          "de": "der Salat",
+          "lemma": "Salat",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "салат"
+          ],
+          "definition_de": "Ein Gericht aus Gemüse oder anderen Zutaten, meist mit einer Würzung.",
+          "example": "Zum Abendessen mache ich einen Salat mit Gurken.",
+          "example_ru": "На ужин я приготовлю салат с огурцами.",
+          "forms": "die Salate",
+          "grammar_hint": "einen Salat machen; Salat также может обозначать листовой салат. В Goethe здесь блюдо.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Salat"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 526,
+          "record": {
+            "id": "a1-487-1",
+            "de": "der Salat",
+            "lemma": "Salat",
+            "ru": "салат",
+            "uk": "",
+            "translations_ru": [
+              "салат"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Salate",
+            "definition_de": "Eine Speise aus Gemüse oder anderen Zutaten, oft mit einer Soße.",
+            "example": "Ich mache einen Salat mit Tomaten.",
+            "example_ru": "Я делаю салат с помидорами.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "961bc19444f873c3e604"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-487-1",
+        "alias_id": "b1-salat-dish",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-487-1"
+      }
+    },
+    {
+      "candidate_number": 843,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Stoff, der Speisen würzt und vor allem aus Natriumchlorid besteht. Example: Die Suppe braucht noch etwas Salz.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 9,
+        "record": {
+          "id": "b1-salz-salt",
+          "de": "das Salz",
+          "lemma": "Salz",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "соль"
+          ],
+          "definition_de": "Ein Stoff, der Speisen würzt und vor allem aus Natriumchlorid besteht.",
+          "example": "Die Suppe braucht noch etwas Salz.",
+          "example_ru": "В суп нужно добавить ещё немного соли.",
+          "forms": "die Salze (виды, химические соли); пищевая соль обычно Singular",
+          "grammar_hint": "mit Salz würzen; eine Prise Salz — щепотка соли.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Salz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 527,
+          "record": {
+            "id": "a1-488-1",
+            "de": "das Salz",
+            "lemma": "Salz",
+            "ru": "соль",
+            "uk": "",
+            "translations_ru": [
+              "соль"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Weiße Körner, mit denen man Speisen würzt.",
+            "example": "Die Suppe braucht noch etwas Salz.",
+            "example_ru": "В суп нужно добавить немного соли.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "231eaec760f822eed268"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-488-1",
+        "alias_id": "b1-salz-salt",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-488-1"
+      }
+    },
+    {
+      "candidate_number": 844,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Gegenstände einer bestimmten Art gezielt zusammentragen und aufbewahren. Example: Meine Tante sammelt alte Postkarten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 11,
+        "record": {
+          "id": "b1-sammeln-collect",
+          "de": "sammeln",
+          "lemma": "sammeln",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "коллекционировать",
+            "собирать (коллекцию)"
+          ],
+          "definition_de": "Gegenstände einer bestimmten Art gezielt zusammentragen und aufbewahren.",
+          "example": "Meine Tante sammelt alte Postkarten.",
+          "example_ru": "Моя тётя коллекционирует старые открытки.",
+          "forms": "sammelt · sammelte · hat gesammelt",
+          "grammar_hint": "etwas sammeln (Akk.); die Sammlung — коллекция; ich sammle / sammele.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sammeln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 426,
+          "record": {
+            "id": "dict_2c673b9a6ac3e34099d6",
+            "de": "sammeln",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "собирать",
+              "коллекционировать"
+            ],
+            "definition_de": "Dinge suchen und zusammentragen oder über längere Zeit aufbewahren.",
+            "example": "Mein Bruder sammelt alte Münzen.",
+            "example_ru": "Мой брат коллекционирует старые монеты.",
+            "grammar_hint": "etwas (Akkusativ) sammeln.",
+            "usage_note": "Briefmarken sammeln — коллекционировать марки; Informationen sammeln — собирать информацию.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sammeln"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "sammelt · sammelte · hat gesammelt",
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2c673b9a6ac3e34099d6",
+        "alias_id": "b1-sammeln-collect",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2c673b9a6ac3e34099d6"
+      }
+    },
+    {
+      "candidate_number": 845,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Verstreute oder vorhandene Dinge zusammentragen. Example: Die Kinder sammeln Kastanien im Park.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 12,
+        "record": {
+          "id": "b1-sammeln-gather",
+          "de": "sammeln",
+          "lemma": "sammeln",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "собирать",
+            "подбирать"
+          ],
+          "definition_de": "Verstreute oder vorhandene Dinge zusammentragen.",
+          "example": "Die Kinder sammeln Kastanien im Park.",
+          "example_ru": "Дети собирают каштаны в парке.",
+          "forms": "sammelt · sammelte · hat gesammelt",
+          "grammar_hint": "etwas sammeln (Akk.); Müll sammeln — собирать мусор; Pilze sammeln — собирать грибы.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sammeln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 426,
+          "record": {
+            "id": "dict_2c673b9a6ac3e34099d6",
+            "de": "sammeln",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "собирать",
+              "коллекционировать"
+            ],
+            "definition_de": "Dinge suchen und zusammentragen oder über längere Zeit aufbewahren.",
+            "example": "Mein Bruder sammelt alte Münzen.",
+            "example_ru": "Мой брат коллекционирует старые монеты.",
+            "grammar_hint": "etwas (Akkusativ) sammeln.",
+            "usage_note": "Briefmarken sammeln — коллекционировать марки; Informationen sammeln — собирать информацию.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sammeln"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "sammelt · sammelte · hat gesammelt",
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 846,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine sprachliche Einheit, die eine Aussage, Frage oder Aufforderung ausdrückt. Example: Schreib bitte einen Satz mit diesem Verb.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 17,
+        "record": {
+          "id": "b1-satz-sentence",
+          "de": "der Satz",
+          "lemma": "Satz",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "предложение (грамматическое)"
+          ],
+          "definition_de": "Eine sprachliche Einheit, die eine Aussage, Frage oder Aufforderung ausdrückt.",
+          "example": "Schreib bitte einen Satz mit diesem Verb.",
+          "example_ru": "Напиши, пожалуйста, предложение с этим глаголом.",
+          "forms": "die Sätze",
+          "grammar_hint": "Hauptsatz — главное предложение; Nebensatz — придаточное предложение; Satzbau — построение предложения.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Satz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 528,
+          "record": {
+            "id": "a1-489-1",
+            "de": "der Satz",
+            "lemma": "Satz",
+            "ru": "предложение (грамматика)",
+            "uk": "",
+            "translations_ru": [
+              "предложение (грамматика)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Sätze",
+            "definition_de": "Eine sprachliche Einheit, die eine Aussage, Frage oder Aufforderung bildet.",
+            "example": "Schreiben Sie einen kurzen Satz.",
+            "example_ru": "Напишите короткое предложение.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "23099d20cef480c99c4e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-489-1",
+        "alias_id": "b1-satz-sentence",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-489-1"
+      }
+    },
+    {
+      "candidate_number": 847,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Frei von Schmutz oder störenden Rückständen. Example: Die Handtücher im Schrank sind sauber.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 18,
+        "record": {
+          "id": "b1-sauber-clean",
+          "de": "sauber",
+          "lemma": "sauber",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "чистый",
+            "незапачканный"
+          ],
+          "definition_de": "Frei von Schmutz oder störenden Rückständen.",
+          "example": "Die Handtücher im Schrank sind sauber.",
+          "example_ru": "Полотенца в шкафу чистые.",
+          "forms": "sauber · sauberer · am saubersten",
+          "grammar_hint": "Gegenteil: schmutzig; ein sauberes Handtuch. sauber также может означать аккуратно выполненный.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sauber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 126,
+          "record": {
+            "id": "dict_4cb087b85a324f4db296",
+            "de": "sauber",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "чистый"
+            ],
+            "definition_de": "Frei von Schmutz oder Flecken.",
+            "forms": "sauber · sauberer · am saubersten",
+            "example": "Das Glas ist sauber, aber der Teller ist noch schmutzig.",
+            "example_ru": "Стакан чистый, а тарелка ещё грязная.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sauber"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4cb087b85a324f4db296",
+        "alias_id": "b1-sauber-clean",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4cb087b85a324f4db296"
+      }
+    },
+    {
+      "candidate_number": 848,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Etwas von Schmutz befreien. Example: Wir müssen nach dem Kochen die Küche sauber machen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 19,
+        "record": {
+          "id": "b1-sauber-machen",
+          "de": "sauber machen / saubermachen",
+          "lemma": "sauber",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "чистить",
+            "убирать",
+            "мыть"
+          ],
+          "definition_de": "Etwas von Schmutz befreien.",
+          "example": "Wir müssen nach dem Kochen die Küche sauber machen.",
+          "example_ru": "После готовки нам нужно убрать кухню.",
+          "forms": "macht sauber · machte sauber · hat sauber gemacht / saubergemacht",
+          "grammar_hint": "Оба написания допустимы; etwas (Akk.) sauber machen; в главном предложении macht … sauber.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sauber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 126,
+          "record": {
+            "id": "dict_4cb087b85a324f4db296",
+            "de": "sauber",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "чистый"
+            ],
+            "definition_de": "Frei von Schmutz oder Flecken.",
+            "forms": "sauber · sauberer · am saubersten",
+            "example": "Das Glas ist sauber, aber der Teller ist noch schmutzig.",
+            "example_ru": "Стакан чистый, а тарелка ещё грязная.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sauber"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 849,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einen Geschmack ähnlich dem von Zitronensaft oder Essig aufweisend. Example: Diese Beeren schmecken ziemlich sauer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 20,
+        "record": {
+          "id": "b1-sauer-taste",
+          "de": "sauer",
+          "lemma": "sauer",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "кислый"
+          ],
+          "definition_de": "Einen Geschmack ähnlich dem von Zitronensaft oder Essig aufweisend.",
+          "example": "Diese Beeren schmecken ziemlich sauer.",
+          "example_ru": "Эти ягоды довольно кислые.",
+          "forms": "sauer · saurer · am sauersten",
+          "grammar_hint": "sauer schmecken; eine saure Zitrone; Gegenteil: süß (CH: süss).",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sauer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 332,
+          "record": {
+            "id": "dict_f19ef7735a009ae28665",
+            "de": "sauer",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "кислый",
+              "сердитый",
+              "рассерженный"
+            ],
+            "definition_de": "Mit einem Geschmack wie der einer Zitrone; umgangssprachlich auch verärgert.",
+            "forms": "sauer · saurer · am sauersten",
+            "example": "Die Äpfel sind sauer.",
+            "example_ru": "Яблоки кислые.",
+            "grammar_hint": "sauer schmecken — быть кислым на вкус; auf jemanden (Akkusativ) sauer sein — сердиться на кого-либо (разг.).",
+            "usage_note": "Оба смысла подтверждены Goethe A2 стр. 24: кислый вкус и раздражение. Другие смыслы отдельно не маркируются.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sauer"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f19ef7735a009ae28665",
+        "alias_id": "b1-sauer-taste",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f19ef7735a009ae28665"
+      }
+    },
+    {
+      "candidate_number": 850,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Durch Gärung einen sauren Geschmack angenommen habend. Example: Die Milch ist sauer geworden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 21,
+        "record": {
+          "id": "b1-sauer-spoiled",
+          "de": "sauer",
+          "lemma": "sauer",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "прокисший",
+            "кислый (о молоке)"
+          ],
+          "definition_de": "Durch Gärung einen sauren Geschmack angenommen habend.",
+          "example": "Die Milch ist sauer geworden.",
+          "example_ru": "Молоко прокисло.",
+          "forms": "sauer · saurer · am sauersten",
+          "grammar_hint": "sauer werden — прокисать; ist sauer geworden. Кисломолочные продукты не обязательно испорчены.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sauer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 332,
+          "record": {
+            "id": "dict_f19ef7735a009ae28665",
+            "de": "sauer",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "кислый",
+              "сердитый",
+              "рассерженный"
+            ],
+            "definition_de": "Mit einem Geschmack wie der einer Zitrone; umgangssprachlich auch verärgert.",
+            "forms": "sauer · saurer · am sauersten",
+            "example": "Die Äpfel sind sauer.",
+            "example_ru": "Яблоки кислые.",
+            "grammar_hint": "sauer schmecken — быть кислым на вкус; auf jemanden (Akkusativ) sauer sein — сердиться на кого-либо (разг.).",
+            "usage_note": "Оба смысла подтверждены Goethe A2 стр. 24: кислый вкус и раздражение. Другие смыслы отдельно не маркируются.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sauer"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 851,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Umgangssprachlich: über das Verhalten einer Person verärgert sein. Example: Bist du noch sauer auf mich?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 22,
+        "record": {
+          "id": "b1-sauer-angry",
+          "de": "sauer auf jemanden sein",
+          "lemma": "sauer",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "сердиться на кого-либо",
+            "злиться на кого-либо"
+          ],
+          "definition_de": "Umgangssprachlich: über das Verhalten einer Person verärgert sein.",
+          "example": "Bist du noch sauer auf mich?",
+          "example_ru": "Ты всё ещё сердишься на меня?",
+          "forms": "sauer · saurer · am sauersten",
+          "grammar_hint": "auf + Akkusativ: auf mich, auf dich. Разговорное значение; нейтральнее: verärgert sein.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sauer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 332,
+          "record": {
+            "id": "dict_f19ef7735a009ae28665",
+            "de": "sauer",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "кислый",
+              "сердитый",
+              "рассерженный"
+            ],
+            "definition_de": "Mit einem Geschmack wie der einer Zitrone; umgangssprachlich auch verärgert.",
+            "forms": "sauer · saurer · am sauersten",
+            "example": "Die Äpfel sind sauer.",
+            "example_ru": "Яблоки кислые.",
+            "grammar_hint": "sauer schmecken — быть кислым на вкус; auf jemanden (Akkusativ) sauer sein — сердиться на кого-либо (разг.).",
+            "usage_note": "Оба смысла подтверждены Goethe A2 стр. 24: кислый вкус и раздражение. Другие смыслы отдельно не маркируются.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sauer"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 852,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Drückt Bedauern über eine unerwünschte Situation aus. Example: Das Konzert ist abgesagt. Schade!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_078.json",
+        "sha": "a987df93333557866344c9a9fdac9987d50f133e",
+        "batch": 78,
+        "row": 25,
+        "record": {
+          "id": "b1-schade-exclamation",
+          "de": "Schade! / Das ist schade.",
+          "lemma": "schade",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "жаль!",
+            "как жаль!"
+          ],
+          "definition_de": "Drückt Bedauern über eine unerwünschte Situation aus.",
+          "example": "Das Konzert ist abgesagt. Schade!",
+          "example_ru": "Концерт отменён. Как жаль!",
+          "forms": "неизменяемое; обычно предикативное употребление",
+          "grammar_hint": "Schade! — самостоятельная реакция; Das ist schade — жаль. Не путать с der Schaden — ущерб.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/schade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 404,
+          "record": {
+            "id": "dict_94298c5ae5a411eb355c",
+            "de": "schade",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "жаль",
+              "жалко",
+              "как жаль"
+            ],
+            "definition_de": "Drückt aus, dass man etwas bedauert.",
+            "forms": "Не склоняется; обычных степеней сравнения нет",
+            "example": "Schade, dass der Kurs heute ausfällt.",
+            "example_ru": "Жаль, что сегодня занятие отменено.",
+            "grammar_hint": "После dass — придаточное со спрягаемым глаголом в конце: Schade, dass du nicht kommst.",
+            "usage_note": "Предикативное, несклоняемое; степеней сравнения нет. Es ist schade, dass … / Schade, dass … — Жаль, что … . Не путать с schaden — вредить.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schade"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_94298c5ae5a411eb355c",
+        "alias_id": "b1-schade-exclamation",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_94298c5ae5a411eb355c"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_72e34c760fa2db2ae2c8",
+      "alias_ids": [
+        "b1-rund-approx"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_72e34c760fa2db2ae2c8",
+        "de": "rund",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "около",
+          "примерно",
+          "приблизительно"
+        ],
+        "definition_de": "Zeigt vor einer Zahl an, dass sie nicht ganz genau ist.",
+        "forms": "",
+        "example": "Die Fahrt dauert rund zwei Stunden.",
+        "example_ru": "Поездка длится около двух часов.",
+        "grammar_hint": "Не склоняется; rund + число. Синонимы: etwa, ungefähr.",
+        "usage_note": "Не путать с прилагательным rund.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/rund"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-rund-approx"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rund-approx",
+            "de": "rund",
+            "part": "adv",
+            "forms": "неизменяемое наречие",
+            "definition_de": "Kennzeichnet eine ungefähre Mengen- oder Zahlenangabe.",
+            "translations_ru": [
+              "около",
+              "примерно",
+              "приблизительно"
+            ],
+            "grammar_hint": "rund + число; ≈ ungefähr / etwa. Не склоняется перед числом.",
+            "example": "An dem Kurs nehmen rund zwanzig Personen teil.",
+            "example_ru": "В курсе участвуют около двадцати человек."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rund"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f407fa6050aff63397a8",
+      "alias_ids": [
+        "b1-sache-belongings",
+        "b1-sache-object"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f407fa6050aff63397a8",
+        "de": "die Sache",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "вещь",
+          "дело"
+        ],
+        "definition_de": "Ein Gegenstand oder etwas, womit man sich beschäftigt.",
+        "forms": "Plural · die Sachen",
+        "example": "Meine Sachen liegen noch im Auto.",
+        "example_ru": "Мои вещи ещё лежат в машине.",
+        "grammar_hint": "Die Sachen — часто личные вещи; das ist meine Sache — это моё дело.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Sache"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-sache-belongings",
+          "b1-sache-object"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sache-belongings",
+            "de": "die Sachen",
+            "part": "noun",
+            "forms": "die Sache · die Sachen",
+            "definition_de": "Gegenstände, die jemandem gehören oder von ihm benutzt werden.",
+            "translations_ru": [
+              "вещи",
+              "личные вещи"
+            ],
+            "grammar_hint": "meine Sachen packen; обычно Plural при обозначении личных вещей.",
+            "example": "Ich packe meine Sachen vor der Abreise.",
+            "example_ru": "Я собираю свои вещи перед отъездом."
+          },
+          {
+            "id": "b1-sache-object",
+            "de": "die Sache",
+            "part": "noun",
+            "forms": "die Sachen",
+            "definition_de": "Ein Gegenstand, dessen genaue Art nicht näher benannt wird.",
+            "translations_ru": [
+              "вещь",
+              "предмет"
+            ],
+            "grammar_hint": "Предметный смысл; часто во множественном числе. Контекст близок к persönliche Sachen.",
+            "example": "Auf dem Flohmarkt findet man viele nützliche Sachen.",
+            "example_ru": "На барахолке можно найти много полезных вещей."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sache"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-485-1",
+      "alias_ids": [
+        "b1-saft-juice"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-485-1",
+        "de": "der Saft",
+        "lemma": "Saft",
+        "ru": "сок",
+        "uk": "",
+        "translations_ru": [
+          "сок"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Säfte",
+        "definition_de": "Ein Getränk, das aus Früchten oder Gemüse gewonnen wird.",
+        "example": "Möchtest du ein Glas Saft?",
+        "example_ru": "Хочешь стакан сока?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "b189d2193412a7f6f967"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-saft-juice"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-saft-juice",
+            "de": "der Saft",
+            "part": "noun",
+            "forms": "die Säfte; напиток как вещество обычно Singular",
+            "definition_de": "Ein Getränk aus ausgepressten Früchten oder Gemüse.",
+            "translations_ru": [
+              "сок"
+            ],
+            "grammar_hint": "ein Glas Saft; Apfelsaft, Orangensaft; frisch gepresster Saft.",
+            "example": "Zum Frühstück trinke ich ein Glas Orangensaft.",
+            "example_ru": "На завтрак я пью стакан апельсинового сока."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Saft"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-486-1",
+      "alias_ids": [
+        "b1-sagen-speak",
+        "b1-sagen-inform"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-486-1",
+        "de": "sagen",
+        "lemma": "sagen",
+        "ru": "говорить; сказать; сообщать",
+        "uk": "",
+        "translations_ru": [
+          "говорить",
+          "сказать",
+          "сообщать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "sagt · sagte · hat gesagt",
+        "definition_de": "Etwas mit Worten mitteilen.",
+        "example": "Sag mir bitte deinen Namen.",
+        "example_ru": "Скажи мне, пожалуйста, своё имя.",
+        "note": "jemandem (Dativ) etwas (Akkusativ) sagen; sagen, dass … — глагол в конце придаточного. sprechen — разговаривать, владеть языком; sagen — сообщать содержание.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "2ed700586e8df66ed546"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sagen-speak",
+          "b1-sagen-inform"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sagen-speak",
+            "de": "sagen",
+            "part": "verb",
+            "forms": "sagt · sagte · hat gesagt",
+            "definition_de": "Etwas mit Worten ausdrücken.",
+            "translations_ru": [
+              "говорить",
+              "сказать",
+              "произносить"
+            ],
+            "grammar_hint": "etwas (Akk.) sagen; sagen, dass … — спрягаемый глагол в конце придаточного.",
+            "example": "Sie sagte, dass sie später kommt.",
+            "example_ru": "Она сказала, что придёт позже."
+          },
+          {
+            "id": "b1-sagen-inform",
+            "de": "jemandem etwas sagen",
+            "part": "verb",
+            "forms": "sagt · sagte · hat gesagt",
+            "definition_de": "Einer anderen Person eine Information mündlich mitteilen.",
+            "translations_ru": [
+              "сообщать кому-либо что-либо",
+              "говорить кому-либо"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akk.) sagen; косвенный вопрос wann … beginnt — глагол в конце. Не путать с jemandem etwas erzählen.",
+            "example": "Kannst du mir sagen, wann der Kurs beginnt?",
+            "example_ru": "Можешь сказать мне, когда начинается курс?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sagen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page 75; earliest CEFR level pending cross-level comparison. Teaching contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sagen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-487-1",
+      "alias_ids": [
+        "b1-salat-dish"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-487-1",
+        "de": "der Salat",
+        "lemma": "Salat",
+        "ru": "салат",
+        "uk": "",
+        "translations_ru": [
+          "салат"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Salate",
+        "definition_de": "Eine Speise aus Gemüse oder anderen Zutaten, oft mit einer Soße.",
+        "example": "Ich mache einen Salat mit Tomaten.",
+        "example_ru": "Я делаю салат с помидорами.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "961bc19444f873c3e604"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-salat-dish"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-salat-dish",
+            "de": "der Salat",
+            "part": "noun",
+            "forms": "die Salate",
+            "definition_de": "Ein Gericht aus Gemüse oder anderen Zutaten, meist mit einer Würzung.",
+            "translations_ru": [
+              "салат"
+            ],
+            "grammar_hint": "einen Salat machen; Salat также может обозначать листовой салат. В Goethe здесь блюдо.",
+            "example": "Zum Abendessen mache ich einen Salat mit Gurken.",
+            "example_ru": "На ужин я приготовлю салат с огурцами."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Salat"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-488-1",
+      "alias_ids": [
+        "b1-salz-salt"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-488-1",
+        "de": "das Salz",
+        "lemma": "Salz",
+        "ru": "соль",
+        "uk": "",
+        "translations_ru": [
+          "соль"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "обычно только Singular в этом употреблении",
+        "definition_de": "Weiße Körner, mit denen man Speisen würzt.",
+        "example": "Die Suppe braucht noch etwas Salz.",
+        "example_ru": "В суп нужно добавить немного соли.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "231eaec760f822eed268"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-salz-salt"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-salz-salt",
+            "de": "das Salz",
+            "part": "noun",
+            "forms": "die Salze (виды, химические соли); пищевая соль обычно Singular",
+            "definition_de": "Ein Stoff, der Speisen würzt und vor allem aus Natriumchlorid besteht.",
+            "translations_ru": [
+              "соль"
+            ],
+            "grammar_hint": "mit Salz würzen; eine Prise Salz — щепотка соли.",
+            "example": "Die Suppe braucht noch etwas Salz.",
+            "example_ru": "В суп нужно добавить ещё немного соли."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Salz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2c673b9a6ac3e34099d6",
+      "alias_ids": [
+        "b1-sammeln-collect"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2c673b9a6ac3e34099d6",
+        "de": "sammeln",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "собирать",
+          "коллекционировать"
+        ],
+        "definition_de": "Dinge suchen und zusammentragen oder über längere Zeit aufbewahren.",
+        "example": "Mein Bruder sammelt alte Münzen.",
+        "example_ru": "Мой брат коллекционирует старые монеты.",
+        "grammar_hint": "etwas (Akkusativ) sammeln.",
+        "usage_note": "Briefmarken sammeln — коллекционировать марки; Informationen sammeln — собирать информацию.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sammeln"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "sammelt · sammelte · hat gesammelt",
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-sammeln-collect"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sammeln-collect",
+            "de": "sammeln",
+            "part": "verb",
+            "forms": "sammelt · sammelte · hat gesammelt",
+            "definition_de": "Gegenstände einer bestimmten Art gezielt zusammentragen und aufbewahren.",
+            "translations_ru": [
+              "коллекционировать",
+              "собирать (коллекцию)"
+            ],
+            "grammar_hint": "etwas sammeln (Akk.); die Sammlung — коллекция; ich sammle / sammele.",
+            "example": "Meine Tante sammelt alte Postkarten.",
+            "example_ru": "Моя тётя коллекционирует старые открытки."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 75,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sammeln"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-489-1",
+      "alias_ids": [
+        "b1-satz-sentence"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-489-1",
+        "de": "der Satz",
+        "lemma": "Satz",
+        "ru": "предложение (грамматика)",
+        "uk": "",
+        "translations_ru": [
+          "предложение (грамматика)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Sätze",
+        "definition_de": "Eine sprachliche Einheit, die eine Aussage, Frage oder Aufforderung bildet.",
+        "example": "Schreiben Sie einen kurzen Satz.",
+        "example_ru": "Напишите короткое предложение.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "23099d20cef480c99c4e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-satz-sentence"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-satz-sentence",
+            "de": "der Satz",
+            "part": "noun",
+            "forms": "die Sätze",
+            "definition_de": "Eine sprachliche Einheit, die eine Aussage, Frage oder Aufforderung ausdrückt.",
+            "translations_ru": [
+              "предложение (грамматическое)"
+            ],
+            "grammar_hint": "Hauptsatz — главное предложение; Nebensatz — придаточное предложение; Satzbau — построение предложения.",
+            "example": "Schreib bitte einen Satz mit diesem Verb.",
+            "example_ru": "Напиши, пожалуйста, предложение с этим глаголом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Satz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4cb087b85a324f4db296",
+      "alias_ids": [
+        "b1-sauber-clean"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4cb087b85a324f4db296",
+        "de": "sauber",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "чистый"
+        ],
+        "definition_de": "Frei von Schmutz oder Flecken.",
+        "forms": "sauber · sauberer · am saubersten",
+        "example": "Das Glas ist sauber, aber der Teller ist noch schmutzig.",
+        "example_ru": "Стакан чистый, а тарелка ещё грязная.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sauber"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-sauber-clean"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sauber-clean",
+            "de": "sauber",
+            "part": "adj",
+            "forms": "sauber · sauberer · am saubersten",
+            "definition_de": "Frei von Schmutz oder störenden Rückständen.",
+            "translations_ru": [
+              "чистый",
+              "незапачканный"
+            ],
+            "grammar_hint": "Gegenteil: schmutzig; ein sauberes Handtuch. sauber также может означать аккуратно выполненный.",
+            "example": "Die Handtücher im Schrank sind sauber.",
+            "example_ru": "Полотенца в шкафу чистые."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sauber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f19ef7735a009ae28665",
+      "alias_ids": [
+        "b1-sauer-taste"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f19ef7735a009ae28665",
+        "de": "sauer",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "кислый",
+          "сердитый",
+          "рассерженный"
+        ],
+        "definition_de": "Mit einem Geschmack wie der einer Zitrone; umgangssprachlich auch verärgert.",
+        "forms": "sauer · saurer · am sauersten",
+        "example": "Die Äpfel sind sauer.",
+        "example_ru": "Яблоки кислые.",
+        "grammar_hint": "sauer schmecken — быть кислым на вкус; auf jemanden (Akkusativ) sauer sein — сердиться на кого-либо (разг.).",
+        "usage_note": "Оба смысла подтверждены Goethe A2 стр. 24: кислый вкус и раздражение. Другие смыслы отдельно не маркируются.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sauer"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-sauer-taste"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sauer-taste",
+            "de": "sauer",
+            "part": "adj",
+            "forms": "sauer · saurer · am sauersten",
+            "definition_de": "Einen Geschmack ähnlich dem von Zitronensaft oder Essig aufweisend.",
+            "translations_ru": [
+              "кислый"
+            ],
+            "grammar_hint": "sauer schmecken; eine saure Zitrone; Gegenteil: süß (CH: süss).",
+            "example": "Diese Beeren schmecken ziemlich sauer.",
+            "example_ru": "Эти ягоды довольно кислые."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/sauer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_94298c5ae5a411eb355c",
+      "alias_ids": [
+        "b1-schade-exclamation"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_94298c5ae5a411eb355c",
+        "de": "schade",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "жаль",
+          "жалко",
+          "как жаль"
+        ],
+        "definition_de": "Drückt aus, dass man etwas bedauert.",
+        "forms": "Не склоняется; обычных степеней сравнения нет",
+        "example": "Schade, dass der Kurs heute ausfällt.",
+        "example_ru": "Жаль, что сегодня занятие отменено.",
+        "grammar_hint": "После dass — придаточное со спрягаемым глаголом в конце: Schade, dass du nicht kommst.",
+        "usage_note": "Предикативное, несклоняемое; степеней сравнения нет. Es ist schade, dass … / Schade, dass … — Жаль, что … . Не путать с schaden — вредить.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schade"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-schade-exclamation"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schade-exclamation",
+            "de": "Schade! / Das ist schade.",
+            "part": "phrase",
+            "forms": "неизменяемое; обычно предикативное употребление",
+            "definition_de": "Drückt Bedauern über eine unerwünschte Situation aus.",
+            "translations_ru": [
+              "жаль!",
+              "как жаль!"
+            ],
+            "grammar_hint": "Schade! — самостоятельная реакция; Das ist schade — жаль. Не путать с der Schaden — ущерб.",
+            "example": "Das Konzert ist abgesagt. Schade!",
+            "example_ru": "Концерт отменён. Как жаль!"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 76,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/schade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

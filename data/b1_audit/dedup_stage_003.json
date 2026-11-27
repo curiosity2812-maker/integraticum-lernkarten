@@ -1,0 +1,712 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged dedup overlay, five manually inspected same-ID pairs. Leidtun phrase and verb formats retained separately within usage_variants; deployment blocked until consumer supports both. Original batch files unchanged; consumer integration and student-progress migration not tested. Row coordinates are one-based and bound to input blob SHA. Alternative forms retained for review, not independently reverified. Original evidence/status preserved in snapshots.",
+  "input_records": 10,
+  "output_records": 5,
+  "groups": [
+    {
+      "canonical_id": "b1-leidtun-apology",
+      "retain": {
+        "batch": 52,
+        "row": 20
+      },
+      "suppress": {
+        "batch": 101,
+        "row": 17
+      },
+      "merged_record": {
+        "id": "b1-leidtun-apology",
+        "de": "Es tut mir leid.",
+        "lemma": "leidtun",
+        "part": "phrase",
+        "level": "B1",
+        "translations_ru": [
+          "мне жаль",
+          "извините",
+          "сожалею",
+          "сожалеть",
+          "быть жаль"
+        ],
+        "definition_de": "Drückt Bedauern über eine Situation oder eine eigene Handlung aus.",
+        "example": "Es tut mir leid, dass ich zu spät gekommen bin.",
+        "example_ru": "Мне жаль, что я опоздала.",
+        "forms": "tut leid · tat leid · hat leidgetan",
+        "grammar_hint": "Es tut mir leid, dass … — после dass спрягаемый глагол в конце. Краткая реплика: Tut mir leid!\njemandem (Dat.) leidtun; es tut mir leid; dass + глагол в конце. Отделяемый глагол.\nГотовая реплика и инфинитив — разные учебные форматы; не подменять переводы реплики переводами глагола. Основной формат реплики сохранён для совместимости с прежним ID.",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 60,
+            "scope": "context",
+            "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/leidtun",
+            "https://www.duden.de/rechtschreibung/leidtun"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Bedauern oder Mitgefühl ausdrücken."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Es tut mir leid, dass ich so spät antworte.",
+            "ru": "Мне жаль, что я отвечаю так поздно."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "Es tut mir leid.",
+            "part": "phrase",
+            "translations_ru": [
+              "мне жаль",
+              "извините",
+              "сожалею"
+            ],
+            "definition_de": "Drückt Bedauern über eine Situation oder eine eigene Handlung aus.",
+            "grammar_hint": "Es tut mir leid, dass … — после dass спрягаемый глагол в конце. Краткая реплика: Tut mir leid!"
+          },
+          {
+            "de": "leidtun",
+            "part": "verb",
+            "translations_ru": [
+              "сожалеть",
+              "быть жаль"
+            ],
+            "definition_de": "Bedauern oder Mitgefühl ausdrücken.",
+            "grammar_hint": "jemandem (Dat.) leidtun; es tut mir leid; dass + глагол в конце. Отделяемый глагол."
+          }
+        ],
+        "release_blocker": "Consumer must support usage_variants and distinguish phrase from verb in exercises before suppressing second record."
+      },
+      "original_records": [
+        {
+          "batch": 52,
+          "row": 20,
+          "sha": "49010d3c8f027d4f3b5bea0dd7cb453646d81384",
+          "record": {
+            "id": "b1-leidtun-apology",
+            "de": "Es tut mir leid.",
+            "lemma": "leidtun",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "мне жаль",
+              "извините",
+              "сожалею"
+            ],
+            "definition_de": "Drückt Bedauern über eine Situation oder eine eigene Handlung aus.",
+            "example": "Es tut mir leid, dass ich zu spät gekommen bin.",
+            "example_ru": "Мне жаль, что я опоздала.",
+            "forms": "tut leid · tat leid · hat leidgetan",
+            "grammar_hint": "Es tut mir leid, dass … — после dass спрягаемый глагол в конце. Краткая реплика: Tut mir leid!",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 60,
+                "scope": "context",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/leidtun",
+                "https://www.duden.de/rechtschreibung/leidtun"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 101,
+          "row": 17,
+          "sha": "153f5bc2d5b9d2a1741ed124a975105a3c29b7d3",
+          "record": {
+            "id": "b1-leidtun-apology",
+            "de": "leidtun",
+            "lemma": "leidtun",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "сожалеть",
+              "быть жаль"
+            ],
+            "definition_de": "Bedauern oder Mitgefühl ausdrücken.",
+            "example": "Es tut mir leid, dass ich so spät antworte.",
+            "example_ru": "Мне жаль, что я отвечаю так поздно.",
+            "forms": "tut leid · tat leid · hat leidgetan",
+            "grammar_hint": "jemandem (Dat.) leidtun; es tut mir leid; dass + глагол в конце. Отделяемый глагол.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 88,
+                "scope": "context",
+                "note": "Printed page 88 visually inspected. Exam vocabulary coverage, not earliest CEFR level; A1/A2 comparison and cross-batch merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/leidtun"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-nachspeise-dessert",
+      "retain": {
+        "batch": 60,
+        "row": 29
+      },
+      "suppress": {
+        "batch": 89,
+        "row": 24
+      },
+      "merged_record": {
+        "id": "b1-nachspeise-dessert",
+        "de": "die Nachspeise",
+        "lemma": "Nachspeise",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "десерт",
+          "сладкое после основного блюда"
+        ],
+        "definition_de": "Eine Speise, die am Ende einer Mahlzeit serviert wird.",
+        "example": "Als Nachspeise bestellen wir ein Eis.",
+        "example_ru": "На десерт мы закажем мороженое.",
+        "forms": "die Nachspeisen",
+        "grammar_hint": "В Швейцарии распространено das Dessert; также der Nachtisch (прежде всего Германия).\nD/A: Nachspeise; CH обычно Dessert. zur Nachspeise (Dativ).",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 65,
+            "scope": "context",
+            "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Nachspeise"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Ein Gericht zum Abschluss eines mehrgängigen Essens."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Zur Nachspeise gibt es Obst mit Joghurt.",
+            "ru": "На десерт подают фрукты с йогуртом."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 60,
+          "row": 29,
+          "sha": "0b5ae40d3ad2a4fe00b44167f6d502c69f5c3053",
+          "record": {
+            "id": "b1-nachspeise-dessert",
+            "de": "die Nachspeise",
+            "lemma": "Nachspeise",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "десерт",
+              "сладкое после основного блюда"
+            ],
+            "definition_de": "Eine Speise, die am Ende einer Mahlzeit serviert wird.",
+            "example": "Als Nachspeise bestellen wir ein Eis.",
+            "example_ru": "На десерт мы закажем мороженое.",
+            "forms": "die Nachspeisen",
+            "grammar_hint": "В Швейцарии распространено das Dessert; также der Nachtisch (прежде всего Германия).",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 65,
+                "scope": "context",
+                "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Nachspeise"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 89,
+          "row": 24,
+          "sha": "c5d484cf847a22787a80434362412152b68a227b",
+          "record": {
+            "id": "b1-nachspeise-dessert",
+            "de": "die Nachspeise",
+            "lemma": "Nachspeise",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "десерт"
+            ],
+            "definition_de": "Ein Gericht zum Abschluss eines mehrgängigen Essens.",
+            "example": "Zur Nachspeise gibt es Obst mit Joghurt.",
+            "example_ru": "На десерт подают фрукты с йогуртом.",
+            "forms": "die Nachspeisen",
+            "grammar_hint": "D/A: Nachspeise; CH обычно Dessert. zur Nachspeise (Dativ).",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 82,
+                "scope": "context",
+                "note": "Printed pages 81–82 inspected 2026-11-27. Exam vocabulary membership or example context, not earliest CEFR level; A1/A2 and global sense deduplication pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Nachspeise"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-vorort-suburb",
+      "retain": {
+        "batch": 67,
+        "row": 8
+      },
+      "suppress": {
+        "batch": 112,
+        "row": 20
+      },
+      "merged_record": {
+        "id": "b1-vorort-suburb",
+        "de": "der Vorort",
+        "lemma": "Vorort",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "пригород"
+        ],
+        "definition_de": "Eine Siedlung oder ein Stadtteil am Rand einer größeren Stadt.",
+        "example": "Er wohnt in einem Vorort von Zürich.",
+        "example_ru": "Он живёт в пригороде Цюриха.",
+        "forms": "die Vororte",
+        "grammar_hint": "in einem Vorort wohnen (Dativ); von + Dativ. Отличать der Vorort от vor Ort — на месте.\nin einem Vorort (Dat.); не путать с раздельным vor Ort — на месте.",
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт",
+          "Город и транспорт"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 69,
+            "scope": "context",
+            "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Vorort"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Ein Ort am Rand einer größeren Stadt, der eng mit ihr verbunden ist."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Sie wohnt in einem Vorort von Bern.",
+            "ru": "Она живёт в пригороде Берна."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 67,
+          "row": 8,
+          "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+          "record": {
+            "id": "b1-vorort-suburb",
+            "de": "der Vorort",
+            "lemma": "Vorort",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "пригород"
+            ],
+            "definition_de": "Eine Siedlung oder ein Stadtteil am Rand einer größeren Stadt.",
+            "example": "Er wohnt in einem Vorort von Zürich.",
+            "example_ru": "Он живёт в пригороде Цюриха.",
+            "forms": "die Vororte",
+            "grammar_hint": "in einem Vorort wohnen (Dativ); von + Dativ. Отличать der Vorort от vor Ort — на месте.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 69,
+                "scope": "context",
+                "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Vorort"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 112,
+          "row": 20,
+          "sha": "07f4c0dd09e0b6356d445e244db35cebeb1d420f",
+          "record": {
+            "id": "b1-vorort-suburb",
+            "de": "der Vorort",
+            "lemma": "Vorort",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "пригород"
+            ],
+            "definition_de": "Ein Ort am Rand einer größeren Stadt, der eng mit ihr verbunden ist.",
+            "example": "Sie wohnt in einem Vorort von Bern.",
+            "example_ru": "Она живёт в пригороде Берна.",
+            "forms": "die Vororte",
+            "grammar_hint": "in einem Vorort (Dat.); не путать с раздельным vor Ort — на месте.",
+            "topic": "Город и транспорт",
+            "topics": [
+              "Город и транспорт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 95,
+                "scope": "headword_or_attested_sense",
+                "note": "Printed page 95 visually inspected; exam-list coverage does not establish earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Vorort"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-schwammerl-mushroom-at",
+      "retain": {
+        "batch": 69,
+        "row": 17
+      },
+      "suppress": {
+        "batch": 83,
+        "row": 30
+      },
+      "merged_record": {
+        "id": "b1-schwammerl-mushroom-at",
+        "de": "das Schwammerl",
+        "lemma": "Schwammerl",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "гриб (Австрия, также Бавария)",
+          "гриб (Австрия, Бавария)"
+        ],
+        "definition_de": "Regional gebräuchliche Bezeichnung für den sichtbaren Fruchtkörper eines Pilzes.",
+        "example": "Auf dem Markt gibt es frische Schwammerl.",
+        "example_ru": "На рынке есть свежие грибы.",
+        "forms": "die Schwammerl / die Schwammerln",
+        "grammar_hint": "A (особенно восточная Австрия), также Бавария; общеупотребительное der Pilz. Род различается.\nA: Schwammerl; общеупотребительное der Pilz. В Баварии встречается также мужской род; здесь австрийский средний род.",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 70,
+            "scope": "context",
+            "note": "Goethe B1 printed page 70; earliest CEFR level pending cross-level comparison; pedagogical usage contexts need not be independent lexical senses."
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schwammerl"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Regional gebräuchliches Wort für einen Pilz, besonders einen mit Hut."
+        ],
+        "alternative_forms": [
+          "die Schwammerln / die Schwammerl"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Auf dem Markt gibt es frische Schwammerln.",
+            "ru": "На рынке есть свежие грибы."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 69,
+          "row": 17,
+          "sha": "48ce6dc2f738a7d97b95e1b0fb7d797889128eff",
+          "record": {
+            "id": "b1-schwammerl-mushroom-at",
+            "de": "das Schwammerl",
+            "lemma": "Schwammerl",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "гриб (Австрия, также Бавария)"
+            ],
+            "definition_de": "Regional gebräuchliche Bezeichnung für den sichtbaren Fruchtkörper eines Pilzes.",
+            "example": "Auf dem Markt gibt es frische Schwammerl.",
+            "example_ru": "На рынке есть свежие грибы.",
+            "forms": "die Schwammerl / die Schwammerln",
+            "grammar_hint": "A (особенно восточная Австрия), также Бавария; общеупотребительное der Pilz. Род различается.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 70,
+                "scope": "context",
+                "note": "Goethe B1 printed page 70; earliest CEFR level pending cross-level comparison; pedagogical usage contexts need not be independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schwammerl"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 83,
+          "row": 30,
+          "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+          "record": {
+            "id": "b1-schwammerl-mushroom-at",
+            "de": "das Schwammerl",
+            "lemma": "Schwammerl",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "гриб (Австрия, Бавария)"
+            ],
+            "definition_de": "Regional gebräuchliches Wort für einen Pilz, besonders einen mit Hut.",
+            "example": "Auf dem Markt gibt es frische Schwammerln.",
+            "example_ru": "На рынке есть свежие грибы.",
+            "forms": "die Schwammerln / die Schwammerl",
+            "grammar_hint": "A: Schwammerl; общеупотребительное der Pilz. В Баварии встречается также мужской род; здесь австрийский средний род.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 79,
+                "scope": "context",
+                "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schwammerl"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-zuschauen-watch",
+      "retain": {
+        "batch": 79,
+        "row": 12
+      },
+      "suppress": {
+        "batch": 122,
+        "row": 18
+      },
+      "merged_record": {
+        "id": "b1-zuschauen-watch",
+        "de": "zuschauen",
+        "lemma": "zuschauen",
+        "part": "verb",
+        "level": "B1",
+        "translations_ru": [
+          "наблюдать",
+          "смотреть, как кто-либо что-либо делает",
+          "смотреть",
+          "наблюдать (за действием)"
+        ],
+        "definition_de": "Eine Tätigkeit verfolgen, ohne selbst daran teilzunehmen.",
+        "example": "Die Eltern schauen den Kindern beim Basteln zu.",
+        "example_ru": "Родители наблюдают, как дети мастерят поделки.",
+        "forms": "schaut zu · schaute zu · hat zugeschaut",
+        "grammar_hint": "jemandem (Dativ) bei etwas (Dativ) zuschauen; отделяемая приставка zu-.\njemandem (Dat.) zuschauen; bei + Dat.; отделяемый. zuschauen ≠ zuhören.",
+        "topic": "Досуг и культура",
+        "topics": [
+          "Досуг и культура"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 76,
+            "scope": "context",
+            "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/zuschauen"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine Handlung als Beobachter verfolgen, ohne selbst mitzumachen."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Die Eltern schauen den Kindern beim Spielen zu.",
+            "ru": "Родители наблюдают за играющими детьми."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 79,
+          "row": 12,
+          "sha": "c0562850a8424d11f49b22641dfec4ea267e83a4",
+          "record": {
+            "id": "b1-zuschauen-watch",
+            "de": "zuschauen",
+            "lemma": "zuschauen",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "наблюдать",
+              "смотреть, как кто-либо что-либо делает"
+            ],
+            "definition_de": "Eine Tätigkeit verfolgen, ohne selbst daran teilzunehmen.",
+            "example": "Die Eltern schauen den Kindern beim Basteln zu.",
+            "example_ru": "Родители наблюдают, как дети мастерят поделки.",
+            "forms": "schaut zu · schaute zu · hat zugeschaut",
+            "grammar_hint": "jemandem (Dativ) bei etwas (Dativ) zuschauen; отделяемая приставка zu-.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 76,
+                "scope": "context",
+                "note": "Goethe B1 printed page 76; earliest CEFR level pending cross-level comparison. Some entries distinguish teaching contexts, not independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/zuschauen"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 122,
+          "row": 18,
+          "sha": "7a8e73bd78ee504ce07d6c42af4453e8ceef5257",
+          "record": {
+            "id": "b1-zuschauen-watch",
+            "de": "zuschauen",
+            "lemma": "zuschauen",
+            "part": "verb",
+            "level": "B1",
+            "translations_ru": [
+              "смотреть",
+              "наблюдать (за действием)"
+            ],
+            "definition_de": "Eine Handlung als Beobachter verfolgen, ohne selbst mitzumachen.",
+            "example": "Die Eltern schauen den Kindern beim Spielen zu.",
+            "example_ru": "Родители наблюдают за играющими детьми.",
+            "forms": "schaut zu · schaute zu · hat zugeschaut",
+            "grammar_hint": "jemandem (Dat.) zuschauen; bei + Dat.; отделяемый. zuschauen ≠ zuhören.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 101,
+                "scope": "headword_or_attested_sense",
+                "note": "Printed pages 101–102 visually inspected. Provisional exam-list coverage; earliest CEFR level and cross-batch reconciliation pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/zuschauen"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ]
+}

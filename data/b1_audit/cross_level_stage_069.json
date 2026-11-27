@@ -1,0 +1,3005 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1353,
+    1372
+  ],
+  "reviewed": 20,
+  "merge_count": 16,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1353,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Sich durch eine Handlung körperliche Schmerzen zufügen. Example: Hast du dir beim Sturz wehgetan?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 4,
+        "record": {
+          "id": "b1-wehtun-reflexive",
+          "de": "sich wehtun",
+          "lemma": "wehtun",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ушибиться",
+            "причинить себе боль"
+          ],
+          "definition_de": "Sich durch eine Handlung körperliche Schmerzen zufügen.",
+          "example": "Hast du dir beim Sturz wehgetan?",
+          "example_ru": "Ты ушиблась при падении?",
+          "forms": "tut sich weh · tat sich weh · hat sich wehgetan",
+          "grammar_hint": "Возвратное местоимение в Dativ: ich tue mir weh; du tust dir weh. Отделяемый. Связать с b1-wehtun-pain из пакета 101.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wehtun"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 736,
+          "record": {
+            "id": "a1-613-1",
+            "de": "wehtun",
+            "lemma": "wehtun",
+            "ru": "болеть; причинять боль",
+            "uk": "",
+            "translations_ru": [
+              "болеть",
+              "причинять боль"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "tut weh · tat weh · hat wehgetan",
+            "definition_de": "Schmerzen verursachen.",
+            "example": "Mein Fuß tut weh.",
+            "example_ru": "У меня болит стопа.",
+            "note": "Dativ у лица, испытывающего боль: Mir tut der Rücken weh. Отделяемый глагол.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "060d0eb34162aa147763"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 216,
+          "record": {
+            "id": "dict_dac7065fb281ba5ad743",
+            "de": "wehtun",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "причинять боль",
+              "делать больно"
+            ],
+            "definition_de": "Einer anderen Person Schmerzen zufügen.",
+            "forms": "tut weh · tat weh · hat wehgetan",
+            "example": "Pass auf, du tust mir weh!",
+            "example_ru": "Осторожно, ты делаешь мне больно!",
+            "grammar_hint": "Dativ у того, кому причиняют боль.",
+            "usage_note": "Значение «болеть (о части тела)» уже представлено на A1; здесь выделено причинение боли другому человеку. jemandem wehtun (Dativ). Отделяемый глагол: Tu mir nicht weh!",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wehtun"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1354,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Dem weiblichen Geschlecht zugeordnet. Example: Auf dem Formular gibt es ein Feld für weibliche Personen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 5,
+        "record": {
+          "id": "b1-weiblich-female",
+          "de": "weiblich",
+          "lemma": "weiblich",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "женский",
+            "женского пола"
+          ],
+          "definition_de": "Dem weiblichen Geschlecht zugeordnet.",
+          "example": "Auf dem Formular gibt es ein Feld für weibliche Personen.",
+          "example_ru": "В формуляре есть поле для лиц женского пола.",
+          "forms": "в буквальном значении обычно без сравнения; weiblicher · am weiblichsten при описании признаков",
+          "grammar_hint": "weiblich — männlich; grammatisches Geschlecht: feminin; не смешивать грамматический род и пол.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weiblich"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 737,
+          "record": {
+            "id": "a1-614-1",
+            "de": "weiblich",
+            "lemma": "weiblich",
+            "ru": "женский (о поле)",
+            "uk": "",
+            "translations_ru": [
+              "женский (о поле)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В значении пола обычно без степеней сравнения",
+            "definition_de": "Zum weiblichen Geschlecht gehörend.",
+            "example": "Das Küken ist weiblich.",
+            "example_ru": "Этот птенец — самка.",
+            "note": "В значении биологического пола и в анкете обычно не сравнивается. Степени weiblicher – am weiblichsten возможны в другом, качественном значении «женственный», уровень которого здесь не установлен.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "c5152286400d2ecfbbf8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-614-1",
+        "alias_id": "b1-weiblich-female",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-614-1"
+      }
+    },
+    {
+      "candidate_number": 1355,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Nicht hart oder vollständig fest gegart. Example: Zum Frühstück esse ich gern ein weich gekochtes Ei.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 6,
+        "record": {
+          "id": "b1-weich-egg",
+          "de": "weich",
+          "lemma": "weich",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "всмятку",
+            "мягкий (о пище)"
+          ],
+          "definition_de": "Nicht hart oder vollständig fest gegart.",
+          "example": "Zum Frühstück esse ich gern ein weich gekochtes Ei.",
+          "example_ru": "На завтрак я люблю есть яйцо всмятку.",
+          "forms": "weich · weicher · am weichsten",
+          "grammar_hint": "ein weiches Ei; weich kochen. Контекст консистенции, объединить с weich-soft.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 138,
+          "record": {
+            "id": "dict_284f9486fb262e27aa2d",
+            "de": "weich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "мягкий",
+              "всмятку (о яйце)"
+            ],
+            "definition_de": "So, dass etwas bei Druck leicht nachgibt oder sich angenehm anfühlt.",
+            "forms": "weich · weicher · am weichsten",
+            "example": "Dieses Kissen ist weicher als das alte.",
+            "example_ru": "Эта подушка мягче старой.",
+            "grammar_hint": "",
+            "usage_note": "ein weiches Bett — мягкая кровать; ein weiches Ei — яйцо всмятку. Оба контекста подтверждены Goethe A2 стр. 30; это связанные употребления, не отдельный омоним.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_284f9486fb262e27aa2d",
+        "alias_id": "b1-weich-egg",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_284f9486fb262e27aa2d"
+      }
+    },
+    {
+      "candidate_number": 1356,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bei Druck leicht nachgebend und nicht hart. Example: Die Matratze ist mir zu weich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 7,
+        "record": {
+          "id": "b1-weich-soft",
+          "de": "weich",
+          "lemma": "weich",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "мягкий"
+          ],
+          "definition_de": "Bei Druck leicht nachgebend und nicht hart.",
+          "example": "Die Matratze ist mir zu weich.",
+          "example_ru": "Матрас для меня слишком мягкий.",
+          "forms": "weich · weicher · am weichsten",
+          "grammar_hint": "jemandem (Dat.) zu weich sein; Gegenteil: hart. Наречное употребление: weich landen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 138,
+          "record": {
+            "id": "dict_284f9486fb262e27aa2d",
+            "de": "weich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "мягкий",
+              "всмятку (о яйце)"
+            ],
+            "definition_de": "So, dass etwas bei Druck leicht nachgibt oder sich angenehm anfühlt.",
+            "forms": "weich · weicher · am weichsten",
+            "example": "Dieses Kissen ist weicher als das alte.",
+            "example_ru": "Эта подушка мягче старой.",
+            "grammar_hint": "",
+            "usage_note": "ein weiches Bett — мягкая кровать; ein weiches Ei — яйцо всмятку. Оба контекста подтверждены Goethe A2 стр. 30; это связанные употребления, не отдельный омоним.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_284f9486fb262e27aa2d",
+        "alias_id": "b1-weich-soft",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_284f9486fb262e27aa2d"
+      }
+    },
+    {
+      "candidate_number": 1357,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Leitet einen Nebensatz ein, der den Grund einer Aussage nennt. Example: Ich bleibe zu Hause, weil ich heute lernen muss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 9,
+        "record": {
+          "id": "b1-weil-reason",
+          "de": "weil",
+          "lemma": "weil",
+          "part": "conjunction",
+          "level": "B1",
+          "translations_ru": [
+            "потому что",
+            "так как"
+          ],
+          "definition_de": "Leitet einen Nebensatz ein, der den Grund einer Aussage nennt.",
+          "example": "Ich bleibe zu Hause, weil ich heute lernen muss.",
+          "example_ru": "Я остаюсь дома, потому что мне сегодня нужно учиться.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Подчинительный союз: спрягаемый глагол в конце. Weil ich heute lernen muss, bleibe ich zu Hause. После придаточного перед подлежащим главного предложения — глагол. Сравните denn: порядок главного предложения.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weil"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 2,
+          "record": {
+            "id": "dict_25c911117321203d0b6d",
+            "de": "weil",
+            "part": "conj",
+            "level": "A2",
+            "translations_ru": [
+              "потому что",
+              "так как",
+              "поскольку"
+            ],
+            "definition_de": "Leitet einen Nebensatz ein, der einen Grund nennt.",
+            "example": "Wir bleiben zu Hause, weil es regnet.",
+            "example_ru": "Мы остаёмся дома, потому что идёт дождь.",
+            "grammar_hint": "Weil отвечает на вопрос Warum? Ставим запятую: Ich muss arbeiten → …, weil ich arbeiten muss. Если придаточная часть стоит первой, главная начинается с глагола: Weil ich müde bin, gehe ich nach Hause.",
+            "usage_note": "Потому что, так как, поскольку. Сравните denn: после denn обычный порядок слов главного предложения.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weil",
+                "https://dict.leo.org/russisch-deutsch/weil"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_25c911117321203d0b6d",
+        "alias_id": "b1-weil-reason",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_25c911117321203d0b6d"
+      }
+    },
+    {
+      "candidate_number": 1358,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein alkoholisches Getränk, das meist aus vergorenen Trauben hergestellt wird. Example: Auf der Karte stehen verschiedene regionale Weine.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 10,
+        "record": {
+          "id": "b1-wein-drink",
+          "de": "der Wein",
+          "lemma": "Wein",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "вино"
+          ],
+          "definition_de": "Ein alkoholisches Getränk, das meist aus vergorenen Trauben hergestellt wird.",
+          "example": "Auf der Karte stehen verschiedene regionale Weine.",
+          "example_ru": "В меню представлены разные местные вина.",
+          "forms": "die Weine",
+          "grammar_hint": "Rotwein, Weißwein (CH: Weisswein); ein Glas Wein; множественное число для сортов.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wein"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 790,
+          "record": {
+            "id": "dict_ca7b2f5e2220295463ee",
+            "de": "der Wein",
+            "lemma": "Wein",
+            "ru": "вино",
+            "uk": "",
+            "translations_ru": [
+              "вино"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Weine (сорта вина)",
+            "definition_de": "Ein alkoholisches Getränk, das meistens aus Trauben hergestellt wird.",
+            "example": "Zum Essen bestellt er ein Glas Wein.",
+            "example_ru": "К еде он заказывает бокал вина.",
+            "note": "Обычно без артикля при неопределённом количестве: ein Glas Wein. Не путать с weinen — плакать.",
+            "source_evidence": [
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/sl/A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Wein",
+                "scope": "meaning_and_forms"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ca7b2f5e2220295463ee",
+        "alias_id": "b1-wein-drink",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ca7b2f5e2220295463ee"
+      }
+    },
+    {
+      "candidate_number": 1359,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Tränen vergießen, etwa aus Trauer oder Rührung. Example: Das Kind weint, weil sein Spielzeug kaputt ist.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 11,
+        "record": {
+          "id": "b1-weinen-cry",
+          "de": "weinen",
+          "lemma": "weinen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "плакать"
+          ],
+          "definition_de": "Tränen vergießen, etwa aus Trauer oder Rührung.",
+          "example": "Das Kind weint, weil sein Spielzeug kaputt ist.",
+          "example_ru": "Ребёнок плачет, потому что его игрушка сломалась.",
+          "forms": "weint · weinte · hat geweint",
+          "grammar_hint": "vor Freude (Dat.) weinen; über etwas (Akk.) weinen; nicht verwechseln: der Wein.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weinen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 420,
+          "record": {
+            "id": "dict_cab696692c0be1c0ac7c",
+            "de": "weinen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "плакать"
+            ],
+            "definition_de": "Tränen aus Trauer, Schmerz oder anderen Gefühlen vergießen.",
+            "example": "Das Kind weint, weil es müde ist.",
+            "example_ru": "Ребёнок плачет, потому что устал.",
+            "grammar_hint": "",
+            "usage_note": "vor Freude weinen — плакать от радости; das Weinen — процесс плача (номинализация).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/weinen"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "weint · weinte · hat geweint",
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_cab696692c0be1c0ac7c",
+        "alias_id": "b1-weinen-cry",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_cab696692c0be1c0ac7c"
+      }
+    },
+    {
+      "candidate_number": 1360,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Durch eine größere räumliche Entfernung gekennzeichnet. Example: Wie weit ist es von hier bis zum Bahnhof?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 13,
+        "record": {
+          "id": "b1-weit-distance",
+          "de": "weit",
+          "lemma": "weit",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "далёкий",
+            "далеко"
+          ],
+          "definition_de": "Durch eine größere räumliche Entfernung gekennzeichnet.",
+          "example": "Wie weit ist es von hier bis zum Bahnhof?",
+          "example_ru": "Как далеко отсюда до вокзала?",
+          "forms": "weit · weiter · am weitesten",
+          "grammar_hint": "wie weit? — насколько далеко; weit von + Dat.; Gegenteil: nah. Наречное употребление без окончания.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 822,
+          "record": {
+            "id": "dict_a1e8502f2c4625d45d68",
+            "de": "weit",
+            "part": "adj",
+            "translations_ru": [
+              "далеко",
+              "далёкий"
+            ],
+            "forms": "weiter · am weitesten",
+            "definition_de": "Durch eine große Entfernung getrennt oder über eine große Entfernung hinweg.",
+            "example": "Ist es noch weit bis zum Bahnhof?",
+            "example_ru": "До вокзала ещё далеко?",
+            "note": "weit — далеко; weiter — дальше; am weitesten — дальше всего. Значения «широкий, просторный» существуют, но отдельно не подтверждены этим примером A1.",
+            "lemma": "weit",
+            "ru": "далеко; далёкий",
+            "uk": "",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/weit",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a1e8502f2c4625d45d68",
+        "alias_id": "b1-weit-distance",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a1e8502f2c4625d45d68"
+      }
+    },
+    {
+      "candidate_number": 1361,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bezieht eine Tätigkeit auf den erreichten Stand ihres Verlaufs. Example: Wie weit bist du mit der Vorbereitung?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 14,
+        "record": {
+          "id": "b1-weit-progress",
+          "de": "weit",
+          "lemma": "weit",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "далеко (продвинуться)",
+            "на каком этапе"
+          ],
+          "definition_de": "Bezieht eine Tätigkeit auf den erreichten Stand ihres Verlaufs.",
+          "example": "Wie weit bist du mit der Vorbereitung?",
+          "example_ru": "Насколько ты продвинулась в подготовке?",
+          "forms": "weit · weiter · am weitesten",
+          "grammar_hint": "mit + Dat. weit sein; schon weit gekommen sein. Переносное употребление расстояния.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weit"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 822,
+          "record": {
+            "id": "dict_a1e8502f2c4625d45d68",
+            "de": "weit",
+            "part": "adj",
+            "translations_ru": [
+              "далеко",
+              "далёкий"
+            ],
+            "forms": "weiter · am weitesten",
+            "definition_de": "Durch eine große Entfernung getrennt oder über eine große Entfernung hinweg.",
+            "example": "Ist es noch weit bis zum Bahnhof?",
+            "example_ru": "До вокзала ещё далеко?",
+            "note": "weit — далеко; weiter — дальше; am weitesten — дальше всего. Значения «широкий, просторный» существуют, но отдельно не подтверждены этим примером A1.",
+            "lemma": "weit",
+            "ru": "далеко; далёкий",
+            "uk": "",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/weit",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1362,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Mit genügend Raum, sodass etwas nicht eng anliegt. Example: Diese Hose ist mir an der Taille zu weit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 15,
+        "record": {
+          "id": "b1-weit-loose",
+          "de": "weit",
+          "lemma": "weit",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "широкий",
+            "свободный (об одежде)"
+          ],
+          "definition_de": "Mit genügend Raum, sodass etwas nicht eng anliegt.",
+          "example": "Diese Hose ist mir an der Taille zu weit.",
+          "example_ru": "Эти брюки мне слишком широки в талии.",
+          "forms": "weit · weiter · am weitesten",
+          "grammar_hint": "jemandem (Dat.) zu weit sein; weite Kleidung; Gegenteil: eng.",
+          "topic": "Одежда",
+          "topics": [
+            "Одежда"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 822,
+          "record": {
+            "id": "dict_a1e8502f2c4625d45d68",
+            "de": "weit",
+            "part": "adj",
+            "translations_ru": [
+              "далеко",
+              "далёкий"
+            ],
+            "forms": "weiter · am weitesten",
+            "definition_de": "Durch eine große Entfernung getrennt oder über eine große Entfernung hinweg.",
+            "example": "Ist es noch weit bis zum Bahnhof?",
+            "example_ru": "До вокзала ещё далеко?",
+            "note": "weit — далеко; weiter — дальше; am weitesten — дальше всего. Значения «широкий, просторный» существуют, но отдельно не подтверждены этим примером A1.",
+            "lemma": "weit",
+            "ru": "далеко; далёкий",
+            "uk": "",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/weit",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1363,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zeigt an, dass eine begonnene Tätigkeit fortgesetzt wird. Example: Lies bitte weiter, ich höre dir zu.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 16,
+        "record": {
+          "id": "b1-weiter-continue",
+          "de": "weiter / weiter-",
+          "lemma": "weiter",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "дальше",
+            "продолжать"
+          ],
+          "definition_de": "Zeigt an, dass eine begonnene Tätigkeit fortgesetzt wird.",
+          "example": "Lies bitte weiter, ich höre dir zu.",
+          "example_ru": "Пожалуйста, читай дальше, я тебя слушаю.",
+          "forms": "unveränderlich in dieser Funktion",
+          "grammar_hint": "weiterlesen — liest weiter · las weiter · hat weitergelesen; отделяемый компонент weiter-.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weiter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 738,
+          "record": {
+            "id": "a1-615-1",
+            "de": "weiter",
+            "lemma": "weiter",
+            "ru": "дальше; продолжать (в сочетании с глаголом)",
+            "uk": "",
+            "translations_ru": [
+              "дальше",
+              "продолжать (в сочетании с глаголом)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "In derselben Richtung oder mit derselben Tätigkeit fort.",
+            "example": "Gehen Sie bitte weiter.",
+            "example_ru": "Идите дальше, пожалуйста.",
+            "note": "weitergehen — идти дальше, weitermachen — продолжать. Сравнительная степень weit — weiter; атрибутивное weitere Fragen (дополнительные вопросы) не следует автоматически из данного примера.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "9b4c589815bdbbac16b8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-615-1",
+        "alias_id": "b1-weiter-continue",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-615-1"
+      }
+    },
+    {
+      "candidate_number": 1364,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bezeichnet etwas, das zu bereits Vorhandenem hinzukommt. Example: Für weitere Informationen schreiben Sie uns eine E-Mail.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 17,
+        "record": {
+          "id": "b1-weiter-additional",
+          "de": "weitere",
+          "lemma": "weiter",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "дополнительный",
+            "ещё",
+            "дальнейший"
+          ],
+          "definition_de": "Bezeichnet etwas, das zu bereits Vorhandenem hinzukommt.",
+          "example": "Für weitere Informationen schreiben Sie uns eine E-Mail.",
+          "example_ru": "Для получения дополнительной информации напишите нам электронное письмо.",
+          "forms": "weiterer · weitere · weiteres; без отдельного сравнения в этом значении",
+          "grammar_hint": "weitere Fragen — дополнительные вопросы; ein weiterer Termin — ещё одна встреча; не путать с Komparativ von weit.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weiter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 738,
+          "record": {
+            "id": "a1-615-1",
+            "de": "weiter",
+            "lemma": "weiter",
+            "ru": "дальше; продолжать (в сочетании с глаголом)",
+            "uk": "",
+            "translations_ru": [
+              "дальше",
+              "продолжать (в сочетании с глаголом)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "In derselben Richtung oder mit derselben Tätigkeit fort.",
+            "example": "Gehen Sie bitte weiter.",
+            "example_ru": "Идите дальше, пожалуйста.",
+            "note": "weitergehen — идти дальше, weitermachen — продолжать. Сравнительная степень weit — weiter; атрибутивное weitere Fragen (дополнительные вопросы) не следует автоматически из данного примера.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "9b4c589815bdbbac16b8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1365,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Erde und die Gesamtheit der menschlichen Lebensräume. Example: Menschen aus vielen Teilen der Welt besuchen den Kurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 20,
+        "record": {
+          "id": "b1-welt-world",
+          "de": "die Welt",
+          "lemma": "Welt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "мир",
+            "свет"
+          ],
+          "definition_de": "Die Erde und die Gesamtheit der menschlichen Lebensräume.",
+          "example": "Menschen aus vielen Teilen der Welt besuchen den Kurs.",
+          "example_ru": "Люди из разных уголков мира посещают курс.",
+          "forms": "die Welten",
+          "grammar_hint": "auf der ganzen Welt (Dat.); die beste Freundin der Welt (Gen.); Welt как планета обычно Singular.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Welt"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 576,
+          "record": {
+            "id": "a1-617-1",
+            "de": "die Welt",
+            "lemma": "Welt",
+            "ru": "мир; свет (в значении весь мир)",
+            "uk": "",
+            "translations_ru": [
+              "мир",
+              "свет (в значении весь мир)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Welten",
+            "definition_de": "Die Erde und alles, was auf ihr ist.",
+            "example": "Ich möchte mehr von der Welt sehen.",
+            "example_ru": "Я хочу повидать мир.",
+            "note": "um die Welt reisen — путешествовать по миру; aus aller Welt — со всего света.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "695ea13568a58c54abd7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-617-1",
+        "alias_id": "b1-welt-world",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-617-1"
+      }
+    },
+    {
+      "candidate_number": 1366,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet eine geringe, nicht einzeln gezählte Menge. Example: Wir haben heute nur wenig Zeit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 23,
+        "record": {
+          "id": "b1-wenig-quantity",
+          "de": "wenig",
+          "lemma": "wenig",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "мало",
+            "небольшое количество"
+          ],
+          "definition_de": "Bezeichnet eine geringe, nicht einzeln gezählte Menge.",
+          "example": "Wir haben heute nur wenig Zeit.",
+          "example_ru": "У нас сегодня мало времени.",
+          "forms": "wenig · weniger · am wenigsten",
+          "grammar_hint": "wenig Wasser/Zeit; ein wenig — немного; weniger — меньше; Gegenteil: viel.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 739,
+          "record": {
+            "id": "a1-618-1",
+            "de": "wenig",
+            "lemma": "wenig",
+            "ru": "мало; немного",
+            "uk": "",
+            "translations_ru": [
+              "мало",
+              "немного"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "weniger · am wenigsten",
+            "definition_de": "In kleiner Menge oder in geringem Maß.",
+            "example": "Ich habe heute wenig Zeit.",
+            "example_ru": "У меня сегодня мало времени.",
+            "note": "wenig Zeit — мало времени; wenige Leute — мало людей (склоняемая форма). ein wenig — немного. weniger / am wenigsten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "4a71c4de7d4205702819"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-618-1",
+        "alias_id": "b1-wenig-quantity",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-618-1"
+      }
+    },
+    {
+      "candidate_number": 1367,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Bezeichnet eine kleine Anzahl einzelner Personen oder Dinge. Example: In diesem Dorf gibt es nur wenige Geschäfte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 24,
+        "record": {
+          "id": "b1-wenig-countable",
+          "de": "wenige",
+          "lemma": "wenig",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "немногие",
+            "мало (исчисляемых предметов)"
+          ],
+          "definition_de": "Bezeichnet eine kleine Anzahl einzelner Personen oder Dinge.",
+          "example": "In diesem Dorf gibt es nur wenige Geschäfte.",
+          "example_ru": "В этой деревне мало магазинов.",
+          "forms": "wenige · weniger · die wenigsten",
+          "grammar_hint": "wenige + Plural; mit wenigen Ausnahmen (Dat. Pl.); форма того же слова wenig.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 739,
+          "record": {
+            "id": "a1-618-1",
+            "de": "wenig",
+            "lemma": "wenig",
+            "ru": "мало; немного",
+            "uk": "",
+            "translations_ru": [
+              "мало",
+              "немного"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "weniger · am wenigsten",
+            "definition_de": "In kleiner Menge oder in geringem Maß.",
+            "example": "Ich habe heute wenig Zeit.",
+            "example_ru": "У меня сегодня мало времени.",
+            "note": "wenig Zeit — мало времени; wenige Leute — мало людей (склоняемая форма). ein wenig — немного. weniger / am wenigsten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "4a71c4de7d4205702819"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-618-1",
+        "alias_id": "b1-wenig-countable",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-618-1"
+      }
+    },
+    {
+      "candidate_number": 1368,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet den geringen Umfang einer Tätigkeit. Example: Letzte Nacht habe ich sehr wenig geschlafen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 25,
+        "record": {
+          "id": "b1-wenig-activity",
+          "de": "wenig",
+          "lemma": "wenig",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "мало",
+            "недостаточно"
+          ],
+          "definition_de": "Kennzeichnet den geringen Umfang einer Tätigkeit.",
+          "example": "Letzte Nacht habe ich sehr wenig geschlafen.",
+          "example_ru": "Прошлой ночью я очень мало спала.",
+          "forms": "wenig · weniger · am wenigsten",
+          "grammar_hint": "wenig schlafen/essen; ein wenig warten — немного подождать. Gegenteil: viel.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 739,
+          "record": {
+            "id": "a1-618-1",
+            "de": "wenig",
+            "lemma": "wenig",
+            "ru": "мало; немного",
+            "uk": "",
+            "translations_ru": [
+              "мало",
+              "немного"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "weniger · am wenigsten",
+            "definition_de": "In kleiner Menge oder in geringem Maß.",
+            "example": "Ich habe heute wenig Zeit.",
+            "example_ru": "У меня сегодня мало времени.",
+            "note": "wenig Zeit — мало времени; wenige Leute — мало людей (склоняемая форма). ein wenig — немного. weniger / am wenigsten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "4a71c4de7d4205702819"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-618-1",
+        "alias_id": "b1-wenig-activity",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-618-1"
+      }
+    },
+    {
+      "candidate_number": 1369,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Hebt einen als Mindestmaß betrachteten Teil hervor. Example: Ruf mich bitte wenigstens einmal an.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 26,
+        "record": {
+          "id": "b1-wenigstens-minimum",
+          "de": "wenigstens",
+          "lemma": "wenigstens",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "хотя бы",
+            "по крайней мере",
+            "как минимум"
+          ],
+          "definition_de": "Hebt einen als Mindestmaß betrachteten Teil hervor.",
+          "example": "Ruf mich bitte wenigstens einmal an.",
+          "example_ru": "Пожалуйста, позвони мне хотя бы один раз.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Синонимы: zumindest, mindestens (при числовом минимуме). При первой позиции — V2.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenigstens"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 211,
+          "record": {
+            "id": "dict_4a604335729181b2e211",
+            "de": "wenigstens",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "хотя бы",
+              "по крайней мере",
+              "по меньшей мере"
+            ],
+            "definition_de": "Nennt ein Minimum, das trotz allem möglich oder wünschenswert ist.",
+            "forms": "",
+            "example": "Wenn du heute keine Zeit hast, schick mir wenigstens eine kurze Nachricht.",
+            "example_ru": "Если у тебя сегодня нет времени, пришли мне хотя бы короткое сообщение.",
+            "grammar_hint": "wenigstens ставим рядом с тем, что считаем минимумом: wenigstens eine kurze Nachricht.",
+            "usage_note": "wenigstens часто выражает минимальное пожелание или утешение; для нейтрального числового минимума также mindestens.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wenigstens"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4a604335729181b2e211",
+        "alias_id": "b1-wenigstens-minimum",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4a604335729181b2e211"
+      }
+    },
+    {
+      "candidate_number": 1370,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Leitet einen Nebensatz ein, der eine Bedingung für etwas nennt. Example: Wenn ich morgen Zeit habe, helfe ich dir.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 27,
+        "record": {
+          "id": "b1-wenn-condition",
+          "de": "wenn",
+          "lemma": "wenn",
+          "part": "conjunction",
+          "level": "B1",
+          "translations_ru": [
+            "если",
+            "когда (условие)"
+          ],
+          "definition_de": "Leitet einen Nebensatz ein, der eine Bedingung für etwas nennt.",
+          "example": "Wenn ich morgen Zeit habe, helfe ich dir.",
+          "example_ru": "Если у меня завтра будет время, я помогу тебе.",
+          "forms": "unveränderlich",
+          "grammar_hint": "В придаточном с wenn глагол в конце; если придаточное впереди, главный глагол сразу после запятой. Временное wenn — настоящее, будущее, повторяющееся прошлое; als — однократное прошлое.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenn"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 1,
+          "record": {
+            "id": "dict_506798d74aff752349b1",
+            "de": "wenn",
+            "part": "conj",
+            "level": "A2",
+            "translations_ru": [
+              "если"
+            ],
+            "definition_de": "Leitet einen Nebensatz ein, der eine Bedingung nennt.",
+            "example": "Wenn du Zeit hast, trinken wir einen Kaffee.",
+            "example_ru": "Если у тебя есть время, выпьем кофе.",
+            "grammar_hint": "Wenn вводит условие. Сравни: ich habe Zeit → wenn ich Zeit habe. Если придаточная часть стоит первой, главная начинается с глагола: Wenn ich Zeit habe, komme ich.",
+            "usage_note": "Условие: если. Временное когда выделено в отдельную карточку. Auch wenn — даже если; хотя обычно obwohl.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 30,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wenn",
+                "https://www.duden.de/rechtschreibung/wenn",
+                "https://dict.leo.org/russisch-deutsch/Wenn"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "неизменяемый подчинительный союз",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 573,
+          "record": {
+            "id": "a2-wenn-temporal-reviewed",
+            "de": "wenn",
+            "part": "conj",
+            "level": "A2",
+            "translations_ru": [
+              "когда",
+              "всякий раз, когда"
+            ],
+            "definition_de": "Leitet einen Nebensatz ein, der einen Zeitpunkt oder ein wiederkehrendes Ereignis bezeichnet.",
+            "forms": "неизменяемый подчинительный союз",
+            "example": "Wenn ich abends nach Hause komme, trinke ich Tee.",
+            "example_ru": "Когда я вечером прихожу домой, я пью чай.",
+            "grammar_hint": "Сравни: Ich komme abends nach Hause → Wenn ich abends nach Hause komme, trinke ich Tee. Для повторяющегося события в прошлом — immer wenn, для однократного — als.",
+            "usage_note": "Вопросительное wann — другое слово. Временное употребление подтверждается контекстом повторяющегося действия в примере Goethe стр. 10.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 10,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/wenn"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_506798d74aff752349b1",
+        "alias_id": "b1-wenn-condition",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_506798d74aff752349b1"
+      }
+    },
+    {
+      "candidate_number": 1371,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Fragt nach einer Person. Example: Wer hat die Tür geöffnet?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_115.json",
+        "sha": "f12081df213baef4c71bc3f9ac16511eb2b13b18",
+        "batch": 115,
+        "row": 28,
+        "record": {
+          "id": "b1-wer-question",
+          "de": "wer",
+          "lemma": "wer",
+          "part": "pronoun",
+          "level": "B1",
+          "translations_ru": [
+            "кто?"
+          ],
+          "definition_de": "Fragt nach einer Person.",
+          "example": "Wer hat die Tür geöffnet?",
+          "example_ru": "Кто открыл дверь?",
+          "forms": "wer (Nom.) · wen (Akk.) · wem (Dat.) · wessen (Gen.)",
+          "grammar_hint": "Wer? подлежащее; Wen rufst du an?; Wem hilfst du?; Wessen Tasche ist das? Косвенный вопрос: Ich weiß nicht, wer kommt.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 740,
+          "record": {
+            "id": "a1-619-1",
+            "de": "wer",
+            "lemma": "wer",
+            "ru": "кто",
+            "uk": "",
+            "translations_ru": [
+              "кто"
+            ],
+            "part": "pronoun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "Nominativ; Wen? Akkusativ; Wem? Dativ",
+            "definition_de": "Fragt nach einer Person.",
+            "example": "Wer kommt morgen?",
+            "example_ru": "Кто придёт завтра?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "12c049865518c40e41d6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-619-1",
+        "alias_id": "b1-wer-question",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-619-1"
+      }
+    },
+    {
+      "candidate_number": 1372,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einen neuen Zustand annehmen. Example: Im Herbst werden die Tage kürzer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_116.json",
+        "sha": "97d24987430be0ddde2961ed7849c97e0817cfe6",
+        "batch": 116,
+        "row": 1,
+        "record": {
+          "id": "b1-werden-change",
+          "de": "werden",
+          "lemma": "werden",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "становиться",
+            "делаться"
+          ],
+          "definition_de": "Einen neuen Zustand annehmen.",
+          "example": "Im Herbst werden die Tage kürzer.",
+          "example_ru": "Осенью дни становятся короче.",
+          "forms": "wird · wurde · ist geworden",
+          "grammar_hint": "werden + Adjektiv; Perfekt с sein: Es ist dunkel geworden. Вспомогательный глагол пассива имеет форму worden.",
+          "topic": "Повседневная жизнь",
+          "topics": [
+            "Повседневная жизнь"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 97–98 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/werden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 741,
+          "record": {
+            "id": "a1-620-1",
+            "de": "werden",
+            "lemma": "werden",
+            "ru": "становиться",
+            "uk": "",
+            "translations_ru": [
+              "становиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "wird · wurde · ist geworden",
+            "definition_de": "In einen neuen Zustand kommen oder eine neue Rolle bekommen.",
+            "example": "Sie möchte Ärztin werden.",
+            "example_ru": "Она хочет стать врачом.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "83481266ca8656614c62"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-620-1",
+        "alias_id": "b1-werden-change",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-620-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-614-1",
+      "alias_ids": [
+        "b1-weiblich-female"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-614-1",
+        "de": "weiblich",
+        "lemma": "weiblich",
+        "ru": "женский (о поле)",
+        "uk": "",
+        "translations_ru": [
+          "женский (о поле)"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "В значении пола обычно без степеней сравнения",
+        "definition_de": "Zum weiblichen Geschlecht gehörend.",
+        "example": "Das Küken ist weiblich.",
+        "example_ru": "Этот птенец — самка.",
+        "note": "В значении биологического пола и в анкете обычно не сравнивается. Степени weiblicher – am weiblichsten возможны в другом, качественном значении «женственный», уровень которого здесь не установлен.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "c5152286400d2ecfbbf8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-weiblich-female"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weiblich-female",
+            "de": "weiblich",
+            "part": "adjective",
+            "forms": "в буквальном значении обычно без сравнения; weiblicher · am weiblichsten при описании признаков",
+            "definition_de": "Dem weiblichen Geschlecht zugeordnet.",
+            "translations_ru": [
+              "женский",
+              "женского пола"
+            ],
+            "grammar_hint": "weiblich — männlich; grammatisches Geschlecht: feminin; не смешивать грамматический род и пол.",
+            "example": "Auf dem Formular gibt es ein Feld für weibliche Personen.",
+            "example_ru": "В формуляре есть поле для лиц женского пола."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weiblich"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_284f9486fb262e27aa2d",
+      "alias_ids": [
+        "b1-weich-egg",
+        "b1-weich-soft"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_284f9486fb262e27aa2d",
+        "de": "weich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "мягкий",
+          "всмятку (о яйце)"
+        ],
+        "definition_de": "So, dass etwas bei Druck leicht nachgibt oder sich angenehm anfühlt.",
+        "forms": "weich · weicher · am weichsten",
+        "example": "Dieses Kissen ist weicher als das alte.",
+        "example_ru": "Эта подушка мягче старой.",
+        "grammar_hint": "",
+        "usage_note": "ein weiches Bett — мягкая кровать; ein weiches Ei — яйцо всмятку. Оба контекста подтверждены Goethe A2 стр. 30; это связанные употребления, не отдельный омоним.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/weich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-weich-egg",
+          "b1-weich-soft"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weich-egg",
+            "de": "weich",
+            "part": "adjective",
+            "forms": "weich · weicher · am weichsten",
+            "definition_de": "Nicht hart oder vollständig fest gegart.",
+            "translations_ru": [
+              "всмятку",
+              "мягкий (о пище)"
+            ],
+            "grammar_hint": "ein weiches Ei; weich kochen. Контекст консистенции, объединить с weich-soft.",
+            "example": "Zum Frühstück esse ich gern ein weich gekochtes Ei.",
+            "example_ru": "На завтрак я люблю есть яйцо всмятку."
+          },
+          {
+            "id": "b1-weich-soft",
+            "de": "weich",
+            "part": "adjective",
+            "forms": "weich · weicher · am weichsten",
+            "definition_de": "Bei Druck leicht nachgebend und nicht hart.",
+            "translations_ru": [
+              "мягкий"
+            ],
+            "grammar_hint": "jemandem (Dat.) zu weich sein; Gegenteil: hart. Наречное употребление: weich landen.",
+            "example": "Die Matratze ist mir zu weich.",
+            "example_ru": "Матрас для меня слишком мягкий."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_25c911117321203d0b6d",
+      "alias_ids": [
+        "b1-weil-reason"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_25c911117321203d0b6d",
+        "de": "weil",
+        "part": "conj",
+        "level": "A2",
+        "translations_ru": [
+          "потому что",
+          "так как",
+          "поскольку"
+        ],
+        "definition_de": "Leitet einen Nebensatz ein, der einen Grund nennt.",
+        "example": "Wir bleiben zu Hause, weil es regnet.",
+        "example_ru": "Мы остаёмся дома, потому что идёт дождь.",
+        "grammar_hint": "Weil отвечает на вопрос Warum? Ставим запятую: Ich muss arbeiten → …, weil ich arbeiten muss. Если придаточная часть стоит первой, главная начинается с глагола: Weil ich müde bin, gehe ich nach Hause.",
+        "usage_note": "Потому что, так как, поскольку. Сравните denn: после denn обычный порядок слов главного предложения.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/weil",
+            "https://dict.leo.org/russisch-deutsch/weil"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-weil-reason"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weil-reason",
+            "de": "weil",
+            "part": "conjunction",
+            "forms": "unveränderlich",
+            "definition_de": "Leitet einen Nebensatz ein, der den Grund einer Aussage nennt.",
+            "translations_ru": [
+              "потому что",
+              "так как"
+            ],
+            "grammar_hint": "Подчинительный союз: спрягаемый глагол в конце. Weil ich heute lernen muss, bleibe ich zu Hause. После придаточного перед подлежащим главного предложения — глагол. Сравните denn: порядок главного предложения.",
+            "example": "Ich bleibe zu Hause, weil ich heute lernen muss.",
+            "example_ru": "Я остаюсь дома, потому что мне сегодня нужно учиться."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weil"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ca7b2f5e2220295463ee",
+      "alias_ids": [
+        "b1-wein-drink"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ca7b2f5e2220295463ee",
+        "de": "der Wein",
+        "lemma": "Wein",
+        "ru": "вино",
+        "uk": "",
+        "translations_ru": [
+          "вино"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Weine (сорта вина)",
+        "definition_de": "Ein alkoholisches Getränk, das meistens aus Trauben hergestellt wird.",
+        "example": "Zum Essen bestellt er ein Glas Wein.",
+        "example_ru": "К еде он заказывает бокал вина.",
+        "note": "Обычно без артикля при неопределённом количестве: ein Glas Wein. Не путать с weinen — плакать.",
+        "source_evidence": [
+          {
+            "url": "https://www.goethe.de/pro/relaunch/prf/sl/A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Wein",
+            "scope": "meaning_and_forms"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-wein-drink"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wein-drink",
+            "de": "der Wein",
+            "part": "noun",
+            "forms": "die Weine",
+            "definition_de": "Ein alkoholisches Getränk, das meist aus vergorenen Trauben hergestellt wird.",
+            "translations_ru": [
+              "вино"
+            ],
+            "grammar_hint": "Rotwein, Weißwein (CH: Weisswein); ein Glas Wein; множественное число для сортов.",
+            "example": "Auf der Karte stehen verschiedene regionale Weine.",
+            "example_ru": "В меню представлены разные местные вина."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wein"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_cab696692c0be1c0ac7c",
+      "alias_ids": [
+        "b1-weinen-cry"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_cab696692c0be1c0ac7c",
+        "de": "weinen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "плакать"
+        ],
+        "definition_de": "Tränen aus Trauer, Schmerz oder anderen Gefühlen vergießen.",
+        "example": "Das Kind weint, weil es müde ist.",
+        "example_ru": "Ребёнок плачет, потому что устал.",
+        "grammar_hint": "",
+        "usage_note": "vor Freude weinen — плакать от радости; das Weinen — процесс плача (номинализация).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/weinen"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "weint · weinte · hat geweint",
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-weinen-cry"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weinen-cry",
+            "de": "weinen",
+            "part": "verb",
+            "forms": "weint · weinte · hat geweint",
+            "definition_de": "Tränen vergießen, etwa aus Trauer oder Rührung.",
+            "translations_ru": [
+              "плакать"
+            ],
+            "grammar_hint": "vor Freude (Dat.) weinen; über etwas (Akk.) weinen; nicht verwechseln: der Wein.",
+            "example": "Das Kind weint, weil sein Spielzeug kaputt ist.",
+            "example_ru": "Ребёнок плачет, потому что его игрушка сломалась."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weinen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a1e8502f2c4625d45d68",
+      "alias_ids": [
+        "b1-weit-distance"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a1e8502f2c4625d45d68",
+        "de": "weit",
+        "part": "adj",
+        "translations_ru": [
+          "далеко",
+          "далёкий"
+        ],
+        "forms": "weiter · am weitesten",
+        "definition_de": "Durch eine große Entfernung getrennt oder über eine große Entfernung hinweg.",
+        "example": "Ist es noch weit bis zum Bahnhof?",
+        "example_ru": "До вокзала ещё далеко?",
+        "note": "weit — далеко; weiter — дальше; am weitesten — дальше всего. Значения «широкий, просторный» существуют, но отдельно не подтверждены этим примером A1.",
+        "lemma": "weit",
+        "ru": "далеко; далёкий",
+        "uk": "",
+        "level": "A1",
+        "topic": "Путешествия",
+        "topics": [
+          "Путешествия"
+        ],
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/weit",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-weit-distance"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weit-distance",
+            "de": "weit",
+            "part": "adjective",
+            "forms": "weit · weiter · am weitesten",
+            "definition_de": "Durch eine größere räumliche Entfernung gekennzeichnet.",
+            "translations_ru": [
+              "далёкий",
+              "далеко"
+            ],
+            "grammar_hint": "wie weit? — насколько далеко; weit von + Dat.; Gegenteil: nah. Наречное употребление без окончания.",
+            "example": "Wie weit ist es von hier bis zum Bahnhof?",
+            "example_ru": "Как далеко отсюда до вокзала?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-615-1",
+      "alias_ids": [
+        "b1-weiter-continue"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-615-1",
+        "de": "weiter",
+        "lemma": "weiter",
+        "ru": "дальше; продолжать (в сочетании с глаголом)",
+        "uk": "",
+        "translations_ru": [
+          "дальше",
+          "продолжать (в сочетании с глаголом)"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "",
+        "definition_de": "In derselben Richtung oder mit derselben Tätigkeit fort.",
+        "example": "Gehen Sie bitte weiter.",
+        "example_ru": "Идите дальше, пожалуйста.",
+        "note": "weitergehen — идти дальше, weitermachen — продолжать. Сравнительная степень weit — weiter; атрибутивное weitere Fragen (дополнительные вопросы) не следует автоматически из данного примера.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "9b4c589815bdbbac16b8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-weiter-continue"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-weiter-continue",
+            "de": "weiter / weiter-",
+            "part": "adverb",
+            "forms": "unveränderlich in dieser Funktion",
+            "definition_de": "Zeigt an, dass eine begonnene Tätigkeit fortgesetzt wird.",
+            "translations_ru": [
+              "дальше",
+              "продолжать"
+            ],
+            "grammar_hint": "weiterlesen — liest weiter · las weiter · hat weitergelesen; отделяемый компонент weiter-.",
+            "example": "Lies bitte weiter, ich höre dir zu.",
+            "example_ru": "Пожалуйста, читай дальше, я тебя слушаю."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/weiter"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-617-1",
+      "alias_ids": [
+        "b1-welt-world"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-617-1",
+        "de": "die Welt",
+        "lemma": "Welt",
+        "ru": "мир; свет (в значении весь мир)",
+        "uk": "",
+        "translations_ru": [
+          "мир",
+          "свет (в значении весь мир)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "die Welten",
+        "definition_de": "Die Erde und alles, was auf ihr ist.",
+        "example": "Ich möchte mehr von der Welt sehen.",
+        "example_ru": "Я хочу повидать мир.",
+        "note": "um die Welt reisen — путешествовать по миру; aus aller Welt — со всего света.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "695ea13568a58c54abd7"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-welt-world"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-welt-world",
+            "de": "die Welt",
+            "part": "noun",
+            "forms": "die Welten",
+            "definition_de": "Die Erde und die Gesamtheit der menschlichen Lebensräume.",
+            "translations_ru": [
+              "мир",
+              "свет"
+            ],
+            "grammar_hint": "auf der ganzen Welt (Dat.); die beste Freundin der Welt (Gen.); Welt как планета обычно Singular.",
+            "example": "Menschen aus vielen Teilen der Welt besuchen den Kurs.",
+            "example_ru": "Люди из разных уголков мира посещают курс."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Welt"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-618-1",
+      "alias_ids": [
+        "b1-wenig-quantity",
+        "b1-wenig-countable",
+        "b1-wenig-activity"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-618-1",
+        "de": "wenig",
+        "lemma": "wenig",
+        "ru": "мало; немного",
+        "uk": "",
+        "translations_ru": [
+          "мало",
+          "немного"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "weniger · am wenigsten",
+        "definition_de": "In kleiner Menge oder in geringem Maß.",
+        "example": "Ich habe heute wenig Zeit.",
+        "example_ru": "У меня сегодня мало времени.",
+        "note": "wenig Zeit — мало времени; wenige Leute — мало людей (склоняемая форма). ein wenig — немного. weniger / am wenigsten.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "4a71c4de7d4205702819"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-wenig-quantity",
+          "b1-wenig-countable",
+          "b1-wenig-activity"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wenig-quantity",
+            "de": "wenig",
+            "part": "adjective",
+            "forms": "wenig · weniger · am wenigsten",
+            "definition_de": "Bezeichnet eine geringe, nicht einzeln gezählte Menge.",
+            "translations_ru": [
+              "мало",
+              "небольшое количество"
+            ],
+            "grammar_hint": "wenig Wasser/Zeit; ein wenig — немного; weniger — меньше; Gegenteil: viel.",
+            "example": "Wir haben heute nur wenig Zeit.",
+            "example_ru": "У нас сегодня мало времени."
+          },
+          {
+            "id": "b1-wenig-countable",
+            "de": "wenige",
+            "part": "adjective",
+            "forms": "wenige · weniger · die wenigsten",
+            "definition_de": "Bezeichnet eine kleine Anzahl einzelner Personen oder Dinge.",
+            "translations_ru": [
+              "немногие",
+              "мало (исчисляемых предметов)"
+            ],
+            "grammar_hint": "wenige + Plural; mit wenigen Ausnahmen (Dat. Pl.); форма того же слова wenig.",
+            "example": "In diesem Dorf gibt es nur wenige Geschäfte.",
+            "example_ru": "В этой деревне мало магазинов."
+          },
+          {
+            "id": "b1-wenig-activity",
+            "de": "wenig",
+            "part": "adverb",
+            "forms": "wenig · weniger · am wenigsten",
+            "definition_de": "Kennzeichnet den geringen Umfang einer Tätigkeit.",
+            "translations_ru": [
+              "мало",
+              "недостаточно"
+            ],
+            "grammar_hint": "wenig schlafen/essen; ein wenig warten — немного подождать. Gegenteil: viel.",
+            "example": "Letzte Nacht habe ich sehr wenig geschlafen.",
+            "example_ru": "Прошлой ночью я очень мало спала."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "attested_context",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4a604335729181b2e211",
+      "alias_ids": [
+        "b1-wenigstens-minimum"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4a604335729181b2e211",
+        "de": "wenigstens",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "хотя бы",
+          "по крайней мере",
+          "по меньшей мере"
+        ],
+        "definition_de": "Nennt ein Minimum, das trotz allem möglich oder wünschenswert ist.",
+        "forms": "",
+        "example": "Wenn du heute keine Zeit hast, schick mir wenigstens eine kurze Nachricht.",
+        "example_ru": "Если у тебя сегодня нет времени, пришли мне хотя бы короткое сообщение.",
+        "grammar_hint": "wenigstens ставим рядом с тем, что считаем минимумом: wenigstens eine kurze Nachricht.",
+        "usage_note": "wenigstens часто выражает минимальное пожелание или утешение; для нейтрального числового минимума также mindestens.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/wenigstens"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-wenigstens-minimum"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wenigstens-minimum",
+            "de": "wenigstens",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Hebt einen als Mindestmaß betrachteten Teil hervor.",
+            "translations_ru": [
+              "хотя бы",
+              "по крайней мере",
+              "как минимум"
+            ],
+            "grammar_hint": "Синонимы: zumindest, mindestens (при числовом минимуме). При первой позиции — V2.",
+            "example": "Ruf mich bitte wenigstens einmal an.",
+            "example_ru": "Пожалуйста, позвони мне хотя бы один раз."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenigstens"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_506798d74aff752349b1",
+      "alias_ids": [
+        "b1-wenn-condition"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_506798d74aff752349b1",
+        "de": "wenn",
+        "part": "conj",
+        "level": "A2",
+        "translations_ru": [
+          "если"
+        ],
+        "definition_de": "Leitet einen Nebensatz ein, der eine Bedingung nennt.",
+        "example": "Wenn du Zeit hast, trinken wir einen Kaffee.",
+        "example_ru": "Если у тебя есть время, выпьем кофе.",
+        "grammar_hint": "Wenn вводит условие. Сравни: ich habe Zeit → wenn ich Zeit habe. Если придаточная часть стоит первой, главная начинается с глагола: Wenn ich Zeit habe, komme ich.",
+        "usage_note": "Условие: если. Временное когда выделено в отдельную карточку. Auch wenn — даже если; хотя обычно obwohl.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 30,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/wenn",
+            "https://www.duden.de/rechtschreibung/wenn",
+            "https://dict.leo.org/russisch-deutsch/Wenn"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "неизменяемый подчинительный союз",
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-wenn-condition"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wenn-condition",
+            "de": "wenn",
+            "part": "conjunction",
+            "forms": "unveränderlich",
+            "definition_de": "Leitet einen Nebensatz ein, der eine Bedingung für etwas nennt.",
+            "translations_ru": [
+              "если",
+              "когда (условие)"
+            ],
+            "grammar_hint": "В придаточном с wenn глагол в конце; если придаточное впереди, главный глагол сразу после запятой. Временное wenn — настоящее, будущее, повторяющееся прошлое; als — однократное прошлое.",
+            "example": "Wenn ich morgen Zeit habe, helfe ich dir.",
+            "example_ru": "Если у меня завтра будет время, я помогу тебе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wenn"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-619-1",
+      "alias_ids": [
+        "b1-wer-question"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-619-1",
+        "de": "wer",
+        "lemma": "wer",
+        "ru": "кто",
+        "uk": "",
+        "translations_ru": [
+          "кто"
+        ],
+        "part": "pronoun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "Nominativ; Wen? Akkusativ; Wem? Dativ",
+        "definition_de": "Fragt nach einer Person.",
+        "example": "Wer kommt morgen?",
+        "example_ru": "Кто придёт завтра?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "12c049865518c40e41d6"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-wer-question"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wer-question",
+            "de": "wer",
+            "part": "pronoun",
+            "forms": "wer (Nom.) · wen (Akk.) · wem (Dat.) · wessen (Gen.)",
+            "definition_de": "Fragt nach einer Person.",
+            "translations_ru": [
+              "кто?"
+            ],
+            "grammar_hint": "Wer? подлежащее; Wen rufst du an?; Wem hilfst du?; Wessen Tasche ist das? Косвенный вопрос: Ich weiß nicht, wer kommt.",
+            "example": "Wer hat die Tür geöffnet?",
+            "example_ru": "Кто открыл дверь?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 97 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wer"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-620-1",
+      "alias_ids": [
+        "b1-werden-change"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-620-1",
+        "de": "werden",
+        "lemma": "werden",
+        "ru": "становиться",
+        "uk": "",
+        "translations_ru": [
+          "становиться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "wird · wurde · ist geworden",
+        "definition_de": "In einen neuen Zustand kommen oder eine neue Rolle bekommen.",
+        "example": "Sie möchte Ärztin werden.",
+        "example_ru": "Она хочет стать врачом.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "83481266ca8656614c62"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-werden-change"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-werden-change",
+            "de": "werden",
+            "part": "verb",
+            "forms": "wird · wurde · ist geworden",
+            "definition_de": "Einen neuen Zustand annehmen.",
+            "translations_ru": [
+              "становиться",
+              "делаться"
+            ],
+            "grammar_hint": "werden + Adjektiv; Perfekt с sein: Es ist dunkel geworden. Вспомогательный глагол пассива имеет форму worden.",
+            "example": "Im Herbst werden die Tage kürzer.",
+            "example_ru": "Осенью дни становятся короче."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 97,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 97–98 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/werden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

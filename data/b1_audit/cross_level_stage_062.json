@@ -1,0 +1,3481 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1213,
+    1232
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 17,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1213,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Den Sinn einer Äußerung in einer anderen Sprache wiedergeben. Example: Kannst du die Nachricht ins Russische übersetzen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 24,
+        "record": {
+          "id": "b1-uebersetzen-translate",
+          "de": "übersetzen",
+          "lemma": "übersetzen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "переводить (с языка на язык)"
+          ],
+          "definition_de": "Den Sinn einer Äußerung in einer anderen Sprache wiedergeben.",
+          "example": "Kannst du die Nachricht ins Russische übersetzen?",
+          "example_ru": "Можешь перевести сообщение на русский?",
+          "forms": "übersetzt · übersetzte · hat übersetzt",
+          "grammar_hint": "aus + Dat. / in + Akk. übersetzen; неотделяемый глагол с ударением на setzen. Не путать с отделяемым übersetzen — переправляться.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCbersetzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 387,
+          "record": {
+            "id": "dict_64daf5dbb4d3acfc76a0",
+            "de": "übersetzen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "переводить",
+              "перевести (на другой язык)"
+            ],
+            "definition_de": "Den Inhalt eines Textes oder einer Äußerung in einer anderen Sprache wiedergeben.",
+            "forms": "übersetzt · übersetzte · hat übersetzt",
+            "example": "Kannst du diese Nachricht ins Deutsche übersetzen?",
+            "example_ru": "Можешь перевести это сообщение на немецкий?",
+            "grammar_hint": "etwas aus + Dativ in + Akkusativ übersetzen. Неотделяемая приставка, Perfekt без ge-.",
+            "usage_note": "Отделяемое über|setzen (переправляться) — другое значение с другими формами.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/%C3%BCbersetzen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_64daf5dbb4d3acfc76a0",
+        "alias_id": "b1-uebersetzen-translate",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_64daf5dbb4d3acfc76a0"
+      }
+    },
+    {
+      "candidate_number": 1214,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einen Geldbetrag auf ein Bankkonto zahlen lassen. Example: Ich überweise dir morgen die Miete.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 29,
+        "record": {
+          "id": "b1-ueberweisen-money",
+          "de": "überweisen",
+          "lemma": "überweisen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "переводить деньги",
+            "перечислять деньги"
+          ],
+          "definition_de": "Einen Geldbetrag auf ein Bankkonto zahlen lassen.",
+          "example": "Ich überweise dir morgen die Miete.",
+          "example_ru": "Я завтра перечислю тебе арендную плату.",
+          "forms": "überweist · überwies · hat überwiesen",
+          "grammar_hint": "jemandem (Dat.) Geld (Akk.) überweisen; auf ein Konto (Akk.); неотделяемый.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCberweisen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 712,
+          "record": {
+            "id": "a1-577-1",
+            "de": "überweisen",
+            "lemma": "überweisen",
+            "ru": "переводить деньги",
+            "uk": "",
+            "translations_ru": [
+              "переводить деньги"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "überweist · überwies · hat überwiesen",
+            "definition_de": "Geld auf ein anderes Konto senden.",
+            "example": "Ich überweise morgen die Miete.",
+            "example_ru": "Завтра я переведу арендную плату.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "d87cc6bdd4e8f25b2ede"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-577-1",
+        "alias_id": "b1-ueberweisen-money",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-577-1"
+      }
+    },
+    {
+      "candidate_number": 1215,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Einen Patienten zur weiteren medizinischen Behandlung an eine andere Stelle schicken. Example: Die Hausärztin hat mich an einen Spezialisten überwiesen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_102.json",
+        "sha": "28b75202182a394337dde0e574ac3a8c09872b72",
+        "batch": 102,
+        "row": 30,
+        "record": {
+          "id": "b1-ueberweisen-medical",
+          "de": "überweisen",
+          "lemma": "überweisen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "направлять к врачу",
+            "давать направление"
+          ],
+          "definition_de": "Einen Patienten zur weiteren medizinischen Behandlung an eine andere Stelle schicken.",
+          "example": "Die Hausärztin hat mich an einen Spezialisten überwiesen.",
+          "example_ru": "Семейный врач направила меня к специалисту.",
+          "forms": "überweist · überwies · hat überwiesen",
+          "grammar_hint": "jemanden (Akk.) an + Akk. / zu + Dat. / in + Akk. überweisen; die Überweisung — направление. Не путать с банковским переводом.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCberweisen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 712,
+          "record": {
+            "id": "a1-577-1",
+            "de": "überweisen",
+            "lemma": "überweisen",
+            "ru": "переводить деньги",
+            "uk": "",
+            "translations_ru": [
+              "переводить деньги"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "überweist · überwies · hat überwiesen",
+            "definition_de": "Geld auf ein anderes Konto senden.",
+            "example": "Ich überweise morgen die Miete.",
+            "example_ru": "Завтра я переведу арендную плату.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "d87cc6bdd4e8f25b2ede"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1216,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Gerät, das die aktuelle Zeit anzeigt. Example: Meine Uhr geht fünf Minuten vor.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 10,
+        "record": {
+          "id": "b1-uhr-device",
+          "de": "die Uhr",
+          "lemma": "Uhr",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "часы (прибор)"
+          ],
+          "definition_de": "Ein Gerät, das die aktuelle Zeit anzeigt.",
+          "example": "Meine Uhr geht fünf Minuten vor.",
+          "example_ru": "Мои часы спешат на пять минут.",
+          "forms": "die Uhren",
+          "grammar_hint": "die Armbanduhr; die Wanduhr; eine Uhr stellen; Uhr как время суток — отдельное употребление.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Uhr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 565,
+          "record": {
+            "id": "a1-578-1",
+            "de": "die Uhr",
+            "lemma": "Uhr",
+            "ru": "час (при указании времени)",
+            "uk": "",
+            "translations_ru": [
+              "час (при указании времени)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "при указании времени: fünf Uhr, форма Uhr не меняется",
+            "definition_de": "Bezeichnet beim Nennen der Uhrzeit die Stunde.",
+            "example": "Der Kurs beginnt um neun Uhr.",
+            "example_ru": "Занятие начинается в девять часов.",
+            "note": "Множественное число die Uhren относится к предметам. При указании времени: Es ist fünf Uhr. Uhr при обозначении времени не равно Stunde (продолжительность). Предмет — отдельная карточка.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "8320f0bb34b7071cc494"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 581,
+          "record": {
+            "id": "a2-uhr-device-reviewed",
+            "de": "die Uhr",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "часы (прибор)"
+            ],
+            "definition_de": "Ein Gerät, das die Zeit anzeigt.",
+            "example": "Meine Uhr geht falsch.",
+            "example_ru": "Мои часы идут неправильно.",
+            "forms": "Plural · die Uhren",
+            "usage_note": "При указании времени Uhr не изменяется; это отдельное значение A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Uhr"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a2-uhr-device-reviewed",
+        "alias_id": "b1-uhr-device",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a2-uhr-device-reviewed"
+      }
+    },
+    {
+      "candidate_number": 1217,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Wird nach einer Zahl zur Benennung eines Zeitpunkts am Tag verwendet. Example: Der Unterricht beginnt um neun Uhr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 11,
+        "record": {
+          "id": "b1-uhr-clocktime",
+          "de": "Uhr",
+          "lemma": "Uhr",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "час",
+            "часов (при указании времени)"
+          ],
+          "definition_de": "Wird nach einer Zahl zur Benennung eines Zeitpunkts am Tag verwendet.",
+          "example": "Der Unterricht beginnt um neun Uhr.",
+          "example_ru": "Занятие начинается в девять часов.",
+          "forms": "Uhr (в указании времени форма неизменна)",
+          "grammar_hint": "um neun Uhr; Es ist ein Uhr. / Es ist eins. Stunde — единица длительности (drei Stunden), Uhr — время на часах (drei Uhr).",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "context",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Uhr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 565,
+          "record": {
+            "id": "a1-578-1",
+            "de": "die Uhr",
+            "lemma": "Uhr",
+            "ru": "час (при указании времени)",
+            "uk": "",
+            "translations_ru": [
+              "час (при указании времени)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "при указании времени: fünf Uhr, форма Uhr не меняется",
+            "definition_de": "Bezeichnet beim Nennen der Uhrzeit die Stunde.",
+            "example": "Der Kurs beginnt um neun Uhr.",
+            "example_ru": "Занятие начинается в девять часов.",
+            "note": "Множественное число die Uhren относится к предметам. При указании времени: Es ist fünf Uhr. Uhr при обозначении времени не равно Stunde (продолжительность). Предмет — отдельная карточка.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "8320f0bb34b7071cc494"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 581,
+          "record": {
+            "id": "a2-uhr-device-reviewed",
+            "de": "die Uhr",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "часы (прибор)"
+            ],
+            "definition_de": "Ein Gerät, das die Zeit anzeigt.",
+            "example": "Meine Uhr geht falsch.",
+            "example_ru": "Мои часы идут неправильно.",
+            "forms": "Plural · die Uhren",
+            "usage_note": "При указании времени Uhr не изменяется; это отдельное значение A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Uhr"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-578-1",
+        "alias_id": "b1-uhr-clocktime",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-578-1"
+      }
+    },
+    {
+      "candidate_number": 1218,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet einen bestimmten oder ungefähr angegebenen Zeitpunkt. Example: Der Zug fährt um sieben Uhr ab.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 12,
+        "record": {
+          "id": "b1-um-time",
+          "de": "um",
+          "lemma": "um",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "в (определённое время)",
+            "около (приблизительное время)"
+          ],
+          "definition_de": "Kennzeichnet einen bestimmten oder ungefähr angegebenen Zeitpunkt.",
+          "example": "Der Zug fährt um sieben Uhr ab.",
+          "example_ru": "Поезд отправляется в семь часов.",
+          "forms": "Akkusativ",
+          "grammar_hint": "um 7 Uhr; um Mitternacht; um diese Zeit (Akk.); gegen 7 Uhr — примерно в семь. Не Wechselpräposition.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/um"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 713,
+          "record": {
+            "id": "a1-579-1",
+            "de": "um",
+            "lemma": "um",
+            "ru": "в (указанное время)",
+            "uk": "",
+            "translations_ru": [
+              "в (указанное время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "перед указанием времени: um neun Uhr",
+            "definition_de": "Nennt die Uhrzeit, zu der etwas passiert.",
+            "example": "Der Kurs beginnt um neun.",
+            "example_ru": "Курс начинается в девять.",
+            "note": "um + Akkusativ; точное время: um neun Uhr, um Mitternacht. am Montag — день, im Dezember — месяц. Не путать с конструкцией цели um … zu.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "74133165ebc09ee0f397"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/um",
+                "scope": "meaning_or_grammar",
+                "note": "Указание времени."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 714,
+          "record": {
+            "id": "a1-579-2",
+            "de": "um",
+            "lemma": "um",
+            "ru": "вокруг; за (при движении)",
+            "uk": "",
+            "translations_ru": [
+              "вокруг",
+              "за (при движении)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg, der an mehreren Seiten eines Gegenstands vorbeiführt.",
+            "example": "Der Bus kommt um die Ecke.",
+            "example_ru": "Автобус выезжает из-за угла.",
+            "note": "um + Akkusativ: um den Tisch herum, um die Ecke. Указание направления вокруг объекта.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "74133165ebc09ee0f397"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/um",
+                "scope": "meaning_or_grammar",
+                "note": "Пространственное употребление."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-579-1",
+        "alias_id": "b1-um-time",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-579-1"
+      }
+    },
+    {
+      "candidate_number": 1219,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Beschreibt eine Lage oder einen Weg um einen räumlichen Bezugspunkt. Example: Die Kinder sitzen um den runden Tisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 13,
+        "record": {
+          "id": "b1-um-around",
+          "de": "um",
+          "lemma": "um",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "вокруг",
+            "за (углом)",
+            "обогнув"
+          ],
+          "definition_de": "Beschreibt eine Lage oder einen Weg um einen räumlichen Bezugspunkt.",
+          "example": "Die Kinder sitzen um den runden Tisch.",
+          "example_ru": "Дети сидят вокруг круглого стола.",
+          "forms": "Akkusativ",
+          "grammar_hint": "um + Akk. при положении и движении: um den Tisch sitzen / gehen; um die Ecke. Не Wechselpräposition, даже на вопрос Wo? — Akk.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/um"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 713,
+          "record": {
+            "id": "a1-579-1",
+            "de": "um",
+            "lemma": "um",
+            "ru": "в (указанное время)",
+            "uk": "",
+            "translations_ru": [
+              "в (указанное время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "перед указанием времени: um neun Uhr",
+            "definition_de": "Nennt die Uhrzeit, zu der etwas passiert.",
+            "example": "Der Kurs beginnt um neun.",
+            "example_ru": "Курс начинается в девять.",
+            "note": "um + Akkusativ; точное время: um neun Uhr, um Mitternacht. am Montag — день, im Dezember — месяц. Не путать с конструкцией цели um … zu.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "74133165ebc09ee0f397"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/um",
+                "scope": "meaning_or_grammar",
+                "note": "Указание времени."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 714,
+          "record": {
+            "id": "a1-579-2",
+            "de": "um",
+            "lemma": "um",
+            "ru": "вокруг; за (при движении)",
+            "uk": "",
+            "translations_ru": [
+              "вокруг",
+              "за (при движении)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg, der an mehreren Seiten eines Gegenstands vorbeiführt.",
+            "example": "Der Bus kommt um die Ecke.",
+            "example_ru": "Автобус выезжает из-за угла.",
+            "note": "um + Akkusativ: um den Tisch herum, um die Ecke. Указание направления вокруг объекта.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "74133165ebc09ee0f397"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/um",
+                "scope": "meaning_or_grammar",
+                "note": "Пространственное употребление."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-579-2",
+        "alias_id": "b1-um-around",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-579-2"
+      }
+    },
+    {
+      "candidate_number": 1220,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Gibt an, wie groß die Veränderung oder der Abstand zwischen zwei Werten ist. Example: Die Miete ist um fünfzig Franken gestiegen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 14,
+        "record": {
+          "id": "b1-um-difference",
+          "de": "um",
+          "lemma": "um",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "на (величину изменения)",
+            "на (разницу)"
+          ],
+          "definition_de": "Gibt an, wie groß die Veränderung oder der Abstand zwischen zwei Werten ist.",
+          "example": "Die Miete ist um fünfzig Franken gestiegen.",
+          "example_ru": "Арендная плата выросла на пятьдесят франков.",
+          "forms": "Akkusativ",
+          "grammar_hint": "um 10 Prozent steigen/sinken — повыситься/снизиться на 10%; auf 100 Franken steigen — повыситься до 100 франков.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/um"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 713,
+          "record": {
+            "id": "a1-579-1",
+            "de": "um",
+            "lemma": "um",
+            "ru": "в (указанное время)",
+            "uk": "",
+            "translations_ru": [
+              "в (указанное время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "перед указанием времени: um neun Uhr",
+            "definition_de": "Nennt die Uhrzeit, zu der etwas passiert.",
+            "example": "Der Kurs beginnt um neun.",
+            "example_ru": "Курс начинается в девять.",
+            "note": "um + Akkusativ; точное время: um neun Uhr, um Mitternacht. am Montag — день, im Dezember — месяц. Не путать с конструкцией цели um … zu.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "74133165ebc09ee0f397"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/um",
+                "scope": "meaning_or_grammar",
+                "note": "Указание времени."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 714,
+          "record": {
+            "id": "a1-579-2",
+            "de": "um",
+            "lemma": "um",
+            "ru": "вокруг; за (при движении)",
+            "uk": "",
+            "translations_ru": [
+              "вокруг",
+              "за (при движении)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg, der an mehreren Seiten eines Gegenstands vorbeiführt.",
+            "example": "Der Bus kommt um die Ecke.",
+            "example_ru": "Автобус выезжает из-за угла.",
+            "note": "um + Akkusativ: um den Tisch herum, um die Ecke. Указание направления вокруг объекта.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "74133165ebc09ee0f397"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/um",
+                "scope": "meaning_or_grammar",
+                "note": "Пространственное употребление."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1221,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Leitet eine Infinitivgruppe ein, die das Ziel einer Handlung angibt. Example: Ich wiederhole die Wörter, um sie mir besser zu merken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 16,
+        "record": {
+          "id": "b1-um-zu-purpose",
+          "de": "um … zu",
+          "lemma": "um … zu",
+          "part": "conjunction",
+          "level": "B1",
+          "translations_ru": [
+            "чтобы",
+            "для того чтобы"
+          ],
+          "definition_de": "Leitet eine Infinitivgruppe ein, die das Ziel einer Handlung angibt.",
+          "example": "Ich wiederhole die Wörter, um sie mir besser zu merken.",
+          "example_ru": "Я повторяю слова, чтобы лучше их запомнить.",
+          "forms": "um + … + zu + Infinitiv",
+          "grammar_hint": "Обычно один и тот же исполнитель действия; инфинитив в конце, запятая обязательна. Отделяемый глагол: um früh aufzustehen. Если исполнители разные, используем damit + подлежащее + спрягаемый глагол в конце.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "context",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://grammis.ids-mannheim.de/progr%40mm/6822"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 562,
+          "record": {
+            "id": "dict_0c34654f5e5f13725e57",
+            "de": "um … zu",
+            "part": "conj",
+            "level": "A2",
+            "translations_ru": [
+              "чтобы",
+              "для того чтобы"
+            ],
+            "definition_de": "Leitet eine Infinitivgruppe ein, die das Ziel einer Handlung nennt.",
+            "forms": "um … zu + Infinitiv",
+            "example": "Ich lerne Deutsch, um in der Schweiz zu arbeiten.",
+            "example_ru": "Я учу немецкий, чтобы работать в Швейцарии.",
+            "grammar_hint": "Перед um ставим запятую. В конструкции цели действующее лицо обычно то же, что в главном предложении. В конце — zu + Infinitiv; отделяемая приставка: um früh aufzustehen. Если действующие лица различаются, используем damit + придаточное с глаголом в конце.",
+            "usage_note": "Это конструкция цели, не предлог um + Akkusativ. Вопрос: Wozu? — С какой целью?",
+            "source_evidence": {
+              "level": {
+                "url": "https://lernplattform.goethe.de/pluginfile.php/1496709/mod_folder/content/0/DTonlineA2_K10_GR-RM_Rueckschau_DE.pdf",
+                "page": 3,
+                "scope": "construction",
+                "source_name": "Goethe-Institut Deutsch Online A2, Kapitel 10"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/um"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0c34654f5e5f13725e57",
+        "alias_id": "b1-um-zu-purpose",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0c34654f5e5f13725e57"
+      }
+    },
+    {
+      "candidate_number": 1222,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Von einem Fahrzeug des öffentlichen Verkehrs in ein anderes wechseln. Example: In Zürich müssen wir in die S-Bahn umsteigen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_103.json",
+        "sha": "717db2bbdb9af8e088ee1328fe2b5d49479e0e2a",
+        "batch": 103,
+        "row": 28,
+        "record": {
+          "id": "b1-umsteigen-transfer",
+          "de": "umsteigen",
+          "lemma": "umsteigen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пересаживаться",
+            "делать пересадку"
+          ],
+          "definition_de": "Von einem Fahrzeug des öffentlichen Verkehrs in ein anderes wechseln.",
+          "example": "In Zürich müssen wir in die S-Bahn umsteigen.",
+          "example_ru": "В Цюрихе нам нужно пересесть на городскую электричку.",
+          "forms": "steigt um · stieg um · ist umgestiegen",
+          "grammar_hint": "in + Akk. umsteigen; von + Dat. in + Akk.; отделяемый, Perfekt с sein. На другой вид транспорта: aufs Fahrrad umsteigen.",
+          "topic": "Город и транспорт",
+          "topics": [
+            "Город и транспорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/umsteigen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 105,
+          "record": {
+            "id": "dict_8921ad585941e25b9483",
+            "de": "umsteigen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "пересаживаться",
+              "пересесть"
+            ],
+            "definition_de": "Ein Verkehrsmittel verlassen und mit einem anderen weiterfahren.",
+            "forms": "steigt um · stieg um · ist umgestiegen",
+            "example": "Am Hauptbahnhof steige ich in den Bus um.",
+            "example_ru": "На главном вокзале я пересаживаюсь на автобус.",
+            "grammar_hint": "В простом главном предложении um отделяется: Ich steige … um. При указании транспорта, на который пересаживаемся, употребляем in + Akkusativ: in den Bus.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/umsteigen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8921ad585941e25b9483",
+        "alias_id": "b1-umsteigen-transfer",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8921ad585941e25b9483"
+      }
+    },
+    {
+      "candidate_number": 1223,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die bisherige Wohnung verlassen und anderswo wohnen. Example: Nächsten Monat ziehen wir in eine kleinere Wohnung um.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 5,
+        "record": {
+          "id": "b1-umziehen-move",
+          "de": "umziehen",
+          "lemma": "umziehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "переезжать",
+            "сменить место жительства"
+          ],
+          "definition_de": "Die bisherige Wohnung verlassen und anderswo wohnen.",
+          "example": "Nächsten Monat ziehen wir in eine kleinere Wohnung um.",
+          "example_ru": "В следующем месяце мы переезжаем в квартиру поменьше.",
+          "forms": "zieht um · zog um · ist umgezogen",
+          "grammar_hint": "Отделяемый: nach Zürich / in eine Wohnung umziehen; Perfekt с sein. Не путать с sich umziehen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/umziehen"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 15,
+          "record": {
+            "id": "c18",
+            "de": "umziehen",
+            "lemma": "umziehen",
+            "ru": "переезжать",
+            "uk": "переїжджати",
+            "translations_ru": [
+              "переезжать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "zieht um · zog um · ist umgezogen",
+            "definition_de": "Die Wohnung wechseln.",
+            "example": "Wir ziehen nächste Woche um.",
+            "example_ru": "Мы переезжаем на следующей неделе.",
+            "note": "Переезд: umziehen без sich, Perfekt с sein. Переодеваться: sich umziehen, Perfekt с haben; отдельная карточка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c18",
+        "alias_id": "b1-umziehen-move",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c18"
+      }
+    },
+    {
+      "candidate_number": 1224,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der Wechsel von einer Wohnung oder einem Wohnort zu einem anderen. Example: Für den Umzug brauchen wir mehrere Kartons.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 6,
+        "record": {
+          "id": "b1-umzug-moving",
+          "de": "der Umzug",
+          "lemma": "Umzug",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "переезд"
+          ],
+          "definition_de": "Der Wechsel von einer Wohnung oder einem Wohnort zu einem anderen.",
+          "example": "Für den Umzug brauchen wir mehrere Kartons.",
+          "example_ru": "Для переезда нам понадобится несколько коробок.",
+          "forms": "die Umzüge",
+          "grammar_hint": "einen Umzug organisieren; другое значение: праздничное шествие.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Umzug"
+            ],
+            "meaning_review": "dictionary_search_evidence_reviewed",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 258,
+          "record": {
+            "id": "dict_3a40526ec7748f863970",
+            "de": "der Umzug",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "переезд"
+            ],
+            "definition_de": "Der Wechsel von einer Wohnung oder einem Wohnort zu einem anderen.",
+            "forms": "Plural · die Umzüge",
+            "example": "Nach dem Umzug stehen noch viele Kartons im Flur.",
+            "example_ru": "После переезда в коридоре всё ещё стоит много коробок.",
+            "grammar_hint": "",
+            "usage_note": "В значении смены жилья. Шествие, процессия — другое значение, не подтверждено этим примером Goethe.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Umzug"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3a40526ec7748f863970",
+        "alias_id": "b1-umzug-moving",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3a40526ec7748f863970"
+      }
+    },
+    {
+      "candidate_number": 1225,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Kleidung wechseln, die man gerade trägt. Example: Nach der Arbeit ziehe ich mich sofort um.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 7,
+        "record": {
+          "id": "b1-umziehen-clothes",
+          "de": "sich umziehen",
+          "lemma": "umziehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "переодеваться",
+            "переодеться"
+          ],
+          "definition_de": "Die Kleidung wechseln, die man gerade trägt.",
+          "example": "Nach der Arbeit ziehe ich mich sofort um.",
+          "example_ru": "После работы я сразу переодеваюсь.",
+          "forms": "zieht sich um · zog sich um · hat sich umgezogen",
+          "grammar_hint": "sich (Akk.) umziehen; Perfekt с haben. Сравните: Ich bin umgezogen — я переехала.",
+          "topic": "Одежда",
+          "topics": [
+            "Одежда"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/umziehen"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 569,
+          "record": {
+            "id": "a2-sich-umziehen-reviewed",
+            "de": "sich umziehen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "переодеваться",
+              "переодеться"
+            ],
+            "definition_de": "Andere Kleidung anziehen, nachdem man die bisherige ausgezogen hat.",
+            "forms": "zieht sich um · zog sich um · hat sich umgezogen",
+            "example": "Nach der Arbeit ziehe ich mich um.",
+            "example_ru": "После работы я переодеваюсь.",
+            "grammar_hint": "Возвратное местоимение в Akkusativ: ich ziehe mich um, du ziehst dich um. Отделяемая приставка um-. Perfekt с haben.",
+            "usage_note": "umziehen без sich в значении переезжать — A1, Perfekt с sein.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/umziehen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 15,
+          "record": {
+            "id": "c18",
+            "de": "umziehen",
+            "lemma": "umziehen",
+            "ru": "переезжать",
+            "uk": "переїжджати",
+            "translations_ru": [
+              "переезжать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "zieht um · zog um · ist umgezogen",
+            "definition_de": "Die Wohnung wechseln.",
+            "example": "Wir ziehen nächste Woche um.",
+            "example_ru": "Мы переезжаем на следующей неделе.",
+            "note": "Переезд: umziehen без sich, Perfekt с sein. Переодеваться: sich umziehen, Perfekt с haben; отдельная карточка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a2-sich-umziehen-reviewed",
+        "alias_id": "b1-umziehen-clothes",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a2-sich-umziehen-reviewed"
+      }
+    },
+    {
+      "candidate_number": 1226,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Betont, dass etwas als notwendig oder besonders wichtig angesehen wird. Example: Du musst unbedingt die Frist beachten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 9,
+        "record": {
+          "id": "b1-unbedingt-necessity",
+          "de": "unbedingt",
+          "lemma": "unbedingt",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "обязательно",
+            "непременно",
+            "во что бы то ни стало"
+          ],
+          "definition_de": "Betont, dass etwas als notwendig oder besonders wichtig angesehen wird.",
+          "example": "Du musst unbedingt die Frist beachten.",
+          "example_ru": "Тебе обязательно нужно соблюдать срок.",
+          "forms": "unveränderlich",
+          "grammar_hint": "nicht unbedingt — не обязательно, не непременно; при первой позиции глагол на второй.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unbedingt"
+            ],
+            "meaning_review": "dictionary_search_evidence_reviewed",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 210,
+          "record": {
+            "id": "dict_3d16c10a307a927f649b",
+            "de": "unbedingt",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "обязательно",
+              "непременно"
+            ],
+            "definition_de": "Drückt aus, dass etwas sehr wichtig ist oder auf jeden Fall geschehen soll.",
+            "forms": "",
+            "example": "Du musst unbedingt deinen Pass mitnehmen.",
+            "example_ru": "Тебе обязательно нужно взять паспорт.",
+            "grammar_hint": "unbedingt подчёркивает важность действия. В примере спрягаемый глагол musst стоит на втором месте, а инфинитив mitnehmen — в конце.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/unbedingt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3d16c10a307a927f649b",
+        "alias_id": "b1-unbedingt-necessity",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3d16c10a307a927f649b"
+      }
+    },
+    {
+      "candidate_number": 1227,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Verknüpft gleichrangige Wörter, Wortgruppen oder Sätze. Example: Ich bereite das Essen vor und meine Schwester deckt den Tisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 10,
+        "record": {
+          "id": "b1-und-addition",
+          "de": "und",
+          "lemma": "und",
+          "part": "conjunction",
+          "level": "B1",
+          "translations_ru": [
+            "и",
+            "а (соединение)"
+          ],
+          "definition_de": "Verknüpft gleichrangige Wörter, Wortgruppen oder Sätze.",
+          "example": "Ich bereite das Essen vor und meine Schwester deckt den Tisch.",
+          "example_ru": "Я готовлю еду, а моя сестра накрывает на стол.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Сочинительный союз: не переносит спрягаемый глагол в конец. В обычном главном предложении сохраняется V2: und meine Schwester deckt …; перед und обычно нет запятой.",
+          "topic": "Грамматика",
+          "topics": [
+            "Грамматика"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/und"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 811,
+          "record": {
+            "id": "dict_38c08f35615719c337da",
+            "de": "und",
+            "lemma": "und",
+            "part": "conj",
+            "level": "A1",
+            "ru": "и",
+            "uk": "і; та",
+            "translations_ru": [
+              "и"
+            ],
+            "topic": "Грамматика",
+            "topics": [
+              "Грамматика"
+            ],
+            "forms": "Неизменяемый сочинительный союз",
+            "definition_de": "Verbindet gleichrangige Wörter, Satzteile oder Sätze.",
+            "example": "Ich arbeite heute und morgen.",
+            "example_ru": "Я работаю сегодня и завтра.",
+            "note": "Соединяет равноправные части. После und порядок слов главного предложения не меняется: Ich koche und du räumst auf. При одном подлежащем второе можно опустить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "attested_example"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/und",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_38c08f35615719c337da",
+        "alias_id": "b1-und-addition",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_38c08f35615719c337da"
+      }
+    },
+    {
+      "candidate_number": 1228,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein unerwartetes Ereignis, bei dem Menschen oder Sachen zu Schaden kommen können. Example: Auf dem Heimweg hatte er einen Fahrradunfall.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 11,
+        "record": {
+          "id": "b1-unfall-accident",
+          "de": "der Unfall",
+          "lemma": "Unfall",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "несчастный случай",
+            "авария"
+          ],
+          "definition_de": "Ein unerwartetes Ereignis, bei dem Menschen oder Sachen zu Schaden kommen können.",
+          "example": "Auf dem Heimweg hatte er einen Fahrradunfall.",
+          "example_ru": "По дороге домой он попал в аварию на велосипеде.",
+          "forms": "die Unfälle",
+          "grammar_hint": "einen Unfall haben; bei einem Unfall; Unfallversicherung — страхование от несчастных случаев.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unfall"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 93,
+          "record": {
+            "id": "dict_b0a242cb3a909806fc31",
+            "de": "der Unfall",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "несчастный случай",
+              "авария"
+            ],
+            "definition_de": "Ein plötzliches, unbeabsichtigtes Ereignis, bei dem Menschen verletzt werden oder Sachschaden entsteht.",
+            "forms": "Plural · die Unfälle",
+            "example": "Nach dem Unfall war die Straße gesperrt.",
+            "example_ru": "После аварии дорогу перекрыли.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Unfall"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b0a242cb3a909806fc31",
+        "alias_id": "b1-unfall-accident",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b0a242cb3a909806fc31"
+      }
+    },
+    {
+      "candidate_number": 1229,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Hochschule, an der man studiert und wissenschaftlich arbeitet. Example: Meine Freundin studiert Geschichte an der Universität.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 21,
+        "record": {
+          "id": "b1-universitaet-higher-ed",
+          "de": "die Universität",
+          "lemma": "Universität",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "университет"
+          ],
+          "definition_de": "Eine Hochschule, an der man studiert und wissenschaftlich arbeitet.",
+          "example": "Meine Freundin studiert Geschichte an der Universität.",
+          "example_ru": "Моя подруга изучает историю в университете.",
+          "forms": "die Universitäten",
+          "grammar_hint": "an einer Universität (Dat.) studieren; sich an einer Universität einschreiben; die Uni — разговорное.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Universit%C3%A4t"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 69,
+          "record": {
+            "id": "dict_ac96811a763c26f00f88",
+            "de": "die Universität",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "университет"
+            ],
+            "definition_de": "Eine Hochschule, an der man studieren kann und an der geforscht wird.",
+            "forms": "Plural · die Universitäten",
+            "example": "Sie studiert Medizin an der Universität.",
+            "example_ru": "Она изучает медицину в университете.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Universit%C3%A4t"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ac96811a763c26f00f88",
+        "alias_id": "b1-universitaet-higher-ed",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ac96811a763c26f00f88"
+      }
+    },
+    {
+      "candidate_number": 1230,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet eine Stelle auf einer niedrigeren Ebene. Example: Die Waschmaschine steht unten im Keller.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 22,
+        "record": {
+          "id": "b1-unten-place",
+          "de": "unten",
+          "lemma": "unten",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "внизу"
+          ],
+          "definition_de": "Bezeichnet eine Stelle auf einer niedrigeren Ebene.",
+          "example": "Die Waschmaschine steht unten im Keller.",
+          "example_ru": "Стиральная машина стоит внизу, в подвале.",
+          "forms": "unveränderlich",
+          "grammar_hint": "Wo? unten; Wohin? nach unten; Woher? von unten; противоположность oben.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unten"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 414,
+          "record": {
+            "id": "a1-580-2",
+            "de": "unten",
+            "lemma": "unten",
+            "ru": "внизу",
+            "uk": "",
+            "translations_ru": [
+              "внизу"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "",
+            "definition_de": "An einer tieferen Stelle oder in einem unteren Stockwerk.",
+            "example": "Die Küche ist unten.",
+            "example_ru": "Кухня внизу.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "b52886c613d7de9aabbb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-580-2",
+        "alias_id": "b1-unten-place",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-580-2"
+      }
+    },
+    {
+      "candidate_number": 1231,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet eine räumliche Beziehung zu etwas höher Gelegenem. Example: Die Schuhe stehen unter der Bank.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 23,
+        "record": {
+          "id": "b1-unter-location",
+          "de": "unter",
+          "lemma": "unter",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "под",
+            "ниже"
+          ],
+          "definition_de": "Kennzeichnet eine räumliche Beziehung zu etwas höher Gelegenem.",
+          "example": "Die Schuhe stehen unter der Bank.",
+          "example_ru": "Обувь стоит под скамейкой.",
+          "forms": "Wechselpräposition: Dativ / Akkusativ",
+          "grammar_hint": "Wo? unter der Bank (Dat.); Wohin? unter die Bank stellen (Akk.). Движение само по себе не определяет падеж: unter der Brücke laufen (Dat.) — двигаться в пространстве под мостом.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unter"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 445,
+          "record": {
+            "id": "a1-581-1",
+            "de": "unter",
+            "lemma": "unter",
+            "ru": "под (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "под (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Bezeichnet einen Ort tiefer als etwas anderes.",
+            "example": "Die Tasche liegt unter dem Tisch.",
+            "example_ru": "Сумка лежит под столом.",
+            "note": "Wechselpräposition: при обозначении места Wo? — unter dem Tisch (Dativ); при направлении Wohin? — unter den Tisch (Akkusativ). В этой карточке изучаем местоположение. Движение само по себе не определяет падеж.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "ce466e24c05595db79e4"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/unter",
+                "scope": "meaning_or_grammar",
+                "note": "Управление пространственного предлога."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 786,
+          "record": {
+            "id": "a1-unter-threshold-reviewed",
+            "de": "unter",
+            "lemma": "unter",
+            "ru": "ниже; меньше",
+            "uk": "",
+            "translations_ru": [
+              "ниже",
+              "меньше",
+              "до (не включая предел)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Числа и время",
+            "topics": [
+              "Числа и время"
+            ],
+            "forms": "+ Dativ (при выражении предела)",
+            "definition_de": "Bezeichnet einen Wert, der kleiner als eine angegebene Grenze ist.",
+            "example": "Die Temperatur liegt unter null Grad.",
+            "example_ru": "Температура ниже нуля.",
+            "note": "unter null Grad — ниже нуля; unter 18 Jahren — младше 18 лет. Не пространственный Wechselpräposition-контраст Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/sl/A1_SD1_Wortliste_02.pdf",
+                "page": 8,
+                "scope": "sense"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/unter",
+                "scope": "meaning_and_government"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-581-1",
+        "alias_id": "b1-unter-location",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-581-1"
+      }
+    },
+    {
+      "candidate_number": 1232,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bezeichnet das Bringen einer Sache an eine Stelle unterhalb einer anderen. Example: Stell den Korb bitte unter den Tisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_104.json",
+        "sha": "3ffc4a0e3932561b503a63897d2eab0266c4a65a",
+        "batch": 104,
+        "row": 24,
+        "record": {
+          "id": "b1-unter-below-context",
+          "de": "unter … stellen",
+          "lemma": "unter",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "поставить под",
+            "положить под"
+          ],
+          "definition_de": "Bezeichnet das Bringen einer Sache an eine Stelle unterhalb einer anderen.",
+          "example": "Stell den Korb bitte unter den Tisch.",
+          "example_ru": "Пожалуйста, поставь корзину под стол.",
+          "forms": "unter + Akkusativ bei Zielrichtung",
+          "grammar_hint": "Учебная конструкция пространственного unter, не самостоятельное значение. При итоговом объединении связать с карточкой unter-location.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "context_or_extension",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unter"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 445,
+          "record": {
+            "id": "a1-581-1",
+            "de": "unter",
+            "lemma": "unter",
+            "ru": "под (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "под (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Bezeichnet einen Ort tiefer als etwas anderes.",
+            "example": "Die Tasche liegt unter dem Tisch.",
+            "example_ru": "Сумка лежит под столом.",
+            "note": "Wechselpräposition: при обозначении места Wo? — unter dem Tisch (Dativ); при направлении Wohin? — unter den Tisch (Akkusativ). В этой карточке изучаем местоположение. Движение само по себе не определяет падеж.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 25,
+                "row_id": "ce466e24c05595db79e4"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/unter",
+                "scope": "meaning_or_grammar",
+                "note": "Управление пространственного предлога."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 786,
+          "record": {
+            "id": "a1-unter-threshold-reviewed",
+            "de": "unter",
+            "lemma": "unter",
+            "ru": "ниже; меньше",
+            "uk": "",
+            "translations_ru": [
+              "ниже",
+              "меньше",
+              "до (не включая предел)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Числа и время",
+            "topics": [
+              "Числа и время"
+            ],
+            "forms": "+ Dativ (при выражении предела)",
+            "definition_de": "Bezeichnet einen Wert, der kleiner als eine angegebene Grenze ist.",
+            "example": "Die Temperatur liegt unter null Grad.",
+            "example_ru": "Температура ниже нуля.",
+            "note": "unter null Grad — ниже нуля; unter 18 Jahren — младше 18 лет. Не пространственный Wechselpräposition-контраст Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/sl/A1_SD1_Wortliste_02.pdf",
+                "page": 8,
+                "scope": "sense"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/unter",
+                "scope": "meaning_and_government"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_64daf5dbb4d3acfc76a0",
+      "alias_ids": [
+        "b1-uebersetzen-translate"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_64daf5dbb4d3acfc76a0",
+        "de": "übersetzen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "переводить",
+          "перевести (на другой язык)"
+        ],
+        "definition_de": "Den Inhalt eines Textes oder einer Äußerung in einer anderen Sprache wiedergeben.",
+        "forms": "übersetzt · übersetzte · hat übersetzt",
+        "example": "Kannst du diese Nachricht ins Deutsche übersetzen?",
+        "example_ru": "Можешь перевести это сообщение на немецкий?",
+        "grammar_hint": "etwas aus + Dativ in + Akkusativ übersetzen. Неотделяемая приставка, Perfekt без ge-.",
+        "usage_note": "Отделяемое über|setzen (переправляться) — другое значение с другими формами.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/%C3%BCbersetzen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-uebersetzen-translate"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-uebersetzen-translate",
+            "de": "übersetzen",
+            "part": "verb",
+            "forms": "übersetzt · übersetzte · hat übersetzt",
+            "definition_de": "Den Sinn einer Äußerung in einer anderen Sprache wiedergeben.",
+            "translations_ru": [
+              "переводить (с языка на язык)"
+            ],
+            "grammar_hint": "aus + Dat. / in + Akk. übersetzen; неотделяемый глагол с ударением на setzen. Не путать с отделяемым übersetzen — переправляться.",
+            "example": "Kannst du die Nachricht ins Russische übersetzen?",
+            "example_ru": "Можешь перевести сообщение на русский?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCbersetzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-577-1",
+      "alias_ids": [
+        "b1-ueberweisen-money"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-577-1",
+        "de": "überweisen",
+        "lemma": "überweisen",
+        "ru": "переводить деньги",
+        "uk": "",
+        "translations_ru": [
+          "переводить деньги"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения"
+        ],
+        "forms": "überweist · überwies · hat überwiesen",
+        "definition_de": "Geld auf ein anderes Konto senden.",
+        "example": "Ich überweise morgen die Miete.",
+        "example_ru": "Завтра я переведу арендную плату.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "d87cc6bdd4e8f25b2ede"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-ueberweisen-money"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ueberweisen-money",
+            "de": "überweisen",
+            "part": "verb",
+            "forms": "überweist · überwies · hat überwiesen",
+            "definition_de": "Einen Geldbetrag auf ein Bankkonto zahlen lassen.",
+            "translations_ru": [
+              "переводить деньги",
+              "перечислять деньги"
+            ],
+            "grammar_hint": "jemandem (Dat.) Geld (Akk.) überweisen; auf ein Konto (Akk.); неотделяемый.",
+            "example": "Ich überweise dir morgen die Miete.",
+            "example_ru": "Я завтра перечислю тебе арендную плату."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 88–89 inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/%C3%BCberweisen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a2-uhr-device-reviewed",
+      "alias_ids": [
+        "b1-uhr-device"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "a2-uhr-device-reviewed",
+        "de": "die Uhr",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "часы (прибор)"
+        ],
+        "definition_de": "Ein Gerät, das die Zeit anzeigt.",
+        "example": "Meine Uhr geht falsch.",
+        "example_ru": "Мои часы идут неправильно.",
+        "forms": "Plural · die Uhren",
+        "usage_note": "При указании времени Uhr не изменяется; это отдельное значение A1.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Uhr"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-uhr-device"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-uhr-device",
+            "de": "die Uhr",
+            "part": "noun",
+            "forms": "die Uhren",
+            "definition_de": "Ein Gerät, das die aktuelle Zeit anzeigt.",
+            "translations_ru": [
+              "часы (прибор)"
+            ],
+            "grammar_hint": "die Armbanduhr; die Wanduhr; eine Uhr stellen; Uhr как время суток — отдельное употребление.",
+            "example": "Meine Uhr geht fünf Minuten vor.",
+            "example_ru": "Мои часы спешат на пять минут."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Uhr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-578-1",
+      "alias_ids": [
+        "b1-uhr-clocktime"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-578-1",
+        "de": "die Uhr",
+        "lemma": "Uhr",
+        "ru": "час (при указании времени)",
+        "uk": "",
+        "translations_ru": [
+          "час (при указании времени)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "при указании времени: fünf Uhr, форма Uhr не меняется",
+        "definition_de": "Bezeichnet beim Nennen der Uhrzeit die Stunde.",
+        "example": "Der Kurs beginnt um neun Uhr.",
+        "example_ru": "Занятие начинается в девять часов.",
+        "note": "Множественное число die Uhren относится к предметам. При указании времени: Es ist fünf Uhr. Uhr при обозначении времени не равно Stunde (продолжительность). Предмет — отдельная карточка.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "8320f0bb34b7071cc494"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-uhr-clocktime"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-uhr-clocktime",
+            "de": "Uhr",
+            "part": "noun",
+            "forms": "Uhr (в указании времени форма неизменна)",
+            "definition_de": "Wird nach einer Zahl zur Benennung eines Zeitpunkts am Tag verwendet.",
+            "translations_ru": [
+              "час",
+              "часов (при указании времени)"
+            ],
+            "grammar_hint": "um neun Uhr; Es ist ein Uhr. / Es ist eins. Stunde — единица длительности (drei Stunden), Uhr — время на часах (drei Uhr).",
+            "example": "Der Unterricht beginnt um neun Uhr.",
+            "example_ru": "Занятие начинается в девять часов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "context",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Uhr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-579-1",
+      "alias_ids": [
+        "b1-um-time"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-579-1",
+        "de": "um",
+        "lemma": "um",
+        "ru": "в (указанное время)",
+        "uk": "",
+        "translations_ru": [
+          "в (указанное время)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "перед указанием времени: um neun Uhr",
+        "definition_de": "Nennt die Uhrzeit, zu der etwas passiert.",
+        "example": "Der Kurs beginnt um neun.",
+        "example_ru": "Курс начинается в девять.",
+        "note": "um + Akkusativ; точное время: um neun Uhr, um Mitternacht. am Montag — день, im Dezember — месяц. Не путать с конструкцией цели um … zu.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "74133165ebc09ee0f397"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/um",
+            "scope": "meaning_or_grammar",
+            "note": "Указание времени."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-um-time"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-um-time",
+            "de": "um",
+            "part": "preposition",
+            "forms": "Akkusativ",
+            "definition_de": "Kennzeichnet einen bestimmten oder ungefähr angegebenen Zeitpunkt.",
+            "translations_ru": [
+              "в (определённое время)",
+              "около (приблизительное время)"
+            ],
+            "grammar_hint": "um 7 Uhr; um Mitternacht; um diese Zeit (Akk.); gegen 7 Uhr — примерно в семь. Не Wechselpräposition.",
+            "example": "Der Zug fährt um sieben Uhr ab.",
+            "example_ru": "Поезд отправляется в семь часов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/um"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-579-2",
+      "alias_ids": [
+        "b1-um-around"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-579-2",
+        "de": "um",
+        "lemma": "um",
+        "ru": "вокруг; за (при движении)",
+        "uk": "",
+        "translations_ru": [
+          "вокруг",
+          "за (при движении)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "+ Akkusativ",
+        "definition_de": "Bezeichnet einen Weg, der an mehreren Seiten eines Gegenstands vorbeiführt.",
+        "example": "Der Bus kommt um die Ecke.",
+        "example_ru": "Автобус выезжает из-за угла.",
+        "note": "um + Akkusativ: um den Tisch herum, um die Ecke. Указание направления вокруг объекта.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "74133165ebc09ee0f397"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/um",
+            "scope": "meaning_or_grammar",
+            "note": "Пространственное употребление."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-um-around"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-um-around",
+            "de": "um",
+            "part": "preposition",
+            "forms": "Akkusativ",
+            "definition_de": "Beschreibt eine Lage oder einen Weg um einen räumlichen Bezugspunkt.",
+            "translations_ru": [
+              "вокруг",
+              "за (углом)",
+              "обогнув"
+            ],
+            "grammar_hint": "um + Akk. при положении и движении: um den Tisch sitzen / gehen; um die Ecke. Не Wechselpräposition, даже на вопрос Wo? — Akk.",
+            "example": "Die Kinder sitzen um den runden Tisch.",
+            "example_ru": "Дети сидят вокруг круглого стола."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/um"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_0c34654f5e5f13725e57",
+      "alias_ids": [
+        "b1-um-zu-purpose"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_0c34654f5e5f13725e57",
+        "de": "um … zu",
+        "part": "conj",
+        "level": "A2",
+        "translations_ru": [
+          "чтобы",
+          "для того чтобы"
+        ],
+        "definition_de": "Leitet eine Infinitivgruppe ein, die das Ziel einer Handlung nennt.",
+        "forms": "um … zu + Infinitiv",
+        "example": "Ich lerne Deutsch, um in der Schweiz zu arbeiten.",
+        "example_ru": "Я учу немецкий, чтобы работать в Швейцарии.",
+        "grammar_hint": "Перед um ставим запятую. В конструкции цели действующее лицо обычно то же, что в главном предложении. В конце — zu + Infinitiv; отделяемая приставка: um früh aufzustehen. Если действующие лица различаются, используем damit + придаточное с глаголом в конце.",
+        "usage_note": "Это конструкция цели, не предлог um + Akkusativ. Вопрос: Wozu? — С какой целью?",
+        "source_evidence": {
+          "level": {
+            "url": "https://lernplattform.goethe.de/pluginfile.php/1496709/mod_folder/content/0/DTonlineA2_K10_GR-RM_Rueckschau_DE.pdf",
+            "page": 3,
+            "scope": "construction",
+            "source_name": "Goethe-Institut Deutsch Online A2, Kapitel 10"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/um"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-um-zu-purpose"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-um-zu-purpose",
+            "de": "um … zu",
+            "part": "conjunction",
+            "forms": "um + … + zu + Infinitiv",
+            "definition_de": "Leitet eine Infinitivgruppe ein, die das Ziel einer Handlung angibt.",
+            "translations_ru": [
+              "чтобы",
+              "для того чтобы"
+            ],
+            "grammar_hint": "Обычно один и тот же исполнитель действия; инфинитив в конце, запятая обязательна. Отделяемый глагол: um früh aufzustehen. Если исполнители разные, используем damit + подлежащее + спрягаемый глагол в конце.",
+            "example": "Ich wiederhole die Wörter, um sie mir besser zu merken.",
+            "example_ru": "Я повторяю слова, чтобы лучше их запомнить."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 89,
+              "scope": "context",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://grammis.ids-mannheim.de/progr%40mm/6822"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_8921ad585941e25b9483",
+      "alias_ids": [
+        "b1-umsteigen-transfer"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8921ad585941e25b9483",
+        "de": "umsteigen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "пересаживаться",
+          "пересесть"
+        ],
+        "definition_de": "Ein Verkehrsmittel verlassen und mit einem anderen weiterfahren.",
+        "forms": "steigt um · stieg um · ist umgestiegen",
+        "example": "Am Hauptbahnhof steige ich in den Bus um.",
+        "example_ru": "На главном вокзале я пересаживаюсь на автобус.",
+        "grammar_hint": "В простом главном предложении um отделяется: Ich steige … um. При указании транспорта, на который пересаживаемся, употребляем in + Akkusativ: in den Bus.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/umsteigen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-umsteigen-transfer"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-umsteigen-transfer",
+            "de": "umsteigen",
+            "part": "verb",
+            "forms": "steigt um · stieg um · ist umgestiegen",
+            "definition_de": "Von einem Fahrzeug des öffentlichen Verkehrs in ein anderes wechseln.",
+            "translations_ru": [
+              "пересаживаться",
+              "делать пересадку"
+            ],
+            "grammar_hint": "in + Akk. umsteigen; von + Dat. in + Akk.; отделяемый, Perfekt с sein. На другой вид транспорта: aufs Fahrrad umsteigen.",
+            "example": "In Zürich müssen wir in die S-Bahn umsteigen.",
+            "example_ru": "В Цюрихе нам нужно пересесть на городскую электричку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed pages 89–90 visually inspected. B1 exam-list coverage, not proof of earliest CEFR level. A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/umsteigen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "c18",
+      "alias_ids": [
+        "b1-umziehen-move"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c18",
+        "de": "umziehen",
+        "lemma": "umziehen",
+        "ru": "переезжать",
+        "uk": "переїжджати",
+        "translations_ru": [
+          "переезжать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "zieht um · zog um · ist umgezogen",
+        "definition_de": "Die Wohnung wechseln.",
+        "example": "Wir ziehen nächste Woche um.",
+        "example_ru": "Мы переезжаем на следующей неделе.",
+        "note": "Переезд: umziehen без sich, Perfekt с sein. Переодеваться: sich umziehen, Perfekt с haben; отдельная карточка A2.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-umziehen-move"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-umziehen-move",
+            "de": "umziehen",
+            "part": "verb",
+            "forms": "zieht um · zog um · ist umgezogen",
+            "definition_de": "Die bisherige Wohnung verlassen und anderswo wohnen.",
+            "translations_ru": [
+              "переезжать",
+              "сменить место жительства"
+            ],
+            "grammar_hint": "Отделяемый: nach Zürich / in eine Wohnung umziehen; Perfekt с sein. Не путать с sich umziehen.",
+            "example": "Nächsten Monat ziehen wir in eine kleinere Wohnung um.",
+            "example_ru": "В следующем месяце мы переезжаем в квартиру поменьше."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/umziehen"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_3a40526ec7748f863970",
+      "alias_ids": [
+        "b1-umzug-moving"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3a40526ec7748f863970",
+        "de": "der Umzug",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "переезд"
+        ],
+        "definition_de": "Der Wechsel von einer Wohnung oder einem Wohnort zu einem anderen.",
+        "forms": "Plural · die Umzüge",
+        "example": "Nach dem Umzug stehen noch viele Kartons im Flur.",
+        "example_ru": "После переезда в коридоре всё ещё стоит много коробок.",
+        "grammar_hint": "",
+        "usage_note": "В значении смены жилья. Шествие, процессия — другое значение, не подтверждено этим примером Goethe.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Umzug"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-umzug-moving"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-umzug-moving",
+            "de": "der Umzug",
+            "part": "noun",
+            "forms": "die Umzüge",
+            "definition_de": "Der Wechsel von einer Wohnung oder einem Wohnort zu einem anderen.",
+            "translations_ru": [
+              "переезд"
+            ],
+            "grammar_hint": "einen Umzug organisieren; другое значение: праздничное шествие.",
+            "example": "Für den Umzug brauchen wir mehrere Kartons.",
+            "example_ru": "Для переезда нам понадобится несколько коробок."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Umzug"
+            ],
+            "meaning_review": "dictionary_search_evidence_reviewed",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a2-sich-umziehen-reviewed",
+      "alias_ids": [
+        "b1-umziehen-clothes"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "a2-sich-umziehen-reviewed",
+        "de": "sich umziehen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "переодеваться",
+          "переодеться"
+        ],
+        "definition_de": "Andere Kleidung anziehen, nachdem man die bisherige ausgezogen hat.",
+        "forms": "zieht sich um · zog sich um · hat sich umgezogen",
+        "example": "Nach der Arbeit ziehe ich mich um.",
+        "example_ru": "После работы я переодеваюсь.",
+        "grammar_hint": "Возвратное местоимение в Akkusativ: ich ziehe mich um, du ziehst dich um. Отделяемая приставка um-. Perfekt с haben.",
+        "usage_note": "umziehen без sich в значении переезжать — A1, Perfekt с sein.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/umziehen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-umziehen-clothes"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-umziehen-clothes",
+            "de": "sich umziehen",
+            "part": "verb",
+            "forms": "zieht sich um · zog sich um · hat sich umgezogen",
+            "definition_de": "Die Kleidung wechseln, die man gerade trägt.",
+            "translations_ru": [
+              "переодеваться",
+              "переодеться"
+            ],
+            "grammar_hint": "sich (Akk.) umziehen; Perfekt с haben. Сравните: Ich bin umgezogen — я переехала.",
+            "example": "Nach der Arbeit ziehe ich mich sofort um.",
+            "example_ru": "После работы я сразу переодеваюсь."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/umziehen"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_3d16c10a307a927f649b",
+      "alias_ids": [
+        "b1-unbedingt-necessity"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3d16c10a307a927f649b",
+        "de": "unbedingt",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "обязательно",
+          "непременно"
+        ],
+        "definition_de": "Drückt aus, dass etwas sehr wichtig ist oder auf jeden Fall geschehen soll.",
+        "forms": "",
+        "example": "Du musst unbedingt deinen Pass mitnehmen.",
+        "example_ru": "Тебе обязательно нужно взять паспорт.",
+        "grammar_hint": "unbedingt подчёркивает важность действия. В примере спрягаемый глагол musst стоит на втором месте, а инфинитив mitnehmen — в конце.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/unbedingt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-unbedingt-necessity"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unbedingt-necessity",
+            "de": "unbedingt",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Betont, dass etwas als notwendig oder besonders wichtig angesehen wird.",
+            "translations_ru": [
+              "обязательно",
+              "непременно",
+              "во что бы то ни стало"
+            ],
+            "grammar_hint": "nicht unbedingt — не обязательно, не непременно; при первой позиции глагол на второй.",
+            "example": "Du musst unbedingt die Frist beachten.",
+            "example_ru": "Тебе обязательно нужно соблюдать срок."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unbedingt"
+            ],
+            "meaning_review": "dictionary_search_evidence_reviewed",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_38c08f35615719c337da",
+      "alias_ids": [
+        "b1-und-addition"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_38c08f35615719c337da",
+        "de": "und",
+        "lemma": "und",
+        "part": "conj",
+        "level": "A1",
+        "ru": "и",
+        "uk": "і; та",
+        "translations_ru": [
+          "и"
+        ],
+        "topic": "Грамматика",
+        "topics": [
+          "Грамматика"
+        ],
+        "forms": "Неизменяемый сочинительный союз",
+        "definition_de": "Verbindet gleichrangige Wörter, Satzteile oder Sätze.",
+        "example": "Ich arbeite heute und morgen.",
+        "example_ru": "Я работаю сегодня и завтра.",
+        "note": "Соединяет равноправные части. После und порядок слов главного предложения не меняется: Ich koche und du räumst auf. При одном подлежащем второе можно опустить.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "attested_example"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/und",
+            "scope": "meaning"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-und-addition"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-und-addition",
+            "de": "und",
+            "part": "conjunction",
+            "forms": "unveränderlich",
+            "definition_de": "Verknüpft gleichrangige Wörter, Wortgruppen oder Sätze.",
+            "translations_ru": [
+              "и",
+              "а (соединение)"
+            ],
+            "grammar_hint": "Сочинительный союз: не переносит спрягаемый глагол в конец. В обычном главном предложении сохраняется V2: und meine Schwester deckt …; перед und обычно нет запятой.",
+            "example": "Ich bereite das Essen vor und meine Schwester deckt den Tisch.",
+            "example_ru": "Я готовлю еду, а моя сестра накрывает на стол."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/und"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_b0a242cb3a909806fc31",
+      "alias_ids": [
+        "b1-unfall-accident"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_b0a242cb3a909806fc31",
+        "de": "der Unfall",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "несчастный случай",
+          "авария"
+        ],
+        "definition_de": "Ein plötzliches, unbeabsichtigtes Ereignis, bei dem Menschen verletzt werden oder Sachschaden entsteht.",
+        "forms": "Plural · die Unfälle",
+        "example": "Nach dem Unfall war die Straße gesperrt.",
+        "example_ru": "После аварии дорогу перекрыли.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Unfall"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-unfall-accident"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unfall-accident",
+            "de": "der Unfall",
+            "part": "noun",
+            "forms": "die Unfälle",
+            "definition_de": "Ein unerwartetes Ereignis, bei dem Menschen oder Sachen zu Schaden kommen können.",
+            "translations_ru": [
+              "несчастный случай",
+              "авария"
+            ],
+            "grammar_hint": "einen Unfall haben; bei einem Unfall; Unfallversicherung — страхование от несчастных случаев.",
+            "example": "Auf dem Heimweg hatte er einen Fahrradunfall.",
+            "example_ru": "По дороге домой он попал в аварию на велосипеде."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Unfall"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ac96811a763c26f00f88",
+      "alias_ids": [
+        "b1-universitaet-higher-ed"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ac96811a763c26f00f88",
+        "de": "die Universität",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "университет"
+        ],
+        "definition_de": "Eine Hochschule, an der man studieren kann und an der geforscht wird.",
+        "forms": "Plural · die Universitäten",
+        "example": "Sie studiert Medizin an der Universität.",
+        "example_ru": "Она изучает медицину в университете.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Universit%C3%A4t"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-universitaet-higher-ed"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-universitaet-higher-ed",
+            "de": "die Universität",
+            "part": "noun",
+            "forms": "die Universitäten",
+            "definition_de": "Eine Hochschule, an der man studiert und wissenschaftlich arbeitet.",
+            "translations_ru": [
+              "университет"
+            ],
+            "grammar_hint": "an einer Universität (Dat.) studieren; sich an einer Universität einschreiben; die Uni — разговорное.",
+            "example": "Meine Freundin studiert Geschichte an der Universität.",
+            "example_ru": "Моя подруга изучает историю в университете."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Universit%C3%A4t"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-580-2",
+      "alias_ids": [
+        "b1-unten-place"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-580-2",
+        "de": "unten",
+        "lemma": "unten",
+        "ru": "внизу",
+        "uk": "",
+        "translations_ru": [
+          "внизу"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "",
+        "definition_de": "An einer tieferen Stelle oder in einem unteren Stockwerk.",
+        "example": "Die Küche ist unten.",
+        "example_ru": "Кухня внизу.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "b52886c613d7de9aabbb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-unten-place"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unten-place",
+            "de": "unten",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezeichnet eine Stelle auf einer niedrigeren Ebene.",
+            "translations_ru": [
+              "внизу"
+            ],
+            "grammar_hint": "Wo? unten; Wohin? nach unten; Woher? von unten; противоположность oben.",
+            "example": "Die Waschmaschine steht unten im Keller.",
+            "example_ru": "Стиральная машина стоит внизу, в подвале."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unten"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-581-1",
+      "alias_ids": [
+        "b1-unter-location"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-581-1",
+        "de": "unter",
+        "lemma": "unter",
+        "ru": "под (местонахождение)",
+        "uk": "",
+        "translations_ru": [
+          "под (местонахождение)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Bezeichnet einen Ort tiefer als etwas anderes.",
+        "example": "Die Tasche liegt unter dem Tisch.",
+        "example_ru": "Сумка лежит под столом.",
+        "note": "Wechselpräposition: при обозначении места Wo? — unter dem Tisch (Dativ); при направлении Wohin? — unter den Tisch (Akkusativ). В этой карточке изучаем местоположение. Движение само по себе не определяет падеж.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 25,
+            "row_id": "ce466e24c05595db79e4"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/unter",
+            "scope": "meaning_or_grammar",
+            "note": "Управление пространственного предлога."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-unter-location"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-unter-location",
+            "de": "unter",
+            "part": "preposition",
+            "forms": "Wechselpräposition: Dativ / Akkusativ",
+            "definition_de": "Kennzeichnet eine räumliche Beziehung zu etwas höher Gelegenem.",
+            "translations_ru": [
+              "под",
+              "ниже"
+            ],
+            "grammar_hint": "Wo? unter der Bank (Dat.); Wohin? unter die Bank stellen (Akk.). Движение само по себе не определяет падеж: unter der Brücke laufen (Dat.) — двигаться в пространстве под мостом.",
+            "example": "Die Schuhe stehen unter der Bank.",
+            "example_ru": "Обувь стоит под скамейкой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 90,
+              "scope": "headword",
+              "note": "Printed page 90 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 and cross-batch sense merging pending. Contextual extensions not independently level-confirmed."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/unter"
+            ],
+            "meaning_review": "dictionary_entry_linked_or_opened_full_sense_check_pending",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

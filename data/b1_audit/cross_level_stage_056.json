@@ -1,0 +1,2987 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1093,
+    1112
+  ],
+  "reviewed": 20,
+  "merge_count": 16,
+  "merge_target_count": 14,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1093,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Das Leben eines Lebewesens endet. Example: Ihr Grossvater ist vor vielen Jahren gestorben.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 2,
+        "record": {
+          "id": "b1-sterben-die",
+          "de": "sterben",
+          "lemma": "sterben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "умирать",
+            "умереть"
+          ],
+          "definition_de": "Das Leben eines Lebewesens endet.",
+          "example": "Ihr Grossvater ist vor vielen Jahren gestorben.",
+          "example_ru": "Её дедушка умер много лет назад.",
+          "forms": "stirbt · starb · ist gestorben",
+          "grammar_hint": "an + Dativ sterben (от болезни); Perfekt с sein. CH: Grossvater.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 83,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sterben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 343,
+          "record": {
+            "id": "a1-262-1",
+            "de": "sterben",
+            "lemma": "sterben",
+            "ru": "умирать; умереть",
+            "uk": "",
+            "translations_ru": [
+              "умирать",
+              "умереть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "stirbt · starb · ist gestorben",
+            "definition_de": "Aufhören zu leben.",
+            "example": "Sein Großvater ist vor einem Jahr gestorben.",
+            "example_ru": "Его дедушка умер год назад.",
+            "note": "В Goethe A1 дана форма gestorben; полный глагол sterben представлен в A2. Perfekt с sein; an + Dativ — умереть от чего-либо. Совпадение ID требует миграции перед публикацией.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "20986650e33807a7dc15"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 499,
+          "record": {
+            "id": "dict_fb9ebadf1dd5574966d0",
+            "de": "sterben",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "умирать",
+              "умереть"
+            ],
+            "definition_de": "Das Leben endet.",
+            "forms": "stirbt · starb · ist gestorben",
+            "example": "Die alte Pflanze ist im Winter gestorben.",
+            "example_ru": "Старое растение погибло зимой.",
+            "grammar_hint": "Сильный непереходный глагол; Perfekt с sein. sterben an + Dativ — умереть от чего-либо.",
+            "usage_note": "Goethe A1 стр. 16 приводит gestorben в Perfekt; Goethe A2 стр. 26 — полную лемму sterben. Смысл совпадает с A1; объединить после проверки переноса прогресса. sterben an + Dativ; vor + Dativ (например vor Hunger).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sterben"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-262-1",
+        "alias_id": "b1-sterben-die",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-262-1"
+      }
+    },
+    {
+      "candidate_number": 1094,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein längliches Werkzeug zum Schreiben oder Zeichnen. Example: Ich habe einen blauen Stift in meiner Tasche.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 6,
+        "record": {
+          "id": "b1-stift-writing",
+          "de": "der Stift",
+          "lemma": "Stift",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ручка",
+            "карандаш",
+            "пишущий предмет"
+          ],
+          "definition_de": "Ein längliches Werkzeug zum Schreiben oder Zeichnen.",
+          "example": "Ich habe einen blauen Stift in meiner Tasche.",
+          "example_ru": "У меня в сумке синяя ручка.",
+          "forms": "die Stifte",
+          "grammar_hint": "Kugelschreiber — шариковая ручка; Bleistift — карандаш; Stift — общее обозначение.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 83,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stift"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 299,
+          "record": {
+            "id": "dict_ef26849ee96b89e0cfb3",
+            "de": "der Stift",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ручка",
+              "карандаш"
+            ],
+            "definition_de": "Ein Gegenstand, mit dem man schreibt oder zeichnet.",
+            "forms": "Plural · die Stifte",
+            "example": "Kannst du mir einen Stift leihen?",
+            "example_ru": "Можешь одолжить мне ручку?",
+            "grammar_hint": "",
+            "usage_note": "Общее название письменных принадлежностей: Bleistift — карандаш, Kugelschreiber — шариковая ручка.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Stift"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ef26849ee96b89e0cfb3",
+        "alias_id": "b1-stift-writing",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ef26849ee96b89e0cfb3"
+      }
+    },
+    {
+      "candidate_number": 1095,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Schuh, der über den Knöchel hinausreicht. Example: Für den Schnee ziehe ich meine Winterstiefel an.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 12,
+        "record": {
+          "id": "b1-stiefel-boot",
+          "de": "der Stiefel",
+          "lemma": "Stiefel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сапог",
+            "высокий ботинок"
+          ],
+          "definition_de": "Ein Schuh, der über den Knöchel hinausreicht.",
+          "example": "Für den Schnee ziehe ich meine Winterstiefel an.",
+          "example_ru": "Для прогулки по снегу я надеваю зимние сапоги.",
+          "forms": "die Stiefel",
+          "grammar_hint": "ein Paar Stiefel; Stiefel anziehen (Akk.).",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 83,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stiefel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 95,
+          "record": {
+            "id": "dict_aefcb9f92a17c53e468a",
+            "de": "der Stiefel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "сапог"
+            ],
+            "definition_de": "Ein Schuh, der über den Knöchel reicht und oft einen hohen Schaft hat.",
+            "forms": "Plural · die Stiefel",
+            "example": "Für den Regen ziehe ich meine gelben Stiefel an.",
+            "example_ru": "В дождь я надеваю свои жёлтые сапоги.",
+            "grammar_hint": "",
+            "usage_note": "Сапог, ботинок с высоким голенищем; der Schuh — общее обозначение обуви. die Stiefel anziehen — надевать сапоги.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Stiefel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_aefcb9f92a17c53e468a",
+        "alias_id": "b1-stiefel-boot",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_aefcb9f92a17c53e468a"
+      }
+    },
+    {
+      "candidate_number": 1096,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Gebäudeebene oberhalb des Erdgeschosses. Example: Wir wohnen im zweiten Stock.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 21,
+        "record": {
+          "id": "b1-stock-floor",
+          "de": "der Stock",
+          "lemma": "Stock",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "этаж"
+          ],
+          "definition_de": "Eine Gebäudeebene oberhalb des Erdgeschosses.",
+          "example": "Wir wohnen im zweiten Stock.",
+          "example_ru": "Мы живём на третьем этаже (zweiter Stock — второй этаж над уровнем земли).",
+          "forms": "die Stöcke (в значении этаж реже; обычно Stockwerke)",
+          "grammar_hint": "im zweiten Stock (Dativ); Etage, Stockwerk. Erdgeschoss — уровень земли; нумерация отличается от привычной русской.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stock"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 546,
+          "record": {
+            "id": "a1-544-1",
+            "de": "der Stock",
+            "lemma": "Stock",
+            "ru": "этаж",
+            "uk": "",
+            "translations_ru": [
+              "этаж"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Stock (при числительных)",
+            "definition_de": "Eine Ebene eines Gebäudes über dem Erdgeschoss.",
+            "example": "Wir wohnen im zweiten Stock.",
+            "example_ru": "Мы живём на втором этаже.",
+            "note": "В значении «этаж» мн. число Stock употребляется при числительных: Das Haus hat drei Stock. Можно также сказать drei Stockwerke.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "2ece67227bdd253845d1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-544-1",
+        "alias_id": "b1-stock-floor",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-544-1"
+      }
+    },
+    {
+      "candidate_number": 1097,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine der übereinanderliegenden Ebenen eines Gebäudes. Example: Das Wohnhaus hat vier Stockwerke.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 22,
+        "record": {
+          "id": "b1-stockwerk-floor",
+          "de": "das Stockwerk",
+          "lemma": "Stockwerk",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "этаж"
+          ],
+          "definition_de": "Eine der übereinanderliegenden Ebenen eines Gebäudes.",
+          "example": "Das Wohnhaus hat vier Stockwerke.",
+          "example_ru": "В жилом доме четыре этажа.",
+          "forms": "die Stockwerke",
+          "grammar_hint": "im oberen Stockwerk (Dativ); das Erdgeschoss — наземный этаж.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stockwerk"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 30,
+          "record": {
+            "id": "dict_9c3df34b3cf579d2b7b6",
+            "de": "das Stockwerk",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "этаж"
+            ],
+            "definition_de": "Eine Ebene in einem Gebäude.",
+            "forms": "Plural · die Stockwerke",
+            "example": "Der Kursraum ist im dritten Stockwerk.",
+            "example_ru": "Аудитория находится на третьем этаже.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Stockwerk"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9c3df34b3cf579d2b7b6",
+        "alias_id": "b1-stockwerk-floor",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9c3df34b3cf579d2b7b6"
+      }
+    },
+    {
+      "candidate_number": 1098,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Jemanden bei einer Tätigkeit unterbrechen oder ablenken. Example: Entschuldigung, störe ich dich gerade?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 27,
+        "record": {
+          "id": "b1-stoeren-interrupt",
+          "de": "stören",
+          "lemma": "stören",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "мешать",
+            "беспокоить",
+            "прерывать"
+          ],
+          "definition_de": "Jemanden bei einer Tätigkeit unterbrechen oder ablenken.",
+          "example": "Entschuldigung, störe ich dich gerade?",
+          "example_ru": "Извини, я сейчас тебе мешаю?",
+          "forms": "stört · störte · hat gestört",
+          "grammar_hint": "jemanden (Akk.) stören: dich, nicht dir; bei + Dativ при указании занятия.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/st%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 214,
+          "record": {
+            "id": "dict_ea91cf95a7af3f6b4e5f",
+            "de": "stören",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "мешать",
+              "беспокоить"
+            ],
+            "definition_de": "Jemanden bei etwas unterbrechen oder ihm durch Lärm oder anderes Verhalten Schwierigkeiten machen.",
+            "forms": "stört · störte · hat gestört",
+            "example": "Kannst du die Musik leiser machen? Sie stört mich beim Lernen.",
+            "example_ru": "Можешь сделать музыку потише? Она мешает мне заниматься.",
+            "grammar_hint": "Кому мешает? По-немецки stören требует Akkusativ: stört mich. При каком занятии? bei + Dativ: beim Lernen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/st%C3%B6ren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ea91cf95a7af3f6b4e5f",
+        "alias_id": "b1-stoeren-interrupt",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ea91cf95a7af3f6b4e5f"
+      }
+    },
+    {
+      "candidate_number": 1099,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Für eine Person als unangenehm empfunden werden. Example: Der Lärm von der Strasse stört mich beim Lesen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_093.json",
+        "sha": "4426d0a6286ed65774c8d080eb5edc68a4a0c75d",
+        "batch": 93,
+        "row": 28,
+        "record": {
+          "id": "b1-stoeren-bother",
+          "de": "stören",
+          "lemma": "stören",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "мешать",
+            "раздражать"
+          ],
+          "definition_de": "Für eine Person als unangenehm empfunden werden.",
+          "example": "Der Lärm von der Strasse stört mich beim Lesen.",
+          "example_ru": "Шум с улицы мешает мне читать.",
+          "forms": "stört · störte · hat gestört",
+          "grammar_hint": "Подлежащее — источник помехи; mich (Akk.); CH: Strasse.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/st%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 214,
+          "record": {
+            "id": "dict_ea91cf95a7af3f6b4e5f",
+            "de": "stören",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "мешать",
+              "беспокоить"
+            ],
+            "definition_de": "Jemanden bei etwas unterbrechen oder ihm durch Lärm oder anderes Verhalten Schwierigkeiten machen.",
+            "forms": "stört · störte · hat gestört",
+            "example": "Kannst du die Musik leiser machen? Sie stört mich beim Lernen.",
+            "example_ru": "Можешь сделать музыку потише? Она мешает мне заниматься.",
+            "grammar_hint": "Кому мешает? По-немецки stören требует Akkusativ: stört mich. При каком занятии? bei + Dativ: beim Lernen.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/st%C3%B6ren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ea91cf95a7af3f6b4e5f",
+        "alias_id": "b1-stoeren-bother",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ea91cf95a7af3f6b4e5f"
+      }
+    },
+    {
+      "candidate_number": 1100,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein flacher Uferbereich an einem Gewässer. Example: Wir verbringen den Nachmittag am Strand.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 4,
+        "record": {
+          "id": "b1-strand-beach",
+          "de": "der Strand",
+          "lemma": "Strand",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "пляж",
+            "берег (песчаный или галечный)"
+          ],
+          "definition_de": "Ein flacher Uferbereich an einem Gewässer.",
+          "example": "Wir verbringen den Nachmittag am Strand.",
+          "example_ru": "Мы проводим вторую половину дня на пляже.",
+          "forms": "die Strände",
+          "grammar_hint": "am Strand (Wo? Dativ); an den Strand (Wohin? Akkusativ).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Strand"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 249,
+          "record": {
+            "id": "dict_b1f537ca156ba46290b2",
+            "de": "der Strand",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "пляж"
+            ],
+            "definition_de": "Ein sandiger oder steiniger Abschnitt am Ufer eines Meeres, Sees oder Flusses.",
+            "forms": "Plural · die Strände",
+            "example": "Die Kinder spielen am Strand.",
+            "example_ru": "Дети играют на пляже.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Strand"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_b1f537ca156ba46290b2",
+        "alias_id": "b1-strand-beach",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_b1f537ca156ba46290b2"
+      }
+    },
+    {
+      "candidate_number": 1101,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Verkehrsweg zwischen Orten oder Gebäuden. Example: In unserer Straße gibt es eine Bäckerei.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 5,
+        "record": {
+          "id": "b1-strasse-street",
+          "de": "die Straße",
+          "lemma": "Straße",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "улица",
+            "дорога"
+          ],
+          "definition_de": "Ein Verkehrsweg zwischen Orten oder Gebäuden.",
+          "example": "In unserer Straße gibt es eine Bäckerei.",
+          "example_ru": "На нашей улице есть пекарня.",
+          "forms": "die Straßen; CH: die Strasse · die Strassen",
+          "grammar_hint": "in einer Straße wohnen; auf der Straße gehen; beide mit Dativ bei Ortsangabe.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stra%C3%9Fe"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 25,
+          "record": {
+            "id": "city-strasse",
+            "de": "die Straße",
+            "lemma": "Straße",
+            "ru": "улица",
+            "uk": "",
+            "translations_ru": [
+              "улица"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Straßen",
+            "definition_de": "Ein Weg zwischen Häusern, auf dem man gehen oder fahren kann.",
+            "example": "In dieser Straße gibt es eine Apotheke.",
+            "example_ru": "На этой улице есть аптека.",
+            "note": "В швейцарском стандарте пишут die Strasse.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "d28c0bc33b52b60ae738"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "city-strasse",
+        "alias_id": "b1-strasse-street",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "city-strasse"
+      }
+    },
+    {
+      "candidate_number": 1102,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Gibt einen Ort jenseits der nächsten Straße an. Example: Die Apotheke liegt zwei Straßen weiter.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 6,
+        "record": {
+          "id": "b1-strasse-block",
+          "de": "eine Straße weiter",
+          "lemma": "Straße",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "на одну улицу дальше"
+          ],
+          "definition_de": "Gibt einen Ort jenseits der nächsten Straße an.",
+          "example": "Die Apotheke liegt zwei Straßen weiter.",
+          "example_ru": "Аптека находится на две улицы дальше.",
+          "forms": "die Straßen; CH: die Strassen",
+          "grammar_hint": "eine Straße weiter — выражение расстояния; учебный контекст, не самостоятельное значение.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stra%C3%9Fe"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 25,
+          "record": {
+            "id": "city-strasse",
+            "de": "die Straße",
+            "lemma": "Straße",
+            "ru": "улица",
+            "uk": "",
+            "translations_ru": [
+              "улица"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Straßen",
+            "definition_de": "Ein Weg zwischen Häusern, auf dem man gehen oder fahren kann.",
+            "example": "In dieser Straße gibt es eine Apotheke.",
+            "example_ru": "На этой улице есть аптека.",
+            "note": "В швейцарском стандарте пишут die Strasse.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "d28c0bc33b52b60ae738"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1103,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein öffentliches Verkehrsmittel auf Schienen im Stadtverkehr. Example: Wir fahren mit der Straßenbahn zum Museum.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 7,
+        "record": {
+          "id": "b1-strassenbahn-tram",
+          "de": "die Straßenbahn",
+          "lemma": "Straßenbahn",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "трамвай"
+          ],
+          "definition_de": "Ein öffentliches Verkehrsmittel auf Schienen im Stadtverkehr.",
+          "example": "Wir fahren mit der Straßenbahn zum Museum.",
+          "example_ru": "Мы едем на трамвае в музей.",
+          "forms": "die Straßenbahnen; CH: die Strassenbahnen",
+          "grammar_hint": "mit + Dativ; CH: das Tram, die Trams.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stra%C3%9Fenbahn"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 547,
+          "record": {
+            "id": "a1-546-1",
+            "de": "die Straßenbahn",
+            "lemma": "Straßenbahn",
+            "ru": "трамвай",
+            "uk": "",
+            "translations_ru": [
+              "трамвай"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "die Straßenbahnen",
+            "definition_de": "Ein öffentliches Verkehrsmittel, das auf Schienen durch die Stadt fährt.",
+            "example": "Die Straßenbahn hält vor der Post.",
+            "example_ru": "Трамвай останавливается перед почтой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "0a00ab58b7ab3628fbc8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-546-1",
+        "alias_id": "b1-strassenbahn-tram",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-546-1"
+      }
+    },
+    {
+      "candidate_number": 1104,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine heftige Meinungsverschiedenheit austragen. Example: Ich möchte mich nicht mit dir über Geld streiten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 14,
+        "record": {
+          "id": "b1-streiten-argue",
+          "de": "(sich) streiten",
+          "lemma": "streiten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ссориться",
+            "спорить"
+          ],
+          "definition_de": "Eine heftige Meinungsverschiedenheit austragen.",
+          "example": "Ich möchte mich nicht mit dir über Geld streiten.",
+          "example_ru": "Я не хочу ссориться с тобой из-за денег.",
+          "forms": "streitet (sich) · stritt (sich) · hat (sich) gestritten",
+          "grammar_hint": "sich (Akk.) mit + Dativ über + Akk. streiten; um + Akk. при споре за что-либо.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/streiten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 471,
+          "record": {
+            "id": "dict_26e36f94c26843d4b2ff",
+            "de": "streiten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "спорить",
+              "ссориться"
+            ],
+            "definition_de": "Sich mit anderen heftig über etwas auseinandersetzen.",
+            "forms": "streitet (sich) · stritt (sich) · hat (sich) gestritten",
+            "example": "Die Nachbarn streiten sich über den Lärm.",
+            "example_ru": "Соседи ссорятся из-за шума.",
+            "grammar_hint": "(sich) mit + Dativ streiten; über/um + Akkusativ streiten. Возвратная форма: sich streiten.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/streiten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_26e36f94c26843d4b2ff",
+        "alias_id": "b1-streiten-argue",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_26e36f94c26843d4b2ff"
+      }
+    },
+    {
+      "candidate_number": 1105,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Auf die Befolgung von Regeln und Anforderungen bedacht. Example: Unser Lehrer ist streng, aber gerecht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 16,
+        "record": {
+          "id": "b1-streng-strict",
+          "de": "streng",
+          "lemma": "streng",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "строгий",
+            "требовательный"
+          ],
+          "definition_de": "Auf die Befolgung von Regeln und Anforderungen bedacht.",
+          "example": "Unser Lehrer ist streng, aber gerecht.",
+          "example_ru": "Наш преподаватель строгий, но справедливый.",
+          "forms": "streng · strenger · am strengsten",
+          "grammar_hint": "streng mit jemandem sein (mit + Dativ); strenge Regeln.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/streng"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 275,
+          "record": {
+            "id": "dict_40994df4689b8780868b",
+            "de": "streng",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "строгий",
+              "требовательный"
+            ],
+            "definition_de": "So, dass jemand auf Regeln achtet und ihre Einhaltung verlangt.",
+            "forms": "streng · strenger · am strengsten",
+            "example": "Unser neuer Lehrer ist strenger als der alte.",
+            "example_ru": "Наш новый преподаватель строже прежнего.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/streng"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_40994df4689b8780868b",
+        "alias_id": "b1-streng-strict",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_40994df4689b8780868b"
+      }
+    },
+    {
+      "candidate_number": 1106,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Körperliche oder seelische Belastung durch hohe Anforderungen. Example: Vor der Prüfung habe ich viel Stress.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 17,
+        "record": {
+          "id": "b1-stress-pressure",
+          "de": "der Stress",
+          "lemma": "Stress",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "стресс",
+            "напряжение"
+          ],
+          "definition_de": "Körperliche oder seelische Belastung durch hohe Anforderungen.",
+          "example": "Vor der Prüfung habe ich viel Stress.",
+          "example_ru": "Перед экзаменом я испытываю сильный стресс.",
+          "forms": "обычно Singular; die Stresse (редко)",
+          "grammar_hint": "Stress haben; unter Stress stehen (Dativ); Stress abbauen.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stress"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 344,
+          "record": {
+            "id": "dict_5a80f6571c40e6216a1a",
+            "de": "der Stress",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "стресс",
+              "напряжение"
+            ],
+            "definition_de": "Körperliche oder seelische Belastung durch hohe Anforderungen.",
+            "forms": "Обычно без Plural",
+            "example": "Vor der Prüfung habe ich viel Stress.",
+            "example_ru": "Перед экзаменом у меня сильный стресс.",
+            "grammar_hint": "",
+            "usage_note": "Stress haben — испытывать стресс.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Stress"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_5a80f6571c40e6216a1a",
+        "alias_id": "b1-stress-pressure",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_5a80f6571c40e6216a1a"
+      }
+    },
+    {
+      "candidate_number": 1107,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine abgegrenzte Portion eines Materials oder Lebensmittels. Example: Sie legt ein Stück Zucker in ihre Tasse.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 20,
+        "record": {
+          "id": "b1-stueck-sugar",
+          "de": "das Stück",
+          "lemma": "Stück",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кусочек",
+            "кубик (сахара)"
+          ],
+          "definition_de": "Eine abgegrenzte Portion eines Materials oder Lebensmittels.",
+          "example": "Sie legt ein Stück Zucker in ihre Tasse.",
+          "example_ru": "Она кладёт кусочек сахара в чашку.",
+          "forms": "die Stücke; при счёте также Stück",
+          "grammar_hint": "zwei Stück Zucker / zwei Stücke Zucker; das Stück как единица количества.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 179,
+          "record": {
+            "id": "dict_92f04bb26938b6d3f3b3",
+            "de": "das Stück",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кусок",
+              "кусочек"
+            ],
+            "definition_de": "Ein Teil von etwas, den man zum Beispiel abgeschnitten hat.",
+            "forms": "Plural · die Stücke",
+            "example": "Darf ich ein Stück Schokolade haben?",
+            "example_ru": "Можно мне кусочек шоколада?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/St%C3%BCck"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_92f04bb26938b6d3f3b3",
+        "alias_id": "b1-stueck-sugar",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_92f04bb26938b6d3f3b3"
+      }
+    },
+    {
+      "candidate_number": 1108,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein abgetrennter Teil eines größeren Ganzen. Example: Zum Kaffee esse ich ein Stück Apfelkuchen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 21,
+        "record": {
+          "id": "b1-stueck-portion",
+          "de": "das Stück",
+          "lemma": "Stück",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кусок",
+            "часть",
+            "порция"
+          ],
+          "definition_de": "Ein abgetrennter Teil eines größeren Ganzen.",
+          "example": "Zum Kaffee esse ich ein Stück Apfelkuchen.",
+          "example_ru": "К кофе я ем кусок яблочного пирога.",
+          "forms": "die Stücke; при указании количества также Stück",
+          "grammar_hint": "ein Stück Kuchen; zwei Stücke Kuchen; существительное материала обычно без артикля.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 179,
+          "record": {
+            "id": "dict_92f04bb26938b6d3f3b3",
+            "de": "das Stück",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кусок",
+              "кусочек"
+            ],
+            "definition_de": "Ein Teil von etwas, den man zum Beispiel abgeschnitten hat.",
+            "forms": "Plural · die Stücke",
+            "example": "Darf ich ein Stück Schokolade haben?",
+            "example_ru": "Можно мне кусочек шоколада?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/St%C3%BCck"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_92f04bb26938b6d3f3b3",
+        "alias_id": "b1-stueck-portion",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_92f04bb26938b6d3f3b3"
+      }
+    },
+    {
+      "candidate_number": 1109,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Gibt den Preis für einen einzelnen Gegenstand an. Example: Die Hefte kosten zwei Franken pro Stück.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 22,
+        "record": {
+          "id": "b1-stueck-unit",
+          "de": "pro Stück",
+          "lemma": "Stück",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "за штуку",
+            "за единицу товара"
+          ],
+          "definition_de": "Gibt den Preis für einen einzelnen Gegenstand an.",
+          "example": "Die Hefte kosten zwei Franken pro Stück.",
+          "example_ru": "Тетради стоят два франка за штуку.",
+          "forms": "die Stücke; счётная форма Stück",
+          "grammar_hint": "pro Stück — за штуку; drei Stück — три штуки; -stück в сложных словах, например Gepäckstück.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 179,
+          "record": {
+            "id": "dict_92f04bb26938b6d3f3b3",
+            "de": "das Stück",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кусок",
+              "кусочек"
+            ],
+            "definition_de": "Ein Teil von etwas, den man zum Beispiel abgeschnitten hat.",
+            "forms": "Plural · die Stücke",
+            "example": "Darf ich ein Stück Schokolade haben?",
+            "example_ru": "Можно мне кусочек шоколада?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/St%C3%BCck"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1110,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bezeichnet eine nicht genauer bestimmte Weglänge. Example: Wir gehen noch ein Stück zusammen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 23,
+        "record": {
+          "id": "b1-stueck-way",
+          "de": "ein Stück",
+          "lemma": "Stück",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "часть пути",
+            "немного (о расстоянии)"
+          ],
+          "definition_de": "Bezeichnet eine nicht genauer bestimmte Weglänge.",
+          "example": "Wir gehen noch ein Stück zusammen.",
+          "example_ru": "Мы ещё немного пройдём вместе.",
+          "forms": "die Stücke",
+          "grammar_hint": "ein Stück als Maß der Entfernung; jemanden ein Stück begleiten (Akk.).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 179,
+          "record": {
+            "id": "dict_92f04bb26938b6d3f3b3",
+            "de": "das Stück",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кусок",
+              "кусочек"
+            ],
+            "definition_de": "Ein Teil von etwas, den man zum Beispiel abgeschnitten hat.",
+            "forms": "Plural · die Stücke",
+            "example": "Darf ich ein Stück Schokolade haben?",
+            "example_ru": "Можно мне кусочек шоколада?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/St%C3%BCck"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1111,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein Werk, das auf einer Theaterbühne aufgeführt werden kann. Example: Am Samstag sehen wir ein neues Stück im Theater.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 24,
+        "record": {
+          "id": "b1-stueck-play",
+          "de": "das Stück",
+          "lemma": "Stück",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "пьеса",
+            "театральное произведение"
+          ],
+          "definition_de": "Ein Werk, das auf einer Theaterbühne aufgeführt werden kann.",
+          "example": "Am Samstag sehen wir ein neues Stück im Theater.",
+          "example_ru": "В субботу мы посмотрим новую пьесу в театре.",
+          "forms": "die Stücke",
+          "grammar_hint": "ein Stück aufführen; das Theaterstück; Musikstück — музыкальное произведение, отдельное значение.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 179,
+          "record": {
+            "id": "dict_92f04bb26938b6d3f3b3",
+            "de": "das Stück",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кусок",
+              "кусочек"
+            ],
+            "definition_de": "Ein Teil von etwas, den man zum Beispiel abgeschnitten hat.",
+            "forms": "Plural · die Stücke",
+            "example": "Darf ich ein Stück Schokolade haben?",
+            "example_ru": "Можно мне кусочек шоколада?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/St%C3%BCck"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1112,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Fach im Rahmen einer Hochschulausbildung erlernen. Example: Meine Cousine studiert Architektur.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 27,
+        "record": {
+          "id": "b1-studieren-subject",
+          "de": "studieren",
+          "lemma": "studieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "изучать специальность в вузе"
+          ],
+          "definition_de": "Ein Fach im Rahmen einer Hochschulausbildung erlernen.",
+          "example": "Meine Cousine studiert Architektur.",
+          "example_ru": "Моя двоюродная сестра изучает архитектуру в вузе.",
+          "forms": "studiert · studierte · hat studiert",
+          "grammar_hint": "Fach (Akk.) studieren; глаголы на -ieren образуют Partizip II без ge-.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/studieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 698,
+          "record": {
+            "id": "a1-547-1",
+            "de": "studieren",
+            "lemma": "studieren",
+            "ru": "учиться в вузе",
+            "uk": "",
+            "translations_ru": [
+              "учиться в вузе"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "studiert · studierte · hat studiert",
+            "definition_de": "An einer Hochschule lernen.",
+            "example": "Sie studiert in Bern.",
+            "example_ru": "Она учится в вузе в Берне.",
+            "note": "studieren — учиться в вузе, не просто учить слова или учиться в школе (lernen). Ich studiere Medizin.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "59bc1322c6e5cdd2f36e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-547-1",
+        "alias_id": "b1-studieren-subject",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-547-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-262-1",
+      "alias_ids": [
+        "b1-sterben-die"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-262-1",
+        "de": "sterben",
+        "lemma": "sterben",
+        "ru": "умирать; умереть",
+        "uk": "",
+        "translations_ru": [
+          "умирать",
+          "умереть"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "stirbt · starb · ist gestorben",
+        "definition_de": "Aufhören zu leben.",
+        "example": "Sein Großvater ist vor einem Jahr gestorben.",
+        "example_ru": "Его дедушка умер год назад.",
+        "note": "В Goethe A1 дана форма gestorben; полный глагол sterben представлен в A2. Perfekt с sein; an + Dativ — умереть от чего-либо. Совпадение ID требует миграции перед публикацией.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "20986650e33807a7dc15"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sterben-die"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sterben-die",
+            "de": "sterben",
+            "part": "verb",
+            "forms": "stirbt · starb · ist gestorben",
+            "definition_de": "Das Leben eines Lebewesens endet.",
+            "translations_ru": [
+              "умирать",
+              "умереть"
+            ],
+            "grammar_hint": "an + Dativ sterben (от болезни); Perfekt с sein. CH: Grossvater.",
+            "example": "Ihr Grossvater ist vor vielen Jahren gestorben.",
+            "example_ru": "Её дедушка умер много лет назад."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 83,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sterben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ef26849ee96b89e0cfb3",
+      "alias_ids": [
+        "b1-stift-writing"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ef26849ee96b89e0cfb3",
+        "de": "der Stift",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ручка",
+          "карандаш"
+        ],
+        "definition_de": "Ein Gegenstand, mit dem man schreibt oder zeichnet.",
+        "forms": "Plural · die Stifte",
+        "example": "Kannst du mir einen Stift leihen?",
+        "example_ru": "Можешь одолжить мне ручку?",
+        "grammar_hint": "",
+        "usage_note": "Общее название письменных принадлежностей: Bleistift — карандаш, Kugelschreiber — шариковая ручка.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Stift"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-stift-writing"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stift-writing",
+            "de": "der Stift",
+            "part": "noun",
+            "forms": "die Stifte",
+            "definition_de": "Ein längliches Werkzeug zum Schreiben oder Zeichnen.",
+            "translations_ru": [
+              "ручка",
+              "карандаш",
+              "пишущий предмет"
+            ],
+            "grammar_hint": "Kugelschreiber — шариковая ручка; Bleistift — карандаш; Stift — общее обозначение.",
+            "example": "Ich habe einen blauen Stift in meiner Tasche.",
+            "example_ru": "У меня в сумке синяя ручка."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 83,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stift"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_aefcb9f92a17c53e468a",
+      "alias_ids": [
+        "b1-stiefel-boot"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_aefcb9f92a17c53e468a",
+        "de": "der Stiefel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "сапог"
+        ],
+        "definition_de": "Ein Schuh, der über den Knöchel reicht und oft einen hohen Schaft hat.",
+        "forms": "Plural · die Stiefel",
+        "example": "Für den Regen ziehe ich meine gelben Stiefel an.",
+        "example_ru": "В дождь я надеваю свои жёлтые сапоги.",
+        "grammar_hint": "",
+        "usage_note": "Сапог, ботинок с высоким голенищем; der Schuh — общее обозначение обуви. die Stiefel anziehen — надевать сапоги.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Stiefel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-stiefel-boot"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stiefel-boot",
+            "de": "der Stiefel",
+            "part": "noun",
+            "forms": "die Stiefel",
+            "definition_de": "Ein Schuh, der über den Knöchel hinausreicht.",
+            "translations_ru": [
+              "сапог",
+              "высокий ботинок"
+            ],
+            "grammar_hint": "ein Paar Stiefel; Stiefel anziehen (Akk.).",
+            "example": "Für den Schnee ziehe ich meine Winterstiefel an.",
+            "example_ru": "Для прогулки по снегу я надеваю зимние сапоги."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 83,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stiefel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-544-1",
+      "alias_ids": [
+        "b1-stock-floor"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-544-1",
+        "de": "der Stock",
+        "lemma": "Stock",
+        "ru": "этаж",
+        "uk": "",
+        "translations_ru": [
+          "этаж"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Stock (при числительных)",
+        "definition_de": "Eine Ebene eines Gebäudes über dem Erdgeschoss.",
+        "example": "Wir wohnen im zweiten Stock.",
+        "example_ru": "Мы живём на втором этаже.",
+        "note": "В значении «этаж» мн. число Stock употребляется при числительных: Das Haus hat drei Stock. Можно также сказать drei Stockwerke.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "2ece67227bdd253845d1"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-stock-floor"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stock-floor",
+            "de": "der Stock",
+            "part": "noun",
+            "forms": "die Stöcke (в значении этаж реже; обычно Stockwerke)",
+            "definition_de": "Eine Gebäudeebene oberhalb des Erdgeschosses.",
+            "translations_ru": [
+              "этаж"
+            ],
+            "grammar_hint": "im zweiten Stock (Dativ); Etage, Stockwerk. Erdgeschoss — уровень земли; нумерация отличается от привычной русской.",
+            "example": "Wir wohnen im zweiten Stock.",
+            "example_ru": "Мы живём на третьем этаже (zweiter Stock — второй этаж над уровнем земли)."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stock"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_9c3df34b3cf579d2b7b6",
+      "alias_ids": [
+        "b1-stockwerk-floor"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9c3df34b3cf579d2b7b6",
+        "de": "das Stockwerk",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "этаж"
+        ],
+        "definition_de": "Eine Ebene in einem Gebäude.",
+        "forms": "Plural · die Stockwerke",
+        "example": "Der Kursraum ist im dritten Stockwerk.",
+        "example_ru": "Аудитория находится на третьем этаже.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Stockwerk"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-stockwerk-floor"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stockwerk-floor",
+            "de": "das Stockwerk",
+            "part": "noun",
+            "forms": "die Stockwerke",
+            "definition_de": "Eine der übereinanderliegenden Ebenen eines Gebäudes.",
+            "translations_ru": [
+              "этаж"
+            ],
+            "grammar_hint": "im oberen Stockwerk (Dativ); das Erdgeschoss — наземный этаж.",
+            "example": "Das Wohnhaus hat vier Stockwerke.",
+            "example_ru": "В жилом доме четыре этажа."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stockwerk"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ea91cf95a7af3f6b4e5f",
+      "alias_ids": [
+        "b1-stoeren-interrupt",
+        "b1-stoeren-bother"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ea91cf95a7af3f6b4e5f",
+        "de": "stören",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "мешать",
+          "беспокоить"
+        ],
+        "definition_de": "Jemanden bei etwas unterbrechen oder ihm durch Lärm oder anderes Verhalten Schwierigkeiten machen.",
+        "forms": "stört · störte · hat gestört",
+        "example": "Kannst du die Musik leiser machen? Sie stört mich beim Lernen.",
+        "example_ru": "Можешь сделать музыку потише? Она мешает мне заниматься.",
+        "grammar_hint": "Кому мешает? По-немецки stören требует Akkusativ: stört mich. При каком занятии? bei + Dativ: beim Lernen.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/st%C3%B6ren"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-stoeren-interrupt",
+          "b1-stoeren-bother"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stoeren-interrupt",
+            "de": "stören",
+            "part": "verb",
+            "forms": "stört · störte · hat gestört",
+            "definition_de": "Jemanden bei einer Tätigkeit unterbrechen oder ablenken.",
+            "translations_ru": [
+              "мешать",
+              "беспокоить",
+              "прерывать"
+            ],
+            "grammar_hint": "jemanden (Akk.) stören: dich, nicht dir; bei + Dativ при указании занятия.",
+            "example": "Entschuldigung, störe ich dich gerade?",
+            "example_ru": "Извини, я сейчас тебе мешаю?"
+          },
+          {
+            "id": "b1-stoeren-bother",
+            "de": "stören",
+            "part": "verb",
+            "forms": "stört · störte · hat gestört",
+            "definition_de": "Für eine Person als unangenehm empfunden werden.",
+            "translations_ru": [
+              "мешать",
+              "раздражать"
+            ],
+            "grammar_hint": "Подлежащее — источник помехи; mich (Akk.); CH: Strasse.",
+            "example": "Der Lärm von der Strasse stört mich beim Lesen.",
+            "example_ru": "Шум с улицы мешает мне читать."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/st%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page checked visually. B1 exam vocabulary membership only, earliest CEFR level pending A1/A2 reconciliation. Teaching contexts may share a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/st%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_b1f537ca156ba46290b2",
+      "alias_ids": [
+        "b1-strand-beach"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_b1f537ca156ba46290b2",
+        "de": "der Strand",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "пляж"
+        ],
+        "definition_de": "Ein sandiger oder steiniger Abschnitt am Ufer eines Meeres, Sees oder Flusses.",
+        "forms": "Plural · die Strände",
+        "example": "Die Kinder spielen am Strand.",
+        "example_ru": "Дети играют на пляже.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Strand"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-strand-beach"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-strand-beach",
+            "de": "der Strand",
+            "part": "noun",
+            "forms": "die Strände",
+            "definition_de": "Ein flacher Uferbereich an einem Gewässer.",
+            "translations_ru": [
+              "пляж",
+              "берег (песчаный или галечный)"
+            ],
+            "grammar_hint": "am Strand (Wo? Dativ); an den Strand (Wohin? Akkusativ).",
+            "example": "Wir verbringen den Nachmittag am Strand.",
+            "example_ru": "Мы проводим вторую половину дня на пляже."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Strand"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "city-strasse",
+      "alias_ids": [
+        "b1-strasse-street"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "city-strasse",
+        "de": "die Straße",
+        "lemma": "Straße",
+        "ru": "улица",
+        "uk": "",
+        "translations_ru": [
+          "улица"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "die Straßen",
+        "definition_de": "Ein Weg zwischen Häusern, auf dem man gehen oder fahren kann.",
+        "example": "In dieser Straße gibt es eine Apotheke.",
+        "example_ru": "На этой улице есть аптека.",
+        "note": "В швейцарском стандарте пишут die Strasse.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "d28c0bc33b52b60ae738"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-strasse-street"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-strasse-street",
+            "de": "die Straße",
+            "part": "noun",
+            "forms": "die Straßen; CH: die Strasse · die Strassen",
+            "definition_de": "Ein Verkehrsweg zwischen Orten oder Gebäuden.",
+            "translations_ru": [
+              "улица",
+              "дорога"
+            ],
+            "grammar_hint": "in einer Straße wohnen; auf der Straße gehen; beide mit Dativ bei Ortsangabe.",
+            "example": "In unserer Straße gibt es eine Bäckerei.",
+            "example_ru": "На нашей улице есть пекарня."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stra%C3%9Fe"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-546-1",
+      "alias_ids": [
+        "b1-strassenbahn-tram"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-546-1",
+        "de": "die Straßenbahn",
+        "lemma": "Straßenbahn",
+        "ru": "трамвай",
+        "uk": "",
+        "translations_ru": [
+          "трамвай"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "die Straßenbahnen",
+        "definition_de": "Ein öffentliches Verkehrsmittel, das auf Schienen durch die Stadt fährt.",
+        "example": "Die Straßenbahn hält vor der Post.",
+        "example_ru": "Трамвай останавливается перед почтой.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "0a00ab58b7ab3628fbc8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-strassenbahn-tram"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-strassenbahn-tram",
+            "de": "die Straßenbahn",
+            "part": "noun",
+            "forms": "die Straßenbahnen; CH: die Strassenbahnen",
+            "definition_de": "Ein öffentliches Verkehrsmittel auf Schienen im Stadtverkehr.",
+            "translations_ru": [
+              "трамвай"
+            ],
+            "grammar_hint": "mit + Dativ; CH: das Tram, die Trams.",
+            "example": "Wir fahren mit der Straßenbahn zum Museum.",
+            "example_ru": "Мы едем на трамвае в музей."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stra%C3%9Fenbahn"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_26e36f94c26843d4b2ff",
+      "alias_ids": [
+        "b1-streiten-argue"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_26e36f94c26843d4b2ff",
+        "de": "streiten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "спорить",
+          "ссориться"
+        ],
+        "definition_de": "Sich mit anderen heftig über etwas auseinandersetzen.",
+        "forms": "streitet (sich) · stritt (sich) · hat (sich) gestritten",
+        "example": "Die Nachbarn streiten sich über den Lärm.",
+        "example_ru": "Соседи ссорятся из-за шума.",
+        "grammar_hint": "(sich) mit + Dativ streiten; über/um + Akkusativ streiten. Возвратная форма: sich streiten.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/streiten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-streiten-argue"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-streiten-argue",
+            "de": "(sich) streiten",
+            "part": "verb",
+            "forms": "streitet (sich) · stritt (sich) · hat (sich) gestritten",
+            "definition_de": "Eine heftige Meinungsverschiedenheit austragen.",
+            "translations_ru": [
+              "ссориться",
+              "спорить"
+            ],
+            "grammar_hint": "sich (Akk.) mit + Dativ über + Akk. streiten; um + Akk. при споре за что-либо.",
+            "example": "Ich möchte mich nicht mit dir über Geld streiten.",
+            "example_ru": "Я не хочу ссориться с тобой из-за денег."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/streiten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_40994df4689b8780868b",
+      "alias_ids": [
+        "b1-streng-strict"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_40994df4689b8780868b",
+        "de": "streng",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "строгий",
+          "требовательный"
+        ],
+        "definition_de": "So, dass jemand auf Regeln achtet und ihre Einhaltung verlangt.",
+        "forms": "streng · strenger · am strengsten",
+        "example": "Unser neuer Lehrer ist strenger als der alte.",
+        "example_ru": "Наш новый преподаватель строже прежнего.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/streng"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-streng-strict"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-streng-strict",
+            "de": "streng",
+            "part": "adj",
+            "forms": "streng · strenger · am strengsten",
+            "definition_de": "Auf die Befolgung von Regeln und Anforderungen bedacht.",
+            "translations_ru": [
+              "строгий",
+              "требовательный"
+            ],
+            "grammar_hint": "streng mit jemandem sein (mit + Dativ); strenge Regeln.",
+            "example": "Unser Lehrer ist streng, aber gerecht.",
+            "example_ru": "Наш преподаватель строгий, но справедливый."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/streng"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_5a80f6571c40e6216a1a",
+      "alias_ids": [
+        "b1-stress-pressure"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_5a80f6571c40e6216a1a",
+        "de": "der Stress",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "стресс",
+          "напряжение"
+        ],
+        "definition_de": "Körperliche oder seelische Belastung durch hohe Anforderungen.",
+        "forms": "Обычно без Plural",
+        "example": "Vor der Prüfung habe ich viel Stress.",
+        "example_ru": "Перед экзаменом у меня сильный стресс.",
+        "grammar_hint": "",
+        "usage_note": "Stress haben — испытывать стресс.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Stress"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-stress-pressure"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stress-pressure",
+            "de": "der Stress",
+            "part": "noun",
+            "forms": "обычно Singular; die Stresse (редко)",
+            "definition_de": "Körperliche oder seelische Belastung durch hohe Anforderungen.",
+            "translations_ru": [
+              "стресс",
+              "напряжение"
+            ],
+            "grammar_hint": "Stress haben; unter Stress stehen (Dativ); Stress abbauen.",
+            "example": "Vor der Prüfung habe ich viel Stress.",
+            "example_ru": "Перед экзаменом я испытываю сильный стресс."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stress"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_92f04bb26938b6d3f3b3",
+      "alias_ids": [
+        "b1-stueck-sugar",
+        "b1-stueck-portion"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_92f04bb26938b6d3f3b3",
+        "de": "das Stück",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "кусок",
+          "кусочек"
+        ],
+        "definition_de": "Ein Teil von etwas, den man zum Beispiel abgeschnitten hat.",
+        "forms": "Plural · die Stücke",
+        "example": "Darf ich ein Stück Schokolade haben?",
+        "example_ru": "Можно мне кусочек шоколада?",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/St%C3%BCck"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-stueck-sugar",
+          "b1-stueck-portion"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stueck-sugar",
+            "de": "das Stück",
+            "part": "noun",
+            "forms": "die Stücke; при счёте также Stück",
+            "definition_de": "Eine abgegrenzte Portion eines Materials oder Lebensmittels.",
+            "translations_ru": [
+              "кусочек",
+              "кубик (сахара)"
+            ],
+            "grammar_hint": "zwei Stück Zucker / zwei Stücke Zucker; das Stück как единица количества.",
+            "example": "Sie legt ein Stück Zucker in ihre Tasse.",
+            "example_ru": "Она кладёт кусочек сахара в чашку."
+          },
+          {
+            "id": "b1-stueck-portion",
+            "de": "das Stück",
+            "part": "noun",
+            "forms": "die Stücke; при указании количества также Stück",
+            "definition_de": "Ein abgetrennter Teil eines größeren Ganzen.",
+            "translations_ru": [
+              "кусок",
+              "часть",
+              "порция"
+            ],
+            "grammar_hint": "ein Stück Kuchen; zwei Stücke Kuchen; существительное материала обычно без артикля.",
+            "example": "Zum Kaffee esse ich ein Stück Apfelkuchen.",
+            "example_ru": "К кофе я ем кусок яблочного пирога."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/St%C3%BCck",
+              "https://www.duden.de/rechtschreibung/Stueck"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-547-1",
+      "alias_ids": [
+        "b1-studieren-subject"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-547-1",
+        "de": "studieren",
+        "lemma": "studieren",
+        "ru": "учиться в вузе",
+        "uk": "",
+        "translations_ru": [
+          "учиться в вузе"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "studiert · studierte · hat studiert",
+        "definition_de": "An einer Hochschule lernen.",
+        "example": "Sie studiert in Bern.",
+        "example_ru": "Она учится в вузе в Берне.",
+        "note": "studieren — учиться в вузе, не просто учить слова или учиться в школе (lernen). Ich studiere Medizin.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "59bc1322c6e5cdd2f36e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-studieren-subject"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-studieren-subject",
+            "de": "studieren",
+            "part": "verb",
+            "forms": "studiert · studierte · hat studiert",
+            "definition_de": "Ein Fach im Rahmen einer Hochschulausbildung erlernen.",
+            "translations_ru": [
+              "изучать специальность в вузе"
+            ],
+            "grammar_hint": "Fach (Akk.) studieren; глаголы на -ieren образуют Partizip II без ge-.",
+            "example": "Meine Cousine studiert Architektur.",
+            "example_ru": "Моя двоюродная сестра изучает архитектуру в вузе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/studieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

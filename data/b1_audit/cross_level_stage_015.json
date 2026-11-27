@@ -1,0 +1,3075 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 273–292 using staged definitions, examples and grammar. Conditional proposals only. No independent CEFR verification or changes to original cards, deployed levels or progress.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    273,
+    292
+  ],
+  "reviewed": 20,
+  "merge_count": 15,
+  "merge_target_count": 12,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [
+    {
+      "id": "b1-haben-feeling",
+      "issue": "Stage 011 retained Hunger haben against the possession card. Stage 015 finds a stronger A1 cross-reference under Hunger; assess a phrase link while preserving dedicated practice and the existing ID."
+    },
+    {
+      "id": "a1-313-1",
+      "issue": "Present hearing ability, deliberate listening and sound perception with separately labeled examples and glosses. Keep reported news independent."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 273,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same expectation or wish; keep the dass clause and zu infinitive examples.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 22,
+        "record": {
+          "id": "b1-hoffen-clause",
+          "de": "hoffen",
+          "lemma": "hoffen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "надеяться"
+          ],
+          "definition_de": "Sich wünschen, dass etwas Gutes eintritt.",
+          "example": "Ich hoffe, dass du den Test bestehst.",
+          "example_ru": "Я надеюсь, что ты сдашь тест.",
+          "forms": "hofft · hoffte · hat gehofft",
+          "grammar_hint": "hoffen, dass … — спрягаемый глагол в конце придаточного; hoffen, etwas zu schaffen — инфинитив с zu.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoffen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 457,
+          "record": {
+            "id": "dict_3bec63ac154786a269a9",
+            "de": "hoffen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "надеяться"
+            ],
+            "definition_de": "Wünschen und erwarten, dass etwas Gutes geschieht.",
+            "forms": "hofft · hoffte · hat gehofft",
+            "example": "Ich hoffe, dass wir morgen gutes Wetter haben.",
+            "example_ru": "Я надеюсь, что завтра будет хорошая погода.",
+            "grammar_hint": "auf + Akkusativ hoffen; hoffen, dass … — глагол придаточного в конце.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/hoffen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3bec63ac154786a269a9",
+        "alias_id": "b1-hoffen-clause",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3bec63ac154786a269a9"
+      }
+    },
+    {
+      "candidate_number": 274,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A2 note explicitly teaches hoffen auf + Akkusativ; preserve worauf/darauf and its translations as a usage variant.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 23,
+        "record": {
+          "id": "b1-hoffen-on",
+          "de": "hoffen auf",
+          "lemma": "hoffen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "надеяться на",
+            "рассчитывать на"
+          ],
+          "definition_de": "Den Eintritt eines gewünschten Ergebnisses erwarten.",
+          "example": "Wir hoffen auf eine schnelle Antwort.",
+          "example_ru": "Мы надеемся на быстрый ответ.",
+          "forms": "hofft · hoffte · hat gehofft",
+          "grammar_hint": "auf + Akkusativ: auf eine Antwort hoffen; Worauf hoffst du? Ich hoffe darauf.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoffen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 457,
+          "record": {
+            "id": "dict_3bec63ac154786a269a9",
+            "de": "hoffen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "надеяться"
+            ],
+            "definition_de": "Wünschen und erwarten, dass etwas Gutes geschieht.",
+            "forms": "hofft · hoffte · hat gehofft",
+            "example": "Ich hoffe, dass wir morgen gutes Wetter haben.",
+            "example_ru": "Я надеюсь, что завтра будет хорошая погода.",
+            "grammar_hint": "auf + Akkusativ hoffen; hoffen, dass … — глагол придаточного в конце.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/hoffen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3bec63ac154786a269a9",
+        "alias_id": "b1-hoffen-on",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3bec63ac154786a269a9"
+      }
+    },
+    {
+      "candidate_number": 275,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sentence adverb for a hoped-for outcome. If it starts the main clause, the finite verb takes second position.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 24,
+        "record": {
+          "id": "b1-hoffentlich-hope",
+          "de": "hoffentlich",
+          "lemma": "hoffentlich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "надеюсь",
+            "будем надеяться",
+            "хоть бы"
+          ],
+          "definition_de": "Drückt einen Wunsch nach einem günstigen Ausgang aus.",
+          "example": "Hoffentlich finden wir morgen eine Lösung.",
+          "example_ru": "Надеюсь, завтра мы найдём решение.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Hoffentlich в начале главного предложения: спрягаемый глагол на втором месте. Не требует придаточного.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoffentlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 128,
+          "record": {
+            "id": "dict_90a9e4c35b1eb8be3161",
+            "de": "hoffentlich",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "надеюсь",
+              "будем надеяться"
+            ],
+            "definition_de": "Drückt aus, dass man sich wünscht, dass etwas geschieht oder gut ausgeht.",
+            "forms": "",
+            "example": "Hoffentlich bleibt es am Samstag trocken.",
+            "example_ru": "Надеюсь, в субботу дождя не будет.",
+            "grammar_hint": "В начале главного предложения после hoffentlich сразу ставим спрягаемый глагол: Hoffentlich bleibt es …",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/hoffentlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_90a9e4c35b1eb8be3161",
+        "alias_id": "b1-hoffentlich-hope",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_90a9e4c35b1eb8be3161"
+      }
+    },
+    {
+      "candidate_number": 276,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same fetching sense; preserve the Dativ beneficiary and Akkusativ object.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 27,
+        "record": {
+          "id": "b1-holen-fetch",
+          "de": "holen",
+          "lemma": "holen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "приносить",
+            "сходить за",
+            "забирать"
+          ],
+          "definition_de": "Zu einem Ort gehen und etwas oder jemanden mitbringen.",
+          "example": "Ich hole uns zwei Tassen aus der Küche.",
+          "example_ru": "Я принесу нам две чашки из кухни.",
+          "forms": "holt · holte · hat geholt",
+          "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) holen; holen — сходить и принести, bringen — принести.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/holen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 588,
+          "record": {
+            "id": "a1-312-1",
+            "de": "holen",
+            "lemma": "holen",
+            "ru": "сходить за кем-либо или чем-либо; принести",
+            "uk": "",
+            "translations_ru": [
+              "сходить за кем-либо или чем-либо",
+              "принести"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "holt · holte · hat geholt",
+            "definition_de": "Hingehen und jemanden oder etwas mitbringen.",
+            "example": "Ich hole Wasser aus der Küche.",
+            "example_ru": "Я схожу на кухню за водой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "654ced4f9e54219f9ae1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-312-1",
+        "alias_id": "b1-holen-fetch",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-312-1"
+      }
+    },
+    {
+      "candidate_number": 277,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Preserve calling or fetching a doctor as dedicated phrase practice. A1 gives only a general fetching example.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_037.json",
+        "sha": "430cd6696834f393aa7cc03585c22095f2bdc570",
+        "batch": 37,
+        "row": 28,
+        "record": {
+          "id": "b1-holen-summon",
+          "de": "einen Arzt holen",
+          "lemma": "holen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "позвать врача",
+            "вызвать врача"
+          ],
+          "definition_de": "Dafür sorgen, dass ein Arzt zu einer Person kommt.",
+          "example": "Die Betreuerin holt einen Arzt.",
+          "example_ru": "Сотрудница вызывает врача.",
+          "forms": "holt · holte · hat geholt",
+          "grammar_hint": "einen Arzt (Akkusativ) holen; einen Arzt rufen — позвать врача; anrufen — позвонить.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/holen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 588,
+          "record": {
+            "id": "a1-312-1",
+            "de": "holen",
+            "lemma": "holen",
+            "ru": "сходить за кем-либо или чем-либо; принести",
+            "uk": "",
+            "translations_ru": [
+              "сходить за кем-либо или чем-либо",
+              "принести"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "holt · holte · hat geholt",
+            "definition_de": "Hingehen und jemanden oder etwas mitbringen.",
+            "example": "Ich hole Wasser aus der Küche.",
+            "example_ru": "Я схожу на кухню за водой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "654ced4f9e54219f9ae1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 278,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 covers auditory perception; preserve the objectless hearing-ability pattern separately within the proposal.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 1,
+        "record": {
+          "id": "b1-hoeren-ability",
+          "de": "hören",
+          "lemma": "hören",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "слышать",
+            "обладать слухом"
+          ],
+          "definition_de": "Geräusche mit den Ohren wahrnehmen können.",
+          "example": "Mit dem neuen Hörgerät hört meine Oma wieder besser.",
+          "example_ru": "С новым слуховым аппаратом моя бабушка снова лучше слышит.",
+          "forms": "hört · hörte · hat gehört",
+          "grammar_hint": "gut / schlecht hören; besser — сравнительная степень gut.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 589,
+          "record": {
+            "id": "a1-313-1",
+            "de": "hören",
+            "lemma": "hören",
+            "ru": "слышать; услышать; слушать",
+            "uk": "",
+            "translations_ru": [
+              "слышать",
+              "услышать",
+              "слушать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Geräusche oder Töne mit den Ohren wahrnehmen.",
+            "example": "Hörst du die Musik?",
+            "example_ru": "Ты слышишь музыку?",
+            "note": "etwas hören + Akkusativ: Musik hören — слушать музыку; das Hören — субстантивация (аудирование в экзамене), не отдельный глагол. Auf jemanden hören — слушаться (дополнительное значение здесь не маркируется).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "29d06be17cccd994ce0f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-313-1",
+        "alias_id": "b1-hoeren-ability",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-313-1"
+      }
+    },
+    {
+      "candidate_number": 279,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 note explicitly teaches deliberate listening with Musik hören; preserve the podcast context and zuhören contrast.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 2,
+        "record": {
+          "id": "b1-hoeren-listen",
+          "de": "hören",
+          "lemma": "hören",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "слушать"
+          ],
+          "definition_de": "Sich akustisch mit Musik, einer Sendung oder anderen Inhalten beschäftigen.",
+          "example": "Auf dem Weg zur Arbeit höre ich einen Podcast.",
+          "example_ru": "По дороге на работу я слушаю подкаст.",
+          "forms": "hört · hörte · hat gehört",
+          "grammar_hint": "etwas (Akkusativ) hören; jemandem (Dativ) zuhören — внимательно слушать кого-либо.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 589,
+          "record": {
+            "id": "a1-313-1",
+            "de": "hören",
+            "lemma": "hören",
+            "ru": "слышать; услышать; слушать",
+            "uk": "",
+            "translations_ru": [
+              "слышать",
+              "услышать",
+              "слушать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Geräusche oder Töne mit den Ohren wahrnehmen.",
+            "example": "Hörst du die Musik?",
+            "example_ru": "Ты слышишь музыку?",
+            "note": "etwas hören + Akkusativ: Musik hören — слушать музыку; das Hören — субстантивация (аудирование в экзамене), не отдельный глагол. Auf jemanden hören — слушаться (дополнительное значение здесь не маркируется).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "29d06be17cccd994ce0f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-313-1",
+        "alias_id": "b1-hoeren-listen",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-313-1"
+      }
+    },
+    {
+      "candidate_number": 280,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same perception of a sound; preserve the Akkusativ object and Ersatzinfinitiv note.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 3,
+        "record": {
+          "id": "b1-hoeren-perceive",
+          "de": "hören",
+          "lemma": "hören",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "слышать",
+            "услышать"
+          ],
+          "definition_de": "Einen bestimmten Laut oder sprachlichen Ausdruck akustisch wahrnehmen.",
+          "example": "Hast du dieses Geräusch auch gehört?",
+          "example_ru": "Ты тоже слышала этот звук?",
+          "forms": "hört · hörte · hat gehört",
+          "grammar_hint": "etwas / jemanden (Akkusativ) hören; Ich habe ihn kommen hören — Perfekt с Ersatzinfinitiv при втором инфинитиве.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 589,
+          "record": {
+            "id": "a1-313-1",
+            "de": "hören",
+            "lemma": "hören",
+            "ru": "слышать; услышать; слушать",
+            "uk": "",
+            "translations_ru": [
+              "слышать",
+              "услышать",
+              "слушать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Geräusche oder Töne mit den Ohren wahrnehmen.",
+            "example": "Hörst du die Musik?",
+            "example_ru": "Ты слышишь музыку?",
+            "note": "etwas hören + Akkusativ: Musik hören — слушать музыку; das Hören — субстантивация (аудирование в экзамене), не отдельный глагол. Auf jemanden hören — слушаться (дополнительное значение здесь не маркируется).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "29d06be17cccd994ce0f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-313-1",
+        "alias_id": "b1-hoeren-perceive",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-313-1"
+      }
+    },
+    {
+      "candidate_number": 281,
+      "decision": "retain_distinct_sense",
+      "reason": "Learning news by report differs from perceiving a sound or deliberately listening.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 4,
+        "record": {
+          "id": "b1-hoeren-learn-news",
+          "de": "hören",
+          "lemma": "hören",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "узнавать",
+            "слышать (новость)"
+          ],
+          "definition_de": "Durch eine Mitteilung von einem Sachverhalt erfahren.",
+          "example": "Ich habe gehört, dass der Kurs nächste Woche ausfällt.",
+          "example_ru": "Я слышала, что на следующей неделе курс отменяется.",
+          "forms": "hört · hörte · hat gehört",
+          "grammar_hint": "von etwas (Dativ) hören; hören, dass … — спрягаемый глагол в конце придаточного.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 589,
+          "record": {
+            "id": "a1-313-1",
+            "de": "hören",
+            "lemma": "hören",
+            "ru": "слышать; услышать; слушать",
+            "uk": "",
+            "translations_ru": [
+              "слышать",
+              "услышать",
+              "слушать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Geräusche oder Töne mit den Ohren wahrnehmen.",
+            "example": "Hörst du die Musik?",
+            "example_ru": "Ты слышишь музыку?",
+            "note": "etwas hören + Akkusativ: Musik hören — слушать музыку; das Hören — субстантивация (аудирование в экзамене), не отдельный глагол. Auf jemanden hören — слушаться (дополнительное значение здесь не маркируется).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "29d06be17cccd994ce0f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 282,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same garment; retain the singular eine Hose and plural die Hosen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 7,
+        "record": {
+          "id": "b1-hose-trousers",
+          "de": "die Hose",
+          "lemma": "Hose",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "брюки",
+            "штаны"
+          ],
+          "definition_de": "Ein Kleidungsstück, das den Unterkörper und meist beide Beine bedeckt.",
+          "example": "Diese Hose passt mir sehr gut.",
+          "example_ru": "Эти брюки мне очень хорошо подходят.",
+          "forms": "die Hosen",
+          "grammar_hint": "В немецком одна пара брюк — eine Hose (Singular): Die Hose ist neu. jemandem (Dativ) passen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hose"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 187,
+          "record": {
+            "id": "dict_68023d02f597866a1069",
+            "de": "die Hose",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "брюки",
+              "штаны"
+            ],
+            "definition_de": "Ein Kleidungsstück, das beide Beine einzeln bedeckt.",
+            "forms": "Plural · die Hosen",
+            "example": "Für die Wanderung brauche ich eine bequeme Hose.",
+            "example_ru": "Для похода мне нужны удобные брюки.",
+            "grammar_hint": "",
+            "usage_note": "Русское «брюки» во множественном числе. По-немецки об одной паре можно сказать eine Hose.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Hose"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_68023d02f597866a1069",
+        "alias_id": "b1-hose-trousers",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_68023d02f597866a1069"
+      }
+    },
+    {
+      "candidate_number": 283,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lodging establishment; preserve examples of location and destination.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 8,
+        "record": {
+          "id": "b1-hotel-accommodation",
+          "de": "das Hotel",
+          "lemma": "Hotel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "отель",
+            "гостиница"
+          ],
+          "definition_de": "Ein Betrieb, in dem Gäste gegen Bezahlung übernachten können.",
+          "example": "Wir haben zwei Nächte in einem kleinen Hotel gebucht.",
+          "example_ru": "Мы забронировали две ночи в небольшом отеле.",
+          "forms": "die Hotels",
+          "grammar_hint": "im Hotel übernachten (Dativ); ins Hotel gehen (Akkusativ); ein Hotelzimmer buchen.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hotel"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 29,
+          "record": {
+            "id": "travel-hotel",
+            "de": "das Hotel",
+            "lemma": "Hotel",
+            "ru": "гостиница; отель",
+            "uk": "",
+            "translations_ru": [
+              "гостиница",
+              "отель"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "die Hotels",
+            "definition_de": "Ein Haus, in dem Gäste für Geld übernachten können.",
+            "example": "Unser Hotel liegt am See.",
+            "example_ru": "Наш отель находится у озера.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "1420565741bf5d017fbd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "travel-hotel",
+        "alias_id": "b1-hotel-accommodation",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "travel-hotel"
+      }
+    },
+    {
+      "candidate_number": 284,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same bodily hunger; preserve Hunger haben and the comparison with hungrig sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 14,
+        "record": {
+          "id": "b1-hunger-appetite",
+          "de": "der Hunger",
+          "lemma": "Hunger",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "голод"
+          ],
+          "definition_de": "Das körperliche Bedürfnis nach Nahrung.",
+          "example": "Nach der langen Wanderung haben wir großen Hunger.",
+          "example_ru": "После долгого похода мы очень голодны.",
+          "forms": "без множественного числа",
+          "grammar_hint": "Hunger haben; keinen Hunger haben. С прилагательным: hungrig sein.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hunger"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 456,
+          "record": {
+            "id": "a1-316-1",
+            "de": "der Hunger",
+            "lemma": "Hunger",
+            "ru": "голод",
+            "uk": "",
+            "translations_ru": [
+              "голод"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Das Gefühl, dass man etwas essen möchte.",
+            "example": "Ich habe nach dem Sport Hunger.",
+            "example_ru": "После тренировки я голодна.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "9655f2a0bc48cdd6c7e4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-316-1",
+        "alias_id": "b1-hunger-appetite",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-316-1"
+      }
+    },
+    {
+      "candidate_number": 285,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same adjective for being hungry; retain hungrig sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 15,
+        "record": {
+          "id": "b1-hungrig-hungry",
+          "de": "hungrig",
+          "lemma": "hungrig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "голодный",
+            "голоден"
+          ],
+          "definition_de": "Das Bedürfnis verspüren, etwas zu essen.",
+          "example": "Die Kinder sind nach dem Schwimmen hungrig.",
+          "example_ru": "После плавания дети голодны.",
+          "forms": "hungrig · hungriger · am hungrigsten",
+          "grammar_hint": "Ich bin hungrig = Ich habe Hunger. Не Ich habe hungrig.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hungrig"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 622,
+          "record": {
+            "id": "dict_7c741fd4fd77913ffe90",
+            "de": "hungrig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "голодный"
+            ],
+            "forms": "hungrig · hungriger · am hungrigsten",
+            "definition_de": "Hunger haben und etwas essen wollen.",
+            "example": "Nach dem Sport bin ich sehr hungrig.",
+            "example_ru": "После спорта я очень голодна.",
+            "grammar_hint": "hungrig sein; Hunger haben — хотеть есть.",
+            "usage_note": "Goethe A2 подтверждает употребление в примере, не отдельным заголовком. Переносное значение не размечено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "scope": "sense_in_example"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/hungrig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7c741fd4fd77913ffe90",
+        "alias_id": "b1-hungrig-hungry",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7c741fd4fd77913ffe90"
+      }
+    },
+    {
+      "candidate_number": 286,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same intransitive verb for coughing; preserve the noun as a cross-reference.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 17,
+        "record": {
+          "id": "b1-husten-cough",
+          "de": "husten",
+          "lemma": "husten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "кашлять"
+          ],
+          "definition_de": "Luft ruckartig und hörbar aus den Atemwegen ausstoßen.",
+          "example": "Seit gestern hustet mein Sohn häufig.",
+          "example_ru": "Со вчерашнего дня мой сын часто кашляет.",
+          "forms": "hustet · hustete · hat gehustet",
+          "grammar_hint": "stark / trocken husten; существительное der Husten, без артикля в Husten haben.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/husten"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 479,
+          "record": {
+            "id": "dict_3e324c2ee5db37dd8813",
+            "de": "husten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "кашлять"
+            ],
+            "definition_de": "Luft plötzlich und hörbar aus dem Hals ausstoßen.",
+            "forms": "hustet · hustete · hat gehustet",
+            "example": "Das Kind hustet schon seit drei Tagen.",
+            "example_ru": "Ребёнок кашляет уже три дня.",
+            "grammar_hint": "Обычно без прямого дополнения: Ich huste.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/husten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3e324c2ee5db37dd8813",
+        "alias_id": "b1-husten-cough",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3e324c2ee5db37dd8813"
+      }
+    },
+    {
+      "candidate_number": 287,
+      "decision": "retain_distinct_sense",
+      "reason": "The noun for a symptom differs from the verb husten in part of speech, morphology and usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 18,
+        "record": {
+          "id": "b1-husten-symptom",
+          "de": "der Husten",
+          "lemma": "Husten",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кашель"
+          ],
+          "definition_de": "Das wiederholte Husten als körperliches Symptom.",
+          "example": "Der Husten hat sich über Nacht verstärkt.",
+          "example_ru": "За ночь кашель усилился.",
+          "forms": "обычно без множественного числа",
+          "grammar_hint": "Husten haben; Mittel gegen Husten (gegen + Akkusativ).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Husten"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 479,
+          "record": {
+            "id": "dict_3e324c2ee5db37dd8813",
+            "de": "husten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "кашлять"
+            ],
+            "definition_de": "Luft plötzlich und hörbar aus dem Hals ausstoßen.",
+            "forms": "hustet · hustete · hat gehustet",
+            "example": "Das Kind hustet schon seit drei Tagen.",
+            "example_ru": "Ребёнок кашляет уже три дня.",
+            "grammar_hint": "Обычно без прямого дополнения: Ich huste.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 17,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/husten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 288,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same idea or proposal sense; preserve auf eine Idee kommen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 22,
+        "record": {
+          "id": "b1-idee-idea",
+          "de": "die Idee",
+          "lemma": "Idee",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "идея",
+            "замысел",
+            "мысль"
+          ],
+          "definition_de": "Ein Einfall oder Vorschlag für eine mögliche Handlung.",
+          "example": "Ich habe eine Idee für die nächste Unterrichtsstunde.",
+          "example_ru": "У меня есть идея для следующего урока.",
+          "forms": "die Ideen",
+          "grammar_hint": "eine Idee haben; auf eine Idee kommen (auf + Akkusativ); eine gute Idee.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Idee"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 160,
+          "record": {
+            "id": "dict_69956774fa80b1e39b0b",
+            "de": "die Idee",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "идея",
+              "мысль"
+            ],
+            "definition_de": "Ein Einfall, wie man etwas machen oder lösen könnte.",
+            "forms": "Plural · die Ideen",
+            "example": "Wer hat eine Idee für unseren Ausflug?",
+            "example_ru": "У кого есть идея для нашей поездки?",
+            "grammar_hint": "",
+            "usage_note": "eine Idee haben — иметь идею; eine Idee für + Akkusativ — идея для чего-то.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 18,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Idee"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_69956774fa80b1e39b0b",
+        "alias_id": "b1-idee-idea",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_69956774fa80b1e39b0b"
+      }
+    },
+    {
+      "candidate_number": 289,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same recurring or continual meaning of immer; preserve the scope and frequency contrasts.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 28,
+        "record": {
+          "id": "b1-immer-always",
+          "de": "immer",
+          "lemma": "immer",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "всегда",
+            "постоянно"
+          ],
+          "definition_de": "Bei jeder Gelegenheit oder ohne zeitliche Unterbrechung.",
+          "example": "Er kommt immer pünktlich zum Unterricht.",
+          "example_ru": "Он всегда приходит на урок вовремя.",
+          "forms": "неизменяемое",
+          "grammar_hint": "immer — всегда; oft — часто; nie — никогда. При начальной позиции: Immer kommt er … (эмфатически), обычно Er kommt immer …",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/immer"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 591,
+          "record": {
+            "id": "a1-319-1",
+            "de": "immer",
+            "lemma": "immer",
+            "ru": "всегда",
+            "uk": "",
+            "translations_ru": [
+              "всегда"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Jedes Mal oder zu jeder Zeit.",
+            "example": "Er kommt immer mit dem Bus.",
+            "example_ru": "Он всегда приезжает на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f3de21ac477ca26e13d8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-319-1",
+        "alias_id": "b1-immer-always",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-319-1"
+      }
+    },
+    {
+      "candidate_number": 290,
+      "decision": "retain_distinct_sense",
+      "reason": "Fixed expression of continuation, meaning still, rather than habitual always.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 29,
+        "record": {
+          "id": "b1-immer-noch-still",
+          "de": "immer noch",
+          "lemma": "immer",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "всё ещё",
+            "до сих пор"
+          ],
+          "definition_de": "Drückt aus, dass ein Zustand weiterhin besteht.",
+          "example": "Die Bibliothek ist immer noch geschlossen.",
+          "example_ru": "Библиотека всё ещё закрыта.",
+          "forms": "неизменяемое",
+          "grammar_hint": "immer noch — всё ещё; nicht mehr — больше не; schon — уже. Не означает всегда в этой конструкции.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/immer_noch"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 591,
+          "record": {
+            "id": "a1-319-1",
+            "de": "immer",
+            "lemma": "immer",
+            "ru": "всегда",
+            "uk": "",
+            "translations_ru": [
+              "всегда"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Jedes Mal oder zu jeder Zeit.",
+            "example": "Er kommt immer mit dem Bus.",
+            "example_ru": "Он всегда приезжает на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f3de21ac477ca26e13d8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 291,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Comparative construction expresses progressive change; keep dedicated grammar practice.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_038.json",
+        "sha": "d3a4b492fa564e679d21e8056dc9df40b0d5251b",
+        "batch": 38,
+        "row": 30,
+        "record": {
+          "id": "b1-immer-comparative",
+          "de": "immer + Komparativ",
+          "lemma": "immer",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "всё (больше, лучше, хуже)",
+            "всё более"
+          ],
+          "definition_de": "Drückt eine fortlaufende Veränderung in eine bestimmte Richtung aus.",
+          "example": "Die Aufgaben werden immer schwieriger.",
+          "example_ru": "Задания становятся всё сложнее.",
+          "forms": "immer + Komparativ",
+          "grammar_hint": "immer + сравнительная степень: immer besser, immer schneller, immer teurer. Не immer + Superlativ для выражения постепенного изменения.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/immer"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 591,
+          "record": {
+            "id": "a1-319-1",
+            "de": "immer",
+            "lemma": "immer",
+            "ru": "всегда",
+            "uk": "",
+            "translations_ru": [
+              "всегда"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Jedes Mal oder zu jeder Zeit.",
+            "example": "Er kommt immer mit dem Bus.",
+            "example_ru": "Он всегда приезжает на автобусе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "f3de21ac477ca26e13d8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 292,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "The A1 location note already includes in Zürich. Preserve the city/country and destination contrasts as contextual usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_039.json",
+        "sha": "09549ae5dfb5605a270367c9c7ac0bcdd13c23e5",
+        "batch": 39,
+        "row": 3,
+        "record": {
+          "id": "b1-in-city",
+          "de": "in",
+          "lemma": "in",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "в (городе, стране)"
+          ],
+          "definition_de": "Gibt einen geografischen Aufenthaltsort an.",
+          "example": "Meine Schwester wohnt in Basel.",
+          "example_ru": "Моя сестра живёт в Базеле.",
+          "forms": "in + Dativ; häufig ohne Artikel",
+          "grammar_hint": "Wo? in Zürich, in der Schweiz. Wohin? nach Zürich, in die Schweiz. Падеж зависит от предлога и конструкции.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 431,
+          "record": {
+            "id": "a1-320-1",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (местонахождение)",
+            "uk": "",
+            "translations_ru": [
+              "в (местонахождение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+            "example": "Ich arbeite in einem Geschäft.",
+            "example_ru": "Я работаю в магазине.",
+            "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 432,
+          "record": {
+            "id": "a1-320-2",
+            "de": "in",
+            "lemma": "in",
+            "ru": "в (направление внутрь)",
+            "uk": "",
+            "translations_ru": [
+              "в (направление внутрь)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Ort, in den man sich bewegt.",
+            "example": "Wir gehen ins Kino.",
+            "example_ru": "Мы идём в кино.",
+            "note": "Пространственное Wohin? → in + Akkusativ при переходе внутрь: ins Zimmer (ins = in das). Не любое движение требует Akkusativ; см. карточку Wo?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 433,
+          "record": {
+            "id": "a1-320-3",
+            "de": "in",
+            "lemma": "in",
+            "ru": "через (время)",
+            "uk": "",
+            "translations_ru": [
+              "через (время)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Gibt an, nach welchem Zeitraum etwas passiert.",
+            "example": "Der Bus kommt in zehn Minuten.",
+            "example_ru": "Автобус придёт через десять минут.",
+            "note": "Через какой промежуток времени? in + Dativ: in einer Stunde. Это временное употребление, не правило Wo?/Wohin?.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 17,
+                "row_id": "508647b59867d1d31870"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/in",
+                "scope": "meaning_and_case"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-320-1",
+        "alias_id": "b1-in-city",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-320-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_3bec63ac154786a269a9",
+      "alias_ids": [
+        "b1-hoffen-clause",
+        "b1-hoffen-on"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3bec63ac154786a269a9",
+        "de": "hoffen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "надеяться"
+        ],
+        "definition_de": "Wünschen und erwarten, dass etwas Gutes geschieht.",
+        "forms": "hofft · hoffte · hat gehofft",
+        "example": "Ich hoffe, dass wir morgen gutes Wetter haben.",
+        "example_ru": "Я надеюсь, что завтра будет хорошая погода.",
+        "grammar_hint": "auf + Akkusativ hoffen; hoffen, dass … — глагол придаточного в конце.\nhoffen, dass … — спрягаемый глагол в конце придаточного; hoffen, etwas zu schaffen — инфинитив с zu.\nauf + Akkusativ: auf eine Antwort hoffen; Worauf hoffst du? Ich hoffe darauf.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/hoffen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения",
+          "Грамматика и связь предложений",
+          "Общение"
+        ],
+        "ru": "надеяться",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Sich wünschen, dass etwas Gutes eintritt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich hoffe, dass du den Test bestehst.",
+            "ru": "Я надеюсь, что ты сдашь тест."
+          },
+          {
+            "de": "Wir hoffen auf eine schnelle Antwort.",
+            "ru": "Мы надеемся на быстрый ответ."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hoffen-clause",
+            "de": "hoffen",
+            "part": "verb",
+            "forms": "hofft · hoffte · hat gehofft",
+            "definition_de": "Sich wünschen, dass etwas Gutes eintritt.",
+            "translations_ru": [
+              "надеяться"
+            ],
+            "grammar_hint": "hoffen, dass … — спрягаемый глагол в конце придаточного; hoffen, etwas zu schaffen — инфинитив с zu.",
+            "example": "Ich hoffe, dass du den Test bestehst.",
+            "example_ru": "Я надеюсь, что ты сдашь тест."
+          },
+          {
+            "id": "b1-hoffen-on",
+            "de": "hoffen auf",
+            "part": "verb",
+            "forms": "hofft · hoffte · hat gehofft",
+            "definition_de": "Den Eintritt eines gewünschten Ergebnisses erwarten.",
+            "translations_ru": [
+              "надеяться на",
+              "рассчитывать на"
+            ],
+            "grammar_hint": "auf + Akkusativ: auf eine Antwort hoffen; Worauf hoffst du? Ich hoffe darauf.",
+            "example": "Wir hoffen auf eine schnelle Antwort.",
+            "example_ru": "Мы надеемся на быстрый ответ."
+          }
+        ],
+        "alias_ids": [
+          "b1-hoffen-clause",
+          "b1-hoffen-on"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoffen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoffen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_90a9e4c35b1eb8be3161",
+      "alias_ids": [
+        "b1-hoffentlich-hope"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_90a9e4c35b1eb8be3161",
+        "de": "hoffentlich",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "надеюсь",
+          "будем надеяться",
+          "хоть бы"
+        ],
+        "definition_de": "Drückt aus, dass man sich wünscht, dass etwas geschieht oder gut ausgeht.",
+        "forms": "",
+        "example": "Hoffentlich bleibt es am Samstag trocken.",
+        "example_ru": "Надеюсь, в субботу дождя не будет.",
+        "grammar_hint": "В начале главного предложения после hoffentlich сразу ставим спрягаемый глагол: Hoffentlich bleibt es …\nHoffentlich в начале главного предложения: спрягаемый глагол на втором месте. Не требует придаточного.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/hoffentlich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "ru": "надеюсь; будем надеяться; хоть бы",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Drückt einen Wunsch nach einem günstigen Ausgang aus."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Hoffentlich finden wir morgen eine Lösung.",
+            "ru": "Надеюсь, завтра мы найдём решение."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hoffentlich-hope",
+            "de": "hoffentlich",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Drückt einen Wunsch nach einem günstigen Ausgang aus.",
+            "translations_ru": [
+              "надеюсь",
+              "будем надеяться",
+              "хоть бы"
+            ],
+            "grammar_hint": "Hoffentlich в начале главного предложения: спрягаемый глагол на втором месте. Не требует придаточного.",
+            "example": "Hoffentlich finden wir morgen eine Lösung.",
+            "example_ru": "Надеюсь, завтра мы найдём решение."
+          }
+        ],
+        "alias_ids": [
+          "b1-hoffentlich-hope"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hoffentlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-312-1",
+      "alias_ids": [
+        "b1-holen-fetch"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-312-1",
+        "de": "holen",
+        "lemma": "holen",
+        "ru": "сходить за кем-либо или чем-либо; принести; приносить; сходить за; забирать",
+        "uk": "",
+        "translations_ru": [
+          "сходить за кем-либо или чем-либо",
+          "принести",
+          "приносить",
+          "сходить за",
+          "забирать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Дом и быт"
+        ],
+        "forms": "holt · holte · hat geholt",
+        "definition_de": "Hingehen und jemanden oder etwas mitbringen.",
+        "example": "Ich hole Wasser aus der Küche.",
+        "example_ru": "Я схожу на кухню за водой.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "654ced4f9e54219f9ae1"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) holen; holen — сходить и принести, bringen — принести.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Zu einem Ort gehen und etwas oder jemanden mitbringen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich hole uns zwei Tassen aus der Küche.",
+            "ru": "Я принесу нам две чашки из кухни."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-holen-fetch",
+            "de": "holen",
+            "part": "verb",
+            "forms": "holt · holte · hat geholt",
+            "definition_de": "Zu einem Ort gehen und etwas oder jemanden mitbringen.",
+            "translations_ru": [
+              "приносить",
+              "сходить за",
+              "забирать"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) holen; holen — сходить и принести, bringen — принести.",
+            "example": "Ich hole uns zwei Tassen aus der Küche.",
+            "example_ru": "Я принесу нам две чашки из кухни."
+          }
+        ],
+        "alias_ids": [
+          "b1-holen-fetch"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/holen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-313-1",
+      "alias_ids": [
+        "b1-hoeren-ability",
+        "b1-hoeren-listen",
+        "b1-hoeren-perceive"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-313-1",
+        "de": "hören",
+        "lemma": "hören",
+        "ru": "слышать; услышать; слушать",
+        "uk": "",
+        "translations_ru": [
+          "слышать",
+          "услышать",
+          "слушать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Здоровье",
+          "Техника и медиа",
+          "Общение"
+        ],
+        "forms": "hört · hörte · hat gehört",
+        "definition_de": "Geräusche oder Töne mit den Ohren wahrnehmen.",
+        "example": "Hörst du die Musik?",
+        "example_ru": "Ты слышишь музыку?",
+        "note": "etwas hören + Akkusativ: Musik hören — слушать музыку; das Hören — субстантивация (аудирование в экзамене), не отдельный глагол. Auf jemanden hören — слушаться (дополнительное значение здесь не маркируется).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "29d06be17cccd994ce0f"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "gut / schlecht hören; besser — сравнительная степень gut.\netwas (Akkusativ) hören; jemandem (Dativ) zuhören — внимательно слушать кого-либо.\netwas / jemanden (Akkusativ) hören; Ich habe ihn kommen hören — Perfekt с Ersatzinfinitiv при втором инфинитиве.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Einen bestimmten Laut oder sprachlichen Ausdruck akustisch wahrnehmen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Mit dem neuen Hörgerät hört meine Oma wieder besser.",
+            "ru": "С новым слуховым аппаратом моя бабушка снова лучше слышит."
+          },
+          {
+            "de": "Auf dem Weg zur Arbeit höre ich einen Podcast.",
+            "ru": "По дороге на работу я слушаю подкаст."
+          },
+          {
+            "de": "Hast du dieses Geräusch auch gehört?",
+            "ru": "Ты тоже слышала этот звук?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hoeren-ability",
+            "de": "hören",
+            "part": "verb",
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Geräusche mit den Ohren wahrnehmen können.",
+            "translations_ru": [
+              "слышать",
+              "обладать слухом"
+            ],
+            "grammar_hint": "gut / schlecht hören; besser — сравнительная степень gut.",
+            "example": "Mit dem neuen Hörgerät hört meine Oma wieder besser.",
+            "example_ru": "С новым слуховым аппаратом моя бабушка снова лучше слышит."
+          },
+          {
+            "id": "b1-hoeren-listen",
+            "de": "hören",
+            "part": "verb",
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Sich akustisch mit Musik, einer Sendung oder anderen Inhalten beschäftigen.",
+            "translations_ru": [
+              "слушать"
+            ],
+            "grammar_hint": "etwas (Akkusativ) hören; jemandem (Dativ) zuhören — внимательно слушать кого-либо.",
+            "example": "Auf dem Weg zur Arbeit höre ich einen Podcast.",
+            "example_ru": "По дороге на работу я слушаю подкаст."
+          },
+          {
+            "id": "b1-hoeren-perceive",
+            "de": "hören",
+            "part": "verb",
+            "forms": "hört · hörte · hat gehört",
+            "definition_de": "Einen bestimmten Laut oder sprachlichen Ausdruck akustisch wahrnehmen.",
+            "translations_ru": [
+              "слышать",
+              "услышать"
+            ],
+            "grammar_hint": "etwas / jemanden (Akkusativ) hören; Ich habe ihn kommen hören — Perfekt с Ersatzinfinitiv при втором инфинитиве.",
+            "example": "Hast du dieses Geräusch auch gehört?",
+            "example_ru": "Ты тоже слышала этот звук?"
+          }
+        ],
+        "alias_ids": [
+          "b1-hoeren-ability",
+          "b1-hoeren-listen",
+          "b1-hoeren-perceive"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 50,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/h%C3%B6ren"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_68023d02f597866a1069",
+      "alias_ids": [
+        "b1-hose-trousers"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_68023d02f597866a1069",
+        "de": "die Hose",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "брюки",
+          "штаны"
+        ],
+        "definition_de": "Ein Kleidungsstück, das beide Beine einzeln bedeckt.",
+        "forms": "Plural · die Hosen",
+        "example": "Für die Wanderung brauche ich eine bequeme Hose.",
+        "example_ru": "Для похода мне нужны удобные брюки.",
+        "grammar_hint": "В немецком одна пара брюк — eine Hose (Singular): Die Hose ist neu. jemandem (Dativ) passen.",
+        "usage_note": "Русское «брюки» во множественном числе. По-немецки об одной паре можно сказать eine Hose.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Hose"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность",
+          "Покупки и услуги"
+        ],
+        "ru": "брюки; штаны",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Hosen"
+        ],
+        "alternative_definitions_de": [
+          "Ein Kleidungsstück, das den Unterkörper und meist beide Beine bedeckt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Diese Hose passt mir sehr gut.",
+            "ru": "Эти брюки мне очень хорошо подходят."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hose-trousers",
+            "de": "die Hose",
+            "part": "noun",
+            "forms": "die Hosen",
+            "definition_de": "Ein Kleidungsstück, das den Unterkörper und meist beide Beine bedeckt.",
+            "translations_ru": [
+              "брюки",
+              "штаны"
+            ],
+            "grammar_hint": "В немецком одна пара брюк — eine Hose (Singular): Die Hose ist neu. jemandem (Dativ) passen.",
+            "example": "Diese Hose passt mir sehr gut.",
+            "example_ru": "Эти брюки мне очень хорошо подходят."
+          }
+        ],
+        "alias_ids": [
+          "b1-hose-trousers"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hose"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "travel-hotel",
+      "alias_ids": [
+        "b1-hotel-accommodation"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "travel-hotel",
+        "de": "das Hotel",
+        "lemma": "Hotel",
+        "ru": "гостиница; отель",
+        "uk": "",
+        "translations_ru": [
+          "гостиница",
+          "отель"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Путешествия",
+        "topics": [
+          "Путешествия",
+          "Транспорт и путешествия"
+        ],
+        "forms": "die Hotels",
+        "definition_de": "Ein Haus, in dem Gäste für Geld übernachten können.",
+        "example": "Unser Hotel liegt am See.",
+        "example_ru": "Наш отель находится у озера.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "1420565741bf5d017fbd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "im Hotel übernachten (Dativ); ins Hotel gehen (Akkusativ); ein Hotelzimmer buchen.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein Betrieb, in dem Gäste gegen Bezahlung übernachten können."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir haben zwei Nächte in einem kleinen Hotel gebucht.",
+            "ru": "Мы забронировали две ночи в небольшом отеле."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hotel-accommodation",
+            "de": "das Hotel",
+            "part": "noun",
+            "forms": "die Hotels",
+            "definition_de": "Ein Betrieb, in dem Gäste gegen Bezahlung übernachten können.",
+            "translations_ru": [
+              "отель",
+              "гостиница"
+            ],
+            "grammar_hint": "im Hotel übernachten (Dativ); ins Hotel gehen (Akkusativ); ein Hotelzimmer buchen.",
+            "example": "Wir haben zwei Nächte in einem kleinen Hotel gebucht.",
+            "example_ru": "Мы забронировали две ночи в небольшом отеле."
+          }
+        ],
+        "alias_ids": [
+          "b1-hotel-accommodation"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hotel"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-316-1",
+      "alias_ids": [
+        "b1-hunger-appetite"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-316-1",
+        "de": "der Hunger",
+        "lemma": "Hunger",
+        "ru": "голод",
+        "uk": "",
+        "translations_ru": [
+          "голод"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Еда и напитки"
+        ],
+        "forms": "обычно только Singular в этом употреблении",
+        "definition_de": "Das Gefühl, dass man etwas essen möchte.",
+        "example": "Ich habe nach dem Sport Hunger.",
+        "example_ru": "После тренировки я голодна.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "9655f2a0bc48cdd6c7e4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Hunger haben; keinen Hunger haben. С прилагательным: hungrig sein.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "без множественного числа"
+        ],
+        "alternative_definitions_de": [
+          "Das körperliche Bedürfnis nach Nahrung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Nach der langen Wanderung haben wir großen Hunger.",
+            "ru": "После долгого похода мы очень голодны."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hunger-appetite",
+            "de": "der Hunger",
+            "part": "noun",
+            "forms": "без множественного числа",
+            "definition_de": "Das körperliche Bedürfnis nach Nahrung.",
+            "translations_ru": [
+              "голод"
+            ],
+            "grammar_hint": "Hunger haben; keinen Hunger haben. С прилагательным: hungrig sein.",
+            "example": "Nach der langen Wanderung haben wir großen Hunger.",
+            "example_ru": "После долгого похода мы очень голодны."
+          }
+        ],
+        "alias_ids": [
+          "b1-hunger-appetite"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Hunger"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_7c741fd4fd77913ffe90",
+      "alias_ids": [
+        "b1-hungrig-hungry"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_7c741fd4fd77913ffe90",
+        "de": "hungrig",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "голодный",
+          "голоден"
+        ],
+        "forms": "hungrig · hungriger · am hungrigsten",
+        "definition_de": "Hunger haben und etwas essen wollen.",
+        "example": "Nach dem Sport bin ich sehr hungrig.",
+        "example_ru": "После спорта я очень голодна.",
+        "grammar_hint": "hungrig sein; Hunger haben — хотеть есть.\nIch bin hungrig = Ich habe Hunger. Не Ich habe hungrig.",
+        "usage_note": "Goethe A2 подтверждает употребление в примере, не отдельным заголовком. Переносное значение не размечено.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 12,
+            "scope": "sense_in_example"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/hungrig"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "ru": "голодный; голоден",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Das Bedürfnis verspüren, etwas zu essen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die Kinder sind nach dem Schwimmen hungrig.",
+            "ru": "После плавания дети голодны."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-hungrig-hungry",
+            "de": "hungrig",
+            "part": "adj",
+            "forms": "hungrig · hungriger · am hungrigsten",
+            "definition_de": "Das Bedürfnis verspüren, etwas zu essen.",
+            "translations_ru": [
+              "голодный",
+              "голоден"
+            ],
+            "grammar_hint": "Ich bin hungrig = Ich habe Hunger. Не Ich habe hungrig.",
+            "example": "Die Kinder sind nach dem Schwimmen hungrig.",
+            "example_ru": "После плавания дети голодны."
+          }
+        ],
+        "alias_ids": [
+          "b1-hungrig-hungry"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/hungrig"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_3e324c2ee5db37dd8813",
+      "alias_ids": [
+        "b1-husten-cough"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3e324c2ee5db37dd8813",
+        "de": "husten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "кашлять"
+        ],
+        "definition_de": "Luft plötzlich und hörbar aus dem Hals ausstoßen.",
+        "forms": "hustet · hustete · hat gehustet",
+        "example": "Das Kind hustet schon seit drei Tagen.",
+        "example_ru": "Ребёнок кашляет уже три дня.",
+        "grammar_hint": "Обычно без прямого дополнения: Ich huste.\nstark / trocken husten; существительное der Husten, без артикля в Husten haben.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 17,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/husten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "ru": "кашлять",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Luft ruckartig und hörbar aus den Atemwegen ausstoßen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Seit gestern hustet mein Sohn häufig.",
+            "ru": "Со вчерашнего дня мой сын часто кашляет."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-husten-cough",
+            "de": "husten",
+            "part": "verb",
+            "forms": "hustet · hustete · hat gehustet",
+            "definition_de": "Luft ruckartig und hörbar aus den Atemwegen ausstoßen.",
+            "translations_ru": [
+              "кашлять"
+            ],
+            "grammar_hint": "stark / trocken husten; существительное der Husten, без артикля в Husten haben.",
+            "example": "Seit gestern hustet mein Sohn häufig.",
+            "example_ru": "Со вчерашнего дня мой сын часто кашляет."
+          }
+        ],
+        "alias_ids": [
+          "b1-husten-cough"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/husten"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_69956774fa80b1e39b0b",
+      "alias_ids": [
+        "b1-idee-idea"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_69956774fa80b1e39b0b",
+        "de": "die Idee",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "идея",
+          "мысль",
+          "замысел"
+        ],
+        "definition_de": "Ein Einfall, wie man etwas machen oder lösen könnte.",
+        "forms": "Plural · die Ideen",
+        "example": "Wer hat eine Idee für unseren Ausflug?",
+        "example_ru": "У кого есть идея для нашей поездки?",
+        "grammar_hint": "eine Idee haben; auf eine Idee kommen (auf + Akkusativ); eine gute Idee.",
+        "usage_note": "eine Idee haben — иметь идею; eine Idee für + Akkusativ — идея для чего-то.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 18,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Idee"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения",
+          "Общение"
+        ],
+        "ru": "идея; мысль; замысел",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Ideen"
+        ],
+        "alternative_definitions_de": [
+          "Ein Einfall oder Vorschlag für eine mögliche Handlung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich habe eine Idee für die nächste Unterrichtsstunde.",
+            "ru": "У меня есть идея для следующего урока."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-idee-idea",
+            "de": "die Idee",
+            "part": "noun",
+            "forms": "die Ideen",
+            "definition_de": "Ein Einfall oder Vorschlag für eine mögliche Handlung.",
+            "translations_ru": [
+              "идея",
+              "замысел",
+              "мысль"
+            ],
+            "grammar_hint": "eine Idee haben; auf eine Idee kommen (auf + Akkusativ); eine gute Idee.",
+            "example": "Ich habe eine Idee für die nächste Unterrichtsstunde.",
+            "example_ru": "У меня есть идея для следующего урока."
+          }
+        ],
+        "alias_ids": [
+          "b1-idee-idea"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Idee"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-319-1",
+      "alias_ids": [
+        "b1-immer-always"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-319-1",
+        "de": "immer",
+        "lemma": "immer",
+        "ru": "всегда; постоянно",
+        "uk": "",
+        "translations_ru": [
+          "всегда",
+          "постоянно"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время",
+          "Время и даты"
+        ],
+        "forms": "",
+        "definition_de": "Jedes Mal oder zu jeder Zeit.",
+        "example": "Er kommt immer mit dem Bus.",
+        "example_ru": "Он всегда приезжает на автобусе.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "f3de21ac477ca26e13d8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "immer — всегда; oft — часто; nie — никогда. При начальной позиции: Immer kommt er … (эмфатически), обычно Er kommt immer …",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Bei jeder Gelegenheit oder ohne zeitliche Unterbrechung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Er kommt immer pünktlich zum Unterricht.",
+            "ru": "Он всегда приходит на урок вовремя."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-immer-always",
+            "de": "immer",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Bei jeder Gelegenheit oder ohne zeitliche Unterbrechung.",
+            "translations_ru": [
+              "всегда",
+              "постоянно"
+            ],
+            "grammar_hint": "immer — всегда; oft — часто; nie — никогда. При начальной позиции: Immer kommt er … (эмфатически), обычно Er kommt immer …",
+            "example": "Er kommt immer pünktlich zum Unterricht.",
+            "example_ru": "Он всегда приходит на урок вовремя."
+          }
+        ],
+        "alias_ids": [
+          "b1-immer-always"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/immer"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-320-1",
+      "alias_ids": [
+        "b1-in-city"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-320-1",
+        "de": "in",
+        "lemma": "in",
+        "ru": "в (местонахождение)",
+        "uk": "",
+        "translations_ru": [
+          "в (местонахождение)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Nennt den Ort, in dem etwas ist oder geschieht.",
+        "example": "Ich arbeite in einem Geschäft.",
+        "example_ru": "Я работаю в магазине.",
+        "note": "Пространственное Wo? → in + Dativ: im Zimmer (im = in dem). Движение внутри места тоже Dativ: im Park laufen. С городами обычно без артикля: in Zürich wohnen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 17,
+            "row_id": "508647b59867d1d31870"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/in",
+            "scope": "meaning_and_case"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wo? in Zürich, in der Schweiz. Wohin? nach Zürich, in die Schweiz. Падеж зависит от предлога и конструкции.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Meine Schwester wohnt in Basel.",
+            "ru": "Моя сестра живёт в Базеле."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-in-city",
+            "de": "in",
+            "part": "prep",
+            "forms": "in + Dativ; häufig ohne Artikel",
+            "definition_de": "Gibt einen geografischen Aufenthaltsort an.",
+            "translations_ru": [
+              "в (городе, стране)"
+            ],
+            "grammar_hint": "Wo? in Zürich, in der Schweiz. Wohin? nach Zürich, in die Schweiz. Падеж зависит от предлога и конструкции.",
+            "example": "Meine Schwester wohnt in Basel.",
+            "example_ru": "Моя сестра живёт в Базеле."
+          }
+        ],
+        "alias_ids": [
+          "b1-in-city"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 51,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

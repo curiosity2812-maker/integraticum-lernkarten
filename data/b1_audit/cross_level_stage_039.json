@@ -1,0 +1,2997 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    753,
+    772
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 14,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 753,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Sich bemühen, eine Handlung auszuführen. Example: Ich probiere, den Text ohne Wörterbuch zu verstehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 8,
+        "record": {
+          "id": "b1-probieren-attempt",
+          "de": "probieren",
+          "lemma": "probieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пытаться",
+            "пробовать что-либо сделать"
+          ],
+          "definition_de": "Sich bemühen, eine Handlung auszuführen.",
+          "example": "Ich probiere, den Text ohne Wörterbuch zu verstehen.",
+          "example_ru": "Я пытаюсь понять текст без словаря.",
+          "forms": "probiert · probierte · hat probiert",
+          "grammar_hint": "probieren, etwas zu tun; также versuchen + zu + Infinitiv. При отделяемом глаголе: anzurufen.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/probieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 354,
+          "record": {
+            "id": "dict_767c0b15129e14047fb8",
+            "de": "probieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "пробовать",
+              "попробовать",
+              "пробовать на вкус"
+            ],
+            "definition_de": "Etwas versuchsweise tun oder etwas essen beziehungsweise trinken, um den Geschmack kennenzulernen.",
+            "forms": "probiert · probierte · hat probiert",
+            "example": "Möchtest du die Suppe probieren?",
+            "example_ru": "Хочешь попробовать суп?",
+            "grammar_hint": "etwas (Akkusativ) probieren.",
+            "usage_note": "Etwas probieren — попробовать что-либо; einen Käse probieren — попробовать сыр на вкус. Примерять одежду — anprobieren; репетировать — proben. В контексте попытки также versuchen.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/probieren",
+                "https://www.duden.de/rechtschreibung/probieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_767c0b15129e14047fb8",
+        "alias_id": "b1-probieren-attempt",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_767c0b15129e14047fb8"
+      }
+    },
+    {
+      "candidate_number": 754,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine kleine Menge eines Lebensmittels kosten, um seinen Geschmack kennenzulernen. Example: Möchtest du meine Suppe probieren?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 10,
+        "record": {
+          "id": "b1-probieren-taste",
+          "de": "probieren",
+          "lemma": "probieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пробовать на вкус",
+            "дегустировать"
+          ],
+          "definition_de": "Eine kleine Menge eines Lebensmittels kosten, um seinen Geschmack kennenzulernen.",
+          "example": "Möchtest du meine Suppe probieren?",
+          "example_ru": "Хочешь попробовать мой суп?",
+          "forms": "probiert · probierte · hat probiert",
+          "grammar_hint": "etwas (Akk.) probieren; A: kosten. Не путать с probieren в значении пытаться.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/probieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 354,
+          "record": {
+            "id": "dict_767c0b15129e14047fb8",
+            "de": "probieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "пробовать",
+              "попробовать",
+              "пробовать на вкус"
+            ],
+            "definition_de": "Etwas versuchsweise tun oder etwas essen beziehungsweise trinken, um den Geschmack kennenzulernen.",
+            "forms": "probiert · probierte · hat probiert",
+            "example": "Möchtest du die Suppe probieren?",
+            "example_ru": "Хочешь попробовать суп?",
+            "grammar_hint": "etwas (Akkusativ) probieren.",
+            "usage_note": "Etwas probieren — попробовать что-либо; einen Käse probieren — попробовать сыр на вкус. Примерять одежду — anprobieren; репетировать — proben. В контексте попытки также versuchen.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/probieren",
+                "https://www.duden.de/rechtschreibung/probieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_767c0b15129e14047fb8",
+        "alias_id": "b1-probieren-taste",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_767c0b15129e14047fb8"
+      }
+    },
+    {
+      "candidate_number": 755,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Speise oder ein Getränk in kleiner Menge geschmacklich prüfen. Example: Darf ich von der Sauce kosten?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 11,
+        "record": {
+          "id": "b1-kosten-taste-at",
+          "de": "kosten",
+          "lemma": "kosten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пробовать на вкус",
+            "дегустировать"
+          ],
+          "definition_de": "Eine Speise oder ein Getränk in kleiner Menge geschmacklich prüfen.",
+          "example": "Darf ich von der Sauce kosten?",
+          "example_ru": "Можно мне попробовать соус?",
+          "forms": "kostet · kostete · hat gekostet",
+          "grammar_hint": "В Австрии распространено kosten в смысле probieren; также встречается в других регионах. etwas kosten / von etwas kosten (Dat.); омоним kosten — стоить.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kosten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 605,
+          "record": {
+            "id": "a1-356-1",
+            "de": "kosten",
+            "lemma": "kosten",
+            "ru": "стоить",
+            "uk": "",
+            "translations_ru": [
+              "стоить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "kostet · kostete · hat gekostet",
+            "definition_de": "Einen bestimmten Preis haben.",
+            "example": "Was kostet das Ticket?",
+            "example_ru": "Сколько стоит билет?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "0a2869d0f9fd71717642"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 756,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Schwierigkeit, für die eine Lösung gesucht wird. Example: Wir haben ein Problem mit dem Drucker.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 12,
+        "record": {
+          "id": "b1-problem-difficulty",
+          "de": "das Problem",
+          "lemma": "Problem",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "проблема",
+            "затруднение"
+          ],
+          "definition_de": "Eine Schwierigkeit, für die eine Lösung gesucht wird.",
+          "example": "Wir haben ein Problem mit dem Drucker.",
+          "example_ru": "У нас проблема с принтером.",
+          "forms": "die Probleme",
+          "grammar_hint": "ein Problem mit + Dativ haben; ein Problem lösen; kein Problem!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Problem"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 513,
+          "record": {
+            "id": "a1-462-1",
+            "de": "das Problem",
+            "lemma": "Problem",
+            "ru": "проблема",
+            "uk": "",
+            "translations_ru": [
+              "проблема"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Probleme",
+            "definition_de": "Eine schwierige Frage oder Situation, für die man eine Lösung sucht.",
+            "example": "Ich habe ein Problem mit dem Computer.",
+            "example_ru": "У меня проблема с компьютером.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "125b1e95e2199d53b60b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-462-1",
+        "alias_id": "b1-problem-difficulty",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-462-1"
+      }
+    },
+    {
+      "candidate_number": 757,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Erzeugnis, das hergestellt und angeboten wird. Example: Dieses Produkt besteht aus recyceltem Material.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 14,
+        "record": {
+          "id": "b1-produkt-goods",
+          "de": "das Produkt",
+          "lemma": "Produkt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "продукт",
+            "изделие",
+            "товар"
+          ],
+          "definition_de": "Ein Erzeugnis, das hergestellt und angeboten wird.",
+          "example": "Dieses Produkt besteht aus recyceltem Material.",
+          "example_ru": "Это изделие изготовлено из переработанного материала.",
+          "forms": "die Produkte",
+          "grammar_hint": "ein Produkt herstellen / verkaufen; aus + Dativ bestehen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Produkt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 254,
+          "record": {
+            "id": "dict_cab146aa8d6a3f401579",
+            "de": "das Produkt",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "товар",
+              "изделие",
+              "продукт"
+            ],
+            "definition_de": "Etwas, das hergestellt und oft zum Verkauf angeboten wird.",
+            "forms": "Plural · die Produkte",
+            "example": "Die Firma verkauft ihre Produkte auch online.",
+            "example_ru": "Фирма продаёт свои товары и через интернет.",
+            "grammar_hint": "",
+            "usage_note": "Продукт/товар/изделие как результат производства; математическое произведение отдельно не подтверждено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Produkt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_cab146aa8d6a3f401579",
+        "alias_id": "b1-produkt-goods",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_cab146aa8d6a3f401579"
+      }
+    },
+    {
+      "candidate_number": 758,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Lebensmittel oder eine daraus hergestellte Ware. Example: Im Laden kaufen wir regionale Produkte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 15,
+        "record": {
+          "id": "b1-produkt-food",
+          "de": "das Produkt",
+          "lemma": "Produkt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "продукт питания",
+            "пищевой продукт"
+          ],
+          "definition_de": "Ein Lebensmittel oder eine daraus hergestellte Ware.",
+          "example": "Im Laden kaufen wir regionale Produkte.",
+          "example_ru": "В магазине мы покупаем местные продукты.",
+          "forms": "die Produkte",
+          "grammar_hint": "Milchprodukte — молочные продукты; Fertigprodukte — готовые продукты. Учебный контекст общего значения Erzeugnis.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Produkt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 254,
+          "record": {
+            "id": "dict_cab146aa8d6a3f401579",
+            "de": "das Produkt",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "товар",
+              "изделие",
+              "продукт"
+            ],
+            "definition_de": "Etwas, das hergestellt und oft zum Verkauf angeboten wird.",
+            "forms": "Plural · die Produkte",
+            "example": "Die Firma verkauft ihre Produkte auch online.",
+            "example_ru": "Фирма продаёт свои товары и через интернет.",
+            "grammar_hint": "",
+            "usage_note": "Продукт/товар/изделие как результат производства; математическое произведение отдельно не подтверждено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Produkt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_cab146aa8d6a3f401579",
+        "alias_id": "b1-produkt-food",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_cab146aa8d6a3f401579"
+      }
+    },
+    {
+      "candidate_number": 759,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Übersicht über geplante Veranstaltungen oder Sendungen. Example: Im Programm steht heute ein Konzert.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 20,
+        "record": {
+          "id": "b1-programm-schedule",
+          "de": "das Programm",
+          "lemma": "Programm",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "программа",
+            "расписание (мероприятий, передач)"
+          ],
+          "definition_de": "Eine Übersicht über geplante Veranstaltungen oder Sendungen.",
+          "example": "Im Programm steht heute ein Konzert.",
+          "example_ru": "В сегодняшней программе концерт.",
+          "forms": "die Programme",
+          "grammar_hint": "im Programm stehen; das Fernsehprogramm — программа телепередач.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Programm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 244,
+          "record": {
+            "id": "dict_20388084d992ca8213e1",
+            "de": "das Programm",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "программа",
+              "программа передач",
+              "афиша (перечень показов)"
+            ],
+            "definition_de": "Eine Abfolge oder Übersicht von Sendungen, Filmen und anderen Veranstaltungen.",
+            "forms": "Plural · die Programme",
+            "example": "Im Programm steht, wann der nächste Film beginnt.",
+            "example_ru": "В программе указано, когда начнётся следующий фильм.",
+            "grammar_hint": "",
+            "usage_note": "Подтверждены контексты радио и кино. Компьютерная программа — другое значение; его уровень по данной статье не установлен.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Programm"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_20388084d992ca8213e1",
+        "alias_id": "b1-programm-schedule",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_20388084d992ca8213e1"
+      }
+    },
+    {
+      "candidate_number": 760,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Anwendung oder Folge von Anweisungen zur Verarbeitung von Daten. Example: Ich installiere ein neues Programm auf dem Laptop.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 21,
+        "record": {
+          "id": "b1-programm-software",
+          "de": "das Programm",
+          "lemma": "Programm",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "программа (компьютерная)"
+          ],
+          "definition_de": "Eine Anwendung oder Folge von Anweisungen zur Verarbeitung von Daten.",
+          "example": "Ich installiere ein neues Programm auf dem Laptop.",
+          "example_ru": "Я устанавливаю новую программу на ноутбук.",
+          "forms": "die Programme",
+          "grammar_hint": "ein Programm installieren / starten; mit einem Programm arbeiten (Dat.).",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Programm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 244,
+          "record": {
+            "id": "dict_20388084d992ca8213e1",
+            "de": "das Programm",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "программа",
+              "программа передач",
+              "афиша (перечень показов)"
+            ],
+            "definition_de": "Eine Abfolge oder Übersicht von Sendungen, Filmen und anderen Veranstaltungen.",
+            "forms": "Plural · die Programme",
+            "example": "Im Programm steht, wann der nächste Film beginnt.",
+            "example_ru": "В программе указано, когда начнётся следующий фильм.",
+            "grammar_hint": "",
+            "usage_note": "Подтверждены контексты радио и кино. Компьютерная программа — другое значение; его уровень по данной статье не установлен.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Programm"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 761,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein zeitlich oder sachlich begrenztes Vorhaben mit einem Ziel. Example: Wir arbeiten gemeinsam an einem neuen Projekt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 22,
+        "record": {
+          "id": "b1-projekt-project",
+          "de": "das Projekt",
+          "lemma": "Projekt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "проект"
+          ],
+          "definition_de": "Ein zeitlich oder sachlich begrenztes Vorhaben mit einem Ziel.",
+          "example": "Wir arbeiten gemeinsam an einem neuen Projekt.",
+          "example_ru": "Мы вместе работаем над новым проектом.",
+          "forms": "die Projekte",
+          "grammar_hint": "an einem Projekt arbeiten (an + Dativ); ein Projekt durchführen (Akk.).",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Projekt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 48,
+          "record": {
+            "id": "dict_a636676c79464c80a7cd",
+            "de": "das Projekt",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "проект"
+            ],
+            "definition_de": "Eine geplante Aufgabe, an der man eine bestimmte Zeit lang arbeitet.",
+            "forms": "Plural · die Projekte",
+            "example": "Im Deutschkurs machen wir ein Projekt über Zürich.",
+            "example_ru": "На курсе немецкого мы делаем проект о Цюрихе.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Projekt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a636676c79464c80a7cd",
+        "alias_id": "b1-projekt-project",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a636676c79464c80a7cd"
+      }
+    },
+    {
+      "candidate_number": 762,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine gedruckte oder digitale Information über Angebote oder Einrichtungen. Example: Im Reisebüro habe ich einen Prospekt mitgenommen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 23,
+        "record": {
+          "id": "b1-prospekt-brochure",
+          "de": "der Prospekt",
+          "lemma": "Prospekt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "проспект",
+            "рекламная брошюра",
+            "буклет"
+          ],
+          "definition_de": "Eine gedruckte oder digitale Information über Angebote oder Einrichtungen.",
+          "example": "Im Reisebüro habe ich einen Prospekt mitgenommen.",
+          "example_ru": "В турагентстве я взяла рекламный буклет.",
+          "forms": "die Prospekte",
+          "grammar_hint": "ein Prospekt über + Akk.; не путать с русским «проспект» в значении улица.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Prospekt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 514,
+          "record": {
+            "id": "a1-463-1",
+            "de": "der Prospekt",
+            "lemma": "Prospekt",
+            "ru": "рекламный буклет",
+            "uk": "",
+            "translations_ru": [
+              "рекламный буклет"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Prospekte",
+            "definition_de": "Ein Heft oder Blatt mit Werbung oder Informationen.",
+            "example": "Der Prospekt liegt an der Kasse.",
+            "example_ru": "Рекламный буклет лежит у кассы.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "6155e5ed212fa6aee6d7"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-463-1",
+        "alias_id": "b1-prospekt-brochure",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-463-1"
+      }
+    },
+    {
+      "candidate_number": 763,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas auf Richtigkeit, Qualität oder Funktionsfähigkeit untersuchen. Example: Bitte prüfen Sie, ob die Angaben richtig sind.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 28,
+        "record": {
+          "id": "b1-pruefen-check",
+          "de": "prüfen",
+          "lemma": "prüfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "проверять",
+            "контролировать"
+          ],
+          "definition_de": "Etwas auf Richtigkeit, Qualität oder Funktionsfähigkeit untersuchen.",
+          "example": "Bitte prüfen Sie, ob die Angaben richtig sind.",
+          "example_ru": "Пожалуйста, проверьте, верны ли данные.",
+          "forms": "prüft · prüfte · hat geprüft",
+          "grammar_hint": "etwas prüfen (Akk.); prüfen, ob … — косвенный вопрос: спрягаемый глагол в конце придаточного.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/pr%C3%BCfen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 494,
+          "record": {
+            "id": "dict_cd752e4d81700ee9df4f",
+            "de": "prüfen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "проверять",
+              "проверить"
+            ],
+            "definition_de": "Nachsehen, ob etwas richtig ist oder die Anforderungen erfüllt.",
+            "forms": "prüft · prüfte · hat geprüft",
+            "example": "Bitte prüfen Sie Ihre Angaben vor dem Senden.",
+            "example_ru": "Пожалуйста, проверьте свои данные перед отправкой.",
+            "grammar_hint": "etwas prüfen (+ Akkusativ); prüfen, ob … — глагол придаточного в конце.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/pr%C3%BCfen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_cd752e4d81700ee9df4f",
+        "alias_id": "b1-pruefen-check",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_cd752e4d81700ee9df4f"
+      }
+    },
+    {
+      "candidate_number": 764,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine organisierte Feststellung von Kenntnissen oder Fähigkeiten. Example: Sie hat die mündliche Prüfung bestanden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_071.json",
+        "sha": "138d539261c57892c81b3d8ca70527fbe4fcc2ae",
+        "batch": 71,
+        "row": 29,
+        "record": {
+          "id": "b1-pruefung-exam",
+          "de": "die Prüfung",
+          "lemma": "Prüfung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "экзамен",
+            "испытание"
+          ],
+          "definition_de": "Eine organisierte Feststellung von Kenntnissen oder Fähigkeiten.",
+          "example": "Sie hat die mündliche Prüfung bestanden.",
+          "example_ru": "Она сдала устный экзамен.",
+          "forms": "die Prüfungen",
+          "grammar_hint": "eine Prüfung ablegen (проходить) / bestehen (успешно сдать); durch eine Prüfung fallen — провалить экзамен.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Pr%C3%BCfung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 515,
+          "record": {
+            "id": "a1-464-1",
+            "de": "die Prüfung",
+            "lemma": "Prüfung",
+            "ru": "экзамен",
+            "uk": "",
+            "translations_ru": [
+              "экзамен"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Prüfungen",
+            "definition_de": "Eine Aufgabe oder Veranstaltung, bei der Wissen oder Können geprüft wird.",
+            "example": "Nächste Woche habe ich eine Prüfung.",
+            "example_ru": "На следующей неделе у меня экзамен.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "43ac4873822701315349"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-464-1",
+        "alias_id": "b1-pruefung-exam",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-464-1"
+      }
+    },
+    {
+      "candidate_number": 765,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein meist gestricktes Oberteil, das man über den Kopf anzieht. Example: Im Winter trage ich gern warme Pullover.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 1,
+        "record": {
+          "id": "b1-pullover-clothing",
+          "de": "der Pullover",
+          "lemma": "Pullover",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "свитер",
+            "пуловер"
+          ],
+          "definition_de": "Ein meist gestricktes Oberteil, das man über den Kopf anzieht.",
+          "example": "Im Winter trage ich gern warme Pullover.",
+          "example_ru": "Зимой я люблю носить тёплые свитеры.",
+          "forms": "die Pullover",
+          "grammar_hint": "einen Pullover anziehen; die Strickjacke — кофта на застёжке.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Pullover"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 57,
+          "record": {
+            "id": "dict_11d1c1461b2740291f01",
+            "de": "der Pullover",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "свитер"
+            ],
+            "definition_de": "Ein meist warmes Oberteil, das man über den Kopf anzieht.",
+            "forms": "Plural · die Pullover",
+            "example": "Im Büro ist es kühl. Ich ziehe einen Pullover an.",
+            "example_ru": "В офисе прохладно. Я надеваю свитер.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Pullover"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_11d1c1461b2740291f01",
+        "alias_id": "b1-pullover-clothing",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_11d1c1461b2740291f01"
+      }
+    },
+    {
+      "candidate_number": 766,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zur vereinbarten Zeit anwesend oder bereit. Example: Bitte sei morgen pünktlich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 5,
+        "record": {
+          "id": "b1-puenktlich-person",
+          "de": "pünktlich",
+          "lemma": "pünktlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "пунктуальный",
+            "вовремя"
+          ],
+          "definition_de": "Zur vereinbarten Zeit anwesend oder bereit.",
+          "example": "Bitte sei morgen pünktlich.",
+          "example_ru": "Пожалуйста, приходи завтра вовремя.",
+          "forms": "pünktlich · pünktlicher · am pünktlichsten",
+          "grammar_hint": "pünktlich sein / kommen; Gegenteil: unpünktlich.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/p%C3%BCnktlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 654,
+          "record": {
+            "id": "a1-465-1",
+            "de": "pünktlich",
+            "lemma": "pünktlich",
+            "ru": "пунктуальный; вовремя",
+            "uk": "",
+            "translations_ru": [
+              "пунктуальный",
+              "вовремя"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "pünktlicher · am pünktlichsten",
+            "definition_de": "Genau zur vereinbarten Zeit.",
+            "example": "Der Zug kommt pünktlich.",
+            "example_ru": "Поезд прибывает вовремя.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "a4b393f77f6f992ef569"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-465-1",
+        "alias_id": "b1-puenktlich-person",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-465-1"
+      }
+    },
+    {
+      "candidate_number": 767,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ohne Verspätung zu einer vorgesehenen Zeit. Example: Der Zug ist heute pünktlich angekommen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 6,
+        "record": {
+          "id": "b1-puenktlich-schedule",
+          "de": "pünktlich",
+          "lemma": "pünktlich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "точно по расписанию",
+            "вовремя"
+          ],
+          "definition_de": "Ohne Verspätung zu einer vorgesehenen Zeit.",
+          "example": "Der Zug ist heute pünktlich angekommen.",
+          "example_ru": "Поезд сегодня прибыл вовремя.",
+          "forms": "наречное употребление без окончания; pünktlich · pünktlicher · am pünktlichsten",
+          "grammar_hint": "pünktlich ankommen / abfahren; контекст своевременности, не отдельная лексема.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/p%C3%BCnktlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 654,
+          "record": {
+            "id": "a1-465-1",
+            "de": "pünktlich",
+            "lemma": "pünktlich",
+            "ru": "пунктуальный; вовремя",
+            "uk": "",
+            "translations_ru": [
+              "пунктуальный",
+              "вовремя"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "pünktlicher · am pünktlichsten",
+            "definition_de": "Genau zur vereinbarten Zeit.",
+            "example": "Der Zug kommt pünktlich.",
+            "example_ru": "Поезд прибывает вовремя.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 21,
+                "row_id": "a4b393f77f6f992ef569"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-465-1",
+        "alias_id": "b1-puenktlich-schedule",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-465-1"
+      }
+    },
+    {
+      "candidate_number": 768,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Schmutz von Gegenständen oder Flächen entfernen. Example: Am Samstag putze ich die Küche.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 8,
+        "record": {
+          "id": "b1-putzen-clean",
+          "de": "putzen",
+          "lemma": "putzen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "чистить",
+            "убирать",
+            "мыть"
+          ],
+          "definition_de": "Schmutz von Gegenständen oder Flächen entfernen.",
+          "example": "Am Samstag putze ich die Küche.",
+          "example_ru": "В субботу я убираю кухню.",
+          "forms": "putzt · putzte · hat geputzt",
+          "grammar_hint": "etwas putzen (Akk.); Fenster putzen — мыть окна; Wohnung putzen — убирать квартиру.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/putzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 480,
+          "record": {
+            "id": "dict_1d50928460883470caf5",
+            "de": "putzen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "чистить",
+              "убирать",
+              "мыть"
+            ],
+            "definition_de": "Etwas sauber machen.",
+            "forms": "putzt · putzte · hat geputzt",
+            "example": "Am Samstag putze ich die Fenster.",
+            "example_ru": "В субботу я мою окна.",
+            "grammar_hint": "etwas (Akkusativ) putzen; sich die Zähne putzen — возвратное местоимение в Dativ, die Zähne в Akkusativ.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/putzen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_1d50928460883470caf5",
+        "alias_id": "b1-putzen-clean",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_1d50928460883470caf5"
+      }
+    },
+    {
+      "candidate_number": 769,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Die eigenen Zähne mit einer Zahnbürste reinigen. Example: Ich putze mir morgens und abends die Zähne.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 9,
+        "record": {
+          "id": "b1-putzen-teeth",
+          "de": "sich die Zähne putzen",
+          "lemma": "putzen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "чистить зубы"
+          ],
+          "definition_de": "Die eigenen Zähne mit einer Zahnbürste reinigen.",
+          "example": "Ich putze mir morgens und abends die Zähne.",
+          "example_ru": "Я чищу зубы утром и вечером.",
+          "forms": "putzt · putzte · hat geputzt",
+          "grammar_hint": "mir/dir/sich — Dativ; die Zähne — Akkusativ. При наличии прямого объекта возвратное местоимение здесь в Dativ.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/putzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 480,
+          "record": {
+            "id": "dict_1d50928460883470caf5",
+            "de": "putzen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "чистить",
+              "убирать",
+              "мыть"
+            ],
+            "definition_de": "Etwas sauber machen.",
+            "forms": "putzt · putzte · hat geputzt",
+            "example": "Am Samstag putze ich die Fenster.",
+            "example_ru": "В субботу я мою окна.",
+            "grammar_hint": "etwas (Akkusativ) putzen; sich die Zähne putzen — возвратное местоимение в Dativ, die Zähne в Akkusativ.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/putzen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 770,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Beschaffenheit und Güte einer Sache oder Leistung. Example: Die Qualität der Möbel ist gut.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 11,
+        "record": {
+          "id": "b1-qualitaet-quality",
+          "de": "die Qualität",
+          "lemma": "Qualität",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "качество"
+          ],
+          "definition_de": "Die Beschaffenheit und Güte einer Sache oder Leistung.",
+          "example": "Die Qualität der Möbel ist gut.",
+          "example_ru": "Качество мебели хорошее.",
+          "forms": "die Qualitäten; в общем значении часто Singular",
+          "grammar_hint": "gute / schlechte Qualität; Qualität und Preis vergleichen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Qualit%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 65,
+          "record": {
+            "id": "dict_625e51e5f547065bd63e",
+            "de": "die Qualität",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "качество"
+            ],
+            "definition_de": "Wie gut oder schlecht ein Produkt oder eine Leistung ist.",
+            "forms": "Plural · die Qualitäten",
+            "example": "Die Schuhe sind teuer, aber die Qualität ist gut.",
+            "example_ru": "Туфли дорогие, но качество хорошее.",
+            "grammar_hint": "",
+            "usage_note": "Когда говорим о качестве одного товара, часто используем единственное число.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Qualit%C3%A4t"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_625e51e5f547065bd63e",
+        "alias_id": "b1-qualitaet-quality",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_625e51e5f547065bd63e"
+      }
+    },
+    {
+      "candidate_number": 771,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Spiel, bei dem Fragen beantwortet werden müssen. Example: Am Freitag machen wir ein Quiz im Kurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 15,
+        "record": {
+          "id": "b1-quiz-game",
+          "de": "das Quiz",
+          "lemma": "Quiz",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "викторина"
+          ],
+          "definition_de": "Ein Spiel, bei dem Fragen beantwortet werden müssen.",
+          "example": "Am Freitag machen wir ein Quiz im Kurs.",
+          "example_ru": "В пятницу мы проведём викторину на курсе.",
+          "forms": "die Quiz; разговорное die Quizze",
+          "grammar_hint": "an einem Quiz teilnehmen (an + Dativ); beim Quiz gewinnen.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Quiz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 260,
+          "record": {
+            "id": "dict_08f6cc9af878ac20ff27",
+            "de": "das Quiz",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "викторина"
+            ],
+            "definition_de": "Ein Spiel, bei dem man Fragen beantwortet und dafür oft Punkte bekommt.",
+            "forms": "Plural · die Quiz / die Quizze",
+            "example": "Am Ende des Kurses machen wir ein kleines Quiz.",
+            "example_ru": "В конце курса мы проведём небольшую викторину.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Quiz"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_08f6cc9af878ac20ff27",
+        "alias_id": "b1-quiz-game",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_08f6cc9af878ac20ff27"
+      }
+    },
+    {
+      "candidate_number": 772,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich mit einem Fahrrad fortbewegen. Example: Bei schönem Wetter fahre ich gern Rad.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 19,
+        "record": {
+          "id": "b1-rad-fahren",
+          "de": "Rad fahren",
+          "lemma": "Rad",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "ездить на велосипеде",
+            "кататься на велосипеде"
+          ],
+          "definition_de": "Sich mit einem Fahrrad fortbewegen.",
+          "example": "Bei schönem Wetter fahre ich gern Rad.",
+          "example_ru": "В хорошую погоду я люблю кататься на велосипеде.",
+          "forms": "fährt Rad · fuhr Rad · ist Rad gefahren",
+          "grammar_hint": "Rad fahren — раздельно, существительное с большой буквы; das Radfahren — субстантивация, слитно. CH: Velo fahren.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rad"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 655,
+          "record": {
+            "id": "a1-466-1",
+            "de": "Rad fahren",
+            "lemma": "Rad fahren",
+            "ru": "ездить на велосипеде",
+            "uk": "",
+            "translations_ru": [
+              "ездить на велосипеде"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "fährt Rad · fuhr Rad · ist Rad gefahren",
+            "definition_de": "Sich mit einem Fahrrad fortbewegen.",
+            "example": "Ich fahre gern Rad.",
+            "example_ru": "Я люблю ездить на велосипеде.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e19513d3c5dc657ef73b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-466-1",
+        "alias_id": "b1-rad-fahren",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-466-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_767c0b15129e14047fb8",
+      "alias_ids": [
+        "b1-probieren-attempt",
+        "b1-probieren-taste"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_767c0b15129e14047fb8",
+        "de": "probieren",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "пробовать",
+          "попробовать",
+          "пробовать на вкус"
+        ],
+        "definition_de": "Etwas versuchsweise tun oder etwas essen beziehungsweise trinken, um den Geschmack kennenzulernen.",
+        "forms": "probiert · probierte · hat probiert",
+        "example": "Möchtest du die Suppe probieren?",
+        "example_ru": "Хочешь попробовать суп?",
+        "grammar_hint": "etwas (Akkusativ) probieren.",
+        "usage_note": "Etwas probieren — попробовать что-либо; einen Käse probieren — попробовать сыр на вкус. Примерять одежду — anprobieren; репетировать — proben. В контексте попытки также versuchen.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/probieren",
+            "https://www.duden.de/rechtschreibung/probieren"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-probieren-attempt",
+          "b1-probieren-taste"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-probieren-attempt",
+            "de": "probieren",
+            "part": "verb",
+            "forms": "probiert · probierte · hat probiert",
+            "definition_de": "Sich bemühen, eine Handlung auszuführen.",
+            "translations_ru": [
+              "пытаться",
+              "пробовать что-либо сделать"
+            ],
+            "grammar_hint": "probieren, etwas zu tun; также versuchen + zu + Infinitiv. При отделяемом глаголе: anzurufen.",
+            "example": "Ich probiere, den Text ohne Wörterbuch zu verstehen.",
+            "example_ru": "Я пытаюсь понять текст без словаря."
+          },
+          {
+            "id": "b1-probieren-taste",
+            "de": "probieren",
+            "part": "verb",
+            "forms": "probiert · probierte · hat probiert",
+            "definition_de": "Eine kleine Menge eines Lebensmittels kosten, um seinen Geschmack kennenzulernen.",
+            "translations_ru": [
+              "пробовать на вкус",
+              "дегустировать"
+            ],
+            "grammar_hint": "etwas (Akk.) probieren; A: kosten. Не путать с probieren в значении пытаться.",
+            "example": "Möchtest du meine Suppe probieren?",
+            "example_ru": "Хочешь попробовать мой суп?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/probieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/probieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-462-1",
+      "alias_ids": [
+        "b1-problem-difficulty"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-462-1",
+        "de": "das Problem",
+        "lemma": "Problem",
+        "ru": "проблема",
+        "uk": "",
+        "translations_ru": [
+          "проблема"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "die Probleme",
+        "definition_de": "Eine schwierige Frage oder Situation, für die man eine Lösung sucht.",
+        "example": "Ich habe ein Problem mit dem Computer.",
+        "example_ru": "У меня проблема с компьютером.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "125b1e95e2199d53b60b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-problem-difficulty"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-problem-difficulty",
+            "de": "das Problem",
+            "part": "noun",
+            "forms": "die Probleme",
+            "definition_de": "Eine Schwierigkeit, für die eine Lösung gesucht wird.",
+            "translations_ru": [
+              "проблема",
+              "затруднение"
+            ],
+            "grammar_hint": "ein Problem mit + Dativ haben; ein Problem lösen; kein Problem!",
+            "example": "Wir haben ein Problem mit dem Drucker.",
+            "example_ru": "У нас проблема с принтером."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Problem"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_cab146aa8d6a3f401579",
+      "alias_ids": [
+        "b1-produkt-goods",
+        "b1-produkt-food"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_cab146aa8d6a3f401579",
+        "de": "das Produkt",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "товар",
+          "изделие",
+          "продукт"
+        ],
+        "definition_de": "Etwas, das hergestellt und oft zum Verkauf angeboten wird.",
+        "forms": "Plural · die Produkte",
+        "example": "Die Firma verkauft ihre Produkte auch online.",
+        "example_ru": "Фирма продаёт свои товары и через интернет.",
+        "grammar_hint": "",
+        "usage_note": "Продукт/товар/изделие как результат производства; математическое произведение отдельно не подтверждено.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Produkt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-produkt-goods",
+          "b1-produkt-food"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-produkt-goods",
+            "de": "das Produkt",
+            "part": "noun",
+            "forms": "die Produkte",
+            "definition_de": "Ein Erzeugnis, das hergestellt und angeboten wird.",
+            "translations_ru": [
+              "продукт",
+              "изделие",
+              "товар"
+            ],
+            "grammar_hint": "ein Produkt herstellen / verkaufen; aus + Dativ bestehen.",
+            "example": "Dieses Produkt besteht aus recyceltem Material.",
+            "example_ru": "Это изделие изготовлено из переработанного материала."
+          },
+          {
+            "id": "b1-produkt-food",
+            "de": "das Produkt",
+            "part": "noun",
+            "forms": "die Produkte",
+            "definition_de": "Ein Lebensmittel oder eine daraus hergestellte Ware.",
+            "translations_ru": [
+              "продукт питания",
+              "пищевой продукт"
+            ],
+            "grammar_hint": "Milchprodukte — молочные продукты; Fertigprodukte — готовые продукты. Учебный контекст общего значения Erzeugnis.",
+            "example": "Im Laden kaufen wir regionale Produkte.",
+            "example_ru": "В магазине мы покупаем местные продукты."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Produkt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 71,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Produkt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_20388084d992ca8213e1",
+      "alias_ids": [
+        "b1-programm-schedule"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_20388084d992ca8213e1",
+        "de": "das Programm",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "программа",
+          "программа передач",
+          "афиша (перечень показов)"
+        ],
+        "definition_de": "Eine Abfolge oder Übersicht von Sendungen, Filmen und anderen Veranstaltungen.",
+        "forms": "Plural · die Programme",
+        "example": "Im Programm steht, wann der nächste Film beginnt.",
+        "example_ru": "В программе указано, когда начнётся следующий фильм.",
+        "grammar_hint": "",
+        "usage_note": "Подтверждены контексты радио и кино. Компьютерная программа — другое значение; его уровень по данной статье не установлен.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Programm"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-programm-schedule"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-programm-schedule",
+            "de": "das Programm",
+            "part": "noun",
+            "forms": "die Programme",
+            "definition_de": "Eine Übersicht über geplante Veranstaltungen oder Sendungen.",
+            "translations_ru": [
+              "программа",
+              "расписание (мероприятий, передач)"
+            ],
+            "grammar_hint": "im Programm stehen; das Fernsehprogramm — программа телепередач.",
+            "example": "Im Programm steht heute ein Konzert.",
+            "example_ru": "В сегодняшней программе концерт."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Programm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a636676c79464c80a7cd",
+      "alias_ids": [
+        "b1-projekt-project"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a636676c79464c80a7cd",
+        "de": "das Projekt",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "проект"
+        ],
+        "definition_de": "Eine geplante Aufgabe, an der man eine bestimmte Zeit lang arbeitet.",
+        "forms": "Plural · die Projekte",
+        "example": "Im Deutschkurs machen wir ein Projekt über Zürich.",
+        "example_ru": "На курсе немецкого мы делаем проект о Цюрихе.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Projekt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Работа и профессии",
+        "topics": [
+          "Работа и профессии"
+        ],
+        "alias_ids": [
+          "b1-projekt-project"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-projekt-project",
+            "de": "das Projekt",
+            "part": "noun",
+            "forms": "die Projekte",
+            "definition_de": "Ein zeitlich oder sachlich begrenztes Vorhaben mit einem Ziel.",
+            "translations_ru": [
+              "проект"
+            ],
+            "grammar_hint": "an einem Projekt arbeiten (an + Dativ); ein Projekt durchführen (Akk.).",
+            "example": "Wir arbeiten gemeinsam an einem neuen Projekt.",
+            "example_ru": "Мы вместе работаем над новым проектом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Projekt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-463-1",
+      "alias_ids": [
+        "b1-prospekt-brochure"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-463-1",
+        "de": "der Prospekt",
+        "lemma": "Prospekt",
+        "ru": "рекламный буклет",
+        "uk": "",
+        "translations_ru": [
+          "рекламный буклет"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "die Prospekte",
+        "definition_de": "Ein Heft oder Blatt mit Werbung oder Informationen.",
+        "example": "Der Prospekt liegt an der Kasse.",
+        "example_ru": "Рекламный буклет лежит у кассы.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "6155e5ed212fa6aee6d7"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-prospekt-brochure"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-prospekt-brochure",
+            "de": "der Prospekt",
+            "part": "noun",
+            "forms": "die Prospekte",
+            "definition_de": "Eine gedruckte oder digitale Information über Angebote oder Einrichtungen.",
+            "translations_ru": [
+              "проспект",
+              "рекламная брошюра",
+              "буклет"
+            ],
+            "grammar_hint": "ein Prospekt über + Akk.; не путать с русским «проспект» в значении улица.",
+            "example": "Im Reisebüro habe ich einen Prospekt mitgenommen.",
+            "example_ru": "В турагентстве я взяла рекламный буклет."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Prospekt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_cd752e4d81700ee9df4f",
+      "alias_ids": [
+        "b1-pruefen-check"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_cd752e4d81700ee9df4f",
+        "de": "prüfen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "проверять",
+          "проверить"
+        ],
+        "definition_de": "Nachsehen, ob etwas richtig ist oder die Anforderungen erfüllt.",
+        "forms": "prüft · prüfte · hat geprüft",
+        "example": "Bitte prüfen Sie Ihre Angaben vor dem Senden.",
+        "example_ru": "Пожалуйста, проверьте свои данные перед отправкой.",
+        "grammar_hint": "etwas prüfen (+ Akkusativ); prüfen, ob … — глагол придаточного в конце.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/pr%C3%BCfen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-pruefen-check"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-pruefen-check",
+            "de": "prüfen",
+            "part": "verb",
+            "forms": "prüft · prüfte · hat geprüft",
+            "definition_de": "Etwas auf Richtigkeit, Qualität oder Funktionsfähigkeit untersuchen.",
+            "translations_ru": [
+              "проверять",
+              "контролировать"
+            ],
+            "grammar_hint": "etwas prüfen (Akk.); prüfen, ob … — косвенный вопрос: спрягаемый глагол в конце придаточного.",
+            "example": "Bitte prüfen Sie, ob die Angaben richtig sind.",
+            "example_ru": "Пожалуйста, проверьте, верны ли данные."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/pr%C3%BCfen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-464-1",
+      "alias_ids": [
+        "b1-pruefung-exam"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-464-1",
+        "de": "die Prüfung",
+        "lemma": "Prüfung",
+        "ru": "экзамен",
+        "uk": "",
+        "translations_ru": [
+          "экзамен"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Prüfungen",
+        "definition_de": "Eine Aufgabe oder Veranstaltung, bei der Wissen oder Können geprüft wird.",
+        "example": "Nächste Woche habe ich eine Prüfung.",
+        "example_ru": "На следующей неделе у меня экзамен.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "43ac4873822701315349"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-pruefung-exam"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-pruefung-exam",
+            "de": "die Prüfung",
+            "part": "noun",
+            "forms": "die Prüfungen",
+            "definition_de": "Eine organisierte Feststellung von Kenntnissen oder Fähigkeiten.",
+            "translations_ru": [
+              "экзамен",
+              "испытание"
+            ],
+            "grammar_hint": "eine Prüfung ablegen (проходить) / bestehen (успешно сдать); durch eine Prüfung fallen — провалить экзамен.",
+            "example": "Sie hat die mündliche Prüfung bestanden.",
+            "example_ru": "Она сдала устный экзамен."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 exam vocabulary, original examples; earliest CEFR level pending cross-level comparison. Teaching contexts are not necessarily distinct lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Pr%C3%BCfung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_11d1c1461b2740291f01",
+      "alias_ids": [
+        "b1-pullover-clothing"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_11d1c1461b2740291f01",
+        "de": "der Pullover",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "свитер"
+        ],
+        "definition_de": "Ein meist warmes Oberteil, das man über den Kopf anzieht.",
+        "forms": "Plural · die Pullover",
+        "example": "Im Büro ist es kühl. Ich ziehe einen Pullover an.",
+        "example_ru": "В офисе прохладно. Я надеваю свитер.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Pullover"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-pullover-clothing"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-pullover-clothing",
+            "de": "der Pullover",
+            "part": "noun",
+            "forms": "die Pullover",
+            "definition_de": "Ein meist gestricktes Oberteil, das man über den Kopf anzieht.",
+            "translations_ru": [
+              "свитер",
+              "пуловер"
+            ],
+            "grammar_hint": "einen Pullover anziehen; die Strickjacke — кофта на застёжке.",
+            "example": "Im Winter trage ich gern warme Pullover.",
+            "example_ru": "Зимой я люблю носить тёплые свитеры."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Pullover"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-465-1",
+      "alias_ids": [
+        "b1-puenktlich-person",
+        "b1-puenktlich-schedule"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-465-1",
+        "de": "pünktlich",
+        "lemma": "pünktlich",
+        "ru": "пунктуальный; вовремя",
+        "uk": "",
+        "translations_ru": [
+          "пунктуальный",
+          "вовремя"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "pünktlicher · am pünktlichsten",
+        "definition_de": "Genau zur vereinbarten Zeit.",
+        "example": "Der Zug kommt pünktlich.",
+        "example_ru": "Поезд прибывает вовремя.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 21,
+            "row_id": "a4b393f77f6f992ef569"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-puenktlich-person",
+          "b1-puenktlich-schedule"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-puenktlich-person",
+            "de": "pünktlich",
+            "part": "adj",
+            "forms": "pünktlich · pünktlicher · am pünktlichsten",
+            "definition_de": "Zur vereinbarten Zeit anwesend oder bereit.",
+            "translations_ru": [
+              "пунктуальный",
+              "вовремя"
+            ],
+            "grammar_hint": "pünktlich sein / kommen; Gegenteil: unpünktlich.",
+            "example": "Bitte sei morgen pünktlich.",
+            "example_ru": "Пожалуйста, приходи завтра вовремя."
+          },
+          {
+            "id": "b1-puenktlich-schedule",
+            "de": "pünktlich",
+            "part": "adv",
+            "forms": "наречное употребление без окончания; pünktlich · pünktlicher · am pünktlichsten",
+            "definition_de": "Ohne Verspätung zu einer vorgesehenen Zeit.",
+            "translations_ru": [
+              "точно по расписанию",
+              "вовремя"
+            ],
+            "grammar_hint": "pünktlich ankommen / abfahren; контекст своевременности, не отдельная лексема.",
+            "example": "Der Zug ist heute pünktlich angekommen.",
+            "example_ru": "Поезд сегодня прибыл вовремя."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/p%C3%BCnktlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/p%C3%BCnktlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_1d50928460883470caf5",
+      "alias_ids": [
+        "b1-putzen-clean"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_1d50928460883470caf5",
+        "de": "putzen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "чистить",
+          "убирать",
+          "мыть"
+        ],
+        "definition_de": "Etwas sauber machen.",
+        "forms": "putzt · putzte · hat geputzt",
+        "example": "Am Samstag putze ich die Fenster.",
+        "example_ru": "В субботу я мою окна.",
+        "grammar_hint": "etwas (Akkusativ) putzen; sich die Zähne putzen — возвратное местоимение в Dativ, die Zähne в Akkusativ.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/putzen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-putzen-clean"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-putzen-clean",
+            "de": "putzen",
+            "part": "verb",
+            "forms": "putzt · putzte · hat geputzt",
+            "definition_de": "Schmutz von Gegenständen oder Flächen entfernen.",
+            "translations_ru": [
+              "чистить",
+              "убирать",
+              "мыть"
+            ],
+            "grammar_hint": "etwas putzen (Akk.); Fenster putzen — мыть окна; Wohnung putzen — убирать квартиру.",
+            "example": "Am Samstag putze ich die Küche.",
+            "example_ru": "В субботу я убираю кухню."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/putzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_625e51e5f547065bd63e",
+      "alias_ids": [
+        "b1-qualitaet-quality"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_625e51e5f547065bd63e",
+        "de": "die Qualität",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "качество"
+        ],
+        "definition_de": "Wie gut oder schlecht ein Produkt oder eine Leistung ist.",
+        "forms": "Plural · die Qualitäten",
+        "example": "Die Schuhe sind teuer, aber die Qualität ist gut.",
+        "example_ru": "Туфли дорогие, но качество хорошее.",
+        "grammar_hint": "",
+        "usage_note": "Когда говорим о качестве одного товара, часто используем единственное число.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Qualit%C3%A4t"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-qualitaet-quality"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-qualitaet-quality",
+            "de": "die Qualität",
+            "part": "noun",
+            "forms": "die Qualitäten; в общем значении часто Singular",
+            "definition_de": "Die Beschaffenheit und Güte einer Sache oder Leistung.",
+            "translations_ru": [
+              "качество"
+            ],
+            "grammar_hint": "gute / schlechte Qualität; Qualität und Preis vergleichen.",
+            "example": "Die Qualität der Möbel ist gut.",
+            "example_ru": "Качество мебели хорошее."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Qualit%C3%A4t"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_08f6cc9af878ac20ff27",
+      "alias_ids": [
+        "b1-quiz-game"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_08f6cc9af878ac20ff27",
+        "de": "das Quiz",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "викторина"
+        ],
+        "definition_de": "Ein Spiel, bei dem man Fragen beantwortet und dafür oft Punkte bekommt.",
+        "forms": "Plural · die Quiz / die Quizze",
+        "example": "Am Ende des Kurses machen wir ein kleines Quiz.",
+        "example_ru": "В конце курса мы проведём небольшую викторину.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Quiz"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-quiz-game"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-quiz-game",
+            "de": "das Quiz",
+            "part": "noun",
+            "forms": "die Quiz; разговорное die Quizze",
+            "definition_de": "Ein Spiel, bei dem Fragen beantwortet werden müssen.",
+            "translations_ru": [
+              "викторина"
+            ],
+            "grammar_hint": "an einem Quiz teilnehmen (an + Dativ); beim Quiz gewinnen.",
+            "example": "Am Freitag machen wir ein Quiz im Kurs.",
+            "example_ru": "В пятницу мы проведём викторину на курсе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Quiz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-466-1",
+      "alias_ids": [
+        "b1-rad-fahren"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-466-1",
+        "de": "Rad fahren",
+        "lemma": "Rad fahren",
+        "ru": "ездить на велосипеде",
+        "uk": "",
+        "translations_ru": [
+          "ездить на велосипеде"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "fährt Rad · fuhr Rad · ist Rad gefahren",
+        "definition_de": "Sich mit einem Fahrrad fortbewegen.",
+        "example": "Ich fahre gern Rad.",
+        "example_ru": "Я люблю ездить на велосипеде.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "e19513d3c5dc657ef73b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-rad-fahren"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rad-fahren",
+            "de": "Rad fahren",
+            "part": "phrase",
+            "forms": "fährt Rad · fuhr Rad · ist Rad gefahren",
+            "definition_de": "Sich mit einem Fahrrad fortbewegen.",
+            "translations_ru": [
+              "ездить на велосипеде",
+              "кататься на велосипеде"
+            ],
+            "grammar_hint": "Rad fahren — раздельно, существительное с большой буквы; das Radfahren — субстантивация, слитно. CH: Velo fahren.",
+            "example": "Bei schönem Wetter fahre ich gern Rad.",
+            "example_ru": "В хорошую погоду я люблю кататься на велосипеде."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rad"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

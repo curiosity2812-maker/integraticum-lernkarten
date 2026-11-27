@@ -1,0 +1,2347 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    913,
+    932
+  ],
+  "reviewed": 20,
+  "merge_count": 9,
+  "merge_target_count": 5,
+  "retained_distinct_senses": 4,
+  "retained_teaching_contexts_pending_level_review": 7,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 913,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Süßigkeit auf Kakaobasis, etwa in Form einer Tafel. Example: Ich teile die Schokolade mit meiner Schwester.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 6,
+        "record": {
+          "id": "b1-schokolade-solid",
+          "de": "die Schokolade",
+          "lemma": "Schokolade",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "шоколад"
+          ],
+          "definition_de": "Eine Süßigkeit auf Kakaobasis, etwa in Form einer Tafel.",
+          "example": "Ich teile die Schokolade mit meiner Schwester.",
+          "example_ru": "Я делюсь шоколадом с сестрой.",
+          "forms": "die Schokoladen (виды); продукт обычно Singular",
+          "grammar_hint": "eine Tafel Schokolade — плитка шоколада; CH: Schoggi (разговорное).",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schokolade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 45,
+          "record": {
+            "id": "dict_3633e617bb503c893d76",
+            "de": "die Schokolade",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "шоколад"
+            ],
+            "definition_de": "Ein süßes Lebensmittel aus Kakao, das es oft als Tafel gibt.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Zum Kaffee esse ich ein Stück Schokolade.",
+            "example_ru": "С кофе я съедаю кусочек шоколада.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schokolade"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3633e617bb503c893d76",
+        "alias_id": "b1-schokolade-solid",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3633e617bb503c893d76"
+      }
+    },
+    {
+      "candidate_number": 914,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein Getränk, das mit Kakao oder Schokolade zubereitet wird. Example: Nach dem Spaziergang trinken wir heiße Schokolade.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 7,
+        "record": {
+          "id": "b1-schokolade-drink",
+          "de": "die Schokolade",
+          "lemma": "Schokolade",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "горячий шоколад",
+            "шоколадный напиток"
+          ],
+          "definition_de": "Ein Getränk, das mit Kakao oder Schokolade zubereitet wird.",
+          "example": "Nach dem Spaziergang trinken wir heiße Schokolade.",
+          "example_ru": "После прогулки мы пьём горячий шоколад.",
+          "forms": "die Schokoladen; напиток обычно Singular",
+          "grammar_hint": "eine Tasse heiße Schokolade; CH: heisse. Не путать с Schokolade essen.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schokolade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 45,
+          "record": {
+            "id": "dict_3633e617bb503c893d76",
+            "de": "die Schokolade",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "шоколад"
+            ],
+            "definition_de": "Ein süßes Lebensmittel aus Kakao, das es oft als Tafel gibt.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Zum Kaffee esse ich ein Stück Schokolade.",
+            "example_ru": "С кофе я съедаю кусочек шоколада.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schokolade"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 915,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Kennzeichnet, dass ein Zustand zu einem bestimmten Zeitpunkt eingetreten ist. Example: Hast du die E-Mail schon gelesen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 8,
+        "record": {
+          "id": "b1-schon-already",
+          "de": "schon",
+          "lemma": "schon",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "уже"
+          ],
+          "definition_de": "Kennzeichnet, dass ein Zustand zu einem bestimmten Zeitpunkt eingetreten ist.",
+          "example": "Hast du die E-Mail schon gelesen?",
+          "example_ru": "Ты уже прочитала письмо?",
+          "forms": "неизменяемое",
+          "grammar_hint": "schon — уже; noch nicht — ещё нет. В вопросе: Hast du schon …?",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "adverb-schon-time",
+        "alias_id": "b1-schon-already",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "adverb-schon-time"
+      }
+    },
+    {
+      "candidate_number": 916,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Betont, dass etwas früher als erwartet möglich ist oder geschieht. Example: Mit vier Jahren konnte sie schon schwimmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 9,
+        "record": {
+          "id": "b1-schon-early",
+          "de": "schon",
+          "lemma": "schon",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "уже",
+            "так рано"
+          ],
+          "definition_de": "Betont, dass etwas früher als erwartet möglich ist oder geschieht.",
+          "example": "Mit vier Jahren konnte sie schon schwimmen.",
+          "example_ru": "В четыре года она уже умела плавать.",
+          "forms": "неизменяемое",
+          "grammar_hint": "schon может подчёркивать раннее наступление события; erst vier Jahre — всего четыре года.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "adverb-schon-time",
+        "alias_id": "b1-schon-early",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "adverb-schon-time"
+      }
+    },
+    {
+      "candidate_number": 917,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Betont das erreichte Alter oder eine überraschend große Menge. Example: Wir warten schon seit einer Stunde.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 10,
+        "record": {
+          "id": "b1-schon-amount",
+          "de": "schon",
+          "lemma": "schon",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "уже",
+            "целых"
+          ],
+          "definition_de": "Betont das erreichte Alter oder eine überraschend große Menge.",
+          "example": "Wir warten schon seit einer Stunde.",
+          "example_ru": "Мы ждём уже целый час.",
+          "forms": "неизменяемое",
+          "grammar_hint": "schon seit + Dativ: действие продолжается; контекст достигнутого количества или срока.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "adverb-schon-time",
+        "alias_id": "b1-schon-amount",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "adverb-schon-time"
+      }
+    },
+    {
+      "candidate_number": 918,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Verleiht einer Aufforderung Nachdruck, oft aus Ungeduld. Example: Komm schon, der Bus fährt gleich!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 11,
+        "record": {
+          "id": "b1-schon-urge",
+          "de": "schon",
+          "lemma": "schon",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "ну же",
+            "давай уже"
+          ],
+          "definition_de": "Verleiht einer Aufforderung Nachdruck, oft aus Ungeduld.",
+          "example": "Komm schon, der Bus fährt gleich!",
+          "example_ru": "Ну же, идём, автобус скоро отправляется!",
+          "forms": "неизменяемая частица",
+          "grammar_hint": "В повелительном предложении выражает нетерпение или побуждение; не переводится буквально как «уже».",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 919,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Drückt Zuversicht aus, dass etwas gelingen oder eintreten wird. Example: Du wirst die Prüfung schon schaffen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 12,
+        "record": {
+          "id": "b1-schon-reassurance",
+          "de": "schon",
+          "lemma": "schon",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "всё будет хорошо",
+            "наверняка",
+            "уж"
+          ],
+          "definition_de": "Drückt Zuversicht aus, dass etwas gelingen oder eintreten wird.",
+          "example": "Du wirst die Prüfung schon schaffen.",
+          "example_ru": "Ты обязательно справишься с экзаменом.",
+          "forms": "неизменяемая частица",
+          "grammar_hint": "Часто в высказываниях о будущем; не подчинительный союз, глагол не переносится в конец.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 920,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Stimmt einer Aussage teilweise zu und bereitet einen Einwand vor. Example: Ich würde schon gern mitkommen, aber ich habe Unterricht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 13,
+        "record": {
+          "id": "b1-schon-concession",
+          "de": "schon …, aber …",
+          "lemma": "schon",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "вообще-то да, но …",
+            "конечно, но …"
+          ],
+          "definition_de": "Stimmt einer Aussage teilweise zu und bereitet einen Einwand vor.",
+          "example": "Ich würde schon gern mitkommen, aber ich habe Unterricht.",
+          "example_ru": "Я бы с удовольствием пошла, но у меня занятия.",
+          "forms": "неизменяемая частица",
+          "grammar_hint": "aber — сочинительный союз; после него обычный порядок слов главного предложения. würde + Infinitiv.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 921,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bejaht im Gegensatz zu einer zuvor geäußerten Verneinung. Example: Ich mag keinen Kaffee. – Ich schon.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 14,
+        "record": {
+          "id": "b1-schon-contrast",
+          "de": "Ich schon.",
+          "lemma": "schon",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "а я да",
+            "а мне нравится (по контексту)"
+          ],
+          "definition_de": "Bejaht im Gegensatz zu einer zuvor geäußerten Verneinung.",
+          "example": "Ich mag keinen Kaffee. – Ich schon.",
+          "example_ru": "Я не люблю кофе. — А я люблю.",
+          "forms": "неизменяемая частица",
+          "grammar_hint": "Краткая контрастная реплика: Ich schon. / Ich nicht. Пропущенный глагол понятен из контекста.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 52,
+          "record": {
+            "id": "adverb-schon-time",
+            "de": "schon",
+            "lemma": "schon",
+            "ru": "уже",
+            "uk": "",
+            "translations_ru": [
+              "уже"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+            "example": "Der Bus ist schon da.",
+            "example_ru": "Автобус уже здесь.",
+            "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "1a13e24d6c9102765487"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "row_id": "6ab455b87c69b5e42544"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 922,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Auf das Auge oder andere Sinne angenehm wirkend. Example: Das ist ein schönes Bild.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 15,
+        "record": {
+          "id": "b1-schoen-beautiful",
+          "de": "schön",
+          "lemma": "schön",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "красивый",
+            "прекрасный"
+          ],
+          "definition_de": "Auf das Auge oder andere Sinne angenehm wirkend.",
+          "example": "Das ist ein schönes Bild.",
+          "example_ru": "Это красивая картина.",
+          "forms": "schön · schöner · am schönsten",
+          "grammar_hint": "Не путать schön (красивый) и schon (уже); умлаут меняет значение.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-505-1",
+        "alias_id": "b1-schoen-beautiful",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-505-1"
+      }
+    },
+    {
+      "candidate_number": 923,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Angenehme äußere Bedingungen bezeichnend. Example: Morgen soll das Wetter schön sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 16,
+        "record": {
+          "id": "b1-schoen-weather",
+          "de": "schön",
+          "lemma": "schön",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "хороший",
+            "приятный (о погоде)"
+          ],
+          "definition_de": "Angenehme äußere Bedingungen bezeichnend.",
+          "example": "Morgen soll das Wetter schön sein.",
+          "example_ru": "Завтра должна быть хорошая погода.",
+          "forms": "schön · schöner · am schönsten",
+          "grammar_hint": "schönes Wetter; Es ist schön draußen. Учебный контекст приятной обстановки.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-505-1",
+        "alias_id": "b1-schoen-weather",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-505-1"
+      }
+    },
+    {
+      "candidate_number": 924,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine höfliche Formel für einen angenehmen kommenden Zeitraum. Example: Ich wünsche dir ein schönes Wochenende.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 17,
+        "record": {
+          "id": "b1-schoen-wish",
+          "de": "einen schönen … wünschen",
+          "lemma": "schön",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "желать хорошего …"
+          ],
+          "definition_de": "Eine höfliche Formel für einen angenehmen kommenden Zeitraum.",
+          "example": "Ich wünsche dir ein schönes Wochenende.",
+          "example_ru": "Желаю тебе хороших выходных.",
+          "forms": "schön · schöner · am schönsten; wünscht · wünschte · hat gewünscht",
+          "grammar_hint": "jemandem (Dativ) etwas (Akk.) wünschen; ein schönes Wochenende, einen schönen Tag.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 925,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine freundliche Grußformel, auch beim Übermitteln von Grüßen. Example: Schöne Grüße an deine Mutter!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 18,
+        "record": {
+          "id": "b1-schoen-greetings",
+          "de": "Schöne Grüße",
+          "lemma": "schön",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "привет",
+            "наилучшие пожелания"
+          ],
+          "definition_de": "Eine freundliche Grußformel, auch beim Übermitteln von Grüßen.",
+          "example": "Schöne Grüße an deine Mutter!",
+          "example_ru": "Передавай привет своей маме!",
+          "forms": "schön · schöner · am schönsten; der Gruß · die Grüße",
+          "grammar_hint": "Grüße an + Akkusativ; CH: schöne Grüsse. Учебная формула.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 926,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine höfliche Verstärkung des Dankes. Example: Danke schön für deine Unterstützung!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 19,
+        "record": {
+          "id": "b1-schoen-thanks",
+          "de": "danke schön",
+          "lemma": "schön",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "большое спасибо",
+            "спасибо большое"
+          ],
+          "definition_de": "Eine höfliche Verstärkung des Dankes.",
+          "example": "Danke schön für deine Unterstützung!",
+          "example_ru": "Большое спасибо за твою поддержку!",
+          "forms": "устойчивая формула; без сравнения",
+          "grammar_hint": "danke schön — раздельно; das Dankeschön — существительное, слитно и с большой буквы.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 927,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Drückt Freude über den Inhalt eines Nebensatzes aus. Example: Schön, dass du wieder bei uns bist.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 20,
+        "record": {
+          "id": "b1-schoen-dass",
+          "de": "Schön, dass …",
+          "lemma": "schön",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "здорово, что …",
+            "приятно, что …"
+          ],
+          "definition_de": "Drückt Freude über den Inhalt eines Nebensatzes aus.",
+          "example": "Schön, dass du wieder bei uns bist.",
+          "example_ru": "Здорово, что ты снова с нами.",
+          "forms": "schön · schöner · am schönsten",
+          "grammar_hint": "После dass спрягаемый глагол обязательно в конце: … bei uns bist. Запятая перед dass.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 928,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Signalisiert die Annahme einer Information oder eines Vorschlags. Example: Schön, dann treffen wir uns vor dem Eingang.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 21,
+        "record": {
+          "id": "b1-schoen-agreement",
+          "de": "Schön, dann …",
+          "lemma": "schön",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "хорошо, тогда …",
+            "ладно, тогда …"
+          ],
+          "definition_de": "Signalisiert die Annahme einer Information oder eines Vorschlags.",
+          "example": "Schön, dann treffen wir uns vor dem Eingang.",
+          "example_ru": "Хорошо, тогда встретимся перед входом.",
+          "forms": "устойчивая разговорная реплика",
+          "grammar_hint": "dann занимает первое место в следующем главном предложении: dann treffen wir …",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 674,
+          "record": {
+            "id": "a1-505-1",
+            "de": "schön",
+            "lemma": "schön",
+            "ru": "красивый; приятный",
+            "uk": "",
+            "translations_ru": [
+              "красивый",
+              "приятный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schöner · am schönsten",
+            "definition_de": "Angenehm anzusehen oder zu erleben.",
+            "example": "Der Ausflug war schön.",
+            "example_ru": "Поездка была приятной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e80f8ead0860736a1af8"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 929,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Möbelstück mit Fächern, meist hinter Türen. Example: Die Winterkleidung liegt im oberen Fach des Schranks.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 22,
+        "record": {
+          "id": "b1-schrank-cupboard",
+          "de": "der Schrank",
+          "lemma": "Schrank",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "шкаф"
+          ],
+          "definition_de": "Ein Möbelstück mit Fächern, meist hinter Türen.",
+          "example": "Die Winterkleidung liegt im oberen Fach des Schranks.",
+          "example_ru": "Зимняя одежда лежит на верхней полке шкафа.",
+          "forms": "die Schränke",
+          "grammar_hint": "im Schrank (Wo? Dativ), in den Schrank (Wohin? Akkusativ); A/CH также Kasten.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schrank"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 3,
+          "record": {
+            "id": "c2",
+            "de": "der Schrank",
+            "lemma": "Schrank",
+            "ru": "шкаф",
+            "uk": "шафа",
+            "translations_ru": [
+              "шкаф"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Schränke",
+            "definition_de": "Ein Möbel mit Türen, in dem man Dinge aufbewahrt.",
+            "example": "Der Schrank steht im Schlafzimmer.",
+            "example_ru": "Шкаф стоит в спальне.",
+            "note": "im Schrank — в шкафу (Wo?); in den Schrank — в шкаф (Wohin?).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c2",
+        "alias_id": "b1-schrank-cupboard",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c2"
+      }
+    },
+    {
+      "candidate_number": 930,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Bezeichnet ein besonders unangenehmes Ausmaß einer Sache. Example: Im Dachgeschoss herrschte eine schreckliche Hitze.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 24,
+        "record": {
+          "id": "b1-schrecklich-intensity-noun",
+          "de": "schrecklich",
+          "lemma": "schrecklich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "ужасный",
+            "невыносимый"
+          ],
+          "definition_de": "Bezeichnet ein besonders unangenehmes Ausmaß einer Sache.",
+          "example": "Im Dachgeschoss herrschte eine schreckliche Hitze.",
+          "example_ru": "На чердачном этаже стояла невыносимая жара.",
+          "forms": "schrecklich · schrecklicher · am schrecklichsten",
+          "grammar_hint": "schreckliche Hitze — сильная неприятная жара; учебный контекст усиления.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 329,
+          "record": {
+            "id": "dict_052a2a09ac878f5490fb",
+            "de": "schrecklich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ужасный",
+              "страшный"
+            ],
+            "definition_de": "Sehr unangenehm oder so, dass etwas Angst macht.",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "example": "Das Wetter war gestern schrecklich.",
+            "example_ru": "Вчера была ужасная погода.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schrecklich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_052a2a09ac878f5490fb",
+        "alias_id": "b1-schrecklich-intensity-noun",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_052a2a09ac878f5490fb"
+      }
+    },
+    {
+      "candidate_number": 931,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Verstärkt umgangssprachlich eine Eigenschaft oder Empfindung. Example: Nach dem langen Tag bin ich schrecklich müde.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 25,
+        "record": {
+          "id": "b1-schrecklich-intensifier",
+          "de": "schrecklich",
+          "lemma": "schrecklich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "ужасно",
+            "очень",
+            "страшно (усиление)"
+          ],
+          "definition_de": "Verstärkt umgangssprachlich eine Eigenschaft oder Empfindung.",
+          "example": "Nach dem langen Tag bin ich schrecklich müde.",
+          "example_ru": "После долгого дня я ужасно устала.",
+          "forms": "наречное употребление без окончания; сравнение не нужно",
+          "grammar_hint": "schrecklich + Adjektiv; здесь ≈ sehr, не обязательно буквальный страх.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 329,
+          "record": {
+            "id": "dict_052a2a09ac878f5490fb",
+            "de": "schrecklich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ужасный",
+              "страшный"
+            ],
+            "definition_de": "Sehr unangenehm oder so, dass etwas Angst macht.",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "example": "Das Wetter war gestern schrecklich.",
+            "example_ru": "Вчера была ужасная погода.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schrecklich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 932,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine starke negative persönliche Bewertung ausdrückend. Example: Ich finde die neue Tapete schrecklich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 26,
+        "record": {
+          "id": "b1-schrecklich-dislike",
+          "de": "schrecklich",
+          "lemma": "schrecklich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "ужасный",
+            "отвратительный"
+          ],
+          "definition_de": "Eine starke negative persönliche Bewertung ausdrückend.",
+          "example": "Ich finde die neue Tapete schrecklich.",
+          "example_ru": "Мне новые обои кажутся ужасными.",
+          "forms": "schrecklich · schrecklicher · am schrecklichsten",
+          "grammar_hint": "etwas (Akk.) schrecklich finden; после finden оценочное прилагательное без окончания.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 329,
+          "record": {
+            "id": "dict_052a2a09ac878f5490fb",
+            "de": "schrecklich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ужасный",
+              "страшный"
+            ],
+            "definition_de": "Sehr unangenehm oder so, dass etwas Angst macht.",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "example": "Das Wetter war gestern schrecklich.",
+            "example_ru": "Вчера была ужасная погода.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schrecklich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_052a2a09ac878f5490fb",
+        "alias_id": "b1-schrecklich-dislike",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_052a2a09ac878f5490fb"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_3633e617bb503c893d76",
+      "alias_ids": [
+        "b1-schokolade-solid"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3633e617bb503c893d76",
+        "de": "die Schokolade",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "шоколад"
+        ],
+        "definition_de": "Ein süßes Lebensmittel aus Kakao, das es oft als Tafel gibt.",
+        "forms": "В этом значении обычно в единственном числе",
+        "example": "Zum Kaffee esse ich ein Stück Schokolade.",
+        "example_ru": "С кофе я съедаю кусочек шоколада.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schokolade"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-schokolade-solid"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schokolade-solid",
+            "de": "die Schokolade",
+            "part": "noun",
+            "forms": "die Schokoladen (виды); продукт обычно Singular",
+            "definition_de": "Eine Süßigkeit auf Kakaobasis, etwa in Form einer Tafel.",
+            "translations_ru": [
+              "шоколад"
+            ],
+            "grammar_hint": "eine Tafel Schokolade — плитка шоколада; CH: Schoggi (разговорное).",
+            "example": "Ich teile die Schokolade mit meiner Schwester.",
+            "example_ru": "Я делюсь шоколадом с сестрой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schokolade"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "adverb-schon-time",
+      "alias_ids": [
+        "b1-schon-already",
+        "b1-schon-early",
+        "b1-schon-amount"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "adverb-schon-time",
+        "de": "schon",
+        "lemma": "schon",
+        "ru": "уже",
+        "uk": "",
+        "translations_ru": [
+          "уже"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Zeigt, dass etwas jetzt bereits der Fall ist.",
+        "example": "Der Bus ist schon da.",
+        "example_ru": "Автобус уже здесь.",
+        "note": "Это значение времени. В сочетании Das wird schon может передаваться уверенность, и перевод будет другим.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "1a13e24d6c9102765487"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "row_id": "6ab455b87c69b5e42544"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schon-already",
+          "b1-schon-early",
+          "b1-schon-amount"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schon-already",
+            "de": "schon",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Kennzeichnet, dass ein Zustand zu einem bestimmten Zeitpunkt eingetreten ist.",
+            "translations_ru": [
+              "уже"
+            ],
+            "grammar_hint": "schon — уже; noch nicht — ещё нет. В вопросе: Hast du schon …?",
+            "example": "Hast du die E-Mail schon gelesen?",
+            "example_ru": "Ты уже прочитала письмо?"
+          },
+          {
+            "id": "b1-schon-early",
+            "de": "schon",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Betont, dass etwas früher als erwartet möglich ist oder geschieht.",
+            "translations_ru": [
+              "уже",
+              "так рано"
+            ],
+            "grammar_hint": "schon может подчёркивать раннее наступление события; erst vier Jahre — всего четыре года.",
+            "example": "Mit vier Jahren konnte sie schon schwimmen.",
+            "example_ru": "В четыре года она уже умела плавать."
+          },
+          {
+            "id": "b1-schon-amount",
+            "de": "schon",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Betont das erreichte Alter oder eine überraschend große Menge.",
+            "translations_ru": [
+              "уже",
+              "целых"
+            ],
+            "grammar_hint": "schon seit + Dativ: действие продолжается; контекст достигнутого количества или срока.",
+            "example": "Wir warten schon seit einer Stunde.",
+            "example_ru": "Мы ждём уже целый час."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schon",
+              "https://www.duden.de/rechtschreibung/schon_gewiss_blosz_noch",
+              "https://www.duden.de/rechtschreibung/schon_bereits_eh_laengst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-505-1",
+      "alias_ids": [
+        "b1-schoen-beautiful",
+        "b1-schoen-weather"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-505-1",
+        "de": "schön",
+        "lemma": "schön",
+        "ru": "красивый; приятный",
+        "uk": "",
+        "translations_ru": [
+          "красивый",
+          "приятный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schöner · am schönsten",
+        "definition_de": "Angenehm anzusehen oder zu erleben.",
+        "example": "Der Ausflug war schön.",
+        "example_ru": "Поездка была приятной.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "e80f8ead0860736a1af8"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schoen-beautiful",
+          "b1-schoen-weather"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schoen-beautiful",
+            "de": "schön",
+            "part": "adj",
+            "forms": "schön · schöner · am schönsten",
+            "definition_de": "Auf das Auge oder andere Sinne angenehm wirkend.",
+            "translations_ru": [
+              "красивый",
+              "прекрасный"
+            ],
+            "grammar_hint": "Не путать schön (красивый) и schon (уже); умлаут меняет значение.",
+            "example": "Das ist ein schönes Bild.",
+            "example_ru": "Это красивая картина."
+          },
+          {
+            "id": "b1-schoen-weather",
+            "de": "schön",
+            "part": "adj",
+            "forms": "schön · schöner · am schönsten",
+            "definition_de": "Angenehme äußere Bedingungen bezeichnend.",
+            "translations_ru": [
+              "хороший",
+              "приятный (о погоде)"
+            ],
+            "grammar_hint": "schönes Wetter; Es ist schön draußen. Учебный контекст приятной обстановки.",
+            "example": "Morgen soll das Wetter schön sein.",
+            "example_ru": "Завтра должна быть хорошая погода."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sch%C3%B6n",
+              "https://www.duden.de/rechtschreibung/schoen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "c2",
+      "alias_ids": [
+        "b1-schrank-cupboard"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c2",
+        "de": "der Schrank",
+        "lemma": "Schrank",
+        "ru": "шкаф",
+        "uk": "шафа",
+        "translations_ru": [
+          "шкаф"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Schränke",
+        "definition_de": "Ein Möbel mit Türen, in dem man Dinge aufbewahrt.",
+        "example": "Der Schrank steht im Schlafzimmer.",
+        "example_ru": "Шкаф стоит в спальне.",
+        "note": "im Schrank — в шкафу (Wo?); in den Schrank — в шкаф (Wohin?).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schrank-cupboard"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schrank-cupboard",
+            "de": "der Schrank",
+            "part": "noun",
+            "forms": "die Schränke",
+            "definition_de": "Ein Möbelstück mit Fächern, meist hinter Türen.",
+            "translations_ru": [
+              "шкаф"
+            ],
+            "grammar_hint": "im Schrank (Wo? Dativ), in den Schrank (Wohin? Akkusativ); A/CH также Kasten.",
+            "example": "Die Winterkleidung liegt im oberen Fach des Schranks.",
+            "example_ru": "Зимняя одежда лежит на верхней полке шкафа."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schrank"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_052a2a09ac878f5490fb",
+      "alias_ids": [
+        "b1-schrecklich-intensity-noun",
+        "b1-schrecklich-dislike"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_052a2a09ac878f5490fb",
+        "de": "schrecklich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "ужасный",
+          "страшный"
+        ],
+        "definition_de": "Sehr unangenehm oder so, dass etwas Angst macht.",
+        "forms": "schrecklich · schrecklicher · am schrecklichsten",
+        "example": "Das Wetter war gestern schrecklich.",
+        "example_ru": "Вчера была ужасная погода.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schrecklich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-schrecklich-intensity-noun",
+          "b1-schrecklich-dislike"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schrecklich-intensity-noun",
+            "de": "schrecklich",
+            "part": "adj",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "definition_de": "Bezeichnet ein besonders unangenehmes Ausmaß einer Sache.",
+            "translations_ru": [
+              "ужасный",
+              "невыносимый"
+            ],
+            "grammar_hint": "schreckliche Hitze — сильная неприятная жара; учебный контекст усиления.",
+            "example": "Im Dachgeschoss herrschte eine schreckliche Hitze.",
+            "example_ru": "На чердачном этаже стояла невыносимая жара."
+          },
+          {
+            "id": "b1-schrecklich-dislike",
+            "de": "schrecklich",
+            "part": "adj",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "definition_de": "Eine starke negative persönliche Bewertung ausdrückend.",
+            "translations_ru": [
+              "ужасный",
+              "отвратительный"
+            ],
+            "grammar_hint": "etwas (Akk.) schrecklich finden; после finden оценочное прилагательное без окончания.",
+            "example": "Ich finde die neue Tapete schrecklich.",
+            "example_ru": "Мне новые обои кажутся ужасными."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

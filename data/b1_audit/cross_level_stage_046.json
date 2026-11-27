@@ -1,0 +1,2875 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    893,
+    912
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 12,
+  "retained_distinct_senses": 2,
+  "retained_teaching_contexts_pending_level_review": 5,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 893,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Drückt aus, dass ein Problem weniger schwerwiegend ist als befürchtet. Example: Du hast den Bus verpasst? Das ist nicht so schlimm.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 8,
+        "record": {
+          "id": "b1-schlimm-notserious",
+          "de": "nicht so schlimm",
+          "lemma": "schlimm",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "не так страшно",
+            "ничего страшного"
+          ],
+          "definition_de": "Drückt aus, dass ein Problem weniger schwerwiegend ist als befürchtet.",
+          "example": "Du hast den Bus verpasst? Das ist nicht so schlimm.",
+          "example_ru": "Ты пропустила автобус? Ничего страшного.",
+          "forms": "schlimm · schlimmer · am schlimmsten",
+          "grammar_hint": "Устойчивое утешительное выражение; учебный контекст общего значения schlimm.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlimm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 276,
+          "record": {
+            "id": "dict_8eb4c89a4f96a7e4907f",
+            "de": "schlimm",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "плохой",
+              "серьёзный",
+              "страшный"
+            ],
+            "definition_de": "So, dass etwas sehr unangenehm ist, ein Problem darstellt oder Sorgen macht.",
+            "forms": "schlimm · schlimmer · am schlimmsten",
+            "example": "Keine Sorge, der Fehler ist nicht so schlimm.",
+            "example_ru": "Не волнуйся, ошибка не такая уж серьёзная.",
+            "grammar_hint": "",
+            "usage_note": "Das ist nicht schlimm. — Ничего страшного.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schlimm"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8eb4c89a4f96a7e4907f",
+        "alias_id": "b1-schlimm-notserious",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8eb4c89a4f96a7e4907f"
+      }
+    },
+    {
+      "candidate_number": 894,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Mechanismus, der eine Tür oder einen anderen Zugang sichert. Example: Wir müssen das Schloss an der Haustür austauschen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 9,
+        "record": {
+          "id": "b1-schloss-lock",
+          "de": "das Schloss",
+          "lemma": "Schloss",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "замок (запирающее устройство)"
+          ],
+          "definition_de": "Ein Mechanismus, der eine Tür oder einen anderen Zugang sichert.",
+          "example": "Wir müssen das Schloss an der Haustür austauschen.",
+          "example_ru": "Нам нужно заменить замок на входной двери.",
+          "forms": "die Schlösser",
+          "grammar_hint": "das Schloss öffnen; der Schlüssel — ключ. Не путать с одноимённым Schloss — дворец.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schloss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 242,
+          "record": {
+            "id": "dict_ed6a73d23a2869705d34",
+            "de": "das Schloss",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "дворец",
+              "замок (здание)"
+            ],
+            "definition_de": "Ein großes herrschaftliches Gebäude, das oft als Wohnsitz einer adeligen Familie diente.",
+            "forms": "Plural · die Schlösser",
+            "example": "Hinter dem Schloss liegt ein großer Garten.",
+            "example_ru": "За дворцом находится большой сад.",
+            "grammar_hint": "",
+            "usage_note": "Здесь речь о здании. Das Schloss может также означать «замок на двери».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schloss"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 567,
+          "record": {
+            "id": "a2-schloss-lock-reviewed",
+            "de": "das Schloss",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "замок (запирающее устройство)"
+            ],
+            "definition_de": "Eine Vorrichtung, mit der man zum Beispiel eine Tür verschließen kann.",
+            "forms": "Plural · die Schlösser",
+            "example": "Das Schloss an der Wohnungstür ist kaputt.",
+            "example_ru": "Замок на двери квартиры сломан.",
+            "grammar_hint": "",
+            "usage_note": "Не путать с Schloss — дворец, замок (здание).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schloss"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a2-schloss-lock-reviewed",
+        "alias_id": "b1-schloss-lock",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a2-schloss-lock-reviewed"
+      }
+    },
+    {
+      "candidate_number": 895,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein repräsentatives historisches Gebäude, oft als Wohnsitz des Adels errichtet. Example: Am Sonntag besichtigen wir ein Schloss am See.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 10,
+        "record": {
+          "id": "b1-schloss-palace",
+          "de": "das Schloss",
+          "lemma": "Schloss",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "замок",
+            "дворец"
+          ],
+          "definition_de": "Ein repräsentatives historisches Gebäude, oft als Wohnsitz des Adels errichtet.",
+          "example": "Am Sonntag besichtigen wir ein Schloss am See.",
+          "example_ru": "В воскресенье мы посетим замок у озера.",
+          "forms": "die Schlösser",
+          "grammar_hint": "ein Schloss besichtigen; die Burg — обычно укреплённый замок или крепость.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schloss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 242,
+          "record": {
+            "id": "dict_ed6a73d23a2869705d34",
+            "de": "das Schloss",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "дворец",
+              "замок (здание)"
+            ],
+            "definition_de": "Ein großes herrschaftliches Gebäude, das oft als Wohnsitz einer adeligen Familie diente.",
+            "forms": "Plural · die Schlösser",
+            "example": "Hinter dem Schloss liegt ein großer Garten.",
+            "example_ru": "За дворцом находится большой сад.",
+            "grammar_hint": "",
+            "usage_note": "Здесь речь о здании. Das Schloss может также означать «замок на двери».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schloss"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 567,
+          "record": {
+            "id": "a2-schloss-lock-reviewed",
+            "de": "das Schloss",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "замок (запирающее устройство)"
+            ],
+            "definition_de": "Eine Vorrichtung, mit der man zum Beispiel eine Tür verschließen kann.",
+            "forms": "Plural · die Schlösser",
+            "example": "Das Schloss an der Wohnungstür ist kaputt.",
+            "example_ru": "Замок на двери квартиры сломан.",
+            "grammar_hint": "",
+            "usage_note": "Не путать с Schloss — дворец, замок (здание).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schloss"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ed6a73d23a2869705d34",
+        "alias_id": "b1-schloss-palace",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ed6a73d23a2869705d34"
+      }
+    },
+    {
+      "candidate_number": 896,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine laufende Tätigkeit beenden. Example: Für heute machen wir Schluss mit der Arbeit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 11,
+        "record": {
+          "id": "b1-schluss-stop",
+          "de": "Schluss machen",
+          "lemma": "Schluss",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "заканчивать",
+            "прекращать"
+          ],
+          "definition_de": "Eine laufende Tätigkeit beenden.",
+          "example": "Für heute machen wir Schluss mit der Arbeit.",
+          "example_ru": "На сегодня мы заканчиваем работу.",
+          "forms": "der Schluss · die Schlüsse; macht · machte · hat gemacht",
+          "grammar_hint": "Schluss machen mit + Dativ; в другом контексте может означать прекращение отношений.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schluss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 767,
+          "record": {
+            "id": "a1-500-2",
+            "de": "Schluss machen",
+            "lemma": "Schluss machen",
+            "ru": "заканчивать; прекращать",
+            "uk": "",
+            "translations_ru": [
+              "заканчивать",
+              "прекращать"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Mit dem aufhören, was man gerade macht.",
+            "example": "Für heute machen wir Schluss.",
+            "example_ru": "На сегодня мы заканчиваем.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "4455bb3f4d19ebb55a72"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 533,
+          "record": {
+            "id": "a1-500-1",
+            "de": "der Schluss",
+            "lemma": "Schluss",
+            "ru": "конец; завершение; окончание",
+            "uk": "",
+            "translations_ru": [
+              "конец",
+              "завершение",
+              "окончание"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Schlüsse",
+            "definition_de": "Der letzte Teil einer Sache oder das Ende einer Handlung.",
+            "example": "Zum Schluss lesen wir den Text noch einmal.",
+            "example_ru": "В конце мы ещё раз прочитаем текст.",
+            "note": "zum Schluss — в конце, напоследок; Schluss machen — заканчивать. Замыкание — Kurzschluss; вывод как Schluss — отдельное значение.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "4455bb3f4d19ebb55a72"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-500-2",
+        "alias_id": "b1-schluss-stop",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-500-2"
+      }
+    },
+    {
+      "candidate_number": 897,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bezeichnet den letzten Teil einer Handlung oder Veranstaltung. Example: Zum Schluss wiederholen wir die wichtigsten Regeln.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 12,
+        "record": {
+          "id": "b1-schluss-final",
+          "de": "zum Schluss",
+          "lemma": "Schluss",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в конце",
+            "под конец",
+            "напоследок"
+          ],
+          "definition_de": "Bezeichnet den letzten Teil einer Handlung oder Veranstaltung.",
+          "example": "Zum Schluss wiederholen wir die wichtigsten Regeln.",
+          "example_ru": "В конце мы повторим самые важные правила.",
+          "forms": "der Schluss · die Schlüsse",
+          "grammar_hint": "zum = zu dem (Dativ); Zum Schluss + глагол + подлежащее при начале предложения.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schluss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 533,
+          "record": {
+            "id": "a1-500-1",
+            "de": "der Schluss",
+            "lemma": "Schluss",
+            "ru": "конец; завершение; окончание",
+            "uk": "",
+            "translations_ru": [
+              "конец",
+              "завершение",
+              "окончание"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Schlüsse",
+            "definition_de": "Der letzte Teil einer Sache oder das Ende einer Handlung.",
+            "example": "Zum Schluss lesen wir den Text noch einmal.",
+            "example_ru": "В конце мы ещё раз прочитаем текст.",
+            "note": "zum Schluss — в конце, напоследок; Schluss machen — заканчивать. Замыкание — Kurzschluss; вывод как Schluss — отдельное значение.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "4455bb3f4d19ebb55a72"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-500-1",
+        "alias_id": "b1-schluss-final",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-500-1"
+      }
+    },
+    {
+      "candidate_number": 898,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Gegenstand, mit dem ein passendes Schloss bedient wird. Example: Mein Schlüssel liegt neben der Tasche.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 13,
+        "record": {
+          "id": "b1-schluessel-key",
+          "de": "der Schlüssel",
+          "lemma": "Schlüssel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ключ"
+          ],
+          "definition_de": "Ein Gegenstand, mit dem ein passendes Schloss bedient wird.",
+          "example": "Mein Schlüssel liegt neben der Tasche.",
+          "example_ru": "Мой ключ лежит рядом с сумкой.",
+          "forms": "die Schlüssel",
+          "grammar_hint": "der Wohnungsschlüssel — ключ от квартиры; mit dem Schlüssel (Dativ).",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schl%C3%BCssel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 534,
+          "record": {
+            "id": "a1-501-1",
+            "de": "der Schlüssel",
+            "lemma": "Schlüssel",
+            "ru": "ключ",
+            "uk": "",
+            "translations_ru": [
+              "ключ"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Schlüssel",
+            "definition_de": "Ein Gegenstand, mit dem man ein Schloss öffnet.",
+            "example": "Mein Schlüssel liegt auf dem Tisch.",
+            "example_ru": "Мой ключ лежит на столе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "b31476cfcd50a65abd95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-501-1",
+        "alias_id": "b1-schluessel-key",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-501-1"
+      }
+    },
+    {
+      "candidate_number": 899,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Beim Essen oder Trinken einen angenehmen Geschmack vermitteln. Example: Hat dir der selbst gebackene Kuchen geschmeckt?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 15,
+        "record": {
+          "id": "b1-schmecken-taste-good",
+          "de": "jemandem schmecken",
+          "lemma": "schmecken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "нравиться на вкус",
+            "быть вкусным для кого-либо"
+          ],
+          "definition_de": "Beim Essen oder Trinken einen angenehmen Geschmack vermitteln.",
+          "example": "Hat dir der selbst gebackene Kuchen geschmeckt?",
+          "example_ru": "Тебе понравился домашний пирог?",
+          "forms": "schmeckt · schmeckte · hat geschmeckt",
+          "grammar_hint": "Блюдо — подлежащее, человек — Dativ: Der Kuchen schmeckt mir. Не Ich schmecke den Kuchen в смысле «мне нравится».",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schmecken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 672,
+          "record": {
+            "id": "a1-502-1",
+            "de": "schmecken",
+            "lemma": "schmecken",
+            "ru": "иметь вкус; быть на вкус; быть вкусным (если вкус не назван)",
+            "uk": "",
+            "translations_ru": [
+              "иметь вкус",
+              "быть на вкус",
+              "быть вкусным (если вкус не назван)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "schmeckt · schmeckte · hat geschmeckt",
+            "definition_de": "Beim Essen oder Trinken einen bestimmten Geschmack haben.",
+            "example": "Die Suppe schmeckt gut.",
+            "example_ru": "Суп вкусный.",
+            "note": "Еда — подлежащее, человек — Dativ: Der Kuchen schmeckt mir. nach + Dativ при указании вкуса: Das schmeckt nach Zitrone. Пробовать еду обычно probieren или kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e2a7fe3afdfcbaff8c93"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schmecken",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 900,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Beim Probieren an den Geschmack einer bestimmten Zutat erinnern. Example: Die Sauce schmeckt nach Zitrone.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 16,
+        "record": {
+          "id": "b1-schmecken-taste-of",
+          "de": "nach etwas schmecken",
+          "lemma": "schmecken",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "иметь вкус чего-либо",
+            "быть на вкус как"
+          ],
+          "definition_de": "Beim Probieren an den Geschmack einer bestimmten Zutat erinnern.",
+          "example": "Die Sauce schmeckt nach Zitrone.",
+          "example_ru": "Соус имеет лимонный вкус.",
+          "forms": "schmeckt · schmeckte · hat geschmeckt",
+          "grammar_hint": "nach + Dativ; nach Zitrone schmecken — иметь вкус лимона; riechen nach — пахнуть чем-либо.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schmecken"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 672,
+          "record": {
+            "id": "a1-502-1",
+            "de": "schmecken",
+            "lemma": "schmecken",
+            "ru": "иметь вкус; быть на вкус; быть вкусным (если вкус не назван)",
+            "uk": "",
+            "translations_ru": [
+              "иметь вкус",
+              "быть на вкус",
+              "быть вкусным (если вкус не назван)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "schmeckt · schmeckte · hat geschmeckt",
+            "definition_de": "Beim Essen oder Trinken einen bestimmten Geschmack haben.",
+            "example": "Die Suppe schmeckt gut.",
+            "example_ru": "Суп вкусный.",
+            "note": "Еда — подлежащее, человек — Dativ: Der Kuchen schmeckt mir. nach + Dativ при указании вкуса: Das schmeckt nach Zitrone. Пробовать еду обычно probieren или kosten.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e2a7fe3afdfcbaff8c93"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schmecken",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 901,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine unangenehme körperliche Empfindung, etwa bei einer Verletzung. Example: Seit gestern habe ich Schmerzen im Rücken.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 17,
+        "record": {
+          "id": "b1-schmerz-pain",
+          "de": "der Schmerz / die Schmerzen",
+          "lemma": "Schmerz",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "боль",
+            "болевые ощущения"
+          ],
+          "definition_de": "Eine unangenehme körperliche Empfindung, etwa bei einer Verletzung.",
+          "example": "Seit gestern habe ich Schmerzen im Rücken.",
+          "example_ru": "Со вчерашнего дня у меня болит спина.",
+          "forms": "die Schmerzen",
+          "grammar_hint": "Schmerzen haben; Schmerzen im Rücken (Dativ). В медицинской речи часто Plural.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schmerz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 58,
+          "record": {
+            "id": "dict_bcaa7353b2db304776d5",
+            "de": "der Schmerz",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "боль"
+            ],
+            "definition_de": "Ein unangenehmes Gefühl im Körper, etwa wenn man sich verletzt hat.",
+            "forms": "Plural · die Schmerzen",
+            "example": "Ich habe seit gestern Schmerzen im Rücken.",
+            "example_ru": "У меня со вчерашнего дня болит спина.",
+            "grammar_hint": "",
+            "usage_note": "В выражении Schmerzen haben обычно употребляется множественное число.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schmerz"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_bcaa7353b2db304776d5",
+        "alias_id": "b1-schmerz-pain",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_bcaa7353b2db304776d5"
+      }
+    },
+    {
+      "candidate_number": 902,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Gibt körperlichen Schmerz als Ursache einer Reaktion an. Example: Er konnte vor Schmerzen kaum einschlafen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 18,
+        "record": {
+          "id": "b1-schmerz-cause",
+          "de": "vor Schmerzen",
+          "lemma": "Schmerz",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "от боли",
+            "из-за боли"
+          ],
+          "definition_de": "Gibt körperlichen Schmerz als Ursache einer Reaktion an.",
+          "example": "Er konnte vor Schmerzen kaum einschlafen.",
+          "example_ru": "Он едва мог уснуть от боли.",
+          "forms": "der Schmerz · die Schmerzen",
+          "grammar_hint": "vor + Dativ при обозначении причины: vor Schmerzen, vor Angst. Учебная конструкция, не отдельное значение.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schmerz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 58,
+          "record": {
+            "id": "dict_bcaa7353b2db304776d5",
+            "de": "der Schmerz",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "боль"
+            ],
+            "definition_de": "Ein unangenehmes Gefühl im Körper, etwa wenn man sich verletzt hat.",
+            "forms": "Plural · die Schmerzen",
+            "example": "Ich habe seit gestern Schmerzen im Rücken.",
+            "example_ru": "У меня со вчерашнего дня болит спина.",
+            "grammar_hint": "",
+            "usage_note": "В выражении Schmerzen haben обычно употребляется множественное число.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schmerz"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 903,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Durch Benutzung nicht mehr sauber, etwa bei Kleidung. Example: Die schmutzigen Socken kommen in den Wäschekorb.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 23,
+        "record": {
+          "id": "b1-schmutzig-laundry",
+          "de": "schmutzig",
+          "lemma": "schmutzig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "грязный",
+            "испачканный (о белье)"
+          ],
+          "definition_de": "Durch Benutzung nicht mehr sauber, etwa bei Kleidung.",
+          "example": "Die schmutzigen Socken kommen in den Wäschekorb.",
+          "example_ru": "Грязные носки отправляются в корзину для белья.",
+          "forms": "schmutzig · schmutziger · am schmutzigsten",
+          "grammar_hint": "schmutzige Wäsche; атрибутивное прилагательное склоняется. Учебный контекст, общий смысл загрязнения.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schmutzig",
+              "https://www.duden.de/rechtschreibung/schmutzig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 313,
+          "record": {
+            "id": "dict_11b982a723050d7b2276",
+            "de": "schmutzig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "грязный"
+            ],
+            "definition_de": "Mit Schmutz bedeckt oder nicht sauber.",
+            "forms": "schmutzig · schmutziger · am schmutzigsten",
+            "example": "Meine Schuhe sind nach dem Spaziergang schmutzig.",
+            "example_ru": "После прогулки мои ботинки грязные.",
+            "grammar_hint": "",
+            "usage_note": "Грязный в физическом смысле; переносные значения отдельно не подтверждены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schmutzig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_11b982a723050d7b2276",
+        "alias_id": "b1-schmutzig-laundry",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_11b982a723050d7b2276"
+      }
+    },
+    {
+      "candidate_number": 904,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit unerwünschten Rückständen bedeckt. Example: Nach dem Regen sind die Fenster schmutzig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 24,
+        "record": {
+          "id": "b1-schmutzig-object",
+          "de": "schmutzig",
+          "lemma": "schmutzig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "грязный",
+            "загрязнённый"
+          ],
+          "definition_de": "Mit unerwünschten Rückständen bedeckt.",
+          "example": "Nach dem Regen sind die Fenster schmutzig.",
+          "example_ru": "После дождя окна грязные.",
+          "forms": "schmutzig · schmutziger · am schmutzigsten",
+          "grammar_hint": "schmutzig sein / werden; после sein прилагательное без окончания. То же значение, что и у schmutzige Wäsche.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schmutzig",
+              "https://www.duden.de/rechtschreibung/schmutzig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 313,
+          "record": {
+            "id": "dict_11b982a723050d7b2276",
+            "de": "schmutzig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "грязный"
+            ],
+            "definition_de": "Mit Schmutz bedeckt oder nicht sauber.",
+            "forms": "schmutzig · schmutziger · am schmutzigsten",
+            "example": "Meine Schuhe sind nach dem Spaziergang schmutzig.",
+            "example_ru": "После прогулки мои ботинки грязные.",
+            "grammar_hint": "",
+            "usage_note": "Грязный в физическом смысле; переносные значения отдельно не подтверждены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schmutzig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_11b982a723050d7b2276",
+        "alias_id": "b1-schmutzig-object",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_11b982a723050d7b2276"
+      }
+    },
+    {
+      "candidate_number": 905,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Gefrorener Niederschlag, der in Flocken auf die Erde fällt. Example: Auf den Bergen liegt schon Schnee.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 26,
+        "record": {
+          "id": "b1-schnee-snow",
+          "de": "der Schnee",
+          "lemma": "Schnee",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "снег"
+          ],
+          "definition_de": "Gefrorener Niederschlag, der in Flocken auf die Erde fällt.",
+          "example": "Auf den Bergen liegt schon Schnee.",
+          "example_ru": "В горах уже лежит снег.",
+          "forms": "обычно без множественного числа",
+          "grammar_hint": "im Schnee (Dativ); Schnee liegt / fällt; es schneit — идёт снег.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schnee"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 156,
+          "record": {
+            "id": "dict_080ec6ecfe8eeeffc130",
+            "de": "der Schnee",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "снег"
+            ],
+            "definition_de": "Weiche weiße Flocken aus Eiskristallen, die aus den Wolken fallen oder am Boden liegen.",
+            "forms": "В этом значении обычно в единственном числе",
+            "example": "Auf dem Dach liegt noch Schnee.",
+            "example_ru": "На крыше ещё лежит снег.",
+            "grammar_hint": "",
+            "usage_note": "В обычном значении снег — вещественное существительное, обычно Singular; es schneit — идёт снег.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schnee"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_080ec6ecfe8eeeffc130",
+        "alias_id": "b1-schnee-snow",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_080ec6ecfe8eeeffc130"
+      }
+    },
+    {
+      "candidate_number": 906,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Von Niederschlag in Form von Schneeflocken gesagt. Example: Heute Morgen hat es in den Bergen geschneit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 27,
+        "record": {
+          "id": "b1-schneien-snow",
+          "de": "schneien",
+          "lemma": "schneien",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "идти (о снеге)"
+          ],
+          "definition_de": "Von Niederschlag in Form von Schneeflocken gesagt.",
+          "example": "Heute Morgen hat es in den Bergen geschneit.",
+          "example_ru": "Сегодня утром в горах шёл снег.",
+          "forms": "es schneit · es schneite · es hat geschneit",
+          "grammar_hint": "Безличный глагол с es: Morgen schneit es. Perfekt с haben.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schneien"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 349,
+          "record": {
+            "id": "dict_85644b6f9891ff2262e5",
+            "de": "schneien",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "идти (о снеге)"
+            ],
+            "definition_de": "Wenn Schnee aus den Wolken fällt.",
+            "forms": "es schneit · es schneite · es hat geschneit",
+            "example": "In den Bergen schneit es heute.",
+            "example_ru": "Сегодня в горах идёт снег.",
+            "grammar_hint": "Безличный глагол: подлежащее es.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schneien"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_85644b6f9891ff2262e5",
+        "alias_id": "b1-schneien-snow",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_85644b6f9891ff2262e5"
+      }
+    },
+    {
+      "candidate_number": 907,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit einem geeigneten Werkzeug Material teilen; auch die Schneidfähigkeit eines Werkzeugs bezeichnen. Example: Diese Schere schneidet Papier besonders gut.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 28,
+        "record": {
+          "id": "b1-schneiden-cut",
+          "de": "schneiden",
+          "lemma": "schneiden",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "резать",
+            "разрезать"
+          ],
+          "definition_de": "Mit einem geeigneten Werkzeug Material teilen; auch die Schneidfähigkeit eines Werkzeugs bezeichnen.",
+          "example": "Diese Schere schneidet Papier besonders gut.",
+          "example_ru": "Эти ножницы особенно хорошо режут бумагу.",
+          "forms": "schneidet · schnitt · hat geschnitten",
+          "grammar_hint": "etwas (Akk.) schneiden; Das Messer schneidet schlecht — нож плохо режет.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schneiden",
+              "https://www.duden.de/rechtschreibung/schneiden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 203,
+          "record": {
+            "id": "dict_2eeae9f546f3f052f340",
+            "de": "schneiden",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "резать",
+              "нарезать",
+              "стричь",
+              "порезаться (sich schneiden)"
+            ],
+            "definition_de": "Mit einem scharfen Gegenstand etwas teilen oder kürzen; reflexiv: sich dabei verletzen.",
+            "forms": "schneidet · schnitt · hat geschnitten; schneidet sich · schnitt sich · hat sich geschnitten",
+            "example": "Schneidest du bitte das Brot in dünne Scheiben?",
+            "example_ru": "Нарежешь хлеб тонкими ломтиками, пожалуйста?",
+            "grammar_hint": "etwas (Akkusativ) schneiden; jemandem (Dativ) die Haare schneiden; sich (Akkusativ) schneiden — порезаться.",
+            "usage_note": "Ich habe mich beim Kochen geschnitten. — Я порезалась, когда готовила.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schneiden"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2eeae9f546f3f052f340",
+        "alias_id": "b1-schneiden-cut",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2eeae9f546f3f052f340"
+      }
+    },
+    {
+      "candidate_number": 908,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Sich durch eine scharfe Kante eine Schnittverletzung zufügen. Example: Beim Kochen habe ich mich geschnitten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 29,
+        "record": {
+          "id": "b1-schneiden-reflexive",
+          "de": "sich schneiden",
+          "lemma": "schneiden",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "порезаться"
+          ],
+          "definition_de": "Sich durch eine scharfe Kante eine Schnittverletzung zufügen.",
+          "example": "Beim Kochen habe ich mich geschnitten.",
+          "example_ru": "Во время готовки я порезалась.",
+          "forms": "schneidet sich · schnitt sich · hat sich geschnitten",
+          "grammar_hint": "ich schneide mich (Akk.); ich schneide mir in den Finger / mich in den Finger — обе конструкции возможны.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schneiden",
+              "https://www.duden.de/rechtschreibung/schneiden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 203,
+          "record": {
+            "id": "dict_2eeae9f546f3f052f340",
+            "de": "schneiden",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "резать",
+              "нарезать",
+              "стричь",
+              "порезаться (sich schneiden)"
+            ],
+            "definition_de": "Mit einem scharfen Gegenstand etwas teilen oder kürzen; reflexiv: sich dabei verletzen.",
+            "forms": "schneidet · schnitt · hat geschnitten; schneidet sich · schnitt sich · hat sich geschnitten",
+            "example": "Schneidest du bitte das Brot in dünne Scheiben?",
+            "example_ru": "Нарежешь хлеб тонкими ломтиками, пожалуйста?",
+            "grammar_hint": "etwas (Akkusativ) schneiden; jemandem (Dativ) die Haare schneiden; sich (Akkusativ) schneiden — порезаться.",
+            "usage_note": "Ich habe mich beim Kochen geschnitten. — Я порезалась, когда готовила.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schneiden"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 909,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine andere Person damit beauftragen, die eigenen Haare zu kürzen. Example: Ich habe mir gestern die Haare schneiden lassen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 30,
+        "record": {
+          "id": "b1-schneiden-hair",
+          "de": "sich die Haare schneiden lassen",
+          "lemma": "schneiden",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "стричься",
+            "подстригать волосы у кого-либо"
+          ],
+          "definition_de": "Eine andere Person damit beauftragen, die eigenen Haare zu kürzen.",
+          "example": "Ich habe mir gestern die Haare schneiden lassen.",
+          "example_ru": "Вчера я подстриглась.",
+          "forms": "lässt sich die Haare schneiden · ließ sich die Haare schneiden · hat sich die Haare schneiden lassen",
+          "grammar_hint": "mir/dir/sich (Dativ), die Haare (Akk.); lassen + Infinitiv без zu, Perfekt с Ersatzinfinitiv lassen. CH: liess.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schneiden",
+              "https://www.duden.de/rechtschreibung/schneiden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 203,
+          "record": {
+            "id": "dict_2eeae9f546f3f052f340",
+            "de": "schneiden",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "резать",
+              "нарезать",
+              "стричь",
+              "порезаться (sich schneiden)"
+            ],
+            "definition_de": "Mit einem scharfen Gegenstand etwas teilen oder kürzen; reflexiv: sich dabei verletzen.",
+            "forms": "schneidet · schnitt · hat geschnitten; schneidet sich · schnitt sich · hat sich geschnitten",
+            "example": "Schneidest du bitte das Brot in dünne Scheiben?",
+            "example_ru": "Нарежешь хлеб тонкими ломтиками, пожалуйста?",
+            "grammar_hint": "etwas (Akkusativ) schneiden; jemandem (Dativ) die Haare schneiden; sich (Akkusativ) schneiden — порезаться.",
+            "usage_note": "Ich habe mich beim Kochen geschnitten. — Я порезалась, когда готовила.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schneiden"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 910,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit hoher Geschwindigkeit unterwegs oder ablaufend. Example: Der Radfahrer fährt auf dieser Strecke sehr schnell.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 1,
+        "record": {
+          "id": "b1-schnell-speed",
+          "de": "schnell",
+          "lemma": "schnell",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "быстрый",
+            "быстро"
+          ],
+          "definition_de": "Mit hoher Geschwindigkeit unterwegs oder ablaufend.",
+          "example": "Der Radfahrer fährt auf dieser Strecke sehr schnell.",
+          "example_ru": "Велосипедист едет на этом участке очень быстро.",
+          "forms": "schnell · schneller · am schnellsten",
+          "grammar_hint": "Gegenteil langsam; schnell fahren — наречное употребление без окончания.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schnell"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 673,
+          "record": {
+            "id": "a1-503-1",
+            "de": "schnell",
+            "lemma": "schnell",
+            "ru": "быстрый; быстро",
+            "uk": "",
+            "translations_ru": [
+              "быстрый",
+              "быстро"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schneller · am schnellsten",
+            "definition_de": "Mit hoher Geschwindigkeit oder in kurzer Zeit.",
+            "example": "Der Zug fährt schnell.",
+            "example_ru": "Поезд едет быстро.",
+            "note": "Наречное употребление без окончания: schnell fahren. Сравнение: schneller fahren; am schnellsten fahren.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "0c1ac9822b13690edd49"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-503-1",
+        "alias_id": "b1-schnell-speed",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-503-1"
+      }
+    },
+    {
+      "candidate_number": 911,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Ohne unnötige Verzögerung, sobald es machbar ist. Example: Schicken Sie uns die Unterlagen so schnell wie möglich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 2,
+        "record": {
+          "id": "b1-schnell-possible",
+          "de": "so schnell wie möglich",
+          "lemma": "schnell",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "как можно скорее",
+            "как можно быстрее"
+          ],
+          "definition_de": "Ohne unnötige Verzögerung, sobald es machbar ist.",
+          "example": "Schicken Sie uns die Unterlagen so schnell wie möglich.",
+          "example_ru": "Пришлите нам документы как можно скорее.",
+          "forms": "schnell · schneller · am schnellsten",
+          "grammar_hint": "so + Positiv + wie möglich; не schneller wie möglich. Учебная конструкция.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schnell"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 673,
+          "record": {
+            "id": "a1-503-1",
+            "de": "schnell",
+            "lemma": "schnell",
+            "ru": "быстрый; быстро",
+            "uk": "",
+            "translations_ru": [
+              "быстрый",
+              "быстро"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schneller · am schnellsten",
+            "definition_de": "Mit hoher Geschwindigkeit oder in kurzer Zeit.",
+            "example": "Der Zug fährt schnell.",
+            "example_ru": "Поезд едет быстро.",
+            "note": "Наречное употребление без окончания: schnell fahren. Сравнение: schneller fahren; am schnellsten fahren.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "0c1ac9822b13690edd49"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 912,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Mit geringem Zeitaufwand eine Handlung erledigend. Example: Ich muss noch schnell die Pflanzen gießen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 3,
+        "record": {
+          "id": "b1-schnell-brief",
+          "de": "schnell",
+          "lemma": "schnell",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "быстренько",
+            "быстро",
+            "на скорую руку"
+          ],
+          "definition_de": "Mit geringem Zeitaufwand eine Handlung erledigend.",
+          "example": "Ich muss noch schnell die Pflanzen gießen.",
+          "example_ru": "Мне ещё нужно быстренько полить растения.",
+          "forms": "наречное употребление; schnell · schneller · am schnellsten",
+          "grammar_hint": "noch schnell — быстро сделать ещё что-то перед другим действием; контекст малого времени.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schnell"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 673,
+          "record": {
+            "id": "a1-503-1",
+            "de": "schnell",
+            "lemma": "schnell",
+            "ru": "быстрый; быстро",
+            "uk": "",
+            "translations_ru": [
+              "быстрый",
+              "быстро"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schneller · am schnellsten",
+            "definition_de": "Mit hoher Geschwindigkeit oder in kurzer Zeit.",
+            "example": "Der Zug fährt schnell.",
+            "example_ru": "Поезд едет быстро.",
+            "note": "Наречное употребление без окончания: schnell fahren. Сравнение: schneller fahren; am schnellsten fahren.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "0c1ac9822b13690edd49"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_8eb4c89a4f96a7e4907f",
+      "alias_ids": [
+        "b1-schlimm-notserious"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8eb4c89a4f96a7e4907f",
+        "de": "schlimm",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "плохой",
+          "серьёзный",
+          "страшный"
+        ],
+        "definition_de": "So, dass etwas sehr unangenehm ist, ein Problem darstellt oder Sorgen macht.",
+        "forms": "schlimm · schlimmer · am schlimmsten",
+        "example": "Keine Sorge, der Fehler ist nicht so schlimm.",
+        "example_ru": "Не волнуйся, ошибка не такая уж серьёзная.",
+        "grammar_hint": "",
+        "usage_note": "Das ist nicht schlimm. — Ничего страшного.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schlimm"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-schlimm-notserious"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schlimm-notserious",
+            "de": "nicht so schlimm",
+            "part": "phrase",
+            "forms": "schlimm · schlimmer · am schlimmsten",
+            "definition_de": "Drückt aus, dass ein Problem weniger schwerwiegend ist als befürchtet.",
+            "translations_ru": [
+              "не так страшно",
+              "ничего страшного"
+            ],
+            "grammar_hint": "Устойчивое утешительное выражение; учебный контекст общего значения schlimm.",
+            "example": "Du hast den Bus verpasst? Das ist nicht so schlimm.",
+            "example_ru": "Ты пропустила автобус? Ничего страшного."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlimm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a2-schloss-lock-reviewed",
+      "alias_ids": [
+        "b1-schloss-lock"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "a2-schloss-lock-reviewed",
+        "de": "das Schloss",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "замок (запирающее устройство)"
+        ],
+        "definition_de": "Eine Vorrichtung, mit der man zum Beispiel eine Tür verschließen kann.",
+        "forms": "Plural · die Schlösser",
+        "example": "Das Schloss an der Wohnungstür ist kaputt.",
+        "example_ru": "Замок на двери квартиры сломан.",
+        "grammar_hint": "",
+        "usage_note": "Не путать с Schloss — дворец, замок (здание).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schloss"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-schloss-lock"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schloss-lock",
+            "de": "das Schloss",
+            "part": "noun",
+            "forms": "die Schlösser",
+            "definition_de": "Ein Mechanismus, der eine Tür oder einen anderen Zugang sichert.",
+            "translations_ru": [
+              "замок (запирающее устройство)"
+            ],
+            "grammar_hint": "das Schloss öffnen; der Schlüssel — ключ. Не путать с одноимённым Schloss — дворец.",
+            "example": "Wir müssen das Schloss an der Haustür austauschen.",
+            "example_ru": "Нам нужно заменить замок на входной двери."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schloss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ed6a73d23a2869705d34",
+      "alias_ids": [
+        "b1-schloss-palace"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ed6a73d23a2869705d34",
+        "de": "das Schloss",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "дворец",
+          "замок (здание)"
+        ],
+        "definition_de": "Ein großes herrschaftliches Gebäude, das oft als Wohnsitz einer adeligen Familie diente.",
+        "forms": "Plural · die Schlösser",
+        "example": "Hinter dem Schloss liegt ein großer Garten.",
+        "example_ru": "За дворцом находится большой сад.",
+        "grammar_hint": "",
+        "usage_note": "Здесь речь о здании. Das Schloss может также означать «замок на двери».",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schloss"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-schloss-palace"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schloss-palace",
+            "de": "das Schloss",
+            "part": "noun",
+            "forms": "die Schlösser",
+            "definition_de": "Ein repräsentatives historisches Gebäude, oft als Wohnsitz des Adels errichtet.",
+            "translations_ru": [
+              "замок",
+              "дворец"
+            ],
+            "grammar_hint": "ein Schloss besichtigen; die Burg — обычно укреплённый замок или крепость.",
+            "example": "Am Sonntag besichtigen wir ein Schloss am See.",
+            "example_ru": "В воскресенье мы посетим замок у озера."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schloss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-500-2",
+      "alias_ids": [
+        "b1-schluss-stop"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-500-2",
+        "de": "Schluss machen",
+        "lemma": "Schluss machen",
+        "ru": "заканчивать; прекращать",
+        "uk": "",
+        "translations_ru": [
+          "заканчивать",
+          "прекращать"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Mit dem aufhören, was man gerade macht.",
+        "example": "Für heute machen wir Schluss.",
+        "example_ru": "На сегодня мы заканчиваем.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "4455bb3f4d19ebb55a72"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schluss-stop"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schluss-stop",
+            "de": "Schluss machen",
+            "part": "phrase",
+            "forms": "der Schluss · die Schlüsse; macht · machte · hat gemacht",
+            "definition_de": "Eine laufende Tätigkeit beenden.",
+            "translations_ru": [
+              "заканчивать",
+              "прекращать"
+            ],
+            "grammar_hint": "Schluss machen mit + Dativ; в другом контексте может означать прекращение отношений.",
+            "example": "Für heute machen wir Schluss mit der Arbeit.",
+            "example_ru": "На сегодня мы заканчиваем работу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schluss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-500-1",
+      "alias_ids": [
+        "b1-schluss-final"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-500-1",
+        "de": "der Schluss",
+        "lemma": "Schluss",
+        "ru": "конец; завершение; окончание",
+        "uk": "",
+        "translations_ru": [
+          "конец",
+          "завершение",
+          "окончание"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "die Schlüsse",
+        "definition_de": "Der letzte Teil einer Sache oder das Ende einer Handlung.",
+        "example": "Zum Schluss lesen wir den Text noch einmal.",
+        "example_ru": "В конце мы ещё раз прочитаем текст.",
+        "note": "zum Schluss — в конце, напоследок; Schluss machen — заканчивать. Замыкание — Kurzschluss; вывод как Schluss — отдельное значение.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "4455bb3f4d19ebb55a72"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schluss-final"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schluss-final",
+            "de": "zum Schluss",
+            "part": "phrase",
+            "forms": "der Schluss · die Schlüsse",
+            "definition_de": "Bezeichnet den letzten Teil einer Handlung oder Veranstaltung.",
+            "translations_ru": [
+              "в конце",
+              "под конец",
+              "напоследок"
+            ],
+            "grammar_hint": "zum = zu dem (Dativ); Zum Schluss + глагол + подлежащее при начале предложения.",
+            "example": "Zum Schluss wiederholen wir die wichtigsten Regeln.",
+            "example_ru": "В конце мы повторим самые важные правила."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schluss"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-501-1",
+      "alias_ids": [
+        "b1-schluessel-key"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-501-1",
+        "de": "der Schlüssel",
+        "lemma": "Schlüssel",
+        "ru": "ключ",
+        "uk": "",
+        "translations_ru": [
+          "ключ"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Schlüssel",
+        "definition_de": "Ein Gegenstand, mit dem man ein Schloss öffnet.",
+        "example": "Mein Schlüssel liegt auf dem Tisch.",
+        "example_ru": "Мой ключ лежит на столе.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "b31476cfcd50a65abd95"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schluessel-key"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schluessel-key",
+            "de": "der Schlüssel",
+            "part": "noun",
+            "forms": "die Schlüssel",
+            "definition_de": "Ein Gegenstand, mit dem ein passendes Schloss bedient wird.",
+            "translations_ru": [
+              "ключ"
+            ],
+            "grammar_hint": "der Wohnungsschlüssel — ключ от квартиры; mit dem Schlüssel (Dativ).",
+            "example": "Mein Schlüssel liegt neben der Tasche.",
+            "example_ru": "Мой ключ лежит рядом с сумкой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schl%C3%BCssel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_bcaa7353b2db304776d5",
+      "alias_ids": [
+        "b1-schmerz-pain"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_bcaa7353b2db304776d5",
+        "de": "der Schmerz",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "боль"
+        ],
+        "definition_de": "Ein unangenehmes Gefühl im Körper, etwa wenn man sich verletzt hat.",
+        "forms": "Plural · die Schmerzen",
+        "example": "Ich habe seit gestern Schmerzen im Rücken.",
+        "example_ru": "У меня со вчерашнего дня болит спина.",
+        "grammar_hint": "",
+        "usage_note": "В выражении Schmerzen haben обычно употребляется множественное число.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schmerz"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-schmerz-pain"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schmerz-pain",
+            "de": "der Schmerz / die Schmerzen",
+            "part": "noun",
+            "forms": "die Schmerzen",
+            "definition_de": "Eine unangenehme körperliche Empfindung, etwa bei einer Verletzung.",
+            "translations_ru": [
+              "боль",
+              "болевые ощущения"
+            ],
+            "grammar_hint": "Schmerzen haben; Schmerzen im Rücken (Dativ). В медицинской речи часто Plural.",
+            "example": "Seit gestern habe ich Schmerzen im Rücken.",
+            "example_ru": "Со вчерашнего дня у меня болит спина."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schmerz"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_11b982a723050d7b2276",
+      "alias_ids": [
+        "b1-schmutzig-laundry",
+        "b1-schmutzig-object"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_11b982a723050d7b2276",
+        "de": "schmutzig",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "грязный"
+        ],
+        "definition_de": "Mit Schmutz bedeckt oder nicht sauber.",
+        "forms": "schmutzig · schmutziger · am schmutzigsten",
+        "example": "Meine Schuhe sind nach dem Spaziergang schmutzig.",
+        "example_ru": "После прогулки мои ботинки грязные.",
+        "grammar_hint": "",
+        "usage_note": "Грязный в физическом смысле; переносные значения отдельно не подтверждены.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schmutzig"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-schmutzig-laundry",
+          "b1-schmutzig-object"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schmutzig-laundry",
+            "de": "schmutzig",
+            "part": "adj",
+            "forms": "schmutzig · schmutziger · am schmutzigsten",
+            "definition_de": "Durch Benutzung nicht mehr sauber, etwa bei Kleidung.",
+            "translations_ru": [
+              "грязный",
+              "испачканный (о белье)"
+            ],
+            "grammar_hint": "schmutzige Wäsche; атрибутивное прилагательное склоняется. Учебный контекст, общий смысл загрязнения.",
+            "example": "Die schmutzigen Socken kommen in den Wäschekorb.",
+            "example_ru": "Грязные носки отправляются в корзину для белья."
+          },
+          {
+            "id": "b1-schmutzig-object",
+            "de": "schmutzig",
+            "part": "adj",
+            "forms": "schmutzig · schmutziger · am schmutzigsten",
+            "definition_de": "Mit unerwünschten Rückständen bedeckt.",
+            "translations_ru": [
+              "грязный",
+              "загрязнённый"
+            ],
+            "grammar_hint": "schmutzig sein / werden; после sein прилагательное без окончания. То же значение, что и у schmutzige Wäsche.",
+            "example": "Nach dem Regen sind die Fenster schmutzig.",
+            "example_ru": "После дождя окна грязные."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schmutzig",
+              "https://www.duden.de/rechtschreibung/schmutzig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schmutzig",
+              "https://www.duden.de/rechtschreibung/schmutzig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_080ec6ecfe8eeeffc130",
+      "alias_ids": [
+        "b1-schnee-snow"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_080ec6ecfe8eeeffc130",
+        "de": "der Schnee",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "снег"
+        ],
+        "definition_de": "Weiche weiße Flocken aus Eiskristallen, die aus den Wolken fallen oder am Boden liegen.",
+        "forms": "В этом значении обычно в единственном числе",
+        "example": "Auf dem Dach liegt noch Schnee.",
+        "example_ru": "На крыше ещё лежит снег.",
+        "grammar_hint": "",
+        "usage_note": "В обычном значении снег — вещественное существительное, обычно Singular; es schneit — идёт снег.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schnee"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-schnee-snow"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schnee-snow",
+            "de": "der Schnee",
+            "part": "noun",
+            "forms": "обычно без множественного числа",
+            "definition_de": "Gefrorener Niederschlag, der in Flocken auf die Erde fällt.",
+            "translations_ru": [
+              "снег"
+            ],
+            "grammar_hint": "im Schnee (Dativ); Schnee liegt / fällt; es schneit — идёт снег.",
+            "example": "Auf den Bergen liegt schon Schnee.",
+            "example_ru": "В горах уже лежит снег."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schnee"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_85644b6f9891ff2262e5",
+      "alias_ids": [
+        "b1-schneien-snow"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_85644b6f9891ff2262e5",
+        "de": "schneien",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "идти (о снеге)"
+        ],
+        "definition_de": "Wenn Schnee aus den Wolken fällt.",
+        "forms": "es schneit · es schneite · es hat geschneit",
+        "example": "In den Bergen schneit es heute.",
+        "example_ru": "Сегодня в горах идёт снег.",
+        "grammar_hint": "Безличный глагол: подлежащее es.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schneien"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-schneien-snow"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schneien-snow",
+            "de": "schneien",
+            "part": "verb",
+            "forms": "es schneit · es schneite · es hat geschneit",
+            "definition_de": "Von Niederschlag in Form von Schneeflocken gesagt.",
+            "translations_ru": [
+              "идти (о снеге)"
+            ],
+            "grammar_hint": "Безличный глагол с es: Morgen schneit es. Perfekt с haben.",
+            "example": "Heute Morgen hat es in den Bergen geschneit.",
+            "example_ru": "Сегодня утром в горах шёл снег."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schneien"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2eeae9f546f3f052f340",
+      "alias_ids": [
+        "b1-schneiden-cut"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2eeae9f546f3f052f340",
+        "de": "schneiden",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "резать",
+          "нарезать",
+          "стричь",
+          "порезаться (sich schneiden)"
+        ],
+        "definition_de": "Mit einem scharfen Gegenstand etwas teilen oder kürzen; reflexiv: sich dabei verletzen.",
+        "forms": "schneidet · schnitt · hat geschnitten; schneidet sich · schnitt sich · hat sich geschnitten",
+        "example": "Schneidest du bitte das Brot in dünne Scheiben?",
+        "example_ru": "Нарежешь хлеб тонкими ломтиками, пожалуйста?",
+        "grammar_hint": "etwas (Akkusativ) schneiden; jemandem (Dativ) die Haare schneiden; sich (Akkusativ) schneiden — порезаться.",
+        "usage_note": "Ich habe mich beim Kochen geschnitten. — Я порезалась, когда готовила.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schneiden"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-schneiden-cut"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schneiden-cut",
+            "de": "schneiden",
+            "part": "verb",
+            "forms": "schneidet · schnitt · hat geschnitten",
+            "definition_de": "Mit einem geeigneten Werkzeug Material teilen; auch die Schneidfähigkeit eines Werkzeugs bezeichnen.",
+            "translations_ru": [
+              "резать",
+              "разрезать"
+            ],
+            "grammar_hint": "etwas (Akk.) schneiden; Das Messer schneidet schlecht — нож плохо режет.",
+            "example": "Diese Schere schneidet Papier besonders gut.",
+            "example_ru": "Эти ножницы особенно хорошо режут бумагу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schneiden",
+              "https://www.duden.de/rechtschreibung/schneiden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-503-1",
+      "alias_ids": [
+        "b1-schnell-speed"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-503-1",
+        "de": "schnell",
+        "lemma": "schnell",
+        "ru": "быстрый; быстро",
+        "uk": "",
+        "translations_ru": [
+          "быстрый",
+          "быстро"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schneller · am schnellsten",
+        "definition_de": "Mit hoher Geschwindigkeit oder in kurzer Zeit.",
+        "example": "Der Zug fährt schnell.",
+        "example_ru": "Поезд едет быстро.",
+        "note": "Наречное употребление без окончания: schnell fahren. Сравнение: schneller fahren; am schnellsten fahren.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "0c1ac9822b13690edd49"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schnell-speed"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schnell-speed",
+            "de": "schnell",
+            "part": "adj",
+            "forms": "schnell · schneller · am schnellsten",
+            "definition_de": "Mit hoher Geschwindigkeit unterwegs oder ablaufend.",
+            "translations_ru": [
+              "быстрый",
+              "быстро"
+            ],
+            "grammar_hint": "Gegenteil langsam; schnell fahren — наречное употребление без окончания.",
+            "example": "Der Radfahrer fährt auf dieser Strecke sehr schnell.",
+            "example_ru": "Велосипедист едет на этом участке очень быстро."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schnell"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1473,
+    1473
+  ],
+  "reviewed": 1,
+  "merge_count": 1,
+  "merge_target_count": 1,
+  "retained_distinct_senses": 0,
+  "retained_teaching_contexts_pending_level_review": 0,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1473,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ordnet ein Ereignis oder einen Zeitraum zwei zeitlichen Grenzen zu. Example: Die Handwerker kommen zwischen dem fünften und dem siebten Dezember.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_123.json",
+        "sha": "a763fe2f86d6a0d3ed14e5c8b739c9867569e267",
+        "batch": 123,
+        "row": 13,
+        "record": {
+          "id": "b1-zwischen-time",
+          "de": "zwischen",
+          "lemma": "zwischen",
+          "part": "preposition",
+          "level": "B1",
+          "translations_ru": [
+            "между",
+            "в промежутке с … до … (время)"
+          ],
+          "definition_de": "Ordnet ein Ereignis oder einen Zeitraum zwei zeitlichen Grenzen zu.",
+          "example": "Die Handwerker kommen zwischen dem fünften und dem siebten Dezember.",
+          "example_ru": "Мастера придут в период с пятого по седьмое декабря.",
+          "forms": "meist Dativ; in bestimmten zeitlichen Konstruktionen auch Akkusativ",
+          "grammar_hint": "zwischen acht und zehn Uhr; zwischen dem Montag und dem Mittwoch (Dat.). Duden допускает Akkusativ в некоторых временных конструкциях: Der Termin fällt zwischen die Feiertage. Здесь не применяется пространственное правило Wo?/Wohin?.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 102,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 102 visually inspected on 2026-11-27. Exam-list coverage or attested construction, not earliest CEFR level. Provisional B1 staging only; A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zwischen",
+              "https://www.duden.de/rechtschreibung/zwischen_innerhalb_inmitten_binnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 428,
+          "record": {
+            "id": "a1-p27-zwischen-1",
+            "de": "zwischen",
+            "lemma": "zwischen",
+            "ru": "между (место)",
+            "uk": "",
+            "translations_ru": [
+              "между (место)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "+ Dativ при местонахождении",
+            "definition_de": "Nennt den Bereich, der zwei Orte oder Dinge voneinander trennt.",
+            "example": "Das Café liegt zwischen der Post und dem Bahnhof.",
+            "example_ru": "Кафе находится между почтой и вокзалом.",
+            "note": "Местоположение: zwischen + Dativ, zwischen der Post und dem Bahnhof.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 27,
+                "recovered_from_pdf": true
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 429,
+          "record": {
+            "id": "a1-p27-zwischen-2",
+            "de": "zwischen",
+            "lemma": "zwischen",
+            "ru": "между; в интервале",
+            "uk": "",
+            "translations_ru": [
+              "между",
+              "в интервале"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "zwischen acht und zehn Uhr",
+            "definition_de": "Nennt den Zeitraum zwischen zwei Zeitpunkten.",
+            "example": "Ich komme zwischen acht und neun Uhr.",
+            "example_ru": "Я приду между восемью и девятью часами.",
+            "note": "Временной интервал: zwischen + Dativ, zwischen dem ersten und dem dritten Mai.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 27,
+                "recovered_from_pdf": true
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-p27-zwischen-2",
+        "alias_id": "b1-zwischen-time",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-p27-zwischen-2"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-p27-zwischen-2",
+      "alias_ids": [
+        "b1-zwischen-time"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-p27-zwischen-2",
+        "de": "zwischen",
+        "lemma": "zwischen",
+        "ru": "между; в интервале",
+        "uk": "",
+        "translations_ru": [
+          "между",
+          "в интервале"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "zwischen acht und zehn Uhr",
+        "definition_de": "Nennt den Zeitraum zwischen zwei Zeitpunkten.",
+        "example": "Ich komme zwischen acht und neun Uhr.",
+        "example_ru": "Я приду между восемью и девятью часами.",
+        "note": "Временной интервал: zwischen + Dativ, zwischen dem ersten und dem dritten Mai.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 27,
+            "recovered_from_pdf": true
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zwischen-time"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zwischen-time",
+            "de": "zwischen",
+            "part": "preposition",
+            "forms": "meist Dativ; in bestimmten zeitlichen Konstruktionen auch Akkusativ",
+            "definition_de": "Ordnet ein Ereignis oder einen Zeitraum zwei zeitlichen Grenzen zu.",
+            "translations_ru": [
+              "между",
+              "в промежутке с … до … (время)"
+            ],
+            "grammar_hint": "zwischen acht und zehn Uhr; zwischen dem Montag und dem Mittwoch (Dat.). Duden допускает Akkusativ в некоторых временных конструкциях: Der Termin fällt zwischen die Feiertage. Здесь не применяется пространственное правило Wo?/Wohin?.",
+            "example": "Die Handwerker kommen zwischen dem fünften und dem siebten Dezember.",
+            "example_ru": "Мастера придут в период с пятого по седьмое декабря."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 102,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed page 102 visually inspected on 2026-11-27. Exam-list coverage or attested construction, not earliest CEFR level. Provisional B1 staging only; A1/A2 reconciliation and cross-batch merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zwischen",
+              "https://www.duden.de/rechtschreibung/zwischen_innerhalb_inmitten_binnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

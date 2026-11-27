@@ -1,0 +1,556 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged dedup overlay, four manually inspected same-ID pairs with the same sense. Original batch files unchanged; consumer integration and student-progress migration not tested. Row coordinates are one-based and bound to input blob SHA. Alternative forms are retained for review, not independently reverified. Original evidence/status preserved in snapshots.",
+  "input_records": 8,
+  "output_records": 4,
+  "groups": [
+    {
+      "canonical_id": "b1-briefumschlag-envelope",
+      "retain": {
+        "batch": 10,
+        "row": 18
+      },
+      "suppress": {
+        "batch": 50,
+        "row": 15
+      },
+      "merged_record": {
+        "id": "b1-briefumschlag-envelope",
+        "de": "der Briefumschlag",
+        "lemma": "Briefumschlag",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "почтовый конверт",
+          "конверт (для письма)"
+        ],
+        "definition_de": "Eine Papierhülle, in der man einen Brief verschickt.",
+        "example": "Schreib die Adresse bitte auf den Briefumschlag.",
+        "example_ru": "Напиши, пожалуйста, адрес на конверте.",
+        "forms": "die Briefumschläge",
+        "grammar_hint": "В Швейцарии часто das Couvert (die Couverts), в Австрии в списке Goethe дано das Kuvert (die Kuverts).\nCH: Couvert; A: Kuvert; einen Briefumschlag beschriften.",
+        "topic": "Информация и тексты",
+        "topics": [
+          "Информация и тексты",
+          "Общение"
+        ],
+        "equivalent": "das Couvert",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 28,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Briefumschlag",
+            "https://de.wiktionary.org/wiki/Couvert",
+            "https://www.duden.de/rechtschreibung/Couvert"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [
+          "dict_255bc68f135dd6c3778f"
+        ],
+        "alternative_definitions_de": [
+          "Eine Hülle, in der ein Brief verschickt wird."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Auf dem Briefumschlag fehlt die Postleitzahl.",
+            "ru": "На конверте отсутствует почтовый индекс."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 10,
+          "row": 18,
+          "sha": "d7b7438f6913fc087745d286705de733a63a3624",
+          "record": {
+            "id": "b1-briefumschlag-envelope",
+            "de": "der Briefumschlag",
+            "lemma": "Briefumschlag",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "почтовый конверт",
+              "конверт (для письма)"
+            ],
+            "definition_de": "Eine Papierhülle, in der man einen Brief verschickt.",
+            "example": "Schreib die Adresse bitte auf den Briefumschlag.",
+            "example_ru": "Напиши, пожалуйста, адрес на конверте.",
+            "forms": "die Briefumschläge",
+            "grammar_hint": "В Швейцарии часто das Couvert (die Couverts), в Австрии в списке Goethe дано das Kuvert (die Kuverts).",
+            "topic": "Информация и тексты",
+            "topics": [
+              "Информация и тексты"
+            ],
+            "equivalent": "das Couvert",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 28,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Briefumschlag",
+                "https://de.wiktionary.org/wiki/Couvert",
+                "https://www.duden.de/rechtschreibung/Couvert"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": [
+              "dict_255bc68f135dd6c3778f"
+            ]
+          }
+        },
+        {
+          "batch": 50,
+          "row": 15,
+          "sha": "ab49a61ced97e9e89492ff3dd59509082b7a08bd",
+          "record": {
+            "id": "b1-briefumschlag-envelope",
+            "de": "der Briefumschlag",
+            "lemma": "Briefumschlag",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "почтовый конверт"
+            ],
+            "definition_de": "Eine Hülle, in der ein Brief verschickt wird.",
+            "example": "Auf dem Briefumschlag fehlt die Postleitzahl.",
+            "example_ru": "На конверте отсутствует почтовый индекс.",
+            "forms": "die Briefumschläge",
+            "grammar_hint": "CH: Couvert; A: Kuvert; einen Briefumschlag beschriften.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 58,
+                "scope": "regional_cross_reference",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Briefumschlag"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-fantasie-imagination",
+      "retain": {
+        "batch": 21,
+        "row": 10
+      },
+      "suppress": {
+        "batch": 69,
+        "row": 13
+      },
+      "merged_record": {
+        "id": "b1-fantasie-imagination",
+        "de": "die Fantasie / die Phantasie",
+        "lemma": "Fantasie",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "воображение",
+          "фантазия"
+        ],
+        "definition_de": "Die Fähigkeit, sich Dinge oder Situationen vorzustellen, die nicht unmittelbar gegeben sind.",
+        "example": "Für diese Geschichte braucht man viel Fantasie.",
+        "example_ru": "Для этой истории нужно много воображения.",
+        "forms": "die Fantasien / die Phantasien",
+        "grammar_hint": "viel Fantasie haben; beide Schreibweisen sind möglich.\nОба написания допустимы; viel Fantasie haben. Fantasien во множественном числе — воображаемые картины, мечты.",
+        "topic": "Досуг и культура",
+        "topics": [
+          "Досуг и культура"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 39,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Fantasie"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Die Fähigkeit, sich Neues oder nicht unmittelbar Vorhandenes vorzustellen."
+        ],
+        "alternative_forms": [
+          "die Fantasien / die Phantasien; способность обычно Singular"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Beim Schreiben einer Geschichte braucht man Fantasie.",
+            "ru": "При написании истории нужно воображение."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 21,
+          "row": 10,
+          "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+          "record": {
+            "id": "b1-fantasie-imagination",
+            "de": "die Fantasie / die Phantasie",
+            "lemma": "Fantasie",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "воображение",
+              "фантазия"
+            ],
+            "definition_de": "Die Fähigkeit, sich Dinge oder Situationen vorzustellen, die nicht unmittelbar gegeben sind.",
+            "example": "Für diese Geschichte braucht man viel Fantasie.",
+            "example_ru": "Для этой истории нужно много воображения.",
+            "forms": "die Fantasien / die Phantasien",
+            "grammar_hint": "viel Fantasie haben; beide Schreibweisen sind möglich.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 39,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fantasie"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 69,
+          "row": 13,
+          "sha": "48ce6dc2f738a7d97b95e1b0fb7d797889128eff",
+          "record": {
+            "id": "b1-fantasie-imagination",
+            "de": "die Fantasie / die Phantasie",
+            "lemma": "Fantasie",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "фантазия",
+              "воображение"
+            ],
+            "definition_de": "Die Fähigkeit, sich Neues oder nicht unmittelbar Vorhandenes vorzustellen.",
+            "example": "Beim Schreiben einer Geschichte braucht man Fantasie.",
+            "example_ru": "При написании истории нужно воображение.",
+            "forms": "die Fantasien / die Phantasien; способность обычно Singular",
+            "grammar_hint": "Оба написания допустимы; viel Fantasie haben. Fantasien во множественном числе — воображаемые картины, мечты.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 70,
+                "scope": "context",
+                "note": "Goethe B1 printed page 70; earliest CEFR level pending cross-level comparison; pedagogical usage contexts need not be independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fantasie"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-fasching-carnival",
+      "retain": {
+        "batch": 21,
+        "row": 14
+      },
+      "suppress": {
+        "batch": 43,
+        "row": 1
+      },
+      "merged_record": {
+        "id": "b1-fasching-carnival",
+        "de": "der Fasching",
+        "lemma": "Fasching",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "карнавал перед Великим постом (Австрия, часть Германии)",
+          "карнавал (Германия, Австрия)"
+        ],
+        "definition_de": "Die Zeit mit Verkleidungen und Festen vor der Fastenzeit.",
+        "example": "Zum Fasching ziehen viele Kinder Kostüme an.",
+        "example_ru": "На карнавал многие дети надевают костюмы.",
+        "forms": "обычно Singular; die Faschinge (регионально)",
+        "grammar_hint": "D/A: Fasching; D: Karneval; CH: Fasnacht.\nD/A: Fasching; CH: Fasnacht; auch Karneval.",
+        "topic": "Досуг и культура",
+        "topics": [
+          "Досуг и культура"
+        ],
+        "equivalent": "der Karneval / die Fasnacht",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 39,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Fasching",
+            "https://www.duden.de/rechtschreibung/Fasching"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine traditionelle Festzeit mit Verkleidungen und Feiern vor der Fastenzeit."
+        ],
+        "alternative_forms": [
+          "die Faschinge / Faschings; meist Singular"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Zum Fasching verkleiden sich die Kinder als Tiere.",
+            "ru": "На карнавал дети переодеваются в животных."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 21,
+          "row": 14,
+          "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+          "record": {
+            "id": "b1-fasching-carnival",
+            "de": "der Fasching",
+            "lemma": "Fasching",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "карнавал перед Великим постом (Австрия, часть Германии)"
+            ],
+            "definition_de": "Die Zeit mit Verkleidungen und Festen vor der Fastenzeit.",
+            "example": "Zum Fasching ziehen viele Kinder Kostüme an.",
+            "example_ru": "На карнавал многие дети надевают костюмы.",
+            "forms": "обычно Singular; die Faschinge (регионально)",
+            "grammar_hint": "D/A: Fasching; D: Karneval; CH: Fasnacht.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "equivalent": "der Karneval / die Fasnacht",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 39,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fasching"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 43,
+          "row": 1,
+          "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+          "record": {
+            "id": "b1-fasching-carnival",
+            "de": "der Fasching",
+            "lemma": "Fasching",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "карнавал (Германия, Австрия)"
+            ],
+            "definition_de": "Eine traditionelle Festzeit mit Verkleidungen und Feiern vor der Fastenzeit.",
+            "example": "Zum Fasching verkleiden sich die Kinder als Tiere.",
+            "example_ru": "На карнавал дети переодеваются в животных.",
+            "forms": "die Faschinge / Faschings; meist Singular",
+            "grammar_hint": "D/A: Fasching; CH: Fasnacht; auch Karneval.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 54,
+                "scope": "regional_variant",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Fasching"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-fleischhauer-butcher-at",
+      "retain": {
+        "batch": 22,
+        "row": 29
+      },
+      "suppress": {
+        "batch": 57,
+        "row": 27
+      },
+      "merged_record": {
+        "id": "b1-fleischhauer-butcher-at",
+        "de": "der Fleischhauer / die Fleischhauerin",
+        "lemma": "Fleischhauer",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "мясник / мясница (австрийский вариант)",
+          "мясник (Австрия)"
+        ],
+        "definition_de": "Eine Person, die beruflich Fleisch verarbeitet und verkauft.",
+        "example": "Der Fleischhauer empfiehlt uns eine regionale Wurst.",
+        "example_ru": "Мясник рекомендует нам местную колбасу.",
+        "forms": "die Fleischhauer · die Fleischhauerinnen",
+        "grammar_hint": "A: Fleischhauer; D/CH: Metzger / Metzgerin, в Германии также Fleischer.\nA: Fleischhauer; CH: Metzger; D также Fleischer.",
+        "topic": "Работа и профессии",
+        "topics": [
+          "Работа и профессии"
+        ],
+        "equivalent": "der Metzger / die Metzgerin",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 40,
+            "scope": "regional_equivalent"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/Fleischhauer",
+            "https://de.wiktionary.org/wiki/Fleischhauer"
+          ],
+          "independent_meaning_checked": true,
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine in Österreich gebräuchliche Berufsbezeichnung für eine Fachperson der Fleischverarbeitung."
+        ],
+        "alternative_forms": [
+          "die Fleischhauer / die Fleischhauerinnen"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Der Fleischhauer bereitet die Bestellung vor.",
+            "ru": "Мясник готовит заказ."
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 22,
+          "row": 29,
+          "sha": "6540fbfa0c4438750447b8545f19c0c157146086",
+          "record": {
+            "id": "b1-fleischhauer-butcher-at",
+            "de": "der Fleischhauer / die Fleischhauerin",
+            "lemma": "Fleischhauer",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "мясник / мясница (австрийский вариант)"
+            ],
+            "definition_de": "Eine Person, die beruflich Fleisch verarbeitet und verkauft.",
+            "example": "Der Fleischhauer empfiehlt uns eine regionale Wurst.",
+            "example_ru": "Мясник рекомендует нам местную колбасу.",
+            "forms": "die Fleischhauer · die Fleischhauerinnen",
+            "grammar_hint": "A: Fleischhauer; D/CH: Metzger / Metzgerin, в Германии также Fleischer.",
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ],
+            "equivalent": "der Metzger / die Metzgerin",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 40,
+                "scope": "regional_equivalent"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Fleischhauer"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 57,
+          "row": 27,
+          "sha": "338b6e99ab5cc3cdf3c92f1c2bac46fb399b78d3",
+          "record": {
+            "id": "b1-fleischhauer-butcher-at",
+            "de": "der Fleischhauer / die Fleischhauerin",
+            "lemma": "Fleischhauer",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "мясник (Австрия)"
+            ],
+            "definition_de": "Eine in Österreich gebräuchliche Berufsbezeichnung für eine Fachperson der Fleischverarbeitung.",
+            "example": "Der Fleischhauer bereitet die Bestellung vor.",
+            "example_ru": "Мясник готовит заказ.",
+            "forms": "die Fleischhauer / die Fleischhauerinnen",
+            "grammar_hint": "A: Fleischhauer; CH: Metzger; D также Fleischer.",
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 63,
+                "scope": "regional_variant",
+                "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fleischhauer"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ]
+}

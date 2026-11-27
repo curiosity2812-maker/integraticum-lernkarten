@@ -1,0 +1,756 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged overlay for cross-batch candidates 6–10 of 44. Four merge proposals, one keep-distinct decision (four es functions). Personenstand keeps broader and narrower contexts and is blocked pending forms reconciliation; Fasnacht exact source pending. Earliest source row canonical; old ID retained as alias, not implemented in progress storage. Original batches unchanged, row coordinates one-based and bound to SHA.",
+  "candidate_groups_reviewed": 5,
+  "input_records": 12,
+  "output_records": 8,
+  "alias_map": {
+    "b1-erdapfel-potato-at": "b1-erdapfel-austria",
+    "b1-personenstand-marital": "b1-personenstand-status",
+    "b1-zivilstand-status": "b1-zivilstand-ch",
+    "b1-fasnacht-carnival-ch": "b1-fasnacht-ch"
+  },
+  "groups": [
+    {
+      "canonical_id": "b1-erdapfel-austria",
+      "alias_ids": [
+        "b1-erdapfel-potato-at"
+      ],
+      "retain": {
+        "batch": 17,
+        "row": 23
+      },
+      "suppress": {
+        "batch": 43,
+        "row": 17
+      },
+      "merged_record": {
+        "id": "b1-erdapfel-austria",
+        "de": "der Erdapfel",
+        "lemma": "Erdapfel",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "картофель",
+          "картофелина (австрийский вариант)",
+          "картофель (Австрия)"
+        ],
+        "definition_de": "Eine essbare Knolle, die in Österreich so genannt wird.",
+        "example": "In Österreich bestelle ich gern Erdäpfelsalat.",
+        "example_ru": "В Австрии я охотно заказываю картофельный салат.",
+        "forms": "die Erdäpfel",
+        "grammar_hint": "Австрия и некоторые регионы Германии: Erdapfel; общеупотребительный вариант Kartoffel.\nA: Erdapfel; D/CH: Kartoffel; der Erdäpfelsalat.",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "equivalent": "die Kartoffel",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 36,
+            "scope": "regional_equivalent"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Erdapfel"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine besonders in Österreich gebräuchliche Bezeichnung für die Kartoffel."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Zum Abendessen gibt es Erdäpfelsalat.",
+            "ru": "На ужин будет картофельный салат."
+          }
+        ],
+        "alias_ids": [
+          "b1-erdapfel-potato-at"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 17,
+          "row": 23,
+          "sha": "6929ada428fb44cb8251b8b94a862c84fb280e19",
+          "record": {
+            "id": "b1-erdapfel-austria",
+            "de": "der Erdapfel",
+            "lemma": "Erdapfel",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "картофель",
+              "картофелина (австрийский вариант)"
+            ],
+            "definition_de": "Eine essbare Knolle, die in Österreich so genannt wird.",
+            "example": "In Österreich bestelle ich gern Erdäpfelsalat.",
+            "example_ru": "В Австрии я охотно заказываю картофельный салат.",
+            "forms": "die Erdäpfel",
+            "grammar_hint": "Австрия и некоторые регионы Германии: Erdapfel; общеупотребительный вариант Kartoffel.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "equivalent": "die Kartoffel",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 36,
+                "scope": "regional_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Erdapfel"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 43,
+          "row": 17,
+          "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+          "record": {
+            "id": "b1-erdapfel-potato-at",
+            "de": "der Erdapfel",
+            "lemma": "Erdapfel",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "картофель (Австрия)"
+            ],
+            "definition_de": "Eine besonders in Österreich gebräuchliche Bezeichnung für die Kartoffel.",
+            "example": "Zum Abendessen gibt es Erdäpfelsalat.",
+            "example_ru": "На ужин будет картофельный салат.",
+            "forms": "die Erdäpfel",
+            "grammar_hint": "A: Erdapfel; D/CH: Kartoffel; der Erdäpfelsalat.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 54,
+                "scope": "regional_variant",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Erdapfel"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-personenstand-status",
+      "alias_ids": [
+        "b1-personenstand-marital"
+      ],
+      "retain": {
+        "batch": 21,
+        "row": 6
+      },
+      "suppress": {
+        "batch": 69,
+        "row": 1
+      },
+      "merged_record": {
+        "id": "b1-personenstand-status",
+        "de": "der Personenstand",
+        "lemma": "Personenstand",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "гражданское состояние",
+          "семейное положение (в анкетах)",
+          "семейное положение"
+        ],
+        "definition_de": "Die familienrechtliche Stellung einer Person, im weiteren Sinn auch weitere amtlich erfasste Angaben.",
+        "example": "Im Formular wird nach dem Personenstand gefragt.",
+        "example_ru": "В анкете спрашивают о семейном положении.",
+        "forms": "die Personenstände (обычно Singular)",
+        "grammar_hint": "В анкетах может соответствовать Familienstand; юридически Personenstand шире. CH: Zivilstand.\nD/A: Familienstand; CH: Zivilstand. В юридическом контексте Personenstand может иметь более широкий смысл.",
+        "topic": "Общество и безопасность",
+        "topics": [
+          "Общество и безопасность"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 39,
+            "scope": "regional_or_contextual_equivalent"
+          },
+          "meaning": [
+            "https://www.oesterreich.gv.at/de/lexicon/P/Seite.991238",
+            "https://www.duden.de/rechtschreibung/Personenstand"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Der familiäre Status einer Person, etwa ledig oder verheiratet."
+        ],
+        "alternative_forms": [
+          "без множественного числа; des Personenstandes / Personenstands"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Bitte geben Sie Ihren Personenstand an.",
+            "ru": "Пожалуйста, укажите своё семейное положение."
+          }
+        ],
+        "alias_ids": [
+          "b1-personenstand-marital"
+        ],
+        "sense_contexts": [
+          {
+            "context": "более широкое юридическое значение",
+            "definition_de": "Die familienrechtliche Stellung einer Person, im weiteren Sinn auch weitere amtlich erfasste Angaben.",
+            "translations_ru": [
+              "гражданское состояние",
+              "семейное положение (в анкетах)"
+            ]
+          },
+          {
+            "context": "семейное положение в анкете",
+            "definition_de": "Der familiäre Status einer Person, etwa ledig oder verheiratet.",
+            "translations_ru": [
+              "семейное положение"
+            ]
+          }
+        ],
+        "release_blocker": "Resolve conflicting plural information and ensure legal and questionnaire contexts remain distinct before deployment."
+      },
+      "original_records": [
+        {
+          "batch": 21,
+          "row": 6,
+          "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+          "record": {
+            "id": "b1-personenstand-status",
+            "de": "der Personenstand",
+            "lemma": "Personenstand",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "гражданское состояние",
+              "семейное положение (в анкетах)"
+            ],
+            "definition_de": "Die familienrechtliche Stellung einer Person, im weiteren Sinn auch weitere amtlich erfasste Angaben.",
+            "example": "Im Formular wird nach dem Personenstand gefragt.",
+            "example_ru": "В анкете спрашивают о семейном положении.",
+            "forms": "die Personenstände (обычно Singular)",
+            "grammar_hint": "В анкетах может соответствовать Familienstand; юридически Personenstand шире. CH: Zivilstand.",
+            "topic": "Общество и безопасность",
+            "topics": [
+              "Общество и безопасность"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 39,
+                "scope": "regional_or_contextual_equivalent"
+              },
+              "meaning": [
+                "https://www.oesterreich.gv.at/de/lexicon/P/Seite.991238"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 69,
+          "row": 1,
+          "sha": "48ce6dc2f738a7d97b95e1b0fb7d797889128eff",
+          "record": {
+            "id": "b1-personenstand-marital",
+            "de": "der Personenstand",
+            "lemma": "Personenstand",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "семейное положение"
+            ],
+            "definition_de": "Der familiäre Status einer Person, etwa ledig oder verheiratet.",
+            "example": "Bitte geben Sie Ihren Personenstand an.",
+            "example_ru": "Пожалуйста, укажите своё семейное положение.",
+            "forms": "без множественного числа; des Personenstandes / Personenstands",
+            "grammar_hint": "D/A: Familienstand; CH: Zivilstand. В юридическом контексте Personenstand может иметь более широкий смысл.",
+            "topic": "Общество и безопасность",
+            "topics": [
+              "Общество и безопасность"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 70,
+                "scope": "context",
+                "note": "Goethe B1 printed page 70; earliest CEFR level pending cross-level comparison; pedagogical usage contexts need not be independent lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Personenstand"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-zivilstand-ch",
+      "alias_ids": [
+        "b1-zivilstand-status"
+      ],
+      "retain": {
+        "batch": 21,
+        "row": 7
+      },
+      "suppress": {
+        "batch": 120,
+        "row": 23
+      },
+      "merged_record": {
+        "id": "b1-zivilstand-ch",
+        "de": "der Zivilstand",
+        "lemma": "Zivilstand",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "семейное положение (швейцарский вариант)",
+          "семейное положение (Швейцария)"
+        ],
+        "definition_de": "In der Schweiz gebräuchliche Bezeichnung für den familienrechtlichen Status einer Person.",
+        "example": "Beim Zivilstand kreuze ich ledig an.",
+        "example_ru": "В графе «семейное положение» я отмечаю «не замужем».",
+        "forms": "die Zivilstände (обычно Singular)",
+        "grammar_hint": "CH: Zivilstand. В Германии чаще Familienstand. ledig, verheiratet, geschieden, verwitwet.\nCH: Zivilstand; D/A: Familienstand; ledig, verheiratet, geschieden, verwitwet. Связать региональные варианты при объединении.",
+        "topic": "Общество и безопасность",
+        "topics": [
+          "Общество и безопасность",
+          "Документы и учреждения"
+        ],
+        "ch": true,
+        "equivalent": "der Familienstand",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 39,
+            "scope": "regional_or_contextual_equivalent"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zivilstand"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine Angabe darüber, ob eine Person zum Beispiel ledig oder verheiratet ist."
+        ],
+        "alternative_forms": [
+          "meist Singular; die Zivilstände"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Im Schweizer Formular muss ich meinen Zivilstand angeben.",
+            "ru": "В швейцарском формуляре нужно указать семейное положение."
+          }
+        ],
+        "alias_ids": [
+          "b1-zivilstand-status"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 21,
+          "row": 7,
+          "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+          "record": {
+            "id": "b1-zivilstand-ch",
+            "de": "der Zivilstand",
+            "lemma": "Zivilstand",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "семейное положение (швейцарский вариант)"
+            ],
+            "definition_de": "In der Schweiz gebräuchliche Bezeichnung für den familienrechtlichen Status einer Person.",
+            "example": "Beim Zivilstand kreuze ich ledig an.",
+            "example_ru": "В графе «семейное положение» я отмечаю «не замужем».",
+            "forms": "die Zivilstände (обычно Singular)",
+            "grammar_hint": "CH: Zivilstand. В Германии чаще Familienstand. ledig, verheiratet, geschieden, verwitwet.",
+            "topic": "Общество и безопасность",
+            "topics": [
+              "Общество и безопасность"
+            ],
+            "ch": true,
+            "equivalent": "der Familienstand",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 39,
+                "scope": "regional_or_contextual_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zivilstand"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 120,
+          "row": 23,
+          "sha": "39223b1e84e3f06ee8143b80cd82da5ac44327f9",
+          "record": {
+            "id": "b1-zivilstand-status",
+            "de": "der Zivilstand",
+            "lemma": "Zivilstand",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "семейное положение (Швейцария)"
+            ],
+            "definition_de": "Eine Angabe darüber, ob eine Person zum Beispiel ledig oder verheiratet ist.",
+            "example": "Im Schweizer Formular muss ich meinen Zivilstand angeben.",
+            "example_ru": "В швейцарском формуляре нужно указать семейное положение.",
+            "forms": "meist Singular; die Zivilstände",
+            "grammar_hint": "CH: Zivilstand; D/A: Familienstand; ledig, verheiratet, geschieden, verwitwet. Связать региональные варианты при объединении.",
+            "topic": "Документы и учреждения",
+            "topics": [
+              "Документы и учреждения"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 100,
+                "scope": "headword_or_attested_sense",
+                "note": "Printed page 100 visually inspected. Exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zivilstand"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-fasnacht-ch",
+      "alias_ids": [
+        "b1-fasnacht-carnival-ch"
+      ],
+      "retain": {
+        "batch": 21,
+        "row": 15
+      },
+      "suppress": {
+        "batch": 43,
+        "row": 2
+      },
+      "merged_record": {
+        "id": "b1-fasnacht-ch",
+        "de": "die Fasnacht",
+        "lemma": "Fasnacht",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "карнавал (швейцарский вариант)",
+          "карнавал (Швейцария)"
+        ],
+        "definition_de": "In der Schweiz gebräuchliche Bezeichnung für traditionelle närrische Feste rund um die Fastenzeit.",
+        "example": "Zur Basler Fasnacht kommen viele Besucher.",
+        "example_ru": "На Базельский карнавал приезжает много гостей.",
+        "forms": "die Fasnachten (обычно Singular)",
+        "grammar_hint": "CH: Fasnacht; D/A: Fasching, D: Karneval. Не путать с Fastnacht (другой региональный вариант).\nCH: Fasnacht; D/A: Fasching, Karneval; также Fastnacht.",
+        "topic": "Досуг и культура",
+        "topics": [
+          "Досуг и культура"
+        ],
+        "ch": true,
+        "equivalent": "der Fasching / der Karneval",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 39,
+            "scope": "regional_or_contextual_equivalent"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Fasnacht",
+            "https://www.duden.de/rechtschreibung/Fastnacht"
+          ],
+          "example": "integraticum_original",
+          "meaning_review": "merged_source_status_requires_confirmation"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Eine regional unterschiedlich gefeierte Zeit mit Masken und Umzügen."
+        ],
+        "alternative_forms": [
+          "die Fasnachten; meist Singular"
+        ],
+        "alternative_examples": [
+          {
+            "de": "An der Basler Fasnacht sind viele Straßen voller Musik.",
+            "ru": "Во время Базельского карнавала на многих улицах звучит музыка."
+          }
+        ],
+        "alias_ids": [
+          "b1-fasnacht-carnival-ch"
+        ],
+        "release_blocker": "Recheck Swiss spelling and plural against exact Fasnacht entry; secondary stored Duden link is for Fastnacht."
+      },
+      "original_records": [
+        {
+          "batch": 21,
+          "row": 15,
+          "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+          "record": {
+            "id": "b1-fasnacht-ch",
+            "de": "die Fasnacht",
+            "lemma": "Fasnacht",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "карнавал (швейцарский вариант)"
+            ],
+            "definition_de": "In der Schweiz gebräuchliche Bezeichnung für traditionelle närrische Feste rund um die Fastenzeit.",
+            "example": "Zur Basler Fasnacht kommen viele Besucher.",
+            "example_ru": "На Базельский карнавал приезжает много гостей.",
+            "forms": "die Fasnachten (обычно Singular)",
+            "grammar_hint": "CH: Fasnacht; D/A: Fasching, D: Karneval. Не путать с Fastnacht (другой региональный вариант).",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "ch": true,
+            "equivalent": "der Fasching / der Karneval",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 39,
+                "scope": "regional_or_contextual_equivalent"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fasnacht"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 43,
+          "row": 2,
+          "sha": "29ab2207c51a7d99ddf6e56bc07ae966f804386c",
+          "record": {
+            "id": "b1-fasnacht-carnival-ch",
+            "de": "die Fasnacht",
+            "lemma": "Fasnacht",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "карнавал (Швейцария)"
+            ],
+            "definition_de": "Eine regional unterschiedlich gefeierte Zeit mit Masken und Umzügen.",
+            "example": "An der Basler Fasnacht sind viele Straßen voller Musik.",
+            "example_ru": "Во время Базельского карнавала на многих улицах звучит музыка.",
+            "forms": "die Fasnachten; meist Singular",
+            "grammar_hint": "CH: Fasnacht; D/A: Fasching, Karneval; также Fastnacht.",
+            "topic": "Досуг и культура",
+            "topics": [
+              "Досуг и культура"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 54,
+                "scope": "regional_variant",
+                "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Fastnacht"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ],
+  "retained_distinct": [
+    {
+      "lemma": "es",
+      "decision": "keep_all_four",
+      "reason": "Distinct grammatical functions: passive prefield placeholder, identification, object correlate, subject correlate. Not duplicates.",
+      "original_records": [
+        {
+          "batch": 19,
+          "row": 30,
+          "sha": "44451c364c9668e0e14212214923181d137f276c",
+          "record": {
+            "id": "b1-es-passive-placeholder",
+            "de": "es (Vorfeld im Passiv)",
+            "lemma": "es",
+            "part": "pron",
+            "level": "B1",
+            "translations_ru": [
+              "формальное es (без перевода)"
+            ],
+            "definition_de": "Besetzt die erste Satzposition, wenn das eigentliche Subjekt später im Passivsatz folgt.",
+            "example": "Es wurden gestern mehrere Anträge geprüft.",
+            "example_ru": "Вчера рассмотрели несколько заявлений.",
+            "forms": "неизменяемый формальный заполнитель",
+            "grammar_hint": "Es не подлежащее: wurden согласуется с mehrere Anträge. Если первым стоит gestern, es исчезает: Gestern wurden mehrere Anträge geprüft.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 38,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://grammis.ids-mannheim.de/progr%40mm/1553"
+              ],
+              "independent_meaning_checked": true,
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 20,
+          "row": 1,
+          "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+          "record": {
+            "id": "b1-es-identification",
+            "de": "es (Identifikation)",
+            "lemma": "es",
+            "part": "pron",
+            "level": "B1",
+            "translations_ru": [
+              "это",
+              "в русском часто без перевода"
+            ],
+            "definition_de": "Verweist in einem Identifikationssatz auf die Person, die gerade festgestellt wird.",
+            "example": "Wer klingelt? – Ich bin es, Anna.",
+            "example_ru": "Кто звонит в дверь? — Это я, Анна.",
+            "forms": "es · разговорное сокращение ’s",
+            "grammar_hint": "Ich bin es / Ich bin’s. Глагол согласуется с ich, du и т. д.: Du bist es.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 38,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://grammis.ids-mannheim.de/systematische-grammatik/395"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 20,
+          "row": 2,
+          "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+          "record": {
+            "id": "b1-es-object-correlate",
+            "de": "es (Korrelat im Akkusativ)",
+            "lemma": "es",
+            "part": "pron",
+            "level": "B1",
+            "translations_ru": [
+              "формальное es (предвосхищает придаточное)"
+            ],
+            "definition_de": "Verweist vorab auf eine nachfolgende Ergänzung zum Verb.",
+            "example": "Ich finde es schön, dass du uns besuchst.",
+            "example_ru": "Мне приятно, что ты нас навещаешь.",
+            "forms": "неизменяемое es",
+            "grammar_hint": "finde es + прилагательное + dass; глагол придаточного в конце. Это не обычное местоимение среднего рода.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 38,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://grammis.ids-mannheim.de/systematische-grammatik/395"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 20,
+          "row": 3,
+          "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+          "record": {
+            "id": "b1-es-subject-correlate",
+            "de": "es (Korrelat zum Subjektsatz)",
+            "lemma": "es",
+            "part": "pron",
+            "level": "B1",
+            "translations_ru": [
+              "формальное es (часто без перевода)"
+            ],
+            "definition_de": "Kündigt eine nachfolgende Infinitivgruppe oder einen Subjektsatz an.",
+            "example": "Es macht mir Freude, neue Wörter zu lernen.",
+            "example_ru": "Мне доставляет удовольствие учить новые слова.",
+            "forms": "неизменяемое es",
+            "grammar_hint": "Если инфинитивная группа стоит первой, es не нужно: Neue Wörter zu lernen macht mir Freude. Отличать от погодного es.",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 38,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://grammis.ids-mannheim.de/systematische-grammatik/395"
+              ],
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ]
+}

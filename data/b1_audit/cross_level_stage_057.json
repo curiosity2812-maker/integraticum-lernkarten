@@ -1,0 +1,2931 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1113,
+    1132
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1113,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Ausbildung an einer Hochschule absolvieren. Example: Seit einem Jahr studiert er in Bern.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 28,
+        "record": {
+          "id": "b1-studieren-location",
+          "de": "studieren",
+          "lemma": "studieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "учиться в вузе"
+          ],
+          "definition_de": "Eine Ausbildung an einer Hochschule absolvieren.",
+          "example": "Seit einem Jahr studiert er in Bern.",
+          "example_ru": "Он уже год учится в Берне.",
+          "forms": "studiert · studierte · hat studiert",
+          "grammar_hint": "an einer Universität (Dativ) studieren; in Bern; не употреблять для обычной школьной учёбы.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/studieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 698,
+          "record": {
+            "id": "a1-547-1",
+            "de": "studieren",
+            "lemma": "studieren",
+            "ru": "учиться в вузе",
+            "uk": "",
+            "translations_ru": [
+              "учиться в вузе"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "studiert · studierte · hat studiert",
+            "definition_de": "An einer Hochschule lernen.",
+            "example": "Sie studiert in Bern.",
+            "example_ru": "Она учится в вузе в Берне.",
+            "note": "studieren — учиться в вузе, не просто учить слова или учиться в школе (lernen). Ich studiere Medizin.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "59bc1322c6e5cdd2f36e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-547-1",
+        "alias_id": "b1-studieren-location",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-547-1"
+      }
+    },
+    {
+      "candidate_number": 1114,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Person, die an einer Hochschule studiert. Example: Die Studentin bereitet sich auf die Prüfung vor.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_094.json",
+        "sha": "44e258d50aa91c73deec01c46a5b32b4bf77cf6f",
+        "batch": 94,
+        "row": 29,
+        "record": {
+          "id": "b1-student-university",
+          "de": "der Student / die Studentin",
+          "lemma": "Student",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "студент",
+            "студентка"
+          ],
+          "definition_de": "Eine Person, die an einer Hochschule studiert.",
+          "example": "Die Studentin bereitet sich auf die Prüfung vor.",
+          "example_ru": "Студентка готовится к экзамену.",
+          "forms": "die Studenten / die Studentinnen",
+          "grammar_hint": "N-Deklination: den/dem/des Studenten; sich auf + Akk. vorbereiten.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Student"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 549,
+          "record": {
+            "id": "a1-549-1",
+            "de": "der Student",
+            "lemma": "Student",
+            "ru": "студент",
+            "uk": "",
+            "translations_ru": [
+              "студент"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Studenten",
+            "definition_de": "Ein Mann, der an einer Hochschule studiert.",
+            "example": "Der Student wohnt in einer kleinen Wohnung.",
+            "example_ru": "Студент живёт в небольшой квартире.",
+            "note": "Akkusativ и Dativ: den Studenten, dem Studenten. Слабое склонение: den Studenten, dem Studenten, des Studenten; женская форма die Studentin (Pl. Studentinnen).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "edcb8316c136052e5404"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-549-1",
+        "alias_id": "b1-student-university",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-549-1"
+      }
+    },
+    {
+      "candidate_number": 1115,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Ausbildung an einer Universität oder anderen Hochschule. Example: Nach dem Studium möchte sie in einem Museum arbeiten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 1,
+        "record": {
+          "id": "b1-studium-degree",
+          "de": "das Studium",
+          "lemma": "Studium",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "учёба в вузе",
+            "высшее образование"
+          ],
+          "definition_de": "Eine Ausbildung an einer Universität oder anderen Hochschule.",
+          "example": "Nach dem Studium möchte sie in einem Museum arbeiten.",
+          "example_ru": "После окончания учёбы в вузе она хочет работать в музее.",
+          "forms": "die Studien; для учебного процесса часто Singular",
+          "grammar_hint": "ein Studium abschliessen (CH); die Studie — исследование, Pl. тоже Studien.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Studium"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 548,
+          "record": {
+            "id": "a1-548-1",
+            "de": "das Studium",
+            "lemma": "Studium",
+            "ru": "учёба в вузе; высшее образование",
+            "uk": "",
+            "translations_ru": [
+              "учёба в вузе",
+              "высшее образование"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "обычно Singular в значении «учёба»",
+            "definition_de": "Die Ausbildung an einer Hochschule.",
+            "example": "Mein Studium beginnt im Herbst.",
+            "example_ru": "Моя учёба в вузе начинается осенью.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "1e17335714261cf3aee4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-548-1",
+        "alias_id": "b1-studium-degree",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-548-1"
+      }
+    },
+    {
+      "candidate_number": 1116,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Sitzmöbel für eine Person, üblicherweise mit Rückenlehne. Example: Kannst du noch einen Stuhl aus der Küche holen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 5,
+        "record": {
+          "id": "b1-stuhl-chair",
+          "de": "der Stuhl",
+          "lemma": "Stuhl",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "стул"
+          ],
+          "definition_de": "Ein Sitzmöbel für eine Person, üblicherweise mit Rückenlehne.",
+          "example": "Kannst du noch einen Stuhl aus der Küche holen?",
+          "example_ru": "Можешь принести ещё один стул из кухни?",
+          "forms": "die Stühle",
+          "grammar_hint": "auf einem Stuhl sitzen (Dativ); A: Sessel также в значении стула.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stuhl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 165,
+          "record": {
+            "id": "dict_a4b473489a6d10d4c44c",
+            "de": "der Stuhl",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "стул"
+            ],
+            "definition_de": "Ein Sitzmöbel für eine Person, meistens mit einer Lehne.",
+            "forms": "Plural · die Stühle",
+            "example": "Stell den Stuhl bitte neben den Tisch.",
+            "example_ru": "Поставь стул рядом со столом, пожалуйста.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Stuhl"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a4b473489a6d10d4c44c",
+        "alias_id": "b1-stuhl-chair",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a4b473489a6d10d4c44c"
+      }
+    },
+    {
+      "candidate_number": 1117,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Zeitdauer von sechzig Minuten. Example: Der Weg dauert etwa eine Stunde.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 7,
+        "record": {
+          "id": "b1-stunde-hour",
+          "de": "die Stunde",
+          "lemma": "Stunde",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "час (60 минут)"
+          ],
+          "definition_de": "Eine Zeitdauer von sechzig Minuten.",
+          "example": "Der Weg dauert etwa eine Stunde.",
+          "example_ru": "Дорога занимает примерно час.",
+          "forms": "die Stunden",
+          "grammar_hint": "eine halbe Stunde — полчаса; in einer Stunde (Dativ) — через час.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stunde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 550,
+          "record": {
+            "id": "a1-550-1",
+            "de": "die Stunde",
+            "lemma": "Stunde",
+            "ru": "час",
+            "uk": "",
+            "translations_ru": [
+              "час"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Stunden",
+            "definition_de": "Eine Zeitspanne von sechzig Minuten.",
+            "example": "Die Fahrt dauert eine Stunde.",
+            "example_ru": "Поездка длится час.",
+            "note": "Stunde — 60 минут, длительность; Uhr — обозначение времени. Unterrichtsstunde — урок, отдельный контекст; значение урок по данному источнику не подтверждено.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "b4888bd4cca0eeb236df"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-550-1",
+        "alias_id": "b1-stunde-hour",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-550-1"
+      }
+    },
+    {
+      "candidate_number": 1118,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine zeitlich begrenzte Unterrichtseinheit. Example: Am Montag haben wir zwei Stunden Deutsch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 8,
+        "record": {
+          "id": "b1-stunde-lesson",
+          "de": "die Stunde",
+          "lemma": "Stunde",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "урок",
+            "учебное занятие",
+            "академический час"
+          ],
+          "definition_de": "Eine zeitlich begrenzte Unterrichtseinheit.",
+          "example": "Am Montag haben wir zwei Stunden Deutsch.",
+          "example_ru": "В понедельник у нас два урока немецкого.",
+          "forms": "die Stunden",
+          "grammar_hint": "Unterrichtsstunde не обязательно длится 60 минут; eine Stunde Deutsch haben.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stunde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 550,
+          "record": {
+            "id": "a1-550-1",
+            "de": "die Stunde",
+            "lemma": "Stunde",
+            "ru": "час",
+            "uk": "",
+            "translations_ru": [
+              "час"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Stunden",
+            "definition_de": "Eine Zeitspanne von sechzig Minuten.",
+            "example": "Die Fahrt dauert eine Stunde.",
+            "example_ru": "Поездка длится час.",
+            "note": "Stunde — 60 минут, длительность; Uhr — обозначение времени. Unterrichtsstunde — урок, отдельный контекст; значение урок по данному источнику не подтверждено.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "b4888bd4cca0eeb236df"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1119,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Gibt die Dauer einer bis zum Bezugspunkt fortgesetzten Handlung an. Example: Seit drei Stunden regnet es ohne Pause.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 9,
+        "record": {
+          "id": "b1-stunde-duration-since",
+          "de": "seit … Stunden",
+          "lemma": "Stunde",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "уже … часов",
+            "в течение … часов"
+          ],
+          "definition_de": "Gibt die Dauer einer bis zum Bezugspunkt fortgesetzten Handlung an.",
+          "example": "Seit drei Stunden regnet es ohne Pause.",
+          "example_ru": "Дождь идёт без перерыва уже три часа.",
+          "forms": "die Stunden",
+          "grammar_hint": "seit + Dativ; при продолжающемся действии обычно Präsens; учебный контекст значения времени.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stunde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 550,
+          "record": {
+            "id": "a1-550-1",
+            "de": "die Stunde",
+            "lemma": "Stunde",
+            "ru": "час",
+            "uk": "",
+            "translations_ru": [
+              "час"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Stunden",
+            "definition_de": "Eine Zeitspanne von sechzig Minuten.",
+            "example": "Die Fahrt dauert eine Stunde.",
+            "example_ru": "Поездка длится час.",
+            "note": "Stunde — 60 минут, длительность; Uhr — обозначение времени. Unterrichtsstunde — урок, отдельный контекст; значение урок по данному источнику не подтверждено.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "b4888bd4cca0eeb236df"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1120,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Versuchen, einen nicht auffindbaren Gegenstand wiederzufinden. Example: Ich suche seit einer Weile meinen Schlüssel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 13,
+        "record": {
+          "id": "b1-suchen-lost",
+          "de": "suchen",
+          "lemma": "suchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "искать (потерянное)"
+          ],
+          "definition_de": "Versuchen, einen nicht auffindbaren Gegenstand wiederzufinden.",
+          "example": "Ich suche seit einer Weile meinen Schlüssel.",
+          "example_ru": "Я уже некоторое время ищу свой ключ.",
+          "forms": "sucht · suchte · hat gesucht",
+          "grammar_hint": "etwas (Akk.) suchen; nach etwas (Dativ) suchen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/suchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 699,
+          "record": {
+            "id": "a1-551-1",
+            "de": "suchen",
+            "lemma": "suchen",
+            "ru": "искать",
+            "uk": "",
+            "translations_ru": [
+              "искать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sucht · suchte · hat gesucht",
+            "definition_de": "Versuchen, jemanden oder etwas zu finden.",
+            "example": "Ich suche meine Schlüssel.",
+            "example_ru": "Я ищу свои ключи.",
+            "note": "jemanden/etwas (Akkusativ) suchen — искать кого-либо/что-либо; nach etwas (Dativ) suchen — искать что-либо. das Suchen — процесс; die Suche — поиск.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5c1c169841bf1f0b0173"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-551-1",
+        "alias_id": "b1-suchen-lost",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-551-1"
+      }
+    },
+    {
+      "candidate_number": 1121,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Versuchen, etwas Benötigtes zu bekommen. Example: Wir suchen eine günstige Wohnung in der Nähe.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 14,
+        "record": {
+          "id": "b1-suchen-acquire",
+          "de": "suchen",
+          "lemma": "suchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "искать (жильё, работу)"
+          ],
+          "definition_de": "Versuchen, etwas Benötigtes zu bekommen.",
+          "example": "Wir suchen eine günstige Wohnung in der Nähe.",
+          "example_ru": "Мы ищем недорогую квартиру поблизости.",
+          "forms": "sucht · suchte · hat gesucht",
+          "grammar_hint": "eine Wohnung suchen (Akk.); nach einer Wohnung suchen (Dativ).",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/suchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 699,
+          "record": {
+            "id": "a1-551-1",
+            "de": "suchen",
+            "lemma": "suchen",
+            "ru": "искать",
+            "uk": "",
+            "translations_ru": [
+              "искать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sucht · suchte · hat gesucht",
+            "definition_de": "Versuchen, jemanden oder etwas zu finden.",
+            "example": "Ich suche meine Schlüssel.",
+            "example_ru": "Я ищу свои ключи.",
+            "note": "jemanden/etwas (Akkusativ) suchen — искать кого-либо/что-либо; nach etwas (Dativ) suchen — искать что-либо. das Suchen — процесс; die Suche — поиск.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5c1c169841bf1f0b0173"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-551-1",
+        "alias_id": "b1-suchen-acquire",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-551-1"
+      }
+    },
+    {
+      "candidate_number": 1122,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Versuchen, eine bestimmte Person zu finden. Example: Suchen Sie Herrn Meier? Er ist im Büro nebenan.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 15,
+        "record": {
+          "id": "b1-suchen-person",
+          "de": "jemanden suchen",
+          "lemma": "suchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "искать кого-либо"
+          ],
+          "definition_de": "Versuchen, eine bestimmte Person zu finden.",
+          "example": "Suchen Sie Herrn Meier? Er ist im Büro nebenan.",
+          "example_ru": "Вы ищете господина Майера? Он в соседнем кабинете.",
+          "forms": "sucht · suchte · hat gesucht",
+          "grammar_hint": "jemanden (Akk.) suchen; Wen suchen Sie?; учебный контекст поиска.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/suchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 699,
+          "record": {
+            "id": "a1-551-1",
+            "de": "suchen",
+            "lemma": "suchen",
+            "ru": "искать",
+            "uk": "",
+            "translations_ru": [
+              "искать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sucht · suchte · hat gesucht",
+            "definition_de": "Versuchen, jemanden oder etwas zu finden.",
+            "example": "Ich suche meine Schlüssel.",
+            "example_ru": "Я ищу свои ключи.",
+            "note": "jemanden/etwas (Akkusativ) suchen — искать кого-либо/что-либо; nach etwas (Dativ) suchen — искать что-либо. das Suchen — процесс; die Suche — поиск.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "5c1c169841bf1f0b0173"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-551-1",
+        "alias_id": "b1-suchen-person",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-551-1"
+      }
+    },
+    {
+      "candidate_number": 1123,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: In alltäglicher Rede eine sehr positive Bewertung ausdrückend. Example: Das war ein super Ausflug.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 23,
+        "record": {
+          "id": "b1-super-adjective",
+          "de": "super",
+          "lemma": "super",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "отличный",
+            "прекрасный",
+            "классный"
+          ],
+          "definition_de": "In alltäglicher Rede eine sehr positive Bewertung ausdrückend.",
+          "example": "Das war ein super Ausflug.",
+          "example_ru": "Это была отличная прогулка.",
+          "forms": "не склоняется; без нормативных степеней сравнения",
+          "grammar_hint": "ein super Ausflug, eine super Idee — без окончания; разговорное.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/super",
+              "https://www.duden.de/rechtschreibung/super"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 308,
+          "record": {
+            "id": "dict_0c5a81eb660d845704d6",
+            "de": "super",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "отличный",
+              "здорово",
+              "супер"
+            ],
+            "definition_de": "Umgangssprachlich: besonders gut.",
+            "forms": "Без степеней сравнения",
+            "example": "Deine Idee ist super!",
+            "example_ru": "Твоя идея отличная!",
+            "grammar_hint": "",
+            "usage_note": "Разговорное, несклоняемое прилагательное: ein super Film / Der Film ist super. Наречное употребление: Sie tanzt super — она отлично танцует. Обычных степеней сравнения нет.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/super"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0c5a81eb660d845704d6",
+        "alias_id": "b1-super-adjective",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0c5a81eb660d845704d6"
+      }
+    },
+    {
+      "candidate_number": 1124,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Beschreibt in informeller Sprache die sehr gute Ausführung einer Handlung. Example: Du hast das super erklärt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 24,
+        "record": {
+          "id": "b1-super-adverb",
+          "de": "super",
+          "lemma": "super",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "отлично",
+            "здорово"
+          ],
+          "definition_de": "Beschreibt in informeller Sprache die sehr gute Ausführung einer Handlung.",
+          "example": "Du hast das super erklärt.",
+          "example_ru": "Ты отлично это объяснила.",
+          "forms": "неизменяемое; без степеней сравнения",
+          "grammar_hint": "Наречное употребление прилагательного super; нейтральнее: sehr gut.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/super",
+              "https://www.duden.de/rechtschreibung/super"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 308,
+          "record": {
+            "id": "dict_0c5a81eb660d845704d6",
+            "de": "super",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "отличный",
+              "здорово",
+              "супер"
+            ],
+            "definition_de": "Umgangssprachlich: besonders gut.",
+            "forms": "Без степеней сравнения",
+            "example": "Deine Idee ist super!",
+            "example_ru": "Твоя идея отличная!",
+            "grammar_hint": "",
+            "usage_note": "Разговорное, несклоняемое прилагательное: ein super Film / Der Film ist super. Наречное употребление: Sie tanzt super — она отлично танцует. Обычных степеней сравнения нет.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/super"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0c5a81eb660d845704d6",
+        "alias_id": "b1-super-adverb",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0c5a81eb660d845704d6"
+      }
+    },
+    {
+      "candidate_number": 1125,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine spontane positive Reaktion auf eine Nachricht. Example: Wir haben einen Platz bekommen. – Super!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 25,
+        "record": {
+          "id": "b1-super-exclamation",
+          "de": "Super!",
+          "lemma": "super",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "отлично!",
+            "здорово!"
+          ],
+          "definition_de": "Eine spontane positive Reaktion auf eine Nachricht.",
+          "example": "Wir haben einen Platz bekommen. – Super!",
+          "example_ru": "Нам досталось место. — Отлично!",
+          "forms": "неизменяемая формула",
+          "grammar_hint": "Разговорный самостоятельный отклик; учебная конструкция.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/super",
+              "https://www.duden.de/rechtschreibung/super"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 308,
+          "record": {
+            "id": "dict_0c5a81eb660d845704d6",
+            "de": "super",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "отличный",
+              "здорово",
+              "супер"
+            ],
+            "definition_de": "Umgangssprachlich: besonders gut.",
+            "forms": "Без степеней сравнения",
+            "example": "Deine Idee ist super!",
+            "example_ru": "Твоя идея отличная!",
+            "grammar_hint": "",
+            "usage_note": "Разговорное, несклоняемое прилагательное: ein super Film / Der Film ist super. Наречное употребление: Sie tanzt super — она отлично танцует. Обычных степеней сравнения нет.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/super"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1126,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein grösseres Geschäft für Lebensmittel und viele Alltagsprodukte. Example: Ich kaufe das Gemüse im Supermarkt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 26,
+        "record": {
+          "id": "b1-supermarkt-shop",
+          "de": "der Supermarkt",
+          "lemma": "Supermarkt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "супермаркет"
+          ],
+          "definition_de": "Ein grösseres Geschäft für Lebensmittel und viele Alltagsprodukte.",
+          "example": "Ich kaufe das Gemüse im Supermarkt.",
+          "example_ru": "Я покупаю овощи в супермаркете.",
+          "forms": "die Supermärkte",
+          "grammar_hint": "im Supermarkt (Dativ); in den Supermarkt gehen (Akk.); CH: grösseres.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Supermarkt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 166,
+          "record": {
+            "id": "dict_eb478c997f8849a80378",
+            "de": "der Supermarkt",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "супермаркет"
+            ],
+            "definition_de": "Ein größeres Geschäft, in dem man vor allem Lebensmittel und Dinge für den Alltag kauft.",
+            "forms": "Plural · die Supermärkte",
+            "example": "Der Supermarkt schließt heute um acht Uhr.",
+            "example_ru": "Сегодня супермаркет закрывается в восемь часов.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Supermarkt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_eb478c997f8849a80378",
+        "alias_id": "b1-supermarkt-shop",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_eb478c997f8849a80378"
+      }
+    },
+    {
+      "candidate_number": 1127,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine meist warme, flüssige Speise, die verschiedene Zutaten enthalten kann. Example: Heute koche ich eine Suppe mit Linsen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 27,
+        "record": {
+          "id": "b1-suppe-food",
+          "de": "die Suppe",
+          "lemma": "Suppe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "суп"
+          ],
+          "definition_de": "Eine meist warme, flüssige Speise, die verschiedene Zutaten enthalten kann.",
+          "example": "Heute koche ich eine Suppe mit Linsen.",
+          "example_ru": "Сегодня я готовлю суп с чечевицей.",
+          "forms": "die Suppen",
+          "grammar_hint": "jemandem schmecken (Dativ): Die Suppe schmeckt mir; ein Teller Suppe.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Suppe"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 87,
+          "record": {
+            "id": "dict_a32b24b672995e9527b0",
+            "de": "die Suppe",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "суп"
+            ],
+            "definition_de": "Ein meist flüssiges Gericht, das zum Beispiel Gemüse, Fleisch oder Nudeln enthalten kann.",
+            "forms": "Plural · die Suppen",
+            "example": "Zum Mittagessen gibt es eine warme Suppe.",
+            "example_ru": "На обед будет горячий суп.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Suppe"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a32b24b672995e9527b0",
+        "alias_id": "b1-suppe-food",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a32b24b672995e9527b0"
+      }
+    },
+    {
+      "candidate_number": 1128,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Geschmacklich an Zucker oder Honig erinnernd. Example: Der Tee ist mir zu süss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 28,
+        "record": {
+          "id": "b1-suess-taste",
+          "de": "süß",
+          "lemma": "süß",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "сладкий"
+          ],
+          "definition_de": "Geschmacklich an Zucker oder Honig erinnernd.",
+          "example": "Der Tee ist mir zu süss.",
+          "example_ru": "Чай для меня слишком сладкий.",
+          "forms": "süß · süßer · am süßesten; CH: süss · süsser · am süssesten",
+          "grammar_hint": "mir (Dativ) zu süss sein; süsse Speisen; Gegensatz je nach Geschmack: sauer, bitter.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 326,
+          "record": {
+            "id": "dict_0c8ae14e2294fa4c4ffb",
+            "de": "süß",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "сладкий",
+              "милый"
+            ],
+            "definition_de": "Wie Zucker schmeckend oder besonders niedlich.",
+            "forms": "süß · süßer · am süßesten",
+            "example": "Der Tee ist mir zu süß.",
+            "example_ru": "Для меня чай слишком сладкий.",
+            "grammar_hint": "zu süß — слишком сладкий; mir zu süß — для меня слишком сладкий (Dativ).",
+            "usage_note": "В Швейцарии: süss. О вкусе — сладкий; о ребёнке или животном — милый. Оба значения подтверждены Goethe A2 стр. 27.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0c8ae14e2294fa4c4ffb",
+        "alias_id": "b1-suess-taste",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0c8ae14e2294fa4c4ffb"
+      }
+    },
+    {
+      "candidate_number": 1129,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Durch sein Aussehen oder Verhalten Zuneigung weckend. Example: Dein Hund ist wirklich süss.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_095.json",
+        "sha": "28fb063a78ea1c8fbcad64cfed00c1d5d5526776",
+        "batch": 95,
+        "row": 29,
+        "record": {
+          "id": "b1-suess-cute",
+          "de": "süß",
+          "lemma": "süß",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "милый",
+            "очаровательный"
+          ],
+          "definition_de": "Durch sein Aussehen oder Verhalten Zuneigung weckend.",
+          "example": "Dein Hund ist wirklich süss.",
+          "example_ru": "Твоя собака очень милая.",
+          "forms": "süß · süßer · am süßesten; CH: süss · süsser · am süssesten",
+          "grammar_hint": "Разговорное значение niedlich; относится не только ко вкусу.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 326,
+          "record": {
+            "id": "dict_0c8ae14e2294fa4c4ffb",
+            "de": "süß",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "сладкий",
+              "милый"
+            ],
+            "definition_de": "Wie Zucker schmeckend oder besonders niedlich.",
+            "forms": "süß · süßer · am süßesten",
+            "example": "Der Tee ist mir zu süß.",
+            "example_ru": "Для меня чай слишком сладкий.",
+            "grammar_hint": "zu süß — слишком сладкий; mir zu süß — для меня слишком сладкий (Dativ).",
+            "usage_note": "В Швейцарии: süss. О вкусе — сладкий; о ребёнке или животном — милый. Оба значения подтверждены Goethe A2 стр. 27.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_0c8ae14e2294fa4c4ffb",
+        "alias_id": "b1-suess-cute",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_0c8ae14e2294fa4c4ffb"
+      }
+    },
+    {
+      "candidate_number": 1130,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Bei anderen Menschen ein Gefühl der Zuneigung hervorrufend. Example: Unsere neue Nachbarin ist mir sehr sympathisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_096.json",
+        "sha": "4900dde389203e5fe8b01be48cbea6251c12ebd8",
+        "batch": 96,
+        "row": 2,
+        "record": {
+          "id": "b1-sympathisch-likeable",
+          "de": "sympathisch",
+          "lemma": "sympathisch",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "симпатичный",
+            "приятный",
+            "располагающий к себе"
+          ],
+          "definition_de": "Bei anderen Menschen ein Gefühl der Zuneigung hervorrufend.",
+          "example": "Unsere neue Nachbarin ist mir sehr sympathisch.",
+          "example_ru": "Наша новая соседка мне очень симпатична.",
+          "forms": "sympathisch · sympathischer · am sympathischsten",
+          "grammar_hint": "jemandem sympathisch sein (Dativ); jemanden sympathisch finden (Akk.); не обязательно внешняя привлекательность.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page 85 visually inspected. Exam-list membership or example context only; earliest CEFR level pending comparison with A1/A2. Pedagogical contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sympathisch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 315,
+          "record": {
+            "id": "dict_29069e0b36fe4a978975",
+            "de": "sympathisch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "приятный",
+              "симпатичный",
+              "вызывающий симпатию"
+            ],
+            "definition_de": "So, dass man jemanden gern mag.",
+            "forms": "sympathisch · sympathischer · am sympathischsten",
+            "example": "Unsere neue Nachbarin ist mir sehr sympathisch.",
+            "example_ru": "Мне очень симпатична наша новая соседка.",
+            "grammar_hint": "jemandem (Dativ) sympathisch sein.",
+            "usage_note": "Характеризует человека, вызывающего симпатию, не обязательно привлекательную внешность; противоположность unsympathisch.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sympathisch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_29069e0b36fe4a978975",
+        "alias_id": "b1-sympathisch-likeable",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_29069e0b36fe4a978975"
+      }
+    },
+    {
+      "candidate_number": 1131,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein festes, meist kleines Arzneimittel in portionierter Form. Example: Auf der Packung steht, wie die Tabletten einzunehmen sind.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_096.json",
+        "sha": "4900dde389203e5fe8b01be48cbea6251c12ebd8",
+        "batch": 96,
+        "row": 9,
+        "record": {
+          "id": "b1-tablette-pill",
+          "de": "die Tablette",
+          "lemma": "Tablette",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "таблетка"
+          ],
+          "definition_de": "Ein festes, meist kleines Arzneimittel in portionierter Form.",
+          "example": "Auf der Packung steht, wie die Tabletten einzunehmen sind.",
+          "example_ru": "На упаковке указано, как принимать таблетки.",
+          "forms": "die Tabletten",
+          "grammar_hint": "eine Tablette einnehmen; die Tablette ≠ das Tablet (планшет).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page 85 visually inspected. Exam-list membership or example context only; earliest CEFR level pending comparison with A1/A2. Pedagogical contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tablette"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 182,
+          "record": {
+            "id": "dict_f55a1e9827c196af51b9",
+            "de": "die Tablette",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "таблетка"
+            ],
+            "definition_de": "Eine kleine, meist feste Form eines Medikaments, die man schluckt oder auflöst.",
+            "forms": "Plural · die Tabletten",
+            "example": "Nehmen Sie diese Tablette mit einem Glas Wasser ein.",
+            "example_ru": "Примите эту таблетку, запив её стаканом воды.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Tablette"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f55a1e9827c196af51b9",
+        "alias_id": "b1-tablette-pill",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f55a1e9827c196af51b9"
+      }
+    },
+    {
+      "candidate_number": 1132,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Fläche im Unterricht, auf der man schreiben und das Geschriebene wieder entfernen kann. Example: Die Lehrerin zeichnet einen Kreis an die Tafel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_096.json",
+        "sha": "4900dde389203e5fe8b01be48cbea6251c12ebd8",
+        "batch": 96,
+        "row": 10,
+        "record": {
+          "id": "b1-tafel-board",
+          "de": "die Tafel",
+          "lemma": "Tafel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "доска (учебная)"
+          ],
+          "definition_de": "Eine Fläche im Unterricht, auf der man schreiben und das Geschriebene wieder entfernen kann.",
+          "example": "Die Lehrerin zeichnet einen Kreis an die Tafel.",
+          "example_ru": "Преподавательница рисует круг на доске.",
+          "forms": "die Tafeln",
+          "grammar_hint": "an die Tafel schreiben (Akk.); an der Tafel stehen (Dativ).",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page 85 visually inspected. Exam-list membership or example context only; earliest CEFR level pending comparison with A1/A2. Pedagogical contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tafel",
+              "https://www.duden.de/rechtschreibung/Tafel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 174,
+          "record": {
+            "id": "dict_98e5249bd1e7965f1c3d",
+            "de": "die Tafel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "доска (учебная)"
+            ],
+            "definition_de": "Eine Fläche im Unterrichtsraum, auf die man für alle sichtbar schreiben kann.",
+            "forms": "Plural · die Tafeln",
+            "example": "Schreiben Sie bitte Ihren Namen an die Tafel.",
+            "example_ru": "Напишите, пожалуйста, своё имя на доске.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Tafel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_98e5249bd1e7965f1c3d",
+        "alias_id": "b1-tafel-board",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_98e5249bd1e7965f1c3d"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-547-1",
+      "alias_ids": [
+        "b1-studieren-location"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-547-1",
+        "de": "studieren",
+        "lemma": "studieren",
+        "ru": "учиться в вузе",
+        "uk": "",
+        "translations_ru": [
+          "учиться в вузе"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "studiert · studierte · hat studiert",
+        "definition_de": "An einer Hochschule lernen.",
+        "example": "Sie studiert in Bern.",
+        "example_ru": "Она учится в вузе в Берне.",
+        "note": "studieren — учиться в вузе, не просто учить слова или учиться в школе (lernen). Ich studiere Medizin.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "59bc1322c6e5cdd2f36e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-studieren-location"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-studieren-location",
+            "de": "studieren",
+            "part": "verb",
+            "forms": "studiert · studierte · hat studiert",
+            "definition_de": "Eine Ausbildung an einer Hochschule absolvieren.",
+            "translations_ru": [
+              "учиться в вузе"
+            ],
+            "grammar_hint": "an einer Universität (Dativ) studieren; in Bern; не употреблять для обычной школьной учёбы.",
+            "example": "Seit einem Jahr studiert er in Bern.",
+            "example_ru": "Он уже год учится в Берне."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/studieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-549-1",
+      "alias_ids": [
+        "b1-student-university"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-549-1",
+        "de": "der Student",
+        "lemma": "Student",
+        "ru": "студент",
+        "uk": "",
+        "translations_ru": [
+          "студент"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Studenten",
+        "definition_de": "Ein Mann, der an einer Hochschule studiert.",
+        "example": "Der Student wohnt in einer kleinen Wohnung.",
+        "example_ru": "Студент живёт в небольшой квартире.",
+        "note": "Akkusativ и Dativ: den Studenten, dem Studenten. Слабое склонение: den Studenten, dem Studenten, des Studenten; женская форма die Studentin (Pl. Studentinnen).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "edcb8316c136052e5404"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-student-university"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-student-university",
+            "de": "der Student / die Studentin",
+            "part": "noun",
+            "forms": "die Studenten / die Studentinnen",
+            "definition_de": "Eine Person, die an einer Hochschule studiert.",
+            "translations_ru": [
+              "студент",
+              "студентка"
+            ],
+            "grammar_hint": "N-Deklination: den/dem/des Studenten; sich auf + Akk. vorbereiten.",
+            "example": "Die Studentin bereitet sich auf die Prüfung vor.",
+            "example_ru": "Студентка готовится к экзамену."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page 84 visually inspected. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Student"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-548-1",
+      "alias_ids": [
+        "b1-studium-degree"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-548-1",
+        "de": "das Studium",
+        "lemma": "Studium",
+        "ru": "учёба в вузе; высшее образование",
+        "uk": "",
+        "translations_ru": [
+          "учёба в вузе",
+          "высшее образование"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "обычно Singular в значении «учёба»",
+        "definition_de": "Die Ausbildung an einer Hochschule.",
+        "example": "Mein Studium beginnt im Herbst.",
+        "example_ru": "Моя учёба в вузе начинается осенью.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "1e17335714261cf3aee4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-studium-degree"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-studium-degree",
+            "de": "das Studium",
+            "part": "noun",
+            "forms": "die Studien; для учебного процесса часто Singular",
+            "definition_de": "Eine Ausbildung an einer Universität oder anderen Hochschule.",
+            "translations_ru": [
+              "учёба в вузе",
+              "высшее образование"
+            ],
+            "grammar_hint": "ein Studium abschliessen (CH); die Studie — исследование, Pl. тоже Studien.",
+            "example": "Nach dem Studium möchte sie in einem Museum arbeiten.",
+            "example_ru": "После окончания учёбы в вузе она хочет работать в музее."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Studium"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a4b473489a6d10d4c44c",
+      "alias_ids": [
+        "b1-stuhl-chair"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a4b473489a6d10d4c44c",
+        "de": "der Stuhl",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "стул"
+        ],
+        "definition_de": "Ein Sitzmöbel für eine Person, meistens mit einer Lehne.",
+        "forms": "Plural · die Stühle",
+        "example": "Stell den Stuhl bitte neben den Tisch.",
+        "example_ru": "Поставь стул рядом со столом, пожалуйста.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Stuhl"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-stuhl-chair"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stuhl-chair",
+            "de": "der Stuhl",
+            "part": "noun",
+            "forms": "die Stühle",
+            "definition_de": "Ein Sitzmöbel für eine Person, üblicherweise mit Rückenlehne.",
+            "translations_ru": [
+              "стул"
+            ],
+            "grammar_hint": "auf einem Stuhl sitzen (Dativ); A: Sessel также в значении стула.",
+            "example": "Kannst du noch einen Stuhl aus der Küche holen?",
+            "example_ru": "Можешь принести ещё один стул из кухни?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 84,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stuhl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-550-1",
+      "alias_ids": [
+        "b1-stunde-hour"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-550-1",
+        "de": "die Stunde",
+        "lemma": "Stunde",
+        "ru": "час",
+        "uk": "",
+        "translations_ru": [
+          "час"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "die Stunden",
+        "definition_de": "Eine Zeitspanne von sechzig Minuten.",
+        "example": "Die Fahrt dauert eine Stunde.",
+        "example_ru": "Поездка длится час.",
+        "note": "Stunde — 60 минут, длительность; Uhr — обозначение времени. Unterrichtsstunde — урок, отдельный контекст; значение урок по данному источнику не подтверждено.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "b4888bd4cca0eeb236df"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-stunde-hour"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-stunde-hour",
+            "de": "die Stunde",
+            "part": "noun",
+            "forms": "die Stunden",
+            "definition_de": "Eine Zeitdauer von sechzig Minuten.",
+            "translations_ru": [
+              "час (60 минут)"
+            ],
+            "grammar_hint": "eine halbe Stunde — полчаса; in einer Stunde (Dativ) — через час.",
+            "example": "Der Weg dauert etwa eine Stunde.",
+            "example_ru": "Дорога занимает примерно час."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Stunde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-551-1",
+      "alias_ids": [
+        "b1-suchen-lost",
+        "b1-suchen-acquire",
+        "b1-suchen-person"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-551-1",
+        "de": "suchen",
+        "lemma": "suchen",
+        "ru": "искать",
+        "uk": "",
+        "translations_ru": [
+          "искать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "sucht · suchte · hat gesucht",
+        "definition_de": "Versuchen, jemanden oder etwas zu finden.",
+        "example": "Ich suche meine Schlüssel.",
+        "example_ru": "Я ищу свои ключи.",
+        "note": "jemanden/etwas (Akkusativ) suchen — искать кого-либо/что-либо; nach etwas (Dativ) suchen — искать что-либо. das Suchen — процесс; die Suche — поиск.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "5c1c169841bf1f0b0173"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-suchen-lost",
+          "b1-suchen-acquire",
+          "b1-suchen-person"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-suchen-lost",
+            "de": "suchen",
+            "part": "verb",
+            "forms": "sucht · suchte · hat gesucht",
+            "definition_de": "Versuchen, einen nicht auffindbaren Gegenstand wiederzufinden.",
+            "translations_ru": [
+              "искать (потерянное)"
+            ],
+            "grammar_hint": "etwas (Akk.) suchen; nach etwas (Dativ) suchen.",
+            "example": "Ich suche seit einer Weile meinen Schlüssel.",
+            "example_ru": "Я уже некоторое время ищу свой ключ."
+          },
+          {
+            "id": "b1-suchen-acquire",
+            "de": "suchen",
+            "part": "verb",
+            "forms": "sucht · suchte · hat gesucht",
+            "definition_de": "Versuchen, etwas Benötigtes zu bekommen.",
+            "translations_ru": [
+              "искать (жильё, работу)"
+            ],
+            "grammar_hint": "eine Wohnung suchen (Akk.); nach einer Wohnung suchen (Dativ).",
+            "example": "Wir suchen eine günstige Wohnung in der Nähe.",
+            "example_ru": "Мы ищем недорогую квартиру поблизости."
+          },
+          {
+            "id": "b1-suchen-person",
+            "de": "jemanden suchen",
+            "part": "verb",
+            "forms": "sucht · suchte · hat gesucht",
+            "definition_de": "Versuchen, eine bestimmte Person zu finden.",
+            "translations_ru": [
+              "искать кого-либо"
+            ],
+            "grammar_hint": "jemanden (Akk.) suchen; Wen suchen Sie?; учебный контекст поиска.",
+            "example": "Suchen Sie Herrn Meier? Er ist im Büro nebenan.",
+            "example_ru": "Вы ищете господина Майера? Он в соседнем кабинете."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/suchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/suchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/suchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_0c5a81eb660d845704d6",
+      "alias_ids": [
+        "b1-super-adjective",
+        "b1-super-adverb"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_0c5a81eb660d845704d6",
+        "de": "super",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "отличный",
+          "здорово",
+          "супер"
+        ],
+        "definition_de": "Umgangssprachlich: besonders gut.",
+        "forms": "Без степеней сравнения",
+        "example": "Deine Idee ist super!",
+        "example_ru": "Твоя идея отличная!",
+        "grammar_hint": "",
+        "usage_note": "Разговорное, несклоняемое прилагательное: ein super Film / Der Film ist super. Наречное употребление: Sie tanzt super — она отлично танцует. Обычных степеней сравнения нет.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/super"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-super-adjective",
+          "b1-super-adverb"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-super-adjective",
+            "de": "super",
+            "part": "adj",
+            "forms": "не склоняется; без нормативных степеней сравнения",
+            "definition_de": "In alltäglicher Rede eine sehr positive Bewertung ausdrückend.",
+            "translations_ru": [
+              "отличный",
+              "прекрасный",
+              "классный"
+            ],
+            "grammar_hint": "ein super Ausflug, eine super Idee — без окончания; разговорное.",
+            "example": "Das war ein super Ausflug.",
+            "example_ru": "Это была отличная прогулка."
+          },
+          {
+            "id": "b1-super-adverb",
+            "de": "super",
+            "part": "adv",
+            "forms": "неизменяемое; без степеней сравнения",
+            "definition_de": "Beschreibt in informeller Sprache die sehr gute Ausführung einer Handlung.",
+            "translations_ru": [
+              "отлично",
+              "здорово"
+            ],
+            "grammar_hint": "Наречное употребление прилагательного super; нейтральнее: sehr gut.",
+            "example": "Du hast das super erklärt.",
+            "example_ru": "Ты отлично это объяснила."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/super",
+              "https://www.duden.de/rechtschreibung/super"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/super",
+              "https://www.duden.de/rechtschreibung/super"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_eb478c997f8849a80378",
+      "alias_ids": [
+        "b1-supermarkt-shop"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_eb478c997f8849a80378",
+        "de": "der Supermarkt",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "супермаркет"
+        ],
+        "definition_de": "Ein größeres Geschäft, in dem man vor allem Lebensmittel und Dinge für den Alltag kauft.",
+        "forms": "Plural · die Supermärkte",
+        "example": "Der Supermarkt schließt heute um acht Uhr.",
+        "example_ru": "Сегодня супермаркет закрывается в восемь часов.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Supermarkt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-supermarkt-shop"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-supermarkt-shop",
+            "de": "der Supermarkt",
+            "part": "noun",
+            "forms": "die Supermärkte",
+            "definition_de": "Ein grösseres Geschäft für Lebensmittel und viele Alltagsprodukte.",
+            "translations_ru": [
+              "супермаркет"
+            ],
+            "grammar_hint": "im Supermarkt (Dativ); in den Supermarkt gehen (Akk.); CH: grösseres.",
+            "example": "Ich kaufe das Gemüse im Supermarkt.",
+            "example_ru": "Я покупаю овощи в супермаркете."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Supermarkt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a32b24b672995e9527b0",
+      "alias_ids": [
+        "b1-suppe-food"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a32b24b672995e9527b0",
+        "de": "die Suppe",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "суп"
+        ],
+        "definition_de": "Ein meist flüssiges Gericht, das zum Beispiel Gemüse, Fleisch oder Nudeln enthalten kann.",
+        "forms": "Plural · die Suppen",
+        "example": "Zum Mittagessen gibt es eine warme Suppe.",
+        "example_ru": "На обед будет горячий суп.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Suppe"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-suppe-food"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-suppe-food",
+            "de": "die Suppe",
+            "part": "noun",
+            "forms": "die Suppen",
+            "definition_de": "Eine meist warme, flüssige Speise, die verschiedene Zutaten enthalten kann.",
+            "translations_ru": [
+              "суп"
+            ],
+            "grammar_hint": "jemandem schmecken (Dativ): Die Suppe schmeckt mir; ein Teller Suppe.",
+            "example": "Heute koche ich eine Suppe mit Linsen.",
+            "example_ru": "Сегодня я готовлю суп с чечевицей."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Suppe"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_0c8ae14e2294fa4c4ffb",
+      "alias_ids": [
+        "b1-suess-taste",
+        "b1-suess-cute"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_0c8ae14e2294fa4c4ffb",
+        "de": "süß",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "сладкий",
+          "милый"
+        ],
+        "definition_de": "Wie Zucker schmeckend oder besonders niedlich.",
+        "forms": "süß · süßer · am süßesten",
+        "example": "Der Tee ist mir zu süß.",
+        "example_ru": "Для меня чай слишком сладкий.",
+        "grammar_hint": "zu süß — слишком сладкий; mir zu süß — для меня слишком сладкий (Dativ).",
+        "usage_note": "В Швейцарии: süss. О вкусе — сладкий; о ребёнке или животном — милый. Оба значения подтверждены Goethe A2 стр. 27.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-suess-taste",
+          "b1-suess-cute"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-suess-taste",
+            "de": "süß",
+            "part": "adj",
+            "forms": "süß · süßer · am süßesten; CH: süss · süsser · am süssesten",
+            "definition_de": "Geschmacklich an Zucker oder Honig erinnernd.",
+            "translations_ru": [
+              "сладкий"
+            ],
+            "grammar_hint": "mir (Dativ) zu süss sein; süsse Speisen; Gegensatz je nach Geschmack: sauer, bitter.",
+            "example": "Der Tee ist mir zu süss.",
+            "example_ru": "Чай для меня слишком сладкий."
+          },
+          {
+            "id": "b1-suess-cute",
+            "de": "süß",
+            "part": "adj",
+            "forms": "süß · süßer · am süßesten; CH: süss · süsser · am süssesten",
+            "definition_de": "Durch sein Aussehen oder Verhalten Zuneigung weckend.",
+            "translations_ru": [
+              "милый",
+              "очаровательный"
+            ],
+            "grammar_hint": "Разговорное значение niedlich; относится не только ко вкусу.",
+            "example": "Dein Hund ist wirklich süss.",
+            "example_ru": "Твоя собака очень милая."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page visually inspected. B1 exam-list membership or teaching context, not earliest CEFR level. A1/A2 comparison and sense deduplication pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/s%C3%BC%C3%9F"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_29069e0b36fe4a978975",
+      "alias_ids": [
+        "b1-sympathisch-likeable"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_29069e0b36fe4a978975",
+        "de": "sympathisch",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "приятный",
+          "симпатичный",
+          "вызывающий симпатию"
+        ],
+        "definition_de": "So, dass man jemanden gern mag.",
+        "forms": "sympathisch · sympathischer · am sympathischsten",
+        "example": "Unsere neue Nachbarin ist mir sehr sympathisch.",
+        "example_ru": "Мне очень симпатична наша новая соседка.",
+        "grammar_hint": "jemandem (Dativ) sympathisch sein.",
+        "usage_note": "Характеризует человека, вызывающего симпатию, не обязательно привлекательную внешность; противоположность unsympathisch.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sympathisch"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-sympathisch-likeable"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sympathisch-likeable",
+            "de": "sympathisch",
+            "part": "adj",
+            "forms": "sympathisch · sympathischer · am sympathischsten",
+            "definition_de": "Bei anderen Menschen ein Gefühl der Zuneigung hervorrufend.",
+            "translations_ru": [
+              "симпатичный",
+              "приятный",
+              "располагающий к себе"
+            ],
+            "grammar_hint": "jemandem sympathisch sein (Dativ); jemanden sympathisch finden (Akk.); не обязательно внешняя привлекательность.",
+            "example": "Unsere neue Nachbarin ist mir sehr sympathisch.",
+            "example_ru": "Наша новая соседка мне очень симпатична."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page 85 visually inspected. Exam-list membership or example context only; earliest CEFR level pending comparison with A1/A2. Pedagogical contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sympathisch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f55a1e9827c196af51b9",
+      "alias_ids": [
+        "b1-tablette-pill"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f55a1e9827c196af51b9",
+        "de": "die Tablette",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "таблетка"
+        ],
+        "definition_de": "Eine kleine, meist feste Form eines Medikaments, die man schluckt oder auflöst.",
+        "forms": "Plural · die Tabletten",
+        "example": "Nehmen Sie diese Tablette mit einem Glas Wasser ein.",
+        "example_ru": "Примите эту таблетку, запив её стаканом воды.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Tablette"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-tablette-pill"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tablette-pill",
+            "de": "die Tablette",
+            "part": "noun",
+            "forms": "die Tabletten",
+            "definition_de": "Ein festes, meist kleines Arzneimittel in portionierter Form.",
+            "translations_ru": [
+              "таблетка"
+            ],
+            "grammar_hint": "eine Tablette einnehmen; die Tablette ≠ das Tablet (планшет).",
+            "example": "Auf der Packung steht, wie die Tabletten einzunehmen sind.",
+            "example_ru": "На упаковке указано, как принимать таблетки."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page 85 visually inspected. Exam-list membership or example context only; earliest CEFR level pending comparison with A1/A2. Pedagogical contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tablette"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_98e5249bd1e7965f1c3d",
+      "alias_ids": [
+        "b1-tafel-board"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_98e5249bd1e7965f1c3d",
+        "de": "die Tafel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "доска (учебная)"
+        ],
+        "definition_de": "Eine Fläche im Unterrichtsraum, auf die man für alle sichtbar schreiben kann.",
+        "forms": "Plural · die Tafeln",
+        "example": "Schreiben Sie bitte Ihren Namen an die Tafel.",
+        "example_ru": "Напишите, пожалуйста, своё имя на доске.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Tafel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-tafel-board"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tafel-board",
+            "de": "die Tafel",
+            "part": "noun",
+            "forms": "die Tafeln",
+            "definition_de": "Eine Fläche im Unterricht, auf der man schreiben und das Geschriebene wieder entfernen kann.",
+            "translations_ru": [
+              "доска (учебная)"
+            ],
+            "grammar_hint": "an die Tafel schreiben (Akk.); an der Tafel stehen (Dativ).",
+            "example": "Die Lehrerin zeichnet einen Kreis an die Tafel.",
+            "example_ru": "Преподавательница рисует круг на доске."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 85,
+              "scope": "context",
+              "note": "Printed page 85 visually inspected. Exam-list membership or example context only; earliest CEFR level pending comparison with A1/A2. Pedagogical contexts may share lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tafel",
+              "https://www.duden.de/rechtschreibung/Tafel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

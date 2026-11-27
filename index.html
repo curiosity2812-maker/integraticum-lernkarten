@@ -156,7 +156,7 @@ window.integraticumBridge={get data(){return data},word,startSet,save,switchAcco
 
 /* Grammar support for reviewed cards. Match part and sense, never spelling alone. */
 function grammarSupport(w) {
-  if (!w || !(w.a1Reviewed || w.a2Reviewed)) return {labels:[],hint:'',rule:''};
+  if (!w || !(w.a1Reviewed || w.a2Reviewed || w.b1Reviewed)) return {labels:[],hint:'',rule:''};
   const part=w.part, de=String(w.de||'').toLowerCase().trim(), id=w.id;
   let labels=[];
   let rule='';
@@ -218,7 +218,8 @@ function grammarSupportHtml(w) {
   const LEGACY_SOURCE = 'data/integraticum_dictionary_cards_unverified.json';
   const A1_SOURCE = 'data/integraticum_a1_reviewed.json';
   const A2_SOURCE = 'data/integraticum_a2_reviewed.json';
-  const reviewedParts = {conjunction:'conj', expression:'phrase', interjection:'intj', pronoun:'pron', numeral:'num'};
+  const reviewedParts = {conjunction:'conj', expression:'phrase', interjection:'intj', pronoun:'pron',
+    numeral:'num', adjective:'adj', adverb:'adv', preposition:'prep'};
   const nativeWordView = wordView;
   const nativeResultsHtml = resultsHtml;
   const nativeLibraryView = libraryView;
@@ -226,6 +227,8 @@ function grammarSupportHtml(w) {
   let reviewed = [];
   let imported = [];
   let a2Reviewed = [];
+  let b1Reviewed = [];
+  let b1State = 'loading';
   const status = {reviewed:'loading', legacy:'loading', a2:'loading'};
   let dictionaryPage = 1;
   const dictionaryPageSize = 80;
@@ -258,7 +261,7 @@ function grammarSupportHtml(w) {
       (filter.level==='all'||(filter.level==='unknown'?!w.level_verified:w.level_verified===true&&w.level===filter.level)) &&
       (filter.topic==='all'||w.topic===filter.topic||w.topics?.includes(filter.topic)) &&
       (filter.part==='all'||w.part===filter.part) && (!filter.ch||w.ch) &&
-      (!query||fold(`${w.de} ${w.lemma||''} ${w.ru} ${w.uk} ${w.equivalent||''}`).includes(query))
+      (!query||fold(`${w.de} ${w.lemma||''} ${w.ru} ${w.uk} ${w.equivalent||''} ${w.usageSearch||''}`).includes(query))
     );
   };
   // Keep the prototype's filtering and controls, but never render tens of thousands of DOM nodes.
@@ -287,7 +290,9 @@ function grammarSupportHtml(w) {
       : status.legacy === 'failed' ? ' · Общий словарь не загрузился. Обновите страницу.'
       : ` · Записей в библиотеке: ${window.integraticumDictionaryCount.toLocaleString('ru-RU')}`;
     const checkedA2 = status.a2==='loading'?' · Загружаются карточки A2…':status.a2==='failed'?' · Карточки A2 не загрузились. Обновите страницу.':` · A2 · ${a2Reviewed.length} проверенных карточек`;
-    const notice = `<div class="dictionary-state" role="status">${checked}${checkedA2}${legacy}</div>`;
+    const b1Status = {loading:' · Загружается словарь B1…',
+      failed:' · Словарь B1 не загрузился. Обновите страницу.'}[b1State] || '';
+    const notice = `<div class="dictionary-state" role="status">${checked}${checkedA2}${legacy}${b1Status}</div>`;
     return notice + html;
   };
   wordView = function() {
@@ -308,7 +313,21 @@ function grammarSupportHtml(w) {
       <p class="tiny">${w.source_evidence.meaning.map(url=>`<a href="${e(url)}">${e(new URL(url).hostname)}</a>`).join(' · ')}</p></details>` : '';
     const grammar = grammarSupport(w).rule ? '' : grammarSupportHtml(w);
     const usage = w.usage_note ? `<p class="foot">${e(w.usage_note)}</p>` : '';
-    const injection = definition + equivalent + audio + translation + grammar + usage + warning + citation + a2Citation + exampleSource;
+    const combinedCard = w.combined_into && word(w.combined_into);
+    const targetLink = combinedCard
+      ? `<p>${btn('Открыть общую карточку', `openWord(${jsarg(combinedCard.id)})`, 'secondary')}</p>` : '';
+    const variants = w.usageVariants?.length ? `<details class="note"><summary>Примеры и варианты употребления (${w.usageVariants.length})</summary>
+      ${w.usageVariants.map(variant => `<div class="item">
+        <b lang="de">${e(variant.de)}</b> · ${e(variant.translations_ru.join('; '))}
+        <p lang="de">${e(variant.definition_de)}</p>
+        <p lang="de">${e(variant.example)}</p><p>${e(variant.example_ru)}</p>
+        ${variant.forms ? `<p><b>Формы:</b> ${e(variant.forms)}</p>` : ''}
+        ${variant.grammar_hint ? `<p>${e(variant.grammar_hint)}</p>` : ''}
+        ${btn('Открыть вариант отдельно', `openWord(${jsarg(variant.id)})`, 'secondary')}
+      </div>`).join('')}</details>` : '';
+    const alternateExamples = w.alternative_examples?.length ? `<details><summary>Другие примеры</summary>${w.alternative_examples.map(example =>
+      `<p><span lang="de">${e(example.de)}</span> · ${e(example.ru)}</p>`).join('')}</details>` : '';
+    const injection = definition + equivalent + audio + translation + grammar + usage + warning + citation + a2Citation + exampleSource + targetLink + variants + alternateExamples;
     const close = '</section>';
     const at = html.indexOf(close);
     if (at >= 0) html = html.slice(0, at) + injection + html.slice(at);
@@ -335,11 +354,39 @@ function grammarSupportHtml(w) {
     }).filter(w=>w.de);
   }
 
+  function verifiedB1Level(card) {
+    const evidence = card.source_evidence;
+    const source = evidence?.level;
+    return card.level === 'B1' && source?.scope === 'sense' &&
+      Number.isInteger(source.page) && source.page > 0 &&
+      source.url === 'https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf' &&
+      evidence.independent_meaning_checked === true &&
+      evidence.meaning_review !== 'merged_source_status_requires_confirmation';
+  }
+
   function refreshCatalog() {
     const importedById = new Map(imported.map(w => [w.id,w]));
     const a2Cards = a2Reviewed.map(w => { const previous = importedById.get(w.id); return {...previous, ...w, lemma:w.lemma||w.de, part:reviewedParts[w.part]||w.part, ru:w.translations_ru.join('; '), uk:previous?.uk||'', topic:w.topic||previous?.topic||'Без темы', topics:w.topics||previous?.topics||[], official:true, level_verified:true, a2Reviewed:true, dictionary_unverified:false, dictionary_duplicate:false, example_source:''}; });
-    const confirmedCards = [...reviewed, ...a2Cards];
-    const ids = new Set(confirmedCards.map(w => w.id));
+    const variantsByTarget = new Map();
+    for (const entry of b1Reviewed) {
+      if (!entry.combined_into) continue;
+      const variants = variantsByTarget.get(entry.combined_into) || [];
+      variants.push(entry);
+      variantsByTarget.set(entry.combined_into, variants);
+    }
+    const withVariants = card => {
+      const variants = variantsByTarget.get(card.id);
+      return variants ? {...card, usageVariants:variants,
+        usageSearch:variants.map(v => `${v.de} ${v.translations_ru.join(' ')}`).join(' ')} : card;
+    };
+    const confirmedCards = [...reviewed, ...a2Cards].map(withVariants);
+    const b1Cards = b1Reviewed.map(entry => withVariants({
+      ...entry, part:reviewedParts[entry.part] || entry.part,
+      ru:entry.translations_ru.join('; '), uk:'', official:true, b1Reviewed:true,
+      level_verified:verifiedB1Level(entry),
+      dictionary_duplicate:Boolean(entry.combined_into)
+    }));
+    const ids = new Set([...confirmedCards, ...b1Cards].map(w => w.id));
     const key = w => `${fold(w.de)}|${w.part}`;
     const current = new Map();
     for (const card of confirmedCards) {
@@ -359,7 +406,7 @@ function grammarSupportHtml(w) {
       // Retain the original record and ID for existing sets and progress.
       return {...w, dictionary_duplicate:true};
     });
-    CATALOG.splice(0, CATALOG.length, ...confirmedCards, ...older);
+    CATALOG.splice(0, CATALOG.length, ...confirmedCards, ...b1Cards, ...older);
     window.integraticumWordIndex = new Map(CATALOG.map(w => [w.id,w]));
     window.integraticumDictionaryCount = CATALOG.filter(w => !w.dictionary_duplicate).length;
     if (['library','home','plan','review','word'].includes(page)) render();
@@ -376,7 +423,7 @@ function grammarSupportHtml(w) {
     refreshCatalog();
   }
 
-  loadDictionary(A1_SOURCE, 'reviewed', rows => {
+  const loadingA1 = loadDictionary(A1_SOURCE, 'reviewed', rows => {
     if (!rows.length || new Set(rows.map(w => w.id)).size !== rows.length ||
         rows.some(w => !w.de || !w.ru || w.level!=='A1')) {
       throw new Error('Не удалось проверить состав словаря A1.');
@@ -384,7 +431,7 @@ function grammarSupportHtml(w) {
     reviewed = rows.map(w => ({...w, part:reviewedParts[w.part]||w.part,
       official:true, level_verified:true, a1Reviewed:true}));
   });
-  loadDictionary(A2_SOURCE, 'a2', rows => {
+  const loadingA2 = loadDictionary(A2_SOURCE, 'a2', rows => {
     const scopes = new Set(['sense','word_group','construction','attested_example','thematic_headword','sense_in_example']);
     const officialSource = value => { try { const url=new URL(value); return url.protocol==='https:' && ['www.goethe.de','lernplattform.goethe.de'].includes(url.hostname); } catch { return false; } };
     if (!rows.length || new Set(rows.map(w=>w.id)).size !== rows.length || rows.some(w=>
@@ -398,6 +445,34 @@ function grammarSupportHtml(w) {
     a2Reviewed = rows;
   });
   loadDictionary(LEGACY_SOURCE, 'legacy', rows => { imported = adaptLegacy(rows); });
+  Promise.all([loadingA1, loadingA2]).then(async () => {
+    const source = 'data/b1_catalog/';
+    const response = await fetch(source + 'manifest.json', {cache:'no-cache'});
+    if (!response.ok) throw new Error('B1 catalog manifest could not be loaded');
+    const manifest = await response.json();
+    if (!Array.isArray(manifest.files) || !manifest.files.length ||
+        manifest.files.some(file => !/^cards_[0-9]{2}\.json$/.test(file))) {
+      throw new Error('Invalid B1 catalog manifest');
+    }
+    const rows = (await Promise.all(manifest.files.map(file => fetchCards(source + file)))).flat();
+    const byId = new Map(rows.map(row => [row.id,row]));
+    const lowerIds = new Set([...reviewed,...a2Reviewed].map(row => row.id));
+    if (rows.length !== manifest.cards || byId.size !== rows.length ||
+        rows.filter(row => row.combined_into).length !== manifest.aliases ||
+        rows.some(row => !/^b1-[A-Za-z0-9_-]+$/.test(row.id) || lowerIds.has(row.id) ||
+          !row.de || !row.translations_ru?.length ||
+          row.combined_into && !lowerIds.has(row.combined_into) &&
+            (!byId.has(row.combined_into) || byId.get(row.combined_into).combined_into))) {
+      throw new Error('Invalid or incomplete B1 catalog');
+    }
+    b1Reviewed = rows;
+    b1State = 'ready';
+    refreshCatalog();
+  }).catch(error => {
+    b1State = 'failed';
+    console.error('Integraticum B1 catalog:', error);
+    refreshCatalog();
+  });
 })();
 
 

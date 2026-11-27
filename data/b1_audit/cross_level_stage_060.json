@@ -1,0 +1,3024 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1173,
+    1192
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 14,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 0,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1173,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine saftige Frucht, die häufig als Gemüse gegessen wird. Example: Für den Salat schneide ich zwei Tomaten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 12,
+        "record": {
+          "id": "b1-tomate-food",
+          "de": "die Tomate",
+          "lemma": "Tomate",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "помидор",
+            "томат"
+          ],
+          "definition_de": "Eine saftige Frucht, die häufig als Gemüse gegessen wird.",
+          "example": "Für den Salat schneide ich zwei Tomaten.",
+          "example_ru": "Для салата я нарезаю два помидора.",
+          "forms": "die Tomaten",
+          "grammar_hint": "В Австрии также der Paradeiser.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tomate"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 563,
+          "record": {
+            "id": "a1-568-1",
+            "de": "die Tomate",
+            "lemma": "Tomate",
+            "ru": "помидор",
+            "uk": "",
+            "translations_ru": [
+              "помидор"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Tomaten",
+            "definition_de": "Eine meist rote Frucht, die man zum Beispiel im Salat isst.",
+            "example": "Die Tomate ist schon reif.",
+            "example_ru": "Помидор уже спелый.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "6a4356d5c3774605f9c6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-568-1",
+        "alias_id": "b1-tomate-food",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-568-1"
+      }
+    },
+    {
+      "candidate_number": 1174,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein Gefäß, in dem zum Beispiel eine Pflanze wachsen kann. Example: Die Pflanze braucht einen größeren Topf.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 14,
+        "record": {
+          "id": "b1-topf-plant",
+          "de": "der Topf",
+          "lemma": "Topf",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "горшок",
+            "цветочный горшок"
+          ],
+          "definition_de": "Ein Gefäß, in dem zum Beispiel eine Pflanze wachsen kann.",
+          "example": "Die Pflanze braucht einen größeren Topf.",
+          "example_ru": "Растению нужен горшок побольше.",
+          "forms": "die Töpfe",
+          "grammar_hint": "der Blumentopf — цветочный горшок; in einem Topf wachsen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Topf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 188,
+          "record": {
+            "id": "dict_5b482653f9958a7ff716",
+            "de": "der Topf",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кастрюля"
+            ],
+            "definition_de": "Ein tiefer Behälter, in dem man auf dem Herd kocht.",
+            "forms": "Plural · die Töpfe",
+            "example": "Das Wasser im Topf kocht schon.",
+            "example_ru": "Вода в кастрюле уже кипит.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Topf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1175,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein tiefes Gefäß, in dem man Speisen auf dem Herd kocht. Example: Die Suppe kocht in einem großen Topf.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 15,
+        "record": {
+          "id": "b1-topf-cooking",
+          "de": "der Topf",
+          "lemma": "Topf",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кастрюля"
+          ],
+          "definition_de": "Ein tiefes Gefäß, in dem man Speisen auf dem Herd kocht.",
+          "example": "Die Suppe kocht in einem großen Topf.",
+          "example_ru": "Суп варится в большой кастрюле.",
+          "forms": "die Töpfe",
+          "grammar_hint": "der Kochtopf; CH также die Pfanne в значении кастрюля.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Topf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 188,
+          "record": {
+            "id": "dict_5b482653f9958a7ff716",
+            "de": "der Topf",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кастрюля"
+            ],
+            "definition_de": "Ein tiefer Behälter, in dem man auf dem Herd kocht.",
+            "forms": "Plural · die Töpfe",
+            "example": "Das Wasser im Topf kocht schon.",
+            "example_ru": "Вода в кастрюле уже кипит.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Topf"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_5b482653f9958a7ff716",
+        "alias_id": "b1-topf-cooking",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_5b482653f9958a7ff716"
+      }
+    },
+    {
+      "candidate_number": 1176,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein meist aufwendig zubereiteter Kuchen, oft mit mehreren Schichten und Creme. Example: Zum Fest bringt sie eine Schokoladentorte mit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 19,
+        "record": {
+          "id": "b1-torte-cake",
+          "de": "die Torte",
+          "lemma": "Torte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "торт"
+          ],
+          "definition_de": "Ein meist aufwendig zubereiteter Kuchen, oft mit mehreren Schichten und Creme.",
+          "example": "Zum Fest bringt sie eine Schokoladentorte mit.",
+          "example_ru": "На праздник она принесёт шоколадный торт.",
+          "forms": "die Torten",
+          "grammar_hint": "ein Stück Torte — кусок торта; der Kuchen — более общее слово.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Torte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 102,
+          "record": {
+            "id": "dict_556caf6a5c42acfea8a0",
+            "de": "die Torte",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "торт"
+            ],
+            "definition_de": "Ein feiner Kuchen, der oft aus mehreren Schichten besteht und verziert ist.",
+            "forms": "Plural · die Torten",
+            "example": "Für den Geburtstag kaufen wir eine kleine Torte.",
+            "example_ru": "На день рождения мы покупаем небольшой торт.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Torte"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_556caf6a5c42acfea8a0",
+        "alias_id": "b1-torte-cake",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_556caf6a5c42acfea8a0"
+      }
+    },
+    {
+      "candidate_number": 1177,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht mehr am Leben. Example: Leider ist der alte Baum tot.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 20,
+        "record": {
+          "id": "b1-tot-dead",
+          "de": "tot",
+          "lemma": "tot",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "мёртвый",
+            "неживой"
+          ],
+          "definition_de": "Nicht mehr am Leben.",
+          "example": "Leider ist der alte Baum tot.",
+          "example_ru": "К сожалению, старое дерево погибло.",
+          "forms": "tot · в буквальном смысле обычно без степеней сравнения",
+          "grammar_hint": "tot sein; der Tod — смерть; переносные степени сравнения редки, не нужны для базового значения.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tot"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 703,
+          "record": {
+            "id": "a1-569-1",
+            "de": "tot",
+            "lemma": "tot",
+            "ru": "мёртвый",
+            "uk": "",
+            "translations_ru": [
+              "мёртвый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Nicht mehr am Leben.",
+            "example": "Der Fisch ist tot.",
+            "example_ru": "Рыба мертва.",
+            "note": "В прямом значении «не живой» обычные степени сравнения не употребляются; переносные и стилистические употребления возможны.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "77e1ef00d5b65e759e41"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-569-1",
+        "alias_id": "b1-tot-dead",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-569-1"
+      }
+    },
+    {
+      "candidate_number": 1178,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Verstärkt eine Aussage; bezeichnet einen hohen oder vollständigen Grad. Example: Ich bin nach der langen Reise total müde.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 22,
+        "record": {
+          "id": "b1-total-completely",
+          "de": "total",
+          "lemma": "total",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "совершенно",
+            "полностью",
+            "очень"
+          ],
+          "definition_de": "Verstärkt eine Aussage; bezeichnet einen hohen oder vollständigen Grad.",
+          "example": "Ich bin nach der langen Reise total müde.",
+          "example_ru": "Я совершенно вымотана после долгой поездки.",
+          "forms": "unveränderlich als Adverb",
+          "grammar_hint": "total + Adjektiv; разговорный усилитель. Прилагательное total (полный) — другая функция.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/total"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 501,
+          "record": {
+            "id": "dict_81c9efb83ccbd22f5610",
+            "de": "total",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "совсем",
+              "совершенно",
+              "очень (разговорное усиление)"
+            ],
+            "definition_de": "Drückt aus, dass etwas in besonders hohem oder vollständigem Maß zutrifft.",
+            "forms": "Без степеней сравнения",
+            "example": "Nach der Reise war ich total müde.",
+            "example_ru": "После поездки я был совершенно уставшим.",
+            "grammar_hint": "В подтверждённом контексте употребляется как усилитель перед прилагательным, без окончания: total müde.",
+            "usage_note": "Не существительное Total; здесь наречное употребление прилагательного.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/total"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_81c9efb83ccbd22f5610",
+        "alias_id": "b1-total-completely",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_81c9efb83ccbd22f5610"
+      }
+    },
+    {
+      "candidate_number": 1179,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Person, die einen anderen Ort als Reisende besucht. Example: Die Touristen besichtigen die Altstadt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 24,
+        "record": {
+          "id": "b1-tourist-person",
+          "de": "der Tourist / die Touristin",
+          "lemma": "Tourist",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "турист",
+            "туристка"
+          ],
+          "definition_de": "Eine Person, die einen anderen Ort als Reisende besucht.",
+          "example": "Die Touristen besichtigen die Altstadt.",
+          "example_ru": "Туристы осматривают старый город.",
+          "forms": "die Touristen / die Touristinnen",
+          "grammar_hint": "n-Deklination: den/dem/des Touristen; die Touristin — отдельная женская форма.",
+          "topic": "Путешествия",
+          "topics": [
+            "Путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tourist",
+              "https://de.wiktionary.org/wiki/Touristin"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 154,
+          "record": {
+            "id": "dict_80f8f4d9b6b5caa9a4d6",
+            "de": "der Tourist",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "турист"
+            ],
+            "definition_de": "Ein Mann, der einen Ort auf einer Reise besucht, etwa im Urlaub.",
+            "forms": "Plural · die Touristen",
+            "example": "Am Bahnhof fragt ein Tourist nach dem Weg zum Museum.",
+            "example_ru": "На вокзале турист спрашивает, как пройти к музею.",
+            "grammar_hint": "",
+            "usage_note": "В Akkusativ к Tourist добавляем -en: Ich frage einen Touristen.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Tourist"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Путешествия и отпуск",
+            "topics": [
+              "Путешествия и отпуск"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_80f8f4d9b6b5caa9a4d6",
+        "alias_id": "b1-tourist-person",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_80f8f4d9b6b5caa9a4d6"
+      }
+    },
+    {
+      "candidate_number": 1180,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Etwas beim Gehen oder an einen anderen Ort mit sich bewegen. Example: Kannst du diese Kiste nach oben tragen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 27,
+        "record": {
+          "id": "b1-tragen-carry",
+          "de": "tragen",
+          "lemma": "tragen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "нести",
+            "носить",
+            "переносить"
+          ],
+          "definition_de": "Etwas beim Gehen oder an einen anderen Ort mit sich bewegen.",
+          "example": "Kannst du diese Kiste nach oben tragen?",
+          "example_ru": "Можешь отнести эту коробку наверх?",
+          "forms": "trägt · trug · hat getragen",
+          "grammar_hint": "etwas (Akk.) tragen; jemandem (Dat.) etwas (Akk.) tragen; сильный глагол.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tragen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 503,
+          "record": {
+            "id": "dict_c0b3e8924b17ee820c9b",
+            "de": "tragen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "нести",
+              "переносить",
+              "носить (одежду, украшения)"
+            ],
+            "definition_de": "Etwas beim Gehen mitnehmen oder Kleidung und Schmuck am Körper haben.",
+            "forms": "trägt · trug · hat getragen",
+            "example": "Er trägt eine Jacke und eine schwere Tasche.",
+            "example_ru": "Он носит куртку и несёт тяжёлую сумку.",
+            "grammar_hint": "tragen + Akkusativ; du trägst, er trägt; Perfekt с haben.",
+            "usage_note": "Оба значения подтверждены контекстами Goethe; переносные значения не включены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tragen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1181,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas am Körper anhaben. Example: Bei der Arbeit trägt er eine Uniform.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 28,
+        "record": {
+          "id": "b1-tragen-wear",
+          "de": "tragen",
+          "lemma": "tragen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "носить (одежду, очки, украшения)"
+          ],
+          "definition_de": "Etwas am Körper anhaben.",
+          "example": "Bei der Arbeit trägt er eine Uniform.",
+          "example_ru": "На работе он носит форму.",
+          "forms": "trägt · trug · hat getragen",
+          "grammar_hint": "etwas (Akk.) tragen; Brille tragen — носить очки, не обязательно надевать их в данный момент.",
+          "topic": "Одежда",
+          "topics": [
+            "Одежда"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tragen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 503,
+          "record": {
+            "id": "dict_c0b3e8924b17ee820c9b",
+            "de": "tragen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "нести",
+              "переносить",
+              "носить (одежду, украшения)"
+            ],
+            "definition_de": "Etwas beim Gehen mitnehmen oder Kleidung und Schmuck am Körper haben.",
+            "forms": "trägt · trug · hat getragen",
+            "example": "Er trägt eine Jacke und eine schwere Tasche.",
+            "example_ru": "Он носит куртку и несёт тяжёлую сумку.",
+            "grammar_hint": "tragen + Akkusativ; du trägst, er trägt; Perfekt с haben.",
+            "usage_note": "Оба значения подтверждены контекстами Goethe; переносные значения не включены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tragen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c0b3e8924b17ee820c9b",
+        "alias_id": "b1-tragen-wear",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c0b3e8924b17ee820c9b"
+      }
+    },
+    {
+      "candidate_number": 1182,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Für die Bezahlung bestimmter Kosten verantwortlich sein. Example: Die Firma trägt die Kosten für die Weiterbildung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_099.json",
+        "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+        "batch": 99,
+        "row": 29,
+        "record": {
+          "id": "b1-tragen-costs",
+          "de": "tragen",
+          "lemma": "tragen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "нести расходы",
+            "оплачивать",
+            "покрывать расходы"
+          ],
+          "definition_de": "Für die Bezahlung bestimmter Kosten verantwortlich sein.",
+          "example": "Die Firma trägt die Kosten für die Weiterbildung.",
+          "example_ru": "Фирма оплачивает расходы на повышение квалификации.",
+          "forms": "trägt · trug · hat getragen",
+          "grammar_hint": "die Kosten (Akk.) tragen; auch Verantwortung tragen — нести ответственность.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tragen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 503,
+          "record": {
+            "id": "dict_c0b3e8924b17ee820c9b",
+            "de": "tragen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "нести",
+              "переносить",
+              "носить (одежду, украшения)"
+            ],
+            "definition_de": "Etwas beim Gehen mitnehmen oder Kleidung und Schmuck am Körper haben.",
+            "forms": "trägt · trug · hat getragen",
+            "example": "Er trägt eine Jacke und eine schwere Tasche.",
+            "example_ru": "Он носит куртку и несёт тяжёлую сумку.",
+            "grammar_hint": "tragen + Akkusativ; du trägst, er trägt; Perfekt с haben.",
+            "usage_note": "Оба значения подтверждены контекстами Goethe; переносные значения не включены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tragen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c0b3e8924b17ee820c9b",
+        "alias_id": "b1-tragen-costs",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c0b3e8924b17ee820c9b"
+      }
+    },
+    {
+      "candidate_number": 1183,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Geplantes Üben zur Verbesserung einer Fähigkeit oder Leistung. Example: Nach dem Training gehen wir nach Hause.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 2,
+        "record": {
+          "id": "b1-training-practice",
+          "de": "das Training",
+          "lemma": "Training",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "тренировка",
+            "тренировочное занятие"
+          ],
+          "definition_de": "Geplantes Üben zur Verbesserung einer Fähigkeit oder Leistung.",
+          "example": "Nach dem Training gehen wir nach Hause.",
+          "example_ru": "После тренировки мы идём домой.",
+          "forms": "die Trainings",
+          "grammar_hint": "zum Training gehen; am Training teilnehmen (+ Dativ).",
+          "topic": "Спорт",
+          "topics": [
+            "Спорт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Training"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 504,
+          "record": {
+            "id": "dict_fdc16913fe59183bbcef",
+            "de": "das Training",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "тренировка",
+              "тренировочное занятие"
+            ],
+            "definition_de": "Regelmäßiges Üben, um im Sport besser zu werden.",
+            "forms": "Plural · die Trainings",
+            "example": "Das Training beginnt um sechs Uhr.",
+            "example_ru": "Тренировка начинается в шесть часов.",
+            "grammar_hint": "zum Training gehen — идти на тренировку; beim Training — на тренировке.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Training"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_fdc16913fe59183bbcef",
+        "alias_id": "b1-training-practice",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_fdc16913fe59183bbcef"
+      }
+    },
+    {
+      "candidate_number": 1184,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Im Schlaf Bilder oder Erlebnisse wahrnehmen. Example: Heute Nacht habe ich von meiner alten Wohnung geträumt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 7,
+        "record": {
+          "id": "b1-traeumen-sleep",
+          "de": "träumen",
+          "lemma": "träumen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "видеть сны",
+            "видеть во сне"
+          ],
+          "definition_de": "Im Schlaf Bilder oder Erlebnisse wahrnehmen.",
+          "example": "Heute Nacht habe ich von meiner alten Wohnung geträumt.",
+          "example_ru": "Сегодня ночью мне приснилась моя старая квартира.",
+          "forms": "träumt · träumte · hat geträumt",
+          "grammar_hint": "von + Dativ; etwas träumen также возможно; не путать с schlafen.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tr%C3%A4umen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 505,
+          "record": {
+            "id": "dict_8e1badbbb1cb7a332abb",
+            "de": "träumen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "видеть сны",
+              "мечтать"
+            ],
+            "definition_de": "Im Schlaf Bilder und Erlebnisse haben oder sich etwas sehr wünschen.",
+            "forms": "träumt · träumte · hat geträumt",
+            "example": "Ich träume von einer Reise ans Meer.",
+            "example_ru": "Я мечтаю о поездке к морю.",
+            "grammar_hint": "von + Dativ träumen; davon träumen, … zu + Infinitiv. Perfekt с haben.",
+            "usage_note": "Во сне: Ich habe schlecht geträumt — мне снились плохие сны.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tr%C3%A4umen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1185,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich etwas sehr wünschen und es sich vorstellen. Example: Sie träumt von einer Reise ans Meer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 8,
+        "record": {
+          "id": "b1-traeumen-wish",
+          "de": "träumen",
+          "lemma": "träumen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "мечтать",
+            "грезить"
+          ],
+          "definition_de": "Sich etwas sehr wünschen und es sich vorstellen.",
+          "example": "Sie träumt von einer Reise ans Meer.",
+          "example_ru": "Она мечтает о поездке к морю.",
+          "forms": "träumt · träumte · hat geträumt",
+          "grammar_hint": "von + Dativ; davon träumen, etwas zu tun; davon träumen, dass … (глагол в конце придаточного).",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tr%C3%A4umen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 505,
+          "record": {
+            "id": "dict_8e1badbbb1cb7a332abb",
+            "de": "träumen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "видеть сны",
+              "мечтать"
+            ],
+            "definition_de": "Im Schlaf Bilder und Erlebnisse haben oder sich etwas sehr wünschen.",
+            "forms": "träumt · träumte · hat geträumt",
+            "example": "Ich träume von einer Reise ans Meer.",
+            "example_ru": "Я мечтаю о поездке к морю.",
+            "grammar_hint": "von + Dativ träumen; davon träumen, … zu + Infinitiv. Perfekt с haben.",
+            "usage_note": "Во сне: Ich habe schlecht geträumt — мне снились плохие сны.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/tr%C3%A4umen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8e1badbbb1cb7a332abb",
+        "alias_id": "b1-traeumen-wish",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8e1badbbb1cb7a332abb"
+      }
+    },
+    {
+      "candidate_number": 1186,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Folge von Vorstellungen und Erlebnissen während des Schlafs. Example: Ich erinnere mich noch an meinen Traum.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 9,
+        "record": {
+          "id": "b1-traum-sleep",
+          "de": "der Traum",
+          "lemma": "Traum",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сон",
+            "сновидение"
+          ],
+          "definition_de": "Eine Folge von Vorstellungen und Erlebnissen während des Schlafs.",
+          "example": "Ich erinnere mich noch an meinen Traum.",
+          "example_ru": "Я ещё помню свой сон.",
+          "forms": "die Träume",
+          "grammar_hint": "einen Traum haben; im Traum; der Schlaf — сон как состояние.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "context",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Traum"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 183,
+          "record": {
+            "id": "dict_f1061c6bc79f3ca0eddb",
+            "de": "der Traum",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мечта"
+            ],
+            "definition_de": "Ein starker Wunsch, den man sich gern erfüllen würde.",
+            "forms": "Plural · die Träume",
+            "example": "Eine Reise nach Japan ist mein großer Traum.",
+            "example_ru": "Поездка в Японию — моя большая мечта.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Traum"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f1061c6bc79f3ca0eddb",
+        "alias_id": "b1-traum-sleep",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f1061c6bc79f3ca0eddb"
+      }
+    },
+    {
+      "candidate_number": 1187,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein besonders großer persönlicher Wunsch. Example: Ein eigenes Atelier ist ihr größter Traum.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 10,
+        "record": {
+          "id": "b1-traum-wish",
+          "de": "der Traum",
+          "lemma": "Traum",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "мечта"
+          ],
+          "definition_de": "Ein besonders großer persönlicher Wunsch.",
+          "example": "Ein eigenes Atelier ist ihr größter Traum.",
+          "example_ru": "Собственная мастерская — её самая большая мечта.",
+          "forms": "die Träume",
+          "grammar_hint": "der Traum von + Dativ; sich einen Traum erfüllen.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Traum"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 183,
+          "record": {
+            "id": "dict_f1061c6bc79f3ca0eddb",
+            "de": "der Traum",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мечта"
+            ],
+            "definition_de": "Ein starker Wunsch, den man sich gern erfüllen würde.",
+            "forms": "Plural · die Träume",
+            "example": "Eine Reise nach Japan ist mein großer Traum.",
+            "example_ru": "Поездка в Японию — моя большая мечта.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Traum"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f1061c6bc79f3ca0eddb",
+        "alias_id": "b1-traum-wish",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f1061c6bc79f3ca0eddb"
+      }
+    },
+    {
+      "candidate_number": 1188,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: In einer Stimmung von Kummer oder Trauer sein. Example: Sie ist traurig, weil ihre Freundin weggezogen ist.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 12,
+        "record": {
+          "id": "b1-traurig-person",
+          "de": "traurig",
+          "lemma": "traurig",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "грустный",
+            "печальный",
+            "опечаленный"
+          ],
+          "definition_de": "In einer Stimmung von Kummer oder Trauer sein.",
+          "example": "Sie ist traurig, weil ihre Freundin weggezogen ist.",
+          "example_ru": "Ей грустно, потому что её подруга переехала.",
+          "forms": "traurig · trauriger · am traurigsten",
+          "grammar_hint": "traurig über + Akk.; weil вводит придаточное с глаголом в конце.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/traurig"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 277,
+          "record": {
+            "id": "dict_6b6139c03b25c0b8bdcb",
+            "de": "traurig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "грустный",
+              "печальный"
+            ],
+            "definition_de": "So, dass jemand Kummer empfindet oder sich nicht freuen kann.",
+            "forms": "traurig · trauriger · am traurigsten",
+            "example": "Seit dem Abschied ist sie oft traurig.",
+            "example_ru": "После прощания ей часто грустно.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/traurig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6b6139c03b25c0b8bdcb",
+        "alias_id": "b1-traurig-person",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6b6139c03b25c0b8bdcb"
+      }
+    },
+    {
+      "candidate_number": 1189,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: So beschaffen, dass es Kummer oder Trauer auslöst. Example: Die Geschichte hat ein trauriges Ende.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 13,
+        "record": {
+          "id": "b1-traurig-causing",
+          "de": "traurig",
+          "lemma": "traurig",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "грустный",
+            "печальный (вызывающий грусть)"
+          ],
+          "definition_de": "So beschaffen, dass es Kummer oder Trauer auslöst.",
+          "example": "Die Geschichte hat ein trauriges Ende.",
+          "example_ru": "У этой истории печальный конец.",
+          "forms": "traurig · trauriger · am traurigsten",
+          "grammar_hint": "eine traurige Nachricht; отличие от traurig sein — испытывать грусть.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/traurig"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 277,
+          "record": {
+            "id": "dict_6b6139c03b25c0b8bdcb",
+            "de": "traurig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "грустный",
+              "печальный"
+            ],
+            "definition_de": "So, dass jemand Kummer empfindet oder sich nicht freuen kann.",
+            "forms": "traurig · trauriger · am traurigsten",
+            "example": "Seit dem Abschied ist sie oft traurig.",
+            "example_ru": "После прощания ей часто грустно.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 27,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/traurig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6b6139c03b25c0b8bdcb",
+        "alias_id": "b1-traurig-causing",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6b6139c03b25c0b8bdcb"
+      }
+    },
+    {
+      "candidate_number": 1190,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit anderen Personen zusammenkommen, oft nach einer Verabredung. Example: Wir treffen uns morgen vor der Bibliothek.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 14,
+        "record": {
+          "id": "b1-treffen-reflexive",
+          "de": "sich treffen",
+          "lemma": "treffen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "встречаться"
+          ],
+          "definition_de": "Mit anderen Personen zusammenkommen, oft nach einer Verabredung.",
+          "example": "Wir treffen uns morgen vor der Bibliothek.",
+          "example_ru": "Мы встречаемся завтра перед библиотекой.",
+          "forms": "trifft sich · traf sich · hat sich getroffen",
+          "grammar_hint": "sich (Akk.) mit jemandem (Dat.) treffen; wir treffen uns; ihr trefft euch.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/treffen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 705,
+          "record": {
+            "id": "a1-570-2",
+            "de": "sich treffen",
+            "lemma": "sich treffen",
+            "ru": "встречаться; встретиться",
+            "uk": "",
+            "translations_ru": [
+              "встречаться",
+              "встретиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "trifft sich · traf sich · hat sich getroffen",
+            "definition_de": "Mit jemandem zur selben Zeit am selben Ort zusammenkommen.",
+            "example": "Wir treffen uns am Freitag.",
+            "example_ru": "Мы встречаемся в пятницу.",
+            "note": "Сравните: ich treffe mich mit Anna; wir treffen uns. Возвратное местоимение — Akkusativ; mit + Dativ.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "2f166ca8c1bf00717447"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 704,
+          "record": {
+            "id": "a1-570-1",
+            "de": "treffen",
+            "lemma": "treffen",
+            "ru": "встречать; встретить",
+            "uk": "",
+            "translations_ru": [
+              "встречать",
+              "встретить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "trifft · traf · hat getroffen",
+            "definition_de": "Jemandem begegnen oder zu einem vereinbarten Treffen kommen.",
+            "example": "Ich treffe heute eine Freundin.",
+            "example_ru": "Сегодня я встречусь с подругой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "2f166ca8c1bf00717447"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-570-2",
+        "alias_id": "b1-treffen-reflexive",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-570-2"
+      }
+    },
+    {
+      "candidate_number": 1191,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einer Person begegnen oder mit ihr zusammenkommen. Example: Ich habe gestern meine Nachbarin im Zug getroffen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 15,
+        "record": {
+          "id": "b1-treffen-encounter",
+          "de": "treffen",
+          "lemma": "treffen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "встретить",
+            "встречать"
+          ],
+          "definition_de": "Einer Person begegnen oder mit ihr zusammenkommen.",
+          "example": "Ich habe gestern meine Nachbarin im Zug getroffen.",
+          "example_ru": "Вчера я встретила свою соседку в поезде.",
+          "forms": "trifft · traf · hat getroffen",
+          "grammar_hint": "jemanden (Akk.) treffen; begegnen + Dativ; случайность выражается контекстом, не обязательна.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/treffen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 704,
+          "record": {
+            "id": "a1-570-1",
+            "de": "treffen",
+            "lemma": "treffen",
+            "ru": "встречать; встретить",
+            "uk": "",
+            "translations_ru": [
+              "встречать",
+              "встретить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "trifft · traf · hat getroffen",
+            "definition_de": "Jemandem begegnen oder zu einem vereinbarten Treffen kommen.",
+            "example": "Ich treffe heute eine Freundin.",
+            "example_ru": "Сегодня я встречусь с подругой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "2f166ca8c1bf00717447"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-570-1",
+        "alias_id": "b1-treffen-encounter",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-570-1"
+      }
+    },
+    {
+      "candidate_number": 1192,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Folge von Stufen zwischen unterschiedlich hohen Bereichen. Example: Die Treppe führt in den Keller.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_100.json",
+        "sha": "7c06db696af46979cd87dc45561746728cad40ee",
+        "batch": 100,
+        "row": 23,
+        "record": {
+          "id": "b1-treppe-stairs",
+          "de": "die Treppe",
+          "lemma": "Treppe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лестница"
+          ],
+          "definition_de": "Eine Folge von Stufen zwischen unterschiedlich hohen Bereichen.",
+          "example": "Die Treppe führt in den Keller.",
+          "example_ru": "Лестница ведёт в подвал.",
+          "forms": "die Treppen",
+          "grammar_hint": "die Treppe hinaufgehen; auf der Treppe stehen (Dat.). В Австрии также die Stiege.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Treppe"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 564,
+          "record": {
+            "id": "a1-571-1",
+            "de": "die Treppe",
+            "lemma": "Treppe",
+            "ru": "лестница",
+            "uk": "",
+            "translations_ru": [
+              "лестница"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Treppen",
+            "definition_de": "Mehrere Stufen, über die man höher oder tiefer gelangt.",
+            "example": "Die Treppe ist neben dem Eingang.",
+            "example_ru": "Лестница рядом с входом.",
+            "note": "die Treppe hinauf/hinuntergehen; лестница, не крыльцо (Veranda / Eingangstreppe по контексту).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 24,
+                "row_id": "954155339461e50766b6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-571-1",
+        "alias_id": "b1-treppe-stairs",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-571-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-568-1",
+      "alias_ids": [
+        "b1-tomate-food"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-568-1",
+        "de": "die Tomate",
+        "lemma": "Tomate",
+        "ru": "помидор",
+        "uk": "",
+        "translations_ru": [
+          "помидор"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Tomaten",
+        "definition_de": "Eine meist rote Frucht, die man zum Beispiel im Salat isst.",
+        "example": "Die Tomate ist schon reif.",
+        "example_ru": "Помидор уже спелый.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "6a4356d5c3774605f9c6"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-tomate-food"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tomate-food",
+            "de": "die Tomate",
+            "part": "noun",
+            "forms": "die Tomaten",
+            "definition_de": "Eine saftige Frucht, die häufig als Gemüse gegessen wird.",
+            "translations_ru": [
+              "помидор",
+              "томат"
+            ],
+            "grammar_hint": "В Австрии также der Paradeiser.",
+            "example": "Für den Salat schneide ich zwei Tomaten.",
+            "example_ru": "Для салата я нарезаю два помидора."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tomate"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_5b482653f9958a7ff716",
+      "alias_ids": [
+        "b1-topf-cooking"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_5b482653f9958a7ff716",
+        "de": "der Topf",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "кастрюля"
+        ],
+        "definition_de": "Ein tiefer Behälter, in dem man auf dem Herd kocht.",
+        "forms": "Plural · die Töpfe",
+        "example": "Das Wasser im Topf kocht schon.",
+        "example_ru": "Вода в кастрюле уже кипит.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Topf"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-topf-cooking"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-topf-cooking",
+            "de": "der Topf",
+            "part": "noun",
+            "forms": "die Töpfe",
+            "definition_de": "Ein tiefes Gefäß, in dem man Speisen auf dem Herd kocht.",
+            "translations_ru": [
+              "кастрюля"
+            ],
+            "grammar_hint": "der Kochtopf; CH также die Pfanne в значении кастрюля.",
+            "example": "Die Suppe kocht in einem großen Topf.",
+            "example_ru": "Суп варится в большой кастрюле."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Topf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_556caf6a5c42acfea8a0",
+      "alias_ids": [
+        "b1-torte-cake"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_556caf6a5c42acfea8a0",
+        "de": "die Torte",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "торт"
+        ],
+        "definition_de": "Ein feiner Kuchen, der oft aus mehreren Schichten besteht und verziert ist.",
+        "forms": "Plural · die Torten",
+        "example": "Für den Geburtstag kaufen wir eine kleine Torte.",
+        "example_ru": "На день рождения мы покупаем небольшой торт.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Torte"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-torte-cake"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-torte-cake",
+            "de": "die Torte",
+            "part": "noun",
+            "forms": "die Torten",
+            "definition_de": "Ein meist aufwendig zubereiteter Kuchen, oft mit mehreren Schichten und Creme.",
+            "translations_ru": [
+              "торт"
+            ],
+            "grammar_hint": "ein Stück Torte — кусок торта; der Kuchen — более общее слово.",
+            "example": "Zum Fest bringt sie eine Schokoladentorte mit.",
+            "example_ru": "На праздник она принесёт шоколадный торт."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Torte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-569-1",
+      "alias_ids": [
+        "b1-tot-dead"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-569-1",
+        "de": "tot",
+        "lemma": "tot",
+        "ru": "мёртвый",
+        "uk": "",
+        "translations_ru": [
+          "мёртвый"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "В данном значении обычно без степеней сравнения",
+        "definition_de": "Nicht mehr am Leben.",
+        "example": "Der Fisch ist tot.",
+        "example_ru": "Рыба мертва.",
+        "note": "В прямом значении «не живой» обычные степени сравнения не употребляются; переносные и стилистические употребления возможны.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "77e1ef00d5b65e759e41"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-tot-dead"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tot-dead",
+            "de": "tot",
+            "part": "adjective",
+            "forms": "tot · в буквальном смысле обычно без степеней сравнения",
+            "definition_de": "Nicht mehr am Leben.",
+            "translations_ru": [
+              "мёртвый",
+              "неживой"
+            ],
+            "grammar_hint": "tot sein; der Tod — смерть; переносные степени сравнения редки, не нужны для базового значения.",
+            "example": "Leider ist der alte Baum tot.",
+            "example_ru": "К сожалению, старое дерево погибло."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tot"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_81c9efb83ccbd22f5610",
+      "alias_ids": [
+        "b1-total-completely"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_81c9efb83ccbd22f5610",
+        "de": "total",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "совсем",
+          "совершенно",
+          "очень (разговорное усиление)"
+        ],
+        "definition_de": "Drückt aus, dass etwas in besonders hohem oder vollständigem Maß zutrifft.",
+        "forms": "Без степеней сравнения",
+        "example": "Nach der Reise war ich total müde.",
+        "example_ru": "После поездки я был совершенно уставшим.",
+        "grammar_hint": "В подтверждённом контексте употребляется как усилитель перед прилагательным, без окончания: total müde.",
+        "usage_note": "Не существительное Total; здесь наречное употребление прилагательного.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/total"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-total-completely"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-total-completely",
+            "de": "total",
+            "part": "adverb",
+            "forms": "unveränderlich als Adverb",
+            "definition_de": "Verstärkt eine Aussage; bezeichnet einen hohen oder vollständigen Grad.",
+            "translations_ru": [
+              "совершенно",
+              "полностью",
+              "очень"
+            ],
+            "grammar_hint": "total + Adjektiv; разговорный усилитель. Прилагательное total (полный) — другая функция.",
+            "example": "Ich bin nach der langen Reise total müde.",
+            "example_ru": "Я совершенно вымотана после долгой поездки."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/total"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_80f8f4d9b6b5caa9a4d6",
+      "alias_ids": [
+        "b1-tourist-person"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_80f8f4d9b6b5caa9a4d6",
+        "de": "der Tourist",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "турист"
+        ],
+        "definition_de": "Ein Mann, der einen Ort auf einer Reise besucht, etwa im Urlaub.",
+        "forms": "Plural · die Touristen",
+        "example": "Am Bahnhof fragt ein Tourist nach dem Weg zum Museum.",
+        "example_ru": "На вокзале турист спрашивает, как пройти к музею.",
+        "grammar_hint": "",
+        "usage_note": "В Akkusativ к Tourist добавляем -en: Ich frage einen Touristen.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Tourist"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Путешествия и отпуск",
+        "topics": [
+          "Путешествия и отпуск"
+        ],
+        "alias_ids": [
+          "b1-tourist-person"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tourist-person",
+            "de": "der Tourist / die Touristin",
+            "part": "noun",
+            "forms": "die Touristen / die Touristinnen",
+            "definition_de": "Eine Person, die einen anderen Ort als Reisende besucht.",
+            "translations_ru": [
+              "турист",
+              "туристка"
+            ],
+            "grammar_hint": "n-Deklination: den/dem/des Touristen; die Touristin — отдельная женская форма.",
+            "example": "Die Touristen besichtigen die Altstadt.",
+            "example_ru": "Туристы осматривают старый город."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Tourist",
+              "https://de.wiktionary.org/wiki/Touristin"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_c0b3e8924b17ee820c9b",
+      "alias_ids": [
+        "b1-tragen-wear",
+        "b1-tragen-costs"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c0b3e8924b17ee820c9b",
+        "de": "tragen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "нести",
+          "переносить",
+          "носить (одежду, украшения)"
+        ],
+        "definition_de": "Etwas beim Gehen mitnehmen oder Kleidung und Schmuck am Körper haben.",
+        "forms": "trägt · trug · hat getragen",
+        "example": "Er trägt eine Jacke und eine schwere Tasche.",
+        "example_ru": "Он носит куртку и несёт тяжёлую сумку.",
+        "grammar_hint": "tragen + Akkusativ; du trägst, er trägt; Perfekt с haben.",
+        "usage_note": "Оба значения подтверждены контекстами Goethe; переносные значения не включены.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/tragen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт"
+        ],
+        "alias_ids": [
+          "b1-tragen-wear",
+          "b1-tragen-costs"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-tragen-wear",
+            "de": "tragen",
+            "part": "verb",
+            "forms": "trägt · trug · hat getragen",
+            "definition_de": "Etwas am Körper anhaben.",
+            "translations_ru": [
+              "носить (одежду, очки, украшения)"
+            ],
+            "grammar_hint": "etwas (Akk.) tragen; Brille tragen — носить очки, не обязательно надевать их в данный момент.",
+            "example": "Bei der Arbeit trägt er eine Uniform.",
+            "example_ru": "На работе он носит форму."
+          },
+          {
+            "id": "b1-tragen-costs",
+            "de": "tragen",
+            "part": "verb",
+            "forms": "trägt · trug · hat getragen",
+            "definition_de": "Für die Bezahlung bestimmter Kosten verantwortlich sein.",
+            "translations_ru": [
+              "нести расходы",
+              "оплачивать",
+              "покрывать расходы"
+            ],
+            "grammar_hint": "die Kosten (Akk.) tragen; auch Verantwortung tragen — нести ответственность.",
+            "example": "Die Firma trägt die Kosten für die Weiterbildung.",
+            "example_ru": "Фирма оплачивает расходы на повышение квалификации."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tragen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tragen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_fdc16913fe59183bbcef",
+      "alias_ids": [
+        "b1-training-practice"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_fdc16913fe59183bbcef",
+        "de": "das Training",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "тренировка",
+          "тренировочное занятие"
+        ],
+        "definition_de": "Regelmäßiges Üben, um im Sport besser zu werden.",
+        "forms": "Plural · die Trainings",
+        "example": "Das Training beginnt um sechs Uhr.",
+        "example_ru": "Тренировка начинается в шесть часов.",
+        "grammar_hint": "zum Training gehen — идти на тренировку; beim Training — на тренировке.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Training"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-training-practice"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-training-practice",
+            "de": "das Training",
+            "part": "noun",
+            "forms": "die Trainings",
+            "definition_de": "Geplantes Üben zur Verbesserung einer Fähigkeit oder Leistung.",
+            "translations_ru": [
+              "тренировка",
+              "тренировочное занятие"
+            ],
+            "grammar_hint": "zum Training gehen; am Training teilnehmen (+ Dativ).",
+            "example": "Nach dem Training gehen wir nach Hause.",
+            "example_ru": "После тренировки мы идём домой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Training"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_8e1badbbb1cb7a332abb",
+      "alias_ids": [
+        "b1-traeumen-wish"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8e1badbbb1cb7a332abb",
+        "de": "träumen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "видеть сны",
+          "мечтать"
+        ],
+        "definition_de": "Im Schlaf Bilder und Erlebnisse haben oder sich etwas sehr wünschen.",
+        "forms": "träumt · träumte · hat geträumt",
+        "example": "Ich träume von einer Reise ans Meer.",
+        "example_ru": "Я мечтаю о поездке к морю.",
+        "grammar_hint": "von + Dativ träumen; davon träumen, … zu + Infinitiv. Perfekt с haben.",
+        "usage_note": "Во сне: Ich habe schlecht geträumt — мне снились плохие сны.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/tr%C3%A4umen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-traeumen-wish"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-traeumen-wish",
+            "de": "träumen",
+            "part": "verb",
+            "forms": "träumt · träumte · hat geträumt",
+            "definition_de": "Sich etwas sehr wünschen und es sich vorstellen.",
+            "translations_ru": [
+              "мечтать",
+              "грезить"
+            ],
+            "grammar_hint": "von + Dativ; davon träumen, etwas zu tun; davon träumen, dass … (глагол в конце придаточного).",
+            "example": "Sie träumt von einer Reise ans Meer.",
+            "example_ru": "Она мечтает о поездке к морю."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/tr%C3%A4umen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f1061c6bc79f3ca0eddb",
+      "alias_ids": [
+        "b1-traum-sleep",
+        "b1-traum-wish"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f1061c6bc79f3ca0eddb",
+        "de": "der Traum",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "мечта"
+        ],
+        "definition_de": "Ein starker Wunsch, den man sich gern erfüllen würde.",
+        "forms": "Plural · die Träume",
+        "example": "Eine Reise nach Japan ist mein großer Traum.",
+        "example_ru": "Поездка в Японию — моя большая мечта.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Traum"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-traum-sleep",
+          "b1-traum-wish"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-traum-sleep",
+            "de": "der Traum",
+            "part": "noun",
+            "forms": "die Träume",
+            "definition_de": "Eine Folge von Vorstellungen und Erlebnissen während des Schlafs.",
+            "translations_ru": [
+              "сон",
+              "сновидение"
+            ],
+            "grammar_hint": "einen Traum haben; im Traum; der Schlaf — сон как состояние.",
+            "example": "Ich erinnere mich noch an meinen Traum.",
+            "example_ru": "Я ещё помню свой сон."
+          },
+          {
+            "id": "b1-traum-wish",
+            "de": "der Traum",
+            "part": "noun",
+            "forms": "die Träume",
+            "definition_de": "Ein besonders großer persönlicher Wunsch.",
+            "translations_ru": [
+              "мечта"
+            ],
+            "grammar_hint": "der Traum von + Dativ; sich einen Traum erfüllen.",
+            "example": "Ein eigenes Atelier ist ihr größter Traum.",
+            "example_ru": "Собственная мастерская — её самая большая мечта."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "context",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Traum"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Traum"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_6b6139c03b25c0b8bdcb",
+      "alias_ids": [
+        "b1-traurig-person",
+        "b1-traurig-causing"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_6b6139c03b25c0b8bdcb",
+        "de": "traurig",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "грустный",
+          "печальный"
+        ],
+        "definition_de": "So, dass jemand Kummer empfindet oder sich nicht freuen kann.",
+        "forms": "traurig · trauriger · am traurigsten",
+        "example": "Seit dem Abschied ist sie oft traurig.",
+        "example_ru": "После прощания ей часто грустно.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 27,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/traurig"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-traurig-person",
+          "b1-traurig-causing"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-traurig-person",
+            "de": "traurig",
+            "part": "adjective",
+            "forms": "traurig · trauriger · am traurigsten",
+            "definition_de": "In einer Stimmung von Kummer oder Trauer sein.",
+            "translations_ru": [
+              "грустный",
+              "печальный",
+              "опечаленный"
+            ],
+            "grammar_hint": "traurig über + Akk.; weil вводит придаточное с глаголом в конце.",
+            "example": "Sie ist traurig, weil ihre Freundin weggezogen ist.",
+            "example_ru": "Ей грустно, потому что её подруга переехала."
+          },
+          {
+            "id": "b1-traurig-causing",
+            "de": "traurig",
+            "part": "adjective",
+            "forms": "traurig · trauriger · am traurigsten",
+            "definition_de": "So beschaffen, dass es Kummer oder Trauer auslöst.",
+            "translations_ru": [
+              "грустный",
+              "печальный (вызывающий грусть)"
+            ],
+            "grammar_hint": "eine traurige Nachricht; отличие от traurig sein — испытывать грусть.",
+            "example": "Die Geschichte hat ein trauriges Ende.",
+            "example_ru": "У этой истории печальный конец."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/traurig"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/traurig"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-570-2",
+      "alias_ids": [
+        "b1-treffen-reflexive"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-570-2",
+        "de": "sich treffen",
+        "lemma": "sich treffen",
+        "ru": "встречаться; встретиться",
+        "uk": "",
+        "translations_ru": [
+          "встречаться",
+          "встретиться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "trifft sich · traf sich · hat sich getroffen",
+        "definition_de": "Mit jemandem zur selben Zeit am selben Ort zusammenkommen.",
+        "example": "Wir treffen uns am Freitag.",
+        "example_ru": "Мы встречаемся в пятницу.",
+        "note": "Сравните: ich treffe mich mit Anna; wir treffen uns. Возвратное местоимение — Akkusativ; mit + Dativ.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "2f166ca8c1bf00717447"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-treffen-reflexive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-treffen-reflexive",
+            "de": "sich treffen",
+            "part": "verb",
+            "forms": "trifft sich · traf sich · hat sich getroffen",
+            "definition_de": "Mit anderen Personen zusammenkommen, oft nach einer Verabredung.",
+            "translations_ru": [
+              "встречаться"
+            ],
+            "grammar_hint": "sich (Akk.) mit jemandem (Dat.) treffen; wir treffen uns; ihr trefft euch.",
+            "example": "Wir treffen uns morgen vor der Bibliothek.",
+            "example_ru": "Мы встречаемся завтра перед библиотекой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/treffen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-570-1",
+      "alias_ids": [
+        "b1-treffen-encounter"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-570-1",
+        "de": "treffen",
+        "lemma": "treffen",
+        "ru": "встречать; встретить",
+        "uk": "",
+        "translations_ru": [
+          "встречать",
+          "встретить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "trifft · traf · hat getroffen",
+        "definition_de": "Jemandem begegnen oder zu einem vereinbarten Treffen kommen.",
+        "example": "Ich treffe heute eine Freundin.",
+        "example_ru": "Сегодня я встречусь с подругой.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "2f166ca8c1bf00717447"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-treffen-encounter"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-treffen-encounter",
+            "de": "treffen",
+            "part": "verb",
+            "forms": "trifft · traf · hat getroffen",
+            "definition_de": "Einer Person begegnen oder mit ihr zusammenkommen.",
+            "translations_ru": [
+              "встретить",
+              "встречать"
+            ],
+            "grammar_hint": "jemanden (Akk.) treffen; begegnen + Dativ; случайность выражается контекстом, не обязательна.",
+            "example": "Ich habe gestern meine Nachbarin im Zug getroffen.",
+            "example_ru": "Вчера я встретила свою соседку в поезде."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 87,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/treffen"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-571-1",
+      "alias_ids": [
+        "b1-treppe-stairs"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-571-1",
+        "de": "die Treppe",
+        "lemma": "Treppe",
+        "ru": "лестница",
+        "uk": "",
+        "translations_ru": [
+          "лестница"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Treppen",
+        "definition_de": "Mehrere Stufen, über die man höher oder tiefer gelangt.",
+        "example": "Die Treppe ist neben dem Eingang.",
+        "example_ru": "Лестница рядом с входом.",
+        "note": "die Treppe hinauf/hinuntergehen; лестница, не крыльцо (Veranda / Eingangstreppe по контексту).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 24,
+            "row_id": "954155339461e50766b6"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-treppe-stairs"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-treppe-stairs",
+            "de": "die Treppe",
+            "part": "noun",
+            "forms": "die Treppen",
+            "definition_de": "Eine Folge von Stufen zwischen unterschiedlich hohen Bereichen.",
+            "translations_ru": [
+              "лестница"
+            ],
+            "grammar_hint": "die Treppe hinaufgehen; auf der Treppe stehen (Dat.). В Австрии также die Stiege.",
+            "example": "Die Treppe führt in den Keller.",
+            "example_ru": "Лестница ведёт в подвал."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 88,
+              "scope": "headword",
+              "note": "Printed pages 87–88 visually inspected. Exam-list membership or illustrative context, not proof of earliest CEFR level; A1/A2 comparison and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Treppe"
+            ],
+            "meaning_review": "goethe_context_checked_wiktionary_entry_linked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

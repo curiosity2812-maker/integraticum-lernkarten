@@ -1,0 +1,1891 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual semantic comparison of indexed candidates 53–72 using stored lower-level definitions and examples. One conditional usage merge proposal, not applied; no independent level or dictionary verification. Other records retain IDs and provisional metadata.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    53,
+    72
+  ],
+  "reviewed": 20,
+  "merge_count": 1,
+  "retained_distinct_senses": 11,
+  "retained_teaching_contexts_pending_level_review": 8,
+  "followup_review": [
+    {
+      "id": "b1-fahren-drive-type",
+      "issue": "A1 hint already gives transitive driving; verify actual level source and haben/sein usage."
+    },
+    {
+      "id": "b1-fahren-move-vehicle",
+      "issue": "Compare with transitive driving context within B1 before publication."
+    },
+    {
+      "id": "b1-fehlen-missing-item",
+      "issue": "Compare with A1 absent-person sense and B1 lack-amount context; retain Dativ construction."
+    },
+    {
+      "id": "b1-flasche-measure",
+      "issue": "A1 original example shows quantity; official level evidence and phrase consumer behavior remain unverified."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 53,
+      "decision": "retain_distinct_sense",
+      "reason": "Storage compartment vs school subject.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 18,
+        "record": {
+          "id": "b1-fach-compartment",
+          "de": "das Fach",
+          "lemma": "Fach",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "отделение",
+            "секция",
+            "ячейка (шкафа, сумки)"
+          ],
+          "definition_de": "Ein abgetrennter Bereich zur Aufbewahrung von Gegenständen.",
+          "example": "Die Schlüssel liegen im kleinen Fach der Tasche.",
+          "example_ru": "Ключи лежат в маленьком отделении сумки.",
+          "forms": "die Fächer",
+          "grammar_hint": "im Fach (Wo? Dativ); ins Fach legen (Wohin? Akkusativ). Учебный предмет уже на A2.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Fach"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 170,
+          "record": {
+            "id": "dict_08a3573b56709ae47a65",
+            "de": "das Fach",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "учебный предмет"
+            ],
+            "definition_de": "Ein Thema, das als eigener Teil des Unterrichts unterrichtet wird.",
+            "forms": "Plural · die Fächer",
+            "example": "Geschichte ist mein Lieblingsfach, aber ich mag auch andere Fächer.",
+            "example_ru": "История — мой любимый предмет, но мне нравятся и другие предметы.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fach"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 54,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Transitive operating a vehicle vs travel; A1 hint already mentions transitive haben but not a confirmed separate level.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 22,
+        "record": {
+          "id": "b1-fahren-drive-type",
+          "de": "fahren",
+          "lemma": "fahren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "водить",
+            "управлять транспортным средством"
+          ],
+          "definition_de": "Ein bestimmtes Fahrzeug selbst lenken oder regelmäßig benutzen.",
+          "example": "Mein Bruder fährt einen kleinen Elektrowagen.",
+          "example_ru": "Мой брат водит небольшой электромобиль.",
+          "forms": "fährt · fuhr · hat gefahren (переходное); ist gefahren (движение)",
+          "grammar_hint": "При прямом объекте haben: Er hat den Wagen gefahren. Без объекта при перемещении: Er ist nach Bern gefahren.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fahren"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 30,
+          "record": {
+            "id": "travel-fahren",
+            "de": "fahren",
+            "lemma": "fahren",
+            "ru": "ехать; ездить",
+            "uk": "",
+            "translations_ru": [
+              "ехать",
+              "ездить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "fährt · fuhr · ist gefahren",
+            "definition_de": "Sich mit einem Fahrzeug an Land fortbewegen.",
+            "example": "Morgen fahre ich mit dem Zug nach Bern.",
+            "example_ru": "Завтра я еду в Берн на поезде.",
+            "note": "Перемещение: mit + Dativ (mit dem Bus), направление: nach Zürich, in die Stadt; Perfekt: ist gefahren. При управлении транспортом с прямым дополнением возможно haben: Er hat den Wagen gefahren. Это дополнительное значение отдельно не подтверждено на A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "c1c76da5524c8c50d013"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/fahren",
+                "scope": "meaning_or_grammar",
+                "note": "Разграничение вспомогательных глаголов по конструкции."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 55,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Transporting a person vs traveling oneself; preserve transitive construction and haben.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 23,
+        "record": {
+          "id": "b1-fahren-transport-person",
+          "de": "fahren",
+          "lemma": "fahren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "отвозить",
+            "подвозить (кого-либо)"
+          ],
+          "definition_de": "Eine Person mit einem Fahrzeug an einen anderen Ort bringen.",
+          "example": "Sie hat mich gestern zum Bahnhof gefahren.",
+          "example_ru": "Вчера она отвезла меня на вокзал.",
+          "forms": "fährt · fuhr · hat gefahren",
+          "grammar_hint": "jemanden (Akkusativ) zu + Dativ / nach + название места fahren; здесь Perfekt с haben.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fahren"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 30,
+          "record": {
+            "id": "travel-fahren",
+            "de": "fahren",
+            "lemma": "fahren",
+            "ru": "ехать; ездить",
+            "uk": "",
+            "translations_ru": [
+              "ехать",
+              "ездить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "fährt · fuhr · ist gefahren",
+            "definition_de": "Sich mit einem Fahrzeug an Land fortbewegen.",
+            "example": "Morgen fahre ich mit dem Zug nach Bern.",
+            "example_ru": "Завтра я еду в Берн на поезде.",
+            "note": "Перемещение: mit + Dativ (mit dem Bus), направление: nach Zürich, in die Stadt; Perfekt: ist gefahren. При управлении транспортом с прямым дополнением возможно haben: Er hat den Wagen gefahren. Это дополнительное значение отдельно не подтверждено на A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "c1c76da5524c8c50d013"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/fahren",
+                "scope": "meaning_or_grammar",
+                "note": "Разграничение вспомогательных глаголов по конструкции."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 56,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Moving a vehicle to a destination vs traveling; preserve transitive construction and haben.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_020.json",
+        "sha": "b88cff5e579caafa08c5b6b5e005f9c149448326",
+        "batch": 20,
+        "row": 24,
+        "record": {
+          "id": "b1-fahren-move-vehicle",
+          "de": "fahren",
+          "lemma": "fahren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "загонять",
+            "перемещать (транспортное средство)"
+          ],
+          "definition_de": "Ein Fahrzeug gezielt an eine andere Stelle bewegen.",
+          "example": "Ich habe den Lieferwagen auf den Parkplatz gefahren.",
+          "example_ru": "Я загнала фургон на парковку.",
+          "forms": "fährt · fuhr · hat gefahren",
+          "grammar_hint": "etwas (Akkusativ) an einen Ort fahren; in die Garage (Wohin? Akkusativ). Perfekt с haben.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 38,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fahren"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 30,
+          "record": {
+            "id": "travel-fahren",
+            "de": "fahren",
+            "lemma": "fahren",
+            "ru": "ехать; ездить",
+            "uk": "",
+            "translations_ru": [
+              "ехать",
+              "ездить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "fährt · fuhr · ist gefahren",
+            "definition_de": "Sich mit einem Fahrzeug an Land fortbewegen.",
+            "example": "Morgen fahre ich mit dem Zug nach Bern.",
+            "example_ru": "Завтра я еду в Берн на поезде.",
+            "note": "Перемещение: mit + Dativ (mit dem Bus), направление: nach Zürich, in die Stadt; Perfekt: ist gefahren. При управлении транспортом с прямым дополнением возможно haben: Er hat den Wagen gefahren. Это дополнительное значение отдельно не подтверждено на A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "c1c76da5524c8c50d013"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/fahren",
+                "scope": "meaning_or_grammar",
+                "note": "Разграничение вспомогательных глаголов по конструкции."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 57,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Snow falling vs an object falling; related physical meaning, weather context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 1,
+        "record": {
+          "id": "b1-fallen-snow",
+          "de": "fallen",
+          "lemma": "fallen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "выпадать",
+            "падать (об осадках)"
+          ],
+          "definition_de": "Als Niederschlag aus der Atmosphäre auf die Erde gelangen.",
+          "example": "Über Nacht ist viel Schnee gefallen.",
+          "example_ru": "За ночь выпало много снега.",
+          "forms": "fällt · fiel · ist gefallen",
+          "grammar_hint": "Schnee fällt; чаще для дождя: es regnet. Perfekt с sein.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fallen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 226,
+          "record": {
+            "id": "dict_34d3b01678ccc50414d6",
+            "de": "fallen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "падать",
+              "упасть"
+            ],
+            "definition_de": "Sich ohne Halt nach unten bewegen.",
+            "forms": "fällt · fiel · ist gefallen",
+            "example": "Mein Schlüssel ist auf den Boden gefallen.",
+            "example_ru": "Мой ключ упал на пол.",
+            "grammar_hint": "В значении «падать» в Perfekt используем sein: Der Schlüssel ist gefallen.",
+            "usage_note": "Физическое падение; ловушка — die Falle (Pl. Fallen). Снижение цен, падение города и другие смыслы отдельно не подтверждены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/fallen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 58,
+      "decision": "retain_distinct_sense",
+      "reason": "Decreasing a measurable value vs physically falling.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 2,
+        "record": {
+          "id": "b1-fallen-decrease",
+          "de": "fallen",
+          "lemma": "fallen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "снижаться",
+            "падать (о цене, температуре)"
+          ],
+          "definition_de": "Einen niedrigeren messbaren Wert annehmen.",
+          "example": "Im Herbst fallen die Temperaturen nachts deutlich.",
+          "example_ru": "Осенью температура ночью заметно снижается.",
+          "forms": "fällt · fiel · ist gefallen",
+          "grammar_hint": "um + Akkusativ — на величину; auf + Akkusativ — до значения. Сравни steigen.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fallen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 226,
+          "record": {
+            "id": "dict_34d3b01678ccc50414d6",
+            "de": "fallen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "падать",
+              "упасть"
+            ],
+            "definition_de": "Sich ohne Halt nach unten bewegen.",
+            "forms": "fällt · fiel · ist gefallen",
+            "example": "Mein Schlüssel ist auf den Boden gefallen.",
+            "example_ru": "Мой ключ упал на пол.",
+            "grammar_hint": "В значении «падать» в Perfekt используем sein: Der Schlüssel ist gefallen.",
+            "usage_note": "Физическое падение; ловушка — die Falle (Pl. Fallen). Снижение цен, падение города и другие смыслы отдельно не подтверждены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/fallen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 59,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Clock showing incorrect time vs general adjective incorrect; preserve clock collocation.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 5,
+        "record": {
+          "id": "b1-falsch-clock",
+          "de": "falsch gehen",
+          "lemma": "falsch",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "идти неправильно (о часах)",
+            "показывать неверное время"
+          ],
+          "definition_de": "Eine von der tatsächlichen Uhrzeit abweichende Zeit anzeigen.",
+          "example": "Die Küchenuhr geht falsch.",
+          "example_ru": "Кухонные часы показывают неверное время.",
+          "forms": "geht falsch · ging falsch · ist falsch gegangen",
+          "grammar_hint": "vorgehen — спешить (о часах); nachgehen — отставать. Общее falsch уже на A1.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/falsch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 271,
+          "record": {
+            "id": "a1-202-1",
+            "de": "falsch",
+            "lemma": "falsch",
+            "ru": "неверный",
+            "uk": "",
+            "translations_ru": [
+              "неверный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Nicht richtig.",
+            "example": "Die erste Antwort ist falsch.",
+            "example_ru": "Первый ответ неверный.",
+            "note": "Для ответа «верный / неверный» обычно не нужны степени сравнения. В переносных и оценочных контекстах сравнение возможно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "e04324eda407d444187c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 60,
+      "decision": "retain_distinct_sense",
+      "reason": "Paint vs perceived color.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 11,
+        "record": {
+          "id": "b1-farbe-paint",
+          "de": "die Farbe",
+          "lemma": "Farbe",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "краска",
+            "красящее вещество"
+          ],
+          "definition_de": "Ein Material, mit dem eine Oberfläche farbig gestaltet wird.",
+          "example": "Die Farbe an der Wand ist noch nicht trocken.",
+          "example_ru": "Краска на стене ещё не высохла.",
+          "forms": "die Farben",
+          "grammar_hint": "Farbe auftragen; mit Farbe streichen. Значение «цвет» уже на A1.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Farbe"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 274,
+          "record": {
+            "id": "a1-206-1",
+            "de": "die Farbe",
+            "lemma": "Farbe",
+            "ru": "цвет",
+            "uk": "",
+            "translations_ru": [
+              "цвет"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Farben",
+            "definition_de": "Was man als Rot, Blau, Grün oder ähnlich wahrnimmt.",
+            "example": "Welche Farbe hat dein Fahrrad?",
+            "example_ru": "Какого цвета твой велосипед?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "dd90f8bba78a109ed35f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 61,
+      "decision": "retain_distinct_sense",
+      "reason": "Rotten vs lazy.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 18,
+        "record": {
+          "id": "b1-faul-rotten",
+          "de": "faul",
+          "lemma": "faul",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "гнилой",
+            "испорченный (гниением)"
+          ],
+          "definition_de": "Durch Zersetzung verdorben.",
+          "example": "Die Birne ist an einer Stelle faul.",
+          "example_ru": "Груша в одном месте сгнила.",
+          "forms": "faul · fauler · am faulsten",
+          "grammar_hint": "faules Obst; faul riechen. Значение «ленивый» уже на A2.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/faul"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 327,
+          "record": {
+            "id": "dict_879f843471f056e43317",
+            "de": "faul",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ленивый"
+            ],
+            "definition_de": "Nicht bereit, sich anzustrengen oder zu arbeiten.",
+            "forms": "faul · fauler · am faulsten",
+            "example": "Heute bin ich zu faul zum Kochen.",
+            "example_ru": "Сегодня мне лень готовить.",
+            "grammar_hint": "zu faul zum Kochen — слишком ленив, чтобы готовить; zu faul, um zu kochen — другой способ выразить то же.",
+            "usage_note": "Другие значения, например «гнилой», здесь не подтверждены для A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/faul"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 62,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Missing item vs absent person; related core sense, different context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 21,
+        "record": {
+          "id": "b1-fehlen-missing-item",
+          "de": "fehlen",
+          "lemma": "fehlen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "отсутствовать",
+            "не хватать (предмета, сведений)"
+          ],
+          "definition_de": "Nicht vorhanden sein, obwohl etwas benötigt oder erwartet wird.",
+          "example": "Auf dem Formular fehlt deine Unterschrift.",
+          "example_ru": "На бланке отсутствует твоя подпись.",
+          "forms": "fehlt · fehlte · hat gefehlt",
+          "grammar_hint": "Что отсутствует? Nominativ: die Unterschrift fehlt. В отличие от отсутствия человека на занятии (A1).",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fehlen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 279,
+          "record": {
+            "id": "a1-210-1",
+            "de": "fehlen",
+            "lemma": "fehlen",
+            "ru": "отсутствовать; не быть на месте",
+            "uk": "",
+            "translations_ru": [
+              "отсутствовать",
+              "не быть на месте"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "fehlt · fehlte · hat gefehlt",
+            "definition_de": "Nicht da sein, obwohl man erwartet wird.",
+            "example": "Paul fehlt heute im Kurs.",
+            "example_ru": "Сегодня Пауля нет на занятии.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "66d6a24c902868b6e270"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 280,
+          "record": {
+            "id": "a1-210-2",
+            "de": "fehlen",
+            "lemma": "fehlen",
+            "ru": "что вас беспокоит? (в вопросе Was fehlt Ihnen?)",
+            "uk": "",
+            "translations_ru": [
+              "что вас беспокоит? (в вопросе Was fehlt Ihnen?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "fehlt · fehlte · hat gefehlt",
+            "definition_de": "In „Was fehlt Ihnen?“ fragt man nach Schmerzen oder anderen Beschwerden.",
+            "example": "Was fehlt Ihnen heute?",
+            "example_ru": "Что Вас сегодня беспокоит?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "66d6a24c902868b6e270"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 63,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Lack of quantity vs absent person or health question; preserve Dativ construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 22,
+        "record": {
+          "id": "b1-fehlen-lack-amount",
+          "de": "fehlen",
+          "lemma": "fehlen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "не хватать (денег, количества)"
+          ],
+          "definition_de": "In einer benötigten Menge nicht vorhanden sein.",
+          "example": "Mir fehlen noch zehn Franken für das Ticket.",
+          "example_ru": "Мне ещё не хватает десяти франков на билет.",
+          "forms": "fehlt · fehlte · hat gefehlt",
+          "grammar_hint": "Кому? Dativ: mir. Что? Nominativ: zehn Franken fehlen. Также es fehlt an + Dativ.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 39,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fehlen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 279,
+          "record": {
+            "id": "a1-210-1",
+            "de": "fehlen",
+            "lemma": "fehlen",
+            "ru": "отсутствовать; не быть на месте",
+            "uk": "",
+            "translations_ru": [
+              "отсутствовать",
+              "не быть на месте"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "fehlt · fehlte · hat gefehlt",
+            "definition_de": "Nicht da sein, obwohl man erwartet wird.",
+            "example": "Paul fehlt heute im Kurs.",
+            "example_ru": "Сегодня Пауля нет на занятии.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "66d6a24c902868b6e270"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 280,
+          "record": {
+            "id": "a1-210-2",
+            "de": "fehlen",
+            "lemma": "fehlen",
+            "ru": "что вас беспокоит? (в вопросе Was fehlt Ihnen?)",
+            "uk": "",
+            "translations_ru": [
+              "что вас беспокоит? (в вопросе Was fehlt Ihnen?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "fehlt · fehlte · hat gefehlt",
+            "definition_de": "In „Was fehlt Ihnen?“ fragt man nach Schmerzen oder anderen Beschwerden.",
+            "example": "Was fehlt Ihnen heute?",
+            "example_ru": "Что Вас сегодня беспокоит?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "66d6a24c902868b6e270"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 64,
+      "decision": "retain_distinct_sense",
+      "reason": "Noun television as medium vs verb watching television.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 26,
+        "record": {
+          "id": "b1-fernsehen-television-medium",
+          "de": "das Fernsehen",
+          "lemma": "Fernsehen",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "телевидение",
+            "телевещание"
+          ],
+          "definition_de": "Ein Medium, das audiovisuelle Programme überträgt.",
+          "example": "Über die Veranstaltung wurde im Fernsehen berichtet.",
+          "example_ru": "О мероприятии сообщили по телевидению.",
+          "forms": "без множественного числа в этом значении",
+          "grammar_hint": "im Fernsehen — по телевидению; der Fernseher — прибор; fernsehen — глагол.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Fernsehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 282,
+          "record": {
+            "id": "a1-212-1",
+            "de": "fernsehen",
+            "lemma": "fernsehen",
+            "ru": "смотреть телевизор",
+            "uk": "",
+            "translations_ru": [
+              "смотреть телевизор"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "sieht fern · sah fern · hat ferngesehen",
+            "definition_de": "Sendungen im Fernsehen ansehen.",
+            "example": "Sie sieht abends gern fern.",
+            "example_ru": "По вечерам она любит смотреть телевизор.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "7b4e23eff7eb1e5d398a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 65,
+      "decision": "retain_distinct_sense",
+      "reason": "Exhausted vs finished/ready.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 27,
+        "record": {
+          "id": "b1-fertig-exhausted",
+          "de": "fertig",
+          "lemma": "fertig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "измотанный",
+            "совершенно уставший (разг.)"
+          ],
+          "definition_de": "Nach großer Belastung körperlich oder seelisch erschöpft.",
+          "example": "Nach diesem Tag bin ich völlig fertig.",
+          "example_ru": "После этого дня я совершенно вымоталась.",
+          "forms": "fertig · fertiger · am fertigsten (в этом переносном значении)",
+          "grammar_hint": "total / völlig fertig sein. Не путать с fertig — готовый, закончивший работу (A1).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fertig"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 283,
+          "record": {
+            "id": "a1-213-1",
+            "de": "fertig",
+            "lemma": "fertig",
+            "ru": "готовый",
+            "uk": "",
+            "translations_ru": [
+              "готовый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "So weit, dass nichts mehr gemacht werden muss.",
+            "example": "Das Abendessen ist fertig.",
+            "example_ru": "Ужин готов.",
+            "note": "В значении «полностью готово» обычные степени сравнения не нужны. Не путать со значением «измотанный».",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "c86f3b792de2da9b3758"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 284,
+          "record": {
+            "id": "a1-213-2",
+            "de": "fertig",
+            "lemma": "fertig",
+            "ru": "закончить; справиться (с заданием)",
+            "uk": "",
+            "translations_ru": [
+              "закончить",
+              "справиться (с заданием)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Eine Aufgabe oder Arbeit abgeschlossen haben, meist in der Form „mit etwas fertig sein“.",
+            "example": "Bist du mit der Aufgabe fertig?",
+            "example_ru": "Ты уже закончил задание?",
+            "note": "mit etwas fertig sein + Dativ: mit der Aufgabe fertig sein. В значении завершённости степени сравнения обычно не употребляются.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "c86f3b792de2da9b3758"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 66,
+      "decision": "retain_distinct_sense",
+      "reason": "Adverbial firm belief vs noun celebration; distinct POS.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 28,
+        "record": {
+          "id": "b1-fest-belief",
+          "de": "fest",
+          "lemma": "fest",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "твёрдо",
+            "убеждённо"
+          ],
+          "definition_de": "Mit starker innerer Überzeugung.",
+          "example": "Ich glaube fest daran, dass wir eine Lösung finden.",
+          "example_ru": "Я твёрдо верю, что мы найдём решение.",
+          "forms": "fest · fester · am festesten",
+          "grammar_hint": "fest an + Akkusativ glauben; daran glauben, dass … — в придаточном глагол в конце.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fest"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 454,
+          "record": {
+            "id": "dict_04ed3c6658cb1a4a1704",
+            "de": "das Fest",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "праздник",
+              "торжество"
+            ],
+            "definition_de": "Eine besondere Veranstaltung, bei der Menschen gemeinsam feiern.",
+            "example": "Wir organisieren ein Fest für unsere Nachbarn.",
+            "example_ru": "Мы организуем праздник для наших соседей.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fest"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Feste",
+            "topic": "Праздники и традиции",
+            "topics": [
+              "Праздники и традиции"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 67,
+      "decision": "retain_distinct_sense",
+      "reason": "Adverbial deep sleep vs noun celebration; distinct POS.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 29,
+        "record": {
+          "id": "b1-fest-sleep",
+          "de": "fest",
+          "lemma": "fest",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "крепко (спать)",
+            "глубоко"
+          ],
+          "definition_de": "Mit so tiefem Schlaf, dass man nicht leicht aufwacht.",
+          "example": "Das Baby schläft schon fest.",
+          "example_ru": "Малыш уже крепко спит.",
+          "forms": "fest · fester · am festesten",
+          "grammar_hint": "fest schlafen; ein fester Schlaf. Здесь наречное употребление прилагательного.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fest"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 454,
+          "record": {
+            "id": "dict_04ed3c6658cb1a4a1704",
+            "de": "das Fest",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "праздник",
+              "торжество"
+            ],
+            "definition_de": "Eine besondere Veranstaltung, bei der Menschen gemeinsam feiern.",
+            "example": "Wir organisieren ein Fest für unsere Nachbarn.",
+            "example_ru": "Мы организуем праздник для наших соседей.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fest"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Feste",
+            "topic": "Праздники и традиции",
+            "topics": [
+              "Праздники и традиции"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 68,
+      "decision": "retain_distinct_sense",
+      "reason": "Fixed/agreed adjective vs noun celebration.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_021.json",
+        "sha": "e3ee34c53f7e008b62b7c9810a450ba5908a5080",
+        "batch": 21,
+        "row": 30,
+        "record": {
+          "id": "b1-fest-fixed",
+          "de": "fest",
+          "lemma": "fest",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "фиксированный",
+            "установленный",
+            "согласованный"
+          ],
+          "definition_de": "Verbindlich bestimmt und nicht ohne Weiteres veränderbar.",
+          "example": "Wir brauchen einen festen Termin für das Gespräch.",
+          "example_ru": "Нам нужна согласованная дата разговора.",
+          "forms": "fest · fester · am festesten",
+          "grammar_hint": "ein fester Termin, feste Arbeitszeiten. В смысле окончательно установленного значения степени сравнения обычно не нужны.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fest"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 454,
+          "record": {
+            "id": "dict_04ed3c6658cb1a4a1704",
+            "de": "das Fest",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "праздник",
+              "торжество"
+            ],
+            "definition_de": "Eine besondere Veranstaltung, bei der Menschen gemeinsam feiern.",
+            "example": "Wir organisieren ein Fest für unsere Nachbarn.",
+            "example_ru": "Мы организуем праздник для наших соседей.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Fest"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Feste",
+            "topic": "Праздники и традиции",
+            "topics": [
+              "Праздники и традиции"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 69,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "High body fat vs fatty food; related property, distinct context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_022.json",
+        "sha": "6540fbfa0c4438750447b8545f19c0c157146086",
+        "batch": 22,
+        "row": 11,
+        "record": {
+          "id": "b1-fett-fat-animal",
+          "de": "fett",
+          "lemma": "fett",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "толстый",
+            "жирный (о животном)"
+          ],
+          "definition_de": "Sehr viel Körperfett aufweisend.",
+          "example": "Die Katze ist nach dem Winter ziemlich fett geworden.",
+          "example_ru": "После зимы кошка сильно растолстела.",
+          "forms": "fett · fetter · am fettesten",
+          "grammar_hint": "О человеке fett может звучать оскорбительно. Нейтральнее: übergewichtig. О жирной пище значение уже на A2.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fett"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 405,
+          "record": {
+            "id": "dict_cd726aac997056227cb9",
+            "de": "fett",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "жирный (о пище)"
+            ],
+            "definition_de": "Bei Lebensmitteln: mit einem hohen Anteil an Fett.",
+            "forms": "fett · fetter · am fettesten",
+            "example": "Diese Soße ist mir zu fett.",
+            "example_ru": "Этот соус для меня слишком жирный.",
+            "grammar_hint": "",
+            "usage_note": "Подтверждено жирный/с высоким содержанием жира о пище. Другие значения (толстый, полужирный, сленг крутой) не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/fett"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 70,
+      "decision": "retain_distinct_sense",
+      "reason": "Noun fat as nutrient vs adjective fatty.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_022.json",
+        "sha": "6540fbfa0c4438750447b8545f19c0c157146086",
+        "batch": 22,
+        "row": 12,
+        "record": {
+          "id": "b1-fett-fat-nutrient",
+          "de": "das Fett",
+          "lemma": "Fett",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "жир",
+            "жиры (пищевые)"
+          ],
+          "definition_de": "Ein Nährstoff, der etwa in Öl oder Butter vorkommt.",
+          "example": "Nüsse enthalten verschiedene Fette.",
+          "example_ru": "Орехи содержат разные жиры.",
+          "forms": "die Fette (виды); часто Singular",
+          "grammar_hint": "pflanzliche / tierische Fette; fettarm — с низким содержанием жира.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Fett"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 405,
+          "record": {
+            "id": "dict_cd726aac997056227cb9",
+            "de": "fett",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "жирный (о пище)"
+            ],
+            "definition_de": "Bei Lebensmitteln: mit einem hohen Anteil an Fett.",
+            "forms": "fett · fetter · am fettesten",
+            "example": "Diese Soße ist mir zu fett.",
+            "example_ru": "Этот соус для меня слишком жирный.",
+            "grammar_hint": "",
+            "usage_note": "Подтверждено жирный/с высоким содержанием жира о пище. Другие значения (толстый, полужирный, сленг крутой) не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/fett"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 71,
+      "decision": "retain_distinct_sense",
+      "reason": "Evaluating/opinion vs finding something.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_022.json",
+        "sha": "6540fbfa0c4438750447b8545f19c0c157146086",
+        "batch": 22,
+        "row": 22,
+        "record": {
+          "id": "b1-finden-opinion",
+          "de": "finden",
+          "lemma": "finden",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "считать",
+            "находить (оценка, мнение)"
+          ],
+          "definition_de": "Eine persönliche Bewertung über jemanden oder etwas haben.",
+          "example": "Ich finde diese Erklärung sehr verständlich.",
+          "example_ru": "Я считаю это объяснение очень понятным.",
+          "forms": "findet · fand · hat gefunden",
+          "grammar_hint": "etwas / jemanden + Adjektiv finden; Ich finde, dass … — глагол придаточного в конце. Значение «находить» уже на A1.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/finden"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 288,
+          "record": {
+            "id": "a1-217-1",
+            "de": "finden",
+            "lemma": "finden",
+            "ru": "находить",
+            "uk": "",
+            "translations_ru": [
+              "находить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "findet · fand · hat gefunden",
+            "definition_de": "Etwas entdecken, das man gesucht hat.",
+            "example": "Ich finde meinen Schlüssel nicht.",
+            "example_ru": "Я не могу найти свой ключ.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "row_id": "9375a0a9c9d7942636b9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 72,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 Flasche example already demonstrates bottle as quantity (zwei Flaschen Wasser); propose adding B1 phrase as usage variant rather than treating it as newly leveled lexical sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_022.json",
+        "sha": "6540fbfa0c4438750447b8545f19c0c157146086",
+        "batch": 22,
+        "row": 27,
+        "record": {
+          "id": "b1-flasche-measure",
+          "de": "eine Flasche + Getränk",
+          "lemma": "Flasche",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "бутылка (как количество напитка)"
+          ],
+          "definition_de": "Eine Mengenangabe für den Inhalt einer Flasche.",
+          "example": "Wir bestellen eine Flasche Mineralwasser.",
+          "example_ru": "Мы заказываем бутылку минеральной воды.",
+          "forms": "die Flasche · die Flaschen",
+          "grammar_hint": "eine Flasche Wasser; zwei Flaschen Saft. В значении меры название напитка обычно без артикля.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Flasche",
+              "https://www.duden.de/rechtschreibung/Flasche"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 289,
+          "record": {
+            "id": "a1-218-1",
+            "de": "die Flasche",
+            "lemma": "Flasche",
+            "ru": "бутылка",
+            "uk": "",
+            "translations_ru": [
+              "бутылка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Flaschen",
+            "definition_de": "Ein Gefäß mit engem Hals, meist für Flüssigkeiten.",
+            "example": "Ich kaufe zwei Flaschen Wasser.",
+            "example_ru": "Я куплю две бутылки воды.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "891f50591e6fffc4346a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-218-1",
+        "alias_id": "b1-flasche-measure",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source actually attests quantity usage, not just original app example; ensure consumer supports usage_variants and phrase-specific exercise behavior; test progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-218-1",
+          "de": "die Flasche",
+          "lemma": "Flasche",
+          "ru": "бутылка; бутылка (как количество напитка)",
+          "uk": "",
+          "translations_ru": [
+            "бутылка",
+            "бутылка (как количество напитка)"
+          ],
+          "part": "noun",
+          "level": "A1",
+          "topic": "Еда",
+          "topics": [
+            "Еда",
+            "Еда и напитки"
+          ],
+          "forms": "die Flaschen",
+          "definition_de": "Ein Gefäß mit engem Hals, meist für Flüssigkeiten.",
+          "example": "Ich kaufe zwei Flaschen Wasser.",
+          "example_ru": "Я куплю две бутылки воды.",
+          "note": "",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 15,
+              "row_id": "891f50591e6fffc4346a"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "eine Flasche Wasser; zwei Flaschen Saft. В значении меры название напитка обычно без артикля.",
+          "alternative_examples": [
+            {
+              "de": "Wir bestellen eine Flasche Mineralwasser.",
+              "ru": "Мы заказываем бутылку минеральной воды."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "eine Flasche + Getränk",
+              "part": "phrase",
+              "forms": "die Flasche · die Flaschen",
+              "definition_de": "Eine Mengenangabe für den Inhalt einer Flasche.",
+              "translations_ru": [
+                "бутылка (как количество напитка)"
+              ],
+              "grammar_hint": "eine Flasche Wasser; zwei Flaschen Saft. В значении меры название напитка обычно без артикля.",
+              "example": "Wir bestellen eine Flasche Mineralwasser.",
+              "example_ru": "Мы заказываем бутылку минеральной воды."
+            }
+          ],
+          "alias_ids": [
+            "b1-flasche-measure"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 40,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Flasche",
+              "https://www.duden.de/rechtschreibung/Flasche"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,3025 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of staged B1 and lower-level records. Conditional proposals only; no new independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    413,
+    432
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 14,
+  "retained_distinct_senses": 4,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [
+    {
+      "id": "a1-353-1",
+      "issue": "Reconcile the proposals for können across stages 021 and 022 before release."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 413,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "base example already uses a request; keep Konjunktiv II distinct in practice",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 9,
+        "record": {
+          "id": "b1-koennen-request",
+          "de": "Können Sie …? / Könnten Sie …?",
+          "lemma": "können",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "можете ли вы …?",
+            "не могли бы вы …?"
+          ],
+          "definition_de": "Eine andere Person höflich um eine Handlung bitten.",
+          "example": "Könnten Sie mir den Weg zur Bibliothek zeigen?",
+          "example_ru": "Не могли бы вы показать мне дорогу к библиотеке?",
+          "forms": "kann · konnte · hat können (mit Infinitiv); Konjunktiv II: könnte",
+          "grammar_hint": "Könnten Sie …? — более вежливая форма просьбы; können / könnten на первом месте, основной инфинитив в конце.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%B6nnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 434,
+          "record": {
+            "id": "a1-353-1",
+            "de": "können",
+            "lemma": "können",
+            "ru": "уметь; мочь",
+            "uk": "",
+            "translations_ru": [
+              "уметь",
+              "мочь"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "kann · konnte · hat gekonnt",
+            "definition_de": "Die Fähigkeit oder Möglichkeit haben, etwas zu tun.",
+            "example": "Kannst du mir helfen?",
+            "example_ru": "Можешь мне помочь?",
+            "note": "Самостоятельно: hat gekonnt; с другим инфинитивом: hat helfen können. Модальный глагол: второй глагол в Infinitiv без zu в конце главного предложения. В придаточном: …, weil ich kommen kann.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "199a3372be3b572523a2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-353-1",
+        "alias_id": "b1-koennen-request",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-353-1"
+      }
+    },
+    {
+      "candidate_number": 414,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "language proficiency with omitted infinitive",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 10,
+        "record": {
+          "id": "b1-koennen-language",
+          "de": "können",
+          "lemma": "können",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "владеть (языком)",
+            "знать (что-либо на практике)"
+          ],
+          "definition_de": "Eine Sprache oder Fertigkeit beherrschen.",
+          "example": "Meine Kollegin kann gut Italienisch.",
+          "example_ru": "Моя коллега хорошо знает итальянский.",
+          "forms": "kann · konnte · hat gekonnt (ohne Infinitiv)",
+          "grammar_hint": "Без зависимого инфинитива: hat gekonnt; с инфинитивом: hat sprechen können. Сравните kennen — быть знакомым, wissen — знать факт.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%B6nnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 434,
+          "record": {
+            "id": "a1-353-1",
+            "de": "können",
+            "lemma": "können",
+            "ru": "уметь; мочь",
+            "uk": "",
+            "translations_ru": [
+              "уметь",
+              "мочь"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "kann · konnte · hat gekonnt",
+            "definition_de": "Die Fähigkeit oder Möglichkeit haben, etwas zu tun.",
+            "example": "Kannst du mir helfen?",
+            "example_ru": "Можешь мне помочь?",
+            "note": "Самостоятельно: hat gekonnt; с другим инфинитивом: hat helfen können. Модальный глагол: второй глагол в Infinitiv без zu в конце главного предложения. В придаточном: …, weil ich kommen kann.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "199a3372be3b572523a2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 415,
+      "decision": "retain_distinct_sense",
+      "reason": "epistemic probability and dass clause",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 11,
+        "record": {
+          "id": "b1-koennen-probability",
+          "de": "Es kann sein, dass …",
+          "lemma": "können",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "возможно, что …",
+            "может быть, что …"
+          ],
+          "definition_de": "Drückt aus, dass ein Sachverhalt möglicherweise zutrifft.",
+          "example": "Es kann sein, dass der Termin verschoben wird.",
+          "example_ru": "Возможно, встречу перенесут.",
+          "forms": "kann · konnte · hat können (mit Infinitiv)",
+          "grammar_hint": "Формальное es; после dass спрягаемый глагол в конце придаточного. Возможно также: Es könnte sein, dass …",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%B6nnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 434,
+          "record": {
+            "id": "a1-353-1",
+            "de": "können",
+            "lemma": "können",
+            "ru": "уметь; мочь",
+            "uk": "",
+            "translations_ru": [
+              "уметь",
+              "мочь"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "kann · konnte · hat gekonnt",
+            "definition_de": "Die Fähigkeit oder Möglichkeit haben, etwas zu tun.",
+            "example": "Kannst du mir helfen?",
+            "example_ru": "Можешь мне помочь?",
+            "note": "Самостоятельно: hat gekonnt; с другим инфинитивом: hat helfen können. Модальный глагол: второй глагол в Infinitiv без zu в конце главного предложения. В придаточном: …, weil ich kommen kann.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "199a3372be3b572523a2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 416,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Ich habe weiterhin Kontakt zu meinen ehemaligen Kolleginnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 15,
+        "record": {
+          "id": "b1-kontakt-connection",
+          "de": "der Kontakt",
+          "lemma": "Kontakt",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "контакт",
+            "связь",
+            "общение"
+          ],
+          "definition_de": "Eine Verbindung zwischen Personen, die sich austauschen können.",
+          "example": "Ich habe weiterhin Kontakt zu meinen ehemaligen Kolleginnen.",
+          "example_ru": "Я продолжаю поддерживать связь с бывшими коллегами.",
+          "forms": "die Kontakte",
+          "grammar_hint": "Kontakt zu + Dativ haben; mit jemandem in Kontakt bleiben (+ Dativ); Kontakt aufnehmen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kontakt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 74,
+          "record": {
+            "id": "dict_652e73f9fd35e4f6fd0a",
+            "de": "der Kontakt",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "контакт",
+              "связь"
+            ],
+            "definition_de": "Eine Beziehung oder Verbindung zwischen Menschen, die miteinander sprechen oder sich schreiben.",
+            "forms": "Plural · die Kontakte",
+            "example": "Ich habe noch Kontakt zu meiner alten Nachbarin.",
+            "example_ru": "Я всё ещё поддерживаю связь со своей бывшей соседкой.",
+            "grammar_hint": "",
+            "usage_note": "Сочетание Kontakt zu jemandem haben означает «поддерживать связь с кем-то».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kontakt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_652e73f9fd35e4f6fd0a",
+        "alias_id": "b1-kontakt-connection",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_652e73f9fd35e4f6fd0a"
+      }
+    },
+    {
+      "candidate_number": 417,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Die Firma überweist das Gehalt auf mein Konto.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 16,
+        "record": {
+          "id": "b1-konto-bank-account",
+          "de": "das Konto",
+          "lemma": "Konto",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "банковский счёт",
+            "счёт"
+          ],
+          "definition_de": "Ein bei einer Bank geführtes Konto für Geldbeträge und Buchungen.",
+          "example": "Die Firma überweist das Gehalt auf mein Konto.",
+          "example_ru": "Фирма переводит зарплату на мой счёт.",
+          "forms": "die Konten / Kontos / Konti",
+          "grammar_hint": "В Goethe: Konten; в Швейцарии встречается Konti. Geld auf ein Konto überweisen (+ Akkusativ); Geld auf dem Konto haben (+ Dativ).",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Konto"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 473,
+          "record": {
+            "id": "a1-354-1",
+            "de": "das Konto",
+            "lemma": "Konto",
+            "ru": "банковский счёт",
+            "uk": "",
+            "translations_ru": [
+              "банковский счёт"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "die Konten",
+            "definition_de": "Ein Bankkonto zeigt, wie viel Geld man bei einer Bank hat und welche Zahlungen man gemacht hat.",
+            "example": "Das Geld ist schon auf meinem Konto.",
+            "example_ru": "Деньги уже на моём счёте.",
+            "note": "auf dem Konto — на счёте; ein Konto eröffnen — открыть счёт. Компьютерная учётная запись (Benutzerkonto) не подтверждена этими примерами.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "4b9e14027f3de9e0a163"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-354-1",
+        "alias_id": "b1-konto-bank-account",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-354-1"
+      }
+    },
+    {
+      "candidate_number": 418,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Vor der Abfahrt kontrolliere ich den Reifendruck.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 18,
+        "record": {
+          "id": "b1-kontrollieren-check",
+          "de": "kontrollieren",
+          "lemma": "kontrollieren",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "проверять",
+            "контролировать"
+          ],
+          "definition_de": "Nachsehen, ob eine Sache oder ein Vorgang den Anforderungen entspricht.",
+          "example": "Vor der Abfahrt kontrolliere ich den Reifendruck.",
+          "example_ru": "Перед выездом я проверяю давление в шинах.",
+          "forms": "kontrolliert · kontrollierte · hat kontrolliert",
+          "grammar_hint": "etwas (Akkusativ) kontrollieren; kontrollieren, ob … — глагол придаточного в конце; Partizip II без ge-.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kontrollieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 389,
+          "record": {
+            "id": "dict_faad3f13e8b9e33d18b4",
+            "de": "kontrollieren",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "проверять",
+              "контролировать"
+            ],
+            "definition_de": "Etwas untersuchen, um festzustellen, ob alles richtig oder in Ordnung ist.",
+            "forms": "kontrolliert · kontrollierte · hat kontrolliert",
+            "example": "Die Mitarbeiterin kontrolliert unsere Fahrkarten.",
+            "example_ru": "Сотрудница проверяет наши билеты.",
+            "grammar_hint": "etwas kontrollieren + Akkusativ; -ieren → Partizip II без ge-.",
+            "usage_note": "kontrolliert — Präsens (er/sie/es) или Partizip II; отдельно прилагательное «сдержанный» не подтверждено данным контекстом.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kontrollieren"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_faad3f13e8b9e33d18b4",
+        "alias_id": "b1-kontrollieren-check",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_faad3f13e8b9e33d18b4"
+      }
+    },
+    {
+      "candidate_number": 419,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Für das Konzert am Freitag haben wir schon Tickets.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 21,
+        "record": {
+          "id": "b1-konzert-event",
+          "de": "das Konzert",
+          "lemma": "Konzert",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "концерт"
+          ],
+          "definition_de": "Eine Veranstaltung, bei der Musik vor Publikum gespielt wird.",
+          "example": "Für das Konzert am Freitag haben wir schon Tickets.",
+          "example_ru": "У нас уже есть билеты на концерт в пятницу.",
+          "forms": "die Konzerte",
+          "grammar_hint": "ein Konzert besuchen; Karten für + Akkusativ; auf einem Konzert / bei einem Konzert sein.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Konzert"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 72,
+          "record": {
+            "id": "dict_1cce4347f5a794c3ad76",
+            "de": "das Konzert",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "концерт"
+            ],
+            "definition_de": "Eine Veranstaltung, bei der Musiker vor Publikum spielen oder singen.",
+            "forms": "Plural · die Konzerte",
+            "example": "Wir haben zwei Karten für das Konzert am Freitag.",
+            "example_ru": "У нас два билета на концерт в пятницу.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Konzert"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_1cce4347f5a794c3ad76",
+        "alias_id": "b1-konzert-event",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_1cce4347f5a794c3ad76"
+      }
+    },
+    {
+      "candidate_number": 420,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Nach dem Sport tut mir der Kopf weh.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 22,
+        "record": {
+          "id": "b1-kopf-head",
+          "de": "der Kopf",
+          "lemma": "Kopf",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "голова"
+          ],
+          "definition_de": "Der Körperteil, in dem sich unter anderem das Gehirn und die Sinnesorgane befinden.",
+          "example": "Nach dem Sport tut mir der Kopf weh.",
+          "example_ru": "После спорта у меня болит голова.",
+          "forms": "die Köpfe",
+          "grammar_hint": "jemandem tut der Kopf weh (Dativ); Kopfschmerzen haben; sich den Kopf stoßen.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kopf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 474,
+          "record": {
+            "id": "a1-355-1",
+            "de": "der Kopf",
+            "lemma": "Kopf",
+            "ru": "голова",
+            "uk": "",
+            "translations_ru": [
+              "голова"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "die Köpfe",
+            "definition_de": "Der oberste Körperteil mit Gesicht und Gehirn.",
+            "example": "Mein Kopf tut seit heute Morgen weh.",
+            "example_ru": "У меня с утра болит голова.",
+            "note": "Pl. Köpfe. Kopfschmerzen — головная боль; der Kopf как руководитель, кочан и другие смыслы не подтверждены здесь.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "c17fc19979d39e7d1050"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-355-1",
+        "alias_id": "b1-kopf-head",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-355-1"
+      }
+    },
+    {
+      "candidate_number": 421,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "mental arithmetic uses im Kopf idiomatically",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 23,
+        "record": {
+          "id": "b1-kopf-mental",
+          "de": "im Kopf rechnen",
+          "lemma": "Kopf",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "считать в уме"
+          ],
+          "definition_de": "Eine Rechnung ohne schriftliche Notizen oder technische Hilfsmittel durchführen.",
+          "example": "Sie kann zweistellige Zahlen schnell im Kopf addieren.",
+          "example_ru": "Она умеет быстро складывать двузначные числа в уме.",
+          "forms": "im = in dem (+ Dativ); die Köpfe",
+          "grammar_hint": "im Kopf — в уме, мысленно; im Kopf rechnen; не обязательно буквально внутри головы.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kopf"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 474,
+          "record": {
+            "id": "a1-355-1",
+            "de": "der Kopf",
+            "lemma": "Kopf",
+            "ru": "голова",
+            "uk": "",
+            "translations_ru": [
+              "голова"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "die Köpfe",
+            "definition_de": "Der oberste Körperteil mit Gesicht und Gehirn.",
+            "example": "Mein Kopf tut seit heute Morgen weh.",
+            "example_ru": "У меня с утра болит голова.",
+            "note": "Pl. Köpfe. Kopfschmerzen — головная боль; der Kopf как руководитель, кочан и другие смыслы не подтверждены здесь.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "c17fc19979d39e7d1050"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 422,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Regelmäßige Bewegung tut dem Körper gut.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_047.json",
+        "sha": "b00bf9292afb91f723a9ee237b35a0f80866c57c",
+        "batch": 47,
+        "row": 28,
+        "record": {
+          "id": "b1-koerper-body",
+          "de": "der Körper",
+          "lemma": "Körper",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "тело",
+            "организм"
+          ],
+          "definition_de": "Die körperliche Gesamtheit eines Menschen oder Tieres.",
+          "example": "Regelmäßige Bewegung tut dem Körper gut.",
+          "example_ru": "Регулярное движение полезно для организма.",
+          "forms": "die Körper; Dativ Plural: den Körpern",
+          "grammar_hint": "der menschliche Körper; etwas für den Körper tun; guttun + Dativ.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%B6rper"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 61,
+          "record": {
+            "id": "dict_c893a621071caa4de06a",
+            "de": "der Körper",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "тело"
+            ],
+            "definition_de": "Der physische Teil eines Menschen oder eines Tieres.",
+            "forms": "Plural · die Körper",
+            "example": "Nach dem Sport braucht der Körper eine Pause.",
+            "example_ru": "После спорта телу нужен отдых.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/K%C3%B6rper"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c893a621071caa4de06a",
+        "alias_id": "b1-koerper-body",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c893a621071caa4de06a"
+      }
+    },
+    {
+      "candidate_number": 423,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Wie viel kostet die Monatskarte?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 3,
+        "record": {
+          "id": "b1-kosten-price",
+          "de": "kosten",
+          "lemma": "kosten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "стоить (о цене)"
+          ],
+          "definition_de": "Einen bestimmten Preis haben.",
+          "example": "Wie viel kostet die Monatskarte?",
+          "example_ru": "Сколько стоит месячный проездной?",
+          "forms": "kostet · kostete · hat gekostet",
+          "grammar_hint": "Wie viel kostet …? Das kostet mich 30 Franken. При указании лица в учебном примере используем Akkusativ: mich, dich.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kosten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 605,
+          "record": {
+            "id": "a1-356-1",
+            "de": "kosten",
+            "lemma": "kosten",
+            "ru": "стоить",
+            "uk": "",
+            "translations_ru": [
+              "стоить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "kostet · kostete · hat gekostet",
+            "definition_de": "Einen bestimmten Preis haben.",
+            "example": "Was kostet das Ticket?",
+            "example_ru": "Сколько стоит билет?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "0a2869d0f9fd71717642"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-356-1",
+        "alias_id": "b1-kosten-price",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-356-1"
+      }
+    },
+    {
+      "candidate_number": 424,
+      "decision": "retain_distinct_sense",
+      "reason": "requiring time or effort differs from price",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 4,
+        "record": {
+          "id": "b1-kosten-effort",
+          "de": "kosten",
+          "lemma": "kosten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "требовать",
+            "отнимать (время, силы)"
+          ],
+          "definition_de": "Einen Aufwand an Zeit oder Energie verursachen.",
+          "example": "Die Vorbereitung kostet mich viel Zeit.",
+          "example_ru": "Подготовка отнимает у меня много времени.",
+          "forms": "kostet · kostete · hat gekostet",
+          "grammar_hint": "etwas kostet jemanden Zeit / Kraft / Mühe; два Akkusativ: mich viel Zeit.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kosten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 605,
+          "record": {
+            "id": "a1-356-1",
+            "de": "kosten",
+            "lemma": "kosten",
+            "ru": "стоить",
+            "uk": "",
+            "translations_ru": [
+              "стоить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "kostet · kostete · hat gekostet",
+            "definition_de": "Einen bestimmten Preis haben.",
+            "example": "Was kostet das Ticket?",
+            "example_ru": "Сколько стоит билет?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "0a2869d0f9fd71717642"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 425,
+      "decision": "retain_distinct_sense",
+      "reason": "tasting food is a separate verb sense",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 5,
+        "record": {
+          "id": "b1-kosten-taste",
+          "de": "kosten",
+          "lemma": "kosten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "пробовать на вкус",
+            "дегустировать"
+          ],
+          "definition_de": "Eine kleine Menge eines Lebensmittels essen oder trinken, um seinen Geschmack zu beurteilen.",
+          "example": "Darf ich die hausgemachte Marmelade kosten?",
+          "example_ru": "Можно мне попробовать домашнее варенье?",
+          "forms": "kostet · kostete · hat gekostet",
+          "grammar_hint": "etwas (Akkusativ) kosten; в Goethe как австрийский вариант probieren, но слово понятно и в других регионах.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "regional_variant",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kosten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 605,
+          "record": {
+            "id": "a1-356-1",
+            "de": "kosten",
+            "lemma": "kosten",
+            "ru": "стоить",
+            "uk": "",
+            "translations_ru": [
+              "стоить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "kostet · kostete · hat gekostet",
+            "definition_de": "Einen bestimmten Preis haben.",
+            "example": "Was kostet das Ticket?",
+            "example_ru": "Сколько стоит билет?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "0a2869d0f9fd71717642"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 426,
+      "decision": "retain_distinct_sense",
+      "reason": "plural noun for expenses",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 6,
+        "record": {
+          "id": "b1-kosten-expenses",
+          "de": "die Kosten",
+          "lemma": "Kosten",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "расходы",
+            "затраты",
+            "издержки"
+          ],
+          "definition_de": "Geldbeträge, die man für eine Sache oder Leistung aufbringen muss.",
+          "example": "Wer übernimmt die Kosten für die Reparatur?",
+          "example_ru": "Кто покроет расходы на ремонт?",
+          "forms": "только Plural в данном значении",
+          "grammar_hint": "die Kosten sind hoch; Kosten für + Akkusativ; Kosten übernehmen. Не путать с глаголом kosten.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kosten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 605,
+          "record": {
+            "id": "a1-356-1",
+            "de": "kosten",
+            "lemma": "kosten",
+            "ru": "стоить",
+            "uk": "",
+            "translations_ru": [
+              "стоить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "kostet · kostete · hat gekostet",
+            "definition_de": "Einen bestimmten Preis haben.",
+            "example": "Was kostet das Ticket?",
+            "example_ru": "Сколько стоит билет?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "0a2869d0f9fd71717642"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 427,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Die Beratung ist für alle Teilnehmer kostenlos.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 7,
+        "record": {
+          "id": "b1-kostenlos-free",
+          "de": "kostenlos",
+          "lemma": "kostenlos",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "бесплатный",
+            "бесплатно"
+          ],
+          "definition_de": "Ohne Bezahlung erhältlich oder nutzbar.",
+          "example": "Die Beratung ist für alle Teilnehmer kostenlos.",
+          "example_ru": "Консультация бесплатна для всех участников.",
+          "forms": "без степеней сравнения",
+          "grammar_hint": "kostenlose Beratung; kostenlos teilnehmen — без окончания; Synonyme: gratis, kostenfrei.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kostenlos"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 460,
+          "record": {
+            "id": "dict_156b87dd090ce62c2377",
+            "de": "kostenlos",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "бесплатный",
+              "бесплатно"
+            ],
+            "definition_de": "Ohne dass man dafür bezahlen muss.",
+            "forms": "Без степеней сравнения",
+            "example": "Der Eintritt ins Museum ist heute kostenlos.",
+            "example_ru": "Сегодня вход в музей бесплатный.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/kostenlos"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_156b87dd090ce62c2377",
+        "alias_id": "b1-kostenlos-free",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_156b87dd090ce62c2377"
+      }
+    },
+    {
+      "candidate_number": 428,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Ich bleibe heute zu Hause, weil ich krank bin.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 14,
+        "record": {
+          "id": "b1-krank-ill",
+          "de": "krank",
+          "lemma": "krank",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "больной",
+            "болен"
+          ],
+          "definition_de": "Gesundheitlich nicht in einem normalen Zustand.",
+          "example": "Ich bleibe heute zu Hause, weil ich krank bin.",
+          "example_ru": "Сегодня я останусь дома, потому что болею.",
+          "forms": "krank · kränker / kranker · am kränksten / am kranksten",
+          "grammar_hint": "krank sein / krank werden; ein krankes Kind. После weil спрягаемый глагол в конце.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/krank"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 40,
+          "record": {
+            "id": "health-krank",
+            "de": "krank",
+            "lemma": "krank",
+            "ru": "больной; нездоровый",
+            "uk": "",
+            "translations_ru": [
+              "больной",
+              "нездоровый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "kränker · am kränksten",
+            "definition_de": "Gesundheitlich nicht in Ordnung.",
+            "example": "Ich bin krank und bleibe zu Hause.",
+            "example_ru": "Я болею и остаюсь дома.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "62cbca73414931da1018"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "health-krank",
+        "alias_id": "b1-krank-ill",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "health-krank"
+      }
+    },
+    {
+      "candidate_number": 429,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Nach der Operation bleibt sie noch zwei Tage im Krankenhaus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 16,
+        "record": {
+          "id": "b1-krankenhaus-hospital",
+          "de": "das Krankenhaus",
+          "lemma": "Krankenhaus",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "больница",
+            "стационар"
+          ],
+          "definition_de": "Eine medizinische Einrichtung, in der Menschen untersucht und behandelt werden.",
+          "example": "Nach der Operation bleibt sie noch zwei Tage im Krankenhaus.",
+          "example_ru": "После операции она останется в больнице ещё два дня.",
+          "forms": "die Krankenhäuser",
+          "grammar_hint": "im Krankenhaus (Dativ), ins Krankenhaus (Akkusativ); CH также das Spital.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankenhaus"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 530,
+          "record": {
+            "id": "dict_c7d97ee097c4d64d0e0f",
+            "de": "das Krankenhaus",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "больница"
+            ],
+            "definition_de": "Eine Einrichtung, in der kranke oder verletzte Menschen medizinisch behandelt werden.",
+            "forms": "Plural · die Krankenhäuser",
+            "example": "Nach dem Unfall muss er ins Krankenhaus.",
+            "example_ru": "После несчастного случая ему нужно в больницу.",
+            "grammar_hint": "im Krankenhaus (Wo? Dativ); ins Krankenhaus (Wohin? Akkusativ).",
+            "usage_note": "В Швейцарии также das Spital.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Krankenhaus"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_c7d97ee097c4d64d0e0f",
+        "alias_id": "b1-krankenhaus-hospital",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_c7d97ee097c4d64d0e0f"
+      }
+    },
+    {
+      "candidate_number": 430,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Ich reiche die Rechnung bei meiner Krankenkasse ein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 17,
+        "record": {
+          "id": "b1-krankenkasse-insurer",
+          "de": "die Krankenkasse",
+          "lemma": "Krankenkasse",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "больничная касса",
+            "организация медицинского страхования"
+          ],
+          "definition_de": "Eine Einrichtung, die eine Krankenversicherung anbietet.",
+          "example": "Ich reiche die Rechnung bei meiner Krankenkasse ein.",
+          "example_ru": "Я подаю счёт в свою медицинскую страховую кассу.",
+          "forms": "die Krankenkassen",
+          "grammar_hint": "bei einer Krankenkasse versichert sein (+ Dativ); Krankenversicherung — медицинское страхование. Не означает больничную кассу для оплаты на месте.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankenkasse"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 531,
+          "record": {
+            "id": "canonical-a2-krankenkasse",
+            "de": "die Krankenkasse",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "медицинская страховая касса",
+              "компания медицинского страхования"
+            ],
+            "definition_de": "Eine Organisation, die ihre Versicherten bei Krankheitskosten absichert.",
+            "forms": "Plural · die Krankenkassen",
+            "example": "Ich möchte meine Krankenkasse wechseln.",
+            "example_ru": "Я хочу сменить свою медицинскую страховую компанию.",
+            "grammar_hint": "bei einer Krankenkasse versichert sein (+ Dativ).",
+            "usage_note": "Организация страхования, не больница.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Krankenkasse"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "canonical-a2-krankenkasse",
+        "alias_id": "b1-krankenkasse-insurer",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "canonical-a2-krankenkasse"
+      }
+    },
+    {
+      "candidate_number": 431,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Der Krankenpfleger hilft dem Patienten beim Aufstehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 18,
+        "record": {
+          "id": "b1-krankenpfleger-nurse",
+          "de": "der Krankenpfleger",
+          "lemma": "Krankenpfleger",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "медбрат",
+            "специалист по уходу за больными"
+          ],
+          "definition_de": "Ein Mann, der beruflich erkrankte Menschen pflegt und betreut.",
+          "example": "Der Krankenpfleger hilft dem Patienten beim Aufstehen.",
+          "example_ru": "Медбрат помогает пациенту встать.",
+          "forms": "die Krankenpfleger",
+          "grammar_hint": "Женская форма Krankenpflegerin; современные наименования включают Pflegefachmann / Pflegefachfrau; квалификации могут различаться.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankenpfleger"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 611,
+          "record": {
+            "id": "dict_bd0b754c834048dffd0a",
+            "de": "der Krankenpfleger",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "медбрат",
+              "медицинский брат"
+            ],
+            "forms": "Plural · die Krankenpfleger",
+            "definition_de": "Ein Mann, der beruflich kranke oder pflegebedürftige Menschen betreut und pflegt.",
+            "example": "Mein Bruder arbeitet als Krankenpfleger im Krankenhaus.",
+            "example_ru": "Мой брат работает медбратом в больнице.",
+            "grammar_hint": "После als при обозначении профессии обычно без артикля: als Krankenpfleger arbeiten.",
+            "usage_note": "Женский род: die Krankenpflegerin (Plural: die Krankenpflegerinnen); также Krankenschwester. Не путать с Pflegehelfer — помощник по уходу. Современное профессиональное название зависит от страны.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 5,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Krankenpfleger"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_bd0b754c834048dffd0a",
+        "alias_id": "b1-krankenpfleger-nurse",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_bd0b754c834048dffd0a"
+      }
+    },
+    {
+      "candidate_number": 432,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same sense in context: Die Ärztin erklärt, wie man diese Krankheit behandeln kann.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 21,
+        "record": {
+          "id": "b1-krankheit-disease",
+          "de": "die Krankheit",
+          "lemma": "Krankheit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "болезнь",
+            "заболевание"
+          ],
+          "definition_de": "Eine gesundheitliche Störung, die körperliche oder seelische Funktionen beeinträchtigt.",
+          "example": "Die Ärztin erklärt, wie man diese Krankheit behandeln kann.",
+          "example_ru": "Врач объясняет, как можно лечить это заболевание.",
+          "forms": "die Krankheiten",
+          "grammar_hint": "an einer Krankheit leiden (+ Dativ); gegen eine Krankheit impfen (+ Akkusativ).",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankheit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 59,
+          "record": {
+            "id": "dict_55e2777e4b841c6d4029",
+            "de": "die Krankheit",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "болезнь",
+              "заболевание"
+            ],
+            "definition_de": "Ein Zustand, bei dem jemand nicht gesund ist.",
+            "forms": "Plural · die Krankheiten",
+            "example": "Wegen einer Krankheit bleibt sie diese Woche zu Hause.",
+            "example_ru": "Из-за болезни она остаётся дома на этой неделе.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Krankheit"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_55e2777e4b841c6d4029",
+        "alias_id": "b1-krankheit-disease",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_55e2777e4b841c6d4029"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-353-1",
+      "alias_ids": [
+        "b1-koennen-request"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-353-1",
+        "de": "können",
+        "lemma": "können",
+        "ru": "уметь; мочь",
+        "uk": "",
+        "translations_ru": [
+          "уметь",
+          "мочь"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "kann · konnte · hat gekonnt",
+        "definition_de": "Die Fähigkeit oder Möglichkeit haben, etwas zu tun.",
+        "example": "Kannst du mir helfen?",
+        "example_ru": "Можешь мне помочь?",
+        "note": "Самостоятельно: hat gekonnt; с другим инфинитивом: hat helfen können. Модальный глагол: второй глагол в Infinitiv без zu в конце главного предложения. В придаточном: …, weil ich kommen kann.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "199a3372be3b572523a2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Könnten Sie …? — более вежливая форма просьбы; können / könnten на первом месте, основной инфинитив в конце.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Könnten Sie mir den Weg zur Bibliothek zeigen?",
+            "ru": "Не могли бы вы показать мне дорогу к библиотеке?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-koennen-request",
+            "de": "Können Sie …? / Könnten Sie …?",
+            "part": "phrase",
+            "forms": "kann · konnte · hat können (mit Infinitiv); Konjunktiv II: könnte",
+            "definition_de": "Eine andere Person höflich um eine Handlung bitten.",
+            "translations_ru": [
+              "можете ли вы …?",
+              "не могли бы вы …?"
+            ],
+            "grammar_hint": "Könnten Sie …? — более вежливая форма просьбы; können / könnten на первом месте, основной инфинитив в конце.",
+            "example": "Könnten Sie mir den Weg zur Bibliothek zeigen?",
+            "example_ru": "Не могли бы вы показать мне дорогу к библиотеке?"
+          }
+        ],
+        "alias_ids": [
+          "b1-koennen-request"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%B6nnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_652e73f9fd35e4f6fd0a",
+      "alias_ids": [
+        "b1-kontakt-connection"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_652e73f9fd35e4f6fd0a",
+        "de": "der Kontakt",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "контакт",
+          "связь"
+        ],
+        "definition_de": "Eine Beziehung oder Verbindung zwischen Menschen, die miteinander sprechen oder sich schreiben.",
+        "forms": "Plural · die Kontakte",
+        "example": "Ich habe noch Kontakt zu meiner alten Nachbarin.",
+        "example_ru": "Я всё ещё поддерживаю связь со своей бывшей соседкой.",
+        "grammar_hint": "Kontakt zu + Dativ haben; mit jemandem in Kontakt bleiben (+ Dativ); Kontakt aufnehmen.",
+        "usage_note": "Сочетание Kontakt zu jemandem haben означает «поддерживать связь с кем-то».",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kontakt"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения",
+          "Общение"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Ich habe weiterhin Kontakt zu meinen ehemaligen Kolleginnen.",
+            "ru": "Я продолжаю поддерживать связь с бывшими коллегами."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kontakt-connection",
+            "de": "der Kontakt",
+            "part": "noun",
+            "forms": "die Kontakte",
+            "definition_de": "Eine Verbindung zwischen Personen, die sich austauschen können.",
+            "translations_ru": [
+              "контакт",
+              "связь",
+              "общение"
+            ],
+            "grammar_hint": "Kontakt zu + Dativ haben; mit jemandem in Kontakt bleiben (+ Dativ); Kontakt aufnehmen.",
+            "example": "Ich habe weiterhin Kontakt zu meinen ehemaligen Kolleginnen.",
+            "example_ru": "Я продолжаю поддерживать связь с бывшими коллегами."
+          }
+        ],
+        "alias_ids": [
+          "b1-kontakt-connection"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kontakt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-354-1",
+      "alias_ids": [
+        "b1-konto-bank-account"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-354-1",
+        "de": "das Konto",
+        "lemma": "Konto",
+        "ru": "банковский счёт",
+        "uk": "",
+        "translations_ru": [
+          "банковский счёт"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения",
+          "Деньги и банки"
+        ],
+        "forms": "die Konten",
+        "definition_de": "Ein Bankkonto zeigt, wie viel Geld man bei einer Bank hat und welche Zahlungen man gemacht hat.",
+        "example": "Das Geld ist schon auf meinem Konto.",
+        "example_ru": "Деньги уже на моём счёте.",
+        "note": "auf dem Konto — на счёте; ein Konto eröffnen — открыть счёт. Компьютерная учётная запись (Benutzerkonto) не подтверждена этими примерами.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "4b9e14027f3de9e0a163"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "В Goethe: Konten; в Швейцарии встречается Konti. Geld auf ein Konto überweisen (+ Akkusativ); Geld auf dem Konto haben (+ Dativ).",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Die Firma überweist das Gehalt auf mein Konto.",
+            "ru": "Фирма переводит зарплату на мой счёт."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-konto-bank-account",
+            "de": "das Konto",
+            "part": "noun",
+            "forms": "die Konten / Kontos / Konti",
+            "definition_de": "Ein bei einer Bank geführtes Konto für Geldbeträge und Buchungen.",
+            "translations_ru": [
+              "банковский счёт",
+              "счёт"
+            ],
+            "grammar_hint": "В Goethe: Konten; в Швейцарии встречается Konti. Geld auf ein Konto überweisen (+ Akkusativ); Geld auf dem Konto haben (+ Dativ).",
+            "example": "Die Firma überweist das Gehalt auf mein Konto.",
+            "example_ru": "Фирма переводит зарплату на мой счёт."
+          }
+        ],
+        "alias_ids": [
+          "b1-konto-bank-account"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Konto"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_faad3f13e8b9e33d18b4",
+      "alias_ids": [
+        "b1-kontrollieren-check"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_faad3f13e8b9e33d18b4",
+        "de": "kontrollieren",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "проверять",
+          "контролировать"
+        ],
+        "definition_de": "Etwas untersuchen, um festzustellen, ob alles richtig oder in Ordnung ist.",
+        "forms": "kontrolliert · kontrollierte · hat kontrolliert",
+        "example": "Die Mitarbeiterin kontrolliert unsere Fahrkarten.",
+        "example_ru": "Сотрудница проверяет наши билеты.",
+        "grammar_hint": "etwas kontrollieren + Akkusativ; -ieren → Partizip II без ge-.\netwas (Akkusativ) kontrollieren; kontrollieren, ob … — глагол придаточного в конце; Partizip II без ge-.",
+        "usage_note": "kontrolliert — Präsens (er/sie/es) или Partizip II; отдельно прилагательное «сдержанный» не подтверждено данным контекстом.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/kontrollieren"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Работа и профессии",
+        "topics": [
+          "Работа и профессии",
+          "Транспорт и путешествия"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Vor der Abfahrt kontrolliere ich den Reifendruck.",
+            "ru": "Перед выездом я проверяю давление в шинах."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kontrollieren-check",
+            "de": "kontrollieren",
+            "part": "verb",
+            "forms": "kontrolliert · kontrollierte · hat kontrolliert",
+            "definition_de": "Nachsehen, ob eine Sache oder ein Vorgang den Anforderungen entspricht.",
+            "translations_ru": [
+              "проверять",
+              "контролировать"
+            ],
+            "grammar_hint": "etwas (Akkusativ) kontrollieren; kontrollieren, ob … — глагол придаточного в конце; Partizip II без ge-.",
+            "example": "Vor der Abfahrt kontrolliere ich den Reifendruck.",
+            "example_ru": "Перед выездом я проверяю давление в шинах."
+          }
+        ],
+        "alias_ids": [
+          "b1-kontrollieren-check"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kontrollieren"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_1cce4347f5a794c3ad76",
+      "alias_ids": [
+        "b1-konzert-event"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_1cce4347f5a794c3ad76",
+        "de": "das Konzert",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "концерт"
+        ],
+        "definition_de": "Eine Veranstaltung, bei der Musiker vor Publikum spielen oder singen.",
+        "forms": "Plural · die Konzerte",
+        "example": "Wir haben zwei Karten für das Konzert am Freitag.",
+        "example_ru": "У нас два билета на концерт в пятницу.",
+        "grammar_hint": "ein Konzert besuchen; Karten für + Akkusativ; auf einem Konzert / bei einem Konzert sein.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Konzert"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения",
+          "Досуг и культура"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Für das Konzert am Freitag haben wir schon Tickets.",
+            "ru": "У нас уже есть билеты на концерт в пятницу."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-konzert-event",
+            "de": "das Konzert",
+            "part": "noun",
+            "forms": "die Konzerte",
+            "definition_de": "Eine Veranstaltung, bei der Musik vor Publikum gespielt wird.",
+            "translations_ru": [
+              "концерт"
+            ],
+            "grammar_hint": "ein Konzert besuchen; Karten für + Akkusativ; auf einem Konzert / bei einem Konzert sein.",
+            "example": "Für das Konzert am Freitag haben wir schon Tickets.",
+            "example_ru": "У нас уже есть билеты на концерт в пятницу."
+          }
+        ],
+        "alias_ids": [
+          "b1-konzert-event"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Konzert"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-355-1",
+      "alias_ids": [
+        "b1-kopf-head"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-355-1",
+        "de": "der Kopf",
+        "lemma": "Kopf",
+        "ru": "голова",
+        "uk": "",
+        "translations_ru": [
+          "голова"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "die Köpfe",
+        "definition_de": "Der oberste Körperteil mit Gesicht und Gehirn.",
+        "example": "Mein Kopf tut seit heute Morgen weh.",
+        "example_ru": "У меня с утра болит голова.",
+        "note": "Pl. Köpfe. Kopfschmerzen — головная боль; der Kopf как руководитель, кочан и другие смыслы не подтверждены здесь.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "c17fc19979d39e7d1050"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem tut der Kopf weh (Dativ); Kopfschmerzen haben; sich den Kopf stoßen.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Nach dem Sport tut mir der Kopf weh.",
+            "ru": "После спорта у меня болит голова."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kopf-head",
+            "de": "der Kopf",
+            "part": "noun",
+            "forms": "die Köpfe",
+            "definition_de": "Der Körperteil, in dem sich unter anderem das Gehirn und die Sinnesorgane befinden.",
+            "translations_ru": [
+              "голова"
+            ],
+            "grammar_hint": "jemandem tut der Kopf weh (Dativ); Kopfschmerzen haben; sich den Kopf stoßen.",
+            "example": "Nach dem Sport tut mir der Kopf weh.",
+            "example_ru": "После спорта у меня болит голова."
+          }
+        ],
+        "alias_ids": [
+          "b1-kopf-head"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kopf"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_c893a621071caa4de06a",
+      "alias_ids": [
+        "b1-koerper-body"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c893a621071caa4de06a",
+        "de": "der Körper",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "тело"
+        ],
+        "definition_de": "Der physische Teil eines Menschen oder eines Tieres.",
+        "forms": "Plural · die Körper",
+        "example": "Nach dem Sport braucht der Körper eine Pause.",
+        "example_ru": "После спорта телу нужен отдых.",
+        "grammar_hint": "der menschliche Körper; etwas für den Körper tun; guttun + Dativ.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/K%C3%B6rper"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Regelmäßige Bewegung tut dem Körper gut.",
+            "ru": "Регулярное движение полезно для организма."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-koerper-body",
+            "de": "der Körper",
+            "part": "noun",
+            "forms": "die Körper; Dativ Plural: den Körpern",
+            "definition_de": "Die körperliche Gesamtheit eines Menschen oder Tieres.",
+            "translations_ru": [
+              "тело",
+              "организм"
+            ],
+            "grammar_hint": "der menschliche Körper; etwas für den Körper tun; guttun + Dativ.",
+            "example": "Regelmäßige Bewegung tut dem Körper gut.",
+            "example_ru": "Регулярное движение полезно для организма."
+          }
+        ],
+        "alias_ids": [
+          "b1-koerper-body"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 56,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%B6rper"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-356-1",
+      "alias_ids": [
+        "b1-kosten-price"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-356-1",
+        "de": "kosten",
+        "lemma": "kosten",
+        "ru": "стоить",
+        "uk": "",
+        "translations_ru": [
+          "стоить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки",
+          "Покупки и услуги"
+        ],
+        "forms": "kostet · kostete · hat gekostet",
+        "definition_de": "Einen bestimmten Preis haben.",
+        "example": "Was kostet das Ticket?",
+        "example_ru": "Сколько стоит билет?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "0a2869d0f9fd71717642"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wie viel kostet …? Das kostet mich 30 Franken. При указании лица в учебном примере используем Akkusativ: mich, dich.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Wie viel kostet die Monatskarte?",
+            "ru": "Сколько стоит месячный проездной?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kosten-price",
+            "de": "kosten",
+            "part": "verb",
+            "forms": "kostet · kostete · hat gekostet",
+            "definition_de": "Einen bestimmten Preis haben.",
+            "translations_ru": [
+              "стоить (о цене)"
+            ],
+            "grammar_hint": "Wie viel kostet …? Das kostet mich 30 Franken. При указании лица в учебном примере используем Akkusativ: mich, dich.",
+            "example": "Wie viel kostet die Monatskarte?",
+            "example_ru": "Сколько стоит месячный проездной?"
+          }
+        ],
+        "alias_ids": [
+          "b1-kosten-price"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kosten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_156b87dd090ce62c2377",
+      "alias_ids": [
+        "b1-kostenlos-free"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_156b87dd090ce62c2377",
+        "de": "kostenlos",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "бесплатный",
+          "бесплатно"
+        ],
+        "definition_de": "Ohne dass man dafür bezahlen muss.",
+        "forms": "Без степеней сравнения",
+        "example": "Der Eintritt ins Museum ist heute kostenlos.",
+        "example_ru": "Сегодня вход в музей бесплатный.",
+        "grammar_hint": "kostenlose Beratung; kostenlos teilnehmen — без окончания; Synonyme: gratis, kostenfrei.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/kostenlos"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги",
+          "Покупки и услуги"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Die Beratung ist für alle Teilnehmer kostenlos.",
+            "ru": "Консультация бесплатна для всех участников."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kostenlos-free",
+            "de": "kostenlos",
+            "part": "adj",
+            "forms": "без степеней сравнения",
+            "definition_de": "Ohne Bezahlung erhältlich oder nutzbar.",
+            "translations_ru": [
+              "бесплатный",
+              "бесплатно"
+            ],
+            "grammar_hint": "kostenlose Beratung; kostenlos teilnehmen — без окончания; Synonyme: gratis, kostenfrei.",
+            "example": "Die Beratung ist für alle Teilnehmer kostenlos.",
+            "example_ru": "Консультация бесплатна для всех участников."
+          }
+        ],
+        "alias_ids": [
+          "b1-kostenlos-free"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kostenlos"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "health-krank",
+      "alias_ids": [
+        "b1-krank-ill"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "health-krank",
+        "de": "krank",
+        "lemma": "krank",
+        "ru": "больной; нездоровый",
+        "uk": "",
+        "translations_ru": [
+          "больной",
+          "нездоровый"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "kränker · am kränksten",
+        "definition_de": "Gesundheitlich nicht in Ordnung.",
+        "example": "Ich bin krank und bleibe zu Hause.",
+        "example_ru": "Я болею и остаюсь дома.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "62cbca73414931da1018"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "krank sein / krank werden; ein krankes Kind. После weil спрягаемый глагол в конце.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Ich bleibe heute zu Hause, weil ich krank bin.",
+            "ru": "Сегодня я останусь дома, потому что болею."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-krank-ill",
+            "de": "krank",
+            "part": "adj",
+            "forms": "krank · kränker / kranker · am kränksten / am kranksten",
+            "definition_de": "Gesundheitlich nicht in einem normalen Zustand.",
+            "translations_ru": [
+              "больной",
+              "болен"
+            ],
+            "grammar_hint": "krank sein / krank werden; ein krankes Kind. После weil спрягаемый глагол в конце.",
+            "example": "Ich bleibe heute zu Hause, weil ich krank bin.",
+            "example_ru": "Сегодня я останусь дома, потому что болею."
+          }
+        ],
+        "alias_ids": [
+          "b1-krank-ill"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/krank"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_c7d97ee097c4d64d0e0f",
+      "alias_ids": [
+        "b1-krankenhaus-hospital"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_c7d97ee097c4d64d0e0f",
+        "de": "das Krankenhaus",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "больница"
+        ],
+        "definition_de": "Eine Einrichtung, in der kranke oder verletzte Menschen medizinisch behandelt werden.",
+        "forms": "Plural · die Krankenhäuser",
+        "example": "Nach dem Unfall muss er ins Krankenhaus.",
+        "example_ru": "После несчастного случая ему нужно в больницу.",
+        "grammar_hint": "im Krankenhaus (Wo? Dativ); ins Krankenhaus (Wohin? Akkusativ).\nim Krankenhaus (Dativ), ins Krankenhaus (Akkusativ); CH также das Spital.",
+        "usage_note": "В Швейцарии также das Spital.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Krankenhaus"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Nach der Operation bleibt sie noch zwei Tage im Krankenhaus.",
+            "ru": "После операции она останется в больнице ещё два дня."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-krankenhaus-hospital",
+            "de": "das Krankenhaus",
+            "part": "noun",
+            "forms": "die Krankenhäuser",
+            "definition_de": "Eine medizinische Einrichtung, in der Menschen untersucht und behandelt werden.",
+            "translations_ru": [
+              "больница",
+              "стационар"
+            ],
+            "grammar_hint": "im Krankenhaus (Dativ), ins Krankenhaus (Akkusativ); CH также das Spital.",
+            "example": "Nach der Operation bleibt sie noch zwei Tage im Krankenhaus.",
+            "example_ru": "После операции она останется в больнице ещё два дня."
+          }
+        ],
+        "alias_ids": [
+          "b1-krankenhaus-hospital"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankenhaus"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "canonical-a2-krankenkasse",
+      "alias_ids": [
+        "b1-krankenkasse-insurer"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "canonical-a2-krankenkasse",
+        "de": "die Krankenkasse",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "медицинская страховая касса",
+          "компания медицинского страхования"
+        ],
+        "definition_de": "Eine Organisation, die ihre Versicherten bei Krankheitskosten absichert.",
+        "forms": "Plural · die Krankenkassen",
+        "example": "Ich möchte meine Krankenkasse wechseln.",
+        "example_ru": "Я хочу сменить свою медицинскую страховую компанию.",
+        "grammar_hint": "bei einer Krankenkasse versichert sein (+ Dativ).\nbei einer Krankenkasse versichert sein (+ Dativ); Krankenversicherung — медицинское страхование. Не означает больничную кассу для оплаты на месте.",
+        "usage_note": "Организация страхования, не больница.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Krankenkasse"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Ich reiche die Rechnung bei meiner Krankenkasse ein.",
+            "ru": "Я подаю счёт в свою медицинскую страховую кассу."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-krankenkasse-insurer",
+            "de": "die Krankenkasse",
+            "part": "noun",
+            "forms": "die Krankenkassen",
+            "definition_de": "Eine Einrichtung, die eine Krankenversicherung anbietet.",
+            "translations_ru": [
+              "больничная касса",
+              "организация медицинского страхования"
+            ],
+            "grammar_hint": "bei einer Krankenkasse versichert sein (+ Dativ); Krankenversicherung — медицинское страхование. Не означает больничную кассу для оплаты на месте.",
+            "example": "Ich reiche die Rechnung bei meiner Krankenkasse ein.",
+            "example_ru": "Я подаю счёт в свою медицинскую страховую кассу."
+          }
+        ],
+        "alias_ids": [
+          "b1-krankenkasse-insurer"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankenkasse"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_bd0b754c834048dffd0a",
+      "alias_ids": [
+        "b1-krankenpfleger-nurse"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_bd0b754c834048dffd0a",
+        "de": "der Krankenpfleger",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "медбрат",
+          "медицинский брат"
+        ],
+        "forms": "Plural · die Krankenpfleger",
+        "definition_de": "Ein Mann, der beruflich kranke oder pflegebedürftige Menschen betreut und pflegt.",
+        "example": "Mein Bruder arbeitet als Krankenpfleger im Krankenhaus.",
+        "example_ru": "Мой брат работает медбратом в больнице.",
+        "grammar_hint": "После als при обозначении профессии обычно без артикля: als Krankenpfleger arbeiten.\nЖенская форма Krankenpflegerin; современные наименования включают Pflegefachmann / Pflegefachfrau; квалификации могут различаться.",
+        "usage_note": "Женский род: die Krankenpflegerin (Plural: die Krankenpflegerinnen); также Krankenschwester. Не путать с Pflegehelfer — помощник по уходу. Современное профессиональное название зависит от страны.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 5,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://www.duden.de/rechtschreibung/Krankenpfleger"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Работа и профессии"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Der Krankenpfleger hilft dem Patienten beim Aufstehen.",
+            "ru": "Медбрат помогает пациенту встать."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-krankenpfleger-nurse",
+            "de": "der Krankenpfleger",
+            "part": "noun",
+            "forms": "die Krankenpfleger",
+            "definition_de": "Ein Mann, der beruflich erkrankte Menschen pflegt und betreut.",
+            "translations_ru": [
+              "медбрат",
+              "специалист по уходу за больными"
+            ],
+            "grammar_hint": "Женская форма Krankenpflegerin; современные наименования включают Pflegefachmann / Pflegefachfrau; квалификации могут различаться.",
+            "example": "Der Krankenpfleger hilft dem Patienten beim Aufstehen.",
+            "example_ru": "Медбрат помогает пациенту встать."
+          }
+        ],
+        "alias_ids": [
+          "b1-krankenpfleger-nurse"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankenpfleger"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_55e2777e4b841c6d4029",
+      "alias_ids": [
+        "b1-krankheit-disease"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_55e2777e4b841c6d4029",
+        "de": "die Krankheit",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "болезнь",
+          "заболевание"
+        ],
+        "definition_de": "Ein Zustand, bei dem jemand nicht gesund ist.",
+        "forms": "Plural · die Krankheiten",
+        "example": "Wegen einer Krankheit bleibt sie diese Woche zu Hause.",
+        "example_ru": "Из-за болезни она остаётся дома на этой неделе.",
+        "grammar_hint": "an einer Krankheit leiden (+ Dativ); gegen eine Krankheit impfen (+ Akkusativ).",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Krankheit"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Die Ärztin erklärt, wie man diese Krankheit behandeln kann.",
+            "ru": "Врач объясняет, как можно лечить это заболевание."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-krankheit-disease",
+            "de": "die Krankheit",
+            "part": "noun",
+            "forms": "die Krankheiten",
+            "definition_de": "Eine gesundheitliche Störung, die körperliche oder seelische Funktionen beeinträchtigt.",
+            "translations_ru": [
+              "болезнь",
+              "заболевание"
+            ],
+            "grammar_hint": "an einer Krankheit leiden (+ Dativ); gegen eine Krankheit impfen (+ Akkusativ).",
+            "example": "Die Ärztin erklärt, wie man diese Krankheit behandeln kann.",
+            "example_ru": "Врач объясняет, как можно лечить это заболевание."
+          }
+        ],
+        "alias_ids": [
+          "b1-krankheit-disease"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krankheit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

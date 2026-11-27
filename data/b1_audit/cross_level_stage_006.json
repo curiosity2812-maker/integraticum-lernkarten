@@ -1,0 +1,3631 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of indexed candidates 93–112 using stored definitions, examples and hints. Six conditional merge proposals into five lower-level targets; genau proposals consolidated rather than competing overwrites. No independent CEFR or dictionary verification. Original IDs and level metadata unchanged.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    93,
+    112
+  ],
+  "reviewed": 20,
+  "merge_count": 6,
+  "merge_target_count": 5,
+  "retained_distinct_senses": 8,
+  "retained_teaching_contexts_pending_level_review": 6,
+  "followup_review": [
+    {
+      "id": "b1-gehen-procedure",
+      "issue": "A1 hint includes Wie geht das?; verify official source scope before merging."
+    },
+    {
+      "id": "b1-genau-adjectival",
+      "issue": "Review attributive adjective vs adverbial uses and preserve inflection. Two proposals share same lower target, consolidated."
+    },
+    {
+      "id": "b1-genug-quantity",
+      "issue": "Reconcile POS label adv vs pron/quantifier for noun modifier; retain degree use separately."
+    },
+    {
+      "id": "b1-gehen-attend-school",
+      "issue": "Compare with B1 zur Schule gehen phrase and lower-level school collocations."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 93,
+      "decision": "retain_distinct_sense",
+      "reason": "Remedy against illness vs collision, objection or opponent.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_026.json",
+        "sha": "13986f3ee1233ed1b4e4e58df8308aeee7f5ab0b",
+        "batch": 26,
+        "row": 18,
+        "record": {
+          "id": "b1-gegen-remedy",
+          "de": "gegen",
+          "lemma": "gegen",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "от",
+            "против (болезни или симптома)"
+          ],
+          "definition_de": "Kennzeichnet das Problem, dem ein Mittel entgegenwirken soll.",
+          "example": "Ich suche ein Mittel gegen Halsschmerzen.",
+          "example_ru": "Я ищу средство от боли в горле.",
+          "forms": "gegen + Akkusativ",
+          "grammar_hint": "ein Mittel gegen den Husten. Предлог всегда требует Akkusativ.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gegen",
+              "https://www.duden.de/rechtschreibung/gegen_wider"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 325,
+          "record": {
+            "id": "a1-250-1",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "о; об (столкновение)",
+            "uk": "",
+            "translations_ru": [
+              "о",
+              "об (столкновение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet etwas, an das man stößt oder prallt.",
+            "example": "Der Ball prallt gegen die Wand.",
+            "example_ru": "Мяч ударяется о стену.",
+            "note": "gegen + Akkusativ: gegen die Wand.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 326,
+          "record": {
+            "id": "a1-250-2",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (возражение)",
+            "uk": "",
+            "translations_ru": [
+              "против (возражение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass man etwas ablehnt.",
+            "example": "Ich bin gegen diesen Plan.",
+            "example_ru": "Я против этого плана.",
+            "note": "gegen + Akkusativ: gegen diesen Plan.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 327,
+          "record": {
+            "id": "a1-250-3",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (соперник)",
+            "uk": "",
+            "translations_ru": [
+              "против (соперник)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Gegner in einem Spiel.",
+            "example": "Heute spielen wir gegen Bern.",
+            "example_ru": "Сегодня мы играем против Берна.",
+            "note": "gegen + Akkusativ; у названия команды Bern падеж не виден: gegen den FC Bern.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 94,
+      "decision": "retain_distinct_sense",
+      "reason": "Exchange/payment or condition vs opposition.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_026.json",
+        "sha": "13986f3ee1233ed1b4e4e58df8308aeee7f5ab0b",
+        "batch": 26,
+        "row": 19,
+        "record": {
+          "id": "b1-gegen-payment",
+          "de": "gegen",
+          "lemma": "gegen",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "за",
+            "в обмен на",
+            "при условии предоставления"
+          ],
+          "definition_de": "Gibt eine Gegenleistung oder Bedingung für den Erhalt einer Sache an.",
+          "example": "Sie erhalten die Schlüssel gegen Vorlage des Ausweises.",
+          "example_ru": "Вы получите ключи при предъявлении удостоверения личности.",
+          "forms": "gegen + Akkusativ",
+          "grammar_hint": "gegen Barzahlung — за наличные; gegen eine Gebühr — за плату.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gegen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 325,
+          "record": {
+            "id": "a1-250-1",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "о; об (столкновение)",
+            "uk": "",
+            "translations_ru": [
+              "о",
+              "об (столкновение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet etwas, an das man stößt oder prallt.",
+            "example": "Der Ball prallt gegen die Wand.",
+            "example_ru": "Мяч ударяется о стену.",
+            "note": "gegen + Akkusativ: gegen die Wand.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 326,
+          "record": {
+            "id": "a1-250-2",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (возражение)",
+            "uk": "",
+            "translations_ru": [
+              "против (возражение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass man etwas ablehnt.",
+            "example": "Ich bin gegen diesen Plan.",
+            "example_ru": "Я против этого плана.",
+            "note": "gegen + Akkusativ: gegen diesen Plan.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 327,
+          "record": {
+            "id": "a1-250-3",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (соперник)",
+            "uk": "",
+            "translations_ru": [
+              "против (соперник)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Gegner in einem Spiel.",
+            "example": "Heute spielen wir gegen Bern.",
+            "example_ru": "Сегодня мы играем против Берна.",
+            "note": "gegen + Akkusativ; у названия команды Bern падеж не виден: gegen den FC Bern.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 95,
+      "decision": "retain_distinct_sense",
+      "reason": "Approximate time vs opposition.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_026.json",
+        "sha": "13986f3ee1233ed1b4e4e58df8308aeee7f5ab0b",
+        "batch": 26,
+        "row": 20,
+        "record": {
+          "id": "b1-gegen-time-approx",
+          "de": "gegen",
+          "lemma": "gegen",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "около",
+            "примерно (о времени)"
+          ],
+          "definition_de": "Bezeichnet einen ungefähren Zeitpunkt.",
+          "example": "Wir treffen uns gegen halb sieben.",
+          "example_ru": "Мы встретимся примерно в половине седьмого.",
+          "forms": "gegen + Akkusativ",
+          "grammar_hint": "gegen 18 Uhr — около 18:00, в отличие от um 18 Uhr — ровно в 18:00 по договорённости.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gegen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 325,
+          "record": {
+            "id": "a1-250-1",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "о; об (столкновение)",
+            "uk": "",
+            "translations_ru": [
+              "о",
+              "об (столкновение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet etwas, an das man stößt oder prallt.",
+            "example": "Der Ball prallt gegen die Wand.",
+            "example_ru": "Мяч ударяется о стену.",
+            "note": "gegen + Akkusativ: gegen die Wand.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 326,
+          "record": {
+            "id": "a1-250-2",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (возражение)",
+            "uk": "",
+            "translations_ru": [
+              "против (возражение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass man etwas ablehnt.",
+            "example": "Ich bin gegen diesen Plan.",
+            "example_ru": "Я против этого плана.",
+            "note": "gegen + Akkusativ: gegen diesen Plan.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 327,
+          "record": {
+            "id": "a1-250-3",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (соперник)",
+            "uk": "",
+            "translations_ru": [
+              "против (соперник)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Gegner in einem Spiel.",
+            "example": "Heute spielen wir gegen Bern.",
+            "example_ru": "Сегодня мы играем против Берна.",
+            "note": "gegen + Akkusativ; у названия команды Bern падеж не виден: gegen den FC Bern.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 96,
+      "decision": "retain_distinct_sense",
+      "reason": "Attitude toward someone vs spatial opposite.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_026.json",
+        "sha": "13986f3ee1233ed1b4e4e58df8308aeee7f5ab0b",
+        "batch": 26,
+        "row": 30,
+        "record": {
+          "id": "b1-gegenueber-attitude",
+          "de": "gegenüber",
+          "lemma": "gegenüber",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "по отношению к",
+            "в отношении",
+            "к (человеку)"
+          ],
+          "definition_de": "Bezeichnet eine Person oder Sache, auf die sich ein Verhalten oder eine Haltung richtet.",
+          "example": "Den neuen Teilnehmern gegenüber war sie sehr geduldig.",
+          "example_ru": "По отношению к новым участникам она была очень терпелива.",
+          "forms": "gegenüber + Dativ",
+          "grammar_hint": "Перед или после существительного: gegenüber den Teilnehmern / den Teilnehmern gegenüber. С личным местоимением обычно после: mir gegenüber. Пространственное значение уже на A2.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gegen%C3%BCber"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 10,
+          "record": {
+            "id": "dict_2edaa0092e33c946a930",
+            "de": "gegenüber",
+            "part": "prep",
+            "level": "A2",
+            "translations_ru": [
+              "напротив"
+            ],
+            "definition_de": "Bezeichnet eine Lage auf der anderen Seite.",
+            "example": "Die Apotheke liegt dem Bahnhof gegenüber.",
+            "example_ru": "Аптека находится напротив вокзала.",
+            "grammar_hint": "gegenüber + Dativ; может стоять перед или после существительного: gegenüber der Schule / der Schule gegenüber. С личным местоимением обычно после него: mir gegenüber.",
+            "usage_note": "Без дополнения gegenüber — наречие «напротив» (отдельная карточка). В переносном значении «по отношению к» также Dativ, но этот смысл не подтверждён данным примером A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/gegenüber",
+                "https://www.duden.de/rechtschreibung/gegenueber_Praeposition",
+                "https://de.wiktionary.org/wiki/gegen%C3%BCber"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "+ Dativ",
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 617,
+          "record": {
+            "id": "dict_2edaa0092e33c946a930-adv",
+            "de": "gegenüber",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "напротив",
+              "на противоположной стороне"
+            ],
+            "forms": "неизменяемое наречие",
+            "definition_de": "Auf der anderen Seite, ohne dass der Bezugspunkt ausdrücklich genannt wird.",
+            "example": "Die Bäckerei ist gleich gegenüber.",
+            "example_ru": "Пекарня находится прямо напротив.",
+            "grammar_hint": "Самостоятельное наречие места (Wo?), без управления падежом. Предлог gegenüber требует Dativ: gegenüber der Schule / der Schule gegenüber.",
+            "usage_note": "Не путать с существительным das Gegenüber — собеседник, человек напротив; это значение отдельно не подтверждено здесь для A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/gegen%C3%BCber",
+                "https://www.duden.de/rechtschreibung/gegenueber_Praeposition"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 97,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "School attendance vs physical movement; preserve collocation.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 3,
+        "record": {
+          "id": "b1-gehen-attend-school",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "ходить",
+            "учиться (в учебном заведении)"
+          ],
+          "definition_de": "Regelmäßig eine Schule oder andere Bildungseinrichtung besuchen.",
+          "example": "Mein Neffe geht seit August aufs Gymnasium.",
+          "example_ru": "Мой племянник с августа учится в гимназии.",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "zur Schule gehen; aufs Gymnasium gehen. Здесь имеется в виду обучение, а не конкретная прогулка.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 98,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Moving abroad vs leaving or walking; related motion/relocation context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 4,
+        "record": {
+          "id": "b1-gehen-move-abroad",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "уезжать",
+            "переезжать (в другую страну)"
+          ],
+          "definition_de": "Den bisherigen Lebensort verlassen, um anderswo zu leben oder zu arbeiten.",
+          "example": "Nach der Ausbildung möchte sie für einige Jahre ins Ausland gehen.",
+          "example_ru": "После обучения она хочет на несколько лет уехать за границу.",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "ins Ausland gehen; nach Kanada gehen. Не обязательно означает перемещение пешком.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 99,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Scheduled departure of transport vs person leaving; retain travel context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 5,
+        "record": {
+          "id": "b1-gehen-train-departure",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "отправляться",
+            "отходить (о транспорте)"
+          ],
+          "definition_de": "Zu einer bestimmten Zeit eine Fahrt beginnen.",
+          "example": "Wann geht der letzte Zug nach Bern?",
+          "example_ru": "Когда отправляется последний поезд в Берн?",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "В расписаниях чаще abfahren; der Zug geht um 21 Uhr — поезд отправляется в 21 час.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 100,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Course/progress of affairs vs operation or feasibility; related but distinct usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 6,
+        "record": {
+          "id": "b1-gehen-progress",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "идти",
+            "протекать",
+            "складываться (о ходе дела)"
+          ],
+          "definition_de": "Sich in einer bestimmten Weise entwickeln oder ablaufen.",
+          "example": "Mit dem neuen Plan geht alles viel besser.",
+          "example_ru": "С новым планом всё идёт гораздо лучше.",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "alles geht gut / schlecht; здесь не физическое движение.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 101,
+      "decision": "retain_distinct_sense",
+      "reason": "Fitting into a space vs walking or functioning.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 7,
+        "record": {
+          "id": "b1-gehen-fit",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "помещаться",
+            "влезать"
+          ],
+          "definition_de": "In einen begrenzten Raum hineinpassen.",
+          "example": "Der große Ordner geht nicht in diese Schublade.",
+          "example_ru": "Большая папка не помещается в этот ящик.",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "in + Akkusativ: in diese Schublade gehen. Синоним hineinpassen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 102,
+      "decision": "retain_distinct_sense",
+      "reason": "Windows facing a direction vs motion.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 8,
+        "record": {
+          "id": "b1-gehen-window-facing",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "выходить (об окнах, расположении)"
+          ],
+          "definition_de": "In eine bestimmte Richtung ausgerichtet sein.",
+          "example": "Die Fenster der Küche gehen zum Innenhof.",
+          "example_ru": "Окна кухни выходят во внутренний двор.",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "zum Hof (zu + Dativ) / auf den Hof (auf + Akkusativ) gehen. Здесь направление обзора.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 103,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Impersonal direction/route question vs walking; retain pattern.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 9,
+        "record": {
+          "id": "b1-gehen-route-direction",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "вести",
+            "проходить (о пути)"
+          ],
+          "definition_de": "Einen Weg oder Verlauf zu einem Ziel bezeichnen.",
+          "example": "Geht es hier zur nächsten Bushaltestelle?",
+          "example_ru": "Здесь можно пройти к ближайшей автобусной остановке?",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "Es geht hier zu + Dativ; Wo geht es zum Bahnhof? Здесь спрашивают направление.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 104,
+      "decision": "retain_distinct_sense",
+      "reason": "Moderate evaluation vs feasibility; retain idiom.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 10,
+        "record": {
+          "id": "b1-gehen-moderate",
+          "de": "Es geht. / Geht so.",
+          "lemma": "gehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "так себе",
+            "нормально",
+            "терпимо"
+          ],
+          "definition_de": "Drückt eine mäßig positive oder mittelmäßige Bewertung aus.",
+          "example": "Hat dir das Essen geschmeckt? – Es geht so.",
+          "example_ru": "Тебе понравилась еда? — Так себе.",
+          "forms": "es geht · es ging · es ist gegangen",
+          "grammar_hint": "Разговорная краткая оценка. Не путать с Das geht! — Это возможно!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 105,
+      "decision": "retain_distinct_sense",
+      "reason": "Topic construction es geht um vs motion/feasibility.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 11,
+        "record": {
+          "id": "b1-gehen-about",
+          "de": "es geht um",
+          "lemma": "gehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "речь идёт о",
+            "дело касается"
+          ],
+          "definition_de": "Bezeichnet das zentrale Thema oder Anliegen.",
+          "example": "In der Besprechung geht es um die Finanzierung des Projekts.",
+          "example_ru": "На заседании речь идёт о финансировании проекта.",
+          "forms": "es geht · es ging · es ist gegangen",
+          "grammar_hint": "um + Akkusativ: um die Finanzierung. Вопрос: Worum geht es? Формальное es сохраняется и после другого члена предложения.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 106,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 hint for functioning explicitly contains Wie geht das? meaning how something works/is done; proposed usage consolidation conditional on source scope.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 12,
+        "record": {
+          "id": "b1-gehen-procedure",
+          "de": "gehen",
+          "lemma": "gehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "делаться",
+            "выполняться",
+            "устраиваться (как что-либо сделать)"
+          ],
+          "definition_de": "Einen Ablauf oder eine Vorgehensweise bezeichnen.",
+          "example": "Kannst du mir zeigen, wie das mit der Anmeldung geht?",
+          "example_ru": "Можешь показать мне, как проходит регистрация?",
+          "forms": "geht · ging · ist gegangen",
+          "grammar_hint": "wie das geht — косвенный вопрос, спрягаемый глагол в конце.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 328,
+          "record": {
+            "id": "a1-251-1",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "идти; ходить; пойти",
+            "uk": "",
+            "translations_ru": [
+              "идти",
+              "ходить",
+              "пойти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Sich zu Fuß von einem Ort zu einem anderen bewegen.",
+            "example": "Ich gehe zur Apotheke.",
+            "example_ru": "Я иду в аптеку.",
+            "note": "zu Fuß gehen — идти пешком; zu + Dativ, in + Akkusativ для направления внутрь. Perfekt с sein.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 329,
+          "record": {
+            "id": "a1-251-2",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "уходить; уйти",
+            "uk": "",
+            "translations_ru": [
+              "уходить",
+              "уйти"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ort verlassen.",
+            "example": "Ich muss jetzt gehen.",
+            "example_ru": "Мне пора уходить.",
+            "note": "Ich muss gehen — мне нужно идти/уходить.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 330,
+          "record": {
+            "id": "a1-251-3",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "работать; функционировать",
+            "uk": "",
+            "translations_ru": [
+              "работать",
+              "функционировать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+            "example": "Die Uhr geht wieder.",
+            "example_ru": "Часы снова работают.",
+            "note": "Wie geht das? — Как это работает/как это делается?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 331,
+          "record": {
+            "id": "a1-251-4",
+            "de": "gehen",
+            "lemma": "gehen",
+            "ru": "быть возможным; можно (в вопросе Geht das?)",
+            "uk": "",
+            "translations_ru": [
+              "быть возможным",
+              "можно (в вопросе Geht das?)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Möglich oder machbar sein.",
+            "example": "Geht es auch morgen?",
+            "example_ru": "А завтра можно?",
+            "note": "Das geht nicht — это невозможно/не получится; Geht das? — Так можно?",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "f583fa07344707970353"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-251-3",
+        "alias_id": "b1-gehen-procedure",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers this meaning or usage independently; preserve POS and usage variants; reconcile intra-B1 dedup overlays; test exercise behavior and progress migration."
+        ],
+        "consolidated_target": "a1-251-3"
+      }
+    },
+    {
+      "candidate_number": 107,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attributive adjective shares A2 definition of precision but A2 example is adverbial; propose preserving inflected usage variant conditionally.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_027.json",
+        "sha": "2348a407ea4d426e78406d00563a2a249ea6c4b6",
+        "batch": 27,
+        "row": 28,
+        "record": {
+          "id": "b1-genau-adjectival",
+          "de": "genau",
+          "lemma": "genau",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "точный",
+            "конкретный",
+            "подробный (по контексту)"
+          ],
+          "definition_de": "Ohne relevante Unklarheiten oder Abweichungen angegeben.",
+          "example": "Bitte schicken Sie mir die genaue Adresse.",
+          "example_ru": "Пожалуйста, пришлите мне точный адрес.",
+          "forms": "genau · genauer · am genauesten",
+          "grammar_hint": "eine genaue Angabe; genauer gesagt — точнее говоря. Наречие точно/ровно уже на A2.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genau"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 314,
+          "record": {
+            "id": "dict_59c98a460cddd348ad72",
+            "de": "genau",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "точно",
+              "ровно"
+            ],
+            "definition_de": "Ohne Abweichung oder Fehler; mit großer Präzision.",
+            "forms": "genau · genauer · am genauesten (auch: am genausten)",
+            "example": "Die Uhr zeigt die Zeit genau an.",
+            "example_ru": "Часы показывают время точно.",
+            "grammar_hint": "genau + указание времени: genau um neun Uhr; наречное употребление без окончания.",
+            "usage_note": "Goethe A2 иллюстрирует наречное употребление точности знания, хода часов и точного времени. Атрибутивное прилагательное (eine genaue Angabe) существует, но отдельно не подтверждено. Самостоятельное Genau! — подтверждение согласия; не присваиваем метку по этим примерам.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genau"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_59c98a460cddd348ad72",
+        "alias_id": "b1-genau-adjectival",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers this meaning or usage independently; preserve POS and usage variants; reconcile intra-B1 dedup overlays; test exercise behavior and progress migration."
+        ],
+        "consolidated_target": "dict_59c98a460cddd348ad72"
+      }
+    },
+    {
+      "candidate_number": 108,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Same collective vegetable sense and almost identical example in A1.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 1,
+        "record": {
+          "id": "b1-gemuese-food",
+          "de": "das Gemüse",
+          "lemma": "Gemüse",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "овощи"
+          ],
+          "definition_de": "Pflanzliche Lebensmittel wie Karotten, Zucchini und Kohl.",
+          "example": "Für die Suppe brauche ich frisches Gemüse.",
+          "example_ru": "Для супа мне нужны свежие овощи.",
+          "forms": "обычно без множественного числа",
+          "grammar_hint": "Собирательное существительное; das Gemüse ist frisch, несмотря на русский перевод во множественном числе.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gem%C3%BCse"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 799,
+          "record": {
+            "id": "dict_57eb8f8f612ad63769ca",
+            "de": "das Gemüse",
+            "lemma": "Gemüse",
+            "ru": "овощи; овощ (как продукт)",
+            "uk": "",
+            "translations_ru": [
+              "овощи",
+              "овощ (как продукт)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "обычно Singular; Plural: die Gemüse (редко, виды)",
+            "definition_de": "Essbare Pflanzenteile, die man zum Beispiel roh oder gekocht isst.",
+            "example": "Wir kaufen frisches Gemüse für die Suppe.",
+            "example_ru": "Мы покупаем свежие овощи для супа.",
+            "note": "Собирательное существительное: viel Gemüse, frisches Gemüse. В немецком обычно единственное число, в русском часто множественное. Для одного овоща: ein Stück Gemüse или конкретное название.",
+            "source_evidence": [
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/sl/A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Gem%C3%BCse",
+                "scope": "meaning_and_forms"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_57eb8f8f612ad63769ca",
+        "alias_id": "b1-gemuese-food",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers this meaning or usage independently; preserve POS and usage variants; reconcile intra-B1 dedup overlays; test exercise behavior and progress migration."
+        ],
+        "consolidated_target": "dict_57eb8f8f612ad63769ca"
+      }
+    },
+    {
+      "candidate_number": 109,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Thoroughness/scrutiny vs exact precision; related meaning, retain context pending scope review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 2,
+        "record": {
+          "id": "b1-genau-precision",
+          "de": "genau",
+          "lemma": "genau",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "точно",
+            "тщательно",
+            "подробно"
+          ],
+          "definition_de": "Mit großer Sorgfalt oder ohne Abweichung.",
+          "example": "Bitte lies die Anleitung genau durch.",
+          "example_ru": "Пожалуйста, внимательно прочитай инструкцию.",
+          "forms": "genau · genauer · am genauesten",
+          "grammar_hint": "Наречие не склоняется; etwas genau wissen — точно знать; genau messen — точно измерять.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genau"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 314,
+          "record": {
+            "id": "dict_59c98a460cddd348ad72",
+            "de": "genau",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "точно",
+              "ровно"
+            ],
+            "definition_de": "Ohne Abweichung oder Fehler; mit großer Präzision.",
+            "forms": "genau · genauer · am genauesten (auch: am genausten)",
+            "example": "Die Uhr zeigt die Zeit genau an.",
+            "example_ru": "Часы показывают время точно.",
+            "grammar_hint": "genau + указание времени: genau um neun Uhr; наречное употребление без окончания.",
+            "usage_note": "Goethe A2 иллюстрирует наречное употребление точности знания, хода часов и точного времени. Атрибутивное прилагательное (eine genaue Angabe) существует, но отдельно не подтверждено. Самостоятельное Genau! — подтверждение согласия; не присваиваем метку по этим примерам.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genau"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 110,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Exact amount/time is already in A2 definition and temporal hint; proposed merge with original examples.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 3,
+        "record": {
+          "id": "b1-genau-exactly",
+          "de": "genau",
+          "lemma": "genau",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "ровно",
+            "точно",
+            "именно"
+          ],
+          "definition_de": "Ohne Abweichung von einer angegebenen Menge oder Zeit.",
+          "example": "Der Kurs dauert genau zwei Stunden.",
+          "example_ru": "Курс длится ровно два часа.",
+          "forms": "неизменяемое в этом употреблении",
+          "grammar_hint": "genau + числительное или выражение времени; Genau! — Именно! / Точно!",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genau"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 314,
+          "record": {
+            "id": "dict_59c98a460cddd348ad72",
+            "de": "genau",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "точно",
+              "ровно"
+            ],
+            "definition_de": "Ohne Abweichung oder Fehler; mit großer Präzision.",
+            "forms": "genau · genauer · am genauesten (auch: am genausten)",
+            "example": "Die Uhr zeigt die Zeit genau an.",
+            "example_ru": "Часы показывают время точно.",
+            "grammar_hint": "genau + указание времени: genau um neun Uhr; наречное употребление без окончания.",
+            "usage_note": "Goethe A2 иллюстрирует наречное употребление точности знания, хода часов и точного времени. Атрибутивное прилагательное (eine genaue Angabe) существует, но отдельно не подтверждено. Самостоятельное Genau! — подтверждение согласия; не присваиваем метку по этим примерам.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genau"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_59c98a460cddd348ad72",
+        "alias_id": "b1-genau-exactly",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers this meaning or usage independently; preserve POS and usage variants; reconcile intra-B1 dedup overlays; test exercise behavior and progress migration."
+        ],
+        "consolidated_target": "dict_59c98a460cddd348ad72"
+      }
+    },
+    {
+      "candidate_number": 111,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Sufficient quantity before noun is already in A2 quantity card; B1 POS adv conflicts with lower pron label, review terminology.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 7,
+        "record": {
+          "id": "b1-genug-quantity",
+          "de": "genug",
+          "lemma": "genug",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "достаточно",
+            "хватает"
+          ],
+          "definition_de": "Bezeichnet eine ausreichende Menge.",
+          "example": "Wir haben genug Stühle für alle Gäste.",
+          "example_ru": "У нас достаточно стульев для всех гостей.",
+          "forms": "неизменяемое",
+          "grammar_hint": "genug + существительное без окончания: genug Zeit, genug Wasser; не путать с genug als Gradangabe после прилагательного.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genug"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 432,
+          "record": {
+            "id": "dict_059c17d13fa34be9bd75",
+            "de": "genug",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "достаточно",
+              "достаточное количество"
+            ],
+            "definition_de": "Eine Menge, die den Bedarf deckt.",
+            "example": "Hast du genug Zeit für die Aufgabe?",
+            "example_ru": "У тебя достаточно времени для задания?",
+            "grammar_hint": "Перед существительным: genug Zeit, genug Geld. Не склоняется. После глагола также возможно самостоятельное употребление: Ich habe genug.",
+            "usage_note": "Перед существительным или самостоятельно обозначает достаточное количество; наречное употребление (genug verdienen) также подтверждено. После прилагательного: groß genug — достаточно большой.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genug",
+                "https://www.duden.de/rechtschreibung/genug_zureichend_hinlaenglich"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "неизменяемое слово",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 571,
+          "record": {
+            "id": "a2-genug-adv-reviewed",
+            "de": "genug",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "достаточно",
+              "в достаточной мере"
+            ],
+            "definition_de": "In einem Maß, das für einen Zweck ausreicht.",
+            "forms": "неизменяемое слово",
+            "example": "Ich schlafe nicht genug.",
+            "example_ru": "Я недостаточно сплю.",
+            "grammar_hint": "После глагола: genug schlafen; после прилагательного: warm genug. Не склоняется.",
+            "usage_note": "Перед существительным — количественное употребление genug Zeit (существующая карточка).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genug"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_059c17d13fa34be9bd75",
+        "alias_id": "b1-genug-quantity",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers this meaning or usage independently; preserve POS and usage variants; reconcile intra-B1 dedup overlays; test exercise behavior and progress migration."
+        ],
+        "consolidated_target": "dict_059c17d13fa34be9bd75"
+      }
+    },
+    {
+      "candidate_number": 112,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Sufficient degree after adjective or verb is already in A2 adverb card and hint.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_028.json",
+        "sha": "d37c4ac494509ac0d3a09e077229e6f23b77b657",
+        "batch": 28,
+        "row": 8,
+        "record": {
+          "id": "b1-genug-degree",
+          "de": "genug",
+          "lemma": "genug",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "достаточно",
+            "в достаточной мере"
+          ],
+          "definition_de": "Bezeichnet ein ausreichendes Maß einer Eigenschaft oder Handlung.",
+          "example": "Der Raum ist groß genug für den Kurs.",
+          "example_ru": "Помещение достаточно большое для курса.",
+          "forms": "неизменяемое",
+          "grammar_hint": "После прилагательного: warm genug; после глагола: genug schlafen. Не путать с zu + Adjektiv (слишком).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genug"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 432,
+          "record": {
+            "id": "dict_059c17d13fa34be9bd75",
+            "de": "genug",
+            "part": "pron",
+            "level": "A2",
+            "translations_ru": [
+              "достаточно",
+              "достаточное количество"
+            ],
+            "definition_de": "Eine Menge, die den Bedarf deckt.",
+            "example": "Hast du genug Zeit für die Aufgabe?",
+            "example_ru": "У тебя достаточно времени для задания?",
+            "grammar_hint": "Перед существительным: genug Zeit, genug Geld. Не склоняется. После глагола также возможно самостоятельное употребление: Ich habe genug.",
+            "usage_note": "Перед существительным или самостоятельно обозначает достаточное количество; наречное употребление (genug verdienen) также подтверждено. После прилагательного: groß genug — достаточно большой.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genug",
+                "https://www.duden.de/rechtschreibung/genug_zureichend_hinlaenglich"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "неизменяемое слово",
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 571,
+          "record": {
+            "id": "a2-genug-adv-reviewed",
+            "de": "genug",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "достаточно",
+              "в достаточной мере"
+            ],
+            "definition_de": "In einem Maß, das für einen Zweck ausreicht.",
+            "forms": "неизменяемое слово",
+            "example": "Ich schlafe nicht genug.",
+            "example_ru": "Я недостаточно сплю.",
+            "grammar_hint": "После глагола: genug schlafen; после прилагательного: warm genug. Не склоняется.",
+            "usage_note": "Перед существительным — количественное употребление genug Zeit (существующая карточка).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/genug"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a2-genug-adv-reviewed",
+        "alias_id": "b1-genug-degree",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers this meaning or usage independently; preserve POS and usage variants; reconcile intra-B1 dedup overlays; test exercise behavior and progress migration."
+        ],
+        "consolidated_target": "a2-genug-adv-reviewed"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-251-3",
+      "alias_ids": [
+        "b1-gehen-procedure"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-251-3",
+        "de": "gehen",
+        "lemma": "gehen",
+        "ru": "работать; функционировать; делаться; выполняться; устраиваться (как что-либо сделать)",
+        "uk": "",
+        "translations_ru": [
+          "работать",
+          "функционировать",
+          "делаться",
+          "выполняться",
+          "устраиваться (как что-либо сделать)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "geht · ging · ist gegangen",
+        "definition_de": "Funktionieren, zum Beispiel bei einem Gerät oder einer Uhr.",
+        "example": "Die Uhr geht wieder.",
+        "example_ru": "Часы снова работают.",
+        "note": "Wie geht das? — Как это работает/как это делается?",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 15,
+            "row_id": "f583fa07344707970353"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Wie geht das? — Как это работает/как это делается?\nwie das geht — косвенный вопрос, спрягаемый глагол в конце.",
+        "alternative_examples": [
+          {
+            "de": "Kannst du mir zeigen, wie das mit der Anmeldung geht?",
+            "ru": "Можешь показать мне, как проходит регистрация?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "gehen",
+            "part": "verb",
+            "forms": "geht · ging · ist gegangen",
+            "definition_de": "Einen Ablauf oder eine Vorgehensweise bezeichnen.",
+            "translations_ru": [
+              "делаться",
+              "выполняться",
+              "устраиваться (как что-либо сделать)"
+            ],
+            "grammar_hint": "wie das geht — косвенный вопрос, спрягаемый глагол в конце.",
+            "example": "Kannst du mir zeigen, wie das mit der Anmeldung geht?",
+            "example_ru": "Можешь показать мне, как проходит регистрация?"
+          }
+        ],
+        "alias_ids": [
+          "b1-gehen-procedure"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gehen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_59c98a460cddd348ad72",
+      "alias_ids": [
+        "b1-genau-adjectival",
+        "b1-genau-exactly"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_59c98a460cddd348ad72",
+        "de": "genau",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "точно",
+          "ровно",
+          "точный",
+          "конкретный",
+          "подробный (по контексту)",
+          "именно"
+        ],
+        "definition_de": "Ohne Abweichung oder Fehler; mit großer Präzision.",
+        "forms": "genau · genauer · am genauesten (auch: am genausten)",
+        "example": "Die Uhr zeigt die Zeit genau an.",
+        "example_ru": "Часы показывают время точно.",
+        "grammar_hint": "genau + указание времени: genau um neun Uhr; наречное употребление без окончания.\neine genaue Angabe; genauer gesagt — точнее говоря. Наречие точно/ровно уже на A2.\ngenau + числительное или выражение времени; Genau! — Именно! / Точно!",
+        "usage_note": "Goethe A2 иллюстрирует наречное употребление точности знания, хода часов и точного времени. Атрибутивное прилагательное (eine genaue Angabe) существует, но отдельно не подтверждено. Самостоятельное Genau! — подтверждение согласия; не присваиваем метку по этим примерам.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/genau"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка",
+          "Грамматика и связь предложений"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Bitte schicken Sie mir die genaue Adresse.",
+            "ru": "Пожалуйста, пришлите мне точный адрес."
+          },
+          {
+            "de": "Der Kurs dauert genau zwei Stunden.",
+            "ru": "Курс длится ровно два часа."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "genau",
+            "part": "adj",
+            "forms": "genau · genauer · am genauesten",
+            "definition_de": "Ohne relevante Unklarheiten oder Abweichungen angegeben.",
+            "translations_ru": [
+              "точный",
+              "конкретный",
+              "подробный (по контексту)"
+            ],
+            "grammar_hint": "eine genaue Angabe; genauer gesagt — точнее говоря. Наречие точно/ровно уже на A2.",
+            "example": "Bitte schicken Sie mir die genaue Adresse.",
+            "example_ru": "Пожалуйста, пришлите мне точный адрес."
+          },
+          {
+            "de": "genau",
+            "part": "adv",
+            "forms": "неизменяемое в этом употреблении",
+            "definition_de": "Ohne Abweichung von einer angegebenen Menge oder Zeit.",
+            "translations_ru": [
+              "ровно",
+              "точно",
+              "именно"
+            ],
+            "grammar_hint": "genau + числительное или выражение времени; Genau! — Именно! / Точно!",
+            "example": "Der Kurs dauert genau zwei Stunden.",
+            "example_ru": "Курс длится ровно два часа."
+          }
+        ],
+        "alias_ids": [
+          "b1-genau-adjectival",
+          "b1-genau-exactly"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genau"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genau"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_57eb8f8f612ad63769ca",
+      "alias_ids": [
+        "b1-gemuese-food"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_57eb8f8f612ad63769ca",
+        "de": "das Gemüse",
+        "lemma": "Gemüse",
+        "ru": "овощи; овощ (как продукт)",
+        "uk": "",
+        "translations_ru": [
+          "овощи",
+          "овощ (как продукт)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "обычно Singular; Plural: die Gemüse (редко, виды)",
+        "definition_de": "Essbare Pflanzenteile, die man zum Beispiel roh oder gekocht isst.",
+        "example": "Wir kaufen frisches Gemüse für die Suppe.",
+        "example_ru": "Мы покупаем свежие овощи для супа.",
+        "note": "Собирательное существительное: viel Gemüse, frisches Gemüse. В немецком обычно единственное число, в русском часто множественное. Для одного овоща: ein Stück Gemüse или конкретное название.",
+        "source_evidence": [
+          {
+            "url": "https://www.goethe.de/pro/relaunch/prf/sl/A1_SD1_Wortliste_02.pdf",
+            "page": 15,
+            "scope": "sense"
+          },
+          {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Gem%C3%BCse",
+            "scope": "meaning_and_forms"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Собирательное существительное: viel Gemüse, frisches Gemüse. В немецком обычно единственное число, в русском часто множественное. Для одного овоща: ein Stück Gemüse или конкретное название.\nСобирательное существительное; das Gemüse ist frisch, несмотря на русский перевод во множественном числе.",
+        "alternative_examples": [
+          {
+            "de": "Für die Suppe brauche ich frisches Gemüse.",
+            "ru": "Для супа мне нужны свежие овощи."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "das Gemüse",
+            "part": "noun",
+            "forms": "обычно без множественного числа",
+            "definition_de": "Pflanzliche Lebensmittel wie Karotten, Zucchini und Kohl.",
+            "translations_ru": [
+              "овощи"
+            ],
+            "grammar_hint": "Собирательное существительное; das Gemüse ist frisch, несмотря на русский перевод во множественном числе.",
+            "example": "Für die Suppe brauche ich frisches Gemüse.",
+            "example_ru": "Для супа мне нужны свежие овощи."
+          }
+        ],
+        "alias_ids": [
+          "b1-gemuese-food"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gem%C3%BCse"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_059c17d13fa34be9bd75",
+      "alias_ids": [
+        "b1-genug-quantity"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_059c17d13fa34be9bd75",
+        "de": "genug",
+        "part": "pron",
+        "level": "A2",
+        "translations_ru": [
+          "достаточно",
+          "достаточное количество",
+          "хватает"
+        ],
+        "definition_de": "Eine Menge, die den Bedarf deckt.",
+        "example": "Hast du genug Zeit für die Aufgabe?",
+        "example_ru": "У тебя достаточно времени для задания?",
+        "grammar_hint": "Перед существительным: genug Zeit, genug Geld. Не склоняется. После глагола также возможно самостоятельное употребление: Ich habe genug.\ngenug + существительное без окончания: genug Zeit, genug Wasser; не путать с genug als Gradangabe после прилагательного.",
+        "usage_note": "Перед существительным или самостоятельно обозначает достаточное количество; наречное употребление (genug verdienen) также подтверждено. После прилагательного: groß genug — достаточно большой.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/genug",
+            "https://www.duden.de/rechtschreibung/genug_zureichend_hinlaenglich"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "неизменяемое слово",
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir haben genug Stühle für alle Gäste.",
+            "ru": "У нас достаточно стульев для всех гостей."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "genug",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Bezeichnet eine ausreichende Menge.",
+            "translations_ru": [
+              "достаточно",
+              "хватает"
+            ],
+            "grammar_hint": "genug + существительное без окончания: genug Zeit, genug Wasser; не путать с genug als Gradangabe после прилагательного.",
+            "example": "Wir haben genug Stühle für alle Gäste.",
+            "example_ru": "У нас достаточно стульев для всех гостей."
+          }
+        ],
+        "alias_ids": [
+          "b1-genug-quantity"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genug"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a2-genug-adv-reviewed",
+      "alias_ids": [
+        "b1-genug-degree"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "a2-genug-adv-reviewed",
+        "de": "genug",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "достаточно",
+          "в достаточной мере"
+        ],
+        "definition_de": "In einem Maß, das für einen Zweck ausreicht.",
+        "forms": "неизменяемое слово",
+        "example": "Ich schlafe nicht genug.",
+        "example_ru": "Я недостаточно сплю.",
+        "grammar_hint": "После глагола: genug schlafen; после прилагательного: warm genug. Не склоняется.\nПосле прилагательного: warm genug; после глагола: genug schlafen. Не путать с zu + Adjektiv (слишком).",
+        "usage_note": "Перед существительным — количественное употребление genug Zeit (существующая карточка).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/genug"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alternative_examples": [
+          {
+            "de": "Der Raum ist groß genug für den Kurs.",
+            "ru": "Помещение достаточно большое для курса."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "genug",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Bezeichnet ein ausreichendes Maß einer Eigenschaft oder Handlung.",
+            "translations_ru": [
+              "достаточно",
+              "в достаточной мере"
+            ],
+            "grammar_hint": "После прилагательного: warm genug; после глагола: genug schlafen. Не путать с zu + Adjektiv (слишком).",
+            "example": "Der Raum ist groß genug für den Kurs.",
+            "example_ru": "Помещение достаточно большое для курса."
+          }
+        ],
+        "alias_ids": [
+          "b1-genug-degree"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 45,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/genug"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

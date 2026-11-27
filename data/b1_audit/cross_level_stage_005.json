@@ -1,0 +1,2378 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of indexed candidates 73–92 using stored definitions, examples and hints. Two conditional usage merge proposals, not applied. No independent CEFR or dictionary verification. All records retain original IDs and provisional level metadata.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    73,
+    92
+  ],
+  "reviewed": 20,
+  "merge_count": 2,
+  "retained_distinct_senses": 11,
+  "retained_teaching_contexts_pending_level_review": 7,
+  "followup_review": [
+    {
+      "id": "b1-fragen-inquire-after",
+      "issue": "A1 hint attests nach etwas fragen but not necessarily asking after a person; independently verify source scope before merging."
+    },
+    {
+      "id": "b1-frueher-comparative",
+      "issue": "A2 hint explicitly lists comparative; preserve inflected comparative and distinguish earlier from formerly."
+    },
+    {
+      "id": "b1-freuen-about-past",
+      "issue": "Expand index to reflexive auf/über forms; present match only includes transitive A2 freuen."
+    },
+    {
+      "id": "b1-frisch-recently",
+      "issue": "Review A2 definition overlap and adverbial adjectival use."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 73,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 grammar hint explicitly includes nach etwas fragen + Dativ; B1 adds inquiry after a person and an example. Conditional usage merge only if lower source scope covers both; preserve construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_023.json",
+        "sha": "b6241348321ed346d4d9f54e9998bb8e57476bf5",
+        "batch": 23,
+        "row": 29,
+        "record": {
+          "id": "b1-fragen-inquire-after",
+          "de": "nach jemandem / etwas fragen",
+          "lemma": "fragen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "спрашивать о ком-либо / чём-либо",
+            "справляться"
+          ],
+          "definition_de": "Sich nach einer Person oder einer Information erkundigen.",
+          "example": "Eine Kollegin hat heute nach dir gefragt.",
+          "example_ru": "Сегодня коллега спрашивала о тебе.",
+          "forms": "fragt · fragte · hat gefragt",
+          "grammar_hint": "nach + Dativ; jemanden (Akkusativ) nach etwas (Dativ) fragen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 41,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fragen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 298,
+          "record": {
+            "id": "a1-227-1",
+            "de": "fragen",
+            "lemma": "fragen",
+            "ru": "спрашивать; спросить; задавать вопрос",
+            "uk": "",
+            "translations_ru": [
+              "спрашивать",
+              "спросить",
+              "задавать вопрос"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "fragt · fragte · hat gefragt",
+            "definition_de": "Jemandem eine Frage stellen.",
+            "example": "Kann ich dich etwas fragen?",
+            "example_ru": "Могу я тебя кое о чём спросить?",
+            "note": "jemanden fragen + Akkusativ; nach etwas fragen + Dativ. jemanden etwas fragen (Akkusativ), nach + Dativ; косвенный вопрос: Ich frage, wann der Kurs beginnt (глагол в конце). Die Frage — вопрос, не перевод глагола.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "605a0e9f6d6ad72e8b5e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-227-1",
+        "alias_id": "b1-fragen-inquire-after",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers the specific usage, not only the app's own hint; retain separate usage variant if scope or teaching objectives differ; ensure consumer handles variants and test progress migration."
+        ],
+        "merged_record": {
+          "id": "a1-227-1",
+          "de": "fragen",
+          "lemma": "fragen",
+          "ru": "спрашивать; спросить; задавать вопрос; спрашивать о ком-либо / чём-либо; справляться",
+          "uk": "",
+          "translations_ru": [
+            "спрашивать",
+            "спросить",
+            "задавать вопрос",
+            "спрашивать о ком-либо / чём-либо",
+            "справляться"
+          ],
+          "part": "verb",
+          "level": "A1",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "forms": "fragt · fragte · hat gefragt",
+          "definition_de": "Jemandem eine Frage stellen.",
+          "example": "Kann ich dich etwas fragen?",
+          "example_ru": "Могу я тебя кое о чём спросить?",
+          "note": "jemanden fragen + Akkusativ; nach etwas fragen + Dativ. jemanden etwas fragen (Akkusativ), nach + Dativ; косвенный вопрос: Ich frage, wann der Kurs beginnt (глагол в конце). Die Frage — вопрос, не перевод глагола.",
+          "source_evidence": [
+            {
+              "file": "A1_SD1_Wortliste_02.pdf",
+              "page": 15,
+              "row_id": "605a0e9f6d6ad72e8b5e"
+            }
+          ],
+          "ch": false,
+          "equivalent": "",
+          "grammar_hint": "jemanden fragen + Akkusativ; nach etwas fragen + Dativ. jemanden etwas fragen (Akkusativ), nach + Dativ; косвенный вопрос: Ich frage, wann der Kurs beginnt (глагол в конце). Die Frage — вопрос, не перевод глагола.\nnach + Dativ; jemanden (Akkusativ) nach etwas (Dativ) fragen.",
+          "alternative_examples": [
+            {
+              "de": "Eine Kollegin hat heute nach dir gefragt.",
+              "ru": "Сегодня коллега спрашивала о тебе."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "nach jemandem / etwas fragen",
+              "part": "verb",
+              "forms": "fragt · fragte · hat gefragt",
+              "definition_de": "Sich nach einer Person oder einer Information erkundigen.",
+              "translations_ru": [
+                "спрашивать о ком-либо / чём-либо",
+                "справляться"
+              ],
+              "grammar_hint": "nach + Dativ; jemanden (Akkusativ) nach etwas (Dativ) fragen.",
+              "example": "Eine Kollegin hat heute nach dir gefragt.",
+              "example_ru": "Сегодня коллега спрашивала о тебе."
+            }
+          ],
+          "alias_ids": [
+            "b1-fragen-inquire-after"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 41,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fragen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 74,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Reflexive wondering vs asking another person; retain indirect question pattern.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_023.json",
+        "sha": "b6241348321ed346d4d9f54e9998bb8e57476bf5",
+        "batch": 23,
+        "row": 30,
+        "record": {
+          "id": "b1-fragen-wonder",
+          "de": "sich fragen",
+          "lemma": "fragen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "задаваться вопросом",
+            "размышлять над вопросом"
+          ],
+          "definition_de": "Sich selbst eine Frage stellen, deren Antwort noch unklar ist.",
+          "example": "Ich frage mich, ob der Kurs schon begonnen hat.",
+          "example_ru": "Я задаюсь вопросом, начался ли уже курс.",
+          "forms": "fragt sich · fragte sich · hat sich gefragt",
+          "grammar_hint": "sich fragen, ob/wann/warum … — спрягаемый глагол в конце косвенного вопроса.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 41,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fragen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 298,
+          "record": {
+            "id": "a1-227-1",
+            "de": "fragen",
+            "lemma": "fragen",
+            "ru": "спрашивать; спросить; задавать вопрос",
+            "uk": "",
+            "translations_ru": [
+              "спрашивать",
+              "спросить",
+              "задавать вопрос"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "fragt · fragte · hat gefragt",
+            "definition_de": "Jemandem eine Frage stellen.",
+            "example": "Kann ich dich etwas fragen?",
+            "example_ru": "Могу я тебя кое о чём спросить?",
+            "note": "jemanden fragen + Akkusativ; nach etwas fragen + Dativ. jemanden etwas fragen (Akkusativ), nach + Dativ; косвенный вопрос: Ich frage, wann der Kurs beginnt (глагол в конце). Die Frage — вопрос, не перевод глагола.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "605a0e9f6d6ad72e8b5e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 75,
+      "decision": "retain_distinct_sense",
+      "reason": "Idiom not being an option vs noun question.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 1,
+        "record": {
+          "id": "b1-frage-out-of-question",
+          "de": "nicht infrage kommen",
+          "lemma": "Frage",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "исключено",
+            "не может рассматриваться",
+            "не подходит"
+          ],
+          "definition_de": "Als Möglichkeit ausgeschlossen sein.",
+          "example": "Ein Umzug kommt für uns derzeit nicht infrage.",
+          "example_ru": "Переезд для нас сейчас исключён.",
+          "forms": "kommt infrage · kam infrage · ist infrage gekommen",
+          "grammar_hint": "infrage kommen / in Frage kommen — оба написания допустимы. für + Akkusativ.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 41,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/in_Frage_kommen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 299,
+          "record": {
+            "id": "a1-228-1",
+            "de": "die Frage",
+            "lemma": "Frage",
+            "ru": "вопрос",
+            "uk": "",
+            "translations_ru": [
+              "вопрос"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Fragen",
+            "definition_de": "Eine Äußerung, mit der man etwas wissen möchte.",
+            "example": "Ich habe noch eine Frage zum Kurs.",
+            "example_ru": "У меня есть ещё один вопрос о курсе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "205f27658203a221c01e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 76,
+      "decision": "retain_distinct_sense",
+      "reason": "Unrestricted choice vs available, free of charge, or off work.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 5,
+        "record": {
+          "id": "b1-frei-unrestricted-choice",
+          "de": "frei",
+          "lemma": "frei",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "свободно",
+            "без ограничений (при выборе)"
+          ],
+          "definition_de": "Ohne äußere Vorgabe oder Zwang entscheiden könnend.",
+          "example": "Die Teilnehmer dürfen das Thema frei wählen.",
+          "example_ru": "Участники могут свободно выбрать тему.",
+          "forms": "frei · freier · am freiesten",
+          "grammar_hint": "frei wählen / entscheiden; здесь не «бесплатно» и не «незанято».",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 41,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/frei"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 302,
+          "record": {
+            "id": "a1-230-1",
+            "de": "frei",
+            "lemma": "frei",
+            "ru": "свободный; незанятый",
+            "uk": "",
+            "translations_ru": [
+              "свободный",
+              "незанятый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "В значении незанятого места обычно без степеней сравнения; общие формы: freier · am freiesten",
+            "definition_de": "Nicht belegt oder nicht reserviert.",
+            "example": "Ist dieser Platz noch frei?",
+            "example_ru": "Это место ещё свободно?",
+            "note": "ein freier Platz — свободное место; frei sein — быть незанятым. Другие значения frei имеют отдельные карточки A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "cd174a43b0c31b66f57d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 597,
+          "record": {
+            "de": "frei",
+            "part": "adj",
+            "level": "A2",
+            "forms": "В этом значении обычно без степеней сравнения",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/frei"
+              ],
+              "example": "integraticum_original"
+            },
+            "id": "dict_37e3c530f81885f4b520-free",
+            "translations_ru": [
+              "бесплатный",
+              "бесплатно"
+            ],
+            "definition_de": "Ohne dass man dafür Geld bezahlen muss.",
+            "example": "Am Sonntag ist der Eintritt ins Museum frei.",
+            "example_ru": "В воскресенье вход в музей бесплатный.",
+            "grammar_hint": "Eintritt frei — вход бесплатный; prädikativ ohne Endung: Der Eintritt ist frei.",
+            "usage_note": "Не путать с frei im Sinne von nicht besetzt — свободный, незанятый.",
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 598,
+          "record": {
+            "de": "frei",
+            "part": "adj",
+            "level": "A2",
+            "forms": "В этом значении обычно без степеней сравнения",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/frei"
+              ],
+              "example": "integraticum_original"
+            },
+            "id": "dict_37e3c530f81885f4b520-off",
+            "translations_ru": [
+              "свободный от работы или занятий",
+              "иметь выходной (frei haben)"
+            ],
+            "definition_de": "An einem Tag oder in einem Zeitraum nicht arbeiten oder zur Schule gehen müssen.",
+            "example": "Am Montag habe ich frei.",
+            "example_ru": "В понедельник у меня выходной.",
+            "grammar_hint": "frei haben — быть свободным от работы или занятий; Ich habe morgen frei.",
+            "usage_note": "Не обязательно официальный праздник; речь о личном расписании.",
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 77,
+      "decision": "retain_distinct_sense",
+      "reason": "Outdoors nominalized adjective phrase vs lower-level free/available meanings.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 6,
+        "record": {
+          "id": "b1-im-freien-outdoors",
+          "de": "im Freien",
+          "lemma": "frei",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "на открытом воздухе",
+            "под открытым небом"
+          ],
+          "definition_de": "Außerhalb geschlossener Gebäude.",
+          "example": "Bei schönem Wetter essen wir im Freien.",
+          "example_ru": "В хорошую погоду мы едим на свежем воздухе.",
+          "forms": "das Freie · im Freien · ins Freie",
+          "grammar_hint": "Субстантивированное прилагательное с большой буквы. im Freien — Wo? Dativ; ins Freie — Wohin? Akkusativ.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 41,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/frei"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 302,
+          "record": {
+            "id": "a1-230-1",
+            "de": "frei",
+            "lemma": "frei",
+            "ru": "свободный; незанятый",
+            "uk": "",
+            "translations_ru": [
+              "свободный",
+              "незанятый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "В значении незанятого места обычно без степеней сравнения; общие формы: freier · am freiesten",
+            "definition_de": "Nicht belegt oder nicht reserviert.",
+            "example": "Ist dieser Platz noch frei?",
+            "example_ru": "Это место ещё свободно?",
+            "note": "ein freier Platz — свободное место; frei sein — быть незанятым. Другие значения frei имеют отдельные карточки A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "cd174a43b0c31b66f57d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 597,
+          "record": {
+            "de": "frei",
+            "part": "adj",
+            "level": "A2",
+            "forms": "В этом значении обычно без степеней сравнения",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/frei"
+              ],
+              "example": "integraticum_original"
+            },
+            "id": "dict_37e3c530f81885f4b520-free",
+            "translations_ru": [
+              "бесплатный",
+              "бесплатно"
+            ],
+            "definition_de": "Ohne dass man dafür Geld bezahlen muss.",
+            "example": "Am Sonntag ist der Eintritt ins Museum frei.",
+            "example_ru": "В воскресенье вход в музей бесплатный.",
+            "grammar_hint": "Eintritt frei — вход бесплатный; prädikativ ohne Endung: Der Eintritt ist frei.",
+            "usage_note": "Не путать с frei im Sinne von nicht besetzt — свободный, незанятый.",
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 598,
+          "record": {
+            "de": "frei",
+            "part": "adj",
+            "level": "A2",
+            "forms": "В этом значении обычно без степеней сравнения",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/frei"
+              ],
+              "example": "integraticum_original"
+            },
+            "id": "dict_37e3c530f81885f4b520-off",
+            "translations_ru": [
+              "свободный от работы или занятий",
+              "иметь выходной (frei haben)"
+            ],
+            "definition_de": "An einem Tag oder in einem Zeitraum nicht arbeiten oder zur Schule gehen müssen.",
+            "example": "Am Montag habe ich frei.",
+            "example_ru": "В понедельник у меня выходной.",
+            "grammar_hint": "frei haben — быть свободным от работы или занятий; Ich habe morgen frei.",
+            "usage_note": "Не обязательно официальный праздник; речь о личном расписании.",
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 78,
+      "decision": "retain_distinct_sense",
+      "reason": "Reflexive joy about an event vs transitive causing joy; compare reflexive auf/über variants in expanded matching.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 9,
+        "record": {
+          "id": "b1-freuen-about-past",
+          "de": "sich freuen über",
+          "lemma": "freuen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "радоваться чему-либо (случившемуся или имеющемуся)"
+          ],
+          "definition_de": "Über etwas Gegenwärtiges oder bereits Geschehenes Freude empfinden.",
+          "example": "Ich habe mich sehr über deine Nachricht gefreut.",
+          "example_ru": "Я очень обрадовалась твоему сообщению.",
+          "forms": "freut sich · freute sich · hat sich gefreut",
+          "grammar_hint": "sich über + Akkusativ freuen — о том, что уже есть или произошло; sich auf + Akkusativ freuen — ждать с радостью (A1).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/freuen"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 580,
+          "record": {
+            "id": "a2-freuen-transitive-reviewed",
+            "de": "freuen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "радовать",
+              "обрадовать"
+            ],
+            "definition_de": "Jemandem Freude machen.",
+            "example": "Deine Nachricht freut mich.",
+            "example_ru": "Твоё сообщение меня радует.",
+            "forms": "freut · freute · hat gefreut",
+            "usage_note": "etwas freut jemanden (Akkusativ); не путать с sich freuen.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/freuen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 79,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Recent preparation already overlaps A2 definition; adverbial participle construction retained pending level review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 15,
+        "record": {
+          "id": "b1-frisch-recently",
+          "de": "frisch",
+          "lemma": "frisch",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "только что",
+            "недавно (постиранный, вымытый)"
+          ],
+          "definition_de": "Unmittelbar vorher zubereitet, gereinigt oder bearbeitet worden.",
+          "example": "Auf dem Bett liegt frisch gewaschene Bettwäsche.",
+          "example_ru": "На кровати лежит только что постиранное постельное бельё.",
+          "forms": "frisch · frischer · am frischesten; в этом употреблении обычно без сравнения",
+          "grammar_hint": "frisch + Partizip II: frisch gestrichen, frisch gewaschen. Наречие frisch не склоняется.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/frisch"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 111,
+          "record": {
+            "id": "dict_8e2d5d038fa4cdc19d64",
+            "de": "frisch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "свежий"
+            ],
+            "definition_de": "Erst vor kurzer Zeit hergestellt, geerntet oder zubereitet.",
+            "forms": "frisch · frischer · am frischesten",
+            "example": "Das Gemüse vom Markt ist frischer als das Gemüse im Kühlschrank.",
+            "example_ru": "Овощи с рынка свежее, чем овощи в холодильнике.",
+            "grammar_hint": "",
+            "usage_note": "Свежий продукт: frisches Brot, frisches Gemüse. Свежий/прохладный воздух — другое контекстное употребление; Goethe A2 стр. 15 подтверждает именно свежесть продукта.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/frisch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 80,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Fresh air vs recently prepared goods; retain collocation and case contrast.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 16,
+        "record": {
+          "id": "b1-frisch-air",
+          "de": "frische Luft",
+          "lemma": "frisch",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "свежий воздух"
+          ],
+          "definition_de": "Luft im Freien oder gut erneuerte Raumluft.",
+          "example": "Nach der Arbeit brauche ich etwas frische Luft.",
+          "example_ru": "После работы мне нужно немного свежего воздуха.",
+          "forms": "frisch · frischer · am frischesten",
+          "grammar_hint": "an die frische Luft gehen (Akkusativ); an der frischen Luft sein (Dativ).",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/frisch"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 111,
+          "record": {
+            "id": "dict_8e2d5d038fa4cdc19d64",
+            "de": "frisch",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "свежий"
+            ],
+            "definition_de": "Erst vor kurzer Zeit hergestellt, geerntet oder zubereitet.",
+            "forms": "frisch · frischer · am frischesten",
+            "example": "Das Gemüse vom Markt ist frischer als das Gemüse im Kühlschrank.",
+            "example_ru": "Овощи с рынка свежее, чем овощи в холодильнике.",
+            "grammar_hint": "",
+            "usage_note": "Свежий продукт: frisches Brot, frisches Gemüse. Свежий/прохладный воздух — другое контекстное употребление; Goethe A2 стр. 15 подтверждает именно свежесть продукта.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/frisch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 81,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Holiday greeting vs emotional adjective; preserve formula and inflection.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 20,
+        "record": {
+          "id": "b1-froh-holiday-wish",
+          "de": "Frohes Fest!",
+          "lemma": "froh",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "с праздником!",
+            "весёлого праздника!"
+          ],
+          "definition_de": "Ein guter Wunsch anlässlich eines Festes.",
+          "example": "Wir wünschen euch ein frohes Fest!",
+          "example_ru": "Желаем вам весёлого праздника!",
+          "forms": "froh · froher · am frohesten",
+          "grammar_hint": "Frohe Weihnachten! Frohes Fest! Окончание зависит от рода и числа существительного. Основное froh уже на A2.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/froh"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 360,
+          "record": {
+            "id": "dict_c888876e1028a43d31e7",
+            "de": "froh",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "рад",
+              "радостный"
+            ],
+            "definition_de": "Glücklich oder erleichtert über etwas.",
+            "forms": "froh · froher · am frohesten",
+            "example": "Ich bin froh, dass du da bist.",
+            "example_ru": "Я рада, что ты здесь.",
+            "grammar_hint": "froh über + Akkusativ; froh sein, dass …",
+            "usage_note": "Ich bin froh, dass du da bist — я рад, что ты здесь. После dass спрягаемый глагол в конце; froh über etwas (Akkusativ) sein — радоваться чему-либо.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/froh",
+                "https://www.duden.de/rechtschreibung/froh"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 82,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Comparative of früh already explicitly given in A2 hint; retain attributive comparative and example in proposed merged card.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_024.json",
+        "sha": "c5b4977e57c9cddd170e9fcc0605bc534ca64539",
+        "batch": 24,
+        "row": 24,
+        "record": {
+          "id": "b1-frueher-comparative",
+          "de": "früher / frühere(r/s)",
+          "lemma": "früh",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "более ранний",
+            "раньше (в сравнении)"
+          ],
+          "definition_de": "Zeitlich vor einem anderen möglichen Zeitpunkt liegend.",
+          "example": "Wir könnten einen früheren Zug nehmen.",
+          "example_ru": "Мы могли бы сесть на более ранний поезд.",
+          "forms": "früh · früher · am frühesten",
+          "grammar_hint": "einen früheren Zug (Akkusativ, Maskulinum). früher = сравнительная степень; «прежде» уже на A1.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fr%C3%BCher"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 325,
+          "record": {
+            "id": "dict_7fcdc2aac429df956d9d",
+            "de": "früh",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ранний",
+              "рано"
+            ],
+            "definition_de": "Zu einer Zeit vor dem üblichen oder erwarteten Zeitpunkt.",
+            "forms": "früh · früher · am frühesten (auch: am frühsten)",
+            "example": "Morgen muss ich früh aufstehen.",
+            "example_ru": "Завтра мне нужно рано вставать.",
+            "grammar_hint": "zu früh — слишком рано; früher — раньше; am frühesten — раньше всех. Атрибутивно: ein früher Termin.",
+            "usage_note": "Gegenteil: spät — поздний, поздно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/fr%C3%BCh"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7fcdc2aac429df956d9d",
+        "alias_id": "b1-frueher-comparative",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Confirm lower-level source covers the specific usage, not only the app's own hint; retain separate usage variant if scope or teaching objectives differ; ensure consumer handles variants and test progress migration."
+        ],
+        "merged_record": {
+          "id": "dict_7fcdc2aac429df956d9d",
+          "de": "früh",
+          "part": "adj",
+          "level": "A2",
+          "translations_ru": [
+            "ранний",
+            "рано",
+            "более ранний",
+            "раньше (в сравнении)"
+          ],
+          "definition_de": "Zu einer Zeit vor dem üblichen oder erwarteten Zeitpunkt.",
+          "forms": "früh · früher · am frühesten (auch: am frühsten)",
+          "example": "Morgen muss ich früh aufstehen.",
+          "example_ru": "Завтра мне нужно рано вставать.",
+          "grammar_hint": "zu früh — слишком рано; früher — раньше; am frühesten — раньше всех. Атрибутивно: ein früher Termin.\neinen früheren Zug (Akkusativ, Maskulinum). früher = сравнительная степень; «прежде» уже на A1.",
+          "usage_note": "Gegenteil: spät — поздний, поздно.",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+              "page": 15,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fr%C3%BCh"
+            ],
+            "example": "integraticum_original"
+          },
+          "topic": "Время, распорядок и планы",
+          "topics": [
+            "Время, распорядок и планы",
+            "Время"
+          ],
+          "alternative_examples": [
+            {
+              "de": "Wir könnten einen früheren Zug nehmen.",
+              "ru": "Мы могли бы сесть на более ранний поезд."
+            }
+          ],
+          "usage_variants": [
+            {
+              "de": "früher / frühere(r/s)",
+              "part": "adj",
+              "forms": "früh · früher · am frühesten",
+              "definition_de": "Zeitlich vor einem anderen möglichen Zeitpunkt liegend.",
+              "translations_ru": [
+                "более ранний",
+                "раньше (в сравнении)"
+              ],
+              "grammar_hint": "einen früheren Zug (Akkusativ, Maskulinum). früher = сравнительная степень; «прежде» уже на A1.",
+              "example": "Wir könnten einen früheren Zug nehmen.",
+              "example_ru": "Мы могли бы сесть на более ранний поезд."
+            }
+          ],
+          "alias_ids": [
+            "b1-frueher-comparative"
+          ],
+          "additional_source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/fr%C3%BCher"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      }
+    },
+    {
+      "candidate_number": 83,
+      "decision": "retain_distinct_sense",
+      "reason": "Sports lead vs guided tour.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 1,
+        "record": {
+          "id": "b1-fuehrung-sports-lead",
+          "de": "die Führung",
+          "lemma": "Führung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лидерство",
+            "преимущество в счёте"
+          ],
+          "definition_de": "Der Vorsprung einer Person oder Mannschaft in einem Wettbewerb.",
+          "example": "Unser Team übernahm kurz vor der Pause die Führung.",
+          "example_ru": "Наша команда вышла вперёд незадолго до перерыва.",
+          "forms": "die Führungen; in Führung (обычно Singular)",
+          "grammar_hint": "in Führung liegen — лидировать; in Führung gehen — выйти вперёд. Экскурсия уже на A1.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/F%C3%BChrung"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 310,
+          "record": {
+            "id": "a1-238-1",
+            "de": "die Führung",
+            "lemma": "Führung",
+            "ru": "экскурсия с гидом",
+            "uk": "",
+            "translations_ru": [
+              "экскурсия с гидом"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Führungen",
+            "definition_de": "Ein Rundgang, bei dem jemand einen Ort erklärt und zeigt.",
+            "example": "Die Führung durch das Museum beginnt gleich.",
+            "example_ru": "Экскурсия по музею скоро начнётся.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "b3f1f5722e5592a78717"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 84,
+      "decision": "retain_distinct_sense",
+      "reason": "Price/exchange vs recipient, purpose, or intended time.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 5,
+        "record": {
+          "id": "b1-fuer-price",
+          "de": "für",
+          "lemma": "für",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "за (цену)",
+            "в обмен на"
+          ],
+          "definition_de": "Gibt den Gegenwert bei einem Kauf oder Tausch an.",
+          "example": "Wir haben das Regal für 25 Franken gekauft.",
+          "example_ru": "Мы купили стеллаж за 25 франков.",
+          "forms": "für + Akkusativ",
+          "grammar_hint": "Всегда Akkusativ: für einen Franken. Здесь обозначает стоимость, а не цель.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/fuer_statt"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 311,
+          "record": {
+            "id": "a1-239-1",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (кого-либо)",
+            "uk": "",
+            "translations_ru": [
+              "для (кого-либо)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Person, die etwas bekommen soll.",
+            "example": "Das Paket ist für dich.",
+            "example_ru": "Посылка для тебя.",
+            "note": "für + Akkusativ: für dich.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 312,
+          "record": {
+            "id": "a1-239-2",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (назначение)",
+            "uk": "",
+            "translations_ru": [
+              "для (назначение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, wozu etwas dienen soll.",
+            "example": "Das ist der Schlüssel für die Garage.",
+            "example_ru": "Это ключ от гаража.",
+            "note": "für + Akkusativ: für die Garage.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 313,
+          "record": {
+            "id": "a1-239-3",
+            "de": "für",
+            "lemma": "für",
+            "ru": "на; на определённое время",
+            "uk": "",
+            "translations_ru": [
+              "на",
+              "на определённое время"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Zeit, für die etwas vorgesehen ist.",
+            "example": "Ich kaufe Brot für morgen.",
+            "example_ru": "Я покупаю хлеб на завтра.",
+            "note": "für + Akkusativ; в für morgen падеж внешне не выражен: für nächsten Montag.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 85,
+      "decision": "retain_distinct_sense",
+      "reason": "Benchmark relative to age/level vs recipient, purpose, or time.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 6,
+        "record": {
+          "id": "b1-fuer-benchmark",
+          "de": "für",
+          "lemma": "für",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "для (с учётом уровня, возраста)",
+            "по меркам"
+          ],
+          "definition_de": "Setzt eine Eigenschaft zu einem bestimmten Maßstab in Beziehung.",
+          "example": "Für sein Alter ist das Kind erstaunlich selbstständig.",
+          "example_ru": "Для своего возраста ребёнок удивительно самостоятельный.",
+          "forms": "für + Akkusativ",
+          "grammar_hint": "für einen Anfänger, für sein Alter. Здесь сравнение с ожидаемым уровнем.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/fuer_statt"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 311,
+          "record": {
+            "id": "a1-239-1",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (кого-либо)",
+            "uk": "",
+            "translations_ru": [
+              "для (кого-либо)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Person, die etwas bekommen soll.",
+            "example": "Das Paket ist für dich.",
+            "example_ru": "Посылка для тебя.",
+            "note": "für + Akkusativ: für dich.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 312,
+          "record": {
+            "id": "a1-239-2",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (назначение)",
+            "uk": "",
+            "translations_ru": [
+              "для (назначение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, wozu etwas dienen soll.",
+            "example": "Das ist der Schlüssel für die Garage.",
+            "example_ru": "Это ключ от гаража.",
+            "note": "für + Akkusativ: für die Garage.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 313,
+          "record": {
+            "id": "a1-239-3",
+            "de": "für",
+            "lemma": "für",
+            "ru": "на; на определённое время",
+            "uk": "",
+            "translations_ru": [
+              "на",
+              "на определённое время"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Zeit, für die etwas vorgesehen ist.",
+            "example": "Ich kaufe Brot für morgen.",
+            "example_ru": "Я покупаю хлеб на завтра.",
+            "note": "für + Akkusativ; в für morgen падеж внешне не выражен: für nächsten Montag.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 86,
+      "decision": "retain_distinct_sense",
+      "reason": "Acting on behalf of or in place of someone vs intended recipient.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 7,
+        "record": {
+          "id": "b1-fuer-substitute",
+          "de": "für",
+          "lemma": "für",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "за",
+            "вместо (кого-либо)"
+          ],
+          "definition_de": "Zeigt an, wessen Aufgabe jemand stellvertretend übernimmt.",
+          "example": "Kannst du morgen für mich die Sitzung leiten?",
+          "example_ru": "Можешь завтра провести заседание вместо меня?",
+          "forms": "für + Akkusativ",
+          "grammar_hint": "für mich / dich / ihn; также anstelle von + Dativ. Отличать от получателя: ein Geschenk für dich.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/fuer_statt"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 311,
+          "record": {
+            "id": "a1-239-1",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (кого-либо)",
+            "uk": "",
+            "translations_ru": [
+              "для (кого-либо)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Person, die etwas bekommen soll.",
+            "example": "Das Paket ist für dich.",
+            "example_ru": "Посылка для тебя.",
+            "note": "für + Akkusativ: für dich.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 312,
+          "record": {
+            "id": "a1-239-2",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (назначение)",
+            "uk": "",
+            "translations_ru": [
+              "для (назначение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, wozu etwas dienen soll.",
+            "example": "Das ist der Schlüssel für die Garage.",
+            "example_ru": "Это ключ от гаража.",
+            "note": "für + Akkusativ: für die Garage.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 313,
+          "record": {
+            "id": "a1-239-3",
+            "de": "für",
+            "lemma": "für",
+            "ru": "на; на определённое время",
+            "uk": "",
+            "translations_ru": [
+              "на",
+              "на определённое время"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Zeit, für die etwas vorgesehen ist.",
+            "example": "Ich kaufe Brot für morgen.",
+            "example_ru": "Я покупаю хлеб на завтра.",
+            "note": "für + Akkusativ; в für morgen падеж внешне не выражен: für nächsten Montag.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 87,
+      "decision": "retain_distinct_sense",
+      "reason": "Personal viewpoint vs intended recipient, purpose or time.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 8,
+        "record": {
+          "id": "b1-fuer-viewpoint",
+          "de": "für",
+          "lemma": "für",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "для",
+            "с точки зрения (кого-либо)"
+          ],
+          "definition_de": "Gibt an, aus wessen persönlicher Sicht eine Einschätzung gilt.",
+          "example": "Für mich ist diese Lösung zu kompliziert.",
+          "example_ru": "На мой взгляд, это решение слишком сложное.",
+          "forms": "für + Akkusativ",
+          "grammar_hint": "für mich = aus meiner Sicht. В начале главного предложения после всей группы стоит глагол.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 42,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/fuer_statt"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 311,
+          "record": {
+            "id": "a1-239-1",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (кого-либо)",
+            "uk": "",
+            "translations_ru": [
+              "для (кого-либо)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Person, die etwas bekommen soll.",
+            "example": "Das Paket ist für dich.",
+            "example_ru": "Посылка для тебя.",
+            "note": "für + Akkusativ: für dich.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 312,
+          "record": {
+            "id": "a1-239-2",
+            "de": "für",
+            "lemma": "für",
+            "ru": "для (назначение)",
+            "uk": "",
+            "translations_ru": [
+              "для (назначение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, wozu etwas dienen soll.",
+            "example": "Das ist der Schlüssel für die Garage.",
+            "example_ru": "Это ключ от гаража.",
+            "note": "für + Akkusativ: für die Garage.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 313,
+          "record": {
+            "id": "a1-239-3",
+            "de": "für",
+            "lemma": "für",
+            "ru": "на; на определённое время",
+            "uk": "",
+            "translations_ru": [
+              "на",
+              "на определённое время"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt die Zeit, für die etwas vorgesehen ist.",
+            "example": "Ich kaufe Brot für morgen.",
+            "example_ru": "Я покупаю хлеб на завтра.",
+            "note": "für + Akkusativ; в für morgen падеж внешне не выражен: für nächsten Montag.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "74f050b1bbcf1b8eb532"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 88,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Degree intensifier vs adjective describing something unpleasant; related but distinct syntactic use.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 9,
+        "record": {
+          "id": "b1-furchtbar-intensifier",
+          "de": "furchtbar",
+          "lemma": "furchtbar",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "ужасно",
+            "крайне",
+            "очень"
+          ],
+          "definition_de": "Verstärkt eine Eigenschaft oder einen Zustand, häufig einen unangenehmen.",
+          "example": "Mir war die Situation furchtbar peinlich.",
+          "example_ru": "Мне было ужасно неловко из-за этой ситуации.",
+          "forms": "наречное употребление; прил.: furchtbar · furchtbarer · am furchtbarsten",
+          "grammar_hint": "furchtbar müde / peinlich. Значение прилагательного «ужасный» уже на A2.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 43,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/furchtbar"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 455,
+          "record": {
+            "id": "dict_d666494734e0fb5e3f0e",
+            "de": "furchtbar",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ужасный",
+              "страшный"
+            ],
+            "definition_de": "Sehr unangenehm, schlimm oder erschreckend.",
+            "example": "Ich habe furchtbare Kopfschmerzen.",
+            "example_ru": "У меня ужасная головная боль.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 15,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/furchtbar"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "furchtbar · furchtbarer · am furchtbarsten",
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 89,
+      "decision": "retain_distinct_sense",
+      "reason": "Football as physical ball vs sport; A1 note mentions ball but says separate sense not confirmed.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 11,
+        "record": {
+          "id": "b1-fussball-ball",
+          "de": "der Fußball",
+          "lemma": "Fußball",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "футбольный мяч"
+          ],
+          "definition_de": "Ein Ball, der zum Fußballspielen verwendet wird.",
+          "example": "Die Kinder haben ihren Fußball im Garten vergessen.",
+          "example_ru": "Дети забыли футбольный мяч в саду.",
+          "forms": "die Fußbälle",
+          "grammar_hint": "Fußball как вид спорта обычно без Plural (A1). CH: Fussball, Fussbälle.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 43,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Fu%C3%9Fball"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 315,
+          "record": {
+            "id": "a1-241-1",
+            "de": "der Fußball",
+            "lemma": "Fußball",
+            "ru": "футбол",
+            "uk": "",
+            "translations_ru": [
+              "футбол"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "обычно только Singular как название спорта",
+            "definition_de": "Ein Mannschaftssport, bei dem man den Ball ins Tor spielen will.",
+            "example": "Die Kinder spielen im Park Fußball.",
+            "example_ru": "Дети играют в футбол в парке.",
+            "note": "Fußball spielen — играть в футбол. Как название спорта обычно без множественного числа. Футбольный мяч — тоже der Fußball, мн. ч. die Fußbälle; отдельный смысл не подтверждён примером A1.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "bdf9f395bea27ae2763f"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/Fuszball",
+                "scope": "additional_meaning_not_level"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 90,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Injection collocation vs generic giving; retain specialized medical context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_025.json",
+        "sha": "a815116f2c9796b8bb6e24aa49bf4d7b7e101c3a",
+        "batch": 25,
+        "row": 29,
+        "record": {
+          "id": "b1-geben-injection",
+          "de": "jemandem eine Spritze geben",
+          "lemma": "geben",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "делать кому-либо укол",
+            "вводить инъекцию"
+          ],
+          "definition_de": "Einer Person ein Mittel mittels einer Injektion verabreichen.",
+          "example": "Die Pflegefachfrau hat dem Patienten eine Spritze gegeben.",
+          "example_ru": "Медсестра сделала пациенту укол.",
+          "forms": "gibt · gab · hat gegeben",
+          "grammar_hint": "jemandem (Dativ) eine Spritze (Akkusativ) geben. Устойчивое сочетание.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 43,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/geben",
+              "https://www.duden.de/rechtschreibung/Spritze"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 318,
+          "record": {
+            "id": "a1-244-1",
+            "de": "geben",
+            "lemma": "geben",
+            "ru": "давать; дать; передавать",
+            "uk": "",
+            "translations_ru": [
+              "давать",
+              "дать",
+              "передавать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "gibt · gab · hat gegeben",
+            "definition_de": "Jemandem etwas in die Hand oder zur Verfügung stellen.",
+            "example": "Gibst du mir bitte den Schlüssel?",
+            "example_ru": "Дашь мне, пожалуйста, ключ?",
+            "note": "jemandem (Dativ) etwas (Akkusativ) geben: Ich gebe dir das Buch. es gibt + Akkusativ — есть/имеется (отдельная карточка).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "0421976483ac90d712ae"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/geben",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 91,
+      "decision": "retain_distinct_sense",
+      "reason": "Idiomatic tolerate treatment vs please someone; distinct construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_026.json",
+        "sha": "13986f3ee1233ed1b4e4e58df8308aeee7f5ab0b",
+        "batch": 26,
+        "row": 14,
+        "record": {
+          "id": "b1-gefallen-lassen-tolerate",
+          "de": "sich etwas gefallen lassen",
+          "lemma": "gefallen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "терпеть",
+            "мириться с чем-либо",
+            "позволять так с собой обращаться"
+          ],
+          "definition_de": "Eine unangenehme Behandlung hinnehmen, ohne sich dagegen zu wehren.",
+          "example": "Solche Bemerkungen lasse ich mir nicht gefallen.",
+          "example_ru": "Я не стану терпеть такие замечания.",
+          "forms": "lässt sich etwas gefallen · ließ sich etwas gefallen · hat sich etwas gefallen lassen",
+          "grammar_hint": "Возвратное местоимение Dativ: mir/dir/sich; etwas — Akkusativ. Lassen + Infinitiv без zu; в Perfekt двойной инфинитив.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/gefallen_reizen_begeistern"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 324,
+          "record": {
+            "id": "a1-249-1",
+            "de": "gefallen",
+            "lemma": "gefallen",
+            "ru": "нравиться",
+            "uk": "",
+            "translations_ru": [
+              "нравиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "gefällt · gefiel · hat gefallen",
+            "definition_de": "Bei jemandem einen positiven Eindruck machen.",
+            "example": "Deine neue Jacke gefällt mir.",
+            "example_ru": "Мне нравится твоя новая куртка.",
+            "note": "То, что нравится, — подлежащее. Тот, кому нравится, — в Dativ: Das gefällt mir.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "8fc22a6b2fad6c666c52"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 92,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Violation of a rule vs objection, collision, or opponent; preserve collocation.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_026.json",
+        "sha": "13986f3ee1233ed1b4e4e58df8308aeee7f5ab0b",
+        "batch": 26,
+        "row": 17,
+        "record": {
+          "id": "b1-gegen-rule",
+          "de": "gegen",
+          "lemma": "gegen",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "вопреки",
+            "в нарушение (правила)"
+          ],
+          "definition_de": "Kennzeichnet einen Verstoß gegen eine bestehende Regel oder Vorgabe.",
+          "example": "Das Parkieren hier verstößt gegen die Vorschriften.",
+          "example_ru": "Парковка здесь нарушает правила.",
+          "forms": "gegen + Akkusativ",
+          "grammar_hint": "gegen das Gesetz; gegen eine Regel verstoßen. Не просто мнение «против», которое уже на A1.",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 44,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gegen",
+              "https://www.duden.de/rechtschreibung/Vorschrift"
+            ],
+            "independent_meaning_checked": true,
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 325,
+          "record": {
+            "id": "a1-250-1",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "о; об (столкновение)",
+            "uk": "",
+            "translations_ru": [
+              "о",
+              "об (столкновение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet etwas, an das man stößt oder prallt.",
+            "example": "Der Ball prallt gegen die Wand.",
+            "example_ru": "Мяч ударяется о стену.",
+            "note": "gegen + Akkusativ: gegen die Wand.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 326,
+          "record": {
+            "id": "a1-250-2",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (возражение)",
+            "uk": "",
+            "translations_ru": [
+              "против (возражение)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Zeigt, dass man etwas ablehnt.",
+            "example": "Ich bin gegen diesen Plan.",
+            "example_ru": "Я против этого плана.",
+            "note": "gegen + Akkusativ: gegen diesen Plan.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 327,
+          "record": {
+            "id": "a1-250-3",
+            "de": "gegen",
+            "lemma": "gegen",
+            "ru": "против (соперник)",
+            "uk": "",
+            "translations_ru": [
+              "против (соперник)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Nennt den Gegner in einem Spiel.",
+            "example": "Heute spielen wir gegen Bern.",
+            "example_ru": "Сегодня мы играем против Берна.",
+            "note": "gegen + Akkusativ; у названия команды Bern падеж не виден: gegen den FC Bern.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 15,
+                "row_id": "fb429d4c375c6a4c6137"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ]
+}

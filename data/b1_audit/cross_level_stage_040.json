@@ -1,0 +1,3060 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    773,
+    792
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 14,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 773,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Gerät zum Empfangen von Rundfunksendungen. Example: Das alte Radio steht auf dem Regal.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 21,
+        "record": {
+          "id": "b1-radio-device",
+          "de": "das Radio",
+          "lemma": "Radio",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "радиоприёмник",
+            "радио (устройство)"
+          ],
+          "definition_de": "Ein Gerät zum Empfangen von Rundfunksendungen.",
+          "example": "Das alte Radio steht auf dem Regal.",
+          "example_ru": "Старое радио стоит на стеллаже.",
+          "forms": "die Radios",
+          "grammar_hint": "das Radio einschalten / ausschalten; Gerät — устройство.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Radio"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 328,
+          "record": {
+            "id": "dict_dba6be5f21a97202b9eb",
+            "de": "das Radio",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "радио",
+              "радиоприёмник"
+            ],
+            "definition_de": "Ein Gerät zum Empfang von Hörfunksendungen oder der Hörfunk selbst.",
+            "forms": "Plural · die Radios (приёмники)",
+            "example": "Beim Frühstück höre ich Radio.",
+            "example_ru": "За завтраком я слушаю радио.",
+            "grammar_hint": "",
+            "usage_note": "В Швейцарии для устройства встречается также der Radio; для радиовещания Plural не употребляется.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Radio"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dba6be5f21a97202b9eb",
+        "alias_id": "b1-radio-device",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dba6be5f21a97202b9eb"
+      }
+    },
+    {
+      "candidate_number": 774,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Rundfunksendungen anhören. Example: Beim Frühstück höre ich meistens Radio.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 22,
+        "record": {
+          "id": "b1-radio-broadcast",
+          "de": "Radio hören",
+          "lemma": "Radio",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "слушать радио"
+          ],
+          "definition_de": "Rundfunksendungen anhören.",
+          "example": "Beim Frühstück höre ich meistens Radio.",
+          "example_ru": "За завтраком я обычно слушаю радио.",
+          "forms": "hört · hörte · hat gehört; das Radio · die Radios",
+          "grammar_hint": "Radio hören обычно без артикля; im Radio — по радио.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Radio"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 328,
+          "record": {
+            "id": "dict_dba6be5f21a97202b9eb",
+            "de": "das Radio",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "радио",
+              "радиоприёмник"
+            ],
+            "definition_de": "Ein Gerät zum Empfang von Hörfunksendungen oder der Hörfunk selbst.",
+            "forms": "Plural · die Radios (приёмники)",
+            "example": "Beim Frühstück höre ich Radio.",
+            "example_ru": "За завтраком я слушаю радио.",
+            "grammar_hint": "",
+            "usage_note": "В Швейцарии для устройства встречается также der Radio; для радиовещания Plural не употребляется.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Radio"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dba6be5f21a97202b9eb",
+        "alias_id": "b1-radio-broadcast",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dba6be5f21a97202b9eb"
+      }
+    },
+    {
+      "candidate_number": 775,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Jemandem eine Handlung als sinnvoll empfehlen. Example: Die Lehrerin rät mir, jeden Tag zu lesen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 28,
+        "record": {
+          "id": "b1-raten-advise",
+          "de": "raten",
+          "lemma": "raten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "советовать",
+            "рекомендовать"
+          ],
+          "definition_de": "Jemandem eine Handlung als sinnvoll empfehlen.",
+          "example": "Die Lehrerin rät mir, jeden Tag zu lesen.",
+          "example_ru": "Преподавательница советует мне читать каждый день.",
+          "forms": "rät · riet · hat geraten",
+          "grammar_hint": "jemandem (Dativ) raten, etwas zu tun; zu etwas raten (Dativ); du rätst.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/raten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 131,
+          "record": {
+            "id": "dict_ba2aa69649374fca8e4f",
+            "de": "raten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "советовать",
+              "посоветовать"
+            ],
+            "definition_de": "Jemandem sagen, was man in einer bestimmten Situation für sinnvoll hält.",
+            "forms": "rät · riet · hat geraten",
+            "example": "Die Lehrerin rät mir, jeden Tag zehn Minuten Deutsch zu lesen.",
+            "example_ru": "Преподавательница советует мне каждый день десять минут читать по-немецки.",
+            "grammar_hint": "Кому советуем? Dativ: mir raten. Совет можно продолжить конструкцией с zu: Sie rät mir, mehr zu lesen.",
+            "usage_note": "Советовать кому-либо (Dativ). Угадывать — отдельная подтвержденная карточка A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/raten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 592,
+          "record": {
+            "id": "a2-raten-guess-reviewed",
+            "de": "raten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "угадывать",
+              "угадать",
+              "гадать"
+            ],
+            "forms": "rät · riet · hat geraten",
+            "definition_de": "Ohne sicheres Wissen versuchen, die richtige Antwort zu finden.",
+            "example": "Rate mal, wer vor der Tür steht!",
+            "example_ru": "Угадай, кто стоит за дверью!",
+            "usage_note": "Не путать с raten в смысле советовать.",
+            "grammar_hint": "Rate mal! — Угадай! В косвенном вопросе спрягаемый глагол в конце.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/raten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ba2aa69649374fca8e4f",
+        "alias_id": "b1-raten-advise",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ba2aa69649374fca8e4f"
+      }
+    },
+    {
+      "candidate_number": 776,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Antwort ohne sicheres Wissen zu finden versuchen. Example: Rate mal, wer morgen zu Besuch kommt!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_072.json",
+        "sha": "09adc35feefd3bc41fce5a4984cbb529eb522b11",
+        "batch": 72,
+        "row": 29,
+        "record": {
+          "id": "b1-raten-guess",
+          "de": "raten",
+          "lemma": "raten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "угадывать",
+            "догадываться"
+          ],
+          "definition_de": "Eine Antwort ohne sicheres Wissen zu finden versuchen.",
+          "example": "Rate mal, wer morgen zu Besuch kommt!",
+          "example_ru": "Угадай, кто завтра придёт в гости!",
+          "forms": "rät · riet · hat geraten",
+          "grammar_hint": "etwas raten; Rate mal!; в косвенном вопросе после wer глагол в конце. Не путать с geraten (попадать), Perfekt ist geraten.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/raten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 131,
+          "record": {
+            "id": "dict_ba2aa69649374fca8e4f",
+            "de": "raten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "советовать",
+              "посоветовать"
+            ],
+            "definition_de": "Jemandem sagen, was man in einer bestimmten Situation für sinnvoll hält.",
+            "forms": "rät · riet · hat geraten",
+            "example": "Die Lehrerin rät mir, jeden Tag zehn Minuten Deutsch zu lesen.",
+            "example_ru": "Преподавательница советует мне каждый день десять минут читать по-немецки.",
+            "grammar_hint": "Кому советуем? Dativ: mir raten. Совет можно продолжить конструкцией с zu: Sie rät mir, mehr zu lesen.",
+            "usage_note": "Советовать кому-либо (Dativ). Угадывать — отдельная подтвержденная карточка A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/raten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 592,
+          "record": {
+            "id": "a2-raten-guess-reviewed",
+            "de": "raten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "угадывать",
+              "угадать",
+              "гадать"
+            ],
+            "forms": "rät · riet · hat geraten",
+            "definition_de": "Ohne sicheres Wissen versuchen, die richtige Antwort zu finden.",
+            "example": "Rate mal, wer vor der Tür steht!",
+            "example_ru": "Угадай, кто стоит за дверью!",
+            "usage_note": "Не путать с raten в смысле советовать.",
+            "grammar_hint": "Rate mal! — Угадай! В косвенном вопросе спрягаемый глагол в конце.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/raten"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a2-raten-guess-reviewed",
+        "alias_id": "b1-raten-guess",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a2-raten-guess-reviewed"
+      }
+    },
+    {
+      "candidate_number": 777,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Aufgabe, deren Lösung durch Nachdenken gefunden werden soll. Example: Die Kinder lösen gemeinsam ein Rätsel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 2,
+        "record": {
+          "id": "b1-raetsel-puzzle",
+          "de": "das Rätsel",
+          "lemma": "Rätsel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "загадка",
+            "головоломка"
+          ],
+          "definition_de": "Eine Aufgabe, deren Lösung durch Nachdenken gefunden werden soll.",
+          "example": "Die Kinder lösen gemeinsam ein Rätsel.",
+          "example_ru": "Дети вместе решают загадку.",
+          "forms": "die Rätsel",
+          "grammar_hint": "ein Rätsel lösen; das Kreuzworträtsel — кроссворд.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/R%C3%A4tsel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 175,
+          "record": {
+            "id": "dict_edb7b99b10f0a8c22671",
+            "de": "das Rätsel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "загадка",
+              "головоломка"
+            ],
+            "definition_de": "Eine Frage oder Aufgabe, deren Lösung man durch Nachdenken finden muss.",
+            "forms": "Plural · die Rätsel",
+            "example": "Mein Sohn hat das Rätsel ganz allein gelöst.",
+            "example_ru": "Мой сын сам разгадал загадку.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/R%C3%A4tsel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_edb7b99b10f0a8c22671",
+        "alias_id": "b1-raetsel-puzzle",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_edb7b99b10f0a8c22671"
+      }
+    },
+    {
+      "candidate_number": 778,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Gebäude, in dem die Verwaltung einer Stadt untergebracht ist. Example: Die Sitzung findet morgen im Rathaus statt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 3,
+        "record": {
+          "id": "b1-rathaus-townhall",
+          "de": "das Rathaus",
+          "lemma": "Rathaus",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ратуша",
+            "здание городской администрации"
+          ],
+          "definition_de": "Ein Gebäude, in dem die Verwaltung einer Stadt untergebracht ist.",
+          "example": "Die Sitzung findet morgen im Rathaus statt.",
+          "example_ru": "Заседание состоится завтра в ратуше.",
+          "forms": "die Rathäuser",
+          "grammar_hint": "im Rathaus (Dativ); ins Rathaus (Akkusativ). Gemeindehaus — здание администрации коммуны.",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rathaus"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 43,
+          "record": {
+            "id": "dict_1e42a9f527caf784a2f6",
+            "de": "das Rathaus",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ратуша",
+              "здание городской администрации"
+            ],
+            "definition_de": "Ein Gebäude, in dem die Verwaltung einer Stadt oder Gemeinde arbeitet.",
+            "forms": "Plural · die Rathäuser",
+            "example": "Das Rathaus ist neben der Post.",
+            "example_ru": "Здание городской администрации находится рядом с почтой.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Rathaus"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_1e42a9f527caf784a2f6",
+        "alias_id": "b1-rathaus-townhall",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_1e42a9f527caf784a2f6"
+      }
+    },
+    {
+      "candidate_number": 779,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Rauch eines Tabakprodukts einziehen und ausatmen. Example: Meine Schwester raucht nicht mehr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 4,
+        "record": {
+          "id": "b1-rauchen-smoke",
+          "de": "rauchen",
+          "lemma": "rauchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "курить"
+          ],
+          "definition_de": "Rauch eines Tabakprodukts einziehen und ausatmen.",
+          "example": "Meine Schwester raucht nicht mehr.",
+          "example_ru": "Моя сестра больше не курит.",
+          "forms": "raucht · rauchte · hat geraucht",
+          "grammar_hint": "rauchen без объекта или eine Zigarette rauchen (Akk.); mit dem Rauchen aufhören.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rauchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 656,
+          "record": {
+            "id": "a1-467-1",
+            "de": "rauchen",
+            "lemma": "rauchen",
+            "ru": "курить",
+            "uk": "",
+            "translations_ru": [
+              "курить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "raucht · rauchte · hat geraucht",
+            "definition_de": "Rauch von Tabak einatmen.",
+            "example": "Hier darf man nicht rauchen.",
+            "example_ru": "Здесь нельзя курить.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "4e13656fedb02b615780"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-467-1",
+        "alias_id": "b1-rauchen-smoke",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-467-1"
+      }
+    },
+    {
+      "candidate_number": 780,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Die Tätigkeit, bei der Tabakrauch eingeatmet wird. Example: Das Rauchen ist in diesem Gebäude untersagt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 5,
+        "record": {
+          "id": "b1-rauchen-nominal",
+          "de": "das Rauchen",
+          "lemma": "rauchen",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "курение"
+          ],
+          "definition_de": "Die Tätigkeit, bei der Tabakrauch eingeatmet wird.",
+          "example": "Das Rauchen ist in diesem Gebäude untersagt.",
+          "example_ru": "Курение в этом здании запрещено.",
+          "forms": "без множественного числа",
+          "grammar_hint": "Субстантивированный инфинитив: das Rauchen, большая буква; beim Rauchen = bei dem Rauchen.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rauchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 656,
+          "record": {
+            "id": "a1-467-1",
+            "de": "rauchen",
+            "lemma": "rauchen",
+            "ru": "курить",
+            "uk": "",
+            "translations_ru": [
+              "курить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "raucht · rauchte · hat geraucht",
+            "definition_de": "Rauch von Tabak einatmen.",
+            "example": "Hier darf man nicht rauchen.",
+            "example_ru": "Здесь нельзя курить.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "4e13656fedb02b615780"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 781,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein abgegrenzter Bereich innerhalb eines Gebäudes. Example: Der Unterricht findet heute in einem anderen Raum statt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 7,
+        "record": {
+          "id": "b1-raum-room",
+          "de": "der Raum",
+          "lemma": "Raum",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "помещение",
+            "комната",
+            "зал"
+          ],
+          "definition_de": "Ein abgegrenzter Bereich innerhalb eines Gebäudes.",
+          "example": "Der Unterricht findet heute in einem anderen Raum statt.",
+          "example_ru": "Сегодня урок проходит в другом помещении.",
+          "forms": "die Räume",
+          "grammar_hint": "in einem Raum (Wo? Dativ), in einen Raum (Wohin? Akkusativ); Raum также означает пространство в других контекстах.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Raum"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 516,
+          "record": {
+            "id": "a1-468-1",
+            "de": "der Raum",
+            "lemma": "Raum",
+            "ru": "помещение; комната",
+            "uk": "",
+            "translations_ru": [
+              "помещение",
+              "комната"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Räume",
+            "definition_de": "Ein abgegrenzter Teil eines Gebäudes, etwa ein Unterrichtszimmer.",
+            "example": "Der Unterricht findet in einem kleinen Raum statt.",
+            "example_ru": "Занятие проходит в небольшом помещении.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "3de9bbd3efa6409558a2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-468-1",
+        "alias_id": "b1-raum-room",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-468-1"
+      }
+    },
+    {
+      "candidate_number": 782,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Zahlen mithilfe mathematischer Verfahren verarbeiten. Example: Mein Sohn kann schon mit großen Zahlen rechnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 19,
+        "record": {
+          "id": "b1-rechnen-calculate",
+          "de": "rechnen",
+          "lemma": "rechnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "считать",
+            "вычислять"
+          ],
+          "definition_de": "Zahlen mithilfe mathematischer Verfahren verarbeiten.",
+          "example": "Mein Sohn kann schon mit großen Zahlen rechnen.",
+          "example_ru": "Мой сын уже умеет считать с большими числами.",
+          "forms": "rechnet · rechnete · hat gerechnet",
+          "grammar_hint": "rechnen; etwas ausrechnen — вычислить результат; CH: grossen.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 495,
+          "record": {
+            "id": "dict_27357f906d567b3a8dba",
+            "de": "rechnen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "считать",
+              "вычислять"
+            ],
+            "definition_de": "Mit Zahlen mathematische Aufgaben lösen.",
+            "forms": "rechnet · rechnete · hat gerechnet",
+            "example": "Die Kinder lernen in der Schule rechnen.",
+            "example_ru": "Дети учатся считать в школе.",
+            "grammar_hint": "Не путать с zählen — считать предметы или числа по порядку.",
+            "usage_note": "Значения rechnen mit и sich rechnen в этой карточке не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/rechnen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_27357f906d567b3a8dba",
+        "alias_id": "b1-rechnen-calculate",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_27357f906d567b3a8dba"
+      }
+    },
+    {
+      "candidate_number": 783,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Das Ausführen mathematischer Rechenoperationen. Example: Beim Rechnen macht sie kaum Fehler.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 20,
+        "record": {
+          "id": "b1-rechnen-nominal",
+          "de": "das Rechnen",
+          "lemma": "rechnen",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "счёт",
+            "арифметика (занятие)"
+          ],
+          "definition_de": "Das Ausführen mathematischer Rechenoperationen.",
+          "example": "Beim Rechnen macht sie kaum Fehler.",
+          "example_ru": "При вычислениях она почти не делает ошибок.",
+          "forms": "без множественного числа",
+          "grammar_hint": "Субстантивированный инфинитив: das Rechnen; im Rechnen / in Rechnen — в контексте школьных оценок; beim Rechnen = bei dem Rechnen.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 495,
+          "record": {
+            "id": "dict_27357f906d567b3a8dba",
+            "de": "rechnen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "считать",
+              "вычислять"
+            ],
+            "definition_de": "Mit Zahlen mathematische Aufgaben lösen.",
+            "forms": "rechnet · rechnete · hat gerechnet",
+            "example": "Die Kinder lernen in der Schule rechnen.",
+            "example_ru": "Дети учатся считать в школе.",
+            "grammar_hint": "Не путать с zählen — считать предметы или числа по порядку.",
+            "usage_note": "Значения rechnen mit и sich rechnen в этой карточке не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/rechnen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 784,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Etwas als mögliche zukünftige Entwicklung berücksichtigen. Example: Wir müssen mit längeren Wartezeiten rechnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 21,
+        "record": {
+          "id": "b1-rechnen-expect",
+          "de": "mit etwas rechnen",
+          "lemma": "rechnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "рассчитывать на",
+            "ожидать",
+            "предполагать"
+          ],
+          "definition_de": "Etwas als mögliche zukünftige Entwicklung berücksichtigen.",
+          "example": "Wir müssen mit längeren Wartezeiten rechnen.",
+          "example_ru": "Нам нужно рассчитывать на более длительное ожидание.",
+          "forms": "rechnet · rechnete · hat gerechnet",
+          "grammar_hint": "mit + Dativ; не путать с отделяемым mitrechnen (учитывать при подсчёте: hat mitgerechnet).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/rechnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 495,
+          "record": {
+            "id": "dict_27357f906d567b3a8dba",
+            "de": "rechnen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "считать",
+              "вычислять"
+            ],
+            "definition_de": "Mit Zahlen mathematische Aufgaben lösen.",
+            "forms": "rechnet · rechnete · hat gerechnet",
+            "example": "Die Kinder lernen in der Schule rechnen.",
+            "example_ru": "Дети учатся считать в школе.",
+            "grammar_hint": "Не путать с zählen — считать предметы или числа по порядку.",
+            "usage_note": "Значения rechnen mit и sich rechnen в этой карточке не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/rechnen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 785,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Aufstellung des Betrags für bestellte Speisen und Getränke. Example: Könnten wir bitte die Rechnung bekommen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 23,
+        "record": {
+          "id": "b1-rechnung-restaurant",
+          "de": "die Rechnung",
+          "lemma": "Rechnung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "счёт (в ресторане)"
+          ],
+          "definition_de": "Eine Aufstellung des Betrags für bestellte Speisen und Getränke.",
+          "example": "Könnten wir bitte die Rechnung bekommen?",
+          "example_ru": "Можно нам, пожалуйста, счёт?",
+          "forms": "die Rechnungen",
+          "grammar_hint": "die Rechnung verlangen / bezahlen; getrennt zahlen — платить раздельно.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rechnung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 517,
+          "record": {
+            "id": "a1-469-1",
+            "de": "die Rechnung",
+            "lemma": "Rechnung",
+            "ru": "счёт к оплате",
+            "uk": "",
+            "translations_ru": [
+              "счёт к оплате"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Rechnungen",
+            "definition_de": "Ein Beleg, auf dem steht, was man bezahlen muss.",
+            "example": "Können Sie uns bitte die Rechnung bringen?",
+            "example_ru": "Принесите нам, пожалуйста, счёт.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "9392941e0b9d190cd804"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-469-1",
+        "alias_id": "b1-rechnung-restaurant",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-469-1"
+      }
+    },
+    {
+      "candidate_number": 786,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Dokument mit einer Forderung für erbrachte Leistungen oder gelieferte Waren. Example: Die Rechnung für die Reparatur kam per E-Mail.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_073.json",
+        "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+        "batch": 73,
+        "row": 24,
+        "record": {
+          "id": "b1-rechnung-invoice",
+          "de": "die Rechnung",
+          "lemma": "Rechnung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "счёт",
+            "счёт-фактура (за товары или услуги)"
+          ],
+          "definition_de": "Ein Dokument mit einer Forderung für erbrachte Leistungen oder gelieferte Waren.",
+          "example": "Die Rechnung für die Reparatur kam per E-Mail.",
+          "example_ru": "Счёт за ремонт пришёл по электронной почте.",
+          "forms": "die Rechnungen",
+          "grammar_hint": "eine Rechnung ausstellen / begleichen; für + Akkusativ; Quittung — подтверждение оплаты, Rechnung — счёт.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rechnung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 517,
+          "record": {
+            "id": "a1-469-1",
+            "de": "die Rechnung",
+            "lemma": "Rechnung",
+            "ru": "счёт к оплате",
+            "uk": "",
+            "translations_ru": [
+              "счёт к оплате"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Rechnungen",
+            "definition_de": "Ein Beleg, auf dem steht, was man bezahlen muss.",
+            "example": "Können Sie uns bitte die Rechnung bringen?",
+            "example_ru": "Принесите нам, пожалуйста, счёт.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "9392941e0b9d190cd804"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-469-1",
+        "alias_id": "b1-rechnung-invoice",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-469-1"
+      }
+    },
+    {
+      "candidate_number": 787,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Bewegung zur rechten Seite bezeichnend. Example: Biegen Sie hinter der Brücke rechts ab.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_074.json",
+        "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+        "batch": 74,
+        "row": 2,
+        "record": {
+          "id": "b1-rechts-direction",
+          "de": "rechts",
+          "lemma": "rechts",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "направо",
+            "вправо"
+          ],
+          "definition_de": "Eine Bewegung zur rechten Seite bezeichnend.",
+          "example": "Biegen Sie hinter der Brücke rechts ab.",
+          "example_ru": "Поверните направо за мостом.",
+          "forms": "неизменяемое",
+          "grammar_hint": "rechts abbiegen; nach rechts gehen. Wohin? направление вправо; не требует падежа само по себе.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechts"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 657,
+          "record": {
+            "id": "a1-470-1",
+            "de": "rechts",
+            "lemma": "rechts",
+            "ru": "справа; направо (при движении)",
+            "uk": "",
+            "translations_ru": [
+              "справа",
+              "направо (при движении)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "",
+            "definition_de": "Auf der rechten Seite oder nach rechts.",
+            "example": "Die Bank ist rechts.",
+            "example_ru": "Банк справа.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "bf76fab4ea1da8034e2c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-470-1",
+        "alias_id": "b1-rechts-direction",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-470-1"
+      }
+    },
+    {
+      "candidate_number": 788,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Position auf der rechten Seite bezeichnend. Example: Der Eingang liegt rechts neben dem Fenster.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_074.json",
+        "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+        "batch": 74,
+        "row": 3,
+        "record": {
+          "id": "b1-rechts-location",
+          "de": "rechts",
+          "lemma": "rechts",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "справа",
+            "с правой стороны"
+          ],
+          "definition_de": "Eine Position auf der rechten Seite bezeichnend.",
+          "example": "Der Eingang liegt rechts neben dem Fenster.",
+          "example_ru": "Вход находится справа от окна.",
+          "forms": "неизменяемое",
+          "grammar_hint": "Wo? rechts; rechts von + Dativ. Сравните rechts abbiegen (направо) и rechts stehen (справа).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechts"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 657,
+          "record": {
+            "id": "a1-470-1",
+            "de": "rechts",
+            "lemma": "rechts",
+            "ru": "справа; направо (при движении)",
+            "uk": "",
+            "translations_ru": [
+              "справа",
+              "направо (при движении)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "",
+            "definition_de": "Auf der rechten Seite oder nach rechts.",
+            "example": "Die Bank ist rechts.",
+            "example_ru": "Банк справа.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "bf76fab4ea1da8034e2c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-470-1",
+        "alias_id": "b1-rechts-location",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-470-1"
+      }
+    },
+    {
+      "candidate_number": 789,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich mündlich mit anderen austauschen. Example: Ich möchte mit dir über den Kurs reden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_074.json",
+        "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+        "batch": 74,
+        "row": 6,
+        "record": {
+          "id": "b1-reden-talk",
+          "de": "reden",
+          "lemma": "reden",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "говорить",
+            "разговаривать",
+            "беседовать"
+          ],
+          "definition_de": "Sich mündlich mit anderen austauschen.",
+          "example": "Ich möchte mit dir über den Kurs reden.",
+          "example_ru": "Я хотела бы поговорить с тобой о курсе.",
+          "forms": "redet · redete · hat geredet",
+          "grammar_hint": "mit jemandem (Dativ) über etwas (Akkusativ) reden; worüber? — о чём?",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/reden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 468,
+          "record": {
+            "id": "dict_407c41f0b70e01bb1b4e",
+            "de": "reden",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "беседовать"
+            ],
+            "definition_de": "Mit Worten etwas sagen oder mit anderen sprechen.",
+            "forms": "redet · redete · hat geredet",
+            "example": "Ich rede mit meinem Bruder über die Reise.",
+            "example_ru": "Я разговариваю с братом о поездке.",
+            "grammar_hint": "mit + Dativ reden; über + Akkusativ reden.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/reden"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_407c41f0b70e01bb1b4e",
+        "alias_id": "b1-reden-talk",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_407c41f0b70e01bb1b4e"
+      }
+    },
+    {
+      "candidate_number": 790,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Von flüssigem Niederschlag aus den Wolken gesagt. Example: Seit heute Morgen regnet es ununterbrochen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_074.json",
+        "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+        "batch": 74,
+        "row": 18,
+        "record": {
+          "id": "b1-regnen-rain",
+          "de": "regnen",
+          "lemma": "regnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "идти (о дожде)"
+          ],
+          "definition_de": "Von flüssigem Niederschlag aus den Wolken gesagt.",
+          "example": "Seit heute Morgen regnet es ununterbrochen.",
+          "example_ru": "С сегодняшнего утра непрерывно идёт дождь.",
+          "forms": "es regnet · es regnete · es hat geregnet",
+          "grammar_hint": "Безличный глагол с es: Es regnet. Morgen regnet es — es после глагола при обстоятельстве на первом месте.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/regnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 658,
+          "record": {
+            "id": "a1-471-1",
+            "de": "regnen",
+            "lemma": "regnen",
+            "ru": "идти (о дожде)",
+            "uk": "",
+            "translations_ru": [
+              "идти (о дожде)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "regnet · regnete · hat geregnet",
+            "definition_de": "Als Wasser in Tropfen aus den Wolken fallen.",
+            "example": "Es regnet seit gestern.",
+            "example_ru": "Дождь идёт со вчерашнего дня.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "0e92be56670a5f6222b3"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-471-1",
+        "alias_id": "b1-regnen-rain",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-471-1"
+      }
+    },
+    {
+      "candidate_number": 791,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Wasser, das in Tropfen aus der Atmosphäre fällt. Example: Bei starkem Regen bleiben wir zu Hause.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_074.json",
+        "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+        "batch": 74,
+        "row": 19,
+        "record": {
+          "id": "b1-regen-rain",
+          "de": "der Regen",
+          "lemma": "Regen",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "дождь"
+          ],
+          "definition_de": "Wasser, das in Tropfen aus der Atmosphäre fällt.",
+          "example": "Bei starkem Regen bleiben wir zu Hause.",
+          "example_ru": "При сильном дожде мы остаёмся дома.",
+          "forms": "обычно без множественного числа; редкое die Regen",
+          "grammar_hint": "bei Regen (Dativ); im Regen stehen; es regnet — глагол.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Regen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 518,
+          "record": {
+            "id": "a1-472-1",
+            "de": "der Regen",
+            "lemma": "Regen",
+            "ru": "дождь",
+            "uk": "",
+            "translations_ru": [
+              "дождь"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "обычно только Singular в этом употреблении",
+            "definition_de": "Wasser, das in Tropfen aus den Wolken fällt.",
+            "example": "Nach dem Regen gehen wir spazieren.",
+            "example_ru": "После дождя мы пойдём гулять.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "5bad008dceabc9c0d9d5"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-472-1",
+        "alias_id": "b1-regen-rain",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-472-1"
+      }
+    },
+    {
+      "candidate_number": 792,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Über viel Geld oder Vermögen verfügend. Example: Wenn ich reich wäre, würde ich eine Bibliothek eröffnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_074.json",
+        "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+        "batch": 74,
+        "row": 23,
+        "record": {
+          "id": "b1-reich-wealthy",
+          "de": "reich",
+          "lemma": "reich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "богатый",
+            "состоятельный"
+          ],
+          "definition_de": "Über viel Geld oder Vermögen verfügend.",
+          "example": "Wenn ich reich wäre, würde ich eine Bibliothek eröffnen.",
+          "example_ru": "Если бы я была богатой, я бы открыла библиотеку.",
+          "forms": "reich · reicher · am reichsten",
+          "grammar_hint": "reich sein; Gegenteil arm. Wenn ich reich wäre — Konjunktiv II, глагол в конце придаточного.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/reich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 139,
+          "record": {
+            "id": "dict_149fe00403d8a30e66bd",
+            "de": "reich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "богатый"
+            ],
+            "definition_de": "So, dass jemand viel Geld oder Besitz hat.",
+            "forms": "reich · reicher · am reichsten",
+            "example": "Er ist reich genug, um sich ein Haus zu kaufen.",
+            "example_ru": "Он достаточно богат, чтобы купить себе дом.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 23,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/reich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_149fe00403d8a30e66bd",
+        "alias_id": "b1-reich-wealthy",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_149fe00403d8a30e66bd"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_dba6be5f21a97202b9eb",
+      "alias_ids": [
+        "b1-radio-device",
+        "b1-radio-broadcast"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_dba6be5f21a97202b9eb",
+        "de": "das Radio",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "радио",
+          "радиоприёмник"
+        ],
+        "definition_de": "Ein Gerät zum Empfang von Hörfunksendungen oder der Hörfunk selbst.",
+        "forms": "Plural · die Radios (приёмники)",
+        "example": "Beim Frühstück höre ich Radio.",
+        "example_ru": "За завтраком я слушаю радио.",
+        "grammar_hint": "",
+        "usage_note": "В Швейцарии для устройства встречается также der Radio; для радиовещания Plural не употребляется.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Radio"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-radio-device",
+          "b1-radio-broadcast"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-radio-device",
+            "de": "das Radio",
+            "part": "noun",
+            "forms": "die Radios",
+            "definition_de": "Ein Gerät zum Empfangen von Rundfunksendungen.",
+            "translations_ru": [
+              "радиоприёмник",
+              "радио (устройство)"
+            ],
+            "grammar_hint": "das Radio einschalten / ausschalten; Gerät — устройство.",
+            "example": "Das alte Radio steht auf dem Regal.",
+            "example_ru": "Старое радио стоит на стеллаже."
+          },
+          {
+            "id": "b1-radio-broadcast",
+            "de": "Radio hören",
+            "part": "phrase",
+            "forms": "hört · hörte · hat gehört; das Radio · die Radios",
+            "definition_de": "Rundfunksendungen anhören.",
+            "translations_ru": [
+              "слушать радио"
+            ],
+            "grammar_hint": "Radio hören обычно без артикля; im Radio — по радио.",
+            "example": "Beim Frühstück höre ich meistens Radio.",
+            "example_ru": "За завтраком я обычно слушаю радио."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Radio"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Radio"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ba2aa69649374fca8e4f",
+      "alias_ids": [
+        "b1-raten-advise"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ba2aa69649374fca8e4f",
+        "de": "raten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "советовать",
+          "посоветовать"
+        ],
+        "definition_de": "Jemandem sagen, was man in einer bestimmten Situation für sinnvoll hält.",
+        "forms": "rät · riet · hat geraten",
+        "example": "Die Lehrerin rät mir, jeden Tag zehn Minuten Deutsch zu lesen.",
+        "example_ru": "Преподавательница советует мне каждый день десять минут читать по-немецки.",
+        "grammar_hint": "Кому советуем? Dativ: mir raten. Совет можно продолжить конструкцией с zu: Sie rät mir, mehr zu lesen.",
+        "usage_note": "Советовать кому-либо (Dativ). Угадывать — отдельная подтвержденная карточка A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/raten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-raten-advise"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-raten-advise",
+            "de": "raten",
+            "part": "verb",
+            "forms": "rät · riet · hat geraten",
+            "definition_de": "Jemandem eine Handlung als sinnvoll empfehlen.",
+            "translations_ru": [
+              "советовать",
+              "рекомендовать"
+            ],
+            "grammar_hint": "jemandem (Dativ) raten, etwas zu tun; zu etwas raten (Dativ); du rätst.",
+            "example": "Die Lehrerin rät mir, jeden Tag zu lesen.",
+            "example_ru": "Преподавательница советует мне читать каждый день."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/raten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a2-raten-guess-reviewed",
+      "alias_ids": [
+        "b1-raten-guess"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "a2-raten-guess-reviewed",
+        "de": "raten",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "угадывать",
+          "угадать",
+          "гадать"
+        ],
+        "forms": "rät · riet · hat geraten",
+        "definition_de": "Ohne sicheres Wissen versuchen, die richtige Antwort zu finden.",
+        "example": "Rate mal, wer vor der Tür steht!",
+        "example_ru": "Угадай, кто стоит за дверью!",
+        "usage_note": "Не путать с raten в смысле советовать.",
+        "grammar_hint": "Rate mal! — Угадай! В косвенном вопросе спрягаемый глагол в конце.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/raten"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-raten-guess"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-raten-guess",
+            "de": "raten",
+            "part": "verb",
+            "forms": "rät · riet · hat geraten",
+            "definition_de": "Eine Antwort ohne sicheres Wissen zu finden versuchen.",
+            "translations_ru": [
+              "угадывать",
+              "догадываться"
+            ],
+            "grammar_hint": "etwas raten; Rate mal!; в косвенном вопросе после wer глагол в конце. Не путать с geraten (попадать), Perfekt ist geraten.",
+            "example": "Rate mal, wer morgen zu Besuch kommt!",
+            "example_ru": "Угадай, кто завтра придёт в гости!"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page 72; earliest CEFR level pending cross-level comparison. Some entries separate usage contexts rather than distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/raten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_edb7b99b10f0a8c22671",
+      "alias_ids": [
+        "b1-raetsel-puzzle"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_edb7b99b10f0a8c22671",
+        "de": "das Rätsel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "загадка",
+          "головоломка"
+        ],
+        "definition_de": "Eine Frage oder Aufgabe, deren Lösung man durch Nachdenken finden muss.",
+        "forms": "Plural · die Rätsel",
+        "example": "Mein Sohn hat das Rätsel ganz allein gelöst.",
+        "example_ru": "Мой сын сам разгадал загадку.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/R%C3%A4tsel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-raetsel-puzzle"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-raetsel-puzzle",
+            "de": "das Rätsel",
+            "part": "noun",
+            "forms": "die Rätsel",
+            "definition_de": "Eine Aufgabe, deren Lösung durch Nachdenken gefunden werden soll.",
+            "translations_ru": [
+              "загадка",
+              "головоломка"
+            ],
+            "grammar_hint": "ein Rätsel lösen; das Kreuzworträtsel — кроссворд.",
+            "example": "Die Kinder lösen gemeinsam ein Rätsel.",
+            "example_ru": "Дети вместе решают загадку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/R%C3%A4tsel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_1e42a9f527caf784a2f6",
+      "alias_ids": [
+        "b1-rathaus-townhall"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_1e42a9f527caf784a2f6",
+        "de": "das Rathaus",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ратуша",
+          "здание городской администрации"
+        ],
+        "definition_de": "Ein Gebäude, in dem die Verwaltung einer Stadt oder Gemeinde arbeitet.",
+        "forms": "Plural · die Rathäuser",
+        "example": "Das Rathaus ist neben der Post.",
+        "example_ru": "Здание городской администрации находится рядом с почтой.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Rathaus"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-rathaus-townhall"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rathaus-townhall",
+            "de": "das Rathaus",
+            "part": "noun",
+            "forms": "die Rathäuser",
+            "definition_de": "Ein Gebäude, in dem die Verwaltung einer Stadt untergebracht ist.",
+            "translations_ru": [
+              "ратуша",
+              "здание городской администрации"
+            ],
+            "grammar_hint": "im Rathaus (Dativ); ins Rathaus (Akkusativ). Gemeindehaus — здание администрации коммуны.",
+            "example": "Die Sitzung findet morgen im Rathaus statt.",
+            "example_ru": "Заседание состоится завтра в ратуше."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rathaus"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-467-1",
+      "alias_ids": [
+        "b1-rauchen-smoke"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-467-1",
+        "de": "rauchen",
+        "lemma": "rauchen",
+        "ru": "курить",
+        "uk": "",
+        "translations_ru": [
+          "курить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "raucht · rauchte · hat geraucht",
+        "definition_de": "Rauch von Tabak einatmen.",
+        "example": "Hier darf man nicht rauchen.",
+        "example_ru": "Здесь нельзя курить.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "4e13656fedb02b615780"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-rauchen-smoke"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rauchen-smoke",
+            "de": "rauchen",
+            "part": "verb",
+            "forms": "raucht · rauchte · hat geraucht",
+            "definition_de": "Rauch eines Tabakprodukts einziehen und ausatmen.",
+            "translations_ru": [
+              "курить"
+            ],
+            "grammar_hint": "rauchen без объекта или eine Zigarette rauchen (Akk.); mit dem Rauchen aufhören.",
+            "example": "Meine Schwester raucht nicht mehr.",
+            "example_ru": "Моя сестра больше не курит."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 72,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rauchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-468-1",
+      "alias_ids": [
+        "b1-raum-room"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-468-1",
+        "de": "der Raum",
+        "lemma": "Raum",
+        "ru": "помещение; комната",
+        "uk": "",
+        "translations_ru": [
+          "помещение",
+          "комната"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Räume",
+        "definition_de": "Ein abgegrenzter Teil eines Gebäudes, etwa ein Unterrichtszimmer.",
+        "example": "Der Unterricht findet in einem kleinen Raum statt.",
+        "example_ru": "Занятие проходит в небольшом помещении.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "3de9bbd3efa6409558a2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-raum-room"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-raum-room",
+            "de": "der Raum",
+            "part": "noun",
+            "forms": "die Räume",
+            "definition_de": "Ein abgegrenzter Bereich innerhalb eines Gebäudes.",
+            "translations_ru": [
+              "помещение",
+              "комната",
+              "зал"
+            ],
+            "grammar_hint": "in einem Raum (Wo? Dativ), in einen Raum (Wohin? Akkusativ); Raum также означает пространство в других контекстах.",
+            "example": "Der Unterricht findet heute in einem anderen Raum statt.",
+            "example_ru": "Сегодня урок проходит в другом помещении."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Raum"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_27357f906d567b3a8dba",
+      "alias_ids": [
+        "b1-rechnen-calculate"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_27357f906d567b3a8dba",
+        "de": "rechnen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "считать",
+          "вычислять"
+        ],
+        "definition_de": "Mit Zahlen mathematische Aufgaben lösen.",
+        "forms": "rechnet · rechnete · hat gerechnet",
+        "example": "Die Kinder lernen in der Schule rechnen.",
+        "example_ru": "Дети учатся считать в школе.",
+        "grammar_hint": "Не путать с zählen — считать предметы или числа по порядку.",
+        "usage_note": "Значения rechnen mit и sich rechnen в этой карточке не маркируются A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/rechnen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-rechnen-calculate"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rechnen-calculate",
+            "de": "rechnen",
+            "part": "verb",
+            "forms": "rechnet · rechnete · hat gerechnet",
+            "definition_de": "Zahlen mithilfe mathematischer Verfahren verarbeiten.",
+            "translations_ru": [
+              "считать",
+              "вычислять"
+            ],
+            "grammar_hint": "rechnen; etwas ausrechnen — вычислить результат; CH: grossen.",
+            "example": "Mein Sohn kann schon mit großen Zahlen rechnen.",
+            "example_ru": "Мой сын уже умеет считать с большими числами."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-469-1",
+      "alias_ids": [
+        "b1-rechnung-restaurant",
+        "b1-rechnung-invoice"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-469-1",
+        "de": "die Rechnung",
+        "lemma": "Rechnung",
+        "ru": "счёт к оплате",
+        "uk": "",
+        "translations_ru": [
+          "счёт к оплате"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "die Rechnungen",
+        "definition_de": "Ein Beleg, auf dem steht, was man bezahlen muss.",
+        "example": "Können Sie uns bitte die Rechnung bringen?",
+        "example_ru": "Принесите нам, пожалуйста, счёт.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "9392941e0b9d190cd804"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-rechnung-restaurant",
+          "b1-rechnung-invoice"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rechnung-restaurant",
+            "de": "die Rechnung",
+            "part": "noun",
+            "forms": "die Rechnungen",
+            "definition_de": "Eine Aufstellung des Betrags für bestellte Speisen und Getränke.",
+            "translations_ru": [
+              "счёт (в ресторане)"
+            ],
+            "grammar_hint": "die Rechnung verlangen / bezahlen; getrennt zahlen — платить раздельно.",
+            "example": "Könnten wir bitte die Rechnung bekommen?",
+            "example_ru": "Можно нам, пожалуйста, счёт?"
+          },
+          {
+            "id": "b1-rechnung-invoice",
+            "de": "die Rechnung",
+            "part": "noun",
+            "forms": "die Rechnungen",
+            "definition_de": "Ein Dokument mit einer Forderung für erbrachte Leistungen oder gelieferte Waren.",
+            "translations_ru": [
+              "счёт",
+              "счёт-фактура (за товары или услуги)"
+            ],
+            "grammar_hint": "eine Rechnung ausstellen / begleichen; für + Akkusativ; Quittung — подтверждение оплаты, Rechnung — счёт.",
+            "example": "Die Rechnung für die Reparatur kam per E-Mail.",
+            "example_ru": "Счёт за ремонт пришёл по электронной почте."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rechnung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Rechnung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-470-1",
+      "alias_ids": [
+        "b1-rechts-direction",
+        "b1-rechts-location"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-470-1",
+        "de": "rechts",
+        "lemma": "rechts",
+        "ru": "справа; направо (при движении)",
+        "uk": "",
+        "translations_ru": [
+          "справа",
+          "направо (при движении)"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Транспорт",
+        "topics": [
+          "Транспорт"
+        ],
+        "forms": "",
+        "definition_de": "Auf der rechten Seite oder nach rechts.",
+        "example": "Die Bank ist rechts.",
+        "example_ru": "Банк справа.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "bf76fab4ea1da8034e2c"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-rechts-direction",
+          "b1-rechts-location"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-rechts-direction",
+            "de": "rechts",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Eine Bewegung zur rechten Seite bezeichnend.",
+            "translations_ru": [
+              "направо",
+              "вправо"
+            ],
+            "grammar_hint": "rechts abbiegen; nach rechts gehen. Wohin? направление вправо; не требует падежа само по себе.",
+            "example": "Biegen Sie hinter der Brücke rechts ab.",
+            "example_ru": "Поверните направо за мостом."
+          },
+          {
+            "id": "b1-rechts-location",
+            "de": "rechts",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Eine Position auf der rechten Seite bezeichnend.",
+            "translations_ru": [
+              "справа",
+              "с правой стороны"
+            ],
+            "grammar_hint": "Wo? rechts; rechts von + Dativ. Сравните rechts abbiegen (направо) и rechts stehen (справа).",
+            "example": "Der Eingang liegt rechts neben dem Fenster.",
+            "example_ru": "Вход находится справа от окна."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechts"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/rechts"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_407c41f0b70e01bb1b4e",
+      "alias_ids": [
+        "b1-reden-talk"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_407c41f0b70e01bb1b4e",
+        "de": "reden",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "говорить",
+          "разговаривать",
+          "беседовать"
+        ],
+        "definition_de": "Mit Worten etwas sagen oder mit anderen sprechen.",
+        "forms": "redet · redete · hat geredet",
+        "example": "Ich rede mit meinem Bruder über die Reise.",
+        "example_ru": "Я разговариваю с братом о поездке.",
+        "grammar_hint": "mit + Dativ reden; über + Akkusativ reden.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/reden"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-reden-talk"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-reden-talk",
+            "de": "reden",
+            "part": "verb",
+            "forms": "redet · redete · hat geredet",
+            "definition_de": "Sich mündlich mit anderen austauschen.",
+            "translations_ru": [
+              "говорить",
+              "разговаривать",
+              "беседовать"
+            ],
+            "grammar_hint": "mit jemandem (Dativ) über etwas (Akkusativ) reden; worüber? — о чём?",
+            "example": "Ich möchte mit dir über den Kurs reden.",
+            "example_ru": "Я хотела бы поговорить с тобой о курсе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/reden"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-471-1",
+      "alias_ids": [
+        "b1-regnen-rain"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-471-1",
+        "de": "regnen",
+        "lemma": "regnen",
+        "ru": "идти (о дожде)",
+        "uk": "",
+        "translations_ru": [
+          "идти (о дожде)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "regnet · regnete · hat geregnet",
+        "definition_de": "Als Wasser in Tropfen aus den Wolken fallen.",
+        "example": "Es regnet seit gestern.",
+        "example_ru": "Дождь идёт со вчерашнего дня.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "0e92be56670a5f6222b3"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-regnen-rain"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-regnen-rain",
+            "de": "regnen",
+            "part": "verb",
+            "forms": "es regnet · es regnete · es hat geregnet",
+            "definition_de": "Von flüssigem Niederschlag aus den Wolken gesagt.",
+            "translations_ru": [
+              "идти (о дожде)"
+            ],
+            "grammar_hint": "Безличный глагол с es: Es regnet. Morgen regnet es — es после глагола при обстоятельстве на первом месте.",
+            "example": "Seit heute Morgen regnet es ununterbrochen.",
+            "example_ru": "С сегодняшнего утра непрерывно идёт дождь."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/regnen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-472-1",
+      "alias_ids": [
+        "b1-regen-rain"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-472-1",
+        "de": "der Regen",
+        "lemma": "Regen",
+        "ru": "дождь",
+        "uk": "",
+        "translations_ru": [
+          "дождь"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "обычно только Singular в этом употреблении",
+        "definition_de": "Wasser, das in Tropfen aus den Wolken fällt.",
+        "example": "Nach dem Regen gehen wir spazieren.",
+        "example_ru": "После дождя мы пойдём гулять.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "5bad008dceabc9c0d9d5"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-regen-rain"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-regen-rain",
+            "de": "der Regen",
+            "part": "noun",
+            "forms": "обычно без множественного числа; редкое die Regen",
+            "definition_de": "Wasser, das in Tropfen aus der Atmosphäre fällt.",
+            "translations_ru": [
+              "дождь"
+            ],
+            "grammar_hint": "bei Regen (Dativ); im Regen stehen; es regnet — глагол.",
+            "example": "Bei starkem Regen bleiben wir zu Hause.",
+            "example_ru": "При сильном дожде мы остаёмся дома."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Regen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_149fe00403d8a30e66bd",
+      "alias_ids": [
+        "b1-reich-wealthy"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_149fe00403d8a30e66bd",
+        "de": "reich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "богатый"
+        ],
+        "definition_de": "So, dass jemand viel Geld oder Besitz hat.",
+        "forms": "reich · reicher · am reichsten",
+        "example": "Er ist reich genug, um sich ein Haus zu kaufen.",
+        "example_ru": "Он достаточно богат, чтобы купить себе дом.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 23,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/reich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-reich-wealthy"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-reich-wealthy",
+            "de": "reich",
+            "part": "adj",
+            "forms": "reich · reicher · am reichsten",
+            "definition_de": "Über viel Geld oder Vermögen verfügend.",
+            "translations_ru": [
+              "богатый",
+              "состоятельный"
+            ],
+            "grammar_hint": "reich sein; Gegenteil arm. Wenn ich reich wäre — Konjunktiv II, глагол в конце придаточного.",
+            "example": "Wenn ich reich wäre, würde ich eine Bibliothek eröffnen.",
+            "example_ru": "Если бы я была богатой, я бы открыла библиотеку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 73,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/reich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

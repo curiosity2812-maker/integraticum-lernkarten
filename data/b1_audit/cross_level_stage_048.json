@@ -1,0 +1,3084 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    933,
+    952
+  ],
+  "reviewed": 20,
+  "merge_count": 15,
+  "merge_target_count": 11,
+  "retained_distinct_senses": 4,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 933,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Durch seine Folgen starkes Entsetzen hervorrufend. Example: Sie erzählte uns von einem schrecklichen Erlebnis.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 27,
+        "record": {
+          "id": "b1-schrecklich-terrible",
+          "de": "schrecklich",
+          "lemma": "schrecklich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "страшный",
+            "ужасный",
+            "трагический"
+          ],
+          "definition_de": "Durch seine Folgen starkes Entsetzen hervorrufend.",
+          "example": "Sie erzählte uns von einem schrecklichen Erlebnis.",
+          "example_ru": "Она рассказала нам об ужасном пережитом событии.",
+          "forms": "schrecklich · schrecklicher · am schrecklichsten",
+          "grammar_hint": "von + Dativ erzählen; ein schreckliches Erlebnis — страшное событие.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 329,
+          "record": {
+            "id": "dict_052a2a09ac878f5490fb",
+            "de": "schrecklich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "ужасный",
+              "страшный"
+            ],
+            "definition_de": "Sehr unangenehm oder so, dass etwas Angst macht.",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "example": "Das Wetter war gestern schrecklich.",
+            "example_ru": "Вчера была ужасная погода.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schrecklich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_052a2a09ac878f5490fb",
+        "alias_id": "b1-schrecklich-terrible",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_052a2a09ac878f5490fb"
+      }
+    },
+    {
+      "candidate_number": 934,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einen Text schriftlich verfassen. Example: Ich schreibe meiner Vermieterin einen Brief.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 28,
+        "record": {
+          "id": "b1-schreiben-letter",
+          "de": "schreiben",
+          "lemma": "schreiben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "писать",
+            "составлять (текст)"
+          ],
+          "definition_de": "Einen Text schriftlich verfassen.",
+          "example": "Ich schreibe meiner Vermieterin einen Brief.",
+          "example_ru": "Я пишу письмо своей арендодательнице.",
+          "forms": "schreibt · schrieb · hat geschrieben",
+          "grammar_hint": "jemandem (Dativ) etwas (Akk.) schreiben; an jemanden (Akk.) schreiben.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schreiben",
+              "https://www.duden.de/rechtschreibung/schreiben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 817,
+          "record": {
+            "id": "dict_88b2b0ec9564240bec75",
+            "de": "schreiben",
+            "lemma": "schreiben",
+            "ru": "писать; написать; записывать",
+            "uk": "писати; написати; записувати",
+            "translations_ru": [
+              "писать",
+              "написать",
+              "записывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "schreibt · schrieb · hat geschrieben",
+            "definition_de": "Mit Buchstaben oder anderen Zeichen einen Text festhalten oder verfassen.",
+            "example": "Ich schreibe meiner Freundin eine Nachricht.",
+            "example_ru": "Я пишу подруге сообщение.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) schreiben. das Schreiben — процесс письма или письменное сообщение; не отдельная метка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schreiben",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_88b2b0ec9564240bec75",
+        "alias_id": "b1-schreiben-letter",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_88b2b0ec9564240bec75"
+      }
+    },
+    {
+      "candidate_number": 935,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine schriftliche Nachricht an eine Person senden. Example: Schreib mir bitte, wenn du angekommen bist.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 29,
+        "record": {
+          "id": "b1-schreiben-message",
+          "de": "schreiben",
+          "lemma": "schreiben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "писать",
+            "отправлять сообщение"
+          ],
+          "definition_de": "Eine schriftliche Nachricht an eine Person senden.",
+          "example": "Schreib mir bitte, wenn du angekommen bist.",
+          "example_ru": "Напиши мне, пожалуйста, когда приедешь.",
+          "forms": "schreibt · schrieb · hat geschrieben",
+          "grammar_hint": "jemandem schreiben (Dativ); после wenn спрягаемый глагол в конце. Контекст письменной связи.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schreiben",
+              "https://www.duden.de/rechtschreibung/schreiben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 817,
+          "record": {
+            "id": "dict_88b2b0ec9564240bec75",
+            "de": "schreiben",
+            "lemma": "schreiben",
+            "ru": "писать; написать; записывать",
+            "uk": "писати; написати; записувати",
+            "translations_ru": [
+              "писать",
+              "написать",
+              "записывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "schreibt · schrieb · hat geschrieben",
+            "definition_de": "Mit Buchstaben oder anderen Zeichen einen Text festhalten oder verfassen.",
+            "example": "Ich schreibe meiner Freundin eine Nachricht.",
+            "example_ru": "Я пишу подруге сообщение.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) schreiben. das Schreiben — процесс письма или письменное сообщение; не отдельная метка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schreiben",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_88b2b0ec9564240bec75",
+        "alias_id": "b1-schreiben-message",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_88b2b0ec9564240bec75"
+      }
+    },
+    {
+      "candidate_number": 936,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Von einem Schreibgerät gesagt, das Schrift auf einer Fläche erzeugt. Example: Dieser Stift schreibt nicht mehr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_082.json",
+        "sha": "699adcd086ad09184293df541404fce528985b54",
+        "batch": 82,
+        "row": 30,
+        "record": {
+          "id": "b1-schreiben-pen",
+          "de": "schreiben",
+          "lemma": "schreiben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "писать (о ручке)",
+            "оставлять след на бумаге"
+          ],
+          "definition_de": "Von einem Schreibgerät gesagt, das Schrift auf einer Fläche erzeugt.",
+          "example": "Dieser Stift schreibt nicht mehr.",
+          "example_ru": "Эта ручка больше не пишет.",
+          "forms": "schreibt · schrieb · hat geschrieben",
+          "grammar_hint": "Подлежащее — пишущий инструмент: Der Stift schreibt gut. Здесь без прямого объекта.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schreiben",
+              "https://www.duden.de/rechtschreibung/schreiben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 817,
+          "record": {
+            "id": "dict_88b2b0ec9564240bec75",
+            "de": "schreiben",
+            "lemma": "schreiben",
+            "ru": "писать; написать; записывать",
+            "uk": "писати; написати; записувати",
+            "translations_ru": [
+              "писать",
+              "написать",
+              "записывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "schreibt · schrieb · hat geschrieben",
+            "definition_de": "Mit Buchstaben oder anderen Zeichen einen Text festhalten oder verfassen.",
+            "example": "Ich schreibe meiner Freundin eine Nachricht.",
+            "example_ru": "Я пишу подруге сообщение.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) schreiben. das Schreiben — процесс письма или письменное сообщение; не отдельная метка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schreiben",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 937,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein meist formeller schriftlicher Text, der an einen Empfänger gerichtet ist. Example: Gestern erhielt ich ein Schreiben von der Gemeinde.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 2,
+        "record": {
+          "id": "b1-schreiben-official-letter",
+          "de": "das Schreiben",
+          "lemma": "Schreiben",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "письмо",
+            "письменное уведомление"
+          ],
+          "definition_de": "Ein meist formeller schriftlicher Text, der an einen Empfänger gerichtet ist.",
+          "example": "Gestern erhielt ich ein Schreiben von der Gemeinde.",
+          "example_ru": "Вчера я получила письмо из муниципалитета.",
+          "forms": "die Schreiben",
+          "grammar_hint": "ein offizielles Schreiben erhalten; не путать с das Schreiben — процесс письма (без Plural).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schreiben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 817,
+          "record": {
+            "id": "dict_88b2b0ec9564240bec75",
+            "de": "schreiben",
+            "lemma": "schreiben",
+            "ru": "писать; написать; записывать",
+            "uk": "писати; написати; записувати",
+            "translations_ru": [
+              "писать",
+              "написать",
+              "записывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "schreibt · schrieb · hat geschrieben",
+            "definition_de": "Mit Buchstaben oder anderen Zeichen einen Text festhalten oder verfassen.",
+            "example": "Ich schreibe meiner Freundin eine Nachricht.",
+            "example_ru": "Я пишу подруге сообщение.",
+            "note": "jemandem (Dativ) etwas (Akkusativ) schreiben. das Schreiben — процесс письма или письменное сообщение; не отдельная метка A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schreiben",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 938,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: In geschriebener statt gesprochener Form durchgeführt. Example: Der schriftliche Test beginnt um neun Uhr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 6,
+        "record": {
+          "id": "b1-schriftlich-exam",
+          "de": "schriftlich",
+          "lemma": "schriftlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "письменный (об экзамене)"
+          ],
+          "definition_de": "In geschriebener statt gesprochener Form durchgeführt.",
+          "example": "Der schriftliche Test beginnt um neun Uhr.",
+          "example_ru": "Письменный тест начинается в девять часов.",
+          "forms": "в этом значении обычно без сравнения",
+          "grammar_hint": "schriftliche Prüfung ↔ mündliche Prüfung; атрибутивное прилагательное склоняется.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schriftlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 312,
+          "record": {
+            "id": "dict_ef3d2633677eadf903fb",
+            "de": "schriftlich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "письменный",
+              "письменно"
+            ],
+            "definition_de": "In geschriebener Form.",
+            "forms": "Без степеней сравнения",
+            "example": "Bitte bestätigen Sie den Termin schriftlich.",
+            "example_ru": "Пожалуйста, подтвердите встречу письменно.",
+            "grammar_hint": "",
+            "usage_note": "Письменная форма/письменно. Обычно без сравнения; противоположность mündlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schriftlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ef3d2633677eadf903fb",
+        "alias_id": "b1-schriftlich-exam",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ef3d2633677eadf903fb"
+      }
+    },
+    {
+      "candidate_number": 939,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Durch einen geschriebenen Text festgehalten. Example: Ich brauche eine schriftliche Zusage für den Kurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 7,
+        "record": {
+          "id": "b1-schriftlich-confirmation",
+          "de": "schriftlich",
+          "lemma": "schriftlich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "письменный (о подтверждении)"
+          ],
+          "definition_de": "Durch einen geschriebenen Text festgehalten.",
+          "example": "Ich brauche eine schriftliche Zusage für den Kurs.",
+          "example_ru": "Мне нужно письменное подтверждение места на курсе.",
+          "forms": "обычно без степеней сравнения",
+          "grammar_hint": "eine schriftliche Zusage / Bestätigung; тот же смысл письменной формы, другой учебный контекст.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schriftlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 312,
+          "record": {
+            "id": "dict_ef3d2633677eadf903fb",
+            "de": "schriftlich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "письменный",
+              "письменно"
+            ],
+            "definition_de": "In geschriebener Form.",
+            "forms": "Без степеней сравнения",
+            "example": "Bitte bestätigen Sie den Termin schriftlich.",
+            "example_ru": "Пожалуйста, подтвердите встречу письменно.",
+            "grammar_hint": "",
+            "usage_note": "Письменная форма/письменно. Обычно без сравнения; противоположность mündlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schriftlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ef3d2633677eadf903fb",
+        "alias_id": "b1-schriftlich-confirmation",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ef3d2633677eadf903fb"
+      }
+    },
+    {
+      "candidate_number": 940,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Mithilfe eines geschriebenen Textes. Example: Bitte melden Sie sich schriftlich an.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 8,
+        "record": {
+          "id": "b1-schriftlich-application",
+          "de": "schriftlich",
+          "lemma": "schriftlich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "письменно",
+            "в письменной форме"
+          ],
+          "definition_de": "Mithilfe eines geschriebenen Textes.",
+          "example": "Bitte melden Sie sich schriftlich an.",
+          "example_ru": "Пожалуйста, зарегистрируйтесь письменно.",
+          "forms": "наречное употребление без окончания; обычно без сравнения",
+          "grammar_hint": "sich schriftlich anmelden; schriftlich antworten. Не подчинительный союз.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schriftlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 312,
+          "record": {
+            "id": "dict_ef3d2633677eadf903fb",
+            "de": "schriftlich",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "письменный",
+              "письменно"
+            ],
+            "definition_de": "In geschriebener Form.",
+            "forms": "Без степеней сравнения",
+            "example": "Bitte bestätigen Sie den Termin schriftlich.",
+            "example_ru": "Пожалуйста, подтвердите встречу письменно.",
+            "grammar_hint": "",
+            "usage_note": "Письменная форма/письменно. Обычно без сравнения; противоположность mündlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schriftlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ef3d2633677eadf903fb",
+        "alias_id": "b1-schriftlich-application",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ef3d2633677eadf903fb"
+      }
+    },
+    {
+      "candidate_number": 941,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Kleidungsstück zum Schutz des Fußes. Example: Dieser Schuh drückt am Fuß.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 12,
+        "record": {
+          "id": "b1-schuh-shoe",
+          "de": "der Schuh",
+          "lemma": "Schuh",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "туфля",
+            "ботинок",
+            "обувь (один предмет)"
+          ],
+          "definition_de": "Ein Kleidungsstück zum Schutz des Fußes.",
+          "example": "Dieser Schuh drückt am Fuß.",
+          "example_ru": "Этот ботинок жмёт ногу.",
+          "forms": "die Schuhe",
+          "grammar_hint": "ein Paar Schuhe — пара обуви; Schuhe anziehen / ausziehen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schuh"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 535,
+          "record": {
+            "id": "a1-506-1",
+            "de": "der Schuh",
+            "lemma": "Schuh",
+            "ru": "ботинок; туфля; башмак",
+            "uk": "",
+            "translations_ru": [
+              "ботинок",
+              "туфля",
+              "башмак"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Schuhe",
+            "definition_de": "Ein Kleidungsstück, das den Fuß beim Gehen schützt.",
+            "example": "Der linke Schuh ist zu klein.",
+            "example_ru": "Левый ботинок слишком мал.",
+            "note": "der Schuh — один предмет обуви; die Schuhe — обувь, пара/несколько предметов. Schuhe anziehen/ausziehen — надевать/снимать обувь.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "f464acc6d79687411659"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/Schuh",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-506-1",
+        "alias_id": "b1-schuh-shoe",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-506-1"
+      }
+    },
+    {
+      "candidate_number": 942,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Einrichtung, in der Kinder oder Jugendliche unterrichtet werden. Example: Meine Nichte geht seit August zur Schule.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 17,
+        "record": {
+          "id": "b1-schule-attendance",
+          "de": "die Schule",
+          "lemma": "Schule",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "школа (учебное заведение)"
+          ],
+          "definition_de": "Eine Einrichtung, in der Kinder oder Jugendliche unterrichtet werden.",
+          "example": "Meine Nichte geht seit August zur Schule.",
+          "example_ru": "Моя племянница ходит в школу с августа.",
+          "forms": "die Schulen",
+          "grammar_hint": "zur Schule gehen (zu + Dativ) / in die Schule gehen (in + Akk.).",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schule"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 536,
+          "record": {
+            "id": "a1-507-1",
+            "de": "die Schule",
+            "lemma": "Schule",
+            "ru": "школа (учебное заведение); школа",
+            "uk": "",
+            "translations_ru": [
+              "школа (учебное заведение)",
+              "школа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Schulen",
+            "definition_de": "Eine Einrichtung, in der vor allem Kinder und Jugendliche unterrichtet werden.",
+            "example": "Meine Tochter geht schon zur Schule.",
+            "example_ru": "Моя дочь уже ходит в школу.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a6d0bab60d5b5679b81d"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Schule",
+                "scope": "meaning_or_grammar",
+                "note": "Обычный русский эквивалент."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 768,
+          "record": {
+            "id": "a1-507-2",
+            "de": "die Schule",
+            "lemma": "Schule",
+            "ru": "здание школы",
+            "uk": "",
+            "translations_ru": [
+              "здание школы"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Schulen",
+            "definition_de": "Das Gebäude, in dem der Unterricht einer Schule stattfindet.",
+            "example": "Die Schule steht neben dem Park.",
+            "example_ru": "Школа находится рядом с парком.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a6d0bab60d5b5679b81d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-507-1",
+        "alias_id": "b1-schule-attendance",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-507-1"
+      }
+    },
+    {
+      "candidate_number": 943,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Der Unterricht und der damit verbundene Schulalltag. Example: Nach den Ferien beginnt die Schule am Dienstag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 18,
+        "record": {
+          "id": "b1-schule-lessons",
+          "de": "die Schule",
+          "lemma": "Schule",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "школьные занятия",
+            "учёба в школе"
+          ],
+          "definition_de": "Der Unterricht und der damit verbundene Schulalltag.",
+          "example": "Nach den Ferien beginnt die Schule am Dienstag.",
+          "example_ru": "После каникул занятия в школе начинаются во вторник.",
+          "forms": "в значении учебного процесса обычно Singular",
+          "grammar_hint": "Schule haben — иметь занятия; nach der Schule — после уроков (Dativ).",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schule"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 536,
+          "record": {
+            "id": "a1-507-1",
+            "de": "die Schule",
+            "lemma": "Schule",
+            "ru": "школа (учебное заведение); школа",
+            "uk": "",
+            "translations_ru": [
+              "школа (учебное заведение)",
+              "школа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Schulen",
+            "definition_de": "Eine Einrichtung, in der vor allem Kinder und Jugendliche unterrichtet werden.",
+            "example": "Meine Tochter geht schon zur Schule.",
+            "example_ru": "Моя дочь уже ходит в школу.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a6d0bab60d5b5679b81d"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Schule",
+                "scope": "meaning_or_grammar",
+                "note": "Обычный русский эквивалент."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 768,
+          "record": {
+            "id": "a1-507-2",
+            "de": "die Schule",
+            "lemma": "Schule",
+            "ru": "здание школы",
+            "uk": "",
+            "translations_ru": [
+              "здание школы"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Schulen",
+            "definition_de": "Das Gebäude, in dem der Unterricht einer Schule stattfindet.",
+            "example": "Die Schule steht neben dem Park.",
+            "example_ru": "Школа находится рядом с парком.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a6d0bab60d5b5679b81d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 944,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Das Gebäude, in dem Schulunterricht stattfindet. Example: Die Schule steht neben der Sporthalle.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 19,
+        "record": {
+          "id": "b1-schule-building",
+          "de": "die Schule",
+          "lemma": "Schule",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "школа (здание)"
+          ],
+          "definition_de": "Das Gebäude, in dem Schulunterricht stattfindet.",
+          "example": "Die Schule steht neben der Sporthalle.",
+          "example_ru": "Школа находится рядом со спортивным залом.",
+          "forms": "die Schulen",
+          "grammar_hint": "in der Schule (Dativ); Schulgebäude — школьное здание.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schule"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 536,
+          "record": {
+            "id": "a1-507-1",
+            "de": "die Schule",
+            "lemma": "Schule",
+            "ru": "школа (учебное заведение); школа",
+            "uk": "",
+            "translations_ru": [
+              "школа (учебное заведение)",
+              "школа"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Schulen",
+            "definition_de": "Eine Einrichtung, in der vor allem Kinder und Jugendliche unterrichtet werden.",
+            "example": "Meine Tochter geht schon zur Schule.",
+            "example_ru": "Моя дочь уже ходит в школу.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a6d0bab60d5b5679b81d"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Schule",
+                "scope": "meaning_or_grammar",
+                "note": "Обычный русский эквивалент."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 768,
+          "record": {
+            "id": "a1-507-2",
+            "de": "die Schule",
+            "lemma": "Schule",
+            "ru": "здание школы",
+            "uk": "",
+            "translations_ru": [
+              "здание школы"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Schulen",
+            "definition_de": "Das Gebäude, in dem der Unterricht einer Schule stattfindet.",
+            "example": "Die Schule steht neben dem Park.",
+            "example_ru": "Школа находится рядом с парком.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a6d0bab60d5b5679b81d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-507-2",
+        "alias_id": "b1-schule-building",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-507-2"
+      }
+    },
+    {
+      "candidate_number": 945,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Eine Person, die eine Schule besucht oder von einer Lehrkraft unterrichtet wird. Example: Die Schüler stellen der Lehrerin Fragen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 21,
+        "record": {
+          "id": "b1-schueler-pupil",
+          "de": "der Schüler / die Schülerin",
+          "lemma": "Schüler",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ученик",
+            "ученица"
+          ],
+          "definition_de": "Eine Person, die eine Schule besucht oder von einer Lehrkraft unterrichtet wird.",
+          "example": "Die Schüler stellen der Lehrerin Fragen.",
+          "example_ru": "Ученики задают преподавательнице вопросы.",
+          "forms": "die Schüler / die Schülerinnen",
+          "grammar_hint": "des Schülers; Student — студент вуза, не обязательно школьник.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sch%C3%BCler"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 537,
+          "record": {
+            "id": "a1-508-1",
+            "de": "der Schüler",
+            "lemma": "Schüler",
+            "ru": "ученик",
+            "uk": "",
+            "translations_ru": [
+              "ученик"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Schüler",
+            "definition_de": "Ein Junge oder Mann, der eine Schule besucht.",
+            "example": "Ein Schüler schreibt die Antwort an die Tafel.",
+            "example_ru": "Ученик пишет ответ на доске.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "c90fe87bd0debf8e29cd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-508-1",
+        "alias_id": "b1-schueler-pupil",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-508-1"
+      }
+    },
+    {
+      "candidate_number": 946,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Über wenig körperliche Kraft verfügend. Example: Nach der langen Wanderung fühle ich mich schwach.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 28,
+        "record": {
+          "id": "b1-schwach-weak-person",
+          "de": "schwach",
+          "lemma": "schwach",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "слабый",
+            "обессиленный"
+          ],
+          "definition_de": "Über wenig körperliche Kraft verfügend.",
+          "example": "Nach der langen Wanderung fühle ich mich schwach.",
+          "example_ru": "После долгого похода я чувствую себя слабой.",
+          "forms": "schwach · schwächer · am schwächsten",
+          "grammar_hint": "sich schwach fühlen (Akk.); Gegenteil: stark.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwach"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 207,
+          "record": {
+            "id": "dict_4eac4ab10d4e808dc1e5",
+            "de": "schwach",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "слабый"
+            ],
+            "definition_de": "Mit wenig Kraft oder mit geringer Wirkung.",
+            "forms": "schwach · schwächer · am schwächsten",
+            "example": "Nach der Krankheit war ich noch zu schwach für Sport.",
+            "example_ru": "После болезни у меня ещё не хватало сил на спорт.",
+            "grammar_hint": "В сравнительной и превосходной степени a меняется на ä.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schwach"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4eac4ab10d4e808dc1e5",
+        "alias_id": "b1-schwach-weak-person",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4eac4ab10d4e808dc1e5"
+      }
+    },
+    {
+      "candidate_number": 947,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Von geringer Intensität oder Wirkung. Example: Das Signal ist zu schwach für eine stabile Verbindung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_083.json",
+        "sha": "dd6c06f6c6dc2fcaa93ddcc19a0cc0e2461f3208",
+        "batch": 83,
+        "row": 29,
+        "record": {
+          "id": "b1-schwach-low-effect",
+          "de": "schwach",
+          "lemma": "schwach",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "слабый",
+            "недостаточно сильный (о воздействии)"
+          ],
+          "definition_de": "Von geringer Intensität oder Wirkung.",
+          "example": "Das Signal ist zu schwach für eine stabile Verbindung.",
+          "example_ru": "Сигнал слишком слабый для стабильного соединения.",
+          "forms": "schwach · schwächer · am schwächsten",
+          "grammar_hint": "zu schwach für + Akk.; schwach wirken — слабо действовать. Контекст малой интенсивности.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwach"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 207,
+          "record": {
+            "id": "dict_4eac4ab10d4e808dc1e5",
+            "de": "schwach",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "слабый"
+            ],
+            "definition_de": "Mit wenig Kraft oder mit geringer Wirkung.",
+            "forms": "schwach · schwächer · am schwächsten",
+            "example": "Nach der Krankheit war ich noch zu schwach für Sport.",
+            "example_ru": "После болезни у меня ещё не хватало сил на спорт.",
+            "grammar_hint": "В сравнительной и превосходной степени a меняется на ä.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schwach"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 948,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Kind im eigenen Körper erwartend. Example: Meine Kollegin ist im fünften Monat schwanger.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 1,
+        "record": {
+          "id": "b1-schwanger-pregnant",
+          "de": "schwanger",
+          "lemma": "schwanger",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "беременная",
+            "беременный"
+          ],
+          "definition_de": "Ein Kind im eigenen Körper erwartend.",
+          "example": "Meine Kollegin ist im fünften Monat schwanger.",
+          "example_ru": "Моя коллега на пятом месяце беременности.",
+          "forms": "без степеней сравнения",
+          "grammar_hint": "schwanger sein / werden; mit einem Kind schwanger sein (mit + Dativ).",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwanger"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 470,
+          "record": {
+            "id": "dict_a6f7c1d562eab76fdbd1",
+            "de": "schwanger",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "беременный",
+              "беременная"
+            ],
+            "definition_de": "Ein Kind im eigenen Körper erwarten.",
+            "forms": "schwanger · keine Steigerung",
+            "example": "Meine Schwester ist schwanger.",
+            "example_ru": "Моя сестра беременна.",
+            "grammar_hint": "schwanger sein; eine schwangere Frau. В буквальном значении не образует степеней сравнения.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schwanger"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a6f7c1d562eab76fdbd1",
+        "alias_id": "b1-schwanger-pregnant",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a6f7c1d562eab76fdbd1"
+      }
+    },
+    {
+      "candidate_number": 949,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit beträchtlichem Gewicht. Example: Der Karton ist zu schwer für mich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 4,
+        "record": {
+          "id": "b1-schwer-weight",
+          "de": "schwer",
+          "lemma": "schwer",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "тяжёлый (по весу)"
+          ],
+          "definition_de": "Mit beträchtlichem Gewicht.",
+          "example": "Der Karton ist zu schwer für mich.",
+          "example_ru": "Коробка слишком тяжёлая для меня.",
+          "forms": "schwer · schwerer · am schwersten",
+          "grammar_hint": "Gegenteil leicht; wie schwer? — какой вес?",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 676,
+          "record": {
+            "id": "a1-509-1",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "тяжёлый (по весу)",
+            "uk": "",
+            "translations_ru": [
+              "тяжёлый (по весу)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Von großem Gewicht.",
+            "example": "Die Tasche ist schwer.",
+            "example_ru": "Сумка тяжёлая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 677,
+          "record": {
+            "id": "a1-509-2",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "трудный; сложный",
+            "uk": "",
+            "translations_ru": [
+              "трудный",
+              "сложный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Mit großen Schwierigkeiten verbunden.",
+            "example": "Die Aufgabe ist schwer.",
+            "example_ru": "Задание трудное.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-509-1",
+        "alias_id": "b1-schwer-weight",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-509-1"
+      }
+    },
+    {
+      "candidate_number": 950,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nur mit erheblichem Können oder Aufwand zu bewältigen. Example: Die letzte Aufgabe war besonders schwer.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 5,
+        "record": {
+          "id": "b1-schwer-difficult",
+          "de": "schwer",
+          "lemma": "schwer",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "трудный",
+            "сложный"
+          ],
+          "definition_de": "Nur mit erheblichem Können oder Aufwand zu bewältigen.",
+          "example": "Die letzte Aufgabe war besonders schwer.",
+          "example_ru": "Последнее задание было особенно сложным.",
+          "forms": "schwer · schwerer · am schwersten",
+          "grammar_hint": "В этом значении близко к schwierig; eine schwere Aufgabe.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 676,
+          "record": {
+            "id": "a1-509-1",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "тяжёлый (по весу)",
+            "uk": "",
+            "translations_ru": [
+              "тяжёлый (по весу)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Von großem Gewicht.",
+            "example": "Die Tasche ist schwer.",
+            "example_ru": "Сумка тяжёлая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 677,
+          "record": {
+            "id": "a1-509-2",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "трудный; сложный",
+            "uk": "",
+            "translations_ru": [
+              "трудный",
+              "сложный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Mit großen Schwierigkeiten verbunden.",
+            "example": "Die Aufgabe ist schwer.",
+            "example_ru": "Задание трудное.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-509-2",
+        "alias_id": "b1-schwer-difficult",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-509-2"
+      }
+    },
+    {
+      "candidate_number": 951,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Mit hoher körperlicher oder anderer Belastung verbunden. Example: Die Pflege des Gartens ist schwere Arbeit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 6,
+        "record": {
+          "id": "b1-schwer-work",
+          "de": "schwer",
+          "lemma": "schwer",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "тяжёлый",
+            "изнурительный (о работе)"
+          ],
+          "definition_de": "Mit hoher körperlicher oder anderer Belastung verbunden.",
+          "example": "Die Pflege des Gartens ist schwere Arbeit.",
+          "example_ru": "Уход за садом — тяжёлая работа.",
+          "forms": "schwer · schwerer · am schwersten",
+          "grammar_hint": "schwere Arbeit leisten; учебный контекст значений трудности и нагрузки.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 676,
+          "record": {
+            "id": "a1-509-1",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "тяжёлый (по весу)",
+            "uk": "",
+            "translations_ru": [
+              "тяжёлый (по весу)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Von großem Gewicht.",
+            "example": "Die Tasche ist schwer.",
+            "example_ru": "Сумка тяжёлая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 677,
+          "record": {
+            "id": "a1-509-2",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "трудный; сложный",
+            "uk": "",
+            "translations_ru": [
+              "трудный",
+              "сложный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Mit großen Schwierigkeiten verbunden.",
+            "example": "Die Aufgabe ist schwer.",
+            "example_ru": "Задание трудное.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-509-1",
+        "alias_id": "b1-schwer-work",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-509-1"
+      }
+    },
+    {
+      "candidate_number": 952,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Beschreibt eine Handlung, deren Ausführung große Mühe kostet. Example: Diese Regel ist schwer zu verstehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 7,
+        "record": {
+          "id": "b1-schwer-to-do",
+          "de": "schwer zu + Infinitiv",
+          "lemma": "schwer",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "трудно что-либо сделать"
+          ],
+          "definition_de": "Beschreibt eine Handlung, deren Ausführung große Mühe kostet.",
+          "example": "Diese Regel ist schwer zu verstehen.",
+          "example_ru": "Это правило трудно понять.",
+          "forms": "schwer · schwerer · am schwersten",
+          "grammar_hint": "sein + schwer + zu + Infinitiv: schwer zu verstehen; при отделяемой приставке schwer nachzuvollziehen. Учебная конструкция, не отдельная лексема.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 676,
+          "record": {
+            "id": "a1-509-1",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "тяжёлый (по весу)",
+            "uk": "",
+            "translations_ru": [
+              "тяжёлый (по весу)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Von großem Gewicht.",
+            "example": "Die Tasche ist schwer.",
+            "example_ru": "Сумка тяжёлая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 677,
+          "record": {
+            "id": "a1-509-2",
+            "de": "schwer",
+            "lemma": "schwer",
+            "ru": "трудный; сложный",
+            "uk": "",
+            "translations_ru": [
+              "трудный",
+              "сложный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwerer · am schwersten",
+            "definition_de": "Mit großen Schwierigkeiten verbunden.",
+            "example": "Die Aufgabe ist schwer.",
+            "example_ru": "Задание трудное.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "987b19154be8f02a3b5d"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_052a2a09ac878f5490fb",
+      "alias_ids": [
+        "b1-schrecklich-terrible"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_052a2a09ac878f5490fb",
+        "de": "schrecklich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "ужасный",
+          "страшный"
+        ],
+        "definition_de": "Sehr unangenehm oder so, dass etwas Angst macht.",
+        "forms": "schrecklich · schrecklicher · am schrecklichsten",
+        "example": "Das Wetter war gestern schrecklich.",
+        "example_ru": "Вчера была ужасная погода.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schrecklich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-schrecklich-terrible"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schrecklich-terrible",
+            "de": "schrecklich",
+            "part": "adj",
+            "forms": "schrecklich · schrecklicher · am schrecklichsten",
+            "definition_de": "Durch seine Folgen starkes Entsetzen hervorrufend.",
+            "translations_ru": [
+              "страшный",
+              "ужасный",
+              "трагический"
+            ],
+            "grammar_hint": "von + Dativ erzählen; ein schreckliches Erlebnis — страшное событие.",
+            "example": "Sie erzählte uns von einem schrecklichen Erlebnis.",
+            "example_ru": "Она рассказала нам об ужасном пережитом событии."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schrecklich",
+              "https://www.duden.de/rechtschreibung/schrecklich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_88b2b0ec9564240bec75",
+      "alias_ids": [
+        "b1-schreiben-letter",
+        "b1-schreiben-message"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_88b2b0ec9564240bec75",
+        "de": "schreiben",
+        "lemma": "schreiben",
+        "ru": "писать; написать; записывать",
+        "uk": "писати; написати; записувати",
+        "translations_ru": [
+          "писать",
+          "написать",
+          "записывать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "schreibt · schrieb · hat geschrieben",
+        "definition_de": "Mit Buchstaben oder anderen Zeichen einen Text festhalten oder verfassen.",
+        "example": "Ich schreibe meiner Freundin eine Nachricht.",
+        "example_ru": "Я пишу подруге сообщение.",
+        "note": "jemandem (Dativ) etwas (Akkusativ) schreiben. das Schreiben — процесс письма или письменное сообщение; не отдельная метка A2.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/schreiben",
+            "scope": "meaning"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schreiben-letter",
+          "b1-schreiben-message"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schreiben-letter",
+            "de": "schreiben",
+            "part": "verb",
+            "forms": "schreibt · schrieb · hat geschrieben",
+            "definition_de": "Einen Text schriftlich verfassen.",
+            "translations_ru": [
+              "писать",
+              "составлять (текст)"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akk.) schreiben; an jemanden (Akk.) schreiben.",
+            "example": "Ich schreibe meiner Vermieterin einen Brief.",
+            "example_ru": "Я пишу письмо своей арендодательнице."
+          },
+          {
+            "id": "b1-schreiben-message",
+            "de": "schreiben",
+            "part": "verb",
+            "forms": "schreibt · schrieb · hat geschrieben",
+            "definition_de": "Eine schriftliche Nachricht an eine Person senden.",
+            "translations_ru": [
+              "писать",
+              "отправлять сообщение"
+            ],
+            "grammar_hint": "jemandem schreiben (Dativ); после wenn спрягаемый глагол в конце. Контекст письменной связи.",
+            "example": "Schreib mir bitte, wenn du angekommen bist.",
+            "example_ru": "Напиши мне, пожалуйста, когда приедешь."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schreiben",
+              "https://www.duden.de/rechtschreibung/schreiben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Printed page 78 checked against PDF screenshot; B1 exam vocabulary membership, not earliest CEFR level. Some teaching contexts share one lexical sense. Cross-level comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schreiben",
+              "https://www.duden.de/rechtschreibung/schreiben"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ef3d2633677eadf903fb",
+      "alias_ids": [
+        "b1-schriftlich-exam",
+        "b1-schriftlich-confirmation",
+        "b1-schriftlich-application"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ef3d2633677eadf903fb",
+        "de": "schriftlich",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "письменный",
+          "письменно"
+        ],
+        "definition_de": "In geschriebener Form.",
+        "forms": "Без степеней сравнения",
+        "example": "Bitte bestätigen Sie den Termin schriftlich.",
+        "example_ru": "Пожалуйста, подтвердите встречу письменно.",
+        "grammar_hint": "",
+        "usage_note": "Письменная форма/письменно. Обычно без сравнения; противоположность mündlich.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schriftlich"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-schriftlich-exam",
+          "b1-schriftlich-confirmation",
+          "b1-schriftlich-application"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schriftlich-exam",
+            "de": "schriftlich",
+            "part": "adj",
+            "forms": "в этом значении обычно без сравнения",
+            "definition_de": "In geschriebener statt gesprochener Form durchgeführt.",
+            "translations_ru": [
+              "письменный (об экзамене)"
+            ],
+            "grammar_hint": "schriftliche Prüfung ↔ mündliche Prüfung; атрибутивное прилагательное склоняется.",
+            "example": "Der schriftliche Test beginnt um neun Uhr.",
+            "example_ru": "Письменный тест начинается в девять часов."
+          },
+          {
+            "id": "b1-schriftlich-confirmation",
+            "de": "schriftlich",
+            "part": "adj",
+            "forms": "обычно без степеней сравнения",
+            "definition_de": "Durch einen geschriebenen Text festgehalten.",
+            "translations_ru": [
+              "письменный (о подтверждении)"
+            ],
+            "grammar_hint": "eine schriftliche Zusage / Bestätigung; тот же смысл письменной формы, другой учебный контекст.",
+            "example": "Ich brauche eine schriftliche Zusage für den Kurs.",
+            "example_ru": "Мне нужно письменное подтверждение места на курсе."
+          },
+          {
+            "id": "b1-schriftlich-application",
+            "de": "schriftlich",
+            "part": "adv",
+            "forms": "наречное употребление без окончания; обычно без сравнения",
+            "definition_de": "Mithilfe eines geschriebenen Textes.",
+            "translations_ru": [
+              "письменно",
+              "в письменной форме"
+            ],
+            "grammar_hint": "sich schriftlich anmelden; schriftlich antworten. Не подчинительный союз.",
+            "example": "Bitte melden Sie sich schriftlich an.",
+            "example_ru": "Пожалуйста, зарегистрируйтесь письменно."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schriftlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schriftlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schriftlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-506-1",
+      "alias_ids": [
+        "b1-schuh-shoe"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-506-1",
+        "de": "der Schuh",
+        "lemma": "Schuh",
+        "ru": "ботинок; туфля; башмак",
+        "uk": "",
+        "translations_ru": [
+          "ботинок",
+          "туфля",
+          "башмак"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "die Schuhe",
+        "definition_de": "Ein Kleidungsstück, das den Fuß beim Gehen schützt.",
+        "example": "Der linke Schuh ist zu klein.",
+        "example_ru": "Левый ботинок слишком мал.",
+        "note": "der Schuh — один предмет обуви; die Schuhe — обувь, пара/несколько предметов. Schuhe anziehen/ausziehen — надевать/снимать обувь.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "f464acc6d79687411659"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/Schuh",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schuh-shoe"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schuh-shoe",
+            "de": "der Schuh",
+            "part": "noun",
+            "forms": "die Schuhe",
+            "definition_de": "Ein Kleidungsstück zum Schutz des Fußes.",
+            "translations_ru": [
+              "туфля",
+              "ботинок",
+              "обувь (один предмет)"
+            ],
+            "grammar_hint": "ein Paar Schuhe — пара обуви; Schuhe anziehen / ausziehen.",
+            "example": "Dieser Schuh drückt am Fuß.",
+            "example_ru": "Этот ботинок жмёт ногу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schuh"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-507-1",
+      "alias_ids": [
+        "b1-schule-attendance"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-507-1",
+        "de": "die Schule",
+        "lemma": "Schule",
+        "ru": "школа (учебное заведение); школа",
+        "uk": "",
+        "translations_ru": [
+          "школа (учебное заведение)",
+          "школа"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Schulen",
+        "definition_de": "Eine Einrichtung, in der vor allem Kinder und Jugendliche unterrichtet werden.",
+        "example": "Meine Tochter geht schon zur Schule.",
+        "example_ru": "Моя дочь уже ходит в школу.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "a6d0bab60d5b5679b81d"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Schule",
+            "scope": "meaning_or_grammar",
+            "note": "Обычный русский эквивалент."
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schule-attendance"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schule-attendance",
+            "de": "die Schule",
+            "part": "noun",
+            "forms": "die Schulen",
+            "definition_de": "Eine Einrichtung, in der Kinder oder Jugendliche unterrichtet werden.",
+            "translations_ru": [
+              "школа (учебное заведение)"
+            ],
+            "grammar_hint": "zur Schule gehen (zu + Dativ) / in die Schule gehen (in + Akk.).",
+            "example": "Meine Nichte geht seit August zur Schule.",
+            "example_ru": "Моя племянница ходит в школу с августа."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schule"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-507-2",
+      "alias_ids": [
+        "b1-schule-building"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-507-2",
+        "de": "die Schule",
+        "lemma": "Schule",
+        "ru": "здание школы",
+        "uk": "",
+        "translations_ru": [
+          "здание школы"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "die Schulen",
+        "definition_de": "Das Gebäude, in dem der Unterricht einer Schule stattfindet.",
+        "example": "Die Schule steht neben dem Park.",
+        "example_ru": "Школа находится рядом с парком.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "a6d0bab60d5b5679b81d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schule-building"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schule-building",
+            "de": "die Schule",
+            "part": "noun",
+            "forms": "die Schulen",
+            "definition_de": "Das Gebäude, in dem Schulunterricht stattfindet.",
+            "translations_ru": [
+              "школа (здание)"
+            ],
+            "grammar_hint": "in der Schule (Dativ); Schulgebäude — школьное здание.",
+            "example": "Die Schule steht neben der Sporthalle.",
+            "example_ru": "Школа находится рядом со спортивным залом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schule"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-508-1",
+      "alias_ids": [
+        "b1-schueler-pupil"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-508-1",
+        "de": "der Schüler",
+        "lemma": "Schüler",
+        "ru": "ученик",
+        "uk": "",
+        "translations_ru": [
+          "ученик"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Schüler",
+        "definition_de": "Ein Junge oder Mann, der eine Schule besucht.",
+        "example": "Ein Schüler schreibt die Antwort an die Tafel.",
+        "example_ru": "Ученик пишет ответ на доске.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "c90fe87bd0debf8e29cd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schueler-pupil"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schueler-pupil",
+            "de": "der Schüler / die Schülerin",
+            "part": "noun",
+            "forms": "die Schüler / die Schülerinnen",
+            "definition_de": "Eine Person, die eine Schule besucht oder von einer Lehrkraft unterrichtet wird.",
+            "translations_ru": [
+              "ученик",
+              "ученица"
+            ],
+            "grammar_hint": "des Schülers; Student — студент вуза, не обязательно школьник.",
+            "example": "Die Schüler stellen der Lehrerin Fragen.",
+            "example_ru": "Ученики задают преподавательнице вопросы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 78,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sch%C3%BCler"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4eac4ab10d4e808dc1e5",
+      "alias_ids": [
+        "b1-schwach-weak-person"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4eac4ab10d4e808dc1e5",
+        "de": "schwach",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "слабый"
+        ],
+        "definition_de": "Mit wenig Kraft oder mit geringer Wirkung.",
+        "forms": "schwach · schwächer · am schwächsten",
+        "example": "Nach der Krankheit war ich noch zu schwach für Sport.",
+        "example_ru": "После болезни у меня ещё не хватало сил на спорт.",
+        "grammar_hint": "В сравнительной и превосходной степени a меняется на ä.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schwach"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-schwach-weak-person"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwach-weak-person",
+            "de": "schwach",
+            "part": "adj",
+            "forms": "schwach · schwächer · am schwächsten",
+            "definition_de": "Über wenig körperliche Kraft verfügend.",
+            "translations_ru": [
+              "слабый",
+              "обессиленный"
+            ],
+            "grammar_hint": "sich schwach fühlen (Akk.); Gegenteil: stark.",
+            "example": "Nach der langen Wanderung fühle ich mich schwach.",
+            "example_ru": "После долгого похода я чувствую себя слабой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Goethe B1 printed pages 78–79 visually checked; earliest CEFR level pending A1/A2 comparison. Original definitions and examples; separate teaching contexts may share a sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwach"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a6f7c1d562eab76fdbd1",
+      "alias_ids": [
+        "b1-schwanger-pregnant"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a6f7c1d562eab76fdbd1",
+        "de": "schwanger",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "беременный",
+          "беременная"
+        ],
+        "definition_de": "Ein Kind im eigenen Körper erwarten.",
+        "forms": "schwanger · keine Steigerung",
+        "example": "Meine Schwester ist schwanger.",
+        "example_ru": "Моя сестра беременна.",
+        "grammar_hint": "schwanger sein; eine schwangere Frau. В буквальном значении не образует степеней сравнения.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schwanger"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-schwanger-pregnant"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwanger-pregnant",
+            "de": "schwanger",
+            "part": "adj",
+            "forms": "без степеней сравнения",
+            "definition_de": "Ein Kind im eigenen Körper erwartend.",
+            "translations_ru": [
+              "беременная",
+              "беременный"
+            ],
+            "grammar_hint": "schwanger sein / werden; mit einem Kind schwanger sein (mit + Dativ).",
+            "example": "Meine Kollegin ist im fünften Monat schwanger.",
+            "example_ru": "Моя коллега на пятом месяце беременности."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwanger"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-509-1",
+      "alias_ids": [
+        "b1-schwer-weight",
+        "b1-schwer-work"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-509-1",
+        "de": "schwer",
+        "lemma": "schwer",
+        "ru": "тяжёлый (по весу)",
+        "uk": "",
+        "translations_ru": [
+          "тяжёлый (по весу)"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schwerer · am schwersten",
+        "definition_de": "Von großem Gewicht.",
+        "example": "Die Tasche ist schwer.",
+        "example_ru": "Сумка тяжёлая.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "987b19154be8f02a3b5d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schwer-weight",
+          "b1-schwer-work"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwer-weight",
+            "de": "schwer",
+            "part": "adj",
+            "forms": "schwer · schwerer · am schwersten",
+            "definition_de": "Mit beträchtlichem Gewicht.",
+            "translations_ru": [
+              "тяжёлый (по весу)"
+            ],
+            "grammar_hint": "Gegenteil leicht; wie schwer? — какой вес?",
+            "example": "Der Karton ist zu schwer für mich.",
+            "example_ru": "Коробка слишком тяжёлая для меня."
+          },
+          {
+            "id": "b1-schwer-work",
+            "de": "schwer",
+            "part": "adj",
+            "forms": "schwer · schwerer · am schwersten",
+            "definition_de": "Mit hoher körperlicher oder anderer Belastung verbunden.",
+            "translations_ru": [
+              "тяжёлый",
+              "изнурительный (о работе)"
+            ],
+            "grammar_hint": "schwere Arbeit leisten; учебный контекст значений трудности и нагрузки.",
+            "example": "Die Pflege des Gartens ist schwere Arbeit.",
+            "example_ru": "Уход за садом — тяжёлая работа."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-509-2",
+      "alias_ids": [
+        "b1-schwer-difficult"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-509-2",
+        "de": "schwer",
+        "lemma": "schwer",
+        "ru": "трудный; сложный",
+        "uk": "",
+        "translations_ru": [
+          "трудный",
+          "сложный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schwerer · am schwersten",
+        "definition_de": "Mit großen Schwierigkeiten verbunden.",
+        "example": "Die Aufgabe ist schwer.",
+        "example_ru": "Задание трудное.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "987b19154be8f02a3b5d"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schwer-difficult"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwer-difficult",
+            "de": "schwer",
+            "part": "adj",
+            "forms": "schwer · schwerer · am schwersten",
+            "definition_de": "Nur mit erheblichem Können oder Aufwand zu bewältigen.",
+            "translations_ru": [
+              "трудный",
+              "сложный"
+            ],
+            "grammar_hint": "В этом значении близко к schwierig; eine schwere Aufgabe.",
+            "example": "Die letzte Aufgabe war besonders schwer.",
+            "example_ru": "Последнее задание было особенно сложным."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwer"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

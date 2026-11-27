@@ -1,0 +1,2782 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    873,
+    892
+  ],
+  "reviewed": 20,
+  "merge_count": 7,
+  "merge_target_count": 7,
+  "retained_distinct_senses": 6,
+  "retained_teaching_contexts_pending_level_review": 7,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 873,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein tragbarer Schutz gegen Regen oder Sonne. Example: Nimm einen Schirm mit, es könnte regnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 8,
+        "record": {
+          "id": "b1-schirm-umbrella",
+          "de": "der Schirm",
+          "lemma": "Schirm",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "зонт"
+          ],
+          "definition_de": "Ein tragbarer Schutz gegen Regen oder Sonne.",
+          "example": "Nimm einen Schirm mit, es könnte regnen.",
+          "example_ru": "Возьми зонт с собой, может пойти дождь.",
+          "forms": "die Schirme",
+          "grammar_hint": "der Regenschirm — зонт от дождя; der Sonnenschirm — зонт от солнца.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schirm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 334,
+          "record": {
+            "id": "dict_11aeb36f034f710162c6",
+            "de": "der Schirm",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "зонт",
+              "зонтик"
+            ],
+            "definition_de": "Ein tragbarer Gegenstand, der vor Regen schützt.",
+            "forms": "Plural · die Schirme",
+            "example": "Bei Regen nehme ich einen Schirm mit.",
+            "example_ru": "В дождь я беру с собой зонт.",
+            "grammar_hint": "",
+            "usage_note": "Regenschirm — зонт от дождя; Sonnenschirm — зонт от солнца. Значение «экран» существует, но не подтверждено в Goethe A2 для данной карточки.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 24,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Schirm",
+                "https://www.duden.de/rechtschreibung/Schirm"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_11aeb36f034f710162c6",
+        "alias_id": "b1-schirm-umbrella",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_11aeb36f034f710162c6"
+      }
+    },
+    {
+      "candidate_number": 874,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich in einem natürlichen Zustand körperlicher und geistiger Ruhe befinden. Example: Letzte Nacht habe ich acht Stunden geschlafen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 9,
+        "record": {
+          "id": "b1-schlafen-sleep",
+          "de": "schlafen",
+          "lemma": "schlafen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "спать"
+          ],
+          "definition_de": "Sich in einem natürlichen Zustand körperlicher und geistiger Ruhe befinden.",
+          "example": "Letzte Nacht habe ich acht Stunden geschlafen.",
+          "example_ru": "Прошлой ночью я спала восемь часов.",
+          "forms": "schläft · schlief · hat geschlafen",
+          "grammar_hint": "du schläfst; Perfekt с haben. Acht Stunden — Akkusativ длительности.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlafen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 667,
+          "record": {
+            "id": "a1-496-1",
+            "de": "schlafen",
+            "lemma": "schlafen",
+            "ru": "спать",
+            "uk": "",
+            "translations_ru": [
+              "спать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schläft · schlief · hat geschlafen",
+            "definition_de": "Sich im Schlaf befinden.",
+            "example": "Das Baby schläft schon.",
+            "example_ru": "Ребёнок уже спит.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "c84d740cfa872e2dced9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-496-1",
+        "alias_id": "b1-schlafen-sleep",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-496-1"
+      }
+    },
+    {
+      "candidate_number": 875,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: An einem bestimmten Ort die Nacht verbringen. Example: Am Wochenende kann ich bei meiner Freundin schlafen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 10,
+        "record": {
+          "id": "b1-schlafen-stay",
+          "de": "bei jemandem schlafen",
+          "lemma": "schlafen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "ночевать у кого-либо",
+            "оставаться на ночь"
+          ],
+          "definition_de": "An einem bestimmten Ort die Nacht verbringen.",
+          "example": "Am Wochenende kann ich bei meiner Freundin schlafen.",
+          "example_ru": "На выходных я могу переночевать у подруги.",
+          "forms": "schläft · schlief · hat geschlafen",
+          "grammar_hint": "bei + Dativ; übernachten — ночевать. Отдельный контекст употребления schlafen.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlafen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 667,
+          "record": {
+            "id": "a1-496-1",
+            "de": "schlafen",
+            "lemma": "schlafen",
+            "ru": "спать",
+            "uk": "",
+            "translations_ru": [
+              "спать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schläft · schlief · hat geschlafen",
+            "definition_de": "Sich im Schlaf befinden.",
+            "example": "Das Baby schläft schon.",
+            "example_ru": "Ребёнок уже спит.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "c84d740cfa872e2dced9"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 876,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht den gewünschten Bedingungen entsprechend. Example: Bei schlechtem Wetter bleiben wir im Haus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 18,
+        "record": {
+          "id": "b1-schlecht-weather",
+          "de": "schlecht",
+          "lemma": "schlecht",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "плохой",
+            "неблагоприятный (о погоде)"
+          ],
+          "definition_de": "Nicht den gewünschten Bedingungen entsprechend.",
+          "example": "Bei schlechtem Wetter bleiben wir im Haus.",
+          "example_ru": "В плохую погоду мы остаёмся дома.",
+          "forms": "schlecht · schlechter · am schlechtesten",
+          "grammar_hint": "bei schlechtem Wetter (Dativ); Gegenteil: gut. Контекст общей отрицательной оценки.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-497-1",
+        "alias_id": "b1-schlecht-weather",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-497-1"
+      }
+    },
+    {
+      "candidate_number": 877,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einen müden oder ungesunden Eindruck machen. Example: Du siehst heute etwas schlecht aus. Alles in Ordnung?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 19,
+        "record": {
+          "id": "b1-schlecht-look",
+          "de": "schlecht aussehen",
+          "lemma": "schlecht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "плохо выглядеть",
+            "выглядеть нездоровым"
+          ],
+          "definition_de": "Einen müden oder ungesunden Eindruck machen.",
+          "example": "Du siehst heute etwas schlecht aus. Alles in Ordnung?",
+          "example_ru": "Ты сегодня выглядишь неважно. Всё в порядке?",
+          "forms": "schlecht · schlechter · am schlechtesten; sieht aus · sah aus · hat ausgesehen",
+          "grammar_hint": "aussehen — отделяемый глагол; здесь речь о внешнем впечатлении, не о самочувствии.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 766,
+          "record": {
+            "id": "a1-497-3",
+            "de": "schlecht aussehen",
+            "lemma": "schlecht aussehen",
+            "ru": "плохо выглядеть",
+            "uk": "",
+            "translations_ru": [
+              "плохо выглядеть"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "",
+            "definition_de": "So aussehen, als wäre man krank oder müde.",
+            "example": "Du siehst heute schlecht aus. Geht es dir gut?",
+            "example_ru": "Ты сегодня плохо выглядишь. С тобой всё хорошо?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-497-3",
+        "alias_id": "b1-schlecht-look",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-497-3"
+      }
+    },
+    {
+      "candidate_number": 878,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Sich körperlich oder seelisch nicht wohlfühlen. Example: Seit gestern geht es mir schlecht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 20,
+        "record": {
+          "id": "b1-schlecht-feel",
+          "de": "Es geht jemandem schlecht.",
+          "lemma": "schlecht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "кому-либо плохо",
+            "плохо себя чувствовать"
+          ],
+          "definition_de": "Sich körperlich oder seelisch nicht wohlfühlen.",
+          "example": "Seit gestern geht es mir schlecht.",
+          "example_ru": "Со вчерашнего дня я плохо себя чувствую.",
+          "forms": "schlecht · schlechter · am schlechtesten; geht · ging · ist gegangen",
+          "grammar_hint": "es geht + Dativ: mir, dir, ihm. Общее самочувствие или положение; Mir ist schlecht часто означает тошноту.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 879,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Übelkeit oder körperliches Unwohlsein verspüren. Example: Bei der langen Busfahrt wurde mir schlecht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 21,
+        "record": {
+          "id": "b1-schlecht-nausea",
+          "de": "jemandem ist schlecht",
+          "lemma": "schlecht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "кого-либо тошнит",
+            "кому-либо дурно"
+          ],
+          "definition_de": "Übelkeit oder körperliches Unwohlsein verspüren.",
+          "example": "Bei der langen Busfahrt wurde mir schlecht.",
+          "example_ru": "Во время долгой поездки на автобусе меня затошнило.",
+          "forms": "schlecht · schlechter · am schlechtesten; ist · war · ist gewesen",
+          "grammar_hint": "Dativ лица: Mir ist schlecht. Mir wird schlecht — мне становится дурно. Не Ich bin schlecht.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-schlecht-unwell-reviewed",
+        "alias_id": "b1-schlecht-nausea",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-schlecht-unwell-reviewed"
+      }
+    },
+    {
+      "candidate_number": 880,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Luft von unangenehmer oder unzureichender Qualität. Example: Im Raum ist schlechte Luft; wir sollten lüften.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 22,
+        "record": {
+          "id": "b1-schlecht-air",
+          "de": "schlechte Luft",
+          "lemma": "schlecht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "плохой",
+            "душный",
+            "несвежий воздух"
+          ],
+          "definition_de": "Luft von unangenehmer oder unzureichender Qualität.",
+          "example": "Im Raum ist schlechte Luft; wir sollten lüften.",
+          "example_ru": "В комнате душно, нам стоит проветрить.",
+          "forms": "schlecht · schlechter · am schlechtesten",
+          "grammar_hint": "schlechte Luft; die Luftqualität — качество воздуха. Контекст неудовлетворительного качества.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 881,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Nicht mehr zum Verzehr geeignet werden. Example: Ohne Kühlung kann der Fisch schnell schlecht werden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 23,
+        "record": {
+          "id": "b1-schlecht-spoiled",
+          "de": "schlecht werden",
+          "lemma": "schlecht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "портиться (о продуктах)"
+          ],
+          "definition_de": "Nicht mehr zum Verzehr geeignet werden.",
+          "example": "Ohne Kühlung kann der Fisch schnell schlecht werden.",
+          "example_ru": "Без охлаждения рыба может быстро испортиться.",
+          "forms": "schlecht · schlechter · am schlechtesten; wird · wurde · ist geworden",
+          "grammar_hint": "schlecht werden — портиться; schlecht sein — быть испорченным. Verdorben — испорченный.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 882,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: In Bezug auf die Vergütung nicht ausreichend oder ungünstig. Example: Die Bezahlung ist für diese Arbeit ziemlich schlecht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 24,
+        "record": {
+          "id": "b1-schlecht-pay",
+          "de": "schlecht",
+          "lemma": "schlecht",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "низкий",
+            "плохой (о зарплате, оплате)"
+          ],
+          "definition_de": "In Bezug auf die Vergütung nicht ausreichend oder ungünstig.",
+          "example": "Die Bezahlung ist für diese Arbeit ziemlich schlecht.",
+          "example_ru": "Оплата за эту работу довольно низкая.",
+          "forms": "schlecht · schlechter · am schlechtesten",
+          "grammar_hint": "schlecht bezahlt sein — получать низкую оплату; niedriger Lohn — низкая зарплата.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 883,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Nicht zuverlässig oder deutlich genug funktionierend. Example: Die Internetverbindung ist heute sehr schlecht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 25,
+        "record": {
+          "id": "b1-schlecht-connection",
+          "de": "schlecht",
+          "lemma": "schlecht",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "плохой",
+            "слабый (о связи)"
+          ],
+          "definition_de": "Nicht zuverlässig oder deutlich genug funktionierend.",
+          "example": "Die Internetverbindung ist heute sehr schlecht.",
+          "example_ru": "Сегодня очень плохое интернет-соединение.",
+          "forms": "schlecht · schlechter · am schlechtesten",
+          "grammar_hint": "eine schlechte Verbindung; schlecht hören — плохо слышать. Контекст качества.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 884,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine zurückhaltend positive Bewertung ausdrückend. Example: Das Ergebnis ist gar nicht schlecht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 26,
+        "record": {
+          "id": "b1-schlecht-notbad",
+          "de": "nicht schlecht",
+          "lemma": "schlecht",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "неплохо",
+            "довольно хорошо"
+          ],
+          "definition_de": "Eine zurückhaltend positive Bewertung ausdrückend.",
+          "example": "Das Ergebnis ist gar nicht schlecht.",
+          "example_ru": "Результат совсем неплохой.",
+          "forms": "schlecht · schlechter · am schlechtesten",
+          "grammar_hint": "nicht schlecht — умеренная положительная оценка; gar nicht schlecht — совсем неплохо. Не самостоятельное значение прилагательного.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 668,
+          "record": {
+            "id": "a1-497-1",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "ru": "плохой; нехороший; плохо",
+            "uk": "",
+            "translations_ru": [
+              "плохой",
+              "нехороший",
+              "плохо"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlechter · am schlechtesten",
+            "definition_de": "Von geringer Qualität oder unangenehm.",
+            "example": "Morgen wird das Wetter schlecht.",
+            "example_ru": "Завтра погода испортится.",
+            "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e0146283295cce5cd375"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 808,
+          "record": {
+            "id": "a1-schlecht-unwell-reviewed",
+            "de": "schlecht",
+            "lemma": "schlecht",
+            "part": "adj",
+            "level": "A1",
+            "ru": "дурно; тошнит; плохо (о самочувствии)",
+            "uk": "зле; нудить",
+            "translations_ru": [
+              "дурно",
+              "тошнит",
+              "плохо (о самочувствии)"
+            ],
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Sich körperlich unwohl fühlen.",
+            "example": "Mir ist heute schlecht.",
+            "example_ru": "Мне сегодня дурно.",
+            "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/schlecht",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 885,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Öffnung durch Betätigung eines Verschlusses unzugänglich machen. Example: Schließe bitte das Fenster, bevor du gehst.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 27,
+        "record": {
+          "id": "b1-schliessen-shut",
+          "de": "schließen",
+          "lemma": "schließen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "закрывать"
+          ],
+          "definition_de": "Eine Öffnung durch Betätigung eines Verschlusses unzugänglich machen.",
+          "example": "Schließe bitte das Fenster, bevor du gehst.",
+          "example_ru": "Пожалуйста, закрой окно, прежде чем уйдёшь.",
+          "forms": "schließt · schloss · hat geschlossen",
+          "grammar_hint": "etwas (Akk.) schließen; CH: schliessen, schliesst. Gegensatz öffnen.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 670,
+          "record": {
+            "id": "a1-498-1",
+            "de": "schließen",
+            "lemma": "schließen",
+            "ru": "закрывать",
+            "uk": "",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Etwas zumachen.",
+            "example": "Schließen Sie bitte die Tür.",
+            "example_ru": "Закройте, пожалуйста, дверь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e26f534543a157e445ff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-498-1",
+        "alias_id": "b1-schliessen-shut",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-498-1"
+      }
+    },
+    {
+      "candidate_number": 886,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Ohne ausdrücklich genannten Handelnden zugehen oder geschlossen werden. Example: Die Aufzugtür schließt nach wenigen Sekunden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 28,
+        "record": {
+          "id": "b1-schliessen-automatic",
+          "de": "schließen",
+          "lemma": "schließen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "закрываться"
+          ],
+          "definition_de": "Ohne ausdrücklich genannten Handelnden zugehen oder geschlossen werden.",
+          "example": "Die Aufzugtür schließt nach wenigen Sekunden.",
+          "example_ru": "Дверь лифта закрывается через несколько секунд.",
+          "forms": "schließt · schloss · hat geschlossen",
+          "grammar_hint": "Die Tür schließt / schließt sich. Perfekt с haben; отличается от geschlossen sein — состояние.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 670,
+          "record": {
+            "id": "a1-498-1",
+            "de": "schließen",
+            "lemma": "schließen",
+            "ru": "закрывать",
+            "uk": "",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Etwas zumachen.",
+            "example": "Schließen Sie bitte die Tür.",
+            "example_ru": "Закройте, пожалуйста, дверь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e26f534543a157e445ff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 887,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Für den Zutritt oder die Bedienung nicht verfügbar sein. Example: Am Feiertag ist die Bibliothek geschlossen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 29,
+        "record": {
+          "id": "b1-geschlossen-state",
+          "de": "geschlossen sein",
+          "lemma": "schließen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть закрытым",
+            "не работать (о заведении)"
+          ],
+          "definition_de": "Für den Zutritt oder die Bedienung nicht verfügbar sein.",
+          "example": "Am Feiertag ist die Bibliothek geschlossen.",
+          "example_ru": "В праздничный день библиотека закрыта.",
+          "forms": "ist geschlossen · war geschlossen · ist geschlossen gewesen",
+          "grammar_hint": "sein + Partizip II: состояние (Zustandspassiv); wird geschlossen — действие. Gegensatz geöffnet sein.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 670,
+          "record": {
+            "id": "a1-498-1",
+            "de": "schließen",
+            "lemma": "schließen",
+            "ru": "закрывать",
+            "uk": "",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Etwas zumachen.",
+            "example": "Schließen Sie bitte die Tür.",
+            "example_ru": "Закройте, пожалуйста, дверь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e26f534543a157e445ff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 888,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Den Kundenbetrieb zu einer bestimmten Zeit beenden. Example: Das Geschäft schließt heute schon um sechs Uhr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_080.json",
+        "sha": "5c9d08b0d70e67a2e8b55af40858a46cab8b9b87",
+        "batch": 80,
+        "row": 30,
+        "record": {
+          "id": "b1-schliessen-hours",
+          "de": "schließen",
+          "lemma": "schließen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "закрываться",
+            "заканчивать работу (о заведении)"
+          ],
+          "definition_de": "Den Kundenbetrieb zu einer bestimmten Zeit beenden.",
+          "example": "Das Geschäft schließt heute schon um sechs Uhr.",
+          "example_ru": "Магазин сегодня закрывается уже в шесть часов.",
+          "forms": "schließt · schloss · hat geschlossen",
+          "grammar_hint": "um + Uhrzeit; здесь без прямого объекта. schließen — закрываться, geschlossen sein — быть закрытым.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 670,
+          "record": {
+            "id": "a1-498-1",
+            "de": "schließen",
+            "lemma": "schließen",
+            "ru": "закрывать",
+            "uk": "",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Etwas zumachen.",
+            "example": "Schließen Sie bitte die Tür.",
+            "example_ru": "Закройте, пожалуйста, дверь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e26f534543a157e445ff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 889,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Vereinbarung verbindlich zustande bringen. Example: Morgen schließen wir den neuen Mietvertrag ab.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 1,
+        "record": {
+          "id": "b1-abschliessen-contract",
+          "de": "einen Vertrag abschließen",
+          "lemma": "abschließen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "заключать договор"
+          ],
+          "definition_de": "Eine Vereinbarung verbindlich zustande bringen.",
+          "example": "Morgen schließen wir den neuen Mietvertrag ab.",
+          "example_ru": "Завтра мы заключим новый договор аренды.",
+          "forms": "schließt ab · schloss ab · hat abgeschlossen",
+          "grammar_hint": "Отделяемая приставка ab-; Vertrag (Akk.); CH: abschliessen. Другое значение — запирать на ключ.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/abschlie%C3%9Fen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 381,
+          "record": {
+            "id": "dict_1e78e84cabafea8814a9",
+            "de": "abschließen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "закрывать на ключ",
+              "завершать",
+              "заканчивать"
+            ],
+            "definition_de": "Eine Tür mit einem Schlüssel sichern oder eine Tätigkeit erfolgreich beenden.",
+            "forms": "schließt ab · schloss ab · hat abgeschlossen",
+            "example": "Sie schließt die Wohnung ab, bevor sie zur Arbeit geht.",
+            "example_ru": "Она запирает квартиру перед уходом на работу.",
+            "grammar_hint": "Отделяемая приставка ab-: Ich schließe die Tür ab.",
+            "usage_note": "В Швейцарии: abschliessen. Значение «заключать договор» пока не подтверждено для A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 8,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/abschlie%C3%9Fen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 890,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein geöffnetes digitales Dokument beenden, sodass es nicht mehr angezeigt wird. Example: Speichere deine Änderungen, bevor du die Datei schließt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 3,
+        "record": {
+          "id": "b1-schliessen-file",
+          "de": "eine Datei schließen",
+          "lemma": "schließen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "закрывать файл",
+            "закрывать документ"
+          ],
+          "definition_de": "Ein geöffnetes digitales Dokument beenden, sodass es nicht mehr angezeigt wird.",
+          "example": "Speichere deine Änderungen, bevor du die Datei schließt.",
+          "example_ru": "Сохрани изменения, прежде чем закрыть файл.",
+          "forms": "schließt · schloss · hat geschlossen",
+          "grammar_hint": "Datei (Akk.); после bevor спрягаемый глагол в конце. CH: schliessen.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen",
+              "https://www.duden.de/rechtschreibung/schlieszen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 670,
+          "record": {
+            "id": "a1-498-1",
+            "de": "schließen",
+            "lemma": "schließen",
+            "ru": "закрывать",
+            "uk": "",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Etwas zumachen.",
+            "example": "Schließen Sie bitte die Tür.",
+            "example_ru": "Закройте, пожалуйста, дверь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e26f534543a157e445ff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 891,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Den Betrieb einer Einrichtung oder Firma dauerhaft einstellen. Example: Die Bäckerei musste im letzten Jahr schließen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 4,
+        "record": {
+          "id": "b1-schliessen-business",
+          "de": "schließen",
+          "lemma": "schließen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "закрывать предприятие",
+            "прекращать деятельность"
+          ],
+          "definition_de": "Den Betrieb einer Einrichtung oder Firma dauerhaft einstellen.",
+          "example": "Die Bäckerei musste im letzten Jahr schließen.",
+          "example_ru": "Пекарне пришлось закрыться в прошлом году.",
+          "forms": "schließt · schloss · hat geschlossen",
+          "grammar_hint": "Eine Firma schließen (Akk.) или Die Firma schließt. В данном контексте речь о прекращении деятельности, а не о часах работы.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen",
+              "https://www.duden.de/rechtschreibung/schlieszen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 670,
+          "record": {
+            "id": "a1-498-1",
+            "de": "schließen",
+            "lemma": "schließen",
+            "ru": "закрывать",
+            "uk": "",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Etwas zumachen.",
+            "example": "Schließen Sie bitte die Tür.",
+            "example_ru": "Закройте, пожалуйста, дверь.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 22,
+                "row_id": "e26f534543a157e445ff"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 892,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit unangenehmen oder bedrohlichen Folgen verbunden. Example: Die Verletzung ist schlimmer als zuerst gedacht.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_081.json",
+        "sha": "3fc8a35529f2f1bf576bd53d9df35f7983290468",
+        "batch": 81,
+        "row": 7,
+        "record": {
+          "id": "b1-schlimm-serious",
+          "de": "schlimm",
+          "lemma": "schlimm",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "серьёзный",
+            "тяжёлый",
+            "плохой"
+          ],
+          "definition_de": "Mit unangenehmen oder bedrohlichen Folgen verbunden.",
+          "example": "Die Verletzung ist schlimmer als zuerst gedacht.",
+          "example_ru": "Травма серьёзнее, чем думали сначала.",
+          "forms": "schlimm · schlimmer · am schlimmsten",
+          "grammar_hint": "schlimme Verletzung; schlimmer als … — сравнительная степень с als.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlimm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 276,
+          "record": {
+            "id": "dict_8eb4c89a4f96a7e4907f",
+            "de": "schlimm",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "плохой",
+              "серьёзный",
+              "страшный"
+            ],
+            "definition_de": "So, dass etwas sehr unangenehm ist, ein Problem darstellt oder Sorgen macht.",
+            "forms": "schlimm · schlimmer · am schlimmsten",
+            "example": "Keine Sorge, der Fehler ist nicht so schlimm.",
+            "example_ru": "Не волнуйся, ошибка не такая уж серьёзная.",
+            "grammar_hint": "",
+            "usage_note": "Das ist nicht schlimm. — Ничего страшного.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schlimm"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8eb4c89a4f96a7e4907f",
+        "alias_id": "b1-schlimm-serious",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8eb4c89a4f96a7e4907f"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_11aeb36f034f710162c6",
+      "alias_ids": [
+        "b1-schirm-umbrella"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_11aeb36f034f710162c6",
+        "de": "der Schirm",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "зонт",
+          "зонтик"
+        ],
+        "definition_de": "Ein tragbarer Gegenstand, der vor Regen schützt.",
+        "forms": "Plural · die Schirme",
+        "example": "Bei Regen nehme ich einen Schirm mit.",
+        "example_ru": "В дождь я беру с собой зонт.",
+        "grammar_hint": "",
+        "usage_note": "Regenschirm — зонт от дождя; Sonnenschirm — зонт от солнца. Значение «экран» существует, но не подтверждено в Goethe A2 для данной карточки.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 24,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Schirm",
+            "https://www.duden.de/rechtschreibung/Schirm"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-schirm-umbrella"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schirm-umbrella",
+            "de": "der Schirm",
+            "part": "noun",
+            "forms": "die Schirme",
+            "definition_de": "Ein tragbarer Schutz gegen Regen oder Sonne.",
+            "translations_ru": [
+              "зонт"
+            ],
+            "grammar_hint": "der Regenschirm — зонт от дождя; der Sonnenschirm — зонт от солнца.",
+            "example": "Nimm einen Schirm mit, es könnte regnen.",
+            "example_ru": "Возьми зонт с собой, может пойти дождь."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schirm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-496-1",
+      "alias_ids": [
+        "b1-schlafen-sleep"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-496-1",
+        "de": "schlafen",
+        "lemma": "schlafen",
+        "ru": "спать",
+        "uk": "",
+        "translations_ru": [
+          "спать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schläft · schlief · hat geschlafen",
+        "definition_de": "Sich im Schlaf befinden.",
+        "example": "Das Baby schläft schon.",
+        "example_ru": "Ребёнок уже спит.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "c84d740cfa872e2dced9"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schlafen-sleep"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schlafen-sleep",
+            "de": "schlafen",
+            "part": "verb",
+            "forms": "schläft · schlief · hat geschlafen",
+            "definition_de": "Sich in einem natürlichen Zustand körperlicher und geistiger Ruhe befinden.",
+            "translations_ru": [
+              "спать"
+            ],
+            "grammar_hint": "du schläfst; Perfekt с haben. Acht Stunden — Akkusativ длительности.",
+            "example": "Letzte Nacht habe ich acht Stunden geschlafen.",
+            "example_ru": "Прошлой ночью я спала восемь часов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlafen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-497-1",
+      "alias_ids": [
+        "b1-schlecht-weather"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-497-1",
+        "de": "schlecht",
+        "lemma": "schlecht",
+        "ru": "плохой; нехороший; плохо",
+        "uk": "",
+        "translations_ru": [
+          "плохой",
+          "нехороший",
+          "плохо"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "schlechter · am schlechtesten",
+        "definition_de": "Von geringer Qualität oder unangenehm.",
+        "example": "Morgen wird das Wetter schlecht.",
+        "example_ru": "Завтра погода испортится.",
+        "note": "schlecht – schlechter – am schlechtesten. Наречное употребление: schlecht aussehen. Mir ist schlecht — отдельное значение A1, вынесено в самостоятельную карточку. Испорченный, аморальный и иные переносные смыслы не получают метку автоматически.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "e0146283295cce5cd375"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schlecht-weather"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schlecht-weather",
+            "de": "schlecht",
+            "part": "adj",
+            "forms": "schlecht · schlechter · am schlechtesten",
+            "definition_de": "Nicht den gewünschten Bedingungen entsprechend.",
+            "translations_ru": [
+              "плохой",
+              "неблагоприятный (о погоде)"
+            ],
+            "grammar_hint": "bei schlechtem Wetter (Dativ); Gegenteil: gut. Контекст общей отрицательной оценки.",
+            "example": "Bei schlechtem Wetter bleiben wir im Haus.",
+            "example_ru": "В плохую погоду мы остаёмся дома."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-497-3",
+      "alias_ids": [
+        "b1-schlecht-look"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-497-3",
+        "de": "schlecht aussehen",
+        "lemma": "schlecht aussehen",
+        "ru": "плохо выглядеть",
+        "uk": "",
+        "translations_ru": [
+          "плохо выглядеть"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "",
+        "definition_de": "So aussehen, als wäre man krank oder müde.",
+        "example": "Du siehst heute schlecht aus. Geht es dir gut?",
+        "example_ru": "Ты сегодня плохо выглядишь. С тобой всё хорошо?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "e0146283295cce5cd375"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schlecht-look"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schlecht-look",
+            "de": "schlecht aussehen",
+            "part": "phrase",
+            "forms": "schlecht · schlechter · am schlechtesten; sieht aus · sah aus · hat ausgesehen",
+            "definition_de": "Einen müden oder ungesunden Eindruck machen.",
+            "translations_ru": [
+              "плохо выглядеть",
+              "выглядеть нездоровым"
+            ],
+            "grammar_hint": "aussehen — отделяемый глагол; здесь речь о внешнем впечатлении, не о самочувствии.",
+            "example": "Du siehst heute etwas schlecht aus. Alles in Ordnung?",
+            "example_ru": "Ты сегодня выглядишь неважно. Всё в порядке?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-schlecht-unwell-reviewed",
+      "alias_ids": [
+        "b1-schlecht-nausea"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-schlecht-unwell-reviewed",
+        "de": "schlecht",
+        "lemma": "schlecht",
+        "part": "adj",
+        "level": "A1",
+        "ru": "дурно; тошнит; плохо (о самочувствии)",
+        "uk": "зле; нудить",
+        "translations_ru": [
+          "дурно",
+          "тошнит",
+          "плохо (о самочувствии)"
+        ],
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "schlecht · schlechter · am schlechtesten",
+        "definition_de": "Sich körperlich unwohl fühlen.",
+        "example": "Mir ist heute schlecht.",
+        "example_ru": "Мне сегодня дурно.",
+        "note": "Mir ist schlecht — мне дурно/тошнит (Dativ). Mir geht es schlecht — мне плохо (общее состояние); это не оценка качества.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "scope": "sense"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/schlecht",
+            "scope": "meaning"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schlecht-nausea"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schlecht-nausea",
+            "de": "jemandem ist schlecht",
+            "part": "phrase",
+            "forms": "schlecht · schlechter · am schlechtesten; ist · war · ist gewesen",
+            "definition_de": "Übelkeit oder körperliches Unwohlsein verspüren.",
+            "translations_ru": [
+              "кого-либо тошнит",
+              "кому-либо дурно"
+            ],
+            "grammar_hint": "Dativ лица: Mir ist schlecht. Mir wird schlecht — мне становится дурно. Не Ich bin schlecht.",
+            "example": "Bei der langen Busfahrt wurde mir schlecht.",
+            "example_ru": "Во время долгой поездки на автобусе меня затошнило."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlecht"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-498-1",
+      "alias_ids": [
+        "b1-schliessen-shut"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-498-1",
+        "de": "schließen",
+        "lemma": "schließen",
+        "ru": "закрывать",
+        "uk": "",
+        "translations_ru": [
+          "закрывать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schließt · schloss · hat geschlossen",
+        "definition_de": "Etwas zumachen.",
+        "example": "Schließen Sie bitte die Tür.",
+        "example_ru": "Закройте, пожалуйста, дверь.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 22,
+            "row_id": "e26f534543a157e445ff"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schliessen-shut"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schliessen-shut",
+            "de": "schließen",
+            "part": "verb",
+            "forms": "schließt · schloss · hat geschlossen",
+            "definition_de": "Eine Öffnung durch Betätigung eines Verschlusses unzugänglich machen.",
+            "translations_ru": [
+              "закрывать"
+            ],
+            "grammar_hint": "etwas (Akk.) schließen; CH: schliessen, schliesst. Gegensatz öffnen.",
+            "example": "Schließe bitte das Fenster, bevor du gehst.",
+            "example_ru": "Пожалуйста, закрой окно, прежде чем уйдёшь."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Usage cards may share dictionary senses; regional cream equivalents already covered in earlier batches."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlie%C3%9Fen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_8eb4c89a4f96a7e4907f",
+      "alias_ids": [
+        "b1-schlimm-serious"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8eb4c89a4f96a7e4907f",
+        "de": "schlimm",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "плохой",
+          "серьёзный",
+          "страшный"
+        ],
+        "definition_de": "So, dass etwas sehr unangenehm ist, ein Problem darstellt oder Sorgen macht.",
+        "forms": "schlimm · schlimmer · am schlimmsten",
+        "example": "Keine Sorge, der Fehler ist nicht so schlimm.",
+        "example_ru": "Не волнуйся, ошибка не такая уж серьёзная.",
+        "grammar_hint": "",
+        "usage_note": "Das ist nicht schlimm. — Ничего страшного.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schlimm"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-schlimm-serious"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schlimm-serious",
+            "de": "schlimm",
+            "part": "adj",
+            "forms": "schlimm · schlimmer · am schlimmsten",
+            "definition_de": "Mit unangenehmen oder bedrohlichen Folgen verbunden.",
+            "translations_ru": [
+              "серьёзный",
+              "тяжёлый",
+              "плохой"
+            ],
+            "grammar_hint": "schlimme Verletzung; schlimmer als … — сравнительная степень с als.",
+            "example": "Die Verletzung ist schlimmer als zuerst gedacht.",
+            "example_ru": "Травма серьёзнее, чем думали сначала."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 77,
+              "scope": "context",
+              "note": "Printed Goethe B1 pages visually checked; earliest CEFR level pending comparison with A1/A2. Some cards are teaching contexts sharing a lexical sense."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schlimm"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3070 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1413,
+    1432
+  ],
+  "reviewed": 20,
+  "merge_count": 19,
+  "merge_target_count": 14,
+  "retained_distinct_senses": 0,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 1413,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Nachschlagewerk mit sprachlichen Informationen zu Wörtern. Example: Ich suche die Bedeutung im Wörterbuch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_118.json",
+        "sha": "80ead76d4b23bdd8281ccc31276d8cbe4f607ed4",
+        "batch": 118,
+        "row": 21,
+        "record": {
+          "id": "b1-woerterbuch-dictionary",
+          "de": "das Wörterbuch",
+          "lemma": "Wörterbuch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "словарь"
+          ],
+          "definition_de": "Ein Nachschlagewerk mit sprachlichen Informationen zu Wörtern.",
+          "example": "Ich suche die Bedeutung im Wörterbuch.",
+          "example_ru": "Я ищу значение в словаре.",
+          "forms": "die Wörterbücher",
+          "grammar_hint": "ein Wort im Wörterbuch nachschlagen; zweisprachiges Wörterbuch — двуязычный словарь.",
+          "topic": "Образование и работа",
+          "topics": [
+            "Образование и работа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/W%C3%B6rterbuch"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 602,
+          "record": {
+            "id": "dict_24d5b0d2d09cbf00b516",
+            "de": "das Wörterbuch",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "словарь"
+            ],
+            "forms": "Plural · die Wörterbücher",
+            "definition_de": "Ein Nachschlagewerk, das Wörter erklärt oder übersetzt.",
+            "example": "Ich schlage das Wort im Wörterbuch nach.",
+            "example_ru": "Я ищу это слово в словаре.",
+            "grammar_hint": "im Wörterbuch nachschlagen (in + Dativ).",
+            "usage_note": "В Goethe A1 стр. 12 слово встречается в примере к Buch; отдельный пункт словника — Goethe A2 стр. 5. Метка A2 по явному включению в словник, не утверждение о невозможности изучать раньше.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 5,
+                "scope": "sense",
+                "additional_context": {
+                  "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                  "page": 12,
+                  "scope": "example_only"
+                }
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/W%C3%B6rterbuch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_24d5b0d2d09cbf00b516",
+        "alias_id": "b1-woerterbuch-dictionary",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_24d5b0d2d09cbf00b516"
+      }
+    },
+    {
+      "candidate_number": 1414,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Von besonders erfreulicher oder angenehmer Qualität. Example: Wir hatten einen wunderbaren Nachmittag am See.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_118.json",
+        "sha": "80ead76d4b23bdd8281ccc31276d8cbe4f607ed4",
+        "batch": 118,
+        "row": 25,
+        "record": {
+          "id": "b1-wunderbar-excellent",
+          "de": "wunderbar",
+          "lemma": "wunderbar",
+          "part": "adjective",
+          "level": "B1",
+          "translations_ru": [
+            "прекрасный",
+            "замечательный",
+            "чудесно"
+          ],
+          "definition_de": "Von besonders erfreulicher oder angenehmer Qualität.",
+          "example": "Wir hatten einen wunderbaren Nachmittag am See.",
+          "example_ru": "Мы чудесно провели вторую половину дня у озера.",
+          "forms": "wunderbar · wunderbarer · am wunderbarsten (selten)",
+          "grammar_hint": "wunderbar schmecken — быть замечательным на вкус; наречное употребление без окончания. Сравнение редко.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wunderbar"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 754,
+          "record": {
+            "id": "a1-639-1",
+            "de": "wunderbar",
+            "lemma": "wunderbar",
+            "ru": "чудесный",
+            "uk": "",
+            "translations_ru": [
+              "чудесный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "wunderbarer · am wunderbarsten",
+            "definition_de": "Sehr schön oder erfreulich.",
+            "example": "Der Ausflug war wunderbar.",
+            "example_ru": "Поездка была замечательной.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "30abaefb2aa8793068fd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-639-1",
+        "alias_id": "b1-wunderbar-excellent",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-639-1"
+      }
+    },
+    {
+      "candidate_number": 1415,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einer anderen Person etwas Gutes erhoffen und dies ausdrücken. Example: Ich wünsche dir viel Erfolg bei der Prüfung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_118.json",
+        "sha": "80ead76d4b23bdd8281ccc31276d8cbe4f607ed4",
+        "batch": 118,
+        "row": 29,
+        "record": {
+          "id": "b1-wuenschen-other",
+          "de": "wünschen",
+          "lemma": "wünschen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "желать",
+            "пожелать кому-либо"
+          ],
+          "definition_de": "Einer anderen Person etwas Gutes erhoffen und dies ausdrücken.",
+          "example": "Ich wünsche dir viel Erfolg bei der Prüfung.",
+          "example_ru": "Желаю тебе успеха на экзамене.",
+          "forms": "wünscht · wünschte · hat gewünscht",
+          "grammar_hint": "jemandem (Dat.) etwas (Akk.) wünschen; Ich wünsche Ihnen einen schönen Tag.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 284,
+          "record": {
+            "id": "dict_3892f03bcb81f235cd3b",
+            "de": "wünschen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "желать",
+              "пожелать",
+              "хотеть"
+            ],
+            "definition_de": "Etwas gern haben wollen oder hoffen, dass jemand etwas Gutes erlebt.",
+            "forms": "wünscht · wünschte · hat gewünscht",
+            "example": "Ich wünsche dir viel Glück.",
+            "example_ru": "Желаю тебе удачи.",
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; sich etwas wünschen: Ich wünsche mir ein Fahrrad.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3892f03bcb81f235cd3b",
+        "alias_id": "b1-wuenschen-other",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3892f03bcb81f235cd3b"
+      }
+    },
+    {
+      "candidate_number": 1416,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Den Wunsch haben, etwas zu erhalten oder zu erleben. Example: Ich wünsche mir zum Geburtstag ein neues Buch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_118.json",
+        "sha": "80ead76d4b23bdd8281ccc31276d8cbe4f607ed4",
+        "batch": 118,
+        "row": 30,
+        "record": {
+          "id": "b1-wuenschen-self",
+          "de": "sich etwas wünschen",
+          "lemma": "wünschen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "желать себе",
+            "хотеть",
+            "мечтать о"
+          ],
+          "definition_de": "Den Wunsch haben, etwas zu erhalten oder zu erleben.",
+          "example": "Ich wünsche mir zum Geburtstag ein neues Buch.",
+          "example_ru": "Я хочу на день рождения новую книгу.",
+          "forms": "wünscht sich · wünschte sich · hat sich gewünscht",
+          "grammar_hint": "sich (Dat.) etwas (Akk.) wünschen: ich wünsche mir, du wünschst dir; sich wünschen, dass … — глагол в конце.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "attested_context",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 284,
+          "record": {
+            "id": "dict_3892f03bcb81f235cd3b",
+            "de": "wünschen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "желать",
+              "пожелать",
+              "хотеть"
+            ],
+            "definition_de": "Etwas gern haben wollen oder hoffen, dass jemand etwas Gutes erlebt.",
+            "forms": "wünscht · wünschte · hat gewünscht",
+            "example": "Ich wünsche dir viel Glück.",
+            "example_ru": "Желаю тебе удачи.",
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; sich etwas wünschen: Ich wünsche mir ein Fahrrad.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_3892f03bcb81f235cd3b",
+        "alias_id": "b1-wuenschen-self",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_3892f03bcb81f235cd3b"
+      }
+    },
+    {
+      "candidate_number": 1417,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Etwas, das eine Person gern haben oder erleben möchte. Example: Mein größter Wunsch ist eine eigene Wohnung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 1,
+        "record": {
+          "id": "b1-wunsch-desire",
+          "de": "der Wunsch",
+          "lemma": "Wunsch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "желание",
+            "пожелание",
+            "просьба"
+          ],
+          "definition_de": "Etwas, das eine Person gern haben oder erleben möchte.",
+          "example": "Mein größter Wunsch ist eine eigene Wohnung.",
+          "example_ru": "Моё самое большое желание — собственная квартира.",
+          "forms": "die Wünsche",
+          "grammar_hint": "einen Wunsch äußern/erfüllen; Wunsch nach + Dat.; CH: grösster.",
+          "topic": "Эмоции и характер",
+          "topics": [
+            "Эмоции и характер"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wunsch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 399,
+          "record": {
+            "id": "dict_9936f0644a872fee84dc",
+            "de": "der Wunsch",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "желание",
+              "пожелание"
+            ],
+            "definition_de": "Etwas, das man gern hätte oder das eintreten soll.",
+            "forms": "Plural · die Wünsche",
+            "example": "Mein größter Wunsch ist eine Reise ans Meer.",
+            "example_ru": "Моё самое большое желание — поездка к морю.",
+            "grammar_hint": "Wunsch nach + Dativ.",
+            "usage_note": "Желание, пожелание: einen Wunsch haben; Wünsche äußern. Der Wunsch nach + Dativ: der Wunsch nach Ruhe — желание покоя.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Wunsch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9936f0644a872fee84dc",
+        "alias_id": "b1-wunsch-desire",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9936f0644a872fee84dc"
+      }
+    },
+    {
+      "candidate_number": 1418,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Äußerung, mit der man einer anderen Person Gutes erhofft. Example: Vielen Dank für die lieben Wünsche zum Geburtstag.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 2,
+        "record": {
+          "id": "b1-wunsch-greeting",
+          "de": "der Wunsch",
+          "lemma": "Wunsch",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "пожелание (кому-либо)"
+          ],
+          "definition_de": "Eine Äußerung, mit der man einer anderen Person Gutes erhofft.",
+          "example": "Vielen Dank für die lieben Wünsche zum Geburtstag.",
+          "example_ru": "Большое спасибо за добрые пожелания ко дню рождения.",
+          "forms": "die Wünsche",
+          "grammar_hint": "gute Wünsche; mit den besten Wünschen — с наилучшими пожеланиями.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wunsch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 399,
+          "record": {
+            "id": "dict_9936f0644a872fee84dc",
+            "de": "der Wunsch",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "желание",
+              "пожелание"
+            ],
+            "definition_de": "Etwas, das man gern hätte oder das eintreten soll.",
+            "forms": "Plural · die Wünsche",
+            "example": "Mein größter Wunsch ist eine Reise ans Meer.",
+            "example_ru": "Моё самое большое желание — поездка к морю.",
+            "grammar_hint": "Wunsch nach + Dativ.",
+            "usage_note": "Желание, пожелание: einen Wunsch haben; Wünsche äußern. Der Wunsch nach + Dativ: der Wunsch nach Ruhe — желание покоя.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Wunsch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Семья, люди и отношения",
+            "topics": [
+              "Семья, люди и отношения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_9936f0644a872fee84dc",
+        "alias_id": "b1-wunsch-greeting",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_9936f0644a872fee84dc"
+      }
+    },
+    {
+      "candidate_number": 1419,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Lebensmittel, das häufig aus zerkleinertem Fleisch hergestellt wird. Example: Für das Picknick kaufen wir Brot und Wurst.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 3,
+        "record": {
+          "id": "b1-wurst-sausage",
+          "de": "die Wurst",
+          "lemma": "Wurst",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "колбаса",
+            "сосиска"
+          ],
+          "definition_de": "Ein Lebensmittel, das häufig aus zerkleinertem Fleisch hergestellt wird.",
+          "example": "Für das Picknick kaufen wir Brot und Wurst.",
+          "example_ru": "Для пикника мы покупаем хлеб и колбасу.",
+          "forms": "die Würste",
+          "grammar_hint": "ein Stück Wurst; eine Wurst — отдельная колбаска; Wurst как продукт часто без артикля.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wurst"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 248,
+          "record": {
+            "id": "dict_ff63f773a71eff795470",
+            "de": "die Wurst",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "колбаса",
+              "сосиска"
+            ],
+            "definition_de": "Ein Lebensmittel aus einer gewürzten Masse, die meist in eine Hülle gefüllt wird.",
+            "forms": "Plural · die Würste",
+            "example": "Zum Mittagessen nehme ich eine Wurst mit Brot.",
+            "example_ru": "На обед я возьму сосиску с хлебом.",
+            "grammar_hint": "",
+            "usage_note": "Колбаса как продукт, сосиска/колбаска как отдельное изделие. Pl. Würste. Разговорное Das ist mir Wurst/wurst — Мне всё равно — отдельное употребление, A2 здесь не подтверждено.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Wurst"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_ff63f773a71eff795470",
+        "alias_id": "b1-wurst-sausage",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_ff63f773a71eff795470"
+      }
+    },
+    {
+      "candidate_number": 1420,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein mathematischer Wert, mit dem man Mengen oder Größen ausdrücken kann. Example: Schreib bitte die größere Zahl in das freie Feld.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 5,
+        "record": {
+          "id": "b1-zahl-number",
+          "de": "die Zahl",
+          "lemma": "Zahl",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "число",
+            "числовое значение"
+          ],
+          "definition_de": "Ein mathematischer Wert, mit dem man Mengen oder Größen ausdrücken kann.",
+          "example": "Schreib bitte die größere Zahl in das freie Feld.",
+          "example_ru": "Впиши, пожалуйста, большее число в пустое поле.",
+          "forms": "die Zahlen",
+          "grammar_hint": "Zahl — число; Ziffer — цифра; Nummer — номер, идентификатор.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zahl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 431,
+          "record": {
+            "id": "dict_2d54efcbc55ef6982363",
+            "de": "die Zahl",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "число"
+            ],
+            "definition_de": "Ein mathematischer Wert, der zum Zählen oder Rechnen verwendet wird.",
+            "example": "Schreib bitte die Zahl auf.",
+            "example_ru": "Запиши, пожалуйста, число.",
+            "grammar_hint": "",
+            "usage_note": "die Zahl — число; die Ziffer — отдельная цифра; die Anzahl — количество; zahlen — платить.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zahl"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Zahlen",
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2d54efcbc55ef6982363",
+        "alias_id": "b1-zahl-number",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2d54efcbc55ef6982363"
+      }
+    },
+    {
+      "candidate_number": 1421,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Die Menge der Personen oder Dinge in einer bestimmten Gruppe. Example: Die Zahl der Anmeldungen steigt jeden Monat.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 6,
+        "record": {
+          "id": "b1-zahl-quantity",
+          "de": "die Zahl",
+          "lemma": "Zahl",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "число",
+            "количество"
+          ],
+          "definition_de": "Die Menge der Personen oder Dinge in einer bestimmten Gruppe.",
+          "example": "Die Zahl der Anmeldungen steigt jeden Monat.",
+          "example_ru": "Количество заявок растёт каждый месяц.",
+          "forms": "die Zahlen",
+          "grammar_hint": "die Zahl der + Gen. Pl.; das Verb stimmt mit Zahl überein: Die Zahl steigt.",
+          "topic": "Количество",
+          "topics": [
+            "Количество"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zahl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 431,
+          "record": {
+            "id": "dict_2d54efcbc55ef6982363",
+            "de": "die Zahl",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "число"
+            ],
+            "definition_de": "Ein mathematischer Wert, der zum Zählen oder Rechnen verwendet wird.",
+            "example": "Schreib bitte die Zahl auf.",
+            "example_ru": "Запиши, пожалуйста, число.",
+            "grammar_hint": "",
+            "usage_note": "die Zahl — число; die Ziffer — отдельная цифра; die Anzahl — количество; zahlen — платить.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zahl"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Zahlen",
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2d54efcbc55ef6982363",
+        "alias_id": "b1-zahl-quantity",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2d54efcbc55ef6982363"
+      }
+    },
+    {
+      "candidate_number": 1422,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Für eine Ware oder Dienstleistung Geld geben. Example: Kann ich mit Karte zahlen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 9,
+        "record": {
+          "id": "b1-zahlen-pay",
+          "de": "zahlen",
+          "lemma": "zahlen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "платить",
+            "оплачивать"
+          ],
+          "definition_de": "Für eine Ware oder Dienstleistung Geld geben.",
+          "example": "Kann ich mit Karte zahlen?",
+          "example_ru": "Могу я оплатить картой?",
+          "forms": "zahlt · zahlte · hat gezahlt",
+          "grammar_hint": "für + Akk. zahlen; mit Karte (Dat.) zahlen; eine Rechnung bezahlen / zahlen. Не путать с zählen.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zahlen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 755,
+          "record": {
+            "id": "a1-640-1",
+            "de": "zahlen",
+            "lemma": "zahlen",
+            "ru": "платить",
+            "uk": "",
+            "translations_ru": [
+              "платить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "zahlt · zahlte · hat gezahlt",
+            "definition_de": "Geld für etwas geben.",
+            "example": "Ich möchte bitte zahlen.",
+            "example_ru": "Я хотела бы расплатиться.",
+            "note": "für + Akkusativ zahlen — платить за что-либо. Не путать с die Zahl (число) и zählen (считать).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "3002866888459be15d30"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-640-1",
+        "alias_id": "b1-zahlen-pay",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-640-1"
+      }
+    },
+    {
+      "candidate_number": 1423,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Einen vorgeschriebenen oder geschuldeten Geldbetrag entrichten. Example: Die Firma muss jedes Jahr Steuern zahlen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 10,
+        "record": {
+          "id": "b1-zahlen-obligation",
+          "de": "zahlen",
+          "lemma": "zahlen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "выплачивать",
+            "уплачивать (налоги, штрафы)"
+          ],
+          "definition_de": "Einen vorgeschriebenen oder geschuldeten Geldbetrag entrichten.",
+          "example": "Die Firma muss jedes Jahr Steuern zahlen.",
+          "example_ru": "Фирма должна каждый год платить налоги.",
+          "forms": "zahlt · zahlte · hat gezahlt",
+          "grammar_hint": "Steuern/Miete/eine Strafe (Akk.) zahlen; контекст основного значения оплаты, объединить при итоговой сверке.",
+          "topic": "Деньги и покупки",
+          "topics": [
+            "Деньги и покупки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "attested_context",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zahlen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 755,
+          "record": {
+            "id": "a1-640-1",
+            "de": "zahlen",
+            "lemma": "zahlen",
+            "ru": "платить",
+            "uk": "",
+            "translations_ru": [
+              "платить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "zahlt · zahlte · hat gezahlt",
+            "definition_de": "Geld für etwas geben.",
+            "example": "Ich möchte bitte zahlen.",
+            "example_ru": "Я хотела бы расплатиться.",
+            "note": "für + Akkusativ zahlen — платить за что-либо. Не путать с die Zahl (число) и zählen (считать).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "3002866888459be15d30"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1424,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein harter Bestandteil des Gebisses, mit dem man Nahrung zerkleinert. Example: Seit gestern schmerzt mein linker Zahn.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 15,
+        "record": {
+          "id": "b1-zahn-tooth",
+          "de": "der Zahn",
+          "lemma": "Zahn",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "зуб"
+          ],
+          "definition_de": "Ein harter Bestandteil des Gebisses, mit dem man Nahrung zerkleinert.",
+          "example": "Seit gestern schmerzt mein linker Zahn.",
+          "example_ru": "Со вчерашнего дня у меня болит зуб слева.",
+          "forms": "die Zähne",
+          "grammar_hint": "sich (Dat.) die Zähne (Akk.) putzen; Zahnschmerzen — зубная боль.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zahn"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 100,
+          "record": {
+            "id": "dict_5dfd84c6bc68dda05f10",
+            "de": "der Zahn",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "зуб"
+            ],
+            "definition_de": "Ein harter Teil im Mund, mit dem man zum Beispiel Essen abbeißt und kaut.",
+            "forms": "Plural · die Zähne",
+            "example": "Seit gestern tut mir ein Zahn weh.",
+            "example_ru": "Со вчерашнего дня у меня болит зуб.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zahn"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_5dfd84c6bc68dda05f10",
+        "alias_id": "b1-zahn-tooth",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_5dfd84c6bc68dda05f10"
+      }
+    },
+    {
+      "candidate_number": 1425,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit Linien eine bildliche oder technische Darstellung erstellen. Example: Sie zeichnet den Grundriss ihrer Wohnung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 20,
+        "record": {
+          "id": "b1-zeichnen-draw",
+          "de": "zeichnen",
+          "lemma": "zeichnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "рисовать",
+            "чертить"
+          ],
+          "definition_de": "Mit Linien eine bildliche oder technische Darstellung erstellen.",
+          "example": "Sie zeichnet den Grundriss ihrer Wohnung.",
+          "example_ru": "Она рисует план своей квартиры.",
+          "forms": "zeichnet · zeichnete · hat gezeichnet",
+          "grammar_hint": "etwas (Akk.) zeichnen; zeichnen — обычно линии, malen — также рисовать красками.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zeichnen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 413,
+          "record": {
+            "id": "dict_a1f537bf9ddbeed72cb8",
+            "de": "zeichnen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "рисовать"
+            ],
+            "definition_de": "Mit einem Stift Linien und Bilder auf einer Fläche herstellen.",
+            "forms": "zeichnet · zeichnete · hat gezeichnet",
+            "example": "Meine Tochter zeichnet gern Tiere.",
+            "example_ru": "Моя дочь любит рисовать животных.",
+            "grammar_hint": "etwas (Akkusativ) zeichnen.",
+            "usage_note": "В A2 рисовать картину/рисунок; чертить технический чертёж, подписывать и отмечать — отдельные словарные употребления, здесь не подтверждены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/zeichnen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a1f537bf9ddbeed72cb8",
+        "alias_id": "b1-zeichnen-draw",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a1f537bf9ddbeed72cb8"
+      }
+    },
+    {
+      "candidate_number": 1426,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Etwas für eine andere Person sichtbar oder verständlich machen. Example: Zeig mir bitte das Foto von deinem Ausflug.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 22,
+        "record": {
+          "id": "b1-zeigen-show",
+          "de": "zeigen",
+          "lemma": "zeigen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "показывать",
+            "демонстрировать"
+          ],
+          "definition_de": "Etwas für eine andere Person sichtbar oder verständlich machen.",
+          "example": "Zeig mir bitte das Foto von deinem Ausflug.",
+          "example_ru": "Покажи мне, пожалуйста, фотографию с экскурсии.",
+          "forms": "zeigt · zeigte · hat gezeigt",
+          "grammar_hint": "jemandem (Dat.) etwas (Akk.) zeigen; zeigen, wie … — глагол в конце косвенного вопроса.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zeigen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 394,
+          "record": {
+            "id": "dict_73c9ca77f03309b8b0bd",
+            "de": "zeigen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "показывать",
+              "показать",
+              "указать (дорогу)"
+            ],
+            "definition_de": "Einer anderen Person etwas sichtbar machen oder ihr einen Ort erklären.",
+            "example": "Kannst du mir deine Fotos zeigen?",
+            "example_ru": "Можешь показать мне свои фотографии?",
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) zeigen.",
+            "usage_note": "den Weg zeigen — показать/указать дорогу; auf etwas zeigen — указывать на что-либо (другое управление).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/zeigen"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "zeigt · zeigte · hat gezeigt",
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_73c9ca77f03309b8b0bd",
+        "alias_id": "b1-zeigen-show",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_73c9ca77f03309b8b0bd"
+      }
+    },
+    {
+      "candidate_number": 1427,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine andere Person über die Richtung zu einem Ziel informieren. Example: Können Sie mir den Weg zur Apotheke zeigen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 23,
+        "record": {
+          "id": "b1-zeigen-direction",
+          "de": "zeigen",
+          "lemma": "zeigen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "показывать",
+            "указывать (дорогу)"
+          ],
+          "definition_de": "Eine andere Person über die Richtung zu einem Ziel informieren.",
+          "example": "Können Sie mir den Weg zur Apotheke zeigen?",
+          "example_ru": "Можете показать мне дорогу к аптеке?",
+          "forms": "zeigt · zeigte · hat gezeigt",
+          "grammar_hint": "jemandem (Dat.) den Weg (Akk.) zeigen; контекст основного значения, не отдельная лексема.",
+          "topic": "Место и направление",
+          "topics": [
+            "Место и направление"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zeigen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 394,
+          "record": {
+            "id": "dict_73c9ca77f03309b8b0bd",
+            "de": "zeigen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "показывать",
+              "показать",
+              "указать (дорогу)"
+            ],
+            "definition_de": "Einer anderen Person etwas sichtbar machen oder ihr einen Ort erklären.",
+            "example": "Kannst du mir deine Fotos zeigen?",
+            "example_ru": "Можешь показать мне свои фотографии?",
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) zeigen.",
+            "usage_note": "den Weg zeigen — показать/указать дорогу; auf etwas zeigen — указывать на что-либо (другое управление).",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/zeigen"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "zeigt · zeigte · hat gezeigt",
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_73c9ca77f03309b8b0bd",
+        "alias_id": "b1-zeigen-direction",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_73c9ca77f03309b8b0bd"
+      }
+    },
+    {
+      "candidate_number": 1428,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Zeitraum, der für eine Handlung zur Verfügung steht. Example: Heute habe ich genug Zeit zum Lernen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 25,
+        "record": {
+          "id": "b1-zeit-duration",
+          "de": "die Zeit",
+          "lemma": "Zeit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "время (продолжительность, свободное время)"
+          ],
+          "definition_de": "Ein Zeitraum, der für eine Handlung zur Verfügung steht.",
+          "example": "Heute habe ich genug Zeit zum Lernen.",
+          "example_ru": "Сегодня у меня достаточно времени для учёбы.",
+          "forms": "die Zeiten; в значении имеющегося времени обычно Singular",
+          "grammar_hint": "Zeit haben für + Akk.; Zeit haben, etwas zu tun; sich Zeit nehmen.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 579,
+          "record": {
+            "id": "a1-641-1",
+            "de": "die Zeit",
+            "lemma": "Zeit",
+            "ru": "время",
+            "uk": "",
+            "translations_ru": [
+              "время"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Zeiten",
+            "definition_de": "Die Stunden oder Minuten, die man für etwas hat.",
+            "example": "Hast du morgen Zeit für einen Kaffee?",
+            "example_ru": "У тебя завтра есть время выпить кофе?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "0883176e8e5a31c847bb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-641-1",
+        "alias_id": "b1-zeit-duration",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-641-1"
+      }
+    },
+    {
+      "candidate_number": 1429,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine zeitliche Stelle, an der etwas geschieht. Example: Um diese Zeit fährt der letzte Bus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 26,
+        "record": {
+          "id": "b1-zeit-moment",
+          "de": "die Zeit",
+          "lemma": "Zeit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "время",
+            "момент (когда что-либо происходит)"
+          ],
+          "definition_de": "Eine zeitliche Stelle, an der etwas geschieht.",
+          "example": "Um diese Zeit fährt der letzte Bus.",
+          "example_ru": "В это время отправляется последний автобус.",
+          "forms": "die Zeiten",
+          "grammar_hint": "um diese Zeit (Akk.); zu dieser Zeit (Dat.); Zeitpunkt — конкретный момент.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 579,
+          "record": {
+            "id": "a1-641-1",
+            "de": "die Zeit",
+            "lemma": "Zeit",
+            "ru": "время",
+            "uk": "",
+            "translations_ru": [
+              "время"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "die Zeiten",
+            "definition_de": "Die Stunden oder Minuten, die man für etwas hat.",
+            "example": "Hast du morgen Zeit für einen Kaffee?",
+            "example_ru": "У тебя завтра есть время выпить кофе?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "0883176e8e5a31c847bb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-641-1",
+        "alias_id": "b1-zeit-moment",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-641-1"
+      }
+    },
+    {
+      "candidate_number": 1430,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Bezieht sich auf die gegenwärtige Situation. Example: Zurzeit besuche ich einen Deutschkurs.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 28,
+        "record": {
+          "id": "b1-zurzeit-currently",
+          "de": "zurzeit",
+          "lemma": "zurzeit",
+          "part": "adverb",
+          "level": "B1",
+          "translations_ru": [
+            "в настоящее время",
+            "сейчас"
+          ],
+          "definition_de": "Bezieht sich auf die gegenwärtige Situation.",
+          "example": "Zurzeit besuche ich einen Deutschkurs.",
+          "example_ru": "Сейчас я посещаю курс немецкого языка.",
+          "forms": "unveränderlich",
+          "grammar_hint": "zurzeit слитно в значении derzeit; zur Zeit Goethes — во времена Гёте, раздельно. При первой позиции V2.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zurzeit"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 756,
+          "record": {
+            "id": "a1-642-1",
+            "de": "zurzeit",
+            "lemma": "zurzeit",
+            "ru": "сейчас; в настоящее время",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "в настоящее время"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "In der gegenwärtigen Zeit.",
+            "example": "Zurzeit arbeite ich in Zürich.",
+            "example_ru": "Сейчас я работаю в Цюрихе.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "1a404a16670bbf3a8aa0"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-642-1",
+        "alias_id": "b1-zurzeit-currently",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-642-1"
+      }
+    },
+    {
+      "candidate_number": 1431,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine regelmäßig erscheinende Publikation mit Beiträgen zu verschiedenen Themen. Example: Im Wartezimmer liegen mehrere Zeitschriften.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 29,
+        "record": {
+          "id": "b1-zeitschrift-magazine",
+          "de": "die Zeitschrift",
+          "lemma": "Zeitschrift",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "журнал",
+            "периодическое издание"
+          ],
+          "definition_de": "Eine regelmäßig erscheinende Publikation mit Beiträgen zu verschiedenen Themen.",
+          "example": "Im Wartezimmer liegen mehrere Zeitschriften.",
+          "example_ru": "В зале ожидания лежит несколько журналов.",
+          "forms": "die Zeitschriften",
+          "grammar_hint": "eine Zeitschrift lesen/abonnieren; Fachzeitschrift — специализированный журнал.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeitschrift"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 41,
+          "record": {
+            "id": "dict_80037b7b1fa616614038",
+            "de": "die Zeitschrift",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "журнал"
+            ],
+            "definition_de": "Eine Publikation mit Artikeln, die regelmäßig erscheint.",
+            "forms": "Plural · die Zeitschriften",
+            "example": "Im Zug lese ich gern eine Zeitschrift.",
+            "example_ru": "В поезде я люблю почитать журнал.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 31,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Zeitschrift"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_80037b7b1fa616614038",
+        "alias_id": "b1-zeitschrift-magazine",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_80037b7b1fa616614038"
+      }
+    },
+    {
+      "candidate_number": 1432,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine regelmäßig veröffentlichte Publikation mit Nachrichten und weiteren Artikeln. Example: Meine Mutter liest morgens die Zeitung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_119.json",
+        "sha": "a3e3de4712795ff594935af62c6358159ee17ede",
+        "batch": 119,
+        "row": 30,
+        "record": {
+          "id": "b1-zeitung-newspaper",
+          "de": "die Zeitung",
+          "lemma": "Zeitung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "газета"
+          ],
+          "definition_de": "Eine regelmäßig veröffentlichte Publikation mit Nachrichten und weiteren Artikeln.",
+          "example": "Meine Mutter liest morgens die Zeitung.",
+          "example_ru": "Моя мама по утрам читает газету.",
+          "forms": "die Zeitungen",
+          "grammar_hint": "Zeitung lesen; in der Zeitung stehen; Tageszeitung — ежедневная газета.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeitung"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 580,
+          "record": {
+            "id": "a1-643-1",
+            "de": "die Zeitung",
+            "lemma": "Zeitung",
+            "ru": "газета",
+            "uk": "",
+            "translations_ru": [
+              "газета"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Zeitungen",
+            "definition_de": "Eine regelmäßig erscheinende Sammlung aktueller Nachrichten.",
+            "example": "Mein Vater liest morgens die Zeitung.",
+            "example_ru": "Мой отец читает газету по утрам.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 26,
+                "row_id": "0589d75ebd9378f69d18"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-643-1",
+        "alias_id": "b1-zeitung-newspaper",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-643-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_24d5b0d2d09cbf00b516",
+      "alias_ids": [
+        "b1-woerterbuch-dictionary"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_24d5b0d2d09cbf00b516",
+        "de": "das Wörterbuch",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "словарь"
+        ],
+        "forms": "Plural · die Wörterbücher",
+        "definition_de": "Ein Nachschlagewerk, das Wörter erklärt oder übersetzt.",
+        "example": "Ich schlage das Wort im Wörterbuch nach.",
+        "example_ru": "Я ищу это слово в словаре.",
+        "grammar_hint": "im Wörterbuch nachschlagen (in + Dativ).",
+        "usage_note": "В Goethe A1 стр. 12 слово встречается в примере к Buch; отдельный пункт словника — Goethe A2 стр. 5. Метка A2 по явному включению в словник, не утверждение о невозможности изучать раньше.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 5,
+            "scope": "sense",
+            "additional_context": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+              "page": 12,
+              "scope": "example_only"
+            }
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/W%C3%B6rterbuch"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-woerterbuch-dictionary"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-woerterbuch-dictionary",
+            "de": "das Wörterbuch",
+            "part": "noun",
+            "forms": "die Wörterbücher",
+            "definition_de": "Ein Nachschlagewerk mit sprachlichen Informationen zu Wörtern.",
+            "translations_ru": [
+              "словарь"
+            ],
+            "grammar_hint": "ein Wort im Wörterbuch nachschlagen; zweisprachiges Wörterbuch — двуязычный словарь.",
+            "example": "Ich suche die Bedeutung im Wörterbuch.",
+            "example_ru": "Я ищу значение в словаре."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/W%C3%B6rterbuch"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-639-1",
+      "alias_ids": [
+        "b1-wunderbar-excellent"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-639-1",
+        "de": "wunderbar",
+        "lemma": "wunderbar",
+        "ru": "чудесный",
+        "uk": "",
+        "translations_ru": [
+          "чудесный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "wunderbarer · am wunderbarsten",
+        "definition_de": "Sehr schön oder erfreulich.",
+        "example": "Der Ausflug war wunderbar.",
+        "example_ru": "Поездка была замечательной.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "30abaefb2aa8793068fd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-wunderbar-excellent"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wunderbar-excellent",
+            "de": "wunderbar",
+            "part": "adjective",
+            "forms": "wunderbar · wunderbarer · am wunderbarsten (selten)",
+            "definition_de": "Von besonders erfreulicher oder angenehmer Qualität.",
+            "translations_ru": [
+              "прекрасный",
+              "замечательный",
+              "чудесно"
+            ],
+            "grammar_hint": "wunderbar schmecken — быть замечательным на вкус; наречное употребление без окончания. Сравнение редко.",
+            "example": "Wir hatten einen wunderbaren Nachmittag am See.",
+            "example_ru": "Мы чудесно провели вторую половину дня у озера."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/wunderbar"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_3892f03bcb81f235cd3b",
+      "alias_ids": [
+        "b1-wuenschen-other",
+        "b1-wuenschen-self"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_3892f03bcb81f235cd3b",
+        "de": "wünschen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "желать",
+          "пожелать",
+          "хотеть"
+        ],
+        "definition_de": "Etwas gern haben wollen oder hoffen, dass jemand etwas Gutes erlebt.",
+        "forms": "wünscht · wünschte · hat gewünscht",
+        "example": "Ich wünsche dir viel Glück.",
+        "example_ru": "Желаю тебе удачи.",
+        "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; sich etwas wünschen: Ich wünsche mir ein Fahrrad.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-wuenschen-other",
+          "b1-wuenschen-self"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wuenschen-other",
+            "de": "wünschen",
+            "part": "verb",
+            "forms": "wünscht · wünschte · hat gewünscht",
+            "definition_de": "Einer anderen Person etwas Gutes erhoffen und dies ausdrücken.",
+            "translations_ru": [
+              "желать",
+              "пожелать кому-либо"
+            ],
+            "grammar_hint": "jemandem (Dat.) etwas (Akk.) wünschen; Ich wünsche Ihnen einen schönen Tag.",
+            "example": "Ich wünsche dir viel Erfolg bei der Prüfung.",
+            "example_ru": "Желаю тебе успеха на экзамене."
+          },
+          {
+            "id": "b1-wuenschen-self",
+            "de": "sich etwas wünschen",
+            "part": "verb",
+            "forms": "wünscht sich · wünschte sich · hat sich gewünscht",
+            "definition_de": "Den Wunsch haben, etwas zu erhalten oder zu erleben.",
+            "translations_ru": [
+              "желать себе",
+              "хотеть",
+              "мечтать о"
+            ],
+            "grammar_hint": "sich (Dat.) etwas (Akk.) wünschen: ich wünsche mir, du wünschst dir; sich wünschen, dass … — глагол в конце.",
+            "example": "Ich wünsche mir zum Geburtstag ein neues Buch.",
+            "example_ru": "Я хочу на день рождения новую книгу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "attested_context",
+              "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/w%C3%BCnschen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_9936f0644a872fee84dc",
+      "alias_ids": [
+        "b1-wunsch-desire",
+        "b1-wunsch-greeting"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_9936f0644a872fee84dc",
+        "de": "der Wunsch",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "желание",
+          "пожелание"
+        ],
+        "definition_de": "Etwas, das man gern hätte oder das eintreten soll.",
+        "forms": "Plural · die Wünsche",
+        "example": "Mein größter Wunsch ist eine Reise ans Meer.",
+        "example_ru": "Моё самое большое желание — поездка к морю.",
+        "grammar_hint": "Wunsch nach + Dativ.",
+        "usage_note": "Желание, пожелание: einen Wunsch haben; Wünsche äußern. Der Wunsch nach + Dativ: der Wunsch nach Ruhe — желание покоя.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Wunsch"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Семья, люди и отношения",
+        "topics": [
+          "Семья, люди и отношения"
+        ],
+        "alias_ids": [
+          "b1-wunsch-desire",
+          "b1-wunsch-greeting"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wunsch-desire",
+            "de": "der Wunsch",
+            "part": "noun",
+            "forms": "die Wünsche",
+            "definition_de": "Etwas, das eine Person gern haben oder erleben möchte.",
+            "translations_ru": [
+              "желание",
+              "пожелание",
+              "просьба"
+            ],
+            "grammar_hint": "einen Wunsch äußern/erfüllen; Wunsch nach + Dat.; CH: grösster.",
+            "example": "Mein größter Wunsch ist eine eigene Wohnung.",
+            "example_ru": "Моё самое большое желание — собственная квартира."
+          },
+          {
+            "id": "b1-wunsch-greeting",
+            "de": "der Wunsch",
+            "part": "noun",
+            "forms": "die Wünsche",
+            "definition_de": "Eine Äußerung, mit der man einer anderen Person Gutes erhofft.",
+            "translations_ru": [
+              "пожелание (кому-либо)"
+            ],
+            "grammar_hint": "gute Wünsche; mit den besten Wünschen — с наилучшими пожеланиями.",
+            "example": "Vielen Dank für die lieben Wünsche zum Geburtstag.",
+            "example_ru": "Большое спасибо за добрые пожелания ко дню рождения."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wunsch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wunsch"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_ff63f773a71eff795470",
+      "alias_ids": [
+        "b1-wurst-sausage"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_ff63f773a71eff795470",
+        "de": "die Wurst",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "колбаса",
+          "сосиска"
+        ],
+        "definition_de": "Ein Lebensmittel aus einer gewürzten Masse, die meist in eine Hülle gefüllt wird.",
+        "forms": "Plural · die Würste",
+        "example": "Zum Mittagessen nehme ich eine Wurst mit Brot.",
+        "example_ru": "На обед я возьму сосиску с хлебом.",
+        "grammar_hint": "",
+        "usage_note": "Колбаса как продукт, сосиска/колбаска как отдельное изделие. Pl. Würste. Разговорное Das ist mir Wurst/wurst — Мне всё равно — отдельное употребление, A2 здесь не подтверждено.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Wurst"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "alias_ids": [
+          "b1-wurst-sausage"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-wurst-sausage",
+            "de": "die Wurst",
+            "part": "noun",
+            "forms": "die Würste",
+            "definition_de": "Ein Lebensmittel, das häufig aus zerkleinertem Fleisch hergestellt wird.",
+            "translations_ru": [
+              "колбаса",
+              "сосиска"
+            ],
+            "grammar_hint": "ein Stück Wurst; eine Wurst — отдельная колбаска; Wurst как продукт часто без артикля.",
+            "example": "Für das Picknick kaufen wir Brot und Wurst.",
+            "example_ru": "Для пикника мы покупаем хлеб и колбасу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Wurst"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2d54efcbc55ef6982363",
+      "alias_ids": [
+        "b1-zahl-number",
+        "b1-zahl-quantity"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2d54efcbc55ef6982363",
+        "de": "die Zahl",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "число"
+        ],
+        "definition_de": "Ein mathematischer Wert, der zum Zählen oder Rechnen verwendet wird.",
+        "example": "Schreib bitte die Zahl auf.",
+        "example_ru": "Запиши, пожалуйста, число.",
+        "grammar_hint": "",
+        "usage_note": "die Zahl — число; die Ziffer — отдельная цифра; die Anzahl — количество; zahlen — платить.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zahl"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "Plural · die Zahlen",
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-zahl-number",
+          "b1-zahl-quantity"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zahl-number",
+            "de": "die Zahl",
+            "part": "noun",
+            "forms": "die Zahlen",
+            "definition_de": "Ein mathematischer Wert, mit dem man Mengen oder Größen ausdrücken kann.",
+            "translations_ru": [
+              "число",
+              "числовое значение"
+            ],
+            "grammar_hint": "Zahl — число; Ziffer — цифра; Nummer — номер, идентификатор.",
+            "example": "Schreib bitte die größere Zahl in das freie Feld.",
+            "example_ru": "Впиши, пожалуйста, большее число в пустое поле."
+          },
+          {
+            "id": "b1-zahl-quantity",
+            "de": "die Zahl",
+            "part": "noun",
+            "forms": "die Zahlen",
+            "definition_de": "Die Menge der Personen oder Dinge in einer bestimmten Gruppe.",
+            "translations_ru": [
+              "число",
+              "количество"
+            ],
+            "grammar_hint": "die Zahl der + Gen. Pl.; das Verb stimmt mit Zahl überein: Die Zahl steigt.",
+            "example": "Die Zahl der Anmeldungen steigt jeden Monat.",
+            "example_ru": "Количество заявок растёт каждый месяц."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zahl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zahl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-640-1",
+      "alias_ids": [
+        "b1-zahlen-pay"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-640-1",
+        "de": "zahlen",
+        "lemma": "zahlen",
+        "ru": "платить",
+        "uk": "",
+        "translations_ru": [
+          "платить"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "zahlt · zahlte · hat gezahlt",
+        "definition_de": "Geld für etwas geben.",
+        "example": "Ich möchte bitte zahlen.",
+        "example_ru": "Я хотела бы расплатиться.",
+        "note": "für + Akkusativ zahlen — платить за что-либо. Не путать с die Zahl (число) и zählen (считать).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "3002866888459be15d30"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zahlen-pay"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zahlen-pay",
+            "de": "zahlen",
+            "part": "verb",
+            "forms": "zahlt · zahlte · hat gezahlt",
+            "definition_de": "Für eine Ware oder Dienstleistung Geld geben.",
+            "translations_ru": [
+              "платить",
+              "оплачивать"
+            ],
+            "grammar_hint": "für + Akk. zahlen; mit Karte (Dat.) zahlen; eine Rechnung bezahlen / zahlen. Не путать с zählen.",
+            "example": "Kann ich mit Karte zahlen?",
+            "example_ru": "Могу я оплатить картой?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zahlen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_5dfd84c6bc68dda05f10",
+      "alias_ids": [
+        "b1-zahn-tooth"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_5dfd84c6bc68dda05f10",
+        "de": "der Zahn",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "зуб"
+        ],
+        "definition_de": "Ein harter Teil im Mund, mit dem man zum Beispiel Essen abbeißt und kaut.",
+        "forms": "Plural · die Zähne",
+        "example": "Seit gestern tut mir ein Zahn weh.",
+        "example_ru": "Со вчерашнего дня у меня болит зуб.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zahn"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-zahn-tooth"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zahn-tooth",
+            "de": "der Zahn",
+            "part": "noun",
+            "forms": "die Zähne",
+            "definition_de": "Ein harter Bestandteil des Gebisses, mit dem man Nahrung zerkleinert.",
+            "translations_ru": [
+              "зуб"
+            ],
+            "grammar_hint": "sich (Dat.) die Zähne (Akk.) putzen; Zahnschmerzen — зубная боль.",
+            "example": "Seit gestern schmerzt mein linker Zahn.",
+            "example_ru": "Со вчерашнего дня у меня болит зуб слева."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 99,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zahn"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a1f537bf9ddbeed72cb8",
+      "alias_ids": [
+        "b1-zeichnen-draw"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a1f537bf9ddbeed72cb8",
+        "de": "zeichnen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "рисовать"
+        ],
+        "definition_de": "Mit einem Stift Linien und Bilder auf einer Fläche herstellen.",
+        "forms": "zeichnet · zeichnete · hat gezeichnet",
+        "example": "Meine Tochter zeichnet gern Tiere.",
+        "example_ru": "Моя дочь любит рисовать животных.",
+        "grammar_hint": "etwas (Akkusativ) zeichnen.",
+        "usage_note": "В A2 рисовать картину/рисунок; чертить технический чертёж, подписывать и отмечать — отдельные словарные употребления, здесь не подтверждены.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/zeichnen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-zeichnen-draw"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zeichnen-draw",
+            "de": "zeichnen",
+            "part": "verb",
+            "forms": "zeichnet · zeichnete · hat gezeichnet",
+            "definition_de": "Mit Linien eine bildliche oder technische Darstellung erstellen.",
+            "translations_ru": [
+              "рисовать",
+              "чертить"
+            ],
+            "grammar_hint": "etwas (Akk.) zeichnen; zeichnen — обычно линии, malen — также рисовать красками.",
+            "example": "Sie zeichnet den Grundriss ihrer Wohnung.",
+            "example_ru": "Она рисует план своей квартиры."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zeichnen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_73c9ca77f03309b8b0bd",
+      "alias_ids": [
+        "b1-zeigen-show",
+        "b1-zeigen-direction"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_73c9ca77f03309b8b0bd",
+        "de": "zeigen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "показывать",
+          "показать",
+          "указать (дорогу)"
+        ],
+        "definition_de": "Einer anderen Person etwas sichtbar machen oder ihr einen Ort erklären.",
+        "example": "Kannst du mir deine Fotos zeigen?",
+        "example_ru": "Можешь показать мне свои фотографии?",
+        "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) zeigen.",
+        "usage_note": "den Weg zeigen — показать/указать дорогу; auf etwas zeigen — указывать на что-либо (другое управление).",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/zeigen"
+          ],
+          "example": "integraticum_original"
+        },
+        "forms": "zeigt · zeigte · hat gezeigt",
+        "topic": "Общение и мнения",
+        "topics": [
+          "Общение и мнения"
+        ],
+        "alias_ids": [
+          "b1-zeigen-show",
+          "b1-zeigen-direction"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zeigen-show",
+            "de": "zeigen",
+            "part": "verb",
+            "forms": "zeigt · zeigte · hat gezeigt",
+            "definition_de": "Etwas für eine andere Person sichtbar oder verständlich machen.",
+            "translations_ru": [
+              "показывать",
+              "демонстрировать"
+            ],
+            "grammar_hint": "jemandem (Dat.) etwas (Akk.) zeigen; zeigen, wie … — глагол в конце косвенного вопроса.",
+            "example": "Zeig mir bitte das Foto von deinem Ausflug.",
+            "example_ru": "Покажи мне, пожалуйста, фотографию с экскурсии."
+          },
+          {
+            "id": "b1-zeigen-direction",
+            "de": "zeigen",
+            "part": "verb",
+            "forms": "zeigt · zeigte · hat gezeigt",
+            "definition_de": "Eine andere Person über die Richtung zu einem Ziel informieren.",
+            "translations_ru": [
+              "показывать",
+              "указывать (дорогу)"
+            ],
+            "grammar_hint": "jemandem (Dat.) den Weg (Akk.) zeigen; контекст основного значения, не отдельная лексема.",
+            "example": "Können Sie mir den Weg zur Apotheke zeigen?",
+            "example_ru": "Можете показать мне дорогу к аптеке?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zeigen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "attested_context",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zeigen"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-641-1",
+      "alias_ids": [
+        "b1-zeit-duration",
+        "b1-zeit-moment"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-641-1",
+        "de": "die Zeit",
+        "lemma": "Zeit",
+        "ru": "время",
+        "uk": "",
+        "translations_ru": [
+          "время"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "die Zeiten",
+        "definition_de": "Die Stunden oder Minuten, die man für etwas hat.",
+        "example": "Hast du morgen Zeit für einen Kaffee?",
+        "example_ru": "У тебя завтра есть время выпить кофе?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "0883176e8e5a31c847bb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zeit-duration",
+          "b1-zeit-moment"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zeit-duration",
+            "de": "die Zeit",
+            "part": "noun",
+            "forms": "die Zeiten; в значении имеющегося времени обычно Singular",
+            "definition_de": "Ein Zeitraum, der für eine Handlung zur Verfügung steht.",
+            "translations_ru": [
+              "время (продолжительность, свободное время)"
+            ],
+            "grammar_hint": "Zeit haben für + Akk.; Zeit haben, etwas zu tun; sich Zeit nehmen.",
+            "example": "Heute habe ich genug Zeit zum Lernen.",
+            "example_ru": "Сегодня у меня достаточно времени для учёбы."
+          },
+          {
+            "id": "b1-zeit-moment",
+            "de": "die Zeit",
+            "part": "noun",
+            "forms": "die Zeiten",
+            "definition_de": "Eine zeitliche Stelle, an der etwas geschieht.",
+            "translations_ru": [
+              "время",
+              "момент (когда что-либо происходит)"
+            ],
+            "grammar_hint": "um diese Zeit (Akk.); zu dieser Zeit (Dat.); Zeitpunkt — конкретный момент.",
+            "example": "Um diese Zeit fährt der letzte Bus.",
+            "example_ru": "В это время отправляется последний автобус."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-642-1",
+      "alias_ids": [
+        "b1-zurzeit-currently"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-642-1",
+        "de": "zurzeit",
+        "lemma": "zurzeit",
+        "ru": "сейчас; в настоящее время",
+        "uk": "",
+        "translations_ru": [
+          "сейчас",
+          "в настоящее время"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время"
+        ],
+        "forms": "",
+        "definition_de": "In der gegenwärtigen Zeit.",
+        "example": "Zurzeit arbeite ich in Zürich.",
+        "example_ru": "Сейчас я работаю в Цюрихе.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "1a404a16670bbf3a8aa0"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zurzeit-currently"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zurzeit-currently",
+            "de": "zurzeit",
+            "part": "adverb",
+            "forms": "unveränderlich",
+            "definition_de": "Bezieht sich auf die gegenwärtige Situation.",
+            "translations_ru": [
+              "в настоящее время",
+              "сейчас"
+            ],
+            "grammar_hint": "zurzeit слитно в значении derzeit; zur Zeit Goethes — во времена Гёте, раздельно. При первой позиции V2.",
+            "example": "Zurzeit besuche ich einen Deutschkurs.",
+            "example_ru": "Сейчас я посещаю курс немецкого языка."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/zurzeit"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_80037b7b1fa616614038",
+      "alias_ids": [
+        "b1-zeitschrift-magazine"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_80037b7b1fa616614038",
+        "de": "die Zeitschrift",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "журнал"
+        ],
+        "definition_de": "Eine Publikation mit Artikeln, die regelmäßig erscheint.",
+        "forms": "Plural · die Zeitschriften",
+        "example": "Im Zug lese ich gern eine Zeitschrift.",
+        "example_ru": "В поезде я люблю почитать журнал.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 31,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Zeitschrift"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-zeitschrift-magazine"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zeitschrift-magazine",
+            "de": "die Zeitschrift",
+            "part": "noun",
+            "forms": "die Zeitschriften",
+            "definition_de": "Eine regelmäßig erscheinende Publikation mit Beiträgen zu verschiedenen Themen.",
+            "translations_ru": [
+              "журнал",
+              "периодическое издание"
+            ],
+            "grammar_hint": "eine Zeitschrift lesen/abonnieren; Fachzeitschrift — специализированный журнал.",
+            "example": "Im Wartezimmer liegen mehrere Zeitschriften.",
+            "example_ru": "В зале ожидания лежит несколько журналов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeitschrift"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-643-1",
+      "alias_ids": [
+        "b1-zeitung-newspaper"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-643-1",
+        "de": "die Zeitung",
+        "lemma": "Zeitung",
+        "ru": "газета",
+        "uk": "",
+        "translations_ru": [
+          "газета"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "die Zeitungen",
+        "definition_de": "Eine regelmäßig erscheinende Sammlung aktueller Nachrichten.",
+        "example": "Mein Vater liest morgens die Zeitung.",
+        "example_ru": "Мой отец читает газету по утрам.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 26,
+            "row_id": "0589d75ebd9378f69d18"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-zeitung-newspaper"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-zeitung-newspaper",
+            "de": "die Zeitung",
+            "part": "noun",
+            "forms": "die Zeitungen",
+            "definition_de": "Eine regelmäßig veröffentlichte Publikation mit Nachrichten und weiteren Artikeln.",
+            "translations_ru": [
+              "газета"
+            ],
+            "grammar_hint": "Zeitung lesen; in der Zeitung stehen; Tageszeitung — ежедневная газета.",
+            "example": "Meine Mutter liest morgens die Zeitung.",
+            "example_ru": "Моя мама по утрам читает газету."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 100,
+              "scope": "headword_or_attested_sense",
+              "note": "Printed pages 99–100 visually inspected. Provisional exam-list coverage, not earliest CEFR level. A1/A2 reconciliation and cross-batch sense merging pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Zeitung"
+            ],
+            "meaning_review": "dictionary_link_pending_independent_check",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3061 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    433,
+    452
+  ],
+  "reviewed": 20,
+  "merge_count": 17,
+  "merge_target_count": 16,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 2,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 433,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Die Familie möchte einen Kredit für den Umbau aufnehmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 23,
+        "record": {
+          "id": "b1-kredit-loan",
+          "de": "der Kredit",
+          "lemma": "Kredit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кредит",
+            "заём"
+          ],
+          "definition_de": "Geld, das man von einem Kreditgeber erhält und später zurückzahlen muss.",
+          "example": "Die Familie möchte einen Kredit für den Umbau aufnehmen.",
+          "example_ru": "Семья хочет взять кредит на ремонт.",
+          "forms": "die Kredite",
+          "grammar_hint": "einen Kredit aufnehmen / zurückzahlen; bei einer Bank (Dativ).",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kredit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 148,
+          "record": {
+            "id": "dict_877393c285b95981845d",
+            "de": "der Kredit",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кредит"
+            ],
+            "definition_de": "Geld, das man sich für eine bestimmte Zeit leiht und später zurückzahlen muss.",
+            "forms": "Plural · die Kredite",
+            "example": "Für den Kauf brauchen wir einen Kredit.",
+            "example_ru": "Для покупки нам нужен кредит.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kredit"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_877393c285b95981845d",
+        "alias_id": "b1-kredit-loan",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_877393c285b95981845d"
+      }
+    },
+    {
+      "candidate_number": 434,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction in Wir haben das Gerät auf Kredit gekauft.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 24,
+        "record": {
+          "id": "b1-kredit-on-credit",
+          "de": "auf Kredit",
+          "lemma": "Kredit",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в кредит"
+          ],
+          "definition_de": "Eine Ware kaufen, deren Preis erst später bezahlt wird.",
+          "example": "Wir haben das Gerät auf Kredit gekauft.",
+          "example_ru": "Мы купили прибор в кредит.",
+          "forms": "устойчивое сочетание: auf Kredit",
+          "grammar_hint": "auf Kredit kaufen; без артикля. Не обязательно означает оплату кредитной картой.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kredit"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 148,
+          "record": {
+            "id": "dict_877393c285b95981845d",
+            "de": "der Kredit",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "кредит"
+            ],
+            "definition_de": "Geld, das man sich für eine bestimmte Zeit leiht und später zurückzahlen muss.",
+            "forms": "Plural · die Kredite",
+            "example": "Für den Kauf brauchen wir einen Kredit.",
+            "example_ru": "Для покупки нам нужен кредит.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kredit"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 435,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Kann ich die Hotelrechnung mit meiner Kreditkarte bezahlen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 25,
+        "record": {
+          "id": "b1-kreditkarte-card",
+          "de": "die Kreditkarte",
+          "lemma": "Kreditkarte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кредитная карта"
+          ],
+          "definition_de": "Eine Zahlungskarte, bei der die Beträge nach den vertraglichen Bedingungen abgerechnet werden.",
+          "example": "Kann ich die Hotelrechnung mit meiner Kreditkarte bezahlen?",
+          "example_ru": "Могу я оплатить счёт отеля кредитной картой?",
+          "forms": "die Kreditkarten",
+          "grammar_hint": "mit + Dativ bezahlen; die Debitkarte — дебетовая карта, не то же самое.",
+          "topic": "Деньги и банки",
+          "topics": [
+            "Деньги и банки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kreditkarte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 397,
+          "record": {
+            "id": "a1-334-1",
+            "de": "die Kreditkarte",
+            "lemma": "Kreditkarte",
+            "ru": "кредитная карта",
+            "uk": "",
+            "translations_ru": [
+              "кредитная карта"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Kreditkarten",
+            "definition_de": "Eine Zahlungskarte, deren Ausgaben später abgerechnet werden.",
+            "example": "Ich bezahle mit meiner Kreditkarte.",
+            "example_ru": "Я плачу кредитной картой.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "ce8cbeb603c92fc69251"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-334-1",
+        "alias_id": "b1-kreditkarte-card",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-334-1"
+      }
+    },
+    {
+      "candidate_number": 436,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in An der Kreuzung vor der Apotheke biegen wir links ab.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_048.json",
+        "sha": "0a7ad0084e0bd2b93fc453c8f402775af1279306",
+        "batch": 48,
+        "row": 29,
+        "record": {
+          "id": "b1-kreuzung-intersection",
+          "de": "die Kreuzung",
+          "lemma": "Kreuzung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "перекрёсток"
+          ],
+          "definition_de": "Ein Ort, an dem mehrere Straßen aufeinandertreffen.",
+          "example": "An der Kreuzung vor der Apotheke biegen wir links ab.",
+          "example_ru": "На перекрёстке перед аптекой мы поворачиваем налево.",
+          "forms": "die Kreuzungen",
+          "grammar_hint": "an der Kreuzung (Dativ); bis zur Kreuzung (zu + Dativ); links abbiegen.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kreuzung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 16,
+          "record": {
+            "id": "dict_dff877557702c1e557b6",
+            "de": "die Kreuzung",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "перекрёсток"
+            ],
+            "definition_de": "Eine Stelle, an der sich Straßen oder Wege kreuzen.",
+            "forms": "Plural · die Kreuzungen",
+            "example": "Biegen Sie an der nächsten Kreuzung links ab.",
+            "example_ru": "Поверните налево на следующем перекрёстке.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kreuzung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Город и достопримечательности",
+            "topics": [
+              "Город и достопримечательности"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_dff877557702c1e557b6",
+        "alias_id": "b1-kreuzung-intersection",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_dff877557702c1e557b6"
+      }
+    },
+    {
+      "candidate_number": 437,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Hast du meine Nachricht gekriegt?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 1,
+        "record": {
+          "id": "b1-kriegen-receive",
+          "de": "kriegen",
+          "lemma": "kriegen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "получать",
+            "получить"
+          ],
+          "definition_de": "Etwas erhalten, das einem gegeben oder geschickt wird.",
+          "example": "Hast du meine Nachricht gekriegt?",
+          "example_ru": "Ты получила моё сообщение?",
+          "forms": "kriegt · kriegte · hat gekriegt",
+          "grammar_hint": "Разговорный вариант bekommen / erhalten; etwas (Akkusativ) kriegen.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kriegen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 606,
+          "record": {
+            "id": "a1-358-1",
+            "de": "kriegen",
+            "lemma": "kriegen",
+            "ru": "получать (разг.); получить (разг.)",
+            "uk": "",
+            "translations_ru": [
+              "получать (разг.)",
+              "получить (разг.)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kriegt · kriegte · hat gekriegt",
+            "definition_de": "Umgangssprachlich für bekommen.",
+            "example": "Ich kriege morgen mein Geld.",
+            "example_ru": "Я получу деньги завтра.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "cab539a56b1dc1556b21"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-358-1",
+        "alias_id": "b1-kriegen-receive",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-358-1"
+      }
+    },
+    {
+      "candidate_number": 438,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction in Was kriegen Sie? – Zwei Brötchen, bitte.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 2,
+        "record": {
+          "id": "b1-kriegen-order",
+          "de": "Was kriegen Sie?",
+          "lemma": "kriegen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Что вам дать?",
+            "Что будете брать?"
+          ],
+          "definition_de": "Frage nach dem gewünschten Produkt beim Einkauf oder bei der Bestellung.",
+          "example": "Was kriegen Sie? – Zwei Brötchen, bitte.",
+          "example_ru": "Что вам дать? — Две булочки, пожалуйста.",
+          "forms": "kriegt · kriegte · hat gekriegt",
+          "grammar_hint": "Разговорная реплика продавца; нейтральный вариант: Was möchten Sie?",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kriegen"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 606,
+          "record": {
+            "id": "a1-358-1",
+            "de": "kriegen",
+            "lemma": "kriegen",
+            "ru": "получать (разг.); получить (разг.)",
+            "uk": "",
+            "translations_ru": [
+              "получать (разг.)",
+              "получить (разг.)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "kriegt · kriegte · hat gekriegt",
+            "definition_de": "Umgangssprachlich für bekommen.",
+            "example": "Ich kriege morgen mein Geld.",
+            "example_ru": "Я получу деньги завтра.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "row_id": "cab539a56b1dc1556b21"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 439,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Am Samstag lesen wir einen spannenden Krimi.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 4,
+        "record": {
+          "id": "b1-krimi-detective",
+          "de": "der Krimi",
+          "lemma": "Krimi",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "детектив",
+            "криминальный фильм или роман"
+          ],
+          "definition_de": "Ein Film, Buch oder Hörspiel, in dem ein Verbrechen und seine Aufklärung eine wichtige Rolle spielen.",
+          "example": "Am Samstag lesen wir einen spannenden Krimi.",
+          "example_ru": "В субботу мы читаем увлекательный детектив.",
+          "forms": "die Krimis",
+          "grammar_hint": "Kurzform von Kriminalroman / Kriminalfilm; einen Krimi lesen / ansehen.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krimi"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 461,
+          "record": {
+            "id": "dict_94fa5971c4c1f8201ff7",
+            "de": "der Krimi",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "детектив",
+              "детективный фильм или роман"
+            ],
+            "definition_de": "Eine Geschichte, in der es um ein Verbrechen und dessen Aufklärung geht.",
+            "forms": "Plural · die Krimis",
+            "example": "Heute Abend sehen wir einen Krimi.",
+            "example_ru": "Сегодня вечером мы смотрим детектив.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Krimi"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_94fa5971c4c1f8201ff7",
+        "alias_id": "b1-krimi-detective",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_94fa5971c4c1f8201ff7"
+      }
+    },
+    {
+      "candidate_number": 440,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in In unserer Küche steht ein kleiner Tisch.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 10,
+        "record": {
+          "id": "b1-kueche-room",
+          "de": "die Küche",
+          "lemma": "Küche",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кухня (помещение)"
+          ],
+          "definition_de": "Ein Raum, in dem Mahlzeiten vorbereitet werden.",
+          "example": "In unserer Küche steht ein kleiner Tisch.",
+          "example_ru": "На нашей кухне стоит маленький стол.",
+          "forms": "die Küchen",
+          "grammar_hint": "in der Küche (Wo? Dativ); in die Küche (Wohin? Akkusativ).",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%BCche"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 6,
+          "record": {
+            "id": "c8",
+            "de": "die Küche",
+            "lemma": "Küche",
+            "ru": "кухня",
+            "uk": "кухня",
+            "translations_ru": [
+              "кухня"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Küchen",
+            "definition_de": "Ein Raum, in dem man kocht.",
+            "example": "Die Küche ist klein.",
+            "example_ru": "Кухня маленькая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c8",
+        "alias_id": "b1-kueche-room",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c8"
+      }
+    },
+    {
+      "candidate_number": 441,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning in Wir mögen die italienische Küche.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 11,
+        "record": {
+          "id": "b1-kueche-cuisine",
+          "de": "die Küche",
+          "lemma": "Küche",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "кухня (кулинарные традиции)"
+          ],
+          "definition_de": "Die typischen Speisen und Zubereitungsweisen einer Region oder Gruppe.",
+          "example": "Wir mögen die italienische Küche.",
+          "example_ru": "Нам нравится итальянская кухня.",
+          "forms": "в данном значении обычно Singular",
+          "grammar_hint": "italienische / Schweizer Küche; Schweizer как определение не склоняется.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%BCche"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 6,
+          "record": {
+            "id": "c8",
+            "de": "die Küche",
+            "lemma": "Küche",
+            "ru": "кухня",
+            "uk": "кухня",
+            "translations_ru": [
+              "кухня"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Küchen",
+            "definition_de": "Ein Raum, in dem man kocht.",
+            "example": "Die Küche ist klein.",
+            "example_ru": "Кухня маленькая.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 442,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Zum Geburtstag backe ich einen Apfelkuchen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 12,
+        "record": {
+          "id": "b1-kuchen-cake",
+          "de": "der Kuchen",
+          "lemma": "Kuchen",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "пирог",
+            "кекс",
+            "сладкая выпечка"
+          ],
+          "definition_de": "Ein meist süßes Backwerk, das man in Stücke schneiden kann.",
+          "example": "Zum Geburtstag backe ich einen Apfelkuchen.",
+          "example_ru": "На день рождения я испеку яблочный пирог.",
+          "forms": "die Kuchen",
+          "grammar_hint": "ein Stück Kuchen; Kuchen backen; die Torte — торт, часто с кремом.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kuchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 819,
+          "record": {
+            "id": "dict_622fa00a9fecb5ed9fd5",
+            "de": "der Kuchen",
+            "lemma": "Kuchen",
+            "ru": "пирог; кекс; торт (в широком смысле)",
+            "uk": "пиріг; кекс; торт",
+            "translations_ru": [
+              "пирог",
+              "кекс",
+              "торт (в широком смысле)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "forms": "die Kuchen",
+            "definition_de": "Ein meist süßes Gebäck, das im Ofen gebacken wird.",
+            "example": "Zum Kaffee gibt es heute Apfelkuchen.",
+            "example_ru": "Сегодня к кофе будет яблочный пирог.",
+            "note": "ein Stück Kuchen — кусок пирога; die Torte — торт, часто с кремом. Не путать die Küche — кухня.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 18,
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/Kuchen",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_622fa00a9fecb5ed9fd5",
+        "alias_id": "b1-kuchen-cake",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_622fa00a9fecb5ed9fd5"
+      }
+    },
+    {
+      "candidate_number": 443,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Füllen Sie das Formular mit einem Kugelschreiber aus.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 13,
+        "record": {
+          "id": "b1-kugelschreiber-pen",
+          "de": "der Kugelschreiber",
+          "lemma": "Kugelschreiber",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "шариковая ручка"
+          ],
+          "definition_de": "Ein Schreibgerät, das Tinte durch eine kleine rollende Kugel auf das Papier bringt.",
+          "example": "Füllen Sie das Formular mit einem Kugelschreiber aus.",
+          "example_ru": "Заполните бланк шариковой ручкой.",
+          "forms": "die Kugelschreiber",
+          "grammar_hint": "mit + Dativ; der Kuli — разговорное сокращение.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kugelschreiber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 475,
+          "record": {
+            "id": "a1-359-1",
+            "de": "der Kugelschreiber",
+            "lemma": "Kugelschreiber",
+            "ru": "шариковая ручка",
+            "uk": "",
+            "translations_ru": [
+              "шариковая ручка"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Kugelschreiber",
+            "definition_de": "Ein Stift, der mit einer kleinen Kugel Tinte aufs Papier bringt.",
+            "example": "Der Kugelschreiber liegt neben dem Heft.",
+            "example_ru": "Шариковая ручка лежит рядом с тетрадью.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "960e7e28df7ce9043e21"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-359-1",
+        "alias_id": "b1-kugelschreiber-pen",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-359-1"
+      }
+    },
+    {
+      "candidate_number": 444,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Am Abend wird es am See kühl.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 15,
+        "record": {
+          "id": "b1-kuehl-cool",
+          "de": "kühl",
+          "lemma": "kühl",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "прохладный",
+            "прохладно"
+          ],
+          "definition_de": "Etwas unterhalb einer als warm empfundenen Temperatur liegend.",
+          "example": "Am Abend wird es am See kühl.",
+          "example_ru": "Вечером у озера становится прохладно.",
+          "forms": "kühl · kühler · am kühlsten",
+          "grammar_hint": "Es ist kühl — прохладно; kalt — холодно; kühl lagern — хранить в прохладном месте.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%BChl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 333,
+          "record": {
+            "id": "dict_2c83f3d54a3604198633",
+            "de": "kühl",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "прохладный"
+            ],
+            "definition_de": "Weniger warm, aber nicht unbedingt kalt.",
+            "forms": "kühl · kühler · am kühlsten",
+            "example": "Am Abend wird es kühl.",
+            "example_ru": "Вечером станет прохладно.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/k%C3%BChl"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2c83f3d54a3604198633",
+        "alias_id": "b1-kuehl-cool",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2c83f3d54a3604198633"
+      }
+    },
+    {
+      "candidate_number": 445,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Der Joghurt steht im Kühlschrank.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 16,
+        "record": {
+          "id": "b1-kuehlschrank-fridge",
+          "de": "der Kühlschrank",
+          "lemma": "Kühlschrank",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "холодильник"
+          ],
+          "definition_de": "Ein Haushaltsgerät, das Lebensmittel bei niedriger Temperatur frisch hält.",
+          "example": "Der Joghurt steht im Kühlschrank.",
+          "example_ru": "Йогурт стоит в холодильнике.",
+          "forms": "die Kühlschränke",
+          "grammar_hint": "im Kühlschrank (Dativ); in den Kühlschrank stellen (Akkusativ).",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%BChlschrank"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 476,
+          "record": {
+            "id": "a1-360-1",
+            "de": "der Kühlschrank",
+            "lemma": "Kühlschrank",
+            "ru": "холодильник",
+            "uk": "",
+            "translations_ru": [
+              "холодильник"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Kühlschränke",
+            "definition_de": "Ein Gerät, das Lebensmittel kühl hält.",
+            "example": "Die Milch steht im Kühlschrank.",
+            "example_ru": "Молоко в холодильнике.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "5b35d3b6bbe0b9ac0180"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-360-1",
+        "alias_id": "b1-kuehlschrank-fridge",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-360-1"
+      }
+    },
+    {
+      "candidate_number": 446,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Auf Reisen lerne ich verschiedene Kulturen kennen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 17,
+        "record": {
+          "id": "b1-kultur-culture",
+          "de": "die Kultur",
+          "lemma": "Kultur",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "культура"
+          ],
+          "definition_de": "Die Traditionen, Ausdrucksformen und Lebensweisen einer Gemeinschaft.",
+          "example": "Auf Reisen lerne ich verschiedene Kulturen kennen.",
+          "example_ru": "В путешествиях я знакомлюсь с разными культурами.",
+          "forms": "die Kulturen",
+          "grammar_hint": "sich für eine Kultur interessieren (für + Akkusativ); kulturell — культурный.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kultur"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 167,
+          "record": {
+            "id": "dict_a363f3ad7089f464047d",
+            "de": "die Kultur",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "культура"
+            ],
+            "definition_de": "Die Lebensweisen, Bräuche und Ausdrucksformen einer Gesellschaft oder Gruppe.",
+            "forms": "Plural · die Kulturen",
+            "example": "Auf Reisen lerne ich gern andere Kulturen kennen.",
+            "example_ru": "В поездках я люблю знакомиться с другими культурами.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kultur"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a363f3ad7089f464047d",
+        "alias_id": "b1-kultur-culture",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a363f3ad7089f464047d"
+      }
+    },
+    {
+      "candidate_number": 447,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Das Quartier bietet viele kulturelle Veranstaltungen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 18,
+        "record": {
+          "id": "b1-kulturell-cultural",
+          "de": "kulturell",
+          "lemma": "kulturell",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "культурный",
+            "относящийся к культуре"
+          ],
+          "definition_de": "Mit Traditionen, Kunst oder anderen kulturellen Ausdrucksformen verbunden.",
+          "example": "Das Quartier bietet viele kulturelle Veranstaltungen.",
+          "example_ru": "В районе проводится много культурных мероприятий.",
+          "forms": "kulturell · kultureller · am kulturellsten (при градуируемом употреблении)",
+          "grammar_hint": "kulturelle Unterschiede; в классифицирующем значении обычно без сравнения.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kulturell"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 607,
+          "record": {
+            "id": "a1-361-1",
+            "de": "kulturell",
+            "lemma": "kulturell",
+            "ru": "культурный, в сфере культуры",
+            "uk": "",
+            "translations_ru": [
+              "культурный, в сфере культуры"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Die Kultur betreffend.",
+            "example": "Die Stadt hat ein kulturelles Angebot für Kinder.",
+            "example_ru": "В городе есть культурная программа для детей.",
+            "note": "Относительное прилагательное: относящийся к культуре. В этом значении обычно без степеней сравнения.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "6e2d1bc1d3e36ba677d1"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-361-1",
+        "alias_id": "b1-kulturell-cultural",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-361-1"
+      }
+    },
+    {
+      "candidate_number": 448,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual variant in Die Verkäuferin berät einen Kunden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 21,
+        "record": {
+          "id": "b1-kunde-customer",
+          "de": "der Kunde / die Kundin",
+          "lemma": "Kunde",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "клиент",
+            "покупатель"
+          ],
+          "definition_de": "Eine Person, die Waren erwirbt oder Dienstleistungen nutzt.",
+          "example": "Die Verkäuferin berät einen Kunden.",
+          "example_ru": "Продавщица консультирует покупателя.",
+          "forms": "die Kunden / die Kundinnen",
+          "grammar_hint": "n-Deklination: den/dem/des Kunden; Kundin — обычное склонение женского рода.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kunde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 477,
+          "record": {
+            "id": "a1-363-1",
+            "de": "der Kunde",
+            "lemma": "Kunde",
+            "ru": "клиент",
+            "uk": "",
+            "translations_ru": [
+              "клиент"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "die Kunden",
+            "definition_de": "Ein Mann, der etwas kauft oder eine Dienstleistung nutzt.",
+            "example": "Der Kunde möchte bar bezahlen.",
+            "example_ru": "Клиент хочет заплатить наличными.",
+            "note": "Akkusativ и Dativ: den Kunden, dem Kunden.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "4a920dd4cf9839013b33"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-363-1",
+        "alias_id": "b1-kunde-customer",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-363-1"
+      }
+    },
+    {
+      "candidate_number": 449,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Sie hat gekündigt, weil sie eine neue Stelle gefunden hat.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 22,
+        "record": {
+          "id": "b1-kuendigen-resign",
+          "de": "kündigen",
+          "lemma": "kündigen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "увольняться",
+            "подать заявление об увольнении"
+          ],
+          "definition_de": "Das eigene Arbeitsverhältnis durch eine entsprechende Erklärung beenden.",
+          "example": "Sie hat gekündigt, weil sie eine neue Stelle gefunden hat.",
+          "example_ru": "Она уволилась, потому что нашла новую работу.",
+          "forms": "kündigt · kündigte · hat gekündigt",
+          "grammar_hint": "Ich kündige — я увольняюсь; jemandem kündigen (Dativ) — уволить сотрудника. После weil глагол в конце.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%BCndigen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 352,
+          "record": {
+            "id": "dict_a7b859326d6b843447c2",
+            "de": "kündigen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "увольняться",
+              "расторгать договор"
+            ],
+            "definition_de": "Ein Arbeitsverhältnis oder einen Vertrag durch eine entsprechende Erklärung beenden.",
+            "forms": "kündigt · kündigte · hat gekündigt",
+            "example": "Sie hat ihre Stelle gekündigt.",
+            "example_ru": "Она уволилась с работы.",
+            "grammar_hint": "einen Vertrag (Akkusativ) kündigen; ohne Objekt: kündigen — увольняться.",
+            "usage_note": "kündigen — увольняться или расторгать договор. Den Vertrag kündigen — расторгнуть договор; jemandem kündigen (Dativ) — уволить кого-либо. Absagen — отменить встречу/мероприятие. Значение увольнения работодателем отдельно не подтверждено примером Goethe A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/k%C3%BCndigen",
+                "https://www.duden.de/rechtschreibung/kuendigen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a7b859326d6b843447c2",
+        "alias_id": "b1-kuendigen-resign",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a7b859326d6b843447c2"
+      }
+    },
+    {
+      "candidate_number": 450,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual variant in Wir möchten unser Fitnessabo kündigen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 23,
+        "record": {
+          "id": "b1-kuendigen-contract",
+          "de": "kündigen",
+          "lemma": "kündigen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "расторгать договор",
+            "отказываться от подписки"
+          ],
+          "definition_de": "Ein bestehendes Vertragsverhältnis durch eine Kündigung beenden.",
+          "example": "Wir möchten unser Fitnessabo kündigen.",
+          "example_ru": "Мы хотим расторгнуть абонемент в спортзал.",
+          "forms": "kündigt · kündigte · hat gekündigt",
+          "grammar_hint": "etwas (Akkusativ) kündigen: den Vertrag, die Wohnung, das Abo; schriftlich kündigen.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%BCndigen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 352,
+          "record": {
+            "id": "dict_a7b859326d6b843447c2",
+            "de": "kündigen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "увольняться",
+              "расторгать договор"
+            ],
+            "definition_de": "Ein Arbeitsverhältnis oder einen Vertrag durch eine entsprechende Erklärung beenden.",
+            "forms": "kündigt · kündigte · hat gekündigt",
+            "example": "Sie hat ihre Stelle gekündigt.",
+            "example_ru": "Она уволилась с работы.",
+            "grammar_hint": "einen Vertrag (Akkusativ) kündigen; ohne Objekt: kündigen — увольняться.",
+            "usage_note": "kündigen — увольняться или расторгать договор. Den Vertrag kündigen — расторгнуть договор; jemandem kündigen (Dativ) — уволить кого-либо. Absagen — отменить встречу/мероприятие. Значение увольнения работодателем отдельно не подтверждено примером Goethe A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/k%C3%BCndigen",
+                "https://www.duden.de/rechtschreibung/kuendigen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a7b859326d6b843447c2",
+        "alias_id": "b1-kuendigen-contract",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a7b859326d6b843447c2"
+      }
+    },
+    {
+      "candidate_number": 451,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Im Museum gibt es eine Ausstellung moderner Kunst.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 25,
+        "record": {
+          "id": "b1-kunst-art",
+          "de": "die Kunst",
+          "lemma": "Kunst",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "искусство"
+          ],
+          "definition_de": "Kreatives Schaffen und seine Werke, etwa in Malerei oder Musik.",
+          "example": "Im Museum gibt es eine Ausstellung moderner Kunst.",
+          "example_ru": "В музее проходит выставка современного искусства.",
+          "forms": "die Künste",
+          "grammar_hint": "sich für Kunst interessieren; moderne Kunst; von Kunst etwas verstehen (+ Dativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kunst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 345,
+          "record": {
+            "id": "dict_4ceda759e732213ffc05",
+            "de": "die Kunst",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "искусство"
+            ],
+            "definition_de": "Kreative Gestaltung, zum Beispiel durch Malerei, Musik oder Bildhauerei.",
+            "forms": "Plural · die Künste (виды искусства); об искусстве в целом обычно Singular",
+            "example": "Im Museum gibt es moderne Kunst.",
+            "example_ru": "В музее представлено современное искусство.",
+            "grammar_hint": "",
+            "usage_note": "Kunst как школьный предмет — изобразительное искусство. die bildenden Künste — изобразительные искусства.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 19,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Kunst",
+                "https://www.duden.de/rechtschreibung/Kunst"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_4ceda759e732213ffc05",
+        "alias_id": "b1-kunst-art",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_4ceda759e732213ffc05"
+      }
+    },
+    {
+      "candidate_number": 452,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning in Ich besuche einen Deutschkurs am Abend.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_049.json",
+        "sha": "2f083577798b29dc9aab1e421636f60970083083",
+        "batch": 49,
+        "row": 29,
+        "record": {
+          "id": "b1-kurs-course",
+          "de": "der Kurs",
+          "lemma": "Kurs",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "курс",
+            "учебные занятия"
+          ],
+          "definition_de": "Eine Reihe von Unterrichtseinheiten zu einem bestimmten Thema.",
+          "example": "Ich besuche einen Deutschkurs am Abend.",
+          "example_ru": "Я посещаю вечерний курс немецкого языка.",
+          "forms": "die Kurse",
+          "grammar_hint": "einen Kurs besuchen; an einem Kurs teilnehmen (+ Dativ); sich für einen Kurs anmelden (+ Akkusativ).",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kurs"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 478,
+          "record": {
+            "id": "a1-364-1",
+            "de": "der Kurs",
+            "lemma": "Kurs",
+            "ru": "курс",
+            "uk": "",
+            "translations_ru": [
+              "курс"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "die Kurse",
+            "definition_de": "Eine Reihe von Stunden, in denen man etwas lernt.",
+            "example": "Der Kurs beginnt im September.",
+            "example_ru": "Курс начинается в сентябре.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 19,
+                "row_id": "d68fb6babca0b3e47e76"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-364-1",
+        "alias_id": "b1-kurs-course",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-364-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_877393c285b95981845d",
+      "alias_ids": [
+        "b1-kredit-loan"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_877393c285b95981845d",
+        "de": "der Kredit",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "кредит"
+        ],
+        "definition_de": "Geld, das man sich für eine bestimmte Zeit leiht und später zurückzahlen muss.",
+        "forms": "Plural · die Kredite",
+        "example": "Für den Kauf brauchen wir einen Kredit.",
+        "example_ru": "Для покупки нам нужен кредит.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kredit"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-kredit-loan"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kredit-loan",
+            "de": "der Kredit",
+            "part": "noun",
+            "forms": "die Kredite",
+            "definition_de": "Geld, das man von einem Kreditgeber erhält und später zurückzahlen muss.",
+            "translations_ru": [
+              "кредит",
+              "заём"
+            ],
+            "grammar_hint": "einen Kredit aufnehmen / zurückzahlen; bei einer Bank (Dativ).",
+            "example": "Die Familie möchte einen Kredit für den Umbau aufnehmen.",
+            "example_ru": "Семья хочет взять кредит на ремонт."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kredit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-334-1",
+      "alias_ids": [
+        "b1-kreditkarte-card"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-334-1",
+        "de": "die Kreditkarte",
+        "lemma": "Kreditkarte",
+        "ru": "кредитная карта",
+        "uk": "",
+        "translations_ru": [
+          "кредитная карта"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "die Kreditkarten",
+        "definition_de": "Eine Zahlungskarte, deren Ausgaben später abgerechnet werden.",
+        "example": "Ich bezahle mit meiner Kreditkarte.",
+        "example_ru": "Я плачу кредитной картой.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "ce8cbeb603c92fc69251"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kreditkarte-card"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kreditkarte-card",
+            "de": "die Kreditkarte",
+            "part": "noun",
+            "forms": "die Kreditkarten",
+            "definition_de": "Eine Zahlungskarte, bei der die Beträge nach den vertraglichen Bedingungen abgerechnet werden.",
+            "translations_ru": [
+              "кредитная карта"
+            ],
+            "grammar_hint": "mit + Dativ bezahlen; die Debitkarte — дебетовая карта, не то же самое.",
+            "example": "Kann ich die Hotelrechnung mit meiner Kreditkarte bezahlen?",
+            "example_ru": "Могу я оплатить счёт отеля кредитной картой?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kreditkarte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_dff877557702c1e557b6",
+      "alias_ids": [
+        "b1-kreuzung-intersection"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_dff877557702c1e557b6",
+        "de": "die Kreuzung",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "перекрёсток"
+        ],
+        "definition_de": "Eine Stelle, an der sich Straßen oder Wege kreuzen.",
+        "forms": "Plural · die Kreuzungen",
+        "example": "Biegen Sie an der nächsten Kreuzung links ab.",
+        "example_ru": "Поверните налево на следующем перекрёстке.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kreuzung"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Город и достопримечательности",
+        "topics": [
+          "Город и достопримечательности"
+        ],
+        "alias_ids": [
+          "b1-kreuzung-intersection"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kreuzung-intersection",
+            "de": "die Kreuzung",
+            "part": "noun",
+            "forms": "die Kreuzungen",
+            "definition_de": "Ein Ort, an dem mehrere Straßen aufeinandertreffen.",
+            "translations_ru": [
+              "перекрёсток"
+            ],
+            "grammar_hint": "an der Kreuzung (Dativ); bis zur Kreuzung (zu + Dativ); links abbiegen.",
+            "example": "An der Kreuzung vor der Apotheke biegen wir links ab.",
+            "example_ru": "На перекрёстке перед аптекой мы поворачиваем налево."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kreuzung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-358-1",
+      "alias_ids": [
+        "b1-kriegen-receive"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-358-1",
+        "de": "kriegen",
+        "lemma": "kriegen",
+        "ru": "получать (разг.); получить (разг.)",
+        "uk": "",
+        "translations_ru": [
+          "получать (разг.)",
+          "получить (разг.)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "kriegt · kriegte · hat gekriegt",
+        "definition_de": "Umgangssprachlich für bekommen.",
+        "example": "Ich kriege morgen mein Geld.",
+        "example_ru": "Я получу деньги завтра.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "row_id": "cab539a56b1dc1556b21"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kriegen-receive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kriegen-receive",
+            "de": "kriegen",
+            "part": "verb",
+            "forms": "kriegt · kriegte · hat gekriegt",
+            "definition_de": "Etwas erhalten, das einem gegeben oder geschickt wird.",
+            "translations_ru": [
+              "получать",
+              "получить"
+            ],
+            "grammar_hint": "Разговорный вариант bekommen / erhalten; etwas (Akkusativ) kriegen.",
+            "example": "Hast du meine Nachricht gekriegt?",
+            "example_ru": "Ты получила моё сообщение?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kriegen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_94fa5971c4c1f8201ff7",
+      "alias_ids": [
+        "b1-krimi-detective"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_94fa5971c4c1f8201ff7",
+        "de": "der Krimi",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "детектив",
+          "детективный фильм или роман"
+        ],
+        "definition_de": "Eine Geschichte, in der es um ein Verbrechen und dessen Aufklärung geht.",
+        "forms": "Plural · die Krimis",
+        "example": "Heute Abend sehen wir einen Krimi.",
+        "example_ru": "Сегодня вечером мы смотрим детектив.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Krimi"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-krimi-detective"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-krimi-detective",
+            "de": "der Krimi",
+            "part": "noun",
+            "forms": "die Krimis",
+            "definition_de": "Ein Film, Buch oder Hörspiel, in dem ein Verbrechen und seine Aufklärung eine wichtige Rolle spielen.",
+            "translations_ru": [
+              "детектив",
+              "криминальный фильм или роман"
+            ],
+            "grammar_hint": "Kurzform von Kriminalroman / Kriminalfilm; einen Krimi lesen / ansehen.",
+            "example": "Am Samstag lesen wir einen spannenden Krimi.",
+            "example_ru": "В субботу мы читаем увлекательный детектив."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Krimi"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "c8",
+      "alias_ids": [
+        "b1-kueche-room"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c8",
+        "de": "die Küche",
+        "lemma": "Küche",
+        "ru": "кухня",
+        "uk": "кухня",
+        "translations_ru": [
+          "кухня"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Küchen",
+        "definition_de": "Ein Raum, in dem man kocht.",
+        "example": "Die Küche ist klein.",
+        "example_ru": "Кухня маленькая.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kueche-room"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kueche-room",
+            "de": "die Küche",
+            "part": "noun",
+            "forms": "die Küchen",
+            "definition_de": "Ein Raum, in dem Mahlzeiten vorbereitet werden.",
+            "translations_ru": [
+              "кухня (помещение)"
+            ],
+            "grammar_hint": "in der Küche (Wo? Dativ); in die Küche (Wohin? Akkusativ).",
+            "example": "In unserer Küche steht ein kleiner Tisch.",
+            "example_ru": "На нашей кухне стоит маленький стол."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%BCche"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_622fa00a9fecb5ed9fd5",
+      "alias_ids": [
+        "b1-kuchen-cake"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_622fa00a9fecb5ed9fd5",
+        "de": "der Kuchen",
+        "lemma": "Kuchen",
+        "ru": "пирог; кекс; торт (в широком смысле)",
+        "uk": "пиріг; кекс; торт",
+        "translations_ru": [
+          "пирог",
+          "кекс",
+          "торт (в широком смысле)"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "forms": "die Kuchen",
+        "definition_de": "Ein meist süßes Gebäck, das im Ofen gebacken wird.",
+        "example": "Zum Kaffee gibt es heute Apfelkuchen.",
+        "example_ru": "Сегодня к кофе будет яблочный пирог.",
+        "note": "ein Stück Kuchen — кусок пирога; die Torte — торт, часто с кремом. Не путать die Küche — кухня.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 18,
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/Kuchen",
+            "scope": "meaning"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kuchen-cake"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kuchen-cake",
+            "de": "der Kuchen",
+            "part": "noun",
+            "forms": "die Kuchen",
+            "definition_de": "Ein meist süßes Backwerk, das man in Stücke schneiden kann.",
+            "translations_ru": [
+              "пирог",
+              "кекс",
+              "сладкая выпечка"
+            ],
+            "grammar_hint": "ein Stück Kuchen; Kuchen backen; die Torte — торт, часто с кремом.",
+            "example": "Zum Geburtstag backe ich einen Apfelkuchen.",
+            "example_ru": "На день рождения я испеку яблочный пирог."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kuchen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-359-1",
+      "alias_ids": [
+        "b1-kugelschreiber-pen"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-359-1",
+        "de": "der Kugelschreiber",
+        "lemma": "Kugelschreiber",
+        "ru": "шариковая ручка",
+        "uk": "",
+        "translations_ru": [
+          "шариковая ручка"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Kugelschreiber",
+        "definition_de": "Ein Stift, der mit einer kleinen Kugel Tinte aufs Papier bringt.",
+        "example": "Der Kugelschreiber liegt neben dem Heft.",
+        "example_ru": "Шариковая ручка лежит рядом с тетрадью.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "960e7e28df7ce9043e21"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kugelschreiber-pen"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kugelschreiber-pen",
+            "de": "der Kugelschreiber",
+            "part": "noun",
+            "forms": "die Kugelschreiber",
+            "definition_de": "Ein Schreibgerät, das Tinte durch eine kleine rollende Kugel auf das Papier bringt.",
+            "translations_ru": [
+              "шариковая ручка"
+            ],
+            "grammar_hint": "mit + Dativ; der Kuli — разговорное сокращение.",
+            "example": "Füllen Sie das Formular mit einem Kugelschreiber aus.",
+            "example_ru": "Заполните бланк шариковой ручкой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kugelschreiber"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2c83f3d54a3604198633",
+      "alias_ids": [
+        "b1-kuehl-cool"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2c83f3d54a3604198633",
+        "de": "kühl",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "прохладный"
+        ],
+        "definition_de": "Weniger warm, aber nicht unbedingt kalt.",
+        "forms": "kühl · kühler · am kühlsten",
+        "example": "Am Abend wird es kühl.",
+        "example_ru": "Вечером станет прохладно.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/k%C3%BChl"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-kuehl-cool"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kuehl-cool",
+            "de": "kühl",
+            "part": "adj",
+            "forms": "kühl · kühler · am kühlsten",
+            "definition_de": "Etwas unterhalb einer als warm empfundenen Temperatur liegend.",
+            "translations_ru": [
+              "прохладный",
+              "прохладно"
+            ],
+            "grammar_hint": "Es ist kühl — прохладно; kalt — холодно; kühl lagern — хранить в прохладном месте.",
+            "example": "Am Abend wird es am See kühl.",
+            "example_ru": "Вечером у озера становится прохладно."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%BChl"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-360-1",
+      "alias_ids": [
+        "b1-kuehlschrank-fridge"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-360-1",
+        "de": "der Kühlschrank",
+        "lemma": "Kühlschrank",
+        "ru": "холодильник",
+        "uk": "",
+        "translations_ru": [
+          "холодильник"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Kühlschränke",
+        "definition_de": "Ein Gerät, das Lebensmittel kühl hält.",
+        "example": "Die Milch steht im Kühlschrank.",
+        "example_ru": "Молоко в холодильнике.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "5b35d3b6bbe0b9ac0180"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kuehlschrank-fridge"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kuehlschrank-fridge",
+            "de": "der Kühlschrank",
+            "part": "noun",
+            "forms": "die Kühlschränke",
+            "definition_de": "Ein Haushaltsgerät, das Lebensmittel bei niedriger Temperatur frisch hält.",
+            "translations_ru": [
+              "холодильник"
+            ],
+            "grammar_hint": "im Kühlschrank (Dativ); in den Kühlschrank stellen (Akkusativ).",
+            "example": "Der Joghurt steht im Kühlschrank.",
+            "example_ru": "Йогурт стоит в холодильнике."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 57,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/K%C3%BChlschrank"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a363f3ad7089f464047d",
+      "alias_ids": [
+        "b1-kultur-culture"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a363f3ad7089f464047d",
+        "de": "die Kultur",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "культура"
+        ],
+        "definition_de": "Die Lebensweisen, Bräuche und Ausdrucksformen einer Gesellschaft oder Gruppe.",
+        "forms": "Plural · die Kulturen",
+        "example": "Auf Reisen lerne ich gern andere Kulturen kennen.",
+        "example_ru": "В поездках я люблю знакомиться с другими культурами.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kultur"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-kultur-culture"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kultur-culture",
+            "de": "die Kultur",
+            "part": "noun",
+            "forms": "die Kulturen",
+            "definition_de": "Die Traditionen, Ausdrucksformen und Lebensweisen einer Gemeinschaft.",
+            "translations_ru": [
+              "культура"
+            ],
+            "grammar_hint": "sich für eine Kultur interessieren (für + Akkusativ); kulturell — культурный.",
+            "example": "Auf Reisen lerne ich verschiedene Kulturen kennen.",
+            "example_ru": "В путешествиях я знакомлюсь с разными культурами."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kultur"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-361-1",
+      "alias_ids": [
+        "b1-kulturell-cultural"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-361-1",
+        "de": "kulturell",
+        "lemma": "kulturell",
+        "ru": "культурный, в сфере культуры",
+        "uk": "",
+        "translations_ru": [
+          "культурный, в сфере культуры"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "В данном значении обычно без степеней сравнения",
+        "definition_de": "Die Kultur betreffend.",
+        "example": "Die Stadt hat ein kulturelles Angebot für Kinder.",
+        "example_ru": "В городе есть культурная программа для детей.",
+        "note": "Относительное прилагательное: относящийся к культуре. В этом значении обычно без степеней сравнения.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "6e2d1bc1d3e36ba677d1"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kulturell-cultural"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kulturell-cultural",
+            "de": "kulturell",
+            "part": "adj",
+            "forms": "kulturell · kultureller · am kulturellsten (при градуируемом употреблении)",
+            "definition_de": "Mit Traditionen, Kunst oder anderen kulturellen Ausdrucksformen verbunden.",
+            "translations_ru": [
+              "культурный",
+              "относящийся к культуре"
+            ],
+            "grammar_hint": "kulturelle Unterschiede; в классифицирующем значении обычно без сравнения.",
+            "example": "Das Quartier bietet viele kulturelle Veranstaltungen.",
+            "example_ru": "В районе проводится много культурных мероприятий."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/kulturell"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-363-1",
+      "alias_ids": [
+        "b1-kunde-customer"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-363-1",
+        "de": "der Kunde",
+        "lemma": "Kunde",
+        "ru": "клиент",
+        "uk": "",
+        "translations_ru": [
+          "клиент"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки"
+        ],
+        "forms": "die Kunden",
+        "definition_de": "Ein Mann, der etwas kauft oder eine Dienstleistung nutzt.",
+        "example": "Der Kunde möchte bar bezahlen.",
+        "example_ru": "Клиент хочет заплатить наличными.",
+        "note": "Akkusativ и Dativ: den Kunden, dem Kunden.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "4a920dd4cf9839013b33"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kunde-customer"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kunde-customer",
+            "de": "der Kunde / die Kundin",
+            "part": "noun",
+            "forms": "die Kunden / die Kundinnen",
+            "definition_de": "Eine Person, die Waren erwirbt oder Dienstleistungen nutzt.",
+            "translations_ru": [
+              "клиент",
+              "покупатель"
+            ],
+            "grammar_hint": "n-Deklination: den/dem/des Kunden; Kundin — обычное склонение женского рода.",
+            "example": "Die Verkäuferin berät einen Kunden.",
+            "example_ru": "Продавщица консультирует покупателя."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kunde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a7b859326d6b843447c2",
+      "alias_ids": [
+        "b1-kuendigen-resign",
+        "b1-kuendigen-contract"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a7b859326d6b843447c2",
+        "de": "kündigen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "увольняться",
+          "расторгать договор"
+        ],
+        "definition_de": "Ein Arbeitsverhältnis oder einen Vertrag durch eine entsprechende Erklärung beenden.",
+        "forms": "kündigt · kündigte · hat gekündigt",
+        "example": "Sie hat ihre Stelle gekündigt.",
+        "example_ru": "Она уволилась с работы.",
+        "grammar_hint": "einen Vertrag (Akkusativ) kündigen; ohne Objekt: kündigen — увольняться.",
+        "usage_note": "kündigen — увольняться или расторгать договор. Den Vertrag kündigen — расторгнуть договор; jemandem kündigen (Dativ) — уволить кого-либо. Absagen — отменить встречу/мероприятие. Значение увольнения работодателем отдельно не подтверждено примером Goethe A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/k%C3%BCndigen",
+            "https://www.duden.de/rechtschreibung/kuendigen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Работа и профессии",
+        "topics": [
+          "Работа и профессии"
+        ],
+        "alias_ids": [
+          "b1-kuendigen-resign",
+          "b1-kuendigen-contract"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kuendigen-resign",
+            "de": "kündigen",
+            "part": "verb",
+            "forms": "kündigt · kündigte · hat gekündigt",
+            "definition_de": "Das eigene Arbeitsverhältnis durch eine entsprechende Erklärung beenden.",
+            "translations_ru": [
+              "увольняться",
+              "подать заявление об увольнении"
+            ],
+            "grammar_hint": "Ich kündige — я увольняюсь; jemandem kündigen (Dativ) — уволить сотрудника. После weil глагол в конце.",
+            "example": "Sie hat gekündigt, weil sie eine neue Stelle gefunden hat.",
+            "example_ru": "Она уволилась, потому что нашла новую работу."
+          },
+          {
+            "id": "b1-kuendigen-contract",
+            "de": "kündigen",
+            "part": "verb",
+            "forms": "kündigt · kündigte · hat gekündigt",
+            "definition_de": "Ein bestehendes Vertragsverhältnis durch eine Kündigung beenden.",
+            "translations_ru": [
+              "расторгать договор",
+              "отказываться от подписки"
+            ],
+            "grammar_hint": "etwas (Akkusativ) kündigen: den Vertrag, die Wohnung, das Abo; schriftlich kündigen.",
+            "example": "Wir möchten unser Fitnessabo kündigen.",
+            "example_ru": "Мы хотим расторгнуть абонемент в спортзал."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%BCndigen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/k%C3%BCndigen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_4ceda759e732213ffc05",
+      "alias_ids": [
+        "b1-kunst-art"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_4ceda759e732213ffc05",
+        "de": "die Kunst",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "искусство"
+        ],
+        "definition_de": "Kreative Gestaltung, zum Beispiel durch Malerei, Musik oder Bildhauerei.",
+        "forms": "Plural · die Künste (виды искусства); об искусстве в целом обычно Singular",
+        "example": "Im Museum gibt es moderne Kunst.",
+        "example_ru": "В музее представлено современное искусство.",
+        "grammar_hint": "",
+        "usage_note": "Kunst как школьный предмет — изобразительное искусство. die bildenden Künste — изобразительные искусства.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 19,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Kunst",
+            "https://www.duden.de/rechtschreibung/Kunst"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-kunst-art"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kunst-art",
+            "de": "die Kunst",
+            "part": "noun",
+            "forms": "die Künste",
+            "definition_de": "Kreatives Schaffen und seine Werke, etwa in Malerei oder Musik.",
+            "translations_ru": [
+              "искусство"
+            ],
+            "grammar_hint": "sich für Kunst interessieren; moderne Kunst; von Kunst etwas verstehen (+ Dativ).",
+            "example": "Im Museum gibt es eine Ausstellung moderner Kunst.",
+            "example_ru": "В музее проходит выставка современного искусства."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kunst"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-364-1",
+      "alias_ids": [
+        "b1-kurs-course"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-364-1",
+        "de": "der Kurs",
+        "lemma": "Kurs",
+        "ru": "курс",
+        "uk": "",
+        "translations_ru": [
+          "курс"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Образование",
+        "topics": [
+          "Образование"
+        ],
+        "forms": "die Kurse",
+        "definition_de": "Eine Reihe von Stunden, in denen man etwas lernt.",
+        "example": "Der Kurs beginnt im September.",
+        "example_ru": "Курс начинается в сентябре.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 19,
+            "row_id": "d68fb6babca0b3e47e76"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-kurs-course"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-kurs-course",
+            "de": "der Kurs",
+            "part": "noun",
+            "forms": "die Kurse",
+            "definition_de": "Eine Reihe von Unterrichtseinheiten zu einem bestimmten Thema.",
+            "translations_ru": [
+              "курс",
+              "учебные занятия"
+            ],
+            "grammar_hint": "einen Kurs besuchen; an einem Kurs teilnehmen (+ Dativ); sich für einen Kurs anmelden (+ Akkusativ).",
+            "example": "Ich besuche einen Deutschkurs am Abend.",
+            "example_ru": "Я посещаю вечерний курс немецкого языка."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 58,
+              "scope": "context",
+              "note": "Exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Kurs"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

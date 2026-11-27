@@ -1,0 +1,3115 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    573,
+    592
+  ],
+  "reviewed": 20,
+  "merge_count": 16,
+  "merge_target_count": 15,
+  "retained_distinct_senses": 1,
+  "retained_teaching_contexts_pending_level_review": 3,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 573,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Schließt eine Person oder Sache in eine Gesamtzahl ein. Example: Mit unserem Gast sind wir sechs Personen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_058.json",
+        "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+        "batch": 58,
+        "row": 18,
+        "record": {
+          "id": "b1-mit-inclusion",
+          "de": "mit",
+          "lemma": "mit",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "включая",
+            "вместе с (при подсчёте)"
+          ],
+          "definition_de": "Schließt eine Person oder Sache in eine Gesamtzahl ein.",
+          "example": "Mit unserem Gast sind wir sechs Personen.",
+          "example_ru": "Вместе с нашим гостем нас шестеро.",
+          "forms": "mit + Dativ",
+          "grammar_hint": "mit unserem Gast — включая гостя; CH: bis und mit — до указанного дня включительно (отдельный региональный оборот).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/mit_inklusive_auch_mitsamt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 44,
+          "record": {
+            "id": "grammar-mit",
+            "de": "mit",
+            "lemma": "mit",
+            "ru": "с (кем-либо, чем-либо); на (транспорте)",
+            "uk": "",
+            "translations_ru": [
+              "с (кем-либо, чем-либо)",
+              "на (транспорте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wer dabei ist oder was zu etwas dazukommt.",
+            "example": "Ich möchte Tee mit Zitrone.",
+            "example_ru": "Я хочу чай с лимоном.",
+            "note": "mit + Dativ: mit frischer Zitrone Всегда Dativ: mit dem Bus — на автобусе; mit meiner Freundin — с подругой. Отделяемая приставка mit- в mitkommen, mitbringen и mitspielen не является предлогом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "0737e0b277765aaf07df"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "grammar-mit",
+        "alias_id": "b1-mit-inclusion",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "grammar-mit"
+      }
+    },
+    {
+      "candidate_number": 574,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Nennt das Verkehrsmittel oder Werkzeug, das bei einer Handlung verwendet wird. Example: Ich fahre mit dem Tram zur Arbeit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_058.json",
+        "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+        "batch": 58,
+        "row": 19,
+        "record": {
+          "id": "b1-mit-instrument",
+          "de": "mit",
+          "lemma": "mit",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "на (транспорте)",
+            "с помощью",
+            "посредством"
+          ],
+          "definition_de": "Nennt das Verkehrsmittel oder Werkzeug, das bei einer Handlung verwendet wird.",
+          "example": "Ich fahre mit dem Tram zur Arbeit.",
+          "example_ru": "Я езжу на работу на трамвае.",
+          "forms": "mit + Dativ",
+          "grammar_hint": "Womit? mit dem Zug, mit einem Stift. CH: das Tram; D: die Tram. zu Fuß — пешком, без mit.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/mit_inklusive_auch_mitsamt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 44,
+          "record": {
+            "id": "grammar-mit",
+            "de": "mit",
+            "lemma": "mit",
+            "ru": "с (кем-либо, чем-либо); на (транспорте)",
+            "uk": "",
+            "translations_ru": [
+              "с (кем-либо, чем-либо)",
+              "на (транспорте)"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "+ Dativ",
+            "definition_de": "Zeigt, wer dabei ist oder was zu etwas dazukommt.",
+            "example": "Ich möchte Tee mit Zitrone.",
+            "example_ru": "Я хочу чай с лимоном.",
+            "note": "mit + Dativ: mit frischer Zitrone Всегда Dativ: mit dem Bus — на автобусе; mit meiner Freundin — с подругой. Отделяемая приставка mit- в mitkommen, mitbringen и mitspielen не является предлогом.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "0737e0b277765aaf07df"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "grammar-mit",
+        "alias_id": "b1-mit-instrument",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "grammar-mit"
+      }
+    },
+    {
+      "candidate_number": 575,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Eine Person, die in einem Betrieb oder an einem gemeinsamen Vorhaben arbeitet. Example: Die Mitarbeiterin beantwortet Fragen zur Anmeldung.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_058.json",
+        "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+        "batch": 58,
+        "row": 20,
+        "record": {
+          "id": "b1-mitarbeiter-employee",
+          "de": "der Mitarbeiter / die Mitarbeiterin",
+          "lemma": "Mitarbeiter",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сотрудник",
+            "сотрудница"
+          ],
+          "definition_de": "Eine Person, die in einem Betrieb oder an einem gemeinsamen Vorhaben arbeitet.",
+          "example": "Die Mitarbeiterin beantwortet Fragen zur Anmeldung.",
+          "example_ru": "Сотрудница отвечает на вопросы о регистрации.",
+          "forms": "die Mitarbeiter / die Mitarbeiterinnen",
+          "grammar_hint": "des Mitarbeiters; kein n-Deklination; Mitarbeitende — альтернативное обозначение.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mitarbeiter"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 192,
+          "record": {
+            "id": "dict_d361b95675f5b6cdbd72",
+            "de": "der Mitarbeiter",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "сотрудник"
+            ],
+            "definition_de": "Ein Mann, der in einem Betrieb oder einer Organisation arbeitet.",
+            "forms": "Plural · die Mitarbeiter",
+            "example": "Ein Mitarbeiter hat mir den Eingang gezeigt.",
+            "example_ru": "Один сотрудник показал мне, где вход.",
+            "grammar_hint": "",
+            "usage_note": "Женская форма: die Mitarbeiterin, die Mitarbeiterinnen. Сотрудник — не обязательно коллега или подчинённый; зависит от отношений.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mitarbeiter"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Работа и профессии",
+            "topics": [
+              "Работа и профессии"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 576,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Der zentrale Bereich zwischen den Rändern eines Raumes oder Gegenstands. Example: Der runde Tisch steht in der Mitte des Zimmers.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_058.json",
+        "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+        "batch": 58,
+        "row": 23,
+        "record": {
+          "id": "b1-mitte-space",
+          "de": "die Mitte",
+          "lemma": "Mitte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "середина",
+            "центр"
+          ],
+          "definition_de": "Der zentrale Bereich zwischen den Rändern eines Raumes oder Gegenstands.",
+          "example": "Der runde Tisch steht in der Mitte des Zimmers.",
+          "example_ru": "Круглый стол стоит в центре комнаты.",
+          "forms": "die Mitten (редко); обычно Singular",
+          "grammar_hint": "in der Mitte (Wo? Dativ); in die Mitte stellen (Wohin? Akkusativ).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mitte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 491,
+          "record": {
+            "id": "a1-413-1",
+            "de": "die Mitte",
+            "lemma": "Mitte",
+            "ru": "середина; центр",
+            "uk": "",
+            "translations_ru": [
+              "середина",
+              "центр"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Mitten",
+            "definition_de": "Der Bereich, der ungefähr gleich weit von den Seiten entfernt ist.",
+            "example": "In der Mitte des Tisches steht eine Vase.",
+            "example_ru": "Посередине стола стоит ваза.",
+            "note": "in der Mitte + Dativ (где?), in die Mitte + Akkusativ (куда?). Временное употребление Mitte Mai рассматривается отдельно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "16af764c4a87b6e459f3"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Mitte",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 564,
+          "record": {
+            "id": "dict_920bf00fc610c7053def",
+            "de": "die Mitte",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "середина (периода времени)"
+            ],
+            "definition_de": "Der ungefähre Zeitpunkt auf halbem Weg durch einen Zeitraum.",
+            "forms": "die Mitte · в этом значении без множественного числа",
+            "example": "Mitte Mai beginnt mein neuer Kurs.",
+            "example_ru": "В середине мая начинается мой новый курс.",
+            "grammar_hint": "Mitte Mai — обычно без артикля; in der Mitte des Monats — Genitiv после Mitte.",
+            "usage_note": "Пространственное значение «центр, середина» — A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mitte"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-413-1",
+        "alias_id": "b1-mitte-space",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-413-1"
+      }
+    },
+    {
+      "candidate_number": 577,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Zeitpunkt ungefähr auf halber Strecke eines Zeitraums. Example: Mitte Oktober beginnen die neuen Kurse.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_058.json",
+        "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+        "batch": 58,
+        "row": 24,
+        "record": {
+          "id": "b1-mitte-time",
+          "de": "die Mitte / Mitte …",
+          "lemma": "Mitte",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "середина (периода)",
+            "в середине"
+          ],
+          "definition_de": "Ein Zeitpunkt ungefähr auf halber Strecke eines Zeitraums.",
+          "example": "Mitte Oktober beginnen die neuen Kurse.",
+          "example_ru": "В середине октября начинаются новые курсы.",
+          "forms": "в этом значении без множественного числа",
+          "grammar_hint": "Mitte Oktober без артикля; bis Mitte Oktober — до середины октября; Mitte der Woche — середина недели.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mitte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 491,
+          "record": {
+            "id": "a1-413-1",
+            "de": "die Mitte",
+            "lemma": "Mitte",
+            "ru": "середина; центр",
+            "uk": "",
+            "translations_ru": [
+              "середина",
+              "центр"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Mitten",
+            "definition_de": "Der Bereich, der ungefähr gleich weit von den Seiten entfernt ist.",
+            "example": "In der Mitte des Tisches steht eine Vase.",
+            "example_ru": "Посередине стола стоит ваза.",
+            "note": "in der Mitte + Dativ (где?), in die Mitte + Akkusativ (куда?). Временное употребление Mitte Mai рассматривается отдельно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "16af764c4a87b6e459f3"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/Mitte",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 564,
+          "record": {
+            "id": "dict_920bf00fc610c7053def",
+            "de": "die Mitte",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "середина (периода времени)"
+            ],
+            "definition_de": "Der ungefähre Zeitpunkt auf halbem Weg durch einen Zeitraum.",
+            "forms": "die Mitte · в этом значении без множественного числа",
+            "example": "Mitte Mai beginnt mein neuer Kurs.",
+            "example_ru": "В середине мая начинается мой новый курс.",
+            "grammar_hint": "Mitte Mai — обычно без артикля; in der Mitte des Monats — Genitiv после Mitte.",
+            "usage_note": "Пространственное значение «центр, середина» — A1.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mitte"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Время, распорядок и планы",
+            "topics": [
+              "Время, распорядок и планы"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_920bf00fc610c7053def",
+        "alias_id": "b1-mitte-time",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_920bf00fc610c7053def"
+      }
+    },
+    {
+      "candidate_number": 578,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein Präparat, das zur Linderung oder Behandlung von Beschwerden eingesetzt wird. Example: In der Apotheke frage ich nach einem Mittel gegen Husten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_058.json",
+        "sha": "dd77f44581ac9647bd9a2ff401fe0495fb524ed5",
+        "batch": 58,
+        "row": 26,
+        "record": {
+          "id": "b1-mittel-remedy",
+          "de": "das Mittel",
+          "lemma": "Mittel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "средство",
+            "лекарственное средство"
+          ],
+          "definition_de": "Ein Präparat, das zur Linderung oder Behandlung von Beschwerden eingesetzt wird.",
+          "example": "In der Apotheke frage ich nach einem Mittel gegen Husten.",
+          "example_ru": "В аптеке я спрашиваю средство от кашля.",
+          "forms": "die Mittel",
+          "grammar_hint": "ein Mittel gegen + Akkusativ; nach einem Mittel fragen (Dativ); allgemeiner als Medikament.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mittel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 527,
+          "record": {
+            "id": "dict_a73efc03e968305a96f9",
+            "de": "das Mittel",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "средство",
+              "препарат (в медицинском контексте)"
+            ],
+            "definition_de": "Etwas, das man benutzt, um ein bestimmtes Ziel zu erreichen, etwa bei Beschwerden oder beim Waschen.",
+            "forms": "Plural · die Mittel",
+            "example": "Haben Sie ein Mittel gegen Husten?",
+            "example_ru": "У вас есть средство от кашля?",
+            "grammar_hint": "ein Mittel gegen + Akkusativ; Dativ Plural: den Mitteln. Не путать с die Mitte — середина.",
+            "usage_note": "Подтверждено значение средства с определённым назначением; финансовые средства и математическое среднее отдельно не маркируются A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mittel"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a73efc03e968305a96f9",
+        "alias_id": "b1-mittel-remedy",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a73efc03e968305a96f9"
+      }
+    },
+    {
+      "candidate_number": 579,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein größerer Gegenstand zur Einrichtung eines Raumes. Example: Für die neue Wohnung brauchen wir noch Möbel.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 2,
+        "record": {
+          "id": "b1-moebel-furniture",
+          "de": "das Möbel / die Möbel",
+          "lemma": "Möbel",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "мебель",
+            "предмет мебели"
+          ],
+          "definition_de": "Ein größerer Gegenstand zur Einrichtung eines Raumes.",
+          "example": "Für die neue Wohnung brauchen wir noch Möbel.",
+          "example_ru": "Для новой квартиры нам ещё нужна мебель.",
+          "forms": "die Möbel; Singular: das Möbel",
+          "grammar_hint": "Чаще Plural: Die Möbel sind neu. Один предмет: ein Möbelstück.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/M%C3%B6bel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 492,
+          "record": {
+            "id": "a1-414-1",
+            "de": "die Möbel",
+            "lemma": "Möbel",
+            "ru": "мебель",
+            "uk": "",
+            "translations_ru": [
+              "мебель"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Жильё",
+            "topics": [
+              "Жильё"
+            ],
+            "forms": "die Möbel (Pl.); ед. число das Möbel существует, чаще ein Möbelstück",
+            "definition_de": "Tische, Stühle, Schränke und andere Einrichtungsgegenstände.",
+            "example": "Die Möbel sind noch im Lastwagen.",
+            "example_ru": "Мебель ещё в грузовике.",
+            "note": "Мебель — собирательный перевод множественного числа: Die Möbel sind neu. Один предмет мебели: ein Möbelstück.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "02df808a3378d16cb50c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-414-1",
+        "alias_id": "b1-moebel-furniture",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-414-1"
+      }
+    },
+    {
+      "candidate_number": 580,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Einen Wunsch in einer häufig höflichen Form ausdrücken. Example: Ich möchte im Januar einen neuen Kurs beginnen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 4,
+        "record": {
+          "id": "b1-moechten-desire",
+          "de": "möchten",
+          "lemma": "möchten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "хотеть",
+            "хотелось бы"
+          ],
+          "definition_de": "Einen Wunsch in einer häufig höflichen Form ausdrücken.",
+          "example": "Ich möchte im Januar einen neuen Kurs beginnen.",
+          "example_ru": "Я хотела бы начать новый курс в январе.",
+          "forms": "Konjunktiv II von mögen: möchte; Vergangenheit des Wunsches: wollte · hat gewollt (без второго инфинитива)",
+          "grammar_hint": "Ich möchte + Infinitiv без zu или существительное в Akkusativ. Möchte — форма Konjunktiv II от mögen, употребляемая для желания сейчас; не путать с mochte (прошедшее от mögen).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6chten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 436,
+          "record": {
+            "id": "a1-415-1",
+            "de": "möchten",
+            "lemma": "möchten",
+            "ru": "хотел бы; хотела бы",
+            "uk": "",
+            "translations_ru": [
+              "хотел бы",
+              "хотела бы"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "ich möchte · du möchtest · er/sie/es möchte · wir möchten · ihr möchtet · sie/Sie möchten",
+            "definition_de": "Drückt einen Wunsch höflich aus.",
+            "example": "Ich möchte einen Tee.",
+            "example_ru": "Я хотела бы чашку чая.",
+            "note": "Вежливое желание в настоящем: Konjunktiv II от mögen. С другим глаголом инфинитив в конце: Ich möchte Deutsch lernen. Для прошедшего желания обычно wollte; не образуем Präteritum/Perfekt от möchten как от самостоятельного инфинитива. mögen — любить, нравиться.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "7e6ea5a2aecb513b221f"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/moegen",
+                "scope": "grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-415-1",
+        "alias_id": "b1-moechten-desire",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-415-1"
+      }
+    },
+    {
+      "candidate_number": 581,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die zu einer bestimmten Zeit verbreiteten Vorlieben, etwa bei Kleidung. Example: Sie interessiert sich für nachhaltige Mode.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 9,
+        "record": {
+          "id": "b1-mode-fashion",
+          "de": "die Mode",
+          "lemma": "Mode",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "мода"
+          ],
+          "definition_de": "Die zu einer bestimmten Zeit verbreiteten Vorlieben, etwa bei Kleidung.",
+          "example": "Sie interessiert sich für nachhaltige Mode.",
+          "example_ru": "Она интересуется экологичной модой.",
+          "forms": "die Moden",
+          "grammar_hint": "Mode im Bereich Kleidung; sich für Mode interessieren (Akkusativ).",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mode"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 343,
+          "record": {
+            "id": "dict_7edfe325c4bb4449737d",
+            "de": "die Mode",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мода"
+            ],
+            "definition_de": "Die zu einer bestimmten Zeit beliebten Stile, besonders bei Kleidung.",
+            "forms": "Plural · die Moden",
+            "example": "Sie interessiert sich für italienische Mode.",
+            "example_ru": "Она интересуется итальянской модой.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mode"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7edfe325c4bb4449737d",
+        "alias_id": "b1-mode-fashion",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7edfe325c4bb4449737d"
+      }
+    },
+    {
+      "candidate_number": 582,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Zu einer bestimmten Zeit besonders beliebt sein. Example: Breite Hosen sind wieder in Mode.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 10,
+        "record": {
+          "id": "b1-mode-in-fashion",
+          "de": "in Mode sein",
+          "lemma": "Mode",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть в моде",
+            "быть модным"
+          ],
+          "definition_de": "Zu einer bestimmten Zeit besonders beliebt sein.",
+          "example": "Breite Hosen sind wieder in Mode.",
+          "example_ru": "Широкие брюки снова в моде.",
+          "forms": "ist in Mode · war in Mode · ist in Mode gewesen",
+          "grammar_hint": "in Mode sein без артикля; aus der Mode kommen — выйти из моды.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mode"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 343,
+          "record": {
+            "id": "dict_7edfe325c4bb4449737d",
+            "de": "die Mode",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мода"
+            ],
+            "definition_de": "Die zu einer bestimmten Zeit beliebten Stile, besonders bei Kleidung.",
+            "forms": "Plural · die Moden",
+            "example": "Sie interessiert sich für italienische Mode.",
+            "example_ru": "Она интересуется итальянской модой.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Mode"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 583,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Dem heutigen Geschmack oder technischen Stand entsprechend. Example: Die Küche ist modern eingerichtet.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 12,
+        "record": {
+          "id": "b1-modern-contemporary",
+          "de": "modern",
+          "lemma": "modern",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "современный",
+            "модный"
+          ],
+          "definition_de": "Dem heutigen Geschmack oder technischen Stand entsprechend.",
+          "example": "Die Küche ist modern eingerichtet.",
+          "example_ru": "Кухня обставлена в современном стиле.",
+          "forms": "modern · moderner · am modernsten",
+          "grammar_hint": "eine moderne Einrichtung; modern eingerichtet — без окончания.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/modern"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 208,
+          "record": {
+            "id": "dict_034069cb797853e62962",
+            "de": "modern",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "современный"
+            ],
+            "definition_de": "So, wie es heute üblich ist oder dem heutigen Stil entspricht.",
+            "forms": "modern · moderner · am modernsten",
+            "example": "Die neue Bibliothek ist moderner als das alte Rathaus.",
+            "example_ru": "Новая библиотека современнее старой ратуши.",
+            "grammar_hint": "",
+            "usage_note": "Прилагательное современный (ударение на втором слоге), степени сравнения сохранены. Глагол modern (гнить, тлеть; ударение на первом слоге) — другой омоним без подтвержденного A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/modern"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_034069cb797853e62962",
+        "alias_id": "b1-modern-contemporary",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_034069cb797853e62962"
+      }
+    },
+    {
+      "candidate_number": 584,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Person oder Sache gernhaben. Example: Ich mag schwarzen Tee, aber keinen Kaffee.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 13,
+        "record": {
+          "id": "b1-moegen-like",
+          "de": "mögen",
+          "lemma": "mögen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "любить",
+            "нравиться"
+          ],
+          "definition_de": "Eine Person oder Sache gernhaben.",
+          "example": "Ich mag schwarzen Tee, aber keinen Kaffee.",
+          "example_ru": "Я люблю чёрный чай, но не кофе.",
+          "forms": "mag · mochte · hat gemocht",
+          "grammar_hint": "etwas / jemanden (Akkusativ) mögen. Ich mag Tee — люблю чай; Ich möchte Tee — хочу чаю.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6gen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 437,
+          "record": {
+            "id": "a1-416-1",
+            "de": "mögen",
+            "lemma": "mögen",
+            "ru": "любить; нравиться",
+            "uk": "",
+            "translations_ru": [
+              "любить",
+              "нравиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "mag · mochte · hat gemocht",
+            "definition_de": "Etwas oder jemanden gernhaben.",
+            "example": "Magst du Kaffee?",
+            "example_ru": "Ты любишь кофе?",
+            "note": "mögen + Akkusativ: Ich mag Schokolade. В русском «мне нравится шоколад»; в немецком подлежащее ich. Вежливое желание — möchte (Konjunktiv II), не mochte (Präteritum).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "60923e034df63e5fa5fc"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/moegen",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-416-1",
+        "alias_id": "b1-moegen-like",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-416-1"
+      }
+    },
+    {
+      "candidate_number": 585,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Aufforderung in höflicher oder distanzierter Form übermitteln. Example: Sie möchten bitte im Wartezimmer Platz nehmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 14,
+        "record": {
+          "id": "b1-moechten-polite-directive",
+          "de": "Sie möchten bitte …",
+          "lemma": "mögen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "будьте добры …",
+            "вас просят …"
+          ],
+          "definition_de": "Eine Aufforderung in höflicher oder distanzierter Form übermitteln.",
+          "example": "Sie möchten bitte im Wartezimmer Platz nehmen.",
+          "example_ru": "Будьте добры, присядьте в зале ожидания.",
+          "forms": "möchte / möchten (Konjunktiv II); Grundverb mögen: mag · mochte · hat gemocht",
+          "grammar_hint": "Не буквальное желание адресата, а вежливо переданное указание. Инфинитив без zu.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6gen"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 437,
+          "record": {
+            "id": "a1-416-1",
+            "de": "mögen",
+            "lemma": "mögen",
+            "ru": "любить; нравиться",
+            "uk": "",
+            "translations_ru": [
+              "любить",
+              "нравиться"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "mag · mochte · hat gemocht",
+            "definition_de": "Etwas oder jemanden gernhaben.",
+            "example": "Magst du Kaffee?",
+            "example_ru": "Ты любишь кофе?",
+            "note": "mögen + Akkusativ: Ich mag Schokolade. В русском «мне нравится шоколад»; в немецком подлежащее ich. Вежливое желание — möchte (Konjunktiv II), не mochte (Präteritum).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "60923e034df63e5fa5fc"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/moegen",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 586,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Unter den gegebenen Bedingungen realisierbar. Example: Eine Änderung des Termins ist noch möglich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 15,
+        "record": {
+          "id": "b1-moeglich-possible",
+          "de": "möglich",
+          "lemma": "möglich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "возможный",
+            "возможно"
+          ],
+          "definition_de": "Unter den gegebenen Bedingungen realisierbar.",
+          "example": "Eine Änderung des Termins ist noch möglich.",
+          "example_ru": "Перенести встречу ещё возможно.",
+          "forms": "обычно без сравнения в значении осуществимости; möglich · möglicher · am möglichsten в градуируемых контекстах",
+          "grammar_hint": "Es ist möglich, … zu + Infinitiv; wenn möglich — по возможности; Gegenteil: unmöglich.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6glich"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 637,
+          "record": {
+            "id": "a1-417-1",
+            "de": "möglich",
+            "lemma": "möglich",
+            "ru": "возможный",
+            "uk": "",
+            "translations_ru": [
+              "возможный"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "обычно без сравнительной степени в базовом значении; möglichst — по возможности, как можно",
+            "definition_de": "So, dass es geschehen oder gemacht werden kann.",
+            "example": "Ist ein Termin am Freitag möglich?",
+            "example_ru": "Можно назначить встречу на пятницу?",
+            "note": "Es ist möglich, … zu + Infinitiv. Möglich означает возможный, а не вероятный (wahrscheinlich). В базовом значении степени сравнения обычно не употребляются.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "f36299f3e790509af9e0"
+              },
+              {
+                "url": "https://www.duden.de/rechtschreibung/moeglich",
+                "scope": "meaning_and_grammar"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-417-1",
+        "alias_id": "b1-moeglich-possible",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-417-1"
+      }
+    },
+    {
+      "candidate_number": 587,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine sehr kurze Zeitspanne oder ein kurzer Augenblick. Example: Hast du einen Moment Zeit für mich?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 19,
+        "record": {
+          "id": "b1-moment-short-time",
+          "de": "der Moment",
+          "lemma": "Moment",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "момент",
+            "мгновение",
+            "минутка"
+          ],
+          "definition_de": "Eine sehr kurze Zeitspanne oder ein kurzer Augenblick.",
+          "example": "Hast du einen Moment Zeit für mich?",
+          "example_ru": "У тебя есть минутка для меня?",
+          "forms": "die Momente",
+          "grammar_hint": "einen Moment warten; Einen Moment, bitte! — Одну минутку, пожалуйста! Не путать с das Moment (фактор, физический момент).",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Moment"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 20,
+          "record": {
+            "id": "moment-time",
+            "de": "der Moment",
+            "lemma": "Moment",
+            "ru": "момент; мгновение",
+            "uk": "",
+            "translations_ru": [
+              "момент",
+              "мгновение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Momente",
+            "definition_de": "Ein sehr kurzer Zeitraum.",
+            "example": "Warte bitte einen Moment.",
+            "example_ru": "Подожди, пожалуйста, минутку.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "06ad364a814d7726ad23"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "moment-time",
+        "alias_id": "b1-moment-short-time",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "moment-time"
+      }
+    },
+    {
+      "candidate_number": 588,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Bezeichnet die gegenwärtige Situation. Example: Im Moment kann ich keine weiteren Aufgaben übernehmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 20,
+        "record": {
+          "id": "b1-moment-current",
+          "de": "im Moment",
+          "lemma": "Moment",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "в данный момент",
+            "сейчас"
+          ],
+          "definition_de": "Bezeichnet die gegenwärtige Situation.",
+          "example": "Im Moment kann ich keine weiteren Aufgaben übernehmen.",
+          "example_ru": "Сейчас я не могу взять на себя дополнительные задачи.",
+          "forms": "im = in dem (Dativ)",
+          "grammar_hint": "im Moment ≈ zurzeit; в начале предложения глагол на втором месте.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Moment"
+            ],
+            "meaning_review": "dictionary_core_meaning_checked_goethe_context",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 20,
+          "record": {
+            "id": "moment-time",
+            "de": "der Moment",
+            "lemma": "Moment",
+            "ru": "момент; мгновение",
+            "uk": "",
+            "translations_ru": [
+              "момент",
+              "мгновение"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Momente",
+            "definition_de": "Ein sehr kurzer Zeitraum.",
+            "example": "Warte bitte einen Moment.",
+            "example_ru": "Подожди, пожалуйста, минутку.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "06ad364a814d7726ad23"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 589,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Maschine, die Energie in Bewegung umsetzt. Example: Der Mechaniker überprüft den Motor.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 23,
+        "record": {
+          "id": "b1-motor-engine",
+          "de": "der Motor",
+          "lemma": "Motor",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "двигатель",
+            "мотор"
+          ],
+          "definition_de": "Eine Maschine, die Energie in Bewegung umsetzt.",
+          "example": "Der Mechaniker überprüft den Motor.",
+          "example_ru": "Механик проверяет двигатель.",
+          "forms": "die Motoren; также Motore (реже)",
+          "grammar_hint": "den Motor starten / ausschalten; der Elektromotor — электродвигатель.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Motor"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 15,
+          "record": {
+            "id": "dict_8fd233acd251aab1e293",
+            "de": "der Motor",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "двигатель",
+              "мотор"
+            ],
+            "definition_de": "Eine Maschine, die zum Beispiel ein Fahrzeug antreibt.",
+            "forms": "Plural · die Motoren",
+            "example": "Der Motor vom Auto springt nicht an.",
+            "example_ru": "Двигатель машины не заводится.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Motor"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Транспорт и дорога",
+            "topics": [
+              "Транспорт и дорога"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_8fd233acd251aab1e293",
+        "alias_id": "b1-motor-engine",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_8fd233acd251aab1e293"
+      }
+    },
+    {
+      "candidate_number": 590,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Schlaf oder Erholung benötigend. Example: Nach dem langen Tag bin ich zu müde zum Lesen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 25,
+        "record": {
+          "id": "b1-muede-tired",
+          "de": "müde",
+          "lemma": "müde",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "уставший",
+            "сонный",
+            "усталый"
+          ],
+          "definition_de": "Schlaf oder Erholung benötigend.",
+          "example": "Nach dem langen Tag bin ich zu müde zum Lesen.",
+          "example_ru": "После долгого дня я слишком устала, чтобы читать.",
+          "forms": "müde · müder · am müdesten",
+          "grammar_hint": "müde sein / werden; zu müde zum Lesen; müde — усталый, mühsam — трудоёмкий.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%BCde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 638,
+          "record": {
+            "id": "a1-420-1",
+            "de": "müde",
+            "lemma": "müde",
+            "ru": "усталый",
+            "uk": "",
+            "translations_ru": [
+              "усталый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "müder · am müdesten",
+            "definition_de": "So, dass man schlafen oder sich ausruhen möchte.",
+            "example": "Ich bin müde und gehe ins Bett.",
+            "example_ru": "Я устала и иду спать.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "6bc6b225d861e5d260aa"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-420-1",
+        "alias_id": "b1-muede-tired",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-420-1"
+      }
+    },
+    {
+      "candidate_number": 591,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht mehr benötigte Stoffe und Gegenstände, die entsorgt werden. Example: Wir trennen den Müll nach Material.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 27,
+        "record": {
+          "id": "b1-muell-waste",
+          "de": "der Müll",
+          "lemma": "Müll",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "мусор",
+            "отходы"
+          ],
+          "definition_de": "Nicht mehr benötigte Stoffe und Gegenstände, die entsorgt werden.",
+          "example": "Wir trennen den Müll nach Material.",
+          "example_ru": "Мы сортируем мусор по материалу.",
+          "forms": "без множественного числа",
+          "grammar_hint": "Müll trennen / rausbringen; CH также Kehricht; der Müllsack — мешок для мусора.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/M%C3%BCll"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 20,
+          "record": {
+            "id": "dict_7a1242ac6c0b605621ec",
+            "de": "der Müll",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "мусор",
+              "отходы"
+            ],
+            "definition_de": "Dinge, die man wegwirft und entsorgt.",
+            "forms": "Обычно в единственном числе",
+            "example": "Kannst du heute den Müll rausbringen?",
+            "example_ru": "Можешь сегодня вынести мусор?",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 21,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/M%C3%BCll"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_7a1242ac6c0b605621ec",
+        "alias_id": "b1-muell-waste",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_7a1242ac6c0b605621ec"
+      }
+    },
+    {
+      "candidate_number": 592,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Öffnung im Gesicht, die unter anderem zum Essen und Sprechen dient. Example: Das Kind hält beim Kauen den Mund geschlossen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_059.json",
+        "sha": "69aa8450e1166e51a2cd9781a7e26761f457fafe",
+        "batch": 59,
+        "row": 30,
+        "record": {
+          "id": "b1-mund-mouth",
+          "de": "der Mund",
+          "lemma": "Mund",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "рот"
+          ],
+          "definition_de": "Die Öffnung im Gesicht, die unter anderem zum Essen und Sprechen dient.",
+          "example": "Das Kind hält beim Kauen den Mund geschlossen.",
+          "example_ru": "Ребёнок жуёт с закрытым ртом.",
+          "forms": "die Münder",
+          "grammar_hint": "den Mund öffnen / schließen; mit geschlossenem Mund (Dativ); mündlich — устный.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 65,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mund"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 493,
+          "record": {
+            "id": "a1-421-1",
+            "de": "der Mund",
+            "lemma": "Mund",
+            "ru": "рот",
+            "uk": "",
+            "translations_ru": [
+              "рот"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "die Münder",
+            "definition_de": "Die Öffnung im Gesicht, mit der man isst und spricht.",
+            "example": "Das Kind öffnet den Mund.",
+            "example_ru": "Ребёнок открывает рот.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 20,
+                "row_id": "19286b4663b66142912a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-421-1",
+        "alias_id": "b1-mund-mouth",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-421-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "grammar-mit",
+      "alias_ids": [
+        "b1-mit-inclusion",
+        "b1-mit-instrument"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "grammar-mit",
+        "de": "mit",
+        "lemma": "mit",
+        "ru": "с (кем-либо, чем-либо); на (транспорте)",
+        "uk": "",
+        "translations_ru": [
+          "с (кем-либо, чем-либо)",
+          "на (транспорте)"
+        ],
+        "part": "prep",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "+ Dativ",
+        "definition_de": "Zeigt, wer dabei ist oder was zu etwas dazukommt.",
+        "example": "Ich möchte Tee mit Zitrone.",
+        "example_ru": "Я хочу чай с лимоном.",
+        "note": "mit + Dativ: mit frischer Zitrone Всегда Dativ: mit dem Bus — на автобусе; mit meiner Freundin — с подругой. Отделяемая приставка mit- в mitkommen, mitbringen и mitspielen не является предлогом.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "0737e0b277765aaf07df"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-mit-inclusion",
+          "b1-mit-instrument"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-mit-inclusion",
+            "de": "mit",
+            "part": "prep",
+            "forms": "mit + Dativ",
+            "definition_de": "Schließt eine Person oder Sache in eine Gesamtzahl ein.",
+            "translations_ru": [
+              "включая",
+              "вместе с (при подсчёте)"
+            ],
+            "grammar_hint": "mit unserem Gast — включая гостя; CH: bis und mit — до указанного дня включительно (отдельный региональный оборот).",
+            "example": "Mit unserem Gast sind wir sechs Personen.",
+            "example_ru": "Вместе с нашим гостем нас шестеро."
+          },
+          {
+            "id": "b1-mit-instrument",
+            "de": "mit",
+            "part": "prep",
+            "forms": "mit + Dativ",
+            "definition_de": "Nennt das Verkehrsmittel oder Werkzeug, das bei einer Handlung verwendet wird.",
+            "translations_ru": [
+              "на (транспорте)",
+              "с помощью",
+              "посредством"
+            ],
+            "grammar_hint": "Womit? mit dem Zug, mit einem Stift. CH: das Tram; D: die Tram. zu Fuß — пешком, без mit.",
+            "example": "Ich fahre mit dem Tram zur Arbeit.",
+            "example_ru": "Я езжу на работу на трамвае."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/mit_inklusive_auch_mitsamt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/mit_inklusive_auch_mitsamt"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-413-1",
+      "alias_ids": [
+        "b1-mitte-space"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-413-1",
+        "de": "die Mitte",
+        "lemma": "Mitte",
+        "ru": "середина; центр",
+        "uk": "",
+        "translations_ru": [
+          "середина",
+          "центр"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Mitten",
+        "definition_de": "Der Bereich, der ungefähr gleich weit von den Seiten entfernt ist.",
+        "example": "In der Mitte des Tisches steht eine Vase.",
+        "example_ru": "Посередине стола стоит ваза.",
+        "note": "in der Mitte + Dativ (где?), in die Mitte + Akkusativ (куда?). Временное употребление Mitte Mai рассматривается отдельно.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "16af764c4a87b6e459f3"
+          },
+          {
+            "url": "https://de.wiktionary.org/wiki/Mitte",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-mitte-space"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-mitte-space",
+            "de": "die Mitte",
+            "part": "noun",
+            "forms": "die Mitten (редко); обычно Singular",
+            "definition_de": "Der zentrale Bereich zwischen den Rändern eines Raumes oder Gegenstands.",
+            "translations_ru": [
+              "середина",
+              "центр"
+            ],
+            "grammar_hint": "in der Mitte (Wo? Dativ); in die Mitte stellen (Wohin? Akkusativ).",
+            "example": "Der runde Tisch steht in der Mitte des Zimmers.",
+            "example_ru": "Круглый стол стоит в центре комнаты."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mitte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_920bf00fc610c7053def",
+      "alias_ids": [
+        "b1-mitte-time"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_920bf00fc610c7053def",
+        "de": "die Mitte",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "середина (периода времени)"
+        ],
+        "definition_de": "Der ungefähre Zeitpunkt auf halbem Weg durch einen Zeitraum.",
+        "forms": "die Mitte · в этом значении без множественного числа",
+        "example": "Mitte Mai beginnt mein neuer Kurs.",
+        "example_ru": "В середине мая начинается мой новый курс.",
+        "grammar_hint": "Mitte Mai — обычно без артикля; in der Mitte des Monats — Genitiv после Mitte.",
+        "usage_note": "Пространственное значение «центр, середина» — A1.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Mitte"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Время, распорядок и планы",
+        "topics": [
+          "Время, распорядок и планы"
+        ],
+        "alias_ids": [
+          "b1-mitte-time"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-mitte-time",
+            "de": "die Mitte / Mitte …",
+            "part": "noun",
+            "forms": "в этом значении без множественного числа",
+            "definition_de": "Ein Zeitpunkt ungefähr auf halber Strecke eines Zeitraums.",
+            "translations_ru": [
+              "середина (периода)",
+              "в середине"
+            ],
+            "grammar_hint": "Mitte Oktober без артикля; bis Mitte Oktober — до середины октября; Mitte der Woche — середина недели.",
+            "example": "Mitte Oktober beginnen die neuen Kurse.",
+            "example_ru": "В середине октября начинаются новые курсы."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mitte"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_a73efc03e968305a96f9",
+      "alias_ids": [
+        "b1-mittel-remedy"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a73efc03e968305a96f9",
+        "de": "das Mittel",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "средство",
+          "препарат (в медицинском контексте)"
+        ],
+        "definition_de": "Etwas, das man benutzt, um ein bestimmtes Ziel zu erreichen, etwa bei Beschwerden oder beim Waschen.",
+        "forms": "Plural · die Mittel",
+        "example": "Haben Sie ein Mittel gegen Husten?",
+        "example_ru": "У вас есть средство от кашля?",
+        "grammar_hint": "ein Mittel gegen + Akkusativ; Dativ Plural: den Mitteln. Не путать с die Mitte — середина.",
+        "usage_note": "Подтверждено значение средства с определённым назначением; финансовые средства и математическое среднее отдельно не маркируются A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Mittel"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело"
+        ],
+        "alias_ids": [
+          "b1-mittel-remedy"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-mittel-remedy",
+            "de": "das Mittel",
+            "part": "noun",
+            "forms": "die Mittel",
+            "definition_de": "Ein Präparat, das zur Linderung oder Behandlung von Beschwerden eingesetzt wird.",
+            "translations_ru": [
+              "средство",
+              "лекарственное средство"
+            ],
+            "grammar_hint": "ein Mittel gegen + Akkusativ; nach einem Mittel fragen (Dativ); allgemeiner als Medikament.",
+            "example": "In der Apotheke frage ich nach einem Mittel gegen Husten.",
+            "example_ru": "В аптеке я спрашиваю средство от кашля."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "B1 exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mittel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-414-1",
+      "alias_ids": [
+        "b1-moebel-furniture"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-414-1",
+        "de": "die Möbel",
+        "lemma": "Möbel",
+        "ru": "мебель",
+        "uk": "",
+        "translations_ru": [
+          "мебель"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Жильё",
+        "topics": [
+          "Жильё"
+        ],
+        "forms": "die Möbel (Pl.); ед. число das Möbel существует, чаще ein Möbelstück",
+        "definition_de": "Tische, Stühle, Schränke und andere Einrichtungsgegenstände.",
+        "example": "Die Möbel sind noch im Lastwagen.",
+        "example_ru": "Мебель ещё в грузовике.",
+        "note": "Мебель — собирательный перевод множественного числа: Die Möbel sind neu. Один предмет мебели: ein Möbelstück.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "02df808a3378d16cb50c"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-moebel-furniture"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-moebel-furniture",
+            "de": "das Möbel / die Möbel",
+            "part": "noun",
+            "forms": "die Möbel; Singular: das Möbel",
+            "definition_de": "Ein größerer Gegenstand zur Einrichtung eines Raumes.",
+            "translations_ru": [
+              "мебель",
+              "предмет мебели"
+            ],
+            "grammar_hint": "Чаще Plural: Die Möbel sind neu. Один предмет: ein Möbelstück.",
+            "example": "Für die neue Wohnung brauchen wir noch Möbel.",
+            "example_ru": "Для новой квартиры нам ещё нужна мебель."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/M%C3%B6bel"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-415-1",
+      "alias_ids": [
+        "b1-moechten-desire"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-415-1",
+        "de": "möchten",
+        "lemma": "möchten",
+        "ru": "хотел бы; хотела бы",
+        "uk": "",
+        "translations_ru": [
+          "хотел бы",
+          "хотела бы"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "ich möchte · du möchtest · er/sie/es möchte · wir möchten · ihr möchtet · sie/Sie möchten",
+        "definition_de": "Drückt einen Wunsch höflich aus.",
+        "example": "Ich möchte einen Tee.",
+        "example_ru": "Я хотела бы чашку чая.",
+        "note": "Вежливое желание в настоящем: Konjunktiv II от mögen. С другим глаголом инфинитив в конце: Ich möchte Deutsch lernen. Для прошедшего желания обычно wollte; не образуем Präteritum/Perfekt от möchten как от самостоятельного инфинитива. mögen — любить, нравиться.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "7e6ea5a2aecb513b221f"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/moegen",
+            "scope": "grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-moechten-desire"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-moechten-desire",
+            "de": "möchten",
+            "part": "verb",
+            "forms": "Konjunktiv II von mögen: möchte; Vergangenheit des Wunsches: wollte · hat gewollt (без второго инфинитива)",
+            "definition_de": "Einen Wunsch in einer häufig höflichen Form ausdrücken.",
+            "translations_ru": [
+              "хотеть",
+              "хотелось бы"
+            ],
+            "grammar_hint": "Ich möchte + Infinitiv без zu или существительное в Akkusativ. Möchte — форма Konjunktiv II от mögen, употребляемая для желания сейчас; не путать с mochte (прошедшее от mögen).",
+            "example": "Ich möchte im Januar einen neuen Kurs beginnen.",
+            "example_ru": "Я хотела бы начать новый курс в январе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6chten"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_7edfe325c4bb4449737d",
+      "alias_ids": [
+        "b1-mode-fashion"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_7edfe325c4bb4449737d",
+        "de": "die Mode",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "мода"
+        ],
+        "definition_de": "Die zu einer bestimmten Zeit beliebten Stile, besonders bei Kleidung.",
+        "forms": "Plural · die Moden",
+        "example": "Sie interessiert sich für italienische Mode.",
+        "example_ru": "Она интересуется итальянской модой.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Mode"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Одежда и внешность",
+        "topics": [
+          "Одежда и внешность"
+        ],
+        "alias_ids": [
+          "b1-mode-fashion"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-mode-fashion",
+            "de": "die Mode",
+            "part": "noun",
+            "forms": "die Moden",
+            "definition_de": "Die zu einer bestimmten Zeit verbreiteten Vorlieben, etwa bei Kleidung.",
+            "translations_ru": [
+              "мода"
+            ],
+            "grammar_hint": "Mode im Bereich Kleidung; sich für Mode interessieren (Akkusativ).",
+            "example": "Sie interessiert sich für nachhaltige Mode.",
+            "example_ru": "Она интересуется экологичной модой."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mode"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_034069cb797853e62962",
+      "alias_ids": [
+        "b1-modern-contemporary"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_034069cb797853e62962",
+        "de": "modern",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "современный"
+        ],
+        "definition_de": "So, wie es heute üblich ist oder dem heutigen Stil entspricht.",
+        "forms": "modern · moderner · am modernsten",
+        "example": "Die neue Bibliothek ist moderner als das alte Rathaus.",
+        "example_ru": "Новая библиотека современнее старой ратуши.",
+        "grammar_hint": "",
+        "usage_note": "Прилагательное современный (ударение на втором слоге), степени сравнения сохранены. Глагол modern (гнить, тлеть; ударение на первом слоге) — другой омоним без подтвержденного A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/modern"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-modern-contemporary"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-modern-contemporary",
+            "de": "modern",
+            "part": "adj",
+            "forms": "modern · moderner · am modernsten",
+            "definition_de": "Dem heutigen Geschmack oder technischen Stand entsprechend.",
+            "translations_ru": [
+              "современный",
+              "модный"
+            ],
+            "grammar_hint": "eine moderne Einrichtung; modern eingerichtet — без окончания.",
+            "example": "Die Küche ist modern eingerichtet.",
+            "example_ru": "Кухня обставлена в современном стиле."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/modern"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-416-1",
+      "alias_ids": [
+        "b1-moegen-like"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-416-1",
+        "de": "mögen",
+        "lemma": "mögen",
+        "ru": "любить; нравиться",
+        "uk": "",
+        "translations_ru": [
+          "любить",
+          "нравиться"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда"
+        ],
+        "forms": "mag · mochte · hat gemocht",
+        "definition_de": "Etwas oder jemanden gernhaben.",
+        "example": "Magst du Kaffee?",
+        "example_ru": "Ты любишь кофе?",
+        "note": "mögen + Akkusativ: Ich mag Schokolade. В русском «мне нравится шоколад»; в немецком подлежащее ich. Вежливое желание — möchte (Konjunktiv II), не mochte (Präteritum).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "60923e034df63e5fa5fc"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/moegen",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-moegen-like"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-moegen-like",
+            "de": "mögen",
+            "part": "verb",
+            "forms": "mag · mochte · hat gemocht",
+            "definition_de": "Eine Person oder Sache gernhaben.",
+            "translations_ru": [
+              "любить",
+              "нравиться"
+            ],
+            "grammar_hint": "etwas / jemanden (Akkusativ) mögen. Ich mag Tee — люблю чай; Ich möchte Tee — хочу чаю.",
+            "example": "Ich mag schwarzen Tee, aber keinen Kaffee.",
+            "example_ru": "Я люблю чёрный чай, но не кофе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6gen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-417-1",
+      "alias_ids": [
+        "b1-moeglich-possible"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-417-1",
+        "de": "möglich",
+        "lemma": "möglich",
+        "ru": "возможный",
+        "uk": "",
+        "translations_ru": [
+          "возможный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "обычно без сравнительной степени в базовом значении; möglichst — по возможности, как можно",
+        "definition_de": "So, dass es geschehen oder gemacht werden kann.",
+        "example": "Ist ein Termin am Freitag möglich?",
+        "example_ru": "Можно назначить встречу на пятницу?",
+        "note": "Es ist möglich, … zu + Infinitiv. Möglich означает возможный, а не вероятный (wahrscheinlich). В базовом значении степени сравнения обычно не употребляются.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "f36299f3e790509af9e0"
+          },
+          {
+            "url": "https://www.duden.de/rechtschreibung/moeglich",
+            "scope": "meaning_and_grammar"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-moeglich-possible"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-moeglich-possible",
+            "de": "möglich",
+            "part": "adj",
+            "forms": "обычно без сравнения в значении осуществимости; möglich · möglicher · am möglichsten в градуируемых контекстах",
+            "definition_de": "Unter den gegebenen Bedingungen realisierbar.",
+            "translations_ru": [
+              "возможный",
+              "возможно"
+            ],
+            "grammar_hint": "Es ist möglich, … zu + Infinitiv; wenn möglich — по возможности; Gegenteil: unmöglich.",
+            "example": "Eine Änderung des Termins ist noch möglich.",
+            "example_ru": "Перенести встречу ещё возможно."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%B6glich"
+            ],
+            "meaning_review": "dictionary_page_retrieved",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "moment-time",
+      "alias_ids": [
+        "b1-moment-short-time"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "moment-time",
+        "de": "der Moment",
+        "lemma": "Moment",
+        "ru": "момент; мгновение",
+        "uk": "",
+        "translations_ru": [
+          "момент",
+          "мгновение"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "die Momente",
+        "definition_de": "Ein sehr kurzer Zeitraum.",
+        "example": "Warte bitte einen Moment.",
+        "example_ru": "Подожди, пожалуйста, минутку.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "06ad364a814d7726ad23"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-moment-short-time"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-moment-short-time",
+            "de": "der Moment",
+            "part": "noun",
+            "forms": "die Momente",
+            "definition_de": "Eine sehr kurze Zeitspanne oder ein kurzer Augenblick.",
+            "translations_ru": [
+              "момент",
+              "мгновение",
+              "минутка"
+            ],
+            "grammar_hint": "einen Moment warten; Einen Moment, bitte! — Одну минутку, пожалуйста! Не путать с das Moment (фактор, физический момент).",
+            "example": "Hast du einen Moment Zeit für mich?",
+            "example_ru": "У тебя есть минутка для меня?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Moment"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_8fd233acd251aab1e293",
+      "alias_ids": [
+        "b1-motor-engine"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_8fd233acd251aab1e293",
+        "de": "der Motor",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "двигатель",
+          "мотор"
+        ],
+        "definition_de": "Eine Maschine, die zum Beispiel ein Fahrzeug antreibt.",
+        "forms": "Plural · die Motoren",
+        "example": "Der Motor vom Auto springt nicht an.",
+        "example_ru": "Двигатель машины не заводится.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Motor"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Транспорт и дорога",
+        "topics": [
+          "Транспорт и дорога"
+        ],
+        "alias_ids": [
+          "b1-motor-engine"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-motor-engine",
+            "de": "der Motor",
+            "part": "noun",
+            "forms": "die Motoren; также Motore (реже)",
+            "definition_de": "Eine Maschine, die Energie in Bewegung umsetzt.",
+            "translations_ru": [
+              "двигатель",
+              "мотор"
+            ],
+            "grammar_hint": "den Motor starten / ausschalten; der Elektromotor — электродвигатель.",
+            "example": "Der Mechaniker überprüft den Motor.",
+            "example_ru": "Механик проверяет двигатель."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Motor"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-420-1",
+      "alias_ids": [
+        "b1-muede-tired"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-420-1",
+        "de": "müde",
+        "lemma": "müde",
+        "ru": "усталый",
+        "uk": "",
+        "translations_ru": [
+          "усталый"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "müder · am müdesten",
+        "definition_de": "So, dass man schlafen oder sich ausruhen möchte.",
+        "example": "Ich bin müde und gehe ins Bett.",
+        "example_ru": "Я устала и иду спать.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "6bc6b225d861e5d260aa"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-muede-tired"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-muede-tired",
+            "de": "müde",
+            "part": "adj",
+            "forms": "müde · müder · am müdesten",
+            "definition_de": "Schlaf oder Erholung benötigend.",
+            "translations_ru": [
+              "уставший",
+              "сонный",
+              "усталый"
+            ],
+            "grammar_hint": "müde sein / werden; zu müde zum Lesen; müde — усталый, mühsam — трудоёмкий.",
+            "example": "Nach dem langen Tag bin ich zu müde zum Lesen.",
+            "example_ru": "После долгого дня я слишком устала, чтобы читать."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/m%C3%BCde"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_7a1242ac6c0b605621ec",
+      "alias_ids": [
+        "b1-muell-waste"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_7a1242ac6c0b605621ec",
+        "de": "der Müll",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "мусор",
+          "отходы"
+        ],
+        "definition_de": "Dinge, die man wegwirft und entsorgt.",
+        "forms": "Обычно в единственном числе",
+        "example": "Kannst du heute den Müll rausbringen?",
+        "example_ru": "Можешь сегодня вынести мусор?",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 21,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/M%C3%BCll"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-muell-waste"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-muell-waste",
+            "de": "der Müll",
+            "part": "noun",
+            "forms": "без множественного числа",
+            "definition_de": "Nicht mehr benötigte Stoffe und Gegenstände, die entsorgt werden.",
+            "translations_ru": [
+              "мусор",
+              "отходы"
+            ],
+            "grammar_hint": "Müll trennen / rausbringen; CH также Kehricht; der Müllsack — мешок для мусора.",
+            "example": "Wir trennen den Müll nach Material.",
+            "example_ru": "Мы сортируем мусор по материалу."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 64,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/M%C3%BCll"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-421-1",
+      "alias_ids": [
+        "b1-mund-mouth"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-421-1",
+        "de": "der Mund",
+        "lemma": "Mund",
+        "ru": "рот",
+        "uk": "",
+        "translations_ru": [
+          "рот"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье"
+        ],
+        "forms": "die Münder",
+        "definition_de": "Die Öffnung im Gesicht, mit der man isst und spricht.",
+        "example": "Das Kind öffnet den Mund.",
+        "example_ru": "Ребёнок открывает рот.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 20,
+            "row_id": "19286b4663b66142912a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-mund-mouth"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-mund-mouth",
+            "de": "der Mund",
+            "part": "noun",
+            "forms": "die Münder",
+            "definition_de": "Die Öffnung im Gesicht, die unter anderem zum Essen und Sprechen dient.",
+            "translations_ru": [
+              "рот"
+            ],
+            "grammar_hint": "den Mund öffnen / schließen; mit geschlossenem Mund (Dativ); mündlich — устный.",
+            "example": "Das Kind hält beim Kauen den Mund geschlossen.",
+            "example_ru": "Ребёнок жуёт с закрытым ртом."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 65,
+              "scope": "context",
+              "note": "Goethe exam vocabulary; earliest CEFR level pending cross-level comparison"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Mund"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

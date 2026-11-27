@@ -102,6 +102,29 @@ async function main() {
     });
     assert.equal(catalogs.visible, manifest.visible);
     assert.ok(catalogs.verified.length && catalogs.unverified.length);
+    const allCourseRows = manifest.files.flatMap(file => JSON.parse(readFileSync(path.join(previewRoot, file))));
+    const allB1Ids = new Set(allCourseRows.map(card => card.id));
+    const lowerTargets = new Set(allCourseRows.filter(card=>card.combined_into&&!allB1Ids.has(card.combined_into)).map(card=>card.combined_into));
+    const courseExpected = manifest.visible + lowerTargets.size;
+    const visible = await first.evaluate(({verified,unverified,target}) => {
+      filter = {q:'',level:'b1-course',topic:'all',part:'all',ch:false};
+      go('library');
+      const results = dictionaryResults();
+      learningSource='library';
+      learningFilter={level:'b1-course',topic:'all',part:'all'};
+      return {count:results.length,learning:learningPool().length,
+        allThree: [verified,unverified,target].every(id=>results.some(w=>w.id===id)),
+        unknownNotLabeled: !word(unverified).level_verified,
+        option: document.querySelector('#filterLevel option[value="b1-course"]').textContent};
+    },{verified:catalogs.verified[0],unverified:catalogs.unverified[0],target});
+    assert.equal(visible.count,courseExpected);
+    assert.equal(visible.learning,courseExpected);
+    assert.ok(visible.allThree && visible.unknownNotLabeled);
+    assert.ok(visible.option.includes(String(courseExpected)));
+    await first.evaluate(id=>openWord(id),catalogs.unverified[0]);
+    assert.ok(await first.getByText('Источники и статус сверки B1',{exact:true}).isVisible());
+    console.log('B1 course filter: '+courseExpected+' distinct cards including lower-level targets; CEFR labels preserved.');
+
     for (const [level, id] of [['B1', catalogs.verified[0]], ['unknown', catalogs.unverified[0]]]) {
       assert(await first.evaluate(({level,id}) => {
         filter.level = level;

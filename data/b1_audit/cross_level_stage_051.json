@@ -1,0 +1,2942 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    993,
+    1012
+  ],
+  "reviewed": 20,
+  "merge_count": 13,
+  "merge_target_count": 10,
+  "retained_distinct_senses": 4,
+  "retained_teaching_contexts_pending_level_review": 3,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 993,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Fähig, Aufgaben ohne ständige Unterstützung zu erledigen. Example: Die Teilnehmerin kann die Übung selbstständig lösen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_085.json",
+        "sha": "64c84a56f0f676454a82d6bccf1fc89e42750386",
+        "batch": 85,
+        "row": 28,
+        "record": {
+          "id": "b1-selbststaendig-independent",
+          "de": "selbstständig / selbständig",
+          "lemma": "selbstständig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "самостоятельный",
+            "самостоятельно"
+          ],
+          "definition_de": "Fähig, Aufgaben ohne ständige Unterstützung zu erledigen.",
+          "example": "Die Teilnehmerin kann die Übung selbstständig lösen.",
+          "example_ru": "Участница может выполнить упражнение самостоятельно.",
+          "forms": "selbstständig · selbstständiger · am selbstständigsten",
+          "grammar_hint": "Наречное употребление без окончания: selbstständig arbeiten; не обязательно самозанятость.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/selbstst%C3%A4ndig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 683,
+          "record": {
+            "id": "a1-523-1",
+            "de": "selbstständig",
+            "lemma": "selbstständig",
+            "ru": "работающий на себя",
+            "uk": "",
+            "translations_ru": [
+              "работающий на себя"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Работа",
+            "topics": [
+              "Работа"
+            ],
+            "forms": "В данном значении обычно без степеней сравнения",
+            "definition_de": "Auf eigene Rechnung arbeiten, ohne bei einem Arbeitgeber angestellt zu sein.",
+            "example": "Sie ist selbstständig und arbeitet von zu Hause aus.",
+            "example_ru": "Она работает на себя из дома.",
+            "note": "В значении формы занятости «работающий на себя» обычно без степеней сравнения. В значении «самостоятельный» сравнение возможно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "b5cd1848b288d6b66597"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 994,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein einzelner Beitrag im Radio oder Fernsehen. Example: Die Sendung über die Alpen beginnt um acht Uhr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 10,
+        "record": {
+          "id": "b1-sendung-broadcast",
+          "de": "die Sendung",
+          "lemma": "Sendung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "передача",
+            "телепередача",
+            "радиопередача"
+          ],
+          "definition_de": "Ein einzelner Beitrag im Radio oder Fernsehen.",
+          "example": "Die Sendung über die Alpen beginnt um acht Uhr.",
+          "example_ru": "Передача об Альпах начинается в восемь часов.",
+          "forms": "die Sendungen",
+          "grammar_hint": "eine Sendung ansehen / anhören; Sender — канал.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sendung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 245,
+          "record": {
+            "id": "dict_628947c8625340e155ae",
+            "de": "die Sendung",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "передача",
+              "телепередача",
+              "радиопередача"
+            ],
+            "definition_de": "Ein Beitrag im Radio, im Fernsehen oder in einem vergleichbaren Medienangebot.",
+            "forms": "Plural · die Sendungen",
+            "example": "Abends höre ich gern eine Sendung über Musik.",
+            "example_ru": "По вечерам я люблю слушать передачу о музыке.",
+            "grammar_hint": "",
+            "usage_note": "Подтверждено значение передачи в СМИ (Goethe A2, стр. 25). Посылка/почтовое отправление и auf Sendung sein — отдельные употребления, не подтверждённые этим примером.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Sendung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_628947c8625340e155ae",
+        "alias_id": "b1-sendung-broadcast",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_628947c8625340e155ae"
+      }
+    },
+    {
+      "candidate_number": 995,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Eine Ware oder Nachricht, die auf dem Versandweg befördert wird. Example: Meine Sendung ist gestern angekommen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 11,
+        "record": {
+          "id": "b1-sendung-mail",
+          "de": "die Sendung",
+          "lemma": "Sendung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "почтовое отправление",
+            "посылка"
+          ],
+          "definition_de": "Eine Ware oder Nachricht, die auf dem Versandweg befördert wird.",
+          "example": "Meine Sendung ist gestern angekommen.",
+          "example_ru": "Моё отправление прибыло вчера.",
+          "forms": "die Sendungen",
+          "grammar_hint": "eine Sendung verfolgen; die Sendungsnummer — номер отслеживания.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sendung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 245,
+          "record": {
+            "id": "dict_628947c8625340e155ae",
+            "de": "die Sendung",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "передача",
+              "телепередача",
+              "радиопередача"
+            ],
+            "definition_de": "Ein Beitrag im Radio, im Fernsehen oder in einem vergleichbaren Medienangebot.",
+            "forms": "Plural · die Sendungen",
+            "example": "Abends höre ich gern eine Sendung über Musik.",
+            "example_ru": "По вечерам я люблю слушать передачу о музыке.",
+            "grammar_hint": "",
+            "usage_note": "Подтверждено значение передачи в СМИ (Goethe A2, стр. 25). Посылка/почтовое отправление и auf Sendung sein — отдельные употребления, не подтверждённые этим примером.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Sendung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 996,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Ein Angebot, das Kunden eine bestimmte Aufgabe abnimmt. Example: Der Lieferservice bringt die Bestellung nach Hause.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 15,
+        "record": {
+          "id": "b1-service-delivery",
+          "de": "der Service",
+          "lemma": "Service",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "служба",
+            "сервис",
+            "услуга"
+          ],
+          "definition_de": "Ein Angebot, das Kunden eine bestimmte Aufgabe abnimmt.",
+          "example": "Der Lieferservice bringt die Bestellung nach Hause.",
+          "example_ru": "Служба доставки привозит заказ домой.",
+          "forms": "die Services; часто Singular",
+          "grammar_hint": "Lieferservice — доставка; Service в смысле услуги, не das Service — сервиз.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Service"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 419,
+          "record": {
+            "id": "dict_80c23135227bf9e0e03a",
+            "de": "der Service",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "обслуживание",
+              "сервис",
+              "услуги"
+            ],
+            "definition_de": "Leistungen, die ein Betrieb für seine Kunden erbringt.",
+            "forms": "В значении обслуживания обычно Singular; Plural die Services для отдельных услуг",
+            "example": "Der Service im Hotel war sehr gut.",
+            "example_ru": "Обслуживание в гостинице было очень хорошим.",
+            "grammar_hint": "mit dem Service zufrieden sein (Dativ).",
+            "usage_note": "Обслуживание клиентов; также служба доставки (Pizza-Service). Не путать с das Service — столовый сервиз; возможны региональные варианты рода.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Service"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 997,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Betreuung von Kunden bei einer Dienstleistung. Example: Mit dem Service im Hotel waren wir zufrieden.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 16,
+        "record": {
+          "id": "b1-service-quality",
+          "de": "der Service",
+          "lemma": "Service",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "обслуживание",
+            "сервис"
+          ],
+          "definition_de": "Die Betreuung von Kunden bei einer Dienstleistung.",
+          "example": "Mit dem Service im Hotel waren wir zufrieden.",
+          "example_ru": "Мы были довольны обслуживанием в гостинице.",
+          "forms": "die Services; в этом контексте обычно Singular",
+          "grammar_hint": "mit dem Service zufrieden sein (Dativ); качество обслуживания.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Service"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 419,
+          "record": {
+            "id": "dict_80c23135227bf9e0e03a",
+            "de": "der Service",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "обслуживание",
+              "сервис",
+              "услуги"
+            ],
+            "definition_de": "Leistungen, die ein Betrieb für seine Kunden erbringt.",
+            "forms": "В значении обслуживания обычно Singular; Plural die Services для отдельных услуг",
+            "example": "Der Service im Hotel war sehr gut.",
+            "example_ru": "Обслуживание в гостинице было очень хорошим.",
+            "grammar_hint": "mit dem Service zufrieden sein (Dativ).",
+            "usage_note": "Обслуживание клиентов; также служба доставки (Pizza-Service). Не путать с das Service — столовый сервиз; возможны региональные варианты рода.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Service"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Покупки, деньги и услуги",
+            "topics": [
+              "Покупки, деньги и услуги"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_80c23135227bf9e0e03a",
+        "alias_id": "b1-service-quality",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_80c23135227bf9e0e03a"
+      }
+    },
+    {
+      "candidate_number": 998,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Aus einer stehenden Haltung in eine Sitzposition wechseln. Example: Setz dich bitte neben mich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 20,
+        "record": {
+          "id": "b1-setzen-reflexive",
+          "de": "sich setzen",
+          "lemma": "setzen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "садиться",
+            "сесть"
+          ],
+          "definition_de": "Aus einer stehenden Haltung in eine Sitzposition wechseln.",
+          "example": "Setz dich bitte neben mich.",
+          "example_ru": "Сядь, пожалуйста, рядом со мной.",
+          "forms": "setzt sich · setzte sich · hat sich gesetzt",
+          "grammar_hint": "sich (Akk.): ich setze mich; neben mich (Akk. направления); sitzen — уже сидеть.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/setzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 363,
+          "record": {
+            "id": "dict_749026c7c4e01fe5c561",
+            "de": "sich setzen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "садиться",
+              "сесть (sich setzen)"
+            ],
+            "definition_de": "Sich in eine sitzende Haltung bringen.",
+            "forms": "setzt sich · setzte sich · hat sich gesetzt",
+            "example": "Setzen Sie sich bitte hierhin.",
+            "example_ru": "Садитесь, пожалуйста, сюда.",
+            "grammar_hint": "sich setzen: возвратное местоимение в Akkusativ. Ich setze mich auf den Stuhl (Wohin? auf + Akk.); ich sitze auf dem Stuhl (Wo? auf + Dat.).",
+            "usage_note": "Goethe A2 подтверждает возвратное значение sich setzen. Jemanden setzen — усаживать кого-либо; другие переходные значения не подтверждены здесь для уровня A2.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/setzen",
+                "https://www.duden.de/rechtschreibung/setzen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_749026c7c4e01fe5c561",
+        "alias_id": "b1-setzen-reflexive",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_749026c7c4e01fe5c561"
+      }
+    },
+    {
+      "candidate_number": 999,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: So beschaffen, dass Risiken gering sind. Example: Dieser Weg ist auch im Winter sicher.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 22,
+        "record": {
+          "id": "b1-sicher-safe",
+          "de": "sicher",
+          "lemma": "sicher",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "безопасный",
+            "надёжный"
+          ],
+          "definition_de": "So beschaffen, dass Risiken gering sind.",
+          "example": "Dieser Weg ist auch im Winter sicher.",
+          "example_ru": "Этот путь безопасен и зимой.",
+          "forms": "sicher · sicherer / sichrer · am sichersten",
+          "grammar_hint": "Gegenteil unsicher/gefährlich; ein sicherer Weg.",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 125,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb",
+            "de": "sicher",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "безопасный",
+              "уверенный"
+            ],
+            "definition_de": "Ohne besondere Gefahr oder, auf eine Person bezogen, ohne Zweifel.",
+            "forms": "sicher · sicherer · am sichersten",
+            "example": "Dieser Weg ist abends sicherer als der Weg durch den Park.",
+            "example_ru": "Вечером этот путь безопаснее дороги через парк.",
+            "grammar_hint": "sicher sein, dass … — быть уверенным, что …; ich bin mir sicher (mir — Dativ). После dass спрягаемый глагол в конце.",
+            "usage_note": "Безопасный или уверенный. Наречное значение наверняка вынесено отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 610,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb-surely",
+            "de": "sicher",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "наверняка",
+              "без сомнения"
+            ],
+            "forms": "",
+            "definition_de": "Drückt eine starke Erwartung oder Überzeugung aus.",
+            "example": "Er kommt sicher morgen.",
+            "example_ru": "Он наверняка придёт завтра.",
+            "grammar_hint": "В начале главного предложения: Sicher kommt er morgen (V2); внутри предложения: Er kommt sicher morgen.",
+            "usage_note": "Не путать с прилагательным sicher — безопасный, уверенный. Сходное слово: sicherlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/sprachwissen/sprachratgeber/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2ac31b7311892b60dacb",
+        "alias_id": "b1-sicher-safe",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2ac31b7311892b60dacb"
+      }
+    },
+    {
+      "candidate_number": 1000,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Keine wesentlichen Zweifel an einer Annahme haben. Example: Bist du sicher, dass heute Unterricht ist?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 23,
+        "record": {
+          "id": "b1-sicher-certain",
+          "de": "sich sicher sein / sicher sein",
+          "lemma": "sicher",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть уверенным"
+          ],
+          "definition_de": "Keine wesentlichen Zweifel an einer Annahme haben.",
+          "example": "Bist du sicher, dass heute Unterricht ist?",
+          "example_ru": "Ты уверена, что сегодня есть занятие?",
+          "forms": "sicher · sicherer / sichrer · am sichersten",
+          "grammar_hint": "sich sicher sein (ich bin mir sicher, Dativ); dass — глагол в конце.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 125,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb",
+            "de": "sicher",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "безопасный",
+              "уверенный"
+            ],
+            "definition_de": "Ohne besondere Gefahr oder, auf eine Person bezogen, ohne Zweifel.",
+            "forms": "sicher · sicherer · am sichersten",
+            "example": "Dieser Weg ist abends sicherer als der Weg durch den Park.",
+            "example_ru": "Вечером этот путь безопаснее дороги через парк.",
+            "grammar_hint": "sicher sein, dass … — быть уверенным, что …; ich bin mir sicher (mir — Dativ). После dass спрягаемый глагол в конце.",
+            "usage_note": "Безопасный или уверенный. Наречное значение наверняка вынесено отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 610,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb-surely",
+            "de": "sicher",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "наверняка",
+              "без сомнения"
+            ],
+            "forms": "",
+            "definition_de": "Drückt eine starke Erwartung oder Überzeugung aus.",
+            "example": "Er kommt sicher morgen.",
+            "example_ru": "Он наверняка придёт завтра.",
+            "grammar_hint": "В начале главного предложения: Sicher kommt er morgen (V2); внутри предложения: Er kommt sicher morgen.",
+            "usage_note": "Не путать с прилагательным sicher — безопасный, уверенный. Сходное слово: sicherlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/sprachwissen/sprachratgeber/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2ac31b7311892b60dacb",
+        "alias_id": "b1-sicher-certain",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2ac31b7311892b60dacb"
+      }
+    },
+    {
+      "candidate_number": 1001,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Unterstreicht die Gewissheit einer Aussage. Example: Ich weiss ganz sicher, wo der Schlüssel liegt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 24,
+        "record": {
+          "id": "b1-sicher-definitely",
+          "de": "ganz sicher",
+          "lemma": "sicher",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "точно",
+            "наверняка",
+            "без сомнения"
+          ],
+          "definition_de": "Unterstreicht die Gewissheit einer Aussage.",
+          "example": "Ich weiss ganz sicher, wo der Schlüssel liegt.",
+          "example_ru": "Я точно знаю, где лежит ключ.",
+          "forms": "наречное употребление без окончания",
+          "grammar_hint": "ganz sicher — уверенное утверждение; косвенный вопрос wo … liegt: глагол в конце. CH: weiss.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 125,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb",
+            "de": "sicher",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "безопасный",
+              "уверенный"
+            ],
+            "definition_de": "Ohne besondere Gefahr oder, auf eine Person bezogen, ohne Zweifel.",
+            "forms": "sicher · sicherer · am sichersten",
+            "example": "Dieser Weg ist abends sicherer als der Weg durch den Park.",
+            "example_ru": "Вечером этот путь безопаснее дороги через парк.",
+            "grammar_hint": "sicher sein, dass … — быть уверенным, что …; ich bin mir sicher (mir — Dativ). После dass спрягаемый глагол в конце.",
+            "usage_note": "Безопасный или уверенный. Наречное значение наверняка вынесено отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 610,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb-surely",
+            "de": "sicher",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "наверняка",
+              "без сомнения"
+            ],
+            "forms": "",
+            "definition_de": "Drückt eine starke Erwartung oder Überzeugung aus.",
+            "example": "Er kommt sicher morgen.",
+            "example_ru": "Он наверняка придёт завтра.",
+            "grammar_hint": "В начале главного предложения: Sicher kommt er morgen (V2); внутри предложения: Er kommt sicher morgen.",
+            "usage_note": "Не путать с прилагательным sicher — безопасный, уверенный. Сходное слово: sicherlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/sprachwissen/sprachratgeber/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2ac31b7311892b60dacb-surely",
+        "alias_id": "b1-sicher-definitely",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2ac31b7311892b60dacb-surely"
+      }
+    },
+    {
+      "candidate_number": 1002,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Drückt eine starke Vermutung aus. Example: Nach der langen Fahrt bist du sicher müde.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_086.json",
+        "sha": "d9226e45c6b2cf4850dea63061d189bac12f3bd2",
+        "batch": 86,
+        "row": 25,
+        "record": {
+          "id": "b1-sicher-probably",
+          "de": "sicher",
+          "lemma": "sicher",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "наверное",
+            "скорее всего",
+            "наверняка"
+          ],
+          "definition_de": "Drückt eine starke Vermutung aus.",
+          "example": "Nach der langen Fahrt bist du sicher müde.",
+          "example_ru": "После долгой поездки ты наверняка устала.",
+          "forms": "наречное употребление без окончания",
+          "grammar_hint": "Степень уверенности определяется контекстом; не подчинительный союз, порядок слов V2 сохраняется.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 125,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb",
+            "de": "sicher",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "безопасный",
+              "уверенный"
+            ],
+            "definition_de": "Ohne besondere Gefahr oder, auf eine Person bezogen, ohne Zweifel.",
+            "forms": "sicher · sicherer · am sichersten",
+            "example": "Dieser Weg ist abends sicherer als der Weg durch den Park.",
+            "example_ru": "Вечером этот путь безопаснее дороги через парк.",
+            "grammar_hint": "sicher sein, dass … — быть уверенным, что …; ich bin mir sicher (mir — Dativ). После dass спрягаемый глагол в конце.",
+            "usage_note": "Безопасный или уверенный. Наречное значение наверняка вынесено отдельно.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 610,
+          "record": {
+            "id": "dict_2ac31b7311892b60dacb-surely",
+            "de": "sicher",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "наверняка",
+              "без сомнения"
+            ],
+            "forms": "",
+            "definition_de": "Drückt eine starke Erwartung oder Überzeugung aus.",
+            "example": "Er kommt sicher morgen.",
+            "example_ru": "Он наверняка придёт завтра.",
+            "grammar_hint": "В начале главного предложения: Sicher kommt er morgen (V2); внутри предложения: Er kommt sicher morgen.",
+            "usage_note": "Не путать с прилагательным sicher — безопасный, уверенный. Сходное слово: sicherlich.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://www.duden.de/sprachwissen/sprachratgeber/sicher"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_2ac31b7311892b60dacb-surely",
+        "alias_id": "b1-sicher-probably",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_2ac31b7311892b60dacb-surely"
+      }
+    },
+    {
+      "candidate_number": 1003,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Mit der Stimme eine Melodie erzeugen. Example: Die Kinder singen ein neues Lied.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 3,
+        "record": {
+          "id": "b1-singen-song",
+          "de": "singen",
+          "lemma": "singen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "петь"
+          ],
+          "definition_de": "Mit der Stimme eine Melodie erzeugen.",
+          "example": "Die Kinder singen ein neues Lied.",
+          "example_ru": "Дети поют новую песню.",
+          "forms": "singt · sang · hat gesungen",
+          "grammar_hint": "ein Lied singen (Akk.); im Chor singen.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/singen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 402,
+          "record": {
+            "id": "dict_48ea9d03a1f3f0ac8e65",
+            "de": "singen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "петь",
+              "спеть"
+            ],
+            "definition_de": "Mit der Stimme Musik machen.",
+            "forms": "singt · sang · hat gesungen",
+            "example": "Die Kinder singen gemeinsam ein Lied.",
+            "example_ru": "Дети вместе поют песню.",
+            "grammar_hint": "ein Lied singen — петь песню (Akkusativ). Сильный глагол: singt · sang · hat gesungen.",
+            "usage_note": "das Singen — пение как занятие, субстантивация; отдельная лемма A2 не подтверждена.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/singen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_48ea9d03a1f3f0ac8e65",
+        "alias_id": "b1-singen-song",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_48ea9d03a1f3f0ac8e65"
+      }
+    },
+    {
+      "candidate_number": 1004,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Die Fähigkeit oder aktuelle Möglichkeit haben, musikalische Töne mit der Stimme hervorzubringen. Example: Wegen meiner Erkältung kann ich heute kaum singen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 4,
+        "record": {
+          "id": "b1-singen-ability",
+          "de": "singen können",
+          "lemma": "singen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "уметь петь",
+            "мочь петь"
+          ],
+          "definition_de": "Die Fähigkeit oder aktuelle Möglichkeit haben, musikalische Töne mit der Stimme hervorzubringen.",
+          "example": "Wegen meiner Erkältung kann ich heute kaum singen.",
+          "example_ru": "Из-за простуды я сегодня почти не могу петь.",
+          "forms": "singt · sang · hat gesungen; kann · konnte · hat gekonnt",
+          "grammar_hint": "können + Infinitiv без zu; учебный контекст того же значения singen.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/singen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 402,
+          "record": {
+            "id": "dict_48ea9d03a1f3f0ac8e65",
+            "de": "singen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "петь",
+              "спеть"
+            ],
+            "definition_de": "Mit der Stimme Musik machen.",
+            "forms": "singt · sang · hat gesungen",
+            "example": "Die Kinder singen gemeinsam ein Lied.",
+            "example_ru": "Дети вместе поют песню.",
+            "grammar_hint": "ein Lied singen — петь песню (Akkusativ). Сильный глагол: singt · sang · hat gesungen.",
+            "usage_note": "das Singen — пение как занятие, субстантивация; отдельная лемма A2 не подтверждена.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/singen"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1005,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Die Umstände, unter denen sich jemand gerade befindet. Example: Wir suchen eine Lösung für diese schwierige Situation.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 10,
+        "record": {
+          "id": "b1-situation-circumstances",
+          "de": "die Situation",
+          "lemma": "Situation",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "ситуация",
+            "положение",
+            "обстоятельства"
+          ],
+          "definition_de": "Die Umstände, unter denen sich jemand gerade befindet.",
+          "example": "Wir suchen eine Lösung für diese schwierige Situation.",
+          "example_ru": "Мы ищем выход из этой сложной ситуации.",
+          "forms": "die Situationen",
+          "grammar_hint": "in einer Situation (Dativ); mit einer Situation umgehen (mit + Dativ).",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Situation"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 377,
+          "record": {
+            "id": "dict_f1246195769f09abf9dc",
+            "de": "die Situation",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "ситуация",
+              "положение"
+            ],
+            "definition_de": "Die Umstände, unter denen sich jemand zu einem bestimmten Zeitpunkt befindet.",
+            "forms": "Plural · die Situationen",
+            "example": "In dieser Situation brauche ich Hilfe.",
+            "example_ru": "В этой ситуации мне нужна помощь.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Situation"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Цвета, свойства и оценка",
+            "topics": [
+              "Цвета, свойства и оценка"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_f1246195769f09abf9dc",
+        "alias_id": "b1-situation-circumstances",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_f1246195769f09abf9dc"
+      }
+    },
+    {
+      "candidate_number": 1006,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Sich in einer sitzenden Körperhaltung befinden. Example: Wir sitzen am Fenster und lesen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 11,
+        "record": {
+          "id": "b1-sitzen-seated",
+          "de": "sitzen",
+          "lemma": "sitzen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сидеть"
+          ],
+          "definition_de": "Sich in einer sitzenden Körperhaltung befinden.",
+          "example": "Wir sitzen am Fenster und lesen.",
+          "example_ru": "Мы сидим у окна и читаем.",
+          "forms": "sitzt · saß · hat/ist gesessen",
+          "grammar_hint": "Wo? am Fenster (Dativ); sich setzen — садиться. CH/A и юг Германии: ist gesessen также нормативно; CH: sass.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sitzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 687,
+          "record": {
+            "id": "a1-527-1",
+            "de": "sitzen",
+            "lemma": "sitzen",
+            "ru": "сидеть",
+            "uk": "",
+            "translations_ru": [
+              "сидеть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sitzt · saß · hat gesessen",
+            "definition_de": "Auf einem Stuhl oder einer anderen Unterlage mit aufrechtem Oberkörper ruhen.",
+            "example": "Wir sitzen am Fenster.",
+            "example_ru": "Мы сидим у окна.",
+            "note": "Швейцарский вариант Perfekt: ist gesessen. sitzen (сидеть, состояние) ≠ sich setzen (садиться, действие). В пространственном употреблении Wo? + Dativ с Wechselpräpositionen. Perfekt: hat gesessen; в Швейцарии, Австрии и южной Германии также ist gesessen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "9f93b16ff35814b817d2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-527-1",
+        "alias_id": "b1-sitzen-seated",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-527-1"
+      }
+    },
+    {
+      "candidate_number": 1007,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Bei Kleidung in Schnitt und Größe passend sein. Example: Die neue Hose sitzt perfekt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 12,
+        "record": {
+          "id": "b1-sitzen-fit",
+          "de": "sitzen",
+          "lemma": "sitzen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "сидеть (об одежде)",
+            "хорошо или плохо подходить по фигуре"
+          ],
+          "definition_de": "Bei Kleidung in Schnitt und Größe passend sein.",
+          "example": "Die neue Hose sitzt perfekt.",
+          "example_ru": "Новые брюки сидят идеально.",
+          "forms": "sitzt · saß · hat gesessen (CH/A также ist gesessen)",
+          "grammar_hint": "Die Jacke sitzt gut — куртка хорошо сидит. passen + Dativ: Die Jacke passt mir.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sitzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 687,
+          "record": {
+            "id": "a1-527-1",
+            "de": "sitzen",
+            "lemma": "sitzen",
+            "ru": "сидеть",
+            "uk": "",
+            "translations_ru": [
+              "сидеть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sitzt · saß · hat gesessen",
+            "definition_de": "Auf einem Stuhl oder einer anderen Unterlage mit aufrechtem Oberkörper ruhen.",
+            "example": "Wir sitzen am Fenster.",
+            "example_ru": "Мы сидим у окна.",
+            "note": "Швейцарский вариант Perfekt: ist gesessen. sitzen (сидеть, состояние) ≠ sich setzen (садиться, действие). В пространственном употреблении Wo? + Dativ с Wechselpräpositionen. Perfekt: hat gesessen; в Швейцарии, Австрии и южной Германии также ist gesessen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "9f93b16ff35814b817d2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1008,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein längliches Sportgerät zum Gleiten über Schnee. Example: Meine Skier stehen im Keller.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 14,
+        "record": {
+          "id": "b1-ski-equipment",
+          "de": "der Ski / der Schi",
+          "lemma": "Ski",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "лыжа",
+            "лыжи"
+          ],
+          "definition_de": "Ein längliches Sportgerät zum Gleiten über Schnee.",
+          "example": "Meine Skier stehen im Keller.",
+          "example_ru": "Мои лыжи стоят в подвале.",
+          "forms": "die Ski / die Skier; die Schi / die Schier",
+          "grammar_hint": "Оба написания допустимы; Schi особенно в Австрии.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ski"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 356,
+          "record": {
+            "id": "dict_17ed495166a99fa99e6b",
+            "de": "der Ski",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "лыжа"
+            ],
+            "definition_de": "Ein längliches Sportgerät, mit dem man über Schnee gleitet.",
+            "forms": "Plural · die Ski / Skier",
+            "example": "Im Winter fahre ich gern Ski.",
+            "example_ru": "Зимой я люблю кататься на лыжах.",
+            "grammar_hint": "",
+            "usage_note": "Ski fahren — кататься на лыжах. Plural: Ski или Skier; в Швейцарии встречается также Skis.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Ski",
+                "https://www.duden.de/rechtschreibung/Ski",
+                "https://www.duden.de/sprachwissen/sprachratgeber/Ski"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_17ed495166a99fa99e6b",
+        "alias_id": "b1-ski-equipment",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_17ed495166a99fa99e6b"
+      }
+    },
+    {
+      "candidate_number": 1009,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Sich sportlich auf Skiern fortbewegen. Example: Im Winter fahren wir manchmal Ski.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 15,
+        "record": {
+          "id": "b1-ski-activity",
+          "de": "Ski fahren / Ski laufen",
+          "lemma": "Ski",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "кататься на лыжах",
+            "ходить на лыжах"
+          ],
+          "definition_de": "Sich sportlich auf Skiern fortbewegen.",
+          "example": "Im Winter fahren wir manchmal Ski.",
+          "example_ru": "Зимой мы иногда катаемся на лыжах.",
+          "forms": "fährt Ski · fuhr Ski · ist Ski gefahren; läuft Ski · lief Ski · ist Ski gelaufen",
+          "grammar_hint": "Существительное с большой буквы, отдельно от глагола; Ski laufen часто о беговых лыжах.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ski"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 356,
+          "record": {
+            "id": "dict_17ed495166a99fa99e6b",
+            "de": "der Ski",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "лыжа"
+            ],
+            "definition_de": "Ein längliches Sportgerät, mit dem man über Schnee gleitet.",
+            "forms": "Plural · die Ski / Skier",
+            "example": "Im Winter fahre ich gern Ski.",
+            "example_ru": "Зимой я люблю кататься на лыжах.",
+            "grammar_hint": "",
+            "usage_note": "Ski fahren — кататься на лыжах. Plural: Ski или Skier; в Швейцарии встречается также Skis.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 26,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Ski",
+                "https://www.duden.de/rechtschreibung/Ski",
+                "https://www.duden.de/sprachwissen/sprachratgeber/Ski"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Спорт и движение",
+            "topics": [
+              "Спорт и движение"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 1010,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Verweist auf eine gerade gezeigte Vorgehensweise. Example: Wie faltet man das Papier? – So!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 16,
+        "record": {
+          "id": "b1-so-demonstration",
+          "de": "so",
+          "lemma": "so",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "вот так",
+            "так"
+          ],
+          "definition_de": "Verweist auf eine gerade gezeigte Vorgehensweise.",
+          "example": "Wie faltet man das Papier? – So!",
+          "example_ru": "Как складывают бумагу? — Вот так!",
+          "forms": "неизменяемое",
+          "grammar_hint": "Ответ на Wie?; жест или ситуация уточняет значение.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/so_derartig_solch_genauso_etwa",
+              "https://www.duden.de/rechtschreibung/so_wirklich_etwa_also",
+              "https://de.wiktionary.org/wiki/so"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 688,
+          "record": {
+            "id": "a1-528-1",
+            "de": "so",
+            "lemma": "so",
+            "ru": "так; таким образом",
+            "uk": "",
+            "translations_ru": [
+              "так",
+              "таким образом"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Auf diese Weise.",
+            "example": "So macht man das.",
+            "example_ru": "Это делают вот так.",
+            "note": "So в начале обычного главного предложения занимает первое место: So geht es. Самостоятельный разговорный сигнал So! выделен отдельно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "2dfb8056264d68652504"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 771,
+          "record": {
+            "id": "a1-528-3",
+            "de": "so",
+            "lemma": "so",
+            "ru": "так; настолько",
+            "uk": "",
+            "translations_ru": [
+              "так",
+              "настолько"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verstärkt oder bezeichnet den Grad einer Eigenschaft.",
+            "example": "Fahr bitte nicht so schnell.",
+            "example_ru": "Не езжай, пожалуйста, так быстро.",
+            "note": "so + Adjektiv/Adverb + wie — сравнение равенства: so groß wie ich. В придаточном с sodass глагол в конце; это другой союз.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "2dfb8056264d68652504"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-528-1",
+        "alias_id": "b1-so-demonstration",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-528-1"
+      }
+    },
+    {
+      "candidate_number": 1011,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Bezieht sich auf eine bereits bekannte oder erklärte Art der Ausführung. Example: Bitte füll das Formular so aus, wie ich es gezeigt habe.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 17,
+        "record": {
+          "id": "b1-so-manner",
+          "de": "so",
+          "lemma": "so",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "таким образом",
+            "так"
+          ],
+          "definition_de": "Bezieht sich auf eine bereits bekannte oder erklärte Art der Ausführung.",
+          "example": "Bitte füll das Formular so aus, wie ich es gezeigt habe.",
+          "example_ru": "Пожалуйста, заполни анкету так, как я показала.",
+          "forms": "неизменяемое",
+          "grammar_hint": "so, wie … — в придаточном с wie глагол в конце; запятая при полном придаточном.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/so_derartig_solch_genauso_etwa",
+              "https://www.duden.de/rechtschreibung/so_wirklich_etwa_also",
+              "https://de.wiktionary.org/wiki/so"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 688,
+          "record": {
+            "id": "a1-528-1",
+            "de": "so",
+            "lemma": "so",
+            "ru": "так; таким образом",
+            "uk": "",
+            "translations_ru": [
+              "так",
+              "таким образом"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Auf diese Weise.",
+            "example": "So macht man das.",
+            "example_ru": "Это делают вот так.",
+            "note": "So в начале обычного главного предложения занимает первое место: So geht es. Самостоятельный разговорный сигнал So! выделен отдельно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "2dfb8056264d68652504"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 771,
+          "record": {
+            "id": "a1-528-3",
+            "de": "so",
+            "lemma": "so",
+            "ru": "так; настолько",
+            "uk": "",
+            "translations_ru": [
+              "так",
+              "настолько"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verstärkt oder bezeichnet den Grad einer Eigenschaft.",
+            "example": "Fahr bitte nicht so schnell.",
+            "example_ru": "Не езжай, пожалуйста, так быстро.",
+            "note": "so + Adjektiv/Adverb + wie — сравнение равенства: so groß wie ich. В придаточном с sodass глагол в конце; это другой союз.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "2dfb8056264d68652504"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-528-1",
+        "alias_id": "b1-so-manner",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-528-1"
+      }
+    },
+    {
+      "candidate_number": 1012,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Hebt eine Eigenschaft oder Art in einem Ausruf hervor. Example: So eine Überraschung!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_087.json",
+        "sha": "74ba83088ffa3a0b23735700226c8a37d10d38ff",
+        "batch": 87,
+        "row": 18,
+        "record": {
+          "id": "b1-so-exclamation",
+          "de": "so ein / so eine",
+          "lemma": "so",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "такой",
+            "такая",
+            "ну и …"
+          ],
+          "definition_de": "Hebt eine Eigenschaft oder Art in einem Ausruf hervor.",
+          "example": "So eine Überraschung!",
+          "example_ru": "Вот это сюрприз!",
+          "forms": "so неизменяемое; ein склоняется",
+          "grammar_hint": "so ein + существительное; eine → so eine; перед Plural: so schöne Blumen.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/so_derartig_solch_genauso_etwa",
+              "https://www.duden.de/rechtschreibung/so_wirklich_etwa_also",
+              "https://de.wiktionary.org/wiki/so"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 688,
+          "record": {
+            "id": "a1-528-1",
+            "de": "so",
+            "lemma": "so",
+            "ru": "так; таким образом",
+            "uk": "",
+            "translations_ru": [
+              "так",
+              "таким образом"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Auf diese Weise.",
+            "example": "So macht man das.",
+            "example_ru": "Это делают вот так.",
+            "note": "So в начале обычного главного предложения занимает первое место: So geht es. Самостоятельный разговорный сигнал So! выделен отдельно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "2dfb8056264d68652504"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 771,
+          "record": {
+            "id": "a1-528-3",
+            "de": "so",
+            "lemma": "so",
+            "ru": "так; настолько",
+            "uk": "",
+            "translations_ru": [
+              "так",
+              "настолько"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verstärkt oder bezeichnet den Grad einer Eigenschaft.",
+            "example": "Fahr bitte nicht so schnell.",
+            "example_ru": "Не езжай, пожалуйста, так быстро.",
+            "note": "so + Adjektiv/Adverb + wie — сравнение равенства: so groß wie ich. В придаточном с sodass глагол в конце; это другой союз.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "2dfb8056264d68652504"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_628947c8625340e155ae",
+      "alias_ids": [
+        "b1-sendung-broadcast"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_628947c8625340e155ae",
+        "de": "die Sendung",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "передача",
+          "телепередача",
+          "радиопередача"
+        ],
+        "definition_de": "Ein Beitrag im Radio, im Fernsehen oder in einem vergleichbaren Medienangebot.",
+        "forms": "Plural · die Sendungen",
+        "example": "Abends höre ich gern eine Sendung über Musik.",
+        "example_ru": "По вечерам я люблю слушать передачу о музыке.",
+        "grammar_hint": "",
+        "usage_note": "Подтверждено значение передачи в СМИ (Goethe A2, стр. 25). Посылка/почтовое отправление и auf Sendung sein — отдельные употребления, не подтверждённые этим примером.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Sendung"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-sendung-broadcast"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sendung-broadcast",
+            "de": "die Sendung",
+            "part": "noun",
+            "forms": "die Sendungen",
+            "definition_de": "Ein einzelner Beitrag im Radio oder Fernsehen.",
+            "translations_ru": [
+              "передача",
+              "телепередача",
+              "радиопередача"
+            ],
+            "grammar_hint": "eine Sendung ansehen / anhören; Sender — канал.",
+            "example": "Die Sendung über die Alpen beginnt um acht Uhr.",
+            "example_ru": "Передача об Альпах начинается в восемь часов."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sendung"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_80c23135227bf9e0e03a",
+      "alias_ids": [
+        "b1-service-quality"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_80c23135227bf9e0e03a",
+        "de": "der Service",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "обслуживание",
+          "сервис",
+          "услуги"
+        ],
+        "definition_de": "Leistungen, die ein Betrieb für seine Kunden erbringt.",
+        "forms": "В значении обслуживания обычно Singular; Plural die Services для отдельных услуг",
+        "example": "Der Service im Hotel war sehr gut.",
+        "example_ru": "Обслуживание в гостинице было очень хорошим.",
+        "grammar_hint": "mit dem Service zufrieden sein (Dativ).",
+        "usage_note": "Обслуживание клиентов; также служба доставки (Pizza-Service). Не путать с das Service — столовый сервиз; возможны региональные варианты рода.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Service"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Покупки, деньги и услуги",
+        "topics": [
+          "Покупки, деньги и услуги"
+        ],
+        "alias_ids": [
+          "b1-service-quality"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-service-quality",
+            "de": "der Service",
+            "part": "noun",
+            "forms": "die Services; в этом контексте обычно Singular",
+            "definition_de": "Die Betreuung von Kunden bei einer Dienstleistung.",
+            "translations_ru": [
+              "обслуживание",
+              "сервис"
+            ],
+            "grammar_hint": "mit dem Service zufrieden sein (Dativ); качество обслуживания.",
+            "example": "Mit dem Service im Hotel waren wir zufrieden.",
+            "example_ru": "Мы были довольны обслуживанием в гостинице."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Service"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_749026c7c4e01fe5c561",
+      "alias_ids": [
+        "b1-setzen-reflexive"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_749026c7c4e01fe5c561",
+        "de": "sich setzen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "садиться",
+          "сесть (sich setzen)"
+        ],
+        "definition_de": "Sich in eine sitzende Haltung bringen.",
+        "forms": "setzt sich · setzte sich · hat sich gesetzt",
+        "example": "Setzen Sie sich bitte hierhin.",
+        "example_ru": "Садитесь, пожалуйста, сюда.",
+        "grammar_hint": "sich setzen: возвратное местоимение в Akkusativ. Ich setze mich auf den Stuhl (Wohin? auf + Akk.); ich sitze auf dem Stuhl (Wo? auf + Dat.).",
+        "usage_note": "Goethe A2 подтверждает возвратное значение sich setzen. Jemanden setzen — усаживать кого-либо; другие переходные значения не подтверждены здесь для уровня A2.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/setzen",
+            "https://www.duden.de/rechtschreibung/setzen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-setzen-reflexive"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-setzen-reflexive",
+            "de": "sich setzen",
+            "part": "verb",
+            "forms": "setzt sich · setzte sich · hat sich gesetzt",
+            "definition_de": "Aus einer stehenden Haltung in eine Sitzposition wechseln.",
+            "translations_ru": [
+              "садиться",
+              "сесть"
+            ],
+            "grammar_hint": "sich (Akk.): ich setze mich; neben mich (Akk. направления); sitzen — уже сидеть.",
+            "example": "Setz dich bitte neben mich.",
+            "example_ru": "Сядь, пожалуйста, рядом со мной."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/setzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2ac31b7311892b60dacb",
+      "alias_ids": [
+        "b1-sicher-safe",
+        "b1-sicher-certain"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2ac31b7311892b60dacb",
+        "de": "sicher",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "безопасный",
+          "уверенный"
+        ],
+        "definition_de": "Ohne besondere Gefahr oder, auf eine Person bezogen, ohne Zweifel.",
+        "forms": "sicher · sicherer · am sichersten",
+        "example": "Dieser Weg ist abends sicherer als der Weg durch den Park.",
+        "example_ru": "Вечером этот путь безопаснее дороги через парк.",
+        "grammar_hint": "sicher sein, dass … — быть уверенным, что …; ich bin mir sicher (mir — Dativ). После dass спрягаемый глагол в конце.",
+        "usage_note": "Безопасный или уверенный. Наречное значение наверняка вынесено отдельно.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/sicher"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-sicher-safe",
+          "b1-sicher-certain"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sicher-safe",
+            "de": "sicher",
+            "part": "adj",
+            "forms": "sicher · sicherer / sichrer · am sichersten",
+            "definition_de": "So beschaffen, dass Risiken gering sind.",
+            "translations_ru": [
+              "безопасный",
+              "надёжный"
+            ],
+            "grammar_hint": "Gegenteil unsicher/gefährlich; ein sicherer Weg.",
+            "example": "Dieser Weg ist auch im Winter sicher.",
+            "example_ru": "Этот путь безопасен и зимой."
+          },
+          {
+            "id": "b1-sicher-certain",
+            "de": "sich sicher sein / sicher sein",
+            "part": "phrase",
+            "forms": "sicher · sicherer / sichrer · am sichersten",
+            "definition_de": "Keine wesentlichen Zweifel an einer Annahme haben.",
+            "translations_ru": [
+              "быть уверенным"
+            ],
+            "grammar_hint": "sich sicher sein (ich bin mir sicher, Dativ); dass — глагол в конце.",
+            "example": "Bist du sicher, dass heute Unterricht ist?",
+            "example_ru": "Ты уверена, что сегодня есть занятие?"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_2ac31b7311892b60dacb-surely",
+      "alias_ids": [
+        "b1-sicher-definitely",
+        "b1-sicher-probably"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_2ac31b7311892b60dacb-surely",
+        "de": "sicher",
+        "part": "adv",
+        "level": "A2",
+        "translations_ru": [
+          "наверняка",
+          "без сомнения"
+        ],
+        "forms": "",
+        "definition_de": "Drückt eine starke Erwartung oder Überzeugung aus.",
+        "example": "Er kommt sicher morgen.",
+        "example_ru": "Он наверняка придёт завтра.",
+        "grammar_hint": "В начале главного предложения: Sicher kommt er morgen (V2); внутри предложения: Er kommt sicher morgen.",
+        "usage_note": "Не путать с прилагательным sicher — безопасный, уверенный. Сходное слово: sicherlich.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://www.duden.de/sprachwissen/sprachratgeber/sicher"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Грамматика и связь предложений",
+        "topics": [
+          "Грамматика и связь предложений"
+        ],
+        "alias_ids": [
+          "b1-sicher-definitely",
+          "b1-sicher-probably"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sicher-definitely",
+            "de": "ganz sicher",
+            "part": "adv",
+            "forms": "наречное употребление без окончания",
+            "definition_de": "Unterstreicht die Gewissheit einer Aussage.",
+            "translations_ru": [
+              "точно",
+              "наверняка",
+              "без сомнения"
+            ],
+            "grammar_hint": "ganz sicher — уверенное утверждение; косвенный вопрос wo … liegt: глагол в конце. CH: weiss.",
+            "example": "Ich weiss ganz sicher, wo der Schlüssel liegt.",
+            "example_ru": "Я точно знаю, где лежит ключ."
+          },
+          {
+            "id": "b1-sicher-probably",
+            "de": "sicher",
+            "part": "adv",
+            "forms": "наречное употребление без окончания",
+            "definition_de": "Drückt eine starke Vermutung aus.",
+            "translations_ru": [
+              "наверное",
+              "скорее всего",
+              "наверняка"
+            ],
+            "grammar_hint": "Степень уверенности определяется контекстом; не подчинительный союз, порядок слов V2 сохраняется.",
+            "example": "Nach der langen Fahrt bist du sicher müde.",
+            "example_ru": "После долгой поездки ты наверняка устала."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Printed page 80 inspected; B1 exam list membership does not establish earliest CEFR level. Multiple teaching contexts can share one lexical sense. A1/A2 comparison pending."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sicher"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_48ea9d03a1f3f0ac8e65",
+      "alias_ids": [
+        "b1-singen-song"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_48ea9d03a1f3f0ac8e65",
+        "de": "singen",
+        "part": "verb",
+        "level": "A2",
+        "translations_ru": [
+          "петь",
+          "спеть"
+        ],
+        "definition_de": "Mit der Stimme Musik machen.",
+        "forms": "singt · sang · hat gesungen",
+        "example": "Die Kinder singen gemeinsam ein Lied.",
+        "example_ru": "Дети вместе поют песню.",
+        "grammar_hint": "ein Lied singen — петь песню (Akkusativ). Сильный глагол: singt · sang · hat gesungen.",
+        "usage_note": "das Singen — пение как занятие, субстантивация; отдельная лемма A2 не подтверждена.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/singen"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения"
+        ],
+        "alias_ids": [
+          "b1-singen-song"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-singen-song",
+            "de": "singen",
+            "part": "verb",
+            "forms": "singt · sang · hat gesungen",
+            "definition_de": "Mit der Stimme eine Melodie erzeugen.",
+            "translations_ru": [
+              "петь"
+            ],
+            "grammar_hint": "ein Lied singen (Akk.); im Chor singen.",
+            "example": "Die Kinder singen ein neues Lied.",
+            "example_ru": "Дети поют новую песню."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/singen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_f1246195769f09abf9dc",
+      "alias_ids": [
+        "b1-situation-circumstances"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_f1246195769f09abf9dc",
+        "de": "die Situation",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "ситуация",
+          "положение"
+        ],
+        "definition_de": "Die Umstände, unter denen sich jemand zu einem bestimmten Zeitpunkt befindet.",
+        "forms": "Plural · die Situationen",
+        "example": "In dieser Situation brauche ich Hilfe.",
+        "example_ru": "В этой ситуации мне нужна помощь.",
+        "grammar_hint": "",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Situation"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Цвета, свойства и оценка",
+        "topics": [
+          "Цвета, свойства и оценка"
+        ],
+        "alias_ids": [
+          "b1-situation-circumstances"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-situation-circumstances",
+            "de": "die Situation",
+            "part": "noun",
+            "forms": "die Situationen",
+            "definition_de": "Die Umstände, unter denen sich jemand gerade befindet.",
+            "translations_ru": [
+              "ситуация",
+              "положение",
+              "обстоятельства"
+            ],
+            "grammar_hint": "in einer Situation (Dativ); mit einer Situation umgehen (mit + Dativ).",
+            "example": "Wir suchen eine Lösung für diese schwierige Situation.",
+            "example_ru": "Мы ищем выход из этой сложной ситуации."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Situation"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-527-1",
+      "alias_ids": [
+        "b1-sitzen-seated"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-527-1",
+        "de": "sitzen",
+        "lemma": "sitzen",
+        "ru": "сидеть",
+        "uk": "",
+        "translations_ru": [
+          "сидеть"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "sitzt · saß · hat gesessen",
+        "definition_de": "Auf einem Stuhl oder einer anderen Unterlage mit aufrechtem Oberkörper ruhen.",
+        "example": "Wir sitzen am Fenster.",
+        "example_ru": "Мы сидим у окна.",
+        "note": "Швейцарский вариант Perfekt: ist gesessen. sitzen (сидеть, состояние) ≠ sich setzen (садиться, действие). В пространственном употреблении Wo? + Dativ с Wechselpräpositionen. Perfekt: hat gesessen; в Швейцарии, Австрии и южной Германии также ist gesessen.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "9f93b16ff35814b817d2"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sitzen-seated"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sitzen-seated",
+            "de": "sitzen",
+            "part": "verb",
+            "forms": "sitzt · saß · hat/ist gesessen",
+            "definition_de": "Sich in einer sitzenden Körperhaltung befinden.",
+            "translations_ru": [
+              "сидеть"
+            ],
+            "grammar_hint": "Wo? am Fenster (Dativ); sich setzen — садиться. CH/A и юг Германии: ist gesessen также нормативно; CH: sass.",
+            "example": "Wir sitzen am Fenster und lesen.",
+            "example_ru": "Мы сидим у окна и читаем."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sitzen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_17ed495166a99fa99e6b",
+      "alias_ids": [
+        "b1-ski-equipment"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_17ed495166a99fa99e6b",
+        "de": "der Ski",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "лыжа"
+        ],
+        "definition_de": "Ein längliches Sportgerät, mit dem man über Schnee gleitet.",
+        "forms": "Plural · die Ski / Skier",
+        "example": "Im Winter fahre ich gern Ski.",
+        "example_ru": "Зимой я люблю кататься на лыжах.",
+        "grammar_hint": "",
+        "usage_note": "Ski fahren — кататься на лыжах. Plural: Ski или Skier; в Швейцарии встречается также Skis.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 26,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Ski",
+            "https://www.duden.de/rechtschreibung/Ski",
+            "https://www.duden.de/sprachwissen/sprachratgeber/Ski"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Спорт и движение",
+        "topics": [
+          "Спорт и движение"
+        ],
+        "alias_ids": [
+          "b1-ski-equipment"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-ski-equipment",
+            "de": "der Ski / der Schi",
+            "part": "noun",
+            "forms": "die Ski / die Skier; die Schi / die Schier",
+            "definition_de": "Ein längliches Sportgerät zum Gleiten über Schnee.",
+            "translations_ru": [
+              "лыжа",
+              "лыжи"
+            ],
+            "grammar_hint": "Оба написания допустимы; Schi особенно в Австрии.",
+            "example": "Meine Skier stehen im Keller.",
+            "example_ru": "Мои лыжи стоят в подвале."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ski"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-528-1",
+      "alias_ids": [
+        "b1-so-demonstration",
+        "b1-so-manner"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-528-1",
+        "de": "so",
+        "lemma": "so",
+        "ru": "так; таким образом",
+        "uk": "",
+        "translations_ru": [
+          "так",
+          "таким образом"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "",
+        "definition_de": "Auf diese Weise.",
+        "example": "So macht man das.",
+        "example_ru": "Это делают вот так.",
+        "note": "So в начале обычного главного предложения занимает первое место: So geht es. Самостоятельный разговорный сигнал So! выделен отдельно.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "2dfb8056264d68652504"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-so-demonstration",
+          "b1-so-manner"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-so-demonstration",
+            "de": "so",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Verweist auf eine gerade gezeigte Vorgehensweise.",
+            "translations_ru": [
+              "вот так",
+              "так"
+            ],
+            "grammar_hint": "Ответ на Wie?; жест или ситуация уточняет значение.",
+            "example": "Wie faltet man das Papier? – So!",
+            "example_ru": "Как складывают бумагу? — Вот так!"
+          },
+          {
+            "id": "b1-so-manner",
+            "de": "so",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Bezieht sich auf eine bereits bekannte oder erklärte Art der Ausführung.",
+            "translations_ru": [
+              "таким образом",
+              "так"
+            ],
+            "grammar_hint": "so, wie … — в придаточном с wie глагол в конце; запятая при полном придаточном.",
+            "example": "Bitte füll das Formular so aus, wie ich es gezeigt habe.",
+            "example_ru": "Пожалуйста, заполни анкету так, как я показала."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/so_derartig_solch_genauso_etwa",
+              "https://www.duden.de/rechtschreibung/so_wirklich_etwa_also",
+              "https://de.wiktionary.org/wiki/so"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 80,
+              "scope": "context",
+              "note": "Goethe printed pages 80–81 inspected. Earliest CEFR level pending A1/A2 comparison; pedagogical contexts may overlap lexical senses."
+            },
+            "meaning": [
+              "https://www.duden.de/rechtschreibung/so_derartig_solch_genauso_etwa",
+              "https://www.duden.de/rechtschreibung/so_wirklich_etwa_also",
+              "https://de.wiktionary.org/wiki/so"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

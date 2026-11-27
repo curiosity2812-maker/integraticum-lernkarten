@@ -1,0 +1,3331 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of indexed candidates 133–152 using stored definitions, examples and hints. Fourteen conditional merges into thirteen lower-level targets, two gleich proposals consolidated. No independent CEFR or dictionary verification. Original IDs and level metadata unchanged.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    133,
+    152
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 13,
+  "retained_distinct_senses": 5,
+  "retained_teaching_contexts_pending_level_review": 1,
+  "followup_review": [
+    {
+      "id": "b1-gesund-well",
+      "issue": "Confirm comparison forms gesünder/gesunder and superlative variants before release; lower hint already contains alternatives."
+    },
+    {
+      "id": "b1-gewicht-weight",
+      "issue": "Distinguish colloquial weight in kg from technical physical mass/weight where appropriate."
+    },
+    {
+      "id": "b1-gewinnen-prize",
+      "issue": "Related prize-winning context; verify level and compare with victory sense."
+    },
+    {
+      "id": "b1-gleich-equal-degree",
+      "issue": "A1 hint already gives gleich groß; preserve distinct adverbial function and ensure exercise variants render; coordinate with gleich-same."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 133,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same healthy/not ill meaning; retain alternative comparison forms.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 15,
+        "record": {
+          "id": "b1-gesund-well",
+          "de": "gesund",
+          "lemma": "gesund",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "здоровый",
+            "здоров"
+          ],
+          "definition_de": "Nicht krank oder körperlich und psychisch in gutem Zustand.",
+          "example": "Nach einer Woche Ruhe ist sie wieder gesund.",
+          "example_ru": "После недели отдыха она снова здорова.",
+          "forms": "gesund · gesünder / gesunder · am gesündesten / am gesundesten",
+          "grammar_hint": "gesund sein / werden / bleiben; Gegensatz: krank.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gesund"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 136,
+          "record": {
+            "id": "dict_6c88899caac6ddaeef99",
+            "de": "gesund",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "здоровый"
+            ],
+            "definition_de": "Frei von einer Krankheit.",
+            "forms": "gesund · gesünder · am gesündesten",
+            "example": "Nach einer Woche zu Hause bin ich wieder gesund.",
+            "example_ru": "После недели дома я снова здорова.",
+            "grammar_hint": "Часто употребляют формы gesünder и am gesündesten. Допустимы также gesunder и am gesundesten.",
+            "usage_note": "Когда gesund относится к еде или привычке, его можно перевести «полезный для здоровья».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/gesund"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_6c88899caac6ddaeef99",
+        "alias_id": "b1-gesund-well",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_6c88899caac6ddaeef99"
+      }
+    },
+    {
+      "candidate_number": 134,
+      "decision": "retain_distinct_sense",
+      "reason": "Health-promoting vs not ill; distinct sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 16,
+        "record": {
+          "id": "b1-gesund-beneficial",
+          "de": "gesund",
+          "lemma": "gesund",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "полезный для здоровья",
+            "здоровый"
+          ],
+          "definition_de": "So, dass etwas das körperliche oder seelische Wohlbefinden fördert.",
+          "example": "Regelmäßige Bewegung ist gesund.",
+          "example_ru": "Регулярное движение полезно для здоровья.",
+          "forms": "gesund · gesünder / gesunder · am gesündesten / am gesundesten",
+          "grammar_hint": "gesund für + Akkusativ; sich gesund ernähren. Не означает «вылеченный» в этом контексте.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gesund"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 136,
+          "record": {
+            "id": "dict_6c88899caac6ddaeef99",
+            "de": "gesund",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "здоровый"
+            ],
+            "definition_de": "Frei von einer Krankheit.",
+            "forms": "gesund · gesünder · am gesündesten",
+            "example": "Nach einer Woche zu Hause bin ich wieder gesund.",
+            "example_ru": "После недели дома я снова здорова.",
+            "grammar_hint": "Часто употребляют формы gesünder и am gesündesten. Допустимы также gesunder и am gesundesten.",
+            "usage_note": "Когда gesund относится к еде или привычке, его можно перевести «полезный для здоровья».",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/gesund"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 135,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same health noun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 17,
+        "record": {
+          "id": "b1-gesundheit-health",
+          "de": "die Gesundheit",
+          "lemma": "Gesundheit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "здоровье"
+          ],
+          "definition_de": "Der körperliche und seelische Zustand eines Menschen.",
+          "example": "Schlaf ist wichtig für unsere Gesundheit.",
+          "example_ru": "Сон важен для нашего здоровья.",
+          "forms": "обычно без множественного числа",
+          "grammar_hint": "auf seine Gesundheit achten (+ Akkusativ); etwas für die Gesundheit tun.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesundheit"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 289,
+          "record": {
+            "id": "dict_00f92a6e2882b5b14fb9",
+            "de": "die Gesundheit",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "здоровье"
+            ],
+            "definition_de": "Der Zustand eines Menschen, der körperlich und seelisch gesund ist.",
+            "forms": "Без множественного числа",
+            "example": "Sport ist gut für die Gesundheit.",
+            "example_ru": "Спорт полезен для здоровья.",
+            "grammar_hint": "",
+            "usage_note": "Gesundheit! — Будь здоров! / Будьте здоровы! (после чихания). Это междометие, употребляется без артикля, отдельно от существительного die Gesundheit.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gesundheit"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_00f92a6e2882b5b14fb9",
+        "alias_id": "b1-gesundheit-health",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_00f92a6e2882b5b14fb9"
+      }
+    },
+    {
+      "candidate_number": 136,
+      "decision": "retain_distinct_sense",
+      "reason": "Sneeze response formula vs health noun; retain distinct pragmatic use.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 18,
+        "record": {
+          "id": "b1-gesundheit-sneeze",
+          "de": "Gesundheit!",
+          "lemma": "Gesundheit",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Будь здоров!",
+            "Будьте здоровы!"
+          ],
+          "definition_de": "Ein höflicher Wunsch, den man nach dem Niesen äußert.",
+          "example": "Hatschi! – Gesundheit!",
+          "example_ru": "Апчхи! — Будь здоров!",
+          "forms": "устойчивое выражение; без изменения",
+          "grammar_hint": "Без артикля, самостоятельное восклицание после чихания; ответ: Danke!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesundheit"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 289,
+          "record": {
+            "id": "dict_00f92a6e2882b5b14fb9",
+            "de": "die Gesundheit",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "здоровье"
+            ],
+            "definition_de": "Der Zustand eines Menschen, der körperlich und seelisch gesund ist.",
+            "forms": "Без множественного числа",
+            "example": "Sport ist gut für die Gesundheit.",
+            "example_ru": "Спорт полезен для здоровья.",
+            "grammar_hint": "",
+            "usage_note": "Gesundheit! — Будь здоров! / Будьте здоровы! (после чихания). Это междометие, употребляется без артикля, отдельно от существительного die Gesundheit.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gesundheit"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Здоровье и тело",
+            "topics": [
+              "Здоровье и тело"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 137,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same beverage noun.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 19,
+        "record": {
+          "id": "b1-getraenk-drink",
+          "de": "das Getränk",
+          "lemma": "Getränk",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "напиток"
+          ],
+          "definition_de": "Eine Flüssigkeit, die zum Trinken bestimmt ist.",
+          "example": "Zum Mittagessen bestelle ich ein kaltes Getränk.",
+          "example_ru": "К обеду я заказываю холодный напиток.",
+          "forms": "die Getränke",
+          "grammar_hint": "alkoholfreie Getränke; die Getränkekarte; etwas zu trinken — что-нибудь выпить.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Getr%C3%A4nk"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 344,
+          "record": {
+            "id": "a1-263-1",
+            "de": "das Getränk",
+            "lemma": "Getränk",
+            "ru": "напиток",
+            "uk": "",
+            "translations_ru": [
+              "напиток"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Getränke",
+            "definition_de": "Etwas, das zum Trinken bestimmt ist.",
+            "example": "Möchten Sie ein kaltes Getränk?",
+            "example_ru": "Хотите холодный напиток?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "22f3b435ffd4d3e44681"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-263-1",
+        "alias_id": "b1-getraenk-drink",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-263-1"
+      }
+    },
+    {
+      "candidate_number": 138,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same everyday weight meaning; retain note on kg, avoid equating technical physical weight and mass without qualification.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 23,
+        "record": {
+          "id": "b1-gewicht-weight",
+          "de": "das Gewicht",
+          "lemma": "Gewicht",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "вес",
+            "масса"
+          ],
+          "definition_de": "Eine Angabe darüber, wie schwer etwas oder jemand ist.",
+          "example": "Das Gewicht des Koffers beträgt zwölf Kilo.",
+          "example_ru": "Вес чемодана составляет двенадцать килограммов.",
+          "forms": "die Gewichte",
+          "grammar_hint": "an Gewicht zunehmen / verlieren; ein Gewicht von + Dativ; в повседневной речи вес обычно выражают в kg.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gewicht"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 345,
+          "record": {
+            "id": "a1-264-1",
+            "de": "das Gewicht",
+            "lemma": "Gewicht",
+            "ru": "вес",
+            "uk": "",
+            "translations_ru": [
+              "вес"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "die Gewichte",
+            "definition_de": "Gibt an, wie schwer etwas oder jemand ist.",
+            "example": "Wie viel wiegt das Paket? Das Gewicht steht auf dem Etikett.",
+            "example_ru": "Сколько весит посылка? Вес указан на этикетке.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "c832f0d947aa5392a27a"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-264-1",
+        "alias_id": "b1-gewicht-weight",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-264-1"
+      }
+    },
+    {
+      "candidate_number": 139,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Winning a prize vs defeating opponent; related context, e.g. lottery does not entail competition victory.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 24,
+        "record": {
+          "id": "b1-gewinnen-prize",
+          "de": "gewinnen",
+          "lemma": "gewinnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "выиграть",
+            "выигрывать (приз)"
+          ],
+          "definition_de": "Durch ein Spiel oder eine Verlosung einen Preis erhalten.",
+          "example": "Sie hat bei einem Wettbewerb eine Reise gewonnen.",
+          "example_ru": "Она выиграла поездку в конкурсе.",
+          "forms": "gewinnt · gewann · hat gewonnen",
+          "grammar_hint": "einen Preis gewinnen (+ Akkusativ); bei einem Wettbewerb (+ Dativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gewinnen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 346,
+          "record": {
+            "id": "a1-265-1",
+            "de": "gewinnen",
+            "lemma": "gewinnen",
+            "ru": "побеждать; выигрывать",
+            "uk": "",
+            "translations_ru": [
+              "побеждать",
+              "выигрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "gewinnt · gewann · hat gewonnen",
+            "definition_de": "In einem Spiel oder Wettbewerb den ersten Platz erreichen oder besser sein als der Gegner.",
+            "example": "Unser Team hat das Spiel gewonnen.",
+            "example_ru": "Наша команда выиграла матч.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "7ef2bfaede73888e543b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 140,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same victory sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 25,
+        "record": {
+          "id": "b1-gewinnen-victory",
+          "de": "gewinnen",
+          "lemma": "gewinnen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "побеждать",
+            "победить",
+            "выигрывать (соревнование)"
+          ],
+          "definition_de": "In einem Wettkampf erfolgreicher als die anderen sein.",
+          "example": "Unsere Mannschaft hat das letzte Spiel gewonnen.",
+          "example_ru": "Наша команда выиграла последний матч.",
+          "forms": "gewinnt · gewann · hat gewonnen",
+          "grammar_hint": "ein Spiel gewinnen (+ Akkusativ); gegen eine Mannschaft gewinnen (+ Akkusativ); Gegensatz: verlieren.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gewinnen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 346,
+          "record": {
+            "id": "a1-265-1",
+            "de": "gewinnen",
+            "lemma": "gewinnen",
+            "ru": "побеждать; выигрывать",
+            "uk": "",
+            "translations_ru": [
+              "побеждать",
+              "выигрывать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "gewinnt · gewann · hat gewonnen",
+            "definition_de": "In einem Spiel oder Wettbewerb den ersten Platz erreichen oder besser sein als der Gegner.",
+            "example": "Unser Team hat das Spiel gewonnen.",
+            "example_ru": "Наша команда выиграла матч.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "7ef2bfaede73888e543b"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-265-1",
+        "alias_id": "b1-gewinnen-victory",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-265-1"
+      }
+    },
+    {
+      "candidate_number": 141,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same thunderstorm sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_029.json",
+        "sha": "4481fd9bd73b59823c203e8a4a992ace4e02f64c",
+        "batch": 29,
+        "row": 28,
+        "record": {
+          "id": "b1-gewitter-storm",
+          "de": "das Gewitter",
+          "lemma": "Gewitter",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "гроза"
+          ],
+          "definition_de": "Ein Wetterereignis mit Blitz und Donner, oft auch Regen.",
+          "example": "Heute Nacht erwarten wir ein starkes Gewitter.",
+          "example_ru": "Сегодня ночью ожидается сильная гроза.",
+          "forms": "die Gewitter",
+          "grammar_hint": "ein Gewitter zieht auf; bei einem Gewitter (+ Dativ); Donner = гром, Blitz = молния.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gewitter"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 19,
+          "record": {
+            "id": "dict_a5320922cd88a3713745",
+            "de": "das Gewitter",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "гроза"
+            ],
+            "definition_de": "Ein Wetterereignis mit Blitz und Donner.",
+            "forms": "Plural · die Gewitter",
+            "example": "Bei einem Gewitter bleiben wir lieber im Haus.",
+            "example_ru": "Во время грозы мы предпочитаем оставаться дома.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gewitter"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_a5320922cd88a3713745",
+        "alias_id": "b1-gewitter-storm",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_a5320922cd88a3713745"
+      }
+    },
+    {
+      "candidate_number": 142,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same instrument.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 9,
+        "record": {
+          "id": "b1-gitarre-instrument",
+          "de": "die Gitarre",
+          "lemma": "Gitarre",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "гитара"
+          ],
+          "definition_de": "Ein Saiteninstrument, das man meist mit den Fingern spielt.",
+          "example": "Mein Bruder lernt gerade Gitarre spielen.",
+          "example_ru": "Мой брат сейчас учится играть на гитаре.",
+          "forms": "die Gitarren",
+          "grammar_hint": "Gitarre spielen — обычно без артикля.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gitarre"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 18,
+          "record": {
+            "id": "dict_95795e80aaed841edcc5",
+            "de": "die Gitarre",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "гитара"
+            ],
+            "definition_de": "Ein Saiteninstrument, das man mit den Fingern oder einem kleinen Plättchen spielt.",
+            "forms": "Plural · die Gitarren",
+            "example": "Meine Schwester spielt jeden Abend Gitarre.",
+            "example_ru": "Моя сестра каждый вечер играет на гитаре.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 16,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Gitarre"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_95795e80aaed841edcc5",
+        "alias_id": "b1-gitarre-instrument",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_95795e80aaed841edcc5"
+      }
+    },
+    {
+      "candidate_number": 143,
+      "decision": "retain_distinct_sense",
+      "reason": "Glass material vs drinking vessel and measure.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 11,
+        "record": {
+          "id": "b1-glas-material",
+          "de": "das Glas",
+          "lemma": "Glas",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "стекло (материал)"
+          ],
+          "definition_de": "Ein harter, oft durchsichtiger Werkstoff.",
+          "example": "Die Tischplatte besteht aus Glas.",
+          "example_ru": "Столешница сделана из стекла.",
+          "forms": "в значении материала без множественного числа",
+          "grammar_hint": "aus Glas (aus + Dativ); gläsern — стеклянный.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Glas"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 347,
+          "record": {
+            "id": "a1-266-1",
+            "de": "das Glas",
+            "lemma": "Glas",
+            "ru": "стакан; бокал",
+            "uk": "",
+            "translations_ru": [
+              "стакан",
+              "бокал"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Gläser",
+            "definition_de": "Ein Gefäß zum Trinken.",
+            "example": "Auf dem Tisch stehen zwei Gläser.",
+            "example_ru": "На столе стоят два стакана.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "435cda1064c14302c4f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 348,
+          "record": {
+            "id": "a1-266-2",
+            "de": "ein Glas",
+            "lemma": "ein Glas",
+            "ru": "стакан (как мера); бокал (как мера)",
+            "uk": "",
+            "translations_ru": [
+              "стакан (как мера)",
+              "бокал (как мера)"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "",
+            "definition_de": "Die Menge, die in ein Trinkglas passt.",
+            "example": "Ich trinke ein Glas Wasser.",
+            "example_ru": "Я выпью стакан воды.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "435cda1064c14302c4f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 144,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same vessel sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 12,
+        "record": {
+          "id": "b1-glas-vessel",
+          "de": "das Glas",
+          "lemma": "Glas",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "стакан",
+            "бокал"
+          ],
+          "definition_de": "Ein Gefäß, aus dem man trinken kann.",
+          "example": "Auf dem Tisch stehen drei leere Gläser.",
+          "example_ru": "На столе стоят три пустых стакана.",
+          "forms": "die Gläser",
+          "grammar_hint": "ein Glas auf den Tisch stellen; das Trinkglas.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Glas"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 347,
+          "record": {
+            "id": "a1-266-1",
+            "de": "das Glas",
+            "lemma": "Glas",
+            "ru": "стакан; бокал",
+            "uk": "",
+            "translations_ru": [
+              "стакан",
+              "бокал"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Gläser",
+            "definition_de": "Ein Gefäß zum Trinken.",
+            "example": "Auf dem Tisch stehen zwei Gläser.",
+            "example_ru": "На столе стоят два стакана.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "435cda1064c14302c4f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 348,
+          "record": {
+            "id": "a1-266-2",
+            "de": "ein Glas",
+            "lemma": "ein Glas",
+            "ru": "стакан (как мера); бокал (как мера)",
+            "uk": "",
+            "translations_ru": [
+              "стакан (как мера)",
+              "бокал (как мера)"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "",
+            "definition_de": "Die Menge, die in ein Trinkglas passt.",
+            "example": "Ich trinke ein Glas Wasser.",
+            "example_ru": "Я выпью стакан воды.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "435cda1064c14302c4f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-266-1",
+        "alias_id": "b1-glas-vessel",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-266-1"
+      }
+    },
+    {
+      "candidate_number": 145,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same quantity expression as A1 ein Glas; preserve phrase and plural usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 13,
+        "record": {
+          "id": "b1-glas-quantity",
+          "de": "ein Glas",
+          "lemma": "Glas",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "стакан (как порция)",
+            "бокал (как порция)"
+          ],
+          "definition_de": "Eine Menge eines Getränks, die in ein Trinkgefäß passt.",
+          "example": "Zum Frühstück trinke ich ein Glas Orangensaft.",
+          "example_ru": "На завтрак я выпиваю стакан апельсинового сока.",
+          "forms": "die Gläser",
+          "grammar_hint": "ein Glas Wasser; zwei Gläser Saft. Название напитка обычно без артикля.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Glas"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 347,
+          "record": {
+            "id": "a1-266-1",
+            "de": "das Glas",
+            "lemma": "Glas",
+            "ru": "стакан; бокал",
+            "uk": "",
+            "translations_ru": [
+              "стакан",
+              "бокал"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "die Gläser",
+            "definition_de": "Ein Gefäß zum Trinken.",
+            "example": "Auf dem Tisch stehen zwei Gläser.",
+            "example_ru": "На столе стоят два стакана.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "435cda1064c14302c4f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 348,
+          "record": {
+            "id": "a1-266-2",
+            "de": "ein Glas",
+            "lemma": "ein Glas",
+            "ru": "стакан (как мера); бокал (как мера)",
+            "uk": "",
+            "translations_ru": [
+              "стакан (как мера)",
+              "бокал (как мера)"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "",
+            "definition_de": "Die Menge, die in ein Trinkglas passt.",
+            "example": "Ich trinke ein Glas Wasser.",
+            "example_ru": "Я выпью стакан воды.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "435cda1064c14302c4f4"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-266-2",
+        "alias_id": "b1-glas-quantity",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-266-2"
+      }
+    },
+    {
+      "candidate_number": 146,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same supposition sense; retain dass and unintroduced clause examples.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 15,
+        "record": {
+          "id": "b1-glauben-suppose",
+          "de": "glauben",
+          "lemma": "glauben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "думать",
+            "полагать",
+            "предполагать"
+          ],
+          "definition_de": "Etwas für wahrscheinlich halten.",
+          "example": "Ich glaube, dass der Laden schon geschlossen ist.",
+          "example_ru": "Я думаю, что магазин уже закрыт.",
+          "forms": "glaubt · glaubte · hat geglaubt",
+          "grammar_hint": "glauben, dass …: глагол в конце придаточного. Без dass возможен порядок главного предложения: Ich glaube, der Laden ist zu.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/glauben"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 349,
+          "record": {
+            "id": "a1-267-1",
+            "de": "glauben",
+            "lemma": "glauben",
+            "ru": "верить; доверять словам",
+            "uk": "",
+            "translations_ru": [
+              "верить",
+              "доверять словам"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Für wahr halten, was jemand sagt.",
+            "example": "Ich glaube dir.",
+            "example_ru": "Я тебе верю.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5ccd0aca6f6dbd86d2cb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 350,
+          "record": {
+            "id": "a1-267-2",
+            "de": "glauben",
+            "lemma": "glauben",
+            "ru": "думать; полагать",
+            "uk": "",
+            "translations_ru": [
+              "думать",
+              "полагать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Etwas für wahrscheinlich halten.",
+            "example": "Ich glaube, der Bus kommt gleich.",
+            "example_ru": "Думаю, автобус сейчас придёт.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5ccd0aca6f6dbd86d2cb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-267-2",
+        "alias_id": "b1-glauben-suppose",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-267-2"
+      }
+    },
+    {
+      "candidate_number": 147,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same trusting statement sense; retain Dativ and Akkusativ patterns.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 16,
+        "record": {
+          "id": "b1-glauben-trust",
+          "de": "jemandem glauben",
+          "lemma": "glauben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "верить кому-либо",
+            "доверять словам"
+          ],
+          "definition_de": "Die Aussage einer Person für wahr halten.",
+          "example": "Ich glaube dir, dass du keine Zeit hattest.",
+          "example_ru": "Я верю тебе, что у тебя не было времени.",
+          "forms": "glaubt · glaubte · hat geglaubt",
+          "grammar_hint": "jemandem + Dativ: mir, dir, ihm, ihr. etwas glauben + Akkusativ: Ich glaube das.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/glauben"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 349,
+          "record": {
+            "id": "a1-267-1",
+            "de": "glauben",
+            "lemma": "glauben",
+            "ru": "верить; доверять словам",
+            "uk": "",
+            "translations_ru": [
+              "верить",
+              "доверять словам"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Für wahr halten, was jemand sagt.",
+            "example": "Ich glaube dir.",
+            "example_ru": "Я тебе верю.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5ccd0aca6f6dbd86d2cb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 350,
+          "record": {
+            "id": "a1-267-2",
+            "de": "glauben",
+            "lemma": "glauben",
+            "ru": "думать; полагать",
+            "uk": "",
+            "translations_ru": [
+              "думать",
+              "полагать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Etwas für wahrscheinlich halten.",
+            "example": "Ich glaube, der Bus kommt gleich.",
+            "example_ru": "Думаю, автобус сейчас придёт.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5ccd0aca6f6dbd86d2cb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-267-1",
+        "alias_id": "b1-glauben-trust",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-267-1"
+      }
+    },
+    {
+      "candidate_number": 148,
+      "decision": "retain_distinct_sense",
+      "reason": "Belief in existence or possibility vs trusting statement/supposing.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 17,
+        "record": {
+          "id": "b1-glauben-believe-in",
+          "de": "an etwas glauben",
+          "lemma": "glauben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "верить в кого-либо или что-либо"
+          ],
+          "definition_de": "Von der Existenz oder Möglichkeit von etwas überzeugt sein.",
+          "example": "Sie glaubt an eine bessere Zukunft.",
+          "example_ru": "Она верит в лучшее будущее.",
+          "forms": "glaubt · glaubte · hat geglaubt",
+          "grammar_hint": "an + Akkusativ: an dich, an den Erfolg; Woran glaubst du?",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/glauben"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 349,
+          "record": {
+            "id": "a1-267-1",
+            "de": "glauben",
+            "lemma": "glauben",
+            "ru": "верить; доверять словам",
+            "uk": "",
+            "translations_ru": [
+              "верить",
+              "доверять словам"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Für wahr halten, was jemand sagt.",
+            "example": "Ich glaube dir.",
+            "example_ru": "Я тебе верю.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5ccd0aca6f6dbd86d2cb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 350,
+          "record": {
+            "id": "a1-267-2",
+            "de": "glauben",
+            "lemma": "glauben",
+            "ru": "думать; полагать",
+            "uk": "",
+            "translations_ru": [
+              "думать",
+              "полагать"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Etwas für wahrscheinlich halten.",
+            "example": "Ich glaube, der Bus kommt gleich.",
+            "example_ru": "Думаю, автобус сейчас придёт.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5ccd0aca6f6dbd86d2cb"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 149,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same immediate future sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 18,
+        "record": {
+          "id": "b1-gleich-soon",
+          "de": "gleich",
+          "lemma": "gleich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "сейчас",
+            "скоро",
+            "с минуты на минуту"
+          ],
+          "definition_de": "Zu einem Zeitpunkt in unmittelbarer Zukunft.",
+          "example": "Warte kurz, ich bin gleich fertig.",
+          "example_ru": "Подожди немного, я сейчас закончу.",
+          "forms": "неизменяемое",
+          "grammar_hint": "gleich — очень скоро; gerade — в данный момент; sofort — немедленно.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 351,
+          "record": {
+            "id": "a1-268-1",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "одинаковый; такой же",
+            "uk": "",
+            "translations_ru": [
+              "одинаковый",
+              "такой же"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "Обычно без степеней сравнения в значении «одинаковый»",
+            "definition_de": "In einem bestimmten Merkmal nicht verschieden.",
+            "example": "Die beiden Karten haben den gleichen Preis.",
+            "example_ru": "Оба билета стоят одинаково.",
+            "note": "gleich alt / gleich groß — одного возраста / роста; der gleiche Preis — одинаковая цена. Сравнительная форма в этом значении нестандартна или редка.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 352,
+          "record": {
+            "id": "a1-268-2",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "сейчас; вот-вот; через минуту (разг.)",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "вот-вот",
+              "через минуту (разг.)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Nach sehr kurzer Zeit.",
+            "example": "Ich bin gleich da.",
+            "example_ru": "Я сейчас приду.",
+            "note": "gleich — сейчас, вот-вот, через короткое время; не означает «позже».",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-268-2",
+        "alias_id": "b1-gleich-soon",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-268-2"
+      }
+    },
+    {
+      "candidate_number": 150,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 equal adjective hint already gives gleich alt/gleich groß; preserve degree use conditionally with POS distinction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 19,
+        "record": {
+          "id": "b1-gleich-equal-degree",
+          "de": "gleich",
+          "lemma": "gleich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "одинаково",
+            "в равной степени"
+          ],
+          "definition_de": "In demselben Maß oder Grad.",
+          "example": "Die beiden Zimmer sind gleich groß.",
+          "example_ru": "Обе комнаты одинакового размера.",
+          "forms": "неизменяемое",
+          "grammar_hint": "gleich + прилагательное: gleich alt, gleich teuer; прилагательное здесь не склоняется.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 351,
+          "record": {
+            "id": "a1-268-1",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "одинаковый; такой же",
+            "uk": "",
+            "translations_ru": [
+              "одинаковый",
+              "такой же"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "Обычно без степеней сравнения в значении «одинаковый»",
+            "definition_de": "In einem bestimmten Merkmal nicht verschieden.",
+            "example": "Die beiden Karten haben den gleichen Preis.",
+            "example_ru": "Оба билета стоят одинаково.",
+            "note": "gleich alt / gleich groß — одного возраста / роста; der gleiche Preis — одинаковая цена. Сравнительная форма в этом значении нестандартна или редка.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 352,
+          "record": {
+            "id": "a1-268-2",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "сейчас; вот-вот; через минуту (разг.)",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "вот-вот",
+              "через минуту (разг.)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Nach sehr kurzer Zeit.",
+            "example": "Ich bin gleich da.",
+            "example_ru": "Я сейчас приду.",
+            "note": "gleich — сейчас, вот-вот, через короткое время; не означает «позже».",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-268-1",
+        "alias_id": "b1-gleich-equal-degree",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-268-1"
+      }
+    },
+    {
+      "candidate_number": 151,
+      "decision": "retain_distinct_sense",
+      "reason": "Indifference idiom vs equality or immediate future.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 20,
+        "record": {
+          "id": "b1-gleich-indifferent",
+          "de": "jemandem gleich sein",
+          "lemma": "gleich",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть всё равно",
+            "не иметь значения"
+          ],
+          "definition_de": "Für eine Person keinen Unterschied machen.",
+          "example": "Mir ist gleich, welchen Bus wir nehmen.",
+          "example_ru": "Мне всё равно, на каком автобусе мы поедем.",
+          "forms": "jemandem (Dativ) gleich sein",
+          "grammar_hint": "Mir / dir / ihm ist es gleich. В придаточном с welchen глагол в конце. Синоним: egal.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 351,
+          "record": {
+            "id": "a1-268-1",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "одинаковый; такой же",
+            "uk": "",
+            "translations_ru": [
+              "одинаковый",
+              "такой же"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "Обычно без степеней сравнения в значении «одинаковый»",
+            "definition_de": "In einem bestimmten Merkmal nicht verschieden.",
+            "example": "Die beiden Karten haben den gleichen Preis.",
+            "example_ru": "Оба билета стоят одинаково.",
+            "note": "gleich alt / gleich groß — одного возраста / роста; der gleiche Preis — одинаковая цена. Сравнительная форма в этом значении нестандартна или редка.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 352,
+          "record": {
+            "id": "a1-268-2",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "сейчас; вот-вот; через минуту (разг.)",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "вот-вот",
+              "через минуту (разг.)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Nach sehr kurzer Zeit.",
+            "example": "Ich bin gleich da.",
+            "example_ru": "Я сейчас приду.",
+            "note": "gleich — сейчас, вот-вот, через короткое время; не означает «позже».",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 152,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same equality sense; retain gleich/derselbe contrast with register qualification.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_030.json",
+        "sha": "c3e77e5d0c57754ea643f288d0f26439d3130536",
+        "batch": 30,
+        "row": 21,
+        "record": {
+          "id": "b1-gleich-same",
+          "de": "gleich",
+          "lemma": "gleich",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "одинаковый",
+            "такой же"
+          ],
+          "definition_de": "In den betreffenden Eigenschaften übereinstimmend.",
+          "example": "Wir haben die gleichen Schuhe gekauft.",
+          "example_ru": "Мы купили одинаковые туфли.",
+          "forms": "gleich · в значении идентичности обычно без сравнения",
+          "grammar_hint": "das gleiche Buch — такой же экземпляр; dasselbe Buch — тот же самый экземпляр (в строгом различении).",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 351,
+          "record": {
+            "id": "a1-268-1",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "одинаковый; такой же",
+            "uk": "",
+            "translations_ru": [
+              "одинаковый",
+              "такой же"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "Обычно без степеней сравнения в значении «одинаковый»",
+            "definition_de": "In einem bestimmten Merkmal nicht verschieden.",
+            "example": "Die beiden Karten haben den gleichen Preis.",
+            "example_ru": "Оба билета стоят одинаково.",
+            "note": "gleich alt / gleich groß — одного возраста / роста; der gleiche Preis — одинаковая цена. Сравнительная форма в этом значении нестандартна или редка.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 352,
+          "record": {
+            "id": "a1-268-2",
+            "de": "gleich",
+            "lemma": "gleich",
+            "ru": "сейчас; вот-вот; через минуту (разг.)",
+            "uk": "",
+            "translations_ru": [
+              "сейчас",
+              "вот-вот",
+              "через минуту (разг.)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Nach sehr kurzer Zeit.",
+            "example": "Ich bin gleich da.",
+            "example_ru": "Я сейчас приду.",
+            "note": "gleich — сейчас, вот-вот, через короткое время; не означает «позже».",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "06408c885756f1fc4d95"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-268-1",
+        "alias_id": "b1-gleich-same",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology and usage variants, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-268-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "dict_6c88899caac6ddaeef99",
+      "alias_ids": [
+        "b1-gesund-well"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_6c88899caac6ddaeef99",
+        "de": "gesund",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "здоровый",
+          "здоров"
+        ],
+        "definition_de": "Frei von einer Krankheit.",
+        "forms": "gesund · gesünder · am gesündesten",
+        "example": "Nach einer Woche zu Hause bin ich wieder gesund.",
+        "example_ru": "После недели дома я снова здорова.",
+        "grammar_hint": "Часто употребляют формы gesünder и am gesündesten. Допустимы также gesunder и am gesundesten.\ngesund sein / werden / bleiben; Gegensatz: krank.",
+        "usage_note": "Когда gesund относится к еде или привычке, его можно перевести «полезный для здоровья».",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/gesund"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "gesund · gesünder / gesunder · am gesündesten / am gesundesten"
+        ],
+        "alternative_definitions_de": [
+          "Nicht krank oder körperlich und psychisch in gutem Zustand."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Nach einer Woche Ruhe ist sie wieder gesund.",
+            "ru": "После недели отдыха она снова здорова."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "gesund",
+            "part": "adj",
+            "forms": "gesund · gesünder / gesunder · am gesündesten / am gesundesten",
+            "definition_de": "Nicht krank oder körperlich und psychisch in gutem Zustand.",
+            "translations_ru": [
+              "здоровый",
+              "здоров"
+            ],
+            "grammar_hint": "gesund sein / werden / bleiben; Gegensatz: krank.",
+            "example": "Nach einer Woche Ruhe ist sie wieder gesund.",
+            "example_ru": "После недели отдыха она снова здорова."
+          }
+        ],
+        "alias_ids": [
+          "b1-gesund-well"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gesund"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_00f92a6e2882b5b14fb9",
+      "alias_ids": [
+        "b1-gesundheit-health"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_00f92a6e2882b5b14fb9",
+        "de": "die Gesundheit",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "здоровье"
+        ],
+        "definition_de": "Der Zustand eines Menschen, der körperlich und seelisch gesund ist.",
+        "forms": "Без множественного числа",
+        "example": "Sport ist gut für die Gesundheit.",
+        "example_ru": "Спорт полезен для здоровья.",
+        "grammar_hint": "auf seine Gesundheit achten (+ Akkusativ); etwas für die Gesundheit tun.",
+        "usage_note": "Gesundheit! — Будь здоров! / Будьте здоровы! (после чихания). Это междометие, употребляется без артикля, отдельно от существительного die Gesundheit.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Gesundheit"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Здоровье и тело",
+        "topics": [
+          "Здоровье и тело",
+          "Здоровье"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "обычно без множественного числа"
+        ],
+        "alternative_definitions_de": [
+          "Der körperliche und seelische Zustand eines Menschen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Schlaf ist wichtig für unsere Gesundheit.",
+            "ru": "Сон важен для нашего здоровья."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "die Gesundheit",
+            "part": "noun",
+            "forms": "обычно без множественного числа",
+            "definition_de": "Der körperliche und seelische Zustand eines Menschen.",
+            "translations_ru": [
+              "здоровье"
+            ],
+            "grammar_hint": "auf seine Gesundheit achten (+ Akkusativ); etwas für die Gesundheit tun.",
+            "example": "Schlaf ist wichtig für unsere Gesundheit.",
+            "example_ru": "Сон важен для нашего здоровья."
+          }
+        ],
+        "alias_ids": [
+          "b1-gesundheit-health"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gesundheit"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-263-1",
+      "alias_ids": [
+        "b1-getraenk-drink"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-263-1",
+        "de": "das Getränk",
+        "lemma": "Getränk",
+        "ru": "напиток",
+        "uk": "",
+        "translations_ru": [
+          "напиток"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "die Getränke",
+        "definition_de": "Etwas, das zum Trinken bestimmt ist.",
+        "example": "Möchten Sie ein kaltes Getränk?",
+        "example_ru": "Хотите холодный напиток?",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "22f3b435ffd4d3e44681"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "alkoholfreie Getränke; die Getränkekarte; etwas zu trinken — что-нибудь выпить.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Flüssigkeit, die zum Trinken bestimmt ist."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Zum Mittagessen bestelle ich ein kaltes Getränk.",
+            "ru": "К обеду я заказываю холодный напиток."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "das Getränk",
+            "part": "noun",
+            "forms": "die Getränke",
+            "definition_de": "Eine Flüssigkeit, die zum Trinken bestimmt ist.",
+            "translations_ru": [
+              "напиток"
+            ],
+            "grammar_hint": "alkoholfreie Getränke; die Getränkekarte; etwas zu trinken — что-нибудь выпить.",
+            "example": "Zum Mittagessen bestelle ich ein kaltes Getränk.",
+            "example_ru": "К обеду я заказываю холодный напиток."
+          }
+        ],
+        "alias_ids": [
+          "b1-getraenk-drink"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Getr%C3%A4nk"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-264-1",
+      "alias_ids": [
+        "b1-gewicht-weight"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-264-1",
+        "de": "das Gewicht",
+        "lemma": "Gewicht",
+        "ru": "вес; масса",
+        "uk": "",
+        "translations_ru": [
+          "вес",
+          "масса"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье",
+          "Транспорт и путешествия"
+        ],
+        "forms": "die Gewichte",
+        "definition_de": "Gibt an, wie schwer etwas oder jemand ist.",
+        "example": "Wie viel wiegt das Paket? Das Gewicht steht auf dem Etikett.",
+        "example_ru": "Сколько весит посылка? Вес указан на этикетке.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "c832f0d947aa5392a27a"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "an Gewicht zunehmen / verlieren; ein Gewicht von + Dativ; в повседневной речи вес обычно выражают в kg.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Eine Angabe darüber, wie schwer etwas oder jemand ist."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Das Gewicht des Koffers beträgt zwölf Kilo.",
+            "ru": "Вес чемодана составляет двенадцать килограммов."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "das Gewicht",
+            "part": "noun",
+            "forms": "die Gewichte",
+            "definition_de": "Eine Angabe darüber, wie schwer etwas oder jemand ist.",
+            "translations_ru": [
+              "вес",
+              "масса"
+            ],
+            "grammar_hint": "an Gewicht zunehmen / verlieren; ein Gewicht von + Dativ; в повседневной речи вес обычно выражают в kg.",
+            "example": "Das Gewicht des Koffers beträgt zwölf Kilo.",
+            "example_ru": "Вес чемодана составляет двенадцать килограммов."
+          }
+        ],
+        "alias_ids": [
+          "b1-gewicht-weight"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gewicht"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-265-1",
+      "alias_ids": [
+        "b1-gewinnen-victory"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-265-1",
+        "de": "gewinnen",
+        "lemma": "gewinnen",
+        "ru": "побеждать; выигрывать; победить; выигрывать (соревнование)",
+        "uk": "",
+        "translations_ru": [
+          "побеждать",
+          "выигрывать",
+          "победить",
+          "выигрывать (соревнование)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг",
+          "Досуг и культура"
+        ],
+        "forms": "gewinnt · gewann · hat gewonnen",
+        "definition_de": "In einem Spiel oder Wettbewerb den ersten Platz erreichen oder besser sein als der Gegner.",
+        "example": "Unser Team hat das Spiel gewonnen.",
+        "example_ru": "Наша команда выиграла матч.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "7ef2bfaede73888e543b"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "ein Spiel gewinnen (+ Akkusativ); gegen eine Mannschaft gewinnen (+ Akkusativ); Gegensatz: verlieren.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "In einem Wettkampf erfolgreicher als die anderen sein."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Unsere Mannschaft hat das letzte Spiel gewonnen.",
+            "ru": "Наша команда выиграла последний матч."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "gewinnen",
+            "part": "verb",
+            "forms": "gewinnt · gewann · hat gewonnen",
+            "definition_de": "In einem Wettkampf erfolgreicher als die anderen sein.",
+            "translations_ru": [
+              "побеждать",
+              "победить",
+              "выигрывать (соревнование)"
+            ],
+            "grammar_hint": "ein Spiel gewinnen (+ Akkusativ); gegen eine Mannschaft gewinnen (+ Akkusativ); Gegensatz: verlieren.",
+            "example": "Unsere Mannschaft hat das letzte Spiel gewonnen.",
+            "example_ru": "Наша команда выиграла последний матч."
+          }
+        ],
+        "alias_ids": [
+          "b1-gewinnen-victory"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gewinnen"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_a5320922cd88a3713745",
+      "alias_ids": [
+        "b1-gewitter-storm"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_a5320922cd88a3713745",
+        "de": "das Gewitter",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "гроза"
+        ],
+        "definition_de": "Ein Wetterereignis mit Blitz und Donner.",
+        "forms": "Plural · die Gewitter",
+        "example": "Bei einem Gewitter bleiben wir lieber im Haus.",
+        "example_ru": "Во время грозы мы предпочитаем оставаться дома.",
+        "grammar_hint": "ein Gewitter zieht auf; bei einem Gewitter (+ Dativ); Donner = гром, Blitz = молния.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Gewitter"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода",
+          "Природа и погода"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Gewitter"
+        ],
+        "alternative_definitions_de": [
+          "Ein Wetterereignis mit Blitz und Donner, oft auch Regen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Heute Nacht erwarten wir ein starkes Gewitter.",
+            "ru": "Сегодня ночью ожидается сильная гроза."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "das Gewitter",
+            "part": "noun",
+            "forms": "die Gewitter",
+            "definition_de": "Ein Wetterereignis mit Blitz und Donner, oft auch Regen.",
+            "translations_ru": [
+              "гроза"
+            ],
+            "grammar_hint": "ein Gewitter zieht auf; bei einem Gewitter (+ Dativ); Donner = гром, Blitz = молния.",
+            "example": "Heute Nacht erwarten wir ein starkes Gewitter.",
+            "example_ru": "Сегодня ночью ожидается сильная гроза."
+          }
+        ],
+        "alias_ids": [
+          "b1-gewitter-storm"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gewitter"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "dict_95795e80aaed841edcc5",
+      "alias_ids": [
+        "b1-gitarre-instrument"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_95795e80aaed841edcc5",
+        "de": "die Gitarre",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "гитара"
+        ],
+        "definition_de": "Ein Saiteninstrument, das man mit den Fingern oder einem kleinen Plättchen spielt.",
+        "forms": "Plural · die Gitarren",
+        "example": "Meine Schwester spielt jeden Abend Gitarre.",
+        "example_ru": "Моя сестра каждый вечер играет на гитаре.",
+        "grammar_hint": "Gitarre spielen — обычно без артикля.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 16,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Gitarre"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Искусство, музыка и развлечения",
+        "topics": [
+          "Искусство, музыка и развлечения",
+          "Досуг и культура"
+        ],
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Gitarren"
+        ],
+        "alternative_definitions_de": [
+          "Ein Saiteninstrument, das man meist mit den Fingern spielt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Mein Bruder lernt gerade Gitarre spielen.",
+            "ru": "Мой брат сейчас учится играть на гитаре."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "die Gitarre",
+            "part": "noun",
+            "forms": "die Gitarren",
+            "definition_de": "Ein Saiteninstrument, das man meist mit den Fingern spielt.",
+            "translations_ru": [
+              "гитара"
+            ],
+            "grammar_hint": "Gitarre spielen — обычно без артикля.",
+            "example": "Mein Bruder lernt gerade Gitarre spielen.",
+            "example_ru": "Мой брат сейчас учится играть на гитаре."
+          }
+        ],
+        "alias_ids": [
+          "b1-gitarre-instrument"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gitarre"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-266-1",
+      "alias_ids": [
+        "b1-glas-vessel"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-266-1",
+        "de": "das Glas",
+        "lemma": "Glas",
+        "ru": "стакан; бокал",
+        "uk": "",
+        "translations_ru": [
+          "стакан",
+          "бокал"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Дом и быт"
+        ],
+        "forms": "die Gläser",
+        "definition_de": "Ein Gefäß zum Trinken.",
+        "example": "Auf dem Tisch stehen zwei Gläser.",
+        "example_ru": "На столе стоят два стакана.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "435cda1064c14302c4f4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "ein Glas auf den Tisch stellen; das Trinkglas.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein Gefäß, aus dem man trinken kann."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Auf dem Tisch stehen drei leere Gläser.",
+            "ru": "На столе стоят три пустых стакана."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "das Glas",
+            "part": "noun",
+            "forms": "die Gläser",
+            "definition_de": "Ein Gefäß, aus dem man trinken kann.",
+            "translations_ru": [
+              "стакан",
+              "бокал"
+            ],
+            "grammar_hint": "ein Glas auf den Tisch stellen; das Trinkglas.",
+            "example": "Auf dem Tisch stehen drei leere Gläser.",
+            "example_ru": "На столе стоят три пустых стакана."
+          }
+        ],
+        "alias_ids": [
+          "b1-glas-vessel"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Glas"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-266-2",
+      "alias_ids": [
+        "b1-glas-quantity"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-266-2",
+        "de": "ein Glas",
+        "lemma": "ein Glas",
+        "ru": "стакан (как мера); бокал (как мера); стакан (как порция); бокал (как порция)",
+        "uk": "",
+        "translations_ru": [
+          "стакан (как мера)",
+          "бокал (как мера)",
+          "стакан (как порция)",
+          "бокал (как порция)"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "",
+        "definition_de": "Die Menge, die in ein Trinkglas passt.",
+        "example": "Ich trinke ein Glas Wasser.",
+        "example_ru": "Я выпью стакан воды.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "435cda1064c14302c4f4"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "ein Glas Wasser; zwei Gläser Saft. Название напитка обычно без артикля.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "die Gläser"
+        ],
+        "alternative_definitions_de": [
+          "Eine Menge eines Getränks, die in ein Trinkgefäß passt."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Zum Frühstück trinke ich ein Glas Orangensaft.",
+            "ru": "На завтрак я выпиваю стакан апельсинового сока."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "ein Glas",
+            "part": "phrase",
+            "forms": "die Gläser",
+            "definition_de": "Eine Menge eines Getränks, die in ein Trinkgefäß passt.",
+            "translations_ru": [
+              "стакан (как порция)",
+              "бокал (как порция)"
+            ],
+            "grammar_hint": "ein Glas Wasser; zwei Gläser Saft. Название напитка обычно без артикля.",
+            "example": "Zum Frühstück trinke ich ein Glas Orangensaft.",
+            "example_ru": "На завтрак я выпиваю стакан апельсинового сока."
+          }
+        ],
+        "alias_ids": [
+          "b1-glas-quantity"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Glas"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-267-2",
+      "alias_ids": [
+        "b1-glauben-suppose"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-267-2",
+        "de": "glauben",
+        "lemma": "glauben",
+        "ru": "думать; полагать; предполагать",
+        "uk": "",
+        "translations_ru": [
+          "думать",
+          "полагать",
+          "предполагать"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "glaubt · glaubte · hat geglaubt",
+        "definition_de": "Etwas für wahrscheinlich halten.",
+        "example": "Ich glaube, der Bus kommt gleich.",
+        "example_ru": "Думаю, автобус сейчас придёт.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "5ccd0aca6f6dbd86d2cb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "glauben, dass …: глагол в конце придаточного. Без dass возможен порядок главного предложения: Ich glaube, der Laden ist zu.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Ich glaube, dass der Laden schon geschlossen ist.",
+            "ru": "Я думаю, что магазин уже закрыт."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "glauben",
+            "part": "verb",
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Etwas für wahrscheinlich halten.",
+            "translations_ru": [
+              "думать",
+              "полагать",
+              "предполагать"
+            ],
+            "grammar_hint": "glauben, dass …: глагол в конце придаточного. Без dass возможен порядок главного предложения: Ich glaube, der Laden ist zu.",
+            "example": "Ich glaube, dass der Laden schon geschlossen ist.",
+            "example_ru": "Я думаю, что магазин уже закрыт."
+          }
+        ],
+        "alias_ids": [
+          "b1-glauben-suppose"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/glauben"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-267-1",
+      "alias_ids": [
+        "b1-glauben-trust"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-267-1",
+        "de": "glauben",
+        "lemma": "glauben",
+        "ru": "верить; доверять словам; верить кому-либо",
+        "uk": "",
+        "translations_ru": [
+          "верить",
+          "доверять словам",
+          "верить кому-либо"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "glaubt · glaubte · hat geglaubt",
+        "definition_de": "Für wahr halten, was jemand sagt.",
+        "example": "Ich glaube dir.",
+        "example_ru": "Я тебе верю.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "5ccd0aca6f6dbd86d2cb"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem + Dativ: mir, dir, ihm, ihr. etwas glauben + Akkusativ: Ich glaube das.",
+        "alternative_surfaces": [
+          "jemandem glauben"
+        ],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Die Aussage einer Person für wahr halten."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Ich glaube dir, dass du keine Zeit hattest.",
+            "ru": "Я верю тебе, что у тебя не было времени."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "jemandem glauben",
+            "part": "verb",
+            "forms": "glaubt · glaubte · hat geglaubt",
+            "definition_de": "Die Aussage einer Person für wahr halten.",
+            "translations_ru": [
+              "верить кому-либо",
+              "доверять словам"
+            ],
+            "grammar_hint": "jemandem + Dativ: mir, dir, ihm, ihr. etwas glauben + Akkusativ: Ich glaube das.",
+            "example": "Ich glaube dir, dass du keine Zeit hattest.",
+            "example_ru": "Я верю тебе, что у тебя не было времени."
+          }
+        ],
+        "alias_ids": [
+          "b1-glauben-trust"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/glauben"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-268-2",
+      "alias_ids": [
+        "b1-gleich-soon"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-268-2",
+        "de": "gleich",
+        "lemma": "gleich",
+        "ru": "сейчас; вот-вот; через минуту (разг.); скоро; с минуты на минуту",
+        "uk": "",
+        "translations_ru": [
+          "сейчас",
+          "вот-вот",
+          "через минуту (разг.)",
+          "скоро",
+          "с минуты на минуту"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Время",
+        "topics": [
+          "Время",
+          "Время и даты"
+        ],
+        "forms": "",
+        "definition_de": "Nach sehr kurzer Zeit.",
+        "example": "Ich bin gleich da.",
+        "example_ru": "Я сейчас приду.",
+        "note": "gleich — сейчас, вот-вот, через короткое время; не означает «позже».",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "06408c885756f1fc4d95"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "gleich — сейчас, вот-вот, через короткое время; не означает «позже».\ngleich — очень скоро; gerade — в данный момент; sofort — немедленно.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое"
+        ],
+        "alternative_definitions_de": [
+          "Zu einem Zeitpunkt in unmittelbarer Zukunft."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Warte kurz, ich bin gleich fertig.",
+            "ru": "Подожди немного, я сейчас закончу."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "gleich",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "Zu einem Zeitpunkt in unmittelbarer Zukunft.",
+            "translations_ru": [
+              "сейчас",
+              "скоро",
+              "с минуты на минуту"
+            ],
+            "grammar_hint": "gleich — очень скоро; gerade — в данный момент; sofort — немедленно.",
+            "example": "Warte kurz, ich bin gleich fertig.",
+            "example_ru": "Подожди немного, я сейчас закончу."
+          }
+        ],
+        "alias_ids": [
+          "b1-gleich-soon"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-268-1",
+      "alias_ids": [
+        "b1-gleich-equal-degree",
+        "b1-gleich-same"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-268-1",
+        "de": "gleich",
+        "lemma": "gleich",
+        "ru": "одинаковый; такой же; одинаково; в равной степени",
+        "uk": "",
+        "translations_ru": [
+          "одинаковый",
+          "такой же",
+          "одинаково",
+          "в равной степени"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "Обычно без степеней сравнения в значении «одинаковый»",
+        "definition_de": "In einem bestimmten Merkmal nicht verschieden.",
+        "example": "Die beiden Karten haben den gleichen Preis.",
+        "example_ru": "Оба билета стоят одинаково.",
+        "note": "gleich alt / gleich groß — одного возраста / роста; der gleiche Preis — одинаковая цена. Сравнительная форма в этом значении нестандартна или редка.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "06408c885756f1fc4d95"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "gleich alt / gleich groß — одного возраста / роста; der gleiche Preis — одинаковая цена. Сравнительная форма в этом значении нестандартна или редка.\ngleich + прилагательное: gleich alt, gleich teuer; прилагательное здесь не склоняется.\ndas gleiche Buch — такой же экземпляр; dasselbe Buch — тот же самый экземпляр (в строгом различении).",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "неизменяемое",
+          "gleich · в значении идентичности обычно без сравнения"
+        ],
+        "alternative_definitions_de": [
+          "In demselben Maß oder Grad.",
+          "In den betreffenden Eigenschaften übereinstimmend."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Die beiden Zimmer sind gleich groß.",
+            "ru": "Обе комнаты одинакового размера."
+          },
+          {
+            "de": "Wir haben die gleichen Schuhe gekauft.",
+            "ru": "Мы купили одинаковые туфли."
+          }
+        ],
+        "usage_variants": [
+          {
+            "de": "gleich",
+            "part": "adv",
+            "forms": "неизменяемое",
+            "definition_de": "In demselben Maß oder Grad.",
+            "translations_ru": [
+              "одинаково",
+              "в равной степени"
+            ],
+            "grammar_hint": "gleich + прилагательное: gleich alt, gleich teuer; прилагательное здесь не склоняется.",
+            "example": "Die beiden Zimmer sind gleich groß.",
+            "example_ru": "Обе комнаты одинакового размера."
+          },
+          {
+            "de": "gleich",
+            "part": "adj",
+            "forms": "gleich · в значении идентичности обычно без сравнения",
+            "definition_de": "In den betreffenden Eigenschaften übereinstimmend.",
+            "translations_ru": [
+              "одинаковый",
+              "такой же"
+            ],
+            "grammar_hint": "das gleiche Buch — такой же экземпляр; dasselbe Buch — тот же самый экземпляр (в строгом различении).",
+            "example": "Wir haben die gleichen Schuhe gekauft.",
+            "example_ru": "Мы купили одинаковые туфли."
+          }
+        ],
+        "alias_ids": [
+          "b1-gleich-equal-degree",
+          "b1-gleich-same"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 46,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gleich"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

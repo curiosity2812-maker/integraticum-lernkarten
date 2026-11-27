@@ -1,0 +1,3480 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison of candidates 173–192 against the staged A1 records. Conditional proposals only. No edits to original cards, deployed levels or progress storage. Additional sources verify closing-formula usage and punctuation only; no new independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    173,
+    192
+  ],
+  "reviewed": 20,
+  "merge_count": 14,
+  "merge_target_count": 12,
+  "retained_distinct_senses": 3,
+  "retained_teaching_contexts_pending_level_review": 3,
+  "followup_review": [
+    {
+      "id": "b1-gruss-regards",
+      "issue": "Combine its usage variant with stage 009's proposal for a1-282-1 at release; preserve both original IDs."
+    },
+    {
+      "id": "b1-gut-feeling",
+      "issue": "Prefer Mir ist nicht gut for feeling unwell and Mir geht es gut for feeling well; review the slash-paired headword before release."
+    },
+    {
+      "id": "b1-haar-head",
+      "issue": "Keep collective Haar apart from individual Haar; do not import Tierhaare / Fell into the base translation as generic synonyms."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 173,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "A1 example already teaches Grüße an + Akkusativ; preserve the separate closing formula and contextual translations.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 5,
+        "record": {
+          "id": "b1-gruss-regards",
+          "de": "viele Grüße",
+          "lemma": "Gruß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "большой привет",
+            "с наилучшими пожеланиями"
+          ],
+          "definition_de": "Freundliche Wünsche, die man übermittelt oder am Ende einer persönlichen Nachricht schreibt.",
+          "example": "Viele Grüße an deine Familie!",
+          "example_ru": "Большой привет твоей семье!",
+          "forms": "die Grüße; CH: die Grüsse",
+          "grammar_hint": "Grüße an + Akkusativ; Liebe Grüße — более личное завершение письма.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gru%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 368,
+          "record": {
+            "id": "a1-282-1",
+            "de": "der Gruß",
+            "lemma": "Gruß",
+            "ru": "привет; приветствие",
+            "uk": "",
+            "translations_ru": [
+              "привет",
+              "приветствие"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Grüße",
+            "definition_de": "Worte, mit denen man jemanden grüßt.",
+            "example": "Viele Grüße an deine Familie!",
+            "example_ru": "Передавай привет своей семье!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "e11663cbe69965ae2ccd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-282-1",
+        "alias_id": "b1-gruss-regards",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-282-1"
+      }
+    },
+    {
+      "candidate_number": 174,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Identical formal closing; preserve punctuation and Swiss spelling.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 6,
+        "record": {
+          "id": "b1-gruss-formal-letter",
+          "de": "Mit freundlichen Grüßen",
+          "lemma": "Gruß",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "С уважением"
+          ],
+          "definition_de": "Übliche höfliche Schlussformel in einem formellen Schreiben.",
+          "example": "Mit freundlichen Grüßen\nAnna Keller",
+          "example_ru": "С уважением,\nАнна Келлер",
+          "forms": "mit + Dativ Plural; CH: Mit freundlichen Grüssen",
+          "grammar_hint": "В немецком после этой заключительной формулы обычно не ставят запятую; имя на следующей строке.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gru%C3%9F"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 369,
+          "record": {
+            "id": "a1-282-2",
+            "de": "Mit freundlichen Grüßen",
+            "lemma": "Mit freundlichen Grüßen",
+            "ru": "с уважением (в конце письма)",
+            "uk": "",
+            "translations_ru": [
+              "с уважением (в конце письма)"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Eine höfliche Schlussformel in einem Brief oder einer E-Mail.",
+            "example": "Mit freundlichen Grüßen\nAnna Keller",
+            "example_ru": "С уважением,\nАнна Келлер",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "e11663cbe69965ae2ccd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 368,
+          "record": {
+            "id": "a1-282-1",
+            "de": "der Gruß",
+            "lemma": "Gruß",
+            "ru": "привет; приветствие",
+            "uk": "",
+            "translations_ru": [
+              "привет",
+              "приветствие"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "die Grüße",
+            "definition_de": "Worte, mit denen man jemanden grüßt.",
+            "example": "Viele Grüße an deine Familie!",
+            "example_ru": "Передавай привет своей семье!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "e11663cbe69965ae2ccd"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-282-2",
+        "alias_id": "b1-gruss-formal-letter",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-282-2"
+      }
+    },
+    {
+      "candidate_number": 175,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Both describe official validity within a time limit.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 9,
+        "record": {
+          "id": "b1-gueltig-valid",
+          "de": "gültig",
+          "lemma": "gültig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "действительный",
+            "действующий"
+          ],
+          "definition_de": "Offiziell anerkannt und noch verwendbar.",
+          "example": "Meine Fahrkarte ist bis morgen gültig.",
+          "example_ru": "Мой билет действителен до завтра.",
+          "forms": "обычно без степеней сравнения",
+          "grammar_hint": "gültig sein; gültig bis + дата; Gegensatz: ungültig.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/g%C3%BCltig"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 370,
+          "record": {
+            "id": "a1-283-1",
+            "de": "gültig",
+            "lemma": "gültig",
+            "ru": "действительный; имеющий силу",
+            "uk": "",
+            "translations_ru": [
+              "действительный",
+              "имеющий силу"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Учреждения",
+            "topics": [
+              "Учреждения"
+            ],
+            "forms": "В буквальном значении обычно не сравнивается",
+            "definition_de": "Zu einem bestimmten Zeitpunkt rechtlich oder offiziell anerkannt.",
+            "example": "Das Ticket ist bis morgen gültig.",
+            "example_ru": "Билет действителен до завтра.",
+            "note": "Документ/билет действителен: gültig bis + дата; für + Akkusativ. В значении юридической действительности обычно без сравнения.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "e0ce314146b70dc0c6c0"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-283-1",
+        "alias_id": "b1-gueltig-valid",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-283-1"
+      }
+    },
+    {
+      "candidate_number": 176,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Both describe a favorable price.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 10,
+        "record": {
+          "id": "b1-guenstig-affordable",
+          "de": "günstig",
+          "lemma": "günstig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "недорогой",
+            "выгодный по цене"
+          ],
+          "definition_de": "Zu einem vorteilhaften Preis erhältlich.",
+          "example": "Wir haben ein günstiges Zimmer gefunden.",
+          "example_ru": "Мы нашли недорогой номер.",
+          "forms": "günstig · günstiger · am günstigsten",
+          "grammar_hint": "günstig — выгодный по цене; billig может также иметь оттенок низкого качества.",
+          "topic": "Покупки и услуги",
+          "topics": [
+            "Покупки и услуги"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/g%C3%BCnstig"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 371,
+          "record": {
+            "id": "a1-284-1",
+            "de": "günstig",
+            "lemma": "günstig",
+            "ru": "выгодный; недорогой",
+            "uk": "",
+            "translations_ru": [
+              "выгодный",
+              "недорогой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "günstiger · am günstigsten",
+            "definition_de": "Für den Käufer preislich vorteilhaft.",
+            "example": "Das Angebot ist heute günstig.",
+            "example_ru": "Сегодня предложение выгодное.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "5749b90ec791399e60ad"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-284-1",
+        "alias_id": "b1-guenstig-affordable",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-284-1"
+      }
+    },
+    {
+      "candidate_number": 177,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same quality sense; preserve irregular comparison and attributive inflection.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 11,
+        "record": {
+          "id": "b1-gut-quality",
+          "de": "gut",
+          "lemma": "gut",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "хороший",
+            "качественный"
+          ],
+          "definition_de": "Von einer zufriedenstellenden oder hohen Qualität.",
+          "example": "Das ist ein gutes Lehrbuch für Anfänger.",
+          "example_ru": "Это хороший учебник для начинающих.",
+          "forms": "gut · besser · am besten",
+          "grammar_hint": "Неправильные степени сравнения; ein gutes Buch, ein besseres Buch, das beste Buch.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-285-1",
+        "alias_id": "b1-gut-quality",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-285-1"
+      }
+    },
+    {
+      "candidate_number": 178,
+      "decision": "retain_distinct_sense",
+      "reason": "Adverbial use with a skill verb differs from the adjective quality and health examples.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 12,
+        "record": {
+          "id": "b1-gut-skill",
+          "de": "gut",
+          "lemma": "gut",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "хорошо",
+            "умело"
+          ],
+          "definition_de": "Eine Tätigkeit mit Erfolg oder Können ausführen.",
+          "example": "Meine Schwester kann gut zeichnen.",
+          "example_ru": "Моя сестра хорошо умеет рисовать.",
+          "forms": "gut · besser · am besten",
+          "grammar_hint": "При глаголе gut не склоняется; gut zeichnen können; лучше — besser.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 179,
+      "decision": "retain_distinct_sense",
+      "reason": "Edibility or freshness is a distinct reading of noch gut sein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 13,
+        "record": {
+          "id": "b1-gut-fresh",
+          "de": "noch gut sein",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть ещё годным",
+            "не испортиться"
+          ],
+          "definition_de": "Noch zum Essen oder Trinken geeignet sein.",
+          "example": "Sind die Eier noch gut?",
+          "example_ru": "Яйца ещё не испортились?",
+          "forms": "gut · besser · am besten; в этой конструкции обычно Positiv",
+          "grammar_hint": "nicht mehr gut — уже испортился; haltbar — пригодный к хранению до определённого срока.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 180,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Mir ist nicht gut describes feeling unwell. The A1 record uses es geht jemandem gut; review the positive headword variant separately.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 14,
+        "record": {
+          "id": "b1-gut-feeling",
+          "de": "jemandem ist gut / nicht gut",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "хорошо или нехорошо себя чувствовать"
+          ],
+          "definition_de": "Das körperliche Befinden einer Person beschreiben.",
+          "example": "Mir ist heute nicht gut.",
+          "example_ru": "Мне сегодня нехорошо.",
+          "forms": "sein: ist · war · ist gewesen",
+          "grammar_hint": "Человек в Dativ: mir, dir, ihm, ihr. Mir ist nicht gut — мне дурно; Mir geht es gut — я хорошо себя чувствую.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 181,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Transparent collocation of the quality adjective with Wetter; preserve bei + Dativ.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 15,
+        "record": {
+          "id": "b1-gut-weather",
+          "de": "gutes Wetter",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "хорошая погода"
+          ],
+          "definition_de": "Wetter, das als angenehm empfunden wird.",
+          "example": "Bei gutem Wetter essen wir draußen.",
+          "example_ru": "В хорошую погоду мы едим на улице.",
+          "forms": "gut · besser · am besten",
+          "grammar_hint": "bei + Dativ: bei gutem Wetter; schönes Wetter — близкое выражение.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-285-1",
+        "alias_id": "b1-gut-weather",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-285-1"
+      }
+    },
+    {
+      "candidate_number": 182,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Same es geht jemandem gut/besser construction; A1 already lists the comparative.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 16,
+        "record": {
+          "id": "b1-gut-better-condition",
+          "de": "besser",
+          "lemma": "gut",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "лучше"
+          ],
+          "definition_de": "In einem positiveren Zustand oder auf eine günstigere Weise als zuvor.",
+          "example": "Nach der Pause geht es mir besser.",
+          "example_ru": "После перерыва мне лучше.",
+          "forms": "gut · besser · am besten",
+          "grammar_hint": "besser — Komparativ от gut, не guter; сравнение: besser als gestern.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "gut-recovery",
+        "alias_id": "b1-gut-better-condition",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "gut-recovery"
+      }
+    },
+    {
+      "candidate_number": 183,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Same irregular superlative with adjective endings and possessive determiners.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 17,
+        "record": {
+          "id": "b1-gut-best-friend",
+          "de": "beste / bester",
+          "lemma": "gut",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "лучший",
+            "лучшая"
+          ],
+          "definition_de": "Unter vergleichbaren Personen oder Dingen besonders positiv bewertet.",
+          "example": "Das ist meine beste Freundin.",
+          "example_ru": "Это моя лучшая подруга.",
+          "forms": "gut · besser · am besten",
+          "grammar_hint": "Перед существительным: der beste, die beste, das beste; после mein: mein bester Freund, meine beste Freundin.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-285-1",
+        "alias_id": "b1-gut-best-friend",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-285-1"
+      }
+    },
+    {
+      "candidate_number": 184,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same independent response of agreement.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 18,
+        "record": {
+          "id": "b1-gut-agreement",
+          "de": "Gut!",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "хорошо!",
+            "ладно!",
+            "договорились!"
+          ],
+          "definition_de": "Kurze Zustimmung zu einem Vorschlag oder einer Mitteilung.",
+          "example": "Wir treffen uns vor dem Kino. – Gut!",
+          "example_ru": "Встретимся перед кинотеатром. — Договорились!",
+          "forms": "устойчивая реплика",
+          "grammar_hint": "Самостоятельное слово согласия; также Einverstanden! / In Ordnung!",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 373,
+          "record": {
+            "id": "a1-285-2",
+            "de": "Gut!",
+            "lemma": "Gut!",
+            "ru": "Хорошо!; Ладно!",
+            "uk": "",
+            "translations_ru": [
+              "Хорошо!",
+              "Ладно!"
+            ],
+            "part": "interjection",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt Zustimmung oder dass man etwas akzeptiert.",
+            "example": "Wir treffen uns um drei. — Gut!",
+            "example_ru": "Встретимся в три. — Хорошо!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-285-2",
+        "alias_id": "b1-gut-agreement",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-285-2"
+      }
+    },
+    {
+      "candidate_number": 185,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same morning greeting; preserve the short grammar explanation.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 19,
+        "record": {
+          "id": "b1-gut-morning",
+          "de": "Guten Morgen!",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Доброе утро!"
+          ],
+          "definition_de": "Eine Begrüßung am Morgen.",
+          "example": "Guten Morgen, wie geht es Ihnen?",
+          "example_ru": "Доброе утро, как у вас дела?",
+          "forms": "устойчивое выражение",
+          "grammar_hint": "Исторически сокращённое пожелание: Ich wünsche Ihnen einen guten Morgen; поэтому guten.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 374,
+          "record": {
+            "id": "a1-285-3",
+            "de": "Guten Morgen!",
+            "lemma": "Guten Morgen!",
+            "ru": "Доброе утро!",
+            "uk": "",
+            "translations_ru": [
+              "Доброе утро!"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Ein Gruß am Morgen.",
+            "example": "Guten Morgen, Frau Keller!",
+            "example_ru": "Доброе утро, госпожа Келлер!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-285-3",
+        "alias_id": "b1-gut-morning",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-285-3"
+      }
+    },
+    {
+      "candidate_number": 186,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same New Year wish; preserve the full wünschen construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 20,
+        "record": {
+          "id": "b1-gut-new-year",
+          "de": "Ein gutes neues Jahr!",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "С Новым годом!",
+            "Хорошего нового года!"
+          ],
+          "definition_de": "Ein Wunsch für das kommende Jahr.",
+          "example": "Wir wünschen Ihnen ein gutes neues Jahr!",
+          "example_ru": "Желаем вам счастливого Нового года!",
+          "forms": "устойчивое пожелание; gut · besser · am besten",
+          "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; ein gutes neues Jahr — окончания -es.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 375,
+          "record": {
+            "id": "a1-285-4",
+            "de": "Ein gutes neues Jahr!",
+            "lemma": "Ein gutes neues Jahr!",
+            "ru": "С Новым годом!",
+            "uk": "",
+            "translations_ru": [
+              "С Новым годом!"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Ein Wunsch zum Jahreswechsel.",
+            "example": "Ein gutes neues Jahr!",
+            "example_ru": "С Новым годом!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-285-4",
+        "alias_id": "b1-gut-new-year",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-285-4"
+      }
+    },
+    {
+      "candidate_number": 187,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same pre-meal wish; preserve the Swiss dialect variant as a note.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 21,
+        "record": {
+          "id": "b1-gut-appetite",
+          "de": "Guten Appetit!",
+          "lemma": "gut",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Приятного аппетита!"
+          ],
+          "definition_de": "Ein freundlicher Wunsch vor dem Essen.",
+          "example": "Das Essen ist fertig. Guten Appetit!",
+          "example_ru": "Еда готова. Приятного аппетита!",
+          "forms": "устойчивое выражение",
+          "grammar_hint": "Краткая форма пожелания: einen guten Appetit wünschen; CH в диалекте также En Guete.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 99,
+          "record": {
+            "id": "goethe-92747a48830545f363df-1",
+            "de": "Guten Appetit!",
+            "lemma": "Guten Appetit!",
+            "ru": "приятного аппетита!",
+            "uk": "",
+            "translations_ru": [
+              "приятного аппетита!"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "",
+            "definition_de": "Ein Wunsch vor dem Essen.",
+            "example": "Das Essen ist fertig. Guten Appetit!",
+            "example_ru": "Еда готова. Приятного аппетита!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 10,
+                "row_id": "92747a48830545f363df"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 166,
+          "record": {
+            "id": "gut-recovery",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хорошо (о самочувствии)",
+            "uk": "",
+            "translations_ru": [
+              "хорошо (о самочувствии)"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+            "example": "Nach der Pause geht es mir gut.",
+            "example_ru": "После перерыва я хорошо себя чувствую.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "43ec84f34a1fd7622521"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 372,
+          "record": {
+            "id": "a1-285-1",
+            "de": "gut",
+            "lemma": "gut",
+            "ru": "хороший",
+            "uk": "",
+            "translations_ru": [
+              "хороший"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "besser · am besten",
+            "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+            "example": "Die Idee finde ich gut.",
+            "example_ru": "Я считаю эту идею хорошей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "cf86b7ffd05289d72909"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "goethe-92747a48830545f363df-1",
+        "alias_id": "b1-gut-appetite",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "goethe-92747a48830545f363df-1"
+      }
+    },
+    {
+      "candidate_number": 188,
+      "decision": "retain_distinct_sense",
+      "reason": "Collective singular for head hair requires a distinct teaching record; the A1 definition describes an individual hair.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 23,
+        "record": {
+          "id": "b1-haar-head",
+          "de": "das Haar",
+          "lemma": "Haar",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "волосы (в совокупности)",
+            "волос"
+          ],
+          "definition_de": "Die Gesamtheit der Haare auf dem Kopf einer Person.",
+          "example": "Sie hat lockiges Haar.",
+          "example_ru": "У неё кудрявые волосы.",
+          "forms": "die Haare; собирательно Singular",
+          "grammar_hint": "langes Haar или lange Haare; sich (Dativ) die Haare (Akkusativ) waschen.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Haar"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 376,
+          "record": {
+            "id": "a1-286-1",
+            "de": "das Haar",
+            "lemma": "Haar",
+            "ru": "волос; волосы (мн. ч.)",
+            "uk": "",
+            "translations_ru": [
+              "волос",
+              "волосы (мн. ч.)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "die Haare",
+            "definition_de": "Eines der feinen Gebilde, die auf der Haut wachsen.",
+            "example": "Sie hat kurze Haare.",
+            "example_ru": "У неё короткие волосы.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "a1cfba42f1e09ca12300"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 189,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "The individual hair matches A1; keep Tierhaare and Fell as contextual distinctions.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 24,
+        "record": {
+          "id": "b1-haar-strand",
+          "de": "das Haar",
+          "lemma": "Haar",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "волосок",
+            "шерсть (отдельные волоски)"
+          ],
+          "definition_de": "Ein einzelner dünner Faden, der auf der Haut von Menschen oder Tieren wächst.",
+          "example": "Auf dem Sofa liegen viele Katzenhaare.",
+          "example_ru": "На диване много кошачьей шерсти.",
+          "forms": "die Haare",
+          "grammar_hint": "ein Haar — один волосок; Tierhaare — шерсть в виде отдельных волосков; das Fell — шерстяной покров.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Haar"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 376,
+          "record": {
+            "id": "a1-286-1",
+            "de": "das Haar",
+            "lemma": "Haar",
+            "ru": "волос; волосы (мн. ч.)",
+            "uk": "",
+            "translations_ru": [
+              "волос",
+              "волосы (мн. ч.)"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Знакомство",
+            "topics": [
+              "Знакомство"
+            ],
+            "forms": "die Haare",
+            "definition_de": "Eines der feinen Gebilde, die auf der Haut wachsen.",
+            "example": "Sie hat kurze Haare.",
+            "example_ru": "У неё короткие волосы.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "a1cfba42f1e09ca12300"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-286-1",
+        "alias_id": "b1-haar-strand",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-286-1"
+      }
+    },
+    {
+      "candidate_number": 190,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Hunger haben expresses a bodily need; the existing A1 record teaches possession.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 25,
+        "record": {
+          "id": "b1-haben-feeling",
+          "de": "Hunger haben",
+          "lemma": "haben",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть голодным",
+            "хотеть есть"
+          ],
+          "definition_de": "Das Bedürfnis haben, etwas zu essen.",
+          "example": "Nach dem Kurs habe ich großen Hunger.",
+          "example_ru": "После курса я очень хочу есть.",
+          "forms": "hat · hatte · hat gehabt",
+          "grammar_hint": "Hunger / Durst / Angst haben; обычно без артикля. Ich habe Hunger, не Ich bin Hunger.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/haben"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 377,
+          "record": {
+            "id": "a1-287-1",
+            "de": "haben",
+            "lemma": "haben",
+            "ru": "иметь; у кого-то есть",
+            "uk": "",
+            "translations_ru": [
+              "иметь",
+              "у кого-то есть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hat · hatte · hat gehabt",
+            "definition_de": "Etwas besitzen oder zur Verfügung haben.",
+            "example": "Hast du einen Stift?",
+            "example_ru": "У тебя есть ручка?",
+            "note": "etwas (Akkusativ) haben — иметь что-либо. В Perfekt haben также вспомогательный глагол: Ich habe gearbeitet. Как самостоятельный глагол: hat gehabt.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "1a8224edc5709e086778"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 191,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Zeit haben expresses availability; retain its dedicated complement patterns pending level-source review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 26,
+        "record": {
+          "id": "b1-haben-time",
+          "de": "Zeit haben",
+          "lemma": "haben",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "иметь время",
+            "быть свободным"
+          ],
+          "definition_de": "Über freie Zeit für eine Tätigkeit verfügen.",
+          "example": "Hast du morgen Zeit für einen Kaffee?",
+          "example_ru": "У тебя завтра есть время выпить кофе?",
+          "forms": "hat · hatte · hat gehabt",
+          "grammar_hint": "Zeit haben für + Akkusativ; Zeit haben, etwas zu tun; keine Zeit haben.",
+          "topic": "Время и даты",
+          "topics": [
+            "Время и даты"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/haben"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 377,
+          "record": {
+            "id": "a1-287-1",
+            "de": "haben",
+            "lemma": "haben",
+            "ru": "иметь; у кого-то есть",
+            "uk": "",
+            "translations_ru": [
+              "иметь",
+              "у кого-то есть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hat · hatte · hat gehabt",
+            "definition_de": "Etwas besitzen oder zur Verfügung haben.",
+            "example": "Hast du einen Stift?",
+            "example_ru": "У тебя есть ручка?",
+            "note": "etwas (Akkusativ) haben — иметь что-либо. В Perfekt haben также вспомогательный глагол: Ich habe gearbeitet. Как самостоятельный глагол: hat gehabt.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "1a8224edc5709e086778"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 192,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same possession sense with Akkusativ; preserve conjugation and kein.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_032.json",
+        "sha": "53fa5be1b6fb66b4b495bc842b87f9c3a3f78eda",
+        "batch": 32,
+        "row": 27,
+        "record": {
+          "id": "b1-haben-possession",
+          "de": "haben",
+          "lemma": "haben",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "иметь",
+            "обладать",
+            "у кого-либо есть"
+          ],
+          "definition_de": "Über eine Sache verfügen, die einem gehört.",
+          "example": "Wir haben zwei Fahrräder.",
+          "example_ru": "У нас есть два велосипеда.",
+          "forms": "hat · hatte · hat gehabt",
+          "grammar_hint": "haben + Akkusativ; ich habe, du hast, er/sie/es hat; отрицание неопределённого существительного: kein.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/haben"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 377,
+          "record": {
+            "id": "a1-287-1",
+            "de": "haben",
+            "lemma": "haben",
+            "ru": "иметь; у кого-то есть",
+            "uk": "",
+            "translations_ru": [
+              "иметь",
+              "у кого-то есть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "hat · hatte · hat gehabt",
+            "definition_de": "Etwas besitzen oder zur Verfügung haben.",
+            "example": "Hast du einen Stift?",
+            "example_ru": "У тебя есть ручка?",
+            "note": "etwas (Akkusativ) haben — иметь что-либо. В Perfekt haben также вспомогательный глагол: Ich habe gearbeitet. Как самостоятельный глагол: hat gehabt.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 16,
+                "row_id": "1a8224edc5709e086778"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-287-1",
+        "alias_id": "b1-haben-possession",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-287-1"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "a1-282-1",
+      "alias_ids": [
+        "b1-gruss-regards"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-282-1",
+        "de": "der Gruß",
+        "lemma": "Gruß",
+        "ru": "привет; приветствие",
+        "uk": "",
+        "translations_ru": [
+          "привет",
+          "приветствие"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "die Grüße",
+        "definition_de": "Worte, mit denen man jemanden grüßt.",
+        "example": "Viele Grüße an deine Familie!",
+        "example_ru": "Передавай привет своей семье!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "e11663cbe69965ae2ccd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Viele Grüße an deine Familie! — Передавай привет своей семье! В конце письма Viele Grüße — «С наилучшими пожеланиями». В Швейцарии пишут Viele Grüsse.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Viele Grüße an deine Familie!",
+            "ru": "Большой привет твоей семье!"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gruss-regards",
+            "de": "viele Grüße",
+            "part": "phrase",
+            "forms": "die Grüße; CH: die Grüsse",
+            "definition_de": "Freundliche Wünsche, die man übermittelt oder am Ende einer persönlichen Nachricht schreibt.",
+            "translations_ru": [
+              "большой привет",
+              "с наилучшими пожеланиями"
+            ],
+            "grammar_hint": "Viele Grüße an deine Familie! — Передавай привет своей семье! В конце письма Viele Grüße — «С наилучшими пожеланиями». В Швейцарии пишут Viele Grüsse.",
+            "example": "Viele Grüße an deine Familie!",
+            "example_ru": "Большой привет твоей семье!",
+            "additional_evidence": [
+              "https://www.duden.de/sprachwissen/sprachratgeber/Die-Gru%C3%9Fformel-in-Brief-und-E-Mail"
+            ]
+          }
+        ],
+        "alias_ids": [
+          "b1-gruss-regards"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gru%C3%9F"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-282-2",
+      "alias_ids": [
+        "b1-gruss-formal-letter"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-282-2",
+        "de": "Mit freundlichen Grüßen",
+        "lemma": "Mit freundlichen Grüßen",
+        "ru": "с уважением (в конце письма); С уважением",
+        "uk": "",
+        "translations_ru": [
+          "с уважением (в конце письма)",
+          "С уважением"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Eine höfliche Schlussformel in einem Brief oder einer E-Mail.",
+        "example": "Mit freundlichen Grüßen\nAnna Keller",
+        "example_ru": "С уважением,\nАнна Келлер",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "e11663cbe69965ae2ccd"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Mit + Dativ Plural: mit freundlichen Grüßen. В конце письма после формулы знак препинания обычно не ставят, имя пишут на следующей строке. В Швейцарии также пишут Freundliche Grüsse или Mit freundlichen Grüssen.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "mit + Dativ Plural; CH: Mit freundlichen Grüssen"
+        ],
+        "alternative_definitions_de": [
+          "Übliche höfliche Schlussformel in einem formellen Schreiben."
+        ],
+        "alternative_examples": [],
+        "usage_variants": [
+          {
+            "id": "b1-gruss-formal-letter",
+            "de": "Mit freundlichen Grüßen",
+            "part": "phrase",
+            "forms": "mit + Dativ Plural; CH: Mit freundlichen Grüssen",
+            "definition_de": "Übliche höfliche Schlussformel in einem formellen Schreiben.",
+            "translations_ru": [
+              "С уважением"
+            ],
+            "grammar_hint": "Mit + Dativ Plural: mit freundlichen Grüßen. В конце письма после формулы знак препинания обычно не ставят, имя пишут на следующей строке. В Швейцарии также пишут Freundliche Grüsse или Mit freundlichen Grüssen.",
+            "example": "Mit freundlichen Grüßen\nAnna Keller",
+            "example_ru": "С уважением,\nАнна Келлер",
+            "additional_evidence": [
+              "https://www.duden.de/sprachwissen/sprachratgeber/Die-Gru%C3%9Fformel-in-Brief-und-E-Mail",
+              "https://www.bk.admin.ch/dam/bk/de/dokumente/komm-ue/CD%20Bund_Handbuch_8.1_DE.pdf.download.pdf/CD%20Bund_Handbuch_8.1_DE.pdf"
+            ]
+          }
+        ],
+        "alias_ids": [
+          "b1-gruss-formal-letter"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Gru%C3%9F"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-283-1",
+      "alias_ids": [
+        "b1-gueltig-valid"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-283-1",
+        "de": "gültig",
+        "lemma": "gültig",
+        "ru": "действительный; имеющий силу; действующий",
+        "uk": "",
+        "translations_ru": [
+          "действительный",
+          "имеющий силу",
+          "действующий"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Учреждения",
+        "topics": [
+          "Учреждения",
+          "Транспорт и путешествия"
+        ],
+        "forms": "В буквальном значении обычно не сравнивается",
+        "definition_de": "Zu einem bestimmten Zeitpunkt rechtlich oder offiziell anerkannt.",
+        "example": "Das Ticket ist bis morgen gültig.",
+        "example_ru": "Билет действителен до завтра.",
+        "note": "Документ/билет действителен: gültig bis + дата; für + Akkusativ. В значении юридической действительности обычно без сравнения.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "e0ce314146b70dc0c6c0"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "В значении официальной действительности обычно не сравнивается. gültig bis + дата; ungültig — недействительный.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Offiziell anerkannt und noch verwendbar."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Meine Fahrkarte ist bis morgen gültig.",
+            "ru": "Мой билет действителен до завтра."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gueltig-valid",
+            "de": "gültig",
+            "part": "adj",
+            "forms": "обычно без степеней сравнения",
+            "definition_de": "Offiziell anerkannt und noch verwendbar.",
+            "translations_ru": [
+              "действительный",
+              "действующий"
+            ],
+            "grammar_hint": "В значении официальной действительности обычно не сравнивается. gültig bis + дата; ungültig — недействительный.",
+            "example": "Meine Fahrkarte ist bis morgen gültig.",
+            "example_ru": "Мой билет действителен до завтра."
+          }
+        ],
+        "alias_ids": [
+          "b1-gueltig-valid"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/g%C3%BCltig"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-284-1",
+      "alias_ids": [
+        "b1-guenstig-affordable"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-284-1",
+        "de": "günstig",
+        "lemma": "günstig",
+        "ru": "выгодный; недорогой; выгодный по цене",
+        "uk": "",
+        "translations_ru": [
+          "выгодный",
+          "недорогой",
+          "выгодный по цене"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Покупки",
+        "topics": [
+          "Покупки",
+          "Покупки и услуги"
+        ],
+        "forms": "günstiger · am günstigsten",
+        "definition_de": "Für den Käufer preislich vorteilhaft.",
+        "example": "Das Angebot ist heute günstig.",
+        "example_ru": "Сегодня предложение выгодное.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "5749b90ec791399e60ad"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "günstig — выгодный по цене; billig может также иметь оттенок низкого качества.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "günstig · günstiger · am günstigsten"
+        ],
+        "alternative_definitions_de": [
+          "Zu einem vorteilhaften Preis erhältlich."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir haben ein günstiges Zimmer gefunden.",
+            "ru": "Мы нашли недорогой номер."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-guenstig-affordable",
+            "de": "günstig",
+            "part": "adj",
+            "forms": "günstig · günstiger · am günstigsten",
+            "definition_de": "Zu einem vorteilhaften Preis erhältlich.",
+            "translations_ru": [
+              "недорогой",
+              "выгодный по цене"
+            ],
+            "grammar_hint": "günstig — выгодный по цене; billig может также иметь оттенок низкого качества.",
+            "example": "Wir haben ein günstiges Zimmer gefunden.",
+            "example_ru": "Мы нашли недорогой номер."
+          }
+        ],
+        "alias_ids": [
+          "b1-guenstig-affordable"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/g%C3%BCnstig"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-285-1",
+      "alias_ids": [
+        "b1-gut-quality",
+        "b1-gut-weather",
+        "b1-gut-best-friend"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-285-1",
+        "de": "gut",
+        "lemma": "gut",
+        "ru": "хороший; качественный",
+        "uk": "",
+        "translations_ru": [
+          "хороший",
+          "качественный"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Учёба и языки",
+          "Природа и погода",
+          "Семья и отношения"
+        ],
+        "forms": "besser · am besten",
+        "definition_de": "Von zufriedenstellender oder hoher Qualität.",
+        "example": "Die Idee finde ich gut.",
+        "example_ru": "Я считаю эту идею хорошей.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "cf86b7ffd05289d72909"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Неправильные степени сравнения; ein gutes Buch, ein besseres Buch, das beste Buch.\nbei + Dativ: bei gutem Wetter; schönes Wetter — близкое выражение.\nПеред существительным: der beste, die beste, das beste; после mein: mein bester Freund, meine beste Freundin.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "gut · besser · am besten"
+        ],
+        "alternative_definitions_de": [
+          "Von einer zufriedenstellenden oder hohen Qualität."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Das ist ein gutes Lehrbuch für Anfänger.",
+            "ru": "Это хороший учебник для начинающих."
+          },
+          {
+            "de": "Bei gutem Wetter essen wir draußen.",
+            "ru": "В хорошую погоду мы едим на улице."
+          },
+          {
+            "de": "Das ist meine beste Freundin.",
+            "ru": "Это моя лучшая подруга."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gut-quality",
+            "de": "gut",
+            "part": "adj",
+            "forms": "gut · besser · am besten",
+            "definition_de": "Von einer zufriedenstellenden oder hohen Qualität.",
+            "translations_ru": [
+              "хороший",
+              "качественный"
+            ],
+            "grammar_hint": "Неправильные степени сравнения; ein gutes Buch, ein besseres Buch, das beste Buch.",
+            "example": "Das ist ein gutes Lehrbuch für Anfänger.",
+            "example_ru": "Это хороший учебник для начинающих."
+          },
+          {
+            "id": "b1-gut-weather",
+            "de": "gutes Wetter",
+            "part": "phrase",
+            "forms": "gut · besser · am besten",
+            "definition_de": "Wetter, das als angenehm empfunden wird.",
+            "translations_ru": [
+              "хорошая погода"
+            ],
+            "grammar_hint": "bei + Dativ: bei gutem Wetter; schönes Wetter — близкое выражение.",
+            "example": "Bei gutem Wetter essen wir draußen.",
+            "example_ru": "В хорошую погоду мы едим на улице."
+          },
+          {
+            "id": "b1-gut-best-friend",
+            "de": "beste / bester",
+            "part": "adj",
+            "forms": "gut · besser · am besten",
+            "definition_de": "Unter vergleichbaren Personen oder Dingen besonders positiv bewertet.",
+            "translations_ru": [
+              "лучший",
+              "лучшая"
+            ],
+            "grammar_hint": "Перед существительным: der beste, die beste, das beste; после mein: mein bester Freund, meine beste Freundin.",
+            "example": "Das ist meine beste Freundin.",
+            "example_ru": "Это моя лучшая подруга."
+          }
+        ],
+        "alias_ids": [
+          "b1-gut-quality",
+          "b1-gut-weather",
+          "b1-gut-best-friend"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "gut-recovery",
+      "alias_ids": [
+        "b1-gut-better-condition"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "gut-recovery",
+        "de": "gut",
+        "lemma": "gut",
+        "ru": "хорошо (о самочувствии)",
+        "uk": "",
+        "translations_ru": [
+          "хорошо (о самочувствии)"
+        ],
+        "part": "adj",
+        "level": "A1",
+        "topic": "Здоровье",
+        "topics": [
+          "Здоровье",
+          "Грамматика и связь предложений"
+        ],
+        "forms": "besser · am besten",
+        "definition_de": "In einem angenehmen gesundheitlichen Zustand.",
+        "example": "Nach der Pause geht es mir gut.",
+        "example_ru": "После перерыва я хорошо себя чувствую.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 11,
+            "row_id": "43ec84f34a1fd7622521"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "besser — Komparativ от gut, не guter; сравнение: besser als gestern.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [],
+        "alternative_examples": [
+          {
+            "de": "Nach der Pause geht es mir besser.",
+            "ru": "После перерыва мне лучше."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gut-better-condition",
+            "de": "besser",
+            "part": "adv",
+            "forms": "gut · besser · am besten",
+            "definition_de": "In einem positiveren Zustand oder auf eine günstigere Weise als zuvor.",
+            "translations_ru": [
+              "лучше"
+            ],
+            "grammar_hint": "besser — Komparativ от gut, не guter; сравнение: besser als gestern.",
+            "example": "Nach der Pause geht es mir besser.",
+            "example_ru": "После перерыва мне лучше."
+          }
+        ],
+        "alias_ids": [
+          "b1-gut-better-condition"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-285-2",
+      "alias_ids": [
+        "b1-gut-agreement"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-285-2",
+        "de": "Gut!",
+        "lemma": "Gut!",
+        "ru": "Хорошо!; Ладно!; хорошо!; ладно!; договорились!",
+        "uk": "",
+        "translations_ru": [
+          "Хорошо!",
+          "Ладно!",
+          "хорошо!",
+          "ладно!",
+          "договорились!"
+        ],
+        "part": "interjection",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Zeigt Zustimmung oder dass man etwas akzeptiert.",
+        "example": "Wir treffen uns um drei. — Gut!",
+        "example_ru": "Встретимся в три. — Хорошо!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "cf86b7ffd05289d72909"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Самостоятельное слово согласия; также Einverstanden! / In Ordnung!",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "устойчивая реплика"
+        ],
+        "alternative_definitions_de": [
+          "Kurze Zustimmung zu einem Vorschlag oder einer Mitteilung."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir treffen uns vor dem Kino. – Gut!",
+            "ru": "Встретимся перед кинотеатром. — Договорились!"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gut-agreement",
+            "de": "Gut!",
+            "part": "phrase",
+            "forms": "устойчивая реплика",
+            "definition_de": "Kurze Zustimmung zu einem Vorschlag oder einer Mitteilung.",
+            "translations_ru": [
+              "хорошо!",
+              "ладно!",
+              "договорились!"
+            ],
+            "grammar_hint": "Самостоятельное слово согласия; также Einverstanden! / In Ordnung!",
+            "example": "Wir treffen uns vor dem Kino. – Gut!",
+            "example_ru": "Встретимся перед кинотеатром. — Договорились!"
+          }
+        ],
+        "alias_ids": [
+          "b1-gut-agreement"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-285-3",
+      "alias_ids": [
+        "b1-gut-morning"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-285-3",
+        "de": "Guten Morgen!",
+        "lemma": "Guten Morgen!",
+        "ru": "Доброе утро!",
+        "uk": "",
+        "translations_ru": [
+          "Доброе утро!"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Ein Gruß am Morgen.",
+        "example": "Guten Morgen, Frau Keller!",
+        "example_ru": "Доброе утро, госпожа Келлер!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "cf86b7ffd05289d72909"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Исторически сокращённое пожелание: Ich wünsche Ihnen einen guten Morgen; поэтому guten.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "устойчивое выражение"
+        ],
+        "alternative_definitions_de": [
+          "Eine Begrüßung am Morgen."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Guten Morgen, wie geht es Ihnen?",
+            "ru": "Доброе утро, как у вас дела?"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gut-morning",
+            "de": "Guten Morgen!",
+            "part": "phrase",
+            "forms": "устойчивое выражение",
+            "definition_de": "Eine Begrüßung am Morgen.",
+            "translations_ru": [
+              "Доброе утро!"
+            ],
+            "grammar_hint": "Исторически сокращённое пожелание: Ich wünsche Ihnen einen guten Morgen; поэтому guten.",
+            "example": "Guten Morgen, wie geht es Ihnen?",
+            "example_ru": "Доброе утро, как у вас дела?"
+          }
+        ],
+        "alias_ids": [
+          "b1-gut-morning"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-285-4",
+      "alias_ids": [
+        "b1-gut-new-year"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-285-4",
+        "de": "Ein gutes neues Jahr!",
+        "lemma": "Ein gutes neues Jahr!",
+        "ru": "С Новым годом!; Хорошего нового года!",
+        "uk": "",
+        "translations_ru": [
+          "С Новым годом!",
+          "Хорошего нового года!"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Ein Wunsch zum Jahreswechsel.",
+        "example": "Ein gutes neues Jahr!",
+        "example_ru": "С Новым годом!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "cf86b7ffd05289d72909"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; ein gutes neues Jahr — окончания -es.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "устойчивое пожелание; gut · besser · am besten"
+        ],
+        "alternative_definitions_de": [
+          "Ein Wunsch für das kommende Jahr."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir wünschen Ihnen ein gutes neues Jahr!",
+            "ru": "Желаем вам счастливого Нового года!"
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-gut-new-year",
+            "de": "Ein gutes neues Jahr!",
+            "part": "phrase",
+            "forms": "устойчивое пожелание; gut · besser · am besten",
+            "definition_de": "Ein Wunsch für das kommende Jahr.",
+            "translations_ru": [
+              "С Новым годом!",
+              "Хорошего нового года!"
+            ],
+            "grammar_hint": "jemandem (Dativ) etwas (Akkusativ) wünschen; ein gutes neues Jahr — окончания -es.",
+            "example": "Wir wünschen Ihnen ein gutes neues Jahr!",
+            "example_ru": "Желаем вам счастливого Нового года!"
+          }
+        ],
+        "alias_ids": [
+          "b1-gut-new-year"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "goethe-92747a48830545f363df-1",
+      "alias_ids": [
+        "b1-gut-appetite"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "goethe-92747a48830545f363df-1",
+        "de": "Guten Appetit!",
+        "lemma": "Guten Appetit!",
+        "ru": "приятного аппетита!; Приятного аппетита!",
+        "uk": "",
+        "translations_ru": [
+          "приятного аппетита!",
+          "Приятного аппетита!"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Еда",
+        "topics": [
+          "Еда",
+          "Еда и напитки"
+        ],
+        "forms": "",
+        "definition_de": "Ein Wunsch vor dem Essen.",
+        "example": "Das Essen ist fertig. Guten Appetit!",
+        "example_ru": "Еда готова. Приятного аппетита!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 10,
+            "row_id": "92747a48830545f363df"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "cf86b7ffd05289d72909"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "Краткая форма пожелания: einen guten Appetit wünschen; CH в диалекте также En Guete.",
+        "alternative_surfaces": [],
+        "alternative_forms": [
+          "устойчивое выражение"
+        ],
+        "alternative_definitions_de": [
+          "Ein freundlicher Wunsch vor dem Essen."
+        ],
+        "alternative_examples": [],
+        "usage_variants": [
+          {
+            "id": "b1-gut-appetite",
+            "de": "Guten Appetit!",
+            "part": "phrase",
+            "forms": "устойчивое выражение",
+            "definition_de": "Ein freundlicher Wunsch vor dem Essen.",
+            "translations_ru": [
+              "Приятного аппетита!"
+            ],
+            "grammar_hint": "Краткая форма пожелания: einen guten Appetit wünschen; CH в диалекте также En Guete.",
+            "example": "Das Essen ist fertig. Guten Appetit!",
+            "example_ru": "Еда готова. Приятного аппетита!"
+          }
+        ],
+        "alias_ids": [
+          "b1-gut-appetite"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/gut"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-286-1",
+      "alias_ids": [
+        "b1-haar-strand"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-286-1",
+        "de": "das Haar",
+        "lemma": "Haar",
+        "ru": "волос; волосы (мн. ч.); волосок",
+        "uk": "",
+        "translations_ru": [
+          "волос",
+          "волосы (мн. ч.)",
+          "волосок"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Знакомство",
+        "topics": [
+          "Знакомство",
+          "Дом и быт"
+        ],
+        "forms": "die Haare",
+        "definition_de": "Eines der feinen Gebilde, die auf der Haut wachsen.",
+        "example": "Sie hat kurze Haare.",
+        "example_ru": "У неё короткие волосы.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "a1cfba42f1e09ca12300"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "ein Haar — один волосок; die Haare — волосы. Katzenhaare на диване — кошачьи волоски, das Fell — шерстяной покров животного.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Ein einzelner dünner Faden, der auf der Haut von Menschen oder Tieren wächst."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Auf dem Sofa liegen viele Katzenhaare.",
+            "ru": "На диване много кошачьей шерсти."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-haar-strand",
+            "de": "das Haar",
+            "part": "noun",
+            "forms": "die Haare",
+            "definition_de": "Ein einzelner dünner Faden, der auf der Haut von Menschen oder Tieren wächst.",
+            "translations_ru": [
+              "волосок",
+              "шерсть (отдельные волоски)"
+            ],
+            "grammar_hint": "ein Haar — один волосок; die Haare — волосы. Katzenhaare на диване — кошачьи волоски, das Fell — шерстяной покров животного.",
+            "example": "Auf dem Sofa liegen viele Katzenhaare.",
+            "example_ru": "На диване много кошачьей шерсти."
+          }
+        ],
+        "alias_ids": [
+          "b1-haar-strand"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Haar"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    },
+    {
+      "canonical_id": "a1-287-1",
+      "alias_ids": [
+        "b1-haben-possession"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-287-1",
+        "de": "haben",
+        "lemma": "haben",
+        "ru": "иметь; у кого-то есть; обладать; у кого-либо есть",
+        "uk": "",
+        "translations_ru": [
+          "иметь",
+          "у кого-то есть",
+          "обладать",
+          "у кого-либо есть"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность",
+          "Дом и быт"
+        ],
+        "forms": "hat · hatte · hat gehabt",
+        "definition_de": "Etwas besitzen oder zur Verfügung haben.",
+        "example": "Hast du einen Stift?",
+        "example_ru": "У тебя есть ручка?",
+        "note": "etwas (Akkusativ) haben — иметь что-либо. В Perfekt haben также вспомогательный глагол: Ich habe gearbeitet. Как самостоятельный глагол: hat gehabt.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 16,
+            "row_id": "1a8224edc5709e086778"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "grammar_hint": "haben + Akkusativ; ich habe, du hast, er/sie/es hat; отрицание неопределённого существительного: kein.",
+        "alternative_surfaces": [],
+        "alternative_forms": [],
+        "alternative_definitions_de": [
+          "Über eine Sache verfügen, die einem gehört."
+        ],
+        "alternative_examples": [
+          {
+            "de": "Wir haben zwei Fahrräder.",
+            "ru": "У нас есть два велосипеда."
+          }
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-haben-possession",
+            "de": "haben",
+            "part": "verb",
+            "forms": "hat · hatte · hat gehabt",
+            "definition_de": "Über eine Sache verfügen, die einem gehört.",
+            "translations_ru": [
+              "иметь",
+              "обладать",
+              "у кого-либо есть"
+            ],
+            "grammar_hint": "haben + Akkusativ; ich habe, du hast, er/sie/es hat; отрицание неопределённого существительного: kein.",
+            "example": "Wir haben zwei Fahrräder.",
+            "example_ru": "У нас есть два велосипеда."
+          }
+        ],
+        "alias_ids": [
+          "b1-haben-possession"
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 47,
+              "scope": "context"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/haben"
+            ],
+            "example": "integraticum_original"
+          }
+        ],
+        "legacy_candidate_ids": []
+      }
+    }
+  ]
+}

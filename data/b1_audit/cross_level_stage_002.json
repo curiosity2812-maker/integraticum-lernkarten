@@ -1,0 +1,1952 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual semantic comparison of indexed candidates 13–32 using stored lower-level definitions and examples. No exact redundant record established. Retain IDs and provisional level metadata; no independent CEFR source verification. Related constructions require confirmation; no production change.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    13,
+    32
+  ],
+  "reviewed": 20,
+  "merge_count": 0,
+  "retained_distinct_senses": 10,
+  "retained_teaching_contexts_pending_level_review": 10,
+  "followup_review": [
+    {
+      "id": "b1-direkt-live-broadcast",
+      "issue": "Stored part adj conflicts with adverbial use stated in hint. Confirm POS and whether A2 meaning already covers broadcast, then decide whether separate teaching card is warranted."
+    },
+    {
+      "id": "b1-brauchen-no-need-to",
+      "issue": "Independently verify infinitive and Ersatzinfinitiv guidance before publication."
+    }
+  ],
+  "decisions": [
+    {
+      "candidate_number": 13,
+      "decision": "retain_distinct_sense",
+      "reason": "Noun roast meat vs verb fry; capitalization and word class distinguish.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_010.json",
+        "sha": "d7b7438f6913fc087745d286705de733a63a3624",
+        "batch": 10,
+        "row": 5,
+        "record": {
+          "id": "b1-braten-roast-meat",
+          "de": "der Braten",
+          "lemma": "Braten",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "жаркое",
+            "запечённое мясо (куском)"
+          ],
+          "definition_de": "Ein größeres Stück Fleisch, das zum Essen gebraten wurde.",
+          "example": "Zum Braten gab es Kartoffeln und Gemüse.",
+          "example_ru": "К жаркому подали картофель и овощи.",
+          "forms": "die Braten",
+          "grammar_hint": "Существительное пишем с большой буквы: der Braten. Глагол: braten — жарить.",
+          "topic": "Еда и напитки",
+          "topics": [
+            "Еда и напитки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 28,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Braten"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_38f86e916231e75753d6"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 443,
+          "record": {
+            "id": "dict_ba33392f8095e53b06de",
+            "de": "braten",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "жарить",
+              "жариться"
+            ],
+            "definition_de": "Speisen in einer heißen Pfanne oder im Ofen garen beziehungsweise gar werden lassen.",
+            "example": "Ich brate das Gemüse in einer Pfanne.",
+            "example_ru": "Я жарю овощи на сковороде.",
+            "grammar_hint": "etwas (Akkusativ) braten; также без объекта: Das Fleisch brät.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 11,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/braten"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "brät · briet · hat gebraten",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 14,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Time needed to accomplish a task vs general need; related meaning, specialized usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_010.json",
+        "sha": "d7b7438f6913fc087745d286705de733a63a3624",
+        "batch": 10,
+        "row": 6,
+        "record": {
+          "id": "b1-brauchen-take-time",
+          "de": "brauchen",
+          "lemma": "brauchen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "тратить (время)",
+            "нуждаться в определённом количестве времени"
+          ],
+          "definition_de": "Eine bestimmte Zeit benötigen, um etwas zu erledigen.",
+          "example": "Für den Bericht habe ich zwei Stunden gebraucht.",
+          "example_ru": "На отчёт у меня ушло два часа.",
+          "forms": "braucht · brauchte · hat gebraucht",
+          "grammar_hint": "Схема: für + Akkusativ eine bestimmte Zeit brauchen. Вопрос: Wie lange brauchst du dafür?",
+          "topic": "Время, распорядок и планы",
+          "topics": [
+            "Время, распорядок и планы"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 28,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/brauchen",
+              "https://www.duden.de/rechtschreibung/brauchen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_1f499f4a6159b2bf1e8b"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 184,
+          "record": {
+            "id": "brauchen-need",
+            "de": "brauchen",
+            "lemma": "brauchen",
+            "ru": "нуждаться в чём-либо; мне / тебе нужен, нужна, нужно … (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "нуждаться в чём-либо",
+              "мне / тебе нужен, нужна, нужно … (по контексту)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "braucht · brauchte · hat gebraucht",
+            "definition_de": "Etwas nötig haben.",
+            "example": "Ich brauche einen neuen Schlüssel.",
+            "example_ru": "Мне нужен новый ключ.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 12,
+                "row_id": "ca73cda3cb6569354069"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 15,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Negative modal-like brauchen + zu-infinitive vs lexical need; preserve grammatical construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_010.json",
+        "sha": "d7b7438f6913fc087745d286705de733a63a3624",
+        "batch": 10,
+        "row": 7,
+        "record": {
+          "id": "b1-brauchen-no-need-to",
+          "de": "nicht zu … brauchen",
+          "lemma": "brauchen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "не нужно (что-либо делать)",
+            "не обязательно"
+          ],
+          "definition_de": "Drückt aus, dass eine Handlung nicht notwendig ist.",
+          "example": "Du brauchst den Antrag nicht noch einmal auszufüllen.",
+          "example_ru": "Тебе не нужно заполнять заявление ещё раз.",
+          "forms": "braucht nicht zu kommen · brauchte nicht zu kommen · hat nicht zu kommen brauchen",
+          "grammar_hint": "Схема: nicht + zu + Infinitiv. У отделяемого глагола zu входит между приставкой и основой: auszufüllen. В Perfekt с другим инфинитивом: hat nicht zu kommen brauchen.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 28,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/brauchen",
+              "https://www.duden.de/rechtschreibung/brauchen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_1f499f4a6159b2bf1e8b"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 184,
+          "record": {
+            "id": "brauchen-need",
+            "de": "brauchen",
+            "lemma": "brauchen",
+            "ru": "нуждаться в чём-либо; мне / тебе нужен, нужна, нужно … (по контексту)",
+            "uk": "",
+            "translations_ru": [
+              "нуждаться в чём-либо",
+              "мне / тебе нужен, нужна, нужно … (по контексту)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "braucht · brauchte · hat gebraucht",
+            "definition_de": "Etwas nötig haben.",
+            "example": "Ich brauche einen neuen Schlüssel.",
+            "example_ru": "Мне нужен новый ключ.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 12,
+                "row_id": "ca73cda3cb6569354069"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 16,
+      "decision": "retain_distinct_sense",
+      "reason": "Causal conjunction vs locative/deictic adverb; A1 note mentions conjunction but does not establish its level.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_011.json",
+        "sha": "c4f1b7b5ce8e4cb78da72fefc8eaf80e90814af4",
+        "batch": 11,
+        "row": 3,
+        "record": {
+          "id": "b1-da-because-clause",
+          "de": "da",
+          "lemma": "da",
+          "part": "conj",
+          "level": "B1",
+          "translations_ru": [
+            "так как",
+            "поскольку"
+          ],
+          "definition_de": "Leitet einen Nebensatz ein, der den Grund für eine Aussage angibt.",
+          "example": "Da der Kurs heute früher endet, nehme ich einen anderen Zug.",
+          "example_ru": "Так как занятие сегодня заканчивается раньше, я поеду на другом поезде.",
+          "forms": "неизменяемый подчинительный союз",
+          "grammar_hint": "В придаточной части с da спрягаемый глагол стоит в конце: da der Kurs früher endet. Если придаточная стоит первой, после запятой главная начинается с глагола: …, nehme ich …",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 29,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/da",
+              "https://www.duden.de/rechtschreibung/da_Konjunktion_weil"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_f92416274b67bd51f4a8",
+            "dict_6190fb3b9d2adfa996f2",
+            "dict_ffcfa0d7e74776c0723d"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 201,
+          "record": {
+            "id": "da-there",
+            "de": "da",
+            "lemma": "da",
+            "ru": "там; тут; вот там",
+            "uk": "",
+            "translations_ru": [
+              "там",
+              "тут",
+              "вот там"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Zeigt auf einen Ort oder eine Stelle in der Umgebung.",
+            "example": "Da hinten ist der Eingang.",
+            "example_ru": "Вон там вход.",
+            "note": "da — там/тут в зависимости от ситуации; da sein — быть на месте. Союз da (= поскольку) вводит придаточное с глаголом в конце; отдельный уровень не подтверждён.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 12,
+                "row_id": "c2ae2b02de6cceabac32"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 203,
+          "record": {
+            "id": "da-arrival",
+            "de": "da",
+            "lemma": "da",
+            "ru": "вот; вот и",
+            "uk": "",
+            "translations_ru": [
+              "вот",
+              "вот и"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Lenkt die Aufmerksamkeit auf etwas, das gerade passiert.",
+            "example": "Da kommt der Bus!",
+            "example_ru": "Вот и автобус!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 12,
+                "row_id": "c2ae2b02de6cceabac32"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 17,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Remember to do something vs think or hold an opinion; distinct construction with daran and infinitive.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_011.json",
+        "sha": "c4f1b7b5ce8e4cb78da72fefc8eaf80e90814af4",
+        "batch": 11,
+        "row": 20,
+        "record": {
+          "id": "b1-denken-remember-to",
+          "de": "daran denken",
+          "lemma": "denken",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "помнить (о необходимости что-либо сделать)",
+            "не забывать"
+          ],
+          "definition_de": "Etwas, das man noch tun soll, im Kopf behalten und nicht vergessen.",
+          "example": "Denk bitte daran, das Fenster vor dem Weggehen zu schließen.",
+          "example_ru": "Пожалуйста, не забудь закрыть окно перед уходом.",
+          "forms": "denkt daran · dachte daran · hat daran gedacht",
+          "grammar_hint": "Схема: daran denken, etwas zu tun. Daran указывает на действие, названное дальше.",
+          "topic": "Время, распорядок и планы",
+          "topics": [
+            "Время, распорядок и планы"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 30,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/denken"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_306adf834ce4bac7ec32"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 444,
+          "record": {
+            "id": "dict_306adf834ce4bac7ec32",
+            "de": "denken",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "думать",
+              "считать",
+              "полагать"
+            ],
+            "definition_de": "Sich in Gedanken mit jemandem oder etwas beschäftigen oder eine Meinung haben.",
+            "example": "Ich denke oft an meine Familie.",
+            "example_ru": "Я часто думаю о своей семье.",
+            "grammar_hint": "an + Akkusativ denken; denken, dass … — глагол в конце.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/denken"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "denkt · dachte · hat gedacht",
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 18,
+      "decision": "retain_distinct_sense",
+      "reason": "Question modal particle vs coordinating causal conjunction; distinct word order and function.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_011.json",
+        "sha": "c4f1b7b5ce8e4cb78da72fefc8eaf80e90814af4",
+        "batch": 11,
+        "row": 23,
+        "record": {
+          "id": "b1-denn-question-emphasis",
+          "de": "denn",
+          "lemma": "denn",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "а…?",
+            "же (по контексту)",
+            "часто без отдельного перевода"
+          ],
+          "definition_de": "Verbindet eine Frage mit dem Gespräch und kann Interesse oder Überraschung zeigen.",
+          "example": "Wo hast du denn diesen Schlüssel gefunden?",
+          "example_ru": "А где ты нашла этот ключ?",
+          "forms": "неизменяемая модальная частица",
+          "grammar_hint": "Вопрос сохраняет обычный порядок слов: Wo hast du denn …? Здесь denn добавляет оттенок вопросу.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 30,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/denn",
+              "https://www.duden.de/rechtschreibung/denn_verstaerkende_Partikel"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_5d1356bf6c3b14a626e6",
+            "dict_da7c20efc915acaa61e8",
+            "dict_613388b10a362efba4a5"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 48,
+          "record": {
+            "id": "conjunction-denn-reason",
+            "de": "denn",
+            "lemma": "denn",
+            "ru": "потому что; ведь",
+            "uk": "",
+            "translations_ru": [
+              "потому что",
+              "ведь"
+            ],
+            "part": "conjunction",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Verbindet zwei Hauptsätze. Der zweite Satz nennt den Grund.",
+            "example": "Ich gehe jetzt, denn ich muss arbeiten.",
+            "example_ru": "Я сейчас ухожу, потому что мне нужно работать.",
+            "note": "Denn соединяет два главных предложения. После denn обычный порядок слов: ich muss. После weil глагол уходит в конец придаточного: weil ich arbeiten muss.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "26bf5b9a4d432923c656"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "row_id": "93092d0e2a26f88f3910"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 19,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Thickness of object vs body size; related adjective senses, separate teaching contexts.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_012.json",
+        "sha": "c676152d7b2d994bd241646d1237983991e955af",
+        "batch": 12,
+        "row": 1,
+        "record": {
+          "id": "b1-dick-thickness",
+          "de": "dick",
+          "lemma": "dick",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "толстый (о предмете, слое)"
+          ],
+          "definition_de": "Von einer Seite zur anderen eine große Stärke aufweisend.",
+          "example": "Die dicke Wand schützt uns vor dem Lärm.",
+          "example_ru": "Толстая стена защищает нас от шума.",
+          "forms": "dick · dicker · am dicksten",
+          "grammar_hint": "О толщине предметов: eine dicke Wand. О человеке значение уже изучалось на A2.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 31,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/dick"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 330,
+          "record": {
+            "id": "dict_966d7a786a94058ad51d",
+            "de": "dick",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "толстый",
+              "полный (о человеке)"
+            ],
+            "definition_de": "Bei einer Person: mit viel Körperumfang.",
+            "forms": "dick · dicker · am dicksten",
+            "example": "Er war als Kind etwas dick.",
+            "example_ru": "В детстве он был немного полным.",
+            "grammar_hint": "",
+            "usage_note": "О человеке слово может звучать обидно; другие значения в этой карточке A2 не подтверждены.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/dick"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Одежда и внешность",
+            "topics": [
+              "Одежда и внешность"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 20,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Live broadcast is a specialized instance of A2 definition without time delay; preserve as teaching context pending level and POS review, not independent sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_012.json",
+        "sha": "c676152d7b2d994bd241646d1237983991e955af",
+        "batch": 12,
+        "row": 10,
+        "record": {
+          "id": "b1-direkt-live-broadcast",
+          "de": "direkt",
+          "lemma": "direkt",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "в прямом эфире",
+            "в режиме реального времени (о трансляции)"
+          ],
+          "definition_de": "Bei einer Übertragung ohne zeitliche Verzögerung.",
+          "example": "Das Konzert wird direkt im Radio übertragen.",
+          "example_ru": "Концерт транслируется по радио в прямом эфире.",
+          "forms": "direkt · direkter · am direktesten",
+          "grammar_hint": "В этом употреблении наречие: direkt übertragen; также live übertragen. Обычные значения уже на A2.",
+          "topic": "Техника и медиа",
+          "topics": [
+            "Техника и медиа"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 31,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/direkt"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 310,
+          "record": {
+            "id": "dict_07be13f5cbc0d4836fe5",
+            "de": "direkt",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "прямой",
+              "непосредственный",
+              "прямо",
+              "сразу",
+              "без пересадок (о транспорте)"
+            ],
+            "definition_de": "Ohne Umweg, Zwischenstation oder zeitliche Verzögerung.",
+            "forms": "direkt · direkter · am direktesten",
+            "example": "Wir fahren direkt nach Zürich.",
+            "example_ru": "Мы едем прямо в Цюрих.",
+            "grammar_hint": "",
+            "usage_note": "A2 стр. 12 подтверждает положение рядом/непосредственно, прямой поезд, действие сразу после события и доставку непосредственно по адресу. ein direkter Zug — поезд без пересадок; direkt nach der Arbeit — сразу после работы. Степени сравнения возможны в подходящем контексте; прямолинейность характера отдельно не подтверждена.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/direkt"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Место и направление",
+            "topics": [
+              "Место и направление"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 21,
+      "decision": "retain_distinct_sense",
+      "reason": "Reversal of expectation or decision vs negative answer and modal emphasis.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_012.json",
+        "sha": "c676152d7b2d994bd241646d1237983991e955af",
+        "batch": 12,
+        "row": 15,
+        "record": {
+          "id": "b1-doch-change-of-mind",
+          "de": "doch",
+          "lemma": "doch",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "всё-таки",
+            "всё же"
+          ],
+          "definition_de": "Zeigt, dass etwas anders geschieht, als man zuvor erwartet oder geplant hatte.",
+          "example": "Ich bleibe heute doch zu Hause.",
+          "example_ru": "Я сегодня всё-таки останусь дома.",
+          "forms": "неизменяемая частица",
+          "grammar_hint": "Не подчинительный союз: порядок слов главного предложения не меняется. Здесь изменение прежнего решения.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 31,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/doch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 114,
+          "record": {
+            "id": "dict_9aa28ad2a74cb2eba5e6",
+            "de": "doch",
+            "part": "particle",
+            "level": "A2",
+            "translations_ru": [
+              "да (в ответ на отрицание)",
+              "нет, наоборот",
+              "ведь",
+              "же",
+              "-ка (в побуждении)"
+            ],
+            "definition_de": "Widerspricht einer Verneinung oder verstärkt als Modalpartikel eine Aufforderung oder Aussage.",
+            "forms": "",
+            "example": "Kommst du morgen nicht? – Doch, ich komme.",
+            "example_ru": "Ты завтра не придёшь? — Нет, приду.",
+            "grammar_hint": "Ответная частица: Doch! опровергает отрицание. Модальная частица: Komm doch mit! — Да пойдём же вместе! Обычно без ударения, не меняет порядок слов и не требует глагола в конце.",
+            "usage_note": "Различать ответную и модальную частицы; последняя может не переводиться отдельно. Другие значения требуют отдельного подтверждения.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/doch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 22,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Wish construction with Konjunktiv II vs negative answer or modal exhortation; preserve teaching context.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_012.json",
+        "sha": "c676152d7b2d994bd241646d1237983991e955af",
+        "batch": 12,
+        "row": 16,
+        "record": {
+          "id": "b1-doch-wish",
+          "de": "doch",
+          "lemma": "doch",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "же",
+            "вот бы",
+            "если бы только (в пожелании)"
+          ],
+          "definition_de": "Verstärkt einen Wunsch, der noch nicht erfüllt ist.",
+          "example": "Wenn ich doch mehr Zeit hätte!",
+          "example_ru": "Вот бы у меня было больше времени!",
+          "forms": "неизменяемая модальная частица",
+          "grammar_hint": "В желательном предложении с wenn глагол стоит в конце; обычно Konjunktiv II: hätte, wäre, könnte.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 31,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/doch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 114,
+          "record": {
+            "id": "dict_9aa28ad2a74cb2eba5e6",
+            "de": "doch",
+            "part": "particle",
+            "level": "A2",
+            "translations_ru": [
+              "да (в ответ на отрицание)",
+              "нет, наоборот",
+              "ведь",
+              "же",
+              "-ка (в побуждении)"
+            ],
+            "definition_de": "Widerspricht einer Verneinung oder verstärkt als Modalpartikel eine Aufforderung oder Aussage.",
+            "forms": "",
+            "example": "Kommst du morgen nicht? – Doch, ich komme.",
+            "example_ru": "Ты завтра не придёшь? — Нет, приду.",
+            "grammar_hint": "Ответная частица: Doch! опровергает отрицание. Модальная частица: Komm doch mit! — Да пойдём же вместе! Обычно без ударения, не меняет порядок слов и не требует глагола в конце.",
+            "usage_note": "Различать ответную и модальную частицы; последняя может не переводиться отдельно. Другие значения требуют отдельного подтверждения.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 12,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/doch"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 23,
+      "decision": "retain_distinct_sense",
+      "reason": "Academic degree/title vs physician.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_012.json",
+        "sha": "c676152d7b2d994bd241646d1237983991e955af",
+        "batch": 12,
+        "row": 17,
+        "record": {
+          "id": "b1-doktor-academic-title",
+          "de": "der Doktor / die Doktorin",
+          "lemma": "Doktor",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "доктор (учёная степень, титул)"
+          ],
+          "definition_de": "Akademischer Titel nach einer erfolgreichen Promotion oder eine Person mit diesem Titel.",
+          "example": "Frau Dr. Keller hält morgen einen Vortrag.",
+          "example_ru": "Доктор Келлер завтра выступит с докладом.",
+          "forms": "die Doktoren · die Doktorinnen",
+          "grammar_hint": "Dr. — академический титул перед фамилией; не обязательно врач. Врач — отдельное значение A1.",
+          "topic": "Учёба и языки",
+          "topics": [
+            "Учёба и языки"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 31,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Doktor"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 220,
+          "record": {
+            "id": "doktor-doctor",
+            "de": "der Doktor",
+            "lemma": "Doktor",
+            "ru": "доктор; врач",
+            "uk": "",
+            "translations_ru": [
+              "доктор",
+              "врач"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Здоровье",
+            "topics": [
+              "Здоровье"
+            ],
+            "forms": "die Doktoren",
+            "definition_de": "Ein Arzt, besonders in der Alltagssprache.",
+            "example": "Morgen gehe ich zum Doktor.",
+            "example_ru": "Завтра я иду к врачу.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "097e621a1412a59095b2"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 24,
+      "decision": "retain_distinct_sense",
+      "reason": "Temporal postposed durch vs spatial preposition; different syntax.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_013.json",
+        "sha": "dd4295b18483719a81b57e7216485555187264ef",
+        "batch": 13,
+        "row": 6,
+        "record": {
+          "id": "b1-durch-duration",
+          "de": "durch",
+          "lemma": "durch",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "на протяжении",
+            "всё время",
+            "весь (период)"
+          ],
+          "definition_de": "Bezeichnet die gesamte Dauer eines Zeitraums ohne relevante Unterbrechung.",
+          "example": "Es hat die ganze Nacht durch geregnet.",
+          "example_ru": "Дождь шёл всю ночь.",
+          "forms": "неизменяемое наречие",
+          "grammar_hint": "После обозначения времени: die ganze Nacht durch. Вариант hindurch. Не путать с пространственным durch + Akkusativ.",
+          "topic": "Время",
+          "topics": [
+            "Время"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 32,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/durch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 229,
+          "record": {
+            "id": "durch-route",
+            "de": "durch",
+            "lemma": "durch",
+            "ru": "через; по; сквозь",
+            "uk": "",
+            "translations_ru": [
+              "через",
+              "по",
+              "сквозь"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg durch einen Bereich oder durch eine Öffnung.",
+            "example": "Wir gehen durch den Park.",
+            "example_ru": "Мы идём через парк.",
+            "note": "durch всегда требует Akkusativ в роли предлога: durch den Wald, durch die Tür. Здесь обозначает путь; причинное и инструментальное значения отдельно не подтверждены уровнем A1/A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "5d3b25a1a2407935422f"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/durch",
+                "scope": "meaning_or_grammar",
+                "note": "Пространственное значение и падежное управление."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 25,
+      "decision": "retain_distinct_sense",
+      "reason": "Means or cause vs spatial route; same Akkusativ but different sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_013.json",
+        "sha": "dd4295b18483719a81b57e7216485555187264ef",
+        "batch": 13,
+        "row": 7,
+        "record": {
+          "id": "b1-durch-means-cause",
+          "de": "durch",
+          "lemma": "durch",
+          "part": "prep",
+          "level": "B1",
+          "translations_ru": [
+            "благодаря",
+            "посредством",
+            "из-за (по контексту)"
+          ],
+          "definition_de": "Nennt ein Mittel, eine Ursache oder eine vermittelnde Person.",
+          "example": "Durch einen Kollegen habe ich von der Stelle erfahren.",
+          "example_ru": "Я узнала о вакансии через коллегу.",
+          "forms": "durch + Akkusativ",
+          "grammar_hint": "Предлог всегда требует Akkusativ: durch einen Kollegen, durch die Hilfe. Здесь не направление движения.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 32,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/durch"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 229,
+          "record": {
+            "id": "durch-route",
+            "de": "durch",
+            "lemma": "durch",
+            "ru": "через; по; сквозь",
+            "uk": "",
+            "translations_ru": [
+              "через",
+              "по",
+              "сквозь"
+            ],
+            "part": "prep",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "+ Akkusativ",
+            "definition_de": "Bezeichnet einen Weg durch einen Bereich oder durch eine Öffnung.",
+            "example": "Wir gehen durch den Park.",
+            "example_ru": "Мы идём через парк.",
+            "note": "durch всегда требует Akkusativ в роли предлога: durch den Wald, durch die Tür. Здесь обозначает путь; причинное и инструментальное значения отдельно не подтверждены уровнем A1/A2.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "5d3b25a1a2407935422f"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/durch",
+                "scope": "meaning_or_grammar",
+                "note": "Пространственное значение и падежное управление."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 26,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Polite offer vs permission; related pragmatic use of modal, not proof of distinct lexical sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_013.json",
+        "sha": "dd4295b18483719a81b57e7216485555187264ef",
+        "batch": 13,
+        "row": 13,
+        "record": {
+          "id": "b1-duerfen-polite-offer",
+          "de": "dürfen",
+          "lemma": "dürfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "могу ли (вежливое предложение)",
+            "позвольте"
+          ],
+          "definition_de": "Formuliert eine höfliche Frage oder ein Angebot.",
+          "example": "Darf ich Ihnen einen Kaffee bringen?",
+          "example_ru": "Могу я принести Вам кофе?",
+          "forms": "darf · durfte · hat gedurft / hat … dürfen",
+          "grammar_hint": "Модальный глагол: инфинитив без zu в конце; Darf ich Ihnen helfen? Здесь вежливое предложение.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 32,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/d%C3%BCrfen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 231,
+          "record": {
+            "id": "duerfen-permission",
+            "de": "dürfen",
+            "lemma": "dürfen",
+            "ru": "мочь; иметь разрешение; иметь право",
+            "uk": "",
+            "translations_ru": [
+              "мочь",
+              "иметь разрешение",
+              "иметь право"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "darf · durfte · hat gedurft",
+            "definition_de": "Die Erlaubnis haben, etwas zu tun.",
+            "example": "Darf ich hier sitzen?",
+            "example_ru": "Можно здесь сесть?",
+            "note": "dürfen + Infinitiv без zu; с другим инфинитивом в Perfekt: Er hat gehen dürfen. Nicht dürfen — нельзя; nicht müssen — не обязательно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "47867aa13b71abc65a47"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/d%C3%BCrfen",
+                "scope": "meaning",
+                "note": "Разрешение или право, не физическая способность."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 232,
+          "record": {
+            "id": "duerfen-limit",
+            "de": "dürfen",
+            "lemma": "dürfen",
+            "ru": "можно; разрешается",
+            "uk": "",
+            "translations_ru": [
+              "можно",
+              "разрешается"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "darf · durfte · hat gedurft",
+            "definition_de": "Zeigt, was nach einer Regel erlaubt ist. Mit nicht: was verboten ist.",
+            "example": "Die Tasche darf nicht mehr als zehn Kilo wiegen.",
+            "example_ru": "Сумка может весить не больше десяти килограммов.",
+            "note": "Без второго инфинитива: hat gedurft. С другим инфинитивом: Er hat hier sitzen dürfen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "47867aa13b71abc65a47"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 27,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Past counterfactual reproach vs permission/prohibition; distinct grammar, Konjunktiv II past.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_013.json",
+        "sha": "dd4295b18483719a81b57e7216485555187264ef",
+        "batch": 13,
+        "row": 14,
+        "record": {
+          "id": "b1-duerfen-past-reproach",
+          "de": "nicht … dürfen (Konjunktiv II Vergangenheit)",
+          "lemma": "dürfen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "нельзя было",
+            "не следовало (упрёк о прошлом)"
+          ],
+          "definition_de": "Drückt aus, dass eine bereits geschehene Handlung nicht erlaubt oder nicht richtig war.",
+          "example": "Das hättest du nicht erzählen dürfen.",
+          "example_ru": "Тебе не следовало это рассказывать.",
+          "forms": "darf · durfte · hat gedurft / hat … dürfen; Konjunktiv II: hätte … dürfen",
+          "grammar_hint": "В главном предложении hätte на втором месте, два инфинитива в конце: erzählen dürfen. Не путать с обычным прошедшим durfte nicht.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 32,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/d%C3%BCrfen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 231,
+          "record": {
+            "id": "duerfen-permission",
+            "de": "dürfen",
+            "lemma": "dürfen",
+            "ru": "мочь; иметь разрешение; иметь право",
+            "uk": "",
+            "translations_ru": [
+              "мочь",
+              "иметь разрешение",
+              "иметь право"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "darf · durfte · hat gedurft",
+            "definition_de": "Die Erlaubnis haben, etwas zu tun.",
+            "example": "Darf ich hier sitzen?",
+            "example_ru": "Можно здесь сесть?",
+            "note": "dürfen + Infinitiv без zu; с другим инфинитивом в Perfekt: Er hat gehen dürfen. Nicht dürfen — нельзя; nicht müssen — не обязательно.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "47867aa13b71abc65a47"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/d%C3%BCrfen",
+                "scope": "meaning",
+                "note": "Разрешение или право, не физическая способность."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 232,
+          "record": {
+            "id": "duerfen-limit",
+            "de": "dürfen",
+            "lemma": "dürfen",
+            "ru": "можно; разрешается",
+            "uk": "",
+            "translations_ru": [
+              "можно",
+              "разрешается"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "darf · durfte · hat gedurft",
+            "definition_de": "Zeigt, was nach einer Regel erlaubt ist. Mit nicht: was verboten ist.",
+            "example": "Die Tasche darf nicht mehr als zehn Kilo wiegen.",
+            "example_ru": "Сумка может весить не больше десяти килограммов.",
+            "note": "Без второго инфинитива: hat gedurft. С другим инфинитивом: Er hat hier sitzen dürfen.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "47867aa13b71abc65a47"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 28,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Concessive subordinate construction vs indifference with egal sein; related meaning, preserve pattern.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_013.json",
+        "sha": "dd4295b18483719a81b57e7216485555187264ef",
+        "batch": 13,
+        "row": 24,
+        "record": {
+          "id": "b1-egal-concessive",
+          "de": "egal, wie / was / ob …",
+          "lemma": "egal",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "неважно, как / что / ли",
+            "независимо от того"
+          ],
+          "definition_de": "Leitet zusammen mit einem Fragewort oder ob eine Bedingung ein, die das Ergebnis nicht verändert.",
+          "example": "Egal, wie spät es ist, ich rufe dich an.",
+          "example_ru": "Неважно, насколько поздно будет, я тебе позвоню.",
+          "forms": "egal · в данной конструкции без степеней сравнения",
+          "grammar_hint": "Egal, wie spät es ist: в придаточном глагол в конце. Сравни: egal, ob du kommst.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 33,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/egal"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 318,
+          "record": {
+            "id": "dict_0d382d2ec8dcf2a357e6",
+            "de": "egal",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "всё равно",
+              "безразлично"
+            ],
+            "definition_de": "So, dass eine Wahl oder ein Unterschied keine Bedeutung hat.",
+            "forms": "egal · egaler · am egalsten (редко)",
+            "example": "Mir ist egal, welchen Film wir sehen.",
+            "example_ru": "Мне всё равно, какой фильм мы посмотрим.",
+            "grammar_hint": "jemandem (Dativ) egal sein; в косвенном вопросе глагол в конце: Mir ist egal, wann du kommst.",
+            "usage_note": "Обычное употребление предикативное: Mir ist das egal. Краткий ответ Egal! также подтверждён. Степени сравнения возможны, но редки в обычной речи.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 13,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/egal"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 29,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Actual fact vs original intention or incidental question; related discourse senses; verify exact scope.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_014.json",
+        "sha": "2365ece611e0eb71a1ffc11a935fb992692db1ae",
+        "batch": 14,
+        "row": 1,
+        "record": {
+          "id": "b1-eigentlich-actual",
+          "de": "eigentlich",
+          "lemma": "eigentlich",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "на самом деле",
+            "в действительности"
+          ],
+          "definition_de": "Gibt an, wie etwas tatsächlich ist, im Gegensatz zum äußeren Eindruck.",
+          "example": "Alle nennen ihn Max, aber eigentlich heißt er Maximilian.",
+          "example_ru": "Все зовут его Макс, но на самом деле его зовут Максимилиан.",
+          "forms": "неизменяемое наречие",
+          "grammar_hint": "В начале главного предложения: Eigentlich heißt er … — глагол на втором месте. Другие употребления уже на A2.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 33,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/eigentlich"
+            ],
+            "example": "integraticum_original",
+            "independent_meaning_checked": true
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 429,
+          "record": {
+            "id": "dict_3cbedeb80ec00b5da8f8",
+            "de": "eigentlich",
+            "part": "adv",
+            "level": "A2",
+            "translations_ru": [
+              "вообще-то",
+              "собственно",
+              "кстати (в вопросах)"
+            ],
+            "definition_de": "Verweist auf die ursprüngliche Absicht oder leitet eine beiläufige Frage ein.",
+            "example": "Eigentlich wollte ich heute zu Hause bleiben.",
+            "example_ru": "Вообще-то я хотела сегодня остаться дома.",
+            "grammar_hint": "В начале главного предложения V2: Eigentlich wollte ich zu Hause bleiben. В вопросе частица обычно внутри: Wo wohnst du eigentlich? Не вводит придаточное.",
+            "usage_note": "Вообще-то, собственно; в вопросах — кстати. Прилагательное eigentlich (= настоящий, подлинный) не подтверждено отдельным смыслом.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 13,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/eigentlich"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Грамматика и связь предложений",
+            "topics": [
+              "Грамматика и связь предложений"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 30,
+      "decision": "retain_distinct_sense",
+      "reason": "Intensifying particle vs easy/basic adjective and one-way ticket usage.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_014.json",
+        "sha": "2365ece611e0eb71a1ffc11a935fb992692db1ae",
+        "batch": 14,
+        "row": 16,
+        "record": {
+          "id": "b1-einfach-intensifier",
+          "de": "einfach",
+          "lemma": "einfach",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "просто",
+            "прямо-таки"
+          ],
+          "definition_de": "Verstärkt in dieser Verwendung eine Bewertung oder Aussage.",
+          "example": "Das Konzert war einfach wunderbar.",
+          "example_ru": "Концерт был просто чудесным.",
+          "forms": "неизменяемая частица в данном употреблении",
+          "grammar_hint": "Не означает «лёгкий». Сравни A1: eine einfache Aufgabe — простое задание.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 33,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/einfach"
+            ],
+            "example": "integraticum_original",
+            "independent_meaning_checked": true
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 243,
+          "record": {
+            "id": "einfach-easy",
+            "de": "einfach",
+            "lemma": "einfach",
+            "ru": "лёгкий; простой",
+            "uk": "",
+            "translations_ru": [
+              "лёгкий",
+              "простой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "einfacher · am einfachsten",
+            "definition_de": "Nicht schwer zu verstehen oder zu lösen.",
+            "example": "Die erste Aufgabe ist einfach.",
+            "example_ru": "Первое задание простое.",
+            "note": "einfach также наречно в том же значении: etwas einfacher erklären — объяснить проще. Усилительное einfach (= просто) не получает уровень автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "12f2bd06b8e4e4cddc92"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 244,
+          "record": {
+            "id": "einfach-basic",
+            "de": "einfach",
+            "lemma": "einfach",
+            "ru": "простой",
+            "uk": "",
+            "translations_ru": [
+              "простой"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "einfacher · am einfachsten",
+            "definition_de": "Ohne besondere Ausstattung oder Komfort.",
+            "example": "Wir brauchen nur ein einfaches Zimmer.",
+            "example_ru": "Нам нужен простой номер.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "12f2bd06b8e4e4cddc92"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 245,
+          "record": {
+            "id": "einfach-one-way",
+            "de": "einfach",
+            "lemma": "einfach",
+            "ru": "в одну сторону; в один конец (о билете)",
+            "uk": "",
+            "translations_ru": [
+              "в одну сторону",
+              "в один конец (о билете)"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Транспорт",
+            "topics": [
+              "Транспорт"
+            ],
+            "forms": "",
+            "definition_de": "Bezieht sich auf eine Fahrt ohne Rückfahrt.",
+            "example": "Nach Bern, einfach, bitte.",
+            "example_ru": "До Берна в одну сторону, пожалуйста.",
+            "note": "einfach (билет в одну сторону); также eine einfache Fahrt — поездка в один конец.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 13,
+                "row_id": "12f2bd06b8e4e4cddc92"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 31,
+      "decision": "retain_distinct_sense",
+      "reason": "Suddenly vs once; idiom.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 2,
+        "record": {
+          "id": "b1-auf-einmal-suddenly",
+          "de": "auf einmal",
+          "lemma": "einmal",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "вдруг",
+            "внезапно"
+          ],
+          "definition_de": "Bezeichnet eine unerwartete, plötzlich eintretende Veränderung.",
+          "example": "Auf einmal hörte der Regen auf.",
+          "example_ru": "Вдруг дождь прекратился.",
+          "forms": "неизменяемое выражение",
+          "grammar_hint": "Синоним plötzlich. В начале предложения: Auf einmal hörte … — глагол на втором месте.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 34,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/einmal"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 803,
+          "record": {
+            "id": "dict_18633ac9324944ff3c30",
+            "de": "einmal",
+            "lemma": "einmal",
+            "ru": "один раз",
+            "uk": "один раз",
+            "translations_ru": [
+              "один раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Bei genau einer Gelegenheit.",
+            "example": "Ich trainiere einmal pro Woche.",
+            "example_ru": "Я тренируюсь один раз в неделю.",
+            "note": "noch einmal — ещё раз; einmal в значении однажды/когда-нибудь существует отдельно и не получает эту метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 7,
+                "scope": "word_group"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/einmal",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 32,
+      "decision": "retain_distinct_sense",
+      "reason": "Simultaneously or in one go vs once; idiom and contextual meaning.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_015.json",
+        "sha": "e11de68ec4c6d411172526a35fef951983334910",
+        "batch": 15,
+        "row": 3,
+        "record": {
+          "id": "b1-auf-einmal-simultaneous",
+          "de": "auf einmal",
+          "lemma": "einmal",
+          "part": "adv",
+          "level": "B1",
+          "translations_ru": [
+            "сразу",
+            "одновременно",
+            "за один раз"
+          ],
+          "definition_de": "Bezeichnet mehrere Vorgänge, die gleichzeitig oder in einem einzigen Schritt stattfinden.",
+          "example": "Ich kann nicht drei Gespräche auf einmal führen.",
+          "example_ru": "Я не могу вести три разговора одновременно.",
+          "forms": "неизменяемое выражение",
+          "grammar_hint": "Сравни plötzlich (внезапно) и gleichzeitig (одновременно). Здесь именно одновременность.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 34,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/einmal"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 803,
+          "record": {
+            "id": "dict_18633ac9324944ff3c30",
+            "de": "einmal",
+            "lemma": "einmal",
+            "ru": "один раз",
+            "uk": "один раз",
+            "translations_ru": [
+              "один раз"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Время",
+            "topics": [
+              "Время"
+            ],
+            "forms": "",
+            "definition_de": "Bei genau einer Gelegenheit.",
+            "example": "Ich trainiere einmal pro Woche.",
+            "example_ru": "Я тренируюсь один раз в неделю.",
+            "note": "noch einmal — ещё раз; einmal в значении однажды/когда-нибудь существует отдельно и не получает эту метку автоматически.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "sense"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 7,
+                "scope": "word_group"
+              },
+              {
+                "url": "https://de.wiktionary.org/wiki/einmal",
+                "scope": "meaning"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ]
+}

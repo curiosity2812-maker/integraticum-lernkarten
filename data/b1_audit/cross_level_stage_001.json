@@ -1,0 +1,1110 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual semantic comparison of first 12 indexed B1 candidates against full stored A1/A2 definitions and examples. Retain separate IDs; no new independent CEFR or dictionary-source verification. No merge or level change justified from stored lower-level senses alone.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    1,
+    12
+  ],
+  "reviewed": 12,
+  "merge_count": 0,
+  "retained_distinct_senses": 9,
+  "retained_teaching_contexts_pending_level_review": 3,
+  "decisions": [
+    {
+      "candidate_number": 1,
+      "decision": "retain_distinct_sense",
+      "reason": "Police report vs advertisement.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_003.json",
+        "sha": "5af0cdffa228a2ab1558071181bd7774d29595d8",
+        "batch": 3,
+        "row": 19,
+        "record": {
+          "id": "b1-anzeige-criminal-report",
+          "de": "die Anzeige",
+          "lemma": "Anzeige",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "заявление в полицию",
+            "сообщение о правонарушении"
+          ],
+          "definition_de": "Eine Meldung an die Polizei oder eine andere zuständige Stelle über einen vermuteten Verstoß.",
+          "example": "Nach dem Diebstahl hat sie Anzeige erstattet.",
+          "example_ru": "После кражи она подала заявление в полицию.",
+          "forms": "die Anzeigen",
+          "grammar_hint": "Устойчивое сочетание: Anzeige erstatten — подать заявление. Это значение отличается от «объявление».",
+          "topic": "Документы и правила",
+          "topics": [
+            "Документы и правила"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 19,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Anzeige"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_5e0ebaae749b97ceec29"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 95,
+          "record": {
+            "id": "goethe-3e62391780bc0a5ab947-1",
+            "de": "die Anzeige",
+            "lemma": "Anzeige",
+            "ru": "объявление",
+            "uk": "",
+            "translations_ru": [
+              "объявление"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "die Anzeigen",
+            "definition_de": "Ein kurzer veröffentlichter Text, der etwas anbietet oder sucht.",
+            "example": "Ich habe die Anzeige für die Wohnung gelesen.",
+            "example_ru": "Я прочитала объявление о квартире.",
+            "note": "Eine Anzeige lesen / aufgeben — читать / размещать объявление. Заявление в полицию и показания прибора — другие значения.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 10,
+                "row_id": "3e62391780bc0a5ab947"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 2,
+      "decision": "retain_distinct_sense",
+      "reason": "Outcome vs going out for leisure or a light going out.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_005.json",
+        "sha": "1a7323c5a5e735cb20dce2d2027157abf7c788cb",
+        "batch": 5,
+        "row": 10,
+        "record": {
+          "id": "b1-ausgehen-turn-out",
+          "de": "ausgehen",
+          "lemma": "ausgehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "заканчиваться (с определённым результатом)",
+            "завершаться"
+          ],
+          "definition_de": "Auf eine bestimmte Weise enden.",
+          "example": "Das Spiel ist mit einem Unentschieden ausgegangen.",
+          "example_ru": "Игра закончилась вничью.",
+          "forms": "geht aus · ging aus · ist ausgegangen",
+          "grammar_hint": "Типичный вопрос о результате: Wie ist es ausgegangen?",
+          "topic": "Цвета, свойства и оценка",
+          "topics": [
+            "Цвета, свойства и оценка"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 21,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ausgehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_9a0e8cd551a76fea75fa"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 427,
+          "record": {
+            "id": "dict_9a0e8cd551a76fea75fa",
+            "de": "ausgehen",
+            "part": "verb",
+            "level": "A2",
+            "translations_ru": [
+              "выходить развлечься",
+              "гаснуть (о свете)"
+            ],
+            "definition_de": "Das Haus zur Freizeitgestaltung verlassen oder aufhören zu leuchten.",
+            "example": "Am Freitag gehen wir zusammen aus.",
+            "example_ru": "В пятницу мы вместе пойдём развлечься.",
+            "grammar_hint": "Отделяемый aus-: Wir gehen heute aus. Perfekt с sein: Wir sind ausgegangen. В придаточном: …, weil wir ausgehen.",
+            "usage_note": "Два смысла явно подтверждены Goethe A2: выходить развлечься; гаснуть (о свете). Другие значения, например иссякать, отдельно не маркируются.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 9,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/ausgehen"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "geht aus · ging aus · ist ausgegangen",
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 3,
+      "decision": "retain_distinct_sense",
+      "reason": "Not minding an action vs switching off a device; Dativ and fixed expression.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_005.json",
+        "sha": "1a7323c5a5e735cb20dce2d2027157abf7c788cb",
+        "batch": 5,
+        "row": 13,
+        "record": {
+          "id": "b1-ausmachen-not-mind",
+          "de": "jemandem nichts ausmachen",
+          "lemma": "ausmachen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть не в тягость",
+            "не возражать (в ответе)"
+          ],
+          "definition_de": "Für eine Person keine Schwierigkeit oder kein Problem sein.",
+          "example": "Macht es dir etwas aus, wenn ich das Fenster öffne? – Nein, das macht mir nichts aus.",
+          "example_ru": "Ты не против, если я открою окно? — Нет, не против.",
+          "forms": "macht aus · machte aus · hat ausgemacht",
+          "grammar_hint": "Вопрос: Macht es dir etwas aus? Ответ: Das macht mir nichts aus. Тот, кому что-то мешает или не мешает, стоит в Dativ: dir, mir.",
+          "topic": "Общение и мнения",
+          "topics": [
+            "Общение и мнения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 22,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ausmachen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_9e9fd245f52b3d55a1c3"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 120,
+          "record": {
+            "id": "goethe-6dc93d0bc17417d83a8f-1",
+            "de": "ausmachen",
+            "lemma": "ausmachen",
+            "ru": "выключать; гасить",
+            "uk": "",
+            "translations_ru": [
+              "выключать",
+              "гасить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "macht aus · machte aus · hat ausgemacht",
+            "definition_de": "Ein Gerät oder eine Lampe ausschalten.",
+            "example": "Mach bitte das Radio aus.",
+            "example_ru": "Выключи, пожалуйста, радио.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 10,
+                "row_id": "6dc93d0bc17417d83a8f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 4,
+      "decision": "retain_distinct_sense",
+      "reason": "Making arrangements vs switching off a device.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_005.json",
+        "sha": "1a7323c5a5e735cb20dce2d2027157abf7c788cb",
+        "batch": 5,
+        "row": 14,
+        "record": {
+          "id": "b1-ausmachen-make-arrangement",
+          "de": "ausmachen",
+          "lemma": "ausmachen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "договариваться",
+            "назначать (время или встречу)"
+          ],
+          "definition_de": "Gemeinsam festlegen, wann oder wie etwas stattfinden soll.",
+          "example": "Wir haben für Freitag einen Termin ausgemacht.",
+          "example_ru": "Мы договорились о встрече на пятницу.",
+          "forms": "macht aus · machte aus · hat ausgemacht",
+          "grammar_hint": "Сочетание: mit jemandem einen Termin ausmachen. Можно также: ausmachen, dass …",
+          "topic": "Время, распорядок и планы",
+          "topics": [
+            "Время, распорядок и планы"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 22,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ausmachen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_9e9fd245f52b3d55a1c3"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 120,
+          "record": {
+            "id": "goethe-6dc93d0bc17417d83a8f-1",
+            "de": "ausmachen",
+            "lemma": "ausmachen",
+            "ru": "выключать; гасить",
+            "uk": "",
+            "translations_ru": [
+              "выключать",
+              "гасить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "macht aus · machte aus · hat ausgemacht",
+            "definition_de": "Ein Gerät oder eine Lampe ausschalten.",
+            "example": "Mach bitte das Radio aus.",
+            "example_ru": "Выключи, пожалуйста, радио.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 10,
+                "row_id": "6dc93d0bc17417d83a8f"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 5,
+      "decision": "retain_distinct_sense",
+      "reason": "Issuing a document vs exhibition.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_005.json",
+        "sha": "1a7323c5a5e735cb20dce2d2027157abf7c788cb",
+        "batch": 5,
+        "row": 27,
+        "record": {
+          "id": "b1-ausstellung-document-issuance",
+          "de": "die Ausstellung",
+          "lemma": "Ausstellung",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "оформление",
+            "выдача (документа)"
+          ],
+          "definition_de": "Das Anfertigen und offizielle Bereitstellen eines Dokuments.",
+          "example": "Für die Ausstellung des Ausweises brauche ich ein aktuelles Foto.",
+          "example_ru": "Для оформления удостоверения личности мне нужна свежая фотография.",
+          "forms": "die Ausstellungen · в значении «выдача документа» обычно единственное число",
+          "grammar_hint": "Сочетание: die Ausstellung eines Ausweises. Документ можно указать в Genitiv.",
+          "topic": "Документы и правила",
+          "topics": [
+            "Документы и правила"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 22,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Ausstellung"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_627a92cddb7705478db6"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 88,
+          "record": {
+            "id": "dict_627a92cddb7705478db6",
+            "de": "die Ausstellung",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "выставка"
+            ],
+            "definition_de": "Eine Veranstaltung, bei der man zum Beispiel Kunstwerke oder andere Gegenstände öffentlich zeigt.",
+            "forms": "Plural · die Ausstellungen",
+            "example": "Die Ausstellung zeigt Fotos aus den Bergen.",
+            "example_ru": "На выставке показывают фотографии из гор.",
+            "grammar_hint": "",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 9,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Ausstellung"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Искусство, музыка и развлечения",
+            "topics": [
+              "Искусство, музыка и развлечения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 6,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Speculation with als ob, distinct from basic appearance; retain as teaching construction.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_006.json",
+        "sha": "60d4d218a339c46b067394a1af91460df1e3c513",
+        "batch": 6,
+        "row": 1,
+        "record": {
+          "id": "b1-aussehen-seem-as-if",
+          "de": "es sieht so aus, als ob …",
+          "lemma": "aussehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "похоже, что…",
+            "похоже, будто…"
+          ],
+          "definition_de": "Leitet eine Vermutung ein, die auf einem Eindruck beruht.",
+          "example": "Es sieht so aus, als ob die Sitzung länger dauern würde.",
+          "example_ru": "Похоже, заседание продлится дольше.",
+          "forms": "sieht aus · sah aus · hat ausgesehen",
+          "grammar_hint": "Схема: Es sieht so aus, als ob … . Перед als ob ставим запятую. Спрягаемый глагол в конце придаточной части: … dauern würde.",
+          "topic": "Общение и мнения",
+          "topics": [
+            "Общение и мнения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 22,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/aussehen",
+              "https://www.duden.de/rechtschreibung/aussehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_12852aa034b5b7f1831f"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 122,
+          "record": {
+            "id": "goethe-6d1557da9a452063bf45-1",
+            "de": "aussehen",
+            "lemma": "aussehen",
+            "ru": "выглядеть",
+            "uk": "",
+            "translations_ru": [
+              "выглядеть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht aus · sah aus · hat ausgesehen",
+            "definition_de": "Auf eine bestimmte Weise wirken, wenn man etwas oder jemanden ansieht.",
+            "example": "Die Suppe sieht gut aus.",
+            "example_ru": "Суп выглядит аппетитно.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 10,
+                "row_id": "6d1557da9a452063bf45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 7,
+      "decision": "retain_distinct_sense",
+      "reason": "Moving out vs taking off clothing; distinct Perfekt auxiliary.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_006.json",
+        "sha": "60d4d218a339c46b067394a1af91460df1e3c513",
+        "batch": 6,
+        "row": 5,
+        "record": {
+          "id": "b1-ausziehen-move-out",
+          "de": "ausziehen",
+          "lemma": "ausziehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "съезжать",
+            "съехать (с квартиры)",
+            "выезжать (из жилья)"
+          ],
+          "definition_de": "Eine Wohnung oder ein Haus verlassen, um nicht mehr dort zu wohnen.",
+          "example": "Wir sind Ende Mai aus der alten Wohnung ausgezogen.",
+          "example_ru": "Мы съехали со старой квартиры в конце мая.",
+          "forms": "zieht aus · zog aus · ist ausgezogen",
+          "grammar_hint": "При переезде Perfekt с sein. Сравни: hat den Mantel ausgezogen — снял пальто.",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 22,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/ausziehen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_10122349b3c8fddd5989"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 127,
+          "record": {
+            "id": "goethe-0fc7aa5b2c374821ac3c-1",
+            "de": "ausziehen",
+            "lemma": "ausziehen",
+            "ru": "снимать (одежду, обувь)",
+            "uk": "",
+            "translations_ru": [
+              "снимать (одежду, обувь)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "zieht aus · zog aus · hat ausgezogen",
+            "definition_de": "Kleidung oder Schuhe vom Körper nehmen.",
+            "example": "Zieh bitte deine Jacke aus.",
+            "example_ru": "Сними, пожалуйста, куртку.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 10,
+                "row_id": "0fc7aa5b2c374821ac3c"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 8,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Consequence vs semantic meaning; related but distinct teaching context, not proof of independently established B1 sense.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_006.json",
+        "sha": "60d4d218a339c46b067394a1af91460df1e3c513",
+        "batch": 6,
+        "row": 16,
+        "record": {
+          "id": "b1-bedeuten-imply-consequence",
+          "de": "bedeuten",
+          "lemma": "bedeuten",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "означать (иметь следствием)",
+            "влечь за собой"
+          ],
+          "definition_de": "Etwas zur Folge haben oder eine bestimmte Konsequenz mit sich bringen.",
+          "example": "Der Ausfall des Zuges bedeutet, dass wir später ankommen.",
+          "example_ru": "Из-за отмены поезда мы приедем позже.",
+          "forms": "bedeutet · bedeutete · hat bedeutet",
+          "grammar_hint": "В конструкции Das bedeutet, dass … объясняем следствие. После dass спрягаемый глагол стоит в конце: dass wir später ankommen.",
+          "topic": "Общение и мнения",
+          "topics": [
+            "Общение и мнения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 23,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/bedeuten",
+              "https://www.duden.de/rechtschreibung/bedeuten"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_a311d26462d33a359478"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 147,
+          "record": {
+            "id": "goethe-4d35ce0305032259eab3-1",
+            "de": "bedeuten",
+            "lemma": "bedeuten",
+            "ru": "означать; значить",
+            "uk": "",
+            "translations_ru": [
+              "означать",
+              "значить"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Образование",
+            "topics": [
+              "Образование"
+            ],
+            "forms": "bedeutet · bedeutete · hat bedeutet",
+            "definition_de": "Einen bestimmten Sinn haben.",
+            "example": "Was bedeutet dieses Zeichen?",
+            "example_ru": "Что означает этот знак?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "4d35ce0305032259eab3"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 9,
+      "decision": "retain_distinct_teaching_context_pending_level_source_review",
+      "reason": "Official administrative decision vs general notification / Bescheid geben; specialization requires level-source review.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_008.json",
+        "sha": "167f89a377f069fb345a56aaceeac032eedbaaca",
+        "batch": 8,
+        "row": 9,
+        "record": {
+          "id": "b1-bescheid-official-notice",
+          "de": "der Bescheid",
+          "lemma": "Bescheid",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "официальное решение",
+            "уведомление о решении"
+          ],
+          "definition_de": "Eine meist schriftliche Mitteilung über eine Entscheidung einer zuständigen Stelle.",
+          "example": "Der schriftliche Bescheid über den Antrag kam gestern per Post.",
+          "example_ru": "Письменное решение по заявлению вчера пришло по почте.",
+          "forms": "die Bescheide",
+          "grammar_hint": "Типичные сочетания: einen Bescheid erhalten, der Bescheid über den Antrag. На A2 есть выражение Bescheid geben — сообщить.",
+          "topic": "Документы и правила",
+          "topics": [
+            "Документы и правила"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 25,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Bescheid"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_dc792ad687bd1cca48b3"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 441,
+          "record": {
+            "id": "dict_dc792ad687bd1cca48b3",
+            "de": "der Bescheid",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "сообщение",
+              "уведомление",
+              "известие"
+            ],
+            "definition_de": "Eine Mitteilung darüber, wie etwas entschieden wurde oder weitergeht.",
+            "example": "Gib mir bitte morgen Bescheid.",
+            "example_ru": "Дай мне, пожалуйста, знать завтра.",
+            "grammar_hint": "jemandem (Dativ) Bescheid geben/sagen; Bescheid bekommen.",
+            "usage_note": "В устойчивых сочетаниях обычно без артикля.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 10,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Bescheid"
+              ],
+              "example": "integraticum_original"
+            },
+            "forms": "Plural · die Bescheide (официальные уведомления)",
+            "topic": "Общение и мнения",
+            "topics": [
+              "Общение и мнения"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 10,
+      "decision": "retain_distinct_sense",
+      "reason": "Summoning someone vs ordering food or goods.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_009.json",
+        "sha": "e799ef9cef28942ec8fd2a19cb4348b4347f590f",
+        "batch": 9,
+        "row": 8,
+        "record": {
+          "id": "b1-bestellen-call-someone-in",
+          "de": "bestellen",
+          "lemma": "bestellen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "вызывать",
+            "приглашать явиться (на встречу)"
+          ],
+          "definition_de": "Jemanden auffordern, zu einer festgelegten Zeit an einen Ort zu kommen.",
+          "example": "Die Leiterin hat mich für neun Uhr zu einem Gespräch bestellt.",
+          "example_ru": "Руководительница вызвала меня на разговор к девяти часам.",
+          "forms": "bestellt · bestellte · hat bestellt",
+          "grammar_hint": "Сочетания: jemanden zu einem Gespräch bestellen, jemanden für neun Uhr bestellen.",
+          "topic": "Работа и профессии",
+          "topics": [
+            "Работа и профессии"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 26,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/bestellen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_498a62ef6f6fcb8395a8"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 168,
+          "record": {
+            "id": "bestellen-food",
+            "de": "bestellen",
+            "lemma": "bestellen",
+            "ru": "заказывать (еду, напиток)",
+            "uk": "",
+            "translations_ru": [
+              "заказывать (еду, напиток)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "bestellt · bestellte · hat bestellt",
+            "definition_de": "Im Restaurant sagen, was man essen oder trinken möchte.",
+            "example": "Ich bestelle eine Suppe.",
+            "example_ru": "Я заказываю суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "65070d9d3fa5ce26d6db",
+                "layout_correction": "Separated best- and bestellen using original Goethe PDF."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 169,
+          "record": {
+            "id": "bestellen-goods",
+            "de": "bestellen",
+            "lemma": "bestellen",
+            "ru": "заказывать (товар)",
+            "uk": "",
+            "translations_ru": [
+              "заказывать (товар)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "bestellt · bestellte · hat bestellt",
+            "definition_de": "Eine Ware anfordern, damit man sie später bekommt.",
+            "example": "Kann ich das Buch bestellen?",
+            "example_ru": "Могу я заказать эту книгу?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "65070d9d3fa5ce26d6db",
+                "layout_correction": "Separated best- and bestellen using original Goethe PDF."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 11,
+      "decision": "retain_distinct_sense",
+      "reason": "Passing on greetings vs ordering food or goods.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_009.json",
+        "sha": "e799ef9cef28942ec8fd2a19cb4348b4347f590f",
+        "batch": 9,
+        "row": 9,
+        "record": {
+          "id": "b1-bestellen-pass-on-greetings",
+          "de": "Grüße bestellen",
+          "lemma": "bestellen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "передавать привет"
+          ],
+          "definition_de": "Einer Person einen Gruß von jemand anderem ausrichten.",
+          "example": "Soll ich deinen Eltern liebe Grüße von dir bestellen?",
+          "example_ru": "Передать твоим родителям от тебя сердечный привет?",
+          "forms": "bestellt Grüße · bestellte Grüße · hat Grüße bestellt",
+          "grammar_hint": "Схема: jemandem (Dativ) Grüße von jemandem bestellen. В Швейцарии: Grüsse bestellen.",
+          "topic": "Общение и мнения",
+          "topics": [
+            "Общение и мнения"
+          ],
+          "equivalent": "Grüsse bestellen",
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 26,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/bestellen"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_498a62ef6f6fcb8395a8"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 168,
+          "record": {
+            "id": "bestellen-food",
+            "de": "bestellen",
+            "lemma": "bestellen",
+            "ru": "заказывать (еду, напиток)",
+            "uk": "",
+            "translations_ru": [
+              "заказывать (еду, напиток)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Еда",
+            "topics": [
+              "Еда"
+            ],
+            "forms": "bestellt · bestellte · hat bestellt",
+            "definition_de": "Im Restaurant sagen, was man essen oder trinken möchte.",
+            "example": "Ich bestelle eine Suppe.",
+            "example_ru": "Я заказываю суп.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "65070d9d3fa5ce26d6db",
+                "layout_correction": "Separated best- and bestellen using original Goethe PDF."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 169,
+          "record": {
+            "id": "bestellen-goods",
+            "de": "bestellen",
+            "lemma": "bestellen",
+            "ru": "заказывать (товар)",
+            "uk": "",
+            "translations_ru": [
+              "заказывать (товар)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Покупки",
+            "topics": [
+              "Покупки"
+            ],
+            "forms": "bestellt · bestellte · hat bestellt",
+            "definition_de": "Eine Ware anfordern, damit man sie später bekommt.",
+            "example": "Kann ich das Buch bestellen?",
+            "example_ru": "Могу я заказать эту книгу?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 11,
+                "row_id": "65070d9d3fa5ce26d6db",
+                "layout_correction": "Separated best- and bestellen using original Goethe PDF."
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 12,
+      "decision": "retain_distinct_sense",
+      "reason": "Serious or alarming appearance vs angry.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_010.json",
+        "sha": "d7b7438f6913fc087745d286705de733a63a3624",
+        "batch": 10,
+        "row": 4,
+        "record": {
+          "id": "b1-boese-look-nasty",
+          "de": "böse",
+          "lemma": "böse",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "серьёзный",
+            "страшный (о травме или её внешнем виде)"
+          ],
+          "definition_de": "Schlimm oder bedrohlich wirkend, etwa bei einer Verletzung.",
+          "example": "Der blaue Fleck sieht böse aus.",
+          "example_ru": "Синяк выглядит серьёзно.",
+          "forms": "böse · böser · am bösesten",
+          "grammar_hint": "Das sieht böse aus — это выглядит серьёзно, страшно. В сочетании böse auf jemanden sein значение другое: «сердиться на кого-либо».",
+          "topic": "Здоровье и тело",
+          "topics": [
+            "Здоровье и тело"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/mao/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 28,
+              "scope": "sense"
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/b%C3%B6se",
+              "https://www.duden.de/rechtschreibung/boese"
+            ],
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": [
+            "dict_54bad6bb3543d3c66a1f"
+          ]
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 183,
+          "record": {
+            "id": "boese-angry",
+            "de": "böse",
+            "lemma": "böse",
+            "ru": "сердитый",
+            "uk": "",
+            "translations_ru": [
+              "сердитый"
+            ],
+            "part": "adj",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "böser · am bösesten",
+            "definition_de": "Verärgert über jemanden oder etwas.",
+            "example": "Bist du böse auf mich?",
+            "example_ru": "Ты на меня сердишься?",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 12,
+                "row_id": "2714b493a14044d006b0"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    }
+  ]
+}

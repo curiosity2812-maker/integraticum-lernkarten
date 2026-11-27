@@ -1,0 +1,2828 @@
+{
+  "date": "2026-11-27",
+  "scope": "Manual comparison against staged A1/A2 cards. Proposals only; no independent CEFR verification.",
+  "index": {
+    "path": "data/b1_audit/cross_level_candidates_2026-11-27.json",
+    "sha": "437a7ac375ce1c14eea94a3e1f51d07f4d48ff72"
+  },
+  "candidate_range": [
+    953,
+    972
+  ],
+  "reviewed": 20,
+  "merge_count": 11,
+  "merge_target_count": 10,
+  "retained_distinct_senses": 4,
+  "retained_teaching_contexts_pending_level_review": 5,
+  "followup_review": [],
+  "decisions": [
+    {
+      "candidate_number": 953,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein weibliches Geschwisterkind. Example: Meine Schwester wohnt in einer anderen Stadt.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 8,
+        "record": {
+          "id": "b1-schwester-sibling",
+          "de": "die Schwester",
+          "lemma": "Schwester",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "сестра"
+          ],
+          "definition_de": "Ein weibliches Geschwisterkind.",
+          "example": "Meine Schwester wohnt in einer anderen Stadt.",
+          "example_ru": "Моя сестра живёт в другом городе.",
+          "forms": "die Schwestern",
+          "grammar_hint": "ältere / jüngere Schwester; Geschwister — братья и сёстры.",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schwester"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 9,
+          "record": {
+            "id": "c12",
+            "de": "die Schwester",
+            "lemma": "Schwester",
+            "ru": "сестра",
+            "uk": "сестра",
+            "translations_ru": [
+              "сестра"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Schwestern",
+            "definition_de": "Ein Mädchen oder eine Frau mit mindestens einem gemeinsamen Elternteil.",
+            "example": "Meine Schwester arbeitet.",
+            "example_ru": "Моя сестра работает.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a78f3016f64da904ab2e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "c12",
+        "alias_id": "b1-schwester-sibling",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "c12"
+      }
+    },
+    {
+      "candidate_number": 954,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Traditionelle Kurzbezeichnung für eine Krankenschwester. Example: Die Schwester brachte dem Patienten ein Glas Wasser.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 9,
+        "record": {
+          "id": "b1-schwester-nurse",
+          "de": "die Schwester",
+          "lemma": "Schwester",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "медсестра",
+            "сестра (обращение к медсестре)"
+          ],
+          "definition_de": "Traditionelle Kurzbezeichnung für eine Krankenschwester.",
+          "example": "Die Schwester brachte dem Patienten ein Glas Wasser.",
+          "example_ru": "Медсестра принесла пациенту стакан воды.",
+          "forms": "die Schwestern",
+          "grammar_hint": "Традиционное обозначение; современная нейтральная профессия: Pflegefachfrau / Pflegefachmann (CH), Pflegefachkraft.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schwester"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 9,
+          "record": {
+            "id": "c12",
+            "de": "die Schwester",
+            "lemma": "Schwester",
+            "ru": "сестра",
+            "uk": "сестра",
+            "translations_ru": [
+              "сестра"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Семья",
+            "topics": [
+              "Семья"
+            ],
+            "forms": "die Schwestern",
+            "definition_de": "Ein Mädchen oder eine Frau mit mindestens einem gemeinsamen Elternteil.",
+            "example": "Meine Schwester arbeitet.",
+            "example_ru": "Моя сестра работает.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "a78f3016f64da904ab2e"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 955,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Nicht ohne Aufwand oder besondere Fähigkeiten zu bewältigen. Example: Die Suche nach einer Wohnung ist schwierig.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 14,
+        "record": {
+          "id": "b1-schwierig-difficult",
+          "de": "schwierig",
+          "lemma": "schwierig",
+          "part": "adj",
+          "level": "B1",
+          "translations_ru": [
+            "сложный",
+            "трудный"
+          ],
+          "definition_de": "Nicht ohne Aufwand oder besondere Fähigkeiten zu bewältigen.",
+          "example": "Die Suche nach einer Wohnung ist schwierig.",
+          "example_ru": "Поиск квартиры — сложное дело.",
+          "forms": "schwierig · schwieriger · am schwierigsten",
+          "grammar_hint": "Gegenteil einfach; schwierig ≈ schwer в значении трудности, но не веса.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwierig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 233,
+          "record": {
+            "id": "dict_55a14717cbdeab3fe582",
+            "de": "schwierig",
+            "part": "adj",
+            "level": "A2",
+            "translations_ru": [
+              "трудный",
+              "сложный"
+            ],
+            "definition_de": "So, dass etwas viel Mühe macht oder nicht leicht zu verstehen oder zu lösen ist.",
+            "forms": "schwierig · schwieriger · am schwierigsten",
+            "example": "Die zweite Aufgabe ist schwieriger als die erste.",
+            "example_ru": "Второе задание сложнее первого.",
+            "grammar_hint": "При сравнении двух разных заданий используем als: schwieriger als die erste Aufgabe.",
+            "usage_note": "",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/schwierig"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Учёба и языки",
+            "topics": [
+              "Учёба и языки"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_55a14717cbdeab3fe582",
+        "alias_id": "b1-schwierig-difficult",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_55a14717cbdeab3fe582"
+      }
+    },
+    {
+      "candidate_number": 956,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Sich zum Schwimmen an einen geeigneten Ort begeben. Example: Nach der Arbeit gehe ich manchmal schwimmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 16,
+        "record": {
+          "id": "b1-schwimmen-activity",
+          "de": "schwimmen gehen",
+          "lemma": "schwimmen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "ходить плавать",
+            "идти поплавать"
+          ],
+          "definition_de": "Sich zum Schwimmen an einen geeigneten Ort begeben.",
+          "example": "Nach der Arbeit gehe ich manchmal schwimmen.",
+          "example_ru": "После работы я иногда хожу плавать.",
+          "forms": "geht schwimmen · ging schwimmen · ist schwimmen gegangen; schwimmt · schwamm · ist geschwommen",
+          "grammar_hint": "gehen + Infinitiv без zu; schwimmen в Perfekt обычно с sein, при спортивной деятельности возможно haben.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwimmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 678,
+          "record": {
+            "id": "a1-511-1",
+            "de": "schwimmen",
+            "lemma": "schwimmen",
+            "ru": "плавать; плыть",
+            "uk": "",
+            "translations_ru": [
+              "плавать",
+              "плыть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwimmt · schwamm · ist geschwommen",
+            "definition_de": "Sich mit eigener Kraft durchs Wasser bewegen.",
+            "example": "Ich schwimme im See.",
+            "example_ru": "Я плаваю в озере.",
+            "note": "Сильный глагол, в учебном списке Perfekt с sein; при обозначении деятельности также встречается haben. Das Schwimmen — плавание, субстантивированный инфинитив, засвидетельствован в A1 на стр. 17 как хобби.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "d5438e366eb4ff2dc2c6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 957,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Sich durch eigene Körperbewegungen im Wasser fortbewegen. Example: Mein Neffe kann schon ohne Hilfe schwimmen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 17,
+        "record": {
+          "id": "b1-schwimmen-ability",
+          "de": "schwimmen",
+          "lemma": "schwimmen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "плавать",
+            "уметь плавать"
+          ],
+          "definition_de": "Sich durch eigene Körperbewegungen im Wasser fortbewegen.",
+          "example": "Mein Neffe kann schon ohne Hilfe schwimmen.",
+          "example_ru": "Мой племянник уже умеет плавать без помощи.",
+          "forms": "schwimmt · schwamm · ist geschwommen (также hat при обозначении деятельности)",
+          "grammar_hint": "können + Infinitiv без zu; im See schwimmen (Dativ).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwimmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 678,
+          "record": {
+            "id": "a1-511-1",
+            "de": "schwimmen",
+            "lemma": "schwimmen",
+            "ru": "плавать; плыть",
+            "uk": "",
+            "translations_ru": [
+              "плавать",
+              "плыть"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "schwimmt · schwamm · ist geschwommen",
+            "definition_de": "Sich mit eigener Kraft durchs Wasser bewegen.",
+            "example": "Ich schwimme im See.",
+            "example_ru": "Я плаваю в озере.",
+            "note": "Сильный глагол, в учебном списке Perfekt с sein; при обозначении деятельности также встречается haben. Das Schwimmen — плавание, субстантивированный инфинитив, засвидетельствован в A1 на стр. 17 как хобби.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "d5438e366eb4ff2dc2c6"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-511-1",
+        "alias_id": "b1-schwimmen-ability",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-511-1"
+      }
+    },
+    {
+      "candidate_number": 958,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine Anlage mit einem oder mehreren Becken zum Schwimmen. Example: Im Winter besuchen wir das Schwimmbad in der Nähe.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 18,
+        "record": {
+          "id": "b1-schwimmbad-pool",
+          "de": "das Schwimmbad",
+          "lemma": "Schwimmbad",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "бассейн (место для плавания)"
+          ],
+          "definition_de": "Eine Anlage mit einem oder mehreren Becken zum Schwimmen.",
+          "example": "Im Winter besuchen wir das Schwimmbad in der Nähe.",
+          "example_ru": "Зимой мы ходим в бассейн неподалёку.",
+          "forms": "die Schwimmbäder",
+          "grammar_hint": "ins Schwimmbad gehen (Akk.); im Schwimmbad sein (Dativ); Hallenbad — крытый бассейн.",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schwimmbad"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 538,
+          "record": {
+            "id": "a1-512-1",
+            "de": "das Schwimmbad",
+            "lemma": "Schwimmbad",
+            "ru": "бассейн",
+            "uk": "",
+            "translations_ru": [
+              "бассейн"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Досуг",
+            "topics": [
+              "Досуг"
+            ],
+            "forms": "die Schwimmbäder",
+            "definition_de": "Ein Ort mit einem Becken zum Schwimmen.",
+            "example": "Wir treffen uns vor dem Schwimmbad.",
+            "example_ru": "Мы встречаемся перед бассейном.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "ef00dc1adb23acf3cb07"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-512-1",
+        "alias_id": "b1-schwimmbad-pool",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-512-1"
+      }
+    },
+    {
+      "candidate_number": 959,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein von Land umgebenes Gewässer. Example: Wir spazieren am See entlang.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 20,
+        "record": {
+          "id": "b1-see-lake",
+          "de": "der See",
+          "lemma": "See",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "озеро"
+          ],
+          "definition_de": "Ein von Land umgebenes Gewässer.",
+          "example": "Wir spazieren am See entlang.",
+          "example_ru": "Мы гуляем вдоль озера.",
+          "forms": "die Seen",
+          "grammar_hint": "am See (Dativ) — у озера; an den See (Akk.) — к озеру. Не путать с die See — море.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/See"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 441,
+          "record": {
+            "id": "a1-513-1",
+            "de": "der See",
+            "lemma": "See",
+            "ru": "озеро",
+            "uk": "",
+            "translations_ru": [
+              "озеро"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Seen",
+            "definition_de": "Eine größere Wasserfläche, die von Land umgeben ist.",
+            "example": "Wir fahren am Sonntag an den See.",
+            "example_ru": "В воскресенье мы поедем к озеру.",
+            "note": "der See — озеро, Pl. die Seen. Не путать с die See — море (часто о побережье или в морском контексте) и das Meer — нейтральное слово «море». Wo? am See (an + Dativ); Wohin? an den See (an + Akkusativ): Wir fahren an den See — мы едем к озеру.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0be3561149bdefaf7b36"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 600,
+          "record": {
+            "id": "dict_fe0c9bb7abfccd4e69bc-sea",
+            "de": "die See",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "море"
+            ],
+            "forms": "Обычно Singular",
+            "definition_de": "Eine große Salzwasserfläche.",
+            "example": "An der See ist es oft windig.",
+            "example_ru": "На море часто ветрено.",
+            "grammar_hint": "Wo? an der See (an + Dativ) — на морском побережье; Wohin? an die See (an + Akkusativ) — к морю. Wir fahren an die See — мы едем на море. Сравните: ans Meer = an das Meer — на море; an den See — к озеру.",
+            "usage_note": "die See — море, особенно в контексте побережья, мореплавания и устойчивых выражений (auf hoher See — в открытом море). Нейтральное общеупотребительное слово «море» — das Meer. Не путать с der See — озеро (Pl. die Seen). Die Nordsee — Северное море; die Ostsee — Балтийское море.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/See"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-513-1",
+        "alias_id": "b1-see-lake",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-513-1"
+      }
+    },
+    {
+      "candidate_number": 960,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Das große Salzwassergebiet, besonders in Wendungen zur Seefahrt und Küste. Example: Im Sommer verbringen wir eine Woche an der See.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 21,
+        "record": {
+          "id": "b1-see-sea",
+          "de": "die See",
+          "lemma": "See",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "море"
+          ],
+          "definition_de": "Das große Salzwassergebiet, besonders in Wendungen zur Seefahrt und Küste.",
+          "example": "Im Sommer verbringen wir eine Woche an der See.",
+          "example_ru": "Летом мы проводим неделю у моря.",
+          "forms": "в значении моря без Plural",
+          "grammar_hint": "das Meer — общеупотребительный синоним; an die See fahren (Akk.), an der See sein (Dativ), auf See — в море.",
+          "topic": "Природа и погода",
+          "topics": [
+            "Природа и погода"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/See"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 441,
+          "record": {
+            "id": "a1-513-1",
+            "de": "der See",
+            "lemma": "See",
+            "ru": "озеро",
+            "uk": "",
+            "translations_ru": [
+              "озеро"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Seen",
+            "definition_de": "Eine größere Wasserfläche, die von Land umgeben ist.",
+            "example": "Wir fahren am Sonntag an den See.",
+            "example_ru": "В воскресенье мы поедем к озеру.",
+            "note": "der See — озеро, Pl. die Seen. Не путать с die See — море (часто о побережье или в морском контексте) и das Meer — нейтральное слово «море». Wo? am See (an + Dativ); Wohin? an den See (an + Akkusativ): Wir fahren an den See — мы едем к озеру.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0be3561149bdefaf7b36"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 600,
+          "record": {
+            "id": "dict_fe0c9bb7abfccd4e69bc-sea",
+            "de": "die See",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "море"
+            ],
+            "forms": "Обычно Singular",
+            "definition_de": "Eine große Salzwasserfläche.",
+            "example": "An der See ist es oft windig.",
+            "example_ru": "На море часто ветрено.",
+            "grammar_hint": "Wo? an der See (an + Dativ) — на морском побережье; Wohin? an die See (an + Akkusativ) — к морю. Wir fahren an die See — мы едем на море. Сравните: ans Meer = an das Meer — на море; an den See — к озеру.",
+            "usage_note": "die See — море, особенно в контексте побережья, мореплавания и устойчивых выражений (auf hoher See — в открытом море). Нейтральное общеупотребительное слово «море» — das Meer. Не путать с der See — озеро (Pl. die Seen). Die Nordsee — Северное море; die Ostsee — Балтийское море.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/See"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "dict_fe0c9bb7abfccd4e69bc-sea",
+        "alias_id": "b1-see-sea",
+        "proposed_level": "A2",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "dict_fe0c9bb7abfccd4e69bc-sea"
+      }
+    },
+    {
+      "candidate_number": 961,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Namen zweier Meere im Norden Europas. Example: Im Herbst fahren wir an die Ostsee.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 22,
+        "record": {
+          "id": "b1-nord-ostsee-names",
+          "de": "die Nordsee / die Ostsee",
+          "lemma": "See",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "Северное море",
+            "Балтийское море"
+          ],
+          "definition_de": "Namen zweier Meere im Norden Europas.",
+          "example": "Im Herbst fahren wir an die Ostsee.",
+          "example_ru": "Осенью мы поедем на Балтийское море.",
+          "forms": "die Nordsee · die Ostsee; без Plural",
+          "grammar_hint": "Оба названия женского рода; an der Nordsee / an der Ostsee (Dativ). Собственные названия, дополнительный учебный контекст, не отдельная общая лексема.",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/See"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 441,
+          "record": {
+            "id": "a1-513-1",
+            "de": "der See",
+            "lemma": "See",
+            "ru": "озеро",
+            "uk": "",
+            "translations_ru": [
+              "озеро"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Город",
+            "topics": [
+              "Город"
+            ],
+            "forms": "die Seen",
+            "definition_de": "Eine größere Wasserfläche, die von Land umgeben ist.",
+            "example": "Wir fahren am Sonntag an den See.",
+            "example_ru": "В воскресенье мы поедем к озеру.",
+            "note": "der See — озеро, Pl. die Seen. Не путать с die See — море (часто о побережье или в морском контексте) и das Meer — нейтральное слово «море». Wo? am See (an + Dativ); Wohin? an den See (an + Akkusativ): Wir fahren an den See — мы едем к озеру.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0be3561149bdefaf7b36"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a2_reviewed.json",
+          "sha": "6f5723028caa1ffd59ff5015bf561bb5762d046c",
+          "row": 600,
+          "record": {
+            "id": "dict_fe0c9bb7abfccd4e69bc-sea",
+            "de": "die See",
+            "part": "noun",
+            "level": "A2",
+            "translations_ru": [
+              "море"
+            ],
+            "forms": "Обычно Singular",
+            "definition_de": "Eine große Salzwasserfläche.",
+            "example": "An der See ist es oft windig.",
+            "example_ru": "На море часто ветрено.",
+            "grammar_hint": "Wo? an der See (an + Dativ) — на морском побережье; Wohin? an die See (an + Akkusativ) — к морю. Wir fahren an die See — мы едем на море. Сравните: ans Meer = an das Meer — на море; an den See — к озеру.",
+            "usage_note": "die See — море, особенно в контексте побережья, мореплавания и устойчивых выражений (auf hoher See — в открытом море). Нейтральное общеупотребительное слово «море» — das Meer. Не путать с der See — озеро (Pl. die Seen). Die Nordsee — Северное море; die Ostsee — Балтийское море.",
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "sense"
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/See"
+              ],
+              "example": "integraticum_original"
+            },
+            "topic": "Природа, животные и погода",
+            "topics": [
+              "Природа, животные и погода"
+            ]
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 962,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Mit den Augen wahrnehmen können. Example: Ohne meine Brille sehe ich nur unscharf.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 23,
+        "record": {
+          "id": "b1-sehen-vision",
+          "de": "sehen",
+          "lemma": "sehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "видеть",
+            "обладать зрением"
+          ],
+          "definition_de": "Mit den Augen wahrnehmen können.",
+          "example": "Ohne meine Brille sehe ich nur unscharf.",
+          "example_ru": "Без очков я вижу нечётко.",
+          "forms": "sieht · sah · hat gesehen",
+          "grammar_hint": "du siehst; gut / schlecht sehen; неправильный глагол.",
+          "topic": "Здоровье",
+          "topics": [
+            "Здоровье"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-514-1",
+        "alias_id": "b1-sehen-vision",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-514-1"
+      }
+    },
+    {
+      "candidate_number": 963,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Ein visuelles Angebot verfolgen oder betrachten. Example: Gestern haben wir eine interessante Dokumentation gesehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 24,
+        "record": {
+          "id": "b1-sehen-film",
+          "de": "sehen",
+          "lemma": "sehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "смотреть",
+            "посмотреть (фильм, передачу)"
+          ],
+          "definition_de": "Ein visuelles Angebot verfolgen oder betrachten.",
+          "example": "Gestern haben wir eine interessante Dokumentation gesehen.",
+          "example_ru": "Вчера мы посмотрели интересный документальный фильм.",
+          "forms": "sieht · sah · hat gesehen",
+          "grammar_hint": "einen Film (Akk.) sehen; auch sich einen Film ansehen: mir (Dativ), einen Film (Akk.).",
+          "topic": "Досуг и культура",
+          "topics": [
+            "Досуг и культура"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-514-1",
+        "alias_id": "b1-sehen-film",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-514-1"
+      }
+    },
+    {
+      "candidate_number": 964,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Mit einer anderen Person zusammentreffen. Example: Wir sehen uns erst nächste Woche wieder.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 25,
+        "record": {
+          "id": "b1-sehen-meet",
+          "de": "sich sehen",
+          "lemma": "sehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "видеться",
+            "встречаться"
+          ],
+          "definition_de": "Mit einer anderen Person zusammentreffen.",
+          "example": "Wir sehen uns erst nächste Woche wieder.",
+          "example_ru": "Мы увидимся снова только на следующей неделе.",
+          "forms": "sieht sich · sah sich · hat sich gesehen",
+          "grammar_hint": "Взаимное значение: wir sehen uns (Akk.), ihr seht euch; Bis morgen! Wir sehen uns.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 965,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Einen Gegenstand oder ein Dokument zur Kontrolle betrachten. Example: Darf ich Ihre Fahrkarte sehen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 26,
+        "record": {
+          "id": "b1-sehen-inspect",
+          "de": "sehen",
+          "lemma": "sehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "посмотреть",
+            "увидеть (для проверки)"
+          ],
+          "definition_de": "Einen Gegenstand oder ein Dokument zur Kontrolle betrachten.",
+          "example": "Darf ich Ihre Fahrkarte sehen?",
+          "example_ru": "Могу я посмотреть ваш билет?",
+          "forms": "sieht · sah · hat gesehen",
+          "grammar_hint": "etwas (Akk.) sehen; Darf ich … sehen? — вежливая просьба с модальным глаголом.",
+          "topic": "Общество и безопасность",
+          "topics": [
+            "Общество и безопасность"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 966,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Fordert jemanden dazu auf, seinen Blick auf etwas zu richten. Example: Sieh mal, der Himmel ist ganz rot!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 27,
+        "record": {
+          "id": "b1-sehen-imperative",
+          "de": "Sieh mal!",
+          "lemma": "sehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "посмотри-ка!",
+            "смотри!"
+          ],
+          "definition_de": "Fordert jemanden dazu auf, seinen Blick auf etwas zu richten.",
+          "example": "Sieh mal, der Himmel ist ganz rot!",
+          "example_ru": "Посмотри, небо совсем красное!",
+          "forms": "sieht · sah · hat gesehen; Imperativ: sieh! / seht! / sehen Sie!",
+          "grammar_hint": "Imperativ Singular: sieh (не seh в стандартной учебной форме); mal смягчает обращение.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 967,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Sich vergewissern, dass eine Person oder Sache in Ordnung ist. Example: Kannst du kurz nach dem Kuchen im Ofen sehen?",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 28,
+        "record": {
+          "id": "b1-sehen-check-on",
+          "de": "nach jemandem / etwas sehen",
+          "lemma": "sehen",
+          "part": "verb",
+          "level": "B1",
+          "translations_ru": [
+            "проверять",
+            "присматривать",
+            "посмотреть, всё ли в порядке"
+          ],
+          "definition_de": "Sich vergewissern, dass eine Person oder Sache in Ordnung ist.",
+          "example": "Kannst du kurz nach dem Kuchen im Ofen sehen?",
+          "example_ru": "Можешь ненадолго проверить пирог в духовке?",
+          "forms": "sieht · sah · hat gesehen",
+          "grammar_hint": "nach + Dativ; не путать с отделяемым nachsehen (sieht nach · sah nach · hat nachgesehen).",
+          "topic": "Дом и быт",
+          "topics": [
+            "Дом и быт"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 968,
+      "decision": "retain_distinct_teaching_context_pending_level_review",
+      "reason": "Dedicated construction: Drückt aus, dass eine Entscheidung oder Entwicklung noch offenbleibt. Example: Kommst du morgen mit? – Mal sehen.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 29,
+        "record": {
+          "id": "b1-sehen-wait",
+          "de": "Mal sehen.",
+          "lemma": "sehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "посмотрим",
+            "там видно будет"
+          ],
+          "definition_de": "Drückt aus, dass eine Entscheidung oder Entwicklung noch offenbleibt.",
+          "example": "Kommst du morgen mit? – Mal sehen.",
+          "example_ru": "Ты завтра пойдёшь с нами? — Посмотрим.",
+          "forms": "sieht · sah · hat gesehen; устойчивое выражение",
+          "grammar_hint": "Mal sehen, ob … — после ob спрягаемый глагол в конце. Разговорная формула.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 969,
+      "decision": "retain_distinct_sense",
+      "reason": "Distinct meaning: Im Aussehen einer anderen Person gleichen. Example: Du siehst deinem Bruder sehr ähnlich.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_084.json",
+        "sha": "71cd661c6cfcd37eb36c9853364a00a0b2a46758",
+        "batch": 84,
+        "row": 30,
+        "record": {
+          "id": "b1-sehen-resemble",
+          "de": "jemandem ähnlich sehen",
+          "lemma": "sehen",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "быть похожим на кого-либо (внешне)"
+          ],
+          "definition_de": "Im Aussehen einer anderen Person gleichen.",
+          "example": "Du siehst deinem Bruder sehr ähnlich.",
+          "example_ru": "Ты очень похожа на своего брата.",
+          "forms": "sieht ähnlich · sah ähnlich · hat ähnlich gesehen",
+          "grammar_hint": "jemandem (Dativ) ähnlich sehen — раздельно при внешнем сходстве; не путать с переносным ähnlichsehen (быть в чьём-то характере).",
+          "topic": "Семья и отношения",
+          "topics": [
+            "Семья и отношения"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen",
+              "https://www.duden.de/rechtschreibung/aehnlich"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 679,
+          "record": {
+            "id": "a1-514-1",
+            "de": "sehen",
+            "lemma": "sehen",
+            "ru": "видеть; увидеть; смотреть (фильм)",
+            "uk": "",
+            "translations_ru": [
+              "видеть",
+              "увидеть",
+              "смотреть (фильм)"
+            ],
+            "part": "verb",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen.",
+            "example": "Siehst du den Bus?",
+            "example_ru": "Ты видишь автобус?",
+            "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "0b10cd926b0d90892bd5"
+              },
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 14,
+                "scope": "film example"
+              },
+              {
+                "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+                "page": 25,
+                "scope": "film example"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false
+    },
+    {
+      "candidate_number": 970,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Ein Ort oder Bauwerk, für das sich Reisende besonders interessieren. Example: Wir besichtigen morgen zwei Sehenswürdigkeiten.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_085.json",
+        "sha": "64c84a56f0f676454a82d6bccf1fc89e42750386",
+        "batch": 85,
+        "row": 1,
+        "record": {
+          "id": "b1-sehenswuerdigkeit-attraction",
+          "de": "die Sehenswürdigkeit",
+          "lemma": "Sehenswürdigkeit",
+          "part": "noun",
+          "level": "B1",
+          "translations_ru": [
+            "достопримечательность"
+          ],
+          "definition_de": "Ein Ort oder Bauwerk, für das sich Reisende besonders interessieren.",
+          "example": "Wir besichtigen morgen zwei Sehenswürdigkeiten.",
+          "example_ru": "Завтра мы осмотрим две достопримечательности.",
+          "forms": "die Sehenswürdigkeiten",
+          "grammar_hint": "eine Sehenswürdigkeit besichtigen (Akk.).",
+          "topic": "Транспорт и путешествия",
+          "topics": [
+            "Транспорт и путешествия"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sehensw%C3%BCrdigkeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 539,
+          "record": {
+            "id": "a1-515-1",
+            "de": "die Sehenswürdigkeit",
+            "lemma": "Sehenswürdigkeit",
+            "ru": "достопримечательность",
+            "uk": "",
+            "translations_ru": [
+              "достопримечательность"
+            ],
+            "part": "noun",
+            "level": "A1",
+            "topic": "Путешествия",
+            "topics": [
+              "Путешествия"
+            ],
+            "forms": "die Sehenswürdigkeiten",
+            "definition_de": "Ein Ort oder Bauwerk, das viele Besucher sehen möchten.",
+            "example": "Die Altstadt hat viele Sehenswürdigkeiten.",
+            "example_ru": "В старом городе много достопримечательностей.",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "bc52896868014a1f3eea"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-515-1",
+        "alias_id": "b1-sehenswuerdigkeit-attraction",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-515-1"
+      }
+    },
+    {
+      "candidate_number": 971,
+      "decision": "propose_merge_into_lower_level_attested_usage",
+      "reason": "Attested contextual use: Verstärkt die Intensität einer Handlung oder Empfindung. Example: Ich vermisse meine Freunde sehr.",
+      "b1": {
+        "path": "data/b1_reviewed/batch_085.json",
+        "sha": "64c84a56f0f676454a82d6bccf1fc89e42750386",
+        "batch": 85,
+        "row": 2,
+        "record": {
+          "id": "b1-sehr-verb",
+          "de": "sehr",
+          "lemma": "sehr",
+          "part": "particle",
+          "level": "B1",
+          "translations_ru": [
+            "очень",
+            "сильно"
+          ],
+          "definition_de": "Verstärkt die Intensität einer Handlung oder Empfindung.",
+          "example": "Ich vermisse meine Freunde sehr.",
+          "example_ru": "Я очень скучаю по друзьям.",
+          "forms": "неизменяемая частица степени",
+          "grammar_hint": "sehr lieben, sehr vermissen; viel обычно обозначает количество.",
+          "topic": "Грамматика и связь предложений",
+          "topics": [
+            "Грамматика и связь предложений"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 680,
+          "record": {
+            "id": "a1-516-1",
+            "de": "sehr",
+            "lemma": "sehr",
+            "ru": "очень; весьма",
+            "uk": "",
+            "translations_ru": [
+              "очень",
+              "весьма"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Verstärkt eine Eigenschaft, einen Zustand oder einen Ausdruck des Dankes.",
+            "example": "Das Buch ist sehr interessant.",
+            "example_ru": "Книга очень интересная.",
+            "note": "Усилитель степени: sehr + прилагательное/наречие (sehr gut), также sehr mögen. Не путать с viel (количество) или zu (чрезмерная степень).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "1e0a7affd8978c577b45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-516-1",
+        "alias_id": "b1-sehr-verb",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-516-1"
+      }
+    },
+    {
+      "candidate_number": 972,
+      "decision": "propose_merge_into_lower_level_same_sense",
+      "reason": "Same lexical meaning: Eine besonders höfliche Dankesformel. Example: Danke sehr für Ihre Hilfe!",
+      "b1": {
+        "path": "data/b1_reviewed/batch_085.json",
+        "sha": "64c84a56f0f676454a82d6bccf1fc89e42750386",
+        "batch": 85,
+        "row": 3,
+        "record": {
+          "id": "b1-sehr-thanks",
+          "de": "Danke sehr!",
+          "lemma": "sehr",
+          "part": "phrase",
+          "level": "B1",
+          "translations_ru": [
+            "большое спасибо!"
+          ],
+          "definition_de": "Eine besonders höfliche Dankesformel.",
+          "example": "Danke sehr für Ihre Hilfe!",
+          "example_ru": "Большое спасибо за вашу помощь!",
+          "forms": "неизменяемая формула",
+          "grammar_hint": "danke sehr — раздельно; danke für + Akkusativ. Учебная формула.",
+          "topic": "Общение",
+          "topics": [
+            "Общение"
+          ],
+          "source_evidence": {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          "legacy_candidate_ids": []
+        }
+      },
+      "lower": [
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 769,
+          "record": {
+            "id": "a1-516-2",
+            "de": "Danke sehr!",
+            "lemma": "Danke sehr!",
+            "ru": "Большое спасибо!",
+            "uk": "",
+            "translations_ru": [
+              "Большое спасибо!"
+            ],
+            "part": "expression",
+            "level": "A1",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "forms": "",
+            "definition_de": "Eine Formel, mit der man sich besonders deutlich bedankt.",
+            "example": "Danke sehr für Ihre Hilfe!",
+            "example_ru": "Большое спасибо за Вашу помощь!",
+            "note": "",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "1e0a7affd8978c577b45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        },
+        {
+          "path": "data/integraticum_a1_reviewed.json",
+          "sha": "68b8e34d320f938a69044ba5800918f4bec1aff3",
+          "row": 680,
+          "record": {
+            "id": "a1-516-1",
+            "de": "sehr",
+            "lemma": "sehr",
+            "ru": "очень; весьма",
+            "uk": "",
+            "translations_ru": [
+              "очень",
+              "весьма"
+            ],
+            "part": "adv",
+            "level": "A1",
+            "topic": "Повседневность",
+            "topics": [
+              "Повседневность"
+            ],
+            "forms": "",
+            "definition_de": "Verstärkt eine Eigenschaft, einen Zustand oder einen Ausdruck des Dankes.",
+            "example": "Das Buch ist sehr interessant.",
+            "example_ru": "Книга очень интересная.",
+            "note": "Усилитель степени: sehr + прилагательное/наречие (sehr gut), также sehr mögen. Не путать с viel (количество) или zu (чрезмерная степень).",
+            "source_evidence": [
+              {
+                "file": "A1_SD1_Wortliste_02.pdf",
+                "page": 23,
+                "row_id": "1e0a7affd8978c577b45"
+              }
+            ],
+            "ch": false,
+            "equivalent": ""
+          }
+        }
+      ],
+      "level_changed": false,
+      "alias_created": false,
+      "merge_proposal": {
+        "canonical_id": "a1-516-2",
+        "alias_id": "b1-sehr-thanks",
+        "proposed_level": "A1",
+        "apply": false,
+        "release_conditions": [
+          "Independently confirm lower-level source scope; preserve morphology, separate phrase-specific translations and exercises, reconcile intra-B1 overlays, verify renderer and progress migration."
+        ],
+        "consolidated_target": "a1-516-2"
+      }
+    }
+  ],
+  "consolidated_merge_proposals": [
+    {
+      "canonical_id": "c12",
+      "alias_ids": [
+        "b1-schwester-sibling"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "c12",
+        "de": "die Schwester",
+        "lemma": "Schwester",
+        "ru": "сестра",
+        "uk": "сестра",
+        "translations_ru": [
+          "сестра"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Семья",
+        "topics": [
+          "Семья"
+        ],
+        "forms": "die Schwestern",
+        "definition_de": "Ein Mädchen oder eine Frau mit mindestens einem gemeinsamen Elternteil.",
+        "example": "Meine Schwester arbeitet.",
+        "example_ru": "Моя сестра работает.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "a78f3016f64da904ab2e"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schwester-sibling"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwester-sibling",
+            "de": "die Schwester",
+            "part": "noun",
+            "forms": "die Schwestern",
+            "definition_de": "Ein weibliches Geschwisterkind.",
+            "translations_ru": [
+              "сестра"
+            ],
+            "grammar_hint": "ältere / jüngere Schwester; Geschwister — братья и сёстры.",
+            "example": "Meine Schwester wohnt in einer anderen Stadt.",
+            "example_ru": "Моя сестра живёт в другом городе."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schwester"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_55a14717cbdeab3fe582",
+      "alias_ids": [
+        "b1-schwierig-difficult"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_55a14717cbdeab3fe582",
+        "de": "schwierig",
+        "part": "adj",
+        "level": "A2",
+        "translations_ru": [
+          "трудный",
+          "сложный"
+        ],
+        "definition_de": "So, dass etwas viel Mühe macht oder nicht leicht zu verstehen oder zu lösen ist.",
+        "forms": "schwierig · schwieriger · am schwierigsten",
+        "example": "Die zweite Aufgabe ist schwieriger als die erste.",
+        "example_ru": "Второе задание сложнее первого.",
+        "grammar_hint": "При сравнении двух разных заданий используем als: schwieriger als die erste Aufgabe.",
+        "usage_note": "",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/schwierig"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Учёба и языки",
+        "topics": [
+          "Учёба и языки"
+        ],
+        "alias_ids": [
+          "b1-schwierig-difficult"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwierig-difficult",
+            "de": "schwierig",
+            "part": "adj",
+            "forms": "schwierig · schwieriger · am schwierigsten",
+            "definition_de": "Nicht ohne Aufwand oder besondere Fähigkeiten zu bewältigen.",
+            "translations_ru": [
+              "сложный",
+              "трудный"
+            ],
+            "grammar_hint": "Gegenteil einfach; schwierig ≈ schwer в значении трудности, но не веса.",
+            "example": "Die Suche nach einer Wohnung ist schwierig.",
+            "example_ru": "Поиск квартиры — сложное дело."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwierig"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-511-1",
+      "alias_ids": [
+        "b1-schwimmen-ability"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-511-1",
+        "de": "schwimmen",
+        "lemma": "schwimmen",
+        "ru": "плавать; плыть",
+        "uk": "",
+        "translations_ru": [
+          "плавать",
+          "плыть"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "schwimmt · schwamm · ist geschwommen",
+        "definition_de": "Sich mit eigener Kraft durchs Wasser bewegen.",
+        "example": "Ich schwimme im See.",
+        "example_ru": "Я плаваю в озере.",
+        "note": "Сильный глагол, в учебном списке Perfekt с sein; при обозначении деятельности также встречается haben. Das Schwimmen — плавание, субстантивированный инфинитив, засвидетельствован в A1 на стр. 17 как хобби.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "d5438e366eb4ff2dc2c6"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schwimmen-ability"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwimmen-ability",
+            "de": "schwimmen",
+            "part": "verb",
+            "forms": "schwimmt · schwamm · ist geschwommen (также hat при обозначении деятельности)",
+            "definition_de": "Sich durch eigene Körperbewegungen im Wasser fortbewegen.",
+            "translations_ru": [
+              "плавать",
+              "уметь плавать"
+            ],
+            "grammar_hint": "können + Infinitiv без zu; im See schwimmen (Dativ).",
+            "example": "Mein Neffe kann schon ohne Hilfe schwimmen.",
+            "example_ru": "Мой племянник уже умеет плавать без помощи."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/schwimmen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-512-1",
+      "alias_ids": [
+        "b1-schwimmbad-pool"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-512-1",
+        "de": "das Schwimmbad",
+        "lemma": "Schwimmbad",
+        "ru": "бассейн",
+        "uk": "",
+        "translations_ru": [
+          "бассейн"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Досуг",
+        "topics": [
+          "Досуг"
+        ],
+        "forms": "die Schwimmbäder",
+        "definition_de": "Ein Ort mit einem Becken zum Schwimmen.",
+        "example": "Wir treffen uns vor dem Schwimmbad.",
+        "example_ru": "Мы встречаемся перед бассейном.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "ef00dc1adb23acf3cb07"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-schwimmbad-pool"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-schwimmbad-pool",
+            "de": "das Schwimmbad",
+            "part": "noun",
+            "forms": "die Schwimmbäder",
+            "definition_de": "Eine Anlage mit einem oder mehreren Becken zum Schwimmen.",
+            "translations_ru": [
+              "бассейн (место для плавания)"
+            ],
+            "grammar_hint": "ins Schwimmbad gehen (Akk.); im Schwimmbad sein (Dativ); Hallenbad — крытый бассейн.",
+            "example": "Im Winter besuchen wir das Schwimmbad in der Nähe.",
+            "example_ru": "Зимой мы ходим в бассейн неподалёку."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Schwimmbad"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-513-1",
+      "alias_ids": [
+        "b1-see-lake"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-513-1",
+        "de": "der See",
+        "lemma": "See",
+        "ru": "озеро",
+        "uk": "",
+        "translations_ru": [
+          "озеро"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Город",
+        "topics": [
+          "Город"
+        ],
+        "forms": "die Seen",
+        "definition_de": "Eine größere Wasserfläche, die von Land umgeben ist.",
+        "example": "Wir fahren am Sonntag an den See.",
+        "example_ru": "В воскресенье мы поедем к озеру.",
+        "note": "der See — озеро, Pl. die Seen. Не путать с die See — море (часто о побережье или в морском контексте) и das Meer — нейтральное слово «море». Wo? am See (an + Dativ); Wohin? an den See (an + Akkusativ): Wir fahren an den See — мы едем к озеру.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "0be3561149bdefaf7b36"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-see-lake"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-see-lake",
+            "de": "der See",
+            "part": "noun",
+            "forms": "die Seen",
+            "definition_de": "Ein von Land umgebenes Gewässer.",
+            "translations_ru": [
+              "озеро"
+            ],
+            "grammar_hint": "am See (Dativ) — у озера; an den See (Akk.) — к озеру. Не путать с die See — море.",
+            "example": "Wir spazieren am See entlang.",
+            "example_ru": "Мы гуляем вдоль озера."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/See"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "dict_fe0c9bb7abfccd4e69bc-sea",
+      "alias_ids": [
+        "b1-see-sea"
+      ],
+      "proposed_level": "A2",
+      "apply": false,
+      "merged_record": {
+        "id": "dict_fe0c9bb7abfccd4e69bc-sea",
+        "de": "die See",
+        "part": "noun",
+        "level": "A2",
+        "translations_ru": [
+          "море"
+        ],
+        "forms": "Обычно Singular",
+        "definition_de": "Eine große Salzwasserfläche.",
+        "example": "An der See ist es oft windig.",
+        "example_ru": "На море часто ветрено.",
+        "grammar_hint": "Wo? an der See (an + Dativ) — на морском побережье; Wohin? an die See (an + Akkusativ) — к морю. Wir fahren an die See — мы едем на море. Сравните: ans Meer = an das Meer — на море; an den See — к озеру.",
+        "usage_note": "die See — море, особенно в контексте побережья, мореплавания и устойчивых выражений (auf hoher See — в открытом море). Нейтральное общеупотребительное слово «море» — das Meer. Не путать с der See — озеро (Pl. die Seen). Die Nordsee — Северное море; die Ostsee — Балтийское море.",
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "sense"
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/See"
+          ],
+          "example": "integraticum_original"
+        },
+        "topic": "Природа, животные и погода",
+        "topics": [
+          "Природа, животные и погода"
+        ],
+        "alias_ids": [
+          "b1-see-sea"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-see-sea",
+            "de": "die See",
+            "part": "noun",
+            "forms": "в значении моря без Plural",
+            "definition_de": "Das große Salzwassergebiet, besonders in Wendungen zur Seefahrt und Küste.",
+            "translations_ru": [
+              "море"
+            ],
+            "grammar_hint": "das Meer — общеупотребительный синоним; an die See fahren (Akk.), an der See sein (Dativ), auf See — в море.",
+            "example": "Im Sommer verbringen wir eine Woche an der See.",
+            "example_ru": "Летом мы проводим неделю у моря."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/See"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-514-1",
+      "alias_ids": [
+        "b1-sehen-vision",
+        "b1-sehen-film"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-514-1",
+        "de": "sehen",
+        "lemma": "sehen",
+        "ru": "видеть; увидеть; смотреть (фильм)",
+        "uk": "",
+        "translations_ru": [
+          "видеть",
+          "увидеть",
+          "смотреть (фильм)"
+        ],
+        "part": "verb",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "sieht · sah · hat gesehen",
+        "definition_de": "Mit den Augen wahrnehmen.",
+        "example": "Siehst du den Bus?",
+        "example_ru": "Ты видишь автобус?",
+        "note": "jemanden/etwas (Akkusativ) sehen; einen Film sehen — смотреть фильм (Goethe A1 стр. 14,18 и A2 стр. 25). sich sehen — видеться. Nicht verwechseln: aussehen — выглядеть.",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "0b10cd926b0d90892bd5"
+          },
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 14,
+            "scope": "film example"
+          },
+          {
+            "file": "Goethe-Zertifikat_A2_Wortliste.pdf",
+            "page": 25,
+            "scope": "film example"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sehen-vision",
+          "b1-sehen-film"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sehen-vision",
+            "de": "sehen",
+            "part": "verb",
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Mit den Augen wahrnehmen können.",
+            "translations_ru": [
+              "видеть",
+              "обладать зрением"
+            ],
+            "grammar_hint": "du siehst; gut / schlecht sehen; неправильный глагол.",
+            "example": "Ohne meine Brille sehe ich nur unscharf.",
+            "example_ru": "Без очков я вижу нечётко."
+          },
+          {
+            "id": "b1-sehen-film",
+            "de": "sehen",
+            "part": "verb",
+            "forms": "sieht · sah · hat gesehen",
+            "definition_de": "Ein visuelles Angebot verfolgen oder betrachten.",
+            "translations_ru": [
+              "смотреть",
+              "посмотреть (фильм, передачу)"
+            ],
+            "grammar_hint": "einen Film (Akk.) sehen; auch sich einen Film ansehen: mir (Dativ), einen Film (Akk.).",
+            "example": "Gestern haben wir eine interessante Dokumentation gesehen.",
+            "example_ru": "Вчера мы посмотрели интересный документальный фильм."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          },
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed page 79 visually checked. B1 exam vocabulary membership, not earliest CEFR level; A1/A2 comparison pending. Teaching contexts may share lexical senses; Nordsee/Ostsee are examples of proper names, not new common lexical units."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehen",
+              "https://www.duden.de/rechtschreibung/sehen"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-515-1",
+      "alias_ids": [
+        "b1-sehenswuerdigkeit-attraction"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-515-1",
+        "de": "die Sehenswürdigkeit",
+        "lemma": "Sehenswürdigkeit",
+        "ru": "достопримечательность",
+        "uk": "",
+        "translations_ru": [
+          "достопримечательность"
+        ],
+        "part": "noun",
+        "level": "A1",
+        "topic": "Путешествия",
+        "topics": [
+          "Путешествия"
+        ],
+        "forms": "die Sehenswürdigkeiten",
+        "definition_de": "Ein Ort oder Bauwerk, das viele Besucher sehen möchten.",
+        "example": "Die Altstadt hat viele Sehenswürdigkeiten.",
+        "example_ru": "В старом городе много достопримечательностей.",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "bc52896868014a1f3eea"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sehenswuerdigkeit-attraction"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sehenswuerdigkeit-attraction",
+            "de": "die Sehenswürdigkeit",
+            "part": "noun",
+            "forms": "die Sehenswürdigkeiten",
+            "definition_de": "Ein Ort oder Bauwerk, für das sich Reisende besonders interessieren.",
+            "translations_ru": [
+              "достопримечательность"
+            ],
+            "grammar_hint": "eine Sehenswürdigkeit besichtigen (Akk.).",
+            "example": "Wir besichtigen morgen zwei Sehenswürdigkeiten.",
+            "example_ru": "Завтра мы осмотрим две достопримечательности."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/Sehensw%C3%BCrdigkeit"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-516-1",
+      "alias_ids": [
+        "b1-sehr-verb"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-516-1",
+        "de": "sehr",
+        "lemma": "sehr",
+        "ru": "очень; весьма",
+        "uk": "",
+        "translations_ru": [
+          "очень",
+          "весьма"
+        ],
+        "part": "adv",
+        "level": "A1",
+        "topic": "Повседневность",
+        "topics": [
+          "Повседневность"
+        ],
+        "forms": "",
+        "definition_de": "Verstärkt eine Eigenschaft, einen Zustand oder einen Ausdruck des Dankes.",
+        "example": "Das Buch ist sehr interessant.",
+        "example_ru": "Книга очень интересная.",
+        "note": "Усилитель степени: sehr + прилагательное/наречие (sehr gut), также sehr mögen. Не путать с viel (количество) или zu (чрезмерная степень).",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "1e0a7affd8978c577b45"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sehr-verb"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sehr-verb",
+            "de": "sehr",
+            "part": "particle",
+            "forms": "неизменяемая частица степени",
+            "definition_de": "Verstärkt die Intensität einer Handlung oder Empfindung.",
+            "translations_ru": [
+              "очень",
+              "сильно"
+            ],
+            "grammar_hint": "sehr lieben, sehr vermissen; viel обычно обозначает количество.",
+            "example": "Ich vermisse meine Freunde sehr.",
+            "example_ru": "Я очень скучаю по друзьям."
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "a1-516-2",
+      "alias_ids": [
+        "b1-sehr-thanks"
+      ],
+      "proposed_level": "A1",
+      "apply": false,
+      "merged_record": {
+        "id": "a1-516-2",
+        "de": "Danke sehr!",
+        "lemma": "Danke sehr!",
+        "ru": "Большое спасибо!",
+        "uk": "",
+        "translations_ru": [
+          "Большое спасибо!"
+        ],
+        "part": "expression",
+        "level": "A1",
+        "topic": "Общение",
+        "topics": [
+          "Общение"
+        ],
+        "forms": "",
+        "definition_de": "Eine Formel, mit der man sich besonders deutlich bedankt.",
+        "example": "Danke sehr für Ihre Hilfe!",
+        "example_ru": "Большое спасибо за Вашу помощь!",
+        "note": "",
+        "source_evidence": [
+          {
+            "file": "A1_SD1_Wortliste_02.pdf",
+            "page": 23,
+            "row_id": "1e0a7affd8978c577b45"
+          }
+        ],
+        "ch": false,
+        "equivalent": "",
+        "alias_ids": [
+          "b1-sehr-thanks"
+        ],
+        "usage_variants": [
+          {
+            "id": "b1-sehr-thanks",
+            "de": "Danke sehr!",
+            "part": "phrase",
+            "forms": "неизменяемая формула",
+            "definition_de": "Eine besonders höfliche Dankesformel.",
+            "translations_ru": [
+              "большое спасибо!"
+            ],
+            "grammar_hint": "danke sehr — раздельно; danke für + Akkusativ. Учебная формула.",
+            "example": "Danke sehr für Ihre Hilfe!",
+            "example_ru": "Большое спасибо за вашу помощь!"
+          }
+        ],
+        "additional_source_evidence": [
+          {
+            "level": {
+              "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+              "page": 79,
+              "scope": "context",
+              "note": "Printed pages 79–80 visually inspected. B1 exam vocabulary membership, not earliest CEFR level. A1/A2 comparison pending. Pedagogical contexts, including twelve constructions of sein, are not distinct dictionary senses."
+            },
+            "meaning": [
+              "https://de.wiktionary.org/wiki/sehr"
+            ],
+            "meaning_review": "dictionary_meaning_checked",
+            "example": "integraticum_original"
+          }
+        ]
+      }
+    }
+  ]
+}

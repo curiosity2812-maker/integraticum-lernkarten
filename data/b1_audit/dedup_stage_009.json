@@ -1,0 +1,774 @@
+{
+  "date": "2026-11-27",
+  "scope": "Staged overlay for cross-batch candidates 26–30 of 44. Three merge proposals; eight distinct teaching records retained, including Pfanne frying-pan sense with unresolved CEFR. Earliest source row canonical; old ID retained as alias, not implemented in progress storage. Original batches unchanged; row coordinates one-based and bound to SHA. No new independent dictionary verification.",
+  "candidate_groups_reviewed": 5,
+  "input_records": 14,
+  "output_records": 11,
+  "alias_map": {
+    "b1-wohnort-place": "b1-wohnort-residence",
+    "b1-paradeiser-food": "b1-paradeiser-tomato-at",
+    "b1-pfanne-ch-pot": "b1-pfanne-pot-ch"
+  },
+  "groups": [
+    {
+      "canonical_id": "b1-wohnort-residence",
+      "alias_ids": [
+        "b1-wohnort-place"
+      ],
+      "retain": {
+        "batch": 67,
+        "row": 9
+      },
+      "suppress": {
+        "batch": 118,
+        "row": 8
+      },
+      "merged_record": {
+        "id": "b1-wohnort-residence",
+        "de": "der Wohnort",
+        "lemma": "Wohnort",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "место проживания",
+          "населённый пункт проживания"
+        ],
+        "definition_de": "Der Ort, in dem jemand wohnt.",
+        "example": "Im Formular fehlt noch mein Wohnort.",
+        "example_ru": "В анкете ещё не указано моё место проживания.",
+        "forms": "die Wohnorte",
+        "grammar_hint": "Wohnort обычно населённый пункт; Wohnadresse — полный адрес проживания.\nWohnort в формуляре обычно город или населённый пункт; Straße и Hausnummer указываются отдельно.",
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт",
+          "Документы и учреждения"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 69,
+            "scope": "context",
+            "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Wohnort"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "Die Ortschaft, in der eine Person lebt."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Bitte geben Sie Ihren aktuellen Wohnort an.",
+            "ru": "Пожалуйста, укажите ваше нынешнее место проживания."
+          }
+        ],
+        "alias_ids": [
+          "b1-wohnort-place"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 67,
+          "row": 9,
+          "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+          "record": {
+            "id": "b1-wohnort-residence",
+            "de": "der Wohnort",
+            "lemma": "Wohnort",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "место проживания",
+              "населённый пункт проживания"
+            ],
+            "definition_de": "Der Ort, in dem jemand wohnt.",
+            "example": "Im Formular fehlt noch mein Wohnort.",
+            "example_ru": "В анкете ещё не указано моё место проживания.",
+            "forms": "die Wohnorte",
+            "grammar_hint": "Wohnort обычно населённый пункт; Wohnadresse — полный адрес проживания.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 69,
+                "scope": "context",
+                "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Wohnort"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 118,
+          "row": 8,
+          "sha": "80ead76d4b23bdd8281ccc31276d8cbe4f607ed4",
+          "record": {
+            "id": "b1-wohnort-place",
+            "de": "der Wohnort",
+            "lemma": "Wohnort",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "место проживания",
+              "населённый пункт проживания"
+            ],
+            "definition_de": "Die Ortschaft, in der eine Person lebt.",
+            "example": "Bitte geben Sie Ihren aktuellen Wohnort an.",
+            "example_ru": "Пожалуйста, укажите ваше нынешнее место проживания.",
+            "forms": "die Wohnorte",
+            "grammar_hint": "Wohnort в формуляре обычно город или населённый пункт; Straße и Hausnummer указываются отдельно.",
+            "topic": "Документы и учреждения",
+            "topics": [
+              "Документы и учреждения"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 99,
+                "scope": "headword_or_attested_sense",
+                "note": "Printed pages 98–99 visually inspected. Provisional B1 exam-list coverage, not earliest CEFR level; A1/A2 reconciliation and cross-batch sense merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Wohnort"
+              ],
+              "meaning_review": "dictionary_link_pending_independent_check",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-paradeiser-tomato-at",
+      "alias_ids": [
+        "b1-paradeiser-food"
+      ],
+      "retain": {
+        "batch": 67,
+        "row": 20
+      },
+      "suppress": {
+        "batch": 99,
+        "row": 13
+      },
+      "merged_record": {
+        "id": "b1-paradeiser-tomato-at",
+        "de": "der Paradeiser",
+        "lemma": "Paradeiser",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "помидор",
+          "томат (Австрия)",
+          "томат"
+        ],
+        "definition_de": "In Österreich gebräuchliche Bezeichnung für eine Tomate.",
+        "example": "Für den Salat schneide ich zwei Paradeiser.",
+        "example_ru": "Для салата я нарезаю два помидора.",
+        "forms": "die Paradeiser",
+        "grammar_hint": "Австрийский региональный вариант; D/CH: die Tomate, die Tomaten. Род различается.\nA: der Paradeiser; D/CH: die Tomate. Разный род, одинаковое значение.",
+        "topic": "Еда и напитки",
+        "topics": [
+          "Еда и напитки"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 69,
+            "scope": "context",
+            "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Paradeiser",
+            "https://de.wiktionary.org/wiki/Tomate"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "In Österreich übliche Bezeichnung für die Tomate."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [
+          {
+            "de": "Auf dem Wiener Markt gibt es frische Paradeiser.",
+            "ru": "На венском рынке продаются свежие помидоры."
+          }
+        ],
+        "alias_ids": [
+          "b1-paradeiser-food"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 67,
+          "row": 20,
+          "sha": "f4b56d24b9c1908288b6f0f7d9167eac7a15be06",
+          "record": {
+            "id": "b1-paradeiser-tomato-at",
+            "de": "der Paradeiser",
+            "lemma": "Paradeiser",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "помидор",
+              "томат (Австрия)"
+            ],
+            "definition_de": "In Österreich gebräuchliche Bezeichnung für eine Tomate.",
+            "example": "Für den Salat schneide ich zwei Paradeiser.",
+            "example_ru": "Для салата я нарезаю два помидора.",
+            "forms": "die Paradeiser",
+            "grammar_hint": "Австрийский региональный вариант; D/CH: die Tomate, die Tomaten. Род различается.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 69,
+                "scope": "context",
+                "note": "Printed page 69 (PDF zero-based index 68); Goethe B1 exam vocabulary and example contexts; earliest CEFR level pending cross-level comparison; derived forms and usage contexts are not necessarily independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Paradeiser"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 99,
+          "row": 13,
+          "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+          "record": {
+            "id": "b1-paradeiser-food",
+            "de": "der Paradeiser",
+            "lemma": "Paradeiser",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "помидор",
+              "томат"
+            ],
+            "definition_de": "In Österreich übliche Bezeichnung für die Tomate.",
+            "example": "Auf dem Wiener Markt gibt es frische Paradeiser.",
+            "example_ru": "На венском рынке продаются свежие помидоры.",
+            "forms": "die Paradeiser",
+            "grammar_hint": "A: der Paradeiser; D/CH: die Tomate. Разный род, одинаковое значение.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 87,
+                "scope": "context",
+                "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Paradeiser",
+                "https://de.wiktionary.org/wiki/Tomate"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "canonical_id": "b1-pfanne-pot-ch",
+      "alias_ids": [
+        "b1-pfanne-ch-pot"
+      ],
+      "retain": {
+        "batch": 69,
+        "row": 3
+      },
+      "suppress": {
+        "batch": 99,
+        "row": 16
+      },
+      "merged_record": {
+        "id": "b1-pfanne-pot-ch",
+        "de": "die Pfanne",
+        "lemma": "Pfanne",
+        "part": "noun",
+        "level": "B1",
+        "translations_ru": [
+          "кастрюля",
+          "сотейник (Швейцария)",
+          "кастрюля (Швейцария)"
+        ],
+        "definition_de": "In der Schweiz auch ein Kochgefäß mit höherem Rand.",
+        "example": "Ich koche die Kartoffeln in einer großen Pfanne.",
+        "example_ru": "Я варю картофель в большой кастрюле.",
+        "forms": "die Pfannen",
+        "grammar_hint": "CH: Pfanne также означает кастрюлю; D/A: der Topf. Bratpfanne — сковорода. CH: grossen.\nCH: Pfanne также кастрюля; обычно D/A: сковорода. Bratpfanne — сковорода.",
+        "topic": "Дом и быт",
+        "topics": [
+          "Дом и быт",
+          "Еда и напитки"
+        ],
+        "source_evidence": {
+          "level": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+            "page": 70,
+            "scope": "context",
+            "note": "Goethe B1 printed page 70; earliest CEFR level pending cross-level comparison; pedagogical usage contexts need not be independent lexical senses."
+          },
+          "meaning": [
+            "https://de.wiktionary.org/wiki/Pfanne",
+            "https://de.wiktionary.org/wiki/Topf"
+          ],
+          "meaning_review": "merged_source_status_requires_confirmation",
+          "example": "integraticum_original"
+        },
+        "legacy_candidate_ids": [],
+        "alternative_definitions_de": [
+          "In der Schweiz auch ein höheres Gefäß zum Kochen auf dem Herd."
+        ],
+        "alternative_forms": [],
+        "alternative_examples": [],
+        "alias_ids": [
+          "b1-pfanne-ch-pot"
+        ]
+      },
+      "original_records": [
+        {
+          "batch": 69,
+          "row": 3,
+          "sha": "48ce6dc2f738a7d97b95e1b0fb7d797889128eff",
+          "record": {
+            "id": "b1-pfanne-pot-ch",
+            "de": "die Pfanne",
+            "lemma": "Pfanne",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "кастрюля",
+              "сотейник (Швейцария)"
+            ],
+            "definition_de": "In der Schweiz auch ein Kochgefäß mit höherem Rand.",
+            "example": "Ich koche die Kartoffeln in einer großen Pfanne.",
+            "example_ru": "Я варю картофель в большой кастрюле.",
+            "forms": "die Pfannen",
+            "grammar_hint": "CH: Pfanne также означает кастрюлю; D/A: der Topf. Bratpfanne — сковорода. CH: grossen.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 70,
+                "scope": "context",
+                "note": "Goethe B1 printed page 70; earliest CEFR level pending cross-level comparison; pedagogical usage contexts need not be independent lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Pfanne"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 99,
+          "row": 16,
+          "sha": "012552b39085cbb91d77391e41b486570fe649b9",
+          "record": {
+            "id": "b1-pfanne-ch-pot",
+            "de": "die Pfanne",
+            "lemma": "Pfanne",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "кастрюля (Швейцария)"
+            ],
+            "definition_de": "In der Schweiz auch ein höheres Gefäß zum Kochen auf dem Herd.",
+            "example": "Ich koche die Kartoffeln in einer großen Pfanne.",
+            "example_ru": "Я варю картофель в большой кастрюле.",
+            "forms": "die Pfannen",
+            "grammar_hint": "CH: Pfanne также кастрюля; обычно D/A: сковорода. Bratpfanne — сковорода.",
+            "topic": "Еда и напитки",
+            "topics": [
+              "Еда и напитки"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 87,
+                "scope": "context",
+                "note": "Printed page 87 visually inspected. B1 exam-list membership or regional cross-reference, not proof of earliest CEFR level; A1/A2 comparison and cross-batch lexical-sense merging pending."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Pfanne",
+                "https://de.wiktionary.org/wiki/Topf"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ],
+  "retained_distinct": [
+    {
+      "lemma": "Pfanne",
+      "decision": "keep_frying_pan_separate",
+      "reason": "Swiss cooking-pot usage and general frying-pan sense differ; frying-pan CEFR level remains pending as stated in source.",
+      "original_records": [
+        {
+          "batch": 69,
+          "row": 4,
+          "sha": "48ce6dc2f738a7d97b95e1b0fb7d797889128eff",
+          "record": {
+            "id": "b1-pfanne-frying",
+            "de": "die Pfanne",
+            "lemma": "Pfanne",
+            "part": "noun",
+            "level": "B1",
+            "translations_ru": [
+              "сковорода"
+            ],
+            "definition_de": "Ein flaches Gefäß zum Braten auf dem Herd.",
+            "example": "Ich brate die Zwiebeln in der Pfanne.",
+            "example_ru": "Я жарю лук на сковороде.",
+            "forms": "die Pfannen",
+            "grammar_hint": "Общеупотребительное значение; etwas in der Pfanne braten (Dativ). Дополнительное словарное значение, не отдельный пример Goethe B1.",
+            "topic": "Дом и быт",
+            "topics": [
+              "Дом и быт"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 70,
+                "scope": "supplemental_dictionary_sense",
+                "note": "Additional dictionary sense; Goethe B1 lists Swiss cooking-pot sense; B1 level of frying-pan sense pending cross-level confirmation."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Pfanne"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "lemma": "Recht",
+      "decision": "keep_all_pedagogical_contexts",
+      "reason": "Four distinct constructions: legal justification, convenience, being right, conceding a point; different grammar and spelling.",
+      "original_records": [
+        {
+          "batch": 73,
+          "row": 26,
+          "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+          "record": {
+            "id": "b1-recht-in-right",
+            "de": "im Recht sein",
+            "lemma": "Recht",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "быть правым",
+              "иметь законные основания"
+            ],
+            "definition_de": "In einer Angelegenheit auf der berechtigten Seite stehen.",
+            "example": "Nach Prüfung der Unterlagen stellte sich heraus, dass sie im Recht war.",
+            "example_ru": "После проверки документов выяснилось, что она была права.",
+            "forms": "ist im Recht · war im Recht · ist im Recht gewesen",
+            "grammar_hint": "im = in dem, Dativ; Recht пишется с большой буквы. В dass-придаточном глагол в конце.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 73,
+                "scope": "context",
+                "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Recht"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 73,
+          "row": 29,
+          "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+          "record": {
+            "id": "b1-recht-convenient",
+            "de": "jemandem recht sein",
+            "lemma": "recht",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "устраивать кого-либо",
+              "быть удобным",
+              "быть по душе"
+            ],
+            "definition_de": "Den Wünschen oder Vorstellungen einer Person entsprechen.",
+            "example": "Ist es dir recht, wenn wir uns am Montag treffen?",
+            "example_ru": "Тебе удобно, если мы встретимся в понедельник?",
+            "forms": "ist recht · war recht · ist recht gewesen",
+            "grammar_hint": "jemandem (Dativ) recht sein; здесь только маленькая буква. После wenn глагол в конце.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 73,
+                "scope": "context",
+                "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/recht"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 73,
+          "row": 30,
+          "sha": "5cab8c18dabba50a00a70cce79b9a4e9abf82ff4",
+          "record": {
+            "id": "b1-recht-haben",
+            "de": "recht haben / Recht haben",
+            "lemma": "recht",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "быть правым"
+            ],
+            "definition_de": "Mit einer Aussage oder Einschätzung richtigliegen.",
+            "example": "Du hast recht, wir sollten früher losfahren.",
+            "example_ru": "Ты права, нам следует выехать раньше.",
+            "forms": "hat recht · hatte recht · hat recht gehabt",
+            "grammar_hint": "Оба написания допустимы; Duden рекомендует recht haben. im Recht sein — только с большой буквы. Не путать с das Recht haben, etwas zu tun.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 73,
+                "scope": "context",
+                "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; some entries distinguish teaching contexts rather than separate lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/recht_haben"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 74,
+          "row": 1,
+          "sha": "04614d40841a3d35357340f0c0d7433d9f5950c0",
+          "record": {
+            "id": "b1-recht-geben",
+            "de": "jemandem recht geben / Recht geben",
+            "lemma": "recht",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "соглашаться с кем-либо",
+              "признавать чью-либо правоту"
+            ],
+            "definition_de": "Die Auffassung einer anderen Person als richtig anerkennen.",
+            "example": "In diesem Punkt muss ich dir recht geben.",
+            "example_ru": "В этом вопросе я должна с тобой согласиться.",
+            "forms": "gibt recht · gab recht · hat recht gegeben",
+            "grammar_hint": "jemandem + Dativ; оба написания recht/Recht geben допустимы. recht haben — быть правым.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 73,
+                "scope": "context",
+                "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison; teaching contexts not necessarily independent lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/recht"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    },
+    {
+      "lemma": "Respekt",
+      "decision": "keep_all_pedagogical_contexts",
+      "reason": "Three constructions: respect for someone, show respect to someone, exclamation of admiration; different grammar and pragmatic use.",
+      "original_records": [
+        {
+          "batch": 75,
+          "row": 29,
+          "sha": "8daa5f1f23eaac2e031ae43abc1460d80b05eb64",
+          "record": {
+            "id": "b1-respekt-esteem",
+            "de": "Respekt vor jemandem / etwas haben",
+            "lemma": "Respekt",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "уважать кого-либо",
+              "испытывать уважение к кому-либо или чему-либо"
+            ],
+            "definition_de": "Die Leistung, Persönlichkeit oder Bedeutung von jemandem oder etwas anerkennen.",
+            "example": "Ich habe großen Respekt vor ihrer Arbeit.",
+            "example_ru": "Я очень уважаю её работу.",
+            "forms": "der Respekt; без множественного числа; hat · hatte · hat gehabt",
+            "grammar_hint": "Respekt vor + Dativ; großen Respekt haben. В зависимости от контекста также почтение или опасение.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 74,
+                "scope": "context",
+                "note": "Goethe B1 printed page 74; earliest CEFR level pending cross-level comparison. Pedagogical contexts are not necessarily independent lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Respekt"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 75,
+          "row": 30,
+          "sha": "8daa5f1f23eaac2e031ae43abc1460d80b05eb64",
+          "record": {
+            "id": "b1-respekt-show",
+            "de": "jemandem Respekt entgegenbringen",
+            "lemma": "Respekt",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "проявлять уважение к кому-либо",
+              "относиться с уважением"
+            ],
+            "definition_de": "Durch das eigene Verhalten zeigen, dass man eine andere Person achtet.",
+            "example": "Wir sollten allen Teilnehmenden Respekt entgegenbringen.",
+            "example_ru": "Нам следует относиться ко всем участникам с уважением.",
+            "forms": "bringt Respekt entgegen · brachte Respekt entgegen · hat Respekt entgegengebracht",
+            "grammar_hint": "jemandem (Dativ) Respekt (Akk.) entgegenbringen; отделяемая приставка entgegen-.",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 74,
+                "scope": "context",
+                "note": "Goethe B1 printed page 74; earliest CEFR level pending cross-level comparison. Pedagogical contexts are not necessarily independent lexical senses."
+              },
+              "meaning": [
+                "https://www.duden.de/rechtschreibung/Respekt"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        },
+        {
+          "batch": 76,
+          "row": 1,
+          "sha": "41d590511df0e3ec7b3bf2a0311fb35e2b1a9811",
+          "record": {
+            "id": "b1-respekt-exclamation",
+            "de": "Respekt!",
+            "lemma": "Respekt",
+            "part": "phrase",
+            "level": "B1",
+            "translations_ru": [
+              "вот это да!",
+              "молодец!",
+              "уважаю!"
+            ],
+            "definition_de": "Ausruf der Anerkennung für eine bemerkenswerte Leistung.",
+            "example": "Du hast das ganz allein geschafft? Respekt!",
+            "example_ru": "Ты справилась с этим совершенно самостоятельно? Молодец!",
+            "forms": "der Respekt; обычно без множественного числа",
+            "grammar_hint": "Самостоятельное восклицание, выражающее восхищение; не обязательно буквальный перевод «уважение».",
+            "topic": "Общение",
+            "topics": [
+              "Общение"
+            ],
+            "source_evidence": {
+              "level": {
+                "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf",
+                "page": 74,
+                "scope": "context",
+                "note": "Goethe B1 printed page; earliest CEFR level pending cross-level comparison. Teaching contexts may share lexical senses."
+              },
+              "meaning": [
+                "https://de.wiktionary.org/wiki/Respekt"
+              ],
+              "meaning_review": "dictionary_meaning_checked",
+              "example": "integraticum_original"
+            },
+            "legacy_candidate_ids": []
+          }
+        }
+      ]
+    }
+  ]
+}
